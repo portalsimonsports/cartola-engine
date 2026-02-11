@@ -1,71 +1,39 @@
 import json
 import os
 from PIL import Image, ImageDraw, ImageFont
-import pandas as pd
 
-def carregar_json(caminho):
-    if not os.path.exists(caminho):
-        return None, None
-    with open(caminho) as f:
-        data = json.load(f)
-    if not data or "dados" not in data:
-        return None, None
-    return data["rodada"], pd.DataFrame(data["dados"])
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-def detectar_formacao(df):
-    cont = df["POS"].value_counts()
-    defesa = cont.get("LAT",0) + cont.get("ZAG",0)
-    meio = cont.get("MEI",0)
-    ataque = cont.get("ATA",0)
-    return f"{defesa}-{meio}-{ataque}"
+DATA_TIMES = os.path.join(BASE_DIR, "data", "times_atual.json")
+DATA_TOP5 = os.path.join(BASE_DIR, "data", "top5_atual.json")
+OUTPUT_DIR = os.path.join(BASE_DIR, "output")
 
-def gerar_time(df, rodada, tipo):
-    titulares = df[(df["POS"]!="TEC") & (df["POS"]!="RES")]
-    tecnico = df[df["POS"]=="TEC"]
-    reservas = df[df["POS"]=="RES"]
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-    valor = round(titulares["PRECO"].sum(),2)
-    formacao = detectar_formacao(titulares)
+def carregar_json(path):
+    if not os.path.exists(path):
+        print(f"Arquivo não encontrado: {path}")
+        return None
+    
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
 
-    largura, altura = 1080, 1350
-    img = Image.new("RGB",(largura,altura),(20,90,40))
+def gerar_imagem_top5(dados):
+    img = Image.new("RGB", (1080, 1080), "#111827")
     draw = ImageDraw.Draw(img)
 
-    font = ImageFont.load_default()
-
-    draw.text((largura//2-200,40),f"{tipo} — RODADA {rodada}",fill="white",font=font)
-    draw.text((largura//2-200,80),f"Esquema: {formacao} | Valor: C$ {valor}",fill="yellow",font=font)
-
     y = 200
+    for item in dados["dados"]:
+        texto = f'{item["POS"]} - {item["NOME"]} ({item["CLUBE"]})'
+        draw.text((150, y), texto, fill="white")
+        y += 80
 
-    for _,r in titulares.iterrows():
-        draw.text((200,y),f"{r['POS']} - {r['NOME']}",fill="white",font=font)
-        y += 60
+    img.save(os.path.join(OUTPUT_DIR, "top5.png"))
 
-    if not tecnico.empty:
-        y += 30
-        r = tecnico.iloc[0]
-        draw.text((200,y),f"TÉCNICO: {r['NOME']}",fill="cyan",font=font)
-        y += 60
-
-    if not reservas.empty:
-        draw.text((200,y),"RESERVAS:",fill="white",font=font)
-        y += 40
-        for _,r in reservas.iterrows():
-            draw.text((220,y),f"{r['POS']} - {r['NOME']}",fill="white",font=font)
-            y += 50
-
-    os.makedirs("output",exist_ok=True)
-    img.save(f"output/{tipo}_rodada_{rodada}.png")
-
-def processar(caminho):
-    rodada, df = carregar_json(caminho)
-    if df is None:
-        return
-    tipos = df["TIPO"].drop_duplicates()
-    for tipo in tipos:
-        gerar_time(df[df["TIPO"]==tipo], rodada, tipo)
+def main():
+    top5 = carregar_json(DATA_TOP5)
+    if top5:
+        gerar_imagem_top5(top5)
 
 if __name__ == "__main__":
-    processar("data/times_atual.json")
-    processar("data/top5_atual.json")
+    main()
