@@ -1,12 +1,11 @@
-name: Cartola Engine - Gerar Imagens
+name: Gerar Imagens Cartola
 
 on:
   push:
-    paths:
-      - 'data/*.json'
+    branches: [ main ]
 
 jobs:
-  gerar-imagens:
+  gerar:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,24 +15,20 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version: '3.10'
 
-      - name: Instalar dependências
+      - name: Instalar Pillow
         run: |
           pip install pillow
-
-      - name: Criar pasta output se não existir
-        run: |
-          mkdir -p output
 
       - name: Executar script
         run: |
           python app/gerar_imagens.py
 
-      - name: Commit imagens geradas
+      - name: Commit imagens
         run: |
-          git config --global user.name "cartola-bot"
-          git config --global user.email "bot@cartola-engine.com"
-          git add output/*.png
-          git commit -m "Imagens atualizadas automaticamente" || echo "Sem mudanças"
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add output/*
+          git commit -m "Atualização automática imagens" || echo "Nada para commit"
           git push
