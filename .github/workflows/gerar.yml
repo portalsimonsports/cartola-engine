@@ -1,0 +1,36 @@
+name: Gerar Imagens Cartola
+
+on:
+  push:
+    paths:
+      - 'data/times_atual.json'
+      - 'data/top5_atual.json'
+
+jobs:
+  gerar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v3
+
+      - name: Instalar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependências
+        run: |
+          pip install pillow
+
+      - name: Executar script
+        run: |
+          python app/gerar_imagens.py
+
+      - name: Commit imagens
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add output/*
+          git commit -m "Imagens atualizadas automaticamente" || echo "Nada para commitar"
+          git push
