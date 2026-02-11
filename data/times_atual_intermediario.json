@@ -1,7 +1,7 @@
 {
   "rodada": 3,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-02-11T20:47:49.264Z",
+  "atualizado_em": "2026-02-11T20:57:50.730Z",
   "dados": [
     {
       "RODADA": 3,
@@ -11,7 +11,27 @@
       "NOME": "L?o Vieira",
       "CLUBE": "CHA",
       "PRECO": 5.6,
-      "EXP_SCORE": 2.8119
+      "EXP_SCORE": 2.8188
+    },
+    {
+      "RODADA": 3,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Juninho Capixaba",
+      "CLUBE": "RBB",
+      "PRECO": 13.54,
+      "EXP_SCORE": 3.5461
+    },
+    {
+      "RODADA": 3,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Piquerez",
+      "CLUBE": "PAL",
+      "PRECO": 12.16,
+      "EXP_SCORE": 2.965
     },
     {
       "RODADA": 3,
@@ -21,7 +41,7 @@
       "NOME": "Alexander Barboza",
       "CLUBE": "BOT",
       "PRECO": 12.59,
-      "EXP_SCORE": 2.6441
+      "EXP_SCORE": 2.6504
     },
     {
       "RODADA": 3,
@@ -31,17 +51,7 @@
       "NOME": "Gustavo Marques",
       "CLUBE": "RBB",
       "PRECO": 7.4,
-      "EXP_SCORE": 2.6308
-    },
-    {
-      "RODADA": 3,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Murilo",
-      "CLUBE": "PAL",
-      "PRECO": 9.1,
-      "EXP_SCORE": 2.4697
+      "EXP_SCORE": 2.6419
     },
     {
       "RODADA": 3,
@@ -68,40 +78,20 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Andreas Pereira",
-      "CLUBE": "PAL",
-      "PRECO": 17.15,
-      "EXP_SCORE": 3.8703
-    },
-    {
-      "RODADA": 3,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Lucho Acosta",
-      "CLUBE": "FLU",
-      "PRECO": 10.9,
-      "EXP_SCORE": 3.0117
-    },
-    {
-      "RODADA": 3,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Gustavinho",
-      "CLUBE": "RBB",
-      "PRECO": 8.35,
-      "EXP_SCORE": 2.8627
+      "NOME": "Jean Carlos",
+      "CLUBE": "CHA",
+      "PRECO": 8.93,
+      "EXP_SCORE": 3.9032
     },
     {
       "RODADA": 3,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Andr?s G?mez",
-      "CLUBE": "VAS",
-      "PRECO": 11.73,
-      "EXP_SCORE": 3.4599
+      "NOME": "Carlos Vin?cius",
+      "CLUBE": "GRE",
+      "PRECO": 22.18,
+      "EXP_SCORE": 5.631
     },
     {
       "RODADA": 3,
@@ -112,6 +102,16 @@
       "CLUBE": "REM",
       "PRECO": 4.71,
       "EXP_SCORE": 1.4503
+    },
+    {
+      "RODADA": 3,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "?talo",
+      "CLUBE": "CHA",
+      "PRECO": 2.24,
+      "EXP_SCORE": 0.5083
     },
     {
       "RODADA": 3,
@@ -131,7 +131,17 @@
       "NOME": "Marcelo Rangel",
       "CLUBE": "REM",
       "PRECO": 4.65,
-      "EXP_SCORE": 1.072
+      "EXP_SCORE": 1.0733
+    },
+    {
+      "RODADA": 3,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "RESERVA",
+      "POS": "LAT",
+      "NOME": "Ren?",
+      "CLUBE": "FLU",
+      "PRECO": 8.66,
+      "EXP_SCORE": 2.6715
     },
     {
       "RODADA": 3,
@@ -141,27 +151,27 @@
       "NOME": "Arthur Dias",
       "CLUBE": "CAP",
       "PRECO": 5.26,
-      "EXP_SCORE": 1.7434
+      "EXP_SCORE": 1.7474
     },
     {
       "RODADA": 3,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Barros",
-      "CLUBE": "VAS",
-      "PRECO": 7.67,
-      "EXP_SCORE": 2.6266
+      "NOME": "Gustavinho",
+      "CLUBE": "RBB",
+      "PRECO": 8.35,
+      "EXP_SCORE": 2.8627
     },
     {
       "RODADA": 3,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "?talo",
-      "CLUBE": "CHA",
-      "PRECO": 2.24,
-      "EXP_SCORE": 0.5083
+      "NOME": "Julimar",
+      "CLUBE": "CAP",
+      "PRECO": 3.55,
+      "EXP_SCORE": 0.1724
     }
   ]
 }
