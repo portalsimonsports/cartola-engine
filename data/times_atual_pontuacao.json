@@ -1,7 +1,7 @@
 {
   "rodada": 5,
   "tipo": "PONTUACAO",
-  "atualizado_em": "2026-02-27T15:47:41.890Z",
+  "atualizado_em": "2026-02-27T16:47:40.393Z",
   "dados": [
     {
       "RODADA": 5,
@@ -11,7 +11,7 @@
       "NOME": "Hugo Souza",
       "CLUBE": "COR",
       "PRECO": 11.29,
-      "EXP_SCORE": 3.0786,
+      "EXP_SCORE": 2.503,
       "ATLETA_ID": 101574
     },
     {
@@ -22,7 +22,7 @@
       "NOME": "Juninho Capixaba",
       "CLUBE": "RBB",
       "PRECO": 15.26,
-      "EXP_SCORE": 5.1772,
+      "EXP_SCORE": 5.1873,
       "ATLETA_ID": 94968
     },
     {
@@ -33,7 +33,7 @@
       "NOME": "Luciano Juba",
       "CLUBE": "BAH",
       "PRECO": 11.19,
-      "EXP_SCORE": 4.7903,
+      "EXP_SCORE": 4.796,
       "ATLETA_ID": 107093
     },
     {
@@ -44,7 +44,7 @@
       "NOME": "Noriega",
       "CLUBE": "GRE",
       "PRECO": 9.58,
-      "EXP_SCORE": 3.7417,
+      "EXP_SCORE": 3.3485,
       "ATLETA_ID": 130048
     },
     {
@@ -55,7 +55,7 @@
       "NOME": "Gustavo G?mez",
       "CLUBE": "PAL",
       "PRECO": 11.84,
-      "EXP_SCORE": 3.4816,
+      "EXP_SCORE": 3.1169,
       "ATLETA_ID": 71684
     },
     {
@@ -66,7 +66,7 @@
       "NOME": "Barros",
       "CLUBE": "VAS",
       "PRECO": 11.7,
-      "EXP_SCORE": 5.3778,
+      "EXP_SCORE": 5.3698,
       "ATLETA_ID": 122485
     },
     {
@@ -77,7 +77,7 @@
       "NOME": "Andreas Pereira",
       "CLUBE": "PAL",
       "PRECO": 15.82,
-      "EXP_SCORE": 5.1152,
+      "EXP_SCORE": 5.112,
       "ATLETA_ID": 89274
     },
     {
@@ -88,8 +88,19 @@
       "NOME": "Lucho Acosta",
       "CLUBE": "FLU",
       "PRECO": 13.43,
-      "EXP_SCORE": 5.0217,
+      "EXP_SCORE": 5.0166,
       "ATLETA_ID": 89837
+    },
+    {
+      "RODADA": 5,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Allan",
+      "CLUBE": "PAL",
+      "PRECO": 16.47,
+      "EXP_SCORE": 4.6687,
+      "ATLETA_ID": 141451
     },
     {
       "RODADA": 5,
@@ -99,19 +110,8 @@
       "NOME": "Vitor Roque",
       "CLUBE": "PAL",
       "PRECO": 21.71,
-      "EXP_SCORE": 6.1591,
+      "EXP_SCORE": 5.5279,
       "ATLETA_ID": 114802
-    },
-    {
-      "RODADA": 5,
-      "TIPO": "PONTUACAO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Carlos Vin?cius",
-      "CLUBE": "GRE",
-      "PRECO": 17.42,
-      "EXP_SCORE": 4.9951,
-      "ATLETA_ID": 105563
     },
     {
       "RODADA": 5,
@@ -121,7 +121,7 @@
       "NOME": "Alef Manga",
       "CLUBE": "REM",
       "PRECO": 10.15,
-      "EXP_SCORE": 4.8932,
+      "EXP_SCORE": 4.387,
       "ATLETA_ID": 101254
     },
     {
@@ -132,7 +132,7 @@
       "NOME": "Fernando Seabra",
       "CLUBE": "CFC",
       "PRECO": 6.25,
-      "EXP_SCORE": 2.1856,
+      "EXP_SCORE": 2.1813,
       "ATLETA_ID": 126977
     },
     {
@@ -143,7 +143,7 @@
       "NOME": "Rafael",
       "CLUBE": "SAO",
       "PRECO": 9.45,
-      "EXP_SCORE": 2.9199,
+      "EXP_SCORE": 2.374,
       "ATLETA_ID": 68928
     },
     {
@@ -154,7 +154,7 @@
       "NOME": "Marlon",
       "CLUBE": "GRE",
       "PRECO": 10.91,
-      "EXP_SCORE": 4.0431,
+      "EXP_SCORE": 4.0491,
       "ATLETA_ID": 91706
     },
     {
@@ -165,7 +165,7 @@
       "NOME": "Sabino",
       "CLUBE": "SAO",
       "PRECO": 7.26,
-      "EXP_SCORE": 2.5951,
+      "EXP_SCORE": 2.3236,
       "ATLETA_ID": 104075
     },
     {
@@ -176,7 +176,7 @@
       "NOME": "Victor Hugo",
       "CLUBE": "CAM",
       "PRECO": 8.13,
-      "EXP_SCORE": 3.9642,
+      "EXP_SCORE": 3.9621,
       "ATLETA_ID": 116034
     },
     {
@@ -187,7 +187,7 @@
       "NOME": "Lucas Ronier",
       "CLUBE": "CFC",
       "PRECO": 10.11,
-      "EXP_SCORE": 4.3385,
+      "EXP_SCORE": 3.8886,
       "ATLETA_ID": 123648
     }
   ]
