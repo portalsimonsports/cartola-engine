@@ -5,8 +5,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-DATA_TIMES = os.path.join(BASE_DIR, "data", "times_atual.json")
-DATA_TOP5 = os.path.join(BASE_DIR, "data", "top5_atual.json")
+DATA_DIR = os.path.join(BASE_DIR, "data")
 OUTPUT_DIR = os.path.join(BASE_DIR, "output")
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -33,18 +32,20 @@ def carregar_font(size):
 
 
 # ================================
-# TOP 5 MODERNO
+# TOP 5
 # ================================
 
-def gerar_imagem_top5(dados):
+def gerar_imagem_top5():
 
-    if isinstance(dados, list):
-        lista = dados
-    else:
-        lista = dados.get("dados", [])
+    path = os.path.join(DATA_DIR, "top5_atual.json")
+    dados = carregar_json(path)
+    if not dados:
+        return
+
+    lista = dados.get("dados", []) if isinstance(dados, dict) else dados
 
     if not lista:
-        print("Top5 vazio ou formato incorreto")
+        print("Top5 vazio")
         return
 
     img = Image.new("RGB", (1080, 1080), "#111827")
@@ -69,68 +70,57 @@ def gerar_imagem_top5(dados):
 
 
 # ================================
-# TIMES EM FORMATO CAMPINHO
+# TIMES (1 ARQUIVO = 1 IMAGEM)
 # ================================
 
-def gerar_imagens_times(dados):
+def gerar_imagem_time(nome_arquivo, titulo):
 
-    if isinstance(dados, list):
-        lista = dados
-    else:
-        lista = dados.get("dados", [])
+    path = os.path.join(DATA_DIR, nome_arquivo)
+    dados = carregar_json(path)
+    if not dados:
+        return
+
+    lista = dados.get("dados", []) if isinstance(dados, dict) else dados
 
     if not lista:
-        print("Times vazio ou formato incorreto")
+        print(f"{nome_arquivo} vazio")
         return
 
-    times = defaultdict(list)
+    img = Image.new("RGB", (1080, 1920), "#0e2a1f")
+    draw = ImageDraw.Draw(img)
 
-    for item in lista:
-        tipo = item.get("TIPO") or item.get("tipo") or item.get("tipo_time")
-        if tipo:
-            times[tipo.upper()].append(item)
+    titulo_font = carregar_font(70)
+    nome_font = carregar_font(40)
 
-    if not times:
-        print("Nenhum time agrupado por TIPO")
-        return
+    draw.text((540, 120), titulo, fill="white", anchor="mm", font=titulo_font)
 
-    for tipo, jogadores in times.items():
+    titulares = [j for j in lista if j.get("STATUS") == "TITULAR"]
 
-        img = Image.new("RGB", (1080, 1920), "#0e2a1f")
-        draw = ImageDraw.Draw(img)
+    posicoes = {
+        "GOL": [(540, 400)],
+        "LAT": [(250, 650), (830, 650)],
+        "ZAG": [(360, 800), (720, 800)],
+        "MEI": [(200, 1000), (540, 1000), (880, 1000)],
+        "ATA": [(300, 1250), (780, 1250)],
+        "TEC": [(540, 1500)]
+    }
 
-        titulo_font = carregar_font(70)
-        nome_font = carregar_font(40)
+    contador_pos = defaultdict(int)
 
-        draw.text((540, 120), f"TIME {tipo}", fill="white", anchor="mm", font=titulo_font)
+    for jogador in titulares:
+        pos = jogador.get("POS")
+        nome = jogador.get("NOME")
 
-        titulares = [j for j in jogadores if j.get("STATUS") == "TITULAR"]
+        if pos in posicoes:
+            idx = contador_pos[pos]
+            if idx < len(posicoes[pos]):
+                x, y = posicoes[pos][idx]
+                draw.text((x, y), nome, fill="white", anchor="mm", font=nome_font)
+                contador_pos[pos] += 1
 
-        posicoes = {
-            "GOL": [(540, 400)],
-            "LAT": [(250, 650), (830, 650)],
-            "ZAG": [(360, 800), (720, 800)],
-            "MEI": [(200, 1000), (540, 1000), (880, 1000)],
-            "ATA": [(300, 1250), (780, 1250)],
-            "TEC": [(540, 1500)]
-        }
-
-        contador_pos = defaultdict(int)
-
-        for jogador in titulares:
-            pos = jogador.get("POS")
-            nome = jogador.get("NOME")
-
-            if pos in posicoes:
-                idx = contador_pos[pos]
-                if idx < len(posicoes[pos]):
-                    x, y = posicoes[pos][idx]
-                    draw.text((x, y), nome, fill="white", anchor="mm", font=nome_font)
-                    contador_pos[pos] += 1
-
-        caminho = os.path.join(OUTPUT_DIR, f"time_{tipo.lower()}.png")
-        img.save(caminho)
-        print(f"Time {tipo} gerado com sucesso")
+    nome_saida = nome_arquivo.replace(".json", ".png")
+    img.save(os.path.join(OUTPUT_DIR, nome_saida))
+    print(f"{titulo} gerado com sucesso")
 
 
 # ================================
@@ -141,17 +131,11 @@ def main():
 
     print("Iniciando geração de imagens...")
 
-    top5 = carregar_json(DATA_TOP5)
-    if top5:
-        gerar_imagem_top5(top5)
-    else:
-        print("Top5 não carregado")
+    gerar_imagem_top5()
 
-    times = carregar_json(DATA_TIMES)
-    if times:
-        gerar_imagens_times(times)
-    else:
-        print("Times não carregado")
+    gerar_imagem_time("times_atual_economico.json", "TIME ECONÔMICO")
+    gerar_imagem_time("times_atual_intermediario.json", "TIME INTERMEDIÁRIO")
+    gerar_imagem_time("times_atual_pontuacao.json", "TIME PONTUAÇÃO")
 
     print("Processo finalizado.")
 
