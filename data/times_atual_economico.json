@@ -1,7 +1,7 @@
 {
   "rodada": 5,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-03-03T10:47:34.731Z",
+  "atualizado_em": "2026-03-03T11:47:34.816Z",
   "dados": [
     {
       "RODADA": 5,
@@ -18,23 +18,34 @@
       "RODADA": 5,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Noriega",
+      "POS": "LAT",
+      "NOME": "Marlon",
       "CLUBE": "GRE",
-      "PRECO": 9.58,
-      "EXP_SCORE": 3.823,
-      "ATLETA_ID": 130048
+      "PRECO": 10.91,
+      "EXP_SCORE": 4.131,
+      "ATLETA_ID": 91706
+    },
+    {
+      "RODADA": 5,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Juninho Capixaba",
+      "CLUBE": "RBB",
+      "PRECO": 15.26,
+      "EXP_SCORE": 5.0448,
+      "ATLETA_ID": 94968
     },
     {
       "RODADA": 5,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ZAG",
-      "NOME": "Sabino",
-      "CLUBE": "SAO",
-      "PRECO": 7.26,
-      "EXP_SCORE": 3.0248,
-      "ATLETA_ID": 104075
+      "NOME": "Noriega",
+      "CLUBE": "GRE",
+      "PRECO": 9.58,
+      "EXP_SCORE": 3.823,
+      "ATLETA_ID": 130048
     },
     {
       "RODADA": 5,
@@ -84,17 +95,6 @@
       "RODADA": 5,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Victor Hugo",
-      "CLUBE": "CAM",
-      "PRECO": 8.13,
-      "EXP_SCORE": 3.863,
-      "ATLETA_ID": 116034
-    },
-    {
-      "RODADA": 5,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
       "POS": "ATA",
       "NOME": "Alef Manga",
       "CLUBE": "REM",
@@ -107,22 +107,22 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Lucas Ronier",
-      "CLUBE": "CFC",
-      "PRECO": 10.11,
-      "EXP_SCORE": 3.8293,
-      "ATLETA_ID": 123648
+      "NOME": "Marcinho",
+      "CLUBE": "CHA",
+      "PRECO": 3.62,
+      "EXP_SCORE": 0.8481,
+      "ATLETA_ID": 95332
     },
     {
       "RODADA": 5,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Marcinho",
-      "CLUBE": "CHA",
-      "PRECO": 3.62,
-      "EXP_SCORE": 0.8481,
-      "ATLETA_ID": 95332
+      "NOME": "Jo?o Pedro",
+      "CLUBE": "REM",
+      "PRECO": 3.78,
+      "EXP_SCORE": 1.2322,
+      "ATLETA_ID": 146040
     },
     {
       "RODADA": 5,
@@ -150,34 +150,45 @@
       "RODADA": 5,
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
-      "POS": "ZAG",
-      "NOME": "Victor Caetano",
+      "POS": "LAT",
+      "NOME": "Walter Clar",
       "CLUBE": "CHA",
-      "PRECO": 4.23,
-      "EXP_SCORE": 1.391,
-      "ATLETA_ID": 97432
+      "PRECO": 8.79,
+      "EXP_SCORE": 3.7662,
+      "ATLETA_ID": 105664
+    },
+    {
+      "RODADA": 5,
+      "TIPO": "ECONOMICO",
+      "STATUS": "RESERVA",
+      "POS": "ZAG",
+      "NOME": "Freytes",
+      "CLUBE": "FLU",
+      "PRECO": 4.68,
+      "EXP_SCORE": 1.3037,
+      "ATLETA_ID": 113034
     },
     {
       "RODADA": 5,
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Patrick de Paula",
-      "CLUBE": "REM",
-      "PRECO": 7.19,
-      "EXP_SCORE": 3.6563,
-      "ATLETA_ID": 107172
+      "NOME": "Victor Hugo",
+      "CLUBE": "CAM",
+      "PRECO": 8.13,
+      "EXP_SCORE": 3.863,
+      "ATLETA_ID": 116034
     },
     {
       "RODADA": 5,
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Jo?o Pedro",
-      "CLUBE": "REM",
-      "PRECO": 3.78,
-      "EXP_SCORE": 1.2322,
-      "ATLETA_ID": 146040
+      "NOME": "Lavega",
+      "CLUBE": "CFC",
+      "PRECO": 4.51,
+      "EXP_SCORE": 1.3907,
+      "ATLETA_ID": 117930
     }
   ]
 }
