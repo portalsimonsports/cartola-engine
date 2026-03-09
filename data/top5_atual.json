@@ -1,6 +1,6 @@
 {
   "rodada": 5,
-  "atualizado_em": "2026-03-09T18:47:41.460Z",
+  "atualizado_em": "2026-03-09T19:47:39.679Z",
   "dados": [
     {
       "RODADA": 5,
@@ -159,7 +159,7 @@
       "CLUBE": "VAS",
       "PRECO": 11.7,
       "EXP_SCORE": 5.4567,
-      "FACTOR": 1.0642060338732444,
+      "FACTOR": 1.0642060338732446,
       "ATLETA_ID": 122485
     },
     {
@@ -249,7 +249,7 @@
       "CLUBE": "VAS",
       "PRECO": 11.41,
       "EXP_SCORE": 4.0322,
-      "FACTOR": 1.0642060338732444,
+      "FACTOR": 1.0642060338732446,
       "ATLETA_ID": 116706
     },
     {
@@ -275,6 +275,16 @@
     {
       "RODADA": 5,
       "POS": "TEC",
+      "NOME": "Lu?s Castro",
+      "CLUBE": "GRE",
+      "PRECO": 10.31,
+      "EXP_SCORE": 2.9633,
+      "FACTOR": 1.0500389167706548,
+      "ATLETA_ID": 88037
+    },
+    {
+      "RODADA": 5,
+      "POS": "TEC",
       "NOME": "Luis Zubeld?a",
       "CLUBE": "FLU",
       "PRECO": 9.42,
@@ -291,16 +301,6 @@
       "EXP_SCORE": 2.7204,
       "FACTOR": 1.0116885492357806,
       "ATLETA_ID": 97341
-    },
-    {
-      "RODADA": 5,
-      "POS": "TEC",
-      "NOME": "Vagner Mancini",
-      "CLUBE": "RBB",
-      "PRECO": 7.3,
-      "EXP_SCORE": 2.4262,
-      "FACTOR": 0.9615530870200525,
-      "ATLETA_ID": 39850
     }
   ]
 }
