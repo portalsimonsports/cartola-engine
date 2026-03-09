@@ -1,7 +1,7 @@
 {
   "rodada": 5,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-03-09T14:47:37.874Z",
+  "atualizado_em": "2026-03-09T15:47:37.961Z",
   "dados": [
     {
       "RODADA": 5,
@@ -11,7 +11,7 @@
       "NOME": "Hugo Souza",
       "CLUBE": "COR",
       "PRECO": 11.29,
-      "EXP_SCORE": 3.5667,
+      "EXP_SCORE": 3.1015,
       "ATLETA_ID": 101574
     },
     {
@@ -22,7 +22,7 @@
       "NOME": "Juninho Capixaba",
       "CLUBE": "RBB",
       "PRECO": 15.26,
-      "EXP_SCORE": 4.805,
+      "EXP_SCORE": 5.3389,
       "ATLETA_ID": 94968
     },
     {
@@ -62,17 +62,6 @@
       "RODADA": 5,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Sabino",
-      "CLUBE": "SAO",
-      "PRECO": 7.26,
-      "EXP_SCORE": 3.0063,
-      "ATLETA_ID": 104075
-    },
-    {
-      "RODADA": 5,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
       "POS": "MEI",
       "NOME": "Barros",
       "CLUBE": "VAS",
@@ -106,12 +95,23 @@
       "RODADA": 5,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Vitor Roque",
+      "POS": "MEI",
+      "NOME": "Allan",
       "CLUBE": "PAL",
-      "PRECO": 21.71,
-      "EXP_SCORE": 5.9341,
-      "ATLETA_ID": 114802
+      "PRECO": 16.47,
+      "EXP_SCORE": 4.6645,
+      "ATLETA_ID": 141451
+    },
+    {
+      "RODADA": 5,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Alef Manga",
+      "CLUBE": "REM",
+      "PRECO": 10.15,
+      "EXP_SCORE": 4.6655,
+      "ATLETA_ID": 101254
     },
     {
       "RODADA": 5,
@@ -151,22 +151,22 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "LAT",
-      "NOME": "Walter Clar",
-      "CLUBE": "CHA",
-      "PRECO": 8.79,
-      "EXP_SCORE": 3.7438,
-      "ATLETA_ID": 105664
+      "NOME": "Marlon",
+      "CLUBE": "GRE",
+      "PRECO": 10.91,
+      "EXP_SCORE": 4.114,
+      "ATLETA_ID": 91706
     },
     {
       "RODADA": 5,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Marllon",
-      "CLUBE": "REM",
-      "PRECO": 6.1,
-      "EXP_SCORE": 2.3352,
-      "ATLETA_ID": 70666
+      "NOME": "Sabino",
+      "CLUBE": "SAO",
+      "PRECO": 7.26,
+      "EXP_SCORE": 2.6142,
+      "ATLETA_ID": 104075
     },
     {
       "RODADA": 5,
