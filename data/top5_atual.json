@@ -1,6 +1,6 @@
 {
   "rodada": 5,
-  "atualizado_em": "2026-03-09T15:47:43.638Z",
+  "atualizado_em": "2026-03-09T17:47:35.438Z",
   "dados": [
     {
       "RODADA": 5,
@@ -229,7 +229,7 @@
       "CLUBE": "REM",
       "PRECO": 10.15,
       "EXP_SCORE": 4.6655,
-      "FACTOR": 1.009852573613161,
+      "FACTOR": 1.0098525736131607,
       "ATLETA_ID": 101254
     },
     {
@@ -265,16 +265,6 @@
     {
       "RODADA": 5,
       "POS": "TEC",
-      "NOME": "Hern?n Crespo",
-      "CLUBE": "SAO",
-      "PRECO": 9.83,
-      "EXP_SCORE": 3.6377,
-      "FACTOR": 1.0285985817148178,
-      "ATLETA_ID": 103912
-    },
-    {
-      "RODADA": 5,
-      "POS": "TEC",
       "NOME": "Dorival J?nior",
       "CLUBE": "COR",
       "PRECO": 11.6,
@@ -301,6 +291,16 @@
       "EXP_SCORE": 2.7216,
       "FACTOR": 1.012125872809928,
       "ATLETA_ID": 97341
+    },
+    {
+      "RODADA": 5,
+      "POS": "TEC",
+      "NOME": "Vagner Mancini",
+      "CLUBE": "RBB",
+      "PRECO": 7.3,
+      "EXP_SCORE": 2.4271,
+      "FACTOR": 0.9619052502302733,
+      "ATLETA_ID": 39850
     }
   ]
 }
