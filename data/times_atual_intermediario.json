@@ -1,7 +1,7 @@
 {
   "rodada": 5,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-03-10T10:47:39.626Z",
+  "atualizado_em": "2026-03-10T11:47:37.493Z",
   "dados": [
     {
       "RODADA": 5,
@@ -11,7 +11,7 @@
       "NOME": "Hugo Souza",
       "CLUBE": "COR",
       "PRECO": 11.29,
-      "EXP_SCORE": 3.5545,
+      "EXP_SCORE": 3.0909,
       "ATLETA_ID": 101574
     },
     {
@@ -62,17 +62,6 @@
       "RODADA": 5,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Sabino",
-      "CLUBE": "SAO",
-      "PRECO": 7.26,
-      "EXP_SCORE": 2.9961,
-      "ATLETA_ID": 104075
-    },
-    {
-      "RODADA": 5,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
       "POS": "MEI",
       "NOME": "Barros",
       "CLUBE": "VAS",
@@ -106,12 +95,23 @@
       "RODADA": 5,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Vitor Roque",
+      "POS": "MEI",
+      "NOME": "Allan",
       "CLUBE": "PAL",
-      "PRECO": 21.71,
-      "EXP_SCORE": 5.9328,
-      "ATLETA_ID": 114802
+      "PRECO": 16.47,
+      "EXP_SCORE": 4.6635,
+      "ATLETA_ID": 141451
+    },
+    {
+      "RODADA": 5,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Alef Manga",
+      "CLUBE": "REM",
+      "PRECO": 10.15,
+      "EXP_SCORE": 4.6627,
+      "ATLETA_ID": 101254
     },
     {
       "RODADA": 5,
@@ -151,22 +151,22 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "LAT",
-      "NOME": "Walter Clar",
-      "CLUBE": "CHA",
-      "PRECO": 8.79,
-      "EXP_SCORE": 3.7315,
-      "ATLETA_ID": 105664
+      "NOME": "Marlon",
+      "CLUBE": "GRE",
+      "PRECO": 10.91,
+      "EXP_SCORE": 4.1046,
+      "ATLETA_ID": 91706
     },
     {
       "RODADA": 5,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Marllon",
-      "CLUBE": "REM",
-      "PRECO": 6.1,
-      "EXP_SCORE": 2.3289,
-      "ATLETA_ID": 70666
+      "NOME": "Sabino",
+      "CLUBE": "SAO",
+      "PRECO": 7.26,
+      "EXP_SCORE": 2.6053,
+      "ATLETA_ID": 104075
     },
     {
       "RODADA": 5,
