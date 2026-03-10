@@ -1,6 +1,6 @@
 {
   "rodada": 5,
-  "atualizado_em": "2026-03-10T10:47:48.223Z",
+  "atualizado_em": "2026-03-10T11:47:41.639Z",
   "dados": [
     {
       "RODADA": 5,
@@ -8,7 +8,7 @@
       "NOME": "Hugo Souza",
       "CLUBE": "COR",
       "PRECO": 11.29,
-      "EXP_SCORE": 3.5545,
+      "EXP_SCORE": 3.0909,
       "FACTOR": 1.1004827717530132,
       "ATLETA_ID": 101574
     },
@@ -19,7 +19,7 @@
       "CLUBE": "SAO",
       "PRECO": 9.45,
       "EXP_SCORE": 2.9315,
-      "FACTOR": 1.1020557601653391,
+      "FACTOR": 1.1020557601653393,
       "ATLETA_ID": 68928
     },
     {
@@ -39,7 +39,7 @@
       "CLUBE": "BAH",
       "PRECO": 7.68,
       "EXP_SCORE": 2.5316,
-      "FACTOR": 1.0905954160183917,
+      "FACTOR": 1.090595416018392,
       "ATLETA_ID": 91101
     },
     {
@@ -49,7 +49,7 @@
       "CLUBE": "FLU",
       "PRECO": 10.6,
       "EXP_SCORE": 2.3295,
-      "FACTOR": 0.8841647465341476,
+      "FACTOR": 0.8841647465341477,
       "ATLETA_ID": 37656
     },
     {
@@ -69,18 +69,18 @@
       "CLUBE": "BAH",
       "PRECO": 11.19,
       "EXP_SCORE": 4.4292,
-      "FACTOR": 1.0905954160183917,
+      "FACTOR": 1.090595416018392,
       "ATLETA_ID": 107093
     },
     {
       "RODADA": 5,
       "POS": "LAT",
-      "NOME": "Matheus Bidu",
-      "CLUBE": "COR",
-      "PRECO": 13.22,
-      "EXP_SCORE": 4.3192,
-      "FACTOR": 1.1004827717530132,
-      "ATLETA_ID": 105531
+      "NOME": "Marlon",
+      "CLUBE": "GRE",
+      "PRECO": 10.91,
+      "EXP_SCORE": 4.1046,
+      "FACTOR": 1.1656494345493813,
+      "ATLETA_ID": 91706
     },
     {
       "RODADA": 5,
@@ -89,18 +89,18 @@
       "CLUBE": "SAO",
       "PRECO": 11.33,
       "EXP_SCORE": 4.0187,
-      "FACTOR": 1.1020557601653391,
+      "FACTOR": 1.1020557601653393,
       "ATLETA_ID": 104758
     },
     {
       "RODADA": 5,
       "POS": "LAT",
-      "NOME": "Walter Clar",
-      "CLUBE": "CHA",
-      "PRECO": 8.79,
-      "EXP_SCORE": 3.7315,
-      "FACTOR": 0.9290259480296309,
-      "ATLETA_ID": 105664
+      "NOME": "Matheus Bidu",
+      "CLUBE": "COR",
+      "PRECO": 13.22,
+      "EXP_SCORE": 3.8873,
+      "FACTOR": 1.1004827717530132,
+      "ATLETA_ID": 105531
     },
     {
       "RODADA": 5,
@@ -119,18 +119,8 @@
       "CLUBE": "PAL",
       "PRECO": 11.84,
       "EXP_SCORE": 3.4943,
-      "FACTOR": 0.937047653902422,
+      "FACTOR": 0.9370476539024221,
       "ATLETA_ID": 71684
-    },
-    {
-      "RODADA": 5,
-      "POS": "ZAG",
-      "NOME": "Sabino",
-      "CLUBE": "SAO",
-      "PRECO": 7.26,
-      "EXP_SCORE": 2.9961,
-      "FACTOR": 1.1020557601653391,
-      "ATLETA_ID": 104075
     },
     {
       "RODADA": 5,
@@ -141,6 +131,16 @@
       "EXP_SCORE": 2.9213,
       "FACTOR": 1.1004827717530132,
       "ATLETA_ID": 69208
+    },
+    {
+      "RODADA": 5,
+      "POS": "ZAG",
+      "NOME": "Sabino",
+      "CLUBE": "SAO",
+      "PRECO": 7.26,
+      "EXP_SCORE": 2.6053,
+      "FACTOR": 1.1020557601653393,
+      "ATLETA_ID": 104075
     },
     {
       "RODADA": 5,
@@ -188,19 +188,19 @@
       "NOME": "Allan",
       "CLUBE": "PAL",
       "PRECO": 16.47,
-      "EXP_SCORE": 4.1972,
+      "EXP_SCORE": 4.6635,
       "FACTOR": 1.0284173141973638,
       "ATLETA_ID": 141451
     },
     {
       "RODADA": 5,
       "POS": "MEI",
-      "NOME": "Victor Hugo",
-      "CLUBE": "CAM",
-      "PRECO": 8.13,
-      "EXP_SCORE": 3.8663,
-      "FACTOR": 1.150969284336913,
-      "ATLETA_ID": 116034
+      "NOME": "Matheus Pereira",
+      "CLUBE": "CRU",
+      "PRECO": 17.49,
+      "EXP_SCORE": 3.9049,
+      "FACTOR": 1.030352485847804,
+      "ATLETA_ID": 96610
     },
     {
       "RODADA": 5,
@@ -265,16 +265,6 @@
     {
       "RODADA": 5,
       "POS": "TEC",
-      "NOME": "Luis Zubeld?a",
-      "CLUBE": "FLU",
-      "PRECO": 9.42,
-      "EXP_SCORE": 3.1802,
-      "FACTOR": 1.0088860369135928,
-      "ATLETA_ID": 99366
-    },
-    {
-      "RODADA": 5,
-      "POS": "TEC",
       "NOME": "Dorival J?nior",
       "CLUBE": "COR",
       "PRECO": 11.6,
@@ -291,6 +281,16 @@
       "EXP_SCORE": 2.9632,
       "FACTOR": 1.049968573562879,
       "ATLETA_ID": 88037
+    },
+    {
+      "RODADA": 5,
+      "POS": "TEC",
+      "NOME": "Luis Zubeld?a",
+      "CLUBE": "FLU",
+      "PRECO": 9.42,
+      "EXP_SCORE": 2.7654,
+      "FACTOR": 1.0088860369135928,
+      "ATLETA_ID": 99366
     },
     {
       "RODADA": 5,
