@@ -1,7 +1,7 @@
 {
   "rodada": 6,
   "tipo": "PONTUACAO",
-  "atualizado_em": "2026-03-13T05:47:43.354Z",
+  "atualizado_em": "2026-03-13T06:47:39.779Z",
   "dados": [
     {
       "RODADA": 6,
@@ -95,22 +95,11 @@
       "RODADA": 6,
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Barros",
-      "CLUBE": "VAS",
-      "PRECO": 9.71,
-      "EXP_SCORE": 5.1133,
-      "ATLETA_ID": 122485
-    },
-    {
-      "RODADA": 6,
-      "TIPO": "PONTUACAO",
-      "STATUS": "TITULAR",
       "POS": "ATA",
       "NOME": "Lucas Ronier",
       "CLUBE": "CFC",
       "PRECO": 12.4,
-      "EXP_SCORE": 7.0412,
+      "EXP_SCORE": 7.2973,
       "ATLETA_ID": 123648
     },
     {
@@ -121,8 +110,19 @@
       "NOME": "Vitor Roque",
       "CLUBE": "PAL",
       "PRECO": 21.71,
-      "EXP_SCORE": 6.6295,
+      "EXP_SCORE": 6.8706,
       "ATLETA_ID": 114802
+    },
+    {
+      "RODADA": 6,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Alef Manga",
+      "CLUBE": "REM",
+      "PRECO": 8.74,
+      "EXP_SCORE": 5.1189,
+      "ATLETA_ID": 101254
     },
     {
       "RODADA": 6,
@@ -173,22 +173,22 @@
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Bruno Gomes",
-      "CLUBE": "INT",
-      "PRECO": 7.1,
-      "EXP_SCORE": 3.0928,
-      "ATLETA_ID": 106202
+      "NOME": "Barros",
+      "CLUBE": "VAS",
+      "PRECO": 9.71,
+      "EXP_SCORE": 5.1133,
+      "ATLETA_ID": 122485
     },
     {
       "RODADA": 6,
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Alef Manga",
-      "CLUBE": "REM",
-      "PRECO": 8.74,
-      "EXP_SCORE": 4.9393,
-      "ATLETA_ID": 101254
+      "NOME": "Pedro Rocha",
+      "CLUBE": "CFC",
+      "PRECO": 6.53,
+      "EXP_SCORE": 2.8219,
+      "ATLETA_ID": 90302
     }
   ]
 }
