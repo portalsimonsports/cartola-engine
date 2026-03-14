@@ -1,6 +1,6 @@
 {
   "rodada": 6,
-  "atualizado_em": "2026-03-14T03:47:44.147Z",
+  "atualizado_em": "2026-03-14T04:47:44.967Z",
   "dados": [
     {
       "RODADA": 6,
@@ -8,7 +8,7 @@
       "NOME": "F?bio",
       "CLUBE": "FLU",
       "PRECO": 11.16,
-      "EXP_SCORE": 4.2855,
+      "EXP_SCORE": 3.7265,
       "FACTOR": 1.1006294558783742,
       "ATLETA_ID": 37656
     },
@@ -18,7 +18,7 @@
       "NOME": "Everson",
       "CLUBE": "CAM",
       "PRECO": 11.91,
-      "EXP_SCORE": 3.6764,
+      "EXP_SCORE": 3.3087,
       "FACTOR": 0.9429491939062655,
       "ATLETA_ID": 72294
     },
@@ -45,12 +45,12 @@
     {
       "RODADA": 6,
       "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 6.91,
-      "EXP_SCORE": 2.4736,
-      "FACTOR": 1.1366376477378373,
-      "ATLETA_ID": 104084
+      "NOME": "Cleiton",
+      "CLUBE": "RBB",
+      "PRECO": 7.56,
+      "EXP_SCORE": 2.473,
+      "FACTOR": 1.0530559905515209,
+      "ATLETA_ID": 93882
     },
     {
       "RODADA": 6,
@@ -58,7 +58,7 @@
       "NOME": "Juninho Capixaba",
       "CLUBE": "RBB",
       "PRECO": 14.23,
-      "EXP_SCORE": 5.5534,
+      "EXP_SCORE": 6.1705,
       "FACTOR": 1.0530559905515209,
       "ATLETA_ID": 94968
     },
@@ -115,16 +115,6 @@
     {
       "RODADA": 6,
       "POS": "ZAG",
-      "NOME": "Jemmes",
-      "CLUBE": "FLU",
-      "PRECO": 8.64,
-      "EXP_SCORE": 3.4686,
-      "FACTOR": 1.1006294558783742,
-      "ATLETA_ID": 132553
-    },
-    {
-      "RODADA": 6,
-      "POS": "ZAG",
       "NOME": "Noriega",
       "CLUBE": "GRE",
       "PRECO": 8.25,
@@ -141,6 +131,16 @@
       "EXP_SCORE": 3.2748,
       "FACTOR": 1.1870819256275182,
       "ATLETA_ID": 99274
+    },
+    {
+      "RODADA": 6,
+      "POS": "ZAG",
+      "NOME": "Jemmes",
+      "CLUBE": "FLU",
+      "PRECO": 8.64,
+      "EXP_SCORE": 3.1217,
+      "FACTOR": 1.1006294558783742,
+      "ATLETA_ID": 132553
     },
     {
       "RODADA": 6,
@@ -245,12 +245,12 @@
     {
       "RODADA": 6,
       "POS": "ATA",
-      "NOME": "Calleri",
-      "CLUBE": "SAO",
-      "PRECO": 13.71,
-      "EXP_SCORE": 4.5932,
-      "FACTOR": 0.9100244044401945,
-      "ATLETA_ID": 89840
+      "NOME": "Breno Lopes",
+      "CLUBE": "CFC",
+      "PRECO": 8.91,
+      "EXP_SCORE": 4.5728,
+      "FACTOR": 1.1215503429925582,
+      "ATLETA_ID": 93988
     },
     {
       "RODADA": 6,
