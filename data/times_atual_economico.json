@@ -1,7 +1,7 @@
 {
   "rodada": 7,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-03-17T03:47:34.850Z",
+  "atualizado_em": "2026-03-17T04:47:37.815Z",
   "dados": [
     {
       "RODADA": 7,
@@ -11,7 +11,7 @@
       "NOME": "Ronaldo",
       "CLUBE": "BAH",
       "PRECO": 7.6,
-      "EXP_SCORE": 3.1654,
+      "EXP_SCORE": 3.1771,
       "ATLETA_ID": 91101
     },
     {
@@ -22,7 +22,7 @@
       "NOME": "JP Chermont",
       "CLUBE": "CFC",
       "PRECO": 6.35,
-      "EXP_SCORE": 2.5775,
+      "EXP_SCORE": 2.4036,
       "ATLETA_ID": 131516
     },
     {
@@ -33,19 +33,8 @@
       "NOME": "Walter Clar",
       "CLUBE": "CHA",
       "PRECO": 8.54,
-      "EXP_SCORE": 4.318,
+      "EXP_SCORE": 4.3696,
       "ATLETA_ID": 105664
-    },
-    {
-      "RODADA": 7,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Eduardo Doma",
-      "CLUBE": "CHA",
-      "PRECO": 3.98,
-      "EXP_SCORE": 2.4522,
-      "ATLETA_ID": 101393
     },
     {
       "RODADA": 7,
@@ -55,7 +44,7 @@
       "NOME": "L?o Pereira",
       "CLUBE": "FLA",
       "PRECO": 12.28,
-      "EXP_SCORE": 2.8188,
+      "EXP_SCORE": 3.1485,
       "ATLETA_ID": 83528
     },
     {
@@ -66,8 +55,19 @@
       "NOME": "Sabino",
       "CLUBE": "SAO",
       "PRECO": 8.7,
-      "EXP_SCORE": 3.6831,
+      "EXP_SCORE": 3.5885,
       "ATLETA_ID": 104075
+    },
+    {
+      "RODADA": 7,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ZAG",
+      "NOME": "Eduardo Doma",
+      "CLUBE": "CHA",
+      "PRECO": 3.98,
+      "EXP_SCORE": 2.1578,
+      "ATLETA_ID": 101393
     },
     {
       "RODADA": 7,
@@ -77,7 +77,7 @@
       "NOME": "Luiz Gustavo",
       "CLUBE": "CAP",
       "PRECO": 7.8,
-      "EXP_SCORE": 2.1218,
+      "EXP_SCORE": 2.1217,
       "ATLETA_ID": 71536
     },
     {
@@ -88,7 +88,7 @@
       "NOME": "Ronaldo",
       "CLUBE": "INT",
       "PRECO": 4.66,
-      "EXP_SCORE": 2.5604,
+      "EXP_SCORE": 2.5719,
       "ATLETA_ID": 92981
     },
     {
@@ -99,8 +99,19 @@
       "NOME": "Baralhas",
       "CLUBE": "VIT",
       "PRECO": 10.85,
-      "EXP_SCORE": 3.5362,
+      "EXP_SCORE": 3.5359,
       "ATLETA_ID": 99440
+    },
+    {
+      "RODADA": 7,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Christian",
+      "CLUBE": "CRU",
+      "PRECO": 8.85,
+      "EXP_SCORE": 3.0161,
+      "ATLETA_ID": 104502
     },
     {
       "RODADA": 7,
@@ -110,19 +121,8 @@
       "NOME": "Pedro Rocha",
       "CLUBE": "CFC",
       "PRECO": 8.04,
-      "EXP_SCORE": 3.3652,
+      "EXP_SCORE": 3.365,
       "ATLETA_ID": 90302
-    },
-    {
-      "RODADA": 7,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Mendoza",
-      "CLUBE": "CAP",
-      "PRECO": 8.91,
-      "EXP_SCORE": 3.002,
-      "ATLETA_ID": 90031
     },
     {
       "RODADA": 7,
@@ -132,7 +132,7 @@
       "NOME": "Fernando Seabra",
       "CLUBE": "CFC",
       "PRECO": 7.63,
-      "EXP_SCORE": 3.7684,
+      "EXP_SCORE": 3.7682,
       "ATLETA_ID": 126977
     },
     {
@@ -143,7 +143,7 @@
       "NOME": "L?o Vieira",
       "CLUBE": "CHA",
       "PRECO": 5.29,
-      "EXP_SCORE": 2.7227,
+      "EXP_SCORE": 2.7553,
       "ATLETA_ID": 71043
     },
     {
@@ -154,7 +154,7 @@
       "NOME": "Benav?dez",
       "CLUBE": "CAP",
       "PRECO": 6.25,
-      "EXP_SCORE": 2.339,
+      "EXP_SCORE": 2.4037,
       "ATLETA_ID": 113113
     },
     {
@@ -165,7 +165,7 @@
       "NOME": "Victor Caetano",
       "CLUBE": "CHA",
       "PRECO": 3.73,
-      "EXP_SCORE": 1.3487,
+      "EXP_SCORE": 1.3648,
       "ATLETA_ID": 97432
     },
     {
@@ -176,7 +176,7 @@
       "NOME": "Gabriel Bontempo",
       "CLUBE": "SAN",
       "PRECO": 3.76,
-      "EXP_SCORE": 1.0475,
+      "EXP_SCORE": 1.2046,
       "ATLETA_ID": 141754
     },
     {
@@ -184,11 +184,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Cuello",
-      "CLUBE": "CAM",
-      "PRECO": 7.99,
-      "EXP_SCORE": 3.9924,
-      "ATLETA_ID": 98909
+      "NOME": "Julimar",
+      "CLUBE": "CAP",
+      "PRECO": 7.07,
+      "EXP_SCORE": 4.2707,
+      "ATLETA_ID": 102796
     }
   ]
 }
