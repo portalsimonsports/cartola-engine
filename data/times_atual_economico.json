@@ -1,7 +1,7 @@
 {
   "rodada": 7,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-03-18T05:47:34.362Z",
+  "atualizado_em": "2026-03-18T06:47:35.356Z",
   "dados": [
     {
       "RODADA": 7,
@@ -44,19 +44,8 @@
       "NOME": "L?o Pereira",
       "CLUBE": "FLA",
       "PRECO": 12.28,
-      "EXP_SCORE": 2.6236,
+      "EXP_SCORE": 2.9151,
       "ATLETA_ID": 83528
-    },
-    {
-      "RODADA": 7,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Eduardo Doma",
-      "CLUBE": "CHA",
-      "PRECO": 3.98,
-      "EXP_SCORE": 2.2662,
-      "ATLETA_ID": 101393
     },
     {
       "RODADA": 7,
@@ -96,11 +85,33 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "MEI",
+      "NOME": "Christian",
+      "CLUBE": "CRU",
+      "PRECO": 8.85,
+      "EXP_SCORE": 2.9778,
+      "ATLETA_ID": 104502
+    },
+    {
+      "RODADA": 7,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
       "NOME": "Ronaldo",
       "CLUBE": "INT",
       "PRECO": 4.66,
       "EXP_SCORE": 2.438,
       "ATLETA_ID": 92981
+    },
+    {
+      "RODADA": 7,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Z? Ricardo",
+      "CLUBE": "REM",
+      "PRECO": 5.21,
+      "EXP_SCORE": 2.0874,
+      "ATLETA_ID": 102911
     },
     {
       "RODADA": 7,
@@ -112,17 +123,6 @@
       "PRECO": 8.04,
       "EXP_SCORE": 3.3751,
       "ATLETA_ID": 90302
-    },
-    {
-      "RODADA": 7,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Erick",
-      "CLUBE": "VIT",
-      "PRECO": 10.4,
-      "EXP_SCORE": 2.7843,
-      "ATLETA_ID": 97810
     },
     {
       "RODADA": 7,
@@ -162,11 +162,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Bruno Leonardo",
-      "CLUBE": "CHA",
-      "PRECO": 3.15,
-      "EXP_SCORE": 0.9141,
-      "ATLETA_ID": 95620
+      "NOME": "Noriega",
+      "CLUBE": "GRE",
+      "PRECO": 7.12,
+      "EXP_SCORE": 3.1816,
+      "ATLETA_ID": 130048
     },
     {
       "RODADA": 7,
@@ -176,7 +176,7 @@
       "NOME": "Gabriel Bontempo",
       "CLUBE": "SAN",
       "PRECO": 3.76,
-      "EXP_SCORE": 1.0478,
+      "EXP_SCORE": 1.205,
       "ATLETA_ID": 141754
     },
     {
@@ -184,11 +184,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Cuello",
-      "CLUBE": "CAM",
-      "PRECO": 7.99,
-      "EXP_SCORE": 4.2228,
-      "ATLETA_ID": 98909
+      "NOME": "Julimar",
+      "CLUBE": "CAP",
+      "PRECO": 7.07,
+      "EXP_SCORE": 4.2832,
+      "ATLETA_ID": 102796
     }
   ]
 }
