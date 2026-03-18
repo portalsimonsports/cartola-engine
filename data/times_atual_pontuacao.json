@@ -1,7 +1,7 @@
 {
   "rodada": 7,
   "tipo": "PONTUACAO",
-  "atualizado_em": "2026-03-18T14:47:40.176Z",
+  "atualizado_em": "2026-03-18T17:47:42.178Z",
   "dados": [
     {
       "RODADA": 7,
@@ -11,7 +11,7 @@
       "NOME": "Everson",
       "CLUBE": "CAM",
       "PRECO": 9.79,
-      "EXP_SCORE": 3.7877,
+      "EXP_SCORE": 3.7723,
       "ATLETA_ID": 72294
     },
     {
@@ -22,7 +22,7 @@
       "NOME": "Luciano Juba",
       "CLUBE": "BAH",
       "PRECO": 9.87,
-      "EXP_SCORE": 4.6769,
+      "EXP_SCORE": 4.6653,
       "ATLETA_ID": 107093
     },
     {
@@ -33,7 +33,7 @@
       "NOME": "Ren?",
       "CLUBE": "FLU",
       "PRECO": 11.38,
-      "EXP_SCORE": 4.2905,
+      "EXP_SCORE": 4.2815,
       "ATLETA_ID": 78445
     },
     {
@@ -44,7 +44,7 @@
       "NOME": "Gustavo G?mez",
       "CLUBE": "PAL",
       "PRECO": 11.39,
-      "EXP_SCORE": 3.9624,
+      "EXP_SCORE": 3.9445,
       "ATLETA_ID": 71684
     },
     {
@@ -55,7 +55,7 @@
       "NOME": "Gabriel Paulista",
       "CLUBE": "COR",
       "PRECO": 10.24,
-      "EXP_SCORE": 3.3596,
+      "EXP_SCORE": 3.3541,
       "ATLETA_ID": 69208
     },
     {
@@ -66,19 +66,8 @@
       "NOME": "Lucho Acosta",
       "CLUBE": "FLU",
       "PRECO": 12.77,
-      "EXP_SCORE": 5.3277,
+      "EXP_SCORE": 5.3234,
       "ATLETA_ID": 89837
-    },
-    {
-      "RODADA": 7,
-      "TIPO": "PONTUACAO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Andreas Pereira",
-      "CLUBE": "PAL",
-      "PRECO": 14.05,
-      "EXP_SCORE": 5.0822,
-      "ATLETA_ID": 89274
     },
     {
       "RODADA": 7,
@@ -88,8 +77,19 @@
       "NOME": "Danilo",
       "CLUBE": "BOT",
       "PRECO": 14.95,
-      "EXP_SCORE": 4.2713,
+      "EXP_SCORE": 4.3529,
       "ATLETA_ID": 107231
+    },
+    {
+      "RODADA": 7,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Neymar",
+      "CLUBE": "SAN",
+      "PRECO": 22.31,
+      "EXP_SCORE": 3.8541,
+      "ATLETA_ID": 63007
     },
     {
       "RODADA": 7,
@@ -99,7 +99,7 @@
       "NOME": "Lucas Ronier",
       "CLUBE": "CFC",
       "PRECO": 10.74,
-      "EXP_SCORE": 7.285,
+      "EXP_SCORE": 7.281,
       "ATLETA_ID": 123648
     },
     {
@@ -110,7 +110,7 @@
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 19.02,
-      "EXP_SCORE": 5.1055,
+      "EXP_SCORE": 5.1036,
       "ATLETA_ID": 94583
     },
     {
@@ -121,7 +121,7 @@
       "NOME": "Andr?s G?mez",
       "CLUBE": "VAS",
       "PRECO": 11.7,
-      "EXP_SCORE": 4.9253,
+      "EXP_SCORE": 4.9188,
       "ATLETA_ID": 116706
     },
     {
@@ -129,11 +129,11 @@
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Abel Ferreira",
-      "CLUBE": "PAL",
-      "PRECO": 12.18,
-      "EXP_SCORE": 4.5808,
-      "ATLETA_ID": 110506
+      "NOME": "Gilmar Dal Pozzo",
+      "CLUBE": "CHA",
+      "PRECO": 6.29,
+      "EXP_SCORE": 2.3543,
+      "ATLETA_ID": 73481
     },
     {
       "RODADA": 7,
@@ -143,7 +143,7 @@
       "NOME": "F?bio",
       "CLUBE": "FLU",
       "PRECO": 9.37,
-      "EXP_SCORE": 3.2361,
+      "EXP_SCORE": 3.2292,
       "ATLETA_ID": 37656
     },
     {
@@ -154,7 +154,7 @@
       "NOME": "Walter Clar",
       "CLUBE": "CHA",
       "PRECO": 8.54,
-      "EXP_SCORE": 4.2359,
+      "EXP_SCORE": 4.2237,
       "ATLETA_ID": 105664
     },
     {
@@ -165,7 +165,7 @@
       "NOME": "Sabino",
       "CLUBE": "SAO",
       "PRECO": 8.7,
-      "EXP_SCORE": 3.3287,
+      "EXP_SCORE": 3.3182,
       "ATLETA_ID": 104075
     },
     {
@@ -173,11 +173,11 @@
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Patrick de Paula",
-      "CLUBE": "REM",
-      "PRECO": 7.64,
-      "EXP_SCORE": 3.5514,
-      "ATLETA_ID": 107172
+      "NOME": "Baralhas",
+      "CLUBE": "VIT",
+      "PRECO": 10.85,
+      "EXP_SCORE": 3.5472,
+      "ATLETA_ID": 99440
     },
     {
       "RODADA": 7,
@@ -187,7 +187,7 @@
       "NOME": "Julimar",
       "CLUBE": "CAP",
       "PRECO": 7.07,
-      "EXP_SCORE": 4.2832,
+      "EXP_SCORE": 4.281,
       "ATLETA_ID": 102796
     }
   ]
