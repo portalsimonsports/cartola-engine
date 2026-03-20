@@ -1,6 +1,6 @@
 {
   "rodada": 8,
-  "atualizado_em": "2026-03-20T11:47:38.298Z",
+  "atualizado_em": "2026-03-20T13:47:47.174Z",
   "dados": [
     {
       "RODADA": 8,
@@ -25,16 +25,6 @@
     {
       "RODADA": 8,
       "POS": "GOL",
-      "NOME": "L?o Vieira",
-      "CLUBE": "CHA",
-      "PRECO": 7.19,
-      "EXP_SCORE": 3.4193,
-      "FACTOR": 0.9647014113564214,
-      "ATLETA_ID": 71043
-    },
-    {
-      "RODADA": 8,
-      "POS": "GOL",
       "NOME": "Lucas Arcanjo",
       "CLUBE": "VIT",
       "PRECO": 8.8,
@@ -51,6 +41,16 @@
       "EXP_SCORE": 3.1597,
       "FACTOR": 1.1421771768073758,
       "ATLETA_ID": 37656
+    },
+    {
+      "RODADA": 8,
+      "POS": "GOL",
+      "NOME": "Ronaldo",
+      "CLUBE": "BAH",
+      "PRECO": 8.43,
+      "EXP_SCORE": 3.146,
+      "FACTOR": 0.9317562743389015,
+      "ATLETA_ID": 91101
     },
     {
       "RODADA": 8,
@@ -78,7 +78,7 @@
       "NOME": "Ren?",
       "CLUBE": "FLU",
       "PRECO": 10.43,
-      "EXP_SCORE": 4.8281,
+      "EXP_SCORE": 5.3646,
       "FACTOR": 1.1421771768073758,
       "ATLETA_ID": 78445
     },
@@ -95,12 +95,12 @@
     {
       "RODADA": 8,
       "POS": "LAT",
-      "NOME": "Walter Clar",
-      "CLUBE": "CHA",
-      "PRECO": 8.94,
-      "EXP_SCORE": 4.0071,
-      "FACTOR": 0.9647014113564214,
-      "ATLETA_ID": 105664
+      "NOME": "Matheus Bidu",
+      "CLUBE": "COR",
+      "PRECO": 11.32,
+      "EXP_SCORE": 4.0302,
+      "FACTOR": 1.0466139696298489,
+      "ATLETA_ID": 105531
     },
     {
       "RODADA": 8,
@@ -115,12 +115,22 @@
     {
       "RODADA": 8,
       "POS": "ZAG",
-      "NOME": "L?o Ortiz",
-      "CLUBE": "FLA",
-      "PRECO": 11.72,
-      "EXP_SCORE": 2.8503,
-      "FACTOR": 0.9822360715513725,
-      "ATLETA_ID": 97867
+      "NOME": "Gustavo G?mez",
+      "CLUBE": "PAL",
+      "PRECO": 11.02,
+      "EXP_SCORE": 2.983,
+      "FACTOR": 0.9188352863094428,
+      "ATLETA_ID": 71684
+    },
+    {
+      "RODADA": 8,
+      "POS": "ZAG",
+      "NOME": "Sabino",
+      "CLUBE": "SAO",
+      "PRECO": 7.37,
+      "EXP_SCORE": 2.8222,
+      "FACTOR": 1.0001542592577786,
+      "ATLETA_ID": 104075
     },
     {
       "RODADA": 8,
@@ -129,28 +139,18 @@
       "CLUBE": "CFC",
       "PRECO": 6.29,
       "EXP_SCORE": 2.6838,
-      "FACTOR": 0.9266825879398994,
+      "FACTOR": 0.9266825879398993,
       "ATLETA_ID": 97878
     },
     {
       "RODADA": 8,
       "POS": "ZAG",
-      "NOME": "Gustavo G?mez",
-      "CLUBE": "PAL",
-      "PRECO": 11.02,
-      "EXP_SCORE": 2.5939,
-      "FACTOR": 0.9188352863094429,
-      "ATLETA_ID": 71684
-    },
-    {
-      "RODADA": 8,
-      "POS": "ZAG",
-      "NOME": "Gustavo Marques",
-      "CLUBE": "RBB",
-      "PRECO": 6.87,
-      "EXP_SCORE": 2.5627,
-      "FACTOR": 1.1417741605827745,
-      "ATLETA_ID": 110750
+      "NOME": "L?o Ortiz",
+      "CLUBE": "FLA",
+      "PRECO": 11.72,
+      "EXP_SCORE": 2.5652,
+      "FACTOR": 0.9822360715513725,
+      "ATLETA_ID": 97867
     },
     {
       "RODADA": 8,
@@ -205,6 +205,16 @@
     {
       "RODADA": 8,
       "POS": "ATA",
+      "NOME": "Lucas Ronier",
+      "CLUBE": "CFC",
+      "PRECO": 10.34,
+      "EXP_SCORE": 5.6686,
+      "FACTOR": 0.9578466561316676,
+      "ATLETA_ID": 123648
+    },
+    {
+      "RODADA": 8,
+      "POS": "ATA",
       "NOME": "Andr?s G?mez",
       "CLUBE": "VAS",
       "PRECO": 12.8,
@@ -215,12 +225,12 @@
     {
       "RODADA": 8,
       "POS": "ATA",
-      "NOME": "Lucas Ronier",
-      "CLUBE": "CFC",
-      "PRECO": 10.34,
-      "EXP_SCORE": 4.9292,
-      "FACTOR": 0.9578466561316676,
-      "ATLETA_ID": 123648
+      "NOME": "Calleri",
+      "CLUBE": "SAO",
+      "PRECO": 12.93,
+      "EXP_SCORE": 4.3634,
+      "FACTOR": 1.0415071886460538,
+      "ATLETA_ID": 89840
     },
     {
       "RODADA": 8,
@@ -228,19 +238,9 @@
       "NOME": "Canobbio",
       "CLUBE": "FLU",
       "PRECO": 12.17,
-      "EXP_SCORE": 4.6101,
+      "EXP_SCORE": 4.1491,
       "FACTOR": 1.0270629655028476,
       "ATLETA_ID": 102928
-    },
-    {
-      "RODADA": 8,
-      "POS": "ATA",
-      "NOME": "Calleri",
-      "CLUBE": "SAO",
-      "PRECO": 12.93,
-      "EXP_SCORE": 4.3634,
-      "FACTOR": 1.0415071886460538,
-      "ATLETA_ID": 89840
     },
     {
       "RODADA": 8,
