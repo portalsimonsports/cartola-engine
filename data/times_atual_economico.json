@@ -1,7 +1,7 @@
 {
   "rodada": 8,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-03-20T21:47:34.590Z",
+  "atualizado_em": "2026-03-20T22:47:34.356Z",
   "dados": [
     {
       "RODADA": 8,
@@ -11,7 +11,7 @@
       "NOME": "L?o Vieira",
       "CLUBE": "CHA",
       "PRECO": 7.19,
-      "EXP_SCORE": 3.1135,
+      "EXP_SCORE": 3.4575,
       "ATLETA_ID": 71043
     },
     {
@@ -22,7 +22,7 @@
       "NOME": "Luciano Juba",
       "CLUBE": "BAH",
       "PRECO": 11.92,
-      "EXP_SCORE": 4.6579,
+      "EXP_SCORE": 4.654,
       "ATLETA_ID": 107093
     },
     {
@@ -33,7 +33,7 @@
       "NOME": "Cuiabano",
       "CLUBE": "VAS",
       "PRECO": 13.73,
-      "EXP_SCORE": 5.6103,
+      "EXP_SCORE": 5.606,
       "ATLETA_ID": 116065
     },
     {
@@ -44,7 +44,7 @@
       "NOME": "Iv?n Rom?n",
       "CLUBE": "CAM",
       "PRECO": 10.4,
-      "EXP_SCORE": 2.2216,
+      "EXP_SCORE": 2.4656,
       "ATLETA_ID": 124661
     },
     {
@@ -55,8 +55,19 @@
       "NOME": "Jacy",
       "CLUBE": "CFC",
       "PRECO": 6.29,
-      "EXP_SCORE": 2.632,
+      "EXP_SCORE": 2.6296,
       "ATLETA_ID": 97878
+    },
+    {
+      "RODADA": 8,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ZAG",
+      "NOME": "Noriega",
+      "CLUBE": "GRE",
+      "PRECO": 8.42,
+      "EXP_SCORE": 3.1512,
+      "ATLETA_ID": 130048
     },
     {
       "RODADA": 8,
@@ -66,7 +77,7 @@
       "NOME": "Erick",
       "CLUBE": "BAH",
       "PRECO": 6.98,
-      "EXP_SCORE": 2.3302,
+      "EXP_SCORE": 2.6807,
       "ATLETA_ID": 98022
     },
     {
@@ -77,7 +88,7 @@
       "NOME": "Lucho Acosta",
       "CLUBE": "FLU",
       "PRECO": 13.96,
-      "EXP_SCORE": 6.2582,
+      "EXP_SCORE": 6.2651,
       "ATLETA_ID": 89837
     },
     {
@@ -88,30 +99,8 @@
       "NOME": "Andreas Pereira",
       "CLUBE": "PAL",
       "PRECO": 16.17,
-      "EXP_SCORE": 4.7971,
+      "EXP_SCORE": 4.8025,
       "ATLETA_ID": 89274
-    },
-    {
-      "RODADA": 8,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Nuno Moreira",
-      "CLUBE": "VAS",
-      "PRECO": 6.63,
-      "EXP_SCORE": 1.833,
-      "ATLETA_ID": 142279
-    },
-    {
-      "RODADA": 8,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Z? Ricardo",
-      "CLUBE": "REM",
-      "PRECO": 4.52,
-      "EXP_SCORE": 2.1718,
-      "ATLETA_ID": 102911
     },
     {
       "RODADA": 8,
@@ -121,8 +110,19 @@
       "NOME": "Marcinho",
       "CLUBE": "CHA",
       "PRECO": 3.26,
-      "EXP_SCORE": 1.1396,
+      "EXP_SCORE": 1.0259,
       "ATLETA_ID": 95332
+    },
+    {
+      "RODADA": 8,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Bolasie",
+      "CLUBE": "CHA",
+      "PRECO": 3.82,
+      "EXP_SCORE": 0.4514,
+      "ATLETA_ID": 86292
     },
     {
       "RODADA": 8,
@@ -132,7 +132,7 @@
       "NOME": "Paulo Pezzolano",
       "CLUBE": "INT",
       "PRECO": 6.57,
-      "EXP_SCORE": 2.6491,
+      "EXP_SCORE": 2.6513,
       "ATLETA_ID": 115479
     },
     {
@@ -143,7 +143,7 @@
       "NOME": "Carlos Miguel",
       "CLUBE": "PAL",
       "PRECO": 7.02,
-      "EXP_SCORE": 2.1878,
+      "EXP_SCORE": 2.1859,
       "ATLETA_ID": 104084
     },
     {
@@ -151,11 +151,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "LAT",
-      "NOME": "Matheus Bidu",
-      "CLUBE": "COR",
-      "PRECO": 11.32,
-      "EXP_SCORE": 4.2684,
-      "ATLETA_ID": 105531
+      "NOME": "Walter Clar",
+      "CLUBE": "CHA",
+      "PRECO": 8.94,
+      "EXP_SCORE": 4.0519,
+      "ATLETA_ID": 105664
     },
     {
       "RODADA": 8,
@@ -165,7 +165,7 @@
       "NOME": "Marllon",
       "CLUBE": "REM",
       "PRECO": 5.74,
-      "EXP_SCORE": 1.9449,
+      "EXP_SCORE": 1.9882,
       "ATLETA_ID": 70666
     },
     {
@@ -173,22 +173,22 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Paulinho",
-      "CLUBE": "INT",
-      "PRECO": 3.8,
-      "EXP_SCORE": 1.4177,
-      "ATLETA_ID": 126182
+      "NOME": "Victor Hugo",
+      "CLUBE": "CAM",
+      "PRECO": 6.89,
+      "EXP_SCORE": 2.8428,
+      "ATLETA_ID": 116034
     },
     {
       "RODADA": 8,
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Bolasie",
-      "CLUBE": "CHA",
-      "PRECO": 3.82,
-      "EXP_SCORE": 0.4513,
-      "ATLETA_ID": 86292
+      "NOME": "David",
+      "CLUBE": "VAS",
+      "PRECO": 3.9,
+      "EXP_SCORE": 0.8175,
+      "ATLETA_ID": 90309
     }
   ]
 }
