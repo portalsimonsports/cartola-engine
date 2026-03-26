@@ -1,7 +1,7 @@
 {
   "rodada": 9,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-03-26T00:47:35.089Z",
+  "atualizado_em": "2026-03-26T15:47:35.602Z",
   "dados": [
     {
       "RODADA": 9,
@@ -19,17 +19,6 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "LAT",
-      "NOME": "Benav?dez",
-      "CLUBE": "CAP",
-      "PRECO": 8.22,
-      "EXP_SCORE": 3.5963,
-      "ATLETA_ID": 113113
-    },
-    {
-      "RODADA": 9,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "LAT",
       "NOME": "Lucas Ramon",
       "CLUBE": "SAO",
       "PRECO": 13.72,
@@ -40,11 +29,22 @@
       "RODADA": 9,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Matheus Bidu",
+      "CLUBE": "COR",
+      "PRECO": 13.29,
+      "EXP_SCORE": 4.3094,
+      "ATLETA_ID": 105531
+    },
+    {
+      "RODADA": 9,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
       "POS": "ZAG",
       "NOME": "Mercado",
       "CLUBE": "INT",
       "PRECO": 7.19,
-      "EXP_SCORE": 2.5473,
+      "EXP_SCORE": 1.9936,
       "ATLETA_ID": 72951
     },
     {
@@ -55,7 +55,7 @@
       "NOME": "Camutanga",
       "CLUBE": "VIT",
       "PRECO": 8.26,
-      "EXP_SCORE": 2.2186,
+      "EXP_SCORE": 1.9967,
       "ATLETA_ID": 96793
     },
     {
@@ -66,7 +66,7 @@
       "NOME": "Dudu",
       "CLUBE": "CAP",
       "PRECO": 4.02,
-      "EXP_SCORE": 1.9034,
+      "EXP_SCORE": 1.6552,
       "ATLETA_ID": 125746
     },
     {
@@ -77,7 +77,7 @@
       "NOME": "Vitor Bueno",
       "CLUBE": "REM",
       "PRECO": 10.04,
-      "EXP_SCORE": 3.8592,
+      "EXP_SCORE": 3.3558,
       "ATLETA_ID": 87552
     },
     {
@@ -88,7 +88,7 @@
       "NOME": "Alan Patrick",
       "CLUBE": "INT",
       "PRECO": 9.27,
-      "EXP_SCORE": 3.9158,
+      "EXP_SCORE": 3.405,
       "ATLETA_ID": 68685
     },
     {
@@ -107,22 +107,22 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Thiago Mendes",
-      "CLUBE": "VAS",
-      "PRECO": 9.11,
-      "EXP_SCORE": 4.0206,
-      "ATLETA_ID": 71123
+      "NOME": "Baralhas",
+      "CLUBE": "VIT",
+      "PRECO": 10.23,
+      "EXP_SCORE": 3.86,
+      "ATLETA_ID": 99440
     },
     {
       "RODADA": 9,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Gabriel Taliari",
-      "CLUBE": "REM",
-      "PRECO": 10.91,
-      "EXP_SCORE": 3.0808,
-      "ATLETA_ID": 95131
+      "NOME": "?talo",
+      "CLUBE": "CHA",
+      "PRECO": 3.24,
+      "EXP_SCORE": 1.3753,
+      "ATLETA_ID": 123625
     },
     {
       "RODADA": 9,
@@ -151,11 +151,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "LAT",
-      "NOME": "Walter Clar",
-      "CLUBE": "CHA",
-      "PRECO": 7.96,
-      "EXP_SCORE": 4.0355,
-      "ATLETA_ID": 105664
+      "NOME": "Ren?",
+      "CLUBE": "FLU",
+      "PRECO": 10.43,
+      "EXP_SCORE": 4.9145,
+      "ATLETA_ID": 78445
     },
     {
       "RODADA": 9,
@@ -173,22 +173,22 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Neto Moura",
-      "CLUBE": "MIR",
-      "PRECO": 3.82,
-      "EXP_SCORE": 0.9091,
-      "ATLETA_ID": 87742
+      "NOME": "Jo?o Vitor",
+      "CLUBE": "CHA",
+      "PRECO": 3.11,
+      "EXP_SCORE": 0.8869,
+      "ATLETA_ID": 122138
     },
     {
       "RODADA": 9,
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Lucas Ronier",
-      "CLUBE": "CFC",
-      "PRECO": 10.58,
-      "EXP_SCORE": 5.5561,
-      "ATLETA_ID": 123648
+      "NOME": "Bolasie",
+      "CLUBE": "CHA",
+      "PRECO": 4.08,
+      "EXP_SCORE": 0.6402,
+      "ATLETA_ID": 86292
     }
   ]
 }
