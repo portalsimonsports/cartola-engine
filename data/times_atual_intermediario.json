@@ -1,7 +1,7 @@
 {
   "rodada": 9,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-03-26T23:47:38.424Z",
+  "atualizado_em": "2026-03-27T20:47:37.173Z",
   "dados": [
     {
       "RODADA": 9,
@@ -11,7 +11,7 @@
       "NOME": "Everson",
       "CLUBE": "CAM",
       "PRECO": 10.29,
-      "EXP_SCORE": 4.8118,
+      "EXP_SCORE": 4.8052,
       "ATLETA_ID": 72294
     },
     {
@@ -22,7 +22,7 @@
       "NOME": "Cuiabano",
       "CLUBE": "VAS",
       "PRECO": 14.32,
-      "EXP_SCORE": 5.5134,
+      "EXP_SCORE": 5.4963,
       "ATLETA_ID": 116065
     },
     {
@@ -33,7 +33,7 @@
       "NOME": "Juninho Capixaba",
       "CLUBE": "RBB",
       "PRECO": 13.44,
-      "EXP_SCORE": 5.4261,
+      "EXP_SCORE": 5.4063,
       "ATLETA_ID": 94968
     },
     {
@@ -44,7 +44,7 @@
       "NOME": "Jacy",
       "CLUBE": "CFC",
       "PRECO": 4.79,
-      "EXP_SCORE": 3.2467,
+      "EXP_SCORE": 3.2408,
       "ATLETA_ID": 97878
     },
     {
@@ -55,8 +55,19 @@
       "NOME": "Alexander Barboza",
       "CLUBE": "BOT",
       "PRECO": 11.79,
-      "EXP_SCORE": 2.8253,
+      "EXP_SCORE": 2.8194,
       "ATLETA_ID": 99274
+    },
+    {
+      "RODADA": 9,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "ZAG",
+      "NOME": "Murilo",
+      "CLUBE": "PAL",
+      "PRECO": 8.07,
+      "EXP_SCORE": 2.6906,
+      "ATLETA_ID": 97653
     },
     {
       "RODADA": 9,
@@ -66,8 +77,19 @@
       "NOME": "Lucho Acosta",
       "CLUBE": "FLU",
       "PRECO": 12.77,
-      "EXP_SCORE": 6.3629,
+      "EXP_SCORE": 6.3522,
       "ATLETA_ID": 89837
+    },
+    {
+      "RODADA": 9,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Arias",
+      "CLUBE": "PAL",
+      "PRECO": 16.7,
+      "EXP_SCORE": 5.9721,
+      "ATLETA_ID": 99815
     },
     {
       "RODADA": 9,
@@ -77,19 +99,8 @@
       "NOME": "Andreas Pereira",
       "CLUBE": "PAL",
       "PRECO": 14.52,
-      "EXP_SCORE": 5.2789,
+      "EXP_SCORE": 5.2735,
       "ATLETA_ID": 89274
-    },
-    {
-      "RODADA": 9,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Neymar",
-      "CLUBE": "SAN",
-      "PRECO": 22.63,
-      "EXP_SCORE": 4.7907,
-      "ATLETA_ID": 63007
     },
     {
       "RODADA": 9,
@@ -99,7 +110,7 @@
       "NOME": "Lucas Ronier",
       "CLUBE": "CFC",
       "PRECO": 10.58,
-      "EXP_SCORE": 5.5397,
+      "EXP_SCORE": 5.5316,
       "ATLETA_ID": 123648
     },
     {
@@ -110,19 +121,8 @@
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 12.49,
-      "EXP_SCORE": 4.2591,
+      "EXP_SCORE": 4.2527,
       "ATLETA_ID": 143193
-    },
-    {
-      "RODADA": 9,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "?talo",
-      "CLUBE": "CHA",
-      "PRECO": 3.24,
-      "EXP_SCORE": 1.3702,
-      "ATLETA_ID": 123625
     },
     {
       "RODADA": 9,
@@ -132,7 +132,7 @@
       "NOME": "Gilmar Dal Pozzo",
       "CLUBE": "CHA",
       "PRECO": 6.26,
-      "EXP_SCORE": 2.6695,
+      "EXP_SCORE": 2.6646,
       "ATLETA_ID": 73481
     },
     {
@@ -143,7 +143,7 @@
       "NOME": "Lucas Arcanjo",
       "CLUBE": "VIT",
       "PRECO": 10.11,
-      "EXP_SCORE": 3.9384,
+      "EXP_SCORE": 3.9304,
       "ATLETA_ID": 104118
     },
     {
@@ -154,7 +154,7 @@
       "NOME": "Ren?",
       "CLUBE": "FLU",
       "PRECO": 10.43,
-      "EXP_SCORE": 4.9081,
+      "EXP_SCORE": 4.8968,
       "ATLETA_ID": 78445
     },
     {
@@ -165,7 +165,7 @@
       "NOME": "Eduardo Doma",
       "CLUBE": "CHA",
       "PRECO": 4.17,
-      "EXP_SCORE": 1.7266,
+      "EXP_SCORE": 1.7218,
       "ATLETA_ID": 101393
     },
     {
@@ -176,7 +176,7 @@
       "NOME": "Jean Lucas",
       "CLUBE": "BAH",
       "PRECO": 10.04,
-      "EXP_SCORE": 4.1399,
+      "EXP_SCORE": 4.1323,
       "ATLETA_ID": 98517
     },
     {
@@ -184,11 +184,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Bolasie",
-      "CLUBE": "CHA",
-      "PRECO": 4.08,
-      "EXP_SCORE": 0.6378,
-      "ATLETA_ID": 86292
+      "NOME": "Lucas Barbosa",
+      "CLUBE": "RBB",
+      "PRECO": 9.99,
+      "EXP_SCORE": 3.7083,
+      "ATLETA_ID": 112886
     }
   ]
 }
