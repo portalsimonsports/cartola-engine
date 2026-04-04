@@ -1,7 +1,7 @@
 {
   "rodada": 10,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-04-04T15:47:36.616Z",
+  "atualizado_em": "2026-04-04T16:47:37.294Z",
   "dados": [
     {
       "RODADA": 10,
@@ -11,7 +11,7 @@
       "NOME": "Everson",
       "CLUBE": "CAM",
       "PRECO": 11.34,
-      "EXP_SCORE": 5.853,
+      "EXP_SCORE": 5.8562,
       "ATLETA_ID": 72294
     },
     {
@@ -22,7 +22,7 @@
       "NOME": "Luciano Juba",
       "CLUBE": "BAH",
       "PRECO": 12.62,
-      "EXP_SCORE": 6.385,
+      "EXP_SCORE": 6.391,
       "ATLETA_ID": 107093
     },
     {
@@ -33,7 +33,7 @@
       "NOME": "Juninho Capixaba",
       "CLUBE": "RBB",
       "PRECO": 15.02,
-      "EXP_SCORE": 6.3278,
+      "EXP_SCORE": 6.3297,
       "ATLETA_ID": 94968
     },
     {
@@ -44,7 +44,7 @@
       "NOME": "Sabino",
       "CLUBE": "SAO",
       "PRECO": 8.05,
-      "EXP_SCORE": 3.2641,
+      "EXP_SCORE": 3.2656,
       "ATLETA_ID": 104075
     },
     {
@@ -55,7 +55,7 @@
       "NOME": "Jacy",
       "CLUBE": "CFC",
       "PRECO": 5.11,
-      "EXP_SCORE": 2.965,
+      "EXP_SCORE": 2.9663,
       "ATLETA_ID": 97878
     },
     {
@@ -66,19 +66,8 @@
       "NOME": "Danilo",
       "CLUBE": "BOT",
       "PRECO": 15.85,
-      "EXP_SCORE": 5.6252,
+      "EXP_SCORE": 5.6323,
       "ATLETA_ID": 107231
-    },
-    {
-      "RODADA": 10,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Andreas Pereira",
-      "CLUBE": "PAL",
-      "PRECO": 15.25,
-      "EXP_SCORE": 5.1616,
-      "ATLETA_ID": 89274
     },
     {
       "RODADA": 10,
@@ -88,7 +77,7 @@
       "NOME": "Jean Lucas",
       "CLUBE": "BAH",
       "PRECO": 10.04,
-      "EXP_SCORE": 5.1318,
+      "EXP_SCORE": 5.1436,
       "ATLETA_ID": 98517
     },
     {
@@ -96,11 +85,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Arias",
+      "NOME": "Andreas Pereira",
       "CLUBE": "PAL",
-      "PRECO": 15.59,
-      "EXP_SCORE": 4.9003,
-      "ATLETA_ID": 99815
+      "PRECO": 15.25,
+      "EXP_SCORE": 4.9244,
+      "ATLETA_ID": 89274
     },
     {
       "RODADA": 10,
@@ -110,7 +99,7 @@
       "NOME": "Lucas Ronier",
       "CLUBE": "CFC",
       "PRECO": 11.83,
-      "EXP_SCORE": 6.609,
+      "EXP_SCORE": 6.6244,
       "ATLETA_ID": 123648
     },
     {
@@ -118,11 +107,22 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Cristian Olivera",
-      "CLUBE": "BAH",
-      "PRECO": 9.18,
-      "EXP_SCORE": 4.8258,
-      "ATLETA_ID": 113397
+      "NOME": "Carlos Vin?cius",
+      "CLUBE": "GRE",
+      "PRECO": 17.11,
+      "EXP_SCORE": 6.2265,
+      "ATLETA_ID": 105563
+    },
+    {
+      "RODADA": 10,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Pav?n",
+      "CLUBE": "GRE",
+      "PRECO": 6.35,
+      "EXP_SCORE": 3.4712,
+      "ATLETA_ID": 91908
     },
     {
       "RODADA": 10,
@@ -140,11 +140,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "F?bio",
-      "CLUBE": "FLU",
-      "PRECO": 10.06,
-      "EXP_SCORE": 3.841,
-      "ATLETA_ID": 37656
+      "NOME": "L?o Vieira",
+      "CLUBE": "BAH",
+      "PRECO": 7.6,
+      "EXP_SCORE": 4.8448,
+      "ATLETA_ID": 71043
     },
     {
       "RODADA": 10,
@@ -154,7 +154,7 @@
       "NOME": "Lucas Ramon",
       "CLUBE": "SAO",
       "PRECO": 12.22,
-      "EXP_SCORE": 5.333,
+      "EXP_SCORE": 5.3355,
       "ATLETA_ID": 82775
     },
     {
@@ -165,7 +165,7 @@
       "NOME": "Maicon",
       "CLUBE": "CFC",
       "PRECO": 4.36,
-      "EXP_SCORE": 1.6122,
+      "EXP_SCORE": 1.6129,
       "ATLETA_ID": 71227
     },
     {
@@ -176,7 +176,7 @@
       "NOME": "Thiago Mendes",
       "CLUBE": "VAS",
       "PRECO": 7.69,
-      "EXP_SCORE": 4.2926,
+      "EXP_SCORE": 4.3044,
       "ATLETA_ID": 71123
     },
     {
@@ -184,11 +184,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Everaldo",
-      "CLUBE": "BAH",
-      "PRECO": 8.88,
-      "EXP_SCORE": 4.6729,
-      "ATLETA_ID": 78117
+      "NOME": "Henry Mosquera",
+      "CLUBE": "RBB",
+      "PRECO": 6.2,
+      "EXP_SCORE": 3.1331,
+      "ATLETA_ID": 124239
     }
   ]
 }
