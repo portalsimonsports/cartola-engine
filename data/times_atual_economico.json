@@ -1,7 +1,7 @@
 {
   "rodada": 11,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-04-08T16:47:37.353Z",
+  "atualizado_em": "2026-04-08T17:47:36.917Z",
   "dados": [
     {
       "RODADA": 11,
@@ -22,7 +22,7 @@
       "NOME": "Bernabei",
       "CLUBE": "INT",
       "PRECO": 10.45,
-      "EXP_SCORE": 4.2532,
+      "EXP_SCORE": 4.8912,
       "ATLETA_ID": 110426
     },
     {
@@ -44,7 +44,7 @@
       "NOME": "Mercado",
       "CLUBE": "INT",
       "PRECO": 7.52,
-      "EXP_SCORE": 2.9171,
+      "EXP_SCORE": 3.3547,
       "ATLETA_ID": 72951
     },
     {
@@ -99,8 +99,19 @@
       "NOME": "Julimar",
       "CLUBE": "CAP",
       "PRECO": 8.09,
-      "EXP_SCORE": 3.4447,
+      "EXP_SCORE": 3.8274,
       "ATLETA_ID": 102796
+    },
+    {
+      "RODADA": 11,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Amuzu",
+      "CLUBE": "GRE",
+      "PRECO": 9.04,
+      "EXP_SCORE": 4.2081,
+      "ATLETA_ID": 142004
     },
     {
       "RODADA": 11,
@@ -117,22 +128,11 @@
       "RODADA": 11,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Lucas Barbosa",
-      "CLUBE": "RBB",
-      "PRECO": 10.81,
-      "EXP_SCORE": 5.3923,
-      "ATLETA_ID": 112886
-    },
-    {
-      "RODADA": 11,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
       "POS": "TEC",
       "NOME": "Paulo Pezzolano",
       "CLUBE": "INT",
       "PRECO": 7.67,
-      "EXP_SCORE": 3.8766,
+      "EXP_SCORE": 4.4581,
       "ATLETA_ID": 115479
     },
     {
@@ -165,7 +165,7 @@
       "NOME": "Eduardo Doma",
       "CLUBE": "CHA",
       "PRECO": 5.19,
-      "EXP_SCORE": 2.0231,
+      "EXP_SCORE": 2.3265,
       "ATLETA_ID": 101393
     },
     {
