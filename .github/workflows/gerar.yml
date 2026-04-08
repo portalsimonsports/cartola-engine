@@ -38,3 +38,12 @@ jobs:
           git add output/
           git commit -m "Atualização automática imagens" || echo "Nada para commit"
           git push
+
+      - name: 🚀 Enviar Imagem para o Telegram
+        env:
+          WEBHOOK_URL: "https://script.google.com/macros/s/AKfycby0DYNOArrcP626LVcoFTvZHWJ-FvABqwG4a_A_pkNwP70ll_PsgqzV5NkMOypc09qs/exec"
+          IMAGE_URL: "https://raw.githubusercontent.com/portalsimonsports/cartola-engine/main/output/NOME_DA_SUA_IMAGEM_AQUI.png"
+        run: |
+          curl -X POST $WEBHOOK_URL \
+          -H "Content-Type: application/json" \
+          -d "{\"imagem_url\": \"$IMAGE_URL\", \"tipo\": \"Rodada Atual\"}"
