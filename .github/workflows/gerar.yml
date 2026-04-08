@@ -39,11 +39,33 @@ jobs:
           git commit -m "Atualização automática imagens" || echo "Nada para commit"
           git push
 
-      - name: 🚀 Enviar Imagem para o Telegram
+      - name: 🚀 Enviar Imagens para o Telegram
         env:
           WEBHOOK_URL: "https://script.google.com/macros/s/AKfycby0DYNOArrcP626LVcoFTvZHWJ-FvABqwG4a_A_pkNwP70ll_PsgqzV5NkMOypc09qs/exec"
-          IMAGE_URL: "https://raw.githubusercontent.com/portalsimonsports/cartola-engine/main/output/NOME_DA_SUA_IMAGEM_AQUI.png"
+          BASE_URL: "https://raw.githubusercontent.com/portalsimonsports/cartola-engine/main/output"
         run: |
+          # 1. Envia o Top 5
           curl -X POST $WEBHOOK_URL \
           -H "Content-Type: application/json" \
-          -d "{\"imagem_url\": \"$IMAGE_URL\", \"tipo\": \"Rodada Atual\"}"
+          -d "{\"imagem_url\": \"$BASE_URL/top5.png\", \"tipo\": \"Top 5\"}"
+          
+          sleep 2
+          
+          # 2. Envia o Time Pontuação
+          curl -X POST $WEBHOOK_URL \
+          -H "Content-Type: application/json" \
+          -d "{\"imagem_url\": \"$BASE_URL/times_atual_pontuacao.png\", \"tipo\": \"Time Pontuação\"}"
+          
+          sleep 2
+          
+          # 3. Envia o Time Intermediário
+          curl -X POST $WEBHOOK_URL \
+          -H "Content-Type: application/json" \
+          -d "{\"imagem_url\": \"$BASE_URL/times_atual_intermediario.png\", \"tipo\": \"Time Intermediário\"}"
+          
+          sleep 2
+          
+          # 4. Envia o Time Econômico
+          curl -X POST $WEBHOOK_URL \
+          -H "Content-Type: application/json" \
+          -d "{\"imagem_url\": \"$BASE_URL/times_atual_economico.png\", \"tipo\": \"Time Econômico\"}"
