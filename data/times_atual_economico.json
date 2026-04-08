@@ -1,7 +1,7 @@
 {
   "rodada": 11,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-04-08T01:47:37.457Z",
+  "atualizado_em": "2026-04-08T15:47:37.359Z",
   "dados": [
     {
       "RODADA": 11,
@@ -22,7 +22,7 @@
       "NOME": "Bernabei",
       "CLUBE": "INT",
       "PRECO": 10.45,
-      "EXP_SCORE": 4.8852,
+      "EXP_SCORE": 4.248,
       "ATLETA_ID": 110426
     },
     {
@@ -44,7 +44,7 @@
       "NOME": "Mercado",
       "CLUBE": "INT",
       "PRECO": 7.52,
-      "EXP_SCORE": 3.3506,
+      "EXP_SCORE": 2.9136,
       "ATLETA_ID": 72951
     },
     {
@@ -95,34 +95,34 @@
       "RODADA": 11,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Paulinho",
+      "CLUBE": "INT",
+      "PRECO": 4.99,
+      "EXP_SCORE": 2.6479,
+      "ATLETA_ID": 126182
+    },
+    {
+      "RODADA": 11,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Christian",
+      "CLUBE": "CRU",
+      "PRECO": 10.05,
+      "EXP_SCORE": 4.9452,
+      "ATLETA_ID": 104502
+    },
+    {
+      "RODADA": 11,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
       "POS": "ATA",
       "NOME": "Julimar",
       "CLUBE": "CAP",
       "PRECO": 8.09,
-      "EXP_SCORE": 3.831,
+      "EXP_SCORE": 3.4479,
       "ATLETA_ID": 102796
-    },
-    {
-      "RODADA": 11,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Amuzu",
-      "CLUBE": "GRE",
-      "PRECO": 9.04,
-      "EXP_SCORE": 4.2127,
-      "ATLETA_ID": 142004
-    },
-    {
-      "RODADA": 11,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Matheus Martins",
-      "CLUBE": "BOT",
-      "PRECO": 7.26,
-      "EXP_SCORE": 3.1737,
-      "ATLETA_ID": 111831
     },
     {
       "RODADA": 11,
@@ -132,7 +132,7 @@
       "NOME": "Paulo Pezzolano",
       "CLUBE": "INT",
       "PRECO": 7.67,
-      "EXP_SCORE": 4.4622,
+      "EXP_SCORE": 3.8801,
       "ATLETA_ID": 115479
     },
     {
@@ -165,7 +165,7 @@
       "NOME": "Eduardo Doma",
       "CLUBE": "CHA",
       "PRECO": 5.19,
-      "EXP_SCORE": 2.3236,
+      "EXP_SCORE": 2.0205,
       "ATLETA_ID": 101393
     },
     {
