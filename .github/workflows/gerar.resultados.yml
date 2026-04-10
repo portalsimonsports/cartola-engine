@@ -1,1 +1,3 @@
-
+on:
+  repository_dispatch:
+    types: [cartola_publish_test]
