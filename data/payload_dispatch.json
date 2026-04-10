@@ -1,272 +1,199 @@
 {
   "ambiente": "teste",
-  "gerado_em": "2026-04-10T23:01:52.090Z",
+  "gerado_em": "2026-04-10T23:02:15.087Z",
   "origem": "jobTelegramDispatcher",
   "payload": {
-    "atletas": [
+    "blocos_topo": [
+      "Alterações identificadas desde a última publicação."
+    ],
+    "forcar_envio": true,
+    "houve_alteracao": true,
+    "lista": [
       {
         "clube": "BAH",
         "nome": "Léo Vieira",
         "pos": "GOL",
-        "preco": 6.83,
-        "status": "TITULAR"
+        "preco": 6.83
+      },
+      {
+        "clube": "CAM",
+        "nome": "Everson",
+        "pos": "GOL",
+        "preco": 10.29
+      },
+      {
+        "clube": "FLU",
+        "nome": "Fábio",
+        "pos": "GOL",
+        "preco": 9.83
+      },
+      {
+        "clube": "GRE",
+        "nome": "Weverton",
+        "pos": "GOL",
+        "preco": 8.86
+      },
+      {
+        "clube": "INT",
+        "nome": "Rochet",
+        "pos": "GOL",
+        "preco": 7.3
       },
       {
         "clube": "RBB",
         "nome": "Juninho Capixaba",
         "pos": "LAT",
-        "preco": 14.44,
-        "status": "TITULAR"
+        "preco": 14.44
       },
       {
         "clube": "SAN",
         "nome": "Escobar",
         "pos": "LAT",
-        "preco": 10.75,
-        "status": "TITULAR"
-      },
-      {
-        "clube": "INT",
-        "nome": "Mercado",
-        "pos": "ZAG",
-        "preco": 7.52,
-        "status": "TITULAR"
-      },
-      {
-        "clube": "BOT",
-        "nome": "Alexander Barboza",
-        "pos": "ZAG",
-        "preco": 11.6,
-        "status": "TITULAR"
-      },
-      {
-        "clube": "BOT",
-        "nome": "Danilo",
-        "pos": "MEI",
-        "preco": 14.3,
-        "status": "TITULAR"
-      },
-      {
-        "clube": "FLU",
-        "nome": "Lucho Acosta",
-        "pos": "MEI",
-        "preco": 11.78,
-        "status": "TITULAR"
-      },
-      {
-        "clube": "CRU",
-        "nome": "Christian",
-        "pos": "MEI",
-        "preco": 10.05,
-        "status": "TITULAR"
-      },
-      {
-        "clube": "RBB",
-        "nome": "Lucas Barbosa",
-        "pos": "ATA",
-        "preco": 10.81,
-        "status": "TITULAR"
-      },
-      {
-        "clube": "FLU",
-        "nome": "John Kennedy",
-        "pos": "ATA",
-        "preco": 10.42,
-        "status": "TITULAR"
-      },
-      {
-        "clube": "CFC",
-        "nome": "Lucas Ronier",
-        "pos": "ATA",
-        "preco": 11.05,
-        "status": "TITULAR"
-      },
-      {
-        "clube": "RBB",
-        "nome": "Vagner Mancini",
-        "pos": "TEC",
-        "preco": 8.97,
-        "status": "TITULAR"
-      },
-      {
-        "clube": "REM",
-        "nome": "Marcelo Rangel",
-        "pos": "GOL",
-        "preco": 5.85,
-        "status": "RESERVA"
+        "preco": 10.75
       },
       {
         "clube": "BAH",
         "nome": "Luciano Juba",
         "pos": "LAT",
-        "preco": 10.13,
-        "status": "RESERVA"
+        "preco": 10.13
+      },
+      {
+        "clube": "VAS",
+        "nome": "Cuiabano",
+        "pos": "LAT",
+        "preco": 12.92
+      },
+      {
+        "clube": "CRU",
+        "nome": "Kaiki Bruno",
+        "pos": "LAT",
+        "preco": 10.88
+      },
+      {
+        "clube": "INT",
+        "nome": "Mercado",
+        "pos": "ZAG",
+        "preco": 7.52
+      },
+      {
+        "clube": "BOT",
+        "nome": "Alexander Barboza",
+        "pos": "ZAG",
+        "preco": 11.6
+      },
+      {
+        "clube": "RBB",
+        "nome": "Gustavo Marques",
+        "pos": "ZAG",
+        "preco": 8.16
       },
       {
         "clube": "CFC",
         "nome": "Jacy",
         "pos": "ZAG",
-        "preco": 5.56,
-        "status": "RESERVA"
+        "preco": 5.56
       },
       {
-        "clube": "BAH",
-        "nome": "Jean Lucas",
+        "clube": "CHA",
+        "nome": "Eduardo Doma",
+        "pos": "ZAG",
+        "preco": 5.19
+      },
+      {
+        "clube": "BOT",
+        "nome": "Danilo",
         "pos": "MEI",
-        "preco": 9.58,
-        "status": "RESERVA"
+        "preco": 14.3
+      },
+      {
+        "clube": "FLU",
+        "nome": "Lucho Acosta",
+        "pos": "MEI",
+        "preco": 11.78
+      },
+      {
+        "clube": "CRU",
+        "nome": "Christian",
+        "pos": "MEI",
+        "preco": 10.05
+      },
+      {
+        "clube": "PAL",
+        "nome": "Andreas Pereira",
+        "pos": "MEI",
+        "preco": 14.31
+      },
+      {
+        "clube": "VAS",
+        "nome": "Barros",
+        "pos": "MEI",
+        "preco": 10.37
+      },
+      {
+        "clube": "RBB",
+        "nome": "Lucas Barbosa",
+        "pos": "ATA",
+        "preco": 10.81
+      },
+      {
+        "clube": "FLU",
+        "nome": "John Kennedy",
+        "pos": "ATA",
+        "preco": 10.42
+      },
+      {
+        "clube": "CFC",
+        "nome": "Lucas Ronier",
+        "pos": "ATA",
+        "preco": 11.05
+      },
+      {
+        "clube": "FLU",
+        "nome": "Canobbio",
+        "pos": "ATA",
+        "preco": 10.99
+      },
+      {
+        "clube": "GRE",
+        "nome": "Carlos Vinícius",
+        "pos": "ATA",
+        "preco": 15.97
+      },
+      {
+        "clube": "RBB",
+        "nome": "Vagner Mancini",
+        "pos": "TEC",
+        "preco": 8.97
+      },
+      {
+        "clube": "PAL",
+        "nome": "Abel Ferreira",
+        "pos": "TEC",
+        "preco": 12.13
+      },
+      {
+        "clube": "FLU",
+        "nome": "Luis Zubeldía",
+        "pos": "TEC",
+        "preco": 10.11
       },
       {
         "clube": "BAH",
-        "nome": "Everaldo",
-        "pos": "ATA",
-        "preco": 7.06,
-        "status": "RESERVA"
+        "nome": "Rogério Ceni",
+        "pos": "TEC",
+        "preco": 10.92
+      },
+      {
+        "clube": "INT",
+        "nome": "Paulo Pezzolano",
+        "pos": "TEC",
+        "preco": 7.67
       }
     ],
-    "blocos_topo": [
-      "Time Pontuação",
-      "Alterações identificadas desde a última publicação."
-    ],
-    "forcar_envio": true,
-    "houve_alteracao": true,
-    "mensagem_oficial": "🌙 *Atualização das 20h — Times R11*\n\nTime Pontuação\n\nAlterações identificadas desde a última publicação.\n\n💰 Preço: C$ 128.52\n📐 Esquema: 4-3-3\n© Capitão: Danilo\n\n▪ GOL: Léo Vieira (C$ 6.83)\n\n▪ LAT: Escobar (C$ 10.75)\n▪ LAT: Juninho Capixaba (C$ 14.44)\n\n▪ ZAG: Alexander Barboza (C$ 11.60)\n▪ ZAG: Mercado (C$ 7.52)\n\n▪ MEI: Christian (C$ 10.05)\n▪ MEI: Danilo © (C$ 14.30)\n▪ MEI: Lucho Acosta (C$ 11.78)\n\n▪ ATA: John Kennedy (C$ 10.42)\n▪ ATA: Lucas Barbosa (C$ 10.81)\n▪ ATA: Lucas Ronier (C$ 11.05)\n\n▪ TEC: Vagner Mancini (C$ 8.97)\n\n🏦 *Reservas:*\n▪ GOL: Marcelo Rangel (C$ 5.85)\n▪ LAT: Luciano Juba (C$ 10.13)\n▪ ZAG: Jacy (C$ 5.56)\n▪ MEI: Jean Lucas (C$ 9.58)\n▪ ATA: Everaldo (C$ 7.06)\n\n\n📡 Portal SimonSports\n🔗 https://t.me/dicascartolaportalsimonsports",
-    "meta": {
-      "capitao": "Danilo (MEI)",
-      "custo_total": 128.52,
-      "esquema": "4-3-3",
-      "pontos_total": 0,
-      "variacao_total": 0
-    },
-    "modelo": "PONTUACAO",
-    "nome_modelo": "Pontuação",
+    "mensagem_oficial": "🌙 *Atualização das 20h — Top 5 R11*\n\nAlterações identificadas desde a última publicação.\n\n🔶 *GOL*\n1. Everson (CAM) - C$ 10.29\n2. Fábio (FLU) - C$ 9.83\n3. Léo Vieira (BAH) - C$ 6.83\n4. Rochet (INT) - C$ 7.30\n5. Weverton (GRE) - C$ 8.86\n\n🔶 *ZAG*\n1. Alexander Barboza (BOT) - C$ 11.60\n2. Eduardo Doma (CHA) - C$ 5.19\n3. Gustavo Marques (RBB) - C$ 8.16\n4. Jacy (CFC) - C$ 5.56\n5. Mercado (INT) - C$ 7.52\n\n🔶 *LAT*\n1. Cuiabano (VAS) - C$ 12.92\n2. Escobar (SAN) - C$ 10.75\n3. Juninho Capixaba (RBB) - C$ 14.44\n4. Kaiki Bruno (CRU) - C$ 10.88\n5. Luciano Juba (BAH) - C$ 10.13\n\n🔶 *MEI*\n1. Andreas Pereira (PAL) - C$ 14.31\n2. Barros (VAS) - C$ 10.37\n3. Christian (CRU) - C$ 10.05\n4. Danilo (BOT) - C$ 14.30\n5. Lucho Acosta (FLU) - C$ 11.78\n\n🔶 *ATA*\n1. Canobbio (FLU) - C$ 10.99\n2. Carlos Vinícius (GRE) - C$ 15.97\n3. John Kennedy (FLU) - C$ 10.42\n4. Lucas Barbosa (RBB) - C$ 10.81\n5. Lucas Ronier (CFC) - C$ 11.05\n\n🔶 *TEC*\n1. Abel Ferreira (PAL) - C$ 12.13\n2. Luis Zubeldía (FLU) - C$ 10.11\n3. Paulo Pezzolano (INT) - C$ 7.67\n4. Rogério Ceni (BAH) - C$ 10.92\n5. Vagner Mancini (RBB) - C$ 8.97\n\n\n📡 Portal SimonSports\n🔗 https://t.me/dicascartolaportalsimonsports",
     "primeiro_envio": false,
-    "snapshot": {
-      "atletas": [
-        {
-          "clube": "BAH",
-          "nome": "Léo Vieira",
-          "pos": "GOL",
-          "preco": 6.83,
-          "status": "TITULAR"
-        },
-        {
-          "clube": "RBB",
-          "nome": "Juninho Capixaba",
-          "pos": "LAT",
-          "preco": 14.44,
-          "status": "TITULAR"
-        },
-        {
-          "clube": "SAN",
-          "nome": "Escobar",
-          "pos": "LAT",
-          "preco": 10.75,
-          "status": "TITULAR"
-        },
-        {
-          "clube": "INT",
-          "nome": "Mercado",
-          "pos": "ZAG",
-          "preco": 7.52,
-          "status": "TITULAR"
-        },
-        {
-          "clube": "BOT",
-          "nome": "Alexander Barboza",
-          "pos": "ZAG",
-          "preco": 11.6,
-          "status": "TITULAR"
-        },
-        {
-          "clube": "BOT",
-          "nome": "Danilo",
-          "pos": "MEI",
-          "preco": 14.3,
-          "status": "TITULAR"
-        },
-        {
-          "clube": "FLU",
-          "nome": "Lucho Acosta",
-          "pos": "MEI",
-          "preco": 11.78,
-          "status": "TITULAR"
-        },
-        {
-          "clube": "CRU",
-          "nome": "Christian",
-          "pos": "MEI",
-          "preco": 10.05,
-          "status": "TITULAR"
-        },
-        {
-          "clube": "RBB",
-          "nome": "Lucas Barbosa",
-          "pos": "ATA",
-          "preco": 10.81,
-          "status": "TITULAR"
-        },
-        {
-          "clube": "FLU",
-          "nome": "John Kennedy",
-          "pos": "ATA",
-          "preco": 10.42,
-          "status": "TITULAR"
-        },
-        {
-          "clube": "CFC",
-          "nome": "Lucas Ronier",
-          "pos": "ATA",
-          "preco": 11.05,
-          "status": "TITULAR"
-        },
-        {
-          "clube": "RBB",
-          "nome": "Vagner Mancini",
-          "pos": "TEC",
-          "preco": 8.97,
-          "status": "TITULAR"
-        },
-        {
-          "clube": "REM",
-          "nome": "Marcelo Rangel",
-          "pos": "GOL",
-          "preco": 5.85,
-          "status": "RESERVA"
-        },
-        {
-          "clube": "BAH",
-          "nome": "Luciano Juba",
-          "pos": "LAT",
-          "preco": 10.13,
-          "status": "RESERVA"
-        },
-        {
-          "clube": "CFC",
-          "nome": "Jacy",
-          "pos": "ZAG",
-          "preco": 5.56,
-          "status": "RESERVA"
-        },
-        {
-          "clube": "BAH",
-          "nome": "Jean Lucas",
-          "pos": "MEI",
-          "preco": 9.58,
-          "status": "RESERVA"
-        },
-        {
-          "clube": "BAH",
-          "nome": "Everaldo",
-          "pos": "ATA",
-          "preco": 7.06,
-          "status": "RESERVA"
-        }
-      ],
-      "capitao": "Danilo"
-    },
-    "titulo": "🌙 *Atualização das 20h — Times R11*"
+    "titulo": "🌙 *Atualização das 20h — Top 5 R11*"
   },
   "rodada": 11,
-  "tipo_publicacao": "times"
+  "tipo_publicacao": "top5"
 }
