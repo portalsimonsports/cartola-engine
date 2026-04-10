@@ -1,6 +1,6 @@
 {
   "rodada": 11,
-  "atualizado_em": "2026-04-10T10:47:42.149Z",
+  "atualizado_em": "2026-04-10T11:47:43.822Z",
   "dados": [
     {
       "RODADA": 11,
@@ -11,16 +11,6 @@
       "EXP_SCORE": 4.182,
       "FACTOR": 0.9342397193125971,
       "ATLETA_ID": 72294
-    },
-    {
-      "RODADA": 11,
-      "POS": "GOL",
-      "NOME": "Lucas Arcanjo",
-      "CLUBE": "VIT",
-      "PRECO": 9.19,
-      "EXP_SCORE": 4.144,
-      "FACTOR": 1.0925222677394824,
-      "ATLETA_ID": 104118
     },
     {
       "RODADA": 11,
@@ -41,6 +31,16 @@
       "EXP_SCORE": 3.8115,
       "FACTOR": 1.0693310462507908,
       "ATLETA_ID": 37656
+    },
+    {
+      "RODADA": 11,
+      "POS": "GOL",
+      "NOME": "Lucas Arcanjo",
+      "CLUBE": "VIT",
+      "PRECO": 9.19,
+      "EXP_SCORE": 3.7296,
+      "FACTOR": 1.0925222677394824,
+      "ATLETA_ID": 104118
     },
     {
       "RODADA": 11,
@@ -85,12 +85,12 @@
     {
       "RODADA": 11,
       "POS": "LAT",
-      "NOME": "Lucas Ramon",
-      "CLUBE": "SAO",
-      "PRECO": 11.27,
-      "EXP_SCORE": 4.5964,
-      "FACTOR": 0.9513248394291667,
-      "ATLETA_ID": 82775
+      "NOME": "Bernabei",
+      "CLUBE": "INT",
+      "PRECO": 10.45,
+      "EXP_SCORE": 4.8912,
+      "FACTOR": 1.1247322975848868,
+      "ATLETA_ID": 110426
     },
     {
       "RODADA": 11,
@@ -105,22 +105,22 @@
     {
       "RODADA": 11,
       "POS": "ZAG",
+      "NOME": "Mercado",
+      "CLUBE": "INT",
+      "PRECO": 7.52,
+      "EXP_SCORE": 3.3547,
+      "FACTOR": 1.1247322975848868,
+      "ATLETA_ID": 72951
+    },
+    {
+      "RODADA": 11,
+      "POS": "ZAG",
       "NOME": "Alexander Barboza",
       "CLUBE": "BOT",
       "PRECO": 11.6,
       "EXP_SCORE": 3.1609,
       "FACTOR": 1.119321012570859,
       "ATLETA_ID": 99274
-    },
-    {
-      "RODADA": 11,
-      "POS": "ZAG",
-      "NOME": "Mercado",
-      "CLUBE": "INT",
-      "PRECO": 7.52,
-      "EXP_SCORE": 2.9171,
-      "FACTOR": 1.1247322975848868,
-      "ATLETA_ID": 72951
     },
     {
       "RODADA": 11,
@@ -195,22 +195,22 @@
     {
       "RODADA": 11,
       "POS": "MEI",
-      "NOME": "Jean Lucas",
-      "CLUBE": "BAH",
-      "PRECO": 9.58,
-      "EXP_SCORE": 4.0934,
-      "FACTOR": 1.016948146447431,
-      "ATLETA_ID": 98517
+      "NOME": "Allan",
+      "CLUBE": "PAL",
+      "PRECO": 13.27,
+      "EXP_SCORE": 4.3247,
+      "FACTOR": 0.9329496299959378,
+      "ATLETA_ID": 141451
     },
     {
       "RODADA": 11,
       "POS": "ATA",
-      "NOME": "Lucas Ronier",
-      "CLUBE": "CFC",
-      "PRECO": 11.05,
-      "EXP_SCORE": 5.687,
-      "FACTOR": 0.9420501404072693,
-      "ATLETA_ID": 123648
+      "NOME": "Lucas Barbosa",
+      "CLUBE": "RBB",
+      "PRECO": 10.81,
+      "EXP_SCORE": 5.3923,
+      "FACTOR": 0.9895660797230708,
+      "ATLETA_ID": 112886
     },
     {
       "RODADA": 11,
@@ -235,22 +235,22 @@
     {
       "RODADA": 11,
       "POS": "ATA",
-      "NOME": "Carlos Vin?cius",
-      "CLUBE": "GRE",
-      "PRECO": 15.97,
-      "EXP_SCORE": 5.0849,
-      "FACTOR": 0.9646000777096836,
-      "ATLETA_ID": 105563
+      "NOME": "Lucas Ronier",
+      "CLUBE": "CFC",
+      "PRECO": 11.05,
+      "EXP_SCORE": 5.1183,
+      "FACTOR": 0.9420501404072693,
+      "ATLETA_ID": 123648
     },
     {
       "RODADA": 11,
       "POS": "ATA",
-      "NOME": "Andr?s G?mez",
-      "CLUBE": "VAS",
-      "PRECO": 11.64,
-      "EXP_SCORE": 4.9943,
-      "FACTOR": 0.9706402394871159,
-      "ATLETA_ID": 116706
+      "NOME": "Carlos Vin?cius",
+      "CLUBE": "GRE",
+      "PRECO": 15.97,
+      "EXP_SCORE": 4.5764,
+      "FACTOR": 0.9646000777096836,
+      "ATLETA_ID": 105563
     },
     {
       "RODADA": 11,
@@ -295,12 +295,12 @@
     {
       "RODADA": 11,
       "POS": "TEC",
-      "NOME": "Leonardo Jardim",
-      "CLUBE": "FLA",
-      "PRECO": 13.48,
-      "EXP_SCORE": 4.2104,
-      "FACTOR": 0.9523439819148372,
-      "ATLETA_ID": 88963
+      "NOME": "Paulo Pezzolano",
+      "CLUBE": "INT",
+      "PRECO": 7.67,
+      "EXP_SCORE": 4.4581,
+      "FACTOR": 1.0899033750728528,
+      "ATLETA_ID": 115479
     }
   ]
 }
