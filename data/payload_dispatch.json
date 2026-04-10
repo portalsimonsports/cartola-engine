@@ -1,0 +1,272 @@
+{
+  "ambiente": "teste",
+  "gerado_em": "2026-04-10T23:00:59.634Z",
+  "origem": "jobTelegramDispatcher",
+  "payload": {
+    "atletas": [
+      {
+        "clube": "GRE",
+        "nome": "Weverton",
+        "pos": "GOL",
+        "preco": 8.86,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "REM",
+        "nome": "Marcelinho",
+        "pos": "LAT",
+        "preco": 5.24,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "PAL",
+        "nome": "Arthur",
+        "pos": "LAT",
+        "preco": 3.11,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "INT",
+        "nome": "Mercado",
+        "pos": "ZAG",
+        "preco": 7.52,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "CFC",
+        "nome": "Jacy",
+        "pos": "ZAG",
+        "preco": 5.56,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "CAP",
+        "nome": "Dudu",
+        "pos": "MEI",
+        "preco": 2.47,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "CAM",
+        "nome": "Victor Hugo",
+        "pos": "MEI",
+        "preco": 8.62,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "VIT",
+        "nome": "Matheuzinho",
+        "pos": "MEI",
+        "preco": 6.43,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "SAO",
+        "nome": "Ferreira",
+        "pos": "ATA",
+        "preco": 9.87,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "GRE",
+        "nome": "Amuzu",
+        "pos": "ATA",
+        "preco": 9.04,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "RBB",
+        "nome": "Lucas Barbosa",
+        "pos": "ATA",
+        "preco": 10.81,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "INT",
+        "nome": "Paulo Pezzolano",
+        "pos": "TEC",
+        "preco": 7.67,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "BAH",
+        "nome": "Léo Vieira",
+        "pos": "GOL",
+        "preco": 6.83,
+        "status": "RESERVA"
+      },
+      {
+        "clube": "GRE",
+        "nome": "Pedro Gabriel",
+        "pos": "LAT",
+        "preco": 3.75,
+        "status": "RESERVA"
+      },
+      {
+        "clube": "CHA",
+        "nome": "Eduardo Doma",
+        "pos": "ZAG",
+        "preco": 5.19,
+        "status": "RESERVA"
+      },
+      {
+        "clube": "SAN",
+        "nome": "Gustavo Henrique",
+        "pos": "MEI",
+        "preco": 2.54,
+        "status": "RESERVA"
+      },
+      {
+        "clube": "BAH",
+        "nome": "Everaldo",
+        "pos": "ATA",
+        "preco": 7.06,
+        "status": "RESERVA"
+      }
+    ],
+    "blocos_topo": [
+      "Time Econômico",
+      "Alterações identificadas desde a última publicação."
+    ],
+    "forcar_envio": true,
+    "houve_alteracao": true,
+    "mensagem_oficial": "🌙 *Atualização das 20h — Times R11*\n\nTime Econômico\n\nAlterações identificadas desde a última publicação.\n\n💰 Preço: C$ 85.20\n📐 Esquema: 4-3-3\n© Capitão: Lucas Barbosa\n\n▪ GOL: Weverton (C$ 8.86)\n\n▪ LAT: Arthur (C$ 3.11)\n▪ LAT: Marcelinho (C$ 5.24)\n\n▪ ZAG: Jacy (C$ 5.56)\n▪ ZAG: Mercado (C$ 7.52)\n\n▪ MEI: Dudu (C$ 2.47)\n▪ MEI: Matheuzinho (C$ 6.43)\n▪ MEI: Victor Hugo (C$ 8.62)\n\n▪ ATA: Amuzu (C$ 9.04)\n▪ ATA: Ferreira (C$ 9.87)\n▪ ATA: Lucas Barbosa © (C$ 10.81)\n\n▪ TEC: Paulo Pezzolano (C$ 7.67)\n\n🏦 *Reservas:*\n▪ GOL: Léo Vieira (C$ 6.83)\n▪ LAT: Pedro Gabriel (C$ 3.75)\n▪ ZAG: Eduardo Doma (C$ 5.19)\n▪ MEI: Gustavo Henrique (C$ 2.54)\n▪ ATA: Everaldo (C$ 7.06)\n\n\n📡 Portal SimonSports\n🔗 https://t.me/dicascartolaportalsimonsports",
+    "meta": {
+      "capitao": "Lucas Barbosa (ATA)",
+      "custo_total": 85.2,
+      "esquema": "4-3-3",
+      "pontos_total": 0,
+      "variacao_total": 0
+    },
+    "modelo": "ECONOMICO",
+    "nome_modelo": "Econômico",
+    "primeiro_envio": false,
+    "snapshot": {
+      "atletas": [
+        {
+          "clube": "GRE",
+          "nome": "Weverton",
+          "pos": "GOL",
+          "preco": 8.86,
+          "status": "TITULAR"
+        },
+        {
+          "clube": "REM",
+          "nome": "Marcelinho",
+          "pos": "LAT",
+          "preco": 5.24,
+          "status": "TITULAR"
+        },
+        {
+          "clube": "PAL",
+          "nome": "Arthur",
+          "pos": "LAT",
+          "preco": 3.11,
+          "status": "TITULAR"
+        },
+        {
+          "clube": "INT",
+          "nome": "Mercado",
+          "pos": "ZAG",
+          "preco": 7.52,
+          "status": "TITULAR"
+        },
+        {
+          "clube": "CFC",
+          "nome": "Jacy",
+          "pos": "ZAG",
+          "preco": 5.56,
+          "status": "TITULAR"
+        },
+        {
+          "clube": "CAP",
+          "nome": "Dudu",
+          "pos": "MEI",
+          "preco": 2.47,
+          "status": "TITULAR"
+        },
+        {
+          "clube": "CAM",
+          "nome": "Victor Hugo",
+          "pos": "MEI",
+          "preco": 8.62,
+          "status": "TITULAR"
+        },
+        {
+          "clube": "VIT",
+          "nome": "Matheuzinho",
+          "pos": "MEI",
+          "preco": 6.43,
+          "status": "TITULAR"
+        },
+        {
+          "clube": "SAO",
+          "nome": "Ferreira",
+          "pos": "ATA",
+          "preco": 9.87,
+          "status": "TITULAR"
+        },
+        {
+          "clube": "GRE",
+          "nome": "Amuzu",
+          "pos": "ATA",
+          "preco": 9.04,
+          "status": "TITULAR"
+        },
+        {
+          "clube": "RBB",
+          "nome": "Lucas Barbosa",
+          "pos": "ATA",
+          "preco": 10.81,
+          "status": "TITULAR"
+        },
+        {
+          "clube": "INT",
+          "nome": "Paulo Pezzolano",
+          "pos": "TEC",
+          "preco": 7.67,
+          "status": "TITULAR"
+        },
+        {
+          "clube": "BAH",
+          "nome": "Léo Vieira",
+          "pos": "GOL",
+          "preco": 6.83,
+          "status": "RESERVA"
+        },
+        {
+          "clube": "GRE",
+          "nome": "Pedro Gabriel",
+          "pos": "LAT",
+          "preco": 3.75,
+          "status": "RESERVA"
+        },
+        {
+          "clube": "CHA",
+          "nome": "Eduardo Doma",
+          "pos": "ZAG",
+          "preco": 5.19,
+          "status": "RESERVA"
+        },
+        {
+          "clube": "SAN",
+          "nome": "Gustavo Henrique",
+          "pos": "MEI",
+          "preco": 2.54,
+          "status": "RESERVA"
+        },
+        {
+          "clube": "BAH",
+          "nome": "Everaldo",
+          "pos": "ATA",
+          "preco": 7.06,
+          "status": "RESERVA"
+        }
+      ],
+      "capitao": "Lucas Barbosa"
+    },
+    "titulo": "🌙 *Atualização das 20h — Times R11*"
+  },
+  "rodada": 11,
+  "tipo_publicacao": "times"
+}
