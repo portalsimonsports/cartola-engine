@@ -42,9 +42,19 @@ jobs:
           ${{ toJson(github.event.client_payload) }}
           EOF
 
+      - name: Salvar credencial Google em arquivo
+        env:
+          GOOGLE_SERVICE_JSON: ${{ secrets.GOOGLE_SERVICE_JSON }}
+        run: |
+          cat > service_account.json <<'EOF'
+          $GOOGLE_SERVICE_JSON
+          EOF
+
       - name: Executar gerador de resultados
         env:
           PAYLOAD_JSON: ${{ toJson(github.event.client_payload) }}
+          GOOGLE_APPLICATION_CREDENTIALS: service_account.json
+          PLANILHA_ID: 1-A7w4kkE28iHRd61yiSoNOvSekrmmADzHxGCRDVrICI
         run: |
           python app/gerar_resultados_telegram.py
 
