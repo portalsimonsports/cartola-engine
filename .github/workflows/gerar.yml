@@ -1,71 +1,70 @@
-name: Gerar Imagens Cartola
+name: Gerar Resultados Teste
 
 on:
-  push:
-    branches: [ main ]
+  repository_dispatch:
+    types:
+      - cartola_publish_test
 
 permissions:
   contents: write
 
 jobs:
-  gerar:
+  gerar-resultados-teste:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
         with:
           persist-credentials: true
 
-      - name: Setup Python
-        uses: actions/setup-python@v4
+      - name: Configurar Python
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: "3.11"
+
+      - name: Mostrar payload recebido
+        run: |
+          echo "===== PAYLOAD RECEBIDO ====="
+          echo '${{ toJson(github.event.client_payload) }}'
 
       - name: Instalar dependências
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      - name: Executar script
+      - name: Garantir pastas padrão
         run: |
-          python app/gerar_imagens.py
+          mkdir -p data
+          mkdir -p output
 
-      - name: Commit imagens
+      - name: Salvar payload em arquivo auxiliar
+        run: |
+          cat > data/payload_dispatch.json <<'EOF'
+          ${{ toJson(github.event.client_payload) }}
+          EOF
+
+      - name: Salvar credencial Google em arquivo
+        env:
+          GOOGLE_SERVICE_JSON: ${{ secrets.GOOGLE_SERVICE_JSON }}
+        run: |
+          cat > service_account.json <<'EOF'
+          $GOOGLE_SERVICE_JSON
+          EOF
+
+      - name: Executar gerador de resultados
+        env:
+          PAYLOAD_JSON: ${{ toJson(github.event.client_payload) }}
+          GOOGLE_APPLICATION_CREDENTIALS: service_account.json
+          PLANILHA_ID: 1-A7w4kkE28iHRd61yiSoNOvSekrmmADzHxGCRDVrICI
+        run: |
+          python app/gerar_resultados_telegram.py
+
+      - name: Publicar arte gerada no repositório
         run: |
           git config user.email "action@github.com"
           git config user.name "GitHub Action"
-          git add output/
-          git commit -m "Atualização automática imagens" || echo "Nada para commit"
-          git push
 
-      - name: 🚀 Enviar Imagens para o Telegram
-        env:
-          WEBHOOK_URL: "https://script.google.com/macros/s/AKfycby0DYNOArrcP626LVcoFTvZHWJ-FvABqwG4a_A_pkNwP70ll_PsgqzV5NkMOypc09qs/exec"
-          BASE_URL: "https://raw.githubusercontent.com/portalsimonsports/cartola-engine/main/output"
-        run: |
-          # 1. Envia o Top 5
-          curl -X POST $WEBHOOK_URL \
-          -H "Content-Type: application/json" \
-          -d "{\"imagem_url\": \"$BASE_URL/top5.png\", \"tipo\": \"Top 5\"}"
-          
-          sleep 2
-          
-          # 2. Envia o Time Pontuação
-          curl -X POST $WEBHOOK_URL \
-          -H "Content-Type: application/json" \
-          -d "{\"imagem_url\": \"$BASE_URL/times_atual_pontuacao.png\", \"tipo\": \"Time Pontuação\"}"
-          
-          sleep 2
-          
-          # 3. Envia o Time Intermediário
-          curl -X POST $WEBHOOK_URL \
-          -H "Content-Type: application/json" \
-          -d "{\"imagem_url\": \"$BASE_URL/times_atual_intermediario.png\", \"tipo\": \"Time Intermediário\"}"
-          
-          sleep 2
-          
-          # 4. Envia o Time Econômico
-          curl -X POST $WEBHOOK_URL \
-          -H "Content-Type: application/json" \
-          -d "{\"imagem_url\": \"$BASE_URL/times_atual_economico.png\", \"tipo\": \"Time Econômico\"}"
+          git add data/ output/ || true
+          git commit -m "Teste automático: geração de resultados" || echo "Nada para commit"
+          git push
