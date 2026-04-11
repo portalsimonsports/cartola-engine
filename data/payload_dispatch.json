@@ -1,197 +1,173 @@
 {
   "ambiente": "teste",
-  "gerado_em": "2026-04-11T17:30:59.237Z",
-  "origem": "jobTelegramDispatcher",
+  "gerado_em": "2026-04-11T19:44:30.711Z",
+  "origem": "cartola_live_publisher",
   "payload": {
-    "blocos_topo": [],
-    "forcar_envio": true,
-    "houve_alteracao": false,
-    "lista": [
+    "mensagem_oficial": "🏟️ *RESULTADOS E RESUMOS*\n\n📅 11/04 • 🕒 16:30\n🏟 Barradão\n*VITÓRIA 0 x 0 SÃO PAULO*\n📺 [Veja como foi](https://ge.globo.com/ba/futebol/brasileirao-serie-a/jogo/11-04-2026/vitoria-sao-paulo.ghtml?utm_source=cartolafc)\n\n📅 11/04 • 🕒 16:30\n🏟 Mangueirão\n*Remo  x  Vasco*\n📺 [Veja como foi](https://ge.globo.com/pa/futebol/brasileirao-serie-a/jogo/11-04-2026/remo-vasco.ghtml?utm_source=cartolafc)\n\n📅 12/04 • 🕒 18:00\n🏟 Maracanã\n*Fluminense  x  Flamengo*\n📺 [Veja como foi](https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/12-04-2026/fluminense-flamengo.ghtml?utm_source=cartolafc)\n\n📅 11/04 • 🕒 18:30\n🏟 Maião\n*Mirassol  x  Bahia*\n📺 [Veja como foi](https://ge.globo.com/sp/tem-esporte/futebol/brasileirao-serie-a/jogo/11-04-2026/mirassol-bahia.ghtml?utm_source=cartolafc)\n\n📅 11/04 • 🕒 20:00\n🏟 Vila Belmiro\n*Santos  x  ATLÉTICO-MG*\n📺 [Veja como foi](https://ge.globo.com/sp/santos-e-regiao/futebol/brasileirao-serie-a/jogo/11-04-2026/santos-atletico-mg.ghtml?utm_source=cartolafc)\n\n📅 11/04 • 🕒 20:30\n🏟 Beira-Rio\n*Internacional  x  GRÊMIO*\n📺 [Veja como foi](https://ge.globo.com/rs/futebol/brasileirao-serie-a/jogo/11-04-2026/internacional-gremio.ghtml?utm_source=cartolafc)\n\n📅 12/04 • 🕒 11:00\n🏟 Arena da Baixada\n*Athletico-PR  x  Chapecoense*\n📺 [Veja como foi](https://ge.globo.com/pr/futebol/brasileirao-serie-a/jogo/12-04-2026/atletico-pr-chapecoense.ghtml?utm_source=cartolafc)\n\n📅 12/04 • 🕒 16:00\n🏟 Nilton Santos (Engenhão)\n*Botafogo  x  Coritiba*\n📺 [Veja como foi](https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/12-04-2026/botafogo-coritiba.ghtml?utm_source=cartolafc)\n\n📅 12/04 • 🕒 18:30\n🏟 Neo Química Arena\n*Corinthians  x  Palmeiras*\n📺 [Veja como foi](https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/12-04-2026/corinthians-palmeiras.ghtml?utm_source=cartolafc)\n\n📅 12/04 • 🕒 18:30\n🏟 Mineirão\n*Cruzeiro  x  RB Bragantino*\n📺 [Veja como foi](https://ge.globo.com/mg/futebol/brasileirao-serie-a/jogo/12-04-2026/cruzeiro-bragantino.ghtml?utm_source=cartolafc)\n\n_Monitoramento SimonSports_",
+    "partidas": [
       {
-        "clube": "BAH",
-        "nome": "Léo Vieira",
-        "pos": "GOL",
-        "preco": 6.83
+        "casa_id": "287",
+        "casa_nome": "VITÓRIA",
+        "data": "11/04",
+        "data_iso": "2026-04-11T19:30:00.000Z",
+        "estadio": "Barradão",
+        "fora_id": "276",
+        "fora_nome": "SÃO PAULO",
+        "goleadores_casa": [],
+        "goleadores_fora": [],
+        "hora": "16:30",
+        "link_resumo": "https://ge.globo.com/ba/futebol/brasileirao-serie-a/jogo/11-04-2026/vitoria-sao-paulo.ghtml?utm_source=cartolafc",
+        "placar_casa": 0,
+        "placar_fora": 0,
+        "status": "EM_ANDAMENTO"
       },
       {
-        "clube": "CAM",
-        "nome": "Everson",
-        "pos": "GOL",
-        "preco": 10.29
+        "casa_id": "364",
+        "casa_nome": "Remo",
+        "data": "11/04",
+        "data_iso": "2026-04-11T19:30:00.000Z",
+        "estadio": "Mangueirão",
+        "fora_id": "267",
+        "fora_nome": "Vasco",
+        "goleadores_casa": [],
+        "goleadores_fora": [],
+        "hora": "16:30",
+        "link_resumo": "https://ge.globo.com/pa/futebol/brasileirao-serie-a/jogo/11-04-2026/remo-vasco.ghtml?utm_source=cartolafc",
+        "placar_casa": "",
+        "placar_fora": "",
+        "status": "EM_ANDAMENTO"
       },
       {
-        "clube": "FLU",
-        "nome": "Fábio",
-        "pos": "GOL",
-        "preco": 9.83
+        "casa_id": "266",
+        "casa_nome": "Fluminense",
+        "data": "12/04",
+        "data_iso": "2026-04-12T21:00:00.000Z",
+        "estadio": "Maracanã",
+        "fora_id": "262",
+        "fora_nome": "Flamengo",
+        "goleadores_casa": [],
+        "goleadores_fora": [],
+        "hora": "18:00",
+        "link_resumo": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/12-04-2026/fluminense-flamengo.ghtml?utm_source=cartolafc",
+        "placar_casa": "",
+        "placar_fora": "",
+        "status": "CRIADA"
       },
       {
-        "clube": "GRE",
-        "nome": "Weverton",
-        "pos": "GOL",
-        "preco": 8.86
+        "casa_id": "2305",
+        "casa_nome": "Mirassol",
+        "data": "11/04",
+        "data_iso": "2026-04-11T21:30:00.000Z",
+        "estadio": "Maião",
+        "fora_id": "265",
+        "fora_nome": "Bahia",
+        "goleadores_casa": [],
+        "goleadores_fora": [],
+        "hora": "18:30",
+        "link_resumo": "https://ge.globo.com/sp/tem-esporte/futebol/brasileirao-serie-a/jogo/11-04-2026/mirassol-bahia.ghtml?utm_source=cartolafc",
+        "placar_casa": "",
+        "placar_fora": "",
+        "status": "CRIADA"
       },
       {
-        "clube": "INT",
-        "nome": "Rochet",
-        "pos": "GOL",
-        "preco": 7.3
+        "casa_id": "277",
+        "casa_nome": "Santos",
+        "data": "11/04",
+        "data_iso": "2026-04-11T23:00:00.000Z",
+        "estadio": "Vila Belmiro",
+        "fora_id": "282",
+        "fora_nome": "ATLÉTICO-MG",
+        "goleadores_casa": [],
+        "goleadores_fora": [],
+        "hora": "20:00",
+        "link_resumo": "https://ge.globo.com/sp/santos-e-regiao/futebol/brasileirao-serie-a/jogo/11-04-2026/santos-atletico-mg.ghtml?utm_source=cartolafc",
+        "placar_casa": "",
+        "placar_fora": "",
+        "status": "CRIADA"
       },
       {
-        "clube": "RBB",
-        "nome": "Juninho Capixaba",
-        "pos": "LAT",
-        "preco": 14.44
+        "casa_id": "285",
+        "casa_nome": "Internacional",
+        "data": "11/04",
+        "data_iso": "2026-04-11T23:30:00.000Z",
+        "estadio": "Beira-Rio",
+        "fora_id": "284",
+        "fora_nome": "GRÊMIO",
+        "goleadores_casa": [],
+        "goleadores_fora": [],
+        "hora": "20:30",
+        "link_resumo": "https://ge.globo.com/rs/futebol/brasileirao-serie-a/jogo/11-04-2026/internacional-gremio.ghtml?utm_source=cartolafc",
+        "placar_casa": "",
+        "placar_fora": "",
+        "status": "CRIADA"
       },
       {
-        "clube": "SAN",
-        "nome": "Escobar",
-        "pos": "LAT",
-        "preco": 10.75
+        "casa_id": "293",
+        "casa_nome": "Athletico-PR",
+        "data": "12/04",
+        "data_iso": "2026-04-12T14:00:00.000Z",
+        "estadio": "Arena da Baixada",
+        "fora_id": "315",
+        "fora_nome": "Chapecoense",
+        "goleadores_casa": [],
+        "goleadores_fora": [],
+        "hora": "11:00",
+        "link_resumo": "https://ge.globo.com/pr/futebol/brasileirao-serie-a/jogo/12-04-2026/atletico-pr-chapecoense.ghtml?utm_source=cartolafc",
+        "placar_casa": "",
+        "placar_fora": "",
+        "status": "CRIADA"
       },
       {
-        "clube": "BAH",
-        "nome": "Luciano Juba",
-        "pos": "LAT",
-        "preco": 10.13
+        "casa_id": "263",
+        "casa_nome": "Botafogo",
+        "data": "12/04",
+        "data_iso": "2026-04-12T19:00:00.000Z",
+        "estadio": "Nilton Santos (Engenhão)",
+        "fora_id": "294",
+        "fora_nome": "Coritiba",
+        "goleadores_casa": [],
+        "goleadores_fora": [],
+        "hora": "16:00",
+        "link_resumo": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/12-04-2026/botafogo-coritiba.ghtml?utm_source=cartolafc",
+        "placar_casa": "",
+        "placar_fora": "",
+        "status": "CRIADA"
       },
       {
-        "clube": "VAS",
-        "nome": "Cuiabano",
-        "pos": "LAT",
-        "preco": 12.92
+        "casa_id": "264",
+        "casa_nome": "Corinthians",
+        "data": "12/04",
+        "data_iso": "2026-04-12T21:30:00.000Z",
+        "estadio": "Neo Química Arena",
+        "fora_id": "275",
+        "fora_nome": "Palmeiras",
+        "goleadores_casa": [],
+        "goleadores_fora": [],
+        "hora": "18:30",
+        "link_resumo": "https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/12-04-2026/corinthians-palmeiras.ghtml?utm_source=cartolafc",
+        "placar_casa": "",
+        "placar_fora": "",
+        "status": "CRIADA"
       },
       {
-        "clube": "CRU",
-        "nome": "Kaiki Bruno",
-        "pos": "LAT",
-        "preco": 10.88
-      },
-      {
-        "clube": "INT",
-        "nome": "Mercado",
-        "pos": "ZAG",
-        "preco": 7.52
-      },
-      {
-        "clube": "BOT",
-        "nome": "Alexander Barboza",
-        "pos": "ZAG",
-        "preco": 11.6
-      },
-      {
-        "clube": "RBB",
-        "nome": "Gustavo Marques",
-        "pos": "ZAG",
-        "preco": 8.16
-      },
-      {
-        "clube": "CFC",
-        "nome": "Jacy",
-        "pos": "ZAG",
-        "preco": 5.56
-      },
-      {
-        "clube": "CHA",
-        "nome": "Eduardo Doma",
-        "pos": "ZAG",
-        "preco": 5.19
-      },
-      {
-        "clube": "BOT",
-        "nome": "Danilo",
-        "pos": "MEI",
-        "preco": 14.3
-      },
-      {
-        "clube": "FLU",
-        "nome": "Lucho Acosta",
-        "pos": "MEI",
-        "preco": 11.78
-      },
-      {
-        "clube": "CRU",
-        "nome": "Christian",
-        "pos": "MEI",
-        "preco": 10.05
-      },
-      {
-        "clube": "PAL",
-        "nome": "Andreas Pereira",
-        "pos": "MEI",
-        "preco": 14.31
-      },
-      {
-        "clube": "VAS",
-        "nome": "Barros",
-        "pos": "MEI",
-        "preco": 10.37
-      },
-      {
-        "clube": "RBB",
-        "nome": "Lucas Barbosa",
-        "pos": "ATA",
-        "preco": 10.81
-      },
-      {
-        "clube": "FLU",
-        "nome": "John Kennedy",
-        "pos": "ATA",
-        "preco": 10.42
-      },
-      {
-        "clube": "CFC",
-        "nome": "Lucas Ronier",
-        "pos": "ATA",
-        "preco": 11.05
-      },
-      {
-        "clube": "FLU",
-        "nome": "Canobbio",
-        "pos": "ATA",
-        "preco": 10.99
-      },
-      {
-        "clube": "GRE",
-        "nome": "Carlos Vinícius",
-        "pos": "ATA",
-        "preco": 15.97
-      },
-      {
-        "clube": "RBB",
-        "nome": "Vagner Mancini",
-        "pos": "TEC",
-        "preco": 8.97
-      },
-      {
-        "clube": "PAL",
-        "nome": "Abel Ferreira",
-        "pos": "TEC",
-        "preco": 12.13
-      },
-      {
-        "clube": "FLU",
-        "nome": "Luis Zubeldía",
-        "pos": "TEC",
-        "preco": 10.11
-      },
-      {
-        "clube": "BAH",
-        "nome": "Rogério Ceni",
-        "pos": "TEC",
-        "preco": 10.92
-      },
-      {
-        "clube": "INT",
-        "nome": "Paulo Pezzolano",
-        "pos": "TEC",
-        "preco": 7.67
+        "casa_id": "283",
+        "casa_nome": "Cruzeiro",
+        "data": "12/04",
+        "data_iso": "2026-04-12T21:30:00.000Z",
+        "estadio": "Mineirão",
+        "fora_id": "280",
+        "fora_nome": "RB Bragantino",
+        "goleadores_casa": [],
+        "goleadores_fora": [],
+        "hora": "18:30",
+        "link_resumo": "https://ge.globo.com/mg/futebol/brasileirao-serie-a/jogo/12-04-2026/cruzeiro-bragantino.ghtml?utm_source=cartolafc",
+        "placar_casa": "",
+        "placar_fora": "",
+        "status": "CRIADA"
       }
     ],
-    "mensagem_oficial": "🕑 *Pré-fechamento — Top 5 R11*\n\n🔶 *GOL*\n1. Everson (CAM) - C$ 10.29\n2. Fábio (FLU) - C$ 9.83\n3. Léo Vieira (BAH) - C$ 6.83\n4. Rochet (INT) - C$ 7.30\n5. Weverton (GRE) - C$ 8.86\n\n🔶 *ZAG*\n1. Alexander Barboza (BOT) - C$ 11.60\n2. Eduardo Doma (CHA) - C$ 5.19\n3. Gustavo Marques (RBB) - C$ 8.16\n4. Jacy (CFC) - C$ 5.56\n5. Mercado (INT) - C$ 7.52\n\n🔶 *LAT*\n1. Cuiabano (VAS) - C$ 12.92\n2. Escobar (SAN) - C$ 10.75\n3. Juninho Capixaba (RBB) - C$ 14.44\n4. Kaiki Bruno (CRU) - C$ 10.88\n5. Luciano Juba (BAH) - C$ 10.13\n\n🔶 *MEI*\n1. Andreas Pereira (PAL) - C$ 14.31\n2. Barros (VAS) - C$ 10.37\n3. Christian (CRU) - C$ 10.05\n4. Danilo (BOT) - C$ 14.30\n5. Lucho Acosta (FLU) - C$ 11.78\n\n🔶 *ATA*\n1. Canobbio (FLU) - C$ 10.99\n2. Carlos Vinícius (GRE) - C$ 15.97\n3. John Kennedy (FLU) - C$ 10.42\n4. Lucas Barbosa (RBB) - C$ 10.81\n5. Lucas Ronier (CFC) - C$ 11.05\n\n🔶 *TEC*\n1. Abel Ferreira (PAL) - C$ 12.13\n2. Luis Zubeldía (FLU) - C$ 10.11\n3. Paulo Pezzolano (INT) - C$ 7.67\n4. Rogério Ceni (BAH) - C$ 10.92\n5. Vagner Mancini (RBB) - C$ 8.97\n\n\n📡 Portal SimonSports\n🔗 https://t.me/dicascartolaportalsimonsports",
-    "primeiro_envio": false,
-    "titulo": "🕑 *Pré-fechamento — Top 5 R11*"
+    "rodada": 11,
+    "titulo": "RESULTADOS E RESUMOS"
   },
-  "rodada": 11,
-  "tipo_publicacao": "top5"
+  "tipo_publicacao": "resultados_resumos"
 }
