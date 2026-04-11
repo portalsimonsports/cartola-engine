@@ -278,4 +278,239 @@ def sanitize_filename(text: str) -> str:
 def render_match_card(
     match: Dict[str, Any],
     clubes_map: Dict[str, Dict[str, Any]],
-    pontuados: List[Dict[str, Any
+    pontuados: List[Dict[str, Any]]
+) -> Tuple[Path, List[str], List[str]]:
+    home_id = str(match.get("casa_id"))
+    away_id = str(match.get("visitante_id"))
+
+    home = clubes_map.get(home_id, {"nome": home_id, "abreviacao": home_id, "escudo": ""})
+    away = clubes_map.get(away_id, {"nome": away_id, "abreviacao": away_id, "escudo": ""})
+
+    scorers_home = extract_goal_scorers(pontuados, home_id)
+    scorers_away = extract_goal_scorers(pontuados, away_id)
+
+    img = make_bg()
+    rounded_card(img, (70, 340, 954, 1130))
+    draw = ImageDraw.Draw(img)
+
+    top_text = f"📅 {normalize_text(match.get('data'))} • 🕒 {normalize_text(match.get('hora'))}"
+    draw_centered(draw, top_text, FONT_40_B, 390, WHITE)
+
+    stadium_text = f"🏟 {normalize_text(match.get('local', 'Estádio'))}"
+    draw_centered(draw, stadium_text, FONT_36_B, 500, WHITE)
+
+    paste_shield_or_text(img, home, (120, 560, 350, 790))
+    paste_shield_or_text(img, away, (674, 560, 904, 790))
+
+    score = f"{match.get('placar_casa', 0)} x {match.get('placar_visitante', 0)}"
+    draw_centered(draw, score, FONT_64_B, 660, WHITE)
+
+    draw.line((110, 825, 914, 825), fill=DIVIDER, width=2)
+
+    home_name = normalize_text(home.get("nome") or home.get("abreviacao") or home_id).upper()
+    away_name = normalize_text(away.get("nome") or away.get("abreviacao") or away_id).upper()
+
+    draw.text((115, 860), home_name, font=FONT_28_B, fill=WHITE)
+    aw_w, _ = text_bbox(draw, away_name, FONT_28_B)
+    draw.text((909 - aw_w, 860), away_name, font=FONT_28_B, fill=WHITE)
+
+    draw.line((512, 920, 512, 1080), fill=DIVIDER, width=2)
+
+    home_text = "\n".join(scorers_home) if scorers_home else ""
+    away_text = "\n".join(scorers_away) if scorers_away else ""
+
+    draw_multiline(draw, home_text, (115, 940, 470, 1080), FONT_24_B, WHITE_SOFT, 14, "left")
+    draw_multiline(draw, away_text, (560, 940, 909, 1080), FONT_24_B, WHITE_SOFT, 14, "left")
+
+    draw_centered(draw, "📺 Veja como foi", FONT_40_B, 1090, LINK_BLUE)
+
+    filename = (
+        f"resultado_{sanitize_filename(home_name)}_x_{sanitize_filename(away_name)}_"
+        f"{sanitize_filename(normalize_text(match.get('data')))}_{sanitize_filename(normalize_text(match.get('hora')))}.png"
+    )
+    out_path = OUTPUT_DIR / filename
+    img.convert("RGB").save(out_path, "PNG", optimize=True)
+
+    return out_path, scorers_home, scorers_away
+
+
+def send_telegram_photo(
+    bot_token: str,
+    chat_id: str,
+    file_path: Path,
+    caption_html: str
+) -> Dict[str, Any]:
+    url = f"https://api.telegram.org/bot{bot_token}/sendPhoto"
+    with file_path.open("rb") as fh:
+        resp = requests.post(
+            url,
+            data={
+                "chat_id": chat_id,
+                "caption": caption_html,
+                "parse_mode": "HTML",
+            },
+            files={"photo": fh},
+            timeout=REQUEST_TIMEOUT,
+        )
+    resp.raise_for_status()
+    return resp.json()
+
+
+def payload_or_fallback() -> Dict[str, Any]:
+    env_payload = os.getenv("PAYLOAD_JSON", "").strip()
+    if env_payload:
+        try:
+            return json.loads(env_payload)
+        except Exception:
+            pass
+
+    file_payload = safe_read_json(PAYLOAD_FILE, {})
+    if file_payload:
+        return file_payload
+
+    return {
+        "tipo": "resultados_resumos",
+        "caption_link": "",
+        "partidas": safe_read_json(DATA_DIR / "partidas_live.json", []),
+        "clubes": safe_read_json(DATA_DIR / "clubes_resultados.json", []),
+        "pontuados": safe_read_json(DATA_DIR / "pontuados_resultados.json", []),
+    }
+
+
+def ensure_state_file() -> Dict[str, Any]:
+    state = safe_read_json(STATE_FILE, {})
+    if not isinstance(state, dict):
+        state = {}
+    state.setdefault("publicados", {})
+    return state
+
+
+def normalize_payload_lists(payload: Dict[str, Any]) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]], List[Dict[str, Any]]]:
+    partidas = payload.get("partidas", [])
+    clubes = payload.get("clubes", [])
+    pontuados = payload.get("pontuados", [])
+
+    if isinstance(partidas, dict):
+        partidas = [partidas]
+    if not isinstance(partidas, list):
+        partidas = []
+
+    if not isinstance(clubes, list):
+        clubes = []
+    if not isinstance(pontuados, list):
+        pontuados = []
+
+    return partidas, clubes, pontuados
+
+
+def build_caption(match: Dict[str, Any], link: str) -> str:
+    casa = normalize_text(match.get("casa_nome") or match.get("casa") or "")
+    fora = normalize_text(match.get("visitante_nome") or match.get("visitante") or "")
+    placar = f"{match.get('placar_casa', 0)} x {match.get('placar_visitante', 0)}"
+    base = f"<b>{casa} {placar} {fora}</b>"
+    if link:
+        return f'{base}\n<a href="{link}">📺 Veja como foi</a>'
+    return base
+
+
+def abrir_planilha():
+    cred_path = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS", "").strip()
+    planilha_id = os.environ.get("PLANILHA_ID", "").strip()
+
+    if not cred_path:
+        raise RuntimeError("GOOGLE_APPLICATION_CREDENTIALS não definido.")
+    if not planilha_id:
+        raise RuntimeError("PLANILHA_ID não definido.")
+
+    scopes = [
+        "https://www.googleapis.com/auth/spreadsheets.readonly",
+        "https://www.googleapis.com/auth/drive.readonly",
+    ]
+
+    creds = Credentials.from_service_account_file(cred_path, scopes=scopes)
+    gc = gspread.authorize(creds)
+    return gc.open_by_key(planilha_id)
+
+
+def ler_credenciais_telegram() -> Tuple[str, str]:
+    planilha = abrir_planilha()
+    aba = planilha.worksheet("Telegram_Cartola")
+    dados = aba.get_all_values()
+
+    token = ""
+    chat_id = ""
+
+    for row in dados[1:]:
+        chave = str(row[2] if len(row) > 2 else "").strip().upper()
+        valor = str(row[3] if len(row) > 3 else "").strip()
+
+        if chave == "TELEGRAM_BOT_TOKEN":
+            token = valor
+        elif chave == "TELEGRAM_CHAT_ID":
+            chat_id = valor
+
+    if not token or not chat_id:
+        raise RuntimeError("Credenciais do Telegram não encontradas na aba Telegram_Cartola.")
+
+    return token, chat_id
+
+
+def main() -> None:
+    payload = payload_or_fallback()
+    partidas, clubes, pontuados = normalize_payload_lists(payload)
+
+    if not partidas:
+        print("Nenhuma partida encontrada no payload ou em data/partidas_live.json")
+        return
+
+    clubes_map = build_club_map(clubes)
+    state = ensure_state_file()
+    published = state.get("publicados", {})
+
+    bot_token, chat_id = ler_credenciais_telegram()
+    caption_link_default = normalize_text(
+        payload.get("caption_link")
+        or payload.get("link")
+        or payload.get("telegram", {}).get("caption_link")
+    )
+
+    total_generated = 0
+    total_sent = 0
+
+    for match in partidas:
+        output_path, scorers_home, scorers_away = render_match_card(match, clubes_map, pontuados)
+        total_generated += 1
+
+        match_id = str(
+            match.get("id")
+            or f"{match.get('casa_id')}x{match.get('visitante_id')}_{match.get('data')}_{match.get('hora')}"
+        )
+
+        current_hash = compute_hash(match, scorers_home, scorers_away)
+        last_hash = published.get(match_id, "")
+
+        if current_hash == last_hash:
+            print(f"Sem alteração para {match_id}. Nada publicado.")
+            continue
+
+        published[match_id] = current_hash
+
+        link = normalize_text(match.get("link_resumo") or match.get("url") or caption_link_default)
+        caption_html = build_caption(match, link)
+
+        try:
+            send_telegram_photo(bot_token, chat_id, output_path, caption_html)
+            total_sent += 1
+            print(f"Publicado no Telegram: {output_path.name}")
+        except Exception as e:
+            print(f"Falha ao publicar no Telegram ({match_id}): {e}")
+
+    state["publicados"] = published
+    safe_write_json(STATE_FILE, state)
+
+    print(f"Artes geradas: {total_generated}")
+    print(f"Artes enviadas: {total_sent}")
+
+
+if __name__ == "__main__":
+    main()
