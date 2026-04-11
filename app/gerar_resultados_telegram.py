@@ -5,15 +5,20 @@ Gerador de artes de resultados para Telegram
 
 Fluxo:
 - Lê PAYLOAD_JSON (enviado pelo GitHub Actions) OU arquivos em /data
+- Lê a planilha Google via service account
+- Busca a aba Telegram_Cartola para obter TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_ID
 - Gera arte PNG em /output/resultados
 - Evita duplicidade por hash em data/resultados_publicados.json
-- Se houver bot_token/chat_id no payload, publica direto no Telegram
+- Publica direto no Telegram
+
+Variáveis de ambiente esperadas:
+- GOOGLE_APPLICATION_CREDENTIALS = caminho do JSON da service account
+- PLANILHA_ID = ID da planilha Google
+- PAYLOAD_JSON = payload do repository_dispatch (opcional)
 
 Estrutura esperada do payload (exemplo):
 {
   "tipo": "resultados_resumos",
-  "telegram_bot_token": "123:ABC",
-  "telegram_chat_id": "-1001234567890",
   "caption_link": "https://exemplo.com",
   "partidas": [...],
   "clubes": [...],
@@ -27,13 +32,13 @@ import os
 import io
 import re
 import json
-import math
-import time
 import hashlib
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
 import requests
+import gspread
+from google.oauth2.service_account import Credentials
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -74,12 +79,6 @@ def safe_write_json(path: Path, data: Any) -> None:
 def normalize_text(text: Any) -> str:
     s = str(text or "").strip()
     return re.sub(r"\s+", " ", s)
-
-
-def slugify(text: Any) -> str:
-    s = normalize_text(text).lower()
-    s = re.sub(r"[^a-z0-9]+", "_", s)
-    return s.strip("_")
 
 
 def abbreviate_player(name: str) -> str:
@@ -166,10 +165,12 @@ def rounded_card(base: Image.Image, box: Tuple[int, int, int, int]) -> None:
     card = Image.new("RGBA", (x2 - x1, y2 - y1), (0, 0, 0, 0))
     cd = ImageDraw.Draw(card)
     cd.rounded_rectangle((0, 0, x2 - x1, y2 - y1), radius=36, fill=CARD_COLOR)
+
     shadow = Image.new("RGBA", (x2 - x1 + 30, y2 - y1 + 30), (0, 0, 0, 0))
     sd = ImageDraw.Draw(shadow)
     sd.rounded_rectangle((15, 15, x2 - x1 + 5, y2 - y1 + 5), radius=40, fill=(0, 0, 0, 70))
     shadow = shadow.filter(ImageFilter.GaussianBlur(18))
+
     base.alpha_composite(shadow, (x1 - 15, y1 - 15))
     base.alpha_composite(card, (x1, y1))
 
@@ -178,7 +179,6 @@ def paste_shield_or_text(
     base: Image.Image,
     club: Dict[str, Any],
     box: Tuple[int, int, int, int],
-    align: str = "left"
 ) -> None:
     x1, y1, x2, y2 = box
     shield = fetch_image(club.get("escudo", ""))
@@ -211,16 +211,20 @@ def draw_multiline(
     x1, y1, x2, y2 = box
     lines = [line for line in text.split("\n") if normalize_text(line)]
     yy = y1
+
     for line in lines:
         if yy > y2:
             break
+
         lw, lh = text_bbox(draw, line, font)
+
         if align == "center":
             xx = x1 + int(((x2 - x1) - lw) / 2)
         elif align == "right":
             xx = x2 - lw
         else:
             xx = x1
+
         draw.text((xx, yy), line, font=font, fill=fill)
         yy += lh + line_spacing
 
@@ -241,14 +245,18 @@ def compute_hash(match: Dict[str, Any], scorers_home: List[str], scorers_away: L
 def extract_goal_scorers(pontuados: List[Dict[str, Any]], club_id: Any) -> List[str]:
     target = str(club_id)
     out = []
+
     for item in pontuados:
         if str(item.get("clube_id")) != target:
             continue
+
         gols = int(item.get("gols", 0) or 0)
         if gols <= 0:
             continue
+
         nome = abbreviate_player(str(item.get("apelido", "")))
         out.append(f"{nome} ({gols}⚽)")
+
     return out
 
 
@@ -285,25 +293,20 @@ def render_match_card(
     rounded_card(img, (70, 340, 954, 1130))
     draw = ImageDraw.Draw(img)
 
-    # Topo
     top_text = f"📅 {normalize_text(match.get('data'))} • 🕒 {normalize_text(match.get('hora'))}"
     draw_centered(draw, top_text, FONT_40_B, 390, WHITE)
 
     stadium_text = f"🏟 {normalize_text(match.get('local', 'Estádio'))}"
     draw_centered(draw, stadium_text, FONT_36_B, 500, WHITE)
 
-    # Escudos
     paste_shield_or_text(img, home, (120, 560, 350, 790))
     paste_shield_or_text(img, away, (674, 560, 904, 790))
 
-    # Placar
     score = f"{match.get('placar_casa', 0)} x {match.get('placar_visitante', 0)}"
     draw_centered(draw, score, FONT_64_B, 660, WHITE)
 
-    # Linha horizontal
     draw.line((110, 825, 914, 825), fill=DIVIDER, width=2)
 
-    # Nomes dos times
     home_name = normalize_text(home.get("nome") or home.get("abreviacao") or home_id).upper()
     away_name = normalize_text(away.get("nome") or away.get("abreviacao") or away_id).upper()
 
@@ -311,17 +314,14 @@ def render_match_card(
     aw_w, _ = text_bbox(draw, away_name, FONT_28_B)
     draw.text((909 - aw_w, 860), away_name, font=FONT_28_B, fill=WHITE)
 
-    # Divisória vertical
     draw.line((512, 920, 512, 1080), fill=DIVIDER, width=2)
 
-    # Goleadores
     home_text = "\n".join(scorers_home) if scorers_home else ""
     away_text = "\n".join(scorers_away) if scorers_away else ""
 
     draw_multiline(draw, home_text, (115, 940, 470, 1080), FONT_24_B, WHITE_SOFT, 14, "left")
     draw_multiline(draw, away_text, (560, 940, 909, 1080), FONT_24_B, WHITE_SOFT, 14, "left")
 
-    # Rodapé
     draw_centered(draw, "📺 Veja como foi", FONT_40_B, 1090, LINK_BLUE)
 
     filename = (
@@ -370,8 +370,6 @@ def payload_or_fallback() -> Dict[str, Any]:
 
     return {
         "tipo": "resultados_resumos",
-        "telegram_bot_token": "",
-        "telegram_chat_id": "",
         "caption_link": "",
         "partidas": safe_read_json(DATA_DIR / "partidas_live.json", []),
         "clubes": safe_read_json(DATA_DIR / "clubes_resultados.json", []),
@@ -415,6 +413,48 @@ def build_caption(match: Dict[str, Any], link: str) -> str:
     return base
 
 
+def abrir_planilha():
+    cred_path = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS", "").strip()
+    planilha_id = os.environ.get("PLANILHA_ID", "").strip()
+
+    if not cred_path:
+        raise RuntimeError("GOOGLE_APPLICATION_CREDENTIALS não definido.")
+    if not planilha_id:
+        raise RuntimeError("PLANILHA_ID não definido.")
+
+    scopes = [
+        "https://www.googleapis.com/auth/spreadsheets.readonly",
+        "https://www.googleapis.com/auth/drive.readonly",
+    ]
+
+    creds = Credentials.from_service_account_file(cred_path, scopes=scopes)
+    gc = gspread.authorize(creds)
+    return gc.open_by_key(planilha_id)
+
+
+def ler_credenciais_telegram() -> Tuple[str, str]:
+    planilha = abrir_planilha()
+    aba = planilha.worksheet("Telegram_Cartola")
+    dados = aba.get_all_values()
+
+    token = ""
+    chat_id = ""
+
+    for row in dados[1:]:
+        chave = str(row[0] if len(row) > 0 else "").strip().upper()
+        valor = str(row[1] if len(row) > 1 else "").strip()
+
+        if chave == "TELEGRAM_BOT_TOKEN":
+            token = valor
+        elif chave == "TELEGRAM_CHAT_ID":
+            chat_id = valor
+
+    if not token or not chat_id:
+        raise RuntimeError("Credenciais do Telegram não encontradas na aba Telegram_Cartola.")
+
+    return token, chat_id
+
+
 def main() -> None:
     payload = payload_or_fallback()
     partidas, clubes, pontuados = normalize_payload_lists(payload)
@@ -427,16 +467,7 @@ def main() -> None:
     state = ensure_state_file()
     published = state.get("publicados", {})
 
-    bot_token = normalize_text(
-        payload.get("telegram_bot_token")
-        or payload.get("bot_token")
-        or payload.get("telegram", {}).get("bot_token")
-    )
-    chat_id = normalize_text(
-        payload.get("telegram_chat_id")
-        or payload.get("chat_id")
-        or payload.get("telegram", {}).get("chat_id")
-    )
+    bot_token, chat_id = ler_credenciais_telegram()
     caption_link_default = normalize_text(
         payload.get("caption_link")
         or payload.get("link")
@@ -467,15 +498,12 @@ def main() -> None:
         link = normalize_text(match.get("link_resumo") or match.get("url") or caption_link_default)
         caption_html = build_caption(match, link)
 
-        if bot_token and chat_id:
-            try:
-                send_telegram_photo(bot_token, chat_id, output_path, caption_html)
-                total_sent += 1
-                print(f"Publicado no Telegram: {output_path.name}")
-            except Exception as e:
-                print(f"Falha ao publicar no Telegram ({match_id}): {e}")
-        else:
-            print(f"Arte gerada sem envio ao Telegram: {output_path.name}")
+        try:
+            send_telegram_photo(bot_token, chat_id, output_path, caption_html)
+            total_sent += 1
+            print(f"Publicado no Telegram: {output_path.name}")
+        except Exception as e:
+            print(f"Falha ao publicar no Telegram ({match_id}): {e}")
 
     state["publicados"] = published
     safe_write_json(STATE_FILE, state)
