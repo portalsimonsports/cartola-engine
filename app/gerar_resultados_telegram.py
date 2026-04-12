@@ -10,20 +10,6 @@ Fluxo:
 - Gera arte PNG em /output/resultados
 - Evita duplicidade por hash em data/resultados_publicados.json
 - Publica direto no Telegram
-
-Variáveis de ambiente esperadas:
-- GOOGLE_APPLICATION_CREDENTIALS = caminho do JSON da service account
-- PLANILHA_ID = ID da planilha Google
-- PAYLOAD_JSON = payload do repository_dispatch (opcional)
-
-Estrutura esperada do payload (exemplo):
-{
-  "tipo": "resultados_resumos",
-  "caption_link": "https://exemplo.com",
-  "partidas": [...],
-  "clubes": [...],
-  "pontuados": [...]
-}
 """
 
 from __future__ import annotations
@@ -377,6 +363,19 @@ def payload_or_fallback() -> Dict[str, Any]:
     }
 
 
+def get_payload_core(payload: Dict[str, Any]) -> Dict[str, Any]:
+    if isinstance(payload.get("payload"), dict):
+        core = dict(payload["payload"] or {})
+        if "caption_link" not in core and payload.get("caption_link"):
+            core["caption_link"] = payload.get("caption_link")
+        if "link" not in core and payload.get("link"):
+            core["link"] = payload.get("link")
+        if "tipo" not in core and payload.get("tipo_publicacao"):
+            core["tipo"] = payload.get("tipo_publicacao")
+        return core
+    return payload
+
+
 def ensure_state_file() -> Dict[str, Any]:
     state = safe_read_json(STATE_FILE, {})
     if not isinstance(state, dict):
@@ -386,9 +385,11 @@ def ensure_state_file() -> Dict[str, Any]:
 
 
 def normalize_payload_lists(payload: Dict[str, Any]) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]], List[Dict[str, Any]]]:
-    partidas = payload.get("partidas", [])
-    clubes = payload.get("clubes", [])
-    pontuados = payload.get("pontuados", [])
+    core = get_payload_core(payload)
+
+    partidas = core.get("partidas", [])
+    clubes = core.get("clubes", [])
+    pontuados = core.get("pontuados", [])
 
     if isinstance(partidas, dict):
         partidas = [partidas]
@@ -404,9 +405,17 @@ def normalize_payload_lists(payload: Dict[str, Any]) -> Tuple[List[Dict[str, Any
 
 
 def build_caption(match: Dict[str, Any], link: str) -> str:
-    casa = normalize_text(match.get("casa_nome") or match.get("casa") or "")
-    fora = normalize_text(match.get("visitante_nome") or match.get("visitante") or "")
-    placar = f"{match.get('placar_casa', 0)} x {match.get('placar_visitante', 0)}"
+    casa = normalize_text(match.get("casa_nome") or match.get("casa") or match.get("mandante") or "")
+    fora = normalize_text(match.get("visitante_nome") or match.get("visitante") or match.get("fora") or "")
+    placar_casa = normalize_text(match.get("placar_casa"))
+    placar_fora = normalize_text(match.get("placar_fora"))
+
+    if placar_casa == "":
+        placar_casa = "0"
+    if placar_fora == "":
+        placar_fora = "0"
+
+    placar = f"{placar_casa} x {placar_fora}"
     base = f"<b>{casa} {placar} {fora}</b>"
     if link:
         return f'{base}\n<a href="{link}">📺 Veja como foi</a>'
@@ -457,6 +466,7 @@ def ler_credenciais_telegram() -> Tuple[str, str]:
 
 def main() -> None:
     payload = payload_or_fallback()
+    core = get_payload_core(payload)
     partidas, clubes, pontuados = normalize_payload_lists(payload)
 
     if not partidas:
@@ -469,9 +479,10 @@ def main() -> None:
 
     bot_token, chat_id = ler_credenciais_telegram()
     caption_link_default = normalize_text(
-        payload.get("caption_link")
+        core.get("caption_link")
+        or core.get("link")
+        or payload.get("caption_link")
         or payload.get("link")
-        or payload.get("telegram", {}).get("caption_link")
     )
 
     total_generated = 0
