@@ -25,6 +25,8 @@ jobs:
 
       - name: Mostrar payload recebido
         run: |
+          echo "===== EVENTO ====="
+          echo "${{ github.event.action }}"
           echo "===== PAYLOAD RECEBIDO ====="
           echo '${{ toJson(github.event.client_payload) }}'
 
@@ -65,7 +67,7 @@ jobs:
           print("Credencial Google válida.")
           PY
 
-      - name: Executar gerador de resultados
+      - name: Executar gerador de resultados e resumos
         env:
           PAYLOAD_JSON: ${{ toJson(github.event.client_payload) }}
           GOOGLE_APPLICATION_CREDENTIALS: service_account.json
