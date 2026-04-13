@@ -25,6 +25,8 @@ jobs:
 
       - name: Mostrar payload recebido
         run: |
+          echo "===== EVENTO ====="
+          echo "${{ github.event.action }}"
           echo "===== PAYLOAD RECEBIDO ====="
           echo '${{ toJson(github.event.client_payload) }}'
 
