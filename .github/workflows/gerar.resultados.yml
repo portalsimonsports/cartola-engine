@@ -1,15 +1,15 @@
-name: Gerar Resultados Teste
+name: Gerar Resultados Live
 
 on:
   repository_dispatch:
     types:
-      - cartola_publish_test
+      - cartola_live_publish
 
 permissions:
   contents: write
 
 jobs:
-  gerar-resultados-teste:
+  gerar-resultados-live:
     runs-on: ubuntu-latest
 
     steps:
@@ -71,7 +71,7 @@ PY
         run: |
           python app/gerar_resultados_telegram.py
 
-      - name: Publicar arte gerada no repositório
+      - name: Publicar arquivos gerados no repositório
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -83,7 +83,6 @@ PY
             exit 0
           fi
 
-          git commit -m "Teste automático: geração de resultados" || echo "Nada para commit"
-
+          git commit -m "Live Publisher: geração de resultados e resumos" || echo "Nada para commit"
           git pull --rebase origin main || true
           git push origin HEAD:main || true
