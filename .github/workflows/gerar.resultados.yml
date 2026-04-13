@@ -48,9 +48,20 @@ jobs:
         env:
           GOOGLE_SERVICE_JSON: ${{ secrets.GOOGLE_SERVICE_JSON }}
         run: |
-          cat > service_account.json <<'EOF'
-          $GOOGLE_SERVICE_JSON
-          EOF
+          if [ -z "$GOOGLE_SERVICE_JSON" ]; then
+            echo "ERRO: GOOGLE_SERVICE_JSON não definido."
+            exit 1
+          fi
+          printf '%s' "$GOOGLE_SERVICE_JSON" > service_account.json
+
+      - name: Validar credencial Google
+        run: |
+          python - <<'PY'
+import json
+with open("service_account.json", "r", encoding="utf-8") as f:
+    json.load(f)
+print("Credencial Google válida.")
+PY
 
       - name: Executar gerador de resultados
         env:
