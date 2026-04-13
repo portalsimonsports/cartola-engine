@@ -25,17 +25,13 @@ jobs:
 
       - name: Mostrar payload recebido
         run: |
-          echo "===== EVENTO ====="
-          echo "${{ github.event.action }}"
           echo "===== PAYLOAD RECEBIDO ====="
           echo '${{ toJson(github.event.client_payload) }}'
 
       - name: Instalar dependências
         run: |
           python -m pip install --upgrade pip
-          if [ -f requirements.txt ]; then
-            pip install -r requirements.txt
-          fi
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
       - name: Garantir pastas padrão
         run: |
@@ -53,7 +49,7 @@ jobs:
           GOOGLE_SERVICE_JSON: ${{ secrets.GOOGLE_SERVICE_JSON }}
         run: |
           if [ -z "$GOOGLE_SERVICE_JSON" ]; then
-            echo "ERRO: secret GOOGLE_SERVICE_JSON não definido."
+            echo "ERRO: GOOGLE_SERVICE_JSON não definido."
             exit 1
           fi
           printf '%s' "$GOOGLE_SERVICE_JSON" > service_account.json
@@ -66,13 +62,6 @@ with open("service_account.json", "r", encoding="utf-8") as f:
     json.load(f)
 print("Credencial Google válida.")
 PY
-
-      - name: Verificar script principal
-        run: |
-          if [ ! -f app/gerar_resultados_telegram.py ]; then
-            echo "ERRO: arquivo app/gerar_resultados_telegram.py não encontrado."
-            exit 1
-          fi
 
       - name: Executar gerador de times e top5
         env:
@@ -89,11 +78,19 @@ PY
           echo "===== OUTPUT ====="
           ls -la output || true
 
-      - name: Publicar arquivos gerados no repositório
+      - name: Publicar arte gerada no repositório
         run: |
-          git config user.email "action@github.com"
-          git config user.name "GitHub Action"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add data/ output/ || true
+
+          if git diff --cached --quiet; then
+            echo "Sem alterações para commit."
+            exit 0
+          fi
+
           git commit -m "Teste automático: geração de times e top5" || echo "Nada para commit"
-          git push
+
+          git pull --rebase origin main || true
+          git push origin HEAD:main || true
