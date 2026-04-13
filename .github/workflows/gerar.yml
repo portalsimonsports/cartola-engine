@@ -71,14 +71,7 @@ PY
         run: |
           python app/gerar_resultados_telegram.py
 
-      - name: Listar arquivos gerados
-        run: |
-          echo "===== DATA ====="
-          ls -la data || true
-          echo "===== OUTPUT ====="
-          ls -la output || true
-
-      - name: Publicar arte gerada no repositório
+      - name: Publicar arquivos gerados no repositório
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -91,6 +84,5 @@ PY
           fi
 
           git commit -m "Teste automático: geração de times e top5" || echo "Nada para commit"
-
           git pull --rebase origin main || true
           git push origin HEAD:main || true
