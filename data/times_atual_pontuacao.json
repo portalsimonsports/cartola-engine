@@ -1,7 +1,7 @@
 {
   "rodada": 12,
   "tipo": "PONTUACAO",
-  "atualizado_em": "2026-04-13T23:47:39.832Z",
+  "atualizado_em": "2026-04-14T00:47:43.053Z",
   "dados": [
     {
       "RODADA": 12,
@@ -11,7 +11,7 @@
       "NOME": "Lucas Arcanjo",
       "CLUBE": "VIT",
       "PRECO": 10.78,
-      "EXP_SCORE": 4.8739,
+      "EXP_SCORE": 5.4155,
       "ATLETA_ID": 104118
     },
     {
@@ -33,7 +33,7 @@
       "NOME": "Cuiabano",
       "CLUBE": "VAS",
       "PRECO": 13.14,
-      "EXP_SCORE": 6.2872,
+      "EXP_SCORE": 5.6585,
       "ATLETA_ID": 116065
     },
     {
@@ -44,7 +44,7 @@
       "NOME": "Gustavo Marques",
       "CLUBE": "RBB",
       "PRECO": 7.49,
-      "EXP_SCORE": 3.2114,
+      "EXP_SCORE": 2.8902,
       "ATLETA_ID": 110750
     },
     {
@@ -52,11 +52,22 @@
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "ZAG",
-      "NOME": "Jacy",
-      "CLUBE": "CFC",
-      "PRECO": 4.95,
-      "EXP_SCORE": 2.9799,
-      "ATLETA_ID": 97878
+      "NOME": "Lucas Ver?ssimo",
+      "CLUBE": "SAN",
+      "PRECO": 11.14,
+      "EXP_SCORE": 2.8668,
+      "ATLETA_ID": 93368
+    },
+    {
+      "RODADA": 12,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Christian",
+      "CLUBE": "CRU",
+      "PRECO": 10.01,
+      "EXP_SCORE": 6.184,
+      "ATLETA_ID": 104502
     },
     {
       "RODADA": 12,
@@ -84,34 +95,12 @@
       "RODADA": 12,
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Danilo",
-      "CLUBE": "BOT",
-      "PRECO": 15.83,
-      "EXP_SCORE": 5.3948,
-      "ATLETA_ID": 107231
-    },
-    {
-      "RODADA": 12,
-      "TIPO": "PONTUACAO",
-      "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Andr?s G?mez",
-      "CLUBE": "VAS",
-      "PRECO": 13.06,
-      "EXP_SCORE": 6.1417,
-      "ATLETA_ID": 116706
-    },
-    {
-      "RODADA": 12,
-      "TIPO": "PONTUACAO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Lucas Ronier",
-      "CLUBE": "CFC",
-      "PRECO": 10.63,
-      "EXP_SCORE": 5.975,
-      "ATLETA_ID": 123648
+      "NOME": "Pedro",
+      "CLUBE": "FLA",
+      "PRECO": 18.6,
+      "EXP_SCORE": 6.7644,
+      "ATLETA_ID": 94583
     },
     {
       "RODADA": 12,
@@ -123,6 +112,17 @@
       "PRECO": 9.42,
       "EXP_SCORE": 5.8916,
       "ATLETA_ID": 112886
+    },
+    {
+      "RODADA": 12,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Andr?s G?mez",
+      "CLUBE": "VAS",
+      "PRECO": 13.06,
+      "EXP_SCORE": 5.5275,
+      "ATLETA_ID": 116706
     },
     {
       "RODADA": 12,
@@ -140,55 +140,55 @@
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Everson",
-      "CLUBE": "CAM",
-      "PRECO": 9.78,
-      "EXP_SCORE": 4.5011,
-      "ATLETA_ID": 72294
+      "NOME": "L?o Vieira",
+      "CLUBE": "BAH",
+      "PRECO": 7.24,
+      "EXP_SCORE": 4.4064,
+      "ATLETA_ID": 71043
     },
     {
       "RODADA": 12,
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "LAT",
-      "NOME": "Luciano Juba",
-      "CLUBE": "BAH",
-      "PRECO": 11.97,
-      "EXP_SCORE": 5.029,
-      "ATLETA_ID": 107093
+      "NOME": "Igor Vin?cius",
+      "CLUBE": "SAN",
+      "PRECO": 11.02,
+      "EXP_SCORE": 5.3445,
+      "ATLETA_ID": 95466
     },
     {
       "RODADA": 12,
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Eduardo Doma",
-      "CLUBE": "CHA",
-      "PRECO": 4.59,
-      "EXP_SCORE": 2.2278,
-      "ATLETA_ID": 101393
+      "NOME": "Jacy",
+      "CLUBE": "CFC",
+      "PRECO": 4.95,
+      "EXP_SCORE": 2.5913,
+      "ATLETA_ID": 97878
     },
     {
       "RODADA": 12,
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Christian",
-      "CLUBE": "CRU",
-      "PRECO": 10.01,
-      "EXP_SCORE": 5.3774,
-      "ATLETA_ID": 104502
+      "NOME": "H?rcules",
+      "CLUBE": "FLU",
+      "PRECO": 8.04,
+      "EXP_SCORE": 4.0215,
+      "ATLETA_ID": 116447
     },
     {
       "RODADA": 12,
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Cuello",
-      "CLUBE": "CAM",
+      "NOME": "John Kennedy",
+      "CLUBE": "FLU",
       "PRECO": 9.14,
-      "EXP_SCORE": 5.0431,
-      "ATLETA_ID": 98909
+      "EXP_SCORE": 4.4802,
+      "ATLETA_ID": 110759
     }
   ]
 }
