@@ -1,6 +1,6 @@
 {
   "rodada": 12,
-  "atualizado_em": "2026-04-14T09:47:40.072Z",
+  "atualizado_em": "2026-04-14T10:47:41.648Z",
   "dados": [
     {
       "RODADA": 12,
@@ -8,19 +8,9 @@
       "NOME": "Lucas Arcanjo",
       "CLUBE": "VIT",
       "PRECO": 10.78,
-      "EXP_SCORE": 5.4155,
+      "EXP_SCORE": 4.8739,
       "FACTOR": 1.1534830423231697,
       "ATLETA_ID": 104118
-    },
-    {
-      "RODADA": 12,
-      "POS": "GOL",
-      "NOME": "L?o Vieira",
-      "CLUBE": "BAH",
-      "PRECO": 7.24,
-      "EXP_SCORE": 4.4064,
-      "FACTOR": 0.875278772231605,
-      "ATLETA_ID": 71043
     },
     {
       "RODADA": 12,
@@ -49,8 +39,18 @@
       "CLUBE": "GRE",
       "PRECO": 8.37,
       "EXP_SCORE": 3.8585,
-      "FACTOR": 0.9534595771117097,
+      "FACTOR": 0.9534595771117099,
       "ATLETA_ID": 71631
+    },
+    {
+      "RODADA": 12,
+      "POS": "GOL",
+      "NOME": "L?o Vieira",
+      "CLUBE": "BAH",
+      "PRECO": 7.24,
+      "EXP_SCORE": 3.8316,
+      "FACTOR": 0.8752787722316051,
+      "ATLETA_ID": 71043
     },
     {
       "RODADA": 12,
@@ -69,8 +69,18 @@
       "CLUBE": "VAS",
       "PRECO": 13.14,
       "EXP_SCORE": 5.6585,
-      "FACTOR": 1.0904832390008772,
+      "FACTOR": 1.0904832390008774,
       "ATLETA_ID": 116065
+    },
+    {
+      "RODADA": 12,
+      "POS": "LAT",
+      "NOME": "Luciano Juba",
+      "CLUBE": "BAH",
+      "PRECO": 11.97,
+      "EXP_SCORE": 5.029,
+      "FACTOR": 0.8752787722316051,
+      "ATLETA_ID": 107093
     },
     {
       "RODADA": 12,
@@ -78,7 +88,7 @@
       "NOME": "Igor Vin?cius",
       "CLUBE": "SAN",
       "PRECO": 11.02,
-      "EXP_SCORE": 5.3445,
+      "EXP_SCORE": 4.81,
       "FACTOR": 1.1415879745630166,
       "ATLETA_ID": 95466
     },
@@ -88,19 +98,9 @@
       "NOME": "Ramon",
       "CLUBE": "VIT",
       "PRECO": 10.07,
-      "EXP_SCORE": 5.258,
+      "EXP_SCORE": 4.7322,
       "FACTOR": 1.1534830423231697,
       "ATLETA_ID": 101597
-    },
-    {
-      "RODADA": 12,
-      "POS": "LAT",
-      "NOME": "Luciano Juba",
-      "CLUBE": "BAH",
-      "PRECO": 11.97,
-      "EXP_SCORE": 5.029,
-      "FACTOR": 0.875278772231605,
-      "ATLETA_ID": 107093
     },
     {
       "RODADA": 12,
@@ -145,12 +145,12 @@
     {
       "RODADA": 12,
       "POS": "ZAG",
-      "NOME": "Murilo",
-      "CLUBE": "PAL",
-      "PRECO": 7.74,
-      "EXP_SCORE": 2.5196,
-      "FACTOR": 1.1135156146490552,
-      "ATLETA_ID": 97653
+      "NOME": "Sabino",
+      "CLUBE": "SAO",
+      "PRECO": 7.1,
+      "EXP_SCORE": 2.5566,
+      "FACTOR": 0.9427219183256795,
+      "ATLETA_ID": 104075
     },
     {
       "RODADA": 12,
