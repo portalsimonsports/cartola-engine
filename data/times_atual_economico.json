@@ -1,7 +1,7 @@
 {
   "rodada": 12,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-04-14T02:47:34.679Z",
+  "atualizado_em": "2026-04-14T09:47:34.786Z",
   "dados": [
     {
       "RODADA": 12,
@@ -44,7 +44,7 @@
       "NOME": "Cac?",
       "CLUBE": "VIT",
       "PRECO": 7.64,
-      "EXP_SCORE": 2.3262,
+      "EXP_SCORE": 2.3625,
       "ATLETA_ID": 102340
     },
     {
@@ -55,7 +55,7 @@
       "NOME": "Arthur Dias",
       "CLUBE": "CAP",
       "PRECO": 6.69,
-      "EXP_SCORE": 1.8713,
+      "EXP_SCORE": 1.9005,
       "ATLETA_ID": 130843
     },
     {
@@ -66,7 +66,7 @@
       "NOME": "Dudu",
       "CLUBE": "CAP",
       "PRECO": 2.67,
-      "EXP_SCORE": 1.8101,
+      "EXP_SCORE": 1.7485,
       "ATLETA_ID": 125746
     },
     {
@@ -77,19 +77,8 @@
       "NOME": "Reinier",
       "CLUBE": "CAM",
       "PRECO": 4.77,
-      "EXP_SCORE": 2.5191,
+      "EXP_SCORE": 2.4333,
       "ATLETA_ID": 105068
-    },
-    {
-      "RODADA": 12,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Christian",
-      "CLUBE": "CRU",
-      "PRECO": 10.01,
-      "EXP_SCORE": 6.184,
-      "ATLETA_ID": 104502
     },
     {
       "RODADA": 12,
@@ -99,30 +88,41 @@
       "NOME": "Thiago Mendes",
       "CLUBE": "VAS",
       "PRECO": 8.37,
-      "EXP_SCORE": 3.9941,
+      "EXP_SCORE": 3.8581,
       "ATLETA_ID": 71123
     },
     {
       "RODADA": 12,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Pedro",
-      "CLUBE": "FLA",
-      "PRECO": 18.6,
-      "EXP_SCORE": 6.7644,
-      "ATLETA_ID": 94583
+      "POS": "MEI",
+      "NOME": "Christian",
+      "CLUBE": "CRU",
+      "PRECO": 10.01,
+      "EXP_SCORE": 5.9734,
+      "ATLETA_ID": 104502
+    },
+    {
+      "RODADA": 12,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Baralhas",
+      "CLUBE": "VIT",
+      "PRECO": 10.65,
+      "EXP_SCORE": 4.2329,
+      "ATLETA_ID": 99440
     },
     {
       "RODADA": 12,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Mois?s",
-      "CLUBE": "SAN",
-      "PRECO": 6.88,
-      "EXP_SCORE": 2.6747,
-      "ATLETA_ID": 104666
+      "NOME": "Samuel Lino",
+      "CLUBE": "FLA",
+      "PRECO": 11.68,
+      "EXP_SCORE": 3.9974,
+      "ATLETA_ID": 98873
     },
     {
       "RODADA": 12,
@@ -165,7 +165,7 @@
       "NOME": "Jacy",
       "CLUBE": "CFC",
       "PRECO": 4.95,
-      "EXP_SCORE": 2.5913,
+      "EXP_SCORE": 2.6316,
       "ATLETA_ID": 97878
     },
     {
@@ -176,7 +176,7 @@
       "NOME": "Monsalve",
       "CLUBE": "GRE",
       "PRECO": 2.71,
-      "EXP_SCORE": 0.1526,
+      "EXP_SCORE": 0.1474,
       "ATLETA_ID": 109966
     },
     {
@@ -184,11 +184,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Pav?n",
-      "CLUBE": "GRE",
-      "PRECO": 6.16,
-      "EXP_SCORE": 3.1215,
-      "ATLETA_ID": 91908
+      "NOME": "Lucas Barbosa",
+      "CLUBE": "RBB",
+      "PRECO": 9.42,
+      "EXP_SCORE": 5.1167,
+      "ATLETA_ID": 112886
     }
   ]
 }
