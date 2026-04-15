@@ -1,7 +1,7 @@
 {
   "rodada": 12,
   "tipo": "PONTUACAO",
-  "atualizado_em": "2026-04-15T08:47:37.758Z",
+  "atualizado_em": "2026-04-15T09:47:37.702Z",
   "dados": [
     {
       "RODADA": 12,
@@ -74,6 +74,17 @@
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "MEI",
+      "NOME": "Arias",
+      "CLUBE": "PAL",
+      "PRECO": 15.99,
+      "EXP_SCORE": 5.6539,
+      "ATLETA_ID": 99815
+    },
+    {
+      "RODADA": 12,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
       "NOME": "Danilo",
       "CLUBE": "BOT",
       "PRECO": 15.83,
@@ -84,23 +95,12 @@
       "RODADA": 12,
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Arias",
-      "CLUBE": "PAL",
-      "PRECO": 15.99,
-      "EXP_SCORE": 5.0885,
-      "ATLETA_ID": 99815
-    },
-    {
-      "RODADA": 12,
-      "TIPO": "PONTUACAO",
-      "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Pedro",
-      "CLUBE": "FLA",
-      "PRECO": 18.6,
-      "EXP_SCORE": 5.8804,
-      "ATLETA_ID": 94583
+      "NOME": "Andr?s G?mez",
+      "CLUBE": "VAS",
+      "PRECO": 13.06,
+      "EXP_SCORE": 5.3374,
+      "ATLETA_ID": 116706
     },
     {
       "RODADA": 12,
@@ -118,11 +118,11 @@
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Andr?s G?mez",
-      "CLUBE": "VAS",
-      "PRECO": 13.06,
-      "EXP_SCORE": 4.8037,
-      "ATLETA_ID": 116706
+      "NOME": "Pedro",
+      "CLUBE": "FLA",
+      "PRECO": 18.6,
+      "EXP_SCORE": 5.1134,
+      "ATLETA_ID": 94583
     },
     {
       "RODADA": 12,
@@ -165,7 +165,7 @@
       "NOME": "Jacy",
       "CLUBE": "CFC",
       "PRECO": 4.95,
-      "EXP_SCORE": 2.6371,
+      "EXP_SCORE": 2.3734,
       "ATLETA_ID": 97878
     },
     {
