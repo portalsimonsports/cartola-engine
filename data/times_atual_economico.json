@@ -1,7 +1,7 @@
 {
   "rodada": 12,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-04-15T12:47:35.672Z",
+  "atualizado_em": "2026-04-15T13:47:35.024Z",
   "dados": [
     {
       "RODADA": 12,
@@ -74,6 +74,17 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "MEI",
+      "NOME": "Baralhas",
+      "CLUBE": "VIT",
+      "PRECO": 10.65,
+      "EXP_SCORE": 4.7071,
+      "ATLETA_ID": 99440
+    },
+    {
+      "RODADA": 12,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
       "NOME": "Reinier",
       "CLUBE": "CAM",
       "PRECO": 4.77,
@@ -101,17 +112,6 @@
       "PRECO": 10.05,
       "EXP_SCORE": 3.8948,
       "ATLETA_ID": 98672
-    },
-    {
-      "RODADA": 12,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Baralhas",
-      "CLUBE": "VIT",
-      "PRECO": 10.65,
-      "EXP_SCORE": 4.2364,
-      "ATLETA_ID": 99440
     },
     {
       "RODADA": 12,
@@ -184,11 +184,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Lucas Barbosa",
-      "CLUBE": "RBB",
-      "PRECO": 9.42,
-      "EXP_SCORE": 5.1199,
-      "ATLETA_ID": 112886
+      "NOME": "Andr?s G?mez",
+      "CLUBE": "VAS",
+      "PRECO": 13.06,
+      "EXP_SCORE": 5.3374,
+      "ATLETA_ID": 116706
     }
   ]
 }
