@@ -1,6 +1,6 @@
 {
   "rodada": 12,
-  "atualizado_em": "2026-04-15T03:47:42.743Z",
+  "atualizado_em": "2026-04-15T04:47:39.983Z",
   "dados": [
     {
       "RODADA": 12,
@@ -15,22 +15,22 @@
     {
       "RODADA": 12,
       "POS": "GOL",
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 8.75,
+      "EXP_SCORE": 4.677,
+      "FACTOR": 1.1159289925286897,
+      "ATLETA_ID": 104084
+    },
+    {
+      "RODADA": 12,
+      "POS": "GOL",
       "NOME": "L?o Vieira",
       "CLUBE": "BAH",
       "PRECO": 7.24,
       "EXP_SCORE": 4.42,
       "FACTOR": 0.8779918076942184,
       "ATLETA_ID": 71043
-    },
-    {
-      "RODADA": 12,
-      "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.75,
-      "EXP_SCORE": 4.0669,
-      "FACTOR": 1.1159289925286897,
-      "ATLETA_ID": 104084
     },
     {
       "RODADA": 12,
@@ -65,6 +65,16 @@
     {
       "RODADA": 12,
       "POS": "LAT",
+      "NOME": "Ramon",
+      "CLUBE": "VIT",
+      "PRECO": 10.07,
+      "EXP_SCORE": 6.0569,
+      "FACTOR": 1.155432875061289,
+      "ATLETA_ID": 101597
+    },
+    {
+      "RODADA": 12,
+      "POS": "LAT",
       "NOME": "Cuiabano",
       "CLUBE": "VAS",
       "PRECO": 13.14,
@@ -81,16 +91,6 @@
       "EXP_SCORE": 5.5096,
       "FACTOR": 1.1768569383395506,
       "ATLETA_ID": 95466
-    },
-    {
-      "RODADA": 12,
-      "POS": "LAT",
-      "NOME": "Ramon",
-      "CLUBE": "VIT",
-      "PRECO": 10.07,
-      "EXP_SCORE": 5.2669,
-      "FACTOR": 1.155432875061289,
-      "ATLETA_ID": 101597
     },
     {
       "RODADA": 12,
@@ -215,22 +215,22 @@
     {
       "RODADA": 12,
       "POS": "ATA",
+      "NOME": "Andr?s G?mez",
+      "CLUBE": "VAS",
+      "PRECO": 13.06,
+      "EXP_SCORE": 5.3374,
+      "FACTOR": 1.1029663346889442,
+      "ATLETA_ID": 116706
+    },
+    {
+      "RODADA": 12,
+      "POS": "ATA",
       "NOME": "Lucas Barbosa",
       "CLUBE": "RBB",
       "PRECO": 9.42,
       "EXP_SCORE": 5.1199,
       "FACTOR": 1.1094281404630901,
       "ATLETA_ID": 112886
-    },
-    {
-      "RODADA": 12,
-      "POS": "ATA",
-      "NOME": "Andr?s G?mez",
-      "CLUBE": "VAS",
-      "PRECO": 13.06,
-      "EXP_SCORE": 4.8037,
-      "FACTOR": 1.1029663346889442,
-      "ATLETA_ID": 116706
     },
     {
       "RODADA": 12,
