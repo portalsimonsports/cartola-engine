@@ -1,6 +1,6 @@
 {
   "rodada": 12,
-  "atualizado_em": "2026-04-15T07:47:39.932Z",
+  "atualizado_em": "2026-04-15T08:47:40.702Z",
   "dados": [
     {
       "RODADA": 12,
@@ -15,6 +15,16 @@
     {
       "RODADA": 12,
       "POS": "GOL",
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 8.75,
+      "EXP_SCORE": 4.677,
+      "FACTOR": 1.1159289925286897,
+      "ATLETA_ID": 104084
+    },
+    {
+      "RODADA": 12,
+      "POS": "GOL",
       "NOME": "L?o Vieira",
       "CLUBE": "BAH",
       "PRECO": 7.24,
@@ -25,21 +35,11 @@
     {
       "RODADA": 12,
       "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.75,
-      "EXP_SCORE": 4.0669,
-      "FACTOR": 1.1159289925286897,
-      "ATLETA_ID": 104084
-    },
-    {
-      "RODADA": 12,
-      "POS": "GOL",
       "NOME": "F?bio",
       "CLUBE": "FLU",
       "PRECO": 10.23,
       "EXP_SCORE": 3.9448,
-      "FACTOR": 0.9137124208643738,
+      "FACTOR": 0.9137124208643737,
       "ATLETA_ID": 37656
     },
     {
@@ -65,11 +65,21 @@
     {
       "RODADA": 12,
       "POS": "LAT",
+      "NOME": "Ramon",
+      "CLUBE": "VIT",
+      "PRECO": 10.07,
+      "EXP_SCORE": 6.0569,
+      "FACTOR": 1.155432875061289,
+      "ATLETA_ID": 101597
+    },
+    {
+      "RODADA": 12,
+      "POS": "LAT",
       "NOME": "Cuiabano",
       "CLUBE": "VAS",
       "PRECO": 13.14,
       "EXP_SCORE": 5.5915,
-      "FACTOR": 1.0775746938793145,
+      "FACTOR": 1.0775746938793143,
       "ATLETA_ID": 116065
     },
     {
@@ -81,16 +91,6 @@
       "EXP_SCORE": 5.5096,
       "FACTOR": 1.1768569383395506,
       "ATLETA_ID": 95466
-    },
-    {
-      "RODADA": 12,
-      "POS": "LAT",
-      "NOME": "Ramon",
-      "CLUBE": "VIT",
-      "PRECO": 10.07,
-      "EXP_SCORE": 5.2669,
-      "FACTOR": 1.155432875061289,
-      "ATLETA_ID": 101597
     },
     {
       "RODADA": 12,
@@ -149,7 +149,7 @@
       "CLUBE": "COR",
       "PRECO": 10.5,
       "EXP_SCORE": 2.5876,
-      "FACTOR": 0.9637237853528006,
+      "FACTOR": 0.9637237853528003,
       "ATLETA_ID": 69208
     },
     {
@@ -169,7 +169,7 @@
       "CLUBE": "BOT",
       "PRECO": 15.83,
       "EXP_SCORE": 5.2144,
-      "FACTOR": 0.9735605932790248,
+      "FACTOR": 0.973560593279025,
       "ATLETA_ID": 107231
     },
     {
@@ -195,12 +195,12 @@
     {
       "RODADA": 12,
       "POS": "MEI",
-      "NOME": "Neymar",
-      "CLUBE": "SAN",
-      "PRECO": 19.91,
-      "EXP_SCORE": 4.6409,
-      "FACTOR": 1.0535237299019178,
-      "ATLETA_ID": 63007
+      "NOME": "Baralhas",
+      "CLUBE": "VIT",
+      "PRECO": 10.65,
+      "EXP_SCORE": 4.7071,
+      "FACTOR": 1.0637059693036024,
+      "ATLETA_ID": 99440
     },
     {
       "RODADA": 12,
