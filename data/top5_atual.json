@@ -1,6 +1,6 @@
 {
   "rodada": 12,
-  "atualizado_em": "2026-04-15T23:47:37.983Z",
+  "atualizado_em": "2026-04-16T00:47:37.278Z",
   "dados": [
     {
       "RODADA": 12,
@@ -159,7 +159,7 @@
       "CLUBE": "CRU",
       "PRECO": 10.01,
       "EXP_SCORE": 5.769,
-      "FACTOR": 1.0760276856813744,
+      "FACTOR": 1.0760276856813742,
       "ATLETA_ID": 104502
     },
     {
@@ -189,7 +189,7 @@
       "CLUBE": "VIT",
       "PRECO": 10.65,
       "EXP_SCORE": 4.7123,
-      "FACTOR": 1.0648798918215057,
+      "FACTOR": 1.0648798918215054,
       "ATLETA_ID": 99440
     },
     {
@@ -209,18 +209,8 @@
       "CLUBE": "FLA",
       "PRECO": 18.6,
       "EXP_SCORE": 5.8368,
-      "FACTOR": 1.0295379776631444,
+      "FACTOR": 1.0295379776631441,
       "ATLETA_ID": 94583
-    },
-    {
-      "RODADA": 12,
-      "POS": "ATA",
-      "NOME": "Andr?s G?mez",
-      "CLUBE": "VAS",
-      "PRECO": 13.06,
-      "EXP_SCORE": 5.342,
-      "FACTOR": 1.1039215104923124,
-      "ATLETA_ID": 116706
     },
     {
       "RODADA": 12,
@@ -229,8 +219,18 @@
       "CLUBE": "RBB",
       "PRECO": 9.42,
       "EXP_SCORE": 5.1241,
-      "FACTOR": 1.11034731306656,
+      "FACTOR": 1.1103473130665598,
       "ATLETA_ID": 112886
+    },
+    {
+      "RODADA": 12,
+      "POS": "ATA",
+      "NOME": "Andr?s G?mez",
+      "CLUBE": "VAS",
+      "PRECO": 13.06,
+      "EXP_SCORE": 4.8078,
+      "FACTOR": 1.1039215104923124,
+      "ATLETA_ID": 116706
     },
     {
       "RODADA": 12,
@@ -259,7 +259,7 @@
       "CLUBE": "RBB",
       "PRECO": 8.37,
       "EXP_SCORE": 5.3805,
-      "FACTOR": 1.0795043321480444,
+      "FACTOR": 1.0795043321480442,
       "ATLETA_ID": 39850
     },
     {
@@ -279,7 +279,7 @@
       "CLUBE": "INT",
       "PRECO": 7.38,
       "EXP_SCORE": 4.7209,
-      "FACTOR": 1.1239927380177295,
+      "FACTOR": 1.1239927380177293,
       "ATLETA_ID": 115479
     },
     {
@@ -299,7 +299,7 @@
       "CLUBE": "BAH",
       "PRECO": 11.19,
       "EXP_SCORE": 4.3619,
-      "FACTOR": 0.9549552110983123,
+      "FACTOR": 0.9549552110983122,
       "ATLETA_ID": 97341
     }
   ]
