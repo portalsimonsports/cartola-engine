@@ -1,6 +1,6 @@
 {
   "rodada": 12,
-  "atualizado_em": "2026-04-16T16:47:43.317Z",
+  "atualizado_em": "2026-04-16T17:47:43.634Z",
   "dados": [
     {
       "RODADA": 12,
@@ -15,22 +15,22 @@
     {
       "RODADA": 12,
       "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.75,
-      "EXP_SCORE": 4.648,
-      "FACTOR": 1.1090065468359556,
-      "ATLETA_ID": 104084
-    },
-    {
-      "RODADA": 12,
-      "POS": "GOL",
       "NOME": "L?o Vieira",
       "CLUBE": "BAH",
       "PRECO": 7.24,
       "EXP_SCORE": 4.4094,
-      "FACTOR": 0.8758807881113818,
+      "FACTOR": 0.8758807881113817,
       "ATLETA_ID": 71043
+    },
+    {
+      "RODADA": 12,
+      "POS": "GOL",
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 8.75,
+      "EXP_SCORE": 4.0417,
+      "FACTOR": 1.1090065468359556,
+      "ATLETA_ID": 104084
     },
     {
       "RODADA": 12,
@@ -39,7 +39,7 @@
       "CLUBE": "INT",
       "PRECO": 7.26,
       "EXP_SCORE": 3.981,
-      "FACTOR": 1.2377578527000834,
+      "FACTOR": 1.2377578527000832,
       "ATLETA_ID": 105949
     },
     {
@@ -49,7 +49,7 @@
       "CLUBE": "FLU",
       "PRECO": 10.23,
       "EXP_SCORE": 3.9371,
-      "FACTOR": 0.9119275441969811,
+      "FACTOR": 0.911927544196981,
       "ATLETA_ID": 37656
     },
     {
@@ -99,7 +99,7 @@
       "CLUBE": "BAH",
       "PRECO": 11.97,
       "EXP_SCORE": 5.0325,
-      "FACTOR": 0.8758807881113818,
+      "FACTOR": 0.8758807881113817,
       "ATLETA_ID": 107093
     },
     {
@@ -185,22 +185,22 @@
     {
       "RODADA": 12,
       "POS": "MEI",
-      "NOME": "Baralhas",
-      "CLUBE": "VIT",
-      "PRECO": 10.65,
-      "EXP_SCORE": 4.7123,
-      "FACTOR": 1.0648798918215054,
-      "ATLETA_ID": 99440
-    },
-    {
-      "RODADA": 12,
-      "POS": "MEI",
       "NOME": "Andreas Pereira",
       "CLUBE": "PAL",
       "PRECO": 13.73,
       "EXP_SCORE": 4.6591,
       "FACTOR": 1.0728634647167827,
       "ATLETA_ID": 89274
+    },
+    {
+      "RODADA": 12,
+      "POS": "MEI",
+      "NOME": "Neymar",
+      "CLUBE": "SAN",
+      "PRECO": 19.91,
+      "EXP_SCORE": 4.6463,
+      "FACTOR": 1.0547543847348126,
+      "ATLETA_ID": 63007
     },
     {
       "RODADA": 12,
