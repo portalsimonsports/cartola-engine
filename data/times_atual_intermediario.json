@@ -1,7 +1,7 @@
 {
   "rodada": 12,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-04-17T13:47:37.655Z",
+  "atualizado_em": "2026-04-17T14:47:37.713Z",
   "dados": [
     {
       "RODADA": 12,
@@ -22,7 +22,7 @@
       "NOME": "Juninho Capixaba",
       "CLUBE": "RBB",
       "PRECO": 14.21,
-      "EXP_SCORE": 6.5174,
+      "EXP_SCORE": 7.2416,
       "ATLETA_ID": 94968
     },
     {
@@ -30,11 +30,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "LAT",
-      "NOME": "Cuiabano",
-      "CLUBE": "VAS",
-      "PRECO": 13.14,
-      "EXP_SCORE": 5.5757,
-      "ATLETA_ID": 116065
+      "NOME": "Ramon",
+      "CLUBE": "VIT",
+      "PRECO": 10.07,
+      "EXP_SCORE": 6.046,
+      "ATLETA_ID": 101597
     },
     {
       "RODADA": 12,
@@ -44,7 +44,7 @@
       "NOME": "Gustavo Marques",
       "CLUBE": "RBB",
       "PRECO": 7.49,
-      "EXP_SCORE": 2.9158,
+      "EXP_SCORE": 3.2397,
       "ATLETA_ID": 110750
     },
     {
@@ -66,19 +66,8 @@
       "NOME": "Christian",
       "CLUBE": "CRU",
       "PRECO": 10.01,
-      "EXP_SCORE": 5.7701,
+      "EXP_SCORE": 5.7715,
       "ATLETA_ID": 104502
-    },
-    {
-      "RODADA": 12,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Arias",
-      "CLUBE": "PAL",
-      "PRECO": 15.99,
-      "EXP_SCORE": 5.5944,
-      "ATLETA_ID": 99815
     },
     {
       "RODADA": 12,
@@ -88,8 +77,30 @@
       "NOME": "Danilo",
       "CLUBE": "BOT",
       "PRECO": 15.83,
-      "EXP_SCORE": 5.2196,
+      "EXP_SCORE": 5.2206,
       "ATLETA_ID": 107231
+    },
+    {
+      "RODADA": 12,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Arias",
+      "CLUBE": "PAL",
+      "PRECO": 15.99,
+      "EXP_SCORE": 5.0363,
+      "ATLETA_ID": 99815
+    },
+    {
+      "RODADA": 12,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Baralhas",
+      "CLUBE": "VIT",
+      "PRECO": 10.65,
+      "EXP_SCORE": 4.7145,
+      "ATLETA_ID": 99440
     },
     {
       "RODADA": 12,
@@ -99,7 +110,7 @@
       "NOME": "Andreas Pereira",
       "CLUBE": "PAL",
       "PRECO": 13.73,
-      "EXP_SCORE": 4.6599,
+      "EXP_SCORE": 4.6611,
       "ATLETA_ID": 89274
     },
     {
@@ -110,19 +121,8 @@
       "NOME": "Lucas Barbosa",
       "CLUBE": "RBB",
       "PRECO": 9.42,
-      "EXP_SCORE": 5.1249,
+      "EXP_SCORE": 5.1259,
       "ATLETA_ID": 112886
-    },
-    {
-      "RODADA": 12,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Everaldo",
-      "CLUBE": "BAH",
-      "PRECO": 6.9,
-      "EXP_SCORE": 3.368,
-      "ATLETA_ID": 78117
     },
     {
       "RODADA": 12,
@@ -132,7 +132,7 @@
       "NOME": "Rafael Guanaes",
       "CLUBE": "MIR",
       "PRECO": 6.71,
-      "EXP_SCORE": 2.7665,
+      "EXP_SCORE": 2.7539,
       "ATLETA_ID": 104027
     },
     {
@@ -140,22 +140,22 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "L?o Vieira",
-      "CLUBE": "BAH",
-      "PRECO": 7.24,
-      "EXP_SCORE": 4.4054,
-      "ATLETA_ID": 71043
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 8.75,
+      "EXP_SCORE": 4.645,
+      "ATLETA_ID": 104084
     },
     {
       "RODADA": 12,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "LAT",
-      "NOME": "Igor Vin?cius",
-      "CLUBE": "SAN",
-      "PRECO": 11.02,
-      "EXP_SCORE": 5.5011,
-      "ATLETA_ID": 95466
+      "NOME": "Sant Anna",
+      "CLUBE": "RBB",
+      "PRECO": 9.23,
+      "EXP_SCORE": 3.8277,
+      "ATLETA_ID": 105213
     },
     {
       "RODADA": 12,
@@ -173,22 +173,22 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "H?rcules",
-      "CLUBE": "FLU",
-      "PRECO": 8.04,
-      "EXP_SCORE": 4.0081,
-      "ATLETA_ID": 116447
+      "NOME": "Thiago Mendes",
+      "CLUBE": "VAS",
+      "PRECO": 8.37,
+      "EXP_SCORE": 3.8654,
+      "ATLETA_ID": 71123
     },
     {
       "RODADA": 12,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Pav?n",
-      "CLUBE": "GRE",
-      "PRECO": 6.16,
-      "EXP_SCORE": 2.7144,
-      "ATLETA_ID": 91908
+      "NOME": "Cuello",
+      "CLUBE": "CAM",
+      "PRECO": 9.14,
+      "EXP_SCORE": 3.8165,
+      "ATLETA_ID": 98909
     }
   ]
 }
