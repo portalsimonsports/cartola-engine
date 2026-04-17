@@ -1,6 +1,6 @@
 {
   "rodada": 12,
-  "atualizado_em": "2026-04-17T17:47:34.985Z",
+  "atualizado_em": "2026-04-17T18:47:42.477Z",
   "dados": [
     {
       "RODADA": 12,
@@ -25,6 +25,16 @@
     {
       "RODADA": 12,
       "POS": "GOL",
+      "NOME": "L?o Vieira",
+      "CLUBE": "BAH",
+      "PRECO": 7.24,
+      "EXP_SCORE": 4.3989,
+      "FACTOR": 0.8737970729941867,
+      "ATLETA_ID": 71043
+    },
+    {
+      "RODADA": 12,
+      "POS": "GOL",
       "NOME": "F?bio",
       "CLUBE": "FLU",
       "PRECO": 10.23,
@@ -41,16 +51,6 @@
       "EXP_SCORE": 3.9087,
       "FACTOR": 1.2152849962677283,
       "ATLETA_ID": 105949
-    },
-    {
-      "RODADA": 12,
-      "POS": "GOL",
-      "NOME": "Weverton",
-      "CLUBE": "GRE",
-      "PRECO": 8.37,
-      "EXP_SCORE": 3.8546,
-      "FACTOR": 0.952473089189984,
-      "ATLETA_ID": 71631
     },
     {
       "RODADA": 12,
@@ -145,12 +145,12 @@
     {
       "RODADA": 12,
       "POS": "ZAG",
-      "NOME": "Gabriel Paulista",
-      "CLUBE": "COR",
-      "PRECO": 10.5,
-      "EXP_SCORE": 2.6029,
-      "FACTOR": 0.9694406749756836,
-      "ATLETA_ID": 69208
+      "NOME": "Jacy",
+      "CLUBE": "CFC",
+      "PRECO": 4.95,
+      "EXP_SCORE": 2.6287,
+      "FACTOR": 1.1202310479766564,
+      "ATLETA_ID": 97878
     },
     {
       "RODADA": 12,
@@ -219,7 +219,7 @@
       "CLUBE": "VAS",
       "PRECO": 13.06,
       "EXP_SCORE": 5.3516,
-      "FACTOR": 1.1058962625612594,
+      "FACTOR": 1.1058962625612596,
       "ATLETA_ID": 116706
     },
     {
