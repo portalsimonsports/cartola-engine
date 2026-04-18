@@ -1,6 +1,6 @@
 {
   "rodada": 12,
-  "atualizado_em": "2026-04-18T10:47:38.245Z",
+  "atualizado_em": "2026-04-18T11:47:39.370Z",
   "dados": [
     {
       "RODADA": 12,
@@ -65,6 +65,16 @@
     {
       "RODADA": 12,
       "POS": "LAT",
+      "NOME": "Ramon",
+      "CLUBE": "VIT",
+      "PRECO": 10.07,
+      "EXP_SCORE": 6.0566,
+      "FACTOR": 1.1553657308809295,
+      "ATLETA_ID": 101597
+    },
+    {
+      "RODADA": 12,
+      "POS": "LAT",
       "NOME": "Cuiabano",
       "CLUBE": "VAS",
       "PRECO": 13.14,
@@ -81,16 +91,6 @@
       "EXP_SCORE": 5.5093,
       "FACTOR": 1.1767984511132623,
       "ATLETA_ID": 95466
-    },
-    {
-      "RODADA": 12,
-      "POS": "LAT",
-      "NOME": "Ramon",
-      "CLUBE": "VIT",
-      "PRECO": 10.07,
-      "EXP_SCORE": 5.2666,
-      "FACTOR": 1.1553657308809295,
-      "ATLETA_ID": 101597
     },
     {
       "RODADA": 12,
@@ -159,7 +159,7 @@
       "CLUBE": "CRU",
       "PRECO": 10.01,
       "EXP_SCORE": 5.8438,
-      "FACTOR": 1.0899661874895934,
+      "FACTOR": 1.0899661874895932,
       "ATLETA_ID": 104502
     },
     {
@@ -209,7 +209,7 @@
       "CLUBE": "FLA",
       "PRECO": 18.6,
       "EXP_SCORE": 5.8575,
-      "FACTOR": 1.0331878115113506,
+      "FACTOR": 1.0331878115113504,
       "ATLETA_ID": 94583
     },
     {
@@ -219,7 +219,7 @@
       "CLUBE": "RBB",
       "PRECO": 9.42,
       "EXP_SCORE": 5.1067,
-      "FACTOR": 1.1065585169562082,
+      "FACTOR": 1.106558516956208,
       "ATLETA_ID": 112886
     },
     {
@@ -269,7 +269,7 @@
       "CLUBE": "RBB",
       "PRECO": 8.37,
       "EXP_SCORE": 5.3622,
-      "FACTOR": 1.0758207803740913,
+      "FACTOR": 1.0758207803740911,
       "ATLETA_ID": 39850
     },
     {
@@ -289,7 +289,7 @@
       "CLUBE": "BAH",
       "PRECO": 11.19,
       "EXP_SCORE": 4.3884,
-      "FACTOR": 0.9607753899095299,
+      "FACTOR": 0.9607753899095298,
       "ATLETA_ID": 97341
     },
     {
