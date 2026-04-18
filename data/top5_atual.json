@@ -1,6 +1,6 @@
 {
   "rodada": 12,
-  "atualizado_em": "2026-04-17T23:47:40.894Z",
+  "atualizado_em": "2026-04-18T00:47:39.602Z",
   "dados": [
     {
       "RODADA": 12,
@@ -15,22 +15,22 @@
     {
       "RODADA": 12,
       "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.75,
-      "EXP_SCORE": 4.6814,
-      "FACTOR": 1.1169959341723137,
-      "ATLETA_ID": 104084
-    },
-    {
-      "RODADA": 12,
-      "POS": "GOL",
       "NOME": "L?o Vieira",
       "CLUBE": "BAH",
       "PRECO": 7.24,
       "EXP_SCORE": 4.4196,
       "FACTOR": 0.8778983819665329,
       "ATLETA_ID": 71043
+    },
+    {
+      "RODADA": 12,
+      "POS": "GOL",
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 8.75,
+      "EXP_SCORE": 4.0708,
+      "FACTOR": 1.1169959341723137,
+      "ATLETA_ID": 104084
     },
     {
       "RODADA": 12,
@@ -65,16 +65,6 @@
     {
       "RODADA": 12,
       "POS": "LAT",
-      "NOME": "Ramon",
-      "CLUBE": "VIT",
-      "PRECO": 10.07,
-      "EXP_SCORE": 6.0566,
-      "FACTOR": 1.1553657308809295,
-      "ATLETA_ID": 101597
-    },
-    {
-      "RODADA": 12,
-      "POS": "LAT",
       "NOME": "Cuiabano",
       "CLUBE": "VAS",
       "PRECO": 13.14,
@@ -91,6 +81,16 @@
       "EXP_SCORE": 5.5093,
       "FACTOR": 1.1767984511132623,
       "ATLETA_ID": 95466
+    },
+    {
+      "RODADA": 12,
+      "POS": "LAT",
+      "NOME": "Ramon",
+      "CLUBE": "VIT",
+      "PRECO": 10.07,
+      "EXP_SCORE": 5.2666,
+      "FACTOR": 1.1553657308809295,
+      "ATLETA_ID": 101597
     },
     {
       "RODADA": 12,
@@ -229,7 +229,7 @@
       "CLUBE": "VAS",
       "PRECO": 13.06,
       "EXP_SCORE": 4.841,
-      "FACTOR": 1.111545806738081,
+      "FACTOR": 1.1115458067380806,
       "ATLETA_ID": 116706
     },
     {
