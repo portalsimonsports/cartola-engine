@@ -1,7 +1,7 @@
 {
   "rodada": 12,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-04-18T15:47:37.430Z",
+  "atualizado_em": "2026-04-18T16:47:39.139Z",
   "dados": [
     {
       "RODADA": 12,
@@ -62,17 +62,6 @@
       "RODADA": 12,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Gustavo G?mez",
-      "CLUBE": "PAL",
-      "PRECO": 10.74,
-      "EXP_SCORE": 2.755,
-      "ATLETA_ID": 71684
-    },
-    {
-      "RODADA": 12,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
       "POS": "MEI",
       "NOME": "Christian",
       "CLUBE": "CRU",
@@ -106,12 +95,12 @@
       "RODADA": 12,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Andreas Pereira",
-      "CLUBE": "PAL",
-      "PRECO": 13.73,
-      "EXP_SCORE": 4.7277,
-      "ATLETA_ID": 89274
+      "POS": "ATA",
+      "NOME": "Pedro",
+      "CLUBE": "FLA",
+      "PRECO": 18.6,
+      "EXP_SCORE": 5.8514,
+      "ATLETA_ID": 94583
     },
     {
       "RODADA": 12,
@@ -123,6 +112,17 @@
       "PRECO": 9.42,
       "EXP_SCORE": 5.1032,
       "ATLETA_ID": 112886
+    },
+    {
+      "RODADA": 12,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Pav?n",
+      "CLUBE": "GRE",
+      "PRECO": 6.16,
+      "EXP_SCORE": 2.7087,
+      "ATLETA_ID": 91908
     },
     {
       "RODADA": 12,
@@ -140,11 +140,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.75,
-      "EXP_SCORE": 4.678,
-      "ATLETA_ID": 104084
+      "NOME": "L?o Vieira",
+      "CLUBE": "BAH",
+      "PRECO": 7.24,
+      "EXP_SCORE": 4.4149,
+      "ATLETA_ID": 71043
     },
     {
       "RODADA": 12,
@@ -184,11 +184,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Cuello",
-      "CLUBE": "CAM",
-      "PRECO": 9.14,
-      "EXP_SCORE": 3.891,
-      "ATLETA_ID": 98909
+      "NOME": "David",
+      "CLUBE": "VAS",
+      "PRECO": 4.54,
+      "EXP_SCORE": 2.0967,
+      "ATLETA_ID": 90309
     }
   ]
 }
