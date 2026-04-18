@@ -1,6 +1,6 @@
 {
   "rodada": 12,
-  "atualizado_em": "2026-04-18T11:47:39.370Z",
+  "atualizado_em": "2026-04-18T12:47:41.615Z",
   "dados": [
     {
       "RODADA": 12,
@@ -25,16 +25,6 @@
     {
       "RODADA": 12,
       "POS": "GOL",
-      "NOME": "L?o Vieira",
-      "CLUBE": "BAH",
-      "PRECO": 7.24,
-      "EXP_SCORE": 4.4196,
-      "FACTOR": 0.8778983819665329,
-      "ATLETA_ID": 71043
-    },
-    {
-      "RODADA": 12,
-      "POS": "GOL",
       "NOME": "F?bio",
       "CLUBE": "FLU",
       "PRECO": 10.23,
@@ -51,6 +41,16 @@
       "EXP_SCORE": 3.9147,
       "FACTOR": 1.217137270087125,
       "ATLETA_ID": 105949
+    },
+    {
+      "RODADA": 12,
+      "POS": "GOL",
+      "NOME": "L?o Vieira",
+      "CLUBE": "BAH",
+      "PRECO": 7.24,
+      "EXP_SCORE": 3.8431,
+      "FACTOR": 0.8778983819665329,
+      "ATLETA_ID": 71043
     },
     {
       "RODADA": 12,
@@ -135,16 +135,6 @@
     {
       "RODADA": 12,
       "POS": "ZAG",
-      "NOME": "Jacy",
-      "CLUBE": "CFC",
-      "PRECO": 4.95,
-      "EXP_SCORE": 2.6369,
-      "FACTOR": 1.1237393998063891,
-      "ATLETA_ID": 97878
-    },
-    {
-      "RODADA": 12,
-      "POS": "ZAG",
       "NOME": "Gabriel Paulista",
       "CLUBE": "COR",
       "PRECO": 10.5,
@@ -154,12 +144,22 @@
     },
     {
       "RODADA": 12,
+      "POS": "ZAG",
+      "NOME": "Murilo",
+      "CLUBE": "PAL",
+      "PRECO": 7.74,
+      "EXP_SCORE": 2.5275,
+      "FACTOR": 1.1169959341723137,
+      "ATLETA_ID": 97653
+    },
+    {
+      "RODADA": 12,
       "POS": "MEI",
       "NOME": "Christian",
       "CLUBE": "CRU",
       "PRECO": 10.01,
       "EXP_SCORE": 5.8438,
-      "FACTOR": 1.0899661874895932,
+      "FACTOR": 1.0899661874895934,
       "ATLETA_ID": 104502
     },
     {
@@ -209,8 +209,18 @@
       "CLUBE": "FLA",
       "PRECO": 18.6,
       "EXP_SCORE": 5.8575,
-      "FACTOR": 1.0331878115113504,
+      "FACTOR": 1.0331878115113506,
       "ATLETA_ID": 94583
+    },
+    {
+      "RODADA": 12,
+      "POS": "ATA",
+      "NOME": "Andr?s G?mez",
+      "CLUBE": "VAS",
+      "PRECO": 13.06,
+      "EXP_SCORE": 5.3789,
+      "FACTOR": 1.111545806738081,
+      "ATLETA_ID": 116706
     },
     {
       "RODADA": 12,
@@ -219,18 +229,8 @@
       "CLUBE": "RBB",
       "PRECO": 9.42,
       "EXP_SCORE": 5.1067,
-      "FACTOR": 1.106558516956208,
+      "FACTOR": 1.1065585169562082,
       "ATLETA_ID": 112886
-    },
-    {
-      "RODADA": 12,
-      "POS": "ATA",
-      "NOME": "Andr?s G?mez",
-      "CLUBE": "VAS",
-      "PRECO": 13.06,
-      "EXP_SCORE": 4.841,
-      "FACTOR": 1.1115458067380806,
-      "ATLETA_ID": 116706
     },
     {
       "RODADA": 12,
@@ -269,7 +269,7 @@
       "CLUBE": "RBB",
       "PRECO": 8.37,
       "EXP_SCORE": 5.3622,
-      "FACTOR": 1.0758207803740911,
+      "FACTOR": 1.0758207803740913,
       "ATLETA_ID": 39850
     },
     {
@@ -289,7 +289,7 @@
       "CLUBE": "BAH",
       "PRECO": 11.19,
       "EXP_SCORE": 4.3884,
-      "FACTOR": 0.9607753899095298,
+      "FACTOR": 0.9607753899095299,
       "ATLETA_ID": 97341
     },
     {
