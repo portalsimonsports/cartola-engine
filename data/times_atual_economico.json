@@ -1,7 +1,7 @@
 {
   "rodada": 13,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-04-21T06:47:35.009Z",
+  "atualizado_em": "2026-04-21T07:47:34.769Z",
   "dados": [
     {
       "RODADA": 13,
@@ -35,17 +35,6 @@
       "PRECO": 10.93,
       "EXP_SCORE": 5.2804,
       "ATLETA_ID": 100898
-    },
-    {
-      "RODADA": 13,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Lucas Oliveira",
-      "CLUBE": "MIR",
-      "PRECO": 6.61,
-      "EXP_SCORE": 1.6005,
-      "ATLETA_ID": 94514
     },
     {
       "RODADA": 13,
@@ -118,11 +107,22 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Everaldo",
-      "CLUBE": "BAH",
-      "PRECO": 6.68,
-      "EXP_SCORE": 3.9793,
-      "ATLETA_ID": 78117
+      "NOME": "Isidro Pitta",
+      "CLUBE": "RBB",
+      "PRECO": 7.5,
+      "EXP_SCORE": 3.8034,
+      "ATLETA_ID": 108133
+    },
+    {
+      "RODADA": 13,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Arroyo",
+      "CLUBE": "CRU",
+      "PRECO": 5.7,
+      "EXP_SCORE": 2.3531,
+      "ATLETA_ID": 132264
     },
     {
       "RODADA": 13,
@@ -184,11 +184,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Pav?n",
-      "CLUBE": "GRE",
-      "PRECO": 6,
-      "EXP_SCORE": 3.0954,
-      "ATLETA_ID": 91908
+      "NOME": "Mois?s",
+      "CLUBE": "SAN",
+      "PRECO": 5.43,
+      "EXP_SCORE": 2.2297,
+      "ATLETA_ID": 104666
     }
   ]
 }
