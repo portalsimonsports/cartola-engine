@@ -1,6 +1,6 @@
 {
   "rodada": 13,
-  "atualizado_em": "2026-04-21T19:47:45.482Z",
+  "atualizado_em": "2026-04-21T23:47:39.533Z",
   "dados": [
     {
       "RODADA": 13,
@@ -45,12 +45,12 @@
     {
       "RODADA": 13,
       "POS": "GOL",
-      "NOME": "Pedro Rangel",
-      "CLUBE": "CFC",
-      "PRECO": 8.38,
-      "EXP_SCORE": 4.2401,
-      "FACTOR": 0.9320092954296475,
-      "ATLETA_ID": 110708
+      "NOME": "Hugo Souza",
+      "CLUBE": "COR",
+      "PRECO": 10.51,
+      "EXP_SCORE": 4.1811,
+      "FACTOR": 1.1005855596394147,
+      "ATLETA_ID": 101574
     },
     {
       "RODADA": 13,
@@ -108,7 +108,7 @@
       "NOME": "Gustavo G?mez",
       "CLUBE": "PAL",
       "PRECO": 12.67,
-      "EXP_SCORE": 4.4459,
+      "EXP_SCORE": 3.866,
       "FACTOR": 0.9655845511856432,
       "ATLETA_ID": 71684
     },
@@ -121,16 +121,6 @@
       "EXP_SCORE": 3.8057,
       "FACTOR": 1.1005855596394147,
       "ATLETA_ID": 69208
-    },
-    {
-      "RODADA": 13,
-      "POS": "ZAG",
-      "NOME": "Arthur Dias",
-      "CLUBE": "CAP",
-      "PRECO": 6.12,
-      "EXP_SCORE": 3.5767,
-      "FACTOR": 1.1700472408955986,
-      "ATLETA_ID": 130843
     },
     {
       "RODADA": 13,
@@ -151,6 +141,16 @@
       "EXP_SCORE": 3.2956,
       "FACTOR": 1.2059739167595849,
       "ATLETA_ID": 104075
+    },
+    {
+      "RODADA": 13,
+      "POS": "ZAG",
+      "NOME": "Arthur Dias",
+      "CLUBE": "CAP",
+      "PRECO": 6.12,
+      "EXP_SCORE": 3.1102,
+      "FACTOR": 1.1700472408955986,
+      "ATLETA_ID": 130843
     },
     {
       "RODADA": 13,
@@ -185,22 +185,22 @@
     {
       "RODADA": 13,
       "POS": "MEI",
-      "NOME": "H?rcules",
-      "CLUBE": "FLU",
-      "PRECO": 9.04,
-      "EXP_SCORE": 4.5665,
-      "FACTOR": 1.148867133256615,
-      "ATLETA_ID": 116447
-    },
-    {
-      "RODADA": 13,
-      "POS": "MEI",
       "NOME": "Savarino",
       "CLUBE": "FLU",
       "PRECO": 10.29,
       "EXP_SCORE": 4.3714,
       "FACTOR": 1.148867133256615,
       "ATLETA_ID": 98672
+    },
+    {
+      "RODADA": 13,
+      "POS": "MEI",
+      "NOME": "H?rcules",
+      "CLUBE": "FLU",
+      "PRECO": 9.04,
+      "EXP_SCORE": 3.9708,
+      "FACTOR": 1.148867133256615,
+      "ATLETA_ID": 116447
     },
     {
       "RODADA": 13,
@@ -239,7 +239,7 @@
       "CLUBE": "FLA",
       "PRECO": 16.98,
       "EXP_SCORE": 5.7991,
-      "FACTOR": 0.9359541941904227,
+      "FACTOR": 0.9359541941904228,
       "ATLETA_ID": 94583
     },
     {
@@ -289,7 +289,7 @@
       "CLUBE": "FLA",
       "PRECO": 13.81,
       "EXP_SCORE": 4.8126,
-      "FACTOR": 0.9556584930154842,
+      "FACTOR": 0.9556584930154843,
       "ATLETA_ID": 88963
     },
     {
