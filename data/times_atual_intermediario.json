@@ -1,7 +1,7 @@
 {
   "rodada": 13,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-04-22T02:47:38.586Z",
+  "atualizado_em": "2026-04-22T03:47:35.957Z",
   "dados": [
     {
       "RODADA": 13,
@@ -44,7 +44,7 @@
       "NOME": "Gustavo G?mez",
       "CLUBE": "PAL",
       "PRECO": 12.67,
-      "EXP_SCORE": 3.866,
+      "EXP_SCORE": 4.4459,
       "ATLETA_ID": 71684
     },
     {
@@ -107,6 +107,17 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ATA",
+      "NOME": "Cuello",
+      "CLUBE": "CAM",
+      "PRECO": 9.52,
+      "EXP_SCORE": 6.0526,
+      "ATLETA_ID": 98909
+    },
+    {
+      "RODADA": 13,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
       "NOME": "Andr?s G?mez",
       "CLUBE": "VAS",
       "PRECO": 14.39,
@@ -117,22 +128,11 @@
       "RODADA": 13,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Matheus Martins",
-      "CLUBE": "BOT",
-      "PRECO": 9.76,
-      "EXP_SCORE": 5.4847,
-      "ATLETA_ID": 111831
-    },
-    {
-      "RODADA": 13,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
       "POS": "TEC",
       "NOME": "Rafael Guanaes",
       "CLUBE": "MIR",
       "PRECO": 7.42,
-      "EXP_SCORE": 2.8143,
+      "EXP_SCORE": 3.2365,
       "ATLETA_ID": 104027
     },
     {
@@ -151,11 +151,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "LAT",
-      "NOME": "Escobar",
-      "CLUBE": "SAN",
-      "PRECO": 10.77,
-      "EXP_SCORE": 4.1463,
-      "ATLETA_ID": 102975
+      "NOME": "Ren?",
+      "CLUBE": "FLU",
+      "PRECO": 9.53,
+      "EXP_SCORE": 4.1376,
+      "ATLETA_ID": 78445
     },
     {
       "RODADA": 13,
@@ -176,7 +176,7 @@
       "NOME": "H?rcules",
       "CLUBE": "FLU",
       "PRECO": 9.04,
-      "EXP_SCORE": 3.9708,
+      "EXP_SCORE": 4.5665,
       "ATLETA_ID": 116447
     },
     {
@@ -184,11 +184,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Cuello",
-      "CLUBE": "CAM",
-      "PRECO": 9.52,
-      "EXP_SCORE": 5.2632,
-      "ATLETA_ID": 98909
+      "NOME": "Lucas Barbosa",
+      "CLUBE": "RBB",
+      "PRECO": 9.11,
+      "EXP_SCORE": 4.9446,
+      "ATLETA_ID": 112886
     }
   ]
 }
