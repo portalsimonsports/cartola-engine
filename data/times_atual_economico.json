@@ -1,7 +1,7 @@
 {
   "rodada": 13,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-04-22T14:47:35.041Z",
+  "atualizado_em": "2026-04-22T15:47:39.453Z",
   "dados": [
     {
       "RODADA": 13,
@@ -11,7 +11,7 @@
       "NOME": "Pedro Rangel",
       "CLUBE": "CFC",
       "PRECO": 8.38,
-      "EXP_SCORE": 4.2409,
+      "EXP_SCORE": 3.6877,
       "ATLETA_ID": 110708
     },
     {
@@ -62,17 +62,6 @@
       "RODADA": 13,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Jacy",
-      "CLUBE": "CFC",
-      "PRECO": 6.09,
-      "EXP_SCORE": 2.873,
-      "ATLETA_ID": 97878
-    },
-    {
-      "RODADA": 13,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
       "POS": "MEI",
       "NOME": "H?rcules",
       "CLUBE": "FLU",
@@ -96,11 +85,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Lucas Romero",
-      "CLUBE": "CRU",
-      "PRECO": 9.71,
-      "EXP_SCORE": 2.1777,
-      "ATLETA_ID": 84558
+      "NOME": "Dudu",
+      "CLUBE": "CAP",
+      "PRECO": 2.25,
+      "EXP_SCORE": 1.4837,
+      "ATLETA_ID": 125746
     },
     {
       "RODADA": 13,
@@ -118,11 +107,22 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Everaldo",
-      "CLUBE": "BAH",
-      "PRECO": 6.68,
-      "EXP_SCORE": 3.9761,
-      "ATLETA_ID": 78117
+      "NOME": "Isidro Pitta",
+      "CLUBE": "RBB",
+      "PRECO": 7.5,
+      "EXP_SCORE": 3.7997,
+      "ATLETA_ID": 108133
+    },
+    {
+      "RODADA": 13,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Alesson",
+      "CLUBE": "MIR",
+      "PRECO": 9.73,
+      "EXP_SCORE": 3.9399,
+      "ATLETA_ID": 97321
     },
     {
       "RODADA": 13,
@@ -162,33 +162,33 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Marllon",
-      "CLUBE": "REM",
-      "PRECO": 5.65,
-      "EXP_SCORE": 2.6163,
-      "ATLETA_ID": 70666
+      "NOME": "Arthur Dias",
+      "CLUBE": "CAP",
+      "PRECO": 6.12,
+      "EXP_SCORE": 3.1106,
+      "ATLETA_ID": 130843
     },
     {
       "RODADA": 13,
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Acevedo",
-      "CLUBE": "BAH",
-      "PRECO": 7.12,
-      "EXP_SCORE": 3.3771,
-      "ATLETA_ID": 104783
+      "NOME": "Evertton Ara?jo",
+      "CLUBE": "FLA",
+      "PRECO": 2.44,
+      "EXP_SCORE": 0.2898,
+      "ATLETA_ID": 115914
     },
     {
       "RODADA": 13,
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Pav?n",
-      "CLUBE": "GRE",
-      "PRECO": 6,
-      "EXP_SCORE": 3.0929,
-      "ATLETA_ID": 91908
+      "NOME": "Everaldo",
+      "CLUBE": "BAH",
+      "PRECO": 6.68,
+      "EXP_SCORE": 3.9761,
+      "ATLETA_ID": 78117
     }
   ]
 }
