@@ -1,7 +1,7 @@
 {
   "rodada": 13,
   "tipo": "PONTUACAO",
-  "atualizado_em": "2026-04-23T13:47:40.454Z",
+  "atualizado_em": "2026-04-23T14:47:38.886Z",
   "dados": [
     {
       "RODADA": 13,
@@ -11,7 +11,7 @@
       "NOME": "L?o Vieira",
       "CLUBE": "BAH",
       "PRECO": 7.4,
-      "EXP_SCORE": 5.0458,
+      "EXP_SCORE": 5.0378,
       "ATLETA_ID": 71043
     },
     {
@@ -22,7 +22,7 @@
       "NOME": "Matheus Bidu",
       "CLUBE": "COR",
       "PRECO": 13.46,
-      "EXP_SCORE": 5.7694,
+      "EXP_SCORE": 5.7586,
       "ATLETA_ID": 105531
     },
     {
@@ -33,19 +33,8 @@
       "NOME": "Luciano Juba",
       "CLUBE": "BAH",
       "PRECO": 10.79,
-      "EXP_SCORE": 5.7618,
+      "EXP_SCORE": 5.7526,
       "ATLETA_ID": 107093
-    },
-    {
-      "RODADA": 13,
-      "TIPO": "PONTUACAO",
-      "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Gabriel Paulista",
-      "CLUBE": "COR",
-      "PRECO": 10.43,
-      "EXP_SCORE": 3.8792,
-      "ATLETA_ID": 69208
     },
     {
       "RODADA": 13,
@@ -55,8 +44,19 @@
       "NOME": "Gustavo G?mez",
       "CLUBE": "PAL",
       "PRECO": 12.67,
-      "EXP_SCORE": 3.8639,
+      "EXP_SCORE": 4.4365,
       "ATLETA_ID": 71684
+    },
+    {
+      "RODADA": 13,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "ZAG",
+      "NOME": "Gabriel Paulista",
+      "CLUBE": "COR",
+      "PRECO": 10.43,
+      "EXP_SCORE": 3.8719,
+      "ATLETA_ID": 69208
     },
     {
       "RODADA": 13,
@@ -107,22 +107,22 @@
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Andr?s G?mez",
-      "CLUBE": "VAS",
-      "PRECO": 14.39,
-      "EXP_SCORE": 5.8949,
-      "ATLETA_ID": 116706
+      "NOME": "Cuello",
+      "CLUBE": "CAM",
+      "PRECO": 9.52,
+      "EXP_SCORE": 6.035,
+      "ATLETA_ID": 98909
     },
     {
       "RODADA": 13,
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Pedro",
-      "CLUBE": "FLA",
-      "PRECO": 16.98,
-      "EXP_SCORE": 5.7827,
-      "ATLETA_ID": 94583
+      "NOME": "Andr?s G?mez",
+      "CLUBE": "VAS",
+      "PRECO": 14.39,
+      "EXP_SCORE": 5.8949,
+      "ATLETA_ID": 116706
     },
     {
       "RODADA": 13,
@@ -143,7 +143,7 @@
       "NOME": "Marcelo Rangel",
       "CLUBE": "REM",
       "PRECO": 5.03,
-      "EXP_SCORE": 3.0001,
+      "EXP_SCORE": 2.9944,
       "ATLETA_ID": 82730
     },
     {
@@ -151,11 +151,11 @@
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "LAT",
-      "NOME": "Escobar",
-      "CLUBE": "SAN",
-      "PRECO": 10.77,
-      "EXP_SCORE": 4.1433,
-      "ATLETA_ID": 102975
+      "NOME": "Esquivel",
+      "CLUBE": "CAP",
+      "PRECO": 8.04,
+      "EXP_SCORE": 4.1832,
+      "ATLETA_ID": 110668
     },
     {
       "RODADA": 13,
@@ -165,7 +165,7 @@
       "NOME": "Sabino",
       "CLUBE": "SAO",
       "PRECO": 7.09,
-      "EXP_SCORE": 3.2945,
+      "EXP_SCORE": 3.2911,
       "ATLETA_ID": 104075
     },
     {
@@ -176,7 +176,7 @@
       "NOME": "H?rcules",
       "CLUBE": "FLU",
       "PRECO": 9.04,
-      "EXP_SCORE": 3.9646,
+      "EXP_SCORE": 4.5593,
       "ATLETA_ID": 116447
     },
     {
@@ -184,11 +184,11 @@
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Matheus Martins",
-      "CLUBE": "BOT",
-      "PRECO": 9.76,
-      "EXP_SCORE": 5.48,
-      "ATLETA_ID": 111831
+      "NOME": "Lucas Barbosa",
+      "CLUBE": "RBB",
+      "PRECO": 9.11,
+      "EXP_SCORE": 4.9295,
+      "ATLETA_ID": 112886
     }
   ]
 }
