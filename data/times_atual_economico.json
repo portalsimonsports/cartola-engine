@@ -1,7 +1,7 @@
 {
   "rodada": 13,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-04-24T05:47:38.426Z",
+  "atualizado_em": "2026-04-24T06:47:34.722Z",
   "dados": [
     {
       "RODADA": 13,
@@ -63,6 +63,17 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "MEI",
+      "NOME": "H?rcules",
+      "CLUBE": "FLU",
+      "PRECO": 9.04,
+      "EXP_SCORE": 4.5603,
+      "ATLETA_ID": 116447
+    },
+    {
+      "RODADA": 13,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
       "NOME": "Jean Lucas",
       "CLUBE": "BAH",
       "PRECO": 11.1,
@@ -79,17 +90,6 @@
       "PRECO": 2.25,
       "EXP_SCORE": 1.4807,
       "ATLETA_ID": 125746
-    },
-    {
-      "RODADA": 13,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "H?rcules",
-      "CLUBE": "FLU",
-      "PRECO": 9.04,
-      "EXP_SCORE": 3.9654,
-      "ATLETA_ID": 116447
     },
     {
       "RODADA": 13,
@@ -187,7 +187,7 @@
       "NOME": "Everaldo",
       "CLUBE": "BAH",
       "PRECO": 6.68,
-      "EXP_SCORE": 4.5662,
+      "EXP_SCORE": 3.9706,
       "ATLETA_ID": 78117
     }
   ]
