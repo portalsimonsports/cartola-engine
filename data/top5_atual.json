@@ -1,6 +1,6 @@
 {
   "rodada": 13,
-  "atualizado_em": "2026-04-24T13:47:49.128Z",
+  "atualizado_em": "2026-04-24T14:47:44.413Z",
   "dados": [
     {
       "RODADA": 13,
@@ -45,12 +45,12 @@
     {
       "RODADA": 13,
       "POS": "GOL",
-      "NOME": "F?bio",
-      "CLUBE": "FLU",
-      "PRECO": 9.57,
-      "EXP_SCORE": 4.1902,
-      "FACTOR": 1.17450505590476,
-      "ATLETA_ID": 37656
+      "NOME": "Hugo Souza",
+      "CLUBE": "COR",
+      "PRECO": 10.51,
+      "EXP_SCORE": 4.2511,
+      "FACTOR": 1.1190292484174125,
+      "ATLETA_ID": 101574
     },
     {
       "RODADA": 13,
@@ -75,22 +75,22 @@
     {
       "RODADA": 13,
       "POS": "LAT",
-      "NOME": "Juninho Capixaba",
-      "CLUBE": "RBB",
-      "PRECO": 13.05,
-      "EXP_SCORE": 5.2071,
-      "FACTOR": 1.0506125881102573,
-      "ATLETA_ID": 94968
+      "NOME": "Vitinho",
+      "CLUBE": "BOT",
+      "PRECO": 10.93,
+      "EXP_SCORE": 5.2608,
+      "FACTOR": 1.1456114061717664,
+      "ATLETA_ID": 100898
     },
     {
       "RODADA": 13,
       "POS": "LAT",
-      "NOME": "Vitinho",
-      "CLUBE": "BOT",
-      "PRECO": 10.93,
-      "EXP_SCORE": 4.5746,
-      "FACTOR": 1.1456114061717664,
-      "ATLETA_ID": 100898
+      "NOME": "Juninho Capixaba",
+      "CLUBE": "RBB",
+      "PRECO": 13.05,
+      "EXP_SCORE": 5.2071,
+      "FACTOR": 1.050612588110257,
+      "ATLETA_ID": 94968
     },
     {
       "RODADA": 13,
@@ -128,19 +128,9 @@
       "NOME": "Alexander Barboza",
       "CLUBE": "BOT",
       "PRECO": 10.83,
-      "EXP_SCORE": 3.8315,
+      "EXP_SCORE": 3.4483,
       "FACTOR": 1.1456114061717664,
       "ATLETA_ID": 99274
-    },
-    {
-      "RODADA": 13,
-      "POS": "ZAG",
-      "NOME": "Gustavo Marques",
-      "CLUBE": "RBB",
-      "PRECO": 6.97,
-      "EXP_SCORE": 3.3693,
-      "FACTOR": 1.0506125881102573,
-      "ATLETA_ID": 110750
     },
     {
       "RODADA": 13,
@@ -151,6 +141,16 @@
       "EXP_SCORE": 3.29,
       "FACTOR": 1.2039240447238082,
       "ATLETA_ID": 104075
+    },
+    {
+      "RODADA": 13,
+      "POS": "ZAG",
+      "NOME": "Arthur Dias",
+      "CLUBE": "CAP",
+      "PRECO": 6.12,
+      "EXP_SCORE": 3.1553,
+      "FACTOR": 1.187025637455724,
+      "ATLETA_ID": 130843
     },
     {
       "RODADA": 13,
@@ -178,7 +178,7 @@
       "NOME": "Jean Lucas",
       "CLUBE": "BAH",
       "PRECO": 11.1,
-      "EXP_SCORE": 4.1556,
+      "EXP_SCORE": 4.779,
       "FACTOR": 1.0812509071610998,
       "ATLETA_ID": 98517
     },
@@ -188,7 +188,7 @@
       "NOME": "H?rcules",
       "CLUBE": "FLU",
       "PRECO": 9.04,
-      "EXP_SCORE": 3.9654,
+      "EXP_SCORE": 4.5603,
       "FACTOR": 1.147310411622276,
       "ATLETA_ID": 116447
     },
@@ -198,7 +198,7 @@
       "NOME": "Savarino",
       "CLUBE": "FLU",
       "PRECO": 10.29,
-      "EXP_SCORE": 3.7961,
+      "EXP_SCORE": 4.3655,
       "FACTOR": 1.147310411622276,
       "ATLETA_ID": 98672
     },
@@ -211,6 +211,16 @@
       "EXP_SCORE": 6.431,
       "FACTOR": 1.1198420378785365,
       "ATLETA_ID": 89840
+    },
+    {
+      "RODADA": 13,
+      "POS": "ATA",
+      "NOME": "Cuello",
+      "CLUBE": "CAM",
+      "PRECO": 9.52,
+      "EXP_SCORE": 6.0374,
+      "FACTOR": 1.0566841221931076,
+      "ATLETA_ID": 98909
     },
     {
       "RODADA": 13,
@@ -231,16 +241,6 @@
       "EXP_SCORE": 5.7443,
       "FACTOR": 0.9271084944774287,
       "ATLETA_ID": 94583
-    },
-    {
-      "RODADA": 13,
-      "POS": "ATA",
-      "NOME": "Lucas Barbosa",
-      "CLUBE": "RBB",
-      "PRECO": 9.11,
-      "EXP_SCORE": 5.6713,
-      "FACTOR": 1.047834276427079,
-      "ATLETA_ID": 112886
     },
     {
       "RODADA": 13,
@@ -285,22 +285,22 @@
     {
       "RODADA": 13,
       "POS": "TEC",
+      "NOME": "Leonardo Jardim",
+      "CLUBE": "FLA",
+      "PRECO": 13.81,
+      "EXP_SCORE": 4.7671,
+      "FACTOR": 0.9466265680453746,
+      "ATLETA_ID": 88963
+    },
+    {
+      "RODADA": 13,
+      "POS": "TEC",
       "NOME": "Rog?rio Ceni",
       "CLUBE": "BAH",
       "PRECO": 10.84,
       "EXP_SCORE": 4.7151,
       "FACTOR": 1.051216159739958,
       "ATLETA_ID": 97341
-    },
-    {
-      "RODADA": 13,
-      "POS": "TEC",
-      "NOME": "Leonardo Jardim",
-      "CLUBE": "FLA",
-      "PRECO": 13.81,
-      "EXP_SCORE": 4.2904,
-      "FACTOR": 0.9466265680453746,
-      "ATLETA_ID": 88963
     }
   ]
 }
