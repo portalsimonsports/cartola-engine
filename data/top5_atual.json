@@ -1,6 +1,6 @@
 {
   "rodada": 13,
-  "atualizado_em": "2026-04-24T23:47:41.532Z",
+  "atualizado_em": "2026-04-25T00:47:41.358Z",
   "dados": [
     {
       "RODADA": 13,
@@ -48,7 +48,7 @@
       "NOME": "F?bio",
       "CLUBE": "FLU",
       "PRECO": 9.57,
-      "EXP_SCORE": 3.74,
+      "EXP_SCORE": 4.1555,
       "FACTOR": 1.164780688481092,
       "ATLETA_ID": 37656
     },
@@ -75,22 +75,22 @@
     {
       "RODADA": 13,
       "POS": "LAT",
-      "NOME": "Vitinho",
-      "CLUBE": "BOT",
-      "PRECO": 10.93,
-      "EXP_SCORE": 5.4453,
-      "FACTOR": 1.1857955322469254,
-      "ATLETA_ID": 100898
-    },
-    {
-      "RODADA": 13,
-      "POS": "LAT",
       "NOME": "Juninho Capixaba",
       "CLUBE": "RBB",
       "PRECO": 13.05,
       "EXP_SCORE": 5.2003,
       "FACTOR": 1.049234248512334,
       "ATLETA_ID": 94968
+    },
+    {
+      "RODADA": 13,
+      "POS": "LAT",
+      "NOME": "Vitinho",
+      "CLUBE": "BOT",
+      "PRECO": 10.93,
+      "EXP_SCORE": 4.7351,
+      "FACTOR": 1.1857955322469254,
+      "ATLETA_ID": 100898
     },
     {
       "RODADA": 13,
@@ -105,6 +105,16 @@
     {
       "RODADA": 13,
       "POS": "ZAG",
+      "NOME": "Alexander Barboza",
+      "CLUBE": "BOT",
+      "PRECO": 10.83,
+      "EXP_SCORE": 3.9659,
+      "FACTOR": 1.1857955322469254,
+      "ATLETA_ID": 99274
+    },
+    {
+      "RODADA": 13,
+      "POS": "ZAG",
       "NOME": "Gustavo G?mez",
       "CLUBE": "PAL",
       "PRECO": 12.67,
@@ -115,22 +125,22 @@
     {
       "RODADA": 13,
       "POS": "ZAG",
-      "NOME": "Alexander Barboza",
-      "CLUBE": "BOT",
-      "PRECO": 10.83,
-      "EXP_SCORE": 3.5693,
-      "FACTOR": 1.1857955322469254,
-      "ATLETA_ID": 99274
+      "NOME": "Gabriel Paulista",
+      "CLUBE": "COR",
+      "PRECO": 10.43,
+      "EXP_SCORE": 3.7328,
+      "FACTOR": 1.0795068877729987,
+      "ATLETA_ID": 69208
     },
     {
       "RODADA": 13,
       "POS": "ZAG",
-      "NOME": "Gabriel Paulista",
-      "CLUBE": "COR",
-      "PRECO": 10.43,
-      "EXP_SCORE": 3.3595,
-      "FACTOR": 1.0795068877729987,
-      "ATLETA_ID": 69208
+      "NOME": "Gustavo Marques",
+      "CLUBE": "RBB",
+      "PRECO": 6.97,
+      "EXP_SCORE": 3.3649,
+      "FACTOR": 1.049234248512334,
+      "ATLETA_ID": 110750
     },
     {
       "RODADA": 13,
@@ -141,16 +151,6 @@
       "EXP_SCORE": 3.2256,
       "FACTOR": 1.1803570174030038,
       "ATLETA_ID": 104075
-    },
-    {
-      "RODADA": 13,
-      "POS": "ZAG",
-      "NOME": "Arthur Dias",
-      "CLUBE": "CAP",
-      "PRECO": 6.12,
-      "EXP_SCORE": 3.1535,
-      "FACTOR": 1.1863411437684839,
-      "ATLETA_ID": 130843
     },
     {
       "RODADA": 13,
@@ -165,16 +165,6 @@
     {
       "RODADA": 13,
       "POS": "MEI",
-      "NOME": "Jean Lucas",
-      "CLUBE": "BAH",
-      "PRECO": 11.1,
-      "EXP_SCORE": 4.9847,
-      "FACTOR": 1.1277931010600435,
-      "ATLETA_ID": 98517
-    },
-    {
-      "RODADA": 13,
-      "POS": "MEI",
       "NOME": "Christian",
       "CLUBE": "CRU",
       "PRECO": 10.22,
@@ -185,12 +175,12 @@
     {
       "RODADA": 13,
       "POS": "MEI",
-      "NOME": "Savarino",
-      "CLUBE": "FLU",
-      "PRECO": 10.29,
-      "EXP_SCORE": 4.5541,
-      "FACTOR": 1.1968579156967236,
-      "ATLETA_ID": 98672
+      "NOME": "Jean Lucas",
+      "CLUBE": "BAH",
+      "PRECO": 11.1,
+      "EXP_SCORE": 4.3345,
+      "FACTOR": 1.1277931010600435,
+      "ATLETA_ID": 98517
     },
     {
       "RODADA": 13,
@@ -204,6 +194,16 @@
     },
     {
       "RODADA": 13,
+      "POS": "MEI",
+      "NOME": "Savarino",
+      "CLUBE": "FLU",
+      "PRECO": 10.29,
+      "EXP_SCORE": 3.96,
+      "FACTOR": 1.1968579156967236,
+      "ATLETA_ID": 98672
+    },
+    {
+      "RODADA": 13,
       "POS": "ATA",
       "NOME": "Calleri",
       "CLUBE": "SAO",
@@ -211,16 +211,6 @@
       "EXP_SCORE": 6.4476,
       "FACTOR": 1.1227233613574712,
       "ATLETA_ID": 89840
-    },
-    {
-      "RODADA": 13,
-      "POS": "ATA",
-      "NOME": "Cuello",
-      "CLUBE": "CAM",
-      "PRECO": 9.52,
-      "EXP_SCORE": 5.9987,
-      "FACTOR": 1.0499019527116722,
-      "ATLETA_ID": 98909
     },
     {
       "RODADA": 13,
@@ -239,8 +229,18 @@
       "CLUBE": "FLA",
       "PRECO": 16.98,
       "EXP_SCORE": 5.7069,
-      "FACTOR": 0.9210684891975605,
+      "FACTOR": 0.9210684891975606,
       "ATLETA_ID": 94583
+    },
+    {
+      "RODADA": 13,
+      "POS": "ATA",
+      "NOME": "Lucas Barbosa",
+      "CLUBE": "RBB",
+      "PRECO": 9.11,
+      "EXP_SCORE": 5.7009,
+      "FACTOR": 1.0532928605783105,
+      "ATLETA_ID": 112886
     },
     {
       "RODADA": 13,
@@ -299,7 +299,7 @@
       "CLUBE": "FLA",
       "PRECO": 13.81,
       "EXP_SCORE": 4.736,
-      "FACTOR": 0.9404594047596144,
+      "FACTOR": 0.9404594047596145,
       "ATLETA_ID": 88963
     }
   ]
