@@ -1,7 +1,7 @@
 {
   "rodada": 13,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-04-24T23:47:34.680Z",
+  "atualizado_em": "2026-04-25T00:47:35.650Z",
   "dados": [
     {
       "RODADA": 13,
@@ -30,11 +30,22 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "LAT",
-      "NOME": "Vitinho",
-      "CLUBE": "BOT",
-      "PRECO": 10.93,
-      "EXP_SCORE": 5.4453,
-      "ATLETA_ID": 100898
+      "NOME": "Arthur",
+      "CLUBE": "PAL",
+      "PRECO": 3.97,
+      "EXP_SCORE": 2.3111,
+      "ATLETA_ID": 145404
+    },
+    {
+      "RODADA": 13,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ZAG",
+      "NOME": "Lucas Oliveira",
+      "CLUBE": "MIR",
+      "PRECO": 6.61,
+      "EXP_SCORE": 1.592,
+      "ATLETA_ID": 94514
     },
     {
       "RODADA": 13,
@@ -46,17 +57,6 @@
       "PRECO": 6.09,
       "EXP_SCORE": 2.8996,
       "ATLETA_ID": 97878
-    },
-    {
-      "RODADA": 13,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Lucas Oliveira",
-      "CLUBE": "MIR",
-      "PRECO": 6.61,
-      "EXP_SCORE": 1.4328,
-      "ATLETA_ID": 94514
     },
     {
       "RODADA": 13,
@@ -74,17 +74,6 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Jean Lucas",
-      "CLUBE": "BAH",
-      "PRECO": 11.1,
-      "EXP_SCORE": 4.9847,
-      "ATLETA_ID": 98517
-    },
-    {
-      "RODADA": 13,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
       "NOME": "H?rcules",
       "CLUBE": "FLU",
       "PRECO": 9.04,
@@ -96,11 +85,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Dudu",
-      "CLUBE": "CAP",
-      "PRECO": 2.25,
-      "EXP_SCORE": 1.4863,
-      "ATLETA_ID": 125746
+      "NOME": "Jean Lucas",
+      "CLUBE": "BAH",
+      "PRECO": 11.1,
+      "EXP_SCORE": 4.3345,
+      "ATLETA_ID": 98517
     },
     {
       "RODADA": 13,
@@ -123,6 +112,17 @@
       "PRECO": 7.5,
       "EXP_SCORE": 3.8132,
       "ATLETA_ID": 108133
+    },
+    {
+      "RODADA": 13,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Jaj?",
+      "CLUBE": "REM",
+      "PRECO": 5.89,
+      "EXP_SCORE": 3.4044,
+      "ATLETA_ID": 105048
     },
     {
       "RODADA": 13,
@@ -151,11 +151,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "LAT",
-      "NOME": "Andr?s Hurtado",
-      "CLUBE": "RBB",
-      "PRECO": 5.25,
-      "EXP_SCORE": 2.5124,
-      "ATLETA_ID": 110715
+      "NOME": "Kau? Pascini",
+      "CLUBE": "CAM",
+      "PRECO": 2.85,
+      "EXP_SCORE": 0.7994,
+      "ATLETA_ID": 147090
     },
     {
       "RODADA": 13,
@@ -173,22 +173,22 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Evertton Ara?jo",
-      "CLUBE": "FLA",
-      "PRECO": 2.44,
-      "EXP_SCORE": 0.2855,
-      "ATLETA_ID": 115914
+      "NOME": "Acevedo",
+      "CLUBE": "BAH",
+      "PRECO": 7.12,
+      "EXP_SCORE": 3.0587,
+      "ATLETA_ID": 104783
     },
     {
       "RODADA": 13,
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Pav?n",
-      "CLUBE": "GRE",
-      "PRECO": 6,
-      "EXP_SCORE": 3.5554,
-      "ATLETA_ID": 91908
+      "NOME": "Arroyo",
+      "CLUBE": "CRU",
+      "PRECO": 5.7,
+      "EXP_SCORE": 2.3382,
+      "ATLETA_ID": 132264
     }
   ]
 }
