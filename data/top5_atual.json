@@ -1,6 +1,6 @@
 {
   "rodada": 13,
-  "atualizado_em": "2026-04-25T10:47:34.527Z",
+  "atualizado_em": "2026-04-25T11:47:40.592Z",
   "dados": [
     {
       "RODADA": 13,
@@ -35,22 +35,22 @@
     {
       "RODADA": 13,
       "POS": "GOL",
+      "NOME": "Pedro Rangel",
+      "CLUBE": "CFC",
+      "PRECO": 8.38,
+      "EXP_SCORE": 4.2801,
+      "FACTOR": 0.9408021582655303,
+      "ATLETA_ID": 110708
+    },
+    {
+      "RODADA": 13,
+      "POS": "GOL",
       "NOME": "Carlos Miguel",
       "CLUBE": "PAL",
       "PRECO": 8.83,
       "EXP_SCORE": 4.2067,
       "FACTOR": 0.9330469945014428,
       "ATLETA_ID": 104084
-    },
-    {
-      "RODADA": 13,
-      "POS": "GOL",
-      "NOME": "F?bio",
-      "CLUBE": "FLU",
-      "PRECO": 9.57,
-      "EXP_SCORE": 3.74,
-      "FACTOR": 1.164780688481092,
-      "ATLETA_ID": 37656
     },
     {
       "RODADA": 13,
@@ -108,7 +108,7 @@
       "NOME": "Gustavo G?mez",
       "CLUBE": "PAL",
       "PRECO": 12.67,
-      "EXP_SCORE": 3.7357,
+      "EXP_SCORE": 4.2961,
       "FACTOR": 0.9330469945014428,
       "ATLETA_ID": 71684
     },
@@ -121,6 +121,16 @@
       "EXP_SCORE": 3.7328,
       "FACTOR": 1.0795068877729987,
       "ATLETA_ID": 69208
+    },
+    {
+      "RODADA": 13,
+      "POS": "ZAG",
+      "NOME": "Arthur Dias",
+      "CLUBE": "CAP",
+      "PRECO": 6.12,
+      "EXP_SCORE": 3.6265,
+      "FACTOR": 1.1863411437684839,
+      "ATLETA_ID": 130843
     },
     {
       "RODADA": 13,
@@ -141,16 +151,6 @@
       "EXP_SCORE": 3.2256,
       "FACTOR": 1.1803570174030038,
       "ATLETA_ID": 104075
-    },
-    {
-      "RODADA": 13,
-      "POS": "ZAG",
-      "NOME": "Arthur Dias",
-      "CLUBE": "CAP",
-      "PRECO": 6.12,
-      "EXP_SCORE": 3.1535,
-      "FACTOR": 1.1863411437684839,
-      "ATLETA_ID": 130843
     },
     {
       "RODADA": 13,
