@@ -1,6 +1,6 @@
 {
   "rodada": 13,
-  "atualizado_em": "2026-04-25T17:47:39.181Z",
+  "atualizado_em": "2026-04-25T18:47:41.088Z",
   "dados": [
     {
       "RODADA": 13,
@@ -35,22 +35,22 @@
     {
       "RODADA": 13,
       "POS": "GOL",
-      "NOME": "Pedro Rangel",
-      "CLUBE": "CFC",
-      "PRECO": 8.38,
-      "EXP_SCORE": 4.2801,
-      "FACTOR": 0.9408021582655303,
-      "ATLETA_ID": 110708
-    },
-    {
-      "RODADA": 13,
-      "POS": "GOL",
       "NOME": "Carlos Miguel",
       "CLUBE": "PAL",
       "PRECO": 8.83,
       "EXP_SCORE": 4.2067,
       "FACTOR": 0.9330469945014428,
       "ATLETA_ID": 104084
+    },
+    {
+      "RODADA": 13,
+      "POS": "GOL",
+      "NOME": "F?bio",
+      "CLUBE": "FLU",
+      "PRECO": 9.57,
+      "EXP_SCORE": 3.74,
+      "FACTOR": 1.164780688481092,
+      "ATLETA_ID": 37656
     },
     {
       "RODADA": 13,
@@ -108,9 +108,19 @@
       "NOME": "Gustavo G?mez",
       "CLUBE": "PAL",
       "PRECO": 12.67,
-      "EXP_SCORE": 4.2961,
+      "EXP_SCORE": 3.7357,
       "FACTOR": 0.9330469945014428,
       "ATLETA_ID": 71684
+    },
+    {
+      "RODADA": 13,
+      "POS": "ZAG",
+      "NOME": "Gabriel Paulista",
+      "CLUBE": "COR",
+      "PRECO": 10.43,
+      "EXP_SCORE": 3.7328,
+      "FACTOR": 1.0795068877729987,
+      "ATLETA_ID": 69208
     },
     {
       "RODADA": 13,
@@ -121,16 +131,6 @@
       "EXP_SCORE": 3.5693,
       "FACTOR": 1.1857955322469254,
       "ATLETA_ID": 99274
-    },
-    {
-      "RODADA": 13,
-      "POS": "ZAG",
-      "NOME": "Gabriel Paulista",
-      "CLUBE": "COR",
-      "PRECO": 10.43,
-      "EXP_SCORE": 3.3595,
-      "FACTOR": 1.0795068877729987,
-      "ATLETA_ID": 69208
     },
     {
       "RODADA": 13,
@@ -239,7 +239,7 @@
       "CLUBE": "FLA",
       "PRECO": 16.98,
       "EXP_SCORE": 5.7069,
-      "FACTOR": 0.9210684891975606,
+      "FACTOR": 0.9210684891975605,
       "ATLETA_ID": 94583
     },
     {
@@ -295,12 +295,12 @@
     {
       "RODADA": 13,
       "POS": "TEC",
-      "NOME": "Fernando Seabra",
-      "CLUBE": "CFC",
-      "PRECO": 8.51,
-      "EXP_SCORE": 4.3525,
-      "FACTOR": 0.9875084822716866,
-      "ATLETA_ID": 126977
+      "NOME": "Leonardo Jardim",
+      "CLUBE": "FLA",
+      "PRECO": 13.81,
+      "EXP_SCORE": 4.736,
+      "FACTOR": 0.9404594047596144,
+      "ATLETA_ID": 88963
     }
   ]
 }
