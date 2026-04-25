@@ -1,6 +1,6 @@
 {
   "rodada": 13,
-  "atualizado_em": "2026-04-25T04:47:35.517Z",
+  "atualizado_em": "2026-04-25T05:47:41.332Z",
   "dados": [
     {
       "RODADA": 13,
@@ -48,7 +48,7 @@
       "NOME": "F?bio",
       "CLUBE": "FLU",
       "PRECO": 9.57,
-      "EXP_SCORE": 4.1555,
+      "EXP_SCORE": 3.74,
       "FACTOR": 1.164780688481092,
       "ATLETA_ID": 37656
     },
@@ -75,6 +75,16 @@
     {
       "RODADA": 13,
       "POS": "LAT",
+      "NOME": "Vitinho",
+      "CLUBE": "BOT",
+      "PRECO": 10.93,
+      "EXP_SCORE": 5.4453,
+      "FACTOR": 1.1857955322469254,
+      "ATLETA_ID": 100898
+    },
+    {
+      "RODADA": 13,
+      "POS": "LAT",
       "NOME": "Juninho Capixaba",
       "CLUBE": "RBB",
       "PRECO": 13.05,
@@ -85,32 +95,12 @@
     {
       "RODADA": 13,
       "POS": "LAT",
-      "NOME": "Vitinho",
-      "CLUBE": "BOT",
-      "PRECO": 10.93,
-      "EXP_SCORE": 4.7351,
-      "FACTOR": 1.1857955322469254,
-      "ATLETA_ID": 100898
-    },
-    {
-      "RODADA": 13,
-      "POS": "LAT",
       "NOME": "Cuiabano",
       "CLUBE": "VAS",
       "PRECO": 13.07,
       "EXP_SCORE": 4.5393,
       "FACTOR": 0.9653971062030645,
       "ATLETA_ID": 116065
-    },
-    {
-      "RODADA": 13,
-      "POS": "ZAG",
-      "NOME": "Alexander Barboza",
-      "CLUBE": "BOT",
-      "PRECO": 10.83,
-      "EXP_SCORE": 3.9659,
-      "FACTOR": 1.1857955322469254,
-      "ATLETA_ID": 99274
     },
     {
       "RODADA": 13,
@@ -131,6 +121,16 @@
       "EXP_SCORE": 3.7328,
       "FACTOR": 1.0795068877729987,
       "ATLETA_ID": 69208
+    },
+    {
+      "RODADA": 13,
+      "POS": "ZAG",
+      "NOME": "Alexander Barboza",
+      "CLUBE": "BOT",
+      "PRECO": 10.83,
+      "EXP_SCORE": 3.5693,
+      "FACTOR": 1.1857955322469254,
+      "ATLETA_ID": 99274
     },
     {
       "RODADA": 13,
@@ -165,22 +165,22 @@
     {
       "RODADA": 13,
       "POS": "MEI",
+      "NOME": "Jean Lucas",
+      "CLUBE": "BAH",
+      "PRECO": 11.1,
+      "EXP_SCORE": 4.9847,
+      "FACTOR": 1.1277931010600435,
+      "ATLETA_ID": 98517
+    },
+    {
+      "RODADA": 13,
+      "POS": "MEI",
       "NOME": "Christian",
       "CLUBE": "CRU",
       "PRECO": 10.22,
       "EXP_SCORE": 4.7829,
       "FACTOR": 0.9736174031820543,
       "ATLETA_ID": 104502
-    },
-    {
-      "RODADA": 13,
-      "POS": "MEI",
-      "NOME": "Jean Lucas",
-      "CLUBE": "BAH",
-      "PRECO": 11.1,
-      "EXP_SCORE": 4.3345,
-      "FACTOR": 1.1277931010600435,
-      "ATLETA_ID": 98517
     },
     {
       "RODADA": 13,
