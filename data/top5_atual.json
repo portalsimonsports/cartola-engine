@@ -1,6 +1,6 @@
 {
   "rodada": 14,
-  "atualizado_em": "2026-04-27T17:47:41.251Z",
+  "atualizado_em": "2026-04-27T19:47:42.230Z",
   "dados": [
     {
       "RODADA": 14,
@@ -35,16 +35,6 @@
     {
       "RODADA": 14,
       "POS": "GOL",
-      "NOME": "Pedro Rangel",
-      "CLUBE": "CFC",
-      "PRECO": 7.28,
-      "EXP_SCORE": 4.6984,
-      "FACTOR": 0.9616615544318065,
-      "ATLETA_ID": 110708
-    },
-    {
-      "RODADA": 14,
-      "POS": "GOL",
       "NOME": "Weverton",
       "CLUBE": "GRE",
       "PRECO": 8.79,
@@ -54,11 +44,21 @@
     },
     {
       "RODADA": 14,
+      "POS": "GOL",
+      "NOME": "Pedro Rangel",
+      "CLUBE": "CFC",
+      "PRECO": 7.28,
+      "EXP_SCORE": 4.0855,
+      "FACTOR": 0.9616615544318065,
+      "ATLETA_ID": 110708
+    },
+    {
+      "RODADA": 14,
       "POS": "LAT",
       "NOME": "Matheus Bidu",
       "CLUBE": "COR",
       "PRECO": 14.92,
-      "EXP_SCORE": 7.6638,
+      "EXP_SCORE": 6.6642,
       "FACTOR": 1.0111026292764669,
       "ATLETA_ID": 105531
     },
@@ -68,7 +68,7 @@
       "NOME": "Kaiki Bruno",
       "CLUBE": "CRU",
       "PRECO": 11.97,
-      "EXP_SCORE": 6.2099,
+      "EXP_SCORE": 5.3999,
       "FACTOR": 1.1651339979699316,
       "ATLETA_ID": 112709
     },
@@ -195,12 +195,12 @@
     {
       "RODADA": 14,
       "POS": "MEI",
-      "NOME": "Allan",
-      "CLUBE": "PAL",
-      "PRECO": 13.2,
-      "EXP_SCORE": 4.6498,
-      "FACTOR": 1.054067237947579,
-      "ATLETA_ID": 141451
+      "NOME": "H?rcules",
+      "CLUBE": "FLU",
+      "PRECO": 8.54,
+      "EXP_SCORE": 4.6335,
+      "FACTOR": 1.0225466487879487,
+      "ATLETA_ID": 116447
     },
     {
       "RODADA": 14,
@@ -218,19 +218,9 @@
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 13.97,
-      "EXP_SCORE": 7.7365,
+      "EXP_SCORE": 6.7274,
       "FACTOR": 1.0837838127762995,
       "ATLETA_ID": 143193
-    },
-    {
-      "RODADA": 14,
-      "POS": "ATA",
-      "NOME": "Samuel Lino",
-      "CLUBE": "FLA",
-      "PRECO": 11.54,
-      "EXP_SCORE": 6.5456,
-      "FACTOR": 1.1138425192231138,
-      "ATLETA_ID": 98873
     },
     {
       "RODADA": 14,
@@ -245,12 +235,22 @@
     {
       "RODADA": 14,
       "POS": "ATA",
-      "NOME": "Flaco L?pez",
-      "CLUBE": "PAL",
-      "PRECO": 14.73,
-      "EXP_SCORE": 5.6931,
-      "FACTOR": 1.054067237947579,
-      "ATLETA_ID": 113103
+      "NOME": "Calleri",
+      "CLUBE": "SAO",
+      "PRECO": 12.71,
+      "EXP_SCORE": 5.8788,
+      "FACTOR": 1.046638094240399,
+      "ATLETA_ID": 89840
+    },
+    {
+      "RODADA": 14,
+      "POS": "ATA",
+      "NOME": "Lucas Ronier",
+      "CLUBE": "CFC",
+      "PRECO": 11.21,
+      "EXP_SCORE": 5.7027,
+      "FACTOR": 0.9042306564143392,
+      "ATLETA_ID": 123648
     },
     {
       "RODADA": 14,
