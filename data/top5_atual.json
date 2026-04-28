@@ -1,6 +1,6 @@
 {
   "rodada": 14,
-  "atualizado_em": "2026-04-28T05:47:43.163Z",
+  "atualizado_em": "2026-04-28T06:47:43.098Z",
   "dados": [
     {
       "RODADA": 14,
@@ -49,7 +49,7 @@
       "CLUBE": "CFC",
       "PRECO": 7.28,
       "EXP_SCORE": 4.0855,
-      "FACTOR": 0.9616615544318065,
+      "FACTOR": 0.9616615544318062,
       "ATLETA_ID": 110708
     },
     {
@@ -58,7 +58,7 @@
       "NOME": "Matheus Bidu",
       "CLUBE": "COR",
       "PRECO": 14.92,
-      "EXP_SCORE": 7.6638,
+      "EXP_SCORE": 6.6642,
       "FACTOR": 1.0111026292764669,
       "ATLETA_ID": 105531
     },
@@ -115,16 +115,6 @@
     {
       "RODADA": 14,
       "POS": "ZAG",
-      "NOME": "Gabriel Paulista",
-      "CLUBE": "COR",
-      "PRECO": 10.7,
-      "EXP_SCORE": 4.1799,
-      "FACTOR": 1.0111026292764669,
-      "ATLETA_ID": 69208
-    },
-    {
-      "RODADA": 14,
-      "POS": "ZAG",
       "NOME": "Arthur Dias",
       "CLUBE": "CAP",
       "PRECO": 5.87,
@@ -154,13 +144,33 @@
     },
     {
       "RODADA": 14,
+      "POS": "ZAG",
+      "NOME": "Gabriel Paulista",
+      "CLUBE": "COR",
+      "PRECO": 10.7,
+      "EXP_SCORE": 3.7619,
+      "FACTOR": 1.0111026292764669,
+      "ATLETA_ID": 69208
+    },
+    {
+      "RODADA": 14,
       "POS": "MEI",
       "NOME": "Danilo",
       "CLUBE": "BOT",
       "PRECO": 17.71,
-      "EXP_SCORE": 8.9592,
+      "EXP_SCORE": 7.7906,
       "FACTOR": 1.1298493913553604,
       "ATLETA_ID": 107231
+    },
+    {
+      "RODADA": 14,
+      "POS": "MEI",
+      "NOME": "Christian",
+      "CLUBE": "CRU",
+      "PRECO": 8.92,
+      "EXP_SCORE": 5.5129,
+      "FACTOR": 1.0654064572901172,
+      "ATLETA_ID": 104502
     },
     {
       "RODADA": 14,
@@ -175,16 +185,6 @@
     {
       "RODADA": 14,
       "POS": "MEI",
-      "NOME": "Christian",
-      "CLUBE": "CRU",
-      "PRECO": 8.92,
-      "EXP_SCORE": 4.7939,
-      "FACTOR": 1.0654064572901172,
-      "ATLETA_ID": 104502
-    },
-    {
-      "RODADA": 14,
-      "POS": "MEI",
       "NOME": "Arrascaeta",
       "CLUBE": "FLA",
       "PRECO": 16.62,
@@ -195,12 +195,12 @@
     {
       "RODADA": 14,
       "POS": "MEI",
-      "NOME": "Allan",
-      "CLUBE": "PAL",
-      "PRECO": 13.2,
-      "EXP_SCORE": 4.6498,
-      "FACTOR": 1.054067237947579,
-      "ATLETA_ID": 141451
+      "NOME": "H?rcules",
+      "CLUBE": "FLU",
+      "PRECO": 8.54,
+      "EXP_SCORE": 4.6335,
+      "FACTOR": 1.0225466487879487,
+      "ATLETA_ID": 116447
     },
     {
       "RODADA": 14,
@@ -225,22 +225,22 @@
     {
       "RODADA": 14,
       "POS": "ATA",
-      "NOME": "Samuel Lino",
-      "CLUBE": "FLA",
-      "PRECO": 11.54,
-      "EXP_SCORE": 6.5456,
-      "FACTOR": 1.1138425192231138,
-      "ATLETA_ID": 98873
-    },
-    {
-      "RODADA": 14,
-      "POS": "ATA",
       "NOME": "Andr?s G?mez",
       "CLUBE": "VAS",
       "PRECO": 12.66,
       "EXP_SCORE": 6.0635,
       "FACTOR": 0.9122273041547067,
       "ATLETA_ID": 116706
+    },
+    {
+      "RODADA": 14,
+      "POS": "ATA",
+      "NOME": "Cuello",
+      "CLUBE": "CAM",
+      "PRECO": 9.99,
+      "EXP_SCORE": 5.8874,
+      "FACTOR": 0.971557271260659,
+      "ATLETA_ID": 98909
     },
     {
       "RODADA": 14,
@@ -269,7 +269,7 @@
       "CLUBE": "PAL",
       "PRECO": 12.54,
       "EXP_SCORE": 5.2899,
-      "FACTOR": 1.024787592449035,
+      "FACTOR": 1.0247875924490353,
       "ATLETA_ID": 110506
     },
     {
@@ -285,22 +285,22 @@
     {
       "RODADA": 14,
       "POS": "TEC",
+      "NOME": "Vagner Mancini",
+      "CLUBE": "RBB",
+      "PRECO": 8.23,
+      "EXP_SCORE": 4.3768,
+      "FACTOR": 0.9274812839154392,
+      "ATLETA_ID": 39850
+    },
+    {
+      "RODADA": 14,
+      "POS": "TEC",
       "NOME": "Jair Ventura",
       "CLUBE": "VIT",
       "PRECO": 8.47,
       "EXP_SCORE": 4.1896,
       "FACTOR": 1.088842234281045,
       "ATLETA_ID": 92180
-    },
-    {
-      "RODADA": 14,
-      "POS": "TEC",
-      "NOME": "Odair Hellmann",
-      "CLUBE": "CAP",
-      "PRECO": 8.68,
-      "EXP_SCORE": 4.0389,
-      "FACTOR": 1.0536787068658469,
-      "ATLETA_ID": 92273
     }
   ]
 }
