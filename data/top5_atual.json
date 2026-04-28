@@ -1,6 +1,6 @@
 {
   "rodada": 14,
-  "atualizado_em": "2026-04-28T07:47:46.522Z",
+  "atualizado_em": "2026-04-28T08:47:40.549Z",
   "dados": [
     {
       "RODADA": 14,
@@ -49,7 +49,7 @@
       "CLUBE": "CFC",
       "PRECO": 7.28,
       "EXP_SCORE": 4.0855,
-      "FACTOR": 0.9616615544318062,
+      "FACTOR": 0.9616615544318065,
       "ATLETA_ID": 110708
     },
     {
@@ -158,9 +158,19 @@
       "NOME": "Danilo",
       "CLUBE": "BOT",
       "PRECO": 17.71,
-      "EXP_SCORE": 8.9592,
+      "EXP_SCORE": 7.7906,
       "FACTOR": 1.1298493913553604,
       "ATLETA_ID": 107231
+    },
+    {
+      "RODADA": 14,
+      "POS": "MEI",
+      "NOME": "Christian",
+      "CLUBE": "CRU",
+      "PRECO": 8.92,
+      "EXP_SCORE": 5.5129,
+      "FACTOR": 1.0654064572901172,
+      "ATLETA_ID": 104502
     },
     {
       "RODADA": 14,
@@ -171,16 +181,6 @@
       "EXP_SCORE": 5.0039,
       "FACTOR": 1.0225466487879487,
       "ATLETA_ID": 98672
-    },
-    {
-      "RODADA": 14,
-      "POS": "MEI",
-      "NOME": "Christian",
-      "CLUBE": "CRU",
-      "PRECO": 8.92,
-      "EXP_SCORE": 4.7939,
-      "FACTOR": 1.0654064572901172,
-      "ATLETA_ID": 104502
     },
     {
       "RODADA": 14,
@@ -285,22 +285,22 @@
     {
       "RODADA": 14,
       "POS": "TEC",
+      "NOME": "Vagner Mancini",
+      "CLUBE": "RBB",
+      "PRECO": 8.23,
+      "EXP_SCORE": 4.3768,
+      "FACTOR": 0.9274812839154392,
+      "ATLETA_ID": 39850
+    },
+    {
+      "RODADA": 14,
+      "POS": "TEC",
       "NOME": "Jair Ventura",
       "CLUBE": "VIT",
       "PRECO": 8.47,
       "EXP_SCORE": 4.1896,
       "FACTOR": 1.088842234281045,
       "ATLETA_ID": 92180
-    },
-    {
-      "RODADA": 14,
-      "POS": "TEC",
-      "NOME": "Odair Hellmann",
-      "CLUBE": "CAP",
-      "PRECO": 8.68,
-      "EXP_SCORE": 4.0389,
-      "FACTOR": 1.0536787068658469,
-      "ATLETA_ID": 92273
     }
   ]
 }
