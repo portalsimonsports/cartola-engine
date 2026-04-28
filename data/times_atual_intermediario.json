@@ -1,7 +1,7 @@
 {
   "rodada": 14,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-04-28T07:47:38.925Z",
+  "atualizado_em": "2026-04-28T08:47:37.237Z",
   "dados": [
     {
       "RODADA": 14,
@@ -77,8 +77,19 @@
       "NOME": "Danilo",
       "CLUBE": "BOT",
       "PRECO": 17.71,
-      "EXP_SCORE": 8.9592,
+      "EXP_SCORE": 7.7906,
       "ATLETA_ID": 107231
+    },
+    {
+      "RODADA": 14,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Christian",
+      "CLUBE": "CRU",
+      "PRECO": 8.92,
+      "EXP_SCORE": 5.5129,
+      "ATLETA_ID": 104502
     },
     {
       "RODADA": 14,
@@ -90,17 +101,6 @@
       "PRECO": 11.21,
       "EXP_SCORE": 5.0039,
       "ATLETA_ID": 98672
-    },
-    {
-      "RODADA": 14,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Christian",
-      "CLUBE": "CRU",
-      "PRECO": 8.92,
-      "EXP_SCORE": 4.7939,
-      "ATLETA_ID": 104502
     },
     {
       "RODADA": 14,
@@ -184,11 +184,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Enamorado",
-      "CLUBE": "GRE",
-      "PRECO": 8,
-      "EXP_SCORE": 3.6506,
-      "ATLETA_ID": 106104
+      "NOME": "Cristian Olivera",
+      "CLUBE": "BAH",
+      "PRECO": 7.87,
+      "EXP_SCORE": 3.7289,
+      "ATLETA_ID": 113397
     }
   ]
 }
