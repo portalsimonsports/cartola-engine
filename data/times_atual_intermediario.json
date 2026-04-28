@@ -1,7 +1,7 @@
 {
   "rodada": 14,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-04-28T06:47:38.541Z",
+  "atualizado_em": "2026-04-28T07:47:38.925Z",
   "dados": [
     {
       "RODADA": 14,
@@ -52,6 +52,17 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ZAG",
+      "NOME": "Gabriel Paulista",
+      "CLUBE": "COR",
+      "PRECO": 10.7,
+      "EXP_SCORE": 4.1799,
+      "ATLETA_ID": 69208
+    },
+    {
+      "RODADA": 14,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "ZAG",
       "NOME": "Arthur Dias",
       "CLUBE": "CAP",
       "PRECO": 5.87,
@@ -66,19 +77,8 @@
       "NOME": "Danilo",
       "CLUBE": "BOT",
       "PRECO": 17.71,
-      "EXP_SCORE": 7.7906,
+      "EXP_SCORE": 8.9592,
       "ATLETA_ID": 107231
-    },
-    {
-      "RODADA": 14,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Christian",
-      "CLUBE": "CRU",
-      "PRECO": 8.92,
-      "EXP_SCORE": 5.5129,
-      "ATLETA_ID": 104502
     },
     {
       "RODADA": 14,
@@ -90,6 +90,17 @@
       "PRECO": 11.21,
       "EXP_SCORE": 5.0039,
       "ATLETA_ID": 98672
+    },
+    {
+      "RODADA": 14,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Christian",
+      "CLUBE": "CRU",
+      "PRECO": 8.92,
+      "EXP_SCORE": 4.7939,
+      "ATLETA_ID": 104502
     },
     {
       "RODADA": 14,
@@ -107,22 +118,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 13.97,
-      "EXP_SCORE": 6.7274,
-      "ATLETA_ID": 143193
-    },
-    {
-      "RODADA": 14,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Isidro Pitta",
-      "CLUBE": "RBB",
-      "PRECO": 5.45,
-      "EXP_SCORE": 3.2531,
-      "ATLETA_ID": 108133
+      "NOME": "Matheus Martins",
+      "CLUBE": "BOT",
+      "PRECO": 8.1,
+      "EXP_SCORE": 5.5093,
+      "ATLETA_ID": 111831
     },
     {
       "RODADA": 14,
@@ -184,11 +184,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Marcinho",
-      "CLUBE": "CHA",
-      "PRECO": 4.57,
-      "EXP_SCORE": 2.7591,
-      "ATLETA_ID": 95332
+      "NOME": "Enamorado",
+      "CLUBE": "GRE",
+      "PRECO": 8,
+      "EXP_SCORE": 3.6506,
+      "ATLETA_ID": 106104
     }
   ]
 }
