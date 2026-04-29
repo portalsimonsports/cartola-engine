@@ -1,6 +1,6 @@
 {
   "rodada": 14,
-  "atualizado_em": "2026-04-29T04:47:43.738Z",
+  "atualizado_em": "2026-04-29T05:47:58.733Z",
   "dados": [
     {
       "RODADA": 14,
@@ -35,6 +35,16 @@
     {
       "RODADA": 14,
       "POS": "GOL",
+      "NOME": "Pedro Rangel",
+      "CLUBE": "CFC",
+      "PRECO": 7.28,
+      "EXP_SCORE": 4.7018,
+      "FACTOR": 0.9623578768865524,
+      "ATLETA_ID": 110708
+    },
+    {
+      "RODADA": 14,
+      "POS": "GOL",
       "NOME": "Weverton",
       "CLUBE": "GRE",
       "PRECO": 8.79,
@@ -44,21 +54,11 @@
     },
     {
       "RODADA": 14,
-      "POS": "GOL",
-      "NOME": "Pedro Rangel",
-      "CLUBE": "CFC",
-      "PRECO": 7.28,
-      "EXP_SCORE": 4.0885,
-      "FACTOR": 0.9623578768865524,
-      "ATLETA_ID": 110708
-    },
-    {
-      "RODADA": 14,
       "POS": "LAT",
       "NOME": "Matheus Bidu",
       "CLUBE": "COR",
       "PRECO": 14.92,
-      "EXP_SCORE": 6.6672,
+      "EXP_SCORE": 7.6673,
       "FACTOR": 1.0115656096320162,
       "ATLETA_ID": 105531
     },
@@ -68,7 +68,7 @@
       "NOME": "Kaiki Bruno",
       "CLUBE": "CRU",
       "PRECO": 11.97,
-      "EXP_SCORE": 5.4034,
+      "EXP_SCORE": 6.2139,
       "FACTOR": 1.1658724549205812,
       "ATLETA_ID": 112709
     },
@@ -195,12 +195,12 @@
     {
       "RODADA": 14,
       "POS": "MEI",
-      "NOME": "H?rcules",
-      "CLUBE": "FLU",
-      "PRECO": 8.54,
-      "EXP_SCORE": 4.6195,
-      "FACTOR": 1.0194560131211874,
-      "ATLETA_ID": 116447
+      "NOME": "Allan",
+      "CLUBE": "PAL",
+      "PRECO": 13.2,
+      "EXP_SCORE": 4.6193,
+      "FACTOR": 1.0471505785899045,
+      "ATLETA_ID": 141451
     },
     {
       "RODADA": 14,
@@ -218,19 +218,9 @@
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 13.97,
-      "EXP_SCORE": 6.6902,
+      "EXP_SCORE": 7.6938,
       "FACTOR": 1.0778000125334135,
       "ATLETA_ID": 143193
-    },
-    {
-      "RODADA": 14,
-      "POS": "ATA",
-      "NOME": "Cuello",
-      "CLUBE": "CAM",
-      "PRECO": 9.99,
-      "EXP_SCORE": 6.0325,
-      "FACTOR": 0.9955111428528208,
-      "ATLETA_ID": 98909
     },
     {
       "RODADA": 14,
@@ -238,7 +228,7 @@
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 11.54,
-      "EXP_SCORE": 6.0237,
+      "EXP_SCORE": 6.9272,
       "FACTOR": 1.1787885531038567,
       "ATLETA_ID": 98873
     },
@@ -251,6 +241,16 @@
       "EXP_SCORE": 6.0062,
       "FACTOR": 0.903611617609878,
       "ATLETA_ID": 116706
+    },
+    {
+      "RODADA": 14,
+      "POS": "ATA",
+      "NOME": "Flaco L?pez",
+      "CLUBE": "PAL",
+      "PRECO": 14.73,
+      "EXP_SCORE": 5.6557,
+      "FACTOR": 1.0471505785899045,
+      "ATLETA_ID": 113103
     },
     {
       "RODADA": 14,
