@@ -1,7 +1,7 @@
 {
   "rodada": 14,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-04-29T14:47:38.643Z",
+  "atualizado_em": "2026-04-29T15:47:37.343Z",
   "dados": [
     {
       "RODADA": 14,
@@ -13,6 +13,28 @@
       "PRECO": 10.25,
       "EXP_SCORE": 5.607,
       "ATLETA_ID": 104118
+    },
+    {
+      "RODADA": 14,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Matheus Bidu",
+      "CLUBE": "COR",
+      "PRECO": 14.92,
+      "EXP_SCORE": 6.6672,
+      "ATLETA_ID": 105531
+    },
+    {
+      "RODADA": 14,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Kaiki Bruno",
+      "CLUBE": "CRU",
+      "PRECO": 11.97,
+      "EXP_SCORE": 5.4034,
+      "ATLETA_ID": 112709
     },
     {
       "RODADA": 14,
@@ -55,8 +77,19 @@
       "NOME": "Danilo",
       "CLUBE": "BOT",
       "PRECO": 17.71,
-      "EXP_SCORE": 8.9232,
+      "EXP_SCORE": 7.7593,
       "ATLETA_ID": 107231
+    },
+    {
+      "RODADA": 14,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Christian",
+      "CLUBE": "CRU",
+      "PRECO": 8.92,
+      "EXP_SCORE": 5.479,
+      "ATLETA_ID": 104502
     },
     {
       "RODADA": 14,
@@ -68,28 +101,6 @@
       "PRECO": 11.21,
       "EXP_SCORE": 4.9887,
       "ATLETA_ID": 98672
-    },
-    {
-      "RODADA": 14,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Arrascaeta",
-      "CLUBE": "FLA",
-      "PRECO": 16.62,
-      "EXP_SCORE": 4.9449,
-      "ATLETA_ID": 87863
-    },
-    {
-      "RODADA": 14,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Christian",
-      "CLUBE": "CRU",
-      "PRECO": 8.92,
-      "EXP_SCORE": 4.7643,
-      "ATLETA_ID": 104502
     },
     {
       "RODADA": 14,
@@ -107,22 +118,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 13.97,
-      "EXP_SCORE": 7.6938,
-      "ATLETA_ID": 143193
-    },
-    {
-      "RODADA": 14,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Marcinho",
-      "CLUBE": "CHA",
-      "PRECO": 4.57,
-      "EXP_SCORE": 2.7429,
-      "ATLETA_ID": 95332
+      "NOME": "Matheus Martins",
+      "CLUBE": "BOT",
+      "PRECO": 8.1,
+      "EXP_SCORE": 5.4871,
+      "ATLETA_ID": 111831
     },
     {
       "RODADA": 14,
@@ -150,6 +150,17 @@
       "RODADA": 14,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
+      "POS": "LAT",
+      "NOME": "Luciano Juba",
+      "CLUBE": "BAH",
+      "PRECO": 11.9,
+      "EXP_SCORE": 5.1952,
+      "ATLETA_ID": 107093
+    },
+    {
+      "RODADA": 14,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "RESERVA",
       "POS": "ZAG",
       "NOME": "Willian Machado",
       "CLUBE": "MIR",
@@ -165,7 +176,7 @@
       "NOME": "H?rcules",
       "CLUBE": "FLU",
       "PRECO": 8.54,
-      "EXP_SCORE": 4.017,
+      "EXP_SCORE": 4.6195,
       "ATLETA_ID": 116447
     },
     {
@@ -173,11 +184,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Gabriel Mec",
-      "CLUBE": "GRE",
-      "PRECO": 3.25,
-      "EXP_SCORE": 1.4509,
-      "ATLETA_ID": 141595
+      "NOME": "Cristian Olivera",
+      "CLUBE": "BAH",
+      "PRECO": 7.87,
+      "EXP_SCORE": 3.7044,
+      "ATLETA_ID": 113397
     }
   ]
 }
