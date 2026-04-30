@@ -1,6 +1,6 @@
 {
   "rodada": 14,
-  "atualizado_em": "2026-04-30T06:47:39.764Z",
+  "atualizado_em": "2026-04-30T07:47:40.610Z",
   "dados": [
     {
       "RODADA": 14,
@@ -35,22 +35,22 @@
     {
       "RODADA": 14,
       "POS": "GOL",
+      "NOME": "Pedro Rangel",
+      "CLUBE": "CFC",
+      "PRECO": 7.28,
+      "EXP_SCORE": 4.6897,
+      "FACTOR": 0.9598973496288676,
+      "ATLETA_ID": 110708
+    },
+    {
+      "RODADA": 14,
+      "POS": "GOL",
       "NOME": "Weverton",
       "CLUBE": "GRE",
       "PRECO": 8.79,
       "EXP_SCORE": 4.3776,
       "FACTOR": 0.9493690168367391,
       "ATLETA_ID": 71631
-    },
-    {
-      "RODADA": 14,
-      "POS": "GOL",
-      "NOME": "Pedro Rangel",
-      "CLUBE": "CFC",
-      "PRECO": 7.28,
-      "EXP_SCORE": 4.078,
-      "FACTOR": 0.9598973496288676,
-      "ATLETA_ID": 110708
     },
     {
       "RODADA": 14,
@@ -68,7 +68,7 @@
       "NOME": "Kaiki Bruno",
       "CLUBE": "CRU",
       "PRECO": 11.97,
-      "EXP_SCORE": 5.3913,
+      "EXP_SCORE": 6.2,
       "FACTOR": 1.1632630410731375,
       "ATLETA_ID": 112709
     },
@@ -189,7 +189,7 @@
       "CLUBE": "PAL",
       "PRECO": 13.2,
       "EXP_SCORE": 4.6193,
-      "FACTOR": 1.0471505785899045,
+      "FACTOR": 1.0471505785899047,
       "ATLETA_ID": 141451
     },
     {
@@ -199,7 +199,7 @@
       "CLUBE": "PAL",
       "PRECO": 15.03,
       "EXP_SCORE": 4.4345,
-      "FACTOR": 1.0471505785899045,
+      "FACTOR": 1.0471505785899047,
       "ATLETA_ID": 99815
     },
     {
@@ -211,6 +211,16 @@
       "EXP_SCORE": 9.424,
       "FACTOR": 1.1787885531038567,
       "ATLETA_ID": 94583
+    },
+    {
+      "RODADA": 14,
+      "POS": "ATA",
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 13.97,
+      "EXP_SCORE": 7.6938,
+      "FACTOR": 1.0778000125334135,
+      "ATLETA_ID": 143193
     },
     {
       "RODADA": 14,
@@ -235,21 +245,11 @@
     {
       "RODADA": 14,
       "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 13.97,
-      "EXP_SCORE": 6.6902,
-      "FACTOR": 1.0778000125334135,
-      "ATLETA_ID": 143193
-    },
-    {
-      "RODADA": 14,
-      "POS": "ATA",
       "NOME": "Andr?s G?mez",
       "CLUBE": "VAS",
       "PRECO": 12.66,
       "EXP_SCORE": 6.0062,
-      "FACTOR": 0.903611617609878,
+      "FACTOR": 0.9036116176098781,
       "ATLETA_ID": 116706
     },
     {
