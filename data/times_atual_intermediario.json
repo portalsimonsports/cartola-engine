@@ -1,7 +1,7 @@
 {
   "rodada": 14,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-04-30T17:47:39.578Z",
+  "atualizado_em": "2026-04-30T18:47:41.265Z",
   "dados": [
     {
       "RODADA": 14,
@@ -22,7 +22,7 @@
       "NOME": "Matheus Bidu",
       "CLUBE": "COR",
       "PRECO": 14.92,
-      "EXP_SCORE": 6.662,
+      "EXP_SCORE": 7.6613,
       "ATLETA_ID": 105531
     },
     {
@@ -77,19 +77,8 @@
       "NOME": "Danilo",
       "CLUBE": "BOT",
       "PRECO": 17.71,
-      "EXP_SCORE": 7.7593,
+      "EXP_SCORE": 8.9232,
       "ATLETA_ID": 107231
-    },
-    {
-      "RODADA": 14,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Christian",
-      "CLUBE": "CRU",
-      "PRECO": 8.92,
-      "EXP_SCORE": 5.479,
-      "ATLETA_ID": 104502
     },
     {
       "RODADA": 14,
@@ -101,6 +90,17 @@
       "PRECO": 11.21,
       "EXP_SCORE": 4.9887,
       "ATLETA_ID": 98672
+    },
+    {
+      "RODADA": 14,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Christian",
+      "CLUBE": "CRU",
+      "PRECO": 8.92,
+      "EXP_SCORE": 4.7643,
+      "ATLETA_ID": 104502
     },
     {
       "RODADA": 14,
@@ -118,11 +118,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Cuello",
-      "CLUBE": "CAM",
-      "PRECO": 9.99,
-      "EXP_SCORE": 6.0325,
-      "ATLETA_ID": 98909
+      "NOME": "Matheus Martins",
+      "CLUBE": "BOT",
+      "PRECO": 8.1,
+      "EXP_SCORE": 5.4871,
+      "ATLETA_ID": 111831
     },
     {
       "RODADA": 14,
@@ -176,7 +176,7 @@
       "NOME": "H?rcules",
       "CLUBE": "FLU",
       "PRECO": 8.54,
-      "EXP_SCORE": 4.6195,
+      "EXP_SCORE": 4.017,
       "ATLETA_ID": 116447
     },
     {
@@ -184,11 +184,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Matheus Martins",
-      "CLUBE": "BOT",
-      "PRECO": 8.1,
-      "EXP_SCORE": 5.4871,
-      "ATLETA_ID": 111831
+      "NOME": "Enamorado",
+      "CLUBE": "GRE",
+      "PRECO": 8,
+      "EXP_SCORE": 3.632,
+      "ATLETA_ID": 106104
     }
   ]
 }
