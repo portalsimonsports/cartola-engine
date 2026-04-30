@@ -1,7 +1,7 @@
 {
   "rodada": 14,
   "tipo": "PONTUACAO",
-  "atualizado_em": "2026-04-30T16:47:40.625Z",
+  "atualizado_em": "2026-04-30T17:47:41.365Z",
   "dados": [
     {
       "RODADA": 14,
@@ -11,7 +11,7 @@
       "NOME": "Carlos Miguel",
       "CLUBE": "PAL",
       "PRECO": 9.01,
-      "EXP_SCORE": 5.8075,
+      "EXP_SCORE": 5.8109,
       "ATLETA_ID": 104084
     },
     {
@@ -22,7 +22,7 @@
       "NOME": "Matheus Bidu",
       "CLUBE": "COR",
       "PRECO": 14.92,
-      "EXP_SCORE": 7.6583,
+      "EXP_SCORE": 6.662,
       "ATLETA_ID": 105531
     },
     {
@@ -33,7 +33,7 @@
       "NOME": "Kaiki Bruno",
       "CLUBE": "CRU",
       "PRECO": 11.97,
-      "EXP_SCORE": 5.3945,
+      "EXP_SCORE": 5.3975,
       "ATLETA_ID": 112709
     },
     {
@@ -44,7 +44,7 @@
       "NOME": "Gustavo G?mez",
       "CLUBE": "PAL",
       "PRECO": 11.17,
-      "EXP_SCORE": 5.0803,
+      "EXP_SCORE": 5.0832,
       "ATLETA_ID": 71684
     },
     {
@@ -55,7 +55,7 @@
       "NOME": "Gabriel Paulista",
       "CLUBE": "COR",
       "PRECO": 10.7,
-      "EXP_SCORE": 4.1769,
+      "EXP_SCORE": 4.1785,
       "ATLETA_ID": 69208
     },
     {
@@ -66,8 +66,19 @@
       "NOME": "Danilo",
       "CLUBE": "BOT",
       "PRECO": 17.71,
-      "EXP_SCORE": 8.9232,
+      "EXP_SCORE": 7.7593,
       "ATLETA_ID": 107231
+    },
+    {
+      "RODADA": 14,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Christian",
+      "CLUBE": "CRU",
+      "PRECO": 8.92,
+      "EXP_SCORE": 5.479,
+      "ATLETA_ID": 104502
     },
     {
       "RODADA": 14,
@@ -79,17 +90,6 @@
       "PRECO": 11.21,
       "EXP_SCORE": 4.9887,
       "ATLETA_ID": 98672
-    },
-    {
-      "RODADA": 14,
-      "TIPO": "PONTUACAO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Christian",
-      "CLUBE": "CRU",
-      "PRECO": 8.92,
-      "EXP_SCORE": 4.7643,
-      "ATLETA_ID": 104502
     },
     {
       "RODADA": 14,
@@ -107,33 +107,33 @@
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Plata",
-      "CLUBE": "FLA",
-      "PRECO": 12.79,
-      "EXP_SCORE": 7.2324,
-      "ATLETA_ID": 109096
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 13.97,
+      "EXP_SCORE": 6.6902,
+      "ATLETA_ID": 143193
     },
     {
       "RODADA": 14,
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Samuel Lino",
+      "NOME": "Plata",
       "CLUBE": "FLA",
-      "PRECO": 11.54,
-      "EXP_SCORE": 6.9272,
-      "ATLETA_ID": 98873
+      "PRECO": 12.79,
+      "EXP_SCORE": 6.2891,
+      "ATLETA_ID": 109096
     },
     {
       "RODADA": 14,
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Luis Zubeld?a",
-      "CLUBE": "FLU",
-      "PRECO": 10.67,
-      "EXP_SCORE": 4.8542,
-      "ATLETA_ID": 99366
+      "NOME": "Vagner Mancini",
+      "CLUBE": "RBB",
+      "PRECO": 8.23,
+      "EXP_SCORE": 4.3446,
+      "ATLETA_ID": 39850
     },
     {
       "RODADA": 14,
@@ -143,7 +143,7 @@
       "NOME": "Weverton",
       "CLUBE": "GRE",
       "PRECO": 8.79,
-      "EXP_SCORE": 4.3809,
+      "EXP_SCORE": 4.3204,
       "ATLETA_ID": 71631
     },
     {
@@ -154,7 +154,7 @@
       "NOME": "Luciano Juba",
       "CLUBE": "BAH",
       "PRECO": 11.9,
-      "EXP_SCORE": 5.1798,
+      "EXP_SCORE": 5.185,
       "ATLETA_ID": 107093
     },
     {
@@ -165,7 +165,7 @@
       "NOME": "Arthur Dias",
       "CLUBE": "CAP",
       "PRECO": 5.87,
-      "EXP_SCORE": 3.9208,
+      "EXP_SCORE": 3.9227,
       "ATLETA_ID": 130843
     },
     {
@@ -176,7 +176,7 @@
       "NOME": "H?rcules",
       "CLUBE": "FLU",
       "PRECO": 8.54,
-      "EXP_SCORE": 4.017,
+      "EXP_SCORE": 4.6195,
       "ATLETA_ID": 116447
     },
     {
@@ -184,11 +184,11 @@
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Lucas Ronier",
-      "CLUBE": "CFC",
-      "PRECO": 11.21,
-      "EXP_SCORE": 5.6598,
-      "ATLETA_ID": 123648
+      "NOME": "Cuello",
+      "CLUBE": "CAM",
+      "PRECO": 9.99,
+      "EXP_SCORE": 6.0325,
+      "ATLETA_ID": 98909
     }
   ]
 }
