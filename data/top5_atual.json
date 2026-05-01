@@ -1,6 +1,6 @@
 {
   "rodada": 14,
-  "atualizado_em": "2026-05-01T00:47:41.393Z",
+  "atualizado_em": "2026-05-01T01:47:36.045Z",
   "dados": [
     {
       "RODADA": 14,
@@ -29,18 +29,8 @@
       "CLUBE": "FLA",
       "PRECO": 9.76,
       "EXP_SCORE": 5.079,
-      "FACTOR": 1.0815991511038383,
+      "FACTOR": 1.0815991511038385,
       "ATLETA_ID": 99552
-    },
-    {
-      "RODADA": 14,
-      "POS": "GOL",
-      "NOME": "Pedro Rangel",
-      "CLUBE": "CFC",
-      "PRECO": 7.28,
-      "EXP_SCORE": 4.7475,
-      "FACTOR": 0.9717147069652251,
-      "ATLETA_ID": 110708
     },
     {
       "RODADA": 14,
@@ -51,6 +41,16 @@
       "EXP_SCORE": 4.3939,
       "FACTOR": 0.9529009300236243,
       "ATLETA_ID": 71631
+    },
+    {
+      "RODADA": 14,
+      "POS": "GOL",
+      "NOME": "Pedro Rangel",
+      "CLUBE": "CFC",
+      "PRECO": 7.28,
+      "EXP_SCORE": 4.1282,
+      "FACTOR": 0.9717147069652251,
+      "ATLETA_ID": 110708
     },
     {
       "RODADA": 14,
@@ -68,7 +68,7 @@
       "NOME": "Kaiki Bruno",
       "CLUBE": "CRU",
       "PRECO": 11.97,
-      "EXP_SCORE": 6.194,
+      "EXP_SCORE": 5.3861,
       "FACTOR": 1.1621439623707484,
       "ATLETA_ID": 112709
     },
@@ -139,7 +139,7 @@
       "CLUBE": "FLA",
       "PRECO": 9.86,
       "EXP_SCORE": 3.7708,
-      "FACTOR": 1.0815991511038383,
+      "FACTOR": 1.0815991511038385,
       "ATLETA_ID": 97867
     },
     {
@@ -215,16 +215,6 @@
     {
       "RODADA": 14,
       "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 13.97,
-      "EXP_SCORE": 7.7018,
-      "FACTOR": 1.0789299266497363,
-      "ATLETA_ID": 143193
-    },
-    {
-      "RODADA": 14,
-      "POS": "ATA",
       "NOME": "Plata",
       "CLUBE": "FLA",
       "PRECO": 12.79,
@@ -241,6 +231,16 @@
       "EXP_SCORE": 6.7991,
       "FACTOR": 1.1569926546607712,
       "ATLETA_ID": 98873
+    },
+    {
+      "RODADA": 14,
+      "POS": "ATA",
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 13.97,
+      "EXP_SCORE": 6.6972,
+      "FACTOR": 1.0789299266497363,
+      "ATLETA_ID": 143193
     },
     {
       "RODADA": 14,
