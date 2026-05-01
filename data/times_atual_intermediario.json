@@ -1,7 +1,7 @@
 {
   "rodada": 14,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-05-01T14:47:36.464Z",
+  "atualizado_em": "2026-05-01T15:47:38.725Z",
   "dados": [
     {
       "RODADA": 14,
@@ -11,7 +11,7 @@
       "NOME": "Carlos Miguel",
       "CLUBE": "PAL",
       "PRECO": 9.01,
-      "EXP_SCORE": 5.8001,
+      "EXP_SCORE": 5.804,
       "ATLETA_ID": 104084
     },
     {
@@ -22,7 +22,7 @@
       "NOME": "Matheus Bidu",
       "CLUBE": "COR",
       "PRECO": 14.92,
-      "EXP_SCORE": 6.6535,
+      "EXP_SCORE": 7.5339,
       "ATLETA_ID": 105531
     },
     {
@@ -30,11 +30,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "LAT",
-      "NOME": "Bernabei",
-      "CLUBE": "INT",
-      "PRECO": 10.24,
-      "EXP_SCORE": 5.5394,
-      "ATLETA_ID": 110426
+      "NOME": "Kaiki Bruno",
+      "CLUBE": "CRU",
+      "PRECO": 11.97,
+      "EXP_SCORE": 6.2001,
+      "ATLETA_ID": 112709
     },
     {
       "RODADA": 14,
@@ -44,7 +44,7 @@
       "NOME": "Gustavo G?mez",
       "CLUBE": "PAL",
       "PRECO": 11.17,
-      "EXP_SCORE": 5.0738,
+      "EXP_SCORE": 5.0772,
       "ATLETA_ID": 71684
     },
     {
@@ -55,7 +55,7 @@
       "NOME": "Gabriel Paulista",
       "CLUBE": "COR",
       "PRECO": 10.7,
-      "EXP_SCORE": 4.1732,
+      "EXP_SCORE": 4.109,
       "ATLETA_ID": 69208
     },
     {
@@ -66,7 +66,7 @@
       "NOME": "Arthur Dias",
       "CLUBE": "CAP",
       "PRECO": 5.87,
-      "EXP_SCORE": 4.0019,
+      "EXP_SCORE": 4.0037,
       "ATLETA_ID": 130843
     },
     {
@@ -77,19 +77,8 @@
       "NOME": "Danilo",
       "CLUBE": "BOT",
       "PRECO": 17.71,
-      "EXP_SCORE": 7.7772,
+      "EXP_SCORE": 8.9437,
       "ATLETA_ID": 107231
-    },
-    {
-      "RODADA": 14,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Christian",
-      "CLUBE": "CRU",
-      "PRECO": 8.92,
-      "EXP_SCORE": 5.4984,
-      "ATLETA_ID": 104502
     },
     {
       "RODADA": 14,
@@ -101,6 +90,17 @@
       "PRECO": 11.21,
       "EXP_SCORE": 4.8017,
       "ATLETA_ID": 98672
+    },
+    {
+      "RODADA": 14,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Christian",
+      "CLUBE": "CRU",
+      "PRECO": 8.92,
+      "EXP_SCORE": 4.7812,
+      "ATLETA_ID": 104502
     },
     {
       "RODADA": 14,
@@ -118,11 +118,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Cuello",
-      "CLUBE": "CAM",
-      "PRECO": 9.99,
-      "EXP_SCORE": 6.0457,
-      "ATLETA_ID": 98909
+      "NOME": "Matheus Martins",
+      "CLUBE": "BOT",
+      "PRECO": 8.1,
+      "EXP_SCORE": 5.4998,
+      "ATLETA_ID": 111831
     },
     {
       "RODADA": 14,
@@ -140,22 +140,22 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Weverton",
-      "CLUBE": "GRE",
-      "PRECO": 8.79,
-      "EXP_SCORE": 4.3957,
-      "ATLETA_ID": 71631
+      "NOME": "Pedro Rangel",
+      "CLUBE": "CFC",
+      "PRECO": 7.28,
+      "EXP_SCORE": 4.7523,
+      "ATLETA_ID": 110708
     },
     {
       "RODADA": 14,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "LAT",
-      "NOME": "Giay",
-      "CLUBE": "PAL",
-      "PRECO": 8.16,
-      "EXP_SCORE": 5.1214,
-      "ATLETA_ID": 124526
+      "NOME": "Bernabei",
+      "CLUBE": "INT",
+      "PRECO": 10.24,
+      "EXP_SCORE": 5.5459,
+      "ATLETA_ID": 110426
     },
     {
       "RODADA": 14,
@@ -165,7 +165,7 @@
       "NOME": "Willian Machado",
       "CLUBE": "MIR",
       "PRECO": 5.15,
-      "EXP_SCORE": 2.343,
+      "EXP_SCORE": 2.3444,
       "ATLETA_ID": 101908
     },
     {
@@ -176,7 +176,7 @@
       "NOME": "H?rcules",
       "CLUBE": "FLU",
       "PRECO": 8.54,
-      "EXP_SCORE": 4.4463,
+      "EXP_SCORE": 3.8664,
       "ATLETA_ID": 116447
     },
     {
@@ -184,11 +184,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Matheus Martins",
-      "CLUBE": "BOT",
-      "PRECO": 8.1,
-      "EXP_SCORE": 5.4998,
-      "ATLETA_ID": 111831
+      "NOME": "Enamorado",
+      "CLUBE": "GRE",
+      "PRECO": 8,
+      "EXP_SCORE": 3.6426,
+      "ATLETA_ID": 106104
     }
   ]
 }
