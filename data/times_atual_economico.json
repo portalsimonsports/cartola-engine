@@ -1,7 +1,7 @@
 {
   "rodada": 14,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-05-01T23:47:34.707Z",
+  "atualizado_em": "2026-05-02T01:47:41.123Z",
   "dados": [
     {
       "RODADA": 14,
@@ -13,6 +13,28 @@
       "PRECO": 7.29,
       "EXP_SCORE": 2.2474,
       "ATLETA_ID": 102906
+    },
+    {
+      "RODADA": 14,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Arthur",
+      "CLUBE": "PAL",
+      "PRECO": 4.81,
+      "EXP_SCORE": 3.7699,
+      "ATLETA_ID": 145404
+    },
+    {
+      "RODADA": 14,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Matheus Bidu",
+      "CLUBE": "COR",
+      "PRECO": 14.92,
+      "EXP_SCORE": 7.5521,
+      "ATLETA_ID": 105531
     },
     {
       "RODADA": 14,
@@ -30,6 +52,17 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ZAG",
+      "NOME": "F?lix Torres",
+      "CLUBE": "INT",
+      "PRECO": 4.05,
+      "EXP_SCORE": 2.1904,
+      "ATLETA_ID": 97642
+    },
+    {
+      "RODADA": 14,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ZAG",
       "NOME": "Tiago C?ser",
       "CLUBE": "CFC",
       "PRECO": 3.29,
@@ -40,22 +73,11 @@
       "RODADA": 14,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "F?lix Torres",
-      "CLUBE": "INT",
-      "PRECO": 4.05,
-      "EXP_SCORE": 1.9714,
-      "ATLETA_ID": 97642
-    },
-    {
-      "RODADA": 14,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
       "POS": "MEI",
       "NOME": "Danilo",
       "CLUBE": "BOT",
       "PRECO": 17.71,
-      "EXP_SCORE": 7.6306,
+      "EXP_SCORE": 8.7751,
       "ATLETA_ID": 107231
     },
     {
@@ -84,22 +106,11 @@
       "RODADA": 14,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Matheuzinho",
-      "CLUBE": "VIT",
-      "PRECO": 6.65,
-      "EXP_SCORE": 3.0921,
-      "ATLETA_ID": 90703
-    },
-    {
-      "RODADA": 14,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
       "POS": "ATA",
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 13.97,
-      "EXP_SCORE": 6.6694,
+      "EXP_SCORE": 7.6698,
       "ATLETA_ID": 143193
     },
     {
@@ -110,19 +121,8 @@
       "NOME": "Plata",
       "CLUBE": "FLA",
       "PRECO": 12.79,
-      "EXP_SCORE": 6.2275,
+      "EXP_SCORE": 7.1616,
       "ATLETA_ID": 109096
-    },
-    {
-      "RODADA": 14,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Samuel Lino",
-      "CLUBE": "FLA",
-      "PRECO": 11.54,
-      "EXP_SCORE": 5.9647,
-      "ATLETA_ID": 98873
     },
     {
       "RODADA": 14,
@@ -143,8 +143,19 @@
       "NOME": "Pedro Rangel",
       "CLUBE": "CFC",
       "PRECO": 7.28,
-      "EXP_SCORE": 4.2046,
+      "EXP_SCORE": 4.8353,
       "ATLETA_ID": 110708
+    },
+    {
+      "RODADA": 14,
+      "TIPO": "ECONOMICO",
+      "STATUS": "RESERVA",
+      "POS": "LAT",
+      "NOME": "Marcos Vin?cius",
+      "CLUBE": "CHA",
+      "PRECO": 3.37,
+      "EXP_SCORE": 1.1678,
+      "ATLETA_ID": 97969
     },
     {
       "RODADA": 14,
@@ -173,11 +184,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Cuello",
-      "CLUBE": "CAM",
-      "PRECO": 9.99,
-      "EXP_SCORE": 6.0366,
-      "ATLETA_ID": 98909
+      "NOME": "Samuel Lino",
+      "CLUBE": "FLA",
+      "PRECO": 11.54,
+      "EXP_SCORE": 6.8594,
+      "ATLETA_ID": 98873
     }
   ]
 }
