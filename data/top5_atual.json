@@ -1,6 +1,6 @@
 {
   "rodada": 15,
-  "atualizado_em": "2026-05-04T13:47:42.579Z",
+  "atualizado_em": "2026-05-04T14:47:41.461Z",
   "dados": [
     {
       "RODADA": 15,
@@ -65,6 +65,16 @@
     {
       "RODADA": 15,
       "POS": "LAT",
+      "NOME": "Igor Vin?cius",
+      "CLUBE": "SAN",
+      "PRECO": 11.73,
+      "EXP_SCORE": 6.234,
+      "FACTOR": 1.1391569585506451,
+      "ATLETA_ID": 95466
+    },
+    {
+      "RODADA": 15,
+      "POS": "LAT",
       "NOME": "Matheus Bidu",
       "CLUBE": "COR",
       "PRECO": 12.57,
@@ -75,21 +85,11 @@
     {
       "RODADA": 15,
       "POS": "LAT",
-      "NOME": "Igor Vin?cius",
-      "CLUBE": "SAN",
-      "PRECO": 11.73,
-      "EXP_SCORE": 5.4209,
-      "FACTOR": 1.1391569585506451,
-      "ATLETA_ID": 95466
-    },
-    {
-      "RODADA": 15,
-      "POS": "LAT",
       "NOME": "Bernabei",
       "CLUBE": "INT",
       "PRECO": 11.63,
       "EXP_SCORE": 5.0818,
-      "FACTOR": 0.934256272303047,
+      "FACTOR": 0.9342562723030469,
       "ATLETA_ID": 110426
     },
     {
@@ -145,12 +145,12 @@
     {
       "RODADA": 15,
       "POS": "ZAG",
-      "NOME": "L?o Ortiz",
-      "CLUBE": "FLA",
-      "PRECO": 8.82,
-      "EXP_SCORE": 3.0193,
-      "FACTOR": 0.9886635504490019,
-      "ATLETA_ID": 97867
+      "NOME": "Gustavo Henrique",
+      "CLUBE": "COR",
+      "PRECO": 9.28,
+      "EXP_SCORE": 2.9014,
+      "FACTOR": 1.0619810046664837,
+      "ATLETA_ID": 78248
     },
     {
       "RODADA": 15,
@@ -245,12 +245,12 @@
     {
       "RODADA": 15,
       "POS": "ATA",
-      "NOME": "Cuello",
-      "CLUBE": "CAM",
-      "PRECO": 9.99,
-      "EXP_SCORE": 4.9654,
-      "FACTOR": 1.1236031823745412,
-      "ATLETA_ID": 98909
+      "NOME": "Alesson",
+      "CLUBE": "MIR",
+      "PRECO": 9.57,
+      "EXP_SCORE": 5.0345,
+      "FACTOR": 1.1314354957160344,
+      "ATLETA_ID": 97321
     },
     {
       "RODADA": 15,
@@ -295,12 +295,12 @@
     {
       "RODADA": 15,
       "POS": "TEC",
-      "NOME": "Paulo Pezzolano",
-      "CLUBE": "INT",
-      "PRECO": 8.38,
-      "EXP_SCORE": 4.6993,
-      "FACTOR": 0.9775510403916768,
-      "ATLETA_ID": 115479
+      "NOME": "Jair Ventura",
+      "CLUBE": "VIT",
+      "PRECO": 9.1,
+      "EXP_SCORE": 4.9519,
+      "FACTOR": 0.9868117503059974,
+      "ATLETA_ID": 92180
     }
   ]
 }
