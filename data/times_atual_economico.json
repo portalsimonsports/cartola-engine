@@ -1,7 +1,7 @@
 {
   "rodada": 15,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-05-06T08:47:34.762Z",
+  "atualizado_em": "2026-05-06T09:47:34.441Z",
   "dados": [
     {
       "RODADA": 15,
@@ -46,17 +46,6 @@
       "PRECO": 7.25,
       "EXP_SCORE": 2.2789,
       "ATLETA_ID": 107985
-    },
-    {
-      "RODADA": 15,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Gustavo Martins",
-      "CLUBE": "GRE",
-      "PRECO": 7.38,
-      "EXP_SCORE": 2.8305,
-      "ATLETA_ID": 111309
     },
     {
       "RODADA": 15,
@@ -128,12 +117,23 @@
       "RODADA": 15,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Artur",
+      "CLUBE": "SAO",
+      "PRECO": 11.12,
+      "EXP_SCORE": 4.4647,
+      "ATLETA_ID": 95799
+    },
+    {
+      "RODADA": 15,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Paulo Pezzolano",
-      "CLUBE": "INT",
-      "PRECO": 8.38,
-      "EXP_SCORE": 4.6941,
-      "ATLETA_ID": 115479
+      "NOME": "Rafael Guanaes",
+      "CLUBE": "MIR",
+      "PRECO": 7.32,
+      "EXP_SCORE": 3.4486,
+      "ATLETA_ID": 104027
     },
     {
       "RODADA": 15,
