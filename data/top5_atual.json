@@ -1,6 +1,6 @@
 {
   "rodada": 15,
-  "atualizado_em": "2026-05-06T07:47:38.713Z",
+  "atualizado_em": "2026-05-06T08:47:37.980Z",
   "dados": [
     {
       "RODADA": 15,
@@ -89,7 +89,7 @@
       "CLUBE": "INT",
       "PRECO": 11.63,
       "EXP_SCORE": 5.092,
-      "FACTOR": 0.936131671235711,
+      "FACTOR": 0.9361316712357108,
       "ATLETA_ID": 110426
     },
     {
@@ -285,22 +285,22 @@
     {
       "RODADA": 15,
       "POS": "TEC",
+      "NOME": "Jair Ventura",
+      "CLUBE": "VIT",
+      "PRECO": 9.1,
+      "EXP_SCORE": 4.9467,
+      "FACTOR": 0.9857905741649308,
+      "ATLETA_ID": 92180
+    },
+    {
+      "RODADA": 15,
+      "POS": "TEC",
       "NOME": "Luis Zubeld?a",
       "CLUBE": "FLU",
       "PRECO": 10.21,
       "EXP_SCORE": 4.9461,
       "FACTOR": 1.0067507774303521,
       "ATLETA_ID": 99366
-    },
-    {
-      "RODADA": 15,
-      "POS": "TEC",
-      "NOME": "Paulo Pezzolano",
-      "CLUBE": "INT",
-      "PRECO": 8.38,
-      "EXP_SCORE": 4.6941,
-      "FACTOR": 0.9764699306621952,
-      "ATLETA_ID": 115479
     }
   ]
 }
