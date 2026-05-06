@@ -1,6 +1,6 @@
 {
   "rodada": 15,
-  "atualizado_em": "2026-05-06T16:47:42.524Z",
+  "atualizado_em": "2026-05-06T17:47:44.072Z",
   "dados": [
     {
       "RODADA": 15,
@@ -165,16 +165,6 @@
     {
       "RODADA": 15,
       "POS": "MEI",
-      "NOME": "Jean Lucas",
-      "CLUBE": "BAH",
-      "PRECO": 10.78,
-      "EXP_SCORE": 5.7961,
-      "FACTOR": 1.1132894989704873,
-      "ATLETA_ID": 98517
-    },
-    {
-      "RODADA": 15,
-      "POS": "MEI",
       "NOME": "Savarino",
       "CLUBE": "FLU",
       "PRECO": 10.32,
@@ -185,22 +175,32 @@
     {
       "RODADA": 15,
       "POS": "MEI",
+      "NOME": "Jean Lucas",
+      "CLUBE": "BAH",
+      "PRECO": 10.78,
+      "EXP_SCORE": 5.0401,
+      "FACTOR": 1.1132894989704873,
+      "ATLETA_ID": 98517
+    },
+    {
+      "RODADA": 15,
+      "POS": "MEI",
+      "NOME": "Christian",
+      "CLUBE": "CRU",
+      "PRECO": 9.87,
+      "EXP_SCORE": 5.0079,
+      "FACTOR": 0.9139251029512696,
+      "ATLETA_ID": 104502
+    },
+    {
+      "RODADA": 15,
+      "POS": "MEI",
       "NOME": "Neymar",
       "CLUBE": "SAN",
       "PRECO": 19.84,
       "EXP_SCORE": 4.8229,
       "FACTOR": 1.067958407687028,
       "ATLETA_ID": 63007
-    },
-    {
-      "RODADA": 15,
-      "POS": "MEI",
-      "NOME": "Allan",
-      "CLUBE": "PAL",
-      "PRECO": 12.93,
-      "EXP_SCORE": 4.438,
-      "FACTOR": 0.9837716197666437,
-      "ATLETA_ID": 141451
     },
     {
       "RODADA": 15,
@@ -285,22 +285,22 @@
     {
       "RODADA": 15,
       "POS": "TEC",
-      "NOME": "Jair Ventura",
-      "CLUBE": "VIT",
-      "PRECO": 9.1,
-      "EXP_SCORE": 4.9445,
-      "FACTOR": 0.9853389155799589,
-      "ATLETA_ID": 92180
-    },
-    {
-      "RODADA": 15,
-      "POS": "TEC",
       "NOME": "Luis Zubeld?a",
       "CLUBE": "FLU",
       "PRECO": 10.21,
       "EXP_SCORE": 4.9429,
       "FACTOR": 1.0060902539464653,
       "ATLETA_ID": 99366
+    },
+    {
+      "RODADA": 15,
+      "POS": "TEC",
+      "NOME": "Paulo Pezzolano",
+      "CLUBE": "INT",
+      "PRECO": 8.38,
+      "EXP_SCORE": 4.6918,
+      "FACTOR": 0.9759917638984212,
+      "ATLETA_ID": 115479
     }
   ]
 }
