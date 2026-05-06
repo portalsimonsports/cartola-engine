@@ -1,7 +1,7 @@
 {
   "rodada": 15,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-05-05T23:47:34.523Z",
+  "atualizado_em": "2026-05-06T00:47:34.475Z",
   "dados": [
     {
       "RODADA": 15,
@@ -11,7 +11,7 @@
       "NOME": "L?o Vieira",
       "CLUBE": "BAH",
       "PRECO": 7.72,
-      "EXP_SCORE": 4.7949,
+      "EXP_SCORE": 4.7957,
       "ATLETA_ID": 71043
     },
     {
@@ -22,7 +22,7 @@
       "NOME": "Igor Vin?cius",
       "CLUBE": "SAN",
       "PRECO": 11.73,
-      "EXP_SCORE": 5.4296,
+      "EXP_SCORE": 5.4302,
       "ATLETA_ID": 95466
     },
     {
@@ -33,7 +33,7 @@
       "NOME": "Marcelinho",
       "CLUBE": "REM",
       "PRECO": 4.72,
-      "EXP_SCORE": 3.4247,
+      "EXP_SCORE": 3.4253,
       "ATLETA_ID": 97795
     },
     {
@@ -44,8 +44,19 @@
       "NOME": "Ter?n",
       "CLUBE": "CAP",
       "PRECO": 7.25,
-      "EXP_SCORE": 2.2786,
+      "EXP_SCORE": 2.2789,
       "ATLETA_ID": 107985
+    },
+    {
+      "RODADA": 15,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ZAG",
+      "NOME": "Gustavo Martins",
+      "CLUBE": "GRE",
+      "PRECO": 7.38,
+      "EXP_SCORE": 2.8305,
+      "ATLETA_ID": 111309
     },
     {
       "RODADA": 15,
@@ -55,7 +66,7 @@
       "NOME": "Arthur Dias",
       "CLUBE": "CAP",
       "PRECO": 6.65,
-      "EXP_SCORE": 3.2397,
+      "EXP_SCORE": 3.2401,
       "ATLETA_ID": 130843
     },
     {
@@ -66,7 +77,7 @@
       "NOME": "Erick",
       "CLUBE": "BAH",
       "PRECO": 8.1,
-      "EXP_SCORE": 3.8753,
+      "EXP_SCORE": 3.8765,
       "ATLETA_ID": 98022
     },
     {
@@ -77,7 +88,7 @@
       "NOME": "Z? Vitor",
       "CLUBE": "VIT",
       "PRECO": 6.36,
-      "EXP_SCORE": 2.3242,
+      "EXP_SCORE": 2.325,
       "ATLETA_ID": 107256
     },
     {
@@ -88,7 +99,7 @@
       "NOME": "Jean Lucas",
       "CLUBE": "BAH",
       "PRECO": 10.78,
-      "EXP_SCORE": 5.7978,
+      "EXP_SCORE": 5.7996,
       "ATLETA_ID": 98517
     },
     {
@@ -99,7 +110,7 @@
       "NOME": "Jaj?",
       "CLUBE": "REM",
       "PRECO": 7.27,
-      "EXP_SCORE": 4.4802,
+      "EXP_SCORE": 4.4823,
       "ATLETA_ID": 105048
     },
     {
@@ -110,30 +121,19 @@
       "NOME": "Erick",
       "CLUBE": "VIT",
       "PRECO": 10.04,
-      "EXP_SCORE": 3.9541,
+      "EXP_SCORE": 3.9555,
       "ATLETA_ID": 97810
     },
     {
       "RODADA": 15,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Artur",
-      "CLUBE": "SAO",
-      "PRECO": 11.12,
-      "EXP_SCORE": 4.4638,
-      "ATLETA_ID": 95799
-    },
-    {
-      "RODADA": 15,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Rafael Guanaes",
-      "CLUBE": "MIR",
-      "PRECO": 7.32,
-      "EXP_SCORE": 3.4483,
-      "ATLETA_ID": 104027
+      "NOME": "Paulo Pezzolano",
+      "CLUBE": "INT",
+      "PRECO": 8.38,
+      "EXP_SCORE": 4.6952,
+      "ATLETA_ID": 115479
     },
     {
       "RODADA": 15,
@@ -143,7 +143,7 @@
       "NOME": "Pedro Rangel",
       "CLUBE": "CFC",
       "PRECO": 6.6,
-      "EXP_SCORE": 4.5543,
+      "EXP_SCORE": 4.5548,
       "ATLETA_ID": 110708
     },
     {
@@ -154,7 +154,7 @@
       "NOME": "Arthur",
       "CLUBE": "PAL",
       "PRECO": 4.11,
-      "EXP_SCORE": 2.9193,
+      "EXP_SCORE": 2.9196,
       "ATLETA_ID": 145404
     },
     {
@@ -165,7 +165,7 @@
       "NOME": "Jacy",
       "CLUBE": "CFC",
       "PRECO": 5.42,
-      "EXP_SCORE": 3.2173,
+      "EXP_SCORE": 3.2177,
       "ATLETA_ID": 97878
     },
     {
@@ -176,7 +176,7 @@
       "NOME": "Gabriel",
       "CLUBE": "RBB",
       "PRECO": 6.17,
-      "EXP_SCORE": 2.5799,
+      "EXP_SCORE": 2.581,
       "ATLETA_ID": 78605
     },
     {
@@ -187,7 +187,7 @@
       "NOME": "Isidro Pitta",
       "CLUBE": "RBB",
       "PRECO": 5.32,
-      "EXP_SCORE": 2.9989,
+      "EXP_SCORE": 3.0003,
       "ATLETA_ID": 108133
     }
   ]
