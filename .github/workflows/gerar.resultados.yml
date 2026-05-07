@@ -4,19 +4,27 @@ on:
   repository_dispatch:
     types:
       - cartola_live_publish
+  workflow_dispatch:
 
 permissions:
   contents: write
+  actions: read
+
+concurrency:
+  group: gerar-resultados-live-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   gerar-resultados-live:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       - name: Checkout do repositório
         uses: actions/checkout@v4
         with:
           persist-credentials: true
+          fetch-depth: 0
 
       - name: Configurar Python
         uses: actions/setup-python@v5
@@ -24,6 +32,7 @@ jobs:
           python-version: "3.11"
 
       - name: Mostrar payload recebido
+        shell: bash
         run: |
           echo "===== EVENTO ====="
           echo "${{ github.event.action }}"
@@ -31,51 +40,232 @@ jobs:
           echo '${{ toJson(github.event.client_payload) }}'
 
       - name: Instalar dependências
+        shell: bash
         run: |
+          set -e
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then
             pip install -r requirements.txt
+          else
+            echo "AVISO: requirements.txt não encontrado."
           fi
 
       - name: Garantir pastas padrão
+        shell: bash
         run: |
+          set -e
           mkdir -p data
           mkdir -p output
 
       - name: Salvar payload em arquivo auxiliar
+        shell: bash
         run: |
+          set -e
           cat > data/payload_dispatch.json <<'EOF'
           ${{ toJson(github.event.client_payload) }}
           EOF
+          echo "Payload salvo em data/payload_dispatch.json"
 
       - name: Salvar credencial Google em arquivo
+        shell: bash
         env:
           GOOGLE_SERVICE_JSON: ${{ secrets.GOOGLE_SERVICE_JSON }}
+          GOOGLE_SERVICE_JSON_B64: ${{ secrets.GOOGLE_SERVICE_JSON_B64 }}
+          GOOGLE_SERVICE_ACCOUNT_JSON_B64: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON_B64 }}
         run: |
-          if [ -z "$GOOGLE_SERVICE_JSON" ]; then
-            echo "ERRO: GOOGLE_SERVICE_JSON não definido."
+          set -e
+
+          python - <<'PY'
+          import base64
+          import json
+          import os
+          from pathlib import Path
+
+          candidatos = [
+              ("GOOGLE_SERVICE_JSON", os.environ.get("GOOGLE_SERVICE_JSON", "")),
+              ("GOOGLE_SERVICE_JSON_B64", os.environ.get("GOOGLE_SERVICE_JSON_B64", "")),
+              ("GOOGLE_SERVICE_ACCOUNT_JSON_B64", os.environ.get("GOOGLE_SERVICE_ACCOUNT_JSON_B64", "")),
+          ]
+
+          nome_usado = ""
+          raw = ""
+
+          for nome, valor in candidatos:
+              valor = (valor or "").strip()
+              if valor:
+                  nome_usado = nome
+                  raw = valor
+                  break
+
+          if not raw:
+              raise SystemExit(
+                  "ERRO: nenhuma credencial Google foi encontrada. "
+                  "Crie um secret chamado GOOGLE_SERVICE_JSON ou GOOGLE_SERVICE_JSON_B64."
+              )
+
+          def tentar_json(texto):
+              return json.loads(texto)
+
+          erros = []
+
+          # Tentativa 1: JSON puro.
+          try:
+              data = tentar_json(raw)
+          except Exception as exc:
+              erros.append(f"JSON puro: {exc}")
+              data = None
+
+          # Tentativa 2: conteúdo salvo como string JSON com aspas externas.
+          if isinstance(data, str):
+              try:
+                  data = tentar_json(data)
+              except Exception as exc:
+                  erros.append(f"JSON dentro de string: {exc}")
+
+          # Tentativa 3: valor colado com aspas duplas duplicadas, comum ao copiar de planilha.
+          if data is None:
+              normalizado = raw.strip()
+
+              if (
+                  len(normalizado) >= 2
+                  and normalizado[0] == '"'
+                  and normalizado[-1] == '"'
+              ):
+                  normalizado = normalizado[1:-1]
+
+              normalizado = normalizado.replace('""', '"')
+
+              try:
+                  data = tentar_json(normalizado)
+              except Exception as exc:
+                  erros.append(f"JSON normalizado de planilha: {exc}")
+
+          # Tentativa 4: Base64.
+          if data is None:
+              try:
+                  decoded = base64.b64decode(raw).decode("utf-8")
+                  data = tentar_json(decoded)
+              except Exception as exc:
+                  erros.append(f"Base64: {exc}")
+
+          if not isinstance(data, dict):
+              raise SystemExit(
+                  "ERRO: não foi possível interpretar a credencial Google como JSON válido.\n"
+                  + "\n".join(erros)
+              )
+
+          obrigatorios = [
+              "type",
+              "project_id",
+              "private_key_id",
+              "private_key",
+              "client_email",
+              "token_uri",
+          ]
+
+          faltando = [campo for campo in obrigatorios if not data.get(campo)]
+
+          if faltando:
+              raise SystemExit(
+                  "ERRO: campos ausentes na credencial Google: "
+                  + ", ".join(faltando)
+              )
+
+          if data.get("type") != "service_account":
+              raise SystemExit(
+                  "ERRO: a credencial Google não é do tipo service_account."
+              )
+
+          private_key = data.get("private_key", "")
+
+          if "\\n" in private_key:
+              data["private_key"] = private_key.replace("\\n", "\n")
+
+          if "-----BEGIN PRIVATE KEY-----" not in data.get("private_key", ""):
+              raise SystemExit(
+                  "ERRO: private_key não parece conter uma chave privada válida."
+              )
+
+          destino = Path("service_account.json")
+          destino.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+
+          print("Credencial Google salva com sucesso.")
+          print("Secret utilizado:", nome_usado)
+          print("Projeto:", data.get("project_id"))
+          print("Service account:", data.get("client_email"))
+          PY
+
+          if [ ! -s service_account.json ]; then
+            echo "ERRO: service_account.json não foi criado corretamente."
             exit 1
           fi
-          printf '%s' "$GOOGLE_SERVICE_JSON" > service_account.json
+
+          echo "GOOGLE_APPLICATION_CREDENTIALS=$GITHUB_WORKSPACE/service_account.json" >> "$GITHUB_ENV"
+          echo "GOOGLE_CREDENTIALS_PATH=$GITHUB_WORKSPACE/service_account.json" >> "$GITHUB_ENV"
 
       - name: Validar credencial Google
+        shell: bash
         run: |
+          set -e
+
           python - <<'PY'
           import json
-          with open("service_account.json", "r", encoding="utf-8") as f:
-              json.load(f)
+          import os
+          from pathlib import Path
+
+          path = Path(os.environ.get("GOOGLE_APPLICATION_CREDENTIALS", "service_account.json"))
+
+          if not path.exists():
+              raise SystemExit(f"ERRO: arquivo de credencial não encontrado: {path}")
+
+          with path.open("r", encoding="utf-8") as f:
+              data = json.load(f)
+
+          obrigatorios = [
+              "type",
+              "project_id",
+              "private_key_id",
+              "private_key",
+              "client_email",
+              "token_uri",
+          ]
+
+          faltando = [campo for campo in obrigatorios if not data.get(campo)]
+
+          if faltando:
+              raise SystemExit("ERRO: campos ausentes: " + ", ".join(faltando))
+
           print("Credencial Google válida.")
+          print("Service account:", data.get("client_email"))
           PY
 
       - name: Executar gerador de resultados e resumos
+        shell: bash
         env:
           PAYLOAD_JSON: ${{ toJson(github.event.client_payload) }}
-          GOOGLE_APPLICATION_CREDENTIALS: service_account.json
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ env.GOOGLE_APPLICATION_CREDENTIALS }}
+          GOOGLE_CREDENTIALS_PATH: ${{ env.GOOGLE_CREDENTIALS_PATH }}
           PLANILHA_ID: 1-A7w4kkE28iHRd61yiSoNOvSekrmmADzHxGCRDVrICI
+          TZ: America/Sao_Paulo
         run: |
+          set -e
+
+          echo "===== EXECUTANDO GERADOR LIVE ====="
+          echo "PLANILHA_ID=$PLANILHA_ID"
+          echo "GOOGLE_APPLICATION_CREDENTIALS=$GOOGLE_APPLICATION_CREDENTIALS"
+
+          if [ ! -f "app/gerar_resultados_telegram.py" ]; then
+            echo "ERRO: arquivo app/gerar_resultados_telegram.py não encontrado."
+            echo "Arquivos disponíveis em app/:"
+            ls -la app || true
+            exit 1
+          fi
+
           python app/gerar_resultados_telegram.py
 
       - name: Listar arquivos gerados
+        if: always()
+        shell: bash
         run: |
           echo "===== DATA ====="
           ls -la data || true
@@ -83,7 +273,11 @@ jobs:
           ls -la output || true
 
       - name: Publicar arquivos gerados no repositório
+        if: success()
+        shell: bash
         run: |
+          set -e
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
@@ -94,6 +288,6 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Live Publisher: geração de resultados e resumos" || echo "Nada para commit"
+          git commit -m "Live Publisher: geração de resultados e resumos"
           git pull --rebase origin main || true
-          git push origin HEAD:main || true
+          git push origin HEAD:main
