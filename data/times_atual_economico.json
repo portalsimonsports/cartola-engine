@@ -1,7 +1,7 @@
 {
   "rodada": 15,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-05-07T04:47:35.028Z",
+  "atualizado_em": "2026-05-07T05:47:38.477Z",
   "dados": [
     {
       "RODADA": 15,
@@ -22,7 +22,7 @@
       "NOME": "Igor Vin?cius",
       "CLUBE": "SAN",
       "PRECO": 11.73,
-      "EXP_SCORE": 5.4302,
+      "EXP_SCORE": 6.2447,
       "ATLETA_ID": 95466
     },
     {
@@ -30,11 +30,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "LAT",
-      "NOME": "Marcelinho",
-      "CLUBE": "REM",
-      "PRECO": 4.72,
-      "EXP_SCORE": 3.4253,
-      "ATLETA_ID": 97795
+      "NOME": "Bernabei",
+      "CLUBE": "INT",
+      "PRECO": 11.63,
+      "EXP_SCORE": 5.092,
+      "ATLETA_ID": 110426
     },
     {
       "RODADA": 15,
@@ -44,7 +44,7 @@
       "NOME": "Ter?n",
       "CLUBE": "CAP",
       "PRECO": 7.25,
-      "EXP_SCORE": 2.2789,
+      "EXP_SCORE": 2.6207,
       "ATLETA_ID": 107985
     },
     {
@@ -52,11 +52,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ZAG",
-      "NOME": "Arthur Dias",
-      "CLUBE": "CAP",
-      "PRECO": 6.65,
-      "EXP_SCORE": 3.2401,
-      "ATLETA_ID": 130843
+      "NOME": "Gustavo Martins",
+      "CLUBE": "GRE",
+      "PRECO": 7.38,
+      "EXP_SCORE": 2.8305,
+      "ATLETA_ID": 111309
     },
     {
       "RODADA": 15,
@@ -66,7 +66,7 @@
       "NOME": "Erick",
       "CLUBE": "BAH",
       "PRECO": 8.1,
-      "EXP_SCORE": 3.3688,
+      "EXP_SCORE": 3.8741,
       "ATLETA_ID": 98022
     },
     {
@@ -85,32 +85,10 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Jorginho",
-      "CLUBE": "FLA",
-      "PRECO": 11.16,
-      "EXP_SCORE": 3.0192,
-      "ATLETA_ID": 84735
-    },
-    {
-      "RODADA": 15,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Patrick",
-      "CLUBE": "REM",
-      "PRECO": 5.59,
-      "EXP_SCORE": 2.3928,
-      "ATLETA_ID": 83433
-    },
-    {
-      "RODADA": 15,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
       "NOME": "Jean Lucas",
       "CLUBE": "BAH",
       "PRECO": 10.78,
-      "EXP_SCORE": 5.0401,
+      "EXP_SCORE": 5.7961,
       "ATLETA_ID": 98517
     },
     {
@@ -128,12 +106,34 @@
       "RODADA": 15,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Erick",
+      "CLUBE": "VIT",
+      "PRECO": 10.04,
+      "EXP_SCORE": 3.9528,
+      "ATLETA_ID": 97810
+    },
+    {
+      "RODADA": 15,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Alesson",
+      "CLUBE": "MIR",
+      "PRECO": 9.57,
+      "EXP_SCORE": 4.9946,
+      "ATLETA_ID": 97321
+    },
+    {
+      "RODADA": 15,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Paulo Pezzolano",
-      "CLUBE": "INT",
-      "PRECO": 8.38,
-      "EXP_SCORE": 4.6918,
-      "ATLETA_ID": 115479
+      "NOME": "Rafael Guanaes",
+      "CLUBE": "MIR",
+      "PRECO": 7.32,
+      "EXP_SCORE": 3.4473,
+      "ATLETA_ID": 104027
     },
     {
       "RODADA": 15,
@@ -151,33 +151,33 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "LAT",
-      "NOME": "Arthur",
-      "CLUBE": "PAL",
-      "PRECO": 4.11,
-      "EXP_SCORE": 2.9196,
-      "ATLETA_ID": 145404
+      "NOME": "Wendell",
+      "CLUBE": "SAO",
+      "PRECO": 9.81,
+      "EXP_SCORE": 3.8608,
+      "ATLETA_ID": 80570
     },
     {
       "RODADA": 15,
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Jacy",
-      "CLUBE": "CFC",
-      "PRECO": 5.42,
-      "EXP_SCORE": 3.2177,
-      "ATLETA_ID": 97878
+      "NOME": "Arthur Dias",
+      "CLUBE": "CAP",
+      "PRECO": 6.65,
+      "EXP_SCORE": 3.2401,
+      "ATLETA_ID": 130843
     },
     {
       "RODADA": 15,
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Vini Paulista",
-      "CLUBE": "CFC",
-      "PRECO": 3.91,
-      "EXP_SCORE": 2.5246,
-      "ATLETA_ID": 112576
+      "NOME": "Gabriel",
+      "CLUBE": "RBB",
+      "PRECO": 6.17,
+      "EXP_SCORE": 2.5914,
+      "ATLETA_ID": 78605
     },
     {
       "RODADA": 15,
