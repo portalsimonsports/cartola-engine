@@ -1,7 +1,7 @@
 {
   "rodada": 15,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-05-09T05:47:36.460Z",
+  "atualizado_em": "2026-05-09T08:47:37.392Z",
   "dados": [
     {
       "RODADA": 15,
@@ -30,11 +30,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "LAT",
-      "NOME": "Igor Vin?cius",
-      "CLUBE": "SAN",
-      "PRECO": 11.73,
-      "EXP_SCORE": 6.3447,
-      "ATLETA_ID": 95466
+      "NOME": "Matheus Bidu",
+      "CLUBE": "COR",
+      "PRECO": 12.57,
+      "EXP_SCORE": 5.9951,
+      "ATLETA_ID": 105531
     },
     {
       "RODADA": 15,
@@ -95,6 +95,17 @@
       "RODADA": 15,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Acevedo",
+      "CLUBE": "BAH",
+      "PRECO": 7.95,
+      "EXP_SCORE": 4.8071,
+      "ATLETA_ID": 104783
+    },
+    {
+      "RODADA": 15,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
       "POS": "ATA",
       "NOME": "Pedro",
       "CLUBE": "FLA",
@@ -112,17 +123,6 @@
       "PRECO": 11.96,
       "EXP_SCORE": 6.1504,
       "ATLETA_ID": 116706
-    },
-    {
-      "RODADA": 15,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Lucas Ronier",
-      "CLUBE": "CFC",
-      "PRECO": 10.33,
-      "EXP_SCORE": 5.5128,
-      "ATLETA_ID": 123648
     },
     {
       "RODADA": 15,
@@ -151,11 +151,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "LAT",
-      "NOME": "Bernabei",
-      "CLUBE": "INT",
-      "PRECO": 11.63,
-      "EXP_SCORE": 5.0946,
-      "ATLETA_ID": 110426
+      "NOME": "Igor Vin?cius",
+      "CLUBE": "SAN",
+      "PRECO": 11.73,
+      "EXP_SCORE": 5.5171,
+      "ATLETA_ID": 95466
     },
     {
       "RODADA": 15,
@@ -173,22 +173,22 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Acevedo",
-      "CLUBE": "BAH",
-      "PRECO": 7.95,
-      "EXP_SCORE": 4.8071,
-      "ATLETA_ID": 104783
+      "NOME": "H?rcules",
+      "CLUBE": "FLU",
+      "PRECO": 7.87,
+      "EXP_SCORE": 3.961,
+      "ATLETA_ID": 116447
     },
     {
       "RODADA": 15,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Alesson",
-      "CLUBE": "MIR",
-      "PRECO": 9.57,
-      "EXP_SCORE": 4.9837,
-      "ATLETA_ID": 97321
+      "NOME": "Lucas Ronier",
+      "CLUBE": "CFC",
+      "PRECO": 10.33,
+      "EXP_SCORE": 5.5128,
+      "ATLETA_ID": 123648
     }
   ]
 }
