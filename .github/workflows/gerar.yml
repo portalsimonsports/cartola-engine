@@ -43,9 +43,11 @@ jobs:
         shell: bash
         run: |
           set -e
-          python -m pip install --upgrade pip
+
+          python -m pip install --upgrade pip setuptools wheel
+
           if [ -f requirements.txt ]; then
-            pip install -r requirements.txt
+            pip install --upgrade -r requirements.txt
           else
             echo "AVISO: requirements.txt não encontrado."
           fi
@@ -54,6 +56,7 @@ jobs:
         shell: bash
         run: |
           set -e
+
           mkdir -p data
           mkdir -p output
 
@@ -61,10 +64,14 @@ jobs:
         shell: bash
         run: |
           set -e
+
           cat > data/payload_dispatch.json <<'EOF'
           ${{ toJson(github.event.client_payload) }}
           EOF
+
           echo "Payload salvo em data/payload_dispatch.json"
+          echo "===== CONTEÚDO DO PAYLOAD SALVO ====="
+          cat data/payload_dispatch.json || true
 
       - name: Executar gerador de times e top5
         shell: bash
@@ -96,6 +103,7 @@ jobs:
         run: |
           echo "===== DATA ====="
           ls -la data || true
+
           echo "===== OUTPUT ====="
           ls -la output || true
 
@@ -116,5 +124,6 @@ jobs:
           fi
 
           git commit -m "Teste automático: geração de times e top5"
+
           git pull --rebase origin main || true
           git push origin HEAD:main
