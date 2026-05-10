@@ -5,6 +5,11 @@ on:
     types:
       - cartola_live_publish
   workflow_dispatch:
+    inputs:
+      payload_json:
+        description: "Payload JSON manual para teste. Em uso real, vem do GS Cartola Live Publisher via repository_dispatch."
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -31,13 +36,14 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Mostrar payload recebido
+      - name: Mostrar origem do disparo
         shell: bash
         run: |
-          echo "===== EVENTO ====="
-          echo "${{ github.event.action }}"
-          echo "===== PAYLOAD RECEBIDO ====="
-          echo '${{ toJson(github.event.client_payload) }}'
+          echo "===== ORIGEM DO DISPARO ====="
+          echo "github.event_name=${{ github.event_name }}"
+          echo "github.event.action=${{ github.event.action }}"
+          echo "github.ref=${{ github.ref }}"
+          echo "github.sha=${{ github.sha }}"
 
       - name: Instalar dependências
         shell: bash
@@ -62,14 +68,28 @@ jobs:
 
       - name: Salvar payload em arquivo auxiliar
         shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          DISPATCH_PAYLOAD: ${{ toJson(github.event.client_payload) }}
+          MANUAL_PAYLOAD: ${{ github.event.inputs.payload_json }}
         run: |
           set -e
 
-          cat > data/payload_dispatch.json <<'EOF'
-          ${{ toJson(github.event.client_payload) }}
-          EOF
+          if [ "$EVENT_NAME" = "repository_dispatch" ]; then
+            echo "$DISPATCH_PAYLOAD" > data/payload_dispatch.json
+            echo "Payload recebido via repository_dispatch salvo em data/payload_dispatch.json"
+          else
+            if [ -z "$MANUAL_PAYLOAD" ]; then
+              echo "ERRO: execução manual sem payload."
+              echo "Este workflow é do Live Publisher e, em produção, deve ser disparado pelo Apps Script via cartola_live_publish."
+              echo "Para teste manual, use o campo payload_json no botão Run workflow."
+              exit 1
+            fi
 
-          echo "Payload salvo em data/payload_dispatch.json"
+            echo "$MANUAL_PAYLOAD" > data/payload_dispatch.json
+            echo "Payload manual salvo em data/payload_dispatch.json"
+          fi
+
           echo "===== CONTEÚDO DO PAYLOAD SALVO ====="
           cat data/payload_dispatch.json || true
 
@@ -98,9 +118,11 @@ jobs:
               raise SystemExit(f"ERRO: payload JSON inválido: {exc}")
 
           if payload is None:
-              print("AVISO: payload veio como null. Isso é normal em execução manual pelo botão workflow_dispatch.")
-              print("O workflow continuará, mas pode não gerar publicação real.")
-              raise SystemExit(0)
+              raise SystemExit(
+                  "ERRO: payload veio como null. "
+                  "Isso acontece quando o workflow é executado manualmente sem payload_json. "
+                  "Use o Apps Script/Live Publisher ou informe um payload_json manual."
+              )
 
           if not isinstance(payload, dict):
               raise SystemExit(f"ERRO: payload precisa ser objeto JSON. Tipo recebido: {type(payload).__name__}")
@@ -111,6 +133,7 @@ jobs:
           tipo_publicacao = str(payload.get("tipo_publicacao", "") or "").strip()
           contexto = str(payload.get("contexto", "") or "").strip()
           rodada = payload.get("rodada", "")
+          status_mercado = payload.get("status_mercado", "")
 
           print("Payload Live identificado:")
           print("origem:", origem)
@@ -119,6 +142,7 @@ jobs:
           print("tipo_publicacao:", tipo_publicacao)
           print("contexto:", contexto)
           print("rodada:", rodada)
+          print("status_mercado:", status_mercado)
 
           if evento and evento != "cartola_live_publish":
               raise SystemExit(f"ERRO: evento_github incorreto para o Live Publisher: {evento}")
@@ -127,15 +151,24 @@ jobs:
               raise SystemExit(f"ERRO: workflow_destino incorreto para o Live Publisher: {workflow_destino}")
 
           if origem and "live" not in origem.lower():
-              print("AVISO: origem não contém 'live'. Conferir Apps Script se este payload realmente veio do Live Publisher.")
+              raise SystemExit(
+                  "ERRO: origem incorreta para este workflow. "
+                  f"Recebido origem='{origem}'. "
+                  "O gerar.resultados.yml deve receber somente payload do Cartola Live Publisher."
+              )
 
-          print("Validação do payload concluída.")
+          if not origem:
+              raise SystemExit(
+                  "ERRO: payload sem campo origem. "
+                  "O Apps Script do Live Publisher deve enviar origem='cartola_live_publisher'."
+              )
+
+          print("Validação do payload do Live Publisher concluída.")
           PY
 
       - name: Executar gerador de resultados e resumos
         shell: bash
         env:
-          PAYLOAD_JSON: ${{ toJson(github.event.client_payload) }}
           PAYLOAD_FILE: data/payload_dispatch.json
           TZ: America/Sao_Paulo
         run: |
@@ -144,6 +177,8 @@ jobs:
           echo "===== EXECUTANDO GERADOR LIVE ====="
           echo "PAYLOAD_FILE=$PAYLOAD_FILE"
           echo "TZ=$TZ"
+
+          export PAYLOAD_JSON="$(cat data/payload_dispatch.json)"
 
           if [ ! -f "app/gerar_resultados_telegram.py" ]; then
             echo "ERRO: arquivo app/gerar_resultados_telegram.py não encontrado."
