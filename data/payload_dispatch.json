@@ -1,34 +1,35 @@
 {
   "ambiente": "teste",
-  "gerado_em": "2026-05-10T19:06:10.880Z",
+  "gerado_em": "2026-05-10T19:36:11.032Z",
   "origem": "cartola_live_publisher",
   "payload": {
-    "contexto": "abertura_dia",
-    "mensagem_oficial": "🏆 *PORTAL SIMONSPORTS – RESUMO GERAL*\n📍 RODADA 15 | Parciais Ao Vivo\n\n🔹 *Time ECONOMICO*\n✨ Pontos (Sem C): 29.44 pts\n✨ Pontos (Com C): 31.39 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ 16.68\n\n🔹 *Time INTERMEDIARIO*\n✨ Pontos (Sem C): 23.40 pts\n✨ Pontos (Com C): 23.40 pts\n🏃 Participação: 11/12\n📈 Valorização: C$ -5.52\n\n🔹 *Time PONTUACAO*\n✨ Pontos (Sem C): 22.00 pts\n✨ Pontos (Com C): 22.00 pts\n🏃 Participação: 11/12\n📈 Valorização: C$ -7.80\n\n_Atualização automática • SimonSports_",
-    "rodada": 15,
-    "tipos": [
+    "contexto": "placar_delta",
+    "mensagem_oficial": "⚽ *ATUALIZAÇÃO DE PLACAR*\n\n📅 10/05 • 🕒 16:00\n🏟 Arena MRV\n*ATLÉTICO-MG 1 x 0 Botafogo*\nCassierra (1⚽)\n📺 [Veja como foi](https://ge.globo.com/mg/futebol/brasileirao-serie-a/jogo/10-05-2026/atletico-mg-botafogo.ghtml?utm_source=cartolafc)\n\n_Monitoramento SimonSports_",
+    "partidas": [
       {
-        "participacao": 12,
-        "pontos_com_capitao": 31.39,
-        "pontos_sem_capitao": 29.44,
-        "tipo": "ECONOMICO",
-        "valorizacao": 16.68
-      },
-      {
-        "participacao": 11,
-        "pontos_com_capitao": 23.4,
-        "pontos_sem_capitao": 23.4,
-        "tipo": "INTERMEDIARIO",
-        "valorizacao": -5.52
-      },
-      {
-        "participacao": 11,
-        "pontos_com_capitao": 22,
-        "pontos_sem_capitao": 22,
-        "tipo": "PONTUACAO",
-        "valorizacao": -7.8
+        "casa_id": "282",
+        "casa_nome": "ATLÉTICO-MG",
+        "casa_sigla": "CAM",
+        "chave": "MjAyNi0wNS0xMCAxNjowMHwyODJ8MjYz",
+        "data": "10/05",
+        "data_iso": "2026-05-10T19:00:00.000Z",
+        "estadio": "Arena MRV",
+        "fora_id": "263",
+        "fora_nome": "Botafogo",
+        "fora_sigla": "BOT",
+        "goleadores_casa": [
+          "Cassierra (1⚽)"
+        ],
+        "goleadores_fora": [],
+        "hora": "16:00",
+        "link_resumo": "https://ge.globo.com/mg/futebol/brasileirao-serie-a/jogo/10-05-2026/atletico-mg-botafogo.ghtml?utm_source=cartolafc",
+        "placar_casa": 1,
+        "placar_fora": 0,
+        "status": "EM_ANDAMENTO"
       }
-    ]
+    ],
+    "rodada": 15,
+    "titulo": "ATUALIZAÇÃO DE PLACAR"
   },
-  "tipo_publicacao": "resumo_geral_abertura_dia"
+  "tipo_publicacao": "placar_delta"
 }
