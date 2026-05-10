@@ -73,6 +73,65 @@ jobs:
           echo "===== CONTEÚDO DO PAYLOAD SALVO ====="
           cat data/payload_dispatch.json || true
 
+      - name: Validar payload do Live Publisher
+        shell: bash
+        run: |
+          set -e
+
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path("data/payload_dispatch.json")
+
+          if not path.exists():
+              raise SystemExit("ERRO: data/payload_dispatch.json não encontrado.")
+
+          texto = path.read_text(encoding="utf-8").strip()
+
+          if not texto:
+              raise SystemExit("ERRO: payload vazio.")
+
+          try:
+              payload = json.loads(texto)
+          except Exception as exc:
+              raise SystemExit(f"ERRO: payload JSON inválido: {exc}")
+
+          if payload is None:
+              print("AVISO: payload veio como null. Isso é normal em execução manual pelo botão workflow_dispatch.")
+              print("O workflow continuará, mas pode não gerar publicação real.")
+              raise SystemExit(0)
+
+          if not isinstance(payload, dict):
+              raise SystemExit(f"ERRO: payload precisa ser objeto JSON. Tipo recebido: {type(payload).__name__}")
+
+          evento = str(payload.get("evento_github", "") or "").strip()
+          origem = str(payload.get("origem", "") or "").strip()
+          workflow_destino = str(payload.get("workflow_destino", "") or "").strip()
+          tipo_publicacao = str(payload.get("tipo_publicacao", "") or "").strip()
+          contexto = str(payload.get("contexto", "") or "").strip()
+          rodada = payload.get("rodada", "")
+
+          print("Payload Live identificado:")
+          print("origem:", origem)
+          print("evento_github:", evento)
+          print("workflow_destino:", workflow_destino)
+          print("tipo_publicacao:", tipo_publicacao)
+          print("contexto:", contexto)
+          print("rodada:", rodada)
+
+          if evento and evento != "cartola_live_publish":
+              raise SystemExit(f"ERRO: evento_github incorreto para o Live Publisher: {evento}")
+
+          if workflow_destino and workflow_destino != "gerar.resultados.yml":
+              raise SystemExit(f"ERRO: workflow_destino incorreto para o Live Publisher: {workflow_destino}")
+
+          if origem and "live" not in origem.lower():
+              print("AVISO: origem não contém 'live'. Conferir Apps Script se este payload realmente veio do Live Publisher.")
+
+          print("Validação do payload concluída.")
+          PY
+
       - name: Executar gerador de resultados e resumos
         shell: bash
         env:
