@@ -1,229 +1,290 @@
 {
   "ambiente": "teste",
-  "gerado_em": "2026-05-16T19:28:45.055Z",
+  "gerado_em": "2026-05-16T21:04:45.368Z",
   "origem": "jobTelegramDispatcher",
   "payload": {
-    "blocos_topo": [],
-    "forcar_envio": true,
-    "houve_alteracao": true,
-    "lista": [
+    "atletas": [
       {
         "clube": "BAH",
-        "data": "2026-05-16T19:19:27.000Z",
+        "data": "2026-05-16T20:49:31.000Z",
         "nome": "Léo Vieira",
         "pos": "GOL",
-        "preco": 7.67
+        "preco": 7.67,
+        "status": "TITULAR"
       },
       {
-        "clube": "GRE",
-        "data": "2026-05-16T19:19:27.000Z",
-        "nome": "Weverton",
-        "pos": "GOL",
-        "preco": 8.34
-      },
-      {
-        "clube": "FLA",
-        "data": "2026-05-16T19:19:27.000Z",
-        "nome": "Rossi",
-        "pos": "GOL",
-        "preco": 9.6
-      },
-      {
-        "clube": "PAL",
-        "data": "2026-05-16T19:19:27.000Z",
-        "nome": "Carlos Miguel",
-        "pos": "GOL",
-        "preco": 8.3
-      },
-      {
-        "clube": "VIT",
-        "data": "2026-05-16T19:19:27.000Z",
-        "nome": "Lucas Arcanjo",
-        "pos": "GOL",
-        "preco": 9.11
-      },
-      {
-        "clube": "BAH",
-        "data": "2026-05-16T19:19:27.000Z",
-        "nome": "Luciano Juba",
+        "clube": "REM",
+        "data": "2026-05-16T20:49:31.000Z",
+        "nome": "Marcelinho",
         "pos": "LAT",
-        "preco": 12.61
+        "preco": 6.32,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "VAS",
+        "data": "2026-05-16T20:49:31.000Z",
+        "nome": "Puma Rodríguez",
+        "pos": "LAT",
+        "preco": 9.67,
+        "status": "TITULAR"
       },
       {
         "clube": "SAN",
-        "data": "2026-05-16T19:19:27.000Z",
-        "nome": "Igor Vinícius",
-        "pos": "LAT",
-        "preco": 10.82
+        "data": "2026-05-16T20:49:31.000Z",
+        "nome": "Adonis Frías",
+        "pos": "ZAG",
+        "preco": 7.64,
+        "status": "TITULAR"
       },
       {
-        "clube": "INT",
-        "data": "2026-05-16T19:19:27.000Z",
-        "nome": "Bernabei",
-        "pos": "LAT",
-        "preco": 9.62
+        "clube": "CHA",
+        "data": "2026-05-16T20:49:31.000Z",
+        "nome": "Eduardo Doma",
+        "pos": "ZAG",
+        "preco": 4.27,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "SAN",
+        "data": "2026-05-16T20:49:31.000Z",
+        "nome": "Gabriel Bontempo",
+        "pos": "MEI",
+        "preco": 6.54,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "FLA",
+        "data": "2026-05-16T20:49:31.000Z",
+        "nome": "Carrascal",
+        "pos": "MEI",
+        "preco": 12.2,
+        "status": "TITULAR"
       },
       {
         "clube": "COR",
-        "data": "2026-05-16T19:19:27.000Z",
-        "nome": "Matheus Bidu",
-        "pos": "LAT",
-        "preco": 12.6
-      },
-      {
-        "clube": "SAN",
-        "data": "2026-05-16T19:19:27.000Z",
-        "nome": "Escobar",
-        "pos": "LAT",
-        "preco": 10.52
-      },
-      {
-        "clube": "PAL",
-        "data": "2026-05-16T19:19:27.000Z",
-        "nome": "Gustavo Gómez",
-        "pos": "ZAG",
-        "preco": 10.45
-      },
-      {
-        "clube": "SAN",
-        "data": "2026-05-16T19:19:27.000Z",
-        "nome": "Lucas Veríssimo",
-        "pos": "ZAG",
-        "preco": 10.22
-      },
-      {
-        "clube": "FLA",
-        "data": "2026-05-16T19:19:27.000Z",
-        "nome": "Léo Ortiz",
-        "pos": "ZAG",
-        "preco": 9.75
-      },
-      {
-        "clube": "INT",
-        "data": "2026-05-16T19:19:27.000Z",
-        "nome": "Mercado",
-        "pos": "ZAG",
-        "preco": 7.21
-      },
-      {
-        "clube": "CAP",
-        "data": "2026-05-16T19:19:27.000Z",
-        "nome": "Arthur Dias",
-        "pos": "ZAG",
-        "preco": 5.92
-      },
-      {
-        "clube": "BOT",
-        "data": "2026-05-16T19:19:27.000Z",
-        "nome": "Danilo",
+        "data": "2026-05-16T20:49:31.000Z",
+        "nome": "Garro",
         "pos": "MEI",
-        "preco": 15.14
-      },
-      {
-        "clube": "SAN",
-        "data": "2026-05-16T19:19:27.000Z",
-        "nome": "Neymar",
-        "pos": "MEI",
-        "preco": 20.32
+        "preco": 12.24,
+        "status": "TITULAR"
       },
       {
         "clube": "BAH",
-        "data": "2026-05-16T19:19:27.000Z",
+        "data": "2026-05-16T20:49:31.000Z",
         "nome": "Acevedo",
         "pos": "MEI",
-        "preco": 7.76
+        "preco": 7.76,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "SAO",
+        "data": "2026-05-16T20:49:31.000Z",
+        "nome": "Bobadilla",
+        "pos": "MEI",
+        "preco": 9.71,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "FLU",
+        "data": "2026-05-16T20:49:31.000Z",
+        "nome": "John Kennedy",
+        "pos": "ATA",
+        "preco": 11.92,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "CHA",
+        "data": "2026-05-16T20:49:31.000Z",
+        "nome": "Fábio Matias",
+        "pos": "TEC",
+        "preco": 6.84,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "CFC",
+        "data": "2026-05-16T20:49:31.000Z",
+        "nome": "Pedro Rangel",
+        "pos": "GOL",
+        "preco": 6.39,
+        "status": "RESERVA"
       },
       {
         "clube": "PAL",
-        "data": "2026-05-16T19:19:27.000Z",
-        "nome": "Arias",
+        "data": "2026-05-16T20:49:31.000Z",
+        "nome": "Arthur",
+        "pos": "LAT",
+        "preco": 4.11,
+        "status": "RESERVA"
+      },
+      {
+        "clube": "CFC",
+        "data": "2026-05-16T20:49:31.000Z",
+        "nome": "Tiago Cóser",
+        "pos": "ZAG",
+        "preco": 2.63,
+        "status": "RESERVA"
+      },
+      {
+        "clube": "RBB",
+        "data": "2026-05-16T20:49:31.000Z",
+        "nome": "Gabriel",
         "pos": "MEI",
-        "preco": 14.27
-      },
-      {
-        "clube": "FLU",
-        "data": "2026-05-16T19:19:27.000Z",
-        "nome": "Lucho Acosta",
-        "pos": "MEI",
-        "preco": 11.84
-      },
-      {
-        "clube": "FLU",
-        "data": "2026-05-16T19:19:27.000Z",
-        "nome": "John Kennedy",
-        "pos": "ATA",
-        "preco": 11.92
-      },
-      {
-        "clube": "FLA",
-        "data": "2026-05-16T19:19:27.000Z",
-        "nome": "Pedro",
-        "pos": "ATA",
-        "preco": 16.23
+        "preco": 5.6,
+        "status": "RESERVA"
       },
       {
         "clube": "CAM",
-        "data": "2026-05-16T19:19:27.000Z",
+        "data": "2026-05-16T20:49:31.000Z",
         "nome": "Cuello",
         "pos": "ATA",
-        "preco": 10.08
-      },
-      {
-        "clube": "PAL",
-        "data": "2026-05-16T19:19:27.000Z",
-        "nome": "Flaco López",
-        "pos": "ATA",
-        "preco": 14.1
-      },
-      {
-        "clube": "CAP",
-        "data": "2026-05-16T19:19:27.000Z",
-        "nome": "Viveros",
-        "pos": "ATA",
-        "preco": 11.38
-      },
-      {
-        "clube": "PAL",
-        "data": "2026-05-16T19:19:27.000Z",
-        "nome": "Abel Ferreira",
-        "pos": "TEC",
-        "preco": 11.84
-      },
-      {
-        "clube": "FLA",
-        "data": "2026-05-16T19:19:27.000Z",
-        "nome": "Leonardo Jardim",
-        "pos": "TEC",
-        "preco": 14.06
-      },
-      {
-        "clube": "FLU",
-        "data": "2026-05-16T19:19:27.000Z",
-        "nome": "Luis Zubeldía",
-        "pos": "TEC",
-        "preco": 10.2
-      },
-      {
-        "clube": "BAH",
-        "data": "2026-05-16T19:19:27.000Z",
-        "nome": "Rogério Ceni",
-        "pos": "TEC",
-        "preco": 10.91
-      },
-      {
-        "clube": "INT",
-        "data": "2026-05-16T19:19:27.000Z",
-        "nome": "Paulo Pezzolano",
-        "pos": "TEC",
-        "preco": 7.7
+        "preco": 10.08,
+        "status": "RESERVA"
       }
     ],
-    "mensagem_oficial": "🕑 *Pré-fechamento — Top 5 R16*\n\n🔶 *GOL*\n1. Carlos Miguel (PAL) - C$ 8.30\n2. Léo Vieira (BAH) - C$ 7.67\n3. Lucas Arcanjo (VIT) - C$ 9.11\n4. Rossi (FLA) - C$ 9.60\n5. Weverton (GRE) - C$ 8.34\n\n🔶 *ZAG*\n1. Arthur Dias (CAP) - C$ 5.92\n2. Gustavo Gómez (PAL) - C$ 10.45\n3. Léo Ortiz (FLA) - C$ 9.75\n4. Lucas Veríssimo (SAN) - C$ 10.22\n5. Mercado (INT) - C$ 7.21\n\n🔶 *LAT*\n1. Bernabei (INT) - C$ 9.62\n2. Escobar (SAN) - C$ 10.52\n3. Igor Vinícius (SAN) - C$ 10.82\n4. Luciano Juba (BAH) - C$ 12.61\n5. Matheus Bidu (COR) - C$ 12.60\n\n🔶 *MEI*\n1. Acevedo (BAH) - C$ 7.76\n2. Arias (PAL) - C$ 14.27\n3. Danilo (BOT) - C$ 15.14\n4. Lucho Acosta (FLU) - C$ 11.84\n5. Neymar (SAN) - C$ 20.32\n\n🔶 *ATA*\n1. Cuello (CAM) - C$ 10.08\n2. Flaco López (PAL) - C$ 14.10\n3. John Kennedy (FLU) - C$ 11.92\n4. Pedro (FLA) - C$ 16.23\n5. Viveros (CAP) - C$ 11.38\n\n🔶 *TEC*\n1. Abel Ferreira (PAL) - C$ 11.84\n2. Leonardo Jardim (FLA) - C$ 14.06\n3. Luis Zubeldía (FLU) - C$ 10.20\n4. Paulo Pezzolano (INT) - C$ 7.70\n5. Rogério Ceni (BAH) - C$ 10.91\n\n\n📡 Portal SimonSports\n🔗 https://t.me/dicascartolaportalsimonsports",
+    "blocos_topo": [
+      "Time Econômico"
+    ],
+    "forcar_envio": true,
+    "houve_alteracao": true,
+    "mensagem_oficial": "✅ *Times Confirmados — R16*\n\nTime Econômico\n\n💰 Preço: C$ 102.78\n📐 Esquema: 4-5-1\n© Capitão: John Kennedy\n\n▪ GOL: Léo Vieira (C$ 7.67)\n\n▪ LAT: Marcelinho (C$ 6.32)\n▪ LAT: Puma Rodríguez (C$ 9.67)\n\n▪ ZAG: Adonis Frías (C$ 7.64)\n▪ ZAG: Eduardo Doma (C$ 4.27)\n\n▪ MEI: Acevedo (C$ 7.76)\n▪ MEI: Bobadilla (C$ 9.71)\n▪ MEI: Carrascal (C$ 12.20)\n▪ MEI: Gabriel Bontempo (C$ 6.54)\n▪ MEI: Garro (C$ 12.24)\n\n▪ ATA: John Kennedy © (C$ 11.92)\n\n▪ TEC: Fábio Matias (C$ 6.84)\n\n🏦 *Reservas:*\n▪ GOL: Pedro Rangel (C$ 6.39)\n▪ LAT: Arthur (C$ 4.11)\n▪ ZAG: Tiago Cóser (C$ 2.63)\n▪ MEI: Gabriel (C$ 5.60)\n▪ ATA: Cuello (C$ 10.08)\n\n\n📡 Portal SimonSports\n🔗 https://t.me/dicascartolaportalsimonsports",
+    "meta": {
+      "capitao": "John Kennedy (ATA)",
+      "custo_total": 102.78,
+      "esquema": "4-5-1",
+      "pontos_total": 0,
+      "variacao_total": 0
+    },
+    "modelo": "ECONOMICO",
+    "nome_modelo": "Econômico",
     "primeiro_envio": false,
+    "snapshot": {
+      "atletas": [
+        {
+          "clube": "BAH",
+          "nome": "Léo Vieira",
+          "pos": "GOL",
+          "preco": 7.67,
+          "status": "TITULAR"
+        },
+        {
+          "clube": "REM",
+          "nome": "Marcelinho",
+          "pos": "LAT",
+          "preco": 6.32,
+          "status": "TITULAR"
+        },
+        {
+          "clube": "VAS",
+          "nome": "Puma Rodríguez",
+          "pos": "LAT",
+          "preco": 9.67,
+          "status": "TITULAR"
+        },
+        {
+          "clube": "SAN",
+          "nome": "Adonis Frías",
+          "pos": "ZAG",
+          "preco": 7.64,
+          "status": "TITULAR"
+        },
+        {
+          "clube": "CHA",
+          "nome": "Eduardo Doma",
+          "pos": "ZAG",
+          "preco": 4.27,
+          "status": "TITULAR"
+        },
+        {
+          "clube": "SAN",
+          "nome": "Gabriel Bontempo",
+          "pos": "MEI",
+          "preco": 6.54,
+          "status": "TITULAR"
+        },
+        {
+          "clube": "FLA",
+          "nome": "Carrascal",
+          "pos": "MEI",
+          "preco": 12.2,
+          "status": "TITULAR"
+        },
+        {
+          "clube": "COR",
+          "nome": "Garro",
+          "pos": "MEI",
+          "preco": 12.24,
+          "status": "TITULAR"
+        },
+        {
+          "clube": "BAH",
+          "nome": "Acevedo",
+          "pos": "MEI",
+          "preco": 7.76,
+          "status": "TITULAR"
+        },
+        {
+          "clube": "SAO",
+          "nome": "Bobadilla",
+          "pos": "MEI",
+          "preco": 9.71,
+          "status": "TITULAR"
+        },
+        {
+          "clube": "FLU",
+          "nome": "John Kennedy",
+          "pos": "ATA",
+          "preco": 11.92,
+          "status": "TITULAR"
+        },
+        {
+          "clube": "CHA",
+          "nome": "Fábio Matias",
+          "pos": "TEC",
+          "preco": 6.84,
+          "status": "TITULAR"
+        },
+        {
+          "clube": "CFC",
+          "nome": "Pedro Rangel",
+          "pos": "GOL",
+          "preco": 6.39,
+          "status": "RESERVA"
+        },
+        {
+          "clube": "PAL",
+          "nome": "Arthur",
+          "pos": "LAT",
+          "preco": 4.11,
+          "status": "RESERVA"
+        },
+        {
+          "clube": "CFC",
+          "nome": "Tiago Cóser",
+          "pos": "ZAG",
+          "preco": 2.63,
+          "status": "RESERVA"
+        },
+        {
+          "clube": "RBB",
+          "nome": "Gabriel",
+          "pos": "MEI",
+          "preco": 5.6,
+          "status": "RESERVA"
+        },
+        {
+          "clube": "CAM",
+          "nome": "Cuello",
+          "pos": "ATA",
+          "preco": 10.08,
+          "status": "RESERVA"
+        }
+      ],
+      "capitao": "John Kennedy"
+    },
     "timestamp_base": "",
-    "titulo": "🕑 *Pré-fechamento — Top 5 R16*"
+    "titulo": "✅ *Times Confirmados — R16*"
   },
-  "payload_hash": "WPmY9nHbqqvTDf8vT1In7A==",
+  "payload_hash": "TLrrhGWuBLfV2BM7G8YvTA==",
   "rodada": 16,
-  "tipo_publicacao": "top5"
+  "tipo_publicacao": "times"
 }
