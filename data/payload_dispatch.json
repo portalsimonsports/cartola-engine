@@ -1,6 +1,6 @@
 {
   "ambiente": "teste",
-  "gerado_em": "2026-05-19T23:02:09.207Z",
+  "gerado_em": "2026-05-19T23:02:43.513Z",
   "origem": "jobTelegramDispatcher",
   "payload": {
     "atletas": [
@@ -93,11 +93,11 @@
         "status": "TITULAR"
       },
       {
-        "clube": "MIR",
+        "clube": "FLA",
         "data": "2026-05-19T22:59:34.000Z",
-        "nome": "Rafael Guanaes",
+        "nome": "Leonardo Jardim",
         "pos": "TEC",
-        "preco": 7.1,
+        "preco": 13.3,
         "status": "TITULAR"
       },
       {
@@ -142,21 +142,21 @@
       }
     ],
     "blocos_topo": [
-      "Time Intermediário",
+      "Time Pontuação",
       "Sem alterações desde a última publicação."
     ],
     "forcar_envio": true,
     "houve_alteracao": false,
-    "mensagem_oficial": "🌙 *Atualização das 20h — Times R17*\n\nTime Intermediário\n\nSem alterações desde a última publicação.\n\n💰 Preço: C$ 134.45\n📐 Esquema: 4-3-3\n© Capitão: Pedro\n\n▪ GOL: Weverton (C$ 8.31)\n\n▪ LAT: Bernabei (C$ 12.14)\n▪ LAT: Matheus Bidu (C$ 12.89)\n\n▪ ZAG: Sabino (C$ 7.92)\n▪ ZAG: Viery (C$ 6.35)\n\n▪ MEI: Arias (C$ 15.60)\n▪ MEI: Christian (C$ 10.08)\n▪ MEI: Garro (C$ 12.24)\n\n▪ ATA: Andrés Gómez (C$ 13.53)\n▪ ATA: John Kennedy (C$ 11.06)\n▪ ATA: Pedro © (C$ 17.23)\n\n▪ TEC: Rafael Guanaes (C$ 7.10)\n\n🏦 *Reservas:*\n▪ GOL: Pedro Rangel (C$ 7.45)\n▪ LAT: Kaiki Bruno (C$ 11.31)\n▪ ZAG: Jacy (C$ 5.98)\n▪ MEI: Gerson (C$ 8.97)\n▪ ATA: Lucas Barbosa (C$ 10.91)\n\n\n📡 Portal SimonSports\n🔗 https://t.me/dicascartolaportalsimonsports",
+    "mensagem_oficial": "🌙 *Atualização das 20h — Times R17*\n\nTime Pontuação\n\nSem alterações desde a última publicação.\n\n💰 Preço: C$ 140.65\n📐 Esquema: 4-3-3\n© Capitão: Pedro\n\n▪ GOL: Weverton (C$ 8.31)\n\n▪ LAT: Bernabei (C$ 12.14)\n▪ LAT: Matheus Bidu (C$ 12.89)\n\n▪ ZAG: Sabino (C$ 7.92)\n▪ ZAG: Viery (C$ 6.35)\n\n▪ MEI: Arias (C$ 15.60)\n▪ MEI: Christian (C$ 10.08)\n▪ MEI: Garro (C$ 12.24)\n\n▪ ATA: Andrés Gómez (C$ 13.53)\n▪ ATA: John Kennedy (C$ 11.06)\n▪ ATA: Pedro © (C$ 17.23)\n\n▪ TEC: Leonardo Jardim (C$ 13.30)\n\n🏦 *Reservas:*\n▪ GOL: Pedro Rangel (C$ 7.45)\n▪ LAT: Kaiki Bruno (C$ 11.31)\n▪ ZAG: Jacy (C$ 5.98)\n▪ MEI: Gerson (C$ 8.97)\n▪ ATA: Lucas Barbosa (C$ 10.91)\n\n\n📡 Portal SimonSports\n🔗 https://t.me/dicascartolaportalsimonsports",
     "meta": {
       "capitao": "Pedro (ATA)",
-      "custo_total": 134.45,
+      "custo_total": 140.65,
       "esquema": "4-3-3",
       "pontos_total": 0,
       "variacao_total": 0
     },
-    "modelo": "INTERMEDIARIO",
-    "nome_modelo": "Intermediário",
+    "modelo": "PONTUACAO",
+    "nome_modelo": "Pontuação",
     "primeiro_envio": false,
     "snapshot": {
       "atletas": [
@@ -238,10 +238,10 @@
           "status": "TITULAR"
         },
         {
-          "clube": "MIR",
-          "nome": "Rafael Guanaes",
+          "clube": "FLA",
+          "nome": "Leonardo Jardim",
           "pos": "TEC",
-          "preco": 7.1,
+          "preco": 13.3,
           "status": "TITULAR"
         },
         {
@@ -285,7 +285,7 @@
     "timestamp_base": "",
     "titulo": "🌙 *Atualização das 20h — Times R17*"
   },
-  "payload_hash": "CdBceGCTFJ/OWwahS4k98A==",
+  "payload_hash": "VUqvcZpzhmJ3OnLEs83m9A==",
   "rodada": 17,
   "tipo_publicacao": "times"
 }
