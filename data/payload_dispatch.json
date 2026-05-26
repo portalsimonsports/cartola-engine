@@ -1,6 +1,6 @@
 {
   "ambiente": "teste",
-  "gerado_em": "2026-05-26T14:13:48.636Z",
+  "gerado_em": "2026-05-26T14:14:19.878Z",
   "origem": "jobTelegramDispatcher",
   "payload": {
     "atletas": [
@@ -93,11 +93,11 @@
         "status": "TITULAR"
       },
       {
-        "clube": "INT",
+        "clube": "PAL",
         "data": "2026-05-26T14:09:31.000Z",
-        "nome": "Paulo Pezzolano",
+        "nome": "Abel Ferreira",
         "pos": "TEC",
-        "preco": 7.6,
+        "preco": 12.61,
         "status": "TITULAR"
       },
       {
@@ -146,16 +146,16 @@
     ],
     "forcar_envio": true,
     "houve_alteracao": false,
-    "mensagem_oficial": "🎩 *Times da Rodada — Intermediário*\n\nSugestões Pro\n\n💰 Preço: C$ 134.16\n📐 Esquema: 4-3-3\n© Capitão: Viveros\n\n▪ GOL: Tiago Volpi (C$ 10.98)\n\n▪ LAT: Cuiabano (C$ 12.05)\n▪ LAT: Juninho Capixaba (C$ 14.26)\n\n▪ ZAG: Noriega (C$ 7.60)\n▪ ZAG: Viery (C$ 5.77)\n\n▪ MEI: Allan (C$ 15.04)\n▪ MEI: Christian (C$ 9.84)\n▪ MEI: Everton Ribeiro (C$ 10.23)\n\n▪ ATA: Pedro (C$ 16.01)\n▪ ATA: Samuel Lino (C$ 10.88)\n▪ ATA: Viveros © (C$ 13.90)\n\n▪ TEC: Paulo Pezzolano (C$ 7.60)\n\n🏦 *Reservas:*\n▪ GOL: Weverton (C$ 7.67)\n▪ LAT: Igor Vinícius (C$ 9.68)\n▪ ZAG: Jacy (C$ 5.20)\n▪ MEI: Jean Lucas (C$ 9.55)\n▪ ATA: John Kennedy (C$ 10.02)\n\n\n📡 Portal SimonSports\n🔗 https://t.me/dicascartolaportalsimonsports",
+    "mensagem_oficial": "🎩 *Times da Rodada — Pontuação*\n\nSugestões Pro\n\n💰 Preço: C$ 139.17\n📐 Esquema: 4-3-3\n© Capitão: Viveros\n\n▪ GOL: Tiago Volpi (C$ 10.98)\n\n▪ LAT: Cuiabano (C$ 12.05)\n▪ LAT: Juninho Capixaba (C$ 14.26)\n\n▪ ZAG: Noriega (C$ 7.60)\n▪ ZAG: Viery (C$ 5.77)\n\n▪ MEI: Allan (C$ 15.04)\n▪ MEI: Christian (C$ 9.84)\n▪ MEI: Everton Ribeiro (C$ 10.23)\n\n▪ ATA: Pedro (C$ 16.01)\n▪ ATA: Samuel Lino (C$ 10.88)\n▪ ATA: Viveros © (C$ 13.90)\n\n▪ TEC: Abel Ferreira (C$ 12.61)\n\n🏦 *Reservas:*\n▪ GOL: Weverton (C$ 7.67)\n▪ LAT: Igor Vinícius (C$ 9.68)\n▪ ZAG: Jacy (C$ 5.20)\n▪ MEI: Jean Lucas (C$ 9.55)\n▪ ATA: John Kennedy (C$ 10.02)\n\n\n📡 Portal SimonSports\n🔗 https://t.me/dicascartolaportalsimonsports",
     "meta": {
       "capitao": "Viveros (ATA)",
-      "custo_total": 134.16,
+      "custo_total": 139.17,
       "esquema": "4-3-3",
       "pontos_total": 0,
       "variacao_total": 0
     },
-    "modelo": "INTERMEDIARIO",
-    "nome_modelo": "Intermediário",
+    "modelo": "PONTUACAO",
+    "nome_modelo": "Pontuação",
     "primeiro_envio": true,
     "snapshot": {
       "atletas": [
@@ -237,10 +237,10 @@
           "status": "TITULAR"
         },
         {
-          "clube": "INT",
-          "nome": "Paulo Pezzolano",
+          "clube": "PAL",
+          "nome": "Abel Ferreira",
           "pos": "TEC",
-          "preco": 7.6,
+          "preco": 12.61,
           "status": "TITULAR"
         },
         {
@@ -282,9 +282,9 @@
       "capitao": "Viveros"
     },
     "timestamp_base": "",
-    "titulo": "Times da Rodada — Intermediário"
+    "titulo": "Times da Rodada — Pontuação"
   },
-  "payload_hash": "K8y6MTMccRpDXLJnoysmEQ==",
+  "payload_hash": "IX4wb3YvSq+Y3uYZsqOUUA==",
   "rodada": 18,
   "tipo_publicacao": "times"
 }
