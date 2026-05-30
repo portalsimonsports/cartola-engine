@@ -1,12 +1,12 @@
 {
   "ambiente": "teste",
-  "gerado_em": "2026-05-30T16:28:59.906Z",
+  "gerado_em": "2026-05-30T16:31:31.340Z",
   "origem": "jobTelegramDispatcher",
   "payload": {
     "atletas": [
       {
         "clube": "VAS",
-        "data": "2026-05-30T16:23:22.000Z",
+        "data": "2026-05-30T16:29:37.000Z",
         "nome": "Léo Jardim",
         "pos": "GOL",
         "preco": 6.97,
@@ -14,7 +14,7 @@
       },
       {
         "clube": "CHA",
-        "data": "2026-05-30T16:23:22.000Z",
+        "data": "2026-05-30T16:29:37.000Z",
         "nome": "João Paulo",
         "pos": "ZAG",
         "preco": 6.19,
@@ -22,39 +22,39 @@
       },
       {
         "clube": "RBB",
-        "data": "2026-05-30T16:23:22.000Z",
+        "data": "2026-05-30T16:29:37.000Z",
         "nome": "Alix Vinicius",
         "pos": "ZAG",
         "preco": 6.35,
         "status": "TITULAR"
       },
       {
-        "clube": "MIR",
-        "data": "2026-05-30T16:23:22.000Z",
-        "nome": "Willian Machado",
+        "clube": "GRE",
+        "data": "2026-05-30T16:29:37.000Z",
+        "nome": "Viery",
         "pos": "ZAG",
-        "preco": 6.67,
-        "status": "TITULAR"
-      },
-      {
-        "clube": "MIR",
-        "data": "2026-05-30T16:23:22.000Z",
-        "nome": "Denilson",
-        "pos": "MEI",
-        "preco": 6,
+        "preco": 5.77,
         "status": "TITULAR"
       },
       {
         "clube": "CAP",
-        "data": "2026-05-30T16:23:22.000Z",
+        "data": "2026-05-30T16:29:37.000Z",
         "nome": "Jadson",
         "pos": "MEI",
         "preco": 6.63,
         "status": "TITULAR"
       },
       {
+        "clube": "MIR",
+        "data": "2026-05-30T16:29:37.000Z",
+        "nome": "Denilson",
+        "pos": "MEI",
+        "preco": 6,
+        "status": "TITULAR"
+      },
+      {
         "clube": "PAL",
-        "data": "2026-05-30T16:23:22.000Z",
+        "data": "2026-05-30T16:29:37.000Z",
         "nome": "Allan",
         "pos": "MEI",
         "preco": 15.04,
@@ -62,39 +62,39 @@
       },
       {
         "clube": "REM",
-        "data": "2026-05-30T16:23:22.000Z",
+        "data": "2026-05-30T16:29:37.000Z",
         "nome": "Patrick",
         "pos": "MEI",
         "preco": 5.43,
         "status": "TITULAR"
       },
       {
+        "clube": "SAN",
+        "data": "2026-05-30T16:29:37.000Z",
+        "nome": "Gabriel Bontempo",
+        "pos": "MEI",
+        "preco": 5.73,
+        "status": "TITULAR"
+      },
+      {
         "clube": "RBB",
-        "data": "2026-05-30T16:23:22.000Z",
+        "data": "2026-05-30T16:29:37.000Z",
         "nome": "Isidro Pitta",
         "pos": "ATA",
         "preco": 7.41,
         "status": "TITULAR"
       },
       {
-        "clube": "CFC",
-        "data": "2026-05-30T16:23:22.000Z",
-        "nome": "Lavega",
+        "clube": "CAP",
+        "data": "2026-05-30T16:29:37.000Z",
+        "nome": "Viveros",
         "pos": "ATA",
-        "preco": 6.85,
-        "status": "TITULAR"
-      },
-      {
-        "clube": "SAN",
-        "data": "2026-05-30T16:23:22.000Z",
-        "nome": "Gabriel",
-        "pos": "ATA",
-        "preco": 10.57,
+        "preco": 13.9,
         "status": "TITULAR"
       },
       {
         "clube": "RBB",
-        "data": "2026-05-30T16:23:22.000Z",
+        "data": "2026-05-30T16:29:37.000Z",
         "nome": "Vagner Mancini",
         "pos": "TEC",
         "preco": 9.35,
@@ -102,34 +102,34 @@
       },
       {
         "clube": "CFC",
-        "data": "2026-05-30T16:23:22.000Z",
+        "data": "2026-05-30T16:29:37.000Z",
         "nome": "Pedro Rangel",
         "pos": "GOL",
         "preco": 5.95,
         "status": "RESERVA"
       },
       {
-        "clube": "GRE",
-        "data": "2026-05-30T16:23:22.000Z",
-        "nome": "Viery",
+        "clube": "CFC",
+        "data": "2026-05-30T16:29:37.000Z",
+        "nome": "Jacy",
         "pos": "ZAG",
-        "preco": 5.77,
+        "preco": 5.2,
         "status": "RESERVA"
       },
       {
-        "clube": "REM",
-        "data": "2026-05-30T16:23:22.000Z",
-        "nome": "Yago Pikachu",
+        "clube": "CFC",
+        "data": "2026-05-30T16:29:37.000Z",
+        "nome": "Sebastián Gómez",
         "pos": "MEI",
-        "preco": 5.12,
+        "preco": 4.7,
         "status": "RESERVA"
       },
       {
-        "clube": "VAS",
-        "data": "2026-05-30T16:23:22.000Z",
-        "nome": "Spinelli",
+        "clube": "INT",
+        "data": "2026-05-30T16:29:37.000Z",
+        "nome": "Alerrandro",
         "pos": "ATA",
-        "preco": 6.33,
+        "preco": 7.08,
         "status": "RESERVA"
       }
     ],
@@ -138,11 +138,11 @@
     ],
     "forcar_envio": true,
     "houve_alteracao": true,
-    "mensagem_oficial": "🕒 *Pré-fechamento — Times R18*\n\nTime Econômico\n\n💰 Preço: C$ 93.46\n📐 Esquema: 3-4-3\n© Capitão: Allan\n\n▪ GOL: Léo Jardim (C$ 6.97)\n\n▪ ZAG: Alix Vinicius (C$ 6.35)\n▪ ZAG: João Paulo (C$ 6.19)\n▪ ZAG: Willian Machado (C$ 6.67)\n\n▪ MEI: Allan © (C$ 15.04)\n▪ MEI: Denilson (C$ 6.00)\n▪ MEI: Jadson (C$ 6.63)\n▪ MEI: Patrick (C$ 5.43)\n\n▪ ATA: Gabriel (C$ 10.57)\n▪ ATA: Isidro Pitta (C$ 7.41)\n▪ ATA: Lavega (C$ 6.85)\n\n▪ TEC: Vagner Mancini (C$ 9.35)\n\n🏦 *Reservas:*\n▪ GOL: Pedro Rangel (C$ 5.95)\n▪ ZAG: Viery (C$ 5.77)\n▪ MEI: Yago Pikachu (C$ 5.12)\n▪ ATA: Spinelli (C$ 6.33)\n\n\n📡 Portal SimonSports\n🔗 https://t.me/dicascartolaportalsimonsports",
+    "mensagem_oficial": "🕒 *Pré-fechamento — Times R18*\n\nTime Econômico\n\n💰 Preço: C$ 94.77\n📐 Esquema: 3-5-2\n© Capitão: Viveros\n\n▪ GOL: Léo Jardim (C$ 6.97)\n\n▪ ZAG: Alix Vinicius (C$ 6.35)\n▪ ZAG: João Paulo (C$ 6.19)\n▪ ZAG: Viery (C$ 5.77)\n\n▪ MEI: Allan (C$ 15.04)\n▪ MEI: Denilson (C$ 6.00)\n▪ MEI: Gabriel Bontempo (C$ 5.73)\n▪ MEI: Jadson (C$ 6.63)\n▪ MEI: Patrick (C$ 5.43)\n\n▪ ATA: Isidro Pitta (C$ 7.41)\n▪ ATA: Viveros © (C$ 13.90)\n\n▪ TEC: Vagner Mancini (C$ 9.35)\n\n🏦 *Reservas:*\n▪ GOL: Pedro Rangel (C$ 5.95)\n▪ ZAG: Jacy (C$ 5.20)\n▪ MEI: Sebastián Gómez (C$ 4.70)\n▪ ATA: Alerrandro (C$ 7.08)\n\n\n📡 Portal SimonSports\n🔗 https://t.me/dicascartolaportalsimonsports",
     "meta": {
-      "capitao": "Allan (MEI)",
-      "custo_total": 93.46,
-      "esquema": "3-4-3",
+      "capitao": "Viveros (ATA)",
+      "custo_total": 94.77,
+      "esquema": "3-5-2",
       "pontos_total": 0,
       "variacao_total": 0
     },
@@ -173,17 +173,10 @@
           "status": "TITULAR"
         },
         {
-          "clube": "MIR",
-          "nome": "Willian Machado",
+          "clube": "GRE",
+          "nome": "Viery",
           "pos": "ZAG",
-          "preco": 6.67,
-          "status": "TITULAR"
-        },
-        {
-          "clube": "MIR",
-          "nome": "Denilson",
-          "pos": "MEI",
-          "preco": 6,
+          "preco": 5.77,
           "status": "TITULAR"
         },
         {
@@ -191,6 +184,13 @@
           "nome": "Jadson",
           "pos": "MEI",
           "preco": 6.63,
+          "status": "TITULAR"
+        },
+        {
+          "clube": "MIR",
+          "nome": "Denilson",
+          "pos": "MEI",
+          "preco": 6,
           "status": "TITULAR"
         },
         {
@@ -208,6 +208,13 @@
           "status": "TITULAR"
         },
         {
+          "clube": "SAN",
+          "nome": "Gabriel Bontempo",
+          "pos": "MEI",
+          "preco": 5.73,
+          "status": "TITULAR"
+        },
+        {
           "clube": "RBB",
           "nome": "Isidro Pitta",
           "pos": "ATA",
@@ -215,17 +222,10 @@
           "status": "TITULAR"
         },
         {
-          "clube": "CFC",
-          "nome": "Lavega",
+          "clube": "CAP",
+          "nome": "Viveros",
           "pos": "ATA",
-          "preco": 6.85,
-          "status": "TITULAR"
-        },
-        {
-          "clube": "SAN",
-          "nome": "Gabriel",
-          "pos": "ATA",
-          "preco": 10.57,
+          "preco": 13.9,
           "status": "TITULAR"
         },
         {
@@ -243,33 +243,33 @@
           "status": "RESERVA"
         },
         {
-          "clube": "GRE",
-          "nome": "Viery",
+          "clube": "CFC",
+          "nome": "Jacy",
           "pos": "ZAG",
-          "preco": 5.77,
+          "preco": 5.2,
           "status": "RESERVA"
         },
         {
-          "clube": "REM",
-          "nome": "Yago Pikachu",
+          "clube": "CFC",
+          "nome": "Sebastián Gómez",
           "pos": "MEI",
-          "preco": 5.12,
+          "preco": 4.7,
           "status": "RESERVA"
         },
         {
-          "clube": "VAS",
-          "nome": "Spinelli",
+          "clube": "INT",
+          "nome": "Alerrandro",
           "pos": "ATA",
-          "preco": 6.33,
+          "preco": 7.08,
           "status": "RESERVA"
         }
       ],
-      "capitao": "Allan"
+      "capitao": "Viveros"
     },
     "timestamp_base": "",
     "titulo": "🕒 *Pré-fechamento — Times R18*"
   },
-  "payload_hash": "PowQ8ThRLFmHmne7tiJ6Pg==",
+  "payload_hash": "jXrurvODvLSdIaT2syGPFA==",
   "rodada": 18,
   "tipo_publicacao": "times"
 }
