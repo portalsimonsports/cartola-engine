@@ -1,290 +1,229 @@
 {
   "ambiente": "teste",
-  "gerado_em": "2026-06-01T15:15:59.976Z",
+  "gerado_em": "2026-06-01T15:16:49.172Z",
   "origem": "jobTelegramDispatcher",
   "payload": {
-    "atletas": [
+    "blocos_topo": [],
+    "forcar_envio": true,
+    "houve_alteracao": false,
+    "lista": [
       {
-        "clube": "REM",
+        "clube": "CAM",
         "data": "2026-01-06T15:09:46.000Z",
-        "nome": "Ivan",
+        "nome": "Everson",
         "pos": "GOL",
-        "preco": 7.58,
-        "status": "TITULAR"
-      },
-      {
-        "clube": "REM",
-        "data": "2026-01-06T15:09:46.000Z",
-        "nome": "Marcelinho",
-        "pos": "LAT",
-        "preco": 7.71,
-        "status": "TITULAR"
-      },
-      {
-        "clube": "CAM",
-        "data": "2026-01-06T15:09:46.000Z",
-        "nome": "Renan Lodi",
-        "pos": "LAT",
-        "preco": 11.22,
-        "status": "TITULAR"
-      },
-      {
-        "clube": "BAH",
-        "data": "2026-01-06T15:09:46.000Z",
-        "nome": "David Duarte",
-        "pos": "ZAG",
-        "preco": 7.01,
-        "status": "TITULAR"
-      },
-      {
-        "clube": "CFC",
-        "data": "2026-01-06T15:09:46.000Z",
-        "nome": "Jacy",
-        "pos": "ZAG",
-        "preco": 5.44,
-        "status": "TITULAR"
-      },
-      {
-        "clube": "COR",
-        "data": "2026-01-06T15:09:46.000Z",
-        "nome": "André",
-        "pos": "MEI",
-        "preco": 8.45,
-        "status": "TITULAR"
-      },
-      {
-        "clube": "CAP",
-        "data": "2026-01-06T15:09:46.000Z",
-        "nome": "Felipinho",
-        "pos": "MEI",
-        "preco": 5.57,
-        "status": "TITULAR"
-      },
-      {
-        "clube": "CAM",
-        "data": "2026-01-06T15:09:46.000Z",
-        "nome": "Bernard",
-        "pos": "MEI",
-        "preco": 5.29,
-        "status": "TITULAR"
+        "preco": 10.67
       },
       {
         "clube": "FLA",
         "data": "2026-01-06T15:09:46.000Z",
-        "nome": "Samuel Lino",
-        "pos": "ATA",
-        "preco": 13.59,
-        "status": "TITULAR"
-      },
-      {
-        "clube": "FLA",
-        "data": "2026-01-06T15:09:46.000Z",
-        "nome": "Pedro",
-        "pos": "ATA",
-        "preco": 18.5,
-        "status": "TITULAR"
-      },
-      {
-        "clube": "CHA",
-        "data": "2026-01-06T15:09:46.000Z",
-        "nome": "Marcinho",
-        "pos": "ATA",
-        "preco": 4.71,
-        "status": "TITULAR"
-      },
-      {
-        "clube": "CHA",
-        "data": "2026-01-06T15:09:46.000Z",
-        "nome": "Celso Rodrigues",
-        "pos": "TEC",
-        "preco": 7.31,
-        "status": "TITULAR"
+        "nome": "Rossi",
+        "pos": "GOL",
+        "preco": 9.17
       },
       {
         "clube": "CFC",
         "data": "2026-01-06T15:09:46.000Z",
         "nome": "Pedro Rangel",
         "pos": "GOL",
-        "preco": 7.01,
-        "status": "RESERVA"
+        "preco": 7.01
       },
       {
-        "clube": "CHA",
+        "clube": "COR",
         "data": "2026-01-06T15:09:46.000Z",
-        "nome": "Bruno Pacheco",
+        "nome": "Hugo Souza",
+        "pos": "GOL",
+        "preco": 8.79
+      },
+      {
+        "clube": "CAP",
+        "data": "2026-01-06T15:09:46.000Z",
+        "nome": "Santos",
+        "pos": "GOL",
+        "preco": 8.85
+      },
+      {
+        "clube": "COR",
+        "data": "2026-01-06T15:09:46.000Z",
+        "nome": "Matheus Bidu",
         "pos": "LAT",
-        "preco": 6.42,
-        "status": "RESERVA"
+        "preco": 12.83
       },
       {
-        "clube": "CFC",
+        "clube": "CAM",
         "data": "2026-01-06T15:09:46.000Z",
-        "nome": "Thiago Santos",
+        "nome": "Renan Lodi",
+        "pos": "LAT",
+        "preco": 11.22
+      },
+      {
+        "clube": "COR",
+        "data": "2026-01-06T15:09:46.000Z",
+        "nome": "Matheuzinho",
+        "pos": "LAT",
+        "preco": 10.2
+      },
+      {
+        "clube": "REM",
+        "data": "2026-01-06T15:09:46.000Z",
+        "nome": "Marcelinho",
+        "pos": "LAT",
+        "preco": 7.71
+      },
+      {
+        "clube": "SAO",
+        "data": "2026-01-06T15:09:46.000Z",
+        "nome": "Lucas Ramon",
+        "pos": "LAT",
+        "preco": 10.43
+      },
+      {
+        "clube": "COR",
+        "data": "2026-01-06T15:09:46.000Z",
+        "nome": "Gabriel Paulista",
         "pos": "ZAG",
-        "preco": 4.35,
-        "status": "RESERVA"
+        "preco": 9.3
       },
       {
         "clube": "CFC",
         "data": "2026-01-06T15:09:46.000Z",
-        "nome": "Sebastián Gómez",
-        "pos": "MEI",
-        "preco": 4.29,
-        "status": "RESERVA"
+        "nome": "Jacy",
+        "pos": "ZAG",
+        "preco": 5.44
       },
       {
-        "clube": "CHA",
+        "clube": "CRU",
         "data": "2026-01-06T15:09:46.000Z",
-        "nome": "Bolasie",
+        "nome": "Jonathan Jesus",
+        "pos": "ZAG",
+        "preco": 6.74
+      },
+      {
+        "clube": "FLA",
+        "data": "2026-01-06T15:09:46.000Z",
+        "nome": "Léo Ortiz",
+        "pos": "ZAG",
+        "preco": 9.12
+      },
+      {
+        "clube": "BAH",
+        "data": "2026-01-06T15:09:46.000Z",
+        "nome": "David Duarte",
+        "pos": "ZAG",
+        "preco": 7.01
+      },
+      {
+        "clube": "CRU",
+        "data": "2026-01-06T15:09:46.000Z",
+        "nome": "Matheus Pereira",
+        "pos": "MEI",
+        "preco": 15.27
+      },
+      {
+        "clube": "COR",
+        "data": "2026-01-06T15:09:46.000Z",
+        "nome": "Garro",
+        "pos": "MEI",
+        "preco": 10.78
+      },
+      {
+        "clube": "CRU",
+        "data": "2026-01-06T15:09:46.000Z",
+        "nome": "Christian",
+        "pos": "MEI",
+        "preco": 9.19
+      },
+      {
+        "clube": "COR",
+        "data": "2026-01-06T15:09:46.000Z",
+        "nome": "André",
+        "pos": "MEI",
+        "preco": 8.45
+      },
+      {
+        "clube": "COR",
+        "data": "2026-01-06T15:09:46.000Z",
+        "nome": "Breno Bidon",
+        "pos": "MEI",
+        "preco": 9.18
+      },
+      {
+        "clube": "FLA",
+        "data": "2026-01-06T15:09:46.000Z",
+        "nome": "Pedro",
         "pos": "ATA",
-        "preco": 4.53,
-        "status": "RESERVA"
+        "preco": 18.5
+      },
+      {
+        "clube": "FLA",
+        "data": "2026-01-06T15:09:46.000Z",
+        "nome": "Samuel Lino",
+        "pos": "ATA",
+        "preco": 13.59
+      },
+      {
+        "clube": "CAP",
+        "data": "2026-01-06T15:09:46.000Z",
+        "nome": "Viveros",
+        "pos": "ATA",
+        "preco": 13.09
+      },
+      {
+        "clube": "CFC",
+        "data": "2026-01-06T15:09:46.000Z",
+        "nome": "Lucas Ronier",
+        "pos": "ATA",
+        "preco": 10.73
+      },
+      {
+        "clube": "CFC",
+        "data": "2026-01-06T15:09:46.000Z",
+        "nome": "Breno Lopes",
+        "pos": "ATA",
+        "preco": 9.47
+      },
+      {
+        "clube": "FLA",
+        "data": "2026-01-06T15:09:46.000Z",
+        "nome": "Leonardo Jardim",
+        "pos": "TEC",
+        "preco": 13.76
+      },
+      {
+        "clube": "CAP",
+        "data": "2026-01-06T15:09:46.000Z",
+        "nome": "Odair Hellmann",
+        "pos": "TEC",
+        "preco": 9.28
+      },
+      {
+        "clube": "COR",
+        "data": "2026-01-06T15:09:46.000Z",
+        "nome": "Fernando Diniz",
+        "pos": "TEC",
+        "preco": 9.26
+      },
+      {
+        "clube": "CAM",
+        "data": "2026-01-06T15:09:46.000Z",
+        "nome": "Eduardo Domínguez",
+        "pos": "TEC",
+        "preco": 11.03
+      },
+      {
+        "clube": "CRU",
+        "data": "2026-01-06T15:09:46.000Z",
+        "nome": "Artur Jorge",
+        "pos": "TEC",
+        "preco": 11.87
       }
     ],
-    "blocos_topo": [
-      "Sugestões Pro"
-    ],
-    "forcar_envio": true,
-    "houve_alteracao": false,
-    "mensagem_oficial": "🎩 *Times da Rodada — Econômico*\n\nSugestões Pro\n\n💰 Preço: C$ 102.38\n📐 Esquema: 4-3-3\n© Capitão: Pedro\n\n▪ GOL: Ivan (C$ 7.58)\n\n▪ LAT: Marcelinho (C$ 7.71)\n▪ LAT: Renan Lodi (C$ 11.22)\n\n▪ ZAG: David Duarte (C$ 7.01)\n▪ ZAG: Jacy (C$ 5.44)\n\n▪ MEI: André (C$ 8.45)\n▪ MEI: Bernard (C$ 5.29)\n▪ MEI: Felipinho (C$ 5.57)\n\n▪ ATA: Marcinho (C$ 4.71)\n▪ ATA: Pedro © (C$ 18.50)\n▪ ATA: Samuel Lino (C$ 13.59)\n\n▪ TEC: Celso Rodrigues (C$ 7.31)\n\n🏦 *Reservas:*\n▪ GOL: Pedro Rangel (C$ 7.01)\n▪ LAT: Bruno Pacheco (C$ 6.42)\n▪ ZAG: Thiago Santos (C$ 4.35)\n▪ MEI: Sebastián Gómez (C$ 4.29)\n▪ ATA: Bolasie (C$ 4.53)\n\n\n📡 Portal SimonSports\n🔗 https://t.me/dicascartolaportalsimonsports",
-    "meta": {
-      "capitao": "Pedro (ATA)",
-      "custo_total": 102.38,
-      "esquema": "4-3-3",
-      "pontos_total": 0,
-      "variacao_total": 0
-    },
-    "modelo": "ECONOMICO",
-    "nome_modelo": "Econômico",
+    "mensagem_oficial": "🔍 *Top 5 por Posição — Rodada 19*\n\n🔶 *GOL*\n1. Everson (CAM) - C$ 10.67\n2. Hugo Souza (COR) - C$ 8.79\n3. Pedro Rangel (CFC) - C$ 7.01\n4. Rossi (FLA) - C$ 9.17\n5. Santos (CAP) - C$ 8.85\n\n🔶 *ZAG*\n1. David Duarte (BAH) - C$ 7.01\n2. Gabriel Paulista (COR) - C$ 9.30\n3. Jacy (CFC) - C$ 5.44\n4. Jonathan Jesus (CRU) - C$ 6.74\n5. Léo Ortiz (FLA) - C$ 9.12\n\n🔶 *LAT*\n1. Lucas Ramon (SAO) - C$ 10.43\n2. Marcelinho (REM) - C$ 7.71\n3. Matheus Bidu (COR) - C$ 12.83\n4. Matheuzinho (COR) - C$ 10.20\n5. Renan Lodi (CAM) - C$ 11.22\n\n🔶 *MEI*\n1. André (COR) - C$ 8.45\n2. Breno Bidon (COR) - C$ 9.18\n3. Christian (CRU) - C$ 9.19\n4. Garro (COR) - C$ 10.78\n5. Matheus Pereira (CRU) - C$ 15.27\n\n🔶 *ATA*\n1. Breno Lopes (CFC) - C$ 9.47\n2. Lucas Ronier (CFC) - C$ 10.73\n3. Pedro (FLA) - C$ 18.50\n4. Samuel Lino (FLA) - C$ 13.59\n5. Viveros (CAP) - C$ 13.09\n\n🔶 *TEC*\n1. Artur Jorge (CRU) - C$ 11.87\n2. Eduardo Domínguez (CAM) - C$ 11.03\n3. Fernando Diniz (COR) - C$ 9.26\n4. Leonardo Jardim (FLA) - C$ 13.76\n5. Odair Hellmann (CAP) - C$ 9.28\n\n\n📡 Portal SimonSports\n🔗 https://t.me/dicascartolaportalsimonsports",
     "primeiro_envio": true,
-    "snapshot": {
-      "atletas": [
-        {
-          "clube": "REM",
-          "nome": "Ivan",
-          "pos": "GOL",
-          "preco": 7.58,
-          "status": "TITULAR"
-        },
-        {
-          "clube": "REM",
-          "nome": "Marcelinho",
-          "pos": "LAT",
-          "preco": 7.71,
-          "status": "TITULAR"
-        },
-        {
-          "clube": "CAM",
-          "nome": "Renan Lodi",
-          "pos": "LAT",
-          "preco": 11.22,
-          "status": "TITULAR"
-        },
-        {
-          "clube": "BAH",
-          "nome": "David Duarte",
-          "pos": "ZAG",
-          "preco": 7.01,
-          "status": "TITULAR"
-        },
-        {
-          "clube": "CFC",
-          "nome": "Jacy",
-          "pos": "ZAG",
-          "preco": 5.44,
-          "status": "TITULAR"
-        },
-        {
-          "clube": "COR",
-          "nome": "André",
-          "pos": "MEI",
-          "preco": 8.45,
-          "status": "TITULAR"
-        },
-        {
-          "clube": "CAP",
-          "nome": "Felipinho",
-          "pos": "MEI",
-          "preco": 5.57,
-          "status": "TITULAR"
-        },
-        {
-          "clube": "CAM",
-          "nome": "Bernard",
-          "pos": "MEI",
-          "preco": 5.29,
-          "status": "TITULAR"
-        },
-        {
-          "clube": "FLA",
-          "nome": "Samuel Lino",
-          "pos": "ATA",
-          "preco": 13.59,
-          "status": "TITULAR"
-        },
-        {
-          "clube": "FLA",
-          "nome": "Pedro",
-          "pos": "ATA",
-          "preco": 18.5,
-          "status": "TITULAR"
-        },
-        {
-          "clube": "CHA",
-          "nome": "Marcinho",
-          "pos": "ATA",
-          "preco": 4.71,
-          "status": "TITULAR"
-        },
-        {
-          "clube": "CHA",
-          "nome": "Celso Rodrigues",
-          "pos": "TEC",
-          "preco": 7.31,
-          "status": "TITULAR"
-        },
-        {
-          "clube": "CFC",
-          "nome": "Pedro Rangel",
-          "pos": "GOL",
-          "preco": 7.01,
-          "status": "RESERVA"
-        },
-        {
-          "clube": "CHA",
-          "nome": "Bruno Pacheco",
-          "pos": "LAT",
-          "preco": 6.42,
-          "status": "RESERVA"
-        },
-        {
-          "clube": "CFC",
-          "nome": "Thiago Santos",
-          "pos": "ZAG",
-          "preco": 4.35,
-          "status": "RESERVA"
-        },
-        {
-          "clube": "CFC",
-          "nome": "Sebastián Gómez",
-          "pos": "MEI",
-          "preco": 4.29,
-          "status": "RESERVA"
-        },
-        {
-          "clube": "CHA",
-          "nome": "Bolasie",
-          "pos": "ATA",
-          "preco": 4.53,
-          "status": "RESERVA"
-        }
-      ],
-      "capitao": "Pedro"
-    },
     "timestamp_base": "",
-    "titulo": "Times da Rodada — Econômico"
+    "titulo": "🔍 *Top 5 por Posição — Rodada 19*"
   },
-  "payload_hash": "fLacjI3ky4+MfaHsa3yzSA==",
+  "payload_hash": "c8iNipFk55+LVaaEIvzHgA==",
   "rodada": 19,
-  "tipo_publicacao": "times"
+  "tipo_publicacao": "top5"
 }
