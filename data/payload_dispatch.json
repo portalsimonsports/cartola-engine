@@ -1,6 +1,6 @@
 {
   "ambiente": "teste",
-  "gerado_em": "2026-06-22T23:01:13.148Z",
+  "gerado_em": "2026-06-22T23:02:01.148Z",
   "origem": "jobTelegramDispatcher",
   "payload": {
     "atletas": [
@@ -93,11 +93,11 @@
         "status": "TITULAR"
       },
       {
-        "clube": "FLA",
+        "clube": "CHA",
         "data": "2026-06-22T22:59:33.000Z",
-        "nome": "Leonardo Jardim",
+        "nome": "Rafael Lacerda",
         "pos": "TEC",
-        "preco": 13.76,
+        "preco": 7.31,
         "status": "TITULAR"
       },
       {
@@ -142,21 +142,21 @@
       }
     ],
     "blocos_topo": [
-      "Time Pontuação",
-      "Alterações identificadas desde a última publicação."
+      "Time Intermediário",
+      "Sem alterações desde a última publicação."
     ],
     "forcar_envio": true,
-    "houve_alteracao": true,
-    "mensagem_oficial": "🌙 *Atualização das 20h — Times R19*\n\nTime Pontuação\n\nAlterações identificadas desde a última publicação.\n\n💰 Preço: C$ 143.14\n📐 Esquema: 4-3-3\n© Capitão: Pedro\n\n▪ GOL: Everson (C$ 10.67)\n\n▪ LAT: Matheus Bidu (C$ 12.83)\n▪ LAT: Renan Lodi (C$ 11.22)\n\n▪ ZAG: Gabriel Paulista (C$ 9.30)\n▪ ZAG: Jonathan Jesus (C$ 6.74)\n\n▪ MEI: Christian (C$ 9.19)\n▪ MEI: Gerson (C$ 8.98)\n▪ MEI: Matheus Pereira (C$ 15.27)\n\n▪ ATA: Pedro © (C$ 18.50)\n▪ ATA: Samuel Lino (C$ 13.59)\n▪ ATA: Viveros (C$ 13.09)\n\n▪ TEC: Leonardo Jardim (C$ 13.76)\n\n🏦 *Reservas:*\n▪ GOL: Rossi (C$ 9.17)\n▪ LAT: Matheuzinho (C$ 10.20)\n▪ ZAG: Jacy (C$ 5.44)\n▪ MEI: André (C$ 8.45)\n▪ ATA: Breno Lopes (C$ 9.47)\n\n\n📡 Portal SimonSports\n🔗 https://t.me/dicascartolaportalsimonsports",
+    "houve_alteracao": false,
+    "mensagem_oficial": "🌙 *Atualização das 20h — Times R19*\n\nTime Intermediário\n\nSem alterações desde a última publicação.\n\n💰 Preço: C$ 136.69\n📐 Esquema: 4-3-3\n© Capitão: Pedro\n\n▪ GOL: Everson (C$ 10.67)\n\n▪ LAT: Matheus Bidu (C$ 12.83)\n▪ LAT: Renan Lodi (C$ 11.22)\n\n▪ ZAG: Gabriel Paulista (C$ 9.30)\n▪ ZAG: Jonathan Jesus (C$ 6.74)\n\n▪ MEI: Christian (C$ 9.19)\n▪ MEI: Gerson (C$ 8.98)\n▪ MEI: Matheus Pereira (C$ 15.27)\n\n▪ ATA: Pedro © (C$ 18.50)\n▪ ATA: Samuel Lino (C$ 13.59)\n▪ ATA: Viveros (C$ 13.09)\n\n▪ TEC: Rafael Lacerda (C$ 7.31)\n\n🏦 *Reservas:*\n▪ GOL: Rossi (C$ 9.17)\n▪ LAT: Matheuzinho (C$ 10.20)\n▪ ZAG: Jacy (C$ 5.44)\n▪ MEI: André (C$ 8.45)\n▪ ATA: Breno Lopes (C$ 9.47)\n\n\n📡 Portal SimonSports\n🔗 https://t.me/dicascartolaportalsimonsports",
     "meta": {
       "capitao": "Pedro (ATA)",
-      "custo_total": 143.14,
+      "custo_total": 136.69,
       "esquema": "4-3-3",
       "pontos_total": 0,
       "variacao_total": 0
     },
-    "modelo": "PONTUACAO",
-    "nome_modelo": "Pontuação",
+    "modelo": "INTERMEDIARIO",
+    "nome_modelo": "Intermediário",
     "primeiro_envio": false,
     "snapshot": {
       "atletas": [
@@ -238,10 +238,10 @@
           "status": "TITULAR"
         },
         {
-          "clube": "FLA",
-          "nome": "Leonardo Jardim",
+          "clube": "CHA",
+          "nome": "Rafael Lacerda",
           "pos": "TEC",
-          "preco": 13.76,
+          "preco": 7.31,
           "status": "TITULAR"
         },
         {
@@ -285,7 +285,7 @@
     "timestamp_base": "",
     "titulo": "🌙 *Atualização das 20h — Times R19*"
   },
-  "payload_hash": "sVqqJDGlhpojtGIPLc4roQ==",
+  "payload_hash": "8ncRjng5RFnzHEUHRnCrqg==",
   "rodada": 19,
   "tipo_publicacao": "times"
 }
