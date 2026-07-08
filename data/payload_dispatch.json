@@ -1,6 +1,6 @@
 {
   "ambiente": "teste",
-  "gerado_em": "2026-07-08T23:03:29.140Z",
+  "gerado_em": "2026-07-08T23:04:11.546Z",
   "origem": "jobTelegramDispatcher",
   "payload": {
     "atletas": [
@@ -45,14 +45,6 @@
         "status": "TITULAR"
       },
       {
-        "clube": "FLA",
-        "data": "2026-08-07T22:59:33.000Z",
-        "nome": "Léo Ortiz",
-        "pos": "ZAG",
-        "preco": 9.12,
-        "status": "TITULAR"
-      },
-      {
         "clube": "CRU",
         "data": "2026-08-07T22:59:33.000Z",
         "nome": "Matheus Pereira",
@@ -93,11 +85,19 @@
         "status": "TITULAR"
       },
       {
-        "clube": "INT",
+        "clube": "FLA",
         "data": "2026-08-07T22:59:33.000Z",
-        "nome": "Paulo Pezzolano",
+        "nome": "Samuel Lino",
+        "pos": "ATA",
+        "preco": 13.59,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "FLA",
+        "data": "2026-08-07T22:59:33.000Z",
+        "nome": "Leonardo Jardim",
         "pos": "TEC",
-        "preco": 7.47,
+        "preco": 13.76,
         "status": "TITULAR"
       },
       {
@@ -142,21 +142,21 @@
       }
     ],
     "blocos_topo": [
-      "Time Intermediário",
+      "Time Pontuação",
       "Sem alterações desde a última publicação."
     ],
     "forcar_envio": true,
     "houve_alteracao": false,
-    "mensagem_oficial": "🌙 *Atualização das 20h — Times R19*\n\nTime Intermediário\n\nSem alterações desde a última publicação.\n\n💰 Preço: C$ 128.05\n📐 Esquema: 5-3-2\n© Capitão: Viveros\n\n▪ GOL: Rossi (C$ 9.17)\n\n▪ LAT: Bernabei (C$ 9.66)\n▪ LAT: Matheus Bidu (C$ 12.83)\n\n▪ ZAG: Gabriel Paulista (C$ 9.30)\n▪ ZAG: Jonathan Jesus (C$ 6.74)\n▪ ZAG: Léo Ortiz (C$ 9.12)\n\n▪ MEI: Breno Bidon (C$ 9.18)\n▪ MEI: Matheus Pereira (C$ 15.27)\n▪ MEI: Raniele (C$ 7.72)\n\n▪ ATA: Pedro (C$ 18.50)\n▪ ATA: Viveros © (C$ 13.09)\n\n▪ TEC: Paulo Pezzolano (C$ 7.47)\n\n🏦 *Reservas:*\n▪ GOL: Carlos Miguel (C$ 8.86)\n▪ LAT: Marcelinho (C$ 7.71)\n▪ ZAG: Jacy (C$ 5.44)\n▪ MEI: Bruno Gomes (C$ 6.83)\n▪ ATA: Breno Lopes (C$ 9.47)\n\n\n📡 Portal SimonSports\n🔗 https://t.me/dicascartolaportalsimonsports",
+    "mensagem_oficial": "🌙 *Atualização das 20h — Times R19*\n\nTime Pontuação\n\nSem alterações desde a última publicação.\n\n💰 Preço: C$ 138.81\n📐 Esquema: 4-3-3\n© Capitão: Viveros\n\n▪ GOL: Rossi (C$ 9.17)\n\n▪ LAT: Bernabei (C$ 9.66)\n▪ LAT: Matheus Bidu (C$ 12.83)\n\n▪ ZAG: Gabriel Paulista (C$ 9.30)\n▪ ZAG: Jonathan Jesus (C$ 6.74)\n\n▪ MEI: Breno Bidon (C$ 9.18)\n▪ MEI: Matheus Pereira (C$ 15.27)\n▪ MEI: Raniele (C$ 7.72)\n\n▪ ATA: Pedro (C$ 18.50)\n▪ ATA: Samuel Lino (C$ 13.59)\n▪ ATA: Viveros © (C$ 13.09)\n\n▪ TEC: Leonardo Jardim (C$ 13.76)\n\n🏦 *Reservas:*\n▪ GOL: Carlos Miguel (C$ 8.86)\n▪ LAT: Marcelinho (C$ 7.71)\n▪ ZAG: Jacy (C$ 5.44)\n▪ MEI: Bruno Gomes (C$ 6.83)\n▪ ATA: Breno Lopes (C$ 9.47)\n\n\n📡 Portal SimonSports\n🔗 https://t.me/dicascartolaportalsimonsports",
     "meta": {
       "capitao": "Viveros (ATA)",
-      "custo_total": 128.05,
-      "esquema": "5-3-2",
+      "custo_total": 138.81,
+      "esquema": "4-3-3",
       "pontos_total": 0,
       "variacao_total": 0
     },
-    "modelo": "INTERMEDIARIO",
-    "nome_modelo": "Intermediário",
+    "modelo": "PONTUACAO",
+    "nome_modelo": "Pontuação",
     "primeiro_envio": false,
     "snapshot": {
       "atletas": [
@@ -196,13 +196,6 @@
           "status": "TITULAR"
         },
         {
-          "clube": "FLA",
-          "nome": "Léo Ortiz",
-          "pos": "ZAG",
-          "preco": 9.12,
-          "status": "TITULAR"
-        },
-        {
           "clube": "CRU",
           "nome": "Matheus Pereira",
           "pos": "MEI",
@@ -238,10 +231,17 @@
           "status": "TITULAR"
         },
         {
-          "clube": "INT",
-          "nome": "Paulo Pezzolano",
+          "clube": "FLA",
+          "nome": "Samuel Lino",
+          "pos": "ATA",
+          "preco": 13.59,
+          "status": "TITULAR"
+        },
+        {
+          "clube": "FLA",
+          "nome": "Leonardo Jardim",
           "pos": "TEC",
-          "preco": 7.47,
+          "preco": 13.76,
           "status": "TITULAR"
         },
         {
@@ -285,7 +285,7 @@
     "timestamp_base": "",
     "titulo": "🌙 *Atualização das 20h — Times R19*"
   },
-  "payload_hash": "FFgYqBo11WLjthjEMuDkJA==",
+  "payload_hash": "Xv5fXAEgbIm7Zy4Kyi6XCw==",
   "rodada": 19,
   "tipo_publicacao": "times"
 }
