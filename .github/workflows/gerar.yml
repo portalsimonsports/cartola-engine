@@ -5,6 +5,11 @@ on:
     types:
       - cartola_publish_test
   workflow_dispatch:
+    inputs:
+      payload_json:
+        description: "Payload JSON manual para teste"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -31,154 +36,59 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Mostrar payload recebido
-        shell: bash
-        run: |
-          echo "===== EVENTO ====="
-          echo "${{ github.event.action }}"
-          echo "===== PAYLOAD RECEBIDO ====="
-          echo '${{ toJson(github.event.client_payload) }}'
-
       - name: Instalar dependências
         shell: bash
         run: |
           set -e
-
           python -m pip install --upgrade pip setuptools wheel
+          pip install --upgrade -r requirements.txt
 
-          if [ -f requirements.txt ]; then
-            pip install --upgrade -r requirements.txt
-          else
-            echo "AVISO: requirements.txt não encontrado."
-          fi
-
-      - name: Garantir pastas padrão
-        shell: bash
-        run: |
-          set -e
-
-          mkdir -p data
-          mkdir -p output
-
-      - name: Salvar payload em arquivo auxiliar
-        shell: bash
-        run: |
-          set -e
-
-          cat > data/payload_dispatch.json <<'EOF'
-          ${{ toJson(github.event.client_payload) }}
-          EOF
-
-          echo "Payload salvo em data/payload_dispatch.json"
-          echo "===== CONTEÚDO DO PAYLOAD SALVO ====="
-          cat data/payload_dispatch.json || true
-
-      - name: Validar payload do GS Principal
-        shell: bash
-        run: |
-          set -e
-
-          python - <<'PY'
-          import json
-          from pathlib import Path
-
-          path = Path("data/payload_dispatch.json")
-
-          if not path.exists():
-              raise SystemExit("ERRO: data/payload_dispatch.json não encontrado.")
-
-          texto = path.read_text(encoding="utf-8").strip()
-
-          if not texto:
-              raise SystemExit("ERRO: payload vazio.")
-
-          try:
-              payload = json.loads(texto)
-          except Exception as exc:
-              raise SystemExit(f"ERRO: payload JSON inválido: {exc}")
-
-          if payload is None:
-              print("AVISO: payload veio como null. Isso é normal em execução manual pelo botão workflow_dispatch.")
-              print("O workflow continuará, mas pode não gerar publicação real.")
-              raise SystemExit(0)
-
-          if not isinstance(payload, dict):
-              raise SystemExit(f"ERRO: payload precisa ser objeto JSON. Tipo recebido: {type(payload).__name__}")
-
-          evento = str(payload.get("evento_github", "") or "").strip()
-          origem = str(payload.get("origem", "") or "").strip()
-          workflow_destino = str(payload.get("workflow_destino", "") or "").strip()
-          tipo_publicacao = str(payload.get("tipo_publicacao", "") or "").strip()
-          contexto = str(payload.get("contexto", "") or "").strip()
-          rodada = payload.get("rodada", "")
-
-          print("Payload recebido para Gerar Times e Top5:")
-          print("origem:", origem)
-          print("evento_github:", evento)
-          print("workflow_destino:", workflow_destino)
-          print("tipo_publicacao:", tipo_publicacao)
-          print("contexto:", contexto)
-          print("rodada:", rodada)
-
-          if evento and evento != "cartola_publish_test":
-              raise SystemExit(f"ERRO: evento_github incorreto para Gerar Times e Top5: {evento}")
-
-          if workflow_destino and workflow_destino != "gerar.yml":
-              raise SystemExit(f"ERRO: workflow_destino incorreto para Gerar Times e Top5: {workflow_destino}")
-
-          if origem and "live" in origem.lower():
-              raise SystemExit(
-                  "ERRO: payload do Live Publisher caiu no workflow errado. "
-                  "O Live Publisher deve usar cartola_live_publish e gerar.resultados.yml."
-              )
-
-          print("Validação concluída: payload aceito para publicações do jobTelegramDispatcher / GS Principal.")
-          PY
-
-      - name: Executar gerador de imagens Times e Top5
+      - name: Preparar payload
         shell: bash
         env:
-          PAYLOAD_JSON: ${{ toJson(github.event.client_payload) }}
-          PAYLOAD_FILE: data/payload_dispatch.json
-          TZ: America/Sao_Paulo
+          EVENT_NAME: ${{ github.event_name }}
+          DISPATCH_PAYLOAD: ${{ toJson(github.event.client_payload) }}
+          MANUAL_PAYLOAD: ${{ github.event.inputs.payload_json }}
         run: |
           set -e
+          mkdir -p data output
 
-          echo "===== EXECUTANDO GERADOR DE IMAGENS TIMES/TOP5 ====="
-          echo "PAYLOAD_FILE=$PAYLOAD_FILE"
-          echo "TZ=$TZ"
-
-          if [ -f "app/gerar_times_top5.py" ]; then
-            python app/gerar_times_top5.py
-          elif [ -f "app/gerar_resultados_telegram.py" ]; then
-            echo "AVISO: app/gerar_times_top5.py não encontrado. Usando fallback app/gerar_resultados_telegram.py."
-            python app/gerar_resultados_telegram.py
+          if [ "$EVENT_NAME" = "repository_dispatch" ]; then
+            printf '%s' "$DISPATCH_PAYLOAD" > data/payload_dispatch.json
           else
-            echo "ERRO: nenhum gerador encontrado."
-            echo "Arquivos disponíveis em app/:"
-            ls -la app || true
-            exit 1
+            if [ -z "$MANUAL_PAYLOAD" ]; then
+              echo "ERRO: execução manual sem payload_json."
+              exit 1
+            fi
+            printf '%s' "$MANUAL_PAYLOAD" > data/payload_dispatch.json
           fi
 
-      - name: Listar arquivos gerados
-        if: always()
-        shell: bash
-        run: |
-          echo "===== DATA ====="
-          ls -la data || true
+          python -m json.tool data/payload_dispatch.json >/dev/null
+          echo "Payload preparado e validado."
 
-          echo "===== OUTPUT ====="
-          ls -la output || true
+      - name: Publicar no Telegram
+        shell: bash
+        env:
+          PAYLOAD_FILE: data/payload_dispatch.json
+          TZ: America/Sao_Paulo
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          PLANILHA_ID: ${{ secrets.PLANILHA_ID }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_APPLICATION_CREDENTIALS: service_account.json
+          ABA_TELEGRAM: ${{ vars.ABA_TELEGRAM }}
+          CONTA_TELEGRAM: ${{ vars.CONTA_TELEGRAM }}
+        run: |
+          set -e
+          python app/gerar_resultados_telegram.py
 
       - name: Publicar arquivos gerados no repositório
         if: success()
         shell: bash
         run: |
           set -e
-
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
           git add data/ output/ || true
 
           if git diff --cached --quiet; then
@@ -186,7 +96,6 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Times e Top5: geração automática de imagens"
-
+          git commit -m "Times e Top5: geração automática"
           git pull --rebase origin main || true
           git push origin HEAD:main
