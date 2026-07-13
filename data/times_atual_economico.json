@@ -1,1 +1,197 @@
-{"rodada":19,"tipo":"ECONOMICO","atualizado_em":"2026-07-12T23:00:39.514Z","formacao":"4-3-3","capitao":"Pedro","dados":[{"RODADA":19,"TIPO":"ECONOMICO","STATUS":"TITULAR","POS":"GOL","NOME":"Ivan","CLUBE":"REM","PRECO":7.58},{"RODADA":19,"TIPO":"ECONOMICO","STATUS":"TITULAR","POS":"LAT","NOME":"Marcelinho","CLUBE":"REM","PRECO":7.71},{"RODADA":19,"TIPO":"ECONOMICO","STATUS":"TITULAR","POS":"LAT","NOME":"Renan Lodi","CLUBE":"CAM","PRECO":11.22},{"RODADA":19,"TIPO":"ECONOMICO","STATUS":"TITULAR","POS":"ZAG","NOME":"David Duarte","CLUBE":"BAH","PRECO":7.01},{"RODADA":19,"TIPO":"ECONOMICO","STATUS":"TITULAR","POS":"ZAG","NOME":"Jacy","CLUBE":"CFC","PRECO":5.44},{"RODADA":19,"TIPO":"ECONOMICO","STATUS":"TITULAR","POS":"MEI","NOME":"André","CLUBE":"COR","PRECO":8.45},{"RODADA":19,"TIPO":"ECONOMICO","STATUS":"TITULAR","POS":"MEI","NOME":"Camilo","CLUBE":"CHA","PRECO":5.62},{"RODADA":19,"TIPO":"ECONOMICO","STATUS":"TITULAR","POS":"MEI","NOME":"Felipinho","CLUBE":"CAP","PRECO":5.57},{"RODADA":19,"TIPO":"ECONOMICO","STATUS":"TITULAR","POS":"ATA","NOME":"Samuel Lino","CLUBE":"FLA","PRECO":13.59},{"RODADA":19,"TIPO":"ECONOMICO","STATUS":"TITULAR","POS":"ATA","NOME":"Pedro","CLUBE":"FLA","PRECO":18.5},{"RODADA":19,"TIPO":"ECONOMICO","STATUS":"TITULAR","POS":"ATA","NOME":"Marcinho","CLUBE":"CHA","PRECO":4.71},{"RODADA":19,"TIPO":"ECONOMICO","STATUS":"TITULAR","POS":"TEC","NOME":"Rafael Lacerda","CLUBE":"CHA","PRECO":7.31},{"RODADA":19,"TIPO":"ECONOMICO","STATUS":"RESERVA","POS":"GOL","NOME":"Pedro Rangel","CLUBE":"CFC","PRECO":7.01},{"RODADA":19,"TIPO":"ECONOMICO","STATUS":"RESERVA","POS":"LAT","NOME":"Bruno Pacheco","CLUBE":"CHA","PRECO":6.42},{"RODADA":19,"TIPO":"ECONOMICO","STATUS":"RESERVA","POS":"ZAG","NOME":"Thiago Santos","CLUBE":"CFC","PRECO":4.35},{"RODADA":19,"TIPO":"ECONOMICO","STATUS":"RESERVA","POS":"MEI","NOME":"Josué","CLUBE":"CFC","PRECO":5.42},{"RODADA":19,"TIPO":"ECONOMICO","STATUS":"RESERVA","POS":"ATA","NOME":"Bolasie","CLUBE":"CHA","PRECO":4.53}],"custo_total":102.71}
+{
+  "origem": "syncCartolaGithub",
+  "pipeline": "jobtelegram",
+  "tipo_publicacao": "times",
+  "rodada": 19,
+  "tipo": "ECONOMICO",
+  "atualizado_em": "2026-07-13T12:53:25.275Z",
+  "dados": [
+    {
+      "RODADA": 19,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "GOL",
+      "NOME": "Ivan",
+      "CLUBE": "REM",
+      "PRECO": 7.58,
+      "EXP_SCORE": 1.3046,
+      "ATLETA_ID": 88136
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Marcelinho",
+      "CLUBE": "REM",
+      "PRECO": 7.71,
+      "EXP_SCORE": 4.4819,
+      "ATLETA_ID": 97795
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Renan Lodi",
+      "CLUBE": "CAM",
+      "PRECO": 11.22,
+      "EXP_SCORE": 5.2795,
+      "ATLETA_ID": 96591
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ZAG",
+      "NOME": "David Duarte",
+      "CLUBE": "BAH",
+      "PRECO": 7.01,
+      "EXP_SCORE": 2.5107,
+      "ATLETA_ID": 91772
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ZAG",
+      "NOME": "Jacy",
+      "CLUBE": "CFC",
+      "PRECO": 5.44,
+      "EXP_SCORE": 2.7324,
+      "ATLETA_ID": 97878
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "André",
+      "CLUBE": "COR",
+      "PRECO": 8.45,
+      "EXP_SCORE": 3.3073,
+      "ATLETA_ID": 145744
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Bernard",
+      "CLUBE": "CAM",
+      "PRECO": 5.29,
+      "EXP_SCORE": 2.2629,
+      "ATLETA_ID": 72460
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "José Welison",
+      "CLUBE": "REM",
+      "PRECO": 4.43,
+      "EXP_SCORE": 1.7326,
+      "ATLETA_ID": 86859
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Samuel Lino",
+      "CLUBE": "FLA",
+      "PRECO": 13.59,
+      "EXP_SCORE": 7.0667,
+      "ATLETA_ID": 98873
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Pedro",
+      "CLUBE": "FLA",
+      "PRECO": 18.5,
+      "EXP_SCORE": 7.6552,
+      "ATLETA_ID": 94583
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Marcinho",
+      "CLUBE": "CHA",
+      "PRECO": 4.71,
+      "EXP_SCORE": 3.0339,
+      "ATLETA_ID": 95332
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "TEC",
+      "NOME": "Rafael Lacerda",
+      "CLUBE": "CHA",
+      "PRECO": 7.31,
+      "EXP_SCORE": 0,
+      "ATLETA_ID": 106907
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "ECONOMICO",
+      "STATUS": "RESERVA",
+      "POS": "GOL",
+      "NOME": "Pedro Rangel",
+      "CLUBE": "CFC",
+      "PRECO": 7.01,
+      "EXP_SCORE": 3.169,
+      "ATLETA_ID": 110708
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "ECONOMICO",
+      "STATUS": "RESERVA",
+      "POS": "LAT",
+      "NOME": "Bruno Pacheco",
+      "CLUBE": "CHA",
+      "PRECO": 6.42,
+      "EXP_SCORE": 3.7005,
+      "ATLETA_ID": 90061
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "ECONOMICO",
+      "STATUS": "RESERVA",
+      "POS": "ZAG",
+      "NOME": "Thiago Santos",
+      "CLUBE": "CFC",
+      "PRECO": 4.35,
+      "EXP_SCORE": 1.9938,
+      "ATLETA_ID": 78855
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "ECONOMICO",
+      "STATUS": "RESERVA",
+      "POS": "MEI",
+      "NOME": "Sebastián Gómez",
+      "CLUBE": "CFC",
+      "PRECO": 4.29,
+      "EXP_SCORE": 1.804,
+      "ATLETA_ID": 104811
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "ECONOMICO",
+      "STATUS": "RESERVA",
+      "POS": "ATA",
+      "NOME": "Bolasie",
+      "CLUBE": "CHA",
+      "PRECO": 4.53,
+      "EXP_SCORE": 2.1045,
+      "ATLETA_ID": 86292
+    }
+  ]
+}
