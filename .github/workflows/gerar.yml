@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       payload_json:
-        description: "Payload JSON manual para teste"
+        description: "Payload JSON manual para teste; deixe vazio para reutilizar data/payload_dispatch.json"
         required: false
         default: ""
 
@@ -55,12 +55,15 @@ jobs:
 
           if [ "$EVENT_NAME" = "repository_dispatch" ]; then
             printf '%s' "$DISPATCH_PAYLOAD" > data/payload_dispatch.json
-          else
-            if [ -z "$MANUAL_PAYLOAD" ]; then
-              echo "ERRO: execução manual sem payload_json."
-              exit 1
-            fi
+            echo "Payload recebido via repository_dispatch."
+          elif [ -n "$MANUAL_PAYLOAD" ]; then
             printf '%s' "$MANUAL_PAYLOAD" > data/payload_dispatch.json
+            echo "Payload manual informado no Run workflow."
+          elif [ -s data/payload_dispatch.json ]; then
+            echo "Execução manual sem payload_json: reutilizando data/payload_dispatch.json existente."
+          else
+            echo "ERRO: não existe payload manual nem data/payload_dispatch.json válido."
+            exit 1
           fi
 
           python -m json.tool data/payload_dispatch.json >/dev/null
