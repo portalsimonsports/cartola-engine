@@ -324,6 +324,62 @@ def extrair_dados_publicacao(payload_raiz: Dict[str, Any]) -> Dict[str, Any]:
     return dict(payload_raiz)
 
 
+def _lower_mapping(value: Any) -> Any:
+    if isinstance(value, dict):
+        return {
+            str(key).strip().lower(): _lower_mapping(item)
+            for key, item in value.items()
+        }
+    if isinstance(value, list):
+        return [_lower_mapping(item) for item in value]
+    return value
+
+
+def normalizar_dados_renderizacao(dados: Dict[str, Any]) -> Dict[str, Any]:
+    """Converte bases antigas em maiúsculas para o contrato visual atual."""
+    normalized = _lower_mapping(dados)
+    if not isinstance(normalized, dict):
+        return dados
+
+    raw_data = normalized.get("dados")
+    if isinstance(raw_data, list) and raw_data:
+        entries = [item for item in raw_data if isinstance(item, dict)]
+        player_like = any("pos" in item and "nome" in item for item in entries)
+        match_like = any(
+            any(
+                key in item
+                for key in (
+                    "mandante",
+                    "visitante",
+                    "home",
+                    "away",
+                    "time_casa",
+                    "time_fora",
+                )
+            )
+            for item in entries
+        )
+        if player_like and not any(
+            normalized.get(key)
+            for key in ("lista", "jogadores", "time", "escalacao")
+        ):
+            starters = [
+                item
+                for item in entries
+                if _safe(item.get("status"), "TITULAR").upper() != "RESERVA"
+            ]
+            normalized["jogadores"] = starters or entries
+        elif match_like and not any(
+            normalized.get(key)
+            for key in ("partidas", "jogos", "resultados")
+        ):
+            normalized["partidas"] = entries
+
+    if "tipo_publicacao" not in normalized and normalized.get("tipo"):
+        normalized["tipo_publicacao"] = normalized.get("tipo")
+    return normalized
+
+
 def _caption(rendered: RenderOutput, dados: Dict[str, Any]) -> str:
     rodada = _safe(dados.get("rodada"))
     title = html.escape(rendered.title.title())
@@ -361,7 +417,7 @@ def _gravar_manifesto(
 
 def executar_publicacao() -> None:
     payload_raiz = carregar_payload()
-    dados = extrair_dados_publicacao(payload_raiz)
+    dados = normalizar_dados_renderizacao(extrair_dados_publicacao(payload_raiz))
     tipo = _safe(
         dados.get("tipo_publicacao")
         or payload_raiz.get("tipo_publicacao")
