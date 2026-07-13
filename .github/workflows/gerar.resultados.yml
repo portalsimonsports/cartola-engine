@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       payload_json:
-        description: "Payload JSON manual para teste"
+        description: "Payload JSON manual; deixe vazio para reutilizar data/payload_dispatch.json"
         required: false
         default: ""
 
@@ -22,7 +22,7 @@ concurrency:
 jobs:
   gerar-resultados-live:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 12
 
     steps:
       - name: Checkout do repositório
@@ -43,6 +43,14 @@ jobs:
           python -m pip install --upgrade pip setuptools wheel
           pip install --upgrade -r requirements.txt
 
+      - name: Validar código profissional
+        shell: bash
+        run: |
+          set -e
+          python -m py_compile app/render_telegram_cards.py
+          python -m py_compile app/gerar_resultados_telegram.py
+          echo "Renderizador de resultados validado."
+
       - name: Preparar e validar payload
         shell: bash
         env:
@@ -55,12 +63,15 @@ jobs:
 
           if [ "$EVENT_NAME" = "repository_dispatch" ]; then
             printf '%s' "$DISPATCH_PAYLOAD" > data/payload_dispatch.json
-          else
-            if [ -z "$MANUAL_PAYLOAD" ]; then
-              echo "ERRO: execução manual sem payload_json."
-              exit 1
-            fi
+            echo "Payload Live recebido via repository_dispatch."
+          elif [ -n "$MANUAL_PAYLOAD" ]; then
             printf '%s' "$MANUAL_PAYLOAD" > data/payload_dispatch.json
+            echo "Payload Live manual informado."
+          elif [ -s data/payload_dispatch.json ]; then
+            echo "Reutilizando data/payload_dispatch.json existente."
+          else
+            echo "ERRO: execução manual sem payload e sem arquivo salvo."
+            exit 1
           fi
 
           python - <<'PY'
@@ -86,10 +97,11 @@ jobs:
           print("Payload Live validado.")
           PY
 
-      - name: Publicar resultados no Telegram
+      - name: Gerar cards de resultados e publicar no Telegram
         shell: bash
         env:
           PAYLOAD_FILE: data/payload_dispatch.json
+          OUTPUT_DIR: output
           TZ: America/Sao_Paulo
           PLANILHA_ID: ${{ secrets.PLANILHA_ID }}
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
@@ -99,7 +111,29 @@ jobs:
           TELEGRAM_CHAT_FALLBACK: "@dicascartolaportalsimonsports"
         run: |
           set -e
-          python app/publicar_telegram_com_fallback.py
+          python app/gerar_resultados_telegram.py
+
+      - name: Validar cards gerados
+        shell: bash
+        run: |
+          set -e
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          manifest = Path("output/ultima_publicacao.json")
+          if not manifest.exists():
+              raise SystemExit("ERRO: manifesto não gerado.")
+          data = json.loads(manifest.read_text(encoding="utf-8"))
+          files = data.get("arquivos") or []
+          if not files:
+              raise SystemExit("ERRO: nenhuma arte de resultado foi gerada.")
+          missing = [path for path in files if not Path(path).exists()]
+          if missing:
+              raise SystemExit(f"ERRO: arquivos ausentes: {missing}")
+          print(f"Cards profissionais validados: {len(files)}.")
+          PY
+          ls -lh output || true
 
       - name: Publicar arquivos gerados no repositório
         if: success()
@@ -115,6 +149,6 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Live Publisher: geração de resultados e resumos"
+          git commit -m "Telegram: cards profissionais de resultados"
           git pull --rebase origin main || true
           git push origin HEAD:main
