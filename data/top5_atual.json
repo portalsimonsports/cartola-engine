@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 19,
-  "atualizado_em": "2026-07-13T16:10:06.103Z",
+  "atualizado_em": "2026-07-13T16:20:06.824Z",
   "dados": [
     {
       "RODADA": 19,
@@ -21,7 +21,7 @@
       "NOME": "Rossi",
       "CLUBE": "FLA",
       "PRECO": 9.17,
-      "EXP_SCORE": 3.4863,
+      "EXP_SCORE": 4.0092,
       "FACTOR": 0.9834599422069077,
       "ATLETA_ID": 99552
     },
@@ -202,8 +202,18 @@
       "CLUBE": "BAH",
       "PRECO": 9.27,
       "EXP_SCORE": 3.1901,
-      "FACTOR": 0.935373794152502,
+      "FACTOR": 0.9353737941525019,
       "ATLETA_ID": 51772
+    },
+    {
+      "RODADA": 19,
+      "POS": "ATA",
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 13.09,
+      "EXP_SCORE": 7.8125,
+      "FACTOR": 0.9447814104038063,
+      "ATLETA_ID": 143193
     },
     {
       "RODADA": 19,
@@ -224,16 +234,6 @@
       "EXP_SCORE": 7.0667,
       "FACTOR": 0.9992671878592779,
       "ATLETA_ID": 98873
-    },
-    {
-      "RODADA": 19,
-      "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 13.09,
-      "EXP_SCORE": 6.7935,
-      "FACTOR": 0.9447814104038063,
-      "ATLETA_ID": 143193
     },
     {
       "RODADA": 19,
@@ -278,16 +278,6 @@
     {
       "RODADA": 19,
       "POS": "TEC",
-      "NOME": "Odair Hellmann",
-      "CLUBE": "CAP",
-      "PRECO": 9.28,
-      "EXP_SCORE": 5.2052,
-      "FACTOR": 0.9646715453596759,
-      "ATLETA_ID": 92273
-    },
-    {
-      "RODADA": 19,
-      "POS": "TEC",
       "NOME": "Paulo Pezzolano",
       "CLUBE": "INT",
       "PRECO": 7.47,
@@ -304,6 +294,16 @@
       "EXP_SCORE": 4.847,
       "FACTOR": 1.0084171250685392,
       "ATLETA_ID": 72391
+    },
+    {
+      "RODADA": 19,
+      "POS": "TEC",
+      "NOME": "Eduardo Domínguez",
+      "CLUBE": "CAM",
+      "PRECO": 11.03,
+      "EXP_SCORE": 4.7488,
+      "FACTOR": 1.064065100730495,
+      "ATLETA_ID": 92747
     }
   ]
 }
