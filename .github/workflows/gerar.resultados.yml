@@ -22,7 +22,7 @@ concurrency:
 jobs:
   gerar-resultados-live:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 15
 
     steps:
       - name: Checkout do repositório
@@ -49,7 +49,7 @@ jobs:
           set -e
           python -m py_compile app/render_telegram_cards.py
           python -m py_compile app/gerar_resultados_telegram.py
-          echo "Renderizador de resultados validado."
+          echo "Renderizador e publicador de resultados validados."
 
       - name: Preparar e validar payload
         shell: bash
@@ -63,7 +63,7 @@ jobs:
 
           if [ "$EVENT_NAME" = "repository_dispatch" ]; then
             printf '%s' "$DISPATCH_PAYLOAD" > data/payload_dispatch.json
-            echo "Payload Live recebido via repository_dispatch."
+            echo "Payload Live recebido automaticamente."
           elif [ -n "$MANUAL_PAYLOAD" ]; then
             printf '%s' "$MANUAL_PAYLOAD" > data/payload_dispatch.json
             echo "Payload Live manual informado."
@@ -97,7 +97,10 @@ jobs:
           print("Payload Live validado.")
           PY
 
-      - name: Gerar cards de resultados e publicar no Telegram
+          rm -f output/resultados_*.png output/boletim_*.png
+          rm -f output/ultima_publicacao.json
+
+      - name: Gerar cards e publicar resultados
         shell: bash
         env:
           PAYLOAD_FILE: data/payload_dispatch.json
@@ -124,14 +127,28 @@ jobs:
           manifest = Path("output/ultima_publicacao.json")
           if not manifest.exists():
               raise SystemExit("ERRO: manifesto não gerado.")
+
           data = json.loads(manifest.read_text(encoding="utf-8"))
-          files = data.get("arquivos") or []
+          publications = data.get("publicacoes") or []
+          if not publications:
+              raise SystemExit("ERRO: nenhuma publicação foi registrada.")
+
+          files = [
+              path
+              for publication in publications
+              for path in publication.get("arquivos", [])
+          ]
           if not files:
               raise SystemExit("ERRO: nenhuma arte de resultado foi gerada.")
+
           missing = [path for path in files if not Path(path).exists()]
           if missing:
               raise SystemExit(f"ERRO: arquivos ausentes: {missing}")
-          print(f"Cards profissionais validados: {len(files)}.")
+
+          print(
+              f"Resultados validados: {len(publications)} publicação(ões), "
+              f"{len(files)} card(s)."
+          )
           PY
           ls -lh output || true
 
@@ -149,6 +166,6 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Telegram: cards profissionais de resultados"
+          git commit -m "Telegram: resultados profissionais da rodada"
           git pull --rebase origin main || true
           git push origin HEAD:main
