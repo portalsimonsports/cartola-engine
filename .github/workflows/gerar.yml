@@ -78,7 +78,63 @@ jobs:
           rm -f output/boletim_*.png output/ultima_publicacao.json
           echo "Payload preparado e saídas anteriores limpas."
 
+      - name: Validar autorização programada
+        id: gate
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          set -e
+
+          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            echo "allowed=true" >> "$GITHUB_OUTPUT"
+            echo "Execução manual autorizada."
+            exit 0
+          fi
+
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          allowed = {
+              "ABERTURA",
+              "SELECAO_INICIAL",
+              "ATUALIZACAO_20H",
+              "PRE_FECHAMENTO_TIMES",
+              "PRE_FECHAMENTO_TOP5",
+              "CONFIRMADOS",
+              "MERCADO_FECHADO",
+              "LIVE_ABERTURA",
+              "LIVE_DELTA_15",
+              "LIVE_FECHAMENTO",
+          }
+
+          payload = json.loads(Path("data/payload_dispatch.json").read_text(encoding="utf-8"))
+          evento = str(
+              payload.get("evento_programado")
+              or (payload.get("payload") or {}).get("evento_programado")
+              or ""
+          ).strip().upper()
+
+          output = Path(os.environ["GITHUB_OUTPUT"])
+          if evento in allowed:
+              with output.open("a", encoding="utf-8") as fh:
+                  fh.write("allowed=true\n")
+                  fh.write(f"evento={evento}\n")
+              print(f"Publicação autorizada pelo evento programado: {evento}")
+          else:
+              with output.open("a", encoding="utf-8") as fh:
+                  fh.write("allowed=false\n")
+                  fh.write(f"evento={evento}\n")
+              print(
+                  "Publicação bloqueada: atualização de dados sem evento programado autorizado. "
+                  f"evento_recebido={evento!r}"
+              )
+          PY
+
       - name: Gerar e publicar pacote automático
+        if: steps.gate.outputs.allowed == 'true'
         shell: bash
         env:
           PAYLOAD_FILE: data/payload_dispatch.json
@@ -90,11 +146,13 @@ jobs:
           ABA_TELEGRAM: ${{ secrets.ABA_TELEGRAM }}
           CONTA_TELEGRAM: ${{ secrets.CONTA_TELEGRAM }}
           TELEGRAM_CHAT_FALLBACK: "@dicascartolaportalsimonsports"
+          EVENTO_PROGRAMADO: ${{ steps.gate.outputs.evento }}
         run: |
           set -e
           python app/publicar_times_top5_automatico.py
 
       - name: Validar arquivos profissionais gerados
+        if: steps.gate.outputs.allowed == 'true'
         shell: bash
         run: |
           set -e
@@ -131,15 +189,13 @@ jobs:
           ls -lh output || true
 
       - name: Publicar arquivos gerados no repositório
-        if: success()
+        if: steps.gate.outputs.allowed == 'true' && success()
         shell: bash
         run: |
           set -e
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # Não versiona payload_dispatch nem ultima_publicacao: são temporários
-          # e podem ser diferentes em execuções simultâneas da mesma rodada.
           git add \
             data/publicacoes_atuais/ \
             output/*.png 2>/dev/null || true
@@ -149,7 +205,7 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Telegram: publicação profissional da rodada"
+          git commit -m "Telegram: publicação profissional programada"
 
           enviado=0
           for tentativa in 1 2 3 4 5; do
