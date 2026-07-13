@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import re
 import unicodedata
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List
 
@@ -14,6 +15,12 @@ MODEL_TITLES = {
     "PONTUACAO": "TIME PARA PONTUAR",
     "INTERMEDIARIO": "TIME INTERMEDIÁRIO",
     "ECONOMICO": "TIME ECONÔMICO",
+}
+
+MODEL_FILES = {
+    "PONTUACAO": "data/times_atual_pontuacao.json",
+    "INTERMEDIARIO": "data/times_atual_intermediario.json",
+    "ECONOMICO": "data/times_atual_economico.json",
 }
 
 
@@ -31,6 +38,12 @@ def _round_number(data: Dict[str, Any]) -> str:
     return _safe(data.get("rodada") or data.get("rodada_atual"))
 
 
+def _updated_at(data: Dict[str, Any]) -> str:
+    return _safe(data.get("gerado_em") or data.get("atualizado_em")) or datetime.now(
+        timezone.utc
+    ).isoformat().replace("+00:00", "Z")
+
+
 def _embedded(payload_root: Dict[str, Any]) -> List[Dict[str, Any]]:
     values: List[Dict[str, Any]] = []
     containers = [payload_root]
@@ -46,11 +59,7 @@ def _embedded(payload_root: Dict[str, Any]) -> List[Dict[str, Any]]:
 
 
 def _detect_model(data: Dict[str, Any]) -> str:
-    for value in (
-        data.get("modelo"),
-        data.get("nome_modelo"),
-        data.get("tipo"),
-    ):
+    for value in (data.get("modelo"), data.get("nome_modelo"), data.get("tipo")):
         model = _slug(value)
         if model in MODEL_TITLES:
             return model
@@ -116,14 +125,11 @@ def _prepare_team(data: Dict[str, Any]) -> Dict[str, Any]:
     data["titulo"] = MODEL_TITLES.get(model, "TIME DA RODADA")
     data["jogadores"] = starters or athletes
     data["reservas"] = reserves
-    data["formacao"] = _safe(
-        data.get("formacao") or meta.get("esquema") or "4-3-3"
-    )
+    data["formacao"] = _safe(data.get("formacao") or meta.get("esquema") or "4-3-3")
     data["capitao"] = _captain_name(data)
     if status_text:
         data["blocos_topo"] = [status_text]
 
-    # Mantém os dados oficiais enviados pelo GS para auditoria e uso visual futuro.
     if meta.get("custo_total") not in (None, ""):
         data["custo_total"] = meta.get("custo_total")
     if meta.get("pontos_total") not in (None, ""):
@@ -150,12 +156,98 @@ def _archive_payload(data: Dict[str, Any]) -> str:
     archive_dir = Path("data/publicacoes_atuais")
     archive_dir.mkdir(parents=True, exist_ok=True)
     path = archive_dir / f"{publication_type}_rodada_{rodada}.json"
-    path.write_text(
-        json.dumps(data, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Payload atual arquivado: {path}")
     return str(path)
+
+
+def _serialize_current_item(item: Dict[str, Any], rodada: int, model: str = "") -> Dict[str, Any]:
+    result: Dict[str, Any] = {
+        "RODADA": rodada,
+        "POS": _safe(item.get("pos") or item.get("POS")).upper(),
+        "NOME": _safe(item.get("nome") or item.get("NOME")),
+        "CLUBE": _safe(item.get("clube") or item.get("CLUBE")).upper(),
+        "PRECO": item.get("preco") if item.get("preco") is not None else item.get("PRECO"),
+    }
+    status = _safe(item.get("status") or item.get("STATUS"))
+    if status:
+        result["STATUS"] = status.upper()
+    if model:
+        result["TIPO"] = model
+    for source, target in (("exp_score", "EXP_SCORE"), ("atleta_id", "ATLETA_ID")):
+        value = item.get(source)
+        if value is None:
+            value = item.get(target)
+        if value is not None:
+            result[target] = value
+    return result
+
+
+def _persist_current_base(data: Dict[str, Any]) -> None:
+    rodada_text = _round_number(data)
+    if not rodada_text:
+        raise RuntimeError("Payload recebido sem rodada; base atual não pode ser atualizada.")
+    rodada = int(float(rodada_text))
+    updated_at = _updated_at(data)
+    kind = detect_kind(data)
+
+    if kind == "top5":
+        items = data.get("lista") or data.get("dados") or []
+        items = [item for item in items if isinstance(item, dict)]
+        current = {
+            "rodada": rodada,
+            "atualizado_em": updated_at,
+            "dados": [_serialize_current_item(item, rodada) for item in items],
+        }
+        Path("data/top5_atual.json").write_text(
+            json.dumps(current, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+        print(f"Base atualizada: data/top5_atual.json → rodada {rodada}")
+        return
+
+    model = _detect_model(data)
+    if kind != "team" or model not in MODEL_FILES:
+        return
+
+    athletes = data.get("atletas")
+    if not isinstance(athletes, list) or not athletes:
+        athletes = data.get("jogadores") or []
+    reserves = data.get("reservas") or []
+    all_items = [item for item in athletes if isinstance(item, dict)]
+    for reserve in reserves:
+        if isinstance(reserve, dict) and reserve not in all_items:
+            all_items.append(reserve)
+
+    current = {
+        "rodada": rodada,
+        "tipo": model,
+        "atualizado_em": updated_at,
+        "formacao": _safe(data.get("formacao") or "4-3-3"),
+        "capitao": _captain_name(data),
+        "dados": [_serialize_current_item(item, rodada, model) for item in all_items],
+    }
+    if data.get("custo_total") not in (None, ""):
+        current["custo_total"] = data.get("custo_total")
+
+    Path(MODEL_FILES[model]).write_text(
+        json.dumps(current, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    print(f"Base atualizada: {MODEL_FILES[model]} → rodada {rodada}")
+
+    consolidated = {
+        "rodada": rodada,
+        "atualizado_em": updated_at,
+        "arquivos": {
+            "economico": MODEL_FILES["ECONOMICO"],
+            "intermediario": MODEL_FILES["INTERMEDIARIO"],
+            "pontuacao": MODEL_FILES["PONTUACAO"],
+        },
+        "modelos": ["ECONOMICO", "INTERMEDIARIO", "PONTUACAO"],
+    }
+    Path("data/times_atual.json").write_text(
+        json.dumps(consolidated, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    print(f"Consolidado atualizado: data/times_atual.json → rodada {rodada}")
 
 
 def executar_pacote() -> List[Dict[str, Any]]:
@@ -165,9 +257,6 @@ def executar_pacote() -> List[Dict[str, Any]]:
     token, chat_id = publisher.obter_bot_token_chat_id()
     publisher.validar_bot_e_destino(token, chat_id)
 
-    # Cada repository_dispatch do GS contém a publicação oficial daquela execução:
-    # Econômico, Pontuação, Intermediário ou Top 5. Não usamos os antigos
-    # data/times_atual_*.json, pois eles não são a fonte do dispatcher atual.
     queue: List[Dict[str, Any]] = [primary]
     queue.extend(_embedded(payload_root))
 
@@ -184,10 +273,9 @@ def executar_pacote() -> List[Dict[str, Any]]:
             continue
         seen.add(fingerprint)
 
+        _persist_current_base(normalized)
         _archive_payload(normalized)
-        results.append(
-            publisher.publicar_dados(normalized, payload_root=payload_root)
-        )
+        results.append(publisher.publicar_dados(normalized, payload_root=payload_root))
 
     publisher._save_manifest(results)
     print(f"Disparo automático concluído: {len(results)} publicação(ões).")
