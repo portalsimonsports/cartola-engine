@@ -96,9 +96,10 @@ jobs:
           GOOGLE_APPLICATION_CREDENTIALS: service_account.json
           ABA_TELEGRAM: ${{ secrets.ABA_TELEGRAM }}
           CONTA_TELEGRAM: ${{ secrets.CONTA_TELEGRAM }}
+          TELEGRAM_CHAT_FALLBACK: "@dicascartolaportalsimonsports"
         run: |
           set -e
-          python app/gerar_resultados_telegram.py
+          python app/publicar_telegram_com_fallback.py
 
       - name: Publicar arquivos gerados no repositório
         if: success()
