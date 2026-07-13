@@ -16,20 +16,22 @@ TOP5_SIZE = (1600, 2500)
 TEAM_SIZE = (1600, 2000)
 RESULT_SIZE = (1600, 2000)
 
-NAVY = (5, 17, 32)
-NAVY_2 = (10, 31, 53)
-PANEL = (12, 34, 57)
-PANEL_2 = (17, 45, 73)
+NAVY = (4, 14, 28)
+NAVY_2 = (9, 31, 53)
+PANEL = (9, 30, 51)
+PANEL_2 = (15, 44, 72)
+PANEL_3 = (5, 23, 40)
 WHITE = (248, 251, 255)
-MUTED = (166, 187, 207)
-LINE = (46, 81, 112)
-CYAN = (40, 218, 238)
-BLUE = (54, 125, 255)
-ORANGE = (255, 173, 58)
-GREEN = (47, 197, 121)
-YELLOW = (255, 213, 76)
-RED = (255, 87, 113)
-PURPLE = (170, 102, 255)
+MUTED = (164, 185, 205)
+LINE = (45, 82, 114)
+CYAN = (39, 220, 239)
+BLUE = (54, 126, 255)
+ORANGE = (255, 174, 58)
+GREEN = (44, 198, 120)
+YELLOW = (255, 214, 74)
+RED = (255, 84, 112)
+PURPLE = (171, 102, 255)
+SILVER = (174, 190, 207)
 
 POSITION_COLORS = {
     "GOL": ORANGE,
@@ -37,7 +39,7 @@ POSITION_COLORS = {
     "ZAG": BLUE,
     "MEI": PURPLE,
     "ATA": RED,
-    "TEC": (155, 173, 192),
+    "TEC": SILVER,
 }
 POSITION_LABELS = {
     "GOL": "GOLEIROS",
@@ -65,25 +67,25 @@ class RenderOutput:
 
 
 def _font(size: int, weight: str = "regular") -> ImageFont.FreeTypeFont:
-    candidates: List[str] = []
     if weight == "bold":
-        candidates.extend([
-            "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+        candidates = [
+            "/usr/share/fonts/truetype/lato/Lato-Heavy.ttf",
             "/usr/share/fonts/truetype/lato/Lato-Bold.ttf",
             "/usr/share/fonts/opentype/inter/InterDisplay-Bold.otf",
-        ])
+            "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+        ]
     elif weight == "semibold":
-        candidates.extend([
+        candidates = [
             "/usr/share/fonts/truetype/lato/Lato-Semibold.ttf",
             "/usr/share/fonts/opentype/inter/InterDisplay-SemiBold.otf",
             "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
-        ])
+        ]
     else:
-        candidates.extend([
-            "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+        candidates = [
             "/usr/share/fonts/truetype/lato/Lato-Regular.ttf",
             "/usr/share/fonts/opentype/inter/InterDisplay-Regular.otf",
-        ])
+            "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+        ]
     for candidate in candidates:
         if os.path.exists(candidate):
             return ImageFont.truetype(candidate, size=size)
@@ -152,7 +154,7 @@ def _fit_text(draw: ImageDraw.ImageDraw, text: str, max_width: int, start_size: 
     return _font(min_size, weight)
 
 
-def _centered_text(draw: ImageDraw.ImageDraw, box, text: str, font, fill=WHITE, y_offset=0):
+def _centered_text(draw, box, text: str, font, fill=WHITE, y_offset=0):
     x1, y1, x2, y2 = box
     bbox = draw.textbbox((0, 0), text, font=font)
     draw.text(
@@ -170,29 +172,45 @@ def _gradient_background(width: int, height: int) -> Image.Image:
         t = y / max(1, height - 1)
         color = tuple(int(NAVY[i] * (1 - t) + NAVY_2[i] * t) for i in range(3))
         draw.line((0, y, width, y), fill=color)
+
     overlay = Image.new("RGBA", (width, height), (0, 0, 0, 0))
     od = ImageDraw.Draw(overlay)
-    od.polygon(
-        [(width * 0.58, 0), (width, 0), (width, height * 0.48), (width * 0.34, height * 0.12)],
-        fill=(30, 170, 255, 24),
-    )
-    od.ellipse(
-        (width * 0.50, -height * 0.16, width * 1.14, height * 0.40),
-        fill=(31, 202, 235, 20),
-    )
-    overlay = overlay.filter(ImageFilter.GaussianBlur(90))
-    return Image.alpha_composite(base.convert("RGBA"), overlay)
+    od.polygon([(40, 0), (330, 0), (690, height), (470, height)], fill=(38, 193, 255, 20))
+    od.polygon([(width - 330, 0), (width - 40, 0), (width - 470, height), (width - 690, height)], fill=(38, 193, 255, 18))
+    od.ellipse((width * 0.50, -height * 0.18, width * 1.16, height * 0.42), fill=(29, 202, 235, 24))
+    od.ellipse((-width * 0.20, height * 0.56, width * 0.50, height * 1.10), fill=(36, 107, 255, 12))
+    overlay = overlay.filter(ImageFilter.GaussianBlur(100))
+    base = Image.alpha_composite(base.convert("RGBA"), overlay)
+
+    draw = ImageDraw.Draw(base)
+    for x in range(0, width, 80):
+        draw.line((x, 0, x, height), fill=(255, 255, 255, 4), width=1)
+    for y in range(0, height, 80):
+        draw.line((0, y, width, y), fill=(255, 255, 255, 3), width=1)
+    for i in range(22):
+        x = 50 + (i * 73) % (width - 100)
+        draw.ellipse((x, 20, x + 5, 25), fill=(160, 226, 255, 100))
+    return base
 
 
-def _shadow_panel(image: Image.Image, box, radius=28, fill=PANEL, outline=LINE, shadow_alpha=90):
+def _shadow_panel(image: Image.Image, box, radius=28, fill=PANEL, outline=LINE, shadow_alpha=95):
     shadow = Image.new("RGBA", image.size, (0, 0, 0, 0))
     sd = ImageDraw.Draw(shadow)
     x1, y1, x2, y2 = box
-    sd.rounded_rectangle((x1 + 10, y1 + 14, x2 + 10, y2 + 14), radius=radius, fill=(0, 0, 0, shadow_alpha))
-    shadow = shadow.filter(ImageFilter.GaussianBlur(16))
+    sd.rounded_rectangle((x1 + 12, y1 + 16, x2 + 12, y2 + 16), radius=radius, fill=(0, 0, 0, shadow_alpha))
+    shadow = shadow.filter(ImageFilter.GaussianBlur(18))
     image.alpha_composite(shadow)
     draw = ImageDraw.Draw(image)
     draw.rounded_rectangle(box, radius=radius, fill=fill, outline=outline, width=2)
+
+
+def _glow_outline(image: Image.Image, box, color, radius=28, blur=18, alpha=95):
+    layer = Image.new("RGBA", image.size, (0, 0, 0, 0))
+    draw = ImageDraw.Draw(layer)
+    rgba = tuple(color) + (alpha,)
+    draw.rounded_rectangle(box, radius=radius, outline=rgba, width=7)
+    layer = layer.filter(ImageFilter.GaussianBlur(blur))
+    image.alpha_composite(layer)
 
 
 def _load_crest(club: str, size: int) -> Optional[Image.Image]:
@@ -239,30 +257,43 @@ def _paste_crest(image: Image.Image, club: str, center: Tuple[int, int], size: i
     _centered_text(draw, (x - radius, y - radius, x + radius, y + radius), code, font)
 
 
+def _metal_logo(image: Image.Image, box):
+    draw = ImageDraw.Draw(image)
+    x1, y1, x2, y2 = box
+    _glow_outline(image, box, CYAN, radius=30, blur=16, alpha=110)
+    _round(draw, box, 30, fill=(5, 38, 66), outline=(126, 231, 247), width=3)
+    inset = 10
+    _round(draw, (x1 + inset, y1 + inset, x2 - inset, y2 - inset), 24, fill=(10, 65, 99), outline=(255, 255, 255, 75), width=2)
+    _centered_text(draw, box, "PS", _font(43, "bold"), fill=WHITE, y_offset=-2)
+
+
 def _brand_header(image: Image.Image, title: str, subtitle: str, badge: str, *, large: bool = False):
     width, _ = image.size
     draw = ImageDraw.Draw(image)
-    top = 44
-    logo_size = 116 if large else 100
+    top = 42
+    logo_size = 118 if large else 102
     logo_box = (64, top, 64 + logo_size, top + logo_size)
-    _round(draw, logo_box, 28, fill=(8, 55, 91), outline=CYAN, width=4)
-    _centered_text(draw, logo_box, "PS", _font(42 if large else 36, "bold"))
-    x = logo_box[2] + 28
-    draw.text((x, top + 2), "PORTAL", font=_font(24 if large else 20, "semibold"), fill=CYAN)
-    draw.text((x, top + 34), "SIMONSPORTS", font=_font(46 if large else 38, "bold"), fill=WHITE)
-    draw.text((x, top + 86), "CARTOLA • DADOS • ANÁLISE", font=_font(18 if large else 16), fill=MUTED)
+    _metal_logo(image, logo_box)
 
-    badge_font = _font(22 if large else 19, "bold")
+    x = logo_box[2] + 30
+    draw.text((x, top + 1), "PORTAL", font=_font(24 if large else 20, "semibold"), fill=CYAN)
+    draw.text((x, top + 32), "SIMONSPORTS", font=_font(48 if large else 40, "bold"), fill=WHITE)
+    draw.text((x, top + 90), "CARTOLA • DADOS • ANÁLISE", font=_font(18 if large else 16), fill=MUTED)
+
+    badge_font = _font(22 if large else 20, "bold")
     bbox = draw.textbbox((0, 0), badge, font=badge_font)
-    bw = bbox[2] - bbox[0] + 48
-    _round(draw, (width - bw - 64, top + 16, width - 64, top + 72), 26, fill=(16, 65, 101), outline=CYAN, width=2)
-    draw.text((width - bw - 40, top + 30), badge, font=badge_font, fill=WHITE)
+    bw = bbox[2] - bbox[0] + 56
+    badge_box = (width - bw - 64, top + 14, width - 64, top + 74)
+    _glow_outline(image, badge_box, CYAN, radius=28, blur=12, alpha=80)
+    _round(draw, badge_box, 28, fill=(13, 61, 96), outline=CYAN, width=2)
+    _centered_text(draw, badge_box, badge, badge_font, fill=WHITE, y_offset=-1)
 
-    line_y = top + logo_size + 32
+    line_y = top + logo_size + 30
     draw.line((64, line_y, width - 64, line_y), fill=LINE, width=3)
+    draw.rectangle((64, line_y - 3, 245, line_y + 3), fill=CYAN)
     title_font = _fit_text(draw, title, width - 128, 64 if large else 54, 38, "bold")
-    draw.text((64, line_y + 30), title, font=title_font, fill=WHITE)
-    draw.text((66, line_y + 108), subtitle[:115], font=_font(25 if large else 22), fill=MUTED)
+    draw.text((64, line_y + 28), title, font=title_font, fill=WHITE)
+    draw.text((66, line_y + 106), subtitle[:115], font=_font(25 if large else 22), fill=MUTED)
 
 
 def _footer(image: Image.Image, y: Optional[int] = None, page: Optional[Tuple[int, int]] = None):
@@ -270,6 +301,7 @@ def _footer(image: Image.Image, y: Optional[int] = None, page: Optional[Tuple[in
     y = y or height - 102
     draw = ImageDraw.Draw(image)
     draw.line((64, y, width - 64, y), fill=LINE, width=3)
+    draw.rectangle((64, y - 2, 215, y + 2), fill=CYAN)
     draw.text((64, y + 25), "@dicascartolaportalsimonsports", font=_font(21, "semibold"), fill=CYAN)
     brand = "PORTAL SIMONSPORTS"
     font = _font(21, "semibold")
@@ -285,7 +317,7 @@ def _title_round(data: Dict[str, Any], default_title: str):
     round_value = _safe(data.get("rodada") or data.get("rodada_atual"))
     title = _clean_markdown(data.get("titulo") or default_title)
     if "atualização" in title.lower() and round_value:
-        title = f"TOP 5 DA RODADA {round_value}"
+        title = "TOP 5 DA RODADA"
     blocks = data.get("blocos_topo") or []
     subtitle = ""
     if isinstance(blocks, list) and blocks:
@@ -309,79 +341,74 @@ def _top5_groups(items: Sequence[Dict[str, Any]]):
     return groups
 
 
-def _rank_badge(draw: ImageDraw.ImageDraw, center: Tuple[int, int], rank: int, accent):
-    colors = {
-        1: (255, 205, 66),
-        2: (198, 210, 224),
-        3: (207, 140, 87),
-    }
-    color = colors.get(rank, (69, 93, 117))
+def _rank_badge(draw: ImageDraw.ImageDraw, center: Tuple[int, int], rank: int):
+    colors = {1: (255, 205, 66), 2: (202, 213, 226), 3: (208, 139, 86)}
+    color = colors.get(rank, (56, 80, 105))
     x, y = center
-    draw.ellipse((x - 25, y - 25, x + 25, y + 25), fill=color, outline=WHITE if rank <= 3 else LINE, width=2)
-    _centered_text(draw, (x - 25, y - 25, x + 25, y + 25), str(rank), _font(20, "bold"), fill=(9, 23, 38))
+    draw.ellipse((x - 27, y - 27, x + 27, y + 27), fill=(5, 20, 35), outline=color, width=4)
+    _centered_text(draw, (x - 27, y - 27, x + 27, y + 27), f"{rank:02d}", _font(18, "bold"), fill=color)
 
 
 def _draw_top5_block(image: Image.Image, box, pos: str, items: Sequence[Dict[str, Any]]):
-    _shadow_panel(image, box, radius=30, fill=PANEL)
+    accent = POSITION_COLORS[pos]
+    _glow_outline(image, box, accent, radius=30, blur=18, alpha=55)
+    _shadow_panel(image, box, radius=30, fill=PANEL, outline=tuple(min(255, c + 10) for c in accent))
     draw = ImageDraw.Draw(image)
     x1, y1, x2, y2 = box
-    accent = POSITION_COLORS[pos]
+    draw.rounded_rectangle((x1, y1, x2, y1 + 86), radius=30, fill=(8, 28, 48))
+    draw.rectangle((x1, y1 + 55, x2, y1 + 86), fill=(8, 28, 48))
     draw.rounded_rectangle((x1, y1, x1 + 15, y2), radius=8, fill=accent)
-    draw.text((x1 + 34, y1 + 24), POSITION_LABELS[pos], font=_font(34, "bold"), fill=WHITE)
-    _round(draw, (x2 - 106, y1 + 20, x2 - 26, y1 + 66), 22, fill=accent)
-    _centered_text(draw, (x2 - 106, y1 + 20, x2 - 26, y1 + 66), pos, _font(20, "bold"), fill=(7, 20, 34))
+    draw.text((x1 + 36, y1 + 23), POSITION_LABELS[pos], font=_font(34, "bold"), fill=WHITE)
+    pill = (x2 - 110, y1 + 20, x2 - 28, y1 + 66)
+    _round(draw, pill, 22, fill=accent)
+    _centered_text(draw, pill, pos, _font(20, "bold"), fill=(5, 18, 30))
 
-    row_y = y1 + 90
-    row_h = 91
+    row_y = y1 + 96
+    row_h = 99
     for rank in range(1, 6):
         yy = row_y + (rank - 1) * row_h
-        if rank % 2:
-            draw.rounded_rectangle((x1 + 24, yy, x2 - 24, yy + 78), radius=16, fill=PANEL_2)
+        row_box = (x1 + 24, yy, x2 - 24, yy + 86)
+        _round(draw, row_box, 18, fill=PANEL_2 if rank % 2 else PANEL_3, outline=(35, 65, 92), width=1)
+        _rank_badge(draw, (x1 + 61, yy + 43), rank)
         item = items[rank - 1] if rank - 1 < len(items) else None
-        _rank_badge(draw, (x1 + 58, yy + 39), rank, accent)
         if not item:
-            draw.text((x1 + 108, yy + 22), "Sem dado", font=_font(27), fill=MUTED)
+            draw.text((x1 + 120, yy + 26), "Sem dado", font=_font(27), fill=MUTED)
             continue
         club = _safe(_value(item, "clube"), "--").upper()
-        _paste_crest(image, club, (x1 + 122, yy + 39), 52)
+        _paste_crest(image, club, (x1 + 132, yy + 43), 56, fallback_color=(17, 61, 97))
         name = _safe(_value(item, "nome"), "Jogador")
-        name_font = _fit_text(draw, name, 260, 28, 20, "semibold")
-        draw.text((x1 + 162, yy + 12), name, font=name_font, fill=WHITE)
+        name_font = _fit_text(draw, name, 270, 28, 20, "bold")
+        draw.text((x1 + 174, yy + 13), name, font=name_font, fill=WHITE)
         projection = _value(item, "exp_score", "projecao", "pontuacao")
-        if projection not in (None, ""):
-            draw.text((x1 + 164, yy + 48), _points(projection), font=_font(17), fill=MUTED)
-        else:
-            draw.text((x1 + 164, yy + 48), club, font=_font(17), fill=MUTED)
+        meta = _points(projection) if projection not in (None, "") else club
+        draw.text((x1 + 176, yy + 52), meta, font=_font(17, "semibold"), fill=MUTED)
         price = _money(_value(item, "preco", "preco_num"))
         price_font = _font(23, "bold")
         pb = draw.textbbox((0, 0), price, font=price_font)
-        draw.text((x2 - 32 - (pb[2] - pb[0]), yy + 27), price, font=price_font, fill=accent)
+        price_box = (x2 - 175, yy + 20, x2 - 34, yy + 68)
+        _round(draw, price_box, 20, fill=(5, 22, 38), outline=accent, width=2)
+        draw.text((x2 - 104 - (pb[2] - pb[0]) / 2, yy + 32), price, font=price_font, fill=accent)
 
 
 def render_top5(data: Dict[str, Any], output_dir: str) -> RenderOutput:
     items = data.get("lista") or data.get("jogadores") or data.get("dados") or []
     groups = _top5_groups(items if isinstance(items, list) else [])
-    title, subtitle, badge, round_value = _title_round(data, "TOP 5 DA RODADA")
+    _, subtitle, badge, round_value = _title_round(data, "TOP 5 DA RODADA")
+    title = "TOP 5 DA RODADA"
     width, height = TOP5_SIZE
     image = _gradient_background(width, height)
     _brand_header(image, title, subtitle, badge, large=True)
-
-    margin = 68
-    gap_x = 34
-    gap_y = 34
-    top = 365
+    margin, gap_x, gap_y, top = 68, 34, 32, 365
     footer_y = height - 112
     usable_w = width - 2 * margin
     block_w = (usable_w - gap_x) // 2
     block_h = (footer_y - top - 2 * gap_y) // 3
     order = ["GOL", "LAT", "ZAG", "MEI", "ATA", "TEC"]
     for index, pos in enumerate(order):
-        row = index // 2
-        col = index % 2
+        row, col = index // 2, index % 2
         x1 = margin + col * (block_w + gap_x)
         y1 = top + row * (block_h + gap_y)
         _draw_top5_block(image, (x1, y1, x1 + block_w, y1 + block_h), pos, groups[pos])
-
     _footer(image, footer_y)
     Path(output_dir).mkdir(parents=True, exist_ok=True)
     path = str(Path(output_dir) / f"top5_rodada_{round_value}.png")
@@ -397,26 +424,39 @@ def _extract_team_players(data: Dict[str, Any]) -> List[Dict[str, Any]]:
     return []
 
 
-def _field(image: Image.Image, box):
-    draw = ImageDraw.Draw(image)
+def _field(image: Image.Image, box, accent):
     x1, y1, x2, y2 = box
-    draw.rounded_rectangle(box, radius=36, fill=(18, 112, 66), outline=(192, 241, 211), width=5)
-    inset = 26
+    layer = Image.new("RGBA", image.size, (0, 0, 0, 0))
+    ld = ImageDraw.Draw(layer)
+    ld.rounded_rectangle(box, radius=38, fill=(10, 78, 51, 255), outline=(166, 239, 203, 255), width=5)
+    inset = 25
     inner = (x1 + inset, y1 + inset, x2 - inset, y2 - inset)
-    stripe_h = max(1, (inner[3] - inner[1]) // 10)
-    for i in range(10):
-        fill = (21, 128, 74) if i % 2 == 0 else (25, 139, 81)
-        draw.rectangle((inner[0], inner[1] + i * stripe_h, inner[2], inner[1] + (i + 1) * stripe_h), fill=fill)
-    draw.rectangle(inner, outline=(210, 246, 223), width=4)
+    stripe_h = max(1, (inner[3] - inner[1]) // 12)
+    for i in range(12):
+        fill = (18, 125, 72, 255) if i % 2 == 0 else (20, 142, 80, 255)
+        ld.rectangle((inner[0], inner[1] + i * stripe_h, inner[2], inner[1] + (i + 1) * stripe_h), fill=fill)
+    vignette = Image.new("RGBA", image.size, (0, 0, 0, 0))
+    vd = ImageDraw.Draw(vignette)
+    vd.rounded_rectangle(box, radius=38, outline=(0, 0, 0, 130), width=50)
+    vignette = vignette.filter(ImageFilter.GaussianBlur(26))
+    layer = Image.alpha_composite(layer, vignette)
+    ld = ImageDraw.Draw(layer)
+    line = (221, 249, 231, 225)
+    ld.rectangle(inner, outline=line, width=4)
     mid_y = (inner[1] + inner[3]) // 2
-    draw.line((inner[0], mid_y, inner[2], mid_y), fill=(210, 246, 223), width=4)
     center_x = (inner[0] + inner[2]) // 2
-    draw.ellipse((center_x - 88, mid_y - 88, center_x + 88, mid_y + 88), outline=(210, 246, 223), width=4)
-    draw.ellipse((center_x - 6, mid_y - 6, center_x + 6, mid_y + 6), fill=(210, 246, 223))
-    penalty_w = 360
-    penalty_h = 125
-    draw.rectangle((center_x - penalty_w // 2, inner[1], center_x + penalty_w // 2, inner[1] + penalty_h), outline=(210, 246, 223), width=4)
-    draw.rectangle((center_x - penalty_w // 2, inner[3] - penalty_h, center_x + penalty_w // 2, inner[3]), outline=(210, 246, 223), width=4)
+    ld.line((inner[0], mid_y, inner[2], mid_y), fill=line, width=4)
+    ld.ellipse((center_x - 92, mid_y - 92, center_x + 92, mid_y + 92), outline=line, width=4)
+    ld.ellipse((center_x - 6, mid_y - 6, center_x + 6, mid_y + 6), fill=line)
+    penalty_w, penalty_h = 360, 130
+    ld.rectangle((center_x - penalty_w // 2, inner[1], center_x + penalty_w // 2, inner[1] + penalty_h), outline=line, width=4)
+    ld.rectangle((center_x - penalty_w // 2, inner[3] - penalty_h, center_x + penalty_w // 2, inner[3]), outline=line, width=4)
+    glow = Image.new("RGBA", image.size, (0, 0, 0, 0))
+    gd = ImageDraw.Draw(glow)
+    gd.rounded_rectangle(box, radius=38, outline=tuple(accent) + (90,), width=10)
+    glow = glow.filter(ImageFilter.GaussianBlur(18))
+    image.alpha_composite(glow)
+    image.alpha_composite(layer)
 
 
 def _line_positions(count: int, y: int, x1: int, x2: int) -> List[Tuple[int, int]]:
@@ -428,74 +468,62 @@ def _line_positions(count: int, y: int, x1: int, x2: int) -> List[Tuple[int, int
     return [(int(x1 + index * step), y) for index in range(count)]
 
 
-def _jersey(draw: ImageDraw.ImageDraw, center: Tuple[int, int], color, width=114, height=105):
+def _jersey(draw: ImageDraw.ImageDraw, center: Tuple[int, int], color, width=110, height=96):
     x, y = center
-    left = x - width // 2
-    top = y - height // 2
-    points = [
-        (left + 22, top),
-        (left + 42, top + 15),
-        (left + width - 42, top + 15),
-        (left + width - 22, top),
-        (left + width, top + 30),
-        (left + width - 20, top + 55),
-        (left + width - 37, top + 45),
-        (left + width - 37, top + height),
-        (left + 37, top + height),
-        (left + 37, top + 45),
-        (left + 20, top + 55),
-        (left, top + 30),
-    ]
+    left, top = x - width // 2, y - height // 2
+    shade = tuple(max(0, c - 35) for c in color)
+    points = [(left + 22, top), (left + 42, top + 15), (left + width - 42, top + 15), (left + width - 22, top), (left + width, top + 30), (left + width - 20, top + 55), (left + width - 37, top + 45), (left + width - 37, top + height), (left + 37, top + height), (left + 37, top + 45), (left + 20, top + 55), (left, top + 30)]
     draw.polygon(points, fill=color, outline=WHITE)
-    draw.line((x, top + 15, x, top + height - 8), fill=(255, 255, 255, 55), width=2)
+    draw.polygon([(left + 37, top + 45), (left + width // 2, top + 62), (left + width // 2, top + height), (left + 37, top + height)], fill=shade)
+    draw.line((x, top + 15, x, top + height - 6), fill=(255, 255, 255, 100), width=2)
 
 
-def _player_card(image: Image.Image, x: int, y: int, player: Dict[str, Any], pos: str, captain: bool = False, compact: bool = False):
+def _player_card(image: Image.Image, x: int, y: int, player: Dict[str, Any], pos: str, captain: bool = False):
     draw = ImageDraw.Draw(image)
     color = POSITION_COLORS.get(pos, BLUE)
-    card_w = 230 if not compact else 210
-    card_h = 202 if not compact else 170
-    x1 = x - card_w // 2
-    y1 = y - card_h // 2
-    x2 = x1 + card_w
-    y2 = y1 + card_h
-    _shadow_panel(image, (x1, y1, x2, y2), radius=24, fill=(5, 26, 43, 238), outline=(184, 232, 210), shadow_alpha=70)
-    _jersey(draw, (x, y1 + 58), color, 98 if compact else 110, 86 if compact else 98)
+    card_w, card_h = 232, 190
+    x1, y1 = x - card_w // 2, y - card_h // 2
+    x2, y2 = x1 + card_w, y1 + card_h
+    _glow_outline(image, (x1, y1, x2, y2), color, radius=24, blur=13, alpha=65)
+    _shadow_panel(image, (x1, y1, x2, y2), radius=24, fill=(3, 23, 39, 245), outline=(185, 235, 211), shadow_alpha=75)
+    draw = ImageDraw.Draw(image)
+    _round(draw, (x1 + 8, y1 + 8, x2 - 8, y1 + 88), 19, fill=(8, 45, 61))
+    _jersey(draw, (x, y1 + 51), color, 92, 78)
     club = _safe(_value(player, "clube"), "--").upper()
-    _paste_crest(image, club, (x, y1 + 56), 58 if compact else 66)
-
+    _paste_crest(image, club, (x, y1 + 50), 57, fallback_color=(13, 55, 86))
     if captain:
-        draw.ellipse((x2 - 50, y1 - 12, x2 - 8, y1 + 30), fill=YELLOW, outline=WHITE, width=2)
-        _centered_text(draw, (x2 - 50, y1 - 12, x2 - 8, y1 + 30), "C", _font(18, "bold"), fill=(20, 26, 30))
-
+        captain_box = (x2 - 55, y1 - 15, x2 - 5, y1 + 35)
+        _glow_outline(image, captain_box, YELLOW, radius=24, blur=10, alpha=90)
+        draw.ellipse(captain_box, fill=YELLOW, outline=WHITE, width=2)
+        _centered_text(draw, captain_box, "C", _font(20, "bold"), fill=(23, 27, 30), y_offset=-1)
     name = _safe(_value(player, "nome"), "Jogador")
-    name_font = _fit_text(draw, name, card_w - 24, 25 if not compact else 21, 17, "bold")
+    name_font = _fit_text(draw, name, card_w - 24, 25, 17, "bold")
     bbox = draw.textbbox((0, 0), name, font=name_font)
-    draw.text((x - (bbox[2] - bbox[0]) / 2, y1 + 112 if not compact else y1 + 96), name, font=name_font, fill=WHITE)
-
+    draw.text((x - (bbox[2] - bbox[0]) / 2, y1 + 100), name, font=name_font, fill=WHITE)
     price = _money(_value(player, "preco", "preco_num"))
     projection = _value(player, "exp_score", "projecao", "pontuacao")
-    meta_y = y1 + 150 if not compact else y1 + 130
-    price_font = _font(18 if not compact else 16, "semibold")
-    draw.text((x1 + 14, meta_y), price, font=price_font, fill=ORANGE)
+    draw.text((x1 + 13, y1 + 146), price, font=_font(17, "semibold"), fill=ORANGE)
     if projection not in (None, ""):
         points_text = _points(projection)
-        pf = _font(18 if not compact else 16, "semibold")
+        pf = _font(17, "semibold")
         pb = draw.textbbox((0, 0), points_text, font=pf)
-        draw.text((x2 - 14 - (pb[2] - pb[0]), meta_y), points_text, font=pf, fill=CYAN)
+        draw.text((x2 - 13 - (pb[2] - pb[0]), y1 + 146), points_text, font=pf, fill=CYAN)
 
 
 def _reserve_card(image: Image.Image, box, player: Dict[str, Any]):
     draw = ImageDraw.Draw(image)
     x1, y1, x2, y2 = box
-    _round(draw, box, 20, fill=PANEL_2, outline=LINE, width=2)
-    club = _safe(_value(player, "clube"), "--").upper()
-    _paste_crest(image, club, (x1 + 43, (y1 + y2) // 2), 58)
-    name = _safe(_value(player, "nome"), "Reserva")
-    font = _fit_text(draw, name, x2 - x1 - 116, 21, 16, "semibold")
-    draw.text((x1 + 82, y1 + 20), name, font=font, fill=WHITE)
     pos = _normalize_pos(_value(player, "pos", "posicao"))
-    draw.text((x1 + 84, y1 + 51), f"{pos} • {_money(_value(player, 'preco'))}", font=_font(15), fill=MUTED)
+    color = POSITION_COLORS.get(pos, BLUE)
+    _round(draw, box, 20, fill=PANEL_2, outline=color, width=2)
+    _paste_crest(image, _safe(_value(player, "clube"), "--"), (x1 + 42, (y1 + y2) // 2), 54)
+    name = _safe(_value(player, "nome"), "Reserva")
+    name_font = _fit_text(draw, name, x2 - x1 - 96, 20, 15, "bold")
+    draw.text((x1 + 78, y1 + 20), name, font=name_font, fill=WHITE)
+    draw.text((x1 + 78, y1 + 51), _money(_value(player, "preco", "preco_num")), font=_font(16, "semibold"), fill=ORANGE)
+    pill = (x2 - 62, y1 + 12, x2 - 12, y1 + 40)
+    _round(draw, pill, 14, fill=color)
+    _centered_text(draw, pill, pos or "--", _font(12, "bold"), fill=(5, 18, 30))
 
 
 def render_team(data: Dict[str, Any], output_dir: str) -> RenderOutput:
@@ -508,37 +536,30 @@ def render_team(data: Dict[str, Any], output_dir: str) -> RenderOutput:
     starters = [p for p in all_players if _safe(_value(p, "status"), "TITULAR").upper() != "RESERVA"]
     if not starters:
         starters = all_players
-
     groups = {key: [] for key in POSITION_LABELS}
     for player in starters:
         pos = _normalize_pos(_value(player, "pos", "posicao"))
         if pos in groups:
             groups[pos].append(player)
-
-    title, subtitle, badge, round_value = _title_round(data, "TIME DA RODADA")
+    _, subtitle, badge, round_value = _title_round(data, "TIME DA RODADA")
     kind = _safe(data.get("tipo_publicacao") or data.get("tipo") or "time").lower()
     if "econom" in kind:
-        title = f"TIME ECONÔMICO • RODADA {round_value}"
-        accent = GREEN
+        title, accent = f"TIME ECONÔMICO • RODADA {round_value}", GREEN
     elif "intermedi" in kind:
-        title = f"TIME INTERMEDIÁRIO • RODADA {round_value}"
-        accent = CYAN
+        title, accent = f"TIME INTERMEDIÁRIO • RODADA {round_value}", CYAN
     elif "pontua" in kind or "ideal" in kind:
-        title = f"TIME PARA PONTUAR • RODADA {round_value}"
-        accent = ORANGE
+        title, accent = f"TIME PARA PONTUAR • RODADA {round_value}", ORANGE
     else:
-        title = f"TIME DA RODADA {round_value}"
-        accent = BLUE
-
+        title, accent = f"TIME DA RODADA • RODADA {round_value}", BLUE
     width, height = TEAM_SIZE
     image = _gradient_background(width, height)
     _brand_header(image, title, subtitle, badge)
     draw = ImageDraw.Draw(image)
-
+    coach = groups["TEC"][0] if groups["TEC"] else None
     total = data.get("custo_total")
     if total in (None, ""):
         total = 0.0
-        for player in starters + groups["TEC"]:
+        for player in starters:
             try:
                 total += float(str(_value(player, "preco", default=0)).replace(",", "."))
             except Exception:
@@ -552,61 +573,52 @@ def render_team(data: Dict[str, Any], output_dir: str) -> RenderOutput:
             has_projection = True
         except Exception:
             pass
-
     formation = _safe(data.get("formacao")) or f"{len(groups['LAT']) + len(groups['ZAG'])}-{len(groups['MEI'])}-{len(groups['ATA'])}"
-    coach = groups["TEC"][0] if groups["TEC"] else None
-
-    stats_y = 258
-    stats_h = 80
-    chips = [
-        ("FORMAÇÃO", formation, CYAN),
-        ("CUSTO TOTAL", _money(total), ORANGE),
-        ("PROJEÇÃO", _points(projection_total) if has_projection else "--", GREEN),
-        ("TÉCNICO", _safe(_value(coach or {}, "nome"), "Não informado"), WHITE),
-    ]
-    gap = 18
+    chips = [("FORMAÇÃO", formation, CYAN), ("PATRIMÔNIO", _money(total), ORANGE), ("PROJEÇÃO", _points(projection_total) if has_projection else "--", GREEN), ("TÉCNICO", _safe(_value(coach or {}, "nome"), "Não informado"), WHITE)]
+    stats_y, stats_h, gap = 258, 82, 18
     chip_w = (width - 128 - 3 * gap) // 4
     for index, (label, value, color) in enumerate(chips):
         x1 = 64 + index * (chip_w + gap)
-        _round(draw, (x1, stats_y, x1 + chip_w, stats_y + stats_h), 22, fill=(12, 42, 66), outline=LINE, width=2)
-        draw.text((x1 + 18, stats_y + 12), label, font=_font(15, "bold"), fill=MUTED)
+        chip_box = (x1, stats_y, x1 + chip_w, stats_y + stats_h)
+        _glow_outline(image, chip_box, color if color != WHITE else CYAN, radius=22, blur=10, alpha=35)
+        _round(draw, chip_box, 22, fill=(9, 38, 62), outline=LINE, width=2)
+        draw.text((x1 + 18, stats_y + 11), label, font=_font(15, "bold"), fill=MUTED)
         value_font = _fit_text(draw, value, chip_w - 36, 25, 16, "bold")
-        draw.text((x1 + 18, stats_y + 38), value, font=value_font, fill=color)
-
-    field_box = (64, 370, width - 64, 1510)
-    _field(image, field_box)
-    fx1, fy1, fx2, fy2 = field_box
-    rows = [
-        (groups["ATA"], fy1 + 165, "ATA"),
-        (groups["MEI"], fy1 + 430, "MEI"),
-        (groups["LAT"] + groups["ZAG"], fy1 + 710, "ZAG"),
-        (groups["GOL"][:1], fy1 + 975, "GOL"),
-    ]
+        draw.text((x1 + 18, stats_y + 39), value, font=value_font, fill=color)
+    field_box = (64, 372, width - 64, 1495)
+    _field(image, field_box, accent)
+    fx1, fy1, fx2, _ = field_box
+    rows = [(groups["ATA"], fy1 + 160), (groups["MEI"], fy1 + 425), (groups["LAT"] + groups["ZAG"], fy1 + 705), (groups["GOL"][:1], fy1 + 970)]
     captain_name = _safe(data.get("capitao") or data.get("capitão")).lower()
-    for players, y, pos in rows:
-        coords = _line_positions(len(players), y, fx1 + 155, fx2 - 155)
+    for players, y in rows:
+        coords = _line_positions(len(players), y, fx1 + 160, fx2 - 160)
         for player, (x, yy) in zip(players, coords):
             name = _safe(_value(player, "nome")).lower()
             captain = bool(_value(player, "capitao", "capitão", default=False)) or bool(captain_name and name == captain_name)
-            _player_card(image, x, yy, player, _normalize_pos(_value(player, "pos", "posicao")) or pos, captain)
-
-    bench_y = 1540
-    _shadow_panel(image, (64, bench_y, width - 64, 1880), radius=28, fill=PANEL)
-    draw.text((90, bench_y + 24), "BANCO DE RESERVAS", font=_font(26, "bold"), fill=accent)
+            _player_card(image, x, yy, player, _normalize_pos(_value(player, "pos", "posicao")), captain)
+    bench_y = 1525
+    bench_box = (64, bench_y, width - 64, 1880)
+    _glow_outline(image, bench_box, accent, radius=28, blur=15, alpha=35)
+    _shadow_panel(image, bench_box, radius=28, fill=PANEL)
+    draw = ImageDraw.Draw(image)
+    draw.text((90, bench_y + 22), "BANCO DE RESERVAS", font=_font(27, "bold"), fill=accent)
     if reserves:
         count = min(5, len(reserves))
-        gap = 16
-        card_w = (width - 180 - (count - 1) * gap) // count
+        card_gap = 16
+        card_w = (width - 180 - (count - 1) * card_gap) // count
         for index, player in enumerate(reserves[:5]):
-            x1 = 90 + index * (card_w + gap)
-            _reserve_card(image, (x1, bench_y + 82, x1 + card_w, bench_y + 202), player)
-        draw.text((90, bench_y + 238), "Capitão", font=_font(18, "bold"), fill=YELLOW)
-        draw.text((176, bench_y + 238), _safe(data.get("capitao") or "—"), font=_font(18, "semibold"), fill=WHITE)
-        draw.text((520, bench_y + 238), "Modelo", font=_font(18, "bold"), fill=MUTED)
-        draw.text((600, bench_y + 238), title.split("•")[0].strip(), font=_font(18, "semibold"), fill=WHITE)
+            x1 = 90 + index * (card_w + card_gap)
+            _reserve_card(image, (x1, bench_y + 78, x1 + card_w, bench_y + 190), player)
     else:
-        draw.text((90, bench_y + 100), "Reservas não informados neste payload.", font=_font(24), fill=MUTED)
-
+        draw.text((90, bench_y + 104), "Reservas não informados neste payload.", font=_font(24), fill=MUTED)
+    captain_display = _safe(data.get("capitao") or "—")
+    model_display = title.split("•")[0].strip()
+    _round(draw, (90, bench_y + 226, 520, bench_y + 292), 22, fill=(7, 28, 47), outline=YELLOW, width=2)
+    draw.text((112, bench_y + 240), "CAPITÃO", font=_font(16, "bold"), fill=YELLOW)
+    draw.text((225, bench_y + 237), captain_display, font=_font(22, "bold"), fill=WHITE)
+    _round(draw, (550, bench_y + 226, width - 90, bench_y + 292), 22, fill=(7, 28, 47), outline=accent, width=2)
+    draw.text((575, bench_y + 240), "MODELO", font=_font(16, "bold"), fill=MUTED)
+    draw.text((690, bench_y + 237), model_display, font=_font(22, "bold"), fill=WHITE)
     _footer(image, height - 102)
     Path(output_dir).mkdir(parents=True, exist_ok=True)
     slug = re.sub(r"[^a-z0-9]+", "_", kind).strip("_") or "time"
@@ -620,10 +632,7 @@ def _extract_matches(data: Dict[str, Any]) -> List[Dict[str, Any]]:
         value = data.get(key)
         if isinstance(value, list) and value:
             candidates = [item for item in value if isinstance(item, dict)]
-            if any(
-                any(key in match for key in ("mandante", "visitante", "home", "away", "time_casa", "time_fora"))
-                for match in candidates
-            ):
+            if any(any(key in match for key in ("mandante", "visitante", "home", "away", "time_casa", "time_fora")) for match in candidates):
                 return candidates
     return []
 
@@ -654,7 +663,7 @@ def _abbr(name: str) -> str:
 def _draw_match_card(image: Image.Image, box, match: Dict[str, Any], index: int):
     _shadow_panel(image, box, radius=30, fill=PANEL)
     draw = ImageDraw.Draw(image)
-    x1, y1, x2, y2 = box
+    x1, y1, x2, _ = box
     home = _safe(_match_value(match, "mandante", "home", "time_casa", "casa", "equipe_mandante"), "Mandante")
     away = _safe(_match_value(match, "visitante", "away", "time_fora", "fora", "equipe_visitante"), "Visitante")
     home_club = _safe(_match_value(match, "mandante_abrev", "home_abbr", "clube_mandante"), _abbr(home))
@@ -663,12 +672,13 @@ def _draw_match_card(image: Image.Image, box, match: Dict[str, Any], index: int)
     aws = _score(_match_value(match, "placar_visitante", "gols_visitante", "away_score", "gv", "placar_fora", default=None))
     status = _clean_markdown(_match_value(match, "status", "situacao", "minuto", "fase", default="Programado"))
     date_time = _clean_markdown(_match_value(match, "data_hora", "data", "horario", "inicio", default=""))
-
-    draw.text((x1 + 30, y1 + 24), f"JOGO {index:02d}", font=_font(19, "bold"), fill=MUTED)
     status_color = GREEN if any(token in status.lower() for token in ("encerr", "fim", "final")) else ORANGE if any(token in status.lower() for token in ("andamento", "ao vivo", "live", "interval")) else BLUE
-    _round(draw, (x2 - 245, y1 + 20, x2 - 28, y1 + 70), 24, fill=status_color)
-    _centered_text(draw, (x2 - 245, y1 + 20, x2 - 28, y1 + 70), status[:18].upper(), _font(18, "bold"), fill=(6, 22, 34))
-
+    _glow_outline(image, box, status_color, radius=30, blur=13, alpha=32)
+    draw = ImageDraw.Draw(image)
+    draw.text((x1 + 30, y1 + 24), f"JOGO {index:02d}", font=_font(19, "bold"), fill=MUTED)
+    status_box = (x2 - 245, y1 + 20, x2 - 28, y1 + 70)
+    _round(draw, status_box, 24, fill=status_color)
+    _centered_text(draw, status_box, status[:18].upper(), _font(18, "bold"), fill=(6, 22, 34))
     _paste_crest(image, home_club, (x1 + 120, y1 + 160), 104)
     _paste_crest(image, away_club, (x2 - 120, y1 + 160), 104)
     home_font = _fit_text(draw, home, 360, 30, 20, "bold")
@@ -676,10 +686,10 @@ def _draw_match_card(image: Image.Image, box, match: Dict[str, Any], index: int)
     draw.text((x1 + 195, y1 + 125), home, font=home_font, fill=WHITE)
     away_box = draw.textbbox((0, 0), away, font=away_font)
     draw.text((x2 - 195 - (away_box[2] - away_box[0]), y1 + 125), away, font=away_font, fill=WHITE)
-
     score = f"{hs}  ×  {aws}"
-    _round(draw, (image.size[0] // 2 - 160, y1 + 100, image.size[0] // 2 + 160, y1 + 205), 28, fill=(5, 24, 41), outline=LINE, width=2)
-    _centered_text(draw, (image.size[0] // 2 - 160, y1 + 100, image.size[0] // 2 + 160, y1 + 205), score, _font(62, "bold"))
+    score_box = (image.size[0] // 2 - 160, y1 + 100, image.size[0] // 2 + 160, y1 + 205)
+    _round(draw, score_box, 28, fill=(5, 24, 41), outline=LINE, width=2)
+    _centered_text(draw, score_box, score, _font(62, "bold"))
     if date_time:
         _centered_text(draw, (x1 + 350, y1 + 220, x2 - 350, y1 + 260), date_time[:54], _font(18), fill=MUTED)
 
@@ -713,26 +723,28 @@ def render_bulletin(data: Dict[str, Any], output_dir: str) -> RenderOutput:
     width, height = RESULT_SIZE
     image = _gradient_background(width, height)
     _brand_header(image, title, subtitle, badge)
-    _shadow_panel(image, (64, 330, width - 64, height - 145), radius=30, fill=PANEL)
+    panel = (64, 330, width - 64, height - 145)
+    _glow_outline(image, panel, CYAN, radius=30, blur=15, alpha=35)
+    _shadow_panel(image, panel, radius=30, fill=PANEL)
     draw = ImageDraw.Draw(image)
     draw.text((100, 372), "INFORMAÇÕES DA PUBLICAÇÃO", font=_font(34, "bold"), fill=CYAN)
     message = _safe(data.get("mensagem_oficial") or data.get("mensagem") or data.get("texto"))
-    lines: List[str] = []
+    lines = []
     for raw in message.splitlines():
         clean = _clean_markdown(raw)
         if clean and "t.me/" not in clean and not clean.startswith("http"):
             lines.append(clean)
-    y = 460
+    y = 450
     for line in lines[:20]:
-        for subline in textwrap.wrap(line, width=54)[:2]:
-            draw.ellipse((100, y + 12, 115, y + 27), fill=ORANGE)
-            draw.text((140, y), subline[:82], font=_font(27), fill=WHITE)
+        for sub in textwrap.wrap(line, width=62)[:2]:
+            draw.ellipse((102, y + 12, 118, y + 28), fill=ORANGE)
+            draw.text((142, y), sub[:92], font=_font(27), fill=WHITE)
             y += 48
-        y += 16
-        if y > height - 220:
+        y += 18
+        if y > height - 230:
             break
     if not lines:
-        draw.text((100, 480), "Publicação recebida sem dados estruturados.", font=_font(29), fill=MUTED)
+        draw.text((100, 470), "Publicação recebida sem dados estruturados.", font=_font(29), fill=MUTED)
     _footer(image, height - 102)
     Path(output_dir).mkdir(parents=True, exist_ok=True)
     path = str(Path(output_dir) / f"boletim_{round_value}.png")
