@@ -1,1 +1,197 @@
-{"rodada":19,"tipo":"PONTUACAO","atualizado_em":"2026-07-12T23:01:13.844Z","formacao":"4-3-3","capitao":"Pedro","dados":[{"RODADA":19,"TIPO":"PONTUACAO","STATUS":"TITULAR","POS":"GOL","NOME":"Everson","CLUBE":"CAM","PRECO":10.67},{"RODADA":19,"TIPO":"PONTUACAO","STATUS":"TITULAR","POS":"LAT","NOME":"Matheus Bidu","CLUBE":"COR","PRECO":12.83},{"RODADA":19,"TIPO":"PONTUACAO","STATUS":"TITULAR","POS":"LAT","NOME":"Renan Lodi","CLUBE":"CAM","PRECO":11.22},{"RODADA":19,"TIPO":"PONTUACAO","STATUS":"TITULAR","POS":"ZAG","NOME":"Gabriel Paulista","CLUBE":"COR","PRECO":9.3},{"RODADA":19,"TIPO":"PONTUACAO","STATUS":"TITULAR","POS":"ZAG","NOME":"Jonathan Jesus","CLUBE":"CRU","PRECO":6.74},{"RODADA":19,"TIPO":"PONTUACAO","STATUS":"TITULAR","POS":"MEI","NOME":"Matheus Pereira","CLUBE":"CRU","PRECO":15.27},{"RODADA":19,"TIPO":"PONTUACAO","STATUS":"TITULAR","POS":"MEI","NOME":"André","CLUBE":"COR","PRECO":8.45},{"RODADA":19,"TIPO":"PONTUACAO","STATUS":"TITULAR","POS":"MEI","NOME":"Breno Bidon","CLUBE":"COR","PRECO":9.18},{"RODADA":19,"TIPO":"PONTUACAO","STATUS":"TITULAR","POS":"ATA","NOME":"Pedro","CLUBE":"FLA","PRECO":18.5},{"RODADA":19,"TIPO":"PONTUACAO","STATUS":"TITULAR","POS":"ATA","NOME":"Samuel Lino","CLUBE":"FLA","PRECO":13.59},{"RODADA":19,"TIPO":"PONTUACAO","STATUS":"TITULAR","POS":"ATA","NOME":"Viveros","CLUBE":"CAP","PRECO":13.09},{"RODADA":19,"TIPO":"PONTUACAO","STATUS":"TITULAR","POS":"TEC","NOME":"Leonardo Jardim","CLUBE":"FLA","PRECO":13.76},{"RODADA":19,"TIPO":"PONTUACAO","STATUS":"RESERVA","POS":"GOL","NOME":"Rossi","CLUBE":"FLA","PRECO":9.17},{"RODADA":19,"TIPO":"PONTUACAO","STATUS":"RESERVA","POS":"LAT","NOME":"Bernabei","CLUBE":"INT","PRECO":9.66},{"RODADA":19,"TIPO":"PONTUACAO","STATUS":"RESERVA","POS":"ZAG","NOME":"Jacy","CLUBE":"CFC","PRECO":5.44},{"RODADA":19,"TIPO":"PONTUACAO","STATUS":"RESERVA","POS":"MEI","NOME":"Bruno Gomes","CLUBE":"INT","PRECO":6.83},{"RODADA":19,"TIPO":"PONTUACAO","STATUS":"RESERVA","POS":"ATA","NOME":"Breno Lopes","CLUBE":"CFC","PRECO":9.47}],"custo_total":142.6}
+{
+  "origem": "syncCartolaGithub",
+  "pipeline": "jobtelegram",
+  "tipo_publicacao": "times",
+  "rodada": 19,
+  "tipo": "PONTUACAO",
+  "atualizado_em": "2026-07-13T12:53:56.441Z",
+  "dados": [
+    {
+      "RODADA": 19,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "GOL",
+      "NOME": "Everson",
+      "CLUBE": "CAM",
+      "PRECO": 10.67,
+      "EXP_SCORE": 4.0872,
+      "ATLETA_ID": 72294
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Matheus Bidu",
+      "CLUBE": "COR",
+      "PRECO": 12.83,
+      "EXP_SCORE": 5.968,
+      "ATLETA_ID": 105531
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Renan Lodi",
+      "CLUBE": "CAM",
+      "PRECO": 11.22,
+      "EXP_SCORE": 5.2795,
+      "ATLETA_ID": 96591
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "ZAG",
+      "NOME": "Gabriel Paulista",
+      "CLUBE": "COR",
+      "PRECO": 9.3,
+      "EXP_SCORE": 3.1999,
+      "ATLETA_ID": 69208
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "ZAG",
+      "NOME": "Jonathan Jesus",
+      "CLUBE": "CRU",
+      "PRECO": 6.74,
+      "EXP_SCORE": 2.918,
+      "ATLETA_ID": 124912
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Matheus Pereira",
+      "CLUBE": "CRU",
+      "PRECO": 15.27,
+      "EXP_SCORE": 4.5275,
+      "ATLETA_ID": 96610
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "André",
+      "CLUBE": "COR",
+      "PRECO": 8.45,
+      "EXP_SCORE": 3.3073,
+      "ATLETA_ID": 145744
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Breno Bidon",
+      "CLUBE": "COR",
+      "PRECO": 9.18,
+      "EXP_SCORE": 3.2679,
+      "ATLETA_ID": 117910
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 13.09,
+      "EXP_SCORE": 7.8125,
+      "ATLETA_ID": 143193
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Pedro",
+      "CLUBE": "FLA",
+      "PRECO": 18.5,
+      "EXP_SCORE": 7.6552,
+      "ATLETA_ID": 94583
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Samuel Lino",
+      "CLUBE": "FLA",
+      "PRECO": 13.59,
+      "EXP_SCORE": 7.0667,
+      "ATLETA_ID": 98873
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "TEC",
+      "NOME": "Leonardo Jardim",
+      "CLUBE": "FLA",
+      "PRECO": 13.76,
+      "EXP_SCORE": 6.029,
+      "ATLETA_ID": 88963
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "PONTUACAO",
+      "STATUS": "RESERVA",
+      "POS": "GOL",
+      "NOME": "Rossi",
+      "CLUBE": "FLA",
+      "PRECO": 9.17,
+      "EXP_SCORE": 4.0092,
+      "ATLETA_ID": 99552
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "PONTUACAO",
+      "STATUS": "RESERVA",
+      "POS": "LAT",
+      "NOME": "Bernabei",
+      "CLUBE": "INT",
+      "PRECO": 9.66,
+      "EXP_SCORE": 5.1936,
+      "ATLETA_ID": 110426
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "PONTUACAO",
+      "STATUS": "RESERVA",
+      "POS": "ZAG",
+      "NOME": "Jacy",
+      "CLUBE": "CFC",
+      "PRECO": 5.44,
+      "EXP_SCORE": 2.7324,
+      "ATLETA_ID": 97878
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "PONTUACAO",
+      "STATUS": "RESERVA",
+      "POS": "MEI",
+      "NOME": "Bruno Gomes",
+      "CLUBE": "INT",
+      "PRECO": 6.83,
+      "EXP_SCORE": 3.0245,
+      "ATLETA_ID": 106202
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "PONTUACAO",
+      "STATUS": "RESERVA",
+      "POS": "ATA",
+      "NOME": "Breno Lopes",
+      "CLUBE": "CFC",
+      "PRECO": 9.47,
+      "EXP_SCORE": 6.4103,
+      "ATLETA_ID": 93988
+    }
+  ]
+}
