@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       payload_json:
-        description: "Payload JSON manual para teste; deixe vazio para reutilizar data/payload_dispatch.json"
+        description: "Payload JSON manual; deixe vazio para reutilizar data/payload_dispatch.json"
         required: false
         default: ""
 
@@ -22,7 +22,7 @@ concurrency:
 jobs:
   gerar-times-top5:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 12
 
     steps:
       - name: Checkout do repositório
@@ -43,6 +43,14 @@ jobs:
           python -m pip install --upgrade pip setuptools wheel
           pip install --upgrade -r requirements.txt
 
+      - name: Validar código profissional
+        shell: bash
+        run: |
+          set -e
+          python -m py_compile app/render_telegram_cards.py
+          python -m py_compile app/gerar_resultados_telegram.py
+          echo "Renderizador e publicador validados."
+
       - name: Preparar payload
         shell: bash
         env:
@@ -60,19 +68,20 @@ jobs:
             printf '%s' "$MANUAL_PAYLOAD" > data/payload_dispatch.json
             echo "Payload manual informado no Run workflow."
           elif [ -s data/payload_dispatch.json ]; then
-            echo "Execução manual sem payload_json: reutilizando data/payload_dispatch.json existente."
+            echo "Reutilizando data/payload_dispatch.json existente."
           else
-            echo "ERRO: não existe payload manual nem data/payload_dispatch.json válido."
+            echo "ERRO: não existe payload manual nem payload salvo."
             exit 1
           fi
 
           python -m json.tool data/payload_dispatch.json >/dev/null
           echo "Payload preparado e validado."
 
-      - name: Publicar no Telegram
+      - name: Gerar arte e publicar no Telegram
         shell: bash
         env:
           PAYLOAD_FILE: data/payload_dispatch.json
+          OUTPUT_DIR: output
           TZ: America/Sao_Paulo
           PLANILHA_ID: ${{ secrets.PLANILHA_ID }}
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
@@ -82,7 +91,32 @@ jobs:
           TELEGRAM_CHAT_FALLBACK: "@dicascartolaportalsimonsports"
         run: |
           set -e
-          python app/publicar_telegram_com_fallback.py
+          python app/gerar_resultados_telegram.py
+
+      - name: Validar arquivos profissionais gerados
+        shell: bash
+        run: |
+          set -e
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          manifest = Path("output/ultima_publicacao.json")
+          if not manifest.exists():
+              raise SystemExit("ERRO: manifesto da publicação não foi gerado.")
+
+          data = json.loads(manifest.read_text(encoding="utf-8"))
+          files = data.get("arquivos") or []
+          if not files:
+              raise SystemExit("ERRO: manifesto sem imagens.")
+
+          missing = [path for path in files if not Path(path).exists()]
+          if missing:
+              raise SystemExit(f"ERRO: imagens ausentes: {missing}")
+
+          print(f"Validação concluída: {len(files)} imagem(ns) profissional(is).")
+          PY
+          ls -lh output || true
 
       - name: Publicar arquivos gerados no repositório
         if: success()
@@ -98,6 +132,6 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Times e Top5: geração automática"
+          git commit -m "Telegram: artes profissionais da rodada"
           git pull --rebase origin main || true
           git push origin HEAD:main
