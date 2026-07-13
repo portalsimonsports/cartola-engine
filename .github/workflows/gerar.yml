@@ -22,7 +22,7 @@ concurrency:
 jobs:
   gerar-times-top5:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 15
 
     steps:
       - name: Checkout do repositório
@@ -49,7 +49,8 @@ jobs:
           set -e
           python -m py_compile app/render_telegram_cards.py
           python -m py_compile app/gerar_resultados_telegram.py
-          echo "Renderizador e publicador validados."
+          python -m py_compile app/publicar_times_top5_automatico.py
+          echo "Renderizador, publicador e pacote automático validados."
 
       - name: Preparar payload
         shell: bash
@@ -63,7 +64,7 @@ jobs:
 
           if [ "$EVENT_NAME" = "repository_dispatch" ]; then
             printf '%s' "$DISPATCH_PAYLOAD" > data/payload_dispatch.json
-            echo "Payload recebido via repository_dispatch."
+            echo "Payload recebido automaticamente via repository_dispatch."
           elif [ -n "$MANUAL_PAYLOAD" ]; then
             printf '%s' "$MANUAL_PAYLOAD" > data/payload_dispatch.json
             echo "Payload manual informado no Run workflow."
@@ -75,9 +76,11 @@ jobs:
           fi
 
           python -m json.tool data/payload_dispatch.json >/dev/null
-          echo "Payload preparado e validado."
+          rm -f output/top5_*.png output/time_*.png output/resultados_*.png
+          rm -f output/boletim_*.png output/ultima_publicacao.json
+          echo "Payload preparado e saídas anteriores limpas."
 
-      - name: Gerar arte e publicar no Telegram
+      - name: Gerar e publicar pacote automático
         shell: bash
         env:
           PAYLOAD_FILE: data/payload_dispatch.json
@@ -91,7 +94,7 @@ jobs:
           TELEGRAM_CHAT_FALLBACK: "@dicascartolaportalsimonsports"
         run: |
           set -e
-          python app/gerar_resultados_telegram.py
+          python app/publicar_times_top5_automatico.py
 
       - name: Validar arquivos profissionais gerados
         shell: bash
@@ -106,15 +109,26 @@ jobs:
               raise SystemExit("ERRO: manifesto da publicação não foi gerado.")
 
           data = json.loads(manifest.read_text(encoding="utf-8"))
-          files = data.get("arquivos") or []
+          publications = data.get("publicacoes") or []
+          if not publications:
+              raise SystemExit("ERRO: manifesto sem publicações.")
+
+          files = [
+              path
+              for publication in publications
+              for path in publication.get("arquivos", [])
+          ]
           if not files:
-              raise SystemExit("ERRO: manifesto sem imagens.")
+              raise SystemExit("ERRO: nenhuma imagem foi gerada.")
 
           missing = [path for path in files if not Path(path).exists()]
           if missing:
               raise SystemExit(f"ERRO: imagens ausentes: {missing}")
 
-          print(f"Validação concluída: {len(files)} imagem(ns) profissional(is).")
+          print(
+              f"Validação concluída: {len(publications)} publicação(ões), "
+              f"{len(files)} imagem(ns)."
+          )
           PY
           ls -lh output || true
 
@@ -132,6 +146,6 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Telegram: artes profissionais da rodada"
+          git commit -m "Telegram: pacote automático profissional da rodada"
           git pull --rebase origin main || true
           git push origin HEAD:main
