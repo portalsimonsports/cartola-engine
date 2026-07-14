@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 19,
-  "atualizado_em": "2026-07-14T18:20:06.421Z",
+  "atualizado_em": "2026-07-14T18:25:44.211Z",
   "dados": [
     {
       "RODADA": 19,
@@ -28,22 +28,22 @@
     {
       "RODADA": 19,
       "POS": "GOL",
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 8.86,
+      "EXP_SCORE": 3.2871,
+      "FACTOR": 0.9142992642061198,
+      "ATLETA_ID": 104084
+    },
+    {
+      "RODADA": 19,
+      "POS": "GOL",
       "NOME": "Pedro Rangel",
       "CLUBE": "CFC",
       "PRECO": 7.01,
       "EXP_SCORE": 3.1752,
       "FACTOR": 1.1025320427603948,
       "ATLETA_ID": 110708
-    },
-    {
-      "RODADA": 19,
-      "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.86,
-      "EXP_SCORE": 2.9584,
-      "FACTOR": 0.9142992642061198,
-      "ATLETA_ID": 104084
     },
     {
       "RODADA": 19,
@@ -162,18 +162,8 @@
       "CLUBE": "CRU",
       "PRECO": 15.27,
       "EXP_SCORE": 4.5313,
-      "FACTOR": 0.9453899346704466,
+      "FACTOR": 0.9453899346704467,
       "ATLETA_ID": 96610
-    },
-    {
-      "RODADA": 19,
-      "POS": "MEI",
-      "NOME": "André",
-      "CLUBE": "COR",
-      "PRECO": 8.45,
-      "EXP_SCORE": 3.3107,
-      "FACTOR": 1.0382814840902288,
-      "ATLETA_ID": 145744
     },
     {
       "RODADA": 19,
@@ -204,6 +194,16 @@
       "EXP_SCORE": 3.1929,
       "FACTOR": 0.936197506559369,
       "ATLETA_ID": 51772
+    },
+    {
+      "RODADA": 19,
+      "POS": "MEI",
+      "NOME": "Gerson",
+      "CLUBE": "CRU",
+      "PRECO": 8.98,
+      "EXP_SCORE": 3.1874,
+      "FACTOR": 0.9453899346704467,
+      "ATLETA_ID": 89256
     },
     {
       "RODADA": 19,
@@ -248,12 +248,12 @@
     {
       "RODADA": 19,
       "POS": "ATA",
-      "NOME": "Lucas Ronier",
-      "CLUBE": "CFC",
-      "PRECO": 10.73,
-      "EXP_SCORE": 5.7201,
-      "FACTOR": 1.0559041081899665,
-      "ATLETA_ID": 123648
+      "NOME": "Flaco López",
+      "CLUBE": "PAL",
+      "PRECO": 14.91,
+      "EXP_SCORE": 5.7543,
+      "FACTOR": 0.9691659476307031,
+      "ATLETA_ID": 113103
     },
     {
       "RODADA": 19,
