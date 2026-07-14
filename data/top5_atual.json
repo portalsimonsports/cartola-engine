@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 19,
-  "atualizado_em": "2026-07-14T17:25:11.134Z",
+  "atualizado_em": "2026-07-14T17:30:07.066Z",
   "dados": [
     {
       "RODADA": 19,
@@ -21,7 +21,7 @@
       "NOME": "Rossi",
       "CLUBE": "FLA",
       "PRECO": 9.17,
-      "EXP_SCORE": 3.4906,
+      "EXP_SCORE": 4.0142,
       "FACTOR": 0.9846800854650211,
       "ATLETA_ID": 99552
     },
@@ -202,7 +202,7 @@
       "CLUBE": "BAH",
       "PRECO": 9.27,
       "EXP_SCORE": 3.1929,
-      "FACTOR": 0.936197506559369,
+      "FACTOR": 0.9361975065593688,
       "ATLETA_ID": 51772
     },
     {
@@ -218,22 +218,22 @@
     {
       "RODADA": 19,
       "POS": "ATA",
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 13.09,
+      "EXP_SCORE": 7.6419,
+      "FACTOR": 0.9241432847910687,
+      "ATLETA_ID": 143193
+    },
+    {
+      "RODADA": 19,
+      "POS": "ATA",
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 13.59,
       "EXP_SCORE": 7.0705,
       "FACTOR": 0.9998073746676293,
       "ATLETA_ID": 98873
-    },
-    {
-      "RODADA": 19,
-      "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 13.09,
-      "EXP_SCORE": 6.6451,
-      "FACTOR": 0.9241432847910687,
-      "ATLETA_ID": 143193
     },
     {
       "RODADA": 19,
@@ -278,16 +278,6 @@
     {
       "RODADA": 19,
       "POS": "TEC",
-      "NOME": "Odair Hellmann",
-      "CLUBE": "CAP",
-      "PRECO": 9.28,
-      "EXP_SCORE": 5.0915,
-      "FACTOR": 0.9435989328919333,
-      "ATLETA_ID": 92273
-    },
-    {
-      "RODADA": 19,
-      "POS": "TEC",
       "NOME": "Paulo Pezzolano",
       "CLUBE": "INT",
       "PRECO": 7.47,
@@ -304,6 +294,16 @@
       "EXP_SCORE": 4.8519,
       "FACTOR": 1.0094403317543892,
       "ATLETA_ID": 72391
+    },
+    {
+      "RODADA": 19,
+      "POS": "TEC",
+      "NOME": "Eduardo Domínguez",
+      "CLUBE": "CAM",
+      "PRECO": 11.03,
+      "EXP_SCORE": 4.813,
+      "FACTOR": 1.0784520065505645,
+      "ATLETA_ID": 92747
     }
   ]
 }
