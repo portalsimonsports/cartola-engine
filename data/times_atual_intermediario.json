@@ -4,18 +4,18 @@
   "tipo_publicacao": "times",
   "rodada": 19,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-07-14T12:39:50.032Z",
+  "atualizado_em": "2026-07-14T12:44:47.124Z",
   "dados": [
     {
       "RODADA": 19,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "GOL",
-      "NOME": "Rossi",
-      "CLUBE": "FLA",
-      "PRECO": 9.17,
-      "EXP_SCORE": 4.0092,
-      "ATLETA_ID": 99552
+      "NOME": "Everson",
+      "CLUBE": "CAM",
+      "PRECO": 10.67,
+      "EXP_SCORE": 4.0872,
+      "ATLETA_ID": 72294
     },
     {
       "RODADA": 19,
@@ -33,11 +33,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "LAT",
-      "NOME": "Bernabei",
-      "CLUBE": "INT",
-      "PRECO": 9.66,
-      "EXP_SCORE": 5.1936,
-      "ATLETA_ID": 110426
+      "NOME": "Renan Lodi",
+      "CLUBE": "CAM",
+      "PRECO": 11.22,
+      "EXP_SCORE": 5.2795,
+      "ATLETA_ID": 96591
     },
     {
       "RODADA": 19,
@@ -49,17 +49,6 @@
       "PRECO": 9.3,
       "EXP_SCORE": 3.1999,
       "ATLETA_ID": 69208
-    },
-    {
-      "RODADA": 19,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Jacy",
-      "CLUBE": "CFC",
-      "PRECO": 5.44,
-      "EXP_SCORE": 3.036,
-      "ATLETA_ID": 97878
     },
     {
       "RODADA": 19,
@@ -88,22 +77,22 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Raniele",
+      "NOME": "Breno Bidon",
       "CLUBE": "COR",
-      "PRECO": 7.72,
-      "EXP_SCORE": 3.3699,
-      "ATLETA_ID": 95556
+      "PRECO": 9.18,
+      "EXP_SCORE": 3.2756,
+      "ATLETA_ID": 117910
     },
     {
       "RODADA": 19,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Breno Bidon",
-      "CLUBE": "COR",
-      "PRECO": 9.18,
-      "EXP_SCORE": 3.2756,
-      "ATLETA_ID": 117910
+      "NOME": "Andreas Pereira",
+      "CLUBE": "PAL",
+      "PRECO": 12.78,
+      "EXP_SCORE": 3.2102,
+      "ATLETA_ID": 89274
     },
     {
       "RODADA": 19,
@@ -121,77 +110,88 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Samuel Lino",
-      "CLUBE": "FLA",
-      "PRECO": 13.59,
-      "EXP_SCORE": 7.0757,
-      "ATLETA_ID": 98873
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 13.09,
+      "EXP_SCORE": 7.6516,
+      "ATLETA_ID": 143193
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Breno Lopes",
+      "CLUBE": "CFC",
+      "PRECO": 9.47,
+      "EXP_SCORE": 6.4241,
+      "ATLETA_ID": 93988
     },
     {
       "RODADA": 19,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Abel Ferreira",
-      "CLUBE": "PAL",
-      "PRECO": 12.22,
-      "EXP_SCORE": 5.683,
-      "ATLETA_ID": 110506
+      "NOME": "Rafael Lacerda",
+      "CLUBE": "CHA",
+      "PRECO": 7.31,
+      "EXP_SCORE": 0,
+      "ATLETA_ID": 106907
     },
     {
       "RODADA": 19,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Pedro Rangel",
-      "CLUBE": "CFC",
-      "PRECO": 7.01,
-      "EXP_SCORE": 3.5211,
-      "ATLETA_ID": 110708
+      "NOME": "Rossi",
+      "CLUBE": "FLA",
+      "PRECO": 9.17,
+      "EXP_SCORE": 4.0092,
+      "ATLETA_ID": 99552
     },
     {
       "RODADA": 19,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "LAT",
-      "NOME": "Marcelinho",
-      "CLUBE": "REM",
-      "PRECO": 7.71,
-      "EXP_SCORE": 3.8973,
-      "ATLETA_ID": 97795
+      "NOME": "Bernabei",
+      "CLUBE": "INT",
+      "PRECO": 9.66,
+      "EXP_SCORE": 5.1936,
+      "ATLETA_ID": 110426
     },
     {
       "RODADA": 19,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Thiago Santos",
+      "NOME": "Jacy",
       "CLUBE": "CFC",
-      "PRECO": 4.35,
-      "EXP_SCORE": 1.9938,
-      "ATLETA_ID": 78855
+      "PRECO": 5.44,
+      "EXP_SCORE": 2.7324,
+      "ATLETA_ID": 97878
     },
     {
       "RODADA": 19,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Bruno Gomes",
-      "CLUBE": "INT",
-      "PRECO": 6.83,
-      "EXP_SCORE": 3.0271,
-      "ATLETA_ID": 106202
+      "NOME": "Gerson",
+      "CLUBE": "CRU",
+      "PRECO": 8.98,
+      "EXP_SCORE": 3.1909,
+      "ATLETA_ID": 89256
     },
     {
       "RODADA": 19,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 13.09,
-      "EXP_SCORE": 6.6535,
-      "ATLETA_ID": 143193
+      "NOME": "Cuello",
+      "CLUBE": "CAM",
+      "PRECO": 8.88,
+      "EXP_SCORE": 5.2065,
+      "ATLETA_ID": 98909
     }
   ]
 }
