@@ -4,18 +4,18 @@
   "tipo_publicacao": "times",
   "rodada": 19,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-07-14T10:24:44.525Z",
+  "atualizado_em": "2026-07-14T10:29:51.955Z",
   "dados": [
     {
       "RODADA": 19,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "GOL",
-      "NOME": "Rossi",
-      "CLUBE": "FLA",
-      "PRECO": 9.17,
-      "EXP_SCORE": 4.0092,
-      "ATLETA_ID": 99552
+      "NOME": "Everson",
+      "CLUBE": "CAM",
+      "PRECO": 10.67,
+      "EXP_SCORE": 4.0872,
+      "ATLETA_ID": 72294
     },
     {
       "RODADA": 19,
@@ -25,7 +25,7 @@
       "NOME": "Matheus Bidu",
       "CLUBE": "COR",
       "PRECO": 12.83,
-      "EXP_SCORE": 6.6311,
+      "EXP_SCORE": 5.968,
       "ATLETA_ID": 105531
     },
     {
@@ -33,11 +33,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "LAT",
-      "NOME": "Bernabei",
-      "CLUBE": "INT",
-      "PRECO": 9.66,
-      "EXP_SCORE": 5.1936,
-      "ATLETA_ID": 110426
+      "NOME": "Renan Lodi",
+      "CLUBE": "CAM",
+      "PRECO": 11.22,
+      "EXP_SCORE": 5.2795,
+      "ATLETA_ID": 96591
     },
     {
       "RODADA": 19,
@@ -65,22 +65,11 @@
       "RODADA": 19,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Léo Ortiz",
-      "CLUBE": "FLA",
-      "PRECO": 9.12,
-      "EXP_SCORE": 2.8182,
-      "ATLETA_ID": 97867
-    },
-    {
-      "RODADA": 19,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
       "POS": "MEI",
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 15.27,
-      "EXP_SCORE": 3.9446,
+      "EXP_SCORE": 4.5363,
       "ATLETA_ID": 96610
     },
     {
@@ -88,11 +77,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Raniele",
+      "NOME": "André",
       "CLUBE": "COR",
-      "PRECO": 7.72,
-      "EXP_SCORE": 3.3699,
-      "ATLETA_ID": 95556
+      "PRECO": 8.45,
+      "EXP_SCORE": 3.3152,
+      "ATLETA_ID": 145744
     },
     {
       "RODADA": 19,
@@ -121,10 +110,21 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ATA",
+      "NOME": "Samuel Lino",
+      "CLUBE": "FLA",
+      "PRECO": 13.59,
+      "EXP_SCORE": 7.0757,
+      "ATLETA_ID": 98873
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 13.09,
-      "EXP_SCORE": 7.6516,
+      "EXP_SCORE": 6.6535,
       "ATLETA_ID": 143193
     },
     {
@@ -132,33 +132,33 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Paulo Pezzolano",
-      "CLUBE": "INT",
-      "PRECO": 7.47,
-      "EXP_SCORE": 4.9549,
-      "ATLETA_ID": 115479
+      "NOME": "Rafael Lacerda",
+      "CLUBE": "CHA",
+      "PRECO": 7.31,
+      "EXP_SCORE": 0,
+      "ATLETA_ID": 106907
     },
     {
       "RODADA": 19,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.86,
-      "EXP_SCORE": 3.2803,
-      "ATLETA_ID": 104084
+      "NOME": "Rossi",
+      "CLUBE": "FLA",
+      "PRECO": 9.17,
+      "EXP_SCORE": 3.4863,
+      "ATLETA_ID": 99552
     },
     {
       "RODADA": 19,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "LAT",
-      "NOME": "Marcelinho",
-      "CLUBE": "REM",
-      "PRECO": 7.71,
-      "EXP_SCORE": 4.4819,
-      "ATLETA_ID": 97795
+      "NOME": "Bernabei",
+      "CLUBE": "INT",
+      "PRECO": 9.66,
+      "EXP_SCORE": 5.1936,
+      "ATLETA_ID": 110426
     },
     {
       "RODADA": 19,
@@ -187,11 +187,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Lucas Ronier",
+      "NOME": "Breno Lopes",
       "CLUBE": "CFC",
-      "PRECO": 10.73,
-      "EXP_SCORE": 5.7272,
-      "ATLETA_ID": 123648
+      "PRECO": 9.47,
+      "EXP_SCORE": 6.4241,
+      "ATLETA_ID": 93988
     }
   ]
 }
