@@ -1,0 +1,433 @@
+{
+  "atletas": [
+    {
+      "clube": "CAM",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Everson",
+      "pos": "GOL",
+      "preco": 10.67,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "COR",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Matheus Bidu",
+      "pos": "LAT",
+      "preco": 12.83,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CAM",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Renan Lodi",
+      "pos": "LAT",
+      "preco": 11.22,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "COR",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Gabriel Paulista",
+      "pos": "ZAG",
+      "preco": 9.3,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CRU",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Jonathan Jesus",
+      "pos": "ZAG",
+      "preco": 6.74,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CRU",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Matheus Pereira",
+      "pos": "MEI",
+      "preco": 15.27,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "COR",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "André",
+      "pos": "MEI",
+      "preco": 8.45,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "COR",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Breno Bidon",
+      "pos": "MEI",
+      "preco": 9.18,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "FLA",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Pedro",
+      "pos": "ATA",
+      "preco": 18.5,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "FLA",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Samuel Lino",
+      "pos": "ATA",
+      "preco": 13.59,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CAP",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Viveros",
+      "pos": "ATA",
+      "preco": 13.09,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "FLA",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Leonardo Jardim",
+      "pos": "TEC",
+      "preco": 13.76,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "FLA",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Rossi",
+      "pos": "GOL",
+      "preco": 9.17,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "INT",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Bernabei",
+      "pos": "LAT",
+      "preco": 9.66,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "CFC",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Jacy",
+      "pos": "ZAG",
+      "preco": 5.44,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "INT",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Bruno Gomes",
+      "pos": "MEI",
+      "preco": 6.83,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "CFC",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Breno Lopes",
+      "pos": "ATA",
+      "preco": 9.47,
+      "status": "RESERVA"
+    }
+  ],
+  "blocos_topo": [
+    "Alterações identificadas desde a última publicação."
+  ],
+  "capitao": "Pedro",
+  "custo_total": 142.6,
+  "evento_programado": "ATUALIZACAO_20H",
+  "forcar_envio": true,
+  "formacao": "4-3-3",
+  "houve_alteracao": true,
+  "mensagem_oficial": "Pontuação • Rodada 19\nAtualização programada das 20h\nPortal SimonSports",
+  "meta": {
+    "capitao": "Pedro (ATA)",
+    "custo_total": 142.6,
+    "esquema": "4-3-3",
+    "pontos_total": 0,
+    "variacao_total": 0
+  },
+  "modelo": "PONTUACAO",
+  "nome_modelo": "TIME PARA PONTUAR",
+  "primeiro_envio": false,
+  "snapshot": {
+    "atletas": [
+      {
+        "clube": "CAM",
+        "nome": "Everson",
+        "pos": "GOL",
+        "preco": 10.67,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "COR",
+        "nome": "Matheus Bidu",
+        "pos": "LAT",
+        "preco": 12.83,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "CAM",
+        "nome": "Renan Lodi",
+        "pos": "LAT",
+        "preco": 11.22,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "COR",
+        "nome": "Gabriel Paulista",
+        "pos": "ZAG",
+        "preco": 9.3,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "CRU",
+        "nome": "Jonathan Jesus",
+        "pos": "ZAG",
+        "preco": 6.74,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "CRU",
+        "nome": "Matheus Pereira",
+        "pos": "MEI",
+        "preco": 15.27,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "COR",
+        "nome": "André",
+        "pos": "MEI",
+        "preco": 8.45,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "COR",
+        "nome": "Breno Bidon",
+        "pos": "MEI",
+        "preco": 9.18,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "FLA",
+        "nome": "Pedro",
+        "pos": "ATA",
+        "preco": 18.5,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "FLA",
+        "nome": "Samuel Lino",
+        "pos": "ATA",
+        "preco": 13.59,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "CAP",
+        "nome": "Viveros",
+        "pos": "ATA",
+        "preco": 13.09,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "FLA",
+        "nome": "Leonardo Jardim",
+        "pos": "TEC",
+        "preco": 13.76,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "FLA",
+        "nome": "Rossi",
+        "pos": "GOL",
+        "preco": 9.17,
+        "status": "RESERVA"
+      },
+      {
+        "clube": "INT",
+        "nome": "Bernabei",
+        "pos": "LAT",
+        "preco": 9.66,
+        "status": "RESERVA"
+      },
+      {
+        "clube": "CFC",
+        "nome": "Jacy",
+        "pos": "ZAG",
+        "preco": 5.44,
+        "status": "RESERVA"
+      },
+      {
+        "clube": "INT",
+        "nome": "Bruno Gomes",
+        "pos": "MEI",
+        "preco": 6.83,
+        "status": "RESERVA"
+      },
+      {
+        "clube": "CFC",
+        "nome": "Breno Lopes",
+        "pos": "ATA",
+        "preco": 9.47,
+        "status": "RESERVA"
+      }
+    ],
+    "capitao": "Pedro"
+  },
+  "timestamp_base": "",
+  "tipo_publicacao": "time_pontuacao",
+  "titulo": "TIME PARA PONTUAR",
+  "rodada": 19,
+  "origem": "jobTelegramDispatcher",
+  "ambiente": "producao",
+  "gerado_em": "2026-07-14T23:00:34.779Z",
+  "payload_hash": "evO5LWgHbC+orwsN7DagMA==",
+  "jogadores": [
+    {
+      "clube": "CAM",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Everson",
+      "pos": "GOL",
+      "preco": 10.67,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "COR",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Matheus Bidu",
+      "pos": "LAT",
+      "preco": 12.83,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CAM",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Renan Lodi",
+      "pos": "LAT",
+      "preco": 11.22,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "COR",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Gabriel Paulista",
+      "pos": "ZAG",
+      "preco": 9.3,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CRU",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Jonathan Jesus",
+      "pos": "ZAG",
+      "preco": 6.74,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CRU",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Matheus Pereira",
+      "pos": "MEI",
+      "preco": 15.27,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "COR",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "André",
+      "pos": "MEI",
+      "preco": 8.45,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "COR",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Breno Bidon",
+      "pos": "MEI",
+      "preco": 9.18,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "FLA",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Pedro",
+      "pos": "ATA",
+      "preco": 18.5,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "FLA",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Samuel Lino",
+      "pos": "ATA",
+      "preco": 13.59,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CAP",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Viveros",
+      "pos": "ATA",
+      "preco": 13.09,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "FLA",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Leonardo Jardim",
+      "pos": "TEC",
+      "preco": 13.76,
+      "status": "TITULAR"
+    }
+  ],
+  "reservas": [
+    {
+      "clube": "FLA",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Rossi",
+      "pos": "GOL",
+      "preco": 9.17,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "INT",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Bernabei",
+      "pos": "LAT",
+      "preco": 9.66,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "CFC",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Jacy",
+      "pos": "ZAG",
+      "preco": 5.44,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "INT",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Bruno Gomes",
+      "pos": "MEI",
+      "preco": 6.83,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "CFC",
+      "data": "2026-07-14T22:59:31.000Z",
+      "nome": "Breno Lopes",
+      "pos": "ATA",
+      "preco": 9.47,
+      "status": "RESERVA"
+    }
+  ],
+  "pontos_total": 0
+}
