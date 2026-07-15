@@ -3,18 +3,8 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 19,
-  "atualizado_em": "2026-07-15T02:15:08.112Z",
+  "atualizado_em": "2026-07-15T02:20:00.352Z",
   "dados": [
-    {
-      "RODADA": 19,
-      "POS": "GOL",
-      "NOME": "Everson",
-      "CLUBE": "CAM",
-      "PRECO": 10.67,
-      "EXP_SCORE": 4.095,
-      "FACTOR": 1.1070010965454984,
-      "ATLETA_ID": 72294
-    },
     {
       "RODADA": 19,
       "POS": "GOL",
@@ -24,6 +14,16 @@
       "EXP_SCORE": 4.0142,
       "FACTOR": 0.9846800854650211,
       "ATLETA_ID": 99552
+    },
+    {
+      "RODADA": 19,
+      "POS": "GOL",
+      "NOME": "Everson",
+      "CLUBE": "CAM",
+      "PRECO": 10.67,
+      "EXP_SCORE": 3.5608,
+      "FACTOR": 1.1070010965454984,
+      "ATLETA_ID": 72294
     },
     {
       "RODADA": 19,
@@ -48,12 +48,12 @@
     {
       "RODADA": 19,
       "POS": "GOL",
-      "NOME": "Hugo Souza",
-      "CLUBE": "COR",
-      "PRECO": 8.79,
-      "EXP_SCORE": 2.8175,
-      "FACTOR": 1.1320446620959845,
-      "ATLETA_ID": 101574
+      "NOME": "Rafael",
+      "CLUBE": "SAO",
+      "PRECO": 7.38,
+      "EXP_SCORE": 2.8393,
+      "FACTOR": 1.1114364216227899,
+      "ATLETA_ID": 68928
     },
     {
       "RODADA": 19,
@@ -68,16 +68,6 @@
     {
       "RODADA": 19,
       "POS": "LAT",
-      "NOME": "Renan Lodi",
-      "CLUBE": "CAM",
-      "PRECO": 11.22,
-      "EXP_SCORE": 5.2896,
-      "FACTOR": 1.1070010965454984,
-      "ATLETA_ID": 96591
-    },
-    {
-      "RODADA": 19,
-      "POS": "LAT",
       "NOME": "Bernabei",
       "CLUBE": "INT",
       "PRECO": 9.66,
@@ -88,12 +78,22 @@
     {
       "RODADA": 19,
       "POS": "LAT",
-      "NOME": "Matheuzinho",
-      "CLUBE": "COR",
-      "PRECO": 10.2,
-      "EXP_SCORE": 4.8717,
-      "FACTOR": 1.1320446620959845,
-      "ATLETA_ID": 101727
+      "NOME": "Renan Lodi",
+      "CLUBE": "CAM",
+      "PRECO": 11.22,
+      "EXP_SCORE": 4.5996,
+      "FACTOR": 1.1070010965454984,
+      "ATLETA_ID": 96591
+    },
+    {
+      "RODADA": 19,
+      "POS": "LAT",
+      "NOME": "Marcelinho",
+      "CLUBE": "REM",
+      "PRECO": 7.71,
+      "EXP_SCORE": 4.4904,
+      "FACTOR": 0.9290760520179435,
+      "ATLETA_ID": 97795
     },
     {
       "RODADA": 19,
@@ -168,6 +168,16 @@
     {
       "RODADA": 19,
       "POS": "MEI",
+      "NOME": "Raniele",
+      "CLUBE": "COR",
+      "PRECO": 7.72,
+      "EXP_SCORE": 3.3654,
+      "FACTOR": 1.0382814840902288,
+      "ATLETA_ID": 95556
+    },
+    {
+      "RODADA": 19,
+      "POS": "MEI",
       "NOME": "Breno Bidon",
       "CLUBE": "COR",
       "PRECO": 9.18,
@@ -194,16 +204,6 @@
       "EXP_SCORE": 3.1929,
       "FACTOR": 0.936197506559369,
       "ATLETA_ID": 51772
-    },
-    {
-      "RODADA": 19,
-      "POS": "MEI",
-      "NOME": "Gerson",
-      "CLUBE": "CRU",
-      "PRECO": 8.98,
-      "EXP_SCORE": 3.1874,
-      "FACTOR": 0.9453899346704467,
-      "ATLETA_ID": 89256
     },
     {
       "RODADA": 19,
