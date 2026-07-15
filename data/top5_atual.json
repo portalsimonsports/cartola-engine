@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 19,
-  "atualizado_em": "2026-07-15T23:19:57.129Z",
+  "atualizado_em": "2026-07-15T23:24:46.876Z",
   "dados": [
     {
       "RODADA": 19,
@@ -22,7 +22,7 @@
       "CLUBE": "FLA",
       "PRECO": 9.17,
       "EXP_SCORE": 4.0102,
-      "FACTOR": 0.9837143435209154,
+      "FACTOR": 0.9837143435209156,
       "ATLETA_ID": 99552
     },
     {
@@ -31,7 +31,7 @@
       "NOME": "Carlos Miguel",
       "CLUBE": "PAL",
       "PRECO": 8.86,
-      "EXP_SCORE": 2.9535,
+      "EXP_SCORE": 3.2817,
       "FACTOR": 0.9127876681196938,
       "ATLETA_ID": 104084
     },
@@ -61,7 +61,7 @@
       "NOME": "Matheus Bidu",
       "CLUBE": "COR",
       "PRECO": 12.83,
-      "EXP_SCORE": 5.97,
+      "EXP_SCORE": 6.6333,
       "FACTOR": 1.130574523434015,
       "ATLETA_ID": 105531
     },
@@ -132,7 +132,7 @@
       "CLUBE": "FLA",
       "PRECO": 9.12,
       "EXP_SCORE": 2.8189,
-      "FACTOR": 0.9837143435209154,
+      "FACTOR": 0.9837143435209156,
       "ATLETA_ID": 97867
     },
     {
@@ -148,12 +148,12 @@
     {
       "RODADA": 19,
       "POS": "ZAG",
-      "NOME": "David Duarte",
-      "CLUBE": "BAH",
-      "PRECO": 7.01,
-      "EXP_SCORE": 2.5115,
-      "FACTOR": 0.9536534147309558,
-      "ATLETA_ID": 91772
+      "NOME": "Gustavo Henrique",
+      "CLUBE": "COR",
+      "PRECO": 8.01,
+      "EXP_SCORE": 2.7139,
+      "FACTOR": 1.130574523434015,
+      "ATLETA_ID": 78248
     },
     {
       "RODADA": 19,
@@ -161,7 +161,7 @@
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 15.27,
-      "EXP_SCORE": 4.515,
+      "EXP_SCORE": 3.9261,
       "FACTOR": 0.9419944751381215,
       "ATLETA_ID": 96610
     },
@@ -174,16 +174,6 @@
       "EXP_SCORE": 3.7116,
       "FACTOR": 0.976292817679558,
       "ATLETA_ID": 99815
-    },
-    {
-      "RODADA": 19,
-      "POS": "MEI",
-      "NOME": "André",
-      "CLUBE": "COR",
-      "PRECO": 8.45,
-      "EXP_SCORE": 3.2961,
-      "FACTOR": 1.0337160802558885,
-      "ATLETA_ID": 145744
     },
     {
       "RODADA": 19,
@@ -204,6 +194,16 @@
       "EXP_SCORE": 3.2308,
       "FACTOR": 0.976292817679558,
       "ATLETA_ID": 89274
+    },
+    {
+      "RODADA": 19,
+      "POS": "MEI",
+      "NOME": "Everton Ribeiro",
+      "CLUBE": "BAH",
+      "PRECO": 9.27,
+      "EXP_SCORE": 3.1808,
+      "FACTOR": 0.9326243093922651,
+      "ATLETA_ID": 51772
     },
     {
       "RODADA": 19,
