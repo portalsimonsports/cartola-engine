@@ -4,18 +4,18 @@
   "tipo_publicacao": "times",
   "rodada": 19,
   "tipo": "PONTUACAO",
-  "atualizado_em": "2026-07-15T14:54:59.924Z",
+  "atualizado_em": "2026-07-15T15:19:54.313Z",
   "dados": [
     {
       "RODADA": 19,
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "GOL",
-      "NOME": "Everson",
-      "CLUBE": "CAM",
-      "PRECO": 10.67,
-      "EXP_SCORE": 4.095,
-      "ATLETA_ID": 72294
+      "NOME": "Rossi",
+      "CLUBE": "FLA",
+      "PRECO": 9.17,
+      "EXP_SCORE": 4.0142,
+      "ATLETA_ID": 99552
     },
     {
       "RODADA": 19,
@@ -33,11 +33,11 @@
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "LAT",
-      "NOME": "Renan Lodi",
-      "CLUBE": "CAM",
-      "PRECO": 11.22,
-      "EXP_SCORE": 5.2896,
-      "ATLETA_ID": 96591
+      "NOME": "Bernabei",
+      "CLUBE": "INT",
+      "PRECO": 9.66,
+      "EXP_SCORE": 5.2024,
+      "ATLETA_ID": 110426
     },
     {
       "RODADA": 19,
@@ -55,11 +55,11 @@
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "ZAG",
-      "NOME": "Jonathan Jesus",
-      "CLUBE": "CRU",
-      "PRECO": 6.74,
-      "EXP_SCORE": 2.9225,
-      "ATLETA_ID": 124912
+      "NOME": "Jacy",
+      "CLUBE": "CFC",
+      "PRECO": 5.44,
+      "EXP_SCORE": 3.0419,
+      "ATLETA_ID": 97878
     },
     {
       "RODADA": 19,
@@ -77,22 +77,22 @@
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Breno Bidon",
+      "NOME": "Raniele",
       "CLUBE": "COR",
-      "PRECO": 9.18,
-      "EXP_SCORE": 3.2712,
-      "ATLETA_ID": 117910
+      "PRECO": 7.72,
+      "EXP_SCORE": 3.3654,
+      "ATLETA_ID": 95556
     },
     {
       "RODADA": 19,
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Andreas Pereira",
-      "CLUBE": "PAL",
-      "PRECO": 12.78,
-      "EXP_SCORE": 3.2072,
-      "ATLETA_ID": 89274
+      "NOME": "Breno Bidon",
+      "CLUBE": "COR",
+      "PRECO": 9.18,
+      "EXP_SCORE": 3.2712,
+      "ATLETA_ID": 117910
     },
     {
       "RODADA": 19,
@@ -110,22 +110,22 @@
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 13.09,
-      "EXP_SCORE": 7.6419,
-      "ATLETA_ID": 143193
+      "NOME": "Samuel Lino",
+      "CLUBE": "FLA",
+      "PRECO": 13.59,
+      "EXP_SCORE": 7.0705,
+      "ATLETA_ID": 98873
     },
     {
       "RODADA": 19,
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Samuel Lino",
-      "CLUBE": "FLA",
-      "PRECO": 13.59,
-      "EXP_SCORE": 7.0705,
-      "ATLETA_ID": 98873
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 13.09,
+      "EXP_SCORE": 6.6451,
+      "ATLETA_ID": 143193
     },
     {
       "RODADA": 19,
@@ -143,44 +143,44 @@
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Rossi",
-      "CLUBE": "FLA",
-      "PRECO": 9.17,
-      "EXP_SCORE": 4.0142,
-      "ATLETA_ID": 99552
+      "NOME": "Pedro Rangel",
+      "CLUBE": "CFC",
+      "PRECO": 7.01,
+      "EXP_SCORE": 3.5279,
+      "ATLETA_ID": 110708
     },
     {
       "RODADA": 19,
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "LAT",
-      "NOME": "Bernabei",
-      "CLUBE": "INT",
-      "PRECO": 9.66,
-      "EXP_SCORE": 5.2024,
-      "ATLETA_ID": 110426
+      "NOME": "Marcelinho",
+      "CLUBE": "REM",
+      "PRECO": 7.71,
+      "EXP_SCORE": 3.9047,
+      "ATLETA_ID": 97795
     },
     {
       "RODADA": 19,
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Jacy",
+      "NOME": "Thiago Santos",
       "CLUBE": "CFC",
-      "PRECO": 5.44,
-      "EXP_SCORE": 2.7377,
-      "ATLETA_ID": 97878
+      "PRECO": 4.35,
+      "EXP_SCORE": 1.9977,
+      "ATLETA_ID": 78855
     },
     {
       "RODADA": 19,
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Gerson",
-      "CLUBE": "CRU",
-      "PRECO": 8.98,
-      "EXP_SCORE": 3.1874,
-      "ATLETA_ID": 89256
+      "NOME": "Bruno Gomes",
+      "CLUBE": "INT",
+      "PRECO": 6.83,
+      "EXP_SCORE": 3.0256,
+      "ATLETA_ID": 106202
     },
     {
       "RODADA": 19,
