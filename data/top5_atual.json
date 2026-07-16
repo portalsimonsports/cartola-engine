@@ -3,18 +3,8 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 19,
-  "atualizado_em": "2026-07-15T23:55:58.104Z",
+  "atualizado_em": "2026-07-16T00:00:12.789Z",
   "dados": [
-    {
-      "RODADA": 19,
-      "POS": "GOL",
-      "NOME": "Everson",
-      "CLUBE": "CAM",
-      "PRECO": 10.67,
-      "EXP_SCORE": 4.0888,
-      "FACTOR": 1.1053367269304128,
-      "ATLETA_ID": 72294
-    },
     {
       "RODADA": 19,
       "POS": "GOL",
@@ -24,6 +14,16 @@
       "EXP_SCORE": 4.0102,
       "FACTOR": 0.9837143435209156,
       "ATLETA_ID": 99552
+    },
+    {
+      "RODADA": 19,
+      "POS": "GOL",
+      "NOME": "Everson",
+      "CLUBE": "CAM",
+      "PRECO": 10.67,
+      "EXP_SCORE": 3.5555,
+      "FACTOR": 1.1053367269304128,
+      "ATLETA_ID": 72294
     },
     {
       "RODADA": 19,
@@ -68,16 +68,6 @@
     {
       "RODADA": 19,
       "POS": "LAT",
-      "NOME": "Renan Lodi",
-      "CLUBE": "CAM",
-      "PRECO": 11.22,
-      "EXP_SCORE": 5.2816,
-      "FACTOR": 1.1053367269304128,
-      "ATLETA_ID": 96591
-    },
-    {
-      "RODADA": 19,
-      "POS": "LAT",
       "NOME": "Bernabei",
       "CLUBE": "INT",
       "PRECO": 9.66,
@@ -88,12 +78,12 @@
     {
       "RODADA": 19,
       "POS": "LAT",
-      "NOME": "Matheuzinho",
-      "CLUBE": "COR",
-      "PRECO": 10.2,
-      "EXP_SCORE": 4.8654,
-      "FACTOR": 1.1305745234340152,
-      "ATLETA_ID": 101727
+      "NOME": "Renan Lodi",
+      "CLUBE": "CAM",
+      "PRECO": 11.22,
+      "EXP_SCORE": 4.5927,
+      "FACTOR": 1.1053367269304128,
+      "ATLETA_ID": 96591
     },
     {
       "RODADA": 19,
@@ -104,6 +94,16 @@
       "EXP_SCORE": 4.4837,
       "FACTOR": 0.9276790606021224,
       "ATLETA_ID": 97795
+    },
+    {
+      "RODADA": 19,
+      "POS": "LAT",
+      "NOME": "Lucas Ramon",
+      "CLUBE": "SAO",
+      "PRECO": 10.43,
+      "EXP_SCORE": 4.2778,
+      "FACTOR": 1.1098064511596704,
+      "ATLETA_ID": 82775
     },
     {
       "RODADA": 19,
@@ -178,6 +178,16 @@
     {
       "RODADA": 19,
       "POS": "MEI",
+      "NOME": "Raniele",
+      "CLUBE": "COR",
+      "PRECO": 7.72,
+      "EXP_SCORE": 3.3506,
+      "FACTOR": 1.0337160802558885,
+      "ATLETA_ID": 95556
+    },
+    {
+      "RODADA": 19,
+      "POS": "MEI",
       "NOME": "Breno Bidon",
       "CLUBE": "COR",
       "PRECO": 9.18,
@@ -194,16 +204,6 @@
       "EXP_SCORE": 3.2308,
       "FACTOR": 0.976292817679558,
       "ATLETA_ID": 89274
-    },
-    {
-      "RODADA": 19,
-      "POS": "MEI",
-      "NOME": "Everton Ribeiro",
-      "CLUBE": "BAH",
-      "PRECO": 9.27,
-      "EXP_SCORE": 3.1808,
-      "FACTOR": 0.9326243093922651,
-      "ATLETA_ID": 51772
     },
     {
       "RODADA": 19,
