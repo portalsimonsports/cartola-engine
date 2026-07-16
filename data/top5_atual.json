@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 19,
-  "atualizado_em": "2026-07-16T05:45:29.290Z",
+  "atualizado_em": "2026-07-16T05:55:36.732Z",
   "dados": [
     {
       "RODADA": 19,
@@ -18,22 +18,22 @@
     {
       "RODADA": 19,
       "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.86,
-      "EXP_SCORE": 3.7739,
-      "FACTOR": 0.9127876681196938,
-      "ATLETA_ID": 104084
-    },
-    {
-      "RODADA": 19,
-      "POS": "GOL",
       "NOME": "Everson",
       "CLUBE": "CAM",
       "PRECO": 10.67,
       "EXP_SCORE": 3.5555,
       "FACTOR": 1.1053367269304128,
       "ATLETA_ID": 72294
+    },
+    {
+      "RODADA": 19,
+      "POS": "GOL",
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 8.86,
+      "EXP_SCORE": 3.2817,
+      "FACTOR": 0.9127876681196938,
+      "ATLETA_ID": 104084
     },
     {
       "RODADA": 19,
@@ -218,6 +218,16 @@
     {
       "RODADA": 19,
       "POS": "ATA",
+      "NOME": "Samuel Lino",
+      "CLUBE": "FLA",
+      "PRECO": 13.59,
+      "EXP_SCORE": 7.054,
+      "FACTOR": 0.9974640883977901,
+      "ATLETA_ID": 98873
+    },
+    {
+      "RODADA": 19,
+      "POS": "ATA",
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 13.09,
@@ -244,16 +254,6 @@
       "EXP_SCORE": 5.557,
       "FACTOR": 1.051679441698168,
       "ATLETA_ID": 93988
-    },
-    {
-      "RODADA": 19,
-      "POS": "ATA",
-      "NOME": "Samuel Lino",
-      "CLUBE": "FLA",
-      "PRECO": 13.59,
-      "EXP_SCORE": 5.5205,
-      "FACTOR": 0.9974640883977901,
-      "ATLETA_ID": 98873
     },
     {
       "RODADA": 19,
@@ -298,12 +298,12 @@
     {
       "RODADA": 19,
       "POS": "TEC",
-      "NOME": "Fernando Seabra",
-      "CLUBE": "CFC",
-      "PRECO": 7.63,
-      "EXP_SCORE": 4.7112,
-      "FACTOR": 1.022466123873219,
-      "ATLETA_ID": 126977
+      "NOME": "Fernando Diniz",
+      "CLUBE": "COR",
+      "PRECO": 9.26,
+      "EXP_SCORE": 4.8306,
+      "FACTOR": 1.005001744693225,
+      "ATLETA_ID": 72391
     }
   ]
 }
