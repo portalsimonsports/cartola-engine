@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 19,
   "tipo": "PONTUACAO",
-  "atualizado_em": "2026-07-16T22:39:56.052Z",
+  "atualizado_em": "2026-07-16T23:29:51.101Z",
   "dados": [
     {
       "RODADA": 19,
@@ -99,6 +99,17 @@
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "ATA",
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 13.09,
+      "EXP_SCORE": 7.6344,
+      "ATLETA_ID": 143193
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 18.5,
@@ -120,17 +131,6 @@
       "RODADA": 19,
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 13.09,
-      "EXP_SCORE": 6.6386,
-      "ATLETA_ID": 143193
-    },
-    {
-      "RODADA": 19,
-      "TIPO": "PONTUACAO",
-      "STATUS": "TITULAR",
       "POS": "TEC",
       "NOME": "Leonardo Jardim",
       "CLUBE": "FLA",
@@ -146,7 +146,7 @@
       "NOME": "Rossi",
       "CLUBE": "FLA",
       "PRECO": 9.17,
-      "EXP_SCORE": 3.5298,
+      "EXP_SCORE": 4.0593,
       "ATLETA_ID": 99552
     },
     {
@@ -187,11 +187,11 @@
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Breno Lopes",
+      "NOME": "Lucas Ronier",
       "CLUBE": "CFC",
-      "PRECO": 9.47,
-      "EXP_SCORE": 6.4101,
-      "ATLETA_ID": 93988
+      "PRECO": 10.73,
+      "EXP_SCORE": 5.7147,
+      "ATLETA_ID": 123648
     }
   ]
 }
