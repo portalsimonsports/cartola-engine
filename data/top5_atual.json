@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 19,
-  "atualizado_em": "2026-07-17T23:30:05.315Z",
+  "atualizado_em": "2026-07-17T23:35:00.148Z",
   "dados": [
     {
       "RODADA": 19,
@@ -61,7 +61,7 @@
       "NOME": "Matheus Bidu",
       "CLUBE": "COR",
       "PRECO": 12.83,
-      "EXP_SCORE": 5.9262,
+      "EXP_SCORE": 6.5847,
       "FACTOR": 1.1222816395942066,
       "ATLETA_ID": 105531
     },
@@ -138,6 +138,16 @@
     {
       "RODADA": 19,
       "POS": "ZAG",
+      "NOME": "Gustavo Henrique",
+      "CLUBE": "COR",
+      "PRECO": 8.01,
+      "EXP_SCORE": 2.694,
+      "FACTOR": 1.1222816395942066,
+      "ATLETA_ID": 78248
+    },
+    {
+      "RODADA": 19,
+      "POS": "ZAG",
       "NOME": "David Duarte",
       "CLUBE": "BAH",
       "PRECO": 7.01,
@@ -147,21 +157,11 @@
     },
     {
       "RODADA": 19,
-      "POS": "ZAG",
-      "NOME": "Gustavo Henrique",
-      "CLUBE": "COR",
-      "PRECO": 8.01,
-      "EXP_SCORE": 2.4246,
-      "FACTOR": 1.1222816395942066,
-      "ATLETA_ID": 78248
-    },
-    {
-      "RODADA": 19,
       "POS": "MEI",
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 15.27,
-      "EXP_SCORE": 4.5038,
+      "EXP_SCORE": 3.9163,
       "FACTOR": 0.939650780661844,
       "ATLETA_ID": 96610
     },
@@ -174,16 +174,6 @@
       "EXP_SCORE": 3.7044,
       "FACTOR": 0.9743981866387352,
       "ATLETA_ID": 99815
-    },
-    {
-      "RODADA": 19,
-      "POS": "MEI",
-      "NOME": "André",
-      "CLUBE": "COR",
-      "PRECO": 8.45,
-      "EXP_SCORE": 3.2861,
-      "FACTOR": 1.0305648391214692,
-      "ATLETA_ID": 145744
     },
     {
       "RODADA": 19,
@@ -204,6 +194,16 @@
       "EXP_SCORE": 3.2245,
       "FACTOR": 0.9743981866387352,
       "ATLETA_ID": 89274
+    },
+    {
+      "RODADA": 19,
+      "POS": "MEI",
+      "NOME": "Gerson",
+      "CLUBE": "CRU",
+      "PRECO": 8.98,
+      "EXP_SCORE": 3.1681,
+      "FACTOR": 0.939650780661844,
+      "ATLETA_ID": 89256
     },
     {
       "RODADA": 19,
