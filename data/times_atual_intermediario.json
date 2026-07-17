@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 19,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-07-17T07:24:49.340Z",
+  "atualizado_em": "2026-07-17T07:34:48.445Z",
   "dados": [
     {
       "RODADA": 19,
@@ -25,7 +25,7 @@
       "NOME": "Matheus Bidu",
       "CLUBE": "COR",
       "PRECO": 12.83,
-      "EXP_SCORE": 6.6051,
+      "EXP_SCORE": 5.9446,
       "ATLETA_ID": 105531
     },
     {
@@ -69,7 +69,7 @@
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 15.27,
-      "EXP_SCORE": 3.9369,
+      "EXP_SCORE": 4.5274,
       "ATLETA_ID": 96610
     },
     {
@@ -88,22 +88,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Breno Bidon",
+      "NOME": "André",
       "CLUBE": "COR",
-      "PRECO": 9.18,
-      "EXP_SCORE": 3.2678,
-      "ATLETA_ID": 117910
-    },
-    {
-      "RODADA": 19,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 13.09,
-      "EXP_SCORE": 7.6344,
-      "ATLETA_ID": 143193
+      "PRECO": 8.45,
+      "EXP_SCORE": 3.3072,
+      "ATLETA_ID": 145744
     },
     {
       "RODADA": 19,
@@ -121,11 +110,22 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Cuello",
-      "CLUBE": "CAM",
-      "PRECO": 8.88,
-      "EXP_SCORE": 5.433,
-      "ATLETA_ID": 98909
+      "NOME": "Samuel Lino",
+      "CLUBE": "FLA",
+      "PRECO": 13.59,
+      "EXP_SCORE": 6.8422,
+      "ATLETA_ID": 98873
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Breno Lopes",
+      "CLUBE": "CFC",
+      "PRECO": 9.47,
+      "EXP_SCORE": 6.4101,
+      "ATLETA_ID": 93988
     },
     {
       "RODADA": 19,
@@ -146,7 +146,7 @@
       "NOME": "Rossi",
       "CLUBE": "FLA",
       "PRECO": 9.17,
-      "EXP_SCORE": 4.0593,
+      "EXP_SCORE": 3.5298,
       "ATLETA_ID": 99552
     },
     {
@@ -176,22 +176,22 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Gerson",
-      "CLUBE": "CRU",
-      "PRECO": 8.98,
-      "EXP_SCORE": 3.1847,
-      "ATLETA_ID": 89256
+      "NOME": "Bruno Gomes",
+      "CLUBE": "INT",
+      "PRECO": 6.83,
+      "EXP_SCORE": 3.0244,
+      "ATLETA_ID": 106202
     },
     {
       "RODADA": 19,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Carbonero",
-      "CLUBE": "INT",
-      "PRECO": 8.53,
-      "EXP_SCORE": 4.769,
-      "ATLETA_ID": 107989
+      "NOME": "Cuello",
+      "CLUBE": "CAM",
+      "PRECO": 8.88,
+      "EXP_SCORE": 5.433,
+      "ATLETA_ID": 98909
     }
   ]
 }
