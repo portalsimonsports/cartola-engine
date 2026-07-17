@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 19,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-07-17T04:49:48.201Z",
+  "atualizado_em": "2026-07-17T04:54:47.448Z",
   "dados": [
     {
       "RODADA": 19,
@@ -55,17 +55,6 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ZAG",
-      "NOME": "Jacy",
-      "CLUBE": "CFC",
-      "PRECO": 5.44,
-      "EXP_SCORE": 3.075,
-      "ATLETA_ID": 97878
-    },
-    {
-      "RODADA": 19,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "ZAG",
       "NOME": "Jonathan Jesus",
       "CLUBE": "CRU",
       "PRECO": 6.74,
@@ -110,6 +99,17 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ATA",
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 13.09,
+      "EXP_SCORE": 7.6344,
+      "ATLETA_ID": 143193
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 18.5,
@@ -132,11 +132,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Paulo Pezzolano",
-      "CLUBE": "INT",
-      "PRECO": 7.47,
-      "EXP_SCORE": 4.9505,
-      "ATLETA_ID": 115479
+      "NOME": "Rafael Lacerda",
+      "CLUBE": "CHA",
+      "PRECO": 7.31,
+      "EXP_SCORE": 0,
+      "ATLETA_ID": 106907
     },
     {
       "RODADA": 19,
@@ -146,7 +146,7 @@
       "NOME": "Carlos Miguel",
       "CLUBE": "PAL",
       "PRECO": 8.86,
-      "EXP_SCORE": 3.7535,
+      "EXP_SCORE": 3.2639,
       "ATLETA_ID": 104084
     },
     {
@@ -157,7 +157,7 @@
       "NOME": "Marcelinho",
       "CLUBE": "REM",
       "PRECO": 7.71,
-      "EXP_SCORE": 3.8796,
+      "EXP_SCORE": 4.4616,
       "ATLETA_ID": 97795
     },
     {
@@ -165,11 +165,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Thiago Santos",
+      "NOME": "Jacy",
       "CLUBE": "CFC",
-      "PRECO": 4.35,
-      "EXP_SCORE": 2.0194,
-      "ATLETA_ID": 78855
+      "PRECO": 5.44,
+      "EXP_SCORE": 2.7675,
+      "ATLETA_ID": 97878
     },
     {
       "RODADA": 19,
@@ -187,11 +187,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 13.09,
-      "EXP_SCORE": 6.6386,
-      "ATLETA_ID": 143193
+      "NOME": "Lucas Ronier",
+      "CLUBE": "CFC",
+      "PRECO": 10.73,
+      "EXP_SCORE": 5.7147,
+      "ATLETA_ID": 123648
     }
   ]
 }
