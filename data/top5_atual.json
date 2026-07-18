@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 19,
-  "atualizado_em": "2026-07-18T11:10:02.024Z",
+  "atualizado_em": "2026-07-18T11:15:11.159Z",
   "dados": [
     {
       "RODADA": 19,
@@ -138,6 +138,16 @@
     {
       "RODADA": 19,
       "POS": "ZAG",
+      "NOME": "Gustavo Henrique",
+      "CLUBE": "COR",
+      "PRECO": 8.01,
+      "EXP_SCORE": 2.6934,
+      "FACTOR": 1.122031491416703,
+      "ATLETA_ID": 78248
+    },
+    {
+      "RODADA": 19,
+      "POS": "ZAG",
       "NOME": "David Duarte",
       "CLUBE": "BAH",
       "PRECO": 7.01,
@@ -147,21 +157,11 @@
     },
     {
       "RODADA": 19,
-      "POS": "ZAG",
-      "NOME": "Gustavo Henrique",
-      "CLUBE": "COR",
-      "PRECO": 8.01,
-      "EXP_SCORE": 2.424,
-      "FACTOR": 1.122031491416703,
-      "ATLETA_ID": 78248
-    },
-    {
-      "RODADA": 19,
       "POS": "MEI",
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 15.27,
-      "EXP_SCORE": 4.5096,
+      "EXP_SCORE": 3.9214,
       "FACTOR": 0.9408627934785357,
       "ATLETA_ID": 96610
     },
@@ -174,16 +174,6 @@
       "EXP_SCORE": 3.7081,
       "FACTOR": 0.9753779718145001,
       "ATLETA_ID": 99815
-    },
-    {
-      "RODADA": 19,
-      "POS": "MEI",
-      "NOME": "André",
-      "CLUBE": "COR",
-      "PRECO": 8.45,
-      "EXP_SCORE": 3.2913,
-      "FACTOR": 1.0321944647753507,
-      "ATLETA_ID": 145744
     },
     {
       "RODADA": 19,
@@ -204,6 +194,16 @@
       "EXP_SCORE": 3.2277,
       "FACTOR": 0.9753779718145001,
       "ATLETA_ID": 89274
+    },
+    {
+      "RODADA": 19,
+      "POS": "MEI",
+      "NOME": "Gerson",
+      "CLUBE": "CRU",
+      "PRECO": 8.98,
+      "EXP_SCORE": 3.1721,
+      "FACTOR": 0.9408627934785357,
+      "ATLETA_ID": 89256
     },
     {
       "RODADA": 19,
