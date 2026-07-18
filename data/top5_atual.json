@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 19,
-  "atualizado_em": "2026-07-18T05:24:44.995Z",
+  "atualizado_em": "2026-07-18T05:30:04.467Z",
   "dados": [
     {
       "RODADA": 19,
@@ -21,7 +21,7 @@
       "NOME": "Rossi",
       "CLUBE": "FLA",
       "PRECO": 9.17,
-      "EXP_SCORE": 3.5905,
+      "EXP_SCORE": 4.1291,
       "FACTOR": 1.0128605726112452,
       "ATLETA_ID": 99552
     },
@@ -218,6 +218,16 @@
     {
       "RODADA": 19,
       "POS": "ATA",
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 13.09,
+      "EXP_SCORE": 7.5999,
+      "FACTOR": 0.9190684154055685,
+      "ATLETA_ID": 143193
+    },
+    {
+      "RODADA": 19,
+      "POS": "ATA",
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 13.59,
@@ -228,12 +238,12 @@
     {
       "RODADA": 19,
       "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 13.09,
-      "EXP_SCORE": 6.6086,
-      "FACTOR": 0.9190684154055685,
-      "ATLETA_ID": 143193
+      "NOME": "Lucas Ronier",
+      "CLUBE": "CFC",
+      "PRECO": 10.73,
+      "EXP_SCORE": 5.6896,
+      "FACTOR": 1.050271391464873,
+      "ATLETA_ID": 123648
     },
     {
       "RODADA": 19,
@@ -241,19 +251,9 @@
       "NOME": "Breno Lopes",
       "CLUBE": "CFC",
       "PRECO": 9.47,
-      "EXP_SCORE": 6.382,
+      "EXP_SCORE": 5.5495,
       "FACTOR": 1.050271391464873,
       "ATLETA_ID": 93988
-    },
-    {
-      "RODADA": 19,
-      "POS": "ATA",
-      "NOME": "Lucas Ronier",
-      "CLUBE": "CFC",
-      "PRECO": 10.73,
-      "EXP_SCORE": 5.6896,
-      "FACTOR": 1.050271391464873,
-      "ATLETA_ID": 123648
     },
     {
       "RODADA": 19,
@@ -278,16 +278,6 @@
     {
       "RODADA": 19,
       "POS": "TEC",
-      "NOME": "Odair Hellmann",
-      "CLUBE": "CAP",
-      "PRECO": 9.28,
-      "EXP_SCORE": 5.0636,
-      "FACTOR": 0.9384172241509489,
-      "ATLETA_ID": 92273
-    },
-    {
-      "RODADA": 19,
-      "POS": "TEC",
       "NOME": "Paulo Pezzolano",
       "CLUBE": "INT",
       "PRECO": 7.47,
@@ -304,6 +294,16 @@
       "EXP_SCORE": 4.8234,
       "FACTOR": 1.0035223963093687,
       "ATLETA_ID": 72391
+    },
+    {
+      "RODADA": 19,
+      "POS": "TEC",
+      "NOME": "Eduardo Domínguez",
+      "CLUBE": "CAM",
+      "PRECO": 11.03,
+      "EXP_SCORE": 4.6827,
+      "FACTOR": 1.0492414300113075,
+      "ATLETA_ID": 92747
     }
   ]
 }
