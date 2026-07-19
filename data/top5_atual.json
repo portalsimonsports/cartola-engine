@@ -3,18 +3,8 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 19,
-  "atualizado_em": "2026-07-19T18:44:58.290Z",
+  "atualizado_em": "2026-07-19T18:54:54.342Z",
   "dados": [
-    {
-      "RODADA": 19,
-      "POS": "GOL",
-      "NOME": "Everson",
-      "CLUBE": "CAM",
-      "PRECO": 10.67,
-      "EXP_SCORE": 4.2888,
-      "FACTOR": 1.1594061987625963,
-      "ATLETA_ID": 72294
-    },
     {
       "RODADA": 19,
       "POS": "GOL",
@@ -24,6 +14,16 @@
       "EXP_SCORE": 4.1291,
       "FACTOR": 1.0128605726112452,
       "ATLETA_ID": 99552
+    },
+    {
+      "RODADA": 19,
+      "POS": "GOL",
+      "NOME": "Everson",
+      "CLUBE": "CAM",
+      "PRECO": 10.67,
+      "EXP_SCORE": 3.7294,
+      "FACTOR": 1.1594061987625963,
+      "ATLETA_ID": 72294
     },
     {
       "RODADA": 19,
@@ -38,22 +38,22 @@
     {
       "RODADA": 19,
       "POS": "GOL",
+      "NOME": "Rafael",
+      "CLUBE": "SAO",
+      "PRECO": 7.38,
+      "EXP_SCORE": 2.8109,
+      "FACTOR": 1.1003346304301558,
+      "ATLETA_ID": 68928
+    },
+    {
+      "RODADA": 19,
+      "POS": "GOL",
       "NOME": "Hugo Souza",
       "CLUBE": "COR",
       "PRECO": 8.79,
       "EXP_SCORE": 2.7926,
       "FACTOR": 1.122031491416703,
       "ATLETA_ID": 101574
-    },
-    {
-      "RODADA": 19,
-      "POS": "GOL",
-      "NOME": "Santos",
-      "CLUBE": "CAP",
-      "PRECO": 8.85,
-      "EXP_SCORE": 2.7878,
-      "FACTOR": 0.9352227664711971,
-      "ATLETA_ID": 69012
     },
     {
       "RODADA": 19,
@@ -152,7 +152,7 @@
       "CLUBE": "CAP",
       "PRECO": 6.04,
       "EXP_SCORE": 2.407,
-      "FACTOR": 0.9352227664711971,
+      "FACTOR": 0.935222766471197,
       "ATLETA_ID": 130843
     },
     {
