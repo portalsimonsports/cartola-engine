@@ -4,18 +4,18 @@
   "tipo_publicacao": "times",
   "rodada": 19,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-07-19T18:44:46.769Z",
+  "atualizado_em": "2026-07-19T18:54:45.812Z",
   "dados": [
     {
       "RODADA": 19,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "GOL",
-      "NOME": "Everson",
-      "CLUBE": "CAM",
-      "PRECO": 10.67,
-      "EXP_SCORE": 4.2888,
-      "ATLETA_ID": 72294
+      "NOME": "Rossi",
+      "CLUBE": "FLA",
+      "PRECO": 9.17,
+      "EXP_SCORE": 4.1291,
+      "ATLETA_ID": 99552
     },
     {
       "RODADA": 19,
@@ -60,6 +60,17 @@
       "PRECO": 6.74,
       "EXP_SCORE": 2.8984,
       "ATLETA_ID": 124912
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "ZAG",
+      "NOME": "Jacy",
+      "CLUBE": "CFC",
+      "PRECO": 5.44,
+      "EXP_SCORE": 2.7577,
+      "ATLETA_ID": 97878
     },
     {
       "RODADA": 19,
@@ -120,34 +131,23 @@
       "RODADA": 19,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Lucas Ronier",
-      "CLUBE": "CFC",
-      "PRECO": 10.73,
-      "EXP_SCORE": 5.6896,
-      "ATLETA_ID": 123648
-    },
-    {
-      "RODADA": 19,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Rafael Lacerda",
-      "CLUBE": "CHA",
-      "PRECO": 7.31,
-      "EXP_SCORE": 0,
-      "ATLETA_ID": 106907
+      "NOME": "Paulo Pezzolano",
+      "CLUBE": "INT",
+      "PRECO": 7.47,
+      "EXP_SCORE": 4.9417,
+      "ATLETA_ID": 115479
     },
     {
       "RODADA": 19,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Rossi",
-      "CLUBE": "FLA",
-      "PRECO": 9.17,
-      "EXP_SCORE": 4.1291,
-      "ATLETA_ID": 99552
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 8.86,
+      "EXP_SCORE": 3.2501,
+      "ATLETA_ID": 104084
     },
     {
       "RODADA": 19,
@@ -165,11 +165,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Jacy",
+      "NOME": "Thiago Santos",
       "CLUBE": "CFC",
-      "PRECO": 5.44,
-      "EXP_SCORE": 2.7577,
-      "ATLETA_ID": 97878
+      "PRECO": 4.35,
+      "EXP_SCORE": 2.0122,
+      "ATLETA_ID": 78855
     },
     {
       "RODADA": 19,
@@ -187,11 +187,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Breno Lopes",
+      "NOME": "Lucas Ronier",
       "CLUBE": "CFC",
-      "PRECO": 9.47,
-      "EXP_SCORE": 5.5495,
-      "ATLETA_ID": 93988
+      "PRECO": 10.73,
+      "EXP_SCORE": 5.6896,
+      "ATLETA_ID": 123648
     }
   ]
 }
