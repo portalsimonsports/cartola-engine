@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 19,
-  "atualizado_em": "2026-07-20T19:50:50.776Z",
+  "atualizado_em": "2026-07-20T19:55:11.164Z",
   "dados": [
     {
       "RODADA": 19,
@@ -28,22 +28,22 @@
     {
       "RODADA": 19,
       "POS": "GOL",
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 8.86,
+      "EXP_SCORE": 3.3303,
+      "FACTOR": 0.9263206819565658,
+      "ATLETA_ID": 104084
+    },
+    {
+      "RODADA": 19,
+      "POS": "GOL",
       "NOME": "Pedro Rangel",
       "CLUBE": "CFC",
       "PRECO": 7.01,
       "EXP_SCORE": 3.2588,
       "FACTOR": 1.1315614369799067,
       "ATLETA_ID": 110708
-    },
-    {
-      "RODADA": 19,
-      "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.86,
-      "EXP_SCORE": 2.9973,
-      "FACTOR": 0.9263206819565658,
-      "ATLETA_ID": 104084
     },
     {
       "RODADA": 19,
@@ -218,22 +218,22 @@
     {
       "RODADA": 19,
       "POS": "ATA",
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 13.09,
+      "EXP_SCORE": 7.6091,
+      "FACTOR": 0.9201791334339297,
+      "ATLETA_ID": 143193
+    },
+    {
+      "RODADA": 19,
+      "POS": "ATA",
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 13.59,
       "EXP_SCORE": 7.2785,
       "FACTOR": 1.029215132571675,
       "ATLETA_ID": 98873
-    },
-    {
-      "RODADA": 19,
-      "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 13.09,
-      "EXP_SCORE": 6.6166,
-      "FACTOR": 0.9201791334339297,
-      "ATLETA_ID": 143193
     },
     {
       "RODADA": 19,
@@ -278,16 +278,6 @@
     {
       "RODADA": 19,
       "POS": "TEC",
-      "NOME": "Odair Hellmann",
-      "CLUBE": "CAP",
-      "PRECO": 9.28,
-      "EXP_SCORE": 5.0697,
-      "FACTOR": 0.9395513257167493,
-      "ATLETA_ID": 92273
-    },
-    {
-      "RODADA": 19,
-      "POS": "TEC",
       "NOME": "Paulo Pezzolano",
       "CLUBE": "INT",
       "PRECO": 7.47,
@@ -304,6 +294,16 @@
       "EXP_SCORE": 4.8297,
       "FACTOR": 1.0048176331105843,
       "ATLETA_ID": 72391
+    },
+    {
+      "RODADA": 19,
+      "POS": "TEC",
+      "NOME": "Eduardo Domínguez",
+      "CLUBE": "CAM",
+      "PRECO": 11.03,
+      "EXP_SCORE": 4.6873,
+      "FACTOR": 1.0502851907738737,
+      "ATLETA_ID": 92747
     }
   ]
 }
