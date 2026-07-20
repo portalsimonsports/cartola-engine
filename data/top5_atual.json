@@ -3,18 +3,8 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 19,
-  "atualizado_em": "2026-07-20T11:44:57.967Z",
+  "atualizado_em": "2026-07-20T11:55:03.594Z",
   "dados": [
-    {
-      "RODADA": 19,
-      "POS": "GOL",
-      "NOME": "Everson",
-      "CLUBE": "CAM",
-      "PRECO": 10.67,
-      "EXP_SCORE": 4.2888,
-      "FACTOR": 1.1594061987625963,
-      "ATLETA_ID": 72294
-    },
     {
       "RODADA": 19,
       "POS": "GOL",
@@ -24,6 +14,16 @@
       "EXP_SCORE": 4.1291,
       "FACTOR": 1.0128605726112452,
       "ATLETA_ID": 99552
+    },
+    {
+      "RODADA": 19,
+      "POS": "GOL",
+      "NOME": "Everson",
+      "CLUBE": "CAM",
+      "PRECO": 10.67,
+      "EXP_SCORE": 3.7294,
+      "FACTOR": 1.1594061987625963,
+      "ATLETA_ID": 72294
     },
     {
       "RODADA": 19,
@@ -68,16 +68,6 @@
     {
       "RODADA": 19,
       "POS": "LAT",
-      "NOME": "Renan Lodi",
-      "CLUBE": "CAM",
-      "PRECO": 11.22,
-      "EXP_SCORE": 5.54,
-      "FACTOR": 1.1594061987625963,
-      "ATLETA_ID": 96591
-    },
-    {
-      "RODADA": 19,
-      "POS": "LAT",
       "NOME": "Bernabei",
       "CLUBE": "INT",
       "PRECO": 9.66,
@@ -88,12 +78,12 @@
     {
       "RODADA": 19,
       "POS": "LAT",
-      "NOME": "Matheuzinho",
-      "CLUBE": "COR",
-      "PRECO": 10.2,
-      "EXP_SCORE": 4.8286,
-      "FACTOR": 1.122031491416703,
-      "ATLETA_ID": 101727
+      "NOME": "Renan Lodi",
+      "CLUBE": "CAM",
+      "PRECO": 11.22,
+      "EXP_SCORE": 4.8174,
+      "FACTOR": 1.1594061987625963,
+      "ATLETA_ID": 96591
     },
     {
       "RODADA": 19,
@@ -104,6 +94,16 @@
       "EXP_SCORE": 4.4444,
       "FACTOR": 0.9195610900310451,
       "ATLETA_ID": 97795
+    },
+    {
+      "RODADA": 19,
+      "POS": "LAT",
+      "NOME": "Lucas Ramon",
+      "CLUBE": "SAO",
+      "PRECO": 10.43,
+      "EXP_SCORE": 4.2413,
+      "FACTOR": 1.1003346304301558,
+      "ATLETA_ID": 82775
     },
     {
       "RODADA": 19,
@@ -138,22 +138,22 @@
     {
       "RODADA": 19,
       "POS": "ZAG",
-      "NOME": "David Duarte",
-      "CLUBE": "BAH",
-      "PRECO": 7.01,
-      "EXP_SCORE": 2.4932,
-      "FACTOR": 0.946697067954467,
-      "ATLETA_ID": 91772
+      "NOME": "Gustavo Henrique",
+      "CLUBE": "COR",
+      "PRECO": 8.01,
+      "EXP_SCORE": 2.6934,
+      "FACTOR": 1.122031491416703,
+      "ATLETA_ID": 78248
     },
     {
       "RODADA": 19,
       "POS": "ZAG",
-      "NOME": "Gustavo Henrique",
-      "CLUBE": "COR",
-      "PRECO": 8.01,
-      "EXP_SCORE": 2.424,
-      "FACTOR": 1.122031491416703,
-      "ATLETA_ID": 78248
+      "NOME": "Arthur Dias",
+      "CLUBE": "CAP",
+      "PRECO": 6.04,
+      "EXP_SCORE": 2.407,
+      "FACTOR": 0.935222766471197,
+      "ATLETA_ID": 130843
     },
     {
       "RODADA": 19,
