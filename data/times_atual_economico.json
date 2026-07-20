@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 19,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-07-20T21:29:44.244Z",
+  "atualizado_em": "2026-07-20T21:39:44.112Z",
   "dados": [
     {
       "RODADA": 19,
@@ -25,7 +25,7 @@
       "NOME": "Marcelinho",
       "CLUBE": "REM",
       "PRECO": 7.71,
-      "EXP_SCORE": 4.4222,
+      "EXP_SCORE": 4.4223,
       "ATLETA_ID": 97795
     },
     {
@@ -36,7 +36,7 @@
       "NOME": "Renan Lodi",
       "CLUBE": "CAM",
       "PRECO": 11.22,
-      "EXP_SCORE": 5.5212,
+      "EXP_SCORE": 5.5213,
       "ATLETA_ID": 96591
     },
     {
@@ -69,8 +69,19 @@
       "NOME": "André",
       "CLUBE": "COR",
       "PRECO": 8.45,
-      "EXP_SCORE": 3.294,
+      "EXP_SCORE": 3.2884,
       "ATLETA_ID": 145744
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "João Cruz",
+      "CLUBE": "CAP",
+      "PRECO": 6.45,
+      "EXP_SCORE": 2.2705,
+      "ATLETA_ID": 128431
     },
     {
       "RODADA": 19,
@@ -80,19 +91,8 @@
       "NOME": "Camilo",
       "CLUBE": "CHA",
       "PRECO": 5.62,
-      "EXP_SCORE": 2.5844,
+      "EXP_SCORE": 2.5811,
       "ATLETA_ID": 104519
-    },
-    {
-      "RODADA": 19,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Felipinho",
-      "CLUBE": "CAP",
-      "PRECO": 5.57,
-      "EXP_SCORE": 1.7627,
-      "ATLETA_ID": 112017
     },
     {
       "RODADA": 19,
@@ -102,7 +102,7 @@
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 13.59,
-      "EXP_SCORE": 7.2773,
+      "EXP_SCORE": 7.2725,
       "ATLETA_ID": 98873
     },
     {
@@ -113,7 +113,7 @@
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 18.5,
-      "EXP_SCORE": 7.8832,
+      "EXP_SCORE": 7.8781,
       "ATLETA_ID": 94583
     },
     {
@@ -124,7 +124,7 @@
       "NOME": "Marcinho",
       "CLUBE": "CHA",
       "PRECO": 4.71,
-      "EXP_SCORE": 3.1321,
+      "EXP_SCORE": 3.128,
       "ATLETA_ID": 95332
     },
     {
@@ -157,7 +157,7 @@
       "NOME": "Bruno Pacheco",
       "CLUBE": "CHA",
       "PRECO": 6.42,
-      "EXP_SCORE": 3.1788,
+      "EXP_SCORE": 3.1789,
       "ATLETA_ID": 90061
     },
     {
@@ -179,7 +179,7 @@
       "NOME": "Josué",
       "CLUBE": "CFC",
       "PRECO": 5.42,
-      "EXP_SCORE": 2.6246,
+      "EXP_SCORE": 2.6207,
       "ATLETA_ID": 84626
     },
     {
@@ -190,7 +190,7 @@
       "NOME": "Bolasie",
       "CLUBE": "CHA",
       "PRECO": 4.53,
-      "EXP_SCORE": 1.8892,
+      "EXP_SCORE": 1.8867,
       "ATLETA_ID": 86292
     }
   ]
