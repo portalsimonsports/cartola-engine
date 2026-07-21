@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 19,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-07-21T15:59:45.833Z",
+  "atualizado_em": "2026-07-21T16:09:45.017Z",
   "dados": [
     {
       "RODADA": 19,
@@ -88,17 +88,6 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Camilo",
-      "CLUBE": "CHA",
-      "PRECO": 5.62,
-      "EXP_SCORE": 2.528,
-      "ATLETA_ID": 104519
-    },
-    {
-      "RODADA": 19,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
       "NOME": "Bernard",
       "CLUBE": "CAM",
       "PRECO": 5.29,
@@ -131,6 +120,17 @@
       "RODADA": 19,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Jajá",
+      "CLUBE": "REM",
+      "PRECO": 6.66,
+      "EXP_SCORE": 3.5861,
+      "ATLETA_ID": 105048
+    },
+    {
+      "RODADA": 19,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
       "POS": "TEC",
       "NOME": "Rafael Lacerda",
       "CLUBE": "CHA",
@@ -157,7 +157,7 @@
       "NOME": "Bruno Pacheco",
       "CLUBE": "CHA",
       "PRECO": 6.42,
-      "EXP_SCORE": 3.157,
+      "EXP_SCORE": 3.6305,
       "ATLETA_ID": 90061
     },
     {
@@ -176,22 +176,22 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Sebastián Gómez",
-      "CLUBE": "CFC",
-      "PRECO": 4.29,
-      "EXP_SCORE": 2.0691,
-      "ATLETA_ID": 104811
+      "NOME": "Jadson",
+      "CLUBE": "CAP",
+      "PRECO": 4.95,
+      "EXP_SCORE": 1.9256,
+      "ATLETA_ID": 80129
     },
     {
       "RODADA": 19,
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 13.09,
-      "EXP_SCORE": 6.6551,
-      "ATLETA_ID": 143193
+      "NOME": "Ênio",
+      "CLUBE": "CHA",
+      "PRECO": 5.61,
+      "EXP_SCORE": 2.8059,
+      "ATLETA_ID": 107516
     }
   ]
 }
