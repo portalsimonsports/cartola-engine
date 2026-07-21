@@ -3,18 +3,8 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 19,
-  "atualizado_em": "2026-07-21T18:50:11.300Z",
+  "atualizado_em": "2026-07-21T18:55:26.751Z",
   "dados": [
-    {
-      "RODADA": 19,
-      "POS": "GOL",
-      "NOME": "Everson",
-      "CLUBE": "CAM",
-      "PRECO": 10.67,
-      "EXP_SCORE": 4.2553,
-      "FACTOR": 1.150341314775924,
-      "ATLETA_ID": 72294
-    },
     {
       "RODADA": 19,
       "POS": "GOL",
@@ -24,6 +14,16 @@
       "EXP_SCORE": 4.1071,
       "FACTOR": 1.00747623778489,
       "ATLETA_ID": 99552
+    },
+    {
+      "RODADA": 19,
+      "POS": "GOL",
+      "NOME": "Everson",
+      "CLUBE": "CAM",
+      "PRECO": 10.67,
+      "EXP_SCORE": 3.7002,
+      "FACTOR": 1.150341314775924,
+      "ATLETA_ID": 72294
     },
     {
       "RODADA": 19,
@@ -48,12 +48,12 @@
     {
       "RODADA": 19,
       "POS": "GOL",
-      "NOME": "Hugo Souza",
-      "CLUBE": "COR",
-      "PRECO": 8.79,
-      "EXP_SCORE": 2.7648,
-      "FACTOR": 1.1108777644314598,
-      "ATLETA_ID": 101574
+      "NOME": "Rafael",
+      "CLUBE": "SAO",
+      "PRECO": 7.38,
+      "EXP_SCORE": 2.7943,
+      "FACTOR": 1.0938175122635443,
+      "ATLETA_ID": 68928
     },
     {
       "RODADA": 19,
@@ -61,7 +61,7 @@
       "NOME": "Matheus Bidu",
       "CLUBE": "COR",
       "PRECO": 12.83,
-      "EXP_SCORE": 5.866,
+      "EXP_SCORE": 6.5178,
       "FACTOR": 1.1108777644314598,
       "ATLETA_ID": 105531
     },
@@ -71,19 +71,9 @@
       "NOME": "Renan Lodi",
       "CLUBE": "CAM",
       "PRECO": 11.22,
-      "EXP_SCORE": 5.4967,
+      "EXP_SCORE": 4.7797,
       "FACTOR": 1.150341314775924,
       "ATLETA_ID": 96591
-    },
-    {
-      "RODADA": 19,
-      "POS": "LAT",
-      "NOME": "Matheuzinho",
-      "CLUBE": "COR",
-      "PRECO": 10.2,
-      "EXP_SCORE": 4.7806,
-      "FACTOR": 1.1108777644314598,
-      "ATLETA_ID": 101727
     },
     {
       "RODADA": 19,
@@ -104,6 +94,16 @@
       "EXP_SCORE": 4.2161,
       "FACTOR": 1.0938175122635443,
       "ATLETA_ID": 82775
+    },
+    {
+      "RODADA": 19,
+      "POS": "LAT",
+      "NOME": "Matheuzinho",
+      "CLUBE": "COR",
+      "PRECO": 10.2,
+      "EXP_SCORE": 4.157,
+      "FACTOR": 1.1108777644314598,
+      "ATLETA_ID": 101727
     },
     {
       "RODADA": 19,
@@ -161,7 +161,7 @@
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 15.27,
-      "EXP_SCORE": 4.6456,
+      "EXP_SCORE": 4.0396,
       "FACTOR": 0.9692356971060879,
       "ATLETA_ID": 96610
     },
@@ -178,12 +178,12 @@
     {
       "RODADA": 19,
       "POS": "MEI",
-      "NOME": "André",
+      "NOME": "Raniele",
       "CLUBE": "COR",
-      "PRECO": 8.45,
-      "EXP_SCORE": 3.2762,
+      "PRECO": 7.72,
+      "EXP_SCORE": 3.3303,
       "FACTOR": 1.027459207885054,
-      "ATLETA_ID": 145744
+      "ATLETA_ID": 95556
     },
     {
       "RODADA": 19,
