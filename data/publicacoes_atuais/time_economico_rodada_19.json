@@ -2,7 +2,7 @@
   "atletas": [
     {
       "clube": "REM",
-      "data": "2026-07-21T19:53:25.000Z",
+      "data": "2026-07-21T21:49:40.000Z",
       "nome": "Ivan",
       "pos": "GOL",
       "preco": 7.58,
@@ -10,7 +10,7 @@
     },
     {
       "clube": "REM",
-      "data": "2026-07-21T19:53:25.000Z",
+      "data": "2026-07-21T21:49:40.000Z",
       "nome": "Marcelinho",
       "pos": "LAT",
       "preco": 7.71,
@@ -18,7 +18,7 @@
     },
     {
       "clube": "CAM",
-      "data": "2026-07-21T19:53:25.000Z",
+      "data": "2026-07-21T21:49:40.000Z",
       "nome": "Renan Lodi",
       "pos": "LAT",
       "preco": 11.22,
@@ -26,7 +26,7 @@
     },
     {
       "clube": "BAH",
-      "data": "2026-07-21T19:53:25.000Z",
+      "data": "2026-07-21T21:49:40.000Z",
       "nome": "David Duarte",
       "pos": "ZAG",
       "preco": 7.01,
@@ -34,7 +34,7 @@
     },
     {
       "clube": "CFC",
-      "data": "2026-07-21T19:53:25.000Z",
+      "data": "2026-07-21T21:49:40.000Z",
       "nome": "Jacy",
       "pos": "ZAG",
       "preco": 5.44,
@@ -42,7 +42,7 @@
     },
     {
       "clube": "COR",
-      "data": "2026-07-21T19:53:25.000Z",
+      "data": "2026-07-21T21:49:40.000Z",
       "nome": "André",
       "pos": "MEI",
       "preco": 8.45,
@@ -50,23 +50,23 @@
     },
     {
       "clube": "CAP",
-      "data": "2026-07-21T19:53:25.000Z",
+      "data": "2026-07-21T21:49:40.000Z",
       "nome": "João Cruz",
       "pos": "MEI",
       "preco": 6.45,
       "status": "TITULAR"
     },
     {
-      "clube": "CAM",
-      "data": "2026-07-21T19:53:25.000Z",
-      "nome": "Bernard",
+      "clube": "CHA",
+      "data": "2026-07-21T21:49:40.000Z",
+      "nome": "Camilo",
       "pos": "MEI",
-      "preco": 5.29,
+      "preco": 5.62,
       "status": "TITULAR"
     },
     {
       "clube": "FLA",
-      "data": "2026-07-21T19:53:25.000Z",
+      "data": "2026-07-21T21:49:40.000Z",
       "nome": "Samuel Lino",
       "pos": "ATA",
       "preco": 13.59,
@@ -74,7 +74,7 @@
     },
     {
       "clube": "FLA",
-      "data": "2026-07-21T19:53:25.000Z",
+      "data": "2026-07-21T21:49:40.000Z",
       "nome": "Pedro",
       "pos": "ATA",
       "preco": 18.5,
@@ -82,7 +82,7 @@
     },
     {
       "clube": "CHA",
-      "data": "2026-07-21T19:53:25.000Z",
+      "data": "2026-07-21T21:49:40.000Z",
       "nome": "Marcinho",
       "pos": "ATA",
       "preco": 4.71,
@@ -90,7 +90,7 @@
     },
     {
       "clube": "CHA",
-      "data": "2026-07-21T19:53:25.000Z",
+      "data": "2026-07-21T21:49:40.000Z",
       "nome": "Rafael Lacerda",
       "pos": "TEC",
       "preco": 7.31,
@@ -98,7 +98,7 @@
     },
     {
       "clube": "CFC",
-      "data": "2026-07-21T19:53:25.000Z",
+      "data": "2026-07-21T21:49:40.000Z",
       "nome": "Pedro Rangel",
       "pos": "GOL",
       "preco": 7.01,
@@ -106,7 +106,7 @@
     },
     {
       "clube": "CHA",
-      "data": "2026-07-21T19:53:25.000Z",
+      "data": "2026-07-21T21:49:40.000Z",
       "nome": "Bruno Pacheco",
       "pos": "LAT",
       "preco": 6.42,
@@ -114,23 +114,23 @@
     },
     {
       "clube": "CFC",
-      "data": "2026-07-21T19:53:25.000Z",
+      "data": "2026-07-21T21:49:40.000Z",
       "nome": "Thiago Santos",
       "pos": "ZAG",
       "preco": 4.35,
       "status": "RESERVA"
     },
     {
-      "clube": "CAP",
-      "data": "2026-07-21T19:53:25.000Z",
-      "nome": "Jadson",
+      "clube": "CFC",
+      "data": "2026-07-21T21:49:40.000Z",
+      "nome": "Josué",
       "pos": "MEI",
-      "preco": 4.95,
+      "preco": 5.42,
       "status": "RESERVA"
     },
     {
       "clube": "CHA",
-      "data": "2026-07-21T19:53:25.000Z",
+      "data": "2026-07-21T21:49:40.000Z",
       "nome": "Bolasie",
       "pos": "ATA",
       "preco": 4.53,
@@ -138,18 +138,18 @@
     }
   ],
   "blocos_topo": [
-    "Pré-fechamento dos times"
+    "Base: 21/07/2026 18:49:40"
   ],
   "capitao": "Pedro",
-  "custo_total": 103.26,
-  "evento_programado": "PRE_FECHAMENTO_TIMES",
+  "custo_total": 103.59,
+  "evento_programado": "CONFIRMADOS",
   "forcar_envio": true,
   "formacao": "4-3-3",
   "houve_alteracao": true,
-  "mensagem_oficial": "Econômico • Rodada 19\nPré-fechamento dos times\nPortal SimonSports",
+  "mensagem_oficial": "Econômico • Rodada 19\nSeleção confirmada\nPortal SimonSports",
   "meta": {
     "capitao": "Pedro (ATA)",
-    "custo_total": 103.26,
+    "custo_total": 103.59,
     "esquema": "4-3-3",
     "pontos_total": 0,
     "variacao_total": 0
@@ -209,10 +209,10 @@
         "status": "TITULAR"
       },
       {
-        "clube": "CAM",
-        "nome": "Bernard",
+        "clube": "CHA",
+        "nome": "Camilo",
         "pos": "MEI",
-        "preco": 5.29,
+        "preco": 5.62,
         "status": "TITULAR"
       },
       {
@@ -265,10 +265,10 @@
         "status": "RESERVA"
       },
       {
-        "clube": "CAP",
-        "nome": "Jadson",
+        "clube": "CFC",
+        "nome": "Josué",
         "pos": "MEI",
-        "preco": 4.95,
+        "preco": 5.42,
         "status": "RESERVA"
       },
       {
@@ -281,18 +281,18 @@
     ],
     "capitao": "Pedro"
   },
-  "timestamp_base": "",
+  "timestamp_base": "21/07/2026 18:49:40",
   "tipo_publicacao": "time_economico",
   "titulo": "TIME ECONÔMICO",
   "rodada": 19,
   "origem": "jobTelegramDispatcher",
   "ambiente": "producao",
-  "gerado_em": "2026-07-21T19:58:26.052Z",
-  "payload_hash": "f2nO8p1gILJA0yNPS6537w==",
+  "gerado_em": "2026-07-21T22:04:26.496Z",
+  "payload_hash": "siLp7VkXn1ng8+xnBZL4sg==",
   "jogadores": [
     {
       "clube": "REM",
-      "data": "2026-07-21T19:53:25.000Z",
+      "data": "2026-07-21T21:49:40.000Z",
       "nome": "Ivan",
       "pos": "GOL",
       "preco": 7.58,
@@ -300,7 +300,7 @@
     },
     {
       "clube": "REM",
-      "data": "2026-07-21T19:53:25.000Z",
+      "data": "2026-07-21T21:49:40.000Z",
       "nome": "Marcelinho",
       "pos": "LAT",
       "preco": 7.71,
@@ -308,7 +308,7 @@
     },
     {
       "clube": "CAM",
-      "data": "2026-07-21T19:53:25.000Z",
+      "data": "2026-07-21T21:49:40.000Z",
       "nome": "Renan Lodi",
       "pos": "LAT",
       "preco": 11.22,
@@ -316,7 +316,7 @@
     },
     {
       "clube": "BAH",
-      "data": "2026-07-21T19:53:25.000Z",
+      "data": "2026-07-21T21:49:40.000Z",
       "nome": "David Duarte",
       "pos": "ZAG",
       "preco": 7.01,
@@ -324,7 +324,7 @@
     },
     {
       "clube": "CFC",
-      "data": "2026-07-21T19:53:25.000Z",
+      "data": "2026-07-21T21:49:40.000Z",
       "nome": "Jacy",
       "pos": "ZAG",
       "preco": 5.44,
@@ -332,7 +332,7 @@
     },
     {
       "clube": "COR",
-      "data": "2026-07-21T19:53:25.000Z",
+      "data": "2026-07-21T21:49:40.000Z",
       "nome": "André",
       "pos": "MEI",
       "preco": 8.45,
@@ -340,23 +340,23 @@
     },
     {
       "clube": "CAP",
-      "data": "2026-07-21T19:53:25.000Z",
+      "data": "2026-07-21T21:49:40.000Z",
       "nome": "João Cruz",
       "pos": "MEI",
       "preco": 6.45,
       "status": "TITULAR"
     },
     {
-      "clube": "CAM",
-      "data": "2026-07-21T19:53:25.000Z",
-      "nome": "Bernard",
+      "clube": "CHA",
+      "data": "2026-07-21T21:49:40.000Z",
+      "nome": "Camilo",
       "pos": "MEI",
-      "preco": 5.29,
+      "preco": 5.62,
       "status": "TITULAR"
     },
     {
       "clube": "FLA",
-      "data": "2026-07-21T19:53:25.000Z",
+      "data": "2026-07-21T21:49:40.000Z",
       "nome": "Samuel Lino",
       "pos": "ATA",
       "preco": 13.59,
@@ -364,7 +364,7 @@
     },
     {
       "clube": "FLA",
-      "data": "2026-07-21T19:53:25.000Z",
+      "data": "2026-07-21T21:49:40.000Z",
       "nome": "Pedro",
       "pos": "ATA",
       "preco": 18.5,
@@ -372,7 +372,7 @@
     },
     {
       "clube": "CHA",
-      "data": "2026-07-21T19:53:25.000Z",
+      "data": "2026-07-21T21:49:40.000Z",
       "nome": "Marcinho",
       "pos": "ATA",
       "preco": 4.71,
@@ -380,7 +380,7 @@
     },
     {
       "clube": "CHA",
-      "data": "2026-07-21T19:53:25.000Z",
+      "data": "2026-07-21T21:49:40.000Z",
       "nome": "Rafael Lacerda",
       "pos": "TEC",
       "preco": 7.31,
@@ -390,7 +390,7 @@
   "reservas": [
     {
       "clube": "CFC",
-      "data": "2026-07-21T19:53:25.000Z",
+      "data": "2026-07-21T21:49:40.000Z",
       "nome": "Pedro Rangel",
       "pos": "GOL",
       "preco": 7.01,
@@ -398,7 +398,7 @@
     },
     {
       "clube": "CHA",
-      "data": "2026-07-21T19:53:25.000Z",
+      "data": "2026-07-21T21:49:40.000Z",
       "nome": "Bruno Pacheco",
       "pos": "LAT",
       "preco": 6.42,
@@ -406,23 +406,23 @@
     },
     {
       "clube": "CFC",
-      "data": "2026-07-21T19:53:25.000Z",
+      "data": "2026-07-21T21:49:40.000Z",
       "nome": "Thiago Santos",
       "pos": "ZAG",
       "preco": 4.35,
       "status": "RESERVA"
     },
     {
-      "clube": "CAP",
-      "data": "2026-07-21T19:53:25.000Z",
-      "nome": "Jadson",
+      "clube": "CFC",
+      "data": "2026-07-21T21:49:40.000Z",
+      "nome": "Josué",
       "pos": "MEI",
-      "preco": 4.95,
+      "preco": 5.42,
       "status": "RESERVA"
     },
     {
       "clube": "CHA",
-      "data": "2026-07-21T19:53:25.000Z",
+      "data": "2026-07-21T21:49:40.000Z",
       "nome": "Bolasie",
       "pos": "ATA",
       "preco": 4.53,
