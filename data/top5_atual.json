@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 19,
-  "atualizado_em": "2026-07-21T18:10:01.801Z",
+  "atualizado_em": "2026-07-21T18:15:19.207Z",
   "dados": [
     {
       "RODADA": 19,
@@ -22,8 +22,18 @@
       "CLUBE": "FLA",
       "PRECO": 9.17,
       "EXP_SCORE": 4.1071,
-      "FACTOR": 1.0074762377848898,
+      "FACTOR": 1.00747623778489,
       "ATLETA_ID": 99552
+    },
+    {
+      "RODADA": 19,
+      "POS": "GOL",
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 8.86,
+      "EXP_SCORE": 3.31,
+      "FACTOR": 0.9206688137878658,
+      "ATLETA_ID": 104084
     },
     {
       "RODADA": 19,
@@ -34,16 +44,6 @@
       "EXP_SCORE": 3.2418,
       "FACTOR": 1.1256883130167932,
       "ATLETA_ID": 110708
-    },
-    {
-      "RODADA": 19,
-      "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.86,
-      "EXP_SCORE": 2.979,
-      "FACTOR": 0.9206688137878658,
-      "ATLETA_ID": 104084
     },
     {
       "RODADA": 19,
@@ -61,7 +61,7 @@
       "NOME": "Matheus Bidu",
       "CLUBE": "COR",
       "PRECO": 12.83,
-      "EXP_SCORE": 5.866,
+      "EXP_SCORE": 6.5178,
       "FACTOR": 1.1108777644314598,
       "ATLETA_ID": 105531
     },
@@ -161,7 +161,7 @@
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 15.27,
-      "EXP_SCORE": 4.6456,
+      "EXP_SCORE": 4.0396,
       "FACTOR": 0.9692356971060879,
       "ATLETA_ID": 96610
     },
@@ -178,12 +178,12 @@
     {
       "RODADA": 19,
       "POS": "MEI",
-      "NOME": "André",
+      "NOME": "Raniele",
       "CLUBE": "COR",
-      "PRECO": 8.45,
-      "EXP_SCORE": 3.2762,
+      "PRECO": 7.72,
+      "EXP_SCORE": 3.3303,
       "FACTOR": 1.027459207885054,
-      "ATLETA_ID": 145744
+      "ATLETA_ID": 95556
     },
     {
       "RODADA": 19,
@@ -292,7 +292,7 @@
       "CLUBE": "COR",
       "PRECO": 9.26,
       "EXP_SCORE": 4.8013,
-      "FACTOR": 0.9989186743326913,
+      "FACTOR": 0.9989186743326912,
       "ATLETA_ID": 72391
     },
     {
