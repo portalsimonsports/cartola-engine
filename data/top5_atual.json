@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 19,
-  "atualizado_em": "2026-07-21T17:44:45.805Z",
+  "atualizado_em": "2026-07-21T17:50:09.743Z",
   "dados": [
     {
       "RODADA": 19,
@@ -21,7 +21,7 @@
       "NOME": "Rossi",
       "CLUBE": "FLA",
       "PRECO": 9.17,
-      "EXP_SCORE": 3.5714,
+      "EXP_SCORE": 4.1071,
       "FACTOR": 1.00747623778489,
       "ATLETA_ID": 99552
     },
@@ -232,18 +232,8 @@
       "CLUBE": "CAP",
       "PRECO": 13.09,
       "EXP_SCORE": 6.6454,
-      "FACTOR": 0.9241901171634725,
+      "FACTOR": 0.9241901171634727,
       "ATLETA_ID": 143193
-    },
-    {
-      "RODADA": 19,
-      "POS": "ATA",
-      "NOME": "Breno Lopes",
-      "CLUBE": "CFC",
-      "PRECO": 9.47,
-      "EXP_SCORE": 6.4814,
-      "FACTOR": 1.066639792855275,
-      "ATLETA_ID": 93988
     },
     {
       "RODADA": 19,
@@ -254,6 +244,16 @@
       "EXP_SCORE": 5.7783,
       "FACTOR": 1.066639792855275,
       "ATLETA_ID": 123648
+    },
+    {
+      "RODADA": 19,
+      "POS": "ATA",
+      "NOME": "Breno Lopes",
+      "CLUBE": "CFC",
+      "PRECO": 9.47,
+      "EXP_SCORE": 5.636,
+      "FACTOR": 1.066639792855275,
+      "ATLETA_ID": 93988
     },
     {
       "RODADA": 19,
@@ -282,7 +282,7 @@
       "CLUBE": "CAP",
       "PRECO": 9.28,
       "EXP_SCORE": 5.0918,
-      "FACTOR": 0.9436467512090194,
+      "FACTOR": 0.9436467512090195,
       "ATLETA_ID": 92273
     },
     {
@@ -292,7 +292,7 @@
       "CLUBE": "INT",
       "PRECO": 7.47,
       "EXP_SCORE": 4.8851,
-      "FACTOR": 1.1271291192297634,
+      "FACTOR": 1.1271291192297637,
       "ATLETA_ID": 115479
     },
     {
@@ -302,7 +302,7 @@
       "CLUBE": "COR",
       "PRECO": 9.26,
       "EXP_SCORE": 4.8013,
-      "FACTOR": 0.9989186743326913,
+      "FACTOR": 0.9989186743326912,
       "ATLETA_ID": 72391
     }
   ]
