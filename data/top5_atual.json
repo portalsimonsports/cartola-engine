@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 19,
-  "atualizado_em": "2026-07-21T17:50:09.743Z",
+  "atualizado_em": "2026-07-21T17:55:14.835Z",
   "dados": [
     {
       "RODADA": 19,
@@ -22,8 +22,18 @@
       "CLUBE": "FLA",
       "PRECO": 9.17,
       "EXP_SCORE": 4.1071,
-      "FACTOR": 1.00747623778489,
+      "FACTOR": 1.0074762377848898,
       "ATLETA_ID": 99552
+    },
+    {
+      "RODADA": 19,
+      "POS": "GOL",
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 8.86,
+      "EXP_SCORE": 3.31,
+      "FACTOR": 0.9206688137878658,
+      "ATLETA_ID": 104084
     },
     {
       "RODADA": 19,
@@ -34,16 +44,6 @@
       "EXP_SCORE": 3.2418,
       "FACTOR": 1.1256883130167932,
       "ATLETA_ID": 110708
-    },
-    {
-      "RODADA": 19,
-      "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.86,
-      "EXP_SCORE": 2.979,
-      "FACTOR": 0.9206688137878658,
-      "ATLETA_ID": 104084
     },
     {
       "RODADA": 19,
@@ -218,22 +218,22 @@
     {
       "RODADA": 19,
       "POS": "ATA",
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 13.09,
+      "EXP_SCORE": 7.6423,
+      "FACTOR": 0.9241901171634725,
+      "ATLETA_ID": 143193
+    },
+    {
+      "RODADA": 19,
+      "POS": "ATA",
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 13.59,
       "EXP_SCORE": 7.2309,
       "FACTOR": 1.0224816888335584,
       "ATLETA_ID": 98873
-    },
-    {
-      "RODADA": 19,
-      "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 13.09,
-      "EXP_SCORE": 6.6454,
-      "FACTOR": 0.9241901171634727,
-      "ATLETA_ID": 143193
     },
     {
       "RODADA": 19,
@@ -278,21 +278,11 @@
     {
       "RODADA": 19,
       "POS": "TEC",
-      "NOME": "Odair Hellmann",
-      "CLUBE": "CAP",
-      "PRECO": 9.28,
-      "EXP_SCORE": 5.0918,
-      "FACTOR": 0.9436467512090195,
-      "ATLETA_ID": 92273
-    },
-    {
-      "RODADA": 19,
-      "POS": "TEC",
       "NOME": "Paulo Pezzolano",
       "CLUBE": "INT",
       "PRECO": 7.47,
       "EXP_SCORE": 4.8851,
-      "FACTOR": 1.1271291192297637,
+      "FACTOR": 1.1271291192297634,
       "ATLETA_ID": 115479
     },
     {
@@ -304,6 +294,16 @@
       "EXP_SCORE": 4.8013,
       "FACTOR": 0.9989186743326912,
       "ATLETA_ID": 72391
+    },
+    {
+      "RODADA": 19,
+      "POS": "TEC",
+      "NOME": "Eduardo Domínguez",
+      "CLUBE": "CAM",
+      "PRECO": 11.03,
+      "EXP_SCORE": 4.7444,
+      "FACTOR": 1.0630740181435796,
+      "ATLETA_ID": 92747
     }
   ]
 }
