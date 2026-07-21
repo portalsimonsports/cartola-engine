@@ -3,18 +3,8 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 19,
-  "atualizado_em": "2026-07-21T19:20:06.025Z",
+  "atualizado_em": "2026-07-21T19:25:04.628Z",
   "dados": [
-    {
-      "RODADA": 19,
-      "POS": "GOL",
-      "NOME": "Everson",
-      "CLUBE": "CAM",
-      "PRECO": 10.67,
-      "EXP_SCORE": 4.2553,
-      "FACTOR": 1.150341314775924,
-      "ATLETA_ID": 72294
-    },
     {
       "RODADA": 19,
       "POS": "GOL",
@@ -24,6 +14,16 @@
       "EXP_SCORE": 4.1071,
       "FACTOR": 1.00747623778489,
       "ATLETA_ID": 99552
+    },
+    {
+      "RODADA": 19,
+      "POS": "GOL",
+      "NOME": "Everson",
+      "CLUBE": "CAM",
+      "PRECO": 10.67,
+      "EXP_SCORE": 3.7002,
+      "FACTOR": 1.150341314775924,
+      "ATLETA_ID": 72294
     },
     {
       "RODADA": 19,
@@ -48,12 +48,12 @@
     {
       "RODADA": 19,
       "POS": "GOL",
-      "NOME": "Hugo Souza",
-      "CLUBE": "COR",
-      "PRECO": 8.79,
-      "EXP_SCORE": 2.7648,
-      "FACTOR": 1.1108777644314598,
-      "ATLETA_ID": 101574
+      "NOME": "Rafael",
+      "CLUBE": "SAO",
+      "PRECO": 7.38,
+      "EXP_SCORE": 2.7943,
+      "FACTOR": 1.0938175122635443,
+      "ATLETA_ID": 68928
     },
     {
       "RODADA": 19,
@@ -71,19 +71,9 @@
       "NOME": "Renan Lodi",
       "CLUBE": "CAM",
       "PRECO": 11.22,
-      "EXP_SCORE": 5.4967,
+      "EXP_SCORE": 4.7797,
       "FACTOR": 1.150341314775924,
       "ATLETA_ID": 96591
-    },
-    {
-      "RODADA": 19,
-      "POS": "LAT",
-      "NOME": "Matheuzinho",
-      "CLUBE": "COR",
-      "PRECO": 10.2,
-      "EXP_SCORE": 4.7806,
-      "FACTOR": 1.1108777644314598,
-      "ATLETA_ID": 101727
     },
     {
       "RODADA": 19,
@@ -104,6 +94,16 @@
       "EXP_SCORE": 4.2161,
       "FACTOR": 1.0938175122635443,
       "ATLETA_ID": 82775
+    },
+    {
+      "RODADA": 19,
+      "POS": "LAT",
+      "NOME": "Matheuzinho",
+      "CLUBE": "COR",
+      "PRECO": 10.2,
+      "EXP_SCORE": 4.157,
+      "FACTOR": 1.1108777644314598,
+      "ATLETA_ID": 101727
     },
     {
       "RODADA": 19,
