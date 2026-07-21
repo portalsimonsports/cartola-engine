@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 19,
-  "atualizado_em": "2026-07-21T00:40:10.865Z",
+  "atualizado_em": "2026-07-21T00:44:58.724Z",
   "dados": [
     {
       "RODADA": 19,
@@ -28,22 +28,22 @@
     {
       "RODADA": 19,
       "POS": "GOL",
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 8.86,
+      "EXP_SCORE": 3.3125,
+      "FACTOR": 0.921353000131263,
+      "ATLETA_ID": 104084
+    },
+    {
+      "RODADA": 19,
+      "POS": "GOL",
       "NOME": "Pedro Rangel",
       "CLUBE": "CFC",
       "PRECO": 7.01,
       "EXP_SCORE": 3.2439,
       "FACTOR": 1.1263992834585481,
       "ATLETA_ID": 110708
-    },
-    {
-      "RODADA": 19,
-      "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.86,
-      "EXP_SCORE": 2.9812,
-      "FACTOR": 0.921353000131263,
-      "ATLETA_ID": 104084
     },
     {
       "RODADA": 19,
@@ -161,7 +161,7 @@
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 15.27,
-      "EXP_SCORE": 4.6505,
+      "EXP_SCORE": 4.0439,
       "FACTOR": 0.9702683301568256,
       "ATLETA_ID": 96610
     },
