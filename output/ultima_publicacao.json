@@ -1,12 +1,14 @@
 {
-  "gerado_em": "2026-07-13T10:38:42.007369+00:00",
-  "tipo_detectado": "top5",
-  "tipo_publicacao": "top5",
-  "rodada": 19,
-  "arquivos": [
-    "output/top5_rodada_19_p1.png",
-    "output/top5_rodada_19_p2.png",
-    "output/top5_rodada_19_p3.png"
-  ],
-  "titulo": "🌙 Atualização das 20h — Top 5 R19"
+  "gerado_em": "2026-07-22T23:43:38.693138+00:00",
+  "publicacoes": [
+    {
+      "tipo_detectado": "bulletin",
+      "tipo_publicacao": "resumo_geral_abertura_dia",
+      "rodada": 19,
+      "arquivos": [
+        "output/boletim_19.png"
+      ],
+      "titulo": "BOLETIM CARTOLA"
+    }
+  ]
 }
