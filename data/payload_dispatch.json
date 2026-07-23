@@ -2,23 +2,37 @@
   "ambiente": "producao",
   "contexto": "time_delta",
   "evento_github": "cartola_live_publish",
-  "gerado_em": "2026-07-23T02:02:09.260Z",
+  "gerado_em": "2026-07-23T02:22:09.375Z",
   "origem": "cartola_live_publisher",
   "payload": {
     "contexto": "time_delta",
-    "mensagem_oficial": "🏆 *PORTAL SIMONSPORTS – RESUMO GERAL*\n📍 RODADA 19 | Parciais Ao Vivo\n\n🔹 *Time PONTUACAO*\n✨ Pontos (Sem C): 52.01 pts\n✨ Pontos (Com C): 56.41 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ 10.74\n\n_Atualização automática • SimonSports_",
+    "mensagem_oficial": "🏆 *PORTAL SIMONSPORTS – RESUMO GERAL*\n📍 RODADA 19 | Parciais Ao Vivo\n\n🔹 *Time ECONOMICO*\n✨ Pontos (Sem C): 51.01 pts\n✨ Pontos (Com C): 60.01 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ 19.80\n\n🔹 *Time INTERMEDIARIO*\n✨ Pontos (Sem C): 59.81 pts\n✨ Pontos (Com C): 68.81 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ 9.28\n\n🔹 *Time PONTUACAO*\n✨ Pontos (Sem C): 66.73 pts\n✨ Pontos (Com C): 75.73 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ 10.74\n\n_Atualização automática • SimonSports_",
     "rodada": 19,
     "tipos": [
       {
         "participacao": 12,
-        "pontos_com_capitao": 56.41,
-        "pontos_sem_capitao": 52.01,
+        "pontos_com_capitao": 60.01,
+        "pontos_sem_capitao": 51.01,
+        "tipo": "ECONOMICO",
+        "valorizacao": 19.8
+      },
+      {
+        "participacao": 12,
+        "pontos_com_capitao": 68.81,
+        "pontos_sem_capitao": 59.81,
+        "tipo": "INTERMEDIARIO",
+        "valorizacao": 9.28
+      },
+      {
+        "participacao": 12,
+        "pontos_com_capitao": 75.73,
+        "pontos_sem_capitao": 66.73,
         "tipo": "PONTUACAO",
         "valorizacao": 10.74
       }
     ]
   },
-  "payload_hash": "bhb+cevGHeIICld0IHoeNQ==",
+  "payload_hash": "jNfdcrvFeHNHtRqcb097Pg==",
   "rodada": 19,
   "tipo_publicacao": "resumo_geral_time_delta",
   "workflow_destino": "gerar.resultados.yml"
