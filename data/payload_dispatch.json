@@ -1,39 +1,43 @@
 {
   "ambiente": "producao",
-  "contexto": "abertura_dia",
+  "contexto": "placar_delta",
   "evento_github": "cartola_live_publish",
-  "gerado_em": "2026-07-22T23:42:11.622Z",
+  "gerado_em": "2026-07-23T00:12:17.738Z",
   "origem": "cartola_live_publisher",
   "payload": {
-    "contexto": "abertura_dia",
-    "mensagem_oficial": "🏆 *PORTAL SIMONSPORTS – RESUMO GERAL*\n📍 RODADA 19 | Parciais Ao Vivo\n\n🔹 *Time ECONOMICO*\n✨ Pontos (Sem C): 10.80 pts\n✨ Pontos (Com C): 10.80 pts\n🏃 Participação: 11/12\n📈 Valorização: C$ 19.80\n\n🔹 *Time INTERMEDIARIO*\n✨ Pontos (Sem C): 12.70 pts\n✨ Pontos (Com C): 12.70 pts\n🏃 Participação: 11/12\n📈 Valorização: C$ 9.28\n\n🔹 *Time PONTUACAO*\n✨ Pontos (Sem C): 11.70 pts\n✨ Pontos (Com C): 11.70 pts\n🏃 Participação: 11/12\n📈 Valorização: C$ 10.74\n\n_Atualização automática • SimonSports_",
-    "rodada": 19,
-    "tipos": [
+    "contexto": "placar_delta",
+    "mensagem_oficial": "⚽ *ATUALIZAÇÃO DE PLACAR*\n\n📅 22/07 • 🕒 19:30\n🏟 Couto Pereira\n*Coritiba 1 x 3 Palmeiras*\nP. Roberto (1⚽)                   Maurício (2⚽)\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀R. Sosa (1⚽)\n📺 [Veja como foi](https://ge.globo.com/pr/futebol/brasileirao-serie-a/jogo/22-07-2026/coritiba-palmeiras.ghtml?utm_source=cartolafc)\n\n_Monitoramento SimonSports_",
+    "partidas": [
       {
-        "participacao": 11,
-        "pontos_com_capitao": 10.8,
-        "pontos_sem_capitao": 10.8,
-        "tipo": "ECONOMICO",
-        "valorizacao": 19.8
-      },
-      {
-        "participacao": 11,
-        "pontos_com_capitao": 12.7,
-        "pontos_sem_capitao": 12.7,
-        "tipo": "INTERMEDIARIO",
-        "valorizacao": 9.28
-      },
-      {
-        "participacao": 11,
-        "pontos_com_capitao": 11.7,
-        "pontos_sem_capitao": 11.7,
-        "tipo": "PONTUACAO",
-        "valorizacao": 10.74
+        "casa_id": "294",
+        "casa_nome": "Coritiba",
+        "casa_sigla": "CFC",
+        "chave": "MjAyNi0wNy0yMiAxOTozMHwyOTR8Mjc1",
+        "data": "22/07",
+        "data_iso": "2026-07-22T22:30:00.000Z",
+        "estadio": "Couto Pereira",
+        "fora_id": "275",
+        "fora_nome": "Palmeiras",
+        "fora_sigla": "PAL",
+        "goleadores_casa": [
+          "P. Roberto (1⚽)"
+        ],
+        "goleadores_fora": [
+          "Maurício (2⚽)",
+          "R. Sosa (1⚽)"
+        ],
+        "hora": "19:30",
+        "link_resumo": "https://ge.globo.com/pr/futebol/brasileirao-serie-a/jogo/22-07-2026/coritiba-palmeiras.ghtml?utm_source=cartolafc",
+        "placar_casa": 1,
+        "placar_fora": 3,
+        "status": "EM_ANDAMENTO"
       }
-    ]
+    ],
+    "rodada": 19,
+    "titulo": "ATUALIZAÇÃO DE PLACAR"
   },
-  "payload_hash": "ziII+MnZSD5LSyeINk7IAQ==",
+  "payload_hash": "CIsaBk2flQlgt5E7uTwolA==",
   "rodada": 19,
-  "tipo_publicacao": "resumo_geral_abertura_dia",
+  "tipo_publicacao": "placar_delta",
   "workflow_destino": "gerar.resultados.yml"
 }
