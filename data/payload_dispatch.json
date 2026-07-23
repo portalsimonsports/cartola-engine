@@ -2,41 +2,38 @@
   "ambiente": "producao",
   "contexto": "placar_delta",
   "evento_github": "cartola_live_publish",
-  "gerado_em": "2026-07-23T00:12:17.738Z",
+  "gerado_em": "2026-07-23T00:52:08.505Z",
   "origem": "cartola_live_publisher",
   "payload": {
     "contexto": "placar_delta",
-    "mensagem_oficial": "⚽ *ATUALIZAÇÃO DE PLACAR*\n\n📅 22/07 • 🕒 19:30\n🏟 Couto Pereira\n*Coritiba 1 x 3 Palmeiras*\nP. Roberto (1⚽)                   Maurício (2⚽)\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀R. Sosa (1⚽)\n📺 [Veja como foi](https://ge.globo.com/pr/futebol/brasileirao-serie-a/jogo/22-07-2026/coritiba-palmeiras.ghtml?utm_source=cartolafc)\n\n_Monitoramento SimonSports_",
+    "mensagem_oficial": "⚽ *ATUALIZAÇÃO DE PLACAR*\n\n📅 22/07 • 🕒 21:30\n🏟 Beira-Rio\n*Internacional 0 x 1 Cruzeiro*\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀K. Jorge (1⚽)\n📺 [Veja como foi](https://ge.globo.com/rs/futebol/brasileirao-serie-a/jogo/22-07-2026/internacional-cruzeiro.ghtml?utm_source=cartolafc)\n\n_Monitoramento SimonSports_",
     "partidas": [
       {
-        "casa_id": "294",
-        "casa_nome": "Coritiba",
-        "casa_sigla": "CFC",
-        "chave": "MjAyNi0wNy0yMiAxOTozMHwyOTR8Mjc1",
+        "casa_id": "285",
+        "casa_nome": "Internacional",
+        "casa_sigla": "INT",
+        "chave": "MjAyNi0wNy0yMiAyMTozMHwyODV8Mjgz",
         "data": "22/07",
-        "data_iso": "2026-07-22T22:30:00.000Z",
-        "estadio": "Couto Pereira",
-        "fora_id": "275",
-        "fora_nome": "Palmeiras",
-        "fora_sigla": "PAL",
-        "goleadores_casa": [
-          "P. Roberto (1⚽)"
-        ],
+        "data_iso": "2026-07-23T00:30:00.000Z",
+        "estadio": "Beira-Rio",
+        "fora_id": "283",
+        "fora_nome": "Cruzeiro",
+        "fora_sigla": "CRU",
+        "goleadores_casa": [],
         "goleadores_fora": [
-          "Maurício (2⚽)",
-          "R. Sosa (1⚽)"
+          "K. Jorge (1⚽)"
         ],
-        "hora": "19:30",
-        "link_resumo": "https://ge.globo.com/pr/futebol/brasileirao-serie-a/jogo/22-07-2026/coritiba-palmeiras.ghtml?utm_source=cartolafc",
-        "placar_casa": 1,
-        "placar_fora": 3,
+        "hora": "21:30",
+        "link_resumo": "https://ge.globo.com/rs/futebol/brasileirao-serie-a/jogo/22-07-2026/internacional-cruzeiro.ghtml?utm_source=cartolafc",
+        "placar_casa": 0,
+        "placar_fora": 1,
         "status": "EM_ANDAMENTO"
       }
     ],
     "rodada": 19,
     "titulo": "ATUALIZAÇÃO DE PLACAR"
   },
-  "payload_hash": "CIsaBk2flQlgt5E7uTwolA==",
+  "payload_hash": "LdKp5UnSARRrH+o2YWmttg==",
   "rodada": 19,
   "tipo_publicacao": "placar_delta",
   "workflow_destino": "gerar.resultados.yml"
