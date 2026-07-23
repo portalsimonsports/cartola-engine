@@ -43,7 +43,7 @@ jobs:
           python -m pip install --upgrade pip setuptools wheel
           pip install --upgrade -r requirements.txt
 
-      - name: Validar renderizador Live V2
+      - name: Validar renderizador e base visual aprovada
         shell: bash
         run: |
           set -e
@@ -51,7 +51,7 @@ jobs:
           python -m py_compile app/gerar_resultados_telegram.py
           python -m py_compile app/render_live_cards_v2.py
           python -m py_compile app/gerar_resultados_telegram_v2.py
-          echo "Renderizador Live V2 validado."
+          echo "Renderizador Live V2 e base visual aprovada validados."
 
       - name: Preparar e validar payload
         shell: bash
@@ -106,7 +106,7 @@ jobs:
           rm -f output/resultados_*.png output/boletim_*.png
           rm -f output/ultima_publicacao.json
 
-      - name: Gerar e publicar cards profissionais Live V2
+      - name: Gerar e publicar cards com a base visual aprovada
         shell: bash
         env:
           PAYLOAD_FILE: data/payload_dispatch.json
@@ -137,6 +137,13 @@ jobs:
           data = json.loads(manifest.read_text(encoding="utf-8"))
           if data.get("versao_visual") != "live_cards_v2":
               raise SystemExit("ERRO: o renderizador Live V2 não foi utilizado.")
+
+          base_esperada = "live_cards_v2_base_aprovada_2026_07_23"
+          if data.get("base_visual") != base_esperada:
+              raise SystemExit(
+                  "ERRO: base visual diferente da versão aprovada: "
+                  + repr(data.get("base_visual"))
+              )
 
           publications = data.get("publicacoes") or []
           if not publications:
@@ -173,7 +180,7 @@ jobs:
               raise SystemExit(f"ERRO: arquivos genéricos bloqueados: {placeholders}")
 
           print(
-              f"Live V2 validado: {len(publications)} publicação(ões), "
+              f"Base visual aprovada validada: {len(publications)} publicação(ões), "
               f"{len(files)} card(s)."
           )
           PY
@@ -193,6 +200,6 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Telegram: cards Live V2 profissionais"
+          git commit -m "Telegram: cards na base visual aprovada"
           git pull --rebase origin main || true
           git push origin HEAD:main
