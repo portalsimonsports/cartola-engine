@@ -1,39 +1,32 @@
 {
   "ambiente": "producao",
-  "contexto": "fechamento_dia",
+  "contexto": "time_delta",
   "evento_github": "cartola_live_publish",
-  "gerado_em": "2026-07-23T02:42:15.401Z",
+  "gerado_em": "2026-07-23T23:12:09.733Z",
   "origem": "cartola_live_publisher",
   "payload": {
-    "contexto": "fechamento_dia",
-    "mensagem_oficial": "🏆 *PORTAL SIMONSPORTS – RESUMO GERAL*\n📍 RODADA 19 | Parciais Ao Vivo\n\n🔹 *Time ECONOMICO*\n✨ Pontos (Sem C): 52.00 pts\n✨ Pontos (Com C): 61.40 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ 19.80\n\n🔹 *Time INTERMEDIARIO*\n✨ Pontos (Sem C): 60.80 pts\n✨ Pontos (Com C): 70.20 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ 9.28\n\n🔹 *Time PONTUACAO*\n✨ Pontos (Sem C): 68.51 pts\n✨ Pontos (Com C): 77.91 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ 10.74\n\n_Atualização automática • SimonSports_",
+    "contexto": "time_delta",
+    "mensagem_oficial": "🏆 *PORTAL SIMONSPORTS – RESUMO GERAL*\n📍 RODADA 19 | Parciais Ao Vivo\n\n🔹 *Time INTERMEDIARIO*\n✨ Pontos (Sem C): 84.52 pts\n✨ Pontos (Com C): 93.92 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ 9.28\n\n🔹 *Time PONTUACAO*\n✨ Pontos (Sem C): 91.68 pts\n✨ Pontos (Com C): 101.08 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ 10.74\n\n_Atualização automática • SimonSports_",
     "rodada": 19,
     "tipos": [
       {
         "participacao": 12,
-        "pontos_com_capitao": 61.4,
-        "pontos_sem_capitao": 52,
-        "tipo": "ECONOMICO",
-        "valorizacao": 19.8
-      },
-      {
-        "participacao": 12,
-        "pontos_com_capitao": 70.2,
-        "pontos_sem_capitao": 60.8,
+        "pontos_com_capitao": 93.92,
+        "pontos_sem_capitao": 84.52,
         "tipo": "INTERMEDIARIO",
         "valorizacao": 9.28
       },
       {
         "participacao": 12,
-        "pontos_com_capitao": 77.91,
-        "pontos_sem_capitao": 68.51,
+        "pontos_com_capitao": 101.08,
+        "pontos_sem_capitao": 91.68,
         "tipo": "PONTUACAO",
         "valorizacao": 10.74
       }
     ]
   },
-  "payload_hash": "nQDz4HnWGljj+WQplIAh1A==",
+  "payload_hash": "fDoLYJoplB+v/qPQBeXIpw==",
   "rodada": 19,
-  "tipo_publicacao": "resumo_geral_fechamento_dia",
+  "tipo_publicacao": "resumo_geral_time_delta",
   "workflow_destino": "gerar.resultados.yml"
 }
