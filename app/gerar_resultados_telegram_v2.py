@@ -16,7 +16,7 @@ from gerar_resultados_telegram import (
     obter_bot_token_chat_id,
     validar_bot_e_destino,
 )
-from render_live_cards_v2 import render_live_publication_v2
+from render_live_cards_v2 import VISUAL_VERSION, render_live_publication_v2
 
 
 def _safe(value: Any, default: str = "") -> str:
@@ -41,6 +41,7 @@ def _save_manifest(publications: List[Dict[str, Any]]) -> None:
             {
                 "gerado_em": datetime.now(timezone.utc).isoformat(),
                 "versao_visual": "live_cards_v2",
+                "base_visual": VISUAL_VERSION,
                 "publicacoes": publications,
             },
             ensure_ascii=False,
@@ -76,11 +77,12 @@ def executar_publicacao_v2() -> List[Dict[str, Any]]:
         "titulo": rendered.title,
         "legenda": rendered.caption,
         "versao_visual": "live_cards_v2",
+        "base_visual": VISUAL_VERSION,
     }
     _save_manifest([publication])
     print(
         f"Publicação Live V2 concluída: tipo={rendered.kind}; "
-        f"imagens={len(rendered.files)}"
+        f"imagens={len(rendered.files)}; base={VISUAL_VERSION}"
     )
     return [publication]
 
