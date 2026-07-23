@@ -40,6 +40,8 @@ from render_telegram_cards import (
     render_publication as render_legacy_publication,
 )
 
+VISUAL_VERSION = "live_cards_v2_base_aprovada_2026_07_23"
+
 MODEL_COLORS = {
     "ECONOMICO": GREEN,
     "INTERMEDIARIO": CYAN,
@@ -143,6 +145,30 @@ def _score_value(match: Dict[str, Any], home: bool) -> str:
         return _safe(value, "–")
 
 
+def _goal_text(value: Any) -> str:
+    text = _clean_markdown(value)
+    if not text:
+        return ""
+
+    patterns = (
+        r"^(.*?)\s*\((\d+)\s*⚽?\)\s*$",
+        r"^(.*?)\s*[•\-]\s*(\d+)\s*(?:gol|gols|⚽)?\s*$",
+        r"^(.*?)\s+(\d+)\s*(?:gol|gols|⚽)\s*$",
+    )
+    for pattern in patterns:
+        match = re.match(pattern, text, re.I)
+        if match:
+            name = match.group(1).strip(" -•")
+            count = max(1, min(6, int(match.group(2))))
+            return f"{name}  {'⚽' * count}"
+
+    cleaned = re.sub(r"\b(?:gol|gols)\b", "", text, flags=re.I)
+    cleaned = re.sub(r"\s+", " ", cleaned).strip(" -•")
+    if "⚽" in cleaned:
+        return cleaned
+    return f"{cleaned}  ⚽" if cleaned else ""
+
+
 def _scorers(match: Dict[str, Any], home: bool) -> List[str]:
     keys = (
         ("goleadores_casa", "marcadores_casa", "gols_casa")
@@ -151,23 +177,15 @@ def _scorers(match: Dict[str, Any], home: bool) -> List[str]:
     )
     raw = _value(match, *keys, default=[])
     if isinstance(raw, str):
-        raw = [part.strip() for part in raw.split("\n") if part.strip()]
+        raw = [part.strip() for part in raw.splitlines() if part.strip()]
     if not isinstance(raw, list):
         return []
 
     clean: List[str] = []
     for item in raw:
-        text = _clean_markdown(item)
-        if not text:
-            continue
-        match_count = re.match(r"^(.*?)\s*\((\d+)\s*⚽?\)\s*$", text)
-        if match_count:
-            name = match_count.group(1).strip()
-            count = int(match_count.group(2))
-            text = f"{name} • {count} {'gol' if count == 1 else 'gols'}"
-        else:
-            text = text.replace("⚽", "").strip()
-        clean.append(text)
+        value = _goal_text(item)
+        if value:
+            clean.append(value)
     return clean[:6]
 
 
@@ -179,8 +197,27 @@ def _cards(match: Dict[str, Any], home: bool) -> List[str]:
     )
     raw = _value(match, *keys, default=[])
     if isinstance(raw, str):
-        raw = [raw]
-    return [_clean_markdown(item) for item in raw if _clean_markdown(item)][:4] if isinstance(raw, list) else []
+        raw = [part.strip() for part in raw.splitlines() if part.strip()]
+    if not isinstance(raw, list):
+        return []
+
+    result: List[str] = []
+    for item in raw:
+        text = _clean_markdown(item)
+        if not text:
+            continue
+        upper = text.upper()
+        if "VERMELH" in upper or "RED" in upper or "🟥" in text:
+            icon = "🟥"
+        else:
+            icon = "🟨"
+        text = text.replace("🟥", "").replace("🟨", "").strip(" -•")
+        result.append(f"{icon}  {text}" if text else icon)
+    return result[:4]
+
+
+def _events(match: Dict[str, Any], home: bool) -> List[str]:
+    return (_scorers(match, home) + _cards(match, home))[:7]
 
 
 def _date_line(match: Dict[str, Any]) -> str:
@@ -205,51 +242,78 @@ def _extract_matches(data: Dict[str, Any]) -> List[Dict[str, Any]]:
     return []
 
 
-def _draw_scorer_panel(
+def _draw_event_column(
     image: Image.Image,
     box: Tuple[int, int, int, int],
-    title: str,
-    scorers: Sequence[str],
-    cards: Sequence[str],
+    team_name: str,
+    team_code: str,
+    events: Sequence[str],
     accent: Tuple[int, int, int],
 ) -> None:
     draw = ImageDraw.Draw(image)
-    _shadow_panel(image, box, radius=28, fill=(4, 15, 30), outline=accent, shadow_alpha=80, outline_width=2)
     x1, y1, x2, y2 = box
-    draw.text((x1 + 28, y1 + 22), title, font=_font(25, "bold", True), fill=accent)
-    draw.line((x1 + 28, y1 + 62, x2 - 28, y1 + 62), fill=LINE, width=2)
-    y = y1 + 88
-    items = list(scorers)
-    if not items:
-        items = ["Sem marcadores registrados"]
-    for text in items[:5]:
-        draw.ellipse((x1 + 30, y + 9, x1 + 48, y + 27), fill=YELLOW if scorers else MUTED)
-        font = _fit_text(draw, text, x2 - x1 - 95, 25, 18, "semibold", True)
-        draw.text((x1 + 66, y), text, font=font, fill=WHITE if scorers else MUTED)
-        y += 48
-    for text in list(cards)[:2]:
-        draw.rounded_rectangle((x1 + 30, y + 4, x1 + 51, y + 30), radius=4, fill=YELLOW)
-        font = _fit_text(draw, text, x2 - x1 - 98, 23, 17, "semibold", True)
-        draw.text((x1 + 68, y), text, font=font, fill=SILVER)
-        y += 44
-    if y > y2 - 20:
-        return
+    _shadow_panel(
+        image,
+        box,
+        radius=28,
+        fill=(4, 15, 30),
+        outline=accent,
+        shadow_alpha=72,
+        outline_width=2,
+    )
+
+    _paste_crest(image, team_code, (x1 + 72, y1 + 66), 74)
+    title_font = _fit_text(draw, team_name.upper(), x2 - x1 - 170, 31, 20, "bold", True)
+    draw.text((x1 + 128, y1 + 43), team_name.upper(), font=title_font, fill=WHITE)
+    draw.line((x1 + 30, y1 + 112, x2 - 30, y1 + 112), fill=accent, width=3)
+
+    y = y1 + 145
+    for text in list(events)[:6]:
+        font = _fit_text(draw, text, x2 - x1 - 110, 31, 21, "semibold", True)
+        if text.startswith("🟥"):
+            marker = RED
+        elif text.startswith("🟨"):
+            marker = YELLOW
+        else:
+            marker = accent
+        draw.ellipse((x1 + 34, y + 11, x1 + 52, y + 29), fill=marker)
+        draw.text((x1 + 72, y), text, font=font, fill=WHITE)
+        y += 54
+        if y > y2 - 55:
+            break
 
 
 def _draw_single_match(image: Image.Image, match: Dict[str, Any]) -> None:
     draw = ImageDraw.Draw(image)
-    box = (65, 345, 1535, 1825)
+    panel = (65, 345, 1535, 1825)
     status, accent = _status_label(match)
-    _glow_outline(image, box, accent, radius=34, blur=18, alpha=55)
-    _shadow_panel(image, box, radius=34, fill=PANEL, outline=accent, shadow_alpha=110, outline_width=3)
 
-    status_box = (1165, 382, 1488, 458)
-    _round(draw, status_box, 28, fill=accent)
-    _centered_text(draw, status_box, status, _font(26, "bold", True), fill=(5, 17, 30), y_offset=-2)
+    _glow_outline(image, panel, accent, radius=34, blur=18, alpha=55)
+    _shadow_panel(
+        image,
+        panel,
+        radius=34,
+        fill=PANEL,
+        outline=accent,
+        shadow_alpha=110,
+        outline_width=3,
+    )
 
     date_line = _date_line(match)
     if date_line:
-        _centered_text(draw, (120, 390, 1120, 455), date_line, _fit_text(draw, date_line, 940, 28, 20, "semibold", True), fill=SILVER)
+        date_font = _fit_text(draw, date_line, 930, 30, 20, "semibold", True)
+        draw.text((118, 390), date_line, font=date_font, fill=SILVER)
+
+    status_box = (1160, 378, 1488, 458)
+    _round(draw, status_box, 27, fill=accent)
+    _centered_text(
+        draw,
+        status_box,
+        status,
+        _fit_text(draw, status, 285, 28, 19, "bold", True),
+        fill=(5, 17, 30),
+        y_offset=-2,
+    )
 
     home = _team_name(match, True)
     away = _team_name(match, False)
@@ -258,56 +322,115 @@ def _draw_single_match(image: Image.Image, match: Dict[str, Any]) -> None:
     home_score = _score_value(match, True)
     away_score = _score_value(match, False)
 
-    _paste_crest(image, home_code, (300, 690), 190)
-    _paste_crest(image, away_code, (1300, 690), 190)
+    _paste_crest(image, home_code, (285, 685), 230)
+    _paste_crest(image, away_code, (1315, 685), 230)
 
-    home_font = _fit_text(draw, home.upper(), 460, 43, 28, "bold", True)
-    away_font = _fit_text(draw, away.upper(), 460, 43, 28, "bold", True)
-    _centered_text(draw, (75, 820, 590, 900), home.upper(), home_font, fill=WHITE)
-    _centered_text(draw, (1010, 820, 1525, 900), away.upper(), away_font, fill=WHITE)
+    home_font = _fit_text(draw, home.upper(), 480, 48, 29, "bold", True)
+    away_font = _fit_text(draw, away.upper(), 480, 48, 29, "bold", True)
+    _centered_text(draw, (65, 820, 565, 905), home.upper(), home_font, fill=WHITE)
+    _centered_text(draw, (1035, 820, 1535, 905), away.upper(), away_font, fill=WHITE)
 
-    score_box = (585, 565, 1015, 805)
-    _glow_outline(image, score_box, CYAN, radius=38, blur=20, alpha=75)
-    _round(draw, score_box, 38, fill=(3, 20, 40), outline=CYAN, width=3)
-    _centered_text(draw, score_box, f"{home_score}  ×  {away_score}", _font(105, "bold", True), fill=WHITE, y_offset=-4)
-
-    draw.text((660, 825), "STATUS", font=_font(25, "bold", True), fill=CYAN)
-    status_font = _fit_text(draw, status, 260, 25, 18, "bold", True)
-    draw.text((810, 825), status, font=status_font, fill=accent)
-
-    _draw_scorer_panel(
-        image,
-        (95, 970, 760, 1535),
-        f"MARCADORES • {home_code}",
-        _scorers(match, True),
-        _cards(match, True),
-        BLUE,
-    )
-    _draw_scorer_panel(
-        image,
-        (840, 970, 1505, 1535),
-        f"MARCADORES • {away_code}",
-        _scorers(match, False),
-        _cards(match, False),
-        CYAN,
+    score_box = (565, 545, 1035, 815)
+    _glow_outline(image, score_box, CYAN, radius=40, blur=22, alpha=78)
+    _round(draw, score_box, 40, fill=(3, 20, 40), outline=CYAN, width=3)
+    _centered_text(
+        draw,
+        score_box,
+        f"{home_score}  ×  {away_score}",
+        _font(118, "bold", True),
+        fill=WHITE,
+        y_offset=-5,
     )
 
-    summary = "PLACAR E MARCADORES ATUALIZADOS AUTOMATICAMENTE"
-    _round(draw, (245, 1605, 1355, 1695), 28, fill=(5, 24, 43), outline=LINE, width=2)
-    _centered_text(draw, (245, 1605, 1355, 1695), summary, _font(27, "bold", True), fill=SILVER)
+    section = (95, 955, 1505, 1585)
+    _shadow_panel(
+        image,
+        section,
+        radius=30,
+        fill=(4, 14, 29),
+        outline=LINE,
+        shadow_alpha=80,
+        outline_width=2,
+    )
+    title_box = (545, 925, 1055, 1000)
+    _round(draw, title_box, 24, fill=(5, 24, 43), outline=CYAN, width=2)
+    _centered_text(draw, title_box, "EVENTOS DA PARTIDA", _font(29, "bold", True), fill=WHITE)
+
+    _draw_event_column(
+        image,
+        (112, 1015, 775, 1545),
+        home,
+        home_code,
+        _events(match, True),
+        GREEN,
+    )
+    _draw_event_column(
+        image,
+        (825, 1015, 1488, 1545),
+        away,
+        away_code,
+        _events(match, False),
+        RED,
+    )
+
+    summary_box = (255, 1625, 1345, 1715)
+    _round(draw, summary_box, 27, fill=(5, 24, 43), outline=LINE, width=2)
+    _centered_text(
+        draw,
+        summary_box,
+        "PLACAR E EVENTOS ATUALIZADOS AUTOMATICAMENTE",
+        _font(28, "bold", True),
+        fill=SILVER,
+    )
 
 
-def _draw_compact_match(image: Image.Image, box: Tuple[int, int, int, int], match: Dict[str, Any], index: int) -> None:
+def _draw_compact_events(
+    draw: ImageDraw.ImageDraw,
+    x: int,
+    y: int,
+    max_width: int,
+    events: Sequence[str],
+    align_right: bool = False,
+) -> None:
+    for text in list(events)[:3]:
+        font = _fit_text(draw, text, max_width, 23, 16, "semibold", True)
+        bbox = draw.textbbox((0, 0), text, font=font)
+        tx = x - (bbox[2] - bbox[0]) if align_right else x
+        draw.text((tx, y), text, font=font, fill=SILVER)
+        y += 31
+
+
+def _draw_compact_match(
+    image: Image.Image,
+    box: Tuple[int, int, int, int],
+    match: Dict[str, Any],
+    index: int,
+) -> None:
     draw = ImageDraw.Draw(image)
     x1, y1, x2, y2 = box
     status, accent = _status_label(match)
-    _glow_outline(image, box, accent, radius=28, blur=13, alpha=38)
-    _shadow_panel(image, box, radius=28, fill=PANEL, outline=accent, shadow_alpha=90, outline_width=2)
 
-    draw.text((x1 + 26, y1 + 20), f"JOGO {index:02d}", font=_font(20, "bold", True), fill=MUTED)
-    status_box = (x2 - 280, y1 + 18, x2 - 25, y1 + 68)
+    _glow_outline(image, box, accent, radius=28, blur=13, alpha=38)
+    _shadow_panel(
+        image,
+        box,
+        radius=28,
+        fill=PANEL,
+        outline=accent,
+        shadow_alpha=90,
+        outline_width=2,
+    )
+
+    draw.text((x1 + 28, y1 + 18), f"JOGO {index:02d}", font=_font(24, "bold", True), fill=BLUE)
+    status_box = (x2 - 285, y1 + 16, x2 - 26, y1 + 70)
     _round(draw, status_box, 22, fill=accent)
-    _centered_text(draw, status_box, status, _font(18, "bold", True), fill=(5, 17, 30))
+    _centered_text(
+        draw,
+        status_box,
+        status,
+        _fit_text(draw, status, 230, 20, 15, "bold", True),
+        fill=(5, 17, 30),
+    )
 
     home = _team_name(match, True)
     away = _team_name(match, False)
@@ -316,22 +439,31 @@ def _draw_compact_match(image: Image.Image, box: Tuple[int, int, int, int], matc
     hs = _score_value(match, True)
     aws = _score_value(match, False)
 
-    _paste_crest(image, hc, (x1 + 110, y1 + 168), 94)
-    _paste_crest(image, ac, (x2 - 110, y1 + 168), 94)
+    _paste_crest(image, hc, (x1 + 105, y1 + 170), 118)
+    _paste_crest(image, ac, (x2 - 105, y1 + 170), 118)
 
-    home_font = _fit_text(draw, home.upper(), 380, 30, 19, "bold", True)
-    away_font = _fit_text(draw, away.upper(), 380, 30, 19, "bold", True)
-    draw.text((x1 + 180, y1 + 125), home.upper(), font=home_font, fill=WHITE)
+    home_font = _fit_text(draw, home.upper(), 340, 35, 21, "bold", True)
+    away_font = _fit_text(draw, away.upper(), 340, 35, 21, "bold", True)
+    draw.text((x1 + 180, y1 + 112), home.upper(), font=home_font, fill=WHITE)
     away_bbox = draw.textbbox((0, 0), away.upper(), font=away_font)
-    draw.text((x2 - 180 - (away_bbox[2] - away_bbox[0]), y1 + 125), away.upper(), font=away_font, fill=WHITE)
+    draw.text((x2 - 180 - (away_bbox[2] - away_bbox[0]), y1 + 112), away.upper(), font=away_font, fill=WHITE)
 
-    score_box = ((x1 + x2) // 2 - 155, y1 + 105, (x1 + x2) // 2 + 155, y1 + 220)
-    _round(draw, score_box, 28, fill=(3, 20, 40), outline=LINE, width=2)
-    _centered_text(draw, score_box, f"{hs}  ×  {aws}", _font(57, "bold", True))
+    _draw_compact_events(draw, x1 + 180, y1 + 160, 330, _events(match, True))
+    _draw_compact_events(draw, x2 - 180, y1 + 160, 330, _events(match, False), True)
+
+    score_box = ((x1 + x2) // 2 - 170, y1 + 95, (x1 + x2) // 2 + 170, y1 + 225)
+    _round(draw, score_box, 28, fill=(3, 20, 40), outline=BLUE, width=2)
+    _centered_text(draw, score_box, f"{hs}  ×  {aws}", _font(66, "bold", True), fill=WHITE)
 
     date_line = _date_line(match)
     if date_line:
-        _centered_text(draw, (x1 + 300, y1 + 230, x2 - 300, y1 + 267), date_line, _fit_text(draw, date_line, 760, 20, 15, "semibold", True), fill=MUTED)
+        _centered_text(
+            draw,
+            (x1 + 310, y1 + 250, x2 - 310, y1 + 292),
+            date_line,
+            _fit_text(draw, date_line, 790, 24, 17, "semibold", True),
+            fill=MUTED,
+        )
 
 
 def render_results_v2(data: Dict[str, Any], output_dir: str) -> RenderOutput:
@@ -343,11 +475,11 @@ def render_results_v2(data: Dict[str, Any], output_dir: str) -> RenderOutput:
     statuses = [_status_label(match)[0] for match in matches]
     live = any("AO VIVO" in status or "INTERVALO" in status for status in statuses)
     final = all(status == "ENCERRADO" for status in statuses)
-
     kind = _kind_text(data)
+
     if "placar" in kind or live:
         title = f"ATUALIZAÇÃO DE PLACAR • RODADA {round_value}"
-        subtitle = "Atualização ao vivo dos placares e marcadores."
+        subtitle = "Acompanhe ao vivo os placares e eventos da partida."
     elif final:
         title = f"RESULTADOS DA RODADA • RODADA {round_value}"
         subtitle = "Resultados oficiais e marcadores dos jogos."
@@ -371,17 +503,17 @@ def render_results_v2(data: Dict[str, Any], output_dir: str) -> RenderOutput:
         for page in range(pages):
             image = _gradient_background(*RESULT_SIZE)
             _header_team(image, title, subtitle, _badge(data))
-            y = 350
+            y = 335
             chunk = matches[page * 4:(page + 1) * 4]
             for index, match in enumerate(chunk, start=page * 4 + 1):
-                _draw_compact_match(image, (65, y, 1535, y + 330), match, index)
-                y += 355
-            _footer(image, 1888, (page + 1, pages))
+                _draw_compact_match(image, (42, y, 1558, y + 345), match, index)
+                y += 370
+            _footer(image, 1888, (page + 1, pages) if pages > 1 else None)
             path = str(Path(output_dir) / f"live_resultados_rodada_{round_value}_p{page + 1}.png")
             image.convert("RGB").save(path, "PNG", optimize=True)
             files.append(path)
 
-    caption = "Atualização de Placar" if live or "placar" in kind else "Jogos e Resultados"
+    caption = "Atualização de Placar" if live or "placar" in kind else "Resultados da Rodada"
     return RenderOutput(files, "results_v2", title, f"{caption} • Rodada {round_value}")
 
 
@@ -392,9 +524,19 @@ def _team_summaries(data: Dict[str, Any]) -> List[Dict[str, Any]]:
     return []
 
 
-def _draw_metric(draw: ImageDraw.ImageDraw, x: int, y: int, label: str, value: str, accent) -> None:
-    draw.text((x, y), label, font=_font(23, "semibold", True), fill=MUTED)
-    draw.text((x, y + 35), value, font=_font(37, "bold", True), fill=accent)
+def _metric(
+    draw: ImageDraw.ImageDraw,
+    x: int,
+    y: int,
+    label: str,
+    value: str,
+    accent: Tuple[int, int, int],
+    width: int,
+) -> None:
+    label_font = _fit_text(draw, label, width, 26, 19, "bold", True)
+    value_font = _fit_text(draw, value, width, 52, 36, "bold", True)
+    draw.text((x, y), label, font=label_font, fill=SILVER)
+    draw.text((x, y + 42), value, font=value_font, fill=accent)
 
 
 def render_summary_v2(data: Dict[str, Any], output_dir: str) -> RenderOutput:
@@ -409,20 +551,29 @@ def render_summary_v2(data: Dict[str, Any], output_dir: str) -> RenderOutput:
     _header_team(image, title, subtitle, _badge(data))
     draw = ImageDraw.Draw(image)
 
-    y = 360
-    panel_height = 430
+    y = 345
+    panel_height = 445
     for index, item in enumerate(teams[:3]):
         model = _safe(item.get("tipo"), f"MODELO {index + 1}").upper()
         accent = MODEL_COLORS.get(model, CYAN)
         name = MODEL_NAMES.get(model, f"TIME {model}")
-        box = (65, y, 1535, y + panel_height)
-        _glow_outline(image, box, accent, radius=34, blur=16, alpha=45)
-        _shadow_panel(image, box, radius=34, fill=PANEL, outline=accent, shadow_alpha=100, outline_width=3)
+        box = (55, y, 1545, y + panel_height)
 
-        draw.text((105, y + 36), name, font=_font(43, "bold", True), fill=WHITE)
-        pill = (1170, y + 30, 1485, y + 90)
-        _round(draw, pill, 25, fill=accent)
-        _centered_text(draw, pill, "PARCIAL ATUAL", _font(19, "bold", True), fill=(4, 17, 30))
+        _glow_outline(image, box, accent, radius=34, blur=16, alpha=52)
+        _shadow_panel(
+            image,
+            box,
+            radius=34,
+            fill=PANEL,
+            outline=accent,
+            shadow_alpha=105,
+            outline_width=3,
+        )
+
+        draw.text((100, y + 34), name, font=_font(51, "bold", True), fill=WHITE)
+        pill = (1165, y + 28, 1490, y + 94)
+        _round(draw, pill, 26, fill=accent)
+        _centered_text(draw, pill, "PARCIAL ATUAL", _font(22, "bold", True), fill=(4, 17, 30))
 
         sem_cap = _num(item.get("pontos_sem_capitao"))
         com_cap = _num(item.get("pontos_com_capitao"))
@@ -430,21 +581,32 @@ def render_summary_v2(data: Dict[str, Any], output_dir: str) -> RenderOutput:
         participacao = _int(item.get("participacao"))
         total = _int(item.get("total"), 12) or 12
 
-        _draw_metric(draw, 110, y + 135, "PONTOS SEM CAPITÃO", f"{sem_cap:.2f} pts", SILVER)
-        _draw_metric(draw, 570, y + 135, "PONTOS COM CAPITÃO", f"{com_cap:.2f} pts", accent)
-        _draw_metric(draw, 1080, y + 135, "VALORIZAÇÃO", f"C$ {valorizacao:.2f}", YELLOW)
+        _metric(draw, 100, y + 140, "PONTOS SEM CAPITÃO", f"{sem_cap:.2f} pts", WHITE, 385)
+        _metric(draw, 575, y + 140, "PONTOS COM CAPITÃO", f"{com_cap:.2f} pts", accent, 400)
+        _metric(draw, 1090, y + 140, "VALORIZAÇÃO", f"C$ {valorizacao:.2f}", YELLOW, 365)
 
-        progress_y = y + 300
-        draw.text((110, progress_y), "PARTICIPAÇÃO DOS ATLETAS", font=_font(23, "bold", True), fill=MUTED)
-        draw.text((1320, progress_y), f"{participacao}/{total}", font=_font(28, "bold", True), fill=WHITE)
-        bar = (110, progress_y + 55, 1490, progress_y + 92)
-        _round(draw, bar, 18, fill=(10, 30, 52), outline=LINE, width=2)
+        progress_y = y + 312
+        draw.line((100, progress_y - 22, 1490, progress_y - 22), fill=LINE, width=2)
+        draw.text((100, progress_y), "PARTICIPAÇÃO DOS ATLETAS", font=_font(27, "bold", True), fill=SILVER)
+
+        count_text = f"{participacao}/{total}"
+        count_font = _font(34, "bold", True)
+        count_box = draw.textbbox((0, 0), count_text, font=count_font)
+        draw.text((1490 - (count_box[2] - count_box[0]), progress_y - 2), count_text, font=count_font, fill=WHITE)
+
+        bar = (100, progress_y + 58, 1490, progress_y + 98)
+        _round(draw, bar, 19, fill=(10, 30, 52), outline=LINE, width=2)
         ratio = max(0.0, min(1.0, participacao / max(1, total)))
-        fill_box = (bar[0] + 4, bar[1] + 4, int(bar[0] + 4 + (bar[2] - bar[0] - 8) * ratio), bar[3] - 4)
+        fill_box = (
+            bar[0] + 4,
+            bar[1] + 4,
+            int(bar[0] + 4 + (bar[2] - bar[0] - 8) * ratio),
+            bar[3] - 4,
+        )
         if fill_box[2] > fill_box[0]:
-            _round(draw, fill_box, 14, fill=accent)
+            _round(draw, fill_box, 15, fill=accent)
 
-        y += panel_height + 35
+        y += panel_height + 28
 
     _footer(image, 1888)
     Path(output_dir).mkdir(parents=True, exist_ok=True)
@@ -495,32 +657,51 @@ def _ranking_points(item: Dict[str, Any]) -> float:
     return _num(_value(item, "pontos", "pontuacao", "score", "pts", default=0))
 
 
-def _draw_ranking_panel(image: Image.Image, box, title: str, items: Sequence[Dict[str, Any]], accent, positive: bool) -> None:
+def _draw_ranking_panel(
+    image: Image.Image,
+    box: Tuple[int, int, int, int],
+    title: str,
+    items: Sequence[Dict[str, Any]],
+    accent: Tuple[int, int, int],
+    positive: bool,
+) -> None:
     draw = ImageDraw.Draw(image)
     _glow_outline(image, box, accent, radius=34, blur=17, alpha=50)
-    _shadow_panel(image, box, radius=34, fill=PANEL, outline=accent, shadow_alpha=105, outline_width=3)
+    _shadow_panel(
+        image,
+        box,
+        radius=34,
+        fill=PANEL,
+        outline=accent,
+        shadow_alpha=105,
+        outline_width=3,
+    )
     x1, y1, x2, y2 = box
-    draw.text((x1 + 38, y1 + 36), title, font=_font(43, "bold", True), fill=accent)
-    draw.line((x1 + 38, y1 + 100, x2 - 38, y1 + 100), fill=LINE, width=3)
+    draw.text((x1 + 34, y1 + 30), title, font=_font(41, "bold", True), fill=accent)
+    draw.line((x1 + 34, y1 + 92, x2 - 34, y1 + 92), fill=LINE, width=3)
 
-    y = y1 + 135
-    for rank in range(1, 6):
-        item = items[rank - 1] if rank <= len(items) else {"nome": "Aguardando dados", "pontos": 0}
-        row = (x1 + 28, y, x2 - 28, y + 235)
-        _round(draw, row, 25, fill=PANEL_2, outline=LINE, width=2)
+    row_y = y1 + 120
+    row_h = 236
+    for rank, item in enumerate(list(items)[:5], start=1):
+        row = (x1 + 25, row_y, x2 - 25, row_y + row_h - 18)
+        _round(draw, row, 24, fill=PANEL_2, outline=LINE, width=2)
+
         medal_color = GOLD if rank == 1 else SILVER if rank == 2 else ORANGE if rank == 3 else LINE
-        draw.ellipse((x1 + 50, y + 68, x1 + 130, y + 148), fill=(9, 21, 38), outline=medal_color, width=4)
-        _centered_text(draw, (x1 + 50, y + 68, x1 + 130, y + 148), str(rank), _font(35, "bold", True), fill=WHITE)
+        medal = (x1 + 48, row_y + 58, x1 + 130, row_y + 140)
+        draw.ellipse(medal, fill=(9, 21, 38), outline=medal_color, width=4)
+        _centered_text(draw, medal, str(rank), _font(36, "bold", True), fill=WHITE)
 
         name = _ranking_name(item).upper()
-        name_font = _fit_text(draw, name, x2 - x1 - 270, 34, 22, "bold", True)
-        draw.text((x1 + 160, y + 50), name, font=name_font, fill=WHITE)
-        draw.text((x1 + 160, y + 110), "PONTUAÇÃO", font=_font(20, "semibold", True), fill=MUTED)
+        name_font = _fit_text(draw, name, x2 - x1 - 245, 39, 23, "bold", True)
+        draw.text((x1 + 155, row_y + 42), name, font=name_font, fill=WHITE)
+
         points = _ranking_points(item)
         points_color = accent if positive or points >= 0 else RED
-        draw.text((x1 + 160, y + 145), f"{points:.2f} pts", font=_font(39, "bold", True), fill=points_color)
-        y += 255
-        if y + 220 > y2:
+        draw.text((x1 + 155, row_y + 106), "PONTUAÇÃO", font=_font(23, "semibold", True), fill=MUTED)
+        draw.text((x1 + 155, row_y + 145), f"{points:.2f} pts", font=_font(43, "bold", True), fill=points_color)
+
+        row_y += row_h
+        if row_y + row_h > y2:
             break
 
 
@@ -536,8 +717,8 @@ def render_ranking_v2(data: Dict[str, Any], output_dir: str) -> RenderOutput:
     image = _gradient_background(*RESULT_SIZE)
     _header_team(image, title, subtitle, _badge(data))
 
-    _draw_ranking_panel(image, (65, 355, 775, 1815), "TOP 5 PONTUADORES", top, CYAN, True)
-    _draw_ranking_panel(image, (825, 355, 1535, 1815), "5 PIORES PONTUAÇÕES", worst, RED, False)
+    _draw_ranking_panel(image, (45, 345, 780, 1815), "TOP 5 PONTUADORES", top, CYAN, True)
+    _draw_ranking_panel(image, (820, 345, 1555, 1815), "5 PIORES PONTUAÇÕES", worst, RED, False)
     _footer(image, 1888)
 
     Path(output_dir).mkdir(parents=True, exist_ok=True)
@@ -571,5 +752,6 @@ def render_live_publication_v2(data: Dict[str, Any], output_dir: str = "output")
         return render_summary_v2(data, output_dir)
 
     raise RuntimeError(
-        "Tipo de publicação Live não reconhecido. Boletim genérico bloqueado para preservar o padrão visual."
+        "Tipo de publicação Live não reconhecido. "
+        "Boletim genérico bloqueado para preservar o padrão visual aprovado."
     )
