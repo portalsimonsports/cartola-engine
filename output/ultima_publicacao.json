@@ -1,14 +1,17 @@
 {
-  "gerado_em": "2026-07-23T01:12:56.326716+00:00",
+  "gerado_em": "2026-07-23T01:22:45.531385+00:00",
+  "versao_visual": "live_cards_v2",
   "publicacoes": [
     {
-      "tipo_detectado": "results",
+      "tipo_detectado": "results_v2",
       "tipo_publicacao": "placar_delta",
       "rodada": 19,
       "arquivos": [
-        "output/resultados_rodada_19_p1.png"
+        "output/live_placar_rodada_19.png"
       ],
-      "titulo": "ATUALIZAÇÃO DE PLACAR"
+      "titulo": "ATUALIZAÇÃO DE PLACAR • RODADA 19",
+      "legenda": "Atualização de Placar • Rodada 19",
+      "versao_visual": "live_cards_v2"
     }
   ]
 }

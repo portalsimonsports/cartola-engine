@@ -2,11 +2,11 @@
   "ambiente": "producao",
   "contexto": "placar_delta",
   "evento_github": "cartola_live_publish",
-  "gerado_em": "2026-07-23T01:12:28.524Z",
+  "gerado_em": "2026-07-23T01:22:10.152Z",
   "origem": "cartola_live_publisher",
   "payload": {
     "contexto": "placar_delta",
-    "mensagem_oficial": "⚽ *ATUALIZAÇÃO DE PLACAR*\n\n📅 22/07 • 🕒 21:30\n🏟 Arena Condá\n*Chapecoense 0 x 1 Flamengo*\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Pedro (1⚽)\n📺 [Veja como foi](https://ge.globo.com/sc/futebol/brasileirao-serie-a/jogo/22-07-2026/chapecoense-flamengo.ghtml?utm_source=cartolafc)\n\n_Monitoramento SimonSports_",
+    "mensagem_oficial": "⚽ *ATUALIZAÇÃO DE PLACAR*\n\n📅 22/07 • 🕒 21:30\n🏟 Arena Condá\n*Chapecoense 0 x 2 Flamengo*\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Pedro (1⚽)\n📺 [Veja como foi](https://ge.globo.com/sc/futebol/brasileirao-serie-a/jogo/22-07-2026/chapecoense-flamengo.ghtml?utm_source=cartolafc)\n\n_Monitoramento SimonSports_",
     "partidas": [
       {
         "casa_id": "315",
@@ -26,14 +26,14 @@
         "hora": "21:30",
         "link_resumo": "https://ge.globo.com/sc/futebol/brasileirao-serie-a/jogo/22-07-2026/chapecoense-flamengo.ghtml?utm_source=cartolafc",
         "placar_casa": 0,
-        "placar_fora": 1,
+        "placar_fora": 2,
         "status": "EM_ANDAMENTO"
       }
     ],
     "rodada": 19,
     "titulo": "ATUALIZAÇÃO DE PLACAR"
   },
-  "payload_hash": "+fv0OSx+JM3PPIWbhfdllA==",
+  "payload_hash": "wLOHAafcWOMJHg+Yb1IVmA==",
   "rodada": 19,
   "tipo_publicacao": "placar_delta",
   "workflow_destino": "gerar.resultados.yml"
