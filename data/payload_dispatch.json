@@ -1,42 +1,25 @@
 {
   "ambiente": "producao",
-  "contexto": "placar_delta",
+  "contexto": "time_delta",
   "evento_github": "cartola_live_publish",
-  "gerado_em": "2026-07-23T01:42:08.114Z",
+  "gerado_em": "2026-07-23T02:02:09.260Z",
   "origem": "cartola_live_publisher",
   "payload": {
-    "contexto": "placar_delta",
-    "mensagem_oficial": "⚽ *ATUALIZAÇÃO DE PLACAR*\n\n📅 22/07 • 🕒 21:30\n🏟 Cícero de Souza Marques\n*SÃO PAULO 1 x 1 Athletico-PR*\nArtur (1⚽)                        Leozinho (1⚽)\n📺 [Veja como foi](https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/22-07-2026/sao-paulo-atletico-pr.ghtml?utm_source=cartolafc)\n\n_Monitoramento SimonSports_",
-    "partidas": [
-      {
-        "casa_id": "276",
-        "casa_nome": "SÃO PAULO",
-        "casa_sigla": "SAO",
-        "chave": "MjAyNi0wNy0yMiAyMTozMHwyNzZ8Mjkz",
-        "data": "22/07",
-        "data_iso": "2026-07-23T00:30:00.000Z",
-        "estadio": "Cícero de Souza Marques",
-        "fora_id": "293",
-        "fora_nome": "Athletico-PR",
-        "fora_sigla": "CAP",
-        "goleadores_casa": [
-          "Artur (1⚽)"
-        ],
-        "goleadores_fora": [
-          "Leozinho (1⚽)"
-        ],
-        "hora": "21:30",
-        "link_resumo": "https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/22-07-2026/sao-paulo-atletico-pr.ghtml?utm_source=cartolafc",
-        "placar_casa": 1,
-        "placar_fora": 1,
-        "status": "EM_ANDAMENTO"
-      }
-    ],
+    "contexto": "time_delta",
+    "mensagem_oficial": "🏆 *PORTAL SIMONSPORTS – RESUMO GERAL*\n📍 RODADA 19 | Parciais Ao Vivo\n\n🔹 *Time PONTUACAO*\n✨ Pontos (Sem C): 52.01 pts\n✨ Pontos (Com C): 56.41 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ 10.74\n\n_Atualização automática • SimonSports_",
     "rodada": 19,
-    "titulo": "ATUALIZAÇÃO DE PLACAR"
+    "tipos": [
+      {
+        "participacao": 12,
+        "pontos_com_capitao": 56.41,
+        "pontos_sem_capitao": 52.01,
+        "tipo": "PONTUACAO",
+        "valorizacao": 10.74
+      }
+    ]
   },
-  "payload_hash": "YpsTT7G/Uf3CPBn4wp4qxw==",
+  "payload_hash": "bhb+cevGHeIICld0IHoeNQ==",
   "rodada": 19,
-  "tipo_publicacao": "placar_delta",
+  "tipo_publicacao": "resumo_geral_time_delta",
   "workflow_destino": "gerar.resultados.yml"
 }
