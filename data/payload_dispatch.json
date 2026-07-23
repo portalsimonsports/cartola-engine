@@ -1,39 +1,40 @@
 {
   "ambiente": "producao",
-  "contexto": "time_delta",
+  "contexto": "placar_delta",
   "evento_github": "cartola_live_publish",
-  "gerado_em": "2026-07-23T01:02:09.572Z",
+  "gerado_em": "2026-07-23T01:12:28.524Z",
   "origem": "cartola_live_publisher",
   "payload": {
-    "contexto": "time_delta",
-    "mensagem_oficial": "🏆 *PORTAL SIMONSPORTS – RESUMO GERAL*\n📍 RODADA 19 | Parciais Ao Vivo\n\n🔹 *Time ECONOMICO*\n✨ Pontos (Sem C): 26.24 pts\n✨ Pontos (Com C): 30.64 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ 19.80\n\n🔹 *Time INTERMEDIARIO*\n✨ Pontos (Sem C): 33.74 pts\n✨ Pontos (Com C): 38.14 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ 9.28\n\n🔹 *Time PONTUACAO*\n✨ Pontos (Sem C): 33.25 pts\n✨ Pontos (Com C): 37.65 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ 10.74\n\n_Atualização automática • SimonSports_",
-    "rodada": 19,
-    "tipos": [
+    "contexto": "placar_delta",
+    "mensagem_oficial": "⚽ *ATUALIZAÇÃO DE PLACAR*\n\n📅 22/07 • 🕒 21:30\n🏟 Arena Condá\n*Chapecoense 0 x 1 Flamengo*\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Pedro (1⚽)\n📺 [Veja como foi](https://ge.globo.com/sc/futebol/brasileirao-serie-a/jogo/22-07-2026/chapecoense-flamengo.ghtml?utm_source=cartolafc)\n\n_Monitoramento SimonSports_",
+    "partidas": [
       {
-        "participacao": 12,
-        "pontos_com_capitao": 30.64,
-        "pontos_sem_capitao": 26.24,
-        "tipo": "ECONOMICO",
-        "valorizacao": 19.8
-      },
-      {
-        "participacao": 12,
-        "pontos_com_capitao": 38.14,
-        "pontos_sem_capitao": 33.74,
-        "tipo": "INTERMEDIARIO",
-        "valorizacao": 9.28
-      },
-      {
-        "participacao": 12,
-        "pontos_com_capitao": 37.65,
-        "pontos_sem_capitao": 33.25,
-        "tipo": "PONTUACAO",
-        "valorizacao": 10.74
+        "casa_id": "315",
+        "casa_nome": "Chapecoense",
+        "casa_sigla": "CHA",
+        "chave": "MjAyNi0wNy0yMiAyMTozMHwzMTV8MjYy",
+        "data": "22/07",
+        "data_iso": "2026-07-23T00:30:00.000Z",
+        "estadio": "Arena Condá",
+        "fora_id": "262",
+        "fora_nome": "Flamengo",
+        "fora_sigla": "FLA",
+        "goleadores_casa": [],
+        "goleadores_fora": [
+          "Pedro (1⚽)"
+        ],
+        "hora": "21:30",
+        "link_resumo": "https://ge.globo.com/sc/futebol/brasileirao-serie-a/jogo/22-07-2026/chapecoense-flamengo.ghtml?utm_source=cartolafc",
+        "placar_casa": 0,
+        "placar_fora": 1,
+        "status": "EM_ANDAMENTO"
       }
-    ]
+    ],
+    "rodada": 19,
+    "titulo": "ATUALIZAÇÃO DE PLACAR"
   },
-  "payload_hash": "xnX3Sw5gECPa5EzZrjCAXQ==",
+  "payload_hash": "+fv0OSx+JM3PPIWbhfdllA==",
   "rodada": 19,
-  "tipo_publicacao": "resumo_geral_time_delta",
+  "tipo_publicacao": "placar_delta",
   "workflow_destino": "gerar.resultados.yml"
 }
