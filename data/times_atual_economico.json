@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 20,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-07-24T21:19:44.439Z",
+  "atualizado_em": "2026-07-24T21:34:44.175Z",
   "dados": [
     {
       "RODADA": 20,
@@ -14,7 +14,7 @@
       "NOME": "Rossi",
       "CLUBE": "FLA",
       "PRECO": 9.48,
-      "EXP_SCORE": 4.4038,
+      "EXP_SCORE": 4.4026,
       "ATLETA_ID": 99552
     },
     {
@@ -25,7 +25,7 @@
       "NOME": "Fagner",
       "CLUBE": "CRU",
       "PRECO": 7.08,
-      "EXP_SCORE": 3.2624,
+      "EXP_SCORE": 3.2616,
       "ATLETA_ID": 42500
     },
     {
@@ -36,7 +36,7 @@
       "NOME": "Matheus Bahia",
       "CLUBE": "INT",
       "PRECO": 7.66,
-      "EXP_SCORE": 3.1662,
+      "EXP_SCORE": 3.1652,
       "ATLETA_ID": 97899
     },
     {
@@ -47,7 +47,7 @@
       "NOME": "Ruan",
       "CLUBE": "CAM",
       "PRECO": 6.2,
-      "EXP_SCORE": 2.6509,
+      "EXP_SCORE": 2.6632,
       "ATLETA_ID": 100842
     },
     {
@@ -58,8 +58,19 @@
       "NOME": "Osorio",
       "CLUBE": "SAO",
       "PRECO": 2.36,
-      "EXP_SCORE": 0.7761,
+      "EXP_SCORE": 0.7759,
       "ATLETA_ID": 150197
+    },
+    {
+      "RODADA": 20,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Maurício",
+      "CLUBE": "PAL",
+      "PRECO": 9.28,
+      "EXP_SCORE": 3.575,
+      "ATLETA_ID": 105647
     },
     {
       "RODADA": 20,
@@ -82,17 +93,6 @@
       "PRECO": 4.71,
       "EXP_SCORE": 3.1423,
       "ATLETA_ID": 141754
-    },
-    {
-      "RODADA": 20,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Rodrigo Nestor",
-      "CLUBE": "BAH",
-      "PRECO": 6.33,
-      "EXP_SCORE": 1.9068,
-      "ATLETA_ID": 106822
     },
     {
       "RODADA": 20,
@@ -146,7 +146,7 @@
       "NOME": "Carlos Miguel",
       "CLUBE": "PAL",
       "PRECO": 8.56,
-      "EXP_SCORE": 4.4201,
+      "EXP_SCORE": 4.4191,
       "ATLETA_ID": 104084
     },
     {
@@ -157,7 +157,7 @@
       "NOME": "Marcelinho",
       "CLUBE": "REM",
       "PRECO": 5.58,
-      "EXP_SCORE": 5.1258,
+      "EXP_SCORE": 5.1241,
       "ATLETA_ID": 97795
     },
     {
@@ -168,7 +168,7 @@
       "NOME": "João Ananias",
       "CLUBE": "SAN",
       "PRECO": 2.62,
-      "EXP_SCORE": 0.9255,
+      "EXP_SCORE": 0.9253,
       "ATLETA_ID": 145563
     },
     {
