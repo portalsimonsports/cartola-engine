@@ -3,18 +3,8 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 20,
-  "atualizado_em": "2026-07-24T04:14:46.325Z",
+  "atualizado_em": "2026-07-24T04:20:06.156Z",
   "dados": [
-    {
-      "RODADA": 20,
-      "POS": "GOL",
-      "NOME": "Rossi",
-      "CLUBE": "FLA",
-      "PRECO": 9.48,
-      "EXP_SCORE": 4.9404,
-      "FACTOR": 1.0801138016649627,
-      "ATLETA_ID": 99552
-    },
     {
       "RODADA": 20,
       "POS": "GOL",
@@ -24,6 +14,16 @@
       "EXP_SCORE": 4.4883,
       "FACTOR": 1.1534733927267418,
       "ATLETA_ID": 104084
+    },
+    {
+      "RODADA": 20,
+      "POS": "GOL",
+      "NOME": "Rossi",
+      "CLUBE": "FLA",
+      "PRECO": 9.48,
+      "EXP_SCORE": 4.296,
+      "FACTOR": 1.0801138016649627,
+      "ATLETA_ID": 99552
     },
     {
       "RODADA": 20,
@@ -42,7 +42,7 @@
       "CLUBE": "GRE",
       "PRECO": 7.67,
       "EXP_SCORE": 3.6754,
-      "FACTOR": 1.1107455644807946,
+      "FACTOR": 1.1107455644807944,
       "ATLETA_ID": 71631
     },
     {
@@ -52,7 +52,7 @@
       "CLUBE": "CAM",
       "PRECO": 9.14,
       "EXP_SCORE": 3.6446,
-      "FACTOR": 0.9371993573827953,
+      "FACTOR": 0.9371993573827954,
       "ATLETA_ID": 72294
     },
     {
@@ -211,7 +211,7 @@
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 18.63,
-      "EXP_SCORE": 10.3302,
+      "EXP_SCORE": 8.9828,
       "FACTOR": 1.0836577638926994,
       "ATLETA_ID": 94583
     },
