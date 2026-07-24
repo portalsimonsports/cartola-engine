@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 20,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-07-24T08:54:44.999Z",
+  "atualizado_em": "2026-07-24T09:04:44.838Z",
   "dados": [
     {
       "RODADA": 20,
@@ -44,17 +44,6 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ZAG",
-      "NOME": "Ruan",
-      "CLUBE": "CAM",
-      "PRECO": 6.2,
-      "EXP_SCORE": 2.6436,
-      "ATLETA_ID": 100842
-    },
-    {
-      "RODADA": 20,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ZAG",
       "NOME": "Osorio",
       "CLUBE": "SAO",
       "PRECO": 2.36,
@@ -65,11 +54,22 @@
       "RODADA": 20,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
+      "POS": "ZAG",
+      "NOME": "Ruan",
+      "CLUBE": "CAM",
+      "PRECO": 6.2,
+      "EXP_SCORE": 2.0689,
+      "ATLETA_ID": 100842
+    },
+    {
+      "RODADA": 20,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
       "POS": "MEI",
       "NOME": "Lorran",
       "CLUBE": "FLA",
       "PRECO": 9.29,
-      "EXP_SCORE": 2.4223,
+      "EXP_SCORE": 2.6915,
       "ATLETA_ID": 122321
     },
     {
@@ -110,6 +110,17 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ATA",
+      "NOME": "Fernando",
+      "CLUBE": "RBB",
+      "PRECO": 6.69,
+      "EXP_SCORE": 4.4534,
+      "ATLETA_ID": 100695
+    },
+    {
+      "RODADA": 20,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
       "NOME": "Kaio César",
       "CLUBE": "COR",
       "PRECO": 12.03,
@@ -120,23 +131,12 @@
       "RODADA": 20,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Carbonero",
-      "CLUBE": "INT",
-      "PRECO": 9.84,
-      "EXP_SCORE": 4.2022,
-      "ATLETA_ID": 107989
-    },
-    {
-      "RODADA": 20,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Fernando Diniz",
-      "CLUBE": "COR",
-      "PRECO": 9.89,
-      "EXP_SCORE": 4.8784,
-      "ATLETA_ID": 72391
+      "NOME": "Vagner Mancini",
+      "CLUBE": "RBB",
+      "PRECO": 8.78,
+      "EXP_SCORE": 5.3434,
+      "ATLETA_ID": 39850
     },
     {
       "RODADA": 20,
