@@ -3,18 +3,8 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 20,
-  "atualizado_em": "2026-07-24T03:59:55.484Z",
+  "atualizado_em": "2026-07-24T04:05:05.443Z",
   "dados": [
-    {
-      "RODADA": 20,
-      "POS": "GOL",
-      "NOME": "Rossi",
-      "CLUBE": "FLA",
-      "PRECO": 9.48,
-      "EXP_SCORE": 4.9404,
-      "FACTOR": 1.0801138016649627,
-      "ATLETA_ID": 99552
-    },
     {
       "RODADA": 20,
       "POS": "GOL",
@@ -24,6 +14,16 @@
       "EXP_SCORE": 4.4883,
       "FACTOR": 1.1534733927267418,
       "ATLETA_ID": 104084
+    },
+    {
+      "RODADA": 20,
+      "POS": "GOL",
+      "NOME": "Rossi",
+      "CLUBE": "FLA",
+      "PRECO": 9.48,
+      "EXP_SCORE": 4.296,
+      "FACTOR": 1.0801138016649627,
+      "ATLETA_ID": 99552
     },
     {
       "RODADA": 20,
@@ -118,16 +118,6 @@
     {
       "RODADA": 20,
       "POS": "ZAG",
-      "NOME": "Gabriel Paulista",
-      "CLUBE": "COR",
-      "PRECO": 9.6,
-      "EXP_SCORE": 3.5374,
-      "FACTOR": 0.9650992493062654,
-      "ATLETA_ID": 69208
-    },
-    {
-      "RODADA": 20,
-      "POS": "ZAG",
       "NOME": "Léo Pereira",
       "CLUBE": "FLA",
       "PRECO": 9.46,
@@ -154,6 +144,16 @@
       "EXP_SCORE": 3.4789,
       "FACTOR": 1.1392887980137287,
       "ATLETA_ID": 123869
+    },
+    {
+      "RODADA": 20,
+      "POS": "ZAG",
+      "NOME": "Lucas Veríssimo",
+      "CLUBE": "SAN",
+      "PRECO": 8.84,
+      "EXP_SCORE": 3.261,
+      "FACTOR": 1.2082972864028043,
+      "ATLETA_ID": 93368
     },
     {
       "RODADA": 20,
@@ -211,7 +211,7 @@
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 18.63,
-      "EXP_SCORE": 10.3302,
+      "EXP_SCORE": 8.9828,
       "FACTOR": 1.0836577638926994,
       "ATLETA_ID": 94583
     },
