@@ -1,41 +1,39 @@
 {
   "ambiente": "producao",
-  "contexto": "placar_delta",
+  "contexto": "fechamento_dia",
   "evento_github": "cartola_live_publish",
-  "gerado_em": "2026-07-23T23:32:07.379Z",
+  "gerado_em": "2026-07-24T00:42:10.700Z",
   "origem": "cartola_live_publisher",
   "payload": {
-    "contexto": "placar_delta",
-    "mensagem_oficial": "⚽ *ATUALIZAÇÃO DE PLACAR*\n\n📅 23/07 • 🕒 19:30\n🏟 Neo Química Arena\n*Corinthians 3 x 0 Remo*\nY. Alberto (2⚽)\nK. César (1⚽)\n📺 [Veja como foi](https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/23-07-2026/corinthians-remo.ghtml?utm_source=cartolafc)\n\n_Monitoramento SimonSports_",
-    "partidas": [
-      {
-        "casa_id": "264",
-        "casa_nome": "Corinthians",
-        "casa_sigla": "COR",
-        "chave": "MjAyNi0wNy0yMyAxOTozMHwyNjR8MzY0",
-        "data": "23/07",
-        "data_iso": "2026-07-23T22:30:00.000Z",
-        "estadio": "Neo Química Arena",
-        "fora_id": "364",
-        "fora_nome": "Remo",
-        "fora_sigla": "REM",
-        "goleadores_casa": [
-          "Y. Alberto (2⚽)",
-          "K. César (1⚽)"
-        ],
-        "goleadores_fora": [],
-        "hora": "19:30",
-        "link_resumo": "https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/23-07-2026/corinthians-remo.ghtml?utm_source=cartolafc",
-        "placar_casa": 3,
-        "placar_fora": 0,
-        "status": "EM_ANDAMENTO"
-      }
-    ],
+    "contexto": "fechamento_dia",
+    "mensagem_oficial": "🏆 *PORTAL SIMONSPORTS – RESUMO GERAL*\n📍 RODADA 19 | Parciais Ao Vivo\n\n🔹 *Time ECONOMICO*\n✨ Pontos (Sem C): 60.92 pts\n✨ Pontos (Com C): 70.32 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ 19.80\n\n🔹 *Time INTERMEDIARIO*\n✨ Pontos (Sem C): 83.52 pts\n✨ Pontos (Com C): 92.92 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ 9.28\n\n🔹 *Time PONTUACAO*\n✨ Pontos (Sem C): 90.68 pts\n✨ Pontos (Com C): 100.08 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ 10.74\n\n_Atualização automática • SimonSports_",
     "rodada": 19,
-    "titulo": "ATUALIZAÇÃO DE PLACAR"
+    "tipos": [
+      {
+        "participacao": 12,
+        "pontos_com_capitao": 70.32,
+        "pontos_sem_capitao": 60.92,
+        "tipo": "ECONOMICO",
+        "valorizacao": 19.8
+      },
+      {
+        "participacao": 12,
+        "pontos_com_capitao": 92.92,
+        "pontos_sem_capitao": 83.52,
+        "tipo": "INTERMEDIARIO",
+        "valorizacao": 9.28
+      },
+      {
+        "participacao": 12,
+        "pontos_com_capitao": 100.08,
+        "pontos_sem_capitao": 90.68,
+        "tipo": "PONTUACAO",
+        "valorizacao": 10.74
+      }
+    ]
   },
-  "payload_hash": "KCizRFaBjfRdGKAEg5o1qw==",
+  "payload_hash": "xBE3QPK/qxi+6IoHvBJeWw==",
   "rodada": 19,
-  "tipo_publicacao": "placar_delta",
+  "tipo_publicacao": "resumo_geral_fechamento_dia",
   "workflow_destino": "gerar.resultados.yml"
 }
