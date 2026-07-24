@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 20,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-07-24T07:49:48.188Z",
+  "atualizado_em": "2026-07-24T07:54:45.187Z",
   "dados": [
     {
       "RODADA": 20,
@@ -36,8 +36,19 @@
       "NOME": "Fagner",
       "CLUBE": "CRU",
       "PRECO": 7.08,
-      "EXP_SCORE": 2.9994,
+      "EXP_SCORE": 3.4493,
       "ATLETA_ID": 42500
+    },
+    {
+      "RODADA": 20,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ZAG",
+      "NOME": "Ruan",
+      "CLUBE": "CAM",
+      "PRECO": 6.2,
+      "EXP_SCORE": 2.6436,
+      "ATLETA_ID": 100842
     },
     {
       "RODADA": 20,
@@ -49,17 +60,6 @@
       "PRECO": 2.36,
       "EXP_SCORE": 0.7121,
       "ATLETA_ID": 150197
-    },
-    {
-      "RODADA": 20,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Ruan",
-      "CLUBE": "CAM",
-      "PRECO": 6.2,
-      "EXP_SCORE": 2.0689,
-      "ATLETA_ID": 100842
     },
     {
       "RODADA": 20,
@@ -77,6 +77,17 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "MEI",
+      "NOME": "Josué",
+      "CLUBE": "CFC",
+      "PRECO": 7.14,
+      "EXP_SCORE": 3.3956,
+      "ATLETA_ID": 84626
+    },
+    {
+      "RODADA": 20,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
       "NOME": "Gabriel Bontempo",
       "CLUBE": "SAN",
       "PRECO": 4.71,
@@ -87,22 +98,11 @@
       "RODADA": 20,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Josué",
-      "CLUBE": "CFC",
-      "PRECO": 7.14,
-      "EXP_SCORE": 2.6574,
-      "ATLETA_ID": 84626
-    },
-    {
-      "RODADA": 20,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
       "POS": "ATA",
       "NOME": "Leozinho",
       "CLUBE": "CAP",
       "PRECO": 7.83,
-      "EXP_SCORE": 3.266,
+      "EXP_SCORE": 3.6288,
       "ATLETA_ID": 123101
     },
     {
@@ -110,11 +110,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Gabriel Mec",
-      "CLUBE": "GRE",
-      "PRECO": 4.45,
-      "EXP_SCORE": 3.0426,
-      "ATLETA_ID": 141595
+      "NOME": "Kaio César",
+      "CLUBE": "COR",
+      "PRECO": 12.03,
+      "EXP_SCORE": 4.7842,
+      "ATLETA_ID": 118844
     },
     {
       "RODADA": 20,
@@ -132,11 +132,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Paulo Pezzolano",
-      "CLUBE": "INT",
-      "PRECO": 7.56,
-      "EXP_SCORE": 4.2907,
-      "ATLETA_ID": 115479
+      "NOME": "Fernando Diniz",
+      "CLUBE": "COR",
+      "PRECO": 9.89,
+      "EXP_SCORE": 4.8784,
+      "ATLETA_ID": 72391
     },
     {
       "RODADA": 20,
@@ -157,7 +157,7 @@
       "NOME": "Everton",
       "CLUBE": "CHA",
       "PRECO": 4.1,
-      "EXP_SCORE": 1.3642,
+      "EXP_SCORE": 1.5157,
       "ATLETA_ID": 104470
     },
     {
@@ -187,11 +187,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Bolasie",
-      "CLUBE": "CHA",
-      "PRECO": 4.35,
-      "EXP_SCORE": 1.9604,
-      "ATLETA_ID": 86292
+      "NOME": "Jajá",
+      "CLUBE": "REM",
+      "PRECO": 5.75,
+      "EXP_SCORE": 3.9668,
+      "ATLETA_ID": 105048
     }
   ]
 }
