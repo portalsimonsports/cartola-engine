@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 20,
-  "atualizado_em": "2026-07-24T04:49:44.628Z",
+  "atualizado_em": "2026-07-24T04:55:05.891Z",
   "dados": [
     {
       "RODADA": 20,
@@ -58,16 +58,6 @@
     {
       "RODADA": 20,
       "POS": "LAT",
-      "NOME": "Matheus Bidu",
-      "CLUBE": "COR",
-      "PRECO": 13.3,
-      "EXP_SCORE": 6.1319,
-      "FACTOR": 0.9650992493062654,
-      "ATLETA_ID": 105531
-    },
-    {
-      "RODADA": 20,
-      "POS": "LAT",
       "NOME": "Luciano Juba",
       "CLUBE": "BAH",
       "PRECO": 11.65,
@@ -98,6 +88,16 @@
     {
       "RODADA": 20,
       "POS": "LAT",
+      "NOME": "Matheus Bidu",
+      "CLUBE": "COR",
+      "PRECO": 13.3,
+      "EXP_SCORE": 5.5187,
+      "FACTOR": 0.9650992493062654,
+      "ATLETA_ID": 105531
+    },
+    {
+      "RODADA": 20,
+      "POS": "LAT",
       "NOME": "Escobar",
       "CLUBE": "SAN",
       "PRECO": 10.22,
@@ -114,16 +114,6 @@
       "EXP_SCORE": 3.9154,
       "FACTOR": 1.1534733927267418,
       "ATLETA_ID": 71684
-    },
-    {
-      "RODADA": 20,
-      "POS": "ZAG",
-      "NOME": "Léo Pereira",
-      "CLUBE": "FLA",
-      "PRECO": 9.46,
-      "EXP_SCORE": 3.4962,
-      "FACTOR": 1.0801138016649627,
-      "ATLETA_ID": 83528
     },
     {
       "RODADA": 20,
@@ -154,6 +144,16 @@
       "EXP_SCORE": 3.261,
       "FACTOR": 1.2082972864028043,
       "ATLETA_ID": 93368
+    },
+    {
+      "RODADA": 20,
+      "POS": "ZAG",
+      "NOME": "Gustavo Marques",
+      "CLUBE": "RBB",
+      "PRECO": 6.8,
+      "EXP_SCORE": 3.2508,
+      "FACTOR": 1.0542682517891049,
+      "ATLETA_ID": 110750
     },
     {
       "RODADA": 20,
