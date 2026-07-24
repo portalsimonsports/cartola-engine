@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 20,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-07-24T07:09:45.771Z",
+  "atualizado_em": "2026-07-24T07:14:45.899Z",
   "dados": [
     {
       "RODADA": 20,
@@ -102,19 +102,8 @@
       "NOME": "Leozinho",
       "CLUBE": "CAP",
       "PRECO": 7.83,
-      "EXP_SCORE": 4.1732,
+      "EXP_SCORE": 3.6288,
       "ATLETA_ID": 123101
-    },
-    {
-      "RODADA": 20,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Carbonero",
-      "CLUBE": "INT",
-      "PRECO": 9.84,
-      "EXP_SCORE": 4.6691,
-      "ATLETA_ID": 107989
     },
     {
       "RODADA": 20,
@@ -126,6 +115,17 @@
       "PRECO": 12.03,
       "EXP_SCORE": 4.7842,
       "ATLETA_ID": 118844
+    },
+    {
+      "RODADA": 20,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Carbonero",
+      "CLUBE": "INT",
+      "PRECO": 9.84,
+      "EXP_SCORE": 4.2022,
+      "ATLETA_ID": 107989
     },
     {
       "RODADA": 20,
@@ -146,7 +146,7 @@
       "NOME": "Carlos Miguel",
       "CLUBE": "PAL",
       "PRECO": 8.56,
-      "EXP_SCORE": 4.4883,
+      "EXP_SCORE": 4.0395,
       "ATLETA_ID": 104084
     },
     {
