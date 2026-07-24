@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 20,
-  "atualizado_em": "2026-07-24T18:55:12.617Z",
+  "atualizado_em": "2026-07-24T19:04:45.557Z",
   "dados": [
     {
       "RODADA": 20,
@@ -11,9 +11,19 @@
       "NOME": "Rossi",
       "CLUBE": "FLA",
       "PRECO": 9.48,
-      "EXP_SCORE": 4.2806,
+      "EXP_SCORE": 4.9227,
       "FACTOR": 1.0762537923101574,
       "ATLETA_ID": 99552
+    },
+    {
+      "RODADA": 20,
+      "POS": "GOL",
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 8.56,
+      "EXP_SCORE": 4.3974,
+      "FACTOR": 1.1300973384301984,
+      "ATLETA_ID": 104084
     },
     {
       "RODADA": 20,
@@ -24,16 +34,6 @@
       "EXP_SCORE": 3.9746,
       "FACTOR": 1.1095413048129414,
       "ATLETA_ID": 72018
-    },
-    {
-      "RODADA": 20,
-      "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.56,
-      "EXP_SCORE": 3.9576,
-      "FACTOR": 1.1300973384301984,
-      "ATLETA_ID": 104084
     },
     {
       "RODADA": 20,
@@ -128,6 +128,16 @@
     {
       "RODADA": 20,
       "POS": "ZAG",
+      "NOME": "Léo Pereira",
+      "CLUBE": "FLA",
+      "PRECO": 9.46,
+      "EXP_SCORE": 3.4837,
+      "FACTOR": 1.0762537923101574,
+      "ATLETA_ID": 83528
+    },
+    {
+      "RODADA": 20,
+      "POS": "ZAG",
       "NOME": "Jonathan Jesus",
       "CLUBE": "CRU",
       "PRECO": 6.18,
@@ -144,16 +154,6 @@
       "EXP_SCORE": 3.47,
       "FACTOR": 1.136374664825146,
       "ATLETA_ID": 123869
-    },
-    {
-      "RODADA": 20,
-      "POS": "ZAG",
-      "NOME": "Gustavo Marques",
-      "CLUBE": "RBB",
-      "PRECO": 6.8,
-      "EXP_SCORE": 3.4212,
-      "FACTOR": 1.1095413048129414,
-      "ATLETA_ID": 110750
     },
     {
       "RODADA": 20,
@@ -211,7 +211,7 @@
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 18.63,
-      "EXP_SCORE": 8.9281,
+      "EXP_SCORE": 10.2673,
       "FACTOR": 1.0770597657906469,
       "ATLETA_ID": 94583
     },
