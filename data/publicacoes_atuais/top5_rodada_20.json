@@ -1,230 +1,231 @@
 {
   "blocos_topo": [
-    "Pré-fechamento do Top 5"
+    "Top 5 confirmado",
+    "Base: 25/07/2026 17:49:29"
   ],
-  "evento_programado": "PRE_FECHAMENTO_TOP5",
+  "evento_programado": "CONFIRMADOS",
   "forcar_envio": true,
-  "houve_alteracao": false,
+  "houve_alteracao": true,
   "lista": [
     {
       "clube": "FLA",
-      "data": "2026-07-25T20:19:33.000Z",
+      "data": "2026-07-25T20:49:29.000Z",
       "nome": "Rossi",
       "pos": "GOL",
       "preco": 9.48
     },
     {
       "clube": "PAL",
-      "data": "2026-07-25T20:19:33.000Z",
+      "data": "2026-07-25T20:49:29.000Z",
       "nome": "Carlos Miguel",
       "pos": "GOL",
       "preco": 8.56
     },
     {
       "clube": "RBB",
-      "data": "2026-07-25T20:19:33.000Z",
+      "data": "2026-07-25T20:49:29.000Z",
       "nome": "Tiago Volpi",
       "pos": "GOL",
       "preco": 10.45
     },
     {
       "clube": "VIT",
-      "data": "2026-07-25T20:19:33.000Z",
+      "data": "2026-07-25T20:49:29.000Z",
       "nome": "Lucas Arcanjo",
       "pos": "GOL",
       "preco": 9.99
     },
     {
       "clube": "CAM",
-      "data": "2026-07-25T20:19:33.000Z",
+      "data": "2026-07-25T20:49:29.000Z",
       "nome": "Everson",
       "pos": "GOL",
       "preco": 9.14
     },
     {
       "clube": "RBB",
-      "data": "2026-07-25T20:19:33.000Z",
+      "data": "2026-07-25T20:49:29.000Z",
       "nome": "Juninho Capixaba",
       "pos": "LAT",
       "preco": 13.92
     },
     {
       "clube": "COR",
-      "data": "2026-07-25T20:19:33.000Z",
+      "data": "2026-07-25T20:49:29.000Z",
       "nome": "Matheus Bidu",
       "pos": "LAT",
       "preco": 13.3
     },
     {
       "clube": "VAS",
-      "data": "2026-07-25T20:19:33.000Z",
+      "data": "2026-07-25T20:49:29.000Z",
       "nome": "Cuiabano",
       "pos": "LAT",
       "preco": 13.25
     },
     {
       "clube": "SAN",
-      "data": "2026-07-25T20:19:33.000Z",
+      "data": "2026-07-25T20:49:29.000Z",
       "nome": "Escobar",
       "pos": "LAT",
       "preco": 10.22
     },
     {
-      "clube": "REM",
-      "data": "2026-07-25T20:19:33.000Z",
-      "nome": "Marcelinho",
+      "clube": "SAN",
+      "data": "2026-07-25T20:49:29.000Z",
+      "nome": "Igor Vinícius",
       "pos": "LAT",
-      "preco": 5.58
+      "preco": 9.34
     },
     {
       "clube": "PAL",
-      "data": "2026-07-25T20:19:33.000Z",
+      "data": "2026-07-25T20:49:29.000Z",
       "nome": "Gustavo Gómez",
       "pos": "ZAG",
       "preco": 10.14
     },
     {
       "clube": "FLA",
-      "data": "2026-07-25T20:19:33.000Z",
+      "data": "2026-07-25T20:49:29.000Z",
       "nome": "Léo Pereira",
       "pos": "ZAG",
       "preco": 9.46
     },
     {
       "clube": "COR",
-      "data": "2026-07-25T20:19:33.000Z",
+      "data": "2026-07-25T20:49:29.000Z",
       "nome": "Gabriel Paulista",
       "pos": "ZAG",
       "preco": 9.6
     },
     {
-      "clube": "CAP",
-      "data": "2026-07-25T20:19:33.000Z",
-      "nome": "Aguirre",
-      "pos": "ZAG",
-      "preco": 5.86
-    },
-    {
       "clube": "RBB",
-      "data": "2026-07-25T20:19:33.000Z",
+      "data": "2026-07-25T20:49:29.000Z",
       "nome": "Gustavo Marques",
       "pos": "ZAG",
       "preco": 6.8
     },
     {
+      "clube": "CAP",
+      "data": "2026-07-25T20:49:29.000Z",
+      "nome": "Aguirre",
+      "pos": "ZAG",
+      "preco": 5.86
+    },
+    {
       "clube": "SAN",
-      "data": "2026-07-25T20:19:33.000Z",
+      "data": "2026-07-25T20:49:29.000Z",
       "nome": "Neymar",
       "pos": "MEI",
       "preco": 18.96
     },
     {
       "clube": "PAL",
-      "data": "2026-07-25T20:19:33.000Z",
+      "data": "2026-07-25T20:49:29.000Z",
       "nome": "Arias",
       "pos": "MEI",
       "preco": 14.1
     },
     {
+      "clube": "SAN",
+      "data": "2026-07-25T20:49:29.000Z",
+      "nome": "Barreal",
+      "pos": "MEI",
+      "preco": 11.27
+    },
+    {
       "clube": "PAL",
-      "data": "2026-07-25T20:19:33.000Z",
+      "data": "2026-07-25T20:49:29.000Z",
       "nome": "Andreas Pereira",
       "pos": "MEI",
       "preco": 12.53
     },
     {
       "clube": "FLU",
-      "data": "2026-07-25T20:19:33.000Z",
+      "data": "2026-07-25T20:49:29.000Z",
       "nome": "Lucho Acosta",
       "pos": "MEI",
       "preco": 11.02
     },
     {
-      "clube": "VAS",
-      "data": "2026-07-25T20:19:33.000Z",
-      "nome": "Barros",
-      "pos": "MEI",
-      "preco": 8.85
-    },
-    {
       "clube": "FLA",
-      "data": "2026-07-25T20:19:33.000Z",
+      "data": "2026-07-25T20:49:29.000Z",
       "nome": "Pedro",
       "pos": "ATA",
       "preco": 18.63
     },
     {
       "clube": "FLA",
-      "data": "2026-07-25T20:19:33.000Z",
+      "data": "2026-07-25T20:49:29.000Z",
       "nome": "Samuel Lino",
       "pos": "ATA",
       "preco": 12
     },
     {
       "clube": "CAP",
-      "data": "2026-07-25T20:19:33.000Z",
+      "data": "2026-07-25T20:49:29.000Z",
       "nome": "Viveros",
       "pos": "ATA",
       "preco": 11.67
     },
     {
       "clube": "VAS",
-      "data": "2026-07-25T20:19:33.000Z",
+      "data": "2026-07-25T20:49:29.000Z",
       "nome": "Andrés Gómez",
       "pos": "ATA",
       "preco": 11.97
     },
     {
       "clube": "VIT",
-      "data": "2026-07-25T20:19:33.000Z",
+      "data": "2026-07-25T20:49:29.000Z",
       "nome": "Renê",
       "pos": "ATA",
       "preco": 11.11
     },
     {
       "clube": "FLA",
-      "data": "2026-07-25T20:19:33.000Z",
+      "data": "2026-07-25T20:49:29.000Z",
       "nome": "Leonardo Jardim",
       "pos": "TEC",
       "preco": 14.01
     },
     {
       "clube": "PAL",
-      "data": "2026-07-25T20:19:33.000Z",
+      "data": "2026-07-25T20:49:29.000Z",
       "nome": "Abel Ferreira",
       "pos": "TEC",
       "preco": 12.27
     },
     {
       "clube": "CRU",
-      "data": "2026-07-25T20:19:33.000Z",
+      "data": "2026-07-25T20:49:29.000Z",
       "nome": "Artur Jorge",
       "pos": "TEC",
       "preco": 12.2
     },
     {
       "clube": "CAP",
-      "data": "2026-07-25T20:19:33.000Z",
+      "data": "2026-07-25T20:49:29.000Z",
       "nome": "Odair Hellmann",
       "pos": "TEC",
       "preco": 8.86
     },
     {
       "clube": "COR",
-      "data": "2026-07-25T20:19:33.000Z",
+      "data": "2026-07-25T20:49:29.000Z",
       "nome": "Fernando Diniz",
       "pos": "TEC",
       "preco": 9.89
     }
   ],
-  "mensagem_oficial": "Top 5 da Rodada 20\nPré-fechamento do Top 5\nPortal SimonSports",
+  "mensagem_oficial": "Top 5 da Rodada 20\nTop 5 confirmado\nPortal SimonSports",
   "primeiro_envio": false,
-  "timestamp_base": "",
+  "timestamp_base": "25/07/2026 17:49:29",
   "tipo_publicacao": "top5",
-  "titulo": "Pré-fechamento — Top 5 R20",
+  "titulo": "Top 5 Confirmado — R20",
   "rodada": 20,
   "origem": "jobTelegramDispatcher",
   "ambiente": "producao",
-  "gerado_em": "2026-07-25T20:25:49.371Z",
-  "payload_hash": "+tv12tl55+8T5LWi21+zEw=="
+  "gerado_em": "2026-07-25T21:04:55.480Z",
+  "payload_hash": "fIm91U6wGeiF6bhJiYM8FQ=="
 }
