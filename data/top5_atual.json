@@ -3,18 +3,8 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 20,
-  "atualizado_em": "2026-07-25T06:00:03.718Z",
+  "atualizado_em": "2026-07-25T06:05:12.205Z",
   "dados": [
-    {
-      "RODADA": 20,
-      "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.56,
-      "EXP_SCORE": 4.4272,
-      "FACTOR": 1.1377714841582836,
-      "ATLETA_ID": 104084
-    },
     {
       "RODADA": 20,
       "POS": "GOL",
@@ -34,6 +24,16 @@
       "EXP_SCORE": 4.005,
       "FACTOR": 1.1180391988705647,
       "ATLETA_ID": 72018
+    },
+    {
+      "RODADA": 20,
+      "POS": "GOL",
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 8.56,
+      "EXP_SCORE": 3.9845,
+      "FACTOR": 1.1377714841582836,
+      "ATLETA_ID": 104084
     },
     {
       "RODADA": 20,
@@ -68,22 +68,22 @@
     {
       "RODADA": 20,
       "POS": "LAT",
-      "NOME": "Matheus Bidu",
-      "CLUBE": "COR",
-      "PRECO": 13.3,
-      "EXP_SCORE": 6.1545,
-      "FACTOR": 0.9686627844074147,
-      "ATLETA_ID": 105531
-    },
-    {
-      "RODADA": 20,
-      "POS": "LAT",
       "NOME": "Cuiabano",
       "CLUBE": "VAS",
       "PRECO": 13.25,
       "EXP_SCORE": 5.9491,
       "FACTOR": 1.1941930895745223,
       "ATLETA_ID": 116065
+    },
+    {
+      "RODADA": 20,
+      "POS": "LAT",
+      "NOME": "Matheus Bidu",
+      "CLUBE": "COR",
+      "PRECO": 13.3,
+      "EXP_SCORE": 5.5391,
+      "FACTOR": 0.9686627844074147,
+      "ATLETA_ID": 105531
     },
     {
       "RODADA": 20,
