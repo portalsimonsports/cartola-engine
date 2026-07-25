@@ -3,18 +3,8 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 20,
-  "atualizado_em": "2026-07-25T08:30:32.315Z",
+  "atualizado_em": "2026-07-25T08:39:55.440Z",
   "dados": [
-    {
-      "RODADA": 20,
-      "POS": "GOL",
-      "NOME": "Rossi",
-      "CLUBE": "FLA",
-      "PRECO": 9.48,
-      "EXP_SCORE": 5.0741,
-      "FACTOR": 1.1093400193351186,
-      "ATLETA_ID": 99552
-    },
     {
       "RODADA": 20,
       "POS": "GOL",
@@ -24,6 +14,16 @@
       "EXP_SCORE": 4.4272,
       "FACTOR": 1.1377714841582836,
       "ATLETA_ID": 104084
+    },
+    {
+      "RODADA": 20,
+      "POS": "GOL",
+      "NOME": "Rossi",
+      "CLUBE": "FLA",
+      "PRECO": 9.48,
+      "EXP_SCORE": 4.4122,
+      "FACTOR": 1.1093400193351186,
+      "ATLETA_ID": 99552
     },
     {
       "RODADA": 20,
@@ -128,16 +128,6 @@
     {
       "RODADA": 20,
       "POS": "ZAG",
-      "NOME": "Gabriel Paulista",
-      "CLUBE": "COR",
-      "PRECO": 9.6,
-      "EXP_SCORE": 3.5505,
-      "FACTOR": 0.9686627844074147,
-      "ATLETA_ID": 69208
-    },
-    {
-      "RODADA": 20,
-      "POS": "ZAG",
       "NOME": "Aguirre",
       "CLUBE": "CAP",
       "PRECO": 5.86,
@@ -154,6 +144,16 @@
       "EXP_SCORE": 3.4474,
       "FACTOR": 1.1180391988705647,
       "ATLETA_ID": 110750
+    },
+    {
+      "RODADA": 20,
+      "POS": "ZAG",
+      "NOME": "Jonathan Jesus",
+      "CLUBE": "CRU",
+      "PRECO": 6.18,
+      "EXP_SCORE": 3.3023,
+      "FACTOR": 1.1065393078749262,
+      "ATLETA_ID": 124912
     },
     {
       "RODADA": 20,
@@ -211,7 +211,7 @@
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 18.63,
-      "EXP_SCORE": 10.2569,
+      "EXP_SCORE": 8.919,
       "FACTOR": 1.0759628150263612,
       "ATLETA_ID": 94583
     },
