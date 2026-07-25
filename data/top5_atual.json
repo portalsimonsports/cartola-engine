@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 20,
-  "atualizado_em": "2026-07-25T04:40:02.101Z",
+  "atualizado_em": "2026-07-25T04:45:10.950Z",
   "dados": [
     {
       "RODADA": 20,
@@ -11,19 +11,9 @@
       "NOME": "Rossi",
       "CLUBE": "FLA",
       "PRECO": 9.48,
-      "EXP_SCORE": 5.0741,
+      "EXP_SCORE": 4.4122,
       "FACTOR": 1.1093400193351186,
       "ATLETA_ID": 99552
-    },
-    {
-      "RODADA": 20,
-      "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.56,
-      "EXP_SCORE": 4.4272,
-      "FACTOR": 1.1377714841582836,
-      "ATLETA_ID": 104084
     },
     {
       "RODADA": 20,
@@ -34,6 +24,16 @@
       "EXP_SCORE": 4.005,
       "FACTOR": 1.1180391988705647,
       "ATLETA_ID": 72018
+    },
+    {
+      "RODADA": 20,
+      "POS": "GOL",
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 8.56,
+      "EXP_SCORE": 3.9845,
+      "FACTOR": 1.1377714841582836,
+      "ATLETA_ID": 104084
     },
     {
       "RODADA": 20,
