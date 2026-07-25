@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 20,
-  "atualizado_em": "2026-07-25T09:40:03.175Z",
+  "atualizado_em": "2026-07-25T09:50:00.361Z",
   "dados": [
     {
       "RODADA": 20,
@@ -48,12 +48,12 @@
     {
       "RODADA": 20,
       "POS": "GOL",
-      "NOME": "Everson",
-      "CLUBE": "CAM",
-      "PRECO": 9.14,
-      "EXP_SCORE": 3.5925,
-      "FACTOR": 0.9238019945542923,
-      "ATLETA_ID": 72294
+      "NOME": "Weverton",
+      "CLUBE": "GRE",
+      "PRECO": 7.67,
+      "EXP_SCORE": 3.5528,
+      "FACTOR": 1.0736946007508523,
+      "ATLETA_ID": 71631
     },
     {
       "RODADA": 20,
@@ -288,22 +288,22 @@
     {
       "RODADA": 20,
       "POS": "TEC",
+      "NOME": "Vagner Mancini",
+      "CLUBE": "RBB",
+      "PRECO": 8.78,
+      "EXP_SCORE": 5.3102,
+      "FACTOR": 1.066656936429457,
+      "ATLETA_ID": 39850
+    },
+    {
+      "RODADA": 20,
+      "POS": "TEC",
       "NOME": "Odair Hellmann",
       "CLUBE": "CAP",
       "PRECO": 8.86,
       "EXP_SCORE": 5.0971,
       "FACTOR": 1.0520263741982887,
       "ATLETA_ID": 92273
-    },
-    {
-      "RODADA": 20,
-      "POS": "TEC",
-      "NOME": "Fernando Diniz",
-      "CLUBE": "COR",
-      "PRECO": 9.89,
-      "EXP_SCORE": 5.0193,
-      "FACTOR": 0.9335388873460266,
-      "ATLETA_ID": 72391
     }
   ]
 }
