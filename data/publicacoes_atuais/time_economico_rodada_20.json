@@ -1,0 +1,433 @@
+{
+  "atletas": [
+    {
+      "clube": "FLA",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Rossi",
+      "pos": "GOL",
+      "preco": 9.48,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "INT",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Matheus Bahia",
+      "pos": "LAT",
+      "preco": 7.66,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "COR",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Matheuzinho",
+      "pos": "LAT",
+      "preco": 11.25,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CAM",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Ruan",
+      "pos": "ZAG",
+      "preco": 6.2,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CFC",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Jacy",
+      "pos": "ZAG",
+      "preco": 5.73,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "PAL",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Maurício",
+      "pos": "MEI",
+      "preco": 9.28,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CFC",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Josué",
+      "pos": "MEI",
+      "preco": 7.14,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "SAN",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Gabriel Bontempo",
+      "pos": "MEI",
+      "preco": 4.71,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CAP",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Leozinho",
+      "pos": "ATA",
+      "preco": 7.83,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "GRE",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Gabriel Mec",
+      "pos": "ATA",
+      "preco": 4.45,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "INT",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Carbonero",
+      "pos": "ATA",
+      "preco": 9.84,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "COR",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Fernando Diniz",
+      "pos": "TEC",
+      "preco": 9.89,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "PAL",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Carlos Miguel",
+      "pos": "GOL",
+      "preco": 8.56,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "REM",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Marcelinho",
+      "pos": "LAT",
+      "preco": 5.58,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "RBB",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Alix Vinicius",
+      "pos": "ZAG",
+      "preco": 5.18,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "CAP",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Jadson",
+      "pos": "MEI",
+      "preco": 4.37,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "CHA",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Bolasie",
+      "pos": "ATA",
+      "preco": 4.35,
+      "status": "RESERVA"
+    }
+  ],
+  "blocos_topo": [
+    "Pré-fechamento dos times"
+  ],
+  "capitao": "Carbonero",
+  "custo_total": 93.46,
+  "evento_programado": "PRE_FECHAMENTO_TIMES",
+  "forcar_envio": true,
+  "formacao": "4-3-3",
+  "houve_alteracao": false,
+  "mensagem_oficial": "Econômico • Rodada 20\nPré-fechamento dos times\nPortal SimonSports",
+  "meta": {
+    "capitao": "Carbonero (ATA)",
+    "custo_total": 93.46,
+    "esquema": "4-3-3",
+    "pontos_total": 0,
+    "variacao_total": 0
+  },
+  "modelo": "ECONOMICO",
+  "nome_modelo": "TIME ECONÔMICO",
+  "primeiro_envio": false,
+  "snapshot": {
+    "atletas": [
+      {
+        "clube": "FLA",
+        "nome": "Rossi",
+        "pos": "GOL",
+        "preco": 9.48,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "INT",
+        "nome": "Matheus Bahia",
+        "pos": "LAT",
+        "preco": 7.66,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "COR",
+        "nome": "Matheuzinho",
+        "pos": "LAT",
+        "preco": 11.25,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "CAM",
+        "nome": "Ruan",
+        "pos": "ZAG",
+        "preco": 6.2,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "CFC",
+        "nome": "Jacy",
+        "pos": "ZAG",
+        "preco": 5.73,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "PAL",
+        "nome": "Maurício",
+        "pos": "MEI",
+        "preco": 9.28,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "CFC",
+        "nome": "Josué",
+        "pos": "MEI",
+        "preco": 7.14,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "SAN",
+        "nome": "Gabriel Bontempo",
+        "pos": "MEI",
+        "preco": 4.71,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "CAP",
+        "nome": "Leozinho",
+        "pos": "ATA",
+        "preco": 7.83,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "GRE",
+        "nome": "Gabriel Mec",
+        "pos": "ATA",
+        "preco": 4.45,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "INT",
+        "nome": "Carbonero",
+        "pos": "ATA",
+        "preco": 9.84,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "COR",
+        "nome": "Fernando Diniz",
+        "pos": "TEC",
+        "preco": 9.89,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "PAL",
+        "nome": "Carlos Miguel",
+        "pos": "GOL",
+        "preco": 8.56,
+        "status": "RESERVA"
+      },
+      {
+        "clube": "REM",
+        "nome": "Marcelinho",
+        "pos": "LAT",
+        "preco": 5.58,
+        "status": "RESERVA"
+      },
+      {
+        "clube": "RBB",
+        "nome": "Alix Vinicius",
+        "pos": "ZAG",
+        "preco": 5.18,
+        "status": "RESERVA"
+      },
+      {
+        "clube": "CAP",
+        "nome": "Jadson",
+        "pos": "MEI",
+        "preco": 4.37,
+        "status": "RESERVA"
+      },
+      {
+        "clube": "CHA",
+        "nome": "Bolasie",
+        "pos": "ATA",
+        "preco": 4.35,
+        "status": "RESERVA"
+      }
+    ],
+    "capitao": "Carbonero"
+  },
+  "timestamp_base": "",
+  "tipo_publicacao": "time_economico",
+  "titulo": "TIME ECONÔMICO",
+  "rodada": 20,
+  "origem": "jobTelegramDispatcher",
+  "ambiente": "producao",
+  "gerado_em": "2026-07-25T20:25:33.335Z",
+  "payload_hash": "hD4pv8Xnb0AtIkaXhNMH0A==",
+  "jogadores": [
+    {
+      "clube": "FLA",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Rossi",
+      "pos": "GOL",
+      "preco": 9.48,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "INT",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Matheus Bahia",
+      "pos": "LAT",
+      "preco": 7.66,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "COR",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Matheuzinho",
+      "pos": "LAT",
+      "preco": 11.25,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CAM",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Ruan",
+      "pos": "ZAG",
+      "preco": 6.2,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CFC",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Jacy",
+      "pos": "ZAG",
+      "preco": 5.73,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "PAL",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Maurício",
+      "pos": "MEI",
+      "preco": 9.28,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CFC",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Josué",
+      "pos": "MEI",
+      "preco": 7.14,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "SAN",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Gabriel Bontempo",
+      "pos": "MEI",
+      "preco": 4.71,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CAP",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Leozinho",
+      "pos": "ATA",
+      "preco": 7.83,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "GRE",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Gabriel Mec",
+      "pos": "ATA",
+      "preco": 4.45,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "INT",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Carbonero",
+      "pos": "ATA",
+      "preco": 9.84,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "COR",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Fernando Diniz",
+      "pos": "TEC",
+      "preco": 9.89,
+      "status": "TITULAR"
+    }
+  ],
+  "reservas": [
+    {
+      "clube": "PAL",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Carlos Miguel",
+      "pos": "GOL",
+      "preco": 8.56,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "REM",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Marcelinho",
+      "pos": "LAT",
+      "preco": 5.58,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "RBB",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Alix Vinicius",
+      "pos": "ZAG",
+      "preco": 5.18,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "CAP",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Jadson",
+      "pos": "MEI",
+      "preco": 4.37,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "CHA",
+      "data": "2026-07-25T20:19:33.000Z",
+      "nome": "Bolasie",
+      "pos": "ATA",
+      "preco": 4.35,
+      "status": "RESERVA"
+    }
+  ],
+  "pontos_total": 0
+}
