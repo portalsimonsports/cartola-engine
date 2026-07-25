@@ -3,27 +3,27 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 20,
-  "atualizado_em": "2026-07-25T17:40:05.972Z",
+  "atualizado_em": "2026-07-25T17:45:29.273Z",
   "dados": [
-    {
-      "RODADA": 20,
-      "POS": "GOL",
-      "NOME": "Rossi",
-      "CLUBE": "FLA",
-      "PRECO": 9.48,
-      "EXP_SCORE": 5.0806,
-      "FACTOR": 1.1107694339061356,
-      "ATLETA_ID": 99552
-    },
     {
       "RODADA": 20,
       "POS": "GOL",
       "NOME": "Carlos Miguel",
       "CLUBE": "PAL",
       "PRECO": 8.56,
-      "EXP_SCORE": 4.4321,
-      "FACTOR": 1.1390094337627708,
+      "EXP_SCORE": 4.4336,
+      "FACTOR": 1.1394071115005322,
       "ATLETA_ID": 104084
+    },
+    {
+      "RODADA": 20,
+      "POS": "GOL",
+      "NOME": "Rossi",
+      "CLUBE": "FLA",
+      "PRECO": 9.48,
+      "EXP_SCORE": 4.4198,
+      "FACTOR": 1.1112286176652035,
+      "ATLETA_ID": 99552
     },
     {
       "RODADA": 20,
@@ -31,8 +31,8 @@
       "NOME": "Tiago Volpi",
       "CLUBE": "RBB",
       "PRECO": 10.45,
-      "EXP_SCORE": 4.0099,
-      "FACTOR": 1.1194100308771957,
+      "EXP_SCORE": 4.0115,
+      "FACTOR": 1.1198503956297443,
       "ATLETA_ID": 72018
     },
     {
@@ -41,8 +41,8 @@
       "NOME": "Lucas Arcanjo",
       "CLUBE": "VIT",
       "PRECO": 9.99,
-      "EXP_SCORE": 3.6526,
-      "FACTOR": 0.9641614079857781,
+      "EXP_SCORE": 3.6538,
+      "FACTOR": 0.9644772984523501,
       "ATLETA_ID": 104118
     },
     {
@@ -51,8 +51,8 @@
       "NOME": "Everson",
       "CLUBE": "CAM",
       "PRECO": 9.14,
-      "EXP_SCORE": 3.5603,
-      "FACTOR": 0.9155204167614965,
+      "EXP_SCORE": 3.5619,
+      "FACTOR": 0.915942246104053,
       "ATLETA_ID": 72294
     },
     {
@@ -61,8 +61,8 @@
       "NOME": "Juninho Capixaba",
       "CLUBE": "RBB",
       "PRECO": 13.92,
-      "EXP_SCORE": 6.2214,
-      "FACTOR": 1.1194100308771957,
+      "EXP_SCORE": 6.2239,
+      "FACTOR": 1.1198503956297443,
       "ATLETA_ID": 94968
     },
     {
@@ -71,8 +71,8 @@
       "NOME": "Matheus Bidu",
       "CLUBE": "COR",
       "PRECO": 13.3,
-      "EXP_SCORE": 6.1605,
-      "FACTOR": 0.9696091990028978,
+      "EXP_SCORE": 6.1625,
+      "FACTOR": 0.9699132243153594,
       "ATLETA_ID": 105531
     },
     {
@@ -81,8 +81,8 @@
       "NOME": "Cuiabano",
       "CLUBE": "VAS",
       "PRECO": 13.25,
-      "EXP_SCORE": 5.9533,
-      "FACTOR": 1.1950510812394606,
+      "EXP_SCORE": 5.9547,
+      "FACTOR": 1.1953267016549394,
       "ATLETA_ID": 116065
     },
     {
@@ -91,8 +91,8 @@
       "NOME": "Escobar",
       "CLUBE": "SAN",
       "PRECO": 10.22,
-      "EXP_SCORE": 5.3014,
-      "FACTOR": 1.2022333140388197,
+      "EXP_SCORE": 5.2638,
+      "FACTOR": 1.1937116954410938,
       "ATLETA_ID": 102975
     },
     {
@@ -101,8 +101,8 @@
       "NOME": "Marcelinho",
       "CLUBE": "REM",
       "PRECO": 5.58,
-      "EXP_SCORE": 5.147,
-      "FACTOR": 1.0624326699724203,
+      "EXP_SCORE": 5.1498,
+      "FACTOR": 1.0629971300079575,
       "ATLETA_ID": 97795
     },
     {
@@ -111,8 +111,8 @@
       "NOME": "Gustavo Gómez",
       "CLUBE": "PAL",
       "PRECO": 10.14,
-      "EXP_SCORE": 3.8663,
-      "FACTOR": 1.1390094337627708,
+      "EXP_SCORE": 3.8677,
+      "FACTOR": 1.1394071115005322,
       "ATLETA_ID": 71684
     },
     {
@@ -121,8 +121,8 @@
       "NOME": "Léo Pereira",
       "CLUBE": "FLA",
       "PRECO": 9.46,
-      "EXP_SCORE": 3.5954,
-      "FACTOR": 1.1107694339061356,
+      "EXP_SCORE": 3.5969,
+      "FACTOR": 1.1112286176652035,
       "ATLETA_ID": 83528
     },
     {
@@ -131,8 +131,8 @@
       "NOME": "Gustavo Marques",
       "CLUBE": "RBB",
       "PRECO": 6.8,
-      "EXP_SCORE": 3.4517,
-      "FACTOR": 1.1194100308771957,
+      "EXP_SCORE": 3.453,
+      "FACTOR": 1.1198503956297443,
       "ATLETA_ID": 110750
     },
     {
@@ -141,8 +141,8 @@
       "NOME": "Aguirre",
       "CLUBE": "CAP",
       "PRECO": 5.86,
-      "EXP_SCORE": 3.4481,
-      "FACTOR": 1.1291970875439281,
+      "EXP_SCORE": 3.4494,
+      "FACTOR": 1.1296161363290926,
       "ATLETA_ID": 123869
     },
     {
@@ -151,8 +151,8 @@
       "NOME": "Jonathan Jesus",
       "CLUBE": "CRU",
       "PRECO": 6.18,
-      "EXP_SCORE": 3.3067,
-      "FACTOR": 1.1079875831739894,
+      "EXP_SCORE": 3.3081,
+      "FACTOR": 1.1084528257351562,
       "ATLETA_ID": 124912
     },
     {
@@ -211,7 +211,7 @@
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 18.63,
-      "EXP_SCORE": 10.2844,
+      "EXP_SCORE": 8.943,
       "FACTOR": 1.0788534470535251,
       "ATLETA_ID": 94583
     },
