@@ -1,0 +1,173 @@
+/**
+ * ============================================================================
+ * PORTAL SIMONSPORTS
+ * CARTOLA LIVE PUBLISHER — CORREÇÃO V2026.126
+ * REATIVA PUBLICAÇÕES PROGRAMADAS SEM RESTAURAR PUBLICAÇÕES VISUAIS EM TEXTO
+ * ============================================================================
+ *
+ * OBJETIVO:
+ * - manter NOTIF_MERCADO = SIM;
+ * - restaurar NOTIF_TIMES = SIM;
+ * - restaurar NOTIF_TOP5 = SIM;
+ * - preservar os horários e eventos programados do núcleo publicarResumoLive();
+ * - continuar bloqueando relatórios visuais em texto pela V125;
+ * - manter cards enviados exclusivamente pelo GitHub.
+ *
+ * Esta correção trabalha em conjunto com o módulo V125 já instalado.
+ * A planilha operacional já foi corrigida diretamente; este arquivo existe para
+ * impedir que uma futura reinstalação deixe as publicações desativadas novamente.
+ * ============================================================================
+ */
+
+var PSS_LIVE_V126_CONFIG = {
+  VERSAO: "v2026.126",
+  HANDLER: "PSS_LIVE_IMAGENS_V126_EXECUTAR",
+  INTERVALO_MINUTOS: 5
+};
+
+
+function PSS_LIVE_V126_obterPlanilha_() {
+  if (typeof ID_PLANILHA_MESTRE === "undefined") {
+    throw new Error(
+      "A constante ID_PLANILHA_MESTRE não foi encontrada no Cartola Live.gs."
+    );
+  }
+  return SpreadsheetApp.openById(ID_PLANILHA_MESTRE);
+}
+
+
+function PSS_LIVE_V126_upsertConfig_(ss, chave, valor) {
+  var sh = ss.getSheetByName("CONFIG");
+  if (!sh) throw new Error("A aba CONFIG não foi encontrada.");
+
+  var ultimaLinha = Math.max(1, sh.getLastRow());
+  var dados = sh.getRange(1, 1, ultimaLinha, 2).getValues();
+  var alvo = String(chave || "").trim().toUpperCase();
+
+  for (var i = 0; i < dados.length; i++) {
+    var atual = String(dados[i][0] || "").trim().toUpperCase();
+    if (atual !== alvo) continue;
+
+    sh.getRange(i + 1, 2).setValue(valor);
+    return;
+  }
+
+  sh.appendRow([chave, valor]);
+}
+
+
+function PSS_LIVE_V126_garantirPublicacoesAtivas_() {
+  var ss = PSS_LIVE_V126_obterPlanilha_();
+
+  PSS_LIVE_V126_upsertConfig_(ss, "TG_ENVIAR", "SIM");
+  PSS_LIVE_V126_upsertConfig_(ss, "JOB_TELEGRAM", "SIM");
+  PSS_LIVE_V126_upsertConfig_(ss, "NOTIF_MERCADO", "SIM");
+  PSS_LIVE_V126_upsertConfig_(ss, "NOTIF_TIMES", "SIM");
+  PSS_LIVE_V126_upsertConfig_(ss, "NOTIF_TOP5", "SIM");
+  PSS_LIVE_V126_upsertConfig_(ss, "GITHUB_TESTE_ATIVO", "SIM");
+  PSS_LIVE_V126_upsertConfig_(ss, "GITHUB_LIVE_EVENTO", "cartola_live_publish");
+
+  PropertiesService.getScriptProperties().setProperties({
+    PSS_LIVE_V126_ATIVO: "SIM",
+    PSS_LIVE_V126_VERSAO: PSS_LIVE_V126_CONFIG.VERSAO,
+    PSS_LIVE_V126_REPARADO_EM: new Date().toISOString()
+  });
+
+  return {
+    ok: true,
+    versao: PSS_LIVE_V126_CONFIG.VERSAO,
+    notif_mercado: "SIM",
+    notif_times: "SIM",
+    notif_top5: "SIM",
+    modo_visual: "SOMENTE_IMAGEM"
+  };
+}
+
+
+function PSS_LIVE_IMAGENS_V126_EXECUTAR() {
+  PSS_LIVE_V126_garantirPublicacoesAtivas_();
+
+  if (typeof PSS_LIVE_IMAGENS_V125_EXECUTAR === "function") {
+    return PSS_LIVE_IMAGENS_V125_EXECUTAR();
+  }
+
+  if (typeof publicarResumoLive === "function") {
+    return publicarResumoLive();
+  }
+
+  throw new Error(
+    "Não foi encontrado o executor V125 nem a função publicarResumoLive()."
+  );
+}
+
+
+function PSS_LIVE_IMAGENS_V126_INSTALAR() {
+  var reparo = PSS_LIVE_V126_garantirPublicacoesAtivas_();
+  var removidos = [];
+
+  ScriptApp.getProjectTriggers().forEach(function(trigger) {
+    var nome = String(trigger.getHandlerFunction() || "");
+    if (
+      nome !== "PSS_LIVE_IMAGENS_V125_EXECUTAR" &&
+      nome !== "PSS_LIVE_IMAGENS_V126_EXECUTAR"
+    ) {
+      return;
+    }
+
+    ScriptApp.deleteTrigger(trigger);
+    removidos.push(nome);
+  });
+
+  var trigger = ScriptApp
+    .newTrigger(PSS_LIVE_V126_CONFIG.HANDLER)
+    .timeBased()
+    .everyMinutes(PSS_LIVE_V126_CONFIG.INTERVALO_MINUTOS)
+    .create();
+
+  PropertiesService.getScriptProperties().setProperties({
+    PSS_LIVE_V126_INSTALADO: "SIM",
+    PSS_LIVE_V126_TRIGGER_ID: String(trigger.getUniqueId() || ""),
+    PSS_LIVE_V126_INSTALADO_EM: new Date().toISOString()
+  });
+
+  var resultado = {
+    ok: true,
+    reparo: reparo,
+    acionador: PSS_LIVE_V126_CONFIG.HANDLER,
+    intervalo_minutos: PSS_LIVE_V126_CONFIG.INTERVALO_MINUTOS,
+    acionadores_removidos: removidos
+  };
+
+  console.log(JSON.stringify(resultado));
+  return resultado;
+}
+
+
+function PSS_LIVE_V126_DIAGNOSTICO() {
+  var ss = PSS_LIVE_V126_obterPlanilha_();
+  var sh = ss.getSheetByName("CONFIG");
+  var dados = sh.getRange(1, 1, sh.getLastRow(), 2).getValues();
+  var chaves = {};
+
+  dados.forEach(function(linha) {
+    var chave = String(linha[0] || "").trim().toUpperCase();
+    if (!chave) return;
+    chaves[chave] = linha[1];
+  });
+
+  var resultado = {
+    versao: PSS_LIVE_V126_CONFIG.VERSAO,
+    TG_ENVIAR: chaves.TG_ENVIAR,
+    JOB_TELEGRAM: chaves.JOB_TELEGRAM,
+    NOTIF_MERCADO: chaves.NOTIF_MERCADO,
+    NOTIF_TIMES: chaves.NOTIF_TIMES,
+    NOTIF_TOP5: chaves.NOTIF_TOP5,
+    GITHUB_TESTE_ATIVO: chaves.GITHUB_TESTE_ATIVO,
+    acionadores: ScriptApp.getProjectTriggers().map(function(trigger) {
+      return String(trigger.getHandlerFunction() || "");
+    })
+  };
+
+  console.log(JSON.stringify(resultado));
+  return resultado;
+}
