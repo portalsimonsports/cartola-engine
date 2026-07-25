@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 20,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-07-25T18:39:48.334Z",
+  "atualizado_em": "2026-07-25T18:49:49.943Z",
   "dados": [
     {
       "RODADA": 20,
@@ -65,6 +65,17 @@
       "RODADA": 20,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
+      "POS": "ZAG",
+      "NOME": "Gabriel Paulista",
+      "CLUBE": "COR",
+      "PRECO": 9.6,
+      "EXP_SCORE": 3.5531,
+      "ATLETA_ID": 69208
+    },
+    {
+      "RODADA": 20,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
       "POS": "MEI",
       "NOME": "Neymar",
       "CLUBE": "SAN",
@@ -99,33 +110,22 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Pedro",
+      "NOME": "Samuel Lino",
       "CLUBE": "FLA",
-      "PRECO": 18.63,
-      "EXP_SCORE": 10.2805,
-      "ATLETA_ID": 94583
+      "PRECO": 12,
+      "EXP_SCORE": 8.03,
+      "ATLETA_ID": 98873
     },
     {
       "RODADA": 20,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Breno Lopes",
-      "CLUBE": "CFC",
-      "PRECO": 9.24,
-      "EXP_SCORE": 5.336,
-      "ATLETA_ID": 93988
-    },
-    {
-      "RODADA": 20,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Bruno Santos",
-      "CLUBE": "MIR",
-      "PRECO": 4,
-      "EXP_SCORE": 0,
-      "ATLETA_ID": 103967
+      "NOME": "Jajá",
+      "CLUBE": "REM",
+      "PRECO": 5.75,
+      "EXP_SCORE": 3.9433,
+      "ATLETA_ID": 105048
     },
     {
       "RODADA": 20,
@@ -187,11 +187,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Edson Carioca",
-      "CLUBE": "MIR",
-      "PRECO": 4.2,
-      "EXP_SCORE": 1.3715,
-      "ATLETA_ID": 104204
+      "NOME": "Gabriel Mec",
+      "CLUBE": "GRE",
+      "PRECO": 4.45,
+      "EXP_SCORE": 3.1231,
+      "ATLETA_ID": 141595
     }
   ]
 }
