@@ -1,39 +1,42 @@
 {
   "ambiente": "producao",
-  "contexto": "fechamento_dia",
+  "contexto": "placar_delta",
   "evento_github": "cartola_live_publish",
-  "gerado_em": "2026-07-24T00:42:10.700Z",
+  "gerado_em": "2026-07-25T23:35:02.040Z",
   "origem": "cartola_live_publisher",
   "payload": {
-    "contexto": "fechamento_dia",
-    "mensagem_oficial": "🏆 *PORTAL SIMONSPORTS – RESUMO GERAL*\n📍 RODADA 19 | Parciais Ao Vivo\n\n🔹 *Time ECONOMICO*\n✨ Pontos (Sem C): 60.92 pts\n✨ Pontos (Com C): 70.32 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ 19.80\n\n🔹 *Time INTERMEDIARIO*\n✨ Pontos (Sem C): 83.52 pts\n✨ Pontos (Com C): 92.92 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ 9.28\n\n🔹 *Time PONTUACAO*\n✨ Pontos (Sem C): 90.68 pts\n✨ Pontos (Com C): 100.08 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ 10.74\n\n_Atualização automática • SimonSports_",
-    "rodada": 19,
-    "tipos": [
+    "contexto": "placar_delta",
+    "mensagem_oficial": "⚽ *ATUALIZAÇÃO DE PLACAR*\n\n📅 25/07 • 🕒 18:30\n🏟 Vila Belmiro\n*Santos 2 x 2 Chapecoense*\nNeymar (2⚽)                       Marcinho (1⚽)\n📺 [Veja como foi](https://ge.globo.com/sp/santos-e-regiao/futebol/brasileirao-serie-a/jogo/25-07-2026/santos-chapecoense.ghtml?utm_source=cartolafc)\n\n_Monitoramento SimonSports_",
+    "partidas": [
       {
-        "participacao": 12,
-        "pontos_com_capitao": 70.32,
-        "pontos_sem_capitao": 60.92,
-        "tipo": "ECONOMICO",
-        "valorizacao": 19.8
-      },
-      {
-        "participacao": 12,
-        "pontos_com_capitao": 92.92,
-        "pontos_sem_capitao": 83.52,
-        "tipo": "INTERMEDIARIO",
-        "valorizacao": 9.28
-      },
-      {
-        "participacao": 12,
-        "pontos_com_capitao": 100.08,
-        "pontos_sem_capitao": 90.68,
-        "tipo": "PONTUACAO",
-        "valorizacao": 10.74
+        "casa_id": "277",
+        "casa_nome": "Santos",
+        "casa_sigla": "SAN",
+        "chave": "MjAyNi0wNy0yNSAxODozMHwyNzd8MzE1",
+        "data": "25/07",
+        "data_iso": "2026-07-25T21:30:00.000Z",
+        "estadio": "Vila Belmiro",
+        "fora_id": "315",
+        "fora_nome": "Chapecoense",
+        "fora_sigla": "CHA",
+        "goleadores_casa": [
+          "Neymar (2⚽)"
+        ],
+        "goleadores_fora": [
+          "Marcinho (1⚽)"
+        ],
+        "hora": "18:30",
+        "link_resumo": "https://ge.globo.com/sp/santos-e-regiao/futebol/brasileirao-serie-a/jogo/25-07-2026/santos-chapecoense.ghtml?utm_source=cartolafc",
+        "placar_casa": 2,
+        "placar_fora": 2,
+        "status": "EM_ANDAMENTO"
       }
-    ]
+    ],
+    "rodada": 20,
+    "titulo": "ATUALIZAÇÃO DE PLACAR"
   },
-  "payload_hash": "xBE3QPK/qxi+6IoHvBJeWw==",
-  "rodada": 19,
-  "tipo_publicacao": "resumo_geral_fechamento_dia",
+  "payload_hash": "9N/hlMMDbYSIIt0P7alWSw==",
+  "rodada": 20,
+  "tipo_publicacao": "placar_delta",
   "workflow_destino": "gerar.resultados.yml"
 }
