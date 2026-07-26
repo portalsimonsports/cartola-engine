@@ -2,38 +2,40 @@
   "ambiente": "producao",
   "contexto": "placar_delta",
   "evento_github": "cartola_live_publish",
-  "gerado_em": "2026-07-26T23:25:08.465Z",
+  "gerado_em": "2026-07-26T23:35:13.791Z",
   "origem": "cartola_live_publisher",
   "payload": {
     "contexto": "placar_delta",
-    "mensagem_oficial": "⚽ *ATUALIZAÇÃO DE PLACAR*\n\n📅 26/07 • 🕒 19:30\n🏟 Mangueirão\n*Remo 1 x 0 VITÓRIA*\nJajá (1⚽)\n📺 [Veja como foi](https://ge.globo.com/pa/futebol/brasileirao-serie-a/jogo/26-07-2026/remo-vitoria.ghtml?utm_source=cartolafc)\n\n_Monitoramento SimonSports_",
+    "mensagem_oficial": "⚽ *ATUALIZAÇÃO DE PLACAR*\n\n📅 26/07 • 🕒 18:30\n🏟 Arena do Grêmio\n*GRÊMIO 1 x 1 Fluminense*\nD. Caito (1⚽)                     Hulk (1⚽)\n📺 [Veja como foi](https://ge.globo.com/rs/futebol/brasileirao-serie-a/jogo/26-07-2026/gremio-fluminense.ghtml?utm_source=cartolafc)\n\n_Monitoramento SimonSports_",
     "partidas": [
       {
-        "casa_id": "364",
-        "casa_nome": "Remo",
-        "casa_sigla": "REM",
-        "chave": "MjAyNi0wNy0yNiAxOTozMHwzNjR8Mjg3",
+        "casa_id": "284",
+        "casa_nome": "GRÊMIO",
+        "casa_sigla": "GRE",
+        "chave": "MjAyNi0wNy0yNiAxODozMHwyODR8MjY2",
         "data": "26/07",
-        "data_iso": "2026-07-26T22:30:00.000Z",
-        "estadio": "Mangueirão",
-        "fora_id": "287",
-        "fora_nome": "VITÓRIA",
-        "fora_sigla": "VIT",
+        "data_iso": "2026-07-26T21:30:00.000Z",
+        "estadio": "Arena do Grêmio",
+        "fora_id": "266",
+        "fora_nome": "Fluminense",
+        "fora_sigla": "FLU",
         "goleadores_casa": [
-          "Jajá (1⚽)"
+          "D. Caito (1⚽)"
         ],
-        "goleadores_fora": [],
-        "hora": "19:30",
-        "link_resumo": "https://ge.globo.com/pa/futebol/brasileirao-serie-a/jogo/26-07-2026/remo-vitoria.ghtml?utm_source=cartolafc",
+        "goleadores_fora": [
+          "Hulk (1⚽)"
+        ],
+        "hora": "18:30",
+        "link_resumo": "https://ge.globo.com/rs/futebol/brasileirao-serie-a/jogo/26-07-2026/gremio-fluminense.ghtml?utm_source=cartolafc",
         "placar_casa": 1,
-        "placar_fora": 0,
+        "placar_fora": 1,
         "status": "EM_ANDAMENTO"
       }
     ],
     "rodada": 20,
     "titulo": "ATUALIZAÇÃO DE PLACAR"
   },
-  "payload_hash": "bp5hlH4Ty2L3YHo2qnkR9g==",
+  "payload_hash": "XCTJdYcPYDx1U9KhjmQb6g==",
   "rodada": 20,
   "tipo_publicacao": "placar_delta",
   "workflow_destino": "gerar.resultados.yml"
