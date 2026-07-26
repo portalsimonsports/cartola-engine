@@ -2,61 +2,38 @@
   "ambiente": "producao",
   "contexto": "placar_delta",
   "evento_github": "cartola_live_publish",
-  "gerado_em": "2026-07-26T23:15:11.142Z",
+  "gerado_em": "2026-07-26T23:25:08.465Z",
   "origem": "cartola_live_publisher",
   "payload": {
     "contexto": "placar_delta",
-    "mensagem_oficial": "⚽ *ATUALIZAÇÃO DE PLACAR*\n\n📅 26/07 • 🕒 18:30\n🏟 Arena do Grêmio\n*GRÊMIO 0 x 1 Fluminense*\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Hulk (1⚽)\n📺 [Veja como foi](https://ge.globo.com/rs/futebol/brasileirao-serie-a/jogo/26-07-2026/gremio-fluminense.ghtml?utm_source=cartolafc)\n\n📅 26/07 • 🕒 18:30\n🏟 Maracanã\n*Flamengo 1 x 1 SÃO PAULO*\nL. Pereira (1⚽)                   Calleri (1⚽)\n📺 [Veja como foi](https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/26-07-2026/flamengo-sao-paulo.ghtml?utm_source=cartolafc)\n\n_Monitoramento SimonSports_",
+    "mensagem_oficial": "⚽ *ATUALIZAÇÃO DE PLACAR*\n\n📅 26/07 • 🕒 19:30\n🏟 Mangueirão\n*Remo 1 x 0 VITÓRIA*\nJajá (1⚽)\n📺 [Veja como foi](https://ge.globo.com/pa/futebol/brasileirao-serie-a/jogo/26-07-2026/remo-vitoria.ghtml?utm_source=cartolafc)\n\n_Monitoramento SimonSports_",
     "partidas": [
       {
-        "casa_id": "284",
-        "casa_nome": "GRÊMIO",
-        "casa_sigla": "GRE",
-        "chave": "MjAyNi0wNy0yNiAxODozMHwyODR8MjY2",
+        "casa_id": "364",
+        "casa_nome": "Remo",
+        "casa_sigla": "REM",
+        "chave": "MjAyNi0wNy0yNiAxOTozMHwzNjR8Mjg3",
         "data": "26/07",
-        "data_iso": "2026-07-26T21:30:00.000Z",
-        "estadio": "Arena do Grêmio",
-        "fora_id": "266",
-        "fora_nome": "Fluminense",
-        "fora_sigla": "FLU",
-        "goleadores_casa": [],
-        "goleadores_fora": [
-          "Hulk (1⚽)"
-        ],
-        "hora": "18:30",
-        "link_resumo": "https://ge.globo.com/rs/futebol/brasileirao-serie-a/jogo/26-07-2026/gremio-fluminense.ghtml?utm_source=cartolafc",
-        "placar_casa": 0,
-        "placar_fora": 1,
-        "status": "EM_ANDAMENTO"
-      },
-      {
-        "casa_id": "262",
-        "casa_nome": "Flamengo",
-        "casa_sigla": "FLA",
-        "chave": "MjAyNi0wNy0yNiAxODozMHwyNjJ8Mjc2",
-        "data": "26/07",
-        "data_iso": "2026-07-26T21:30:00.000Z",
-        "estadio": "Maracanã",
-        "fora_id": "276",
-        "fora_nome": "SÃO PAULO",
-        "fora_sigla": "SAO",
+        "data_iso": "2026-07-26T22:30:00.000Z",
+        "estadio": "Mangueirão",
+        "fora_id": "287",
+        "fora_nome": "VITÓRIA",
+        "fora_sigla": "VIT",
         "goleadores_casa": [
-          "L. Pereira (1⚽)"
+          "Jajá (1⚽)"
         ],
-        "goleadores_fora": [
-          "Calleri (1⚽)"
-        ],
-        "hora": "18:30",
-        "link_resumo": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/26-07-2026/flamengo-sao-paulo.ghtml?utm_source=cartolafc",
+        "goleadores_fora": [],
+        "hora": "19:30",
+        "link_resumo": "https://ge.globo.com/pa/futebol/brasileirao-serie-a/jogo/26-07-2026/remo-vitoria.ghtml?utm_source=cartolafc",
         "placar_casa": 1,
-        "placar_fora": 1,
+        "placar_fora": 0,
         "status": "EM_ANDAMENTO"
       }
     ],
     "rodada": 20,
     "titulo": "ATUALIZAÇÃO DE PLACAR"
   },
-  "payload_hash": "cLbGuGmTWyX//LjTShHJxQ==",
+  "payload_hash": "bp5hlH4Ty2L3YHo2qnkR9g==",
   "rodada": 20,
   "tipo_publicacao": "placar_delta",
   "workflow_destino": "gerar.resultados.yml"
