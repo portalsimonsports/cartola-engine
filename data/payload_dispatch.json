@@ -2,30 +2,32 @@
   "ambiente": "producao",
   "contexto": "placar_delta",
   "evento_github": "cartola_live_publish",
-  "gerado_em": "2026-07-26T19:55:01.003Z",
+  "gerado_em": "2026-07-26T20:05:11.959Z",
   "origem": "cartola_live_publisher",
   "payload": {
     "contexto": "placar_delta",
-    "mensagem_oficial": "⚽ *ATUALIZAÇÃO DE PLACAR*\n\n📅 26/07 • 🕒 16:00\n🏟 Mineirão\n*Cruzeiro 0 x 1 Botafogo*\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Justino (1⚽)\n📺 [Veja como foi](https://ge.globo.com/mg/futebol/brasileirao-serie-a/jogo/26-07-2026/cruzeiro-botafogo.ghtml?utm_source=cartolafc)\n\n_Monitoramento SimonSports_",
+    "mensagem_oficial": "⚽ *ATUALIZAÇÃO DE PLACAR*\n\n📅 26/07 • 🕒 16:00\n🏟 Casa de Apostas Arena Fonte Nova\n*Bahia 1 x 1 Corinthians*\nD. Duarte (1⚽)                    Angileri (1⚽)\n📺 [Veja como foi](https://ge.globo.com/ba/futebol/brasileirao-serie-a/jogo/26-07-2026/bahia-corinthians.ghtml?utm_source=cartolafc)\n\n_Monitoramento SimonSports_",
     "partidas": [
       {
-        "casa_id": "283",
-        "casa_nome": "Cruzeiro",
-        "casa_sigla": "CRU",
-        "chave": "MjAyNi0wNy0yNiAxNjowMHwyODN8MjYz",
+        "casa_id": "265",
+        "casa_nome": "Bahia",
+        "casa_sigla": "BAH",
+        "chave": "MjAyNi0wNy0yNiAxNjowMHwyNjV8MjY0",
         "data": "26/07",
         "data_iso": "2026-07-26T19:00:00.000Z",
-        "estadio": "Mineirão",
-        "fora_id": "263",
-        "fora_nome": "Botafogo",
-        "fora_sigla": "BOT",
-        "goleadores_casa": [],
+        "estadio": "Casa de Apostas Arena Fonte Nova",
+        "fora_id": "264",
+        "fora_nome": "Corinthians",
+        "fora_sigla": "COR",
+        "goleadores_casa": [
+          "D. Duarte (1⚽)"
+        ],
         "goleadores_fora": [
-          "Justino (1⚽)"
+          "Angileri (1⚽)"
         ],
         "hora": "16:00",
-        "link_resumo": "https://ge.globo.com/mg/futebol/brasileirao-serie-a/jogo/26-07-2026/cruzeiro-botafogo.ghtml?utm_source=cartolafc",
-        "placar_casa": 0,
+        "link_resumo": "https://ge.globo.com/ba/futebol/brasileirao-serie-a/jogo/26-07-2026/bahia-corinthians.ghtml?utm_source=cartolafc",
+        "placar_casa": 1,
         "placar_fora": 1,
         "status": "EM_ANDAMENTO"
       }
@@ -33,7 +35,7 @@
     "rodada": 20,
     "titulo": "ATUALIZAÇÃO DE PLACAR"
   },
-  "payload_hash": "ipJ2JDwG5UsjX03fdgvlUQ==",
+  "payload_hash": "xd3lJtyRZNqodIF9ldiCpg==",
   "rodada": 20,
   "tipo_publicacao": "placar_delta",
   "workflow_destino": "gerar.resultados.yml"
