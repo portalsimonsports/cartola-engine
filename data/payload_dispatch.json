@@ -1,42 +1,39 @@
 {
   "ambiente": "producao",
-  "contexto": "placar_delta",
+  "contexto": "fechamento_dia",
   "evento_github": "cartola_live_publish",
-  "gerado_em": "2026-07-26T01:25:10.222Z",
+  "gerado_em": "2026-07-26T01:35:02.201Z",
   "origem": "cartola_live_publisher",
   "payload": {
-    "contexto": "placar_delta",
-    "mensagem_oficial": "⚽ *ATUALIZAÇÃO DE PLACAR*\n\n📅 25/07 • 🕒 20:30\n🏟 São Januário\n*Vasco 1 x 1 Mirassol*\nA. Gómez (1⚽)                     I. Formiga (1⚽)\n📺 [Veja como foi](https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/25-07-2026/vasco-mirassol.ghtml?utm_source=cartolafc)\n\n_Monitoramento SimonSports_",
-    "partidas": [
-      {
-        "casa_id": "267",
-        "casa_nome": "Vasco",
-        "casa_sigla": "VAS",
-        "chave": "MjAyNi0wNy0yNSAyMDozMHwyNjd8MjMwNQ",
-        "data": "25/07",
-        "data_iso": "2026-07-25T23:30:00.000Z",
-        "estadio": "São Januário",
-        "fora_id": "2305",
-        "fora_nome": "Mirassol",
-        "fora_sigla": "MIR",
-        "goleadores_casa": [
-          "A. Gómez (1⚽)"
-        ],
-        "goleadores_fora": [
-          "I. Formiga (1⚽)"
-        ],
-        "hora": "20:30",
-        "link_resumo": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/25-07-2026/vasco-mirassol.ghtml?utm_source=cartolafc",
-        "placar_casa": 1,
-        "placar_fora": 1,
-        "status": "EM_ANDAMENTO"
-      }
-    ],
+    "contexto": "fechamento_dia",
+    "mensagem_oficial": "🏆 *PORTAL SIMONSPORTS – RESUMO GERAL*\n📍 RODADA 20 | Parciais Ao Vivo\n\n🔹 *Time ECONOMICO*\n✨ Pontos (Sem C): 28.91 pts\n✨ Pontos (Com C): 28.91 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ 17.85\n\n🔹 *Time INTERMEDIARIO*\n✨ Pontos (Sem C): 35.81 pts\n✨ Pontos (Com C): 35.81 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ 0.67\n\n🔹 *Time PONTUACAO*\n✨ Pontos (Sem C): 54.51 pts\n✨ Pontos (Com C): 54.51 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ -2.34\n\n_Atualização automática • SimonSports_",
     "rodada": 20,
-    "titulo": "ATUALIZAÇÃO DE PLACAR"
+    "tipos": [
+      {
+        "participacao": 12,
+        "pontos_com_capitao": 28.91,
+        "pontos_sem_capitao": 28.91,
+        "tipo": "ECONOMICO",
+        "valorizacao": 17.85
+      },
+      {
+        "participacao": 12,
+        "pontos_com_capitao": 35.81,
+        "pontos_sem_capitao": 35.81,
+        "tipo": "INTERMEDIARIO",
+        "valorizacao": 0.67
+      },
+      {
+        "participacao": 12,
+        "pontos_com_capitao": 54.51,
+        "pontos_sem_capitao": 54.51,
+        "tipo": "PONTUACAO",
+        "valorizacao": -2.34
+      }
+    ]
   },
-  "payload_hash": "8zL4jYnKRT/6hS+rQomCMg==",
+  "payload_hash": "MmBhPeHcVc1DDnMq8AhyEg==",
   "rodada": 20,
-  "tipo_publicacao": "placar_delta",
+  "tipo_publicacao": "resumo_geral_fechamento_dia",
   "workflow_destino": "gerar.resultados.yml"
 }
