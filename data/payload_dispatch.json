@@ -1,42 +1,32 @@
 {
   "ambiente": "producao",
-  "contexto": "placar_delta",
+  "contexto": "time_delta",
   "evento_github": "cartola_live_publish",
-  "gerado_em": "2026-07-25T23:35:02.040Z",
+  "gerado_em": "2026-07-26T00:15:04.552Z",
   "origem": "cartola_live_publisher",
   "payload": {
-    "contexto": "placar_delta",
-    "mensagem_oficial": "⚽ *ATUALIZAÇÃO DE PLACAR*\n\n📅 25/07 • 🕒 18:30\n🏟 Vila Belmiro\n*Santos 2 x 2 Chapecoense*\nNeymar (2⚽)                       Marcinho (1⚽)\n📺 [Veja como foi](https://ge.globo.com/sp/santos-e-regiao/futebol/brasileirao-serie-a/jogo/25-07-2026/santos-chapecoense.ghtml?utm_source=cartolafc)\n\n_Monitoramento SimonSports_",
-    "partidas": [
-      {
-        "casa_id": "277",
-        "casa_nome": "Santos",
-        "casa_sigla": "SAN",
-        "chave": "MjAyNi0wNy0yNSAxODozMHwyNzd8MzE1",
-        "data": "25/07",
-        "data_iso": "2026-07-25T21:30:00.000Z",
-        "estadio": "Vila Belmiro",
-        "fora_id": "315",
-        "fora_nome": "Chapecoense",
-        "fora_sigla": "CHA",
-        "goleadores_casa": [
-          "Neymar (2⚽)"
-        ],
-        "goleadores_fora": [
-          "Marcinho (1⚽)"
-        ],
-        "hora": "18:30",
-        "link_resumo": "https://ge.globo.com/sp/santos-e-regiao/futebol/brasileirao-serie-a/jogo/25-07-2026/santos-chapecoense.ghtml?utm_source=cartolafc",
-        "placar_casa": 2,
-        "placar_fora": 2,
-        "status": "EM_ANDAMENTO"
-      }
-    ],
+    "contexto": "time_delta",
+    "mensagem_oficial": "🏆 *PORTAL SIMONSPORTS – RESUMO GERAL*\n📍 RODADA 20 | Parciais Ao Vivo\n\n🔹 *Time INTERMEDIARIO*\n✨ Pontos (Sem C): 37.42 pts\n✨ Pontos (Com C): 37.42 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ 0.67\n\n🔹 *Time PONTUACAO*\n✨ Pontos (Sem C): 56.12 pts\n✨ Pontos (Com C): 56.12 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ -2.34\n\n_Atualização automática • SimonSports_",
     "rodada": 20,
-    "titulo": "ATUALIZAÇÃO DE PLACAR"
+    "tipos": [
+      {
+        "participacao": 12,
+        "pontos_com_capitao": 37.42,
+        "pontos_sem_capitao": 37.42,
+        "tipo": "INTERMEDIARIO",
+        "valorizacao": 0.67
+      },
+      {
+        "participacao": 12,
+        "pontos_com_capitao": 56.12,
+        "pontos_sem_capitao": 56.12,
+        "tipo": "PONTUACAO",
+        "valorizacao": -2.34
+      }
+    ]
   },
-  "payload_hash": "9N/hlMMDbYSIIt0P7alWSw==",
+  "payload_hash": "EcwNxdL4i2tQ+gL9CykgjQ==",
   "rodada": 20,
-  "tipo_publicacao": "placar_delta",
+  "tipo_publicacao": "resumo_geral_time_delta",
   "workflow_destino": "gerar.resultados.yml"
 }
