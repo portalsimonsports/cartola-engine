@@ -1,39 +1,39 @@
 {
   "ambiente": "producao",
-  "contexto": "fechamento_dia",
+  "contexto": "abertura_dia",
   "evento_github": "cartola_live_publish",
-  "gerado_em": "2026-07-26T01:35:02.201Z",
+  "gerado_em": "2026-07-26T19:00:04.765Z",
   "origem": "cartola_live_publisher",
   "payload": {
-    "contexto": "fechamento_dia",
-    "mensagem_oficial": "🏆 *PORTAL SIMONSPORTS – RESUMO GERAL*\n📍 RODADA 20 | Parciais Ao Vivo\n\n🔹 *Time ECONOMICO*\n✨ Pontos (Sem C): 28.91 pts\n✨ Pontos (Com C): 28.91 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ 17.85\n\n🔹 *Time INTERMEDIARIO*\n✨ Pontos (Sem C): 35.81 pts\n✨ Pontos (Com C): 35.81 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ 0.67\n\n🔹 *Time PONTUACAO*\n✨ Pontos (Sem C): 54.51 pts\n✨ Pontos (Com C): 54.51 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ -2.34\n\n_Atualização automática • SimonSports_",
+    "contexto": "abertura_dia",
+    "mensagem_oficial": "🏆 *PORTAL SIMONSPORTS – RESUMO GERAL*\n📍 RODADA 20 | Parciais Ao Vivo\n\n🔹 *Time ECONOMICO*\n✨ Pontos (Sem C): 28.68 pts\n✨ Pontos (Com C): 28.68 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ 17.85\n\n🔹 *Time INTERMEDIARIO*\n✨ Pontos (Sem C): 35.58 pts\n✨ Pontos (Com C): 35.58 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ 0.67\n\n🔹 *Time PONTUACAO*\n✨ Pontos (Sem C): 54.28 pts\n✨ Pontos (Com C): 54.28 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ -2.34\n\n_Atualização automática • SimonSports_",
     "rodada": 20,
     "tipos": [
       {
         "participacao": 12,
-        "pontos_com_capitao": 28.91,
-        "pontos_sem_capitao": 28.91,
+        "pontos_com_capitao": 28.68,
+        "pontos_sem_capitao": 28.68,
         "tipo": "ECONOMICO",
         "valorizacao": 17.85
       },
       {
         "participacao": 12,
-        "pontos_com_capitao": 35.81,
-        "pontos_sem_capitao": 35.81,
+        "pontos_com_capitao": 35.58,
+        "pontos_sem_capitao": 35.58,
         "tipo": "INTERMEDIARIO",
         "valorizacao": 0.67
       },
       {
         "participacao": 12,
-        "pontos_com_capitao": 54.51,
-        "pontos_sem_capitao": 54.51,
+        "pontos_com_capitao": 54.28,
+        "pontos_sem_capitao": 54.28,
         "tipo": "PONTUACAO",
         "valorizacao": -2.34
       }
     ]
   },
-  "payload_hash": "MmBhPeHcVc1DDnMq8AhyEg==",
+  "payload_hash": "MbWhHdTcw69R55vh7DLL8w==",
   "rodada": 20,
-  "tipo_publicacao": "resumo_geral_fechamento_dia",
+  "tipo_publicacao": "resumo_geral_abertura_dia",
   "workflow_destino": "gerar.resultados.yml"
 }
