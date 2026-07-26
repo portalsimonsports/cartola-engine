@@ -17,6 +17,7 @@ from gerar_resultados_telegram import (
     validar_bot_e_destino,
 )
 from render_live_cards_v3 import VISUAL_VERSION, render_live_publication_v3
+from render_notice_cards import is_notice_publication, render_notice_card
 
 
 RENDERER_VERSION = "live_cards_v3"
@@ -61,7 +62,14 @@ def executar_publicacao_v3() -> List[Dict[str, Any]]:
 
     raw_data = extrair_dados_publicacao(payload_root)
     data = normalizar_dados_renderizacao(raw_data)
-    rendered = render_live_publication_v3(data, output_dir=OUTPUT_DIR)
+
+    # O Job Telegram Dispatcher também usa o mesmo pipeline visual.
+    # Avisos de mercado, abertura, lembretes e fechamento viram cards,
+    # nunca mensagens de texto.
+    if is_notice_publication(data):
+        rendered = render_notice_card(data, output_dir=OUTPUT_DIR)
+    else:
+        rendered = render_live_publication_v3(data, output_dir=OUTPUT_DIR)
 
     if not rendered.files:
         raise RuntimeError("O renderizador Live V3 não produziu imagens.")
