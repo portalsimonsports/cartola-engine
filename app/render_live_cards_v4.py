@@ -8,7 +8,7 @@ from PIL import Image, ImageDraw
 
 import render_live_cards_v2 as v2
 import render_live_cards_v3 as v3
-from render_telegram_cards import RenderOutput
+from render_telegram_cards import RenderOutput, _logo_ps
 
 
 VISUAL_VERSION = "live_cards_v4_premium_square_2026_07_26"
@@ -19,7 +19,7 @@ def _draw_header_v4(image: Image.Image, title: str, subtitle: str, badge: str) -
     draw = ImageDraw.Draw(image)
     width, _ = image.size
 
-    v2._logo_ps(image, (55, 28, 205, 165))
+    _logo_ps(image, (55, 28, 205, 165))
     draw.text((235, 34), "PORTAL", font=v2._font(34, "bold", True), fill=v2.WHITE)
     draw.text((235, 73), "SIMON", font=v2._font(55, "bold", True), fill=v2.WHITE)
     draw.text((425, 73), "SPORTS", font=v2._font(55, "bold", True), fill=v2.BLUE)
@@ -117,7 +117,7 @@ def _draw_event_column_v4(
 
 def _draw_single_match_v4(image: Image.Image, match: Dict[str, Any]) -> None:
     draw = ImageDraw.Draw(image)
-    status, accent = v2._status_label(match)
+    _, accent = v2._status_label(match)
 
     panel = (55, 440, 1545, 975)
     v2._glow_outline(image, panel, accent, radius=30, blur=18, alpha=52)
@@ -130,7 +130,6 @@ def _draw_single_match_v4(image: Image.Image, match: Dict[str, Any]) -> None:
     home_score = v2._score_value(match, True)
     away_score = v2._score_value(match, False)
 
-    # Escudos grandes: o objetivo é permanecer legível após a redução feita pelo Telegram.
     v2._paste_crest(image, home_code, (275, 665), 330)
     v2._paste_crest(image, away_code, (1325, 665), 330)
 
@@ -320,6 +319,4 @@ def render_live_publication_v4(data: Dict[str, Any], output_dir: str = "output")
     if v2._extract_matches(data) or any(token in kind for token in ("placar", "resultado", "partida", "live")):
         return render_results_v4(data, output_dir)
 
-    # Demais cards seguem a base aprovada anterior; a mudança V4 é específica
-    # para placares/resultados, que eram os cards com menor legibilidade no Telegram.
     return v3.render_live_publication_v3(data, output_dir)
