@@ -1,0 +1,349 @@
+/**
+ * PORTAL SIMONSPORTS
+ * CRONOGRAMA COMPLETO DE PUBLICAÇÕES EM IMAGEM VIA GITHUB — V7
+ *
+ * Substitui o acionador antigo jobCartolaGithubProgramado sem reativar
+ * NOTIF_TIMES/NOTIF_TOP5 em texto.
+ *
+ * Execute uma única vez após colar no projeto Cartola — Sugestões PRO:
+ *   PSS_GH_V7_INSTALAR
+ */
+
+var PSS_GH_V7 = {
+  VERSAO: "v7.2026.07.27",
+  HANDLER: "PSS_GH_V7_EXECUTAR",
+  INTERVALO_MINUTOS: 5,
+  EVENTO_LIVE: "cartola_live_publish",
+  WORKFLOW_LIVE: "gerar.resultados.yml"
+};
+
+function PSS_GH_V7_INSTALAR() {
+  if (typeof CARTOLA_GH_setConfig_ !== "function") {
+    throw new Error("CartolaGithubSync.gs não foi encontrado no projeto.");
+  }
+
+  CARTOLA_GH_setConfig_("NOTIF_TIMES", "NAO");
+  CARTOLA_GH_setConfig_("NOTIF_TOP5", "NAO");
+  CARTOLA_GH_setConfig_("NOTIF_MERCADO", "NAO");
+  CARTOLA_GH_setConfig_("GITHUB_PUBLICAR_TIMES", "SIM");
+  CARTOLA_GH_setConfig_("GITHUB_PUBLICAR_TOP5", "SIM");
+  CARTOLA_GH_setConfig_("GITHUB_TESTE_ATIVO", "SIM");
+  CARTOLA_GH_setConfig_("GITHUB_LIVE_EVENTO", PSS_GH_V7.EVENTO_LIVE);
+
+  var removidos = [];
+  ScriptApp.getProjectTriggers().forEach(function(trigger) {
+    var nome = String(trigger.getHandlerFunction() || "");
+    if (
+      nome === "syncCartolaGithub" ||
+      nome === "jobCartolaGithubProgramado" ||
+      nome === PSS_GH_V7.HANDLER
+    ) {
+      ScriptApp.deleteTrigger(trigger);
+      removidos.push(nome);
+    }
+  });
+
+  var trigger = ScriptApp.newTrigger(PSS_GH_V7.HANDLER)
+    .timeBased()
+    .everyMinutes(PSS_GH_V7.INTERVALO_MINUTOS)
+    .create();
+
+  PropertiesService.getScriptProperties().setProperties({
+    PSS_GH_V7_INSTALADO: "SIM",
+    PSS_GH_V7_VERSAO: PSS_GH_V7.VERSAO,
+    PSS_GH_V7_TRIGGER_ID: String(trigger.getUniqueId() || ""),
+    PSS_GH_V7_INSTALADO_EM: new Date().toISOString()
+  });
+
+  var resultado = {
+    ok: true,
+    versao: PSS_GH_V7.VERSAO,
+    acionador: PSS_GH_V7.HANDLER,
+    intervalo_minutos: PSS_GH_V7.INTERVALO_MINUTOS,
+    antigos_removidos: removidos,
+    texto_times: "DESATIVADO",
+    texto_top5: "DESATIVADO",
+    texto_mercado: "DESATIVADO",
+    imagens_github: "ATIVAS"
+  };
+  console.log(JSON.stringify(resultado));
+  return resultado;
+}
+
+function PSS_GH_V7_EXECUTAR() {
+  var estado = CARTOLA_GH_obterEstadoMercado_();
+  if (!estado || !estado.rodada) {
+    return { ok: false, motivo: "rodada_nao_identificada" };
+  }
+
+  var agora = new Date();
+  var rodada = Number(estado.rodada);
+  var props = PropertiesService.getScriptProperties();
+  var prefixo = "PSS_GH_V7_R" + rodada + "_";
+  var getFlag = function(chave) { return props.getProperty(prefixo + chave) || ""; };
+  var setFlag = function(chave, valor) { props.setProperty(prefixo + chave, String(valor)); };
+
+  var fechamento = CARTOLA_GH_obterFechamento_(estado);
+  var diffMin = fechamento ? (fechamento.getTime() - agora.getTime()) / 60000 : null;
+  var fechamentoTexto = fechamento
+    ? Utilities.formatDate(fechamento, CARTOLA_GH_TIMEZONE, "dd/MM/yyyy HH:mm")
+    : "";
+
+  var ultimoAberto = Number(props.getProperty("PSS_GH_V7_ULTIMA_RODADA_ABERTA") || 0);
+
+  if (!estado.mercado_aberto || (diffMin !== null && diffMin <= 0)) {
+    var rodadaFechada = ultimoAberto || rodada;
+    var chaveFechado = "PSS_GH_V7_R" + rodadaFechada + "_MERCADO_FECHADO";
+    if (props.getProperty(chaveFechado) !== "1") {
+      var fechado = PSS_GH_V7_DISPATCH_LIVE_("MERCADO_FECHADO", {
+        tipo_publicacao: "mercado_fechado",
+        evento_programado: "MERCADO_FECHADO",
+        rodada: rodadaFechada,
+        fechamento_mercado: fechamentoTexto,
+        contexto: "mercado_fechado"
+      });
+      if (fechado.ok) props.setProperty(chaveFechado, "1");
+      syncCartolaGithub();
+      return { ok: fechado.ok, evento: "MERCADO_FECHADO", resultado: fechado };
+    }
+    return { ok: true, evento: "", resultado: syncCartolaGithub() };
+  }
+
+  props.setProperty("PSS_GH_V7_ULTIMA_RODADA_ABERTA", String(rodada));
+
+  var aberturaTs = Number(getFlag("ABERTURA_TS") || 0);
+  if (!aberturaTs) {
+    aberturaTs = (typeof CARTOLA_GH_obterAberturaLegada_ === "function")
+      ? Number(CARTOLA_GH_obterAberturaLegada_(rodada) || 0)
+      : 0;
+    if (!aberturaTs) aberturaTs = agora.getTime();
+    setFlag("ABERTURA_TS", aberturaTs);
+  }
+
+  var desdeAbertura = (agora.getTime() - aberturaTs) / 60000;
+  var publicarTimes = CARTOLA_GH_configSim_("GITHUB_PUBLICAR_TIMES", true);
+  var publicarTop5 = CARTOLA_GH_configSim_("GITHUB_PUBLICAR_TOP5", true);
+  var timesValidos = publicarTimes && CARTOLA_GH_temTimesValidos_(rodada);
+  var top5Valido = publicarTop5 && CARTOLA_GH_temTop5Valido_(rodada);
+
+  if (getFlag("ABERTURA") !== "1") {
+    var abertura = PSS_GH_V7_DISPATCH_LIVE_("ABERTURA", {
+      tipo_publicacao: "abertura",
+      evento_programado: "ABERTURA",
+      rodada: rodada,
+      fechamento_mercado: fechamentoTexto,
+      contexto: "mercado_aberto"
+    });
+    if (abertura.ok) setFlag("ABERTURA", "1");
+    return { ok: abertura.ok, evento: "ABERTURA", resultado: abertura };
+  }
+
+  if (
+    desdeAbertura >= 30 &&
+    getFlag("SELECAO_INICIAL") !== "1" &&
+    (timesValidos || top5Valido)
+  ) {
+    var inicial = syncCartolaGithub({
+      publicar: true,
+      evento_programado: "SELECAO_INICIAL",
+      publicar_times: timesValidos,
+      publicar_top5: top5Valido,
+      forcar: true
+    });
+    if (CARTOLA_GH_publicou_(inicial)) setFlag("SELECAO_INICIAL", "1");
+    return { ok: true, evento: "SELECAO_INICIAL", resultado: inicial };
+  }
+
+  var slot6h = Math.floor(desdeAbertura / 360);
+  var ultimoSlot = Number(getFlag("LEMBRETE_SLOT_6H") || 0);
+  if (
+    slot6h >= 1 &&
+    slot6h > ultimoSlot &&
+    (diffMin === null || diffMin > 150)
+  ) {
+    var lembrete = PSS_GH_V7_DISPATCH_LIVE_("LEMBRETE_MERCADO_6H", {
+      tipo_publicacao: "lembrete_mercado_6h",
+      evento_programado: "LEMBRETE_MERCADO_6H",
+      rodada: rodada,
+      fechamento_mercado: fechamentoTexto,
+      minutos_restantes: diffMin === null ? 360 : Math.max(0, Math.round(diffMin)),
+      contexto: "lembrete_mercado"
+    });
+    if (lembrete.ok) setFlag("LEMBRETE_SLOT_6H", slot6h);
+    return { ok: lembrete.ok, evento: "LEMBRETE_MERCADO_6H", resultado: lembrete };
+  }
+
+  if (
+    getFlag("SELECAO_INICIAL") === "1" &&
+    CARTOLA_GH_pode20h_(agora, fechamento, getFlag) &&
+    (timesValidos || top5Valido)
+  ) {
+    var vinte = syncCartolaGithub({
+      publicar: true,
+      evento_programado: "ATUALIZACAO_20H",
+      publicar_times: timesValidos,
+      publicar_top5: top5Valido,
+      forcar: true
+    });
+    if (CARTOLA_GH_publicou_(vinte)) {
+      setFlag("ULTIMA_20H_DATA", Utilities.formatDate(agora, CARTOLA_GH_TIMEZONE, "yyyy-MM-dd"));
+    }
+    return { ok: true, evento: "ATUALIZACAO_20H", resultado: vinte };
+  }
+
+  if (
+    diffMin !== null && diffMin <= 150 && diffMin > 120 &&
+    getFlag("PRE_FECHAMENTO_TIMES") !== "1" && timesValidos
+  ) {
+    var preTimes = syncCartolaGithub({
+      publicar: true,
+      evento_programado: "PRE_FECHAMENTO_TIMES",
+      publicar_times: true,
+      publicar_top5: false,
+      forcar: true
+    });
+    if (CARTOLA_GH_publicouTimes_(preTimes)) setFlag("PRE_FECHAMENTO_TIMES", "1");
+    return { ok: true, evento: "PRE_FECHAMENTO_TIMES", resultado: preTimes };
+  }
+
+  if (
+    diffMin !== null && diffMin <= 120 && diffMin > 30 &&
+    getFlag("PRE_FECHAMENTO_TOP5") !== "1" && top5Valido
+  ) {
+    var preTop5 = syncCartolaGithub({
+      publicar: true,
+      evento_programado: "PRE_FECHAMENTO_TOP5",
+      publicar_times: false,
+      publicar_top5: true,
+      forcar: true
+    });
+    if (CARTOLA_GH_publicouTop5_(preTop5)) setFlag("PRE_FECHAMENTO_TOP5", "1");
+    return { ok: true, evento: "PRE_FECHAMENTO_TOP5", resultado: preTop5 };
+  }
+
+  if (
+    diffMin !== null && diffMin <= 30 && diffMin > 0 &&
+    getFlag("AVISO_30_MIN") !== "1"
+  ) {
+    var aviso = PSS_GH_V7_DISPATCH_LIVE_("AVISO_30_MIN", {
+      tipo_publicacao: "aviso_30_min",
+      evento_programado: "AVISO_30_MIN",
+      rodada: rodada,
+      fechamento_mercado: fechamentoTexto,
+      minutos_restantes: Math.max(0, Math.round(diffMin)),
+      contexto: "aviso_fechamento"
+    });
+    if (aviso.ok) setFlag("AVISO_30_MIN", "1");
+    return { ok: aviso.ok, evento: "AVISO_30_MIN", resultado: aviso };
+  }
+
+  if (
+    diffMin !== null && diffMin <= 20 && diffMin > 0 &&
+    getFlag("CONFIRMADOS") !== "1" &&
+    (timesValidos || top5Valido)
+  ) {
+    var confirmados = syncCartolaGithub({
+      publicar: true,
+      evento_programado: "CONFIRMADOS",
+      publicar_times: timesValidos,
+      publicar_top5: top5Valido,
+      forcar: true
+    });
+    if (CARTOLA_GH_publicou_(confirmados)) setFlag("CONFIRMADOS", "1");
+    return { ok: true, evento: "CONFIRMADOS", resultado: confirmados };
+  }
+
+  return { ok: true, evento: "", resultado: syncCartolaGithub() };
+}
+
+function PSS_GH_V7_DISPATCH_LIVE_(evento, payload) {
+  payload = payload || {};
+  var cfg = CARTOLA_GH_configGithub_();
+  if (!cfg.ativo || !cfg.repo || !cfg.token) {
+    return { ok: false, motivo: "github_inativo_ou_incompleto" };
+  }
+
+  payload.evento_programado = evento;
+  payload.rodada = Number(payload.rodada || 0);
+
+  var body = {
+    event_type: PSS_GH_V7.EVENTO_LIVE,
+    client_payload: {
+      origem: "cartola_live_cronograma_v7",
+      ambiente: "producao",
+      workflow_destino: PSS_GH_V7.WORKFLOW_LIVE,
+      evento_github: PSS_GH_V7.EVENTO_LIVE,
+      evento_programado: evento,
+      tipo_publicacao: String(payload.tipo_publicacao || evento).toLowerCase(),
+      contexto: String(payload.contexto || evento).toLowerCase(),
+      rodada: payload.rodada,
+      gerado_em: new Date().toISOString(),
+      payload: payload
+    }
+  };
+
+  var resposta = UrlFetchApp.fetch(
+    cfg.api_base.replace(/\/$/, "") + "/repos/" + cfg.repo + "/dispatches",
+    {
+      method: "post",
+      contentType: "application/json",
+      headers: {
+        Authorization: "Bearer " + cfg.token,
+        Accept: "application/vnd.github+json"
+      },
+      payload: JSON.stringify(body),
+      muteHttpExceptions: true
+    }
+  );
+
+  var http = resposta.getResponseCode();
+  var ok = http >= 200 && http < 300;
+  CARTOLA_GH_log_(
+    "Cronograma V7 dispatch " + evento + " HTTP " + http + ": " + resposta.getContentText(),
+    ok ? "INFO" : "ERRO"
+  );
+  return { ok: ok, codigo: http, resposta: resposta.getContentText() };
+}
+
+function PSS_GH_V7_PUBLICAR_FECHAMENTO_FINAL_TIMES(payload) {
+  payload = payload || {};
+  payload.tipo_publicacao = "fechamento_final_times";
+  payload.evento_programado = "FECHAMENTO_FINAL_TIMES";
+  return PSS_GH_V7_DISPATCH_LIVE_("FECHAMENTO_FINAL_TIMES", payload);
+}
+
+function PSS_GH_V7_PUBLICAR_RESUMO_FINAL_RODADA(payload) {
+  payload = payload || {};
+  payload.tipo_publicacao = "resumo_final_rodada";
+  payload.evento_programado = "RESUMO_FINAL_RODADA";
+  return PSS_GH_V7_DISPATCH_LIVE_("RESUMO_FINAL_RODADA", payload);
+}
+
+function PSS_GH_V7_DIAGNOSTICO() {
+  var triggers = ScriptApp.getProjectTriggers().map(function(trigger) {
+    return String(trigger.getHandlerFunction() || "");
+  });
+  var resultado = {
+    versao: PSS_GH_V7.VERSAO,
+    acionador_esperado: PSS_GH_V7.HANDLER,
+    acionadores: triggers,
+    eventos: [
+      "ABERTURA",
+      "SELECAO_INICIAL",
+      "LEMBRETE_MERCADO_6H",
+      "ATUALIZACAO_20H",
+      "PRE_FECHAMENTO_TIMES",
+      "PRE_FECHAMENTO_TOP5",
+      "AVISO_30_MIN",
+      "CONFIRMADOS",
+      "MERCADO_FECHADO",
+      "FECHAMENTO_FINAL_TIMES",
+      "RESUMO_FINAL_RODADA"
+    ],
+    texto_times: CARTOLA_GH_getConfig_("NOTIF_TIMES"),
+    texto_top5: CARTOLA_GH_getConfig_("NOTIF_TOP5"),
+    texto_mercado: CARTOLA_GH_getConfig_("NOTIF_MERCADO")
+  };
+  console.log(JSON.stringify(resultado));
+  return resultado;
+}
