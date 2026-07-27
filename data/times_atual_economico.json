@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 21,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-07-27T19:39:44.502Z",
+  "atualizado_em": "2026-07-27T19:44:44.698Z",
   "dados": [
     {
       "RODADA": 21,
@@ -14,7 +14,7 @@
       "NOME": "Marcelo Rangel",
       "CLUBE": "REM",
       "PRECO": 7.06,
-      "EXP_SCORE": 2.8827,
+      "EXP_SCORE": 3.3151,
       "ATLETA_ID": 82730
     },
     {
@@ -36,19 +36,8 @@
       "NOME": "Igor Formiga",
       "CLUBE": "MIR",
       "PRECO": 9.2,
-      "EXP_SCORE": 3.7482,
+      "EXP_SCORE": 4.1646,
       "ATLETA_ID": 106708
-    },
-    {
-      "RODADA": 21,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Willian Machado",
-      "CLUBE": "MIR",
-      "PRECO": 5.36,
-      "EXP_SCORE": 4.1055,
-      "ATLETA_ID": 101908
     },
     {
       "RODADA": 21,
@@ -58,8 +47,30 @@
       "NOME": "Thiago Santos",
       "CLUBE": "CFC",
       "PRECO": 5.12,
-      "EXP_SCORE": 2.9079,
+      "EXP_SCORE": 3.7157,
       "ATLETA_ID": 78855
+    },
+    {
+      "RODADA": 21,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ZAG",
+      "NOME": "Jacy",
+      "CLUBE": "CFC",
+      "PRECO": 6.18,
+      "EXP_SCORE": 4.2363,
+      "ATLETA_ID": 97878
+    },
+    {
+      "RODADA": 21,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Arias",
+      "CLUBE": "PAL",
+      "PRECO": 16.58,
+      "EXP_SCORE": 6.6855,
+      "ATLETA_ID": 99815
     },
     {
       "RODADA": 21,
@@ -88,11 +99,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Arias",
-      "CLUBE": "PAL",
-      "PRECO": 16.58,
-      "EXP_SCORE": 5.2321,
-      "ATLETA_ID": 99815
+      "NOME": "Zé Vitor",
+      "CLUBE": "VIT",
+      "PRECO": 6.56,
+      "EXP_SCORE": 4.1213,
+      "ATLETA_ID": 107256
     },
     {
       "RODADA": 21,
@@ -102,7 +113,7 @@
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 14.46,
-      "EXP_SCORE": 6.1526,
+      "EXP_SCORE": 7.8616,
       "ATLETA_ID": 143193
     },
     {
@@ -113,30 +124,19 @@
       "NOME": "Jajá",
       "CLUBE": "REM",
       "PRECO": 7.66,
-      "EXP_SCORE": 4.2102,
+      "EXP_SCORE": 4.678,
       "ATLETA_ID": 105048
     },
     {
       "RODADA": 21,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Lavega",
-      "CLUBE": "CFC",
-      "PRECO": 5.03,
-      "EXP_SCORE": 3.8985,
-      "ATLETA_ID": 117930
-    },
-    {
-      "RODADA": 21,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Léo Condé",
-      "CLUBE": "REM",
-      "PRECO": 8.76,
-      "EXP_SCORE": 4.2747,
-      "ATLETA_ID": 37457
+      "NOME": "Fernando Seabra",
+      "CLUBE": "CFC",
+      "PRECO": 8.11,
+      "EXP_SCORE": 5.2122,
+      "ATLETA_ID": 126977
     },
     {
       "RODADA": 21,
@@ -154,22 +154,22 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "LAT",
-      "NOME": "Luan Cândido",
-      "CLUBE": "VIT",
-      "PRECO": 5.97,
-      "EXP_SCORE": 2.8775,
-      "ATLETA_ID": 100848
+      "NOME": "Bruno Melo",
+      "CLUBE": "CFC",
+      "PRECO": 6.18,
+      "EXP_SCORE": 3.1719,
+      "ATLETA_ID": 84339
     },
     {
       "RODADA": 21,
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Freytes",
-      "CLUBE": "FLU",
-      "PRECO": 4.77,
-      "EXP_SCORE": 2.2412,
-      "ATLETA_ID": 113034
+      "NOME": "Tiago Cóser",
+      "CLUBE": "CFC",
+      "PRECO": 3.92,
+      "EXP_SCORE": 2.4179,
+      "ATLETA_ID": 109127
     },
     {
       "RODADA": 21,
@@ -179,7 +179,7 @@
       "NOME": "Aldo Filho",
       "CLUBE": "MIR",
       "PRECO": 3.8,
-      "EXP_SCORE": 1.9371,
+      "EXP_SCORE": 1.7434,
       "ATLETA_ID": 105903
     },
     {
@@ -187,11 +187,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Edson Carioca",
-      "CLUBE": "MIR",
-      "PRECO": 4.65,
-      "EXP_SCORE": 2.1984,
-      "ATLETA_ID": 104204
+      "NOME": "Leozinho",
+      "CLUBE": "CAP",
+      "PRECO": 7.49,
+      "EXP_SCORE": 4.544,
+      "ATLETA_ID": 123101
     }
   ]
 }
