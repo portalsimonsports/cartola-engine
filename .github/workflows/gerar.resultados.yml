@@ -51,8 +51,9 @@ jobs:
           python -m py_compile app/gerar_resultados_telegram.py
           python -m py_compile app/render_live_cards_v2.py
           python -m py_compile app/render_live_cards_v3.py
+          python -m py_compile app/render_live_cards_v4.py
           python -m py_compile app/gerar_resultados_telegram_v2.py
-          echo "Renderizador Live V3 com eventos vetoriais validado."
+          echo "Renderizador Live V4 premium validado."
 
       - name: Preparar e validar payload
         shell: bash
@@ -136,13 +137,13 @@ jobs:
               raise SystemExit("ERRO: manifesto não gerado.")
 
           data = json.loads(manifest.read_text(encoding="utf-8"))
-          if data.get("versao_visual") != "live_cards_v3":
-              raise SystemExit("ERRO: o renderizador Live V3 não foi utilizado.")
+          if data.get("versao_visual") != "live_cards_v4":
+              raise SystemExit("ERRO: o renderizador Live V4 não foi utilizado.")
 
-          base_esperada = "live_cards_v3_eventos_vetoriais_2026_07_23"
+          base_esperada = "live_cards_v4_premium_square_2026_07_26"
           if data.get("base_visual") != base_esperada:
               raise SystemExit(
-                  "ERRO: base visual diferente da versão aprovada: "
+                  "ERRO: base visual diferente da versão V4 aprovada: "
                   + repr(data.get("base_visual"))
               )
 
@@ -153,7 +154,7 @@ jobs:
           invalid = [
               publication
               for publication in publications
-              if publication.get("tipo_detectado") in ("bulletin", "results", "results_v2")
+              if publication.get("tipo_detectado") in ("bulletin", "results", "results_v2", "results_v3")
           ]
           if invalid:
               raise SystemExit(
@@ -167,7 +168,7 @@ jobs:
               for path in publication.get("arquivos", [])
           ]
           if not files:
-              raise SystemExit("ERRO: nenhuma arte Live V3 foi gerada.")
+              raise SystemExit("ERRO: nenhuma arte Live V4 foi gerada.")
 
           missing = [path for path in files if not Path(path).exists()]
           if missing:
@@ -181,7 +182,7 @@ jobs:
               raise SystemExit(f"ERRO: arquivos genéricos bloqueados: {placeholders}")
 
           print(
-              f"Base visual V3 validada: {len(publications)} publicação(ões), "
+              f"Base visual V4 validada: {len(publications)} publicação(ões), "
               f"{len(files)} card(s)."
           )
           PY
@@ -201,6 +202,6 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Telegram: cards Live V3 com eventos vetoriais"
+          git commit -m "Telegram: cards Live V4 premium"
           git pull --rebase origin main || true
           git push origin HEAD:main
