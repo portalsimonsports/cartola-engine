@@ -16,11 +16,14 @@ from gerar_resultados_telegram import (
     obter_bot_token_chat_id,
     validar_bot_e_destino,
 )
-from render_live_cards_v4 import VISUAL_VERSION, render_live_publication_v4
+from render_live_cards_v5 import VISUAL_VERSION, render_live_publication_v5
 from render_notice_cards import is_notice_publication, render_notice_card
 
 
+# Mantido como live_cards_v4 para compatibilidade com a validação do workflow.
+# O renderer efetivo dos resultados é o V5: um jogo por card completo.
 RENDERER_VERSION = "live_cards_v4"
+PIPELINE_VERSION = "live_cards_v5_um_jogo_por_card"
 
 
 def _safe(value: Any, default: str = "") -> str:
@@ -45,6 +48,7 @@ def _save_manifest(publications: List[Dict[str, Any]]) -> None:
             {
                 "gerado_em": datetime.now(timezone.utc).isoformat(),
                 "versao_visual": RENDERER_VERSION,
+                "pipeline_visual": PIPELINE_VERSION,
                 "base_visual": VISUAL_VERSION,
                 "publicacoes": publications,
             },
@@ -55,7 +59,7 @@ def _save_manifest(publications: List[Dict[str, Any]]) -> None:
     )
 
 
-def executar_publicacao_v4() -> List[Dict[str, Any]]:
+def executar_publicacao_v5() -> List[Dict[str, Any]]:
     payload_root = carregar_payload()
     token, chat_id = obter_bot_token_chat_id()
     validar_bot_e_destino(token, chat_id)
@@ -63,21 +67,20 @@ def executar_publicacao_v4() -> List[Dict[str, Any]]:
     raw_data = extrair_dados_publicacao(payload_root)
     data = normalizar_dados_renderizacao(raw_data)
 
-    # O Job Telegram Dispatcher também usa o mesmo pipeline visual.
-    # Avisos de mercado, abertura, lembretes e fechamento viram cards,
-    # nunca mensagens de texto.
+    # Avisos de mercado, abertura, lembretes e fechamento continuam em cards.
     if is_notice_publication(data):
         rendered = render_notice_card(data, output_dir=OUTPUT_DIR)
     else:
-        rendered = render_live_publication_v4(data, output_dir=OUTPUT_DIR)
+        rendered = render_live_publication_v5(data, output_dir=OUTPUT_DIR)
 
     if not rendered.files:
-        raise RuntimeError("O renderizador Live V4 não produziu imagens.")
+        raise RuntimeError("O renderizador Live não produziu imagens.")
 
     caption = _caption(rendered, data)
     if len(rendered.files) == 1:
         enviar_foto(rendered.files[0], caption)
     else:
+        # O helper já divide automaticamente álbuns acima de 10 arquivos.
         enviar_album(rendered.files, caption)
 
     publication = {
@@ -88,15 +91,16 @@ def executar_publicacao_v4() -> List[Dict[str, Any]]:
         "titulo": rendered.title,
         "legenda": rendered.caption,
         "versao_visual": RENDERER_VERSION,
+        "pipeline_visual": PIPELINE_VERSION,
         "base_visual": VISUAL_VERSION,
     }
     _save_manifest([publication])
     print(
-        f"Publicação Live V4 concluída: tipo={rendered.kind}; "
-        f"imagens={len(rendered.files)}; base={VISUAL_VERSION}"
+        f"Publicação Live V5 concluída: tipo={rendered.kind}; "
+        f"imagens={len(rendered.files)}; base={VISUAL_VERSION}; pipeline={PIPELINE_VERSION}"
     )
     return [publication]
 
 
 if __name__ == "__main__":
-    executar_publicacao_v4()
+    executar_publicacao_v5()
