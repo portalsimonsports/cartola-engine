@@ -41,14 +41,15 @@ jobs:
           python -m pip install --upgrade pip setuptools wheel
           pip install --upgrade -r requirements.txt
 
-      - name: Validar código profissional
+      - name: Validar código profissional aprovado
         shell: bash
         run: |
           set -e
           python -m py_compile app/render_telegram_cards.py
           python -m py_compile app/gerar_resultados_telegram.py
           python -m py_compile app/publicar_times_top5_automatico.py
-          echo "Renderizador, publicador e pacote automático validados."
+          python -m py_compile app/publicar_times_top5_automatico_v2.py
+          echo "Renderizador e publicador de Times/Top 5 aprovados validados."
 
       - name: Preparar payload
         shell: bash
@@ -98,16 +99,11 @@ jobs:
           from pathlib import Path
 
           allowed = {
-              "ABERTURA",
               "SELECAO_INICIAL",
               "ATUALIZACAO_20H",
               "PRE_FECHAMENTO_TIMES",
               "PRE_FECHAMENTO_TOP5",
               "CONFIRMADOS",
-              "MERCADO_FECHADO",
-              "LIVE_ABERTURA",
-              "LIVE_DELTA_15",
-              "LIVE_FECHAMENTO",
           }
 
           payload = json.loads(Path("data/payload_dispatch.json").read_text(encoding="utf-8"))
@@ -133,7 +129,7 @@ jobs:
               )
           PY
 
-      - name: Gerar e publicar pacote automático
+      - name: Gerar e publicar Times e Top 5 aprovados
         if: steps.gate.outputs.allowed == 'true'
         shell: bash
         env:
@@ -149,7 +145,7 @@ jobs:
           EVENTO_PROGRAMADO: ${{ steps.gate.outputs.evento }}
         run: |
           set -e
-          python app/publicar_times_top5_automatico.py
+          python app/publicar_times_top5_automatico_v2.py
 
       - name: Validar arquivos profissionais gerados
         if: steps.gate.outputs.allowed == 'true'
@@ -181,6 +177,9 @@ jobs:
           if missing:
               raise SystemExit(f"ERRO: imagens ausentes: {missing}")
 
+          if any("boletim_" in Path(path).name for path in files):
+              raise SystemExit("ERRO: publicação genérica/textual detectada.")
+
           print(
               f"Validação concluída: {len(publications)} publicação(ões), "
               f"{len(files)} imagem(ns)."
@@ -196,7 +195,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # Versiona somente os arquivos permanentes da publicação.
           git add \
             data/publicacoes_atuais/ \
             output/*.png 2>/dev/null || true
@@ -206,12 +204,8 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Telegram: publicação profissional programada"
+          git commit -m "Telegram: Times e Top 5 no padrão aprovado"
 
-          # O gerador altera arquivos temporários rastreados, como
-          # data/payload_dispatch.json e output/ultima_publicacao.json.
-          # Depois do commit permanente, a árvore precisa ficar totalmente
-          # limpa para permitir rebase/push sem o erro 'unstaged changes'.
           echo "Estado antes da limpeza temporária:"
           git status --short || true
           git reset --hard HEAD
@@ -221,8 +215,6 @@ jobs:
           enviado=0
           for tentativa in 1 2 3 4 5; do
             echo "Tentativa de push $tentativa/5"
-
-            # Garante árvore limpa também após eventual tentativa anterior.
             git rebase --abort 2>/dev/null || true
             git reset --hard HEAD
             git clean -fd
