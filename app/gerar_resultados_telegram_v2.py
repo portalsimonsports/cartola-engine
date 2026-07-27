@@ -16,11 +16,11 @@ from gerar_resultados_telegram import (
     obter_bot_token_chat_id,
     validar_bot_e_destino,
 )
-from render_live_cards_v3 import VISUAL_VERSION, render_live_publication_v3
+from render_live_cards_v4 import VISUAL_VERSION, render_live_publication_v4
 from render_notice_cards import is_notice_publication, render_notice_card
 
 
-RENDERER_VERSION = "live_cards_v3"
+RENDERER_VERSION = "live_cards_v4"
 
 
 def _safe(value: Any, default: str = "") -> str:
@@ -55,7 +55,7 @@ def _save_manifest(publications: List[Dict[str, Any]]) -> None:
     )
 
 
-def executar_publicacao_v3() -> List[Dict[str, Any]]:
+def executar_publicacao_v4() -> List[Dict[str, Any]]:
     payload_root = carregar_payload()
     token, chat_id = obter_bot_token_chat_id()
     validar_bot_e_destino(token, chat_id)
@@ -69,10 +69,10 @@ def executar_publicacao_v3() -> List[Dict[str, Any]]:
     if is_notice_publication(data):
         rendered = render_notice_card(data, output_dir=OUTPUT_DIR)
     else:
-        rendered = render_live_publication_v3(data, output_dir=OUTPUT_DIR)
+        rendered = render_live_publication_v4(data, output_dir=OUTPUT_DIR)
 
     if not rendered.files:
-        raise RuntimeError("O renderizador Live V3 não produziu imagens.")
+        raise RuntimeError("O renderizador Live V4 não produziu imagens.")
 
     caption = _caption(rendered, data)
     if len(rendered.files) == 1:
@@ -92,11 +92,11 @@ def executar_publicacao_v3() -> List[Dict[str, Any]]:
     }
     _save_manifest([publication])
     print(
-        f"Publicação Live V3 concluída: tipo={rendered.kind}; "
+        f"Publicação Live V4 concluída: tipo={rendered.kind}; "
         f"imagens={len(rendered.files)}; base={VISUAL_VERSION}"
     )
     return [publication]
 
 
 if __name__ == "__main__":
-    executar_publicacao_v3()
+    executar_publicacao_v4()
