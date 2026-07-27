@@ -1,43 +1,39 @@
 {
   "ambiente": "producao",
-  "contexto": "placar_delta",
+  "contexto": "fechamento_dia",
   "evento_github": "cartola_live_publish",
-  "gerado_em": "2026-07-27T00:15:13.416Z",
+  "gerado_em": "2026-07-27T00:55:10.656Z",
   "origem": "cartola_live_publisher",
   "payload": {
-    "contexto": "placar_delta",
-    "mensagem_oficial": "⚽ *ATUALIZAÇÃO DE PLACAR*\n\n📅 26/07 • 🕒 19:30\n🏟 Nubank Parque\n*Palmeiras 1 x 2 ATLÉTICO-MG*\nF. Anderson (1⚽)                  I. Gomes (1⚽)\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀V. Hugo (1⚽)\n📺 [Veja como foi](https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/26-07-2026/palmeiras-atletico-mg.ghtml?utm_source=cartolafc)\n\n_Monitoramento SimonSports_",
-    "partidas": [
-      {
-        "casa_id": "275",
-        "casa_nome": "Palmeiras",
-        "casa_sigla": "PAL",
-        "chave": "MjAyNi0wNy0yNiAxOTozMHwyNzV8Mjgy",
-        "data": "26/07",
-        "data_iso": "2026-07-26T22:30:00.000Z",
-        "estadio": "Nubank Parque",
-        "fora_id": "282",
-        "fora_nome": "ATLÉTICO-MG",
-        "fora_sigla": "CAM",
-        "goleadores_casa": [
-          "F. Anderson (1⚽)"
-        ],
-        "goleadores_fora": [
-          "I. Gomes (1⚽)",
-          "V. Hugo (1⚽)"
-        ],
-        "hora": "19:30",
-        "link_resumo": "https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/26-07-2026/palmeiras-atletico-mg.ghtml?utm_source=cartolafc",
-        "placar_casa": 1,
-        "placar_fora": 2,
-        "status": "EM_ANDAMENTO"
-      }
-    ],
+    "contexto": "fechamento_dia",
+    "mensagem_oficial": "🏆 *PORTAL SIMONSPORTS – RESUMO GERAL*\n📍 RODADA 20 | Parciais Ao Vivo\n\n🔹 *Time ECONOMICO*\n✨ Pontos (Sem C): 58.38 pts\n✨ Pontos (Com C): 62.83 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ 17.85\n\n🔹 *Time INTERMEDIARIO*\n✨ Pontos (Sem C): 71.58 pts\n✨ Pontos (Com C): 72.43 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ 0.67\n\n🔹 *Time PONTUACAO*\n✨ Pontos (Sem C): 96.18 pts\n✨ Pontos (Com C): 97.03 pts\n🏃 Participação: 12/12\n📈 Valorização: C$ -2.34\n\n_Atualização automática • SimonSports_",
     "rodada": 20,
-    "titulo": "ATUALIZAÇÃO DE PLACAR"
+    "tipos": [
+      {
+        "participacao": 12,
+        "pontos_com_capitao": 62.83,
+        "pontos_sem_capitao": 58.38,
+        "tipo": "ECONOMICO",
+        "valorizacao": 17.85
+      },
+      {
+        "participacao": 12,
+        "pontos_com_capitao": 72.43,
+        "pontos_sem_capitao": 71.58,
+        "tipo": "INTERMEDIARIO",
+        "valorizacao": 0.67
+      },
+      {
+        "participacao": 12,
+        "pontos_com_capitao": 97.03,
+        "pontos_sem_capitao": 96.18,
+        "tipo": "PONTUACAO",
+        "valorizacao": -2.34
+      }
+    ]
   },
-  "payload_hash": "qtsPW84vLIc5t2t59bQGng==",
+  "payload_hash": "Ew7DohnZRj8ul+KAMAkzeg==",
   "rodada": 20,
-  "tipo_publicacao": "placar_delta",
+  "tipo_publicacao": "resumo_geral_fechamento_dia",
   "workflow_destino": "gerar.resultados.yml"
 }
