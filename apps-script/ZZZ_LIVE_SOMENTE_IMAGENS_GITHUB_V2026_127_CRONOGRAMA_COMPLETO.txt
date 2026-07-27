@@ -1,0 +1,236 @@
+/**
+ * PORTAL SIMONSPORTS
+ * CARTOLA LIVE PUBLISHER — V2026.127
+ * SOMENTE IMAGENS + EVENTOS COMPLETOS + PÓS-RODADA
+ *
+ * Requer o módulo V125 no mesmo projeto.
+ * Execute uma única vez:
+ *   PSS_LIVE_IMAGENS_V127_INSTALAR
+ */
+
+var PSS_LIVE_V127 = {
+  VERSAO: "v2026.127",
+  HANDLER: "PSS_LIVE_IMAGENS_V127_EXECUTAR",
+  INTERVALO_MINUTOS: 5
+};
+
+function PSS_LIVE_V127_obterPlanilha_() {
+  if (typeof ID_PLANILHA_MESTRE === "undefined") {
+    throw new Error("ID_PLANILHA_MESTRE não encontrado no Cartola Live Publisher.");
+  }
+  return SpreadsheetApp.openById(ID_PLANILHA_MESTRE);
+}
+
+function PSS_LIVE_V127_upsertConfig_(chave, valor) {
+  var ss = PSS_LIVE_V127_obterPlanilha_();
+  var sh = ss.getSheetByName("CONFIG");
+  if (!sh) throw new Error("A aba CONFIG não foi encontrada.");
+  var dados = sh.getRange(1, 1, Math.max(1, sh.getLastRow()), 2).getValues();
+  var alvo = String(chave || "").trim().toUpperCase();
+  for (var i = 0; i < dados.length; i++) {
+    if (String(dados[i][0] || "").trim().toUpperCase() === alvo) {
+      sh.getRange(i + 1, 2).setValue(valor);
+      return;
+    }
+  }
+  sh.appendRow([chave, valor]);
+}
+
+function PSS_LIVE_V127_garantirConfig_() {
+  PSS_LIVE_V127_upsertConfig_("TG_ENVIAR", "SIM");
+  PSS_LIVE_V127_upsertConfig_("JOB_TELEGRAM", "SIM");
+  PSS_LIVE_V127_upsertConfig_("NOTIF_MERCADO", "NAO");
+  PSS_LIVE_V127_upsertConfig_("NOTIF_TIMES", "NAO");
+  PSS_LIVE_V127_upsertConfig_("NOTIF_TOP5", "NAO");
+  PSS_LIVE_V127_upsertConfig_("GITHUB_TESTE_ATIVO", "SIM");
+  PSS_LIVE_V127_upsertConfig_("GITHUB_LIVE_EVENTO", "cartola_live_publish");
+  PropertiesService.getScriptProperties().setProperties({
+    PSS_LIVE_V127_ATIVO: "SIM",
+    PSS_LIVE_V127_VERSAO: PSS_LIVE_V127.VERSAO,
+    PSS_LIVE_V127_CONFIGURADO_EM: new Date().toISOString()
+  });
+}
+
+function PSS_LIVE_V127_norm_(valor) {
+  return String(valor == null ? "" : valor)
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toUpperCase();
+}
+
+function PSS_LIVE_V127_eventos_(tipoPublicacao, payload) {
+  payload = payload || {};
+  var texto = PSS_LIVE_V127_norm_([
+    tipoPublicacao,
+    payload.tipo_publicacao,
+    payload.contexto,
+    payload.titulo,
+    payload.mensagem_oficial
+  ].join(" "));
+
+  var final = /FECHAMENTO|FINAL|ENCERRAMENTO/.test(texto);
+  var temPartidas = Array.isArray(payload.partidas) && payload.partidas.length > 0;
+  var temTimes =
+    (Array.isArray(payload.tipos) && payload.tipos.length > 0) ||
+    (Array.isArray(payload.times) && payload.times.length > 0) ||
+    (payload.modelos && typeof payload.modelos === "object") ||
+    /SELECAO ECONOMICO|SELECAO INTERMEDIARIO|SELECAO PONTUACAO/.test(texto);
+
+  var eventos = [];
+  if (final && temTimes) eventos.push("FECHAMENTO_FINAL_TIMES");
+  if (final && temPartidas) eventos.push("RESUMO_FINAL_RODADA");
+  if (eventos.length) return eventos;
+
+  if (/ABERTURA LIVE|LIVE ABERTURA|MONITORAMENTO.*INICI/.test(texto)) return ["LIVE_ABERTURA"];
+  if (/DELTA.*15|15 PONTOS/.test(texto)) return ["LIVE_DELTA_15"];
+  if (/MITOS|ZICAS|TOP 5 PONTUADORES|PIORES PONTUACOES/.test(texto)) return ["LIVE_MITOS_ZICAS"];
+  if (/RANKING|PARCIAIS DOS TIMES|RESUMO GERAL/.test(texto)) return ["LIVE_RANKING_PARCIAL"];
+  if (/EVENTO DA PARTIDA|GOL|CARTAO|SUBSTITUICAO/.test(texto) && temPartidas) return ["LIVE_EVENTO_PARTIDA"];
+  if (/ATUALIZACAO DE PLACAR|PLACAR DELTA|PLACAR/.test(texto) && temPartidas) return ["LIVE_PLACAR"];
+  if (/RESULTADOS|STATUS DOS JOGOS/.test(texto) && temPartidas) return ["LIVE_RESULTADOS"];
+  if (final) return ["LIVE_FECHAMENTO"];
+  return [String(tipoPublicacao || "LIVE_RESULTADOS")];
+}
+
+function PSS_LIVE_V127_tipoParaEvento_(evento, tipoOriginal) {
+  var mapa = {
+    FECHAMENTO_FINAL_TIMES: "fechamento_final_times",
+    RESUMO_FINAL_RODADA: "resumo_final_rodada",
+    LIVE_ABERTURA: "live_abertura",
+    LIVE_PLACAR: "live_placar",
+    LIVE_EVENTO_PARTIDA: "live_evento_partida",
+    LIVE_DELTA_15: "live_delta_15",
+    LIVE_MITOS_ZICAS: "live_mitos_zicas",
+    LIVE_RANKING_PARCIAL: "live_ranking_parcial",
+    LIVE_RESULTADOS: "live_resultados",
+    LIVE_FECHAMENTO: "live_fechamento"
+  };
+  return mapa[evento] || String(tipoOriginal || evento).toLowerCase();
+}
+
+function PSS_LIVE_V127_disparar_(cfg, tipoPublicacao, payload) {
+  payload = payload || {};
+  var eventos = PSS_LIVE_V127_eventos_(tipoPublicacao, payload);
+  var resultados = [];
+
+  for (var i = 0; i < eventos.length; i++) {
+    var evento = eventos[i];
+    var copia = JSON.parse(JSON.stringify(payload));
+    copia.evento_programado = evento;
+    copia.tipo_publicacao = PSS_LIVE_V127_tipoParaEvento_(evento, tipoPublicacao);
+    copia.contexto = String(copia.contexto || evento).toLowerCase();
+
+    resultados.push(
+      PSS_LIVE_IMAGENS_V125_dispararGithubSemSegundoLock_(
+        cfg,
+        copia.tipo_publicacao,
+        copia
+      )
+    );
+  }
+
+  return resultados.length ? resultados.every(function(valor) { return valor === true; }) : false;
+}
+
+function PSS_LIVE_IMAGENS_V127_EXECUTAR() {
+  PSS_LIVE_V127_garantirConfig_();
+
+  if (typeof publicarResumoLive !== "function") {
+    throw new Error("publicarResumoLive() não foi encontrada.");
+  }
+  if (typeof PSS_LIVE_IMAGENS_V125_dispararGithubSemSegundoLock_ !== "function") {
+    throw new Error("O módulo V125 não foi encontrado no projeto.");
+  }
+
+  var enviarAnterior = (typeof enviarTelegram_ === "function") ? enviarTelegram_ : null;
+  var bloquearAnterior = (typeof psLiveBloquearMensagemTelegram_ === "function")
+    ? psLiveBloquearMensagemTelegram_
+    : null;
+  var githubAnterior = (typeof dispararGithubTeste_ === "function")
+    ? dispararGithubTeste_
+    : null;
+
+  try {
+    enviarTelegram_ = function(cfg, texto) {
+      return PSS_LIVE_IMAGENS_V125_enviarTelegramSeguro_(cfg, texto);
+    };
+    psLiveBloquearMensagemTelegram_ = function(texto) {
+      return PSS_LIVE_IMAGENS_V125_bloquearTexto_(texto);
+    };
+    dispararGithubTeste_ = function(cfg, tipoPublicacao, payload) {
+      return PSS_LIVE_V127_disparar_(cfg, tipoPublicacao, payload);
+    };
+    return publicarResumoLive();
+  } finally {
+    if (enviarAnterior) enviarTelegram_ = enviarAnterior;
+    if (bloquearAnterior) psLiveBloquearMensagemTelegram_ = bloquearAnterior;
+    if (githubAnterior) dispararGithubTeste_ = githubAnterior;
+  }
+}
+
+function PSS_LIVE_IMAGENS_V127_INSTALAR() {
+  PSS_LIVE_V127_garantirConfig_();
+  var removidos = [];
+  ScriptApp.getProjectTriggers().forEach(function(trigger) {
+    var nome = String(trigger.getHandlerFunction() || "");
+    if (
+      nome === "publicarResumoLive" ||
+      nome === "PSS_LIVE_IMAGENS_V125_EXECUTAR" ||
+      nome === "PSS_LIVE_IMAGENS_V126_EXECUTAR" ||
+      nome === "PSS_LIVE_IMAGENS_V127_EXECUTAR"
+    ) {
+      ScriptApp.deleteTrigger(trigger);
+      removidos.push(nome);
+    }
+  });
+
+  var trigger = ScriptApp.newTrigger(PSS_LIVE_V127.HANDLER)
+    .timeBased()
+    .everyMinutes(PSS_LIVE_V127.INTERVALO_MINUTOS)
+    .create();
+
+  PropertiesService.getScriptProperties().setProperties({
+    PSS_LIVE_V127_INSTALADO: "SIM",
+    PSS_LIVE_V127_TRIGGER_ID: String(trigger.getUniqueId() || ""),
+    PSS_LIVE_V127_INSTALADO_EM: new Date().toISOString()
+  });
+
+  var resultado = {
+    ok: true,
+    versao: PSS_LIVE_V127.VERSAO,
+    acionador: PSS_LIVE_V127.HANDLER,
+    intervalo_minutos: PSS_LIVE_V127.INTERVALO_MINUTOS,
+    acionadores_antigos_removidos: removidos,
+    qualquer_texto_telegram: "BLOQUEADO",
+    notif_mercado: "NAO",
+    notif_times: "NAO",
+    notif_top5: "NAO",
+    eventos_pos_rodada: ["FECHAMENTO_FINAL_TIMES", "RESUMO_FINAL_RODADA"]
+  };
+  console.log(JSON.stringify(resultado));
+  return resultado;
+}
+
+function PSS_LIVE_V127_DIAGNOSTICO() {
+  var resultado = {
+    versao: PSS_LIVE_V127.VERSAO,
+    acionador_esperado: PSS_LIVE_V127.HANDLER,
+    acionadores: ScriptApp.getProjectTriggers().map(function(trigger) {
+      return String(trigger.getHandlerFunction() || "");
+    }),
+    eventos: [
+      "LIVE_ABERTURA",
+      "LIVE_PLACAR",
+      "LIVE_EVENTO_PARTIDA",
+      "LIVE_DELTA_15",
+      "LIVE_MITOS_ZICAS",
+      "LIVE_RANKING_PARCIAL",
+      "LIVE_RESULTADOS",
+      "LIVE_FECHAMENTO",
+      "FECHAMENTO_FINAL_TIMES",
+      "RESUMO_FINAL_RODADA"
+    ]
+  };
+  console.log(JSON.stringify(resultado));
+  return resultado;
+}
