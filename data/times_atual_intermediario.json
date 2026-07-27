@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 21,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-07-27T17:34:55.477Z",
+  "atualizado_em": "2026-07-27T17:39:52.780Z",
   "dados": [
     {
       "RODADA": 21,
@@ -66,6 +66,17 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "MEI",
+      "NOME": "Matheus Pereira",
+      "CLUBE": "CRU",
+      "PRECO": 15.25,
+      "EXP_SCORE": 6.3479,
+      "ATLETA_ID": 96610
+    },
+    {
+      "RODADA": 21,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
       "NOME": "Arias",
       "CLUBE": "PAL",
       "PRECO": 16.58,
@@ -77,33 +88,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Matheus Pereira",
-      "CLUBE": "CRU",
-      "PRECO": 15.25,
-      "EXP_SCORE": 5.5199,
-      "ATLETA_ID": 96610
-    },
-    {
-      "RODADA": 21,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
       "NOME": "Josué",
       "CLUBE": "CFC",
       "PRECO": 6.44,
       "EXP_SCORE": 4.8908,
       "ATLETA_ID": 84626
-    },
-    {
-      "RODADA": 21,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 14.46,
-      "EXP_SCORE": 7.8616,
-      "ATLETA_ID": 143193
     },
     {
       "RODADA": 21,
@@ -131,6 +120,17 @@
       "RODADA": 21,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 14.46,
+      "EXP_SCORE": 6.8362,
+      "ATLETA_ID": 143193
+    },
+    {
+      "RODADA": 21,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
       "POS": "TEC",
       "NOME": "Rafael Guanaes",
       "CLUBE": "MIR",
@@ -143,11 +143,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Pedro Rangel",
-      "CLUBE": "CFC",
-      "PRECO": 7.48,
-      "EXP_SCORE": 3.5579,
-      "ATLETA_ID": 110708
+      "NOME": "Fábio",
+      "CLUBE": "FLU",
+      "PRECO": 9.47,
+      "EXP_SCORE": 3.4989,
+      "ATLETA_ID": 37656
     },
     {
       "RODADA": 21,
@@ -165,11 +165,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Thiago Santos",
-      "CLUBE": "CFC",
-      "PRECO": 5.12,
-      "EXP_SCORE": 3.7157,
-      "ATLETA_ID": 78855
+      "NOME": "Willian Machado",
+      "CLUBE": "MIR",
+      "PRECO": 5.36,
+      "EXP_SCORE": 3.57,
+      "ATLETA_ID": 101908
     },
     {
       "RODADA": 21,
