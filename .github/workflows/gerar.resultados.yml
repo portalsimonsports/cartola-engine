@@ -43,7 +43,7 @@ jobs:
           python -m pip install --upgrade pip setuptools wheel
           pip install --upgrade -r requirements.txt
 
-      - name: Validar renderizador e base visual aprovada
+      - name: Validar renderizadores aprovados
         shell: bash
         run: |
           set -e
@@ -52,8 +52,11 @@ jobs:
           python -m py_compile app/render_live_cards_v2.py
           python -m py_compile app/render_live_cards_v3.py
           python -m py_compile app/render_live_cards_v4.py
-          python -m py_compile app/gerar_resultados_telegram_v2.py
-          echo "Renderizador Live V4 premium validado."
+          python -m py_compile app/render_live_cards_v5.py
+          python -m py_compile app/render_notice_cards.py
+          python -m py_compile app/render_aprovadas_v1.py
+          python -m py_compile app/gerar_resultados_telegram_v3.py
+          echo "Renderizadores aprovados validados."
 
       - name: Preparar e validar payload
         shell: bash
@@ -95,20 +98,20 @@ jobs:
               raise SystemExit(f"ERRO: evento_github incorreto: {evento}")
           if destino and destino != "gerar.resultados.yml":
               raise SystemExit(f"ERRO: workflow_destino incorreto: {destino}")
-          if origem and "live" not in origem.lower():
-              raise SystemExit(f"ERRO: origem incorreta para o Live Publisher: {origem}")
+          if origem and not any(token in origem.lower() for token in ("live", "cronograma")):
+              raise SystemExit(f"ERRO: origem incorreta para o pipeline de imagens: {origem}")
 
           inner = payload.get("payload") if isinstance(payload.get("payload"), dict) else payload
           tipo = str(payload.get("tipo_publicacao") or inner.get("tipo_publicacao") or "")
           contexto = str(payload.get("contexto") or inner.get("contexto") or "")
-          print(f"Payload Live validado: tipo={tipo}; contexto={contexto}")
+          evento_programado = str(payload.get("evento_programado") or inner.get("evento_programado") or "")
+          print(f"Payload validado: evento={evento_programado}; tipo={tipo}; contexto={contexto}")
           PY
 
-          rm -f output/live_*.png
-          rm -f output/resultados_*.png output/boletim_*.png
-          rm -f output/ultima_publicacao.json
+          rm -f output/live_*.png output/resultados_*.png output/boletim_*.png
+          rm -f output/aprovada_*.png output/ultima_publicacao.json
 
-      - name: Gerar e publicar cards com a base visual aprovada
+      - name: Gerar e publicar imagens aprovadas
         shell: bash
         env:
           PAYLOAD_FILE: data/payload_dispatch.json
@@ -122,9 +125,9 @@ jobs:
           TELEGRAM_CHAT_FALLBACK: "@dicascartolaportalsimonsports"
         run: |
           set -e
-          python app/gerar_resultados_telegram_v2.py
+          python app/gerar_resultados_telegram_v3.py
 
-      - name: Validar cards profissionais gerados
+      - name: Validar imagens aprovadas geradas
         shell: bash
         run: |
           set -e
@@ -137,30 +140,14 @@ jobs:
               raise SystemExit("ERRO: manifesto não gerado.")
 
           data = json.loads(manifest.read_text(encoding="utf-8"))
-          if data.get("versao_visual") != "live_cards_v4":
-              raise SystemExit("ERRO: o renderizador Live V4 não foi utilizado.")
-
-          base_esperada = "live_cards_v4_premium_square_2026_07_26"
-          if data.get("base_visual") != base_esperada:
-              raise SystemExit(
-                  "ERRO: base visual diferente da versão V4 aprovada: "
-                  + repr(data.get("base_visual"))
-              )
+          if data.get("versao_visual") != "approved_cards_v1":
+              raise SystemExit("ERRO: pipeline approved_cards_v1 não utilizado.")
+          if data.get("base_visual") != "approved_cards_v1_2026_07_27":
+              raise SystemExit("ERRO: base visual aprovada incorreta.")
 
           publications = data.get("publicacoes") or []
           if not publications:
               raise SystemExit("ERRO: nenhuma publicação foi registrada.")
-
-          invalid = [
-              publication
-              for publication in publications
-              if publication.get("tipo_detectado") in ("bulletin", "results", "results_v2", "results_v3")
-          ]
-          if invalid:
-              raise SystemExit(
-                  "ERRO: boletim genérico ou renderizador antigo detectado: "
-                  + repr(invalid)
-              )
 
           files = [
               path
@@ -168,21 +155,18 @@ jobs:
               for path in publication.get("arquivos", [])
           ]
           if not files:
-              raise SystemExit("ERRO: nenhuma arte Live V4 foi gerada.")
+              raise SystemExit("ERRO: nenhuma imagem foi gerada.")
 
           missing = [path for path in files if not Path(path).exists()]
           if missing:
               raise SystemExit(f"ERRO: arquivos ausentes: {missing}")
 
-          placeholders = [
-              path for path in files
-              if "boletim_" in Path(path).name or "resultados_rodada" in Path(path).name
-          ]
-          if placeholders:
-              raise SystemExit(f"ERRO: arquivos genéricos bloqueados: {placeholders}")
+          forbidden = [path for path in files if "boletim_" in Path(path).name]
+          if forbidden:
+              raise SystemExit(f"ERRO: boletim textual/genérico bloqueado: {forbidden}")
 
           print(
-              f"Base visual V4 validada: {len(publications)} publicação(ões), "
+              f"Base aprovada validada: {len(publications)} publicação(ões), "
               f"{len(files)} card(s)."
           )
           PY
@@ -202,6 +186,6 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Telegram: cards Live V4 premium"
+          git commit -m "Telegram: imagens aprovadas do cronograma completo"
           git pull --rebase origin main || true
           git push origin HEAD:main
