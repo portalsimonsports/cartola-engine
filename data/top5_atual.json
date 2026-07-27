@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 21,
-  "atualizado_em": "2026-07-27T17:40:07.068Z",
+  "atualizado_em": "2026-07-27T17:44:59.191Z",
   "dados": [
     {
       "RODADA": 21,
@@ -14,16 +14,6 @@
       "EXP_SCORE": 3.8718,
       "FACTOR": 1.106451176262993,
       "ATLETA_ID": 104118
-    },
-    {
-      "RODADA": 21,
-      "POS": "GOL",
-      "NOME": "Fábio",
-      "CLUBE": "FLU",
-      "PRECO": 9.47,
-      "EXP_SCORE": 3.4989,
-      "FACTOR": 1.1607538630567524,
-      "ATLETA_ID": 37656
     },
     {
       "RODADA": 21,
@@ -54,6 +44,16 @@
       "EXP_SCORE": 3.2021,
       "FACTOR": 1.1341904900152486,
       "ATLETA_ID": 110708
+    },
+    {
+      "RODADA": 21,
+      "POS": "GOL",
+      "NOME": "Fábio",
+      "CLUBE": "FLU",
+      "PRECO": 9.47,
+      "EXP_SCORE": 3.149,
+      "FACTOR": 1.1607538630567524,
+      "ATLETA_ID": 37656
     },
     {
       "RODADA": 21,
@@ -182,7 +182,7 @@
       "CLUBE": "CFC",
       "PRECO": 6.44,
       "EXP_SCORE": 4.8908,
-      "FACTOR": 1.1382460994066865,
+      "FACTOR": 1.1382460994066863,
       "ATLETA_ID": 84626
     },
     {
@@ -242,7 +242,7 @@
       "CLUBE": "CFC",
       "PRECO": 9.07,
       "EXP_SCORE": 6.4573,
-      "FACTOR": 1.1382460994066865,
+      "FACTOR": 1.1382460994066863,
       "ATLETA_ID": 93988
     },
     {
@@ -302,7 +302,7 @@
       "CLUBE": "CFC",
       "PRECO": 8.11,
       "EXP_SCORE": 5.2122,
-      "FACTOR": 1.1066281522009451,
+      "FACTOR": 1.106628152200945,
       "ATLETA_ID": 126977
     }
   ]
