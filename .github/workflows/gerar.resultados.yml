@@ -179,13 +179,48 @@ jobs:
           set -e
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ output/ || true
+
+          # Versiona apenas cards e arquivos permanentes. Payload recebido,
+          # manifesto e credencial de serviço permanecem temporários.
+          git add \
+            data/publicacoes_atuais/ \
+            output/*.png 2>/dev/null || true
 
           if git diff --cached --quiet; then
-            echo "Sem alterações para commit."
+            echo "Sem alterações permanentes para commit."
             exit 0
           fi
 
           git commit -m "Telegram: imagens aprovadas do cronograma completo"
-          git pull --rebase origin main || true
-          git push origin HEAD:main
+
+          # Remove alterações temporárias antes do rebase para impedir o erro
+          # 'cannot pull with rebase: unstaged changes'.
+          git reset --hard HEAD
+          git clean -fd
+
+          enviado=0
+          for tentativa in 1 2 3 4 5; do
+            echo "Tentativa de push $tentativa/5"
+            git rebase --abort 2>/dev/null || true
+            git reset --hard HEAD
+            git clean -fd
+            git fetch origin main
+
+            if git rebase origin/main; then
+              if git push origin HEAD:main; then
+                enviado=1
+                break
+              fi
+            fi
+
+            git rebase --abort 2>/dev/null || true
+            git reset --hard HEAD
+            sleep $((tentativa * 3))
+          done
+
+          if [ "$enviado" -ne 1 ]; then
+            echo "ERRO: não foi possível publicar o commit após 5 tentativas."
+            exit 1
+          fi
+
+          echo "Commit publicado com sucesso no branch main."
