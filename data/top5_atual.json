@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 21,
-  "atualizado_em": "2026-07-28T20:30:13.171Z",
+  "atualizado_em": "2026-07-28T20:35:25.787Z",
   "dados": [
     {
       "RODADA": 21,
@@ -128,16 +128,6 @@
     {
       "RODADA": 21,
       "POS": "ZAG",
-      "NOME": "Thiago Santos",
-      "CLUBE": "CFC",
-      "PRECO": 5.12,
-      "EXP_SCORE": 3.7234,
-      "FACTOR": 1.1365477105962183,
-      "ATLETA_ID": 78855
-    },
-    {
-      "RODADA": 21,
-      "POS": "ZAG",
       "NOME": "Léo Pereira",
       "CLUBE": "FLA",
       "PRECO": 9.96,
@@ -154,6 +144,16 @@
       "EXP_SCORE": 3.4292,
       "FACTOR": 1.0699327038897513,
       "ATLETA_ID": 78248
+    },
+    {
+      "RODADA": 21,
+      "POS": "ZAG",
+      "NOME": "Gustavo Gómez",
+      "CLUBE": "PAL",
+      "PRECO": 10.18,
+      "EXP_SCORE": 3.395,
+      "FACTOR": 0.9171629171817057,
+      "ATLETA_ID": 71684
     },
     {
       "RODADA": 21,
@@ -208,16 +208,6 @@
     {
       "RODADA": 21,
       "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 14.46,
-      "EXP_SCORE": 8.077,
-      "FACTOR": 0.9249447310810661,
-      "ATLETA_ID": 143193
-    },
-    {
-      "RODADA": 21,
-      "POS": "ATA",
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 16.36,
@@ -234,6 +224,16 @@
       "EXP_SCORE": 7.4026,
       "FACTOR": 0.9697541391183815,
       "ATLETA_ID": 98873
+    },
+    {
+      "RODADA": 21,
+      "POS": "ATA",
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 14.46,
+      "EXP_SCORE": 7.0235,
+      "FACTOR": 0.9249447310810661,
+      "ATLETA_ID": 143193
     },
     {
       "RODADA": 21,
@@ -288,22 +288,22 @@
     {
       "RODADA": 21,
       "POS": "TEC",
+      "NOME": "Fernando Diniz",
+      "CLUBE": "COR",
+      "PRECO": 8.99,
+      "EXP_SCORE": 5.3184,
+      "FACTOR": 1.0063641434087633,
+      "ATLETA_ID": 72391
+    },
+    {
+      "RODADA": 21,
+      "POS": "TEC",
       "NOME": "Fernando Seabra",
       "CLUBE": "CFC",
       "PRECO": 8.11,
       "EXP_SCORE": 5.1921,
       "FACTOR": 1.1023725921607024,
       "ATLETA_ID": 126977
-    },
-    {
-      "RODADA": 21,
-      "POS": "TEC",
-      "NOME": "Léo Condé",
-      "CLUBE": "REM",
-      "PRECO": 8.76,
-      "EXP_SCORE": 4.9962,
-      "FACTOR": 1.0427223088854907,
-      "ATLETA_ID": 37457
     }
   ]
 }
