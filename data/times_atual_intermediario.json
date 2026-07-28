@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 21,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-07-28T20:29:52.821Z",
+  "atualizado_em": "2026-07-28T20:34:55.782Z",
   "dados": [
     {
       "RODADA": 21,
@@ -16,6 +16,28 @@
       "PRECO": 9.95,
       "EXP_SCORE": 3.7703,
       "ATLETA_ID": 104118
+    },
+    {
+      "RODADA": 21,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Matheuzinho",
+      "CLUBE": "COR",
+      "PRECO": 10.05,
+      "EXP_SCORE": 4.7021,
+      "ATLETA_ID": 101727
+    },
+    {
+      "RODADA": 21,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Marcelinho",
+      "CLUBE": "REM",
+      "PRECO": 6.62,
+      "EXP_SCORE": 4.4675,
+      "ATLETA_ID": 97795
     },
     {
       "RODADA": 21,
@@ -38,17 +60,6 @@
       "PRECO": 8.97,
       "EXP_SCORE": 3.7378,
       "ATLETA_ID": 69208
-    },
-    {
-      "RODADA": 21,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Thiago Santos",
-      "CLUBE": "CFC",
-      "PRECO": 5.12,
-      "EXP_SCORE": 3.7234,
-      "ATLETA_ID": 78855
     },
     {
       "RODADA": 21,
@@ -87,28 +98,6 @@
       "RODADA": 21,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "André",
-      "CLUBE": "COR",
-      "PRECO": 6.91,
-      "EXP_SCORE": 4.4172,
-      "ATLETA_ID": 145744
-    },
-    {
-      "RODADA": 21,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 14.46,
-      "EXP_SCORE": 8.077,
-      "ATLETA_ID": 143193
-    },
-    {
-      "RODADA": 21,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
       "POS": "ATA",
       "NOME": "Pedro",
       "CLUBE": "FLA",
@@ -131,12 +120,23 @@
       "RODADA": 21,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
-      "POS": "TEC",
-      "NOME": "Odair Hellmann",
+      "POS": "ATA",
+      "NOME": "Viveros",
       "CLUBE": "CAP",
-      "PRECO": 9.5,
-      "EXP_SCORE": 5.5046,
-      "ATLETA_ID": 92273
+      "PRECO": 14.46,
+      "EXP_SCORE": 7.0235,
+      "ATLETA_ID": 143193
+    },
+    {
+      "RODADA": 21,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "TEC",
+      "NOME": "Rafael Guanaes",
+      "CLUBE": "MIR",
+      "PRECO": 7.24,
+      "EXP_SCORE": 3.8141,
+      "ATLETA_ID": 104027
     },
     {
       "RODADA": 21,
@@ -153,23 +153,34 @@
       "RODADA": 21,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
+      "POS": "LAT",
+      "NOME": "Bruno Melo",
+      "CLUBE": "CFC",
+      "PRECO": 6.18,
+      "EXP_SCORE": 3.1785,
+      "ATLETA_ID": 84339
+    },
+    {
+      "RODADA": 21,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Freytes",
-      "CLUBE": "FLU",
-      "PRECO": 4.77,
-      "EXP_SCORE": 2.2451,
-      "ATLETA_ID": 113034
+      "NOME": "Thiago Santos",
+      "CLUBE": "CFC",
+      "PRECO": 5.12,
+      "EXP_SCORE": 3.2377,
+      "ATLETA_ID": 78855
     },
     {
       "RODADA": 21,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Denilson",
-      "CLUBE": "MIR",
-      "PRECO": 4.94,
-      "EXP_SCORE": 2.9632,
-      "ATLETA_ID": 115986
+      "NOME": "Bruno Gomes",
+      "CLUBE": "INT",
+      "PRECO": 6.4,
+      "EXP_SCORE": 3.2808,
+      "ATLETA_ID": 106202
     },
     {
       "RODADA": 21,
