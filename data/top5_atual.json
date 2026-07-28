@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 21,
-  "atualizado_em": "2026-07-28T14:15:06.286Z",
+  "atualizado_em": "2026-07-28T14:20:34.786Z",
   "dados": [
     {
       "RODADA": 21,
@@ -14,16 +14,6 @@
       "EXP_SCORE": 3.8277,
       "FACTOR": 1.0938601500353102,
       "ATLETA_ID": 104118
-    },
-    {
-      "RODADA": 21,
-      "POS": "GOL",
-      "NOME": "Pedro Rangel",
-      "CLUBE": "CFC",
-      "PRECO": 7.48,
-      "EXP_SCORE": 3.5576,
-      "FACTOR": 1.134089354954763,
-      "ATLETA_ID": 110708
     },
     {
       "RODADA": 21,
@@ -51,9 +41,19 @@
       "NOME": "Rossi",
       "CLUBE": "FLA",
       "PRECO": 8.1,
-      "EXP_SCORE": 2.9313,
+      "EXP_SCORE": 3.257,
       "FACTOR": 0.9691262348598914,
       "ATLETA_ID": 99552
+    },
+    {
+      "RODADA": 21,
+      "POS": "GOL",
+      "NOME": "Pedro Rangel",
+      "CLUBE": "CFC",
+      "PRECO": 7.48,
+      "EXP_SCORE": 3.2019,
+      "FACTOR": 1.134089354954763,
+      "ATLETA_ID": 110708
     },
     {
       "RODADA": 21,
@@ -148,12 +148,12 @@
     {
       "RODADA": 21,
       "POS": "ZAG",
-      "NOME": "Gustavo Henrique",
-      "CLUBE": "COR",
-      "PRECO": 8.41,
-      "EXP_SCORE": 3.4184,
-      "FACTOR": 1.0665893909312583,
-      "ATLETA_ID": 78248
+      "NOME": "Willian Machado",
+      "CLUBE": "MIR",
+      "PRECO": 5.36,
+      "EXP_SCORE": 3.6129,
+      "FACTOR": 1.1530918519900333,
+      "ATLETA_ID": 101908
     },
     {
       "RODADA": 21,
@@ -238,22 +238,22 @@
     {
       "RODADA": 21,
       "POS": "ATA",
+      "NOME": "Breno Lopes",
+      "CLUBE": "CFC",
+      "PRECO": 9.07,
+      "EXP_SCORE": 6.4522,
+      "FACTOR": 1.1373354849785406,
+      "ATLETA_ID": 93988
+    },
+    {
+      "RODADA": 21,
+      "POS": "ATA",
       "NOME": "Renê",
       "CLUBE": "VIT",
       "PRECO": 9.22,
       "EXP_SCORE": 6.2674,
       "FACTOR": 1.0549699570815452,
       "ATLETA_ID": 130209
-    },
-    {
-      "RODADA": 21,
-      "POS": "ATA",
-      "NOME": "Kaio César",
-      "CLUBE": "COR",
-      "PRECO": 11.42,
-      "EXP_SCORE": 6.1058,
-      "FACTOR": 1.0410198798283263,
-      "ATLETA_ID": 118844
     },
     {
       "RODADA": 21,
