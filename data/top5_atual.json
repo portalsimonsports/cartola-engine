@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 21,
-  "atualizado_em": "2026-07-28T08:00:17.987Z",
+  "atualizado_em": "2026-07-28T08:05:20.823Z",
   "dados": [
     {
       "RODADA": 21,
@@ -14,16 +14,6 @@
       "EXP_SCORE": 3.8322,
       "FACTOR": 1.095150071876677,
       "ATLETA_ID": 104118
-    },
-    {
-      "RODADA": 21,
-      "POS": "GOL",
-      "NOME": "Pedro Rangel",
-      "CLUBE": "CFC",
-      "PRECO": 7.48,
-      "EXP_SCORE": 3.561,
-      "FACTOR": 1.1351514179910305,
-      "ATLETA_ID": 110708
     },
     {
       "RODADA": 21,
@@ -51,9 +41,19 @@
       "NOME": "Rossi",
       "CLUBE": "FLA",
       "PRECO": 8.1,
-      "EXP_SCORE": 2.9337,
+      "EXP_SCORE": 3.2597,
       "FACTOR": 0.9699196147145138,
       "ATLETA_ID": 99552
+    },
+    {
+      "RODADA": 21,
+      "POS": "GOL",
+      "NOME": "Pedro Rangel",
+      "CLUBE": "CFC",
+      "PRECO": 7.48,
+      "EXP_SCORE": 3.2049,
+      "FACTOR": 1.1351514179910305,
+      "ATLETA_ID": 110708
     },
     {
       "RODADA": 21,
@@ -208,16 +208,6 @@
     {
       "RODADA": 21,
       "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 14.46,
-      "EXP_SCORE": 7.8616,
-      "FACTOR": 0.9002789569048211,
-      "ATLETA_ID": 143193
-    },
-    {
-      "RODADA": 21,
-      "POS": "ATA",
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 16.36,
@@ -234,6 +224,16 @@
       "EXP_SCORE": 7.4385,
       "FACTOR": 0.9744650229154084,
       "ATLETA_ID": 98873
+    },
+    {
+      "RODADA": 21,
+      "POS": "ATA",
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 14.46,
+      "EXP_SCORE": 6.8362,
+      "FACTOR": 0.9002789569048211,
+      "ATLETA_ID": 143193
     },
     {
       "RODADA": 21,
@@ -288,22 +288,22 @@
     {
       "RODADA": 21,
       "POS": "TEC",
+      "NOME": "Fernando Diniz",
+      "CLUBE": "COR",
+      "PRECO": 8.99,
+      "EXP_SCORE": 5.3567,
+      "FACTOR": 1.0136100969907984,
+      "ATLETA_ID": 72391
+    },
+    {
+      "RODADA": 21,
+      "POS": "TEC",
       "NOME": "Fernando Seabra",
       "CLUBE": "CFC",
       "PRECO": 8.11,
       "EXP_SCORE": 5.2122,
       "FACTOR": 1.106628152200945,
       "ATLETA_ID": 126977
-    },
-    {
-      "RODADA": 21,
-      "POS": "TEC",
-      "NOME": "Léo Condé",
-      "CLUBE": "REM",
-      "PRECO": 8.76,
-      "EXP_SCORE": 4.9159,
-      "FACTOR": 1.0259759647564572,
-      "ATLETA_ID": 37457
     }
   ]
 }
