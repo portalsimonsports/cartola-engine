@@ -18,11 +18,12 @@ from gerar_resultados_telegram import (
 )
 from render_aprovadas_v1 import VISUAL_VERSION, is_approved_event, render_approved_event
 from render_live_cards_v5 import render_live_publication_v5
+from render_mercado_aberto_v2 import is_market_open_v2_event, render_market_open_v2
 from render_notice_cards import is_notice_publication, render_notice_card
 
 
 RENDERER_VERSION = "approved_cards_v1"
-PIPELINE_VERSION = "approved_cards_v1_pipeline_2026_07_27"
+PIPELINE_VERSION = "approved_cards_v2_pipeline_2026_07_28"
 
 
 def _safe(value: Any, default: str = "") -> str:
@@ -60,6 +61,8 @@ def _save_manifest(publications: List[Dict[str, Any]]) -> None:
 
 
 def _render(data: Dict[str, Any]):
+    if is_market_open_v2_event(data):
+        return render_market_open_v2(data, output_dir=OUTPUT_DIR)
     if is_approved_event(data):
         return render_approved_event(data, output_dir=OUTPUT_DIR)
     if is_notice_publication(data):
