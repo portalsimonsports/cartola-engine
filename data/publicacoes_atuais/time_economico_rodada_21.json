@@ -1,0 +1,433 @@
+{
+  "atletas": [
+    {
+      "clube": "REM",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Marcelo Rangel",
+      "pos": "GOL",
+      "preco": 7.06,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "REM",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Marcelinho",
+      "pos": "LAT",
+      "preco": 6.62,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "REM",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Mayk",
+      "pos": "LAT",
+      "preco": 7.63,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CFC",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Thiago Santos",
+      "pos": "ZAG",
+      "preco": 5.12,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CFC",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Jacy",
+      "pos": "ZAG",
+      "preco": 6.18,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "PAL",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Arias",
+      "pos": "MEI",
+      "preco": 16.58,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "REM",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "José Welison",
+      "pos": "MEI",
+      "preco": 4.04,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "REM",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Patrick",
+      "pos": "MEI",
+      "preco": 5.83,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CFC",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Josué",
+      "pos": "MEI",
+      "preco": 6.44,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CAP",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Viveros",
+      "pos": "ATA",
+      "preco": 14.46,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "REM",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Jajá",
+      "pos": "ATA",
+      "preco": 7.66,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "REM",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Léo Condé",
+      "pos": "TEC",
+      "preco": 8.76,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "BAH",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Ronaldo",
+      "pos": "GOL",
+      "preco": 6.92,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "CFC",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Bruno Melo",
+      "pos": "LAT",
+      "preco": 6.18,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "FLU",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Freytes",
+      "pos": "ZAG",
+      "preco": 4.77,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "MIR",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Aldo Filho",
+      "pos": "MEI",
+      "preco": 3.8,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "CAP",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Leozinho",
+      "pos": "ATA",
+      "preco": 7.49,
+      "status": "RESERVA"
+    }
+  ],
+  "blocos_topo": [
+    "Seleção inicial da rodada"
+  ],
+  "capitao": "Viveros",
+  "custo_total": 96.38,
+  "evento_programado": "SELECAO_INICIAL",
+  "forcar_envio": true,
+  "formacao": "4-4-2",
+  "houve_alteracao": false,
+  "mensagem_oficial": "Econômico • Rodada 21\nSeleção inicial da rodada\nPortal SimonSports",
+  "meta": {
+    "capitao": "Viveros (ATA)",
+    "custo_total": 96.38,
+    "esquema": "4-4-2",
+    "pontos_total": 0,
+    "variacao_total": 0
+  },
+  "modelo": "ECONOMICO",
+  "nome_modelo": "TIME ECONÔMICO",
+  "primeiro_envio": true,
+  "snapshot": {
+    "atletas": [
+      {
+        "clube": "REM",
+        "nome": "Marcelo Rangel",
+        "pos": "GOL",
+        "preco": 7.06,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "REM",
+        "nome": "Marcelinho",
+        "pos": "LAT",
+        "preco": 6.62,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "REM",
+        "nome": "Mayk",
+        "pos": "LAT",
+        "preco": 7.63,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "CFC",
+        "nome": "Thiago Santos",
+        "pos": "ZAG",
+        "preco": 5.12,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "CFC",
+        "nome": "Jacy",
+        "pos": "ZAG",
+        "preco": 6.18,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "PAL",
+        "nome": "Arias",
+        "pos": "MEI",
+        "preco": 16.58,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "REM",
+        "nome": "José Welison",
+        "pos": "MEI",
+        "preco": 4.04,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "REM",
+        "nome": "Patrick",
+        "pos": "MEI",
+        "preco": 5.83,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "CFC",
+        "nome": "Josué",
+        "pos": "MEI",
+        "preco": 6.44,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "CAP",
+        "nome": "Viveros",
+        "pos": "ATA",
+        "preco": 14.46,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "REM",
+        "nome": "Jajá",
+        "pos": "ATA",
+        "preco": 7.66,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "REM",
+        "nome": "Léo Condé",
+        "pos": "TEC",
+        "preco": 8.76,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "BAH",
+        "nome": "Ronaldo",
+        "pos": "GOL",
+        "preco": 6.92,
+        "status": "RESERVA"
+      },
+      {
+        "clube": "CFC",
+        "nome": "Bruno Melo",
+        "pos": "LAT",
+        "preco": 6.18,
+        "status": "RESERVA"
+      },
+      {
+        "clube": "FLU",
+        "nome": "Freytes",
+        "pos": "ZAG",
+        "preco": 4.77,
+        "status": "RESERVA"
+      },
+      {
+        "clube": "MIR",
+        "nome": "Aldo Filho",
+        "pos": "MEI",
+        "preco": 3.8,
+        "status": "RESERVA"
+      },
+      {
+        "clube": "CAP",
+        "nome": "Leozinho",
+        "pos": "ATA",
+        "preco": 7.49,
+        "status": "RESERVA"
+      }
+    ],
+    "capitao": "Viveros"
+  },
+  "timestamp_base": "",
+  "tipo_publicacao": "time_economico",
+  "titulo": "TIME ECONÔMICO",
+  "rodada": 21,
+  "origem": "jobTelegramDispatcher",
+  "gerado_em": "2026-07-28T11:40:30.942Z",
+  "payload_hash": "fqyrzQfWLb2F1S9Ft0OopA==",
+  "jogadores": [
+    {
+      "clube": "REM",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Marcelo Rangel",
+      "pos": "GOL",
+      "preco": 7.06,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "REM",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Marcelinho",
+      "pos": "LAT",
+      "preco": 6.62,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "REM",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Mayk",
+      "pos": "LAT",
+      "preco": 7.63,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CFC",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Thiago Santos",
+      "pos": "ZAG",
+      "preco": 5.12,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CFC",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Jacy",
+      "pos": "ZAG",
+      "preco": 6.18,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "PAL",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Arias",
+      "pos": "MEI",
+      "preco": 16.58,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "REM",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "José Welison",
+      "pos": "MEI",
+      "preco": 4.04,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "REM",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Patrick",
+      "pos": "MEI",
+      "preco": 5.83,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CFC",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Josué",
+      "pos": "MEI",
+      "preco": 6.44,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CAP",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Viveros",
+      "pos": "ATA",
+      "preco": 14.46,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "REM",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Jajá",
+      "pos": "ATA",
+      "preco": 7.66,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "REM",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Léo Condé",
+      "pos": "TEC",
+      "preco": 8.76,
+      "status": "TITULAR"
+    }
+  ],
+  "reservas": [
+    {
+      "clube": "BAH",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Ronaldo",
+      "pos": "GOL",
+      "preco": 6.92,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "CFC",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Bruno Melo",
+      "pos": "LAT",
+      "preco": 6.18,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "FLU",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Freytes",
+      "pos": "ZAG",
+      "preco": 4.77,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "MIR",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Aldo Filho",
+      "pos": "MEI",
+      "preco": 3.8,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "CAP",
+      "data": "2026-07-28T11:39:30.000Z",
+      "nome": "Leozinho",
+      "pos": "ATA",
+      "preco": 7.49,
+      "status": "RESERVA"
+    }
+  ],
+  "pontos_total": 0,
+  "pipeline_visual": "times_top5_aprovados_v2_2026_07_27"
+}
