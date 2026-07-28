@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 21,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-07-28T11:29:45.411Z",
+  "atualizado_em": "2026-07-28T11:39:44.402Z",
   "dados": [
     {
       "RODADA": 21,
@@ -16,6 +16,28 @@
       "PRECO": 7.06,
       "EXP_SCORE": 3.3173,
       "ATLETA_ID": 82730
+    },
+    {
+      "RODADA": 21,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Marcelinho",
+      "CLUBE": "REM",
+      "PRECO": 6.62,
+      "EXP_SCORE": 4.4111,
+      "ATLETA_ID": 97795
+    },
+    {
+      "RODADA": 21,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Mayk",
+      "CLUBE": "REM",
+      "PRECO": 7.63,
+      "EXP_SCORE": 2.9166,
+      "ATLETA_ID": 101820
     },
     {
       "RODADA": 21,
@@ -38,17 +60,6 @@
       "PRECO": 6.18,
       "EXP_SCORE": 4.2399,
       "ATLETA_ID": 97878
-    },
-    {
-      "RODADA": 21,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Tiago Cóser",
-      "CLUBE": "CFC",
-      "PRECO": 3.92,
-      "EXP_SCORE": 2.4199,
-      "ATLETA_ID": 109127
     },
     {
       "RODADA": 21,
@@ -120,17 +131,6 @@
       "RODADA": 21,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Alef Manga",
-      "CLUBE": "REM",
-      "PRECO": 9.29,
-      "EXP_SCORE": 5.1639,
-      "ATLETA_ID": 101254
-    },
-    {
-      "RODADA": 21,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
       "POS": "TEC",
       "NOME": "Léo Condé",
       "CLUBE": "REM",
@@ -153,12 +153,23 @@
       "RODADA": 21,
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
+      "POS": "LAT",
+      "NOME": "Bruno Melo",
+      "CLUBE": "CFC",
+      "PRECO": 6.18,
+      "EXP_SCORE": 3.1746,
+      "ATLETA_ID": 84339
+    },
+    {
+      "RODADA": 21,
+      "TIPO": "ECONOMICO",
+      "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Maripán",
-      "CLUBE": "INT",
-      "PRECO": 4.24,
-      "EXP_SCORE": 0.0947,
-      "ATLETA_ID": 98617
+      "NOME": "Freytes",
+      "CLUBE": "FLU",
+      "PRECO": 4.77,
+      "EXP_SCORE": 2.2428,
+      "ATLETA_ID": 113034
     },
     {
       "RODADA": 21,
