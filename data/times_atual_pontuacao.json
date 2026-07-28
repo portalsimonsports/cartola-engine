@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 21,
   "tipo": "PONTUACAO",
-  "atualizado_em": "2026-07-28T15:20:03.959Z",
+  "atualizado_em": "2026-07-28T15:30:39.253Z",
   "dados": [
     {
       "RODADA": 21,
@@ -99,17 +99,6 @@
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 14.46,
-      "EXP_SCORE": 7.8488,
-      "ATLETA_ID": 143193
-    },
-    {
-      "RODADA": 21,
-      "TIPO": "PONTUACAO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 16.36,
@@ -131,6 +120,17 @@
       "RODADA": 21,
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 14.46,
+      "EXP_SCORE": 6.825,
+      "ATLETA_ID": 143193
+    },
+    {
+      "RODADA": 21,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
       "POS": "TEC",
       "NOME": "Leonardo Jardim",
       "CLUBE": "FLA",
@@ -143,11 +143,11 @@
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Pedro Rangel",
-      "CLUBE": "CFC",
-      "PRECO": 7.48,
-      "EXP_SCORE": 3.5576,
-      "ATLETA_ID": 110708
+      "NOME": "Fábio",
+      "CLUBE": "FLU",
+      "PRECO": 9.47,
+      "EXP_SCORE": 3.4986,
+      "ATLETA_ID": 37656
     },
     {
       "RODADA": 21,
@@ -176,22 +176,22 @@
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Matheuzinho",
-      "CLUBE": "VIT",
-      "PRECO": 5.81,
-      "EXP_SCORE": 3.0788,
-      "ATLETA_ID": 90703
+      "NOME": "Denilson",
+      "CLUBE": "MIR",
+      "PRECO": 4.94,
+      "EXP_SCORE": 2.9765,
+      "ATLETA_ID": 115986
     },
     {
       "RODADA": 21,
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Renê",
-      "CLUBE": "VIT",
-      "PRECO": 9.22,
-      "EXP_SCORE": 6.2674,
-      "ATLETA_ID": 130209
+      "NOME": "Breno Lopes",
+      "CLUBE": "CFC",
+      "PRECO": 9.07,
+      "EXP_SCORE": 6.4522,
+      "ATLETA_ID": 93988
     }
   ]
 }
