@@ -55,6 +55,7 @@ jobs:
           python -m py_compile app/render_live_cards_v5.py
           python -m py_compile app/render_notice_cards.py
           python -m py_compile app/render_aprovadas_v1.py
+          python -m py_compile app/render_mercado_aberto_v2.py
           python -m py_compile app/gerar_resultados_telegram_v3.py
           echo "Renderizadores aprovados validados."
 
