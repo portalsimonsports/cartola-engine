@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 21,
   "tipo": "PONTUACAO",
-  "atualizado_em": "2026-07-28T17:54:58.336Z",
+  "atualizado_em": "2026-07-28T17:59:49.916Z",
   "dados": [
     {
       "RODADA": 21,
@@ -99,6 +99,17 @@
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "ATA",
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 14.46,
+      "EXP_SCORE": 7.8488,
+      "ATLETA_ID": 143193
+    },
+    {
+      "RODADA": 21,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 16.36,
@@ -120,17 +131,6 @@
       "RODADA": 21,
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 14.46,
-      "EXP_SCORE": 6.825,
-      "ATLETA_ID": 143193
-    },
-    {
-      "RODADA": 21,
-      "TIPO": "PONTUACAO",
-      "STATUS": "TITULAR",
       "POS": "TEC",
       "NOME": "Leonardo Jardim",
       "CLUBE": "FLA",
@@ -143,11 +143,11 @@
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Fábio",
-      "CLUBE": "FLU",
-      "PRECO": 9.47,
-      "EXP_SCORE": 3.5025,
-      "ATLETA_ID": 37656
+      "NOME": "Pedro Rangel",
+      "CLUBE": "CFC",
+      "PRECO": 7.48,
+      "EXP_SCORE": 3.5624,
+      "ATLETA_ID": 110708
     },
     {
       "RODADA": 21,
@@ -165,33 +165,33 @@
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Willian Machado",
-      "CLUBE": "MIR",
-      "PRECO": 5.36,
-      "EXP_SCORE": 3.6171,
-      "ATLETA_ID": 101908
+      "NOME": "Thiago Santos",
+      "CLUBE": "CFC",
+      "PRECO": 5.12,
+      "EXP_SCORE": 3.7203,
+      "ATLETA_ID": 78855
     },
     {
       "RODADA": 21,
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Bruno Gomes",
-      "CLUBE": "INT",
-      "PRECO": 6.4,
-      "EXP_SCORE": 3.2962,
-      "ATLETA_ID": 106202
+      "NOME": "Matheuzinho",
+      "CLUBE": "VIT",
+      "PRECO": 5.81,
+      "EXP_SCORE": 3.0788,
+      "ATLETA_ID": 90703
     },
     {
       "RODADA": 21,
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Breno Lopes",
-      "CLUBE": "CFC",
-      "PRECO": 9.07,
-      "EXP_SCORE": 6.4522,
-      "ATLETA_ID": 93988
+      "NOME": "Renê",
+      "CLUBE": "VIT",
+      "PRECO": 9.22,
+      "EXP_SCORE": 6.2674,
+      "ATLETA_ID": 130209
     }
   ]
 }
