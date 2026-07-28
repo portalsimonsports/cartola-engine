@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 21,
-  "atualizado_em": "2026-07-28T02:30:15.981Z",
+  "atualizado_em": "2026-07-28T02:48:31.639Z",
   "dados": [
     {
       "RODADA": 21,
@@ -14,6 +14,16 @@
       "EXP_SCORE": 3.8322,
       "FACTOR": 1.095150071876677,
       "ATLETA_ID": 104118
+    },
+    {
+      "RODADA": 21,
+      "POS": "GOL",
+      "NOME": "Pedro Rangel",
+      "CLUBE": "CFC",
+      "PRECO": 7.48,
+      "EXP_SCORE": 3.561,
+      "FACTOR": 1.1351514179910305,
+      "ATLETA_ID": 110708
     },
     {
       "RODADA": 21,
@@ -44,16 +54,6 @@
       "EXP_SCORE": 3.2597,
       "FACTOR": 0.9699196147145138,
       "ATLETA_ID": 99552
-    },
-    {
-      "RODADA": 21,
-      "POS": "GOL",
-      "NOME": "Pedro Rangel",
-      "CLUBE": "CFC",
-      "PRECO": 7.48,
-      "EXP_SCORE": 3.2049,
-      "FACTOR": 1.1351514179910305,
-      "ATLETA_ID": 110708
     },
     {
       "RODADA": 21,
@@ -182,7 +182,7 @@
       "CLUBE": "CFC",
       "PRECO": 6.44,
       "EXP_SCORE": 4.8908,
-      "FACTOR": 1.1382460994066863,
+      "FACTOR": 1.1382460994066865,
       "ATLETA_ID": 84626
     },
     {
@@ -208,6 +208,16 @@
     {
       "RODADA": 21,
       "POS": "ATA",
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 14.46,
+      "EXP_SCORE": 7.8616,
+      "FACTOR": 0.9002789569048211,
+      "ATLETA_ID": 143193
+    },
+    {
+      "RODADA": 21,
+      "POS": "ATA",
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 16.36,
@@ -228,21 +238,11 @@
     {
       "RODADA": 21,
       "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 14.46,
-      "EXP_SCORE": 6.8362,
-      "FACTOR": 0.9002789569048211,
-      "ATLETA_ID": 143193
-    },
-    {
-      "RODADA": 21,
-      "POS": "ATA",
       "NOME": "Breno Lopes",
       "CLUBE": "CFC",
       "PRECO": 9.07,
       "EXP_SCORE": 6.4573,
-      "FACTOR": 1.1382460994066863,
+      "FACTOR": 1.1382460994066865,
       "ATLETA_ID": 93988
     },
     {
@@ -292,7 +292,7 @@
       "CLUBE": "CFC",
       "PRECO": 8.11,
       "EXP_SCORE": 5.2122,
-      "FACTOR": 1.106628152200945,
+      "FACTOR": 1.1066281522009451,
       "ATLETA_ID": 126977
     },
     {
