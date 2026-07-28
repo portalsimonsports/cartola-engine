@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 21,
   "tipo": "PONTUACAO",
-  "atualizado_em": "2026-07-28T05:54:55.898Z",
+  "atualizado_em": "2026-07-28T05:59:56.545Z",
   "dados": [
     {
       "RODADA": 21,
@@ -69,7 +69,7 @@
       "NOME": "Arias",
       "CLUBE": "PAL",
       "PRECO": 16.58,
-      "EXP_SCORE": 5.8135,
+      "EXP_SCORE": 6.6855,
       "ATLETA_ID": 99815
     },
     {
@@ -99,6 +99,17 @@
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "ATA",
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 14.46,
+      "EXP_SCORE": 7.8616,
+      "ATLETA_ID": 143193
+    },
+    {
+      "RODADA": 21,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 16.36,
@@ -120,17 +131,6 @@
       "RODADA": 21,
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 14.46,
-      "EXP_SCORE": 6.8362,
-      "ATLETA_ID": 143193
-    },
-    {
-      "RODADA": 21,
-      "TIPO": "PONTUACAO",
-      "STATUS": "TITULAR",
       "POS": "TEC",
       "NOME": "Leonardo Jardim",
       "CLUBE": "FLA",
@@ -143,11 +143,11 @@
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Fábio",
-      "CLUBE": "FLU",
-      "PRECO": 9.47,
-      "EXP_SCORE": 3.5013,
-      "ATLETA_ID": 37656
+      "NOME": "Pedro Rangel",
+      "CLUBE": "CFC",
+      "PRECO": 7.48,
+      "EXP_SCORE": 3.561,
+      "ATLETA_ID": 110708
     },
     {
       "RODADA": 21,
@@ -187,11 +187,11 @@
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Breno Lopes",
-      "CLUBE": "CFC",
-      "PRECO": 9.07,
-      "EXP_SCORE": 6.4573,
-      "ATLETA_ID": 93988
+      "NOME": "Renê",
+      "CLUBE": "VIT",
+      "PRECO": 9.22,
+      "EXP_SCORE": 6.184,
+      "ATLETA_ID": 130209
     }
   ]
 }
