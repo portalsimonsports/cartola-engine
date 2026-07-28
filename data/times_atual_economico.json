@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 21,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-07-28T20:54:44.774Z",
+  "atualizado_em": "2026-07-28T21:09:45.998Z",
   "dados": [
     {
       "RODADA": 21,
@@ -16,6 +16,28 @@
       "PRECO": 7.06,
       "EXP_SCORE": 3.3648,
       "ATLETA_ID": 82730
+    },
+    {
+      "RODADA": 21,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Marcelinho",
+      "CLUBE": "REM",
+      "PRECO": 6.62,
+      "EXP_SCORE": 4.4742,
+      "ATLETA_ID": 97795
+    },
+    {
+      "RODADA": 21,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Igor Formiga",
+      "CLUBE": "MIR",
+      "PRECO": 9.2,
+      "EXP_SCORE": 4.2307,
+      "ATLETA_ID": 106708
     },
     {
       "RODADA": 21,
@@ -43,17 +65,6 @@
       "RODADA": 21,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Tiago Cóser",
-      "CLUBE": "CFC",
-      "PRECO": 3.92,
-      "EXP_SCORE": 2.1852,
-      "ATLETA_ID": 109127
-    },
-    {
-      "RODADA": 21,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
       "POS": "MEI",
       "NOME": "Arias",
       "CLUBE": "PAL",
@@ -71,6 +82,17 @@
       "PRECO": 4.04,
       "EXP_SCORE": 2.7454,
       "ATLETA_ID": 86859
+    },
+    {
+      "RODADA": 21,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Zé Ricardo",
+      "CLUBE": "REM",
+      "PRECO": 4.92,
+      "EXP_SCORE": 2.7175,
+      "ATLETA_ID": 102911
     },
     {
       "RODADA": 21,
@@ -102,30 +124,8 @@
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 14.46,
-      "EXP_SCORE": 7.0448,
+      "EXP_SCORE": 8.1015,
       "ATLETA_ID": 143193
-    },
-    {
-      "RODADA": 21,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Jajá",
-      "CLUBE": "REM",
-      "PRECO": 7.66,
-      "EXP_SCORE": 4.761,
-      "ATLETA_ID": 105048
-    },
-    {
-      "RODADA": 21,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Alef Manga",
-      "CLUBE": "REM",
-      "PRECO": 9.29,
-      "EXP_SCORE": 5.2555,
-      "ATLETA_ID": 101254
     },
     {
       "RODADA": 21,
@@ -153,12 +153,23 @@
       "RODADA": 21,
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
+      "POS": "LAT",
+      "NOME": "Bruno Melo",
+      "CLUBE": "CFC",
+      "PRECO": 6.18,
+      "EXP_SCORE": 3.1853,
+      "ATLETA_ID": 84339
+    },
+    {
+      "RODADA": 21,
+      "TIPO": "ECONOMICO",
+      "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Gabriel Knesowitsch",
-      "CLUBE": "MIR",
-      "PRECO": 3.32,
-      "EXP_SCORE": 0.2969,
-      "ATLETA_ID": 117061
+      "NOME": "Tiago Cóser",
+      "CLUBE": "CFC",
+      "PRECO": 3.92,
+      "EXP_SCORE": 2.428,
+      "ATLETA_ID": 109127
     },
     {
       "RODADA": 21,
@@ -176,11 +187,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Leozinho",
-      "CLUBE": "CAP",
-      "PRECO": 7.49,
-      "EXP_SCORE": 4.6826,
-      "ATLETA_ID": 123101
+      "NOME": "Samuel Lino",
+      "CLUBE": "FLA",
+      "PRECO": 11.84,
+      "EXP_SCORE": 7.419,
+      "ATLETA_ID": 98873
     }
   ]
 }
