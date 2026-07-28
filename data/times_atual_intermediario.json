@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 21,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-07-28T20:54:49.547Z",
+  "atualizado_em": "2026-07-28T21:09:51.965Z",
   "dados": [
     {
       "RODADA": 21,
@@ -99,6 +99,17 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ATA",
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 14.46,
+      "EXP_SCORE": 8.1015,
+      "ATLETA_ID": 143193
+    },
+    {
+      "RODADA": 21,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 16.36,
@@ -115,17 +126,6 @@
       "PRECO": 11.84,
       "EXP_SCORE": 7.419,
       "ATLETA_ID": 98873
-    },
-    {
-      "RODADA": 21,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 14.46,
-      "EXP_SCORE": 7.0448,
-      "ATLETA_ID": 143193
     },
     {
       "RODADA": 21,
@@ -154,33 +154,33 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Freytes",
-      "CLUBE": "FLU",
-      "PRECO": 4.77,
-      "EXP_SCORE": 2.2491,
-      "ATLETA_ID": 113034
+      "NOME": "Tiago Cóser",
+      "CLUBE": "CFC",
+      "PRECO": 3.92,
+      "EXP_SCORE": 2.428,
+      "ATLETA_ID": 109127
     },
     {
       "RODADA": 21,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Denilson",
-      "CLUBE": "MIR",
-      "PRECO": 4.94,
-      "EXP_SCORE": 2.9709,
-      "ATLETA_ID": 115986
+      "NOME": "Matheuzinho",
+      "CLUBE": "VIT",
+      "PRECO": 5.81,
+      "EXP_SCORE": 3.072,
+      "ATLETA_ID": 90703
     },
     {
       "RODADA": 21,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Breno Lopes",
-      "CLUBE": "CFC",
-      "PRECO": 9.07,
-      "EXP_SCORE": 6.4439,
-      "ATLETA_ID": 93988
+      "NOME": "Renê",
+      "CLUBE": "VIT",
+      "PRECO": 9.22,
+      "EXP_SCORE": 6.2535,
+      "ATLETA_ID": 130209
     }
   ]
 }
