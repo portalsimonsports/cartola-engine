@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 21,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-07-29T15:54:52.744Z",
+  "atualizado_em": "2026-07-29T15:59:48.019Z",
   "dados": [
     {
       "RODADA": 21,
@@ -14,7 +14,7 @@
       "NOME": "Lucas Arcanjo",
       "CLUBE": "VIT",
       "PRECO": 9.95,
-      "EXP_SCORE": 3.7961,
+      "EXP_SCORE": 3.7884,
       "ATLETA_ID": 104118
     },
     {
@@ -25,7 +25,7 @@
       "NOME": "Matheuzinho",
       "CLUBE": "COR",
       "PRECO": 10.05,
-      "EXP_SCORE": 4.7354,
+      "EXP_SCORE": 4.8248,
       "ATLETA_ID": 101727
     },
     {
@@ -36,7 +36,7 @@
       "NOME": "Renê",
       "CLUBE": "FLU",
       "PRECO": 9.53,
-      "EXP_SCORE": 4.5255,
+      "EXP_SCORE": 4.5199,
       "ATLETA_ID": 78445
     },
     {
@@ -47,7 +47,7 @@
       "NOME": "Jacy",
       "CLUBE": "CFC",
       "PRECO": 6.18,
-      "EXP_SCORE": 4.1581,
+      "EXP_SCORE": 4.1508,
       "ATLETA_ID": 97878
     },
     {
@@ -58,7 +58,7 @@
       "NOME": "Gabriel Paulista",
       "CLUBE": "COR",
       "PRECO": 8.97,
-      "EXP_SCORE": 3.7644,
+      "EXP_SCORE": 3.8354,
       "ATLETA_ID": 69208
     },
     {
@@ -69,7 +69,7 @@
       "NOME": "Arias",
       "CLUBE": "PAL",
       "PRECO": 16.58,
-      "EXP_SCORE": 6.5992,
+      "EXP_SCORE": 5.7289,
       "ATLETA_ID": 99815
     },
     {
@@ -80,7 +80,7 @@
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 15.25,
-      "EXP_SCORE": 5.4728,
+      "EXP_SCORE": 5.4656,
       "ATLETA_ID": 96610
     },
     {
@@ -91,19 +91,8 @@
       "NOME": "Josué",
       "CLUBE": "CFC",
       "PRECO": 6.44,
-      "EXP_SCORE": 4.8702,
+      "EXP_SCORE": 4.8657,
       "ATLETA_ID": 84626
-    },
-    {
-      "RODADA": 21,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 14.46,
-      "EXP_SCORE": 8.0719,
-      "ATLETA_ID": 143193
     },
     {
       "RODADA": 21,
@@ -113,7 +102,7 @@
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 16.36,
-      "EXP_SCORE": 7.7657,
+      "EXP_SCORE": 7.7568,
       "ATLETA_ID": 94583
     },
     {
@@ -124,8 +113,19 @@
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 11.84,
-      "EXP_SCORE": 7.3991,
+      "EXP_SCORE": 7.3905,
       "ATLETA_ID": 98873
+    },
+    {
+      "RODADA": 21,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 14.46,
+      "EXP_SCORE": 7.008,
+      "ATLETA_ID": 143193
     },
     {
       "RODADA": 21,
@@ -135,7 +135,7 @@
       "NOME": "Rafael Guanaes",
       "CLUBE": "MIR",
       "PRECO": 7.24,
-      "EXP_SCORE": 3.812,
+      "EXP_SCORE": 3.8069,
       "ATLETA_ID": 104027
     },
     {
@@ -146,7 +146,7 @@
       "NOME": "Fábio",
       "CLUBE": "FLU",
       "PRECO": 9.47,
-      "EXP_SCORE": 3.5199,
+      "EXP_SCORE": 3.5155,
       "ATLETA_ID": 37656
     },
     {
@@ -157,7 +157,7 @@
       "NOME": "Marcelinho",
       "CLUBE": "REM",
       "PRECO": 6.62,
-      "EXP_SCORE": 4.4831,
+      "EXP_SCORE": 4.4784,
       "ATLETA_ID": 97795
     },
     {
@@ -168,7 +168,7 @@
       "NOME": "Thiago Santos",
       "CLUBE": "CFC",
       "PRECO": 5.12,
-      "EXP_SCORE": 3.6471,
+      "EXP_SCORE": 3.6407,
       "ATLETA_ID": 78855
     },
     {
@@ -179,7 +179,7 @@
       "NOME": "Denilson",
       "CLUBE": "MIR",
       "PRECO": 4.94,
-      "EXP_SCORE": 2.9616,
+      "EXP_SCORE": 2.9576,
       "ATLETA_ID": 115986
     },
     {
@@ -187,11 +187,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Renê",
-      "CLUBE": "VIT",
-      "PRECO": 9.22,
-      "EXP_SCORE": 6.2304,
-      "ATLETA_ID": 130209
+      "NOME": "Breno Lopes",
+      "CLUBE": "CFC",
+      "PRECO": 9.07,
+      "EXP_SCORE": 6.4242,
+      "ATLETA_ID": 93988
     }
   ]
 }
