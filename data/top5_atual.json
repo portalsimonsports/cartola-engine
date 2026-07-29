@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 21,
-  "atualizado_em": "2026-07-29T06:30:18.688Z",
+  "atualizado_em": "2026-07-29T06:35:18.378Z",
   "dados": [
     {
       "RODADA": 21,
@@ -14,16 +14,6 @@
       "EXP_SCORE": 3.7961,
       "FACTOR": 1.0848400344332856,
       "ATLETA_ID": 104118
-    },
-    {
-      "RODADA": 21,
-      "POS": "GOL",
-      "NOME": "Fábio",
-      "CLUBE": "FLU",
-      "PRECO": 9.47,
-      "EXP_SCORE": 3.5199,
-      "FACTOR": 1.1677245337159257,
-      "ATLETA_ID": 37656
     },
     {
       "RODADA": 21,
@@ -44,6 +34,16 @@
       "EXP_SCORE": 3.2772,
       "FACTOR": 0.9751346915351505,
       "ATLETA_ID": 99552
+    },
+    {
+      "RODADA": 21,
+      "POS": "GOL",
+      "NOME": "Fábio",
+      "CLUBE": "FLU",
+      "PRECO": 9.47,
+      "EXP_SCORE": 3.1679,
+      "FACTOR": 1.1677245337159257,
+      "ATLETA_ID": 37656
     },
     {
       "RODADA": 21,
@@ -171,7 +171,7 @@
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 15.25,
-      "EXP_SCORE": 5.4728,
+      "EXP_SCORE": 6.2937,
       "FACTOR": 0.9514088568486097,
       "ATLETA_ID": 96610
     },
@@ -188,22 +188,22 @@
     {
       "RODADA": 21,
       "POS": "MEI",
+      "NOME": "Garro",
+      "CLUBE": "COR",
+      "PRECO": 10.36,
+      "EXP_SCORE": 4.6789,
+      "FACTOR": 1.0343930792996912,
+      "ATLETA_ID": 117632
+    },
+    {
+      "RODADA": 21,
+      "POS": "MEI",
       "NOME": "Lucho Acosta",
       "CLUBE": "FLU",
       "PRECO": 10.46,
       "EXP_SCORE": 4.4851,
       "FACTOR": 1.0874190613505959,
       "ATLETA_ID": 89837
-    },
-    {
-      "RODADA": 21,
-      "POS": "MEI",
-      "NOME": "André",
-      "CLUBE": "COR",
-      "PRECO": 6.91,
-      "EXP_SCORE": 4.4141,
-      "FACTOR": 1.0343930792996912,
-      "ATLETA_ID": 145744
     },
     {
       "RODADA": 21,
