@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 21,
-  "atualizado_em": "2026-07-29T06:00:08.257Z",
+  "atualizado_em": "2026-07-29T06:05:31.324Z",
   "dados": [
     {
       "RODADA": 21,
@@ -68,16 +68,6 @@
     {
       "RODADA": 21,
       "POS": "LAT",
-      "NOME": "Renê",
-      "CLUBE": "FLU",
-      "PRECO": 9.53,
-      "EXP_SCORE": 4.5255,
-      "FACTOR": 1.1677245337159257,
-      "ATLETA_ID": 78445
-    },
-    {
-      "RODADA": 21,
-      "POS": "LAT",
       "NOME": "Marcelinho",
       "CLUBE": "REM",
       "PRECO": 6.62,
@@ -104,6 +94,16 @@
       "EXP_SCORE": 4.4542,
       "FACTOR": 1.086506054519369,
       "ATLETA_ID": 110426
+    },
+    {
+      "RODADA": 21,
+      "POS": "LAT",
+      "NOME": "Renê",
+      "CLUBE": "FLU",
+      "PRECO": 9.53,
+      "EXP_SCORE": 4.0729,
+      "FACTOR": 1.1677245337159257,
+      "ATLETA_ID": 78445
     },
     {
       "RODADA": 21,
@@ -138,22 +138,22 @@
     {
       "RODADA": 21,
       "POS": "ZAG",
-      "NOME": "Thiago Santos",
-      "CLUBE": "CFC",
-      "PRECO": 5.12,
-      "EXP_SCORE": 3.6471,
-      "FACTOR": 1.1132549325681493,
-      "ATLETA_ID": 78855
-    },
-    {
-      "RODADA": 21,
-      "POS": "ZAG",
       "NOME": "Gustavo Henrique",
       "CLUBE": "COR",
       "PRECO": 8.41,
       "EXP_SCORE": 3.4535,
       "FACTOR": 1.0775280573888093,
       "ATLETA_ID": 78248
+    },
+    {
+      "RODADA": 21,
+      "POS": "ZAG",
+      "NOME": "Gustavo Gómez",
+      "CLUBE": "PAL",
+      "PRECO": 10.18,
+      "EXP_SCORE": 3.3752,
+      "FACTOR": 0.9118113285509326,
+      "ATLETA_ID": 71684
     },
     {
       "RODADA": 21,
@@ -208,16 +208,6 @@
     {
       "RODADA": 21,
       "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 14.46,
-      "EXP_SCORE": 8.0719,
-      "FACTOR": 0.9243512579079005,
-      "ATLETA_ID": 143193
-    },
-    {
-      "RODADA": 21,
-      "POS": "ATA",
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 16.36,
@@ -234,6 +224,16 @@
       "EXP_SCORE": 7.3991,
       "FACTOR": 0.9692963071943504,
       "ATLETA_ID": 98873
+    },
+    {
+      "RODADA": 21,
+      "POS": "ATA",
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 14.46,
+      "EXP_SCORE": 7.019,
+      "FACTOR": 0.9243512579079005,
+      "ATLETA_ID": 143193
     },
     {
       "RODADA": 21,
