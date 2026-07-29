@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 21,
-  "atualizado_em": "2026-07-29T19:14:47.640Z",
+  "atualizado_em": "2026-07-29T19:25:14.799Z",
   "dados": [
     {
       "RODADA": 21,
@@ -158,6 +158,16 @@
     {
       "RODADA": 21,
       "POS": "MEI",
+      "NOME": "Arias",
+      "CLUBE": "PAL",
+      "PRECO": 16.58,
+      "EXP_SCORE": 6.5882,
+      "FACTOR": 0.9128636619634811,
+      "ATLETA_ID": 99815
+    },
+    {
+      "RODADA": 21,
+      "POS": "MEI",
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 15.25,
@@ -168,21 +178,11 @@
     {
       "RODADA": 21,
       "POS": "MEI",
-      "NOME": "Arias",
-      "CLUBE": "PAL",
-      "PRECO": 16.58,
-      "EXP_SCORE": 5.7289,
-      "FACTOR": 0.9128636619634811,
-      "ATLETA_ID": 99815
-    },
-    {
-      "RODADA": 21,
-      "POS": "MEI",
       "NOME": "Josué",
       "CLUBE": "CFC",
       "PRECO": 6.44,
       "EXP_SCORE": 4.8657,
-      "FACTOR": 1.132403177614418,
+      "FACTOR": 1.1324031776144179,
       "ATLETA_ID": 84626
     },
     {
@@ -242,7 +242,7 @@
       "CLUBE": "CFC",
       "PRECO": 9.07,
       "EXP_SCORE": 6.4242,
-      "FACTOR": 1.132403177614418,
+      "FACTOR": 1.1324031776144179,
       "ATLETA_ID": 93988
     },
     {
@@ -302,7 +302,7 @@
       "CLUBE": "CFC",
       "PRECO": 8.11,
       "EXP_SCORE": 5.1854,
-      "FACTOR": 1.1009475337917953,
+      "FACTOR": 1.100947533791795,
       "ATLETA_ID": 126977
     }
   ]
