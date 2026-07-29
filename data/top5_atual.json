@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 21,
-  "atualizado_em": "2026-07-29T04:59:58.597Z",
+  "atualizado_em": "2026-07-29T05:05:15.633Z",
   "dados": [
     {
       "RODADA": 21,
@@ -208,16 +208,6 @@
     {
       "RODADA": 21,
       "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 14.46,
-      "EXP_SCORE": 8.0719,
-      "FACTOR": 0.9243512579079005,
-      "ATLETA_ID": 143193
-    },
-    {
-      "RODADA": 21,
-      "POS": "ATA",
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 16.36,
@@ -234,6 +224,16 @@
       "EXP_SCORE": 7.3991,
       "FACTOR": 0.9692963071943504,
       "ATLETA_ID": 98873
+    },
+    {
+      "RODADA": 21,
+      "POS": "ATA",
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 14.46,
+      "EXP_SCORE": 7.019,
+      "FACTOR": 0.9243512579079005,
+      "ATLETA_ID": 143193
     },
     {
       "RODADA": 21,
@@ -288,22 +288,22 @@
     {
       "RODADA": 21,
       "POS": "TEC",
+      "NOME": "Fernando Diniz",
+      "CLUBE": "COR",
+      "PRECO": 8.99,
+      "EXP_SCORE": 5.3147,
+      "FACTOR": 1.005659938208033,
+      "ATLETA_ID": 72391
+    },
+    {
+      "RODADA": 21,
+      "POS": "TEC",
       "NOME": "Fernando Seabra",
       "CLUBE": "CFC",
       "PRECO": 8.11,
       "EXP_SCORE": 5.1902,
       "FACTOR": 1.1019590113285274,
       "ATLETA_ID": 126977
-    },
-    {
-      "RODADA": 21,
-      "POS": "TEC",
-      "NOME": "Léo Condé",
-      "CLUBE": "REM",
-      "PRECO": 8.76,
-      "EXP_SCORE": 4.9947,
-      "FACTOR": 1.0424139179049579,
-      "ATLETA_ID": 37457
     }
   ]
 }
