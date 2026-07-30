@@ -1,0 +1,194 @@
+{
+  "versao": "cartola_dialogo_tecnico_v2_2026_07_30",
+  "status": "PILOTO_PARA_APROVACAO",
+  "publicacao_automatica": false,
+  "rodada": 21,
+  "arquivo": "output/piloto_analise_tecnica_dialogada_rodada_21_v2.mp4",
+  "duracao_segundos": 299.242,
+  "moeda_falada": "cartoletas",
+  "vozes": [
+    "pt-BR-FranciscaNeural",
+    "pt-BR-AntonioNeural",
+    "pt-BR-ThalitaMultilingualNeural"
+  ],
+  "fontes": [
+    "data/publicacoes_atuais/time_economico_rodada_21.json",
+    "data/publicacoes_atuais/time_intermediario_rodada_21.json",
+    "data/publicacoes_atuais/time_pontuacao_rodada_21.json",
+    "data/publicacoes_atuais/top5_rodada_21.json",
+    "Planilha Cartola — Sugestões PRO: ENGINE_METRICAS",
+    "Planilha Cartola — Sugestões PRO: HIST_JOGADORES"
+  ],
+  "timeline": [
+    {
+      "indice": 1,
+      "inicio": 0.0,
+      "fim": 17.828,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Olá! Esta é a segunda versão do piloto de análise da rodada 21. Agora nós não vamos apenas repetir a escalação. Vamos explicar os critérios: forma recente, expectativa do modelo, contexto do confronto, custo em cartoletas e nível de risco.",
+      "texto_tela": "Agora: dados, contexto e risco — não apenas leitura de nomes.",
+      "visual": "metodologia"
+    },
+    {
+      "indice": 2,
+      "inicio": 17.828,
+      "fim": 32.704,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Francisca, começo pelo Econômico. Ele custou 98,59 cartoletas. Mas gastar menos não basta. Onde o modelo realmente encontrou valor nessa montagem?",
+      "texto_tela": "Time Econômico: 98,59 cartoletas • eficiência por preço.",
+      "visual": "economico"
+    },
+    {
+      "indice": 3,
+      "inicio": 32.704,
+      "fim": 48.756,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "O valor aparece na combinação. O time preserva Arias e Viveros, que carregam teto, mas reduz o custo em peças de sustentação. Jacy é um bom exemplo: não precisa fazer uma pontuação extraordinária para justificar o investimento.",
+      "texto_tela": "Jacy: peça de sustentação, preço baixo e menor oscilação.",
+      "visual": "jacy"
+    },
+    {
+      "indice": 4,
+      "inicio": 48.756,
+      "fim": 62.24,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Jacy custa 6,18 cartoletas, tem média de 4,28 nas últimas cinco e média esperada de 5,51. Francisca, isso significa segurança?",
+      "texto_tela": "Últimas 5: 4,28 • esperada: 5,51.",
+      "visual": "jacy"
+    },
+    {
+      "indice": 5,
+      "inicio": 62.24,
+      "fim": 81.532,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Não significa garantia. A probabilidade de superar seis pontos é de 41,2%, e a de superar oito cai para 12,8%. A leitura correta é estabilidade relativa e boa relação entre preço e expectativa, não promessa de pontuação alta.",
+      "texto_tela": "Boa relação custo-expectativa; teto mais limitado.",
+      "visual": "jacy"
+    },
+    {
+      "indice": 6,
+      "inicio": 81.532,
+      "fim": 94.272,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "E Arias aparece nos três modelos e lidera o meio-campo do Top 5. Antônio, por que pagar tantas cartoletas se o próprio contexto mostra diferença relevante entre desempenho em casa e fora?",
+      "texto_tela": "Arias: consenso dos modelos, mas com risco contextual.",
+      "visual": "arias"
+    },
+    {
+      "indice": 7,
+      "inicio": 94.272,
+      "fim": 118.34,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Porque a forma recente sustenta o teto. Arias tem média de 7,94 nas últimas cinco, expectativa de 7,30 e probabilidade de 71,8% para oito ou mais. Mas a média fora de casa cai para 4,10, e a variância é alta. É potencial com risco, não confronto fácil.",
+      "texto_tela": "Prob. 8+: 71,8% • média fora: 4,10.",
+      "visual": "arias"
+    },
+    {
+      "indice": 8,
+      "inicio": 118.34,
+      "fim": 133.912,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Do Econômico para o Intermediário, o orçamento sobe para 129,94 cartoletas. O investimento adicional entra principalmente no meio e no ataque. Thalita, isso melhora o piso ou aumenta o teto?",
+      "texto_tela": "Intermediário: 129,94 cartoletas • reforço no meio e ataque.",
+      "visual": "intermediario"
+    },
+    {
+      "indice": 9,
+      "inicio": 133.912,
+      "fim": 154.476,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Aumenta sobretudo o teto. Matheus Pereira chega com média de 8,68 nas últimas cinco, mas a expectativa do recorte é 6,59, e a probabilidade de oito ou mais é 39,9%. O modelo respeita a capacidade recente, mas sinaliza que o contexto reduz a segurança.",
+      "texto_tela": "Matheus Pereira: boa forma recente, contexto menos estável.",
+      "visual": "matheus"
+    },
+    {
+      "indice": 10,
+      "inicio": 154.476,
+      "fim": 172.184,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "No ataque, Pedro e Samuel Lino aparecem juntos. À primeira vista parece apenas uma dobradinha de nomes caros. Mas os dados mostram outra coisa: os dois têm médias recentes acima de dez pontos e probabilidades elevadas para superar oito.",
+      "texto_tela": "Pedro e Samuel Lino: teto elevado e volatilidade elevada.",
+      "visual": "ataque"
+    },
+    {
+      "indice": 11,
+      "inicio": 172.184,
+      "fim": 189.652,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Pedro tem média recente de 10,36 e probabilidade de 91,1% para oito ou mais. Samuel Lino tem 11,42 de média recente e 90,1% para oito ou mais. Onde está o alerta, Antônio?",
+      "texto_tela": "Os números de teto são fortes; o risco não pode ser omitido.",
+      "visual": "ataque"
+    },
+    {
+      "indice": 12,
+      "inicio": 189.652,
+      "fim": 210.984,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Na variância. Pedro está em 63,54 e Samuel em 64,86. Isso significa oscilação relevante. O Time para Pontuar, que custa 135,96 cartoletas, aceita essa volatilidade para buscar uma pontuação mais alta.",
+      "texto_tela": "Time para Pontuar: 135,96 cartoletas • maior exposição ao teto.",
+      "visual": "pontuacao"
+    },
+    {
+      "indice": 13,
+      "inicio": 210.984,
+      "fim": 221.492,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "E chegamos ao capitão. Viveros foi repetido nos três times. Francisca, essa decisão veio apenas porque ele liderou o Top 5 de atacantes?",
+      "texto_tela": "Viveros: capitão por teto estatístico, não por popularidade.",
+      "visual": "viveros"
+    },
+    {
+      "indice": 14,
+      "inicio": 221.492,
+      "fim": 243.256,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Não. Ele tem média de 11,56 nas últimas cinco, Poisson de 9,02 pontos e probabilidade de 98,0% para oito ou mais. Ao mesmo tempo, o fator do confronto ficou abaixo de um. Portanto, a escolha do capitão vem do teto do atleta, não da ideia de partida fácil.",
+      "texto_tela": "Últimas 5: 11,56 • prob. 8+: 98,0%.",
+      "visual": "viveros"
+    },
+    {
+      "indice": 15,
+      "inicio": 243.256,
+      "fim": 269.22,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "No Top 5, o objetivo não é ler trinta nomes. É oferecer alternativas por perfil. Lucas Arcanjo, por exemplo, custa 9,95 cartoletas. A probabilidade de seis ou mais é 93,7%, mas o Poisson é conservador. Quando os modelos divergem, a análise deve mostrar a dúvida, não escondê-la.",
+      "texto_tela": "Top 5: alternativas por perfil, preço, teto e risco.",
+      "visual": "top5"
+    },
+    {
+      "indice": 16,
+      "inicio": 269.22,
+      "fim": 283.76,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Esse é o ponto que fortalece a análise: um atleta pode ter forma recente excelente e ainda carregar risco; outro pode ter teto menor, mas entregar melhor eficiência por cartoleta. A escolha depende da proposta de cada time.",
+      "texto_tela": "Teto, estabilidade e eficiência são critérios diferentes.",
+      "visual": "comparativo"
+    },
+    {
+      "indice": 17,
+      "inicio": 283.76,
+      "fim": 299.14,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Este foi o piloto técnico da rodada 21. Os dados ajudam a explicar por que cada atleta entrou, mas não garantem resultado. Portal SimonSports: análise, transparência e entretenimento. Até a próxima rodada!",
+      "texto_tela": "Análise informativa: dados apoiam decisões, mas não garantem pontuação.",
+      "visual": "final"
+    }
+  ]
+}
