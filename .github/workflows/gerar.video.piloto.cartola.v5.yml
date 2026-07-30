@@ -1,0 +1,179 @@
+name: Gerar Vídeo Piloto Cartola V5
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - app/gerar_video_dialogo_cartola_v1.py
+      - app/gerar_video_dialogo_cartola_v3.py
+      - app/gerar_video_dialogo_cartola_v4.py
+      - app/gerar_video_dialogo_cartola_v5.py
+      - data/analise_tecnica_rodada_21_v3.json
+      - .github/workflows/gerar.video.piloto.cartola.v5.yml
+  workflow_dispatch:
+    inputs:
+      rodada:
+        description: "Rodada do piloto V5"
+        required: false
+        default: "21"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gerar-video-piloto-cartola-v5
+  cancel-in-progress: false
+
+jobs:
+  gerar-piloto-v5:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependências
+        shell: bash
+        run: |
+          set -e
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg fonts-dejavu-core fonts-liberation
+          python -m pip install --upgrade pip
+          python -m pip install edge-tts Pillow
+
+      - name: Validar código e bases
+        shell: bash
+        run: |
+          set -e
+          python -m py_compile app/gerar_video_dialogo_cartola_v1.py
+          python -m py_compile app/gerar_video_dialogo_cartola_v3.py
+          python -m py_compile app/gerar_video_dialogo_cartola_v4.py
+          python -m py_compile app/gerar_video_dialogo_cartola_v5.py
+          test -s data/analise_tecnica_rodada_21_v3.json
+          test -s output/time_economico_rodada_21.png
+          test -s output/time_intermediario_rodada_21.png
+          test -s output/time_pontuacao_rodada_21.png
+          test -s output/top5_rodada_21.png
+
+      - name: Gerar MP4 V5
+        shell: bash
+        env:
+          RODADA_MANUAL: ${{ github.event.inputs.rodada }}
+        run: |
+          set -e
+          RODADA="${RODADA_MANUAL:-21}"
+          rm -f "output/piloto_analise_tecnica_rodada_${RODADA}_v5.mp4"
+          rm -f "output/piloto_analise_tecnica_rodada_${RODADA}_v5.json"
+          python app/gerar_video_dialogo_cartola_v5.py \
+            --rodada "$RODADA" \
+            --repo-root . \
+            --output "output/piloto_analise_tecnica_rodada_${RODADA}_v5.mp4"
+
+      - name: Validar conteúdo V5
+        shell: bash
+        run: |
+          set -e
+          VIDEO="$(find output -maxdepth 1 -type f -name 'piloto_analise_tecnica_rodada_*_v5.mp4' | head -n 1)"
+          MANIFESTO="${VIDEO%.mp4}.json"
+          test -n "$VIDEO" && test -s "$VIDEO"
+          test -s "$MANIFESTO"
+          DURACAO="$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$VIDEO")"
+
+          python - "$DURACAO" "$MANIFESTO" <<'PY'
+          import json
+          import sys
+          from pathlib import Path
+
+          duration = float(sys.argv[1])
+          manifest = json.loads(Path(sys.argv[2]).read_text(encoding="utf-8"))
+
+          if not 780 <= duration <= 1050:
+              raise SystemExit(f"Duração fora do intervalo técnico de 13 a 17,5 minutos: {duration:.2f}s")
+          if manifest.get("publicacao_automatica") is not False:
+              raise SystemExit("O piloto não pode ser publicado automaticamente.")
+          if manifest.get("titulo_visual") != "ANÁLISE":
+              raise SystemExit("Título visual incorreto.")
+          if manifest.get("palavra_dialogada_removida") is not True:
+              raise SystemExit("A palavra dialogada não foi removida.")
+          if manifest.get("layout_sem_sobreposicao") is not True:
+              raise SystemExit("O layout sem sobreposição não foi preservado.")
+          if manifest.get("debate_reforcado") is not True:
+              raise SystemExit("O debate reforçado não foi confirmado.")
+          if int(manifest.get("replicas_adicionais", 0)) < 7:
+              raise SystemExit("Quantidade insuficiente de réplicas adicionais.")
+          if manifest.get("jogos_analisados") != 6:
+              raise SystemExit("Os seis jogos precisam permanecer analisados.")
+          if manifest.get("jogadores_analisados") != 20:
+              raise SystemExit("Os vinte jogadores precisam permanecer analisados.")
+
+          timeline = manifest.get("timeline", [])
+          if len(timeline) < 55:
+              raise SystemExit(f"Interação insuficiente: {len(timeline)} falas.")
+          screen_text = " ".join(item.get("texto_tela", "") for item in timeline)
+          if "ANÁLISE DIALOGADA" in screen_text.upper():
+              raise SystemExit("A expressão Análise Dialogada ainda aparece no conteúdo visual.")
+          if any(len(item.get("texto_tela", "")) > 155 for item in timeline):
+              raise SystemExit("Texto visual acima do limite; risco de sobreposição.")
+
+          required = {
+              "pontos nos últimos cinco jogos",
+              "gols marcados e sofridos",
+              "probabilidades de pontuação",
+              "variância",
+              "índice de confiança",
+              "custo em cartoletas",
+          }
+          criteria = set(manifest.get("criterios_adicionais", []))
+          missing = sorted(required - criteria)
+          if missing:
+              raise SystemExit(f"Critérios adicionais ausentes: {missing}")
+
+          print(f"Piloto V5 validado: duração={duration:.2f}s; falas={len(timeline)}")
+          PY
+
+      - name: Salvar piloto V5 no repositório
+        shell: bash
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add output/piloto_analise_tecnica_rodada_*_v5.mp4
+          git add output/piloto_analise_tecnica_rodada_*_v5.json
+
+          if git diff --cached --quiet; then
+            echo "Piloto V5 já está atualizado."
+            exit 0
+          fi
+
+          git commit -m "Vídeo piloto V5: análise com debate reforçado"
+          git reset --hard HEAD
+          git clean -fd
+
+          enviado=0
+          for tentativa in 1 2 3 4 5; do
+            echo "Tentativa de push $tentativa/5"
+            git rebase --abort 2>/dev/null || true
+            git reset --hard HEAD
+            git clean -fd
+            git fetch origin main
+            if git rebase origin/main && git push origin HEAD:main; then
+              enviado=1
+              break
+            fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((tentativa * 4))
+          done
+
+          if [ "$enviado" -ne 1 ]; then
+            echo "Não foi possível publicar o piloto V5 após cinco tentativas."
+            exit 1
+          fi
