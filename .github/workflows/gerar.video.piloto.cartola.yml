@@ -1,4 +1,4 @@
-name: Gerar Vídeo Piloto Cartola
+name: Gerar Vídeo Piloto Cartola V2
 
 on:
   push:
@@ -6,11 +6,13 @@ on:
       - main
     paths:
       - app/gerar_video_dialogo_cartola_v1.py
+      - app/gerar_video_dialogo_cartola_v2.py
+      - data/analise_tecnica_rodada_21_v2.json
       - .github/workflows/gerar.video.piloto.cartola.yml
   workflow_dispatch:
     inputs:
       rodada:
-        description: "Rodada usada no piloto"
+        description: "Rodada usada no piloto técnico"
         required: false
         default: "21"
 
@@ -18,13 +20,13 @@ permissions:
   contents: write
 
 concurrency:
-  group: gerar-video-piloto-cartola
+  group: gerar-video-piloto-cartola-v2
   cancel-in-progress: false
 
 jobs:
-  gerar-piloto:
+  gerar-piloto-tecnico:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
 
     steps:
       - name: Checkout
@@ -47,12 +49,14 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install edge-tts Pillow
 
-      - name: Validar gerador
+      - name: Validar geradores, dados e imagens
         shell: bash
         run: |
           set -e
           python -m py_compile app/gerar_video_dialogo_cartola_v1.py
+          python -m py_compile app/gerar_video_dialogo_cartola_v2.py
           for arquivo in \
+            data/analise_tecnica_rodada_21_v2.json \
             data/publicacoes_atuais/time_economico_rodada_21.json \
             data/publicacoes_atuais/time_intermediario_rodada_21.json \
             data/publicacoes_atuais/time_pontuacao_rodada_21.json \
@@ -64,52 +68,85 @@ jobs:
               test -s "$arquivo" || { echo "Arquivo obrigatório ausente: $arquivo"; exit 1; }
           done
 
-      - name: Gerar MP4 piloto com Francisca, Antônio e Thalita
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          data = json.loads(Path("data/analise_tecnica_rodada_21_v2.json").read_text(encoding="utf-8"))
+          if data.get("moeda_falada") != "cartoletas":
+              raise SystemExit("A moeda falada precisa ser cartoletas.")
+          if data.get("publicacao_automatica") is not False:
+              raise SystemExit("O piloto não pode ser publicado automaticamente.")
+          print("Dados técnicos e regra de pronúncia validados.")
+          PY
+
+      - name: Gerar MP4 técnico com Francisca, Antônio e Thalita
         shell: bash
         env:
           RODADA_MANUAL: ${{ github.event.inputs.rodada }}
         run: |
           set -e
           RODADA="${RODADA_MANUAL:-21}"
-          python app/gerar_video_dialogo_cartola_v1.py \
+          rm -f "output/piloto_analise_tecnica_dialogada_rodada_${RODADA}_v2.mp4"
+          rm -f "output/piloto_analise_tecnica_dialogada_rodada_${RODADA}_v2.json"
+          python app/gerar_video_dialogo_cartola_v2.py \
             --rodada "$RODADA" \
             --repo-root . \
-            --output "output/piloto_analise_dialogada_times_top5_rodada_${RODADA}.mp4"
+            --output "output/piloto_analise_tecnica_dialogada_rodada_${RODADA}_v2.mp4"
 
-      - name: Validar vídeo piloto
+      - name: Validar vídeo e manifesto
         shell: bash
         run: |
           set -e
-          VIDEO="$(find output -maxdepth 1 -type f -name 'piloto_analise_dialogada_times_top5_rodada_*.mp4' | head -n 1)"
+          VIDEO="$(find output -maxdepth 1 -type f -name 'piloto_analise_tecnica_dialogada_rodada_*_v2.mp4' | head -n 1)"
+          MANIFESTO="${VIDEO%.mp4}.json"
           test -n "$VIDEO" && test -s "$VIDEO"
+          test -s "$MANIFESTO"
           DURACAO="$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$VIDEO")"
           TAMANHO="$(stat -c%s "$VIDEO")"
-          python - "$DURACAO" "$TAMANHO" <<'PY'
+          python - "$DURACAO" "$TAMANHO" "$MANIFESTO" <<'PY'
+          import json
           import sys
+          from pathlib import Path
+
           duration = float(sys.argv[1])
           size = int(sys.argv[2])
-          if duration < 60 or duration > 240:
+          manifest = json.loads(Path(sys.argv[3]).read_text(encoding="utf-8"))
+          if duration < 120 or duration > 420:
               raise SystemExit(f"Duração fora do esperado: {duration:.2f}s")
-          if size < 500_000 or size > 95_000_000:
+          if size < 500_000 or size > 120_000_000:
               raise SystemExit(f"Tamanho fora do esperado: {size} bytes")
-          print(f"Piloto validado: duração={duration:.2f}s; tamanho={size/1024/1024:.2f} MiB")
+          if manifest.get("moeda_falada") != "cartoletas":
+              raise SystemExit("Manifesto sem confirmação de cartoletas.")
+          texts = " ".join(item.get("texto_falado", "") for item in manifest.get("timeline", []))
+          forbidden = ("dólar canadense", "dólares canadenses", "C$")
+          if any(item.lower() in texts.lower() for item in forbidden):
+              raise SystemExit("Pronúncia monetária incorreta detectada no roteiro.")
+          expected_voices = {
+              "pt-BR-FranciscaNeural",
+              "pt-BR-AntonioNeural",
+              "pt-BR-ThalitaMultilingualNeural",
+          }
+          if set(manifest.get("vozes", [])) != expected_voices:
+              raise SystemExit("As três vozes aprovadas não foram preservadas.")
+          print(f"Piloto V2 validado: duração={duration:.2f}s; tamanho={size/1024/1024:.2f} MiB")
           PY
 
-      - name: Salvar piloto no repositório
+      - name: Salvar piloto V2 no repositório
         shell: bash
         run: |
           set -e
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add output/piloto_analise_dialogada_times_top5_rodada_*.mp4
-          git add output/piloto_analise_dialogada_times_top5_rodada_*.json
+          git add output/piloto_analise_tecnica_dialogada_rodada_*_v2.mp4
+          git add output/piloto_analise_tecnica_dialogada_rodada_*_v2.json
 
           if git diff --cached --quiet; then
-            echo "Piloto já está atualizado."
+            echo "Piloto V2 já está atualizado."
             exit 0
           fi
 
-          git commit -m "Vídeo piloto: análise dialogada dos times e Top 5 da Rodada 21"
+          git commit -m "Vídeo piloto V2: análise técnica dialogada da Rodada 21"
           git reset --hard HEAD
           git clean -fd
 
@@ -128,6 +165,6 @@ jobs:
           done
 
           if [ "$enviado" -ne 1 ]; then
-            echo "Não foi possível publicar o piloto após cinco tentativas."
+            echo "Não foi possível publicar o piloto V2 após cinco tentativas."
             exit 1
           fi
