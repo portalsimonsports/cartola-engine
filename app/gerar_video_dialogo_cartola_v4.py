@@ -15,8 +15,7 @@ VERSION = "cartola_dialogo_tecnico_v4_2026_07_30"
 WIDTH = base.WIDTH
 HEIGHT = base.HEIGHT
 
-# Guarda a função original ANTES de qualquer substituição temporária.
-# Sem esta referência, build_dialogue_v4 chamaria a si própria depois do monkey patch.
+# Guarda a função original antes da substituição temporária feita durante a geração.
 V3_BUILD_DIALOGUE_ORIGINAL = v3.build_dialogue
 
 
@@ -39,10 +38,10 @@ def create_frame_v4(
 ) -> None:
     """
     Layout V4:
-    - visual reduzido e encerrado antes da área de fala;
+    - visual encerrado antes da área de fala;
     - faixa física de separação entre card e legenda;
     - texto de tela limitado a poucas linhas;
-    - nenhuma fala integral/teleprompter é desenhada.
+    - nenhuma fala integral ou teleprompter é desenhada.
     """
     if visual_path is None:
         foreground = base.make_collage(collage_paths)
@@ -71,7 +70,7 @@ def create_frame_v4(
     x = (WIDTH - foreground.width) // 2
     frame.alpha_composite(foreground.convert("RGBA"), (x, 92))
 
-    # Barreira visual: o card termina acima desta faixa e nunca invade a legenda.
+    # O card termina acima desta barreira e nunca invade a legenda.
     v3.rounded(draw, (28, 824, 692, 850), 12, (2, 12, 27, 255), base.LINE, 1)
 
     accent = base.SPEAKER_COLORS[speaker]
@@ -118,17 +117,31 @@ def create_frame_v4(
 
 
 def build_dialogue_v4(round_value: int, data: dict) -> List[v3.Segment]:
-    """Aproveita a análise V3 e torna as transições mais dialogadas."""
-    # Usa obrigatoriamente a referência original preservada no carregamento do módulo.
+    """Remove a introdução explicativa longa e começa diretamente na rodada."""
     original = V3_BUILD_DIALOGUE_ORIGINAL(round_value, data)
-    result: List[v3.Segment] = []
 
-    for index, segment in enumerate(original):
+    # Os três primeiros segmentos da V3 explicavam o formato durante quase 50 segundos.
+    # A V4 usa apenas uma abertura curta e entra imediatamente nos confrontos.
+    source = original[3:]
+    result: List[v3.Segment] = [
+        v3.Segment(
+            speaker="FRANCISCA",
+            voice=base.VOICE_FRANCISCA,
+            text=v3.sanitize_tts(
+                f"Começa agora a análise da rodada {round_value}. Vamos direto aos jogos, "
+                "ao momento das equipes e às escolhas que podem fazer diferença na escalação."
+            ),
+            visual="rodada",
+            onscreen="Rodada, momento dos times e escolhas recomendadas.",
+        )
+    ]
+
+    for index, segment in enumerate(source):
         text = segment.text
         onscreen = concise_onscreen(segment.onscreen)
 
         if segment.visual.startswith("jogo_") and index > 0:
-            previous = original[index - 1]
+            previous = source[index - 1]
             if previous.visual == segment.visual and "Qual é a leitura" in previous.text:
                 text = (
                     "Boa pergunta. "
@@ -164,7 +177,6 @@ def generate(round_value: int, repo_root: Path, output_path: Path) -> Path:
         v3.build_dialogue = build_dialogue_v4
         return v3.generate(round_value, repo_root, output_path)
     finally:
-        # Restaura o módulo para evitar efeitos colaterais em testes ou outras execuções.
         v3.VERSION = original_version
         v3.create_frame_v3 = original_frame
         v3.build_dialogue = original_dialogue
