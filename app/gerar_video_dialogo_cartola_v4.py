@@ -15,6 +15,10 @@ VERSION = "cartola_dialogo_tecnico_v4_2026_07_30"
 WIDTH = base.WIDTH
 HEIGHT = base.HEIGHT
 
+# Guarda a função original ANTES de qualquer substituição temporária.
+# Sem esta referência, build_dialogue_v4 chamaria a si própria depois do monkey patch.
+V3_BUILD_DIALOGUE_ORIGINAL = v3.build_dialogue
+
 
 def concise_onscreen(text: str, limit: int = 150) -> str:
     """Mantém a legenda visual curta e impede texto de roteiro no vídeo."""
@@ -95,7 +99,6 @@ def create_frame_v4(
         draw.text((52, y), line, font=text_font, fill=base.WHITE)
         y += line_height
 
-    # Aviso explícito de que a fala completa existe apenas no áudio.
     draw.text(
         (52, 1192),
         "RESUMO VISUAL • A FALA COMPLETA PERMANECE SOMENTE NO ÁUDIO",
@@ -116,23 +119,23 @@ def create_frame_v4(
 
 def build_dialogue_v4(round_value: int, data: dict) -> List[v3.Segment]:
     """Aproveita a análise V3 e torna as transições mais dialogadas."""
-    original = v3.build_dialogue(round_value, data)
+    # Usa obrigatoriamente a referência original preservada no carregamento do módulo.
+    original = V3_BUILD_DIALOGUE_ORIGINAL(round_value, data)
     result: List[v3.Segment] = []
 
     for index, segment in enumerate(original):
         text = segment.text
         onscreen = concise_onscreen(segment.onscreen)
 
-        # Torna respostas longas mais conversacionais sem aumentar demais a duração.
         if segment.visual.startswith("jogo_") and index > 0:
             previous = original[index - 1]
             if previous.visual == segment.visual and "Qual é a leitura" in previous.text:
                 text = (
-                    "Boa pergunta. " + text +
-                    " E você concorda que, neste confronto, o risco precisa pesar tanto quanto o potencial?"
+                    "Boa pergunta. "
+                    + text
+                    + " E você concorda que, neste confronto, o risco precisa pesar tanto quanto o potencial?"
                 )
 
-        # Nas análises individuais, reforça o vínculo com o comentário anterior.
         if segment.visual in data.get("jogadores", {}) and not text.startswith("Sobre"):
             text = "Retomando o ponto anterior: " + text
 
@@ -150,11 +153,21 @@ def build_dialogue_v4(round_value: int, data: dict) -> List[v3.Segment]:
 
 
 def generate(round_value: int, repo_root: Path, output_path: Path) -> Path:
-    # Sobrescreve somente os dois pontos necessários e reutiliza todo o motor V3.
-    v3.VERSION = VERSION
-    v3.create_frame_v3 = create_frame_v4
-    v3.build_dialogue = build_dialogue_v4
-    return v3.generate(round_value, repo_root, output_path)
+    """Executa o motor V3 com os componentes visuais e dialogais da V4."""
+    original_version = v3.VERSION
+    original_frame = v3.create_frame_v3
+    original_dialogue = v3.build_dialogue
+
+    try:
+        v3.VERSION = VERSION
+        v3.create_frame_v3 = create_frame_v4
+        v3.build_dialogue = build_dialogue_v4
+        return v3.generate(round_value, repo_root, output_path)
+    finally:
+        # Restaura o módulo para evitar efeitos colaterais em testes ou outras execuções.
+        v3.VERSION = original_version
+        v3.create_frame_v3 = original_frame
+        v3.build_dialogue = original_dialogue
 
 
 def main() -> None:
