@@ -1,0 +1,681 @@
+{
+  "versao": "cartola_analise_tecnica_v5_2026_07_30_debate_reforcado",
+  "status": "PILOTO_PARA_APROVACAO",
+  "publicacao_automatica": false,
+  "rodada": 21,
+  "arquivo": "output/piloto_analise_tecnica_rodada_21_v5.mp4",
+  "duracao_segundos": 1028.943,
+  "duracao_alvo_minutos": [
+    10,
+    15
+  ],
+  "moeda_falada": "cartoletas",
+  "layout_sem_sobreposicao": true,
+  "jogos_analisados": 6,
+  "jogadores_analisados": 20,
+  "vozes": [
+    "pt-BR-FranciscaNeural",
+    "pt-BR-AntonioNeural",
+    "pt-BR-ThalitaMultilingualNeural"
+  ],
+  "fontes": [
+    "data/publicacoes_atuais/time_economico_rodada_21.json",
+    "data/publicacoes_atuais/time_intermediario_rodada_21.json",
+    "data/publicacoes_atuais/time_pontuacao_rodada_21.json",
+    "data/publicacoes_atuais/top5_rodada_21.json",
+    "data/analise_tecnica_rodada_21_v2.json",
+    "GE/Cartola: seis jogos válidos da Rodada 21",
+    "Cartola FC Brasil: posições dos clubes antes da rodada",
+    "Prováveis do Cartola: recorte de cinco jogos recentes"
+  ],
+  "timeline": [
+    {
+      "indice": 1,
+      "inicio": 0.0,
+      "fim": 15.716,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Está no ar a análise completa da rodada 21. Seis jogos, três modelos e vinte jogadores sob avaliação. Hoje ninguém vai se esconder atrás de uma lista de nomes: cada escolha terá de sobreviver aos números e ao contraditório.",
+      "texto_tela": "Seis jogos, três modelos e vinte escolhas sob análise.",
+      "visual": "rodada"
+    },
+    {
+      "indice": 2,
+      "inicio": 15.716,
+      "fim": 29.944,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "E eu já deixo o aviso: probabilidade alta, isoladamente, não me convence. Vou cobrar forma recente, força do adversário, mando de campo, custo e coerência entre os indicadores.",
+      "texto_tela": "Probabilidade sem contexto não basta.",
+      "visual": "rodada"
+    },
+    {
+      "indice": 3,
+      "inicio": 29.944,
+      "fim": 42.396,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Perfeito. E quando a escalação concentrar atletas de um mesmo confronto, eu vou questionar o risco de correlação. O objetivo é mostrar onde o modelo é forte e onde ele pode estar se expondo demais.",
+      "texto_tela": "Teto, risco, correlação e custo serão confrontados.",
+      "visual": "rodada"
+    },
+    {
+      "indice": 4,
+      "inicio": 42.396,
+      "fim": 55.232,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Então vamos começar pelos jogos. A tabela mostra a fotografia do campeonato; os últimos cinco resultados mostram a direção do momento. Quando os dois sinais discordarem, haverá debate.",
+      "texto_tela": "Tabela e momento recente: sinais que podem divergir.",
+      "visual": "rodada"
+    },
+    {
+      "indice": 5,
+      "inicio": 55.232,
+      "fim": 68.788,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Antônio, Mirassol e Remo estão separados por apenas uma posição. Mas a sequência recente conta uma história mais clara. O que pesa mais aqui: o mando do Mirassol ou a recuperação do Remo?",
+      "texto_tela": "Antônio, Mirassol e Remo estão separados por apenas uma posição. Mas a sequência recente conta uma história mais clara. O que pesa mais aqui: o…",
+      "visual": "jogo_0"
+    },
+    {
+      "indice": 6,
+      "inicio": 68.788,
+      "fim": 87.6,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "O Mirassol venceu Fluminense e Grêmio, perdeu para Atlético Mineiro e Athletico e empatou com o Vasco. Já o Remo ganhou três das últimas cinco, contra Chapecoense, São Paulo e Vitória. Para mim, o momento do Remo equilibra um jogo em que o mando favorece o Mirassol.",
+      "texto_tela": "O Mirassol venceu Fluminense e Grêmio, perdeu para Atlético Mineiro e Athletico e empatou com o Vasco. Já o Remo ganhou três das últimas cinco…",
+      "visual": "jogo_0"
+    },
+    {
+      "indice": 7,
+      "inicio": 87.6,
+      "fim": 99.812,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Então eu evitaria chamar qualquer lado de seguro. Marcelo Rangel pode pontuar por defesas, mas empilhar muitos atletas do Remo aumenta demais a dependência de um único confronto.",
+      "texto_tela": "Então eu evitaria chamar qualquer lado de seguro. Marcelo Rangel pode pontuar por defesas, mas empilhar muitos atletas do Remo aumenta demais a…",
+      "visual": "jogo_0"
+    },
+    {
+      "indice": 8,
+      "inicio": 99.812,
+      "fim": 117.016,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Eu acho essa cautela excessiva. O Remo fez 9 pontos e marcou 7 gols nas últimas cinco; o Mirassol fez 7 pontos e marcou 5. Se o preço dos atletas do Remo é menor, por que o Econômico não deveria explorar essa diferença?",
+      "texto_tela": "Debate: Remo 9 pontos no recorte; Mirassol 7.",
+      "visual": "jogo_0"
+    },
+    {
+      "indice": 9,
+      "inicio": 117.016,
+      "fim": 129.588,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Thalita, o Internacional perdeu quatro das últimas cinco, enquanto o Flamengo venceu duas, empatou duas e perdeu uma. Você escalaria Pedro e Samuel Lino juntos fora de casa?",
+      "texto_tela": "Thalita, o Internacional perdeu quatro das últimas cinco, enquanto o Flamengo venceu duas, empatou duas e perdeu uma. Você escalaria Pedro e Samuel…",
+      "visual": "jogo_1"
+    },
+    {
+      "indice": 10,
+      "inicio": 129.588,
+      "fim": 146.624,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Em uma escalação agressiva, sim. O Flamengo marcou sete gols nas duas vitórias recentes, contra Coritiba e Chapecoense. Mas usar os dois atacantes concentra o risco: se o jogo travar no Beira-Rio, duas vagas ofensivas ficam comprometidas.",
+      "texto_tela": "Em uma escalação agressiva, sim. O Flamengo marcou sete gols nas duas vitórias recentes, contra Coritiba e Chapecoense. Mas usar os dois atacantes…",
+      "visual": "jogo_1"
+    },
+    {
+      "indice": 11,
+      "inicio": 146.624,
+      "fim": 161.956,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Concordo. Para um time conservador, eu escolheria um dos dois. Samuel Lino custa menos; Pedro oferece maior referência de área. A decisão depende do orçamento e do perfil da escalação.",
+      "texto_tela": "Concordo. Para um time conservador, eu escolheria um dos dois. Samuel Lino custa menos; Pedro oferece maior referência de área. A decisão depende do…",
+      "visual": "jogo_1"
+    },
+    {
+      "indice": 12,
+      "inicio": 161.956,
+      "fim": 179.64,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Eu seria ainda mais firme: o Flamengo marcou 9 e sofreu 5 gols no recorte, enquanto o Internacional sofreu 10. Os números justificam exposição ofensiva, mas não obrigam a dobradinha. Um atacante preserva o cenário favorável e reduz a correlação.",
+      "texto_tela": "Flamengo: 9 gols pró; Internacional: 10 sofridos.",
+      "visual": "jogo_1"
+    },
+    {
+      "indice": 13,
+      "inicio": 179.64,
+      "fim": 195.716,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Francisca, o Palmeiras vinha de três vitórias seguidas, mas perdeu para o Atlético Mineiro na rodada anterior. O Vitória alternou vitória e derrota nas cinco últimas. Essa derrota recente reduz a confiança em Arias?",
+      "texto_tela": "Francisca, o Palmeiras vinha de três vitórias seguidas, mas perdeu para o Atlético Mineiro na rodada anterior. O Vitória alternou vitória e derrota…",
+      "visual": "jogo_2"
+    },
+    {
+      "indice": 14,
+      "inicio": 195.716,
+      "fim": 214.096,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Reduz um pouco, mas não elimina a indicação. O Palmeiras venceu Flamengo, Chapecoense e Coritiba nesse recorte. Arias continua apoiado pelo desempenho coletivo, enquanto Lucas Arcanjo é uma aposta oposta: pode fazer muitas defesas, mas corre risco alto de gols sofridos.",
+      "texto_tela": "Reduz um pouco, mas não elimina a indicação. O Palmeiras venceu Flamengo, Chapecoense e Coritiba nesse recorte. Arias continua apoiado pelo…",
+      "visual": "jogo_2"
+    },
+    {
+      "indice": 15,
+      "inicio": 214.096,
+      "fim": 225.492,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Eu separaria bem os perfis: Arias busca teto e participação ofensiva; Lucas Arcanjo busca scouts de goleiro. Não são escolhas que dependem da mesma leitura do jogo.",
+      "texto_tela": "Eu separaria bem os perfis: Arias busca teto e participação ofensiva; Lucas Arcanjo busca scouts de goleiro. Não são escolhas que dependem da mesma…",
+      "visual": "jogo_2"
+    },
+    {
+      "indice": 16,
+      "inicio": 225.492,
+      "fim": 237.344,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Antônio, o Fluminense empatou três jogos seguidos, e o Bahia também empatou três das últimas cinco. Isso aponta para um duelo travado ou apenas mostra equipes difíceis de vencer?",
+      "texto_tela": "Antônio, o Fluminense empatou três jogos seguidos, e o Bahia também empatou três das últimas cinco. Isso aponta para um duelo travado ou apenas…",
+      "visual": "jogo_3"
+    },
+    {
+      "indice": 17,
+      "inicio": 237.344,
+      "fim": 258.34,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Vejo mais equilíbrio do que falta de qualidade. O Fluminense venceu o São Paulo e depois somou empates com Cruzeiro, Bragantino e Grêmio. O Bahia perdeu apenas para o Coritiba nesse período. Por isso, eu valorizaria atletas com scouts próprios em vez de depender de goleada ou saldo de gol.",
+      "texto_tela": "Vejo mais equilíbrio do que falta de qualidade. O Fluminense venceu o São Paulo e depois somou empates com Cruzeiro, Bragantino e Grêmio. O Bahia…",
+      "visual": "jogo_3"
+    },
+    {
+      "indice": 18,
+      "inicio": 258.34,
+      "fim": 268.464,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Nesse confronto, regularidade vale mais que favoritismo. É um jogo em que o jogador pode pontuar bem mesmo sem o clube dominar completamente.",
+      "texto_tela": "Nesse confronto, regularidade vale mais que favoritismo. É um jogo em que o jogador pode pontuar bem mesmo sem o clube dominar completamente.",
+      "visual": "jogo_3"
+    },
+    {
+      "indice": 19,
+      "inicio": 268.464,
+      "fim": 280.988,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Thalita, Corinthians e Athletico chegam em ótima fase: o Corinthians venceu três e empatou uma das últimas quatro; o Athletico venceu quatro seguidas. Quem oferece o melhor teto?",
+      "texto_tela": "Thalita, Corinthians e Athletico chegam em ótima fase: o Corinthians venceu três e empatou uma das últimas quatro; o Athletico venceu quatro…",
+      "visual": "jogo_4"
+    },
+    {
+      "indice": 20,
+      "inicio": 280.988,
+      "fim": 298.6,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "O Athletico tem a sequência mais forte, com vitórias sobre Remo, Mirassol, São Paulo e Internacional. Viveros ganha força por esse momento. Mas o Corinthians venceu Atlético Mineiro, Grêmio e Remo antes de empatar com o Bahia, então não vejo um visitante confortável.",
+      "texto_tela": "O Athletico tem a sequência mais forte, com vitórias sobre Remo, Mirassol, São Paulo e Internacional. Viveros ganha força por esse momento. Mas o…",
+      "visual": "jogo_4"
+    },
+    {
+      "indice": 21,
+      "inicio": 298.6,
+      "fim": 313.86,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "É justamente o jogo para aceitar divergência. Viveros tem teto alto; Matheuzinho e Gabriel Paulista contam com mando e fase competitiva. Eu não concentraria defesa e ataque dos dois lados no mesmo time.",
+      "texto_tela": "É justamente o jogo para aceitar divergência. Viveros tem teto alto; Matheuzinho e Gabriel Paulista contam com mando e fase competitiva. Eu não…",
+      "visual": "jogo_4"
+    },
+    {
+      "indice": 22,
+      "inicio": 313.86,
+      "fim": 331.112,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Mas aí eu vou contestar: o Athletico somou 13 pontos, marcou 8 e sofreu apenas 3 gols. O Corinthians fez 10 pontos. Se Viveros é capitão dos três modelos, o sistema já escolheu um lado para buscar teto, mesmo que a fala tente parecer neutra.",
+      "texto_tela": "Athletico: 13 pontos e saldo +5 no recorte.",
+      "visual": "jogo_4"
+    },
+    {
+      "indice": 23,
+      "inicio": 331.112,
+      "fim": 344.98,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Francisca, o Coritiba venceu duas, perdeu duas e empatou uma; o Cruzeiro venceu duas, empatou duas e perdeu a última. Em um jogo tão parelho, onde está o diferencial?",
+      "texto_tela": "Francisca, o Coritiba venceu duas, perdeu duas e empatou uma; o Cruzeiro venceu duas, empatou duas e perdeu a última. Em um jogo tão parelho, onde…",
+      "visual": "jogo_5"
+    },
+    {
+      "indice": 24,
+      "inicio": 344.98,
+      "fim": 363.552,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "O diferencial está no tipo de scout. O Coritiba venceu Santos e Bahia, depois sofreu contra Flamengo e Palmeiras. O Cruzeiro pontuou fora contra Palmeiras e Internacional e tem Matheus Pereira como principal criador. Eu confiaria mais em scouts individuais do que no resultado final.",
+      "texto_tela": "O diferencial está no tipo de scout. O Coritiba venceu Santos e Bahia, depois sofreu contra Flamengo e Palmeiras. O Cruzeiro pontuou fora contra…",
+      "visual": "jogo_5"
+    },
+    {
+      "indice": 25,
+      "inicio": 363.552,
+      "fim": 374.732,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Por isso Thiago Santos e Jacy entram pelo custo, enquanto Matheus Pereira entra por criação e teto. São escolhas com objetivos diferentes dentro da mesma partida.",
+      "texto_tela": "Por isso Thiago Santos e Jacy entram pelo custo, enquanto Matheus Pereira entra por criação e teto. São escolhas com objetivos diferentes dentro da…",
+      "visual": "jogo_5"
+    },
+    {
+      "indice": 26,
+      "inicio": 374.732,
+      "fim": 390.808,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Francisca, vamos ao confronto entre Coritiba e Cruzeiro. A tabela mostra 10º contra 11º, e os recortes recentes são recorte indisponível e V E V E V. Qual é a leitura correta para o Cartola?",
+      "texto_tela": "CFC x CRU • tabela e forma recente.",
+      "visual": "jogo_5"
+    },
+    {
+      "indice": 27,
+      "inicio": 390.808,
+      "fim": 410.532,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Décimo contra décimo primeiro sugere equilíbrio. O Econômico usa a defesa do Coritiba para controlar o custo, enquanto Matheus Pereira representa a capacidade criativa do Cruzeiro. O ponto central é usar o contexto para explicar a escolha, sem transformar posição de tabela em promessa de scout.",
+      "texto_tela": "Décimo contra décimo primeiro sugere equilíbrio. O Econômico usa a defesa do Coritiba para controlar o custo, enquanto Matheus Pereira representa a…",
+      "visual": "jogo_5"
+    },
+    {
+      "indice": 28,
+      "inicio": 410.532,
+      "fim": 423.704,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Agora vamos registrar a fotografia mais recente dos três modelos. Atenção: esses números são a última parcial disponível no recorte do piloto, e não o fechamento definitivo da rodada.",
+      "texto_tela": "Última pontuação disponível, claramente identificada como parcial.",
+      "visual": "pontuacoes"
+    },
+    {
+      "indice": 29,
+      "inicio": 423.704,
+      "fim": 438.556,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "O Econômico aparece com 48,46 pontos e participação de 9/12. O dado ajuda a avaliar a evolução, mas não pode ser comparado como resultado final enquanto ainda houver atletas por jogar.",
+      "texto_tela": "Econômico: 48,46 pts • 9/12.",
+      "visual": "pontuacoes"
+    },
+    {
+      "indice": 30,
+      "inicio": 438.556,
+      "fim": 449.88,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Agora vamos aos jogadores. Em cada posição, a análise considera preço, últimos jogos, adversário e o papel daquele atleta dentro do modelo.",
+      "texto_tela": "Jogadores: preço, fase, confronto e função no modelo.",
+      "visual": "Marcelo Rangel"
+    },
+    {
+      "indice": 31,
+      "inicio": 449.88,
+      "fim": 463.916,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Sobre Marcelo Rangel: Goleiro barato em confronto entre décimo oitavo e décimo nono. Pode pontuar por defesas, mas a concentração de atletas do Remo torna o modelo sensível ao mesmo jogo.",
+      "texto_tela": "Marcelo Rangel: GOL • REM • 7,06 cartoletas.",
+      "visual": "Marcelo Rangel"
+    },
+    {
+      "indice": 32,
+      "inicio": 463.916,
+      "fim": 489.568,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Sobre Lucas Arcanjo: Enfrentar o líder pode elevar o volume de defesas, mas também aumenta o risco de gols sofridos. É escolha baseada na possibilidade de scouts de goleiro, não em saldo de gol provável. A média das últimas cinco é 4,64 pontos, a probabilidade de superar oito é 83,2%, e o índice de confiança está em 34,2%.",
+      "texto_tela": "Lucas Arcanjo: GOL • VIT • 9,95 cartoletas.",
+      "visual": "Lucas Arcanjo"
+    },
+    {
+      "indice": 33,
+      "inicio": 489.568,
+      "fim": 509.388,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Eu concordo com a lógica das defesas, mas não compraria a ideia de segurança. A probabilidade de seis ou mais aparece em 93,7%, enquanto o Poisson de pontos fica em apenas 1,67. Essa divergência é exatamente o risco que precisa aparecer na análise.",
+      "texto_tela": "Eu concordo com a lógica das defesas, mas não compraria a ideia de segurança. A probabilidade de seis ou mais aparece em 93,7%, enquanto o Poisson…",
+      "visual": "Lucas Arcanjo"
+    },
+    {
+      "indice": 34,
+      "inicio": 509.388,
+      "fim": 522.032,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Sobre Marcelinho: Lateral presente nos três modelos. O preço baixo facilita a montagem; a escolha depende de scouts laterais e de uma atuação competitiva do Remo fora de casa.",
+      "texto_tela": "Marcelinho: LAT • REM • 6,62 cartoletas.",
+      "visual": "Marcelinho"
+    },
+    {
+      "indice": 35,
+      "inicio": 522.032,
+      "fim": 535.924,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Sobre Mayk: Compõe a dupla de laterais do Remo no Econômico. A escalação aumenta a correlação defensiva e ofensiva do mesmo confronto, melhorando o teto conjunto e também o risco conjunto.",
+      "texto_tela": "Mayk: LAT • REM • 7,63 cartoletas.",
+      "visual": "Mayk"
+    },
+    {
+      "indice": 36,
+      "inicio": 535.924,
+      "fim": 547.944,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Sobre Matheuzinho: Lateral de um Corinthians em boa sequência recente e jogando em casa. O contraponto é enfrentar o Athletico, terceiro colocado e com quatro vitórias no recorte.",
+      "texto_tela": "Matheuzinho: LAT • COR • 10,05 cartoletas.",
+      "visual": "Matheuzinho"
+    },
+    {
+      "indice": 37,
+      "inicio": 547.944,
+      "fim": 568.748,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Aqui eu discordo de uma leitura defensiva simples. O mando ajuda o Corinthians, mas o Athletico somou treze pontos nos últimos cinco jogos. Matheuzinho tem média recente de 0,00; portanto, a indicação deve vir pelos scouts laterais, não por saldo de gol presumido.",
+      "texto_tela": "Aqui eu discordo de uma leitura defensiva simples. O mando ajuda o Corinthians, mas o Athletico somou treze pontos nos últimos cinco jogos…",
+      "visual": "Matheuzinho"
+    },
+    {
+      "indice": 38,
+      "inicio": 568.748,
+      "fim": 581.776,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Sobre Thiago Santos: Zagueiro de preço baixo usado para preservar patrimônio. Coritiba e Cruzeiro estão lado a lado na tabela; o modelo aceita teto menor para equilibrar o orçamento.",
+      "texto_tela": "Thiago Santos: ZAG • CFC • 5,12 cartoletas.",
+      "visual": "Thiago Santos"
+    },
+    {
+      "indice": 39,
+      "inicio": 581.776,
+      "fim": 607.5,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Sobre Jacy: Peça de sustentação pelo baixo custo e menor oscilação. Coritiba e Cruzeiro estão próximos na tabela; o preço ajuda a liberar cartoletas sem exigir uma pontuação explosiva. A média das últimas cinco é 4,28 pontos, a probabilidade de superar oito é 12,8%, e o índice de confiança está em 73,8%.",
+      "texto_tela": "Jacy: ZAG • CFC • 6,18 cartoletas.",
+      "visual": "Jacy"
+    },
+    {
+      "indice": 40,
+      "inicio": 607.5,
+      "fim": 619.952,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Sobre Gabriel Paulista: Defensor mais caro que as opções econômicas. O mando do Corinthians ajuda, mas o ataque do Athletico em boa fase torna o saldo de gol uma hipótese, não uma premissa.",
+      "texto_tela": "Gabriel Paulista: ZAG • COR • 8,97 cartoletas.",
+      "visual": "Gabriel Paulista"
+    },
+    {
+      "indice": 41,
+      "inicio": 619.952,
+      "fim": 645.916,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Sobre Arias: Consenso dos três modelos. O líder enfrenta o Vitória fora de casa; forma e teto justificam a escolha, mas a variância e o mando adversário impedem tratá-lo como opção segura. A média das últimas cinco é 7,94 pontos, a probabilidade de superar oito é 71,8%, e o índice de confiança está em 14,6%.",
+      "texto_tela": "Arias: MEI • PAL • 16,58 cartoletas.",
+      "visual": "Arias"
+    },
+    {
+      "indice": 42,
+      "inicio": 645.916,
+      "fim": 665.472,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Arias é consenso, mas custa 16,58 cartoletas, tem variância de 53,30 e índice de confiança de apenas 14,6%. A probabilidade de oito ou mais, em 71,8%, sustenta o teto; não elimina o risco do investimento.",
+      "texto_tela": "Arias é consenso, mas custa 16,58 cartoletas, tem variância de 53,30 e índice de confiança de apenas 14,6%. A probabilidade de oito ou mais, em…",
+      "visual": "Arias"
+    },
+    {
+      "indice": 43,
+      "inicio": 665.472,
+      "fim": 684.524,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "E é justamente aí que eu discordo. Pagar 16,58 cartoletas em um atleta com confiança de 14,6% é aceitar muita oscilação. Francisca, a probabilidade de 71,8% para oito ou mais compensa esse preço?",
+      "texto_tela": "Arias: teto forte, preço alto e confiança baixa.",
+      "visual": "Arias"
+    },
+    {
+      "indice": 44,
+      "inicio": 684.524,
+      "fim": 703.192,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Compensa apenas para quem busca teto. A média recente de 7,94 e a liderança do Palmeiras sustentam a escolha, mas eu não chamaria Arias de peça de segurança. Em um modelo conservador, esse preço precisa ser comparado com duas opções mais baratas da posição.",
+      "texto_tela": "Arias compensa pelo teto; não deve ser vendido como segurança.",
+      "visual": "Arias"
+    },
+    {
+      "indice": 45,
+      "inicio": 703.192,
+      "fim": 716.124,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Sobre Patrick: Meia barato em uma montagem muito concentrada no Remo. Serve como ponte de orçamento, porém a eficiência do Econômico depende de o clube produzir coletivamente.",
+      "texto_tela": "Patrick: MEI • REM • 5,83 cartoletas.",
+      "visual": "Patrick"
+    },
+    {
+      "indice": 46,
+      "inicio": 716.124,
+      "fim": 728.72,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Sobre Zé Ricardo: É uma das menores despesas do meio-campo. A escolha libera cartoletas para Arias e Viveros, mas oferece teto individual mais limitado e alta dependência do confronto.",
+      "texto_tela": "Zé Ricardo: MEI • REM • 4,92 cartoletas.",
+      "visual": "Zé Ricardo"
+    },
+    {
+      "indice": 47,
+      "inicio": 728.72,
+      "fim": 754.492,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Sobre Matheus Pereira: A média recente sustenta a escolha, mas o recorte fora de casa reduz a segurança. Em jogo equilibrado contra o Coritiba, a justificativa está na criação e nos scouts próprios. A média das últimas cinco é 8,68 pontos, a probabilidade de superar oito é 39,9%, e o índice de confiança está em 27,7%.",
+      "texto_tela": "Matheus Pereira: MEI • CRU • 15,25 cartoletas.",
+      "visual": "Matheus Pereira"
+    },
+    {
+      "indice": 48,
+      "inicio": 754.492,
+      "fim": 767.88,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Sobre Josué: Meia de custo moderado num jogo equilibrado. Entra como peça de sustentação para permitir investimentos maiores em Matheus Pereira, Pedro, Samuel Lino e Viveros.",
+      "texto_tela": "Josué: MEI • CFC • 6,44 cartoletas.",
+      "visual": "Josué"
+    },
+    {
+      "indice": 49,
+      "inicio": 767.88,
+      "fim": 794.516,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Sobre Viveros: Capitão dos três modelos pelo teto recente e pela força probabilística. O Athletico chega em ótima sequência, mas atua fora contra um Corinthians competitivo; é escolha de teto, não de tranquilidade. A média das últimas cinco é 11,56 pontos, a probabilidade de superar oito é 98,0%, e o índice de confiança está em 27,4%.",
+      "texto_tela": "Viveros: ATA • CAP • 14,46 cartoletas.",
+      "visual": "Viveros"
+    },
+    {
+      "indice": 50,
+      "inicio": 794.516,
+      "fim": 810.976,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Viveros tem média de 11,56 nas últimas cinco, mas média esperada de 6,42 e fator de confronto de 0,924. É capitão pelo teto probabilístico; não porque o jogo seja confortável.",
+      "texto_tela": "Viveros tem média de 11,56 nas últimas cinco, mas média esperada de 6,42 e fator de confronto de 0,924. É capitão pelo teto probabilístico; não…",
+      "visual": "Viveros"
+    },
+    {
+      "indice": 51,
+      "inicio": 810.976,
+      "fim": 827.772,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Eu ainda quero uma resposta mais direta: média recente de 11,56, média esperada de 6,42 e confiança de 27,4%. Esses indicadores não contam a mesma história. Por que ele recebe a braçadeira?",
+      "texto_tela": "Capitão sob contestação: forma, expectativa e confiança divergem.",
+      "visual": "Viveros"
+    },
+    {
+      "indice": 52,
+      "inicio": 827.772,
+      "fim": 846.488,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Porque o capitão é uma escolha de teto. A probabilidade de oito ou mais chega a 98,0%, e o Athletico fez treze pontos no recorte. Mas eu concordo com a ressalva: quem busca estabilidade não deve interpretar essa braçadeira como garantia.",
+      "texto_tela": "Braçadeira pelo teto: probabilidade 8+ de 98,0%.",
+      "visual": "Viveros"
+    },
+    {
+      "indice": 53,
+      "inicio": 846.488,
+      "fim": 859.708,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Sobre Jajá: Atacante de preço acessível contra um adversário próximo na tabela. O potencial existe, mas a presença de vários atletas do Remo amplifica a correlação do time Econômico.",
+      "texto_tela": "Jajá: ATA • REM • 7,66 cartoletas.",
+      "visual": "Jajá"
+    },
+    {
+      "indice": 54,
+      "inicio": 859.708,
+      "fim": 872.256,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Sobre Alef Manga: É a opção mais cara do bloco ofensivo do Remo. O modelo busca participação direta em gol, mas precisa reconhecer que o Mirassol tem mando de campo.",
+      "texto_tela": "Alef Manga: ATA • REM • 9,29 cartoletas.",
+      "visual": "Alef Manga"
+    },
+    {
+      "indice": 55,
+      "inicio": 872.256,
+      "fim": 896.924,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Sobre Pedro: A diferença de tabela favorece o Flamengo, segundo colocado, diante do Internacional em décimo sexto. A variância elevada mostra que o investimento busca teto e aceita oscilação. A média das últimas cinco é 10,36 pontos, a probabilidade de superar oito é 91,1%, e o índice de confiança está em 16,1%.",
+      "texto_tela": "Pedro: ATA • FLA • 16,36 cartoletas.",
+      "visual": "Pedro"
+    },
+    {
+      "indice": 56,
+      "inicio": 896.924,
+      "fim": 923.176,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Sobre Samuel Lino: Combina preço menor que Pedro com teto recente semelhante. A dupla aumenta a exposição ao Flamengo: se o ataque produzir, potencializa o time; se não produzir, concentra a perda. A média das últimas cinco é 11,42 pontos, a probabilidade de superar oito é 90,1%, e o índice de confiança está em 17,3%.",
+      "texto_tela": "Samuel Lino: ATA • FLA • 11,84 cartoletas.",
+      "visual": "Samuel Lino"
+    },
+    {
+      "indice": 57,
+      "inicio": 923.176,
+      "fim": 944.388,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Entre Samuel Lino e Pedro, o preço pesa: 11,84 contra 16,36 cartoletas. Mas a variância também é alta nos dois, 64,86 e 63,54. Usar a dupla é uma decisão agressiva e precisa ser assumida como tal.",
+      "texto_tela": "Entre Samuel Lino e Pedro, o preço pesa: 11,84 contra 16,36 cartoletas. Mas a variância também é alta nos dois, 64,86 e 63,54. Usar a dupla é uma…",
+      "visual": "Samuel Lino"
+    },
+    {
+      "indice": 58,
+      "inicio": 944.388,
+      "fim": 959.216,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Sobre Rafael Guanaes: Treinador escolhido em confronto direto da parte baixa. A pontuação depende do resultado coletivo do Mirassol; por isso a análise precisa separar custo baixo de favoritismo real.",
+      "texto_tela": "Rafael Guanaes: TEC • MIR • 7,24 cartoletas.",
+      "visual": "Rafael Guanaes"
+    },
+    {
+      "indice": 59,
+      "inicio": 959.216,
+      "fim": 971.908,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Sobre Leonardo Jardim: Treinador mais caro, associado ao segundo colocado contra o décimo sexto. A escolha traduz confiança coletiva no Flamengo, embora o jogo seja no Beira-Rio.",
+      "texto_tela": "Leonardo Jardim: TEC • FLA • 13,26 cartoletas.",
+      "visual": "Leonardo Jardim"
+    },
+    {
+      "indice": 60,
+      "inicio": 971.908,
+      "fim": 987.648,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Depois de analisar cada titular, o Top 5 deve funcionar como comparação, não como uma lista para ser lida. Ele apresenta alternativas por posição para quem deseja trocar preço, teto ou exposição a determinado confronto.",
+      "texto_tela": "Top 5: alternativas por perfil, e não simples leitura de nomes.",
+      "visual": "top5"
+    },
+    {
+      "indice": 61,
+      "inicio": 987.648,
+      "fim": 1002.044,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "A pergunta técnica é sempre a mesma: a substituição melhora a eficiência por cartoleta, aumenta o teto ou apenas troca um risco por outro? Sem essa resposta, citar o ranking não acrescenta análise.",
+      "texto_tela": "Comparar eficiência, teto, estabilidade e correlação.",
+      "visual": "top5"
+    },
+    {
+      "indice": 62,
+      "inicio": 1002.044,
+      "fim": 1018.744,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Esta foi a análise técnica ampliada da rodada 21. A seleção é explicada por preço, desempenho recente, contexto coletivo, risco e proposta de cada modelo. Nada disso garante pontuação, mas torna a decisão mais transparente.",
+      "texto_tela": "Análise informativa: critério e transparência, sem garantia.",
+      "visual": "final"
+    },
+    {
+      "indice": 63,
+      "inicio": 1018.744,
+      "fim": 1028.652,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Portal SimonSports: dados para entender a escalação, diálogo para confrontar as escolhas e entretenimento responsável para acompanhar a rodada.",
+      "texto_tela": "Portal SimonSports • Cartola • Dados • Análise.",
+      "visual": "final"
+    }
+  ],
+  "titulo_visual": "ANÁLISE",
+  "palavra_dialogada_removida": true,
+  "abertura_reforcada": true,
+  "debate_reforcado": true,
+  "replicas_adicionais": 7,
+  "criterios_adicionais": [
+    "pontos nos últimos cinco jogos",
+    "gols marcados e sofridos",
+    "saldo recente",
+    "posição no campeonato",
+    "mando de campo",
+    "probabilidades de pontuação",
+    "média recente e média esperada",
+    "variância",
+    "índice de confiança",
+    "custo em cartoletas",
+    "correlação entre atletas do mesmo confronto"
+  ]
+}
