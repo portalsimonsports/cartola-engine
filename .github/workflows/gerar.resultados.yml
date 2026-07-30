@@ -54,6 +54,7 @@ jobs:
           python -m py_compile app/render_live_cards_v4.py
           python -m py_compile app/render_live_aux_v1.py
           python -m py_compile app/render_live_cobertura_v2.py
+          python -m py_compile app/render_live_cobertura_v3.py
           python -m py_compile app/render_live_cards_v5.py
           python -m py_compile app/render_notice_cards.py
           python -m py_compile app/render_aprovadas_v1.py
@@ -183,8 +184,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # Versiona apenas cards e arquivos permanentes. Payload recebido,
-          # manifesto e credencial de serviço permanecem temporários.
           git add \
             data/publicacoes_atuais/ \
             output/*.png 2>/dev/null || true
@@ -195,9 +194,6 @@ jobs:
           fi
 
           git commit -m "Telegram: imagens aprovadas do cronograma completo"
-
-          # Remove alterações temporárias antes do rebase para impedir o erro
-          # 'cannot pull with rebase: unstaged changes'.
           git reset --hard HEAD
           git clean -fd
 
