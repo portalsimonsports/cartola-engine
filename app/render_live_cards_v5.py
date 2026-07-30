@@ -5,7 +5,7 @@ from typing import Any, Dict
 import render_live_cards_v2 as v2
 import render_live_cards_v4 as v4
 from render_live_aux_v1 import is_live_aux_event, render_live_aux
-from render_live_cobertura_v2 import (
+from render_live_cobertura_v3 import (
     is_coverage_event,
     render_coverage_event,
     render_match_cards,
