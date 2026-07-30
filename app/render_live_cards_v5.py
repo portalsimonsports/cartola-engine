@@ -5,12 +5,13 @@ from typing import Any, Dict, List
 
 import render_live_cards_v2 as v2
 import render_live_cards_v4 as v4
+from render_live_aux_v1 import is_live_aux_event, render_live_aux
 from render_telegram_cards import RenderOutput
 
 
 # Mantém a assinatura visual esperada pelo workflow atual, mas troca
 # definitivamente o modo de múltiplos jogos: 1 partida = 1 card completo.
-VISUAL_VERSION = "live_cards_v4_premium_square_2026_07_26"
+VISUAL_VERSION = "live_cards_v5_auxiliares_2026_07_29"
 RESULT_SIZE_V5 = v4.RESULT_SIZE_V4
 
 
@@ -61,11 +62,16 @@ def render_results_v5(data: Dict[str, Any], output_dir: str) -> RenderOutput:
 
 
 def render_live_publication_v5(data: Dict[str, Any], output_dir: str = "output") -> RenderOutput:
-    kind = v2._kind_text(data)
+    # Eventos auxiliares devem ser roteados antes de qualquer verificação pela
+    # palavra "live". Isso impede Mitos e Zicas, resumo e pontuação dos times de
+    # serem tratados incorretamente como placar sem partidas.
+    if is_live_aux_event(data):
+        return render_live_aux(data, output_dir)
 
-    if v2._extract_matches(data) or any(
-        token in kind for token in ("placar", "resultado", "partida", "live")
-    ):
+    kind = v2._kind_text(data)
+    matches = v2._extract_matches(data)
+
+    if matches or any(token in kind for token in ("placar", "resultado", "partida", "evento_partida")):
         return render_results_v5(data, output_dir)
 
     # Demais cards continuam usando o pipeline visual já aprovado.
