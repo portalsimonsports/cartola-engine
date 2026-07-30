@@ -52,6 +52,7 @@ jobs:
           python -m py_compile app/render_live_cards_v2.py
           python -m py_compile app/render_live_cards_v3.py
           python -m py_compile app/render_live_cards_v4.py
+          python -m py_compile app/render_live_aux_v1.py
           python -m py_compile app/render_live_cards_v5.py
           python -m py_compile app/render_notice_cards.py
           python -m py_compile app/render_aprovadas_v1.py
