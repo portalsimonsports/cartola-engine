@@ -1,0 +1,111 @@
+name: Gerar Vídeo Piloto Cartola V4
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - app/gerar_video_dialogo_cartola_v1.py
+      - app/gerar_video_dialogo_cartola_v3.py
+      - app/gerar_video_dialogo_cartola_v4.py
+      - data/analise_tecnica_rodada_21_v3.json
+      - .github/workflows/gerar.video.piloto.cartola.v4.yml
+  workflow_dispatch:
+    inputs:
+      rodada:
+        description: "Rodada do piloto V4"
+        required: false
+        default: "21"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gerar-video-piloto-cartola-v4
+  cancel-in-progress: false
+
+jobs:
+  gerar-piloto-v4:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependências
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg fonts-dejavu-core fonts-liberation
+          python -m pip install --upgrade pip
+          python -m pip install edge-tts Pillow
+
+      - name: Validar arquivos
+        run: |
+          python -m py_compile app/gerar_video_dialogo_cartola_v1.py
+          python -m py_compile app/gerar_video_dialogo_cartola_v3.py
+          python -m py_compile app/gerar_video_dialogo_cartola_v4.py
+          test -s data/analise_tecnica_rodada_21_v3.json
+          test -s output/time_economico_rodada_21.png
+          test -s output/time_intermediario_rodada_21.png
+          test -s output/time_pontuacao_rodada_21.png
+          test -s output/top5_rodada_21.png
+
+      - name: Gerar MP4 V4
+        env:
+          RODADA_MANUAL: ${{ github.event.inputs.rodada }}
+        run: |
+          RODADA="${RODADA_MANUAL:-21}"
+          rm -f "output/piloto_analise_tecnica_dialogada_rodada_${RODADA}_v4.mp4"
+          rm -f "output/piloto_analise_tecnica_dialogada_rodada_${RODADA}_v4.json"
+          python app/gerar_video_dialogo_cartola_v4.py \
+            --rodada "$RODADA" \
+            --repo-root . \
+            --output "output/piloto_analise_tecnica_dialogada_rodada_${RODADA}_v4.mp4"
+
+      - name: Validar vídeo V4
+        run: |
+          VIDEO="$(find output -maxdepth 1 -type f -name 'piloto_analise_tecnica_dialogada_rodada_*_v4.mp4' | head -n 1)"
+          MANIFESTO="${VIDEO%.mp4}.json"
+          test -s "$VIDEO"
+          test -s "$MANIFESTO"
+          DURACAO="$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$VIDEO")"
+          python - "$DURACAO" "$MANIFESTO" <<'PY'
+          import json, sys
+          from pathlib import Path
+          duration = float(sys.argv[1])
+          manifest = json.loads(Path(sys.argv[2]).read_text(encoding="utf-8"))
+          if not 600 <= duration <= 960:
+              raise SystemExit(f"Duração fora de 10 a 16 minutos: {duration:.2f}s")
+          if manifest.get("layout_sem_sobreposicao") is not True:
+              raise SystemExit("Layout sem sobreposição não confirmado.")
+          if manifest.get("jogos_analisados") != 6:
+              raise SystemExit("Os seis jogos não foram analisados.")
+          if manifest.get("jogadores_analisados") != 20:
+              raise SystemExit("Os vinte jogadores não foram analisados.")
+          timeline = manifest.get("timeline", [])
+          if len(timeline) < 45:
+              raise SystemExit("Interação insuficiente.")
+          for item in timeline:
+              if len(item.get("texto_tela", "")) > 155:
+                  raise SystemExit("Texto visual longo demais; risco de sobreposição.")
+          print(f"V4 validado: {duration:.2f}s, {len(timeline)} falas.")
+          PY
+
+      - name: Salvar piloto V4
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add output/piloto_analise_tecnica_dialogada_rodada_*_v4.mp4
+          git add output/piloto_analise_tecnica_dialogada_rodada_*_v4.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Vídeo piloto V4: layout separado e diálogo reforçado"
+          git pull --rebase origin main
+          git push origin HEAD:main
