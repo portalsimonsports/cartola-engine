@@ -1,0 +1,67 @@
+name: Extrair áudio do piloto Cartola
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/extrair-audio-piloto-cartola.yml'
+      - 'output/piloto_analise_dialogada_times_top5_rodada_21.mp4'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: extrair-audio-piloto-cartola
+  cancel-in-progress: false
+
+jobs:
+  extrair-audio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Validar vídeo piloto
+        shell: bash
+        run: |
+          set -e
+          test -s output/piloto_analise_dialogada_times_top5_rodada_21.mp4
+          ffprobe -v error \
+            -show_entries format=duration \
+            -of default=noprint_wrappers=1:nokey=1 \
+            output/piloto_analise_dialogada_times_top5_rodada_21.mp4
+
+      - name: Extrair MP3
+        shell: bash
+        run: |
+          set -e
+          ffmpeg -y \
+            -i output/piloto_analise_dialogada_times_top5_rodada_21.mp4 \
+            -vn \
+            -codec:a libmp3lame \
+            -b:a 192k \
+            -ar 44100 \
+            -ac 2 \
+            output/piloto_audio_dialogado_times_top5_rodada_21.mp3
+          test -s output/piloto_audio_dialogado_times_top5_rodada_21.mp3
+
+      - name: Publicar áudio no repositório
+        shell: bash
+        run: |
+          set -e
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add output/piloto_audio_dialogado_times_top5_rodada_21.mp3
+          if git diff --cached --quiet; then
+            echo 'Áudio já está atualizado.'
+            exit 0
+          fi
+          git commit -m 'Piloto Cartola: adicionar áudio dialogado da rodada 21'
+          git push origin HEAD:main
