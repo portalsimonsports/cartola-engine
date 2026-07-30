@@ -1,0 +1,132 @@
+{
+  "versao": "cartola_dialogo_v1_2026_07_30",
+  "rodada": 21,
+  "duracao_segundos": 203.771,
+  "resolucao": "720x1280",
+  "vozes": [
+    "pt-BR-FranciscaNeural",
+    "pt-BR-AntonioNeural",
+    "pt-BR-ThalitaMultilingualNeural"
+  ],
+  "publicacao_automatica": false,
+  "status": "PILOTO_PARA_APROVACAO",
+  "segmentos": [
+    {
+      "indice": 1,
+      "inicio": 0.0,
+      "fim": 13.532,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto": "Olá! Está começando o piloto de análise dialogada do Portal SimonSports para a rodada 21 do Cartola. Antônio e Thalita, vamos comparar os três modelos e o Top 5 confirmado?",
+      "visual": "intro"
+    },
+    {
+      "indice": 2,
+      "inicio": 13.532,
+      "fim": 34.384,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto": "Vamos sim, Francisca. Começando pelo Time Econômico. O Econômico usa 4-3-3, custa C$ 98,59 e tem Viveros como capitão. A proposta é controlar o patrimônio sem abrir mão de nomes com presença nos principais setores.",
+      "visual": "economico"
+    },
+    {
+      "indice": 3,
+      "inicio": 34.384,
+      "fim": 52.452,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto": "Antônio, há uma característica que chama atenção nessa escalação: São 7 titulares do REM. Isso aumenta a correlação: se o clube for bem, o time ganha força; se não for, o impacto também fica concentrado. Essa leitura é importante para quem acompanha o risco do modelo.",
+      "visual": "economico"
+    },
+    {
+      "indice": 4,
+      "inicio": 52.452,
+      "fim": 63.848,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto": "Então o Econômico não significa apenas gastar menos. Ele também assume uma estratégia mais concentrada. E o modelo Intermediário, Thalita, como se diferencia?",
+      "visual": "intermediario"
+    },
+    {
+      "indice": 5,
+      "inicio": 63.848,
+      "fim": 85.708,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto": "O Intermediário sobe para C$ 129,94 e mantém Viveros com uma base mais valorizada. No meio, aparecem Arias, Matheus Pereira e Josué. No ataque, Viveros divide espaço com Pedro e Samuel Lino. É um desenho mais equilibrado entre custo e nomes de maior investimento.",
+      "visual": "intermediario"
+    },
+    {
+      "indice": 6,
+      "inicio": 85.708,
+      "fim": 98.28,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto": "E vale observar que Viveros foi mantido como capitão. Isso cria uma linha comum entre os modelos, mas o restante da composição muda o nível de exposição e o patrimônio utilizado.",
+      "visual": "intermediario"
+    },
+    {
+      "indice": 7,
+      "inicio": 98.28,
+      "fim": 107.876,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto": "Chegamos agora ao Time para Pontuar. Antônio, ele é apenas uma cópia do Intermediário ou existe uma diferença real na proposta?",
+      "visual": "pontuacao"
+    },
+    {
+      "indice": 8,
+      "inicio": 107.876,
+      "fim": 132.736,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto": "A base de jogadores é muito próxima, Francisca, mas o fechamento usa o maior patrimônio dos três. O Time para Pontuar chega a C$ 135,96. A formação é 4-3-3 e a escolha final de treinador é Leonardo Jardim. É a versão que aceita investir mais para manter os nomes considerados prioritários.",
+      "visual": "pontuacao"
+    },
+    {
+      "indice": 9,
+      "inicio": 132.736,
+      "fim": 145.524,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto": "E há quatro nomes presentes nos três times: Arias, Jacy, Marcelinho e Viveros. Esse núcleo mostra quais escolhas tiveram maior consenso na análise automática do SimonSports.",
+      "visual": "comparativo"
+    },
+    {
+      "indice": 10,
+      "inicio": 145.524,
+      "fim": 156.368,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto": "Muito bem. Agora vamos ao Top 5 da rodada, que amplia as opções por posição e ajuda a enxergar alternativas além das três escalações.",
+      "visual": "top5"
+    },
+    {
+      "indice": 11,
+      "inicio": 156.368,
+      "fim": 176.404,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto": "Entre os atacantes, o painel destaca Viveros, Pedro, Samuel Lino, Renê e Kaio César. No meio-campo, aparecem Arias, Matheus Pereira, Josué, André e Lucho Acosta. São opções com preços diferentes para adaptar a montagem ao patrimônio disponível.",
+      "visual": "top5"
+    },
+    {
+      "indice": 12,
+      "inicio": 176.404,
+      "fim": 191.304,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto": "E no gol, o Top 5 oferece Lucas Arcanjo, Fábio, Marcelo Rangel, Rossi e Santos. O ponto principal é comparar preço, clube e encaixe no restante do time, sem tratar qualquer nome como garantia de pontuação.",
+      "visual": "top5"
+    },
+    {
+      "indice": 13,
+      "inicio": 191.304,
+      "fim": 203.636,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto": "Este foi o vídeo piloto da rodada 21, com análise informativa dos três times e do Top 5. Portal SimonSports, simplesmente o melhor. Até a próxima rodada!",
+      "visual": "final"
+    }
+  ]
+}
