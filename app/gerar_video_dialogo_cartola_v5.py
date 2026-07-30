@@ -94,7 +94,7 @@ def richer_reaction(segment: v3.Segment, data: dict) -> v3.Segment:
         p = players.get("Viveros", {})
         text = (
             f"Viveros tem média de {number(p.get('media_ult5'))} nas últimas cinco, mas média esperada de {number(p.get('media_esperada'))} "
-            f"e fator de confronto de {number(p.get('fator_confronto'), 0.924), 3)}. É capitão pelo teto probabilístico; não porque o jogo seja confortável."
+            f"e fator de confronto de {number(p.get('fator_confronto', 0.924), 3)}. É capitão pelo teto probabilístico; não porque o jogo seja confortável."
         )
     elif text.startswith("Entre Samuel Lino e Pedro"):
         pedro = players.get("Pedro", {})
@@ -146,7 +146,7 @@ def build_dialogue_v5(round_value: int, data: dict) -> List[v3.Segment]:
         current = richer_reaction(segment, data)
         result.append(current)
 
-        # Réplicas adicionais: mais naturais, incisivas e sustentadas por números.
+        # Réplicas adicionais: naturais, incisivas e sustentadas por números.
         if (
             current.visual == "jogo_0"
             and current.speaker == "FRANCISCA"
@@ -209,6 +209,15 @@ def build_dialogue_v5(round_value: int, data: dict) -> List[v3.Segment]:
                     "Arias: teto forte, preço alto e confiança baixa.",
                 )
             )
+            result.append(
+                seg(
+                    "FRANCISCA",
+                    f"Compensa apenas para quem busca teto. A média recente de {number(p.get('media_ult5'))} e a liderança do Palmeiras sustentam a escolha, "
+                    f"mas eu não chamaria Arias de peça de segurança. Em um modelo conservador, esse preço precisa ser comparado com duas opções mais baratas da posição.",
+                    "Arias",
+                    "Arias compensa pelo teto; não deve ser vendido como segurança.",
+                )
+            )
 
         if current.visual == "Viveros" and current.text.startswith("Viveros tem média"):
             p = players.get("Viveros", {})
@@ -265,7 +274,7 @@ def update_manifest(output_path: Path) -> None:
             "palavra_dialogada_removida": True,
             "abertura_reforcada": True,
             "debate_reforcado": True,
-            "replicas_adicionais": 6,
+            "replicas_adicionais": 7,
             "criterios_adicionais": [
                 "pontos nos últimos cinco jogos",
                 "gols marcados e sofridos",
