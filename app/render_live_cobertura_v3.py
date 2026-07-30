@@ -55,20 +55,32 @@ def _render_board(data: Dict[str, Any], output_dir: str, opening: bool) -> Rende
         draw = ImageDraw.Draw(image)
         ribbon = (120, 1425, 1480, 1478)
         v2._round(draw, ribbon, 20, fill=(4, 27, 51), outline=v2.BLUE, width=2)
-        text = (
-            "BOLA ROLANDO: ACOMPANHE CADA LANCE COM O PORTAL SIMONSPORTS"
-            if opening
-            else "⚪ GOL A FAVOR     🔴 GOL CONTRA (GC)"
-        )
-        v2._centered_text(
-            draw,
-            ribbon,
-            text,
-            v2._fit_text(draw, text, 1280, 25, 17, "bold", True),
-            fill=v2.WHITE,
-        )
-        v4._draw_footer_v4(image, (page + 1, pages) if pages > 1 else None)
+        if opening:
+            text = "BOLA ROLANDO: ACOMPANHE CADA LANCE COM O PORTAL SIMONSPORTS"
+            v2._centered_text(
+                draw,
+                ribbon,
+                text,
+                v2._fit_text(draw, text, 1280, 25, 17, "bold", True),
+                fill=v2.WHITE,
+            )
+        else:
+            base._draw_ball(draw, (445, 1451), 25, False)
+            draw.text(
+                (470, 1435),
+                "GOL A FAVOR",
+                font=v2._font(22, "bold", True),
+                fill=v2.SILVER,
+            )
+            base._draw_ball(draw, (850, 1451), 25, True)
+            draw.text(
+                (875, 1435),
+                "GOL CONTRA (GC)",
+                font=v2._font(22, "bold", True),
+                fill=v2.SILVER,
+            )
 
+        v4._draw_footer_v4(image, (page + 1, pages) if pages > 1 else None)
         prefix = "live_abertura" if opening else "live_resultados_noite"
         path = str(Path(output_dir) / f"{prefix}_rodada_{round_value}_p{page + 1}.png")
         image.convert("RGB").save(path, "PNG", optimize=True)
