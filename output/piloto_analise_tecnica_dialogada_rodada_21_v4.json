@@ -4,7 +4,7 @@
   "publicacao_automatica": false,
   "rodada": 21,
   "arquivo": "output/piloto_analise_tecnica_dialogada_rodada_21_v4.mp4",
-  "duracao_segundos": 902.004,
+  "duracao_segundos": 866.873,
   "duracao_alvo_minutos": [
     10,
     15
@@ -32,37 +32,17 @@
     {
       "indice": 1,
       "inicio": 0.0,
-      "fim": 18.164,
+      "fim": 10.22,
       "apresentador": "FRANCISCA",
       "voz": "pt-BR-FranciscaNeural",
-      "texto_falado": "Olá! Começa agora a terceira versão do piloto técnico da rodada 21. A proposta foi ampliada: vamos analisar os seis jogos válidos, mostrar a última pontuação disponível dos três modelos e explicar, atleta por atleta, o motivo de cada escolha.",
-      "texto_tela": "V3: jogos, última pontuação e justificativa de cada atleta.",
-      "visual": "metodologia"
+      "texto_falado": "Começa agora a análise da rodada 21. Vamos direto aos jogos, ao momento das equipes e às escolhas que podem fazer diferença na escalação.",
+      "texto_tela": "Rodada, momento dos times e escolhas recomendadas.",
+      "visual": "rodada"
     },
     {
       "indice": 2,
-      "inicio": 18.164,
-      "fim": 32.128,
-      "apresentador": "ANTÔNIO",
-      "voz": "pt-BR-AntonioNeural",
-      "texto_falado": "E desta vez a conversa não ficará presa à leitura da escalação. Nós vamos questionar as escolhas, confrontar teto e risco, e dizer quando os próprios indicadores não permitem uma conclusão segura.",
-      "texto_tela": "Perguntas e contrapontos reais — sem tratar projeção como certeza.",
-      "visual": "metodologia"
-    },
-    {
-      "indice": 3,
-      "inicio": 32.128,
-      "fim": 45.348,
-      "apresentador": "THALITA",
-      "voz": "pt-BR-ThalitaMultilingualNeural",
-      "texto_falado": "Também corrigimos a apresentação visual. A caixa de fala agora ocupa uma área exclusiva abaixo dos gráficos. Nenhum texto do apresentador deve esconder a última métrica do jogador analisado.",
-      "texto_tela": "Layout corrigido: indicadores e fala em áreas separadas.",
-      "visual": "metodologia"
-    },
-    {
-      "indice": 4,
-      "inicio": 45.348,
-      "fim": 59.36,
+      "inicio": 10.22,
+      "fim": 24.232,
       "apresentador": "FRANCISCA",
       "voz": "pt-BR-FranciscaNeural",
       "texto_falado": "Antes dos jogadores, precisamos entender a rodada. Apenas seis confrontos foram válidos para o fantasy game, enquanto quatro partidas ficaram adiadas. Antônio, por que isso muda tanto a montagem?",
@@ -70,9 +50,9 @@
       "visual": "rodada"
     },
     {
-      "indice": 5,
-      "inicio": 59.36,
-      "fim": 75.892,
+      "indice": 3,
+      "inicio": 24.232,
+      "fim": 40.764,
       "apresentador": "ANTÔNIO",
       "voz": "pt-BR-AntonioNeural",
       "texto_falado": "Porque doze clubes concentram todo o mercado. Quando vários modelos repetem atletas do mesmo confronto, a correlação aumenta: um bom jogo pode impulsionar tudo, mas uma atuação ruim também atinge várias posições ao mesmo tempo.",
@@ -80,9 +60,9 @@
       "visual": "rodada"
     },
     {
-      "indice": 6,
-      "inicio": 75.892,
-      "fim": 90.744,
+      "indice": 4,
+      "inicio": 40.764,
+      "fim": 55.616,
       "apresentador": "THALITA",
       "voz": "pt-BR-ThalitaMultilingualNeural",
       "texto_falado": "Antônio, vamos ao confronto entre Mirassol e Remo. A tabela mostra 19º contra 18º, e os recortes recentes são D V D V E e E V D V D. Qual é a leitura correta para o Cartola?",
@@ -90,9 +70,9 @@
       "visual": "jogo_0"
     },
     {
-      "indice": 7,
-      "inicio": 90.744,
-      "fim": 120.044,
+      "indice": 5,
+      "inicio": 55.616,
+      "fim": 84.916,
       "apresentador": "ANTÔNIO",
       "voz": "pt-BR-AntonioNeural",
       "texto_falado": "Boa pergunta. Confronto direto da parte baixa. A proximidade na tabela aumenta a incerteza e torna arriscada uma concentração excessiva em atletas do Remo, embora o preço baixo tenha atraído o modelo Econômico. O ponto central é usar o contexto para explicar a escolha, sem transformar posição de tabela em promessa de scout. E você concorda que, neste confronto, o risco precisa pesar tanto quanto o potencial?",
@@ -100,9 +80,9 @@
       "visual": "jogo_0"
     },
     {
-      "indice": 8,
-      "inicio": 120.044,
-      "fim": 134.776,
+      "indice": 6,
+      "inicio": 84.916,
+      "fim": 99.648,
       "apresentador": "FRANCISCA",
       "voz": "pt-BR-FranciscaNeural",
       "texto_falado": "Thalita, vamos ao confronto entre Internacional e Flamengo. A tabela mostra 16º contra 2º, e os recortes recentes são recorte indisponível e E D V V E. Qual é a leitura correta para o Cartola?",
@@ -110,9 +90,9 @@
       "visual": "jogo_1"
     },
     {
-      "indice": 9,
-      "inicio": 134.776,
-      "fim": 162.156,
+      "indice": 7,
+      "inicio": 99.648,
+      "fim": 127.028,
       "apresentador": "THALITA",
       "voz": "pt-BR-ThalitaMultilingualNeural",
       "texto_falado": "Boa pergunta. A diferença de posição favorece a leitura ofensiva do Flamengo, mas a partida é fora de casa. Pedro, Samuel Lino e Leonardo Jardim carregam potencial, sem transformar o confronto em garantia. O ponto central é usar o contexto para explicar a escolha, sem transformar posição de tabela em promessa de scout. E você concorda que, neste confronto, o risco precisa pesar tanto quanto o potencial?",
@@ -120,9 +100,9 @@
       "visual": "jogo_1"
     },
     {
-      "indice": 10,
-      "inicio": 162.156,
-      "fim": 178.088,
+      "indice": 8,
+      "inicio": 127.028,
+      "fim": 142.96,
       "apresentador": "ANTÔNIO",
       "voz": "pt-BR-AntonioNeural",
       "texto_falado": "Francisca, vamos ao confronto entre Vitória e Palmeiras. A tabela mostra 13º contra 1º, e os recortes recentes são V D V E D e E E V V V. Qual é a leitura correta para o Cartola?",
@@ -130,9 +110,9 @@
       "visual": "jogo_2"
     },
     {
-      "indice": 11,
-      "inicio": 178.088,
-      "fim": 205.324,
+      "indice": 9,
+      "inicio": 142.96,
+      "fim": 170.196,
       "apresentador": "FRANCISCA",
       "voz": "pt-BR-FranciscaNeural",
       "texto_falado": "Boa pergunta. O líder visita um adversário de meio de tabela. Arias ganha força pelo contexto coletivo do Palmeiras; Lucas Arcanjo pode acumular defesas, mas enfrenta risco elevado de sofrer gols. O ponto central é usar o contexto para explicar a escolha, sem transformar posição de tabela em promessa de scout. E você concorda que, neste confronto, o risco precisa pesar tanto quanto o potencial?",
@@ -140,9 +120,9 @@
       "visual": "jogo_2"
     },
     {
-      "indice": 12,
-      "inicio": 205.324,
-      "fim": 219.456,
+      "indice": 10,
+      "inicio": 170.196,
+      "fim": 184.328,
       "apresentador": "THALITA",
       "voz": "pt-BR-ThalitaMultilingualNeural",
       "texto_falado": "Antônio, vamos ao confronto entre Fluminense e Bahia. A tabela mostra 4º contra 6º, e os recortes recentes são V D E E E e D V V E E. Qual é a leitura correta para o Cartola?",
@@ -150,9 +130,9 @@
       "visual": "jogo_3"
     },
     {
-      "indice": 13,
-      "inicio": 219.456,
-      "fim": 248.444,
+      "indice": 11,
+      "inicio": 184.328,
+      "fim": 213.316,
       "apresentador": "ANTÔNIO",
       "voz": "pt-BR-AntonioNeural",
       "texto_falado": "Boa pergunta. É o duelo mais equilibrado entre equipes da parte alta. A proximidade técnica recomenda cautela com leituras simplistas de favoritismo e valoriza atletas capazes de pontuar por scouts próprios. O ponto central é usar o contexto para explicar a escolha, sem transformar posição de tabela em promessa de scout. E você concorda que, neste confronto, o risco precisa pesar tanto quanto o potencial?",
@@ -160,9 +140,9 @@
       "visual": "jogo_3"
     },
     {
-      "indice": 14,
-      "inicio": 248.444,
-      "fim": 262.576,
+      "indice": 12,
+      "inicio": 213.316,
+      "fim": 227.448,
       "apresentador": "FRANCISCA",
       "voz": "pt-BR-FranciscaNeural",
       "texto_falado": "Thalita, vamos ao confronto entre Corinthians e Athletico-PR. A tabela mostra 9º contra 3º, e os recortes recentes são D V V V E e E V V V V. Qual é a leitura correta para o Cartola?",
@@ -170,9 +150,9 @@
       "visual": "jogo_4"
     },
     {
-      "indice": 15,
-      "inicio": 262.576,
-      "fim": 289.62,
+      "indice": 13,
+      "inicio": 227.448,
+      "fim": 254.492,
       "apresentador": "THALITA",
       "voz": "pt-BR-ThalitaMultilingualNeural",
       "texto_falado": "Boa pergunta. O Corinthians chega competitivo em casa, mas o Athletico ocupa o terceiro lugar e soma quatro vitórias no recorte recente. É o confronto que mais exige separar teto ofensivo de risco defensivo. O ponto central é usar o contexto para explicar a escolha, sem transformar posição de tabela em promessa de scout. E você concorda que, neste confronto, o risco precisa pesar tanto quanto o potencial?",
@@ -180,9 +160,9 @@
       "visual": "jogo_4"
     },
     {
-      "indice": 16,
-      "inicio": 289.62,
-      "fim": 305.696,
+      "indice": 14,
+      "inicio": 254.492,
+      "fim": 270.568,
       "apresentador": "ANTÔNIO",
       "voz": "pt-BR-AntonioNeural",
       "texto_falado": "Francisca, vamos ao confronto entre Coritiba e Cruzeiro. A tabela mostra 10º contra 11º, e os recortes recentes são recorte indisponível e V E V E V. Qual é a leitura correta para o Cartola?",
@@ -190,9 +170,9 @@
       "visual": "jogo_5"
     },
     {
-      "indice": 17,
-      "inicio": 305.696,
-      "fim": 332.02,
+      "indice": 15,
+      "inicio": 270.568,
+      "fim": 296.892,
       "apresentador": "FRANCISCA",
       "voz": "pt-BR-FranciscaNeural",
       "texto_falado": "Boa pergunta. Décimo contra décimo primeiro sugere equilíbrio. O Econômico usa a defesa do Coritiba para controlar o custo, enquanto Matheus Pereira representa a capacidade criativa do Cruzeiro. O ponto central é usar o contexto para explicar a escolha, sem transformar posição de tabela em promessa de scout. E você concorda que, neste confronto, o risco precisa pesar tanto quanto o potencial?",
@@ -200,9 +180,9 @@
       "visual": "jogo_5"
     },
     {
-      "indice": 18,
-      "inicio": 332.02,
-      "fim": 345.192,
+      "indice": 16,
+      "inicio": 296.892,
+      "fim": 310.064,
       "apresentador": "FRANCISCA",
       "voz": "pt-BR-FranciscaNeural",
       "texto_falado": "Agora vamos registrar a fotografia mais recente dos três modelos. Atenção: esses números são a última parcial disponível no recorte do piloto, e não o fechamento definitivo da rodada.",
@@ -210,9 +190,9 @@
       "visual": "pontuacoes"
     },
     {
-      "indice": 19,
-      "inicio": 345.192,
-      "fim": 360.044,
+      "indice": 17,
+      "inicio": 310.064,
+      "fim": 324.916,
       "apresentador": "ANTÔNIO",
       "voz": "pt-BR-AntonioNeural",
       "texto_falado": "O Econômico aparece com 48,46 pontos e participação de 9/12. O dado ajuda a avaliar a evolução, mas não pode ser comparado como resultado final enquanto ainda houver atletas por jogar.",
@@ -220,9 +200,9 @@
       "visual": "pontuacoes"
     },
     {
-      "indice": 20,
-      "inicio": 360.044,
-      "fim": 374.68,
+      "indice": 18,
+      "inicio": 324.916,
+      "fim": 339.552,
       "apresentador": "THALITA",
       "voz": "pt-BR-ThalitaMultilingualNeural",
       "texto_falado": "O Intermediário registra 37,86 pontos, com 6/12 atletas contabilizados. A diferença de participação explica por que uma parcial menor não significa necessariamente desempenho final inferior.",
@@ -230,9 +210,9 @@
       "visual": "pontuacoes"
     },
     {
-      "indice": 21,
-      "inicio": 374.68,
-      "fim": 387.66,
+      "indice": 19,
+      "inicio": 339.552,
+      "fim": 352.532,
       "apresentador": "FRANCISCA",
       "voz": "pt-BR-FranciscaNeural",
       "texto_falado": "O Time para Pontuar está em 35,50 pontos e 6/12 de participação. Assim, os três números ganham contexto e deixam de parecer uma comparação fechada antes da hora.",
@@ -240,9 +220,9 @@
       "visual": "pontuacoes"
     },
     {
-      "indice": 22,
-      "inicio": 387.66,
-      "fim": 398.768,
+      "indice": 20,
+      "inicio": 352.532,
+      "fim": 363.64,
       "apresentador": "ANTÔNIO",
       "voz": "pt-BR-AntonioNeural",
       "texto_falado": "Retomando o ponto anterior: Vamos agora atleta por atleta. Thalita, começamos pelos goleiros: o que sustenta Marcelo Rangel no Econômico?",
@@ -250,9 +230,9 @@
       "visual": "Marcelo Rangel"
     },
     {
-      "indice": 23,
-      "inicio": 398.768,
-      "fim": 417.46,
+      "indice": 21,
+      "inicio": 363.64,
+      "fim": 382.332,
       "apresentador": "ANTÔNIO",
       "voz": "pt-BR-AntonioNeural",
       "texto_falado": "Sobre Marcelo Rangel: Goleiro barato em confronto entre décimo oitavo e décimo nono. Pode pontuar por defesas, mas a concentração de atletas do Remo torna o modelo sensível ao mesmo jogo. Thalita, qual é o ponto decisivo na escolha de Lucas Arcanjo?",
@@ -260,9 +240,9 @@
       "visual": "Marcelo Rangel"
     },
     {
-      "indice": 24,
-      "inicio": 417.46,
-      "fim": 447.0,
+      "indice": 22,
+      "inicio": 382.332,
+      "fim": 411.872,
       "apresentador": "THALITA",
       "voz": "pt-BR-ThalitaMultilingualNeural",
       "texto_falado": "Sobre Lucas Arcanjo: Enfrentar o líder pode elevar o volume de defesas, mas também aumenta o risco de gols sofridos. É escolha baseada na possibilidade de scouts de goleiro, não em saldo de gol provável. A média das últimas cinco é 4,64 pontos, a probabilidade de superar oito é 83,2%, e o índice de confiança está em 34,2%. Francisca, qual é o ponto decisivo na escolha de Marcelinho?",
@@ -270,9 +250,9 @@
       "visual": "Lucas Arcanjo"
     },
     {
-      "indice": 25,
-      "inicio": 447.0,
-      "fim": 463.244,
+      "indice": 23,
+      "inicio": 411.872,
+      "fim": 428.116,
       "apresentador": "FRANCISCA",
       "voz": "pt-BR-FranciscaNeural",
       "texto_falado": "Sobre Marcelinho: Lateral presente nos três modelos. O preço baixo facilita a montagem; a escolha depende de scouts laterais e de uma atuação competitiva do Remo fora de casa. Antônio, qual é o ponto decisivo na escolha de Mayk?",
@@ -280,9 +260,9 @@
       "visual": "Marcelinho"
     },
     {
-      "indice": 26,
-      "inicio": 463.244,
-      "fim": 481.552,
+      "indice": 24,
+      "inicio": 428.116,
+      "fim": 446.424,
       "apresentador": "ANTÔNIO",
       "voz": "pt-BR-AntonioNeural",
       "texto_falado": "Sobre Mayk: Compõe a dupla de laterais do Remo no Econômico. A escalação aumenta a correlação defensiva e ofensiva do mesmo confronto, melhorando o teto conjunto e também o risco conjunto. Thalita, qual é o ponto decisivo na escolha de Matheuzinho?",
@@ -290,9 +270,9 @@
       "visual": "Mayk"
     },
     {
-      "indice": 27,
-      "inicio": 481.552,
-      "fim": 497.964,
+      "indice": 25,
+      "inicio": 446.424,
+      "fim": 462.836,
       "apresentador": "THALITA",
       "voz": "pt-BR-ThalitaMultilingualNeural",
       "texto_falado": "Sobre Matheuzinho: Lateral de um Corinthians em boa sequência recente e jogando em casa. O contraponto é enfrentar o Athletico, terceiro colocado e com quatro vitórias no recorte. Francisca, qual é o ponto decisivo na escolha de Thiago Santos?",
@@ -300,9 +280,9 @@
       "visual": "Matheuzinho"
     },
     {
-      "indice": 28,
-      "inicio": 497.964,
-      "fim": 514.64,
+      "indice": 26,
+      "inicio": 462.836,
+      "fim": 479.512,
       "apresentador": "FRANCISCA",
       "voz": "pt-BR-FranciscaNeural",
       "texto_falado": "Sobre Thiago Santos: Zagueiro de preço baixo usado para preservar patrimônio. Coritiba e Cruzeiro estão lado a lado na tabela; o modelo aceita teto menor para equilibrar o orçamento. Antônio, qual é o ponto decisivo na escolha de Jacy?",
@@ -310,9 +290,9 @@
       "visual": "Thiago Santos"
     },
     {
-      "indice": 29,
-      "inicio": 514.64,
-      "fim": 545.116,
+      "indice": 27,
+      "inicio": 479.512,
+      "fim": 509.988,
       "apresentador": "ANTÔNIO",
       "voz": "pt-BR-AntonioNeural",
       "texto_falado": "Sobre Jacy: Peça de sustentação pelo baixo custo e menor oscilação. Coritiba e Cruzeiro estão próximos na tabela; o preço ajuda a liberar cartoletas sem exigir uma pontuação explosiva. A média das últimas cinco é 4,28 pontos, a probabilidade de superar oito é 12,8%, e o índice de confiança está em 73,8%. Thalita, qual é o ponto decisivo na escolha de Gabriel Paulista?",
@@ -320,9 +300,9 @@
       "visual": "Jacy"
     },
     {
-      "indice": 30,
-      "inicio": 545.116,
-      "fim": 561.36,
+      "indice": 28,
+      "inicio": 509.988,
+      "fim": 526.232,
       "apresentador": "THALITA",
       "voz": "pt-BR-ThalitaMultilingualNeural",
       "texto_falado": "Sobre Gabriel Paulista: Defensor mais caro que as opções econômicas. O mando do Corinthians ajuda, mas o ataque do Athletico em boa fase torna o saldo de gol uma hipótese, não uma premissa. Francisca, qual é o ponto decisivo na escolha de Arias?",
@@ -330,9 +310,9 @@
       "visual": "Gabriel Paulista"
     },
     {
-      "indice": 31,
-      "inicio": 561.36,
-      "fim": 591.02,
+      "indice": 29,
+      "inicio": 526.232,
+      "fim": 555.892,
       "apresentador": "FRANCISCA",
       "voz": "pt-BR-FranciscaNeural",
       "texto_falado": "Sobre Arias: Consenso dos três modelos. O líder enfrenta o Vitória fora de casa; forma e teto justificam a escolha, mas a variância e o mando adversário impedem tratá-lo como opção segura. A média das últimas cinco é 7,94 pontos, a probabilidade de superar oito é 71,8%, e o índice de confiança está em 14,6%. Antônio, qual é o ponto decisivo na escolha de Patrick?",
@@ -340,9 +320,9 @@
       "visual": "Arias"
     },
     {
-      "indice": 32,
-      "inicio": 591.02,
-      "fim": 608.488,
+      "indice": 30,
+      "inicio": 555.892,
+      "fim": 573.36,
       "apresentador": "ANTÔNIO",
       "voz": "pt-BR-AntonioNeural",
       "texto_falado": "Sobre Patrick: Meia barato em uma montagem muito concentrada no Remo. Serve como ponte de orçamento, porém a eficiência do Econômico depende de o clube produzir coletivamente. Thalita, qual é o ponto decisivo na escolha de Zé Ricardo?",
@@ -350,9 +330,9 @@
       "visual": "Patrick"
     },
     {
-      "indice": 33,
-      "inicio": 608.488,
-      "fim": 625.284,
+      "indice": 31,
+      "inicio": 573.36,
+      "fim": 590.156,
       "apresentador": "THALITA",
       "voz": "pt-BR-ThalitaMultilingualNeural",
       "texto_falado": "Sobre Zé Ricardo: É uma das menores despesas do meio-campo. A escolha libera cartoletas para Arias e Viveros, mas oferece teto individual mais limitado e alta dependência do confronto. Francisca, qual é o ponto decisivo na escolha de Matheus Pereira?",
@@ -360,9 +340,9 @@
       "visual": "Zé Ricardo"
     },
     {
-      "indice": 34,
-      "inicio": 625.284,
-      "fim": 654.752,
+      "indice": 32,
+      "inicio": 590.156,
+      "fim": 619.624,
       "apresentador": "FRANCISCA",
       "voz": "pt-BR-FranciscaNeural",
       "texto_falado": "Sobre Matheus Pereira: A média recente sustenta a escolha, mas o recorte fora de casa reduz a segurança. Em jogo equilibrado contra o Coritiba, a justificativa está na criação e nos scouts próprios. A média das últimas cinco é 8,68 pontos, a probabilidade de superar oito é 39,9%, e o índice de confiança está em 27,7%. Antônio, qual é o ponto decisivo na escolha de Josué?",
@@ -370,9 +350,9 @@
       "visual": "Matheus Pereira"
     },
     {
-      "indice": 35,
-      "inicio": 654.752,
-      "fim": 672.412,
+      "indice": 33,
+      "inicio": 619.624,
+      "fim": 637.284,
       "apresentador": "ANTÔNIO",
       "voz": "pt-BR-AntonioNeural",
       "texto_falado": "Sobre Josué: Meia de custo moderado num jogo equilibrado. Entra como peça de sustentação para permitir investimentos maiores em Matheus Pereira, Pedro, Samuel Lino e Viveros. Thalita, qual é o ponto decisivo na escolha de Viveros?",
@@ -380,9 +360,9 @@
       "visual": "Josué"
     },
     {
-      "indice": 36,
-      "inicio": 672.412,
-      "fim": 702.864,
+      "indice": 34,
+      "inicio": 637.284,
+      "fim": 667.736,
       "apresentador": "THALITA",
       "voz": "pt-BR-ThalitaMultilingualNeural",
       "texto_falado": "Sobre Viveros: Capitão dos três modelos pelo teto recente e pela força probabilística. O Athletico chega em ótima sequência, mas atua fora contra um Corinthians competitivo; é escolha de teto, não de tranquilidade. A média das últimas cinco é 11,56 pontos, a probabilidade de superar oito é 98,0%, e o índice de confiança está em 27,4%. Francisca, qual é o ponto decisivo na escolha de Jajá?",
@@ -390,9 +370,9 @@
       "visual": "Viveros"
     },
     {
-      "indice": 37,
-      "inicio": 702.864,
-      "fim": 720.116,
+      "indice": 35,
+      "inicio": 667.736,
+      "fim": 684.988,
       "apresentador": "FRANCISCA",
       "voz": "pt-BR-FranciscaNeural",
       "texto_falado": "Sobre Jajá: Atacante de preço acessível contra um adversário próximo na tabela. O potencial existe, mas a presença de vários atletas do Remo amplifica a correlação do time Econômico. Antônio, qual é o ponto decisivo na escolha de Alef Manga?",
@@ -400,9 +380,9 @@
       "visual": "Jajá"
     },
     {
-      "indice": 38,
-      "inicio": 720.116,
-      "fim": 736.816,
+      "indice": 36,
+      "inicio": 684.988,
+      "fim": 701.688,
       "apresentador": "ANTÔNIO",
       "voz": "pt-BR-AntonioNeural",
       "texto_falado": "Sobre Alef Manga: É a opção mais cara do bloco ofensivo do Remo. O modelo busca participação direta em gol, mas precisa reconhecer que o Mirassol tem mando de campo. Thalita, qual é o ponto decisivo na escolha de Pedro?",
@@ -410,9 +390,9 @@
       "visual": "Alef Manga"
     },
     {
-      "indice": 39,
-      "inicio": 736.816,
-      "fim": 765.948,
+      "indice": 37,
+      "inicio": 701.688,
+      "fim": 730.82,
       "apresentador": "THALITA",
       "voz": "pt-BR-ThalitaMultilingualNeural",
       "texto_falado": "Sobre Pedro: A diferença de tabela favorece o Flamengo, segundo colocado, diante do Internacional em décimo sexto. A variância elevada mostra que o investimento busca teto e aceita oscilação. A média das últimas cinco é 10,36 pontos, a probabilidade de superar oito é 91,1%, e o índice de confiança está em 16,1%. Francisca, qual é o ponto decisivo na escolha de Samuel Lino?",
@@ -420,9 +400,9 @@
       "visual": "Pedro"
     },
     {
-      "indice": 40,
-      "inicio": 765.948,
-      "fim": 796.424,
+      "indice": 38,
+      "inicio": 730.82,
+      "fim": 761.296,
       "apresentador": "FRANCISCA",
       "voz": "pt-BR-FranciscaNeural",
       "texto_falado": "Sobre Samuel Lino: Combina preço menor que Pedro com teto recente semelhante. A dupla aumenta a exposição ao Flamengo: se o ataque produzir, potencializa o time; se não produzir, concentra a perda. A média das últimas cinco é 11,42 pontos, a probabilidade de superar oito é 90,1%, e o índice de confiança está em 17,3%. Antônio, qual é o ponto decisivo na escolha de Rafael Guanaes?",
@@ -430,9 +410,9 @@
       "visual": "Samuel Lino"
     },
     {
-      "indice": 41,
-      "inicio": 796.424,
-      "fim": 814.852,
+      "indice": 39,
+      "inicio": 761.296,
+      "fim": 779.724,
       "apresentador": "ANTÔNIO",
       "voz": "pt-BR-AntonioNeural",
       "texto_falado": "Sobre Rafael Guanaes: Treinador escolhido em confronto direto da parte baixa. A pontuação depende do resultado coletivo do Mirassol; por isso a análise precisa separar custo baixo de favoritismo real. Thalita, qual é o ponto decisivo na escolha de Leonardo Jardim?",
@@ -440,9 +420,9 @@
       "visual": "Rafael Guanaes"
     },
     {
-      "indice": 42,
-      "inicio": 814.852,
-      "fim": 827.352,
+      "indice": 40,
+      "inicio": 779.724,
+      "fim": 792.224,
       "apresentador": "THALITA",
       "voz": "pt-BR-ThalitaMultilingualNeural",
       "texto_falado": "Sobre Leonardo Jardim: Treinador mais caro, associado ao segundo colocado contra o décimo sexto. A escolha traduz confiança coletiva no Flamengo, embora o jogo seja no Beira-Rio.",
@@ -450,9 +430,9 @@
       "visual": "Leonardo Jardim"
     },
     {
-      "indice": 43,
-      "inicio": 827.352,
-      "fim": 843.092,
+      "indice": 41,
+      "inicio": 792.224,
+      "fim": 807.964,
       "apresentador": "FRANCISCA",
       "voz": "pt-BR-FranciscaNeural",
       "texto_falado": "Depois de analisar cada titular, o Top 5 deve funcionar como comparação, não como uma lista para ser lida. Ele apresenta alternativas por posição para quem deseja trocar preço, teto ou exposição a determinado confronto.",
@@ -460,9 +440,9 @@
       "visual": "top5"
     },
     {
-      "indice": 44,
-      "inicio": 843.092,
-      "fim": 857.488,
+      "indice": 42,
+      "inicio": 807.964,
+      "fim": 822.36,
       "apresentador": "ANTÔNIO",
       "voz": "pt-BR-AntonioNeural",
       "texto_falado": "A pergunta técnica é sempre a mesma: a substituição melhora a eficiência por cartoleta, aumenta o teto ou apenas troca um risco por outro? Sem essa resposta, citar o ranking não acrescenta análise.",
@@ -470,9 +450,9 @@
       "visual": "top5"
     },
     {
-      "indice": 45,
-      "inicio": 857.488,
-      "fim": 875.148,
+      "indice": 43,
+      "inicio": 822.36,
+      "fim": 840.02,
       "apresentador": "THALITA",
       "voz": "pt-BR-ThalitaMultilingualNeural",
       "texto_falado": "E a próxima rodada poderá usar este mesmo formato de forma automática, desde que as bases entreguem escalações, métricas recentes, confrontos e a última pontuação dos modelos. Quando um dado estiver ausente, o vídeo deve declarar a limitação em vez de inventar uma conclusão.",
@@ -480,9 +460,9 @@
       "visual": "top5"
     },
     {
-      "indice": 46,
-      "inicio": 875.148,
-      "fim": 891.848,
+      "indice": 44,
+      "inicio": 840.02,
+      "fim": 856.72,
       "apresentador": "FRANCISCA",
       "voz": "pt-BR-FranciscaNeural",
       "texto_falado": "Esta foi a análise técnica ampliada da rodada 21. A seleção é explicada por preço, desempenho recente, contexto coletivo, risco e proposta de cada modelo. Nada disso garante pontuação, mas torna a decisão mais transparente.",
@@ -490,9 +470,9 @@
       "visual": "final"
     },
     {
-      "indice": 47,
-      "inicio": 891.848,
-      "fim": 901.756,
+      "indice": 45,
+      "inicio": 856.72,
+      "fim": 866.628,
       "apresentador": "ANTÔNIO",
       "voz": "pt-BR-AntonioNeural",
       "texto_falado": "Portal SimonSports: dados para entender a escalação, diálogo para confrontar as escolhas e entretenimento responsável para acompanhar a rodada.",
