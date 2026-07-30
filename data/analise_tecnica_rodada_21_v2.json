@@ -1,0 +1,158 @@
+{
+  "rodada": 21,
+  "status": "PILOTO_PARA_APROVACAO",
+  "publicacao_automatica": false,
+  "moeda_visual": "C$",
+  "moeda_falada": "cartoletas",
+  "fontes": [
+    "data/publicacoes_atuais/time_economico_rodada_21.json",
+    "data/publicacoes_atuais/time_intermediario_rodada_21.json",
+    "data/publicacoes_atuais/time_pontuacao_rodada_21.json",
+    "data/publicacoes_atuais/top5_rodada_21.json",
+    "Planilha Cartola — Sugestões PRO: ENGINE_METRICAS",
+    "Planilha Cartola — Sugestões PRO: HIST_JOGADORES"
+  ],
+  "times": {
+    "economico": {
+      "nome": "Time Econômico",
+      "formacao": "4-3-3",
+      "custo": 98.59,
+      "capitao": "Viveros",
+      "leitura": "Busca eficiência por cartoleta, combina peças baratas de sustentação com dois nomes de teto elevado: Arias e Viveros."
+    },
+    "intermediario": {
+      "nome": "Time Intermediário",
+      "formacao": "4-3-3",
+      "custo": 129.94,
+      "capitao": "Viveros",
+      "leitura": "Eleva o investimento no meio e no ataque, acrescentando Matheus Pereira, Pedro e Samuel Lino ao núcleo comum."
+    },
+    "pontuacao": {
+      "nome": "Time para Pontuar",
+      "formacao": "4-3-3",
+      "custo": 135.96,
+      "capitao": "Viveros",
+      "leitura": "Mantém a espinha de maior potencial, aceitando variância mais alta em troca de teto ofensivo."
+    }
+  },
+  "jogadores": {
+    "Arias": {
+      "posicao": "MEI",
+      "preco": 16.58,
+      "media_ult5": 7.94,
+      "media_esperada": 7.301,
+      "media_casa": 9.725,
+      "media_fora": 4.1,
+      "variancia_ult5": 53.302,
+      "indice_confianca": 0.146,
+      "prob_6": 0.8027,
+      "prob_8": 0.7181,
+      "poisson_pontos": 5.83,
+      "exp_score_selecao": 6.5991,
+      "fator_confronto": 0.91,
+      "analise": "O histórico recente sustenta o teto, mas a diferença entre casa e fora e a variância alta exigem cautela. A escolha é de potencial, não de segurança absoluta."
+    },
+    "Jacy": {
+      "posicao": "ZAG",
+      "preco": 6.18,
+      "media_ult5": 4.28,
+      "media_esperada": 5.513,
+      "media_casa": 4.4,
+      "media_fora": 2.5,
+      "variancia_ult5": 4.802,
+      "indice_confianca": 0.738,
+      "prob_6": 0.4121,
+      "prob_8": 0.1282,
+      "poisson_pontos": 3.31,
+      "exp_score_selecao": 4.2,
+      "fator_confronto": 1.12,
+      "analise": "É uma peça de custo baixo e comportamento mais estável. O modelo não depende de uma pontuação explosiva; procura retorno compatível com o preço."
+    },
+    "Viveros": {
+      "posicao": "ATA",
+      "preco": 14.46,
+      "media_ult5": 11.56,
+      "media_esperada": 6.423,
+      "media_casa": 12.217,
+      "media_fora": 6.28,
+      "variancia_ult5": 41.258,
+      "indice_confianca": 0.274,
+      "prob_6": 0.9912,
+      "prob_8": 0.9804,
+      "poisson_pontos": 9.02,
+      "exp_score_selecao": 8.0718,
+      "fator_confronto": 0.924,
+      "analise": "Foi capitão pelo teto recente e pela força nos modelos de probabilidade. O fator do confronto abaixo de um impede classificar a partida como fácil."
+    },
+    "Pedro": {
+      "posicao": "ATA",
+      "preco": 16.36,
+      "media_ult5": 10.36,
+      "media_esperada": 18.719,
+      "media_casa": 7.586,
+      "media_fora": 11.767,
+      "variancia_ult5": 63.538,
+      "indice_confianca": 0.161,
+      "prob_6": 0.9447,
+      "prob_8": 0.9106,
+      "poisson_pontos": 9.46,
+      "exp_score_selecao": 7.7163,
+      "fator_confronto": 0.963,
+      "analise": "O teto é muito alto e a média recente é forte, mas a variância também é elevada. É escolha de agressividade, não de piso garantido."
+    },
+    "Samuel Lino": {
+      "posicao": "ATA",
+      "preco": 11.84,
+      "media_ult5": 11.42,
+      "media_esperada": 18.387,
+      "media_casa": 7.171,
+      "media_fora": 8.05,
+      "variancia_ult5": 64.858,
+      "indice_confianca": 0.173,
+      "prob_6": 0.938,
+      "prob_8": 0.9014,
+      "poisson_pontos": 7.27,
+      "exp_score_selecao": 7.352,
+      "fator_confronto": 0.963,
+      "analise": "Entrega relação interessante entre preço e teto recente. Assim como Pedro, carrega volatilidade alta e precisa ser tratado como aposta de potencial."
+    },
+    "Matheus Pereira": {
+      "posicao": "MEI",
+      "preco": 15.25,
+      "media_ult5": 8.68,
+      "media_esperada": 6.589,
+      "media_casa": 9.267,
+      "media_fora": 5.62,
+      "variancia_ult5": 30.386,
+      "indice_confianca": 0.277,
+      "prob_6": 0.5426,
+      "prob_8": 0.399,
+      "poisson_pontos": 6.38,
+      "exp_score_selecao": 5.4728,
+      "fator_confronto": 0.931,
+      "analise": "A média das últimas cinco é forte, mas o recorte fora de casa cai. O modelo mantém o nome pelo potencial de criação, com risco contextual sinalizado."
+    },
+    "Lucas Arcanjo": {
+      "posicao": "GOL",
+      "preco": 9.95,
+      "media_ult5": 4.64,
+      "media_esperada": 11.415,
+      "media_casa": 6.1,
+      "media_fora": 5.9,
+      "variancia_ult5": 12.578,
+      "indice_confianca": 0.342,
+      "prob_6": 0.9366,
+      "prob_8": 0.8322,
+      "poisson_pontos": 1.67,
+      "analise": "Os indicadores probabilísticos são fortes, mas o Poisson de pontos é conservador. Essa divergência deve ser mostrada como incerteza do modelo."
+    }
+  },
+  "diretrizes_editoriais": [
+    "Nunca pronunciar C$ como dólar canadense; falar cartoletas.",
+    "Não classificar confronto como fácil apenas porque o atleta foi escalado.",
+    "Separar teto, piso, estabilidade e risco.",
+    "Explicar o porquê das escolhas com dados, sem prometer pontuação.",
+    "Usar perguntas e contrapontos reais entre os três apresentadores.",
+    "Exibir gráficos e indicadores durante as falas técnicas."
+  ]
+}
