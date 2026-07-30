@@ -1,0 +1,133 @@
+name: Gerar Vídeo Piloto Cartola
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - app/gerar_video_dialogo_cartola_v1.py
+      - .github/workflows/gerar.video.piloto.cartola.yml
+  workflow_dispatch:
+    inputs:
+      rodada:
+        description: "Rodada usada no piloto"
+        required: false
+        default: "21"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gerar-video-piloto-cartola
+  cancel-in-progress: false
+
+jobs:
+  gerar-piloto:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar FFmpeg, fontes e dependências
+        shell: bash
+        run: |
+          set -e
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg fonts-dejavu-core fonts-liberation
+          python -m pip install --upgrade pip
+          python -m pip install edge-tts Pillow
+
+      - name: Validar gerador
+        shell: bash
+        run: |
+          set -e
+          python -m py_compile app/gerar_video_dialogo_cartola_v1.py
+          for arquivo in \
+            data/publicacoes_atuais/time_economico_rodada_21.json \
+            data/publicacoes_atuais/time_intermediario_rodada_21.json \
+            data/publicacoes_atuais/time_pontuacao_rodada_21.json \
+            data/publicacoes_atuais/top5_rodada_21.json \
+            output/time_economico_rodada_21.png \
+            output/time_intermediario_rodada_21.png \
+            output/time_pontuacao_rodada_21.png \
+            output/top5_rodada_21.png; do
+              test -s "$arquivo" || { echo "Arquivo obrigatório ausente: $arquivo"; exit 1; }
+          done
+
+      - name: Gerar MP4 piloto com Francisca, Antônio e Thalita
+        shell: bash
+        env:
+          RODADA_MANUAL: ${{ github.event.inputs.rodada }}
+        run: |
+          set -e
+          RODADA="${RODADA_MANUAL:-21}"
+          python app/gerar_video_dialogo_cartola_v1.py \
+            --rodada "$RODADA" \
+            --repo-root . \
+            --output "output/piloto_analise_dialogada_times_top5_rodada_${RODADA}.mp4"
+
+      - name: Validar vídeo piloto
+        shell: bash
+        run: |
+          set -e
+          VIDEO="$(find output -maxdepth 1 -type f -name 'piloto_analise_dialogada_times_top5_rodada_*.mp4' | head -n 1)"
+          test -n "$VIDEO" && test -s "$VIDEO"
+          DURACAO="$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$VIDEO")"
+          TAMANHO="$(stat -c%s "$VIDEO")"
+          python - "$DURACAO" "$TAMANHO" <<'PY'
+          import sys
+          duration = float(sys.argv[1])
+          size = int(sys.argv[2])
+          if duration < 60 or duration > 240:
+              raise SystemExit(f"Duração fora do esperado: {duration:.2f}s")
+          if size < 500_000 or size > 95_000_000:
+              raise SystemExit(f"Tamanho fora do esperado: {size} bytes")
+          print(f"Piloto validado: duração={duration:.2f}s; tamanho={size/1024/1024:.2f} MiB")
+          PY
+
+      - name: Salvar piloto no repositório
+        shell: bash
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add output/piloto_analise_dialogada_times_top5_rodada_*.mp4
+          git add output/piloto_analise_dialogada_times_top5_rodada_*.json
+
+          if git diff --cached --quiet; then
+            echo "Piloto já está atualizado."
+            exit 0
+          fi
+
+          git commit -m "Vídeo piloto: análise dialogada dos times e Top 5 da Rodada 21"
+          git reset --hard HEAD
+          git clean -fd
+
+          enviado=0
+          for tentativa in 1 2 3 4 5; do
+            git rebase --abort 2>/dev/null || true
+            git reset --hard HEAD
+            git clean -fd
+            git fetch origin main
+            if git rebase origin/main && git push origin HEAD:main; then
+              enviado=1
+              break
+            fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((tentativa * 4))
+          done
+
+          if [ "$enviado" -ne 1 ]; then
+            echo "Não foi possível publicar o piloto após cinco tentativas."
+            exit 1
+          fi
