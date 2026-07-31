@@ -99,7 +99,7 @@ jobs:
           python app/gerar_base_video_por_snapshot.py --rodada "$RODADA" --repo-root .
           test -s "data/analise_tecnica_rodada_${RODADA}_v3.json"
 
-      - name: Validar imagens publicadas da rodada
+      - name: Validar imagens e geradores
         env:
           RODADA: ${{ steps.evento.outputs.rodada }}
         run: |
@@ -110,9 +110,10 @@ jobs:
           test -s "output/top5_rodada_${RODADA}.png"
           python -m py_compile app/gerar_base_video_por_snapshot.py
           python -m py_compile app/gerar_video_dialogo_cartola_v4.py
+          python -m py_compile app/gerar_video_dialogo_cartola_v5.py
           python -m py_compile app/enviar_video_telegram.py
 
-      - name: Gerar vídeo
+      - name: Gerar vídeo com colocação e desempenho
         env:
           RODADA: ${{ steps.evento.outputs.rodada }}
           VIDEO: ${{ steps.evento.outputs.video }}
@@ -120,7 +121,7 @@ jobs:
         run: |
           set -e
           rm -f "$VIDEO" "$MANIFESTO"
-          python app/gerar_video_dialogo_cartola_v4.py \
+          python app/gerar_video_dialogo_cartola_v5.py \
             --rodada "$RODADA" \
             --repo-root . \
             --output "$VIDEO"
@@ -146,7 +147,12 @@ jobs:
           timeline = manifest.get('timeline') or []
           if not timeline:
               raise SystemExit('Manifesto sem transcrição.')
-          print(f'Vídeo validado: {duration:.2f}s e {len(timeline)} falas.')
+          falas = ' '.join(str(item.get('texto_falado', '')) for item in timeline).lower()
+          obrigatorios = ['colocado', 'média', 'cartoletas', 'última pontuação']
+          ausentes = [termo for termo in obrigatorios if termo not in falas]
+          if ausentes:
+              raise SystemExit('Áudio incompleto; termos obrigatórios ausentes: ' + ', '.join(ausentes))
+          print(f'Vídeo validado: {duration:.2f}s, {len(timeline)} falas, com colocação e desempenho.')
           PY
 
       - name: Enviar vídeo ao Telegram
