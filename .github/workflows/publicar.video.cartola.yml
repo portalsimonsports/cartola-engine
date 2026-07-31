@@ -1,0 +1,112 @@
+name: Publicar Vídeo Cartola
+
+on:
+  repository_dispatch:
+    types:
+      - cartola_video_analise
+  workflow_dispatch:
+    inputs:
+      rodada:
+        description: "Rodada"
+        required: true
+        default: "22"
+      fase:
+        description: "INICIAL ou PRE_FECHAMENTO"
+        required: true
+        default: "INICIAL"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar-video-cartola-${{ github.event.client_payload.rodada || github.event.inputs.rodada }}-${{ github.event.client_payload.fase || github.event.inputs.fase }}
+  cancel-in-progress: false
+
+jobs:
+  gerar-e-publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependências
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg fonts-dejavu-core fonts-liberation
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install edge-tts Pillow requests google-api-python-client google-auth
+
+      - name: Resolver evento
+        id: evento
+        env:
+          DISPATCH_RODADA: ${{ github.event.client_payload.rodada }}
+          DISPATCH_FASE: ${{ github.event.client_payload.fase }}
+          MANUAL_RODADA: ${{ github.event.inputs.rodada }}
+          MANUAL_FASE: ${{ github.event.inputs.fase }}
+        run: |
+          RODADA="${DISPATCH_RODADA:-${MANUAL_RODADA:-22}}"
+          FASE="${DISPATCH_FASE:-${MANUAL_FASE:-INICIAL}}"
+          FASE="$(printf '%s' "$FASE" | tr '[:lower:]' '[:upper:]')"
+          case "$FASE" in INICIAL|PRE_FECHAMENTO) ;; *) echo "Fase inválida: $FASE"; exit 1;; esac
+          echo "rodada=$RODADA" >> "$GITHUB_OUTPUT"
+          echo "fase=$FASE" >> "$GITHUB_OUTPUT"
+          echo "video=output/analise_${FASE,,}_rodada_${RODADA}.mp4" >> "$GITHUB_OUTPUT"
+
+      - name: Validar base da rodada
+        env:
+          RODADA: ${{ steps.evento.outputs.rodada }}
+        run: |
+          set -e
+          test -s "data/analise_tecnica_rodada_${RODADA}_v3.json"
+          test -s "output/time_economico_rodada_${RODADA}.png"
+          test -s "output/time_intermediario_rodada_${RODADA}.png"
+          test -s "output/time_pontuacao_rodada_${RODADA}.png"
+          test -s "output/top5_rodada_${RODADA}.png"
+
+      - name: Gerar vídeo
+        env:
+          RODADA: ${{ steps.evento.outputs.rodada }}
+          VIDEO: ${{ steps.evento.outputs.video }}
+        run: |
+          rm -f "$VIDEO" "${VIDEO%.mp4}.json"
+          python app/gerar_video_dialogo_cartola_v4.py \
+            --rodada "$RODADA" \
+            --repo-root . \
+            --output "$VIDEO"
+          test -s "$VIDEO"
+
+      - name: Enviar vídeo ao Telegram
+        env:
+          PLANILHA_ID: ${{ secrets.PLANILHA_ID }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_APPLICATION_CREDENTIALS: service_account.json
+          ABA_TELEGRAM: ${{ secrets.ABA_TELEGRAM }}
+          CONTA_TELEGRAM: ${{ secrets.CONTA_TELEGRAM }}
+          TELEGRAM_CHAT_FALLBACK: "@dicascartolaportalsimonsports"
+        run: |
+          python app/enviar_video_telegram.py \
+            --video "${{ steps.evento.outputs.video }}" \
+            --rodada "${{ steps.evento.outputs.rodada }}" \
+            --fase "${{ steps.evento.outputs.fase }}"
+
+      - name: Salvar vídeo no repositório
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "${{ steps.evento.outputs.video }}" "${{ steps.evento.outputs.video }}.json" 2>/dev/null || true
+          git add "${{ steps.evento.outputs.video }}" "${{ steps.evento.outputs.video%.mp4 }}.json" 2>/dev/null || true
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Vídeo ${{ steps.evento.outputs.fase }} da rodada ${{ steps.evento.outputs.rodada }}"
+          git pull --rebase origin main
+          git push origin HEAD:main
