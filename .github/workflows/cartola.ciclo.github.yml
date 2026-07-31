@@ -1,6 +1,13 @@
 name: Ciclo Completo Cartola
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - app/cartola_ciclo_github.py
+      - app/render_desempenho_top5_v1.py
+      - app/gerar_base_analise_cartola.py
+      - .github/workflows/cartola.ciclo.github.yml
   schedule:
     - cron: "*/5 * * * *"
   workflow_dispatch:
@@ -44,6 +51,10 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install requests
+
+      - name: Validar scheduler
+        run: |
+          python -m py_compile app/cartola_ciclo_github.py
 
       - name: Executar ciclo
         env:
