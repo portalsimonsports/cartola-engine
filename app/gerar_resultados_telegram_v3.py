@@ -17,14 +17,14 @@ from gerar_resultados_telegram import (
     validar_bot_e_destino,
 )
 from render_aprovadas_v1 import VISUAL_VERSION, is_approved_event, render_approved_event
+from render_desempenho_top5_v1 import is_top5_performance_event, render_top5_performance
 from render_live_cards_v5 import render_live_publication_v5
 from render_live_cobertura_v3 import is_coverage_event
 from render_mercado_aberto_v2 import is_market_open_v2_event, render_market_open_v2
 from render_notice_cards import is_notice_publication, render_notice_card
 
-
 RENDERER_VERSION = "approved_cards_v1"
-PIPELINE_VERSION = "approved_cards_v3_live_abertura_2026_07_30"
+PIPELINE_VERSION = "approved_cards_v4_top5_final_2026_07_31"
 
 
 def _safe(value: Any, default: str = "") -> str:
@@ -64,13 +64,10 @@ def _save_manifest(publications: List[Dict[str, Any]]) -> None:
 def _render(data: Dict[str, Any]):
     if is_market_open_v2_event(data):
         return render_market_open_v2(data, output_dir=OUTPUT_DIR)
-
-    # LIVE_ABERTURA significa início da cobertura dos jogos da rodada.
-    # Ele precisa ser resolvido antes do alias genérico ABERTURA, que é
-    # exclusivo do jobTelegramDispatcher para anunciar MERCADO ABERTO.
+    if is_top5_performance_event(data):
+        return render_top5_performance(data, output_dir=OUTPUT_DIR)
     if is_coverage_event(data):
         return render_live_publication_v5(data, output_dir=OUTPUT_DIR)
-
     if is_approved_event(data):
         return render_approved_event(data, output_dir=OUTPUT_DIR)
     if is_notice_publication(data):
@@ -86,7 +83,17 @@ def executar_publicacao_aprovada() -> List[Dict[str, Any]]:
     raw_data = extrair_dados_publicacao(payload_root)
     data = normalizar_dados_renderizacao(raw_data)
 
-    for key in ("evento_programado", "evento_github", "contexto", "tipo_publicacao", "rodada"):
+    for key in (
+        "evento_programado",
+        "evento_github",
+        "contexto",
+        "tipo_publicacao",
+        "rodada",
+        "times",
+        "lista",
+        "partidas",
+        "jogos",
+    ):
         if not data.get(key) and payload_root.get(key) not in (None, ""):
             data[key] = payload_root.get(key)
 
