@@ -4,18 +4,18 @@
   "tipo_publicacao": "times",
   "rodada": 22,
   "tipo": "PONTUACAO",
-  "atualizado_em": "2026-07-31T08:19:53.557Z",
+  "atualizado_em": "2026-07-31T08:30:04.784Z",
   "dados": [
     {
       "RODADA": 22,
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.93,
-      "EXP_SCORE": 4.4589,
-      "ATLETA_ID": 104084
+      "NOME": "Tiago Volpi",
+      "CLUBE": "RBB",
+      "PRECO": 10.55,
+      "EXP_SCORE": 4.4662,
+      "ATLETA_ID": 72018
     },
     {
       "RODADA": 22,
@@ -44,17 +44,6 @@
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "ZAG",
-      "NOME": "Jonathan Jesus",
-      "CLUBE": "CRU",
-      "PRECO": 6.91,
-      "EXP_SCORE": 4.3573,
-      "ATLETA_ID": 124912
-    },
-    {
-      "RODADA": 22,
-      "TIPO": "PONTUACAO",
-      "STATUS": "TITULAR",
-      "POS": "ZAG",
       "NOME": "Gustavo Gómez",
       "CLUBE": "PAL",
       "PRECO": 10.56,
@@ -65,12 +54,12 @@
       "RODADA": 22,
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Arias",
-      "CLUBE": "PAL",
-      "PRECO": 16.5,
-      "EXP_SCORE": 8.7217,
-      "ATLETA_ID": 99815
+      "POS": "ZAG",
+      "NOME": "Jacy",
+      "CLUBE": "CFC",
+      "PRECO": 5.24,
+      "EXP_SCORE": 3.9137,
+      "ATLETA_ID": 97878
     },
     {
       "RODADA": 22,
@@ -88,6 +77,17 @@
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "MEI",
+      "NOME": "Arias",
+      "CLUBE": "PAL",
+      "PRECO": 16.5,
+      "EXP_SCORE": 7.584,
+      "ATLETA_ID": 99815
+    },
+    {
+      "RODADA": 22,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
       "NOME": "Danilo",
       "CLUBE": "BOT",
       "PRECO": 14.48,
@@ -99,22 +99,22 @@
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Samuel Lino",
+      "NOME": "Pedro",
       "CLUBE": "FLA",
-      "PRECO": 12.06,
-      "EXP_SCORE": 8.4915,
-      "ATLETA_ID": 98873
+      "PRECO": 16.04,
+      "EXP_SCORE": 9.6327,
+      "ATLETA_ID": 94583
     },
     {
       "RODADA": 22,
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Pedro",
+      "NOME": "Samuel Lino",
       "CLUBE": "FLA",
-      "PRECO": 16.04,
-      "EXP_SCORE": 8.3762,
-      "ATLETA_ID": 94583
+      "PRECO": 12.06,
+      "EXP_SCORE": 8.4915,
+      "ATLETA_ID": 98873
     },
     {
       "RODADA": 22,
@@ -143,33 +143,33 @@
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Rossi",
-      "CLUBE": "FLA",
-      "PRECO": 8.68,
-      "EXP_SCORE": 4.1551,
-      "ATLETA_ID": 99552
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 8.93,
+      "EXP_SCORE": 4.4589,
+      "ATLETA_ID": 104084
     },
     {
       "RODADA": 22,
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "LAT",
-      "NOME": "Matheuzinho",
-      "CLUBE": "COR",
-      "PRECO": 11.37,
-      "EXP_SCORE": 4.6978,
-      "ATLETA_ID": 101727
+      "NOME": "Marcelinho",
+      "CLUBE": "REM",
+      "PRECO": 5.98,
+      "EXP_SCORE": 5.3057,
+      "ATLETA_ID": 97795
     },
     {
       "RODADA": 22,
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Jacy",
-      "CLUBE": "CFC",
-      "PRECO": 5.24,
-      "EXP_SCORE": 3.5223,
-      "ATLETA_ID": 97878
+      "NOME": "Marllon",
+      "CLUBE": "REM",
+      "PRECO": 4.62,
+      "EXP_SCORE": 2.5977,
+      "ATLETA_ID": 70666
     },
     {
       "RODADA": 22,
@@ -187,11 +187,11 @@
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Lucas Ronier",
+      "NOME": "Breno Lopes",
       "CLUBE": "CFC",
-      "PRECO": 10.77,
-      "EXP_SCORE": 6.2284,
-      "ATLETA_ID": 123648
+      "PRECO": 9.09,
+      "EXP_SCORE": 6.4381,
+      "ATLETA_ID": 93988
     }
   ]
 }
