@@ -67,73 +67,39 @@ jobs:
           echo "video=$VIDEO" >> "$GITHUB_OUTPUT"
           echo "manifesto=$MANIFESTO" >> "$GITHUB_OUTPUT"
 
-      - name: Corrigir conflito do Google API build
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          path = Path('app/gerar_base_analise_cartola.py')
-          text = path.read_text(encoding='utf-8')
-          text = text.replace(
-              'from googleapiclient.discovery import build',
-              'from googleapiclient.discovery import build as google_api_build',
-              1,
-          )
-          text = text.replace(
-              'return build("sheets", "v4", credentials=credentials, cache_discovery=False)',
-              'return google_api_build("sheets", "v4", credentials=credentials, cache_discovery=False)',
-              1,
-          )
-          path.write_text(text, encoding='utf-8')
-          PY
-
-      - name: Validar planilha e abas obrigatórias
-        env:
-          PLANILHA_ID: "1-A7w4kkE28iHRd61yiSoNOvSekrmmADzHxGCRDVrICI"
-          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
-          GOOGLE_APPLICATION_CREDENTIALS: service_account.json
-        run: |
-          set -e
-          python - <<'PY'
-          import json, os
-          from pathlib import Path
-          from google.oauth2.service_account import Credentials
-          from googleapiclient.discovery import build
-
-          raw = os.environ.get('GOOGLE_SERVICE_ACCOUNT_JSON', '').strip()
-          if raw:
-              Path('service_account.json').write_text(json.dumps(json.loads(raw)), encoding='utf-8')
-          creds = Credentials.from_service_account_file(
-              'service_account.json',
-              scopes=['https://www.googleapis.com/auth/spreadsheets.readonly'],
-          )
-          service = build('sheets', 'v4', credentials=creds, cache_discovery=False)
-          spreadsheet_id = os.environ['PLANILHA_ID']
-          meta = service.spreadsheets().get(
-              spreadsheetId=spreadsheet_id,
-              fields='properties.title,sheets.properties.title',
-          ).execute()
-          titles = [s['properties']['title'] for s in meta.get('sheets', [])]
-          required = ['HIST_PARTIDAS', 'HIST_CLUBES', 'TIMES_ATUAL', 'TOP5_ATUAL']
-          missing = [name for name in required if name not in titles]
-          print('Planilha:', meta.get('properties', {}).get('title'))
-          print('ID:', spreadsheet_id)
-          print('Abas obrigatórias:', required)
-          if missing:
-              raise SystemExit('Abas ausentes: ' + ', '.join(missing))
-          PY
-
-      - name: Gerar base técnica da rodada
+      - name: Validar snapshots publicados
         env:
           RODADA: ${{ steps.evento.outputs.rodada }}
-          PLANILHA_ID: "1-A7w4kkE28iHRd61yiSoNOvSekrmmADzHxGCRDVrICI"
-          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
-          GOOGLE_APPLICATION_CREDENTIALS: service_account.json
         run: |
           set -e
-          python app/gerar_base_analise_cartola.py --rodada "$RODADA" --repo-root .
+          test -s "data/publicacoes_atuais/time_economico_rodada_${RODADA}.json"
+          test -s "data/publicacoes_atuais/time_intermediario_rodada_${RODADA}.json"
+          test -s "data/publicacoes_atuais/time_pontuacao_rodada_${RODADA}.json"
+          test -s "data/publicacoes_atuais/top5_rodada_${RODADA}.json"
+          python - "$RODADA" <<'PY'
+          import json, sys
+          from pathlib import Path
+          rodada = int(sys.argv[1])
+          nomes = ['time_economico', 'time_intermediario', 'time_pontuacao', 'top5']
+          for nome in nomes:
+              path = Path(f'data/publicacoes_atuais/{nome}_rodada_{rodada}.json')
+              data = json.loads(path.read_text(encoding='utf-8'))
+              if int(data.get('rodada', 0)) != rodada:
+                  raise SystemExit(f'{path}: rodada incorreta')
+              if str(data.get('evento_programado', '')).upper() != 'SELECAO_INICIAL':
+                  raise SystemExit(f'{path}: não é snapshot da SELECAO_INICIAL')
+              print(f'Snapshot validado: {path}')
+          PY
+
+      - name: Gerar base técnica pelo snapshot publicado
+        env:
+          RODADA: ${{ steps.evento.outputs.rodada }}
+        run: |
+          set -e
+          python app/gerar_base_video_por_snapshot.py --rodada "$RODADA" --repo-root .
           test -s "data/analise_tecnica_rodada_${RODADA}_v3.json"
 
-      - name: Validar imagens da rodada
+      - name: Validar imagens publicadas da rodada
         env:
           RODADA: ${{ steps.evento.outputs.rodada }}
         run: |
@@ -142,7 +108,7 @@ jobs:
           test -s "output/time_intermediario_rodada_${RODADA}.png"
           test -s "output/time_pontuacao_rodada_${RODADA}.png"
           test -s "output/top5_rodada_${RODADA}.png"
-          python -m py_compile app/gerar_base_analise_cartola.py
+          python -m py_compile app/gerar_base_video_por_snapshot.py
           python -m py_compile app/gerar_video_dialogo_cartola_v4.py
           python -m py_compile app/enviar_video_telegram.py
 
@@ -185,11 +151,11 @@ jobs:
 
       - name: Enviar vídeo ao Telegram
         env:
-          PLANILHA_ID: "1-A7w4kkE28iHRd61yiSoNOvSekrmmADzHxGCRDVrICI"
+          PLANILHA_ID: "1Lcb6kLFGdMSRNsG_yCCGjToHx2nLk0UaPdvA9Gf8Dx8"
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
           GOOGLE_APPLICATION_CREDENTIALS: service_account.json
-          ABA_TELEGRAM: ${{ secrets.ABA_TELEGRAM }}
-          CONTA_TELEGRAM: ${{ secrets.CONTA_TELEGRAM }}
+          ABA_TELEGRAM: "Telegram_Cartola"
+          CONTA_TELEGRAM: "DICAS CARTOLA PORTAL SIMONSPORTS"
           TELEGRAM_CHAT_FALLBACK: "@dicascartolaportalsimonsports"
         run: |
           set -e
