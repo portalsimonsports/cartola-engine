@@ -29,13 +29,10 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Configurar FFmpeg
-        uses: FedericoCarboni/setup-ffmpeg@v3
-        with:
-          ffmpeg-version: release
-
-      - name: Instalar dependências Python
+      - name: Instalar dependências
         run: |
+          command -v ffmpeg
+          command -v ffprobe
           ffmpeg -version | head -1
           ffprobe -version | head -1
           test -s /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
