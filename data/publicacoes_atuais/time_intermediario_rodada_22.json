@@ -1,0 +1,410 @@
+{
+  "atletas": [
+    {
+      "clube": "RBB",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "Tiago Volpi",
+      "pos": "GOL",
+      "preco": 10.55,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "PAL",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "Gustavo Gómez",
+      "pos": "ZAG",
+      "preco": 10.56,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CFC",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "Jacy",
+      "pos": "ZAG",
+      "preco": 5.24,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CRU",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "Jonathan Jesus",
+      "pos": "ZAG",
+      "preco": 6.91,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CRU",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "Matheus Pereira",
+      "pos": "MEI",
+      "preco": 15.66,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "PAL",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "Arias",
+      "pos": "MEI",
+      "preco": 16.5,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "BOT",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "Danilo",
+      "pos": "MEI",
+      "preco": 14.48,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CFC",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "Josué",
+      "pos": "MEI",
+      "preco": 6.23,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "FLA",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "Samuel Lino",
+      "pos": "ATA",
+      "preco": 12.06,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "FLA",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "Pedro",
+      "pos": "ATA",
+      "preco": 16.04,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CAP",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "Viveros",
+      "pos": "ATA",
+      "preco": 12.08,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "MIR",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "Rafael Guanaes",
+      "pos": "TEC",
+      "preco": 7.44,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "PAL",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "Carlos Miguel",
+      "pos": "GOL",
+      "preco": 8.93,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "REM",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "Marllon",
+      "pos": "ZAG",
+      "preco": 4.62,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "COR",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "André",
+      "pos": "MEI",
+      "preco": 6.15,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "CFC",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "Lucas Ronier",
+      "pos": "ATA",
+      "preco": 10.77,
+      "status": "RESERVA"
+    }
+  ],
+  "blocos_topo": [
+    "Seleção inicial da rodada"
+  ],
+  "capitao": "Samuel Lino",
+  "custo_total": 133.75,
+  "evento_programado": "SELECAO_INICIAL",
+  "forcar_envio": true,
+  "formacao": "3-4-3",
+  "houve_alteracao": false,
+  "mensagem_oficial": "Intermediário • Rodada 22\nSeleção inicial da rodada\nPortal SimonSports",
+  "meta": {
+    "capitao": "Samuel Lino (ATA)",
+    "custo_total": 133.75,
+    "esquema": "3-4-3",
+    "pontos_total": 0,
+    "variacao_total": 0
+  },
+  "modelo": "INTERMEDIARIO",
+  "nome_modelo": "TIME INTERMEDIÁRIO",
+  "primeiro_envio": true,
+  "snapshot": {
+    "atletas": [
+      {
+        "clube": "RBB",
+        "nome": "Tiago Volpi",
+        "pos": "GOL",
+        "preco": 10.55,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "PAL",
+        "nome": "Gustavo Gómez",
+        "pos": "ZAG",
+        "preco": 10.56,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "CFC",
+        "nome": "Jacy",
+        "pos": "ZAG",
+        "preco": 5.24,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "CRU",
+        "nome": "Jonathan Jesus",
+        "pos": "ZAG",
+        "preco": 6.91,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "CRU",
+        "nome": "Matheus Pereira",
+        "pos": "MEI",
+        "preco": 15.66,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "PAL",
+        "nome": "Arias",
+        "pos": "MEI",
+        "preco": 16.5,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "BOT",
+        "nome": "Danilo",
+        "pos": "MEI",
+        "preco": 14.48,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "CFC",
+        "nome": "Josué",
+        "pos": "MEI",
+        "preco": 6.23,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "FLA",
+        "nome": "Samuel Lino",
+        "pos": "ATA",
+        "preco": 12.06,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "FLA",
+        "nome": "Pedro",
+        "pos": "ATA",
+        "preco": 16.04,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "CAP",
+        "nome": "Viveros",
+        "pos": "ATA",
+        "preco": 12.08,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "MIR",
+        "nome": "Rafael Guanaes",
+        "pos": "TEC",
+        "preco": 7.44,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "PAL",
+        "nome": "Carlos Miguel",
+        "pos": "GOL",
+        "preco": 8.93,
+        "status": "RESERVA"
+      },
+      {
+        "clube": "REM",
+        "nome": "Marllon",
+        "pos": "ZAG",
+        "preco": 4.62,
+        "status": "RESERVA"
+      },
+      {
+        "clube": "COR",
+        "nome": "André",
+        "pos": "MEI",
+        "preco": 6.15,
+        "status": "RESERVA"
+      },
+      {
+        "clube": "CFC",
+        "nome": "Lucas Ronier",
+        "pos": "ATA",
+        "preco": 10.77,
+        "status": "RESERVA"
+      }
+    ],
+    "capitao": "Samuel Lino"
+  },
+  "timestamp_base": "",
+  "tipo_publicacao": "time_intermediario",
+  "titulo": "TIME INTERMEDIÁRIO",
+  "rodada": 22,
+  "origem": "jobTelegramDispatcher",
+  "gerado_em": "2026-07-31T05:42:36.674Z",
+  "payload_hash": "42dCrHWb5rs8NQuz00R19A==",
+  "jogadores": [
+    {
+      "clube": "RBB",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "Tiago Volpi",
+      "pos": "GOL",
+      "preco": 10.55,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "PAL",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "Gustavo Gómez",
+      "pos": "ZAG",
+      "preco": 10.56,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CFC",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "Jacy",
+      "pos": "ZAG",
+      "preco": 5.24,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CRU",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "Jonathan Jesus",
+      "pos": "ZAG",
+      "preco": 6.91,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CRU",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "Matheus Pereira",
+      "pos": "MEI",
+      "preco": 15.66,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "PAL",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "Arias",
+      "pos": "MEI",
+      "preco": 16.5,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "BOT",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "Danilo",
+      "pos": "MEI",
+      "preco": 14.48,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CFC",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "Josué",
+      "pos": "MEI",
+      "preco": 6.23,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "FLA",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "Samuel Lino",
+      "pos": "ATA",
+      "preco": 12.06,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "FLA",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "Pedro",
+      "pos": "ATA",
+      "preco": 16.04,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "CAP",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "Viveros",
+      "pos": "ATA",
+      "preco": 12.08,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "MIR",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "Rafael Guanaes",
+      "pos": "TEC",
+      "preco": 7.44,
+      "status": "TITULAR"
+    }
+  ],
+  "reservas": [
+    {
+      "clube": "PAL",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "Carlos Miguel",
+      "pos": "GOL",
+      "preco": 8.93,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "REM",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "Marllon",
+      "pos": "ZAG",
+      "preco": 4.62,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "COR",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "André",
+      "pos": "MEI",
+      "preco": 6.15,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "CFC",
+      "data": "2026-07-31T05:40:01.000Z",
+      "nome": "Lucas Ronier",
+      "pos": "ATA",
+      "preco": 10.77,
+      "status": "RESERVA"
+    }
+  ],
+  "pontos_total": 0,
+  "pipeline_visual": "times_top5_aprovados_v2_2026_07_27"
+}
