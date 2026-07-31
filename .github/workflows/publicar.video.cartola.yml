@@ -91,7 +91,7 @@ jobs:
               print(f'Snapshot validado: {path}')
           PY
 
-      - name: Gerar base técnica pelo snapshot publicado
+      - name: Gerar base pelos snapshots publicados
         env:
           RODADA: ${{ steps.evento.outputs.rodada }}
         run: |
@@ -99,7 +99,45 @@ jobs:
           python app/gerar_base_video_por_snapshot.py --rodada "$RODADA" --repo-root .
           test -s "data/analise_tecnica_rodada_${RODADA}_v3.json"
 
-      - name: Validar imagens e geradores
+      - name: Enriquecer classificação forma e desempenho reais
+        env:
+          RODADA: ${{ steps.evento.outputs.rodada }}
+        run: |
+          set -e
+          python app/enriquecer_base_video_cartola_v1.py --rodada "$RODADA" --repo-root .
+          python - "$RODADA" <<'PY'
+          import json, sys
+          from pathlib import Path
+
+          rodada = int(sys.argv[1])
+          path = Path(f'data/analise_tecnica_rodada_{rodada}_v3.json')
+          data = json.loads(path.read_text(encoding='utf-8'))
+
+          if data.get('contexto_real_validado') is not True:
+              raise SystemExit('Contexto real não validado.')
+
+          jogos = data.get('jogos') or []
+          if len(jogos) != 10:
+              raise SystemExit(f'Quantidade de jogos inválida: {len(jogos)}')
+
+          for jogo in jogos:
+              if int(jogo.get('pos_mandante') or 0) <= 0:
+                  raise SystemExit(f"Posição inválida: {jogo.get('mandante')}")
+              if int(jogo.get('pos_visitante') or 0) <= 0:
+                  raise SystemExit(f"Posição inválida: {jogo.get('visitante')}")
+              if jogo.get('mandante') == jogo.get('mandante_sigla'):
+                  raise SystemExit(f"Nome completo ausente: {jogo.get('mandante')}")
+              if jogo.get('visitante') == jogo.get('visitante_sigla'):
+                  raise SystemExit(f"Nome completo ausente: {jogo.get('visitante')}")
+              if len(str(jogo.get('forma_mandante') or '').split()) < 3:
+                  raise SystemExit(f"Forma inválida: {jogo.get('mandante')}")
+              if len(str(jogo.get('forma_visitante') or '').split()) < 3:
+                  raise SystemExit(f"Forma inválida: {jogo.get('visitante')}")
+
+          print('Base real validada: nomes completos, classificação e forma recente.')
+          PY
+
+      - name: Validar imagens e geradores V6
         env:
           RODADA: ${{ steps.evento.outputs.rodada }}
         run: |
@@ -109,11 +147,12 @@ jobs:
           test -s "output/time_pontuacao_rodada_${RODADA}.png"
           test -s "output/top5_rodada_${RODADA}.png"
           python -m py_compile app/gerar_base_video_por_snapshot.py
+          python -m py_compile app/enriquecer_base_video_cartola_v1.py
           python -m py_compile app/gerar_video_dialogo_cartola_v4.py
-          python -m py_compile app/gerar_video_dialogo_cartola_v5.py
+          python -m py_compile app/gerar_video_dialogo_cartola_v6.py
           python -m py_compile app/enviar_video_telegram.py
 
-      - name: Gerar vídeo com colocação e desempenho
+      - name: Gerar vídeo V6 com contexto real
         env:
           RODADA: ${{ steps.evento.outputs.rodada }}
           VIDEO: ${{ steps.evento.outputs.video }}
@@ -121,14 +160,14 @@ jobs:
         run: |
           set -e
           rm -f "$VIDEO" "$MANIFESTO"
-          python app/gerar_video_dialogo_cartola_v5.py \
+          python app/gerar_video_dialogo_cartola_v6.py \
             --rodada "$RODADA" \
             --repo-root . \
             --output "$VIDEO"
           test -s "$VIDEO"
           test -s "$MANIFESTO"
 
-      - name: Validar vídeo
+      - name: Validar vídeo e bloquear dados falsos
         env:
           VIDEO: ${{ steps.evento.outputs.video }}
           MANIFESTO: ${{ steps.evento.outputs.manifesto }}
@@ -148,57 +187,60 @@ jobs:
               raise SystemExit(f'Vídeo curto demais: {duration:.2f}s')
           if manifest.get('layout_sem_sobreposicao') is not True:
               raise SystemExit('Layout sem sobreposição não confirmado.')
+          if manifest.get('contexto_real_validado') is not True:
+              raise SystemExit('Manifesto sem confirmação do contexto real.')
+          if manifest.get('zero_colocado_bloqueado') is not True:
+              raise SystemExit('Bloqueio de zero colocado não confirmado.')
 
           timeline = manifest.get('timeline') or []
           if not timeline:
               raise SystemExit('Manifesto sem transcrição.')
 
           falas = ' '.join(str(item.get('texto_falado', '')) for item in timeline).lower()
-          falas_sem_acento = ''.join(
-              char for char in unicodedata.normalize('NFD', falas)
+          telas = ' '.join(str(item.get('texto_tela', '')) for item in timeline).lower()
+          conteudo = falas + ' ' + telas
+          sem_acento = ''.join(
+              char for char in unicodedata.normalize('NFD', conteudo)
               if unicodedata.category(char) != 'Mn'
           )
 
-          grupos = {
-              'colocação/classificação': [
-                  'colocado', 'colocada', 'colocação', 'classificação',
-                  'posição na tabela', 'ocupa a', 'ocupa o'
-              ],
-              'média/desempenho': [
-                  'média', 'media', 'desempenho', 'pontos por jogo'
-              ],
-              'valor em cartoletas': [
-                  'cartoletas', 'custa', 'preço'
-              ],
-              'pontuação recente': [
-                  'última pontuação', 'ultima pontuacao', 'pontuação recente',
-                  'pontuacao recente', 'último jogo', 'ultimo jogo'
-              ],
-          }
-
-          ausentes = []
-          encontrados = {}
-          for grupo, alternativas in grupos.items():
-              termo = next(
-                  (
-                      alternativa for alternativa in alternativas
-                      if alternativa in falas or alternativa in falas_sem_acento
-                  ),
-                  None,
-              )
-              if termo is None:
-                  ausentes.append(grupo)
-              else:
-                  encontrados[grupo] = termo
-
-          if ausentes:
+          proibidos = [
+              '0º colocado',
+              '0o colocado',
+              'recorte histórico preservado',
+              'recorte historico preservado',
+              'fora do snapshot',
+              'sem dados',
+              'sem dado',
+          ]
+          encontrados_proibidos = [
+              termo for termo in proibidos
+              if termo in conteudo or termo in sem_acento
+          ]
+          if encontrados_proibidos:
               raise SystemExit(
-                  'Áudio incompleto; grupos obrigatórios ausentes: ' + ', '.join(ausentes)
+                  'Vídeo bloqueado por conteúdo provisório ou inválido: '
+                  + ', '.join(encontrados_proibidos)
               )
+
+          obrigatorios = {
+              'classificação real': ['ocupa a', 'colocado da competição', 'posição'],
+              'forma recente': ['últimos 5 jogos', 'ultimos 5 jogos', 'forma recente'],
+              'desempenho do atleta': ['média de', 'media de', 'última pontuação', 'ultima pontuacao'],
+              'valor': ['cartoletas', 'custa'],
+              'nomes completos': ['grêmio', 'gremio', 'são paulo', 'sao paulo'],
+          }
+          ausentes = [
+              grupo
+              for grupo, termos in obrigatorios.items()
+              if not any(termo in conteudo or termo in sem_acento for termo in termos)
+          ]
+          if ausentes:
+              raise SystemExit('Vídeo incompleto; grupos ausentes: ' + ', '.join(ausentes))
 
           print(
-              f'Vídeo validado: {duration:.2f}s, {len(timeline)} falas. '
-              f'Indicadores encontrados: {encontrados}'
+              f'Vídeo V6 validado: {duration:.2f}s, {len(timeline)} falas, '
+              'sem zero colocado e sem texto provisório.'
           )
           PY
 
@@ -227,7 +269,7 @@ jobs:
             "${{ steps.evento.outputs.video }}" \
             "${{ steps.evento.outputs.manifesto }}"
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m "Vídeo ${{ steps.evento.outputs.fase }} da rodada ${{ steps.evento.outputs.rodada }}"
+          git commit -m "Vídeo V6 ${{ steps.evento.outputs.fase }} da rodada ${{ steps.evento.outputs.rodada }}"
           enviado=0
           for tentativa in 1 2 3 4 5; do
             git fetch origin main
