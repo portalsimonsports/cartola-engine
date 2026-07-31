@@ -1,0 +1,670 @@
+{
+  "versao": "cartola_dialogo_tecnico_v4_generico_2026_07_31",
+  "status": "PILOTO_PARA_APROVACAO",
+  "publicacao_automatica": false,
+  "rodada": 22,
+  "arquivo": "output/analise_inicial_rodada_22.mp4",
+  "duracao_segundos": 620.194,
+  "duracao_alvo_minutos": [
+    10,
+    15
+  ],
+  "moeda_falada": "cartoletas",
+  "layout_sem_sobreposicao": true,
+  "jogos_analisados": 10,
+  "jogadores_analisados": 24,
+  "vozes": [
+    "pt-BR-FranciscaNeural",
+    "pt-BR-AntonioNeural",
+    "pt-BR-ThalitaMultilingualNeural"
+  ],
+  "fontes": [
+    "data/publicacoes_atuais/time_economico_rodada_22.json",
+    "data/publicacoes_atuais/time_intermediario_rodada_22.json",
+    "data/publicacoes_atuais/time_pontuacao_rodada_22.json",
+    "data/publicacoes_atuais/top5_inicial_recuperado_rodada_22.json",
+    "API Cartola: partidas/22"
+  ],
+  "timeline": [
+    {
+      "indice": 1,
+      "inicio": 0.0,
+      "fim": 10.484,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Começa agora a análise da rodada 22. Vamos direto aos jogos, ao momento das equipes e às escolhas que podem fazer diferença na escalação.",
+      "texto_tela": "Rodada, momento dos times e escolhas recomendadas.",
+      "visual": "rodada"
+    },
+    {
+      "indice": 2,
+      "inicio": 10.484,
+      "fim": 24.088,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "A rodada reúne 10 confrontos considerados na base atual. Primeiro vamos comparar mando, classificação e os cinco resultados mais recentes de cada equipe; depois entramos nos jogadores.",
+      "texto_tela": "10 confrontos analisados antes das escolhas individuais.",
+      "visual": "rodada"
+    },
+    {
+      "indice": 3,
+      "inicio": 24.088,
+      "fim": 31.428,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Antônio, vamos a GRE contra SAO. O que os últimos cinco jogos mostram além da posição na tabela?",
+      "texto_tela": "GRE x SAO • últimos cinco jogos e contexto do confronto.",
+      "visual": "jogo_0"
+    },
+    {
+      "indice": 4,
+      "inicio": 31.428,
+      "fim": 41.24,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "GRE enfrenta SAO. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial.",
+      "texto_tela": "GRE enfrenta SAO. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial.",
+      "visual": "jogo_0"
+    },
+    {
+      "indice": 5,
+      "inicio": 41.24,
+      "fim": 51.82,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Eu não trataria nenhum lado como garantia. A escalação deve considerar mando, sequência, preço e a quantidade de atletas concentrados no mesmo jogo.",
+      "texto_tela": "Contraponto: teto, segurança e concentração no mesmo confronto.",
+      "visual": "jogo_0"
+    },
+    {
+      "indice": 6,
+      "inicio": 51.82,
+      "fim": 59.184,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Thalita, vamos a REM contra CAM. O que os últimos cinco jogos mostram além da posição na tabela?",
+      "texto_tela": "REM x CAM • últimos cinco jogos e contexto do confronto.",
+      "visual": "jogo_1"
+    },
+    {
+      "indice": 7,
+      "inicio": 59.184,
+      "fim": 68.66,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "REM enfrenta CAM. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial.",
+      "texto_tela": "REM enfrenta CAM. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial.",
+      "visual": "jogo_1"
+    },
+    {
+      "indice": 8,
+      "inicio": 68.66,
+      "fim": 80.008,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Eu não trataria nenhum lado como garantia. A escalação deve considerar mando, sequência, preço e a quantidade de atletas concentrados no mesmo jogo.",
+      "texto_tela": "Contraponto: teto, segurança e concentração no mesmo confronto.",
+      "visual": "jogo_1"
+    },
+    {
+      "indice": 9,
+      "inicio": 80.008,
+      "fim": 88.764,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Francisca, vamos a CFC contra CHA. O que os últimos cinco jogos mostram além da posição na tabela?",
+      "texto_tela": "CFC x CHA • últimos cinco jogos e contexto do confronto.",
+      "visual": "jogo_2"
+    },
+    {
+      "indice": 10,
+      "inicio": 88.764,
+      "fim": 98.768,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "CFC enfrenta CHA. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial.",
+      "texto_tela": "CFC enfrenta CHA. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial.",
+      "visual": "jogo_2"
+    },
+    {
+      "indice": 11,
+      "inicio": 98.768,
+      "fim": 109.228,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Eu não trataria nenhum lado como garantia. A escalação deve considerar mando, sequência, preço e a quantidade de atletas concentrados no mesmo jogo.",
+      "texto_tela": "Contraponto: teto, segurança e concentração no mesmo confronto.",
+      "visual": "jogo_2"
+    },
+    {
+      "indice": 12,
+      "inicio": 109.228,
+      "fim": 116.496,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Antônio, vamos a BOT contra FLU. O que os últimos cinco jogos mostram além da posição na tabela?",
+      "texto_tela": "BOT x FLU • últimos cinco jogos e contexto do confronto.",
+      "visual": "jogo_3"
+    },
+    {
+      "indice": 13,
+      "inicio": 116.496,
+      "fim": 126.356,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "BOT enfrenta FLU. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial.",
+      "texto_tela": "BOT enfrenta FLU. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial.",
+      "visual": "jogo_3"
+    },
+    {
+      "indice": 14,
+      "inicio": 126.356,
+      "fim": 136.936,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Eu não trataria nenhum lado como garantia. A escalação deve considerar mando, sequência, preço e a quantidade de atletas concentrados no mesmo jogo.",
+      "texto_tela": "Contraponto: teto, segurança e concentração no mesmo confronto.",
+      "visual": "jogo_3"
+    },
+    {
+      "indice": 15,
+      "inicio": 136.936,
+      "fim": 144.324,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Thalita, vamos a CRU contra MIR. O que os últimos cinco jogos mostram além da posição na tabela?",
+      "texto_tela": "CRU x MIR • últimos cinco jogos e contexto do confronto.",
+      "visual": "jogo_4"
+    },
+    {
+      "indice": 16,
+      "inicio": 144.324,
+      "fim": 153.632,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "CRU enfrenta MIR. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial.",
+      "texto_tela": "CRU enfrenta MIR. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial.",
+      "visual": "jogo_4"
+    },
+    {
+      "indice": 17,
+      "inicio": 153.632,
+      "fim": 164.98,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Eu não trataria nenhum lado como garantia. A escalação deve considerar mando, sequência, preço e a quantidade de atletas concentrados no mesmo jogo.",
+      "texto_tela": "Contraponto: teto, segurança e concentração no mesmo confronto.",
+      "visual": "jogo_4"
+    },
+    {
+      "indice": 18,
+      "inicio": 164.98,
+      "fim": 173.376,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Francisca, vamos a PAL contra INT. O que os últimos cinco jogos mostram além da posição na tabela?",
+      "texto_tela": "PAL x INT • últimos cinco jogos e contexto do confronto.",
+      "visual": "jogo_5"
+    },
+    {
+      "indice": 19,
+      "inicio": 173.376,
+      "fim": 182.78,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "PAL enfrenta INT. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial.",
+      "texto_tela": "PAL enfrenta INT. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial.",
+      "visual": "jogo_5"
+    },
+    {
+      "indice": 20,
+      "inicio": 182.78,
+      "fim": 193.24,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Eu não trataria nenhum lado como garantia. A escalação deve considerar mando, sequência, preço e a quantidade de atletas concentrados no mesmo jogo.",
+      "texto_tela": "Contraponto: teto, segurança e concentração no mesmo confronto.",
+      "visual": "jogo_5"
+    },
+    {
+      "indice": 21,
+      "inicio": 193.24,
+      "fim": 200.556,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Antônio, vamos a BAH contra VAS. O que os últimos cinco jogos mostram além da posição na tabela?",
+      "texto_tela": "BAH x VAS • últimos cinco jogos e contexto do confronto.",
+      "visual": "jogo_6"
+    },
+    {
+      "indice": 22,
+      "inicio": 200.556,
+      "fim": 210.728,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "BAH enfrenta VAS. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial.",
+      "texto_tela": "BAH enfrenta VAS. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial.",
+      "visual": "jogo_6"
+    },
+    {
+      "indice": 23,
+      "inicio": 210.728,
+      "fim": 221.308,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Eu não trataria nenhum lado como garantia. A escalação deve considerar mando, sequência, preço e a quantidade de atletas concentrados no mesmo jogo.",
+      "texto_tela": "Contraponto: teto, segurança e concentração no mesmo confronto.",
+      "visual": "jogo_6"
+    },
+    {
+      "indice": 24,
+      "inicio": 221.308,
+      "fim": 228.96,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Thalita, vamos a SAN contra CAP. O que os últimos cinco jogos mostram além da posição na tabela?",
+      "texto_tela": "SAN x CAP • últimos cinco jogos e contexto do confronto.",
+      "visual": "jogo_7"
+    },
+    {
+      "indice": 25,
+      "inicio": 228.96,
+      "fim": 237.884,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "SAN enfrenta CAP. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial.",
+      "texto_tela": "SAN enfrenta CAP. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial.",
+      "visual": "jogo_7"
+    },
+    {
+      "indice": 26,
+      "inicio": 237.884,
+      "fim": 249.232,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Eu não trataria nenhum lado como garantia. A escalação deve considerar mando, sequência, preço e a quantidade de atletas concentrados no mesmo jogo.",
+      "texto_tela": "Contraponto: teto, segurança e concentração no mesmo confronto.",
+      "visual": "jogo_7"
+    },
+    {
+      "indice": 27,
+      "inicio": 249.232,
+      "fim": 257.94,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Francisca, vamos a RBB contra COR. O que os últimos cinco jogos mostram além da posição na tabela?",
+      "texto_tela": "RBB x COR • últimos cinco jogos e contexto do confronto.",
+      "visual": "jogo_8"
+    },
+    {
+      "indice": 28,
+      "inicio": 257.94,
+      "fim": 267.8,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "RBB enfrenta COR. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial.",
+      "texto_tela": "RBB enfrenta COR. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial.",
+      "visual": "jogo_8"
+    },
+    {
+      "indice": 29,
+      "inicio": 267.8,
+      "fim": 278.26,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Eu não trataria nenhum lado como garantia. A escalação deve considerar mando, sequência, preço e a quantidade de atletas concentrados no mesmo jogo.",
+      "texto_tela": "Contraponto: teto, segurança e concentração no mesmo confronto.",
+      "visual": "jogo_8"
+    },
+    {
+      "indice": 30,
+      "inicio": 278.26,
+      "fim": 285.864,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Antônio, vamos a FLA contra VIT. O que os últimos cinco jogos mostram além da posição na tabela?",
+      "texto_tela": "FLA x VIT • últimos cinco jogos e contexto do confronto.",
+      "visual": "jogo_9"
+    },
+    {
+      "indice": 31,
+      "inicio": 285.864,
+      "fim": 295.964,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "FLA enfrenta VIT. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial.",
+      "texto_tela": "FLA enfrenta VIT. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial.",
+      "visual": "jogo_9"
+    },
+    {
+      "indice": 32,
+      "inicio": 295.964,
+      "fim": 306.544,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Eu não trataria nenhum lado como garantia. A escalação deve considerar mando, sequência, preço e a quantidade de atletas concentrados no mesmo jogo.",
+      "texto_tela": "Contraponto: teto, segurança e concentração no mesmo confronto.",
+      "visual": "jogo_9"
+    },
+    {
+      "indice": 33,
+      "inicio": 306.544,
+      "fim": 318.348,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Agora vamos comparar a última pontuação disponível dos três modelos. Quando o número ainda for parcial, ele será apresentado como parcial e nunca como resultado definitivo.",
+      "texto_tela": "Última pontuação disponível dos modelos.",
+      "visual": "pontuacoes"
+    },
+    {
+      "indice": 34,
+      "inicio": 318.348,
+      "fim": 331.592,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "O Time Econômico aparece com 0,00 pontos, com participação de 12/12. O dado serve para acompanhar a evolução e precisa ser lido conforme o estágio da rodada.",
+      "texto_tela": "Time Econômico: 0,00 pontos • 12/12.",
+      "visual": "pontuacoes"
+    },
+    {
+      "indice": 35,
+      "inicio": 331.592,
+      "fim": 344.188,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "O Time Intermediário aparece com 0,00 pontos, com participação de 12/12. O dado serve para acompanhar a evolução e precisa ser lido conforme o estágio da rodada.",
+      "texto_tela": "Time Intermediário: 0,00 pontos • 12/12.",
+      "visual": "pontuacoes"
+    },
+    {
+      "indice": 36,
+      "inicio": 344.188,
+      "fim": 357.168,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "O Time para Pontuar aparece com 0,00 pontos, com participação de 12/12. O dado serve para acompanhar a evolução e precisa ser lido conforme o estágio da rodada.",
+      "texto_tela": "Time para Pontuar: 0,00 pontos • 12/12.",
+      "visual": "pontuacoes"
+    },
+    {
+      "indice": 37,
+      "inicio": 357.168,
+      "fim": 369.86,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Passamos agora às escolhas individuais. Em vez de apenas anunciar nomes, vamos explicar preço, confronto, função no modelo e o principal risco de cada atleta.",
+      "texto_tela": "Análise individual: preço, confronto, papel e risco.",
+      "visual": "Ronaldo"
+    },
+    {
+      "indice": 38,
+      "inicio": 369.86,
+      "fim": 378.904,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Ronaldo aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "texto_tela": "Ronaldo: GOL • BAH • 9,57 cartoletas.",
+      "visual": "Ronaldo"
+    },
+    {
+      "indice": 39,
+      "inicio": 378.904,
+      "fim": 387.66,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Marcelinho aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "texto_tela": "Marcelinho: LAT • REM • 5,98 cartoletas.",
+      "visual": "Marcelinho"
+    },
+    {
+      "indice": 40,
+      "inicio": 387.66,
+      "fim": 396.2,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Piquerez aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "texto_tela": "Piquerez: LAT • PAL • 12,48 cartoletas.",
+      "visual": "Piquerez"
+    },
+    {
+      "indice": 41,
+      "inicio": 396.2,
+      "fim": 405.916,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Jonathan Jesus aparece em 2 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "texto_tela": "Jonathan Jesus: ZAG • CRU • 6,91 cartoletas.",
+      "visual": "Jonathan Jesus"
+    },
+    {
+      "indice": 42,
+      "inicio": 405.916,
+      "fim": 414.528,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "João Victor aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "texto_tela": "João Victor: ZAG • MIR • 6,15 cartoletas.",
+      "visual": "João Victor"
+    },
+    {
+      "indice": 43,
+      "inicio": 414.528,
+      "fim": 422.756,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Picco aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "texto_tela": "Picco: MEI • REM • 8,25 cartoletas.",
+      "visual": "Picco"
+    },
+    {
+      "indice": 44,
+      "inicio": 422.756,
+      "fim": 431.992,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Denilson aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "texto_tela": "Denilson: MEI • MIR • 6,81 cartoletas.",
+      "visual": "Denilson"
+    },
+    {
+      "indice": 45,
+      "inicio": 431.992,
+      "fim": 440.748,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Josué aparece em 2 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "texto_tela": "Josué: MEI • CFC • 6,23 cartoletas.",
+      "visual": "Josué"
+    },
+    {
+      "indice": 46,
+      "inicio": 440.748,
+      "fim": 450.08,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Samuel Lino aparece em 3 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "texto_tela": "Samuel Lino: ATA • FLA • 12,06 cartoletas.",
+      "visual": "Samuel Lino"
+    },
+    {
+      "indice": 47,
+      "inicio": 450.08,
+      "fim": 459.148,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Vitinho aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "texto_tela": "Vitinho: ATA • INT • 9,03 cartoletas.",
+      "visual": "Vitinho"
+    },
+    {
+      "indice": 48,
+      "inicio": 459.148,
+      "fim": 467.856,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Isidro Pitta aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "texto_tela": "Isidro Pitta: ATA • RBB • 5,54 cartoletas.",
+      "visual": "Isidro Pitta"
+    },
+    {
+      "indice": 49,
+      "inicio": 467.856,
+      "fim": 476.9,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Fernando Seabra aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "texto_tela": "Fernando Seabra: TEC • CFC • 7,66 cartoletas.",
+      "visual": "Fernando Seabra"
+    },
+    {
+      "indice": 50,
+      "inicio": 476.9,
+      "fim": 486.448,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Tiago Volpi aparece em 2 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "texto_tela": "Tiago Volpi: GOL • RBB • 10,55 cartoletas.",
+      "visual": "Tiago Volpi"
+    },
+    {
+      "indice": 51,
+      "inicio": 486.448,
+      "fim": 495.564,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Gustavo Gómez aparece em 2 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "texto_tela": "Gustavo Gómez: ZAG • PAL • 10,56 cartoletas.",
+      "visual": "Gustavo Gómez"
+    },
+    {
+      "indice": 52,
+      "inicio": 495.564,
+      "fim": 504.224,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Jacy aparece em 2 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "texto_tela": "Jacy: ZAG • CFC • 5,24 cartoletas.",
+      "visual": "Jacy"
+    },
+    {
+      "indice": 53,
+      "inicio": 504.224,
+      "fim": 513.844,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Matheus Pereira aparece em 2 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "texto_tela": "Matheus Pereira: MEI • CRU • 15,66 cartoletas.",
+      "visual": "Matheus Pereira"
+    },
+    {
+      "indice": 54,
+      "inicio": 513.844,
+      "fim": 522.504,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Arias aparece em 2 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "texto_tela": "Arias: MEI • PAL • 16,50 cartoletas.",
+      "visual": "Arias"
+    },
+    {
+      "indice": 55,
+      "inicio": 522.504,
+      "fim": 531.308,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Danilo aparece em 2 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "texto_tela": "Danilo: MEI • BOT • 14,48 cartoletas.",
+      "visual": "Danilo"
+    },
+    {
+      "indice": 56,
+      "inicio": 531.308,
+      "fim": 540.376,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Pedro aparece em 2 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "texto_tela": "Pedro: ATA • FLA • 16,04 cartoletas.",
+      "visual": "Pedro"
+    },
+    {
+      "indice": 57,
+      "inicio": 540.376,
+      "fim": 549.084,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Viveros aparece em 2 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "texto_tela": "Viveros: ATA • CAP • 12,08 cartoletas.",
+      "visual": "Viveros"
+    },
+    {
+      "indice": 58,
+      "inicio": 549.084,
+      "fim": 558.104,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Rafael Guanaes aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "texto_tela": "Rafael Guanaes: TEC • MIR • 7,44 cartoletas.",
+      "visual": "Rafael Guanaes"
+    },
+    {
+      "indice": 59,
+      "inicio": 558.104,
+      "fim": 567.508,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Juninho Capixaba aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "texto_tela": "Juninho Capixaba: LAT • RBB • 13,39 cartoletas.",
+      "visual": "Juninho Capixaba"
+    },
+    {
+      "indice": 60,
+      "inicio": 567.508,
+      "fim": 576.552,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Luciano Juba aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "texto_tela": "Luciano Juba: LAT • BAH • 11,92 cartoletas.",
+      "visual": "Luciano Juba"
+    },
+    {
+      "indice": 61,
+      "inicio": 576.552,
+      "fim": 585.5,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Odair Hellmann aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "texto_tela": "Odair Hellmann: TEC • CAP • 9,12 cartoletas.",
+      "visual": "Odair Hellmann"
+    },
+    {
+      "indice": 62,
+      "inicio": 585.5,
+      "fim": 598.456,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "O Top 5 entra como comparação por posição. Uma troca só faz sentido quando melhora eficiência por cartoleta, teto, estabilidade ou reduz exposição excessiva ao mesmo confronto.",
+      "texto_tela": "Top 5: alternativas por preço, teto e estabilidade.",
+      "visual": "top5"
+    },
+    {
+      "indice": 63,
+      "inicio": 598.456,
+      "fim": 609.42,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "No pré-fechamento, a segunda análise deve destacar alterações nos times, mudanças no Top 5, dúvidas de escalação e riscos que surgiram após a seleção inicial.",
+      "texto_tela": "Segundo vídeo: mudanças e escolhas definitivas.",
+      "visual": "top5"
+    },
+    {
+      "indice": 64,
+      "inicio": 609.42,
+      "fim": 619.88,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Esta foi a análise da rodada 22. Portal SimonSports: dados para entender a escalação e diálogo para confrontar as escolhas.",
+      "texto_tela": "Portal SimonSports • Cartola • Dados • Análise.",
+      "visual": "final"
+    }
+  ]
+}

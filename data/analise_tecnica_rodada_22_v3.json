@@ -1,0 +1,846 @@
+{
+  "rodada": 22,
+  "status": "SNAPSHOT_PUBLICADO_SELECAO_INICIAL",
+  "publicacao_automatica": true,
+  "duracao_alvo_minutos": [
+    10,
+    15
+  ],
+  "moeda_falada": "cartoletas",
+  "fontes": [
+    "data/publicacoes_atuais/time_economico_rodada_22.json",
+    "data/publicacoes_atuais/time_intermediario_rodada_22.json",
+    "data/publicacoes_atuais/time_pontuacao_rodada_22.json",
+    "data/publicacoes_atuais/top5_inicial_recuperado_rodada_22.json",
+    "API Cartola: partidas/22"
+  ],
+  "times": {
+    "economico": {
+      "nome": "Time Econômico",
+      "custo": 96.67,
+      "capitao": "Samuel Lino",
+      "ultima_pontuacao": 0.0,
+      "participacao": "12/12",
+      "tipo_pontuacao": "snapshot publicado da seleção inicial"
+    },
+    "intermediario": {
+      "nome": "Time Intermediário",
+      "custo": 133.75,
+      "capitao": "Samuel Lino",
+      "ultima_pontuacao": 0.0,
+      "participacao": "12/12",
+      "tipo_pontuacao": "snapshot publicado da seleção inicial"
+    },
+    "pontuacao": {
+      "nome": "Time para Pontuar",
+      "custo": 147.6,
+      "capitao": "Samuel Lino",
+      "ultima_pontuacao": 0.0,
+      "participacao": "12/12",
+      "tipo_pontuacao": "snapshot publicado da seleção inicial"
+    }
+  },
+  "jogos": [
+    {
+      "mandante": "GRE",
+      "mandante_sigla": "GRE",
+      "visitante": "SAO",
+      "visitante_sigla": "SAO",
+      "data": "08/08",
+      "hora": "16:00",
+      "estadio": "Arena do Grêmio",
+      "pos_mandante": 0,
+      "pos_visitante": 0,
+      "forma_mandante": "recorte histórico preservado fora do snapshot",
+      "forma_visitante": "recorte histórico preservado fora do snapshot",
+      "leitura": "GRE enfrenta SAO. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial."
+    },
+    {
+      "mandante": "REM",
+      "mandante_sigla": "REM",
+      "visitante": "CAM",
+      "visitante_sigla": "CAM",
+      "data": "08/08",
+      "hora": "18:30",
+      "estadio": "Mangueirão",
+      "pos_mandante": 0,
+      "pos_visitante": 0,
+      "forma_mandante": "recorte histórico preservado fora do snapshot",
+      "forma_visitante": "recorte histórico preservado fora do snapshot",
+      "leitura": "REM enfrenta CAM. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial."
+    },
+    {
+      "mandante": "CFC",
+      "mandante_sigla": "CFC",
+      "visitante": "CHA",
+      "visitante_sigla": "CHA",
+      "data": "08/08",
+      "hora": "20:30",
+      "estadio": "Couto Pereira",
+      "pos_mandante": 0,
+      "pos_visitante": 0,
+      "forma_mandante": "recorte histórico preservado fora do snapshot",
+      "forma_visitante": "recorte histórico preservado fora do snapshot",
+      "leitura": "CFC enfrenta CHA. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial."
+    },
+    {
+      "mandante": "BOT",
+      "mandante_sigla": "BOT",
+      "visitante": "FLU",
+      "visitante_sigla": "FLU",
+      "data": "08/08",
+      "hora": "21:00",
+      "estadio": "Nilton Santos (Engenhão)",
+      "pos_mandante": 0,
+      "pos_visitante": 0,
+      "forma_mandante": "recorte histórico preservado fora do snapshot",
+      "forma_visitante": "recorte histórico preservado fora do snapshot",
+      "leitura": "BOT enfrenta FLU. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial."
+    },
+    {
+      "mandante": "CRU",
+      "mandante_sigla": "CRU",
+      "visitante": "MIR",
+      "visitante_sigla": "MIR",
+      "data": "09/08",
+      "hora": "11:00",
+      "estadio": "Mineirão",
+      "pos_mandante": 0,
+      "pos_visitante": 0,
+      "forma_mandante": "recorte histórico preservado fora do snapshot",
+      "forma_visitante": "recorte histórico preservado fora do snapshot",
+      "leitura": "CRU enfrenta MIR. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial."
+    },
+    {
+      "mandante": "PAL",
+      "mandante_sigla": "PAL",
+      "visitante": "INT",
+      "visitante_sigla": "INT",
+      "data": "09/08",
+      "hora": "16:00",
+      "estadio": "Nubank Parque",
+      "pos_mandante": 0,
+      "pos_visitante": 0,
+      "forma_mandante": "recorte histórico preservado fora do snapshot",
+      "forma_visitante": "recorte histórico preservado fora do snapshot",
+      "leitura": "PAL enfrenta INT. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial."
+    },
+    {
+      "mandante": "BAH",
+      "mandante_sigla": "BAH",
+      "visitante": "VAS",
+      "visitante_sigla": "VAS",
+      "data": "09/08",
+      "hora": "16:00",
+      "estadio": "Casa de Apostas Arena Fonte Nova",
+      "pos_mandante": 0,
+      "pos_visitante": 0,
+      "forma_mandante": "recorte histórico preservado fora do snapshot",
+      "forma_visitante": "recorte histórico preservado fora do snapshot",
+      "leitura": "BAH enfrenta VAS. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial."
+    },
+    {
+      "mandante": "SAN",
+      "mandante_sigla": "SAN",
+      "visitante": "CAP",
+      "visitante_sigla": "CAP",
+      "data": "09/08",
+      "hora": "18:30",
+      "estadio": "Vila Belmiro",
+      "pos_mandante": 0,
+      "pos_visitante": 0,
+      "forma_mandante": "recorte histórico preservado fora do snapshot",
+      "forma_visitante": "recorte histórico preservado fora do snapshot",
+      "leitura": "SAN enfrenta CAP. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial."
+    },
+    {
+      "mandante": "RBB",
+      "mandante_sigla": "RBB",
+      "visitante": "COR",
+      "visitante_sigla": "COR",
+      "data": "09/08",
+      "hora": "18:30",
+      "estadio": "Cícero de Souza Marques",
+      "pos_mandante": 0,
+      "pos_visitante": 0,
+      "forma_mandante": "recorte histórico preservado fora do snapshot",
+      "forma_visitante": "recorte histórico preservado fora do snapshot",
+      "leitura": "RBB enfrenta COR. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial."
+    },
+    {
+      "mandante": "FLA",
+      "mandante_sigla": "FLA",
+      "visitante": "VIT",
+      "visitante_sigla": "VIT",
+      "data": "09/08",
+      "hora": "19:30",
+      "estadio": "Maracanã",
+      "pos_mandante": 0,
+      "pos_visitante": 0,
+      "forma_mandante": "recorte histórico preservado fora do snapshot",
+      "forma_visitante": "recorte histórico preservado fora do snapshot",
+      "leitura": "FLA enfrenta VIT. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial."
+    }
+  ],
+  "jogadores": {
+    "Ronaldo": {
+      "posicao": "GOL",
+      "clube": "BAH",
+      "preco": 9.57,
+      "modelos": [
+        "Econômico"
+      ],
+      "racional": "Ronaldo aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "adversario": "",
+      "pos_clube": 0,
+      "pos_adversario": 0,
+      "forma_clube": "",
+      "forma_adversario": ""
+    },
+    "Marcelinho": {
+      "posicao": "LAT",
+      "clube": "REM",
+      "preco": 5.98,
+      "modelos": [
+        "Econômico"
+      ],
+      "racional": "Marcelinho aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "adversario": "",
+      "pos_clube": 0,
+      "pos_adversario": 0,
+      "forma_clube": "",
+      "forma_adversario": ""
+    },
+    "Piquerez": {
+      "posicao": "LAT",
+      "clube": "PAL",
+      "preco": 12.48,
+      "modelos": [
+        "Econômico"
+      ],
+      "racional": "Piquerez aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "adversario": "",
+      "pos_clube": 0,
+      "pos_adversario": 0,
+      "forma_clube": "",
+      "forma_adversario": ""
+    },
+    "Jonathan Jesus": {
+      "posicao": "ZAG",
+      "clube": "CRU",
+      "preco": 6.91,
+      "modelos": [
+        "Econômico",
+        "Intermediário"
+      ],
+      "racional": "Jonathan Jesus aparece em 2 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "adversario": "",
+      "pos_clube": 0,
+      "pos_adversario": 0,
+      "forma_clube": "",
+      "forma_adversario": ""
+    },
+    "João Victor": {
+      "posicao": "ZAG",
+      "clube": "MIR",
+      "preco": 6.15,
+      "modelos": [
+        "Econômico"
+      ],
+      "racional": "João Victor aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "adversario": "",
+      "pos_clube": 0,
+      "pos_adversario": 0,
+      "forma_clube": "",
+      "forma_adversario": ""
+    },
+    "Picco": {
+      "posicao": "MEI",
+      "clube": "REM",
+      "preco": 8.25,
+      "modelos": [
+        "Econômico"
+      ],
+      "racional": "Picco aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "adversario": "",
+      "pos_clube": 0,
+      "pos_adversario": 0,
+      "forma_clube": "",
+      "forma_adversario": ""
+    },
+    "Denilson": {
+      "posicao": "MEI",
+      "clube": "MIR",
+      "preco": 6.81,
+      "modelos": [
+        "Econômico"
+      ],
+      "racional": "Denilson aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "adversario": "",
+      "pos_clube": 0,
+      "pos_adversario": 0,
+      "forma_clube": "",
+      "forma_adversario": ""
+    },
+    "Josué": {
+      "posicao": "MEI",
+      "clube": "CFC",
+      "preco": 6.23,
+      "modelos": [
+        "Econômico",
+        "Intermediário"
+      ],
+      "racional": "Josué aparece em 2 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "adversario": "",
+      "pos_clube": 0,
+      "pos_adversario": 0,
+      "forma_clube": "",
+      "forma_adversario": ""
+    },
+    "Samuel Lino": {
+      "posicao": "ATA",
+      "clube": "FLA",
+      "preco": 12.06,
+      "modelos": [
+        "Econômico",
+        "Intermediário",
+        "Para Pontuar"
+      ],
+      "racional": "Samuel Lino aparece em 3 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "adversario": "",
+      "pos_clube": 0,
+      "pos_adversario": 0,
+      "forma_clube": "",
+      "forma_adversario": ""
+    },
+    "Vitinho": {
+      "posicao": "ATA",
+      "clube": "INT",
+      "preco": 9.03,
+      "modelos": [
+        "Econômico"
+      ],
+      "racional": "Vitinho aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "adversario": "",
+      "pos_clube": 0,
+      "pos_adversario": 0,
+      "forma_clube": "",
+      "forma_adversario": ""
+    },
+    "Isidro Pitta": {
+      "posicao": "ATA",
+      "clube": "RBB",
+      "preco": 5.54,
+      "modelos": [
+        "Econômico"
+      ],
+      "racional": "Isidro Pitta aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "adversario": "",
+      "pos_clube": 0,
+      "pos_adversario": 0,
+      "forma_clube": "",
+      "forma_adversario": ""
+    },
+    "Fernando Seabra": {
+      "posicao": "TEC",
+      "clube": "CFC",
+      "preco": 7.66,
+      "modelos": [
+        "Econômico"
+      ],
+      "racional": "Fernando Seabra aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "adversario": "",
+      "pos_clube": 0,
+      "pos_adversario": 0,
+      "forma_clube": "",
+      "forma_adversario": ""
+    },
+    "Tiago Volpi": {
+      "posicao": "GOL",
+      "clube": "RBB",
+      "preco": 10.55,
+      "modelos": [
+        "Intermediário",
+        "Para Pontuar"
+      ],
+      "racional": "Tiago Volpi aparece em 2 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "adversario": "",
+      "pos_clube": 0,
+      "pos_adversario": 0,
+      "forma_clube": "",
+      "forma_adversario": ""
+    },
+    "Gustavo Gómez": {
+      "posicao": "ZAG",
+      "clube": "PAL",
+      "preco": 10.56,
+      "modelos": [
+        "Intermediário",
+        "Para Pontuar"
+      ],
+      "racional": "Gustavo Gómez aparece em 2 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "adversario": "",
+      "pos_clube": 0,
+      "pos_adversario": 0,
+      "forma_clube": "",
+      "forma_adversario": ""
+    },
+    "Jacy": {
+      "posicao": "ZAG",
+      "clube": "CFC",
+      "preco": 5.24,
+      "modelos": [
+        "Intermediário",
+        "Para Pontuar"
+      ],
+      "racional": "Jacy aparece em 2 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "adversario": "",
+      "pos_clube": 0,
+      "pos_adversario": 0,
+      "forma_clube": "",
+      "forma_adversario": ""
+    },
+    "Matheus Pereira": {
+      "posicao": "MEI",
+      "clube": "CRU",
+      "preco": 15.66,
+      "modelos": [
+        "Intermediário",
+        "Para Pontuar"
+      ],
+      "racional": "Matheus Pereira aparece em 2 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "adversario": "",
+      "pos_clube": 0,
+      "pos_adversario": 0,
+      "forma_clube": "",
+      "forma_adversario": ""
+    },
+    "Arias": {
+      "posicao": "MEI",
+      "clube": "PAL",
+      "preco": 16.5,
+      "modelos": [
+        "Intermediário",
+        "Para Pontuar"
+      ],
+      "racional": "Arias aparece em 2 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "adversario": "",
+      "pos_clube": 0,
+      "pos_adversario": 0,
+      "forma_clube": "",
+      "forma_adversario": ""
+    },
+    "Danilo": {
+      "posicao": "MEI",
+      "clube": "BOT",
+      "preco": 14.48,
+      "modelos": [
+        "Intermediário",
+        "Para Pontuar"
+      ],
+      "racional": "Danilo aparece em 2 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "adversario": "",
+      "pos_clube": 0,
+      "pos_adversario": 0,
+      "forma_clube": "",
+      "forma_adversario": ""
+    },
+    "Pedro": {
+      "posicao": "ATA",
+      "clube": "FLA",
+      "preco": 16.04,
+      "modelos": [
+        "Intermediário",
+        "Para Pontuar"
+      ],
+      "racional": "Pedro aparece em 2 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "adversario": "",
+      "pos_clube": 0,
+      "pos_adversario": 0,
+      "forma_clube": "",
+      "forma_adversario": ""
+    },
+    "Viveros": {
+      "posicao": "ATA",
+      "clube": "CAP",
+      "preco": 12.08,
+      "modelos": [
+        "Intermediário",
+        "Para Pontuar"
+      ],
+      "racional": "Viveros aparece em 2 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "adversario": "",
+      "pos_clube": 0,
+      "pos_adversario": 0,
+      "forma_clube": "",
+      "forma_adversario": ""
+    },
+    "Rafael Guanaes": {
+      "posicao": "TEC",
+      "clube": "MIR",
+      "preco": 7.44,
+      "modelos": [
+        "Intermediário"
+      ],
+      "racional": "Rafael Guanaes aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "adversario": "",
+      "pos_clube": 0,
+      "pos_adversario": 0,
+      "forma_clube": "",
+      "forma_adversario": ""
+    },
+    "Juninho Capixaba": {
+      "posicao": "LAT",
+      "clube": "RBB",
+      "preco": 13.39,
+      "modelos": [
+        "Para Pontuar"
+      ],
+      "racional": "Juninho Capixaba aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "adversario": "",
+      "pos_clube": 0,
+      "pos_adversario": 0,
+      "forma_clube": "",
+      "forma_adversario": ""
+    },
+    "Luciano Juba": {
+      "posicao": "LAT",
+      "clube": "BAH",
+      "preco": 11.92,
+      "modelos": [
+        "Para Pontuar"
+      ],
+      "racional": "Luciano Juba aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "adversario": "",
+      "pos_clube": 0,
+      "pos_adversario": 0,
+      "forma_clube": "",
+      "forma_adversario": ""
+    },
+    "Odair Hellmann": {
+      "posicao": "TEC",
+      "clube": "CAP",
+      "preco": 9.12,
+      "modelos": [
+        "Para Pontuar"
+      ],
+      "racional": "Odair Hellmann aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
+      "adversario": "",
+      "pos_clube": 0,
+      "pos_adversario": 0,
+      "forma_clube": "",
+      "forma_adversario": ""
+    }
+  },
+  "top5": {
+    "rodada": 22,
+    "evento_programado": "SELECAO_INICIAL",
+    "tipo_publicacao": "top5",
+    "atualizado_em": "2026-07-31T05:45:00.949Z",
+    "commit_origem": "daa8b5f81ded9af1d113b5f192054abb148842ca",
+    "dados": [
+      {
+        "RODADA": 22,
+        "POS": "GOL",
+        "NOME": "Carlos Miguel",
+        "CLUBE": "PAL",
+        "PRECO": 8.93,
+        "EXP_SCORE": 4.4589,
+        "FACTOR": 1.1435893822027503,
+        "ATLETA_ID": 104084
+      },
+      {
+        "RODADA": 22,
+        "POS": "GOL",
+        "NOME": "Ronaldo",
+        "CLUBE": "BAH",
+        "PRECO": 9.57,
+        "EXP_SCORE": 4.3776,
+        "FACTOR": 1.0686106979156564,
+        "ATLETA_ID": 91101
+      },
+      {
+        "RODADA": 22,
+        "POS": "GOL",
+        "NOME": "Rossi",
+        "CLUBE": "FLA",
+        "PRECO": 8.68,
+        "EXP_SCORE": 4.1551,
+        "FACTOR": 1.1142609852877305,
+        "ATLETA_ID": 99552
+      },
+      {
+        "RODADA": 22,
+        "POS": "GOL",
+        "NOME": "Tiago Volpi",
+        "CLUBE": "RBB",
+        "PRECO": 10.55,
+        "EXP_SCORE": 4.0195,
+        "FACTOR": 1.080750103943091,
+        "ATLETA_ID": 72018
+      },
+      {
+        "RODADA": 22,
+        "POS": "GOL",
+        "NOME": "Marcelo Rangel",
+        "CLUBE": "REM",
+        "PRECO": 5.77,
+        "EXP_SCORE": 3.7745,
+        "FACTOR": 1.1826599074843243,
+        "ATLETA_ID": 82730
+      },
+      {
+        "RODADA": 22,
+        "POS": "LAT",
+        "NOME": "Juninho Capixaba",
+        "CLUBE": "RBB",
+        "PRECO": 13.39,
+        "EXP_SCORE": 5.4436,
+        "FACTOR": 1.080750103943091,
+        "ATLETA_ID": 94968
+      },
+      {
+        "RODADA": 22,
+        "POS": "LAT",
+        "NOME": "Luciano Juba",
+        "CLUBE": "BAH",
+        "PRECO": 11.92,
+        "EXP_SCORE": 5.4115,
+        "FACTOR": 1.0686106979156564,
+        "ATLETA_ID": 107093
+      },
+      {
+        "RODADA": 22,
+        "POS": "LAT",
+        "NOME": "Piquerez",
+        "CLUBE": "PAL",
+        "PRECO": 12.48,
+        "EXP_SCORE": 4.9293,
+        "FACTOR": 1.1435893822027503,
+        "ATLETA_ID": 102130
+      },
+      {
+        "RODADA": 22,
+        "POS": "LAT",
+        "NOME": "Matheuzinho",
+        "CLUBE": "COR",
+        "PRECO": 11.37,
+        "EXP_SCORE": 4.6978,
+        "FACTOR": 0.9640790844574506,
+        "ATLETA_ID": 101727
+      },
+      {
+        "RODADA": 22,
+        "POS": "LAT",
+        "NOME": "Marcelinho",
+        "CLUBE": "REM",
+        "PRECO": 5.98,
+        "EXP_SCORE": 4.6137,
+        "FACTOR": 1.1826599074843243,
+        "ATLETA_ID": 97795
+      },
+      {
+        "RODADA": 22,
+        "POS": "ZAG",
+        "NOME": "Jonathan Jesus",
+        "CLUBE": "CRU",
+        "PRECO": 6.91,
+        "EXP_SCORE": 4.3573,
+        "FACTOR": 1.1892396695748244,
+        "ATLETA_ID": 124912
+      },
+      {
+        "RODADA": 22,
+        "POS": "ZAG",
+        "NOME": "Gustavo Gómez",
+        "CLUBE": "PAL",
+        "PRECO": 10.56,
+        "EXP_SCORE": 3.9464,
+        "FACTOR": 1.1435893822027503,
+        "ATLETA_ID": 71684
+      },
+      {
+        "RODADA": 22,
+        "POS": "ZAG",
+        "NOME": "David Duarte",
+        "CLUBE": "BAH",
+        "PRECO": 7.02,
+        "EXP_SCORE": 3.7419,
+        "FACTOR": 1.0686106979156564,
+        "ATLETA_ID": 91772
+      },
+      {
+        "RODADA": 22,
+        "POS": "ZAG",
+        "NOME": "Alexander Barboza",
+        "CLUBE": "PAL",
+        "PRECO": 10.15,
+        "EXP_SCORE": 3.6308,
+        "FACTOR": 1.1435893822027503,
+        "ATLETA_ID": 99274
+      },
+      {
+        "RODADA": 22,
+        "POS": "ZAG",
+        "NOME": "Jacy",
+        "CLUBE": "CFC",
+        "PRECO": 5.24,
+        "EXP_SCORE": 3.5223,
+        "FACTOR": 1.2067516978777055,
+        "ATLETA_ID": 97878
+      },
+      {
+        "RODADA": 22,
+        "POS": "MEI",
+        "NOME": "Matheus Pereira",
+        "CLUBE": "CRU",
+        "PRECO": 15.66,
+        "EXP_SCORE": 7.9883,
+        "FACTOR": 1.1106828699378204,
+        "ATLETA_ID": 96610
+      },
+      {
+        "RODADA": 22,
+        "POS": "MEI",
+        "NOME": "Arias",
+        "CLUBE": "PAL",
+        "PRECO": 16.5,
+        "EXP_SCORE": 7.584,
+        "FACTOR": 1.0928205418989012,
+        "ATLETA_ID": 99815
+      },
+      {
+        "RODADA": 22,
+        "POS": "MEI",
+        "NOME": "Danilo",
+        "CLUBE": "BOT",
+        "PRECO": 14.48,
+        "EXP_SCORE": 6.6217,
+        "FACTOR": 1.0550415928348207,
+        "ATLETA_ID": 107231
+      },
+      {
+        "RODADA": 22,
+        "POS": "MEI",
+        "NOME": "Josué",
+        "CLUBE": "CFC",
+        "PRECO": 6.23,
+        "EXP_SCORE": 5.0318,
+        "FACTOR": 1.1588585457005702,
+        "ATLETA_ID": 84626
+      },
+      {
+        "RODADA": 22,
+        "POS": "MEI",
+        "NOME": "Jean Lucas",
+        "CLUBE": "BAH",
+        "PRECO": 9.34,
+        "EXP_SCORE": 4.5469,
+        "FACTOR": 1.100787190308966,
+        "ATLETA_ID": 98517
+      },
+      {
+        "RODADA": 22,
+        "POS": "ATA",
+        "NOME": "Samuel Lino",
+        "CLUBE": "FLA",
+        "PRECO": 12.06,
+        "EXP_SCORE": 8.4915,
+        "FACTOR": 1.0789916427719966,
+        "ATLETA_ID": 98873
+      },
+      {
+        "RODADA": 22,
+        "POS": "ATA",
+        "NOME": "Pedro",
+        "CLUBE": "FLA",
+        "PRECO": 16.04,
+        "EXP_SCORE": 8.3762,
+        "FACTOR": 1.0789916427719966,
+        "ATLETA_ID": 94583
+      },
+      {
+        "RODADA": 22,
+        "POS": "ATA",
+        "NOME": "Viveros",
+        "CLUBE": "CAP",
+        "PRECO": 12.08,
+        "EXP_SCORE": 6.9013,
+        "FACTOR": 0.9373894455362607,
+        "ATLETA_ID": 143193
+      },
+      {
+        "RODADA": 22,
+        "POS": "ATA",
+        "NOME": "Lucas Ronier",
+        "CLUBE": "CFC",
+        "PRECO": 10.77,
+        "EXP_SCORE": 6.2284,
+        "FACTOR": 1.1588585457005702,
+        "ATLETA_ID": 123648
+      },
+      {
+        "RODADA": 22,
+        "POS": "ATA",
+        "NOME": "Flaco López",
+        "CLUBE": "PAL",
+        "PRECO": 13.4,
+        "EXP_SCORE": 5.6894,
+        "FACTOR": 1.0928205418989012,
+        "ATLETA_ID": 113103
+      },
+      {
+        "RODADA": 22,
+        "POS": "TEC",
+        "NOME": "Abel Ferreira",
+        "CLUBE": "PAL",
+        "PRECO": 12.52,
+        "EXP_SCORE": 6.2038,
+        "FACTOR": 1.062464415735043,
+        "ATLETA_ID": 110506
+      },
+      {
+        "RODADA": 22,
+        "POS": "TEC",
+        "NOME": "Leonardo Jardim",
+        "CLUBE": "FLA",
+        "PRECO": 12.81,
+        "EXP_SCORE": 6.1695,
+        "FACTOR": 1.0490196526949966,
+        "ATLETA_ID": 88963
+      },
+      {
+        "RODADA": 22,
+        "POS": "TEC",
+        "NOME": "Odair Hellmann",
+        "CLUBE": "CAP",
+        "PRECO": 9.12,
+        "EXP_SCORE": 5.4729,
+        "FACTOR": 0.9571239601791294,
+        "ATLETA_ID": 92273
+      },
+      {
+        "RODADA": 22,
+        "POS": "TEC",
+        "NOME": "Artur Jorge",
+        "CLUBE": "CRU",
+        "PRECO": 12.12,
+        "EXP_SCORE": 5.3829,
+        "FACTOR": 1.079830567995103,
+        "ATLETA_ID": 127273
+      },
+      {
+        "RODADA": 22,
+        "POS": "TEC",
+        "NOME": "Rogério Ceni",
+        "CLUBE": "BAH",
+        "PRECO": 10.69,
+        "EXP_SCORE": 5.0693,
+        "FACTOR": 1.0702097683559393,
+        "ATLETA_ID": 97341
+      }
+    ]
+  },
+  "snapshot_evento": "SELECAO_INICIAL",
+  "gerado_em": "2026-07-31T16:45:34.488868+00:00"
+}
