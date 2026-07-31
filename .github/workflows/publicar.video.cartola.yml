@@ -59,9 +59,12 @@ jobs:
           FASE="${DISPATCH_FASE:-${MANUAL_FASE:-INICIAL}}"
           FASE="$(printf '%s' "$FASE" | tr '[:lower:]' '[:upper:]')"
           case "$FASE" in INICIAL|PRE_FECHAMENTO) ;; *) echo "Fase inválida: $FASE"; exit 1;; esac
+          VIDEO="output/analise_$(printf '%s' "$FASE" | tr '[:upper:]' '[:lower:]')_rodada_${RODADA}.mp4"
+          MANIFESTO="${VIDEO%.mp4}.json"
           echo "rodada=$RODADA" >> "$GITHUB_OUTPUT"
           echo "fase=$FASE" >> "$GITHUB_OUTPUT"
-          echo "video=output/analise_${FASE,,}_rodada_${RODADA}.mp4" >> "$GITHUB_OUTPUT"
+          echo "video=$VIDEO" >> "$GITHUB_OUTPUT"
+          echo "manifesto=$MANIFESTO" >> "$GITHUB_OUTPUT"
 
       - name: Validar base da rodada
         env:
@@ -78,13 +81,15 @@ jobs:
         env:
           RODADA: ${{ steps.evento.outputs.rodada }}
           VIDEO: ${{ steps.evento.outputs.video }}
+          MANIFESTO: ${{ steps.evento.outputs.manifesto }}
         run: |
-          rm -f "$VIDEO" "${VIDEO%.mp4}.json"
+          rm -f "$VIDEO" "$MANIFESTO"
           python app/gerar_video_dialogo_cartola_v4.py \
             --rodada "$RODADA" \
             --repo-root . \
             --output "$VIDEO"
           test -s "$VIDEO"
+          test -s "$MANIFESTO"
 
       - name: Enviar vídeo ao Telegram
         env:
@@ -104,8 +109,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "${{ steps.evento.outputs.video }}" "${{ steps.evento.outputs.video }}.json" 2>/dev/null || true
-          git add "${{ steps.evento.outputs.video }}" "${{ steps.evento.outputs.video%.mp4 }}.json" 2>/dev/null || true
+          git add "${{ steps.evento.outputs.video }}" "${{ steps.evento.outputs.manifesto }}"
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "Vídeo ${{ steps.evento.outputs.fase }} da rodada ${{ steps.evento.outputs.rodada }}"
           git pull --rebase origin main
