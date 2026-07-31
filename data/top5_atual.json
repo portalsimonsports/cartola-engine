@@ -3,8 +3,18 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 22,
-  "atualizado_em": "2026-07-31T06:15:25.722Z",
+  "atualizado_em": "2026-07-31T06:20:16.024Z",
   "dados": [
+    {
+      "RODADA": 22,
+      "POS": "GOL",
+      "NOME": "Tiago Volpi",
+      "CLUBE": "RBB",
+      "PRECO": 10.55,
+      "EXP_SCORE": 4.4662,
+      "FACTOR": 1.080750103943091,
+      "ATLETA_ID": 72018
+    },
     {
       "RODADA": 22,
       "POS": "GOL",
@@ -14,16 +24,6 @@
       "EXP_SCORE": 4.4589,
       "FACTOR": 1.1435893822027503,
       "ATLETA_ID": 104084
-    },
-    {
-      "RODADA": 22,
-      "POS": "GOL",
-      "NOME": "Ronaldo",
-      "CLUBE": "BAH",
-      "PRECO": 9.57,
-      "EXP_SCORE": 4.3776,
-      "FACTOR": 1.0686106979156564,
-      "ATLETA_ID": 91101
     },
     {
       "RODADA": 22,
@@ -48,12 +48,12 @@
     {
       "RODADA": 22,
       "POS": "GOL",
-      "NOME": "Tiago Volpi",
-      "CLUBE": "RBB",
-      "PRECO": 10.55,
-      "EXP_SCORE": 4.0195,
-      "FACTOR": 1.080750103943091,
-      "ATLETA_ID": 72018
+      "NOME": "Ronaldo",
+      "CLUBE": "BAH",
+      "PRECO": 9.57,
+      "EXP_SCORE": 3.8066,
+      "FACTOR": 1.0686106979156564,
+      "ATLETA_ID": 91101
     },
     {
       "RODADA": 22,
@@ -108,16 +108,6 @@
     {
       "RODADA": 22,
       "POS": "ZAG",
-      "NOME": "Jonathan Jesus",
-      "CLUBE": "CRU",
-      "PRECO": 6.91,
-      "EXP_SCORE": 4.3573,
-      "FACTOR": 1.1892396695748244,
-      "ATLETA_ID": 124912
-    },
-    {
-      "RODADA": 22,
-      "POS": "ZAG",
       "NOME": "Gustavo Gómez",
       "CLUBE": "PAL",
       "PRECO": 10.56,
@@ -134,6 +124,16 @@
       "EXP_SCORE": 3.9137,
       "FACTOR": 1.2067516978777055,
       "ATLETA_ID": 97878
+    },
+    {
+      "RODADA": 22,
+      "POS": "ZAG",
+      "NOME": "Jonathan Jesus",
+      "CLUBE": "CRU",
+      "PRECO": 6.91,
+      "EXP_SCORE": 3.7889,
+      "FACTOR": 1.1892396695748244,
+      "ATLETA_ID": 124912
     },
     {
       "RODADA": 22,
@@ -158,22 +158,22 @@
     {
       "RODADA": 22,
       "POS": "MEI",
-      "NOME": "Arias",
-      "CLUBE": "PAL",
-      "PRECO": 16.5,
-      "EXP_SCORE": 8.7217,
-      "FACTOR": 1.0928205418989012,
-      "ATLETA_ID": 99815
-    },
-    {
-      "RODADA": 22,
-      "POS": "MEI",
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 15.66,
       "EXP_SCORE": 7.9883,
       "FACTOR": 1.1106828699378204,
       "ATLETA_ID": 96610
+    },
+    {
+      "RODADA": 22,
+      "POS": "MEI",
+      "NOME": "Arias",
+      "CLUBE": "PAL",
+      "PRECO": 16.5,
+      "EXP_SCORE": 7.584,
+      "FACTOR": 1.0928205418989012,
+      "ATLETA_ID": 99815
     },
     {
       "RODADA": 22,
