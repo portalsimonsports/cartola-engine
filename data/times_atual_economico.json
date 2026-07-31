@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 22,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-07-31T10:54:45.233Z",
+  "atualizado_em": "2026-07-31T10:59:43.877Z",
   "dados": [
     {
       "RODADA": 22,
@@ -14,19 +14,8 @@
       "NOME": "Ronaldo",
       "CLUBE": "BAH",
       "PRECO": 9.57,
-      "EXP_SCORE": 3.8066,
+      "EXP_SCORE": 4.3776,
       "ATLETA_ID": 91101
-    },
-    {
-      "RODADA": 22,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "LAT",
-      "NOME": "Marcelinho",
-      "CLUBE": "REM",
-      "PRECO": 5.98,
-      "EXP_SCORE": 5.3057,
-      "ATLETA_ID": 97795
     },
     {
       "RODADA": 22,
@@ -36,8 +25,19 @@
       "NOME": "Piquerez",
       "CLUBE": "PAL",
       "PRECO": 12.48,
-      "EXP_SCORE": 4.4363,
+      "EXP_SCORE": 4.9293,
       "ATLETA_ID": 102130
+    },
+    {
+      "RODADA": 22,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Marcelinho",
+      "CLUBE": "REM",
+      "PRECO": 5.98,
+      "EXP_SCORE": 4.6137,
+      "ATLETA_ID": 97795
     },
     {
       "RODADA": 22,
@@ -47,7 +47,7 @@
       "NOME": "Jonathan Jesus",
       "CLUBE": "CRU",
       "PRECO": 6.91,
-      "EXP_SCORE": 3.7889,
+      "EXP_SCORE": 4.3573,
       "ATLETA_ID": 124912
     },
     {
@@ -99,6 +99,17 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ATA",
+      "NOME": "Vitinho",
+      "CLUBE": "INT",
+      "PRECO": 9.03,
+      "EXP_SCORE": 4.6427,
+      "ATLETA_ID": 101960
+    },
+    {
+      "RODADA": 22,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 12.06,
@@ -110,33 +121,22 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Vitinho",
-      "CLUBE": "INT",
-      "PRECO": 9.03,
-      "EXP_SCORE": 4.0371,
-      "ATLETA_ID": 101960
-    },
-    {
-      "RODADA": 22,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Isidro Pitta",
-      "CLUBE": "RBB",
-      "PRECO": 5.54,
-      "EXP_SCORE": 3.7677,
-      "ATLETA_ID": 108133
+      "NOME": "Lucas Ronier",
+      "CLUBE": "CFC",
+      "PRECO": 10.77,
+      "EXP_SCORE": 6.2284,
+      "ATLETA_ID": 123648
     },
     {
       "RODADA": 22,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Fernando Seabra",
-      "CLUBE": "CFC",
-      "PRECO": 7.66,
-      "EXP_SCORE": 5.0407,
-      "ATLETA_ID": 126977
+      "NOME": "Rafael Guanaes",
+      "CLUBE": "MIR",
+      "PRECO": 7.44,
+      "EXP_SCORE": 3.5979,
+      "ATLETA_ID": 104027
     },
     {
       "RODADA": 22,
@@ -157,7 +157,7 @@
       "NOME": "Bruno Melo",
       "CLUBE": "CFC",
       "PRECO": 5.54,
-      "EXP_SCORE": 3.3242,
+      "EXP_SCORE": 2.9917,
       "ATLETA_ID": 84339
     },
     {
@@ -168,7 +168,7 @@
       "NOME": "Jacy",
       "CLUBE": "CFC",
       "PRECO": 5.24,
-      "EXP_SCORE": 3.9137,
+      "EXP_SCORE": 3.5223,
       "ATLETA_ID": 97878
     },
     {
@@ -187,11 +187,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Henry Mosquera",
-      "CLUBE": "RBB",
-      "PRECO": 5.51,
-      "EXP_SCORE": 2.9822,
-      "ATLETA_ID": 124239
+      "NOME": "Renê",
+      "CLUBE": "VIT",
+      "PRECO": 8.67,
+      "EXP_SCORE": 4.881,
+      "ATLETA_ID": 130209
     }
   ]
 }
