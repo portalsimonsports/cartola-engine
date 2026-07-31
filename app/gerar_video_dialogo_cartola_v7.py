@@ -145,17 +145,17 @@ def enrich_players(data: Dict[str, Any]) -> None:
         ]
 
         metrics = [f"média de {number(media)} em {jogos} jogos"] if jogos else []
-        metrics.append(f"última pontuação de {number(ultima)}")
-        if projecao > 0:
-            metrics.append(f"projeção de {number(projecao)}")
         if player.get("media_casa") is not None and "casa" in mando:
             metrics.append(f"média em casa de {number(player.get('media_casa'))}")
         if player.get("media_fora") is not None and "fora" in mando:
             metrics.append(f"média fora de casa de {number(player.get('media_fora'))}")
+        metrics.append(f"última pontuação de {number(ultima)}")
         if player.get("pontuacao_primeiro_turno") is not None:
             metrics.append(
                 f"{number(player.get('pontuacao_primeiro_turno'))} pontos no primeiro turno"
             )
+        if projecao > 0:
+            metrics.append(f"projeção de {number(projecao)}")
 
         specific = role_analysis(player)
         risk: List[str] = []
@@ -170,9 +170,22 @@ def enrich_players(data: Dict[str, Any]) -> None:
             f"{openings[variant]} Os dados mostram {', '.join(metrics)}. "
             f"{specific} O ponto de atenção é que {' e '.join(risk)}."
         )
-        card_metrics = [f"média {number(media)}", f"última {number(ultima)}"]
-        if projecao > 0:
+
+        card_metrics: List[str] = []
+        if player.get("media_casa") is not None and "casa" in mando:
+            card_metrics.append(f"média em casa {number(player.get('media_casa'))}")
+        elif player.get("media_fora") is not None and "fora" in mando:
+            card_metrics.append(f"média fora {number(player.get('media_fora'))}")
+        else:
+            card_metrics.append(f"média geral {number(media)}")
+        card_metrics.append(f"última {number(ultima)}")
+        if player.get("pontuacao_primeiro_turno") is not None:
+            card_metrics.append(
+                f"1º turno {number(player.get('pontuacao_primeiro_turno'))}"
+            )
+        elif projecao > 0:
             card_metrics.append(f"projeção {number(projecao)}")
+
         rationales = [
             f"{models.capitalize()} • {' • '.join(card_metrics)}. {specific}",
             f"Motivo: {' • '.join(card_metrics)}. {specific}",
@@ -237,6 +250,8 @@ def update_manifest(output_path: Path) -> None:
             "versao": VERSION,
             "dialogo_individual_real": True,
             "justificativas_repetidas_bloqueadas": True,
+            "media_por_mando_quando_disponivel": True,
+            "primeiro_turno_quando_disponivel": True,
         }
     )
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
