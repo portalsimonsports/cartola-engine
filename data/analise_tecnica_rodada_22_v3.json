@@ -21,7 +21,22 @@
       "capitao": "Samuel Lino",
       "ultima_pontuacao": 0.0,
       "participacao": "12/12",
-      "tipo_pontuacao": "snapshot publicado da seleção inicial"
+      "tipo_pontuacao": "snapshot publicado da seleção inicial",
+      "formacao": "4-3-3",
+      "titulares": [
+        "Ronaldo",
+        "Marcelinho",
+        "Piquerez",
+        "Jonathan Jesus",
+        "João Victor",
+        "Picco",
+        "Denilson",
+        "Josué",
+        "Samuel Lino",
+        "Vitinho",
+        "Isidro Pitta",
+        "Fernando Seabra"
+      ]
     },
     "intermediario": {
       "nome": "Time Intermediário",
@@ -29,7 +44,22 @@
       "capitao": "Samuel Lino",
       "ultima_pontuacao": 0.0,
       "participacao": "12/12",
-      "tipo_pontuacao": "snapshot publicado da seleção inicial"
+      "tipo_pontuacao": "snapshot publicado da seleção inicial",
+      "formacao": "3-4-3",
+      "titulares": [
+        "Tiago Volpi",
+        "Gustavo Gómez",
+        "Jacy",
+        "Jonathan Jesus",
+        "Matheus Pereira",
+        "Arias",
+        "Danilo",
+        "Josué",
+        "Samuel Lino",
+        "Pedro",
+        "Viveros",
+        "Rafael Guanaes"
+      ]
     },
     "pontuacao": {
       "nome": "Time para Pontuar",
@@ -37,149 +67,214 @@
       "capitao": "Samuel Lino",
       "ultima_pontuacao": 0.0,
       "participacao": "12/12",
-      "tipo_pontuacao": "snapshot publicado da seleção inicial"
+      "tipo_pontuacao": "snapshot publicado da seleção inicial",
+      "formacao": "4-3-3",
+      "titulares": [
+        "Tiago Volpi",
+        "Juninho Capixaba",
+        "Luciano Juba",
+        "Gustavo Gómez",
+        "Jacy",
+        "Matheus Pereira",
+        "Arias",
+        "Danilo",
+        "Samuel Lino",
+        "Pedro",
+        "Viveros",
+        "Odair Hellmann"
+      ]
     }
   },
   "jogos": [
     {
-      "mandante": "GRE",
+      "mandante": "Grêmio",
       "mandante_sigla": "GRE",
-      "visitante": "SAO",
+      "visitante": "São Paulo",
       "visitante_sigla": "SAO",
       "data": "08/08",
       "hora": "16:00",
       "estadio": "Arena do Grêmio",
-      "pos_mandante": 0,
-      "pos_visitante": 0,
-      "forma_mandante": "recorte histórico preservado fora do snapshot",
-      "forma_visitante": "recorte histórico preservado fora do snapshot",
-      "leitura": "GRE enfrenta SAO. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial."
+      "pos_mandante": 17,
+      "pos_visitante": 12,
+      "forma_mandante": "E V D D E",
+      "forma_visitante": "D E D D E",
+      "historico_mandante_falado": "Grêmio ocupa a 17ª posição, com 22 pontos em 20 jogos. Nos últimos 5 jogos, somou 1 vitória, 2 empates e 2 derrotas, marcou 7 e sofreu 9 gols.",
+      "historico_visitante_falado": "São Paulo ocupa a 12ª posição, com 26 pontos em 20 jogos. Nos últimos 5 jogos, somou 0 vitórias, 2 empates e 3 derrotas, marcou 4 e sofreu 7 gols.",
+      "resumo_mandante": "Grêmio ocupa a 17ª posição, com 22 pontos em 20 jogos. Nos últimos 5 jogos, somou 1 vitória, 2 empates e 2 derrotas, marcou 7 e sofreu 9 gols.",
+      "resumo_visitante": "São Paulo ocupa a 12ª posição, com 26 pontos em 20 jogos. Nos últimos 5 jogos, somou 0 vitórias, 2 empates e 3 derrotas, marcou 4 e sofreu 7 gols.",
+      "leitura": "Grêmio chega em momento recente superior e ainda tem o mando, mas a escolha individual deve considerar os scouts e o preço de cada atleta.",
+      "destaque_cartola": "Na tabela, Grêmio é o 17º colocado e São Paulo é o 12º colocado."
     },
     {
-      "mandante": "REM",
+      "mandante": "Remo",
       "mandante_sigla": "REM",
-      "visitante": "CAM",
+      "visitante": "Atlético Mineiro",
       "visitante_sigla": "CAM",
       "data": "08/08",
       "hora": "18:30",
       "estadio": "Mangueirão",
-      "pos_mandante": 0,
-      "pos_visitante": 0,
-      "forma_mandante": "recorte histórico preservado fora do snapshot",
-      "forma_visitante": "recorte histórico preservado fora do snapshot",
-      "leitura": "REM enfrenta CAM. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial."
+      "pos_mandante": 19,
+      "pos_visitante": 10,
+      "forma_mandante": "D V D V D",
+      "forma_visitante": "V D V E V",
+      "historico_mandante_falado": "Remo ocupa a 19ª posição, com 21 pontos em 21 jogos. Nos últimos 5 jogos, somou 2 vitórias, 0 empates e 3 derrotas, marcou 5 e sofreu 7 gols.",
+      "historico_visitante_falado": "Atlético Mineiro ocupa a 10ª posição, com 28 pontos em 20 jogos. Nos últimos 5 jogos, somou 3 vitórias, 1 empate e 1 derrota, marcou 7 e sofreu 4 gols.",
+      "resumo_mandante": "Remo ocupa a 19ª posição, com 21 pontos em 21 jogos. Nos últimos 5 jogos, somou 2 vitórias, 0 empates e 3 derrotas, marcou 5 e sofreu 7 gols.",
+      "resumo_visitante": "Atlético Mineiro ocupa a 10ª posição, com 28 pontos em 20 jogos. Nos últimos 5 jogos, somou 3 vitórias, 1 empate e 1 derrota, marcou 7 e sofreu 4 gols.",
+      "leitura": "Atlético Mineiro apresenta desempenho recente superior, embora atue fora de casa. O confronto pede equilíbrio entre momento coletivo e risco do mando adversário.",
+      "destaque_cartola": "Na tabela, Remo é o 19º colocado e Atlético Mineiro é o 10º colocado."
     },
     {
-      "mandante": "CFC",
+      "mandante": "Coritiba",
       "mandante_sigla": "CFC",
-      "visitante": "CHA",
+      "visitante": "Chapecoense",
       "visitante_sigla": "CHA",
       "data": "08/08",
       "hora": "20:30",
       "estadio": "Couto Pereira",
-      "pos_mandante": 0,
-      "pos_visitante": 0,
-      "forma_mandante": "recorte histórico preservado fora do snapshot",
-      "forma_visitante": "recorte histórico preservado fora do snapshot",
-      "leitura": "CFC enfrenta CHA. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial."
+      "pos_mandante": 11,
+      "pos_visitante": 20,
+      "forma_mandante": "V D D E D",
+      "forma_visitante": "D D D D E",
+      "historico_mandante_falado": "Coritiba ocupa a 11ª posição, com 27 pontos em 21 jogos. Nos últimos 5 jogos, somou 1 vitória, 1 empate e 3 derrotas, marcou 4 e sofreu 9 gols.",
+      "historico_visitante_falado": "Chapecoense ocupa a 20ª posição, com 10 pontos em 20 jogos. Nos últimos 5 jogos, somou 0 vitórias, 1 empate e 4 derrotas, marcou 5 e sofreu 12 gols.",
+      "resumo_mandante": "Coritiba ocupa a 11ª posição, com 27 pontos em 21 jogos. Nos últimos 5 jogos, somou 1 vitória, 1 empate e 3 derrotas, marcou 4 e sofreu 9 gols.",
+      "resumo_visitante": "Chapecoense ocupa a 20ª posição, com 10 pontos em 20 jogos. Nos últimos 5 jogos, somou 0 vitórias, 1 empate e 4 derrotas, marcou 5 e sofreu 12 gols.",
+      "leitura": "Coritiba chega em momento recente superior e ainda tem o mando, mas a escolha individual deve considerar os scouts e o preço de cada atleta.",
+      "destaque_cartola": "Na tabela, Coritiba é o 11º colocado e Chapecoense é o 20º colocado."
     },
     {
-      "mandante": "BOT",
+      "mandante": "Botafogo",
       "mandante_sigla": "BOT",
-      "visitante": "FLU",
+      "visitante": "Fluminense",
       "visitante_sigla": "FLU",
       "data": "08/08",
       "hora": "21:00",
       "estadio": "Nilton Santos (Engenhão)",
-      "pos_mandante": 0,
-      "pos_visitante": 0,
-      "forma_mandante": "recorte histórico preservado fora do snapshot",
-      "forma_visitante": "recorte histórico preservado fora do snapshot",
-      "leitura": "BOT enfrenta FLU. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial."
+      "pos_mandante": 8,
+      "pos_visitante": 4,
+      "forma_mandante": "V E D V V",
+      "forma_visitante": "D E E E E",
+      "historico_mandante_falado": "Botafogo ocupa a 8ª posição, com 29 pontos em 20 jogos. Nos últimos 5 jogos, somou 3 vitórias, 1 empate e 1 derrota, marcou 8 e sofreu 5 gols.",
+      "historico_visitante_falado": "Fluminense ocupa a 4ª posição, com 34 pontos em 21 jogos. Nos últimos 5 jogos, somou 0 vitórias, 4 empates e 1 derrota, marcou 3 e sofreu 4 gols.",
+      "resumo_mandante": "Botafogo ocupa a 8ª posição, com 29 pontos em 20 jogos. Nos últimos 5 jogos, somou 3 vitórias, 1 empate e 1 derrota, marcou 8 e sofreu 5 gols.",
+      "resumo_visitante": "Fluminense ocupa a 4ª posição, com 34 pontos em 21 jogos. Nos últimos 5 jogos, somou 0 vitórias, 4 empates e 1 derrota, marcou 3 e sofreu 4 gols.",
+      "leitura": "Botafogo chega em momento recente superior e ainda tem o mando, mas a escolha individual deve considerar os scouts e o preço de cada atleta.",
+      "destaque_cartola": "Na tabela, Botafogo é o 8º colocado e Fluminense é o 4º colocado."
     },
     {
-      "mandante": "CRU",
+      "mandante": "Cruzeiro",
       "mandante_sigla": "CRU",
-      "visitante": "MIR",
+      "visitante": "Mirassol",
       "visitante_sigla": "MIR",
       "data": "09/08",
       "hora": "11:00",
       "estadio": "Mineirão",
-      "pos_mandante": 0,
-      "pos_visitante": 0,
-      "forma_mandante": "recorte histórico preservado fora do snapshot",
-      "forma_visitante": "recorte histórico preservado fora do snapshot",
-      "leitura": "CRU enfrenta MIR. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial."
+      "pos_mandante": 7,
+      "pos_visitante": 14,
+      "forma_mandante": "V E V D V",
+      "forma_visitante": "V D V E V",
+      "historico_mandante_falado": "Cruzeiro ocupa a 7ª posição, com 30 pontos em 21 jogos. Nos últimos 5 jogos, somou 3 vitórias, 1 empate e 1 derrota, marcou 6 e sofreu 4 gols.",
+      "historico_visitante_falado": "Mirassol ocupa a 14ª posição, com 23 pontos em 20 jogos. Nos últimos 5 jogos, somou 3 vitórias, 1 empate e 1 derrota, marcou 6 e sofreu 4 gols.",
+      "resumo_mandante": "Cruzeiro ocupa a 7ª posição, com 30 pontos em 21 jogos. Nos últimos 5 jogos, somou 3 vitórias, 1 empate e 1 derrota, marcou 6 e sofreu 4 gols.",
+      "resumo_visitante": "Mirassol ocupa a 14ª posição, com 23 pontos em 20 jogos. Nos últimos 5 jogos, somou 3 vitórias, 1 empate e 1 derrota, marcou 6 e sofreu 4 gols.",
+      "leitura": "As equipes têm rendimento recente semelhante. O diferencial para o Cartola deve vir de preço, média individual, scouts e função tática.",
+      "destaque_cartola": "Na tabela, Cruzeiro é o 7º colocado e Mirassol é o 14º colocado."
     },
     {
-      "mandante": "PAL",
+      "mandante": "Palmeiras",
       "mandante_sigla": "PAL",
-      "visitante": "INT",
+      "visitante": "Internacional",
       "visitante_sigla": "INT",
       "data": "09/08",
       "hora": "16:00",
       "estadio": "Nubank Parque",
-      "pos_mandante": 0,
-      "pos_visitante": 0,
-      "forma_mandante": "recorte histórico preservado fora do snapshot",
-      "forma_visitante": "recorte histórico preservado fora do snapshot",
-      "leitura": "PAL enfrenta INT. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial."
+      "pos_mandante": 1,
+      "pos_visitante": 16,
+      "forma_mandante": "V V V D V",
+      "forma_visitante": "D D D D E",
+      "historico_mandante_falado": "Palmeiras ocupa a 1ª posição, com 47 pontos em 21 jogos. Nos últimos 5 jogos, somou 4 vitórias, 0 empates e 1 derrota, marcou 12 e sofreu 3 gols.",
+      "historico_visitante_falado": "Internacional ocupa a 16ª posição, com 22 pontos em 21 jogos. Nos últimos 5 jogos, somou 0 vitórias, 1 empate e 4 derrotas, marcou 3 e sofreu 10 gols.",
+      "resumo_mandante": "Palmeiras ocupa a 1ª posição, com 47 pontos em 21 jogos. Nos últimos 5 jogos, somou 4 vitórias, 0 empates e 1 derrota, marcou 12 e sofreu 3 gols.",
+      "resumo_visitante": "Internacional ocupa a 16ª posição, com 22 pontos em 21 jogos. Nos últimos 5 jogos, somou 0 vitórias, 1 empate e 4 derrotas, marcou 3 e sofreu 10 gols.",
+      "leitura": "Palmeiras chega em momento recente superior e ainda tem o mando, mas a escolha individual deve considerar os scouts e o preço de cada atleta.",
+      "destaque_cartola": "Na tabela, Palmeiras é o 1º colocado e Internacional é o 16º colocado."
     },
     {
-      "mandante": "BAH",
+      "mandante": "Bahia",
       "mandante_sigla": "BAH",
-      "visitante": "VAS",
+      "visitante": "Vasco da Gama",
       "visitante_sigla": "VAS",
       "data": "09/08",
       "hora": "16:00",
       "estadio": "Casa de Apostas Arena Fonte Nova",
-      "pos_mandante": 0,
-      "pos_visitante": 0,
-      "forma_mandante": "recorte histórico preservado fora do snapshot",
-      "forma_visitante": "recorte histórico preservado fora do snapshot",
-      "leitura": "BAH enfrenta VAS. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial."
+      "pos_mandante": 5,
+      "pos_visitante": 18,
+      "forma_mandante": "D V E E E",
+      "forma_visitante": "D D D D E",
+      "historico_mandante_falado": "Bahia ocupa a 5ª posição, com 32 pontos em 21 jogos. Nos últimos 5 jogos, somou 1 vitória, 3 empates e 1 derrota, marcou 6 e sofreu 6 gols.",
+      "historico_visitante_falado": "Vasco da Gama ocupa a 18ª posição, com 21 pontos em 20 jogos. Nos últimos 5 jogos, somou 0 vitórias, 1 empate e 4 derrotas, marcou 2 e sofreu 10 gols.",
+      "resumo_mandante": "Bahia ocupa a 5ª posição, com 32 pontos em 21 jogos. Nos últimos 5 jogos, somou 1 vitória, 3 empates e 1 derrota, marcou 6 e sofreu 6 gols.",
+      "resumo_visitante": "Vasco da Gama ocupa a 18ª posição, com 21 pontos em 20 jogos. Nos últimos 5 jogos, somou 0 vitórias, 1 empate e 4 derrotas, marcou 2 e sofreu 10 gols.",
+      "leitura": "Bahia chega em momento recente superior e ainda tem o mando, mas a escolha individual deve considerar os scouts e o preço de cada atleta.",
+      "destaque_cartola": "Na tabela, Bahia é o 5º colocado e Vasco da Gama é o 18º colocado."
     },
     {
-      "mandante": "SAN",
+      "mandante": "Santos",
       "mandante_sigla": "SAN",
-      "visitante": "CAP",
+      "visitante": "Athletico Paranaense",
       "visitante_sigla": "CAP",
       "data": "09/08",
       "hora": "18:30",
       "estadio": "Vila Belmiro",
-      "pos_mandante": 0,
-      "pos_visitante": 0,
-      "forma_mandante": "recorte histórico preservado fora do snapshot",
-      "forma_visitante": "recorte histórico preservado fora do snapshot",
-      "leitura": "SAN enfrenta CAP. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial."
+      "pos_mandante": 15,
+      "pos_visitante": 3,
+      "forma_mandante": "D D V D E",
+      "forma_visitante": "V V V V E",
+      "historico_mandante_falado": "Santos ocupa a 15ª posição, com 22 pontos em 20 jogos. Nos últimos 5 jogos, somou 1 vitória, 1 empate e 3 derrotas, marcou 8 e sofreu 11 gols.",
+      "historico_visitante_falado": "Athletico Paranaense ocupa a 3ª posição, com 37 pontos em 21 jogos. Nos últimos 5 jogos, somou 4 vitórias, 1 empate e 0 derrotas, marcou 7 e sofreu 2 gols.",
+      "resumo_mandante": "Santos ocupa a 15ª posição, com 22 pontos em 20 jogos. Nos últimos 5 jogos, somou 1 vitória, 1 empate e 3 derrotas, marcou 8 e sofreu 11 gols.",
+      "resumo_visitante": "Athletico Paranaense ocupa a 3ª posição, com 37 pontos em 21 jogos. Nos últimos 5 jogos, somou 4 vitórias, 1 empate e 0 derrotas, marcou 7 e sofreu 2 gols.",
+      "leitura": "Athletico Paranaense apresenta desempenho recente superior, embora atue fora de casa. O confronto pede equilíbrio entre momento coletivo e risco do mando adversário.",
+      "destaque_cartola": "Na tabela, Santos é o 15º colocado e Athletico Paranaense é o 3º colocado."
     },
     {
-      "mandante": "RBB",
+      "mandante": "Red Bull Bragantino",
       "mandante_sigla": "RBB",
-      "visitante": "COR",
+      "visitante": "Corinthians",
       "visitante_sigla": "COR",
       "data": "09/08",
       "hora": "18:30",
       "estadio": "Cícero de Souza Marques",
-      "pos_mandante": 0,
-      "pos_visitante": 0,
-      "forma_mandante": "recorte histórico preservado fora do snapshot",
-      "forma_visitante": "recorte histórico preservado fora do snapshot",
-      "leitura": "RBB enfrenta COR. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial."
+      "pos_mandante": 6,
+      "pos_visitante": 9,
+      "forma_mandante": "V V V E E",
+      "forma_visitante": "V V V E E",
+      "historico_mandante_falado": "Red Bull Bragantino ocupa a 6ª posição, com 31 pontos em 20 jogos. Nos últimos 5 jogos, somou 3 vitórias, 2 empates e 0 derrotas, marcou 9 e sofreu 2 gols.",
+      "historico_visitante_falado": "Corinthians ocupa a 9ª posição, com 29 pontos em 21 jogos. Nos últimos 5 jogos, somou 3 vitórias, 2 empates e 0 derrotas, marcou 8 e sofreu 2 gols.",
+      "resumo_mandante": "Red Bull Bragantino ocupa a 6ª posição, com 31 pontos em 20 jogos. Nos últimos 5 jogos, somou 3 vitórias, 2 empates e 0 derrotas, marcou 9 e sofreu 2 gols.",
+      "resumo_visitante": "Corinthians ocupa a 9ª posição, com 29 pontos em 21 jogos. Nos últimos 5 jogos, somou 3 vitórias, 2 empates e 0 derrotas, marcou 8 e sofreu 2 gols.",
+      "leitura": "As equipes têm rendimento recente semelhante. O diferencial para o Cartola deve vir de preço, média individual, scouts e função tática.",
+      "destaque_cartola": "Na tabela, Red Bull Bragantino é o 6º colocado e Corinthians é o 9º colocado."
     },
     {
-      "mandante": "FLA",
+      "mandante": "Flamengo",
       "mandante_sigla": "FLA",
-      "visitante": "VIT",
+      "visitante": "Vitória",
       "visitante_sigla": "VIT",
       "data": "09/08",
       "hora": "19:30",
       "estadio": "Maracanã",
-      "pos_mandante": 0,
-      "pos_visitante": 0,
-      "forma_mandante": "recorte histórico preservado fora do snapshot",
-      "forma_visitante": "recorte histórico preservado fora do snapshot",
-      "leitura": "FLA enfrenta VIT. A análise considera o confronto oficial e os atletas registrados no snapshot publicado da seleção inicial."
+      "pos_mandante": 2,
+      "pos_visitante": 13,
+      "forma_mandante": "D V V E E",
+      "forma_visitante": "V D V D D",
+      "historico_mandante_falado": "Flamengo ocupa a 2ª posição, com 39 pontos em 20 jogos. Nos últimos 5 jogos, somou 2 vitórias, 2 empates e 1 derrota, marcou 9 e sofreu 5 gols.",
+      "historico_visitante_falado": "Vitória ocupa a 13ª posição, com 26 pontos em 21 jogos. Nos últimos 5 jogos, somou 2 vitórias, 0 empates e 3 derrotas, marcou 4 e sofreu 9 gols.",
+      "resumo_mandante": "Flamengo ocupa a 2ª posição, com 39 pontos em 20 jogos. Nos últimos 5 jogos, somou 2 vitórias, 2 empates e 1 derrota, marcou 9 e sofreu 5 gols.",
+      "resumo_visitante": "Vitória ocupa a 13ª posição, com 26 pontos em 21 jogos. Nos últimos 5 jogos, somou 2 vitórias, 0 empates e 3 derrotas, marcou 4 e sofreu 9 gols.",
+      "leitura": "Flamengo chega em momento recente superior e ainda tem o mando, mas a escolha individual deve considerar os scouts e o preço de cada atleta.",
+      "destaque_cartola": "Na tabela, Flamengo é o 2º colocado e Vitória é o 13º colocado."
     }
   ],
   "jogadores": {
@@ -191,11 +286,20 @@
         "Econômico"
       ],
       "racional": "Ronaldo aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
-      "adversario": "",
-      "pos_clube": 0,
-      "pos_adversario": 0,
-      "forma_clube": "",
-      "forma_adversario": ""
+      "adversario": "Vasco da Gama",
+      "pos_clube": 5,
+      "pos_adversario": 18,
+      "forma_clube": "D V E E E",
+      "forma_adversario": "",
+      "posicao_extenso": "goleiro",
+      "clube_nome": "Bahia",
+      "mando": "em casa",
+      "media": 2.49,
+      "jogos": 8,
+      "ultima_pontuacao": 0.0,
+      "variacao": 0.0,
+      "exp_score": 4.3776,
+      "factor": 1.0686106979156564
     },
     "Marcelinho": {
       "posicao": "LAT",
@@ -205,11 +309,20 @@
         "Econômico"
       ],
       "racional": "Marcelinho aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
-      "adversario": "",
-      "pos_clube": 0,
-      "pos_adversario": 0,
-      "forma_clube": "",
-      "forma_adversario": ""
+      "adversario": "Atlético Mineiro",
+      "pos_clube": 19,
+      "pos_adversario": 10,
+      "forma_clube": "D V D V D",
+      "forma_adversario": "",
+      "posicao_extenso": "lateral",
+      "clube_nome": "Remo",
+      "mando": "em casa",
+      "media": 2.22,
+      "jogos": 4,
+      "ultima_pontuacao": 0.0,
+      "variacao": 0.0,
+      "exp_score": 4.6137,
+      "factor": 1.1826599074843243
     },
     "Piquerez": {
       "posicao": "LAT",
@@ -219,11 +332,20 @@
         "Econômico"
       ],
       "racional": "Piquerez aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
-      "adversario": "",
-      "pos_clube": 0,
-      "pos_adversario": 0,
-      "forma_clube": "",
-      "forma_adversario": ""
+      "adversario": "Internacional",
+      "pos_clube": 1,
+      "pos_adversario": 16,
+      "forma_clube": "V V V D V",
+      "forma_adversario": "",
+      "posicao_extenso": "lateral",
+      "clube_nome": "Palmeiras",
+      "mando": "em casa",
+      "media": 6.86,
+      "jogos": 9,
+      "ultima_pontuacao": 13.7,
+      "variacao": 1.85,
+      "exp_score": 4.9293,
+      "factor": 1.1435893822027503
     },
     "Jonathan Jesus": {
       "posicao": "ZAG",
@@ -234,11 +356,20 @@
         "Intermediário"
       ],
       "racional": "Jonathan Jesus aparece em 2 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
-      "adversario": "",
-      "pos_clube": 0,
-      "pos_adversario": 0,
-      "forma_clube": "",
-      "forma_adversario": ""
+      "adversario": "Mirassol",
+      "pos_clube": 7,
+      "pos_adversario": 14,
+      "forma_clube": "V E V D V",
+      "forma_adversario": "",
+      "posicao_extenso": "zagueiro",
+      "clube_nome": "Cruzeiro",
+      "mando": "em casa",
+      "media": 4.29,
+      "jogos": 13,
+      "ultima_pontuacao": 7.4,
+      "variacao": 0.76,
+      "exp_score": 4.3573,
+      "factor": 1.1892396695748244
     },
     "João Victor": {
       "posicao": "ZAG",
@@ -248,11 +379,20 @@
         "Econômico"
       ],
       "racional": "João Victor aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
-      "adversario": "",
-      "pos_clube": 0,
-      "pos_adversario": 0,
-      "forma_clube": "",
-      "forma_adversario": ""
+      "adversario": "Cruzeiro",
+      "pos_clube": 14,
+      "pos_adversario": 7,
+      "forma_clube": "V D V E V",
+      "forma_adversario": "",
+      "posicao_extenso": "zagueiro",
+      "clube_nome": "Mirassol",
+      "mando": "fora de casa",
+      "media": 0.0,
+      "jogos": 0,
+      "ultima_pontuacao": 0.0,
+      "variacao": 0.0,
+      "exp_score": 0.0,
+      "factor": 0.0
     },
     "Picco": {
       "posicao": "MEI",
@@ -262,11 +402,20 @@
         "Econômico"
       ],
       "racional": "Picco aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
-      "adversario": "",
-      "pos_clube": 0,
-      "pos_adversario": 0,
-      "forma_clube": "",
-      "forma_adversario": ""
+      "adversario": "Atlético Mineiro",
+      "pos_clube": 19,
+      "pos_adversario": 10,
+      "forma_clube": "D V D V D",
+      "forma_adversario": "",
+      "posicao_extenso": "meia",
+      "clube_nome": "Remo",
+      "mando": "em casa",
+      "media": 3.76,
+      "jogos": 18,
+      "ultima_pontuacao": 15.7,
+      "variacao": 1.97,
+      "exp_score": 0.0,
+      "factor": 0.0
     },
     "Denilson": {
       "posicao": "MEI",
@@ -276,11 +425,20 @@
         "Econômico"
       ],
       "racional": "Denilson aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
-      "adversario": "",
-      "pos_clube": 0,
-      "pos_adversario": 0,
-      "forma_clube": "",
-      "forma_adversario": ""
+      "adversario": "Cruzeiro",
+      "pos_clube": 14,
+      "pos_adversario": 7,
+      "forma_clube": "V D V E V",
+      "forma_adversario": "",
+      "posicao_extenso": "meia",
+      "clube_nome": "Mirassol",
+      "mando": "fora de casa",
+      "media": 3.97,
+      "jogos": 12,
+      "ultima_pontuacao": 14.1,
+      "variacao": 1.87,
+      "exp_score": 0.0,
+      "factor": 0.0
     },
     "Josué": {
       "posicao": "MEI",
@@ -291,11 +449,20 @@
         "Intermediário"
       ],
       "racional": "Josué aparece em 2 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
-      "adversario": "",
-      "pos_clube": 0,
-      "pos_adversario": 0,
-      "forma_clube": "",
-      "forma_adversario": ""
+      "adversario": "Chapecoense",
+      "pos_clube": 11,
+      "pos_adversario": 20,
+      "forma_clube": "V D D E D",
+      "forma_adversario": "",
+      "posicao_extenso": "meia",
+      "clube_nome": "Coritiba",
+      "mando": "em casa",
+      "media": 4.14,
+      "jogos": 20,
+      "ultima_pontuacao": 4.2,
+      "variacao": -0.21,
+      "exp_score": 5.0318,
+      "factor": 1.1588585457005702
     },
     "Samuel Lino": {
       "posicao": "ATA",
@@ -307,11 +474,20 @@
         "Para Pontuar"
       ],
       "racional": "Samuel Lino aparece em 3 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
-      "adversario": "",
-      "pos_clube": 0,
-      "pos_adversario": 0,
-      "forma_clube": "",
-      "forma_adversario": ""
+      "adversario": "Vitória",
+      "pos_clube": 2,
+      "pos_adversario": 13,
+      "forma_clube": "D V V E E",
+      "forma_adversario": "",
+      "posicao_extenso": "atacante",
+      "clube_nome": "Flamengo",
+      "mando": "em casa",
+      "media": 7.59,
+      "jogos": 19,
+      "ultima_pontuacao": 10.2,
+      "variacao": 0.22,
+      "exp_score": 8.4915,
+      "factor": 1.0789916427719966
     },
     "Vitinho": {
       "posicao": "ATA",
@@ -321,11 +497,20 @@
         "Econômico"
       ],
       "racional": "Vitinho aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
-      "adversario": "",
-      "pos_clube": 0,
-      "pos_adversario": 0,
-      "forma_clube": "",
-      "forma_adversario": ""
+      "adversario": "Palmeiras",
+      "pos_clube": 16,
+      "pos_adversario": 1,
+      "forma_clube": "D D D D E",
+      "forma_adversario": "",
+      "posicao_extenso": "atacante",
+      "clube_nome": "Internacional",
+      "mando": "fora de casa",
+      "media": 4.83,
+      "jogos": 20,
+      "ultima_pontuacao": 14.2,
+      "variacao": 1.61,
+      "exp_score": 0.0,
+      "factor": 0.0
     },
     "Isidro Pitta": {
       "posicao": "ATA",
@@ -335,11 +520,20 @@
         "Econômico"
       ],
       "racional": "Isidro Pitta aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
-      "adversario": "",
-      "pos_clube": 0,
-      "pos_adversario": 0,
-      "forma_clube": "",
-      "forma_adversario": ""
+      "adversario": "Corinthians",
+      "pos_clube": 6,
+      "pos_adversario": 9,
+      "forma_clube": "V V V E E",
+      "forma_adversario": "",
+      "posicao_extenso": "atacante",
+      "clube_nome": "Red Bull Bragantino",
+      "mando": "em casa",
+      "media": 4.01,
+      "jogos": 18,
+      "ultima_pontuacao": 0.0,
+      "variacao": 0.0,
+      "exp_score": 0.0,
+      "factor": 0.0
     },
     "Fernando Seabra": {
       "posicao": "TEC",
@@ -349,11 +543,20 @@
         "Econômico"
       ],
       "racional": "Fernando Seabra aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
-      "adversario": "",
-      "pos_clube": 0,
-      "pos_adversario": 0,
-      "forma_clube": "",
-      "forma_adversario": ""
+      "adversario": "Chapecoense",
+      "pos_clube": 11,
+      "pos_adversario": 20,
+      "forma_clube": "V D D E D",
+      "forma_adversario": "",
+      "posicao_extenso": "técnico",
+      "clube_nome": "Coritiba",
+      "mando": "em casa",
+      "media": 5.08,
+      "jogos": 21,
+      "ultima_pontuacao": 2.7,
+      "variacao": -0.45,
+      "exp_score": 0.0,
+      "factor": 0.0
     },
     "Tiago Volpi": {
       "posicao": "GOL",
@@ -364,11 +567,20 @@
         "Para Pontuar"
       ],
       "racional": "Tiago Volpi aparece em 2 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
-      "adversario": "",
-      "pos_clube": 0,
-      "pos_adversario": 0,
-      "forma_clube": "",
-      "forma_adversario": ""
+      "adversario": "Corinthians",
+      "pos_clube": 6,
+      "pos_adversario": 9,
+      "forma_clube": "V V V E E",
+      "forma_adversario": "",
+      "posicao_extenso": "goleiro",
+      "clube_nome": "Red Bull Bragantino",
+      "mando": "em casa",
+      "media": 6.09,
+      "jogos": 12,
+      "ultima_pontuacao": 0.0,
+      "variacao": 0.0,
+      "exp_score": 4.0195,
+      "factor": 1.080750103943091
     },
     "Gustavo Gómez": {
       "posicao": "ZAG",
@@ -379,11 +591,20 @@
         "Para Pontuar"
       ],
       "racional": "Gustavo Gómez aparece em 2 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
-      "adversario": "",
-      "pos_clube": 0,
-      "pos_adversario": 0,
-      "forma_clube": "",
-      "forma_adversario": ""
+      "adversario": "Internacional",
+      "pos_clube": 1,
+      "pos_adversario": 16,
+      "forma_clube": "V V V D V",
+      "forma_adversario": "",
+      "posicao_extenso": "zagueiro",
+      "clube_nome": "Palmeiras",
+      "mando": "em casa",
+      "media": 4.71,
+      "jogos": 19,
+      "ultima_pontuacao": 6.5,
+      "variacao": 0.38,
+      "exp_score": 3.9464,
+      "factor": 1.1435893822027503
     },
     "Jacy": {
       "posicao": "ZAG",
@@ -394,11 +615,20 @@
         "Para Pontuar"
       ],
       "racional": "Jacy aparece em 2 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
-      "adversario": "",
-      "pos_clube": 0,
-      "pos_adversario": 0,
-      "forma_clube": "",
-      "forma_adversario": ""
+      "adversario": "Chapecoense",
+      "pos_clube": 11,
+      "pos_adversario": 20,
+      "forma_clube": "V D D E D",
+      "forma_adversario": "",
+      "posicao_extenso": "zagueiro",
+      "clube_nome": "Coritiba",
+      "mando": "em casa",
+      "media": 4.03,
+      "jogos": 18,
+      "ultima_pontuacao": 0.5,
+      "variacao": -0.94,
+      "exp_score": 3.5223,
+      "factor": 1.2067516978777055
     },
     "Matheus Pereira": {
       "posicao": "MEI",
@@ -409,11 +639,20 @@
         "Para Pontuar"
       ],
       "racional": "Matheus Pereira aparece em 2 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
-      "adversario": "",
-      "pos_clube": 0,
-      "pos_adversario": 0,
-      "forma_clube": "",
-      "forma_adversario": ""
+      "adversario": "Mirassol",
+      "pos_clube": 7,
+      "pos_adversario": 14,
+      "forma_clube": "V E V D V",
+      "forma_adversario": "",
+      "posicao_extenso": "meia",
+      "clube_nome": "Cruzeiro",
+      "mando": "em casa",
+      "media": 7.01,
+      "jogos": 18,
+      "ultima_pontuacao": 15.2,
+      "variacao": 0.41,
+      "exp_score": 7.9883,
+      "factor": 1.1106828699378204
     },
     "Arias": {
       "posicao": "MEI",
@@ -424,11 +663,20 @@
         "Para Pontuar"
       ],
       "racional": "Arias aparece em 2 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
-      "adversario": "",
-      "pos_clube": 0,
-      "pos_adversario": 0,
-      "forma_clube": "",
-      "forma_adversario": ""
+      "adversario": "Internacional",
+      "pos_clube": 1,
+      "pos_adversario": 16,
+      "forma_clube": "V V V D V",
+      "forma_adversario": "",
+      "posicao_extenso": "meia",
+      "clube_nome": "Palmeiras",
+      "mando": "em casa",
+      "media": 7.99,
+      "jogos": 16,
+      "ultima_pontuacao": 17.7,
+      "variacao": -0.08,
+      "exp_score": 7.584,
+      "factor": 1.0928205418989012
     },
     "Danilo": {
       "posicao": "MEI",
@@ -439,11 +687,20 @@
         "Para Pontuar"
       ],
       "racional": "Danilo aparece em 2 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
-      "adversario": "",
-      "pos_clube": 0,
-      "pos_adversario": 0,
-      "forma_clube": "",
-      "forma_adversario": ""
+      "adversario": "Fluminense",
+      "pos_clube": 8,
+      "pos_adversario": 4,
+      "forma_clube": "V E D V V",
+      "forma_adversario": "",
+      "posicao_extenso": "meia",
+      "clube_nome": "Botafogo",
+      "mando": "em casa",
+      "media": 1.4,
+      "jogos": 6,
+      "ultima_pontuacao": 1.5,
+      "variacao": -0.56,
+      "exp_score": 6.6217,
+      "factor": 1.0550415928348207
     },
     "Pedro": {
       "posicao": "ATA",
@@ -454,11 +711,20 @@
         "Para Pontuar"
       ],
       "racional": "Pedro aparece em 2 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
-      "adversario": "",
-      "pos_clube": 0,
-      "pos_adversario": 0,
-      "forma_clube": "",
-      "forma_adversario": ""
+      "adversario": "Vitória",
+      "pos_clube": 2,
+      "pos_adversario": 13,
+      "forma_clube": "D V V E E",
+      "forma_adversario": "",
+      "posicao_extenso": "atacante",
+      "clube_nome": "Flamengo",
+      "mando": "em casa",
+      "media": 8.61,
+      "jogos": 19,
+      "ultima_pontuacao": 1.9,
+      "variacao": -0.32,
+      "exp_score": 8.3762,
+      "factor": 1.0789916427719966
     },
     "Viveros": {
       "posicao": "ATA",
@@ -469,11 +735,20 @@
         "Para Pontuar"
       ],
       "racional": "Viveros aparece em 2 modelos do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
-      "adversario": "",
-      "pos_clube": 0,
-      "pos_adversario": 0,
-      "forma_clube": "",
-      "forma_adversario": ""
+      "adversario": "Santos",
+      "pos_clube": 3,
+      "pos_adversario": 15,
+      "forma_clube": "V V V V E",
+      "forma_adversario": "",
+      "posicao_extenso": "atacante",
+      "clube_nome": "Athletico Paranaense",
+      "mando": "fora de casa",
+      "media": 8.26,
+      "jogos": 18,
+      "ultima_pontuacao": 2.2,
+      "variacao": -2.38,
+      "exp_score": 6.9013,
+      "factor": 0.9373894455362607
     },
     "Rafael Guanaes": {
       "posicao": "TEC",
@@ -483,11 +758,20 @@
         "Intermediário"
       ],
       "racional": "Rafael Guanaes aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
-      "adversario": "",
-      "pos_clube": 0,
-      "pos_adversario": 0,
-      "forma_clube": "",
-      "forma_adversario": ""
+      "adversario": "Cruzeiro",
+      "pos_clube": 14,
+      "pos_adversario": 7,
+      "forma_clube": "V D V E V",
+      "forma_adversario": "",
+      "posicao_extenso": "técnico",
+      "clube_nome": "Mirassol",
+      "mando": "fora de casa",
+      "media": 4.24,
+      "jogos": 18,
+      "ultima_pontuacao": 5.56,
+      "variacao": 0.2,
+      "exp_score": 0.0,
+      "factor": 0.0
     },
     "Juninho Capixaba": {
       "posicao": "LAT",
@@ -497,11 +781,20 @@
         "Para Pontuar"
       ],
       "racional": "Juninho Capixaba aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
-      "adversario": "",
-      "pos_clube": 0,
-      "pos_adversario": 0,
-      "forma_clube": "",
-      "forma_adversario": ""
+      "adversario": "Corinthians",
+      "pos_clube": 6,
+      "pos_adversario": 9,
+      "forma_clube": "V V V E E",
+      "forma_adversario": "",
+      "posicao_extenso": "lateral",
+      "clube_nome": "Red Bull Bragantino",
+      "mando": "em casa",
+      "media": 7.41,
+      "jogos": 17,
+      "ultima_pontuacao": 0.0,
+      "variacao": 0.0,
+      "exp_score": 5.4436,
+      "factor": 1.080750103943091
     },
     "Luciano Juba": {
       "posicao": "LAT",
@@ -511,11 +804,20 @@
         "Para Pontuar"
       ],
       "racional": "Luciano Juba aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
-      "adversario": "",
-      "pos_clube": 0,
-      "pos_adversario": 0,
-      "forma_clube": "",
-      "forma_adversario": ""
+      "adversario": "Vasco da Gama",
+      "pos_clube": 5,
+      "pos_adversario": 18,
+      "forma_clube": "D V E E E",
+      "forma_adversario": "",
+      "posicao_extenso": "lateral",
+      "clube_nome": "Bahia",
+      "mando": "em casa",
+      "media": 7.45,
+      "jogos": 17,
+      "ultima_pontuacao": 9.2,
+      "variacao": 1.0,
+      "exp_score": 5.4115,
+      "factor": 1.0686106979156564
     },
     "Odair Hellmann": {
       "posicao": "TEC",
@@ -525,11 +827,20 @@
         "Para Pontuar"
       ],
       "racional": "Odair Hellmann aparece em 1 modelo do snapshot publicado. A avaliação preserva exatamente a seleção enviada ao canal.",
-      "adversario": "",
-      "pos_clube": 0,
-      "pos_adversario": 0,
-      "forma_clube": "",
-      "forma_adversario": ""
+      "adversario": "Santos",
+      "pos_clube": 3,
+      "pos_adversario": 15,
+      "forma_clube": "V V V V E",
+      "forma_adversario": "",
+      "posicao_extenso": "técnico",
+      "clube_nome": "Athletico Paranaense",
+      "mando": "fora de casa",
+      "media": 5.76,
+      "jogos": 19,
+      "ultima_pontuacao": 6.45,
+      "variacao": -0.38,
+      "exp_score": 5.4729,
+      "factor": 0.9571239601791294
     }
   },
   "top5": {
@@ -547,7 +858,15 @@
         "PRECO": 8.93,
         "EXP_SCORE": 4.4589,
         "FACTOR": 1.1435893822027503,
-        "ATLETA_ID": 104084
+        "ATLETA_ID": 104084,
+        "CLUBE_NOME": "Palmeiras",
+        "CLUBE_POSICAO": 1,
+        "ADVERSARIO": "Internacional",
+        "MANDO": "em casa",
+        "MEDIA": 5.07,
+        "JOGOS": 20,
+        "ULTIMA_PONTUACAO": 8.9,
+        "VARIACAO": 1.12
       },
       {
         "RODADA": 22,
@@ -557,7 +876,15 @@
         "PRECO": 9.57,
         "EXP_SCORE": 4.3776,
         "FACTOR": 1.0686106979156564,
-        "ATLETA_ID": 91101
+        "ATLETA_ID": 91101,
+        "CLUBE_NOME": "Bahia",
+        "CLUBE_POSICAO": 5,
+        "ADVERSARIO": "Vasco da Gama",
+        "MANDO": "em casa",
+        "MEDIA": 5.39,
+        "JOGOS": 11,
+        "ULTIMA_PONTUACAO": 16.7,
+        "VARIACAO": 2.65
       },
       {
         "RODADA": 22,
@@ -567,7 +894,15 @@
         "PRECO": 8.68,
         "EXP_SCORE": 4.1551,
         "FACTOR": 1.1142609852877305,
-        "ATLETA_ID": 99552
+        "ATLETA_ID": 99552,
+        "CLUBE_NOME": "Flamengo",
+        "CLUBE_POSICAO": 2,
+        "ADVERSARIO": "Vitória",
+        "MANDO": "em casa",
+        "MEDIA": 4.9,
+        "JOGOS": 19,
+        "ULTIMA_PONTUACAO": 4.2,
+        "VARIACAO": 0.58
       },
       {
         "RODADA": 22,
@@ -577,7 +912,15 @@
         "PRECO": 10.55,
         "EXP_SCORE": 4.0195,
         "FACTOR": 1.080750103943091,
-        "ATLETA_ID": 72018
+        "ATLETA_ID": 72018,
+        "CLUBE_NOME": "Red Bull Bragantino",
+        "CLUBE_POSICAO": 6,
+        "ADVERSARIO": "Corinthians",
+        "MANDO": "em casa",
+        "MEDIA": 6.09,
+        "JOGOS": 12,
+        "ULTIMA_PONTUACAO": 0.0,
+        "VARIACAO": 0.0
       },
       {
         "RODADA": 22,
@@ -587,7 +930,15 @@
         "PRECO": 5.77,
         "EXP_SCORE": 3.7745,
         "FACTOR": 1.1826599074843243,
-        "ATLETA_ID": 82730
+        "ATLETA_ID": 82730,
+        "CLUBE_NOME": "Remo",
+        "CLUBE_POSICAO": 19,
+        "ADVERSARIO": "Atlético Mineiro",
+        "MANDO": "em casa",
+        "MEDIA": 4.15,
+        "JOGOS": 20,
+        "ULTIMA_PONTUACAO": 1.9,
+        "VARIACAO": -1.29
       },
       {
         "RODADA": 22,
@@ -597,7 +948,15 @@
         "PRECO": 13.39,
         "EXP_SCORE": 5.4436,
         "FACTOR": 1.080750103943091,
-        "ATLETA_ID": 94968
+        "ATLETA_ID": 94968,
+        "CLUBE_NOME": "Red Bull Bragantino",
+        "CLUBE_POSICAO": 6,
+        "ADVERSARIO": "Corinthians",
+        "MANDO": "em casa",
+        "MEDIA": 7.41,
+        "JOGOS": 17,
+        "ULTIMA_PONTUACAO": 0.0,
+        "VARIACAO": 0.0
       },
       {
         "RODADA": 22,
@@ -607,7 +966,15 @@
         "PRECO": 11.92,
         "EXP_SCORE": 5.4115,
         "FACTOR": 1.0686106979156564,
-        "ATLETA_ID": 107093
+        "ATLETA_ID": 107093,
+        "CLUBE_NOME": "Bahia",
+        "CLUBE_POSICAO": 5,
+        "ADVERSARIO": "Vasco da Gama",
+        "MANDO": "em casa",
+        "MEDIA": 7.45,
+        "JOGOS": 17,
+        "ULTIMA_PONTUACAO": 9.2,
+        "VARIACAO": 1.0
       },
       {
         "RODADA": 22,
@@ -617,7 +984,15 @@
         "PRECO": 12.48,
         "EXP_SCORE": 4.9293,
         "FACTOR": 1.1435893822027503,
-        "ATLETA_ID": 102130
+        "ATLETA_ID": 102130,
+        "CLUBE_NOME": "Palmeiras",
+        "CLUBE_POSICAO": 1,
+        "ADVERSARIO": "Internacional",
+        "MANDO": "em casa",
+        "MEDIA": 6.86,
+        "JOGOS": 9,
+        "ULTIMA_PONTUACAO": 13.7,
+        "VARIACAO": 1.85
       },
       {
         "RODADA": 22,
@@ -627,7 +1002,15 @@
         "PRECO": 11.37,
         "EXP_SCORE": 4.6978,
         "FACTOR": 0.9640790844574506,
-        "ATLETA_ID": 101727
+        "ATLETA_ID": 101727,
+        "CLUBE_NOME": "Corinthians",
+        "CLUBE_POSICAO": 9,
+        "ADVERSARIO": "Red Bull Bragantino",
+        "MANDO": "fora de casa",
+        "MEDIA": 5.69,
+        "JOGOS": 16,
+        "ULTIMA_PONTUACAO": 11.7,
+        "VARIACAO": 1.32
       },
       {
         "RODADA": 22,
@@ -637,7 +1020,15 @@
         "PRECO": 5.98,
         "EXP_SCORE": 4.6137,
         "FACTOR": 1.1826599074843243,
-        "ATLETA_ID": 97795
+        "ATLETA_ID": 97795,
+        "CLUBE_NOME": "Remo",
+        "CLUBE_POSICAO": 19,
+        "ADVERSARIO": "Atlético Mineiro",
+        "MANDO": "em casa",
+        "MEDIA": 5.1,
+        "JOGOS": 18,
+        "ULTIMA_PONTUACAO": 2.6,
+        "VARIACAO": -0.64
       },
       {
         "RODADA": 22,
@@ -647,7 +1038,15 @@
         "PRECO": 6.91,
         "EXP_SCORE": 4.3573,
         "FACTOR": 1.1892396695748244,
-        "ATLETA_ID": 124912
+        "ATLETA_ID": 124912,
+        "CLUBE_NOME": "Cruzeiro",
+        "CLUBE_POSICAO": 7,
+        "ADVERSARIO": "Mirassol",
+        "MANDO": "em casa",
+        "MEDIA": 4.29,
+        "JOGOS": 13,
+        "ULTIMA_PONTUACAO": 7.4,
+        "VARIACAO": 0.76
       },
       {
         "RODADA": 22,
@@ -657,7 +1056,15 @@
         "PRECO": 10.56,
         "EXP_SCORE": 3.9464,
         "FACTOR": 1.1435893822027503,
-        "ATLETA_ID": 71684
+        "ATLETA_ID": 71684,
+        "CLUBE_NOME": "Palmeiras",
+        "CLUBE_POSICAO": 1,
+        "ADVERSARIO": "Internacional",
+        "MANDO": "em casa",
+        "MEDIA": 4.71,
+        "JOGOS": 19,
+        "ULTIMA_PONTUACAO": 6.5,
+        "VARIACAO": 0.38
       },
       {
         "RODADA": 22,
@@ -667,7 +1074,15 @@
         "PRECO": 7.02,
         "EXP_SCORE": 3.7419,
         "FACTOR": 1.0686106979156564,
-        "ATLETA_ID": 91772
+        "ATLETA_ID": 91772,
+        "CLUBE_NOME": "Bahia",
+        "CLUBE_POSICAO": 5,
+        "ADVERSARIO": "Vasco da Gama",
+        "MANDO": "em casa",
+        "MEDIA": 4.1,
+        "JOGOS": 13,
+        "ULTIMA_PONTUACAO": 0.0,
+        "VARIACAO": 0.0
       },
       {
         "RODADA": 22,
@@ -677,7 +1092,15 @@
         "PRECO": 10.15,
         "EXP_SCORE": 3.6308,
         "FACTOR": 1.1435893822027503,
-        "ATLETA_ID": 99274
+        "ATLETA_ID": 99274,
+        "CLUBE_NOME": "Palmeiras",
+        "CLUBE_POSICAO": 1,
+        "ADVERSARIO": "Internacional",
+        "MANDO": "em casa",
+        "MEDIA": 4.75,
+        "JOGOS": 13,
+        "ULTIMA_PONTUACAO": 4.4,
+        "VARIACAO": 0.35
       },
       {
         "RODADA": 22,
@@ -687,7 +1110,15 @@
         "PRECO": 5.24,
         "EXP_SCORE": 3.5223,
         "FACTOR": 1.2067516978777055,
-        "ATLETA_ID": 97878
+        "ATLETA_ID": 97878,
+        "CLUBE_NOME": "Coritiba",
+        "CLUBE_POSICAO": 11,
+        "ADVERSARIO": "Chapecoense",
+        "MANDO": "em casa",
+        "MEDIA": 4.03,
+        "JOGOS": 18,
+        "ULTIMA_PONTUACAO": 0.5,
+        "VARIACAO": -0.94
       },
       {
         "RODADA": 22,
@@ -697,7 +1128,15 @@
         "PRECO": 15.66,
         "EXP_SCORE": 7.9883,
         "FACTOR": 1.1106828699378204,
-        "ATLETA_ID": 96610
+        "ATLETA_ID": 96610,
+        "CLUBE_NOME": "Cruzeiro",
+        "CLUBE_POSICAO": 7,
+        "ADVERSARIO": "Mirassol",
+        "MANDO": "em casa",
+        "MEDIA": 7.01,
+        "JOGOS": 18,
+        "ULTIMA_PONTUACAO": 15.2,
+        "VARIACAO": 0.41
       },
       {
         "RODADA": 22,
@@ -707,7 +1146,15 @@
         "PRECO": 16.5,
         "EXP_SCORE": 7.584,
         "FACTOR": 1.0928205418989012,
-        "ATLETA_ID": 99815
+        "ATLETA_ID": 99815,
+        "CLUBE_NOME": "Palmeiras",
+        "CLUBE_POSICAO": 1,
+        "ADVERSARIO": "Internacional",
+        "MANDO": "em casa",
+        "MEDIA": 7.99,
+        "JOGOS": 16,
+        "ULTIMA_PONTUACAO": 17.7,
+        "VARIACAO": -0.08
       },
       {
         "RODADA": 22,
@@ -717,7 +1164,15 @@
         "PRECO": 14.48,
         "EXP_SCORE": 6.6217,
         "FACTOR": 1.0550415928348207,
-        "ATLETA_ID": 107231
+        "ATLETA_ID": 107231,
+        "CLUBE_NOME": "Botafogo",
+        "CLUBE_POSICAO": 8,
+        "ADVERSARIO": "Fluminense",
+        "MANDO": "em casa",
+        "MEDIA": 8.47,
+        "JOGOS": 13,
+        "ULTIMA_PONTUACAO": 0.0,
+        "VARIACAO": 0.0
       },
       {
         "RODADA": 22,
@@ -727,7 +1182,15 @@
         "PRECO": 6.23,
         "EXP_SCORE": 5.0318,
         "FACTOR": 1.1588585457005702,
-        "ATLETA_ID": 84626
+        "ATLETA_ID": 84626,
+        "CLUBE_NOME": "Coritiba",
+        "CLUBE_POSICAO": 11,
+        "ADVERSARIO": "Chapecoense",
+        "MANDO": "em casa",
+        "MEDIA": 4.14,
+        "JOGOS": 20,
+        "ULTIMA_PONTUACAO": 4.2,
+        "VARIACAO": -0.21
       },
       {
         "RODADA": 22,
@@ -737,7 +1200,15 @@
         "PRECO": 9.34,
         "EXP_SCORE": 4.5469,
         "FACTOR": 1.100787190308966,
-        "ATLETA_ID": 98517
+        "ATLETA_ID": 98517,
+        "CLUBE_NOME": "Bahia",
+        "CLUBE_POSICAO": 5,
+        "ADVERSARIO": "Vasco da Gama",
+        "MANDO": "em casa",
+        "MEDIA": 5.21,
+        "JOGOS": 17,
+        "ULTIMA_PONTUACAO": 2.5,
+        "VARIACAO": -0.15
       },
       {
         "RODADA": 22,
@@ -747,7 +1218,15 @@
         "PRECO": 12.06,
         "EXP_SCORE": 8.4915,
         "FACTOR": 1.0789916427719966,
-        "ATLETA_ID": 98873
+        "ATLETA_ID": 98873,
+        "CLUBE_NOME": "Flamengo",
+        "CLUBE_POSICAO": 2,
+        "ADVERSARIO": "Vitória",
+        "MANDO": "em casa",
+        "MEDIA": 7.59,
+        "JOGOS": 19,
+        "ULTIMA_PONTUACAO": 10.2,
+        "VARIACAO": 0.22
       },
       {
         "RODADA": 22,
@@ -757,7 +1236,15 @@
         "PRECO": 16.04,
         "EXP_SCORE": 8.3762,
         "FACTOR": 1.0789916427719966,
-        "ATLETA_ID": 94583
+        "ATLETA_ID": 94583,
+        "CLUBE_NOME": "Flamengo",
+        "CLUBE_POSICAO": 2,
+        "ADVERSARIO": "Vitória",
+        "MANDO": "em casa",
+        "MEDIA": 8.61,
+        "JOGOS": 19,
+        "ULTIMA_PONTUACAO": 1.9,
+        "VARIACAO": -0.32
       },
       {
         "RODADA": 22,
@@ -767,7 +1254,15 @@
         "PRECO": 12.08,
         "EXP_SCORE": 6.9013,
         "FACTOR": 0.9373894455362607,
-        "ATLETA_ID": 143193
+        "ATLETA_ID": 143193,
+        "CLUBE_NOME": "Athletico Paranaense",
+        "CLUBE_POSICAO": 3,
+        "ADVERSARIO": "Santos",
+        "MANDO": "fora de casa",
+        "MEDIA": 8.26,
+        "JOGOS": 18,
+        "ULTIMA_PONTUACAO": 2.2,
+        "VARIACAO": -2.38
       },
       {
         "RODADA": 22,
@@ -777,7 +1272,15 @@
         "PRECO": 10.77,
         "EXP_SCORE": 6.2284,
         "FACTOR": 1.1588585457005702,
-        "ATLETA_ID": 123648
+        "ATLETA_ID": 123648,
+        "CLUBE_NOME": "Coritiba",
+        "CLUBE_POSICAO": 11,
+        "ADVERSARIO": "Chapecoense",
+        "MANDO": "em casa",
+        "MEDIA": 6.7,
+        "JOGOS": 18,
+        "ULTIMA_PONTUACAO": 7.5,
+        "VARIACAO": 0.62
       },
       {
         "RODADA": 22,
@@ -787,7 +1290,15 @@
         "PRECO": 13.4,
         "EXP_SCORE": 5.6894,
         "FACTOR": 1.0928205418989012,
-        "ATLETA_ID": 113103
+        "ATLETA_ID": 113103,
+        "CLUBE_NOME": "Palmeiras",
+        "CLUBE_POSICAO": 1,
+        "ADVERSARIO": "Internacional",
+        "MANDO": "em casa",
+        "MEDIA": 6.49,
+        "JOGOS": 18,
+        "ULTIMA_PONTUACAO": 2.2,
+        "VARIACAO": -1.51
       },
       {
         "RODADA": 22,
@@ -797,7 +1308,15 @@
         "PRECO": 12.52,
         "EXP_SCORE": 6.2038,
         "FACTOR": 1.062464415735043,
-        "ATLETA_ID": 110506
+        "ATLETA_ID": 110506,
+        "CLUBE_NOME": "Palmeiras",
+        "CLUBE_POSICAO": 1,
+        "ADVERSARIO": "Internacional",
+        "MANDO": "em casa",
+        "MEDIA": 6.63,
+        "JOGOS": 21,
+        "ULTIMA_PONTUACAO": 9.38,
+        "VARIACAO": 0.55
       },
       {
         "RODADA": 22,
@@ -807,7 +1326,15 @@
         "PRECO": 12.81,
         "EXP_SCORE": 6.1695,
         "FACTOR": 1.0490196526949966,
-        "ATLETA_ID": 88963
+        "ATLETA_ID": 88963,
+        "CLUBE_NOME": "Flamengo",
+        "CLUBE_POSICAO": 2,
+        "ADVERSARIO": "Vitória",
+        "MANDO": "em casa",
+        "MEDIA": 6.98,
+        "JOGOS": 17,
+        "ULTIMA_PONTUACAO": 3.2,
+        "VARIACAO": -0.45
       },
       {
         "RODADA": 22,
@@ -817,7 +1344,15 @@
         "PRECO": 9.12,
         "EXP_SCORE": 5.4729,
         "FACTOR": 0.9571239601791294,
-        "ATLETA_ID": 92273
+        "ATLETA_ID": 92273,
+        "CLUBE_NOME": "Athletico Paranaense",
+        "CLUBE_POSICAO": 3,
+        "ADVERSARIO": "Santos",
+        "MANDO": "fora de casa",
+        "MEDIA": 5.76,
+        "JOGOS": 19,
+        "ULTIMA_PONTUACAO": 6.45,
+        "VARIACAO": -0.38
       },
       {
         "RODADA": 22,
@@ -827,7 +1362,15 @@
         "PRECO": 12.12,
         "EXP_SCORE": 5.3829,
         "FACTOR": 1.079830567995103,
-        "ATLETA_ID": 127273
+        "ATLETA_ID": 127273,
+        "CLUBE_NOME": "Cruzeiro",
+        "CLUBE_POSICAO": 7,
+        "ADVERSARIO": "Mirassol",
+        "MANDO": "em casa",
+        "MEDIA": 6.33,
+        "JOGOS": 13,
+        "ULTIMA_PONTUACAO": 7.65,
+        "VARIACAO": 0.46
       },
       {
         "RODADA": 22,
@@ -837,10 +1380,20 @@
         "PRECO": 10.69,
         "EXP_SCORE": 5.0693,
         "FACTOR": 1.0702097683559393,
-        "ATLETA_ID": 97341
+        "ATLETA_ID": 97341,
+        "CLUBE_NOME": "Bahia",
+        "CLUBE_POSICAO": 5,
+        "ADVERSARIO": "Vasco da Gama",
+        "MANDO": "em casa",
+        "MEDIA": 5.43,
+        "JOGOS": 20,
+        "ULTIMA_PONTUACAO": 6.39,
+        "VARIACAO": 0.3
       }
     ]
   },
   "snapshot_evento": "SELECAO_INICIAL",
-  "gerado_em": "2026-07-31T17:52:00.074059+00:00"
+  "gerado_em": "2026-07-31T22:22:31.609533+00:00",
+  "contexto_real_validado": true,
+  "fonte_classificacao": "API Cartola: partidas/1 até partidas/21"
 }
