@@ -77,8 +77,10 @@ jobs:
           test -s "data/publicacoes_atuais/time_pontuacao_rodada_${RODADA}.json"
           test -s "data/publicacoes_atuais/top5_rodada_${RODADA}.json"
           python - "$RODADA" <<'PY'
-          import json, sys
+          import json
+          import sys
           from pathlib import Path
+
           rodada = int(sys.argv[1])
           nomes = ['time_economico', 'time_intermediario', 'time_pontuacao', 'top5']
           for nome in nomes:
@@ -106,7 +108,8 @@ jobs:
           set -e
           python app/enriquecer_base_video_cartola_v1.py --rodada "$RODADA" --repo-root .
           python - "$RODADA" <<'PY'
-          import json, sys
+          import json
+          import sys
           from pathlib import Path
 
           rodada = int(sys.argv[1])
@@ -176,6 +179,7 @@ jobs:
           DURACAO="$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$VIDEO")"
           python - "$DURACAO" "$MANIFESTO" <<'PY'
           import json
+          import re
           import sys
           import unicodedata
           from pathlib import Path
@@ -204,19 +208,24 @@ jobs:
               if unicodedata.category(char) != 'Mn'
           )
 
-          proibidos = [
-              '0º colocado',
-              '0o colocado',
+          encontrados_proibidos = []
+
+          # Detecta apenas zero isolado. Não confunde 10º ou 20º com 0º.
+          if re.search(r'(?<!\d)0[ºo]\s+colocado\b', conteudo, flags=re.IGNORECASE):
+              encontrados_proibidos.append('0º colocado isolado')
+
+          proibidos_textuais = [
               'recorte histórico preservado',
               'recorte historico preservado',
               'fora do snapshot',
               'sem dados',
               'sem dado',
           ]
-          encontrados_proibidos = [
-              termo for termo in proibidos
+          encontrados_proibidos.extend(
+              termo for termo in proibidos_textuais
               if termo in conteudo or termo in sem_acento
-          ]
+          )
+
           if encontrados_proibidos:
               raise SystemExit(
                   'Vídeo bloqueado por conteúdo provisório ou inválido: '
