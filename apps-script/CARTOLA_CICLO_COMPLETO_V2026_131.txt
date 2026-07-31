@@ -1,0 +1,241 @@
+/**
+ * CARTOLA CICLO COMPLETO V2026.131
+ * Portal SimonSports
+ *
+ * Complemento para o projeto Apps Script atual.
+ * Não substitui CartolaGithubSync.gs: adiciona os eventos que estavam ausentes.
+ *
+ * ORDEM AUTOMÁTICA NA ABERTURA:
+ * 1. Desempenho dos times da rodada anterior.
+ * 2. Desempenho do Top 5 da rodada anterior.
+ * 3. Jogos finalizados da rodada anterior.
+ * 4. Mercado aberto da rodada atual.
+ * 5. Vídeo de análise inicial.
+ * 6. Times iniciais.
+ * 7. Top 5 inicial.
+ *
+ * PRÉ-FECHAMENTO:
+ * 1. Times atualizados.
+ * 2. Top 5 atualizado.
+ * 3. Segundo vídeo de análise.
+ */
+
+const CARTOLA_CICLO_V131_INTERVALO_MIN = 5;
+const CARTOLA_CICLO_V131_EVENTO_VIDEO = "cartola_video_analise";
+const CARTOLA_CICLO_V131_EVENTO_RESULTADOS = "cartola_live_publish";
+
+function instalarCicloCompletoCartolaV131() {
+  ScriptApp.getProjectTriggers().forEach(function(trigger) {
+    if (trigger.getHandlerFunction() === "jobCicloCompletoCartolaV131") {
+      ScriptApp.deleteTrigger(trigger);
+    }
+  });
+
+  var trigger = ScriptApp.newTrigger("jobCicloCompletoCartolaV131")
+    .timeBased()
+    .everyMinutes(CARTOLA_CICLO_V131_INTERVALO_MIN)
+    .create();
+
+  PropertiesService.getScriptProperties().setProperty(
+    "CARTOLA_CICLO_V131_INSTALADO",
+    new Date().toISOString()
+  );
+
+  return { ok: true, trigger_id: trigger.getUniqueId() };
+}
+
+function jobCicloCompletoCartolaV131() {
+  var estado = CARTOLA_GH_obterEstadoMercado_();
+  if (!estado || !Number(estado.rodada)) {
+    return { ok: false, motivo: "rodada_nao_identificada" };
+  }
+
+  var rodada = Number(estado.rodada);
+  var anterior = rodada - 1;
+  var props = PropertiesService.getScriptProperties();
+  var prefixo = "CARTOLA_CICLO_V131_R" + rodada + "_";
+  var agora = new Date();
+  var fechamento = CARTOLA_GH_obterFechamento_(estado);
+  var diffMin = fechamento
+    ? (fechamento.getTime() - agora.getTime()) / 60000
+    : null;
+
+  if (estado.mercado_aberto) {
+    CARTOLA_CICLO_V131_publicarFechamentoAnterior_(anterior, prefixo, props);
+    CARTOLA_CICLO_V131_publicarVideoInicial_(rodada, prefixo, props);
+
+    if (
+      fechamento &&
+      diffMin <= 120 &&
+      diffMin > 30 &&
+      props.getProperty(prefixo + "VIDEO_PRE_FECHAMENTO") !== "1"
+    ) {
+      var pre = CARTOLA_CICLO_V131_dispatch_(CARTOLA_CICLO_V131_EVENTO_VIDEO, {
+        rodada: rodada,
+        fase: "PRE_FECHAMENTO",
+        origem: "jobCicloCompletoCartolaV131"
+      });
+      if (pre.ok) props.setProperty(prefixo + "VIDEO_PRE_FECHAMENTO", "1");
+      return { ok: pre.ok, evento: "VIDEO_PRE_FECHAMENTO", rodada: rodada };
+    }
+  }
+
+  return {
+    ok: true,
+    rodada: rodada,
+    mercado_aberto: !!estado.mercado_aberto,
+    minutos_ate_fechamento: diffMin
+  };
+}
+
+function CARTOLA_CICLO_V131_publicarFechamentoAnterior_(rodadaAnterior, prefixo, props) {
+  if (rodadaAnterior < 1) return;
+
+  var eventos = [
+    {
+      flag: "RESULTADO_TIMES_R" + rodadaAnterior,
+      tipo_publicacao: "DESEMPENHO_TIMES",
+      contexto: "RODADA_FINALIZADA"
+    },
+    {
+      flag: "RESULTADO_TOP5_R" + rodadaAnterior,
+      tipo_publicacao: "DESEMPENHO_TOP5",
+      contexto: "RODADA_FINALIZADA"
+    },
+    {
+      flag: "JOGOS_FINALIZADOS_R" + rodadaAnterior,
+      tipo_publicacao: "JOGOS_FINALIZADOS",
+      contexto: "RODADA_FINALIZADA"
+    }
+  ];
+
+  eventos.forEach(function(item) {
+    var chave = prefixo + item.flag;
+    if (props.getProperty(chave) === "1") return;
+
+    var resposta = CARTOLA_CICLO_V131_dispatch_(
+      CARTOLA_CICLO_V131_EVENTO_RESULTADOS,
+      {
+        origem: "jobCicloCompletoCartolaV131",
+        evento_github: CARTOLA_CICLO_V131_EVENTO_RESULTADOS,
+        workflow_destino: "gerar.resultados.yml",
+        evento_programado: item.tipo_publicacao,
+        tipo_publicacao: item.tipo_publicacao,
+        contexto: item.contexto,
+        rodada: rodadaAnterior,
+        rodada_finalizada: rodadaAnterior,
+        forcar: true
+      }
+    );
+
+    if (resposta.ok) props.setProperty(chave, "1");
+    Utilities.sleep(1200);
+  });
+}
+
+function CARTOLA_CICLO_V131_publicarVideoInicial_(rodada, prefixo, props) {
+  var chave = prefixo + "VIDEO_INICIAL";
+  if (props.getProperty(chave) === "1") return;
+
+  var resposta = CARTOLA_CICLO_V131_dispatch_(CARTOLA_CICLO_V131_EVENTO_VIDEO, {
+    rodada: rodada,
+    fase: "INICIAL",
+    origem: "jobCicloCompletoCartolaV131"
+  });
+
+  if (resposta.ok) props.setProperty(chave, "1");
+}
+
+function forcarCicloCompletoRodadaAtualV131() {
+  var estado = CARTOLA_GH_obterEstadoMercado_();
+  if (!estado || !Number(estado.rodada)) {
+    throw new Error("Rodada atual não identificada.");
+  }
+
+  var rodada = Number(estado.rodada);
+  var props = PropertiesService.getScriptProperties();
+  var prefixo = "CARTOLA_CICLO_V131_R" + rodada + "_";
+
+  [
+    "VIDEO_INICIAL",
+    "VIDEO_PRE_FECHAMENTO",
+    "RESULTADO_TIMES_R" + (rodada - 1),
+    "RESULTADO_TOP5_R" + (rodada - 1),
+    "JOGOS_FINALIZADOS_R" + (rodada - 1)
+  ].forEach(function(sufixo) {
+    props.deleteProperty(prefixo + sufixo);
+  });
+
+  return jobCicloCompletoCartolaV131();
+}
+
+function publicarAgoraPendenciasRodada21eVideo22V131() {
+  var props = PropertiesService.getScriptProperties();
+  var prefixo = "CARTOLA_CICLO_V131_R22_";
+
+  [
+    "VIDEO_INICIAL",
+    "RESULTADO_TIMES_R21",
+    "RESULTADO_TOP5_R21",
+    "JOGOS_FINALIZADOS_R21"
+  ].forEach(function(sufixo) {
+    props.deleteProperty(prefixo + sufixo);
+  });
+
+  CARTOLA_CICLO_V131_publicarFechamentoAnterior_(21, prefixo, props);
+  CARTOLA_CICLO_V131_publicarVideoInicial_(22, prefixo, props);
+
+  return {
+    ok: true,
+    mensagem: "Dispatches enviados: resultados da Rodada 21 e vídeo inicial da Rodada 22."
+  };
+}
+
+function CARTOLA_CICLO_V131_dispatch_(eventType, payload) {
+  var repo = CARTOLA_GH_texto_(
+    CARTOLA_GH_getConfig_("GITHUB_REPO") ||
+    CARTOLA_GH_getConfig_("GITHUB_DISPATCH_REPO") ||
+    CARTOLA_GH_getConfig_("GITHUB_TESTE_REPO")
+  ).trim();
+
+  var token = CARTOLA_GH_texto_(
+    CARTOLA_GH_getConfig_("GITHUB_TOKEN") ||
+    CARTOLA_GH_getConfig_("GITHUB_DISPATCH_TOKEN") ||
+    CARTOLA_GH_getConfig_("GITHUB_TESTE_TOKEN")
+  ).trim();
+
+  if (!repo || !token) {
+    throw new Error("Configuração GitHub incompleta: repositório ou token ausente.");
+  }
+
+  var response = UrlFetchApp.fetch(
+    "https://api.github.com/repos/" + repo + "/dispatches",
+    {
+      method: "post",
+      contentType: "application/json",
+      headers: {
+        Authorization: "Bearer " + token,
+        Accept: "application/vnd.github+json"
+      },
+      payload: JSON.stringify({
+        event_type: eventType,
+        client_payload: payload
+      }),
+      muteHttpExceptions: true
+    }
+  );
+
+  var code = response.getResponseCode();
+  var ok = code >= 200 && code < 300;
+  CARTOLA_GH_log_(
+    "CICLO V131 dispatch " + eventType + " HTTP " + code +
+      " | " + response.getContentText(),
+    ok ? "INFO" : "ERRO"
+  );
+
+  return {
+    ok: ok,
+    codigo: code,
+    resposta: response.getContentText()
+  };
+}
