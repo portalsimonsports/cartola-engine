@@ -66,12 +66,14 @@ jobs:
           echo "video=$VIDEO" >> "$GITHUB_OUTPUT"
           echo "manifesto=$MANIFESTO" >> "$GITHUB_OUTPUT"
 
-      - name: Corrigir conflito do Google API build
+      - name: Preparar gerador de base técnica
         run: |
           python - <<'PY'
           from pathlib import Path
+
           path = Path('app/gerar_base_analise_cartola.py')
           text = path.read_text(encoding='utf-8')
+
           text = text.replace(
               'from googleapiclient.discovery import build',
               'from googleapiclient.discovery import build as google_api_build',
@@ -82,9 +84,27 @@ jobs:
               'return google_api_build("sheets", "v4", credentials=credentials, cache_discovery=False)',
               1,
           )
+
+          old = '''    history_rows = table(sheet_values(service, "HIST_PARTIDAS", "A:F"))
+              club_rows = table(sheet_values(service, "HIST_CLUBES", "A:D"))'''
+          new = '''    try:
+                  history_rows = table(sheet_values(service, "HIST_PARTIDAS", "A:F"))
+              except Exception as exc:
+                  print(f"Aviso: HIST_PARTIDAS indisponível; seguindo sem histórico da planilha: {exc}")
+                  history_rows = []
+              try:
+                  club_rows = table(sheet_values(service, "HIST_CLUBES", "A:D"))
+              except Exception as exc:
+                  print(f"Aviso: HIST_CLUBES indisponível; usando clubes da API: {exc}")
+                  club_rows = []'''
+
+          if old not in text:
+              raise SystemExit('Bloco HIST_PARTIDAS/HIST_CLUBES não localizado para correção.')
+          text = text.replace(old, new, 1)
           path.write_text(text, encoding='utf-8')
           PY
-          grep -n "google_api_build" app/gerar_base_analise_cartola.py
+          python -m py_compile app/gerar_base_analise_cartola.py
+          grep -n "HIST_PARTIDAS indisponível" app/gerar_base_analise_cartola.py
 
       - name: Gerar base técnica da rodada
         env:
@@ -106,7 +126,6 @@ jobs:
           test -s "output/time_intermediario_rodada_${RODADA}.png"
           test -s "output/time_pontuacao_rodada_${RODADA}.png"
           test -s "output/top5_rodada_${RODADA}.png"
-          python -m py_compile app/gerar_base_analise_cartola.py
           python -m py_compile app/gerar_video_dialogo_cartola_v4.py
           python -m py_compile app/enviar_video_telegram.py
 
@@ -144,9 +163,6 @@ jobs:
           timeline = manifest.get("timeline") or []
           if not timeline:
               raise SystemExit("Manifesto sem transcrição.")
-          unanswered = [item for item in timeline[:-1] if str(item.get("texto_falado", "")).strip().endswith("?")]
-          if unanswered:
-              print("Perguntas presentes; a sequência seguinte deve conter a resposta correspondente.")
           print(f"Vídeo validado: {duration:.2f}s e {len(timeline)} falas.")
           PY
 
