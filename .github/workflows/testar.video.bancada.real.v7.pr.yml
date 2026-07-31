@@ -7,4 +7,4 @@ jobs:
   marcador:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Validação final independente V8 acionada."
+      - run: echo "Validação final V8 com caminho dos binários corrigido."
