@@ -55,6 +55,7 @@ jobs:
           MANUAL_RODADA: ${{ github.event.inputs.rodada }}
           MANUAL_FASE: ${{ github.event.inputs.fase }}
         run: |
+          set -e
           RODADA="${DISPATCH_RODADA:-${MANUAL_RODADA:-22}}"
           FASE="${DISPATCH_FASE:-${MANUAL_FASE:-INICIAL}}"
           FASE="$(printf '%s' "$FASE" | tr '[:lower:]' '[:upper:]')"
@@ -66,14 +67,12 @@ jobs:
           echo "video=$VIDEO" >> "$GITHUB_OUTPUT"
           echo "manifesto=$MANIFESTO" >> "$GITHUB_OUTPUT"
 
-      - name: Preparar gerador de base técnica
+      - name: Corrigir conflito do Google API build
         run: |
           python - <<'PY'
           from pathlib import Path
-
           path = Path('app/gerar_base_analise_cartola.py')
           text = path.read_text(encoding='utf-8')
-
           text = text.replace(
               'from googleapiclient.discovery import build',
               'from googleapiclient.discovery import build as google_api_build',
@@ -84,32 +83,49 @@ jobs:
               'return google_api_build("sheets", "v4", credentials=credentials, cache_discovery=False)',
               1,
           )
-
-          old = '''    history_rows = table(sheet_values(service, "HIST_PARTIDAS", "A:F"))
-              club_rows = table(sheet_values(service, "HIST_CLUBES", "A:D"))'''
-          new = '''    try:
-                  history_rows = table(sheet_values(service, "HIST_PARTIDAS", "A:F"))
-              except Exception as exc:
-                  print(f"Aviso: HIST_PARTIDAS indisponível; seguindo sem histórico da planilha: {exc}")
-                  history_rows = []
-              try:
-                  club_rows = table(sheet_values(service, "HIST_CLUBES", "A:D"))
-              except Exception as exc:
-                  print(f"Aviso: HIST_CLUBES indisponível; usando clubes da API: {exc}")
-                  club_rows = []'''
-
-          if old not in text:
-              raise SystemExit('Bloco HIST_PARTIDAS/HIST_CLUBES não localizado para correção.')
-          text = text.replace(old, new, 1)
           path.write_text(text, encoding='utf-8')
           PY
-          python -m py_compile app/gerar_base_analise_cartola.py
-          grep -n "HIST_PARTIDAS indisponível" app/gerar_base_analise_cartola.py
+
+      - name: Validar planilha e abas obrigatórias
+        env:
+          PLANILHA_ID: "1-A7w4kkE28iHRd61yiSoNOvSekrmmADzHxGCRDVrICI"
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_APPLICATION_CREDENTIALS: service_account.json
+        run: |
+          set -e
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          from google.oauth2.service_account import Credentials
+          from googleapiclient.discovery import build
+
+          raw = os.environ.get('GOOGLE_SERVICE_ACCOUNT_JSON', '').strip()
+          if raw:
+              Path('service_account.json').write_text(json.dumps(json.loads(raw)), encoding='utf-8')
+          creds = Credentials.from_service_account_file(
+              'service_account.json',
+              scopes=['https://www.googleapis.com/auth/spreadsheets.readonly'],
+          )
+          service = build('sheets', 'v4', credentials=creds, cache_discovery=False)
+          spreadsheet_id = os.environ['PLANILHA_ID']
+          meta = service.spreadsheets().get(
+              spreadsheetId=spreadsheet_id,
+              fields='properties.title,sheets.properties.title',
+          ).execute()
+          titles = [s['properties']['title'] for s in meta.get('sheets', [])]
+          required = ['HIST_PARTIDAS', 'HIST_CLUBES', 'TIMES_ATUAL', 'TOP5_ATUAL']
+          missing = [name for name in required if name not in titles]
+          print('Planilha:', meta.get('properties', {}).get('title'))
+          print('ID:', spreadsheet_id)
+          print('Abas obrigatórias:', required)
+          if missing:
+              raise SystemExit('Abas ausentes: ' + ', '.join(missing))
+          PY
 
       - name: Gerar base técnica da rodada
         env:
           RODADA: ${{ steps.evento.outputs.rodada }}
-          PLANILHA_ID: ${{ secrets.PLANILHA_ID }}
+          PLANILHA_ID: "1-A7w4kkE28iHRd61yiSoNOvSekrmmADzHxGCRDVrICI"
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
           GOOGLE_APPLICATION_CREDENTIALS: service_account.json
         run: |
@@ -126,6 +142,7 @@ jobs:
           test -s "output/time_intermediario_rodada_${RODADA}.png"
           test -s "output/time_pontuacao_rodada_${RODADA}.png"
           test -s "output/top5_rodada_${RODADA}.png"
+          python -m py_compile app/gerar_base_analise_cartola.py
           python -m py_compile app/gerar_video_dialogo_cartola_v4.py
           python -m py_compile app/enviar_video_telegram.py
 
@@ -155,26 +172,27 @@ jobs:
           import json, sys
           from pathlib import Path
           duration = float(sys.argv[1])
-          manifest = json.loads(Path(sys.argv[2]).read_text(encoding="utf-8"))
+          manifest = json.loads(Path(sys.argv[2]).read_text(encoding='utf-8'))
           if duration < 480:
-              raise SystemExit(f"Vídeo curto demais: {duration:.2f}s")
-          if manifest.get("layout_sem_sobreposicao") is not True:
-              raise SystemExit("Layout sem sobreposição não confirmado.")
-          timeline = manifest.get("timeline") or []
+              raise SystemExit(f'Vídeo curto demais: {duration:.2f}s')
+          if manifest.get('layout_sem_sobreposicao') is not True:
+              raise SystemExit('Layout sem sobreposição não confirmado.')
+          timeline = manifest.get('timeline') or []
           if not timeline:
-              raise SystemExit("Manifesto sem transcrição.")
-          print(f"Vídeo validado: {duration:.2f}s e {len(timeline)} falas.")
+              raise SystemExit('Manifesto sem transcrição.')
+          print(f'Vídeo validado: {duration:.2f}s e {len(timeline)} falas.')
           PY
 
       - name: Enviar vídeo ao Telegram
         env:
-          PLANILHA_ID: ${{ secrets.PLANILHA_ID }}
+          PLANILHA_ID: "1-A7w4kkE28iHRd61yiSoNOvSekrmmADzHxGCRDVrICI"
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
           GOOGLE_APPLICATION_CREDENTIALS: service_account.json
           ABA_TELEGRAM: ${{ secrets.ABA_TELEGRAM }}
           CONTA_TELEGRAM: ${{ secrets.CONTA_TELEGRAM }}
           TELEGRAM_CHAT_FALLBACK: "@dicascartolaportalsimonsports"
         run: |
+          set -e
           python app/enviar_video_telegram.py \
             --video "${{ steps.evento.outputs.video }}" \
             --rodada "${{ steps.evento.outputs.rodada }}" \
