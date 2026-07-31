@@ -1,320 +1,361 @@
 from __future__ import annotations
 
 import argparse
-import json
+import re
+import unicodedata
 from pathlib import Path
-from typing import Dict, List
+from typing import Any, Dict, List, Tuple
 
-from PIL import Image, ImageDraw
+import requests
 
-import gerar_video_dialogo_cartola_v1 as base
 import gerar_video_dialogo_cartola_v3 as v3
 import gerar_video_dialogo_cartola_v4 as v4
 
+VERSION = "cartola_dialogo_tecnico_v5_desempenho_colocacao_2026_07_31"
+API_BASE = "https://api.cartola.globo.com"
 
-VERSION = "cartola_analise_tecnica_v5_2026_07_30_debate_reforcado"
-TITLE = "ANÁLISE"
-V4_BUILD_DIALOGUE_ORIGINAL = v4.build_dialogue_v4
-V4_FRAME_ORIGINAL = v4.create_frame_v4
+POSICOES = {
+    "GOL": "goleiro",
+    "LAT": "lateral",
+    "ZAG": "zagueiro",
+    "MEI": "meia",
+    "ATA": "atacante",
+    "TEC": "técnico",
+}
 
 
-def safe_float(value, default: float = 0.0) -> float:
+def clean(value: Any) -> str:
+    return re.sub(r"\s+", " ", str(value or "")).strip()
+
+
+def number(value: Any, decimals: int = 2) -> str:
     try:
-        return float(value)
-    except (TypeError, ValueError):
-        return default
+        return f"{float(value):.{decimals}f}".replace(".", ",")
+    except Exception:
+        return "0,00"
 
 
-def number(value, digits: int = 2) -> str:
-    return f"{safe_float(value):.{digits}f}".replace(".", ",")
+def integer(value: Any) -> int:
+    try:
+        return int(float(value))
+    except Exception:
+        return 0
 
 
-def percent(value, digits: int = 1) -> str:
-    return f"{safe_float(value) * 100:.{digits}f}%".replace(".", ",")
+def key_text(value: Any) -> str:
+    text = unicodedata.normalize("NFKD", clean(value)).encode("ascii", "ignore").decode("ascii")
+    return re.sub(r"[^a-z0-9]", "", text.lower())
 
 
-def team_stats(team: str) -> Dict[str, int]:
-    games = v4.HISTORY.get(team, [])
-    wins = draws = losses = goals_for = goals_against = 0
-    for item in games:
-        if item["casa"] == team:
-            gf, ga = int(item["pc"]), int(item["pf"])
-        else:
-            gf, ga = int(item["pf"]), int(item["pc"])
-        goals_for += gf
-        goals_against += ga
-        if gf > ga:
-            wins += 1
-        elif gf < ga:
-            losses += 1
-        else:
-            draws += 1
+def api_get(path: str) -> Dict[str, Any]:
+    response = requests.get(
+        f"{API_BASE}/{path.lstrip('/')}",
+        headers={"User-Agent": "PortalSimonSports-CartolaEngine/2026"},
+        timeout=45,
+    )
+    response.raise_for_status()
+    payload = response.json()
+    return payload if isinstance(payload, dict) else {}
+
+
+def ordinal(position: int) -> str:
+    return f"{position}º colocado" if position > 0 else ""
+
+
+def result_for(club_id: int, match: Dict[str, Any]) -> str:
+    home = integer(match.get("clube_casa_id") or match.get("casa_id"))
+    away = integer(match.get("clube_visitante_id") or match.get("visitante_id"))
+    home_goals = match.get("placar_oficial_mandante")
+    away_goals = match.get("placar_oficial_visitante")
+    if home_goals is None:
+        home_goals = match.get("placar_casa")
+    if away_goals is None:
+        away_goals = match.get("placar_vis")
+    if home_goals in (None, "") or away_goals in (None, ""):
+        return ""
+    hg = integer(home_goals)
+    ag = integer(away_goals)
+    own = hg if club_id == home else ag
+    rival = ag if club_id == home else hg
+    return "vitória" if own > rival else "derrota" if own < rival else "empate"
+
+
+def load_official_context(round_value: int) -> Dict[str, Any]:
+    current = api_get(f"partidas/{round_value}")
+    market = api_get("atletas/mercado")
+
+    clubs_by_id: Dict[int, Dict[str, Any]] = {}
+    clubs_by_abbr: Dict[str, Dict[str, Any]] = {}
+    raw_clubs = current.get("clubes") or market.get("clubes") or {}
+    if isinstance(raw_clubs, dict):
+        for raw_id, item in raw_clubs.items():
+            if not isinstance(item, dict):
+                continue
+            club_id = integer(item.get("id") or raw_id)
+            abbr = clean(item.get("abreviacao"))
+            normalized = {
+                "id": club_id,
+                "nome": clean(item.get("nome") or item.get("nome_fantasia") or abbr),
+                "abreviacao": abbr,
+                "posicao": integer(item.get("posicao")),
+            }
+            clubs_by_id[club_id] = normalized
+            if abbr:
+                clubs_by_abbr[abbr.upper()] = normalized
+
+    matches = [item for item in (current.get("partidas") or []) if isinstance(item, dict)]
+    opponent: Dict[str, Dict[str, Any]] = {}
+    for match in matches:
+        home_id = integer(match.get("clube_casa_id") or match.get("casa_id"))
+        away_id = integer(match.get("clube_visitante_id") or match.get("visitante_id"))
+        home = clubs_by_id.get(home_id, {})
+        away = clubs_by_id.get(away_id, {})
+        home_abbr = clean(home.get("abreviacao")).upper()
+        away_abbr = clean(away.get("abreviacao")).upper()
+        if home_abbr:
+            opponent[home_abbr] = {"adversario": away, "mando": "em casa"}
+        if away_abbr:
+            opponent[away_abbr] = {"adversario": home, "mando": "fora de casa"}
+
+    history: List[Dict[str, Any]] = []
+    for previous_round in range(max(1, round_value - 5), round_value):
+        try:
+            payload = api_get(f"partidas/{previous_round}")
+            history.extend([item for item in (payload.get("partidas") or []) if isinstance(item, dict)])
+        except Exception as error:
+            print(f"Aviso: histórico da rodada {previous_round} indisponível: {error}")
+
+    recent_form: Dict[int, List[str]] = {}
+    for club_id in clubs_by_id:
+        results: List[str] = []
+        for match in history:
+            home = integer(match.get("clube_casa_id") or match.get("casa_id"))
+            away = integer(match.get("clube_visitante_id") or match.get("visitante_id"))
+            if club_id not in (home, away):
+                continue
+            result = result_for(club_id, match)
+            if result:
+                results.append(result)
+        recent_form[club_id] = results[-5:]
+
+    athletes: Dict[Tuple[str, str], Dict[str, Any]] = {}
+    for athlete in market.get("atletas") or []:
+        if not isinstance(athlete, dict):
+            continue
+        club_id = integer(athlete.get("clube_id"))
+        club = clubs_by_id.get(club_id, {})
+        abbr = clean(club.get("abreviacao")).upper()
+        for athlete_name in (athlete.get("apelido"), athlete.get("nome"), athlete.get("slug")):
+            normalized_name = key_text(athlete_name)
+            if normalized_name:
+                athletes[(normalized_name, abbr)] = athlete
+                athletes.setdefault((normalized_name, ""), athlete)
+
     return {
-        "jogos": len(games),
-        "vitorias": wins,
-        "empates": draws,
-        "derrotas": losses,
-        "pontos": wins * 3 + draws,
-        "gols_pro": goals_for,
-        "gols_contra": goals_against,
-        "saldo": goals_for - goals_against,
+        "clubs_by_abbr": clubs_by_abbr,
+        "opponent": opponent,
+        "recent_form": recent_form,
+        "athletes": athletes,
     }
 
 
-def seg(speaker: str, text: str, visual: str, onscreen: str) -> v3.Segment:
-    return v4.seg(speaker, text, visual, onscreen)
+def form_sentence(club: Dict[str, Any], results: List[str]) -> str:
+    name = clean(club.get("nome") or club.get("abreviacao"))
+    if not results:
+        return f"O {name} não tem cinco resultados finalizados disponíveis no recorte oficial."
+    return (
+        f"Nos últimos {len(results)} jogos, o {name} somou {results.count('vitória')} vitórias, "
+        f"{results.count('empate')} empates e {results.count('derrota')} derrotas."
+    )
 
 
-def richer_reaction(segment: v3.Segment, data: dict) -> v3.Segment:
-    players = data.get("jogadores", {})
-    text = segment.text
-
-    if text.startswith("Nesse caso eu concordo com a lógica das defesas"):
-        p = players.get("Lucas Arcanjo", {})
-        text = (
-            f"Eu concordo com a lógica das defesas, mas não compraria a ideia de segurança. "
-            f"A probabilidade de seis ou mais aparece em {percent(p.get('prob_6'))}, enquanto o Poisson de pontos fica em apenas "
-            f"{number(p.get('poisson_pontos', 1.67))}. Essa divergência é exatamente o risco que precisa aparecer na análise."
-        )
-    elif text.startswith("Aqui aparece uma divergência interessante"):
-        p = players.get("Matheuzinho", {})
-        media = number(p.get("media_ult5")) if p else "não consolidada"
-        text = (
-            f"Aqui eu discordo de uma leitura defensiva simples. O mando ajuda o Corinthians, mas o Athletico somou treze pontos "
-            f"nos últimos cinco jogos. Matheuzinho tem média recente de {media}; portanto, a indicação deve vir pelos scouts laterais, não por saldo de gol presumido."
-        )
-    elif text.startswith("Arias é consenso"):
-        p = players.get("Arias", {})
-        text = (
-            f"Arias é consenso, mas custa {number(p.get('preco'))} cartoletas, tem variância de {number(p.get('variancia_ult5'))} "
-            f"e índice de confiança de apenas {percent(p.get('indice_confianca'))}. A probabilidade de oito ou mais, em {percent(p.get('prob_8'))}, "
-            f"sustenta o teto; não elimina o risco do investimento."
-        )
-    elif text.startswith("Viveros tem o melhor momento recente"):
-        p = players.get("Viveros", {})
-        text = (
-            f"Viveros tem média de {number(p.get('media_ult5'))} nas últimas cinco, mas média esperada de {number(p.get('media_esperada'))} "
-            f"e fator de confronto de {number(p.get('fator_confronto', 0.924), 3)}. É capitão pelo teto probabilístico; não porque o jogo seja confortável."
-        )
-    elif text.startswith("Entre Samuel Lino e Pedro"):
-        pedro = players.get("Pedro", {})
-        samuel = players.get("Samuel Lino", {})
-        text = (
-            f"Entre Samuel Lino e Pedro, o preço pesa: {number(samuel.get('preco'))} contra {number(pedro.get('preco'))} cartoletas. "
-            f"Mas a variância também é alta nos dois, {number(samuel.get('variancia_ult5'))} e {number(pedro.get('variancia_ult5'))}. "
-            f"Usar a dupla é uma decisão agressiva e precisa ser assumida como tal."
-        )
-
-    if text == segment.text:
-        return segment
-    return seg(segment.speaker, text, segment.visual, text)
-
-
-def build_dialogue_v5(round_value: int, data: dict) -> List[v3.Segment]:
-    original = V4_BUILD_DIALOGUE_ORIGINAL(round_value, data)
-    players = data.get("jogadores", {})
-
-    result: List[v3.Segment] = [
-        seg(
-            "FRANCISCA",
-            f"Está no ar a análise completa da rodada {round_value}. Seis jogos, três modelos e vinte jogadores sob avaliação. Hoje ninguém vai se esconder atrás de uma lista de nomes: cada escolha terá de sobreviver aos números e ao contraditório.",
-            "rodada",
-            "Seis jogos, três modelos e vinte escolhas sob análise.",
-        ),
-        seg(
-            "ANTÔNIO",
-            "E eu já deixo o aviso: probabilidade alta, isoladamente, não me convence. Vou cobrar forma recente, força do adversário, mando de campo, custo e coerência entre os indicadores.",
-            "rodada",
-            "Probabilidade sem contexto não basta.",
-        ),
-        seg(
-            "THALITA",
-            "Perfeito. E quando a escalação concentrar atletas de um mesmo confronto, eu vou questionar o risco de correlação. O objetivo é mostrar onde o modelo é forte e onde ele pode estar se expondo demais.",
-            "rodada",
-            "Teto, risco, correlação e custo serão confrontados.",
-        ),
-        seg(
-            "FRANCISCA",
-            "Então vamos começar pelos jogos. A tabela mostra a fotografia do campeonato; os últimos cinco resultados mostram a direção do momento. Quando os dois sinais discordarem, haverá debate.",
-            "rodada",
-            "Tabela e momento recente: sinais que podem divergir.",
-        ),
-    ]
-
-    # Descarta a abertura anterior e preserva todo o conteúdo técnico do V4.
-    for segment in original[2:]:
-        current = richer_reaction(segment, data)
-        result.append(current)
-
-        # Réplicas adicionais: naturais, incisivas e sustentadas por números.
-        if (
-            current.visual == "jogo_0"
-            and current.speaker == "FRANCISCA"
-            and "empilhar muitos atletas do Remo" in current.text
-        ):
-            mir = team_stats("MIR")
-            rem = team_stats("REM")
-            result.append(
-                seg(
-                    "ANTÔNIO",
-                    f"Eu acho essa cautela excessiva. O Remo fez {rem['pontos']} pontos e marcou {rem['gols_pro']} gols nas últimas cinco; "
-                    f"o Mirassol fez {mir['pontos']} pontos e marcou {mir['gols_pro']}. Se o preço dos atletas do Remo é menor, por que o Econômico não deveria explorar essa diferença?",
-                    "jogo_0",
-                    f"Debate: Remo {rem['pontos']} pontos no recorte; Mirassol {mir['pontos']}.",
-                )
-            )
-
-        if (
-            current.visual == "jogo_1"
-            and current.speaker == "ANTÔNIO"
-            and current.text.startswith("Concordo. Para um time conservador")
-        ):
-            inter = team_stats("INT")
-            fla = team_stats("FLA")
-            result.append(
-                seg(
-                    "FRANCISCA",
-                    f"Eu seria ainda mais firme: o Flamengo marcou {fla['gols_pro']} e sofreu {fla['gols_contra']} gols no recorte, enquanto o Internacional sofreu {inter['gols_contra']}. "
-                    f"Os números justificam exposição ofensiva, mas não obrigam a dobradinha. Um atacante preserva o cenário favorável e reduz a correlação.",
-                    "jogo_1",
-                    f"Flamengo: {fla['gols_pro']} gols pró; Internacional: {inter['gols_contra']} sofridos.",
-                )
-            )
-
-        if (
-            current.visual == "jogo_4"
-            and current.speaker == "ANTÔNIO"
-            and "não concentraria defesa e ataque" in current.text
-        ):
-            cor = team_stats("COR")
-            cap = team_stats("CAP")
-            result.append(
-                seg(
-                    "THALITA",
-                    f"Mas aí eu vou contestar: o Athletico somou {cap['pontos']} pontos, marcou {cap['gols_pro']} e sofreu apenas {cap['gols_contra']} gols. "
-                    f"O Corinthians fez {cor['pontos']} pontos. Se Viveros é capitão dos três modelos, o sistema já escolheu um lado para buscar teto, mesmo que a fala tente parecer neutra.",
-                    "jogo_4",
-                    f"Athletico: {cap['pontos']} pontos e saldo {cap['saldo']:+d} no recorte.",
-                )
-            )
-
-        if current.visual == "Arias" and current.text.startswith("Arias é consenso"):
-            p = players.get("Arias", {})
-            result.append(
-                seg(
-                    "ANTÔNIO",
-                    f"E é justamente aí que eu discordo. Pagar {number(p.get('preco'))} cartoletas em um atleta com confiança de {percent(p.get('indice_confianca'))} "
-                    f"é aceitar muita oscilação. Francisca, a probabilidade de {percent(p.get('prob_8'))} para oito ou mais compensa esse preço?",
-                    "Arias",
-                    "Arias: teto forte, preço alto e confiança baixa.",
-                )
-            )
-            result.append(
-                seg(
-                    "FRANCISCA",
-                    f"Compensa apenas para quem busca teto. A média recente de {number(p.get('media_ult5'))} e a liderança do Palmeiras sustentam a escolha, "
-                    f"mas eu não chamaria Arias de peça de segurança. Em um modelo conservador, esse preço precisa ser comparado com duas opções mais baratas da posição.",
-                    "Arias",
-                    "Arias compensa pelo teto; não deve ser vendido como segurança.",
-                )
-            )
-
-        if current.visual == "Viveros" and current.text.startswith("Viveros tem média"):
-            p = players.get("Viveros", {})
-            result.append(
-                seg(
-                    "THALITA",
-                    f"Eu ainda quero uma resposta mais direta: média recente de {number(p.get('media_ult5'))}, média esperada de {number(p.get('media_esperada'))} "
-                    f"e confiança de {percent(p.get('indice_confianca'))}. Esses indicadores não contam a mesma história. Por que ele recebe a braçadeira?",
-                    "Viveros",
-                    "Capitão sob contestação: forma, expectativa e confiança divergem.",
-                )
-            )
-            result.append(
-                seg(
-                    "ANTÔNIO",
-                    f"Porque o capitão é uma escolha de teto. A probabilidade de oito ou mais chega a {percent(p.get('prob_8'))}, e o Athletico fez treze pontos no recorte. "
-                    f"Mas eu concordo com a ressalva: quem busca estabilidade não deve interpretar essa braçadeira como garantia.",
-                    "Viveros",
-                    f"Braçadeira pelo teto: probabilidade 8+ de {percent(p.get('prob_8'))}.",
-                )
-            )
-
+def top5_map(data: Dict[str, Any]) -> Dict[str, Dict[str, Any]]:
+    payload = data.get("top5") if isinstance(data.get("top5"), dict) else {}
+    rows = payload.get("dados") or payload.get("atletas") or payload.get("jogadores") or []
+    result: Dict[str, Dict[str, Any]] = {}
+    for row in rows:
+        if isinstance(row, dict):
+            name = row.get("NOME") or row.get("nome")
+            if name:
+                result[key_text(name)] = row
     return result
 
 
-def create_frame_v5(
-    visual_path: Path | None,
-    collage_paths: List[Path],
-    speaker: str,
-    text: str,
-    round_value: int,
-    output: Path,
-) -> None:
-    # Reutiliza o layout sem sobreposição já aprovado no V4.
-    V4_FRAME_ORIGINAL(visual_path, collage_paths, speaker, text, round_value, output)
+def build_dialogue_v5(round_value: int, data: Dict[str, Any]) -> List[v3.Segment]:
+    segments: List[v3.Segment] = []
+    context = load_official_context(round_value)
+    clubs = context["clubs_by_abbr"]
+    opponents = context["opponent"]
+    recent = context["recent_form"]
+    athlete_market = context["athletes"]
+    top5 = top5_map(data)
 
-    # Cobre integralmente o cabeçalho anterior e remove a palavra "dialogada".
-    image = Image.open(output).convert("RGBA")
-    draw = ImageDraw.Draw(image)
-    v3.rounded(draw, (20, 18, 700, 76), 24, (3, 20, 39, 255), base.LINE, 2)
-    header = f"{TITLE} • RODADA {round_value}"
-    hb = draw.textbbox((0, 0), header, font=base.font(25, True))
-    draw.text(((base.WIDTH - (hb[2] - hb[0])) / 2, 32), header, font=base.font(25, True), fill=base.WHITE)
-    image.convert("RGB").save(output, "PNG", optimize=True)
+    games = list(data.get("jogos") or [])
+    players = dict(data.get("jogadores") or {})
+    teams = dict(data.get("times") or {})
 
-
-def update_manifest(output_path: Path) -> None:
-    manifest_path = output_path.with_suffix(".json")
-    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-    manifest.update(
-        {
-            "versao": VERSION,
-            "titulo_visual": TITLE,
-            "palavra_dialogada_removida": True,
-            "abertura_reforcada": True,
-            "debate_reforcado": True,
-            "replicas_adicionais": 7,
-            "criterios_adicionais": [
-                "pontos nos últimos cinco jogos",
-                "gols marcados e sofridos",
-                "saldo recente",
-                "posição no campeonato",
-                "mando de campo",
-                "probabilidades de pontuação",
-                "média recente e média esperada",
-                "variância",
-                "índice de confiança",
-                "custo em cartoletas",
-                "correlação entre atletas do mesmo confronto",
-            ],
-        }
+    v4.add_segment(
+        segments,
+        "FRANCISCA",
+        f"Começa agora a análise inicial da rodada {round_value}. A imagem preserva exatamente os times e o Top 5 publicados no canal. No áudio, vamos detalhar colocação dos clubes, desempenho recente, média dos atletas, preço e contexto de cada escolha.",
+        "rodada",
+        "Snapshot publicado com análise completa de desempenho.",
     )
-    manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    for index, game in enumerate(games):
+        visual = f"jogo_{index}"
+        home_abbr = clean(game.get("mandante_sigla")).upper()
+        away_abbr = clean(game.get("visitante_sigla")).upper()
+        home = clubs.get(home_abbr, {"nome": clean(game.get("mandante")), "abreviacao": home_abbr})
+        away = clubs.get(away_abbr, {"nome": clean(game.get("visitante")), "abreviacao": away_abbr})
+        home_name = clean(home.get("nome") or home_abbr)
+        away_name = clean(away.get("nome") or away_abbr)
+        home_position = integer(home.get("posicao"))
+        away_position = integer(away.get("posicao"))
+        position_text = ""
+        if home_position and away_position:
+            position_text = (
+                f"Na classificação, o {home_name} é o {ordinal(home_position)}, "
+                f"enquanto o {away_name} aparece como {ordinal(away_position)}. "
+            )
+        v4.add_segment(
+            segments,
+            ["ANTÔNIO", "THALITA", "FRANCISCA"][index % 3],
+            f"O confronto é {home_name} contra {away_name}. {position_text}"
+            f"{form_sentence(home, recent.get(integer(home.get('id')), []))} "
+            f"{form_sentence(away, recent.get(integer(away.get('id')), []))} "
+            f"O mando é do {home_name}, mas a escalação deve separar força coletiva de produção individual de scouts.",
+            visual,
+            f"{home_name} x {away_name} • classificação e últimos jogos.",
+        )
+
+    if teams:
+        v4.add_segment(
+            segments,
+            "THALITA",
+            "Agora entram os três modelos exatamente como foram publicados na seleção inicial. Como a rodada ainda não começou, não vamos chamar zero ponto de desempenho. O correto é apresentar custo, capitão e proposta de montagem.",
+            "pontuacoes",
+            "Seleção inicial: custo, capitão e proposta de cada modelo.",
+        )
+        for index, team in enumerate(teams.values()):
+            name = clean(team.get("nome")) or "Modelo"
+            cost = number(team.get("custo"))
+            captain = clean(team.get("capitao")) or "não informado"
+            v4.add_segment(
+                segments,
+                ["ANTÔNIO", "FRANCISCA", "THALITA"][index % 3],
+                f"O {name} foi publicado com custo de {cost} cartoletas e capitão {captain}. Essa é a fotografia inicial; o desempenho será medido somente depois que os atletas pontuarem na rodada.",
+                "pontuacoes",
+                f"{name}: C$ {cost} • capitão {captain}.",
+            )
+
+    v4.add_segment(
+        segments,
+        "FRANCISCA",
+        "Vamos às escolhas individuais. Cada atleta será apresentado pela posição, clube por extenso, colocação da equipe, adversário, preço e desempenho disponível no mercado do Cartola.",
+        next(iter(players), "top5"),
+        "Atletas: posição, clube, classificação, confronto e desempenho.",
+    )
+
+    for index, (name, player) in enumerate(players.items()):
+        abbr = clean(player.get("clube")).upper()
+        club = clubs.get(abbr, {"nome": abbr, "abreviacao": abbr, "posicao": 0})
+        club_name = clean(club.get("nome") or abbr)
+        position_code = clean(player.get("posicao")).upper()
+        position_name = POSICOES.get(position_code, position_code.lower() or "atleta")
+        club_position = integer(club.get("posicao"))
+        rival_info = opponents.get(abbr, {})
+        rival = rival_info.get("adversario") if isinstance(rival_info.get("adversario"), dict) else {}
+        rival_name = clean(rival.get("nome") or rival.get("abreviacao"))
+        rival_position = integer(rival.get("posicao"))
+        mando = clean(rival_info.get("mando"))
+
+        athlete = athlete_market.get((key_text(name), abbr)) or athlete_market.get((key_text(name), "")) or {}
+        top = top5.get(key_text(name), {})
+
+        spoken = f"{name} é {position_name} do {club_name}"
+        if club_position:
+            spoken += f", clube que ocupa a condição de {ordinal(club_position)}"
+        spoken += f", e custa {number(player.get('preco'))} cartoletas."
+
+        if rival_name:
+            spoken += f" Nesta rodada enfrenta o {rival_name}"
+            if rival_position:
+                spoken += f", {ordinal(rival_position)}"
+            if mando:
+                spoken += f", jogando {mando}"
+            spoken += "."
+
+        performance: List[str] = []
+        if athlete.get("media_num") is not None:
+            performance.append(f"média de {number(athlete.get('media_num'))} pontos")
+        if integer(athlete.get("jogos_num")):
+            performance.append(f"em {integer(athlete.get('jogos_num'))} jogos")
+        if athlete.get("pontos_num") is not None:
+            performance.append(f"última pontuação de {number(athlete.get('pontos_num'))}")
+        if athlete.get("variacao_num") is not None:
+            performance.append(f"variação de preço de {number(athlete.get('variacao_num'))} cartoletas")
+        expected = top.get("EXP_SCORE") if top else None
+        if expected is not None:
+            performance.append(f"projeção do Top 5 de {number(expected)} pontos")
+        if performance:
+            spoken += " O desempenho disponível mostra " + ", ".join(performance) + "."
+
+        rationale = clean(player.get("racional")) or "A escolha deve equilibrar preço, confronto e capacidade de produzir scouts próprios."
+        spoken += " " + rationale
+
+        v4.add_segment(
+            segments,
+            ["ANTÔNIO", "THALITA", "FRANCISCA"][index % 3],
+            spoken,
+            name,
+            f"{name} • {position_name} • {club_name} • C$ {number(player.get('preco'))}.",
+        )
+
+    v4.add_segment(
+        segments,
+        "THALITA",
+        "O Top 5 deve ser entendido pelo desempenho esperado de cada posição. A lista preservada no snapshot permite comparar alternativas sem trocar retroativamente os nomes publicados no canal.",
+        "top5",
+        "Top 5 preservado: alternativas e projeções por posição.",
+    )
+    v4.add_segment(
+        segments,
+        "ANTÔNIO",
+        "No pré-fechamento, essa estrutura será refeita com os snapshots próprios do pré-fechamento: mudanças nos times, atletas mantidos, retirados, dúvidas e desempenho atualizado.",
+        "top5",
+        "Pré-fechamento: nova análise com os times atualizados.",
+    )
+    v4.add_segment(
+        segments,
+        "FRANCISCA",
+        f"Esta foi a análise inicial da rodada {round_value}. Portal SimonSports: a imagem mostra a seleção publicada e o áudio explica classificação, desempenho e risco de cada escolha.",
+        "final",
+        "Portal SimonSports • seleção preservada e análise completa.",
+    )
+    return segments
 
 
 def generate(round_value: int, repo_root: Path, output_path: Path) -> Path:
-    original_version = v4.VERSION
-    original_frame = v4.create_frame_v4
-    original_dialogue = v4.build_dialogue_v4
+    original_version = v3.VERSION
+    original_frame = v3.create_frame_v3
+    original_dialogue = v3.build_dialogue
     try:
-        v4.VERSION = VERSION
-        v4.create_frame_v4 = create_frame_v5
-        v4.build_dialogue_v4 = build_dialogue_v5
-        result = v4.generate(round_value, repo_root, output_path)
-        update_manifest(result)
-        return result
+        v3.VERSION = VERSION
+        v3.create_frame_v3 = v4.create_frame_v4
+        v3.build_dialogue = build_dialogue_v5
+        return v3.generate(round_value, repo_root, output_path)
     finally:
-        v4.VERSION = original_version
-        v4.create_frame_v4 = original_frame
-        v4.build_dialogue_v4 = original_dialogue
+        v3.VERSION = original_version
+        v3.create_frame_v3 = original_frame
+        v3.build_dialogue = original_dialogue
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Gera o vídeo V5 com debate técnico reforçado.")
-    parser.add_argument("--rodada", type=int, default=21)
+    parser = argparse.ArgumentParser(description="Gera vídeo Cartola com classificação e desempenho no áudio.")
+    parser.add_argument("--rodada", type=int, required=True)
     parser.add_argument("--repo-root", default=".")
-    parser.add_argument("--output", default="output/piloto_analise_tecnica_rodada_21_v5.mp4")
+    parser.add_argument("--output", required=True)
     args = parser.parse_args()
     print(generate(args.rodada, Path(args.repo_root).resolve(), Path(args.output)))
 
