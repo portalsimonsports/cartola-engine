@@ -35,12 +35,15 @@ jobs:
           URL="https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz"
           curl -fL --retry 6 --retry-all-errors --connect-timeout 30 \
             --max-time 600 "$URL" -o /tmp/ffmpeg.tar.xz
+          rm -rf /tmp/ffmpeg-static
           mkdir -p /tmp/ffmpeg-static
           tar -xJf /tmp/ffmpeg.tar.xz -C /tmp/ffmpeg-static
-          DIR="$(find /tmp/ffmpeg-static -maxdepth 1 -type d -name 'ffmpeg-*' | head -1)"
-          test -n "$DIR"
-          sudo install -m 0755 "$DIR/bin/ffmpeg" /usr/local/bin/ffmpeg
-          sudo install -m 0755 "$DIR/bin/ffprobe" /usr/local/bin/ffprobe
+          FFMPEG_BIN="$(find /tmp/ffmpeg-static -type f -path '*/bin/ffmpeg' | head -1)"
+          FFPROBE_BIN="$(find /tmp/ffmpeg-static -type f -path '*/bin/ffprobe' | head -1)"
+          test -n "$FFMPEG_BIN"
+          test -n "$FFPROBE_BIN"
+          sudo install -m 0755 "$FFMPEG_BIN" /usr/local/bin/ffmpeg
+          sudo install -m 0755 "$FFPROBE_BIN" /usr/local/bin/ffprobe
           ffmpeg -version | head -1
           ffprobe -version | head -1
 
