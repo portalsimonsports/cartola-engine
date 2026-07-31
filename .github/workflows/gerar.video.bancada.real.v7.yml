@@ -18,7 +18,7 @@ permissions:
 
 concurrency:
   group: gerar-video-bancada-real-v7
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   gerar-piloto:
@@ -45,6 +45,30 @@ jobs:
           pip install -r requirements.txt
           pip install edge-tts Pillow requests
 
+      - name: Aplicar composição sem sobreposição
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          path = Path('app/gerar_video_bancada_real_v7.py')
+          text = path.read_text(encoding='utf-8')
+          text = text.replace(
+              'image = Image.new("RGBA", (WIDTH, HEIGHT), (2, 10, 15, 255))\n    draw = ImageDraw.Draw(image)\n    accent = PRESENTERS[segment.speaker]["accent"]',
+              'image = Image.new("RGBA", (WIDTH, HEIGHT), (0, 0, 0, 0))\n    draw = ImageDraw.Draw(image)\n    accent = PRESENTERS[segment.speaker]["accent"]',
+              1,
+          )
+          text = text.replace(
+              'draw.rounded_rectangle((24, 88, 936, 608), radius=18, fill=(0, 0, 0, 255), outline=accent + (255,), width=3)',
+              'draw.rounded_rectangle((24, 88, 936, 608), radius=18, fill=None, outline=accent + (255,), width=3)',
+              1,
+          )
+          text = text.replace(
+              'y_expr = "(ih-ih/{z})/2"',
+              'y_expr = "(ih-ih/{z})/2".format(z=zoom)',
+              1,
+          )
+          path.write_text(text, encoding='utf-8')
+          PY
+
       - name: Resolver rodada
         id: dados
         env:
@@ -67,6 +91,8 @@ jobs:
       - name: Validar gerador
         run: |
           python -m py_compile app/gerar_video_bancada_real_v7.py
+          grep -F 'Image.new("RGBA", (WIDTH, HEIGHT), (0, 0, 0, 0))' app/gerar_video_bancada_real_v7.py
+          grep -F 'fill=None, outline=accent' app/gerar_video_bancada_real_v7.py
 
       - name: Gerar vídeo de bancada real
         env:
@@ -162,6 +188,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add \
+            "app/gerar_video_bancada_real_v7.py" \
             "data/analise_tecnica_rodada_${{ steps.dados.outputs.rodada }}_v3.json" \
             "${{ steps.dados.outputs.video }}" \
             "${{ steps.dados.outputs.manifesto }}"
