@@ -66,6 +66,26 @@ jobs:
           echo "video=$VIDEO" >> "$GITHUB_OUTPUT"
           echo "manifesto=$MANIFESTO" >> "$GITHUB_OUTPUT"
 
+      - name: Corrigir conflito do Google API build
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          path = Path('app/gerar_base_analise_cartola.py')
+          text = path.read_text(encoding='utf-8')
+          text = text.replace(
+              'from googleapiclient.discovery import build',
+              'from googleapiclient.discovery import build as google_api_build',
+              1,
+          )
+          text = text.replace(
+              'return build("sheets", "v4", credentials=credentials, cache_discovery=False)',
+              'return google_api_build("sheets", "v4", credentials=credentials, cache_discovery=False)',
+              1,
+          )
+          path.write_text(text, encoding='utf-8')
+          PY
+          grep -n "google_api_build" app/gerar_base_analise_cartola.py
+
       - name: Gerar base técnica da rodada
         env:
           RODADA: ${{ steps.evento.outputs.rodada }}
