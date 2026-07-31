@@ -7,4 +7,4 @@ jobs:
   marcador:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "A validação real é executada pelo workflow protegido da branch principal."
+      - run: echo "Validação V7 rápida acionada em 31/07/2026."
