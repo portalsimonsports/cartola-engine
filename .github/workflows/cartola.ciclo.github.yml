@@ -1,0 +1,82 @@
+name: Ciclo Completo Cartola
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+    inputs:
+      rodada:
+        description: "Rodada manual; zero usa a API"
+        required: false
+        default: "0"
+      forcar_tudo:
+        description: "Reenviar encerramento, vídeo inicial, seleções e pré-fechamento"
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: ciclo-completo-cartola
+  cancel-in-progress: false
+
+jobs:
+  verificar-e-disparar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependências
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Executar ciclo
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RODADA_MANUAL: ${{ github.event.inputs.rodada }}
+          FORCAR_TUDO: ${{ github.event.inputs.forcar_tudo }}
+        run: |
+          set -e
+          RODADA="${RODADA_MANUAL:-0}"
+          EXTRA=""
+          if [ "${FORCAR_TUDO:-false}" = "true" ]; then EXTRA="--forcar-tudo"; fi
+          python app/cartola_ciclo_github.py --rodada "$RODADA" $EXTRA
+
+      - name: Salvar estado do ciclo
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/estado_ciclo_cartola.json
+          if git diff --cached --quiet; then
+            echo "Estado sem alteração."
+            exit 0
+          fi
+          git commit -m "Cartola: atualizar estado do ciclo automático"
+          enviado=0
+          for tentativa in 1 2 3 4 5; do
+            git fetch origin main
+            if git rebase origin/main && git push origin HEAD:main; then
+              enviado=1
+              break
+            fi
+            git rebase --abort 2>/dev/null || true
+            git reset --hard HEAD
+            sleep $((tentativa * 2))
+          done
+          test "$enviado" -eq 1
