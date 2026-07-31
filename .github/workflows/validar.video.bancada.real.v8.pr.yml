@@ -1,0 +1,144 @@
+name: Validar Vídeo Bancada Real V8 Final
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - app/gerar_video_bancada_real_v8.py
+      - .github/workflows/testar.video.bancada.real.v7.pr.yml
+      - .github/workflows/validar.video.bancada.real.v8.pr.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validar-video-bancada-v8-final-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  gerar-validar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 70
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar FFmpeg estático
+        run: |
+          set -euxo pipefail
+          URL="https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz"
+          curl -fL --retry 6 --retry-all-errors --connect-timeout 30 \
+            --max-time 600 "$URL" -o /tmp/ffmpeg.tar.xz
+          mkdir -p /tmp/ffmpeg-static
+          tar -xJf /tmp/ffmpeg.tar.xz -C /tmp/ffmpeg-static
+          DIR="$(find /tmp/ffmpeg-static -maxdepth 1 -type d -name 'ffmpeg-*' | head -1)"
+          test -n "$DIR"
+          sudo install -m 0755 "$DIR/bin/ffmpeg" /usr/local/bin/ffmpeg
+          sudo install -m 0755 "$DIR/bin/ffprobe" /usr/local/bin/ffprobe
+          ffmpeg -version | head -1
+          ffprobe -version | head -1
+
+      - name: Instalar dependências Python
+        run: |
+          test -s /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install edge-tts Pillow requests
+
+      - name: Gerar e enriquecer base
+        run: |
+          set -e
+          python app/gerar_base_video_por_snapshot.py --rodada 22 --repo-root .
+          python app/enriquecer_base_video_cartola_v1.py --rodada 22 --repo-root .
+          python -m py_compile app/gerar_video_bancada_real_v7.py
+          python -m py_compile app/gerar_video_bancada_real_v8.py
+
+      - name: Gerar vídeo V8
+        run: |
+          set -o pipefail
+          mkdir -p output
+          python app/gerar_video_bancada_real_v8.py \
+            --rodada 22 \
+            --repo-root . \
+            --output output/piloto_bancada_real_rodada_22_v8.mp4 \
+            2>&1 | tee output/geracao_bancada_v8.log
+
+      - name: Validar vídeo, áudio e manifesto
+        run: |
+          test -s output/piloto_bancada_real_rodada_22_v8.mp4
+          test -s output/piloto_bancada_real_rodada_22_v8.json
+          python - <<'PY'
+          import json
+          import subprocess
+          from pathlib import Path
+
+          video = Path('output/piloto_bancada_real_rodada_22_v8.mp4')
+          manifest_path = Path('output/piloto_bancada_real_rodada_22_v8.json')
+          manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
+          probe = json.loads(subprocess.check_output([
+              'ffprobe', '-v', 'error',
+              '-show_entries', 'format=duration:stream=codec_type,duration,width,height,codec_name',
+              '-of', 'json', str(video)
+          ], text=True))
+
+          streams = {s['codec_type']: s for s in probe['streams']}
+          v = streams['video']
+          a = streams['audio']
+          vd = float(v.get('duration') or probe['format']['duration'])
+          ad = float(a.get('duration') or probe['format']['duration'])
+
+          assert v['width'] == 1280 and v['height'] == 720, (v['width'], v['height'])
+          assert vd >= 1000, vd
+          assert ad >= vd - 2.0, (vd, ad)
+          assert abs(vd - ad) <= 2.0, (vd, ad)
+          assert manifest['versao'] == 'cartola_bancada_real_v8_2026_07_31'
+          assert manifest['vozes_aprovadas'] == {
+              'FRANCISCA': 'pt-BR-FranciscaNeural',
+              'ANTÔNIO': 'pt-BR-AntonioNeural',
+              'THALITA': 'pt-BR-ThalitaMultilingualNeural',
+          }
+          assert manifest['abertura_profissional'] is True
+          assert manifest['primeira_fala_direta'] is True
+          assert manifest['movimento_global_artificial_da_imagem'] is False
+          assert manifest['layout_sem_sobreposicao'] is True
+          assert manifest['painel_fora_da_area_dos_apresentadores'] is True
+          assert manifest['legenda_longa_sobre_apresentadores'] is False
+          timeline = manifest['timeline']
+          assert len(timeline) >= 50, len(timeline)
+          assert {x['filmagem'] for x in timeline} == {'pexels_8853410'}
+          assert {x['plano'] for x in timeline} == {'wide'}
+          assert timeline[0]['texto_falado'].startswith('Começa agora a análise da rodada')
+
+          subprocess.run([
+              'ffmpeg', '-v', 'error', '-ss', str(max(0, vd - 25)), '-i', str(video),
+              '-t', '20', '-af', 'silencedetect=noise=-45dB:d=8', '-f', 'null', '-'
+          ], check=True)
+          print(f'V8 OK: {vd:.2f}s de vídeo, {ad:.2f}s de áudio, {len(timeline)} falas.')
+          PY
+
+      - name: Extrair quadros de inspeção
+        run: |
+          mkdir -p output/quadros
+          for T in 2 8 120 420 780 1020; do
+            ffmpeg -y -ss "$T" -i output/piloto_bancada_real_rodada_22_v8.mp4 \
+              -frames:v 1 "output/quadros/quadro_${T}.jpg" >/dev/null 2>&1
+          done
+
+      - name: Enviar vídeo e evidências
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: piloto-bancada-real-v8-final
+          path: |
+            output/piloto_bancada_real_rodada_22_v8.mp4
+            output/piloto_bancada_real_rodada_22_v8.json
+            output/geracao_bancada_v8.log
+            output/quadros/*.jpg
+          if-no-files-found: warn
+          retention-days: 30
