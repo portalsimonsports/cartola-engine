@@ -1,4 +1,4 @@
-name: Validar Vídeo Bancada Real V7 em PR
+name: Validar Vídeo Bancada Real V8 em PR
 
 on:
   pull_request:
@@ -12,7 +12,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: validar-video-bancada-real-v7-${{ github.event.pull_request.number }}
+  group: validar-video-bancada-real-v8-${{ github.event.pull_request.number }}
   cancel-in-progress: true
 
 jobs:
@@ -43,12 +43,17 @@ jobs:
           pip install -r requirements.txt
           pip install edge-tts Pillow requests
 
-      - name: Aplicar correções visuais locais
+      - name: Aplicar correções definitivas do V8
         run: |
           python - <<'PY'
           from pathlib import Path
           path = Path('app/gerar_video_bancada_real_v7.py')
           text = path.read_text(encoding='utf-8')
+          text = text.replace(
+              'VERSION = "cartola_bancada_real_v7_2026_07_31"',
+              'VERSION = "cartola_bancada_real_v8_2026_07_31"',
+              1,
+          )
           text = text.replace(
               'image = Image.new("RGBA", (WIDTH, HEIGHT), (2, 10, 15, 255))\n    draw = ImageDraw.Draw(image)\n    accent = PRESENTERS[segment.speaker]["accent"]',
               'image = Image.new("RGBA", (WIDTH, HEIGHT), (0, 0, 0, 0))\n    draw = ImageDraw.Draw(image)\n    accent = PRESENTERS[segment.speaker]["accent"]',
@@ -64,6 +69,39 @@ jobs:
               'y_expr = "(ih-ih/{z})/2".format(z=zoom)',
               1,
           )
+          text = text.replace(
+              'video_filter = shot_filter(segment.shot, index)',
+              'video_filter = shot_filter("wide", index)',
+              1,
+          )
+          text = text.replace(
+              'stock = stock_files[segment.source_index % len(stock_files)]',
+              'stock = stock_files[0]',
+              1,
+          )
+          text = text.replace(
+              '"plano": segment.shot,',
+              '"plano": "wide",',
+              1,
+          )
+          text = text.replace(
+              '"filmagem": STOCK_SOURCES[segment.source_index % len(STOCK_SOURCES)]["id"],',
+              '"filmagem": STOCK_SOURCES[0]["id"],',
+              1,
+          )
+          old = '''run([
+              "ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(concat),
+              "-c", "copy", "-movflags", "+faststart", str(output_path),
+          ])'''
+          new = '''run([
+              "ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(concat),
+              "-c:v", "copy", "-c:a", "aac", "-b:a", "160k",
+              "-af", "aresample=async=1:first_pts=0",
+              "-movflags", "+faststart", str(output_path),
+          ])'''
+          if old not in text:
+              raise SystemExit('Bloco final de concatenação não localizado.')
+          text = text.replace(old, new, 1)
           path.write_text(text, encoding='utf-8')
           PY
 
@@ -73,31 +111,44 @@ jobs:
           python app/gerar_base_video_por_snapshot.py --rodada 22 --repo-root .
           python app/enriquecer_base_video_cartola_v1.py --rodada 22 --repo-root .
           python -m py_compile app/gerar_video_bancada_real_v7.py
+          grep -F 'stock = stock_files[0]' app/gerar_video_bancada_real_v7.py
+          grep -F 'video_filter = shot_filter("wide", index)' app/gerar_video_bancada_real_v7.py
+          grep -F 'aresample=async=1:first_pts=0' app/gerar_video_bancada_real_v7.py
 
-      - name: Gerar vídeo completo
+      - name: Gerar vídeo completo V8
         run: |
           set -o pipefail
           mkdir -p output
           python app/gerar_video_bancada_real_v7.py \
             --rodada 22 \
             --repo-root . \
-            --output output/piloto_bancada_real_rodada_22_v7.mp4 \
-            2>&1 | tee output/geracao_bancada_v7.log
+            --output output/piloto_bancada_real_rodada_22_v8.mp4 \
+            2>&1 | tee output/geracao_bancada_v8.log
 
-      - name: Validar correções
+      - name: Validar imagem, roteiro e áudio completo
         run: |
-          test -s output/piloto_bancada_real_rodada_22_v7.mp4
-          test -s output/piloto_bancada_real_rodada_22_v7.json
+          test -s output/piloto_bancada_real_rodada_22_v8.mp4
+          test -s output/piloto_bancada_real_rodada_22_v8.json
           python - <<'PY'
           import json, subprocess
           from pathlib import Path
-          video = Path('output/piloto_bancada_real_rodada_22_v7.mp4')
-          manifesto = json.loads(Path('output/piloto_bancada_real_rodada_22_v7.json').read_text(encoding='utf-8'))
-          duration = float(subprocess.check_output([
-              'ffprobe','-v','error','-show_entries','format=duration',
-              '-of','default=noprint_wrappers=1:nokey=1',str(video)
-          ], text=True).strip())
-          assert duration >= 300, duration
+
+          video = Path('output/piloto_bancada_real_rodada_22_v8.mp4')
+          manifesto = json.loads(Path('output/piloto_bancada_real_rodada_22_v8.json').read_text(encoding='utf-8'))
+          probe = json.loads(subprocess.check_output([
+              'ffprobe','-v','error','-show_entries','format=duration:stream=codec_type,duration',
+              '-of','json',str(video)
+          ], text=True))
+          format_duration = float(probe['format']['duration'])
+          durations = {stream['codec_type']: float(stream.get('duration') or 0) for stream in probe['streams']}
+          video_duration = durations.get('video', 0)
+          audio_duration = durations.get('audio', 0)
+
+          assert format_duration >= 1000, format_duration
+          assert video_duration >= 1000, video_duration
+          assert audio_duration >= video_duration - 2.0, (video_duration, audio_duration)
+          assert abs(video_duration - audio_duration) <= 2.0, (video_duration, audio_duration)
+          assert manifesto['versao'] == 'cartola_bancada_real_v8_2026_07_31'
           assert manifesto['vozes_aprovadas'] == {
               'FRANCISCA': 'pt-BR-FranciscaNeural',
               'ANTÔNIO': 'pt-BR-AntonioNeural',
@@ -110,19 +161,26 @@ jobs:
           assert manifesto['layout_sem_sobreposicao'] is True
           assert manifesto['painel_fora_da_area_dos_apresentadores'] is True
           assert manifesto['legenda_longa_sobre_apresentadores'] is False
-          first = manifesto['timeline'][0]['texto_falado']
+          timeline = manifesto['timeline']
+          assert len(timeline) >= 50, len(timeline)
+          assert {item['filmagem'] for item in timeline} == {'pexels_8853410'}
+          assert {item['plano'] for item in timeline} == {'wide'}
+          first = timeline[0]['texto_falado']
           assert first.startswith('Começa agora a análise da rodada'), first
-          print(f'Vídeo validado: {duration:.2f}s e {len(manifesto["timeline"])} falas.')
+          print(
+              f'V8 validado: vídeo {video_duration:.2f}s, áudio {audio_duration:.2f}s, '
+              f'{len(timeline)} falas e um único trio visual.'
+          )
           PY
 
-      - name: Enviar vídeo, manifesto e diagnóstico
+      - name: Enviar V8, manifesto e diagnóstico
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: piloto-bancada-real-v7-pr
+          name: piloto-bancada-real-v8-pr
           path: |
-            output/piloto_bancada_real_rodada_22_v7.mp4
-            output/piloto_bancada_real_rodada_22_v7.json
-            output/geracao_bancada_v7.log
+            output/piloto_bancada_real_rodada_22_v8.mp4
+            output/piloto_bancada_real_rodada_22_v8.json
+            output/geracao_bancada_v8.log
           if-no-files-found: warn
           retention-days: 30
