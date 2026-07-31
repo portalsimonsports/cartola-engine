@@ -66,8 +66,8 @@ def build_patched_source(source: str) -> str:
     )
     source = replace_once(
         source,
-        '''run([\n              "ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(concat),\n              "-c", "copy", "-movflags", "+faststart", str(output_path),\n          ])''',
-        '''run([\n              "ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(concat),\n              "-c:v", "copy", "-c:a", "aac", "-b:a", "160k",\n              "-af", "aresample=async=1:first_pts=0",\n              "-movflags", "+faststart", str(output_path),\n          ])''',
+        '''run([\n            "ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(concat),\n            "-c", "copy", "-movflags", "+faststart", str(output_path),\n        ])''',
+        '''run([\n            "ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(concat),\n            "-c:v", "copy", "-c:a", "aac", "-b:a", "160k",\n            "-af", "aresample=async=1:first_pts=0",\n            "-movflags", "+faststart", str(output_path),\n        ])''',
         "concatenação com áudio completo",
     )
     return source
