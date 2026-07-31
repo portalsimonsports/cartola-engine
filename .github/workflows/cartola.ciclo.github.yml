@@ -1,93 +1,43 @@
-name: Ciclo Completo Cartola
+name: Ciclo Completo Cartola — DESATIVADO
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - app/cartola_ciclo_github.py
-      - app/render_desempenho_top5_v1.py
-      - app/gerar_base_analise_cartola.py
-      - .github/workflows/cartola.ciclo.github.yml
-  schedule:
-    - cron: "*/5 * * * *"
   workflow_dispatch:
     inputs:
+      confirmar:
+        description: "Digite SIM apenas após validação dos dados"
+        required: true
+        default: "NAO"
       rodada:
-        description: "Rodada manual; zero usa a API"
+        description: "Rodada manual"
         required: false
         default: "0"
-      forcar_tudo:
-        description: "Reenviar encerramento, vídeo inicial, seleções e pré-fechamento"
-        required: false
-        type: boolean
-        default: false
 
 permissions:
-  contents: write
-  actions: write
-
-concurrency:
-  group: ciclo-completo-cartola
-  cancel-in-progress: false
+  contents: read
+  actions: read
 
 jobs:
-  verificar-e-disparar:
+  bloqueado:
+    if: ${{ github.event.inputs.confirmar != 'SIM' }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "Ciclo automático desativado para impedir publicações vazias ou incorretas."
+
+  executar-manualmente:
+    if: ${{ github.event.inputs.confirmar == 'SIM' }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          persist-credentials: true
 
       - name: Configurar Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Instalar dependências
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests
-
-      - name: Validar scheduler
+      - name: Validar sem publicar
         run: |
           python -m py_compile app/cartola_ciclo_github.py
-
-      - name: Executar ciclo
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          RODADA_MANUAL: ${{ github.event.inputs.rodada }}
-          FORCAR_TUDO: ${{ github.event.inputs.forcar_tudo }}
-        run: |
-          set -e
-          RODADA="${RODADA_MANUAL:-0}"
-          EXTRA=""
-          if [ "${FORCAR_TUDO:-false}" = "true" ]; then EXTRA="--forcar-tudo"; fi
-          python app/cartola_ciclo_github.py --rodada "$RODADA" $EXTRA
-
-      - name: Salvar estado do ciclo
-        run: |
-          set -e
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/estado_ciclo_cartola.json
-          if git diff --cached --quiet; then
-            echo "Estado sem alteração."
-            exit 0
-          fi
-          git commit -m "Cartola: atualizar estado do ciclo automático"
-          enviado=0
-          for tentativa in 1 2 3 4 5; do
-            git fetch origin main
-            if git rebase origin/main && git push origin HEAD:main; then
-              enviado=1
-              break
-            fi
-            git rebase --abort 2>/dev/null || true
-            git reset --hard HEAD
-            sleep $((tentativa * 2))
-          done
-          test "$enviado" -eq 1
+          echo "Execução automática permanece bloqueada. Este workflow não publica no Telegram."
