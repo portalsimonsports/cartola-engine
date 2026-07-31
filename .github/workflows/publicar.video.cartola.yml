@@ -25,7 +25,7 @@ concurrency:
 jobs:
   gerar-e-publicar:
     runs-on: ubuntu-latest
-    timeout-minutes: 50
+    timeout-minutes: 55
 
     steps:
       - name: Checkout
@@ -66,16 +66,29 @@ jobs:
           echo "video=$VIDEO" >> "$GITHUB_OUTPUT"
           echo "manifesto=$MANIFESTO" >> "$GITHUB_OUTPUT"
 
-      - name: Validar base da rodada
+      - name: Gerar base técnica da rodada
+        env:
+          RODADA: ${{ steps.evento.outputs.rodada }}
+          PLANILHA_ID: ${{ secrets.PLANILHA_ID }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_APPLICATION_CREDENTIALS: service_account.json
+        run: |
+          set -e
+          python app/gerar_base_analise_cartola.py --rodada "$RODADA" --repo-root .
+          test -s "data/analise_tecnica_rodada_${RODADA}_v3.json"
+
+      - name: Validar imagens da rodada
         env:
           RODADA: ${{ steps.evento.outputs.rodada }}
         run: |
           set -e
-          test -s "data/analise_tecnica_rodada_${RODADA}_v3.json"
           test -s "output/time_economico_rodada_${RODADA}.png"
           test -s "output/time_intermediario_rodada_${RODADA}.png"
           test -s "output/time_pontuacao_rodada_${RODADA}.png"
           test -s "output/top5_rodada_${RODADA}.png"
+          python -m py_compile app/gerar_base_analise_cartola.py
+          python -m py_compile app/gerar_video_dialogo_cartola_v4.py
+          python -m py_compile app/enviar_video_telegram.py
 
       - name: Gerar vídeo
         env:
@@ -83,6 +96,7 @@ jobs:
           VIDEO: ${{ steps.evento.outputs.video }}
           MANIFESTO: ${{ steps.evento.outputs.manifesto }}
         run: |
+          set -e
           rm -f "$VIDEO" "$MANIFESTO"
           python app/gerar_video_dialogo_cartola_v4.py \
             --rodada "$RODADA" \
@@ -90,6 +104,31 @@ jobs:
             --output "$VIDEO"
           test -s "$VIDEO"
           test -s "$MANIFESTO"
+
+      - name: Validar vídeo
+        env:
+          VIDEO: ${{ steps.evento.outputs.video }}
+          MANIFESTO: ${{ steps.evento.outputs.manifesto }}
+        run: |
+          set -e
+          DURACAO="$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$VIDEO")"
+          python - "$DURACAO" "$MANIFESTO" <<'PY'
+          import json, sys
+          from pathlib import Path
+          duration = float(sys.argv[1])
+          manifest = json.loads(Path(sys.argv[2]).read_text(encoding="utf-8"))
+          if duration < 480:
+              raise SystemExit(f"Vídeo curto demais: {duration:.2f}s")
+          if manifest.get("layout_sem_sobreposicao") is not True:
+              raise SystemExit("Layout sem sobreposição não confirmado.")
+          timeline = manifest.get("timeline") or []
+          if not timeline:
+              raise SystemExit("Manifesto sem transcrição.")
+          unanswered = [item for item in timeline[:-1] if str(item.get("texto_falado", "")).strip().endswith("?")]
+          if unanswered:
+              print("Perguntas presentes; a sequência seguinte deve conter a resposta correspondente.")
+          print(f"Vídeo validado: {duration:.2f}s e {len(timeline)} falas.")
+          PY
 
       - name: Enviar vídeo ao Telegram
         env:
@@ -105,12 +144,26 @@ jobs:
             --rodada "${{ steps.evento.outputs.rodada }}" \
             --fase "${{ steps.evento.outputs.fase }}"
 
-      - name: Salvar vídeo no repositório
+      - name: Salvar base e vídeo no repositório
         run: |
+          set -e
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "${{ steps.evento.outputs.video }}" "${{ steps.evento.outputs.manifesto }}"
+          git add \
+            "data/analise_tecnica_rodada_${{ steps.evento.outputs.rodada }}_v3.json" \
+            "${{ steps.evento.outputs.video }}" \
+            "${{ steps.evento.outputs.manifesto }}"
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "Vídeo ${{ steps.evento.outputs.fase }} da rodada ${{ steps.evento.outputs.rodada }}"
-          git pull --rebase origin main
-          git push origin HEAD:main
+          enviado=0
+          for tentativa in 1 2 3 4 5; do
+            git fetch origin main
+            if git rebase origin/main && git push origin HEAD:main; then
+              enviado=1
+              break
+            fi
+            git rebase --abort 2>/dev/null || true
+            git reset --hard HEAD
+            sleep $((tentativa * 3))
+          done
+          test "$enviado" -eq 1
