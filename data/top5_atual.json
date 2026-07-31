@@ -3,8 +3,18 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 22,
-  "atualizado_em": "2026-07-31T09:49:56.152Z",
+  "atualizado_em": "2026-07-31T09:55:33.291Z",
   "dados": [
+    {
+      "RODADA": 22,
+      "POS": "GOL",
+      "NOME": "Tiago Volpi",
+      "CLUBE": "RBB",
+      "PRECO": 10.55,
+      "EXP_SCORE": 4.4662,
+      "FACTOR": 1.080750103943091,
+      "ATLETA_ID": 72018
+    },
     {
       "RODADA": 22,
       "POS": "GOL",
@@ -44,16 +54,6 @@
       "EXP_SCORE": 4.1551,
       "FACTOR": 1.1142609852877305,
       "ATLETA_ID": 99552
-    },
-    {
-      "RODADA": 22,
-      "POS": "GOL",
-      "NOME": "Tiago Volpi",
-      "CLUBE": "RBB",
-      "PRECO": 10.55,
-      "EXP_SCORE": 4.0195,
-      "FACTOR": 1.080750103943091,
-      "ATLETA_ID": 72018
     },
     {
       "RODADA": 22,
@@ -108,16 +108,6 @@
     {
       "RODADA": 22,
       "POS": "ZAG",
-      "NOME": "Jonathan Jesus",
-      "CLUBE": "CRU",
-      "PRECO": 6.91,
-      "EXP_SCORE": 4.3573,
-      "FACTOR": 1.1892396695748244,
-      "ATLETA_ID": 124912
-    },
-    {
-      "RODADA": 22,
-      "POS": "ZAG",
       "NOME": "Gustavo Gómez",
       "CLUBE": "PAL",
       "PRECO": 10.56,
@@ -134,6 +124,16 @@
       "EXP_SCORE": 3.9137,
       "FACTOR": 1.2067516978777055,
       "ATLETA_ID": 97878
+    },
+    {
+      "RODADA": 22,
+      "POS": "ZAG",
+      "NOME": "Jonathan Jesus",
+      "CLUBE": "CRU",
+      "PRECO": 6.91,
+      "EXP_SCORE": 3.7889,
+      "FACTOR": 1.1892396695748244,
+      "ATLETA_ID": 124912
     },
     {
       "RODADA": 22,
