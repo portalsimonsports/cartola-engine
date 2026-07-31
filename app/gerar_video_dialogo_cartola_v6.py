@@ -12,7 +12,7 @@ import gerar_video_dialogo_cartola_v1 as base
 import gerar_video_dialogo_cartola_v3 as v3
 import gerar_video_dialogo_cartola_v4 as v4
 
-VERSION = "cartola_dialogo_tecnico_v6_contexto_real_2026_07_31"
+VERSION = "cartola_dialogo_tecnico_v6_abertura_direta_2026_07_31"
 ORIGINAL_FRAME = v4.create_frame_v4
 ORIGINAL_DIALOGUE = v4.build_dialogue_v4
 
@@ -113,12 +113,11 @@ def team_dialogue(
         segments,
         "FRANCISCA",
         (
-            "Agora entram os três times que foram realmente publicados na seleção inicial. "
-            "Como a rodada ainda não começou, a comparação correta é por custo, formação, "
-            "capitão e distribuição das escolhas; não por uma pontuação inexistente."
+            "Agora vamos aos três times publicados na seleção inicial. "
+            "A comparação considera formação, custo, capitão e distribuição dos atletas."
         ),
         "pontuacoes",
-        "Comparação dos três modelos publicados.",
+        "Três modelos publicados: formação, custo e capitão.",
     )
     speakers = ["ANTÔNIO", "THALITA", "FRANCISCA"]
     for index, team in enumerate(teams.values()):
@@ -151,11 +150,11 @@ def player_dialogue(
         segments,
         "ANTÔNIO",
         (
-            "Nas escolhas individuais, cada atleta será apresentado com posição, clube por "
-            "extenso, colocação da equipe, adversário, mando, preço e desempenho disponível."
+            "Na sequência, os principais atletas dos modelos, com posição, clube, "
+            "confronto, preço e desempenho disponível."
         ),
         next(iter(players)) if players else "rodada",
-        "Posição, clube, classificação, confronto e desempenho.",
+        "Principais escolhas e contexto de cada atleta.",
     )
 
     speakers = ["ANTÔNIO", "THALITA", "FRANCISCA"]
@@ -263,22 +262,11 @@ def build_dialogue_v6(round_value: int, data: Dict[str, Any]) -> List[v3.Segment
         segments,
         "FRANCISCA",
         (
-            f"Começa agora a análise inicial da rodada {round_value}. As imagens preservam "
-            "exatamente os times e o Top 5 publicados no canal, enquanto o áudio utiliza "
-            "classificação, forma recente e desempenho real dos atletas."
+            f"Está no ar a análise inicial da rodada {round_value} do Cartola. "
+            "Vamos aos confrontos, aos três modelos publicados e ao Top 5."
         ),
         "rodada",
-        "Seleção inicial publicada com contexto técnico real.",
-    )
-    segment(
-        segments,
-        "ANTÔNIO",
-        (
-            "Não haverá zero como colocação nem texto provisório. Cada confronto será apresentado "
-            "com os nomes completos dos clubes, posição na tabela e os cinco resultados recentes."
-        ),
-        "rodada",
-        "Nomes completos, classificação e forma recente.",
+        f"Rodada {round_value}: confrontos, times e Top 5.",
     )
 
     games = list(data.get("jogos") or [])
@@ -335,6 +323,7 @@ def update_manifest(output_path: Path) -> None:
             "zero_colocado_bloqueado": True,
             "texto_provisorio_bloqueado": True,
             "clubes_por_extenso_no_audio": True,
+            "abertura_direta_na_analise": True,
         }
     )
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
