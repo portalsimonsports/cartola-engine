@@ -1,0 +1,108 @@
+name: Testar Vídeo Bancada Real V7
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - app/gerar_video_bancada_real_v7.py
+      - .github/workflows/testar.video.bancada.real.v7.pr.yml
+
+permissions:
+  contents: read
+
+jobs:
+  gerar-piloto:
+    runs-on: ubuntu-latest
+    timeout-minutes: 70
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependências
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg fonts-dejavu-core fonts-liberation
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install edge-tts Pillow requests
+
+      - name: Aplicar correções visuais locais
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          path = Path('app/gerar_video_bancada_real_v7.py')
+          text = path.read_text(encoding='utf-8')
+          text = text.replace(
+              'image = Image.new("RGBA", (WIDTH, HEIGHT), (2, 10, 15, 255))\n    draw = ImageDraw.Draw(image)\n    accent = PRESENTERS[segment.speaker]["accent"]',
+              'image = Image.new("RGBA", (WIDTH, HEIGHT), (0, 0, 0, 0))\n    draw = ImageDraw.Draw(image)\n    accent = PRESENTERS[segment.speaker]["accent"]',
+              1,
+          )
+          text = text.replace(
+              'draw.rounded_rectangle((24, 88, 936, 608), radius=18, fill=(0, 0, 0, 255), outline=accent + (255,), width=3)',
+              'draw.rounded_rectangle((24, 88, 936, 608), radius=18, fill=None, outline=accent + (255,), width=3)',
+              1,
+          )
+          text = text.replace(
+              'y_expr = "(ih-ih/{z})/2"',
+              'y_expr = "(ih-ih/{z})/2".format(z=zoom)',
+              1,
+          )
+          path.write_text(text, encoding='utf-8')
+          PY
+
+      - name: Gerar e enriquecer base
+        run: |
+          set -e
+          python app/gerar_base_video_por_snapshot.py --rodada 22 --repo-root .
+          python app/enriquecer_base_video_cartola_v1.py --rodada 22 --repo-root .
+          python -m py_compile app/gerar_video_bancada_real_v7.py
+
+      - name: Gerar vídeo
+        run: |
+          set -o pipefail
+          mkdir -p output
+          python app/gerar_video_bancada_real_v7.py \
+            --rodada 22 \
+            --repo-root . \
+            --output output/piloto_bancada_real_rodada_22_v7.mp4 \
+            2>&1 | tee output/geracao_bancada_v7.log
+
+      - name: Validar vídeo
+        run: |
+          test -s output/piloto_bancada_real_rodada_22_v7.mp4
+          test -s output/piloto_bancada_real_rodada_22_v7.json
+          ffprobe -v error -show_entries format=duration \
+            -of default=noprint_wrappers=1:nokey=1 \
+            output/piloto_bancada_real_rodada_22_v7.mp4
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          m = json.loads(Path('output/piloto_bancada_real_rodada_22_v7.json').read_text(encoding='utf-8'))
+          assert m['vozes_aprovadas']['FRANCISCA'] == 'pt-BR-FranciscaNeural'
+          assert m['vozes_aprovadas']['ANTÔNIO'] == 'pt-BR-AntonioNeural'
+          assert m['vozes_aprovadas']['THALITA'] == 'pt-BR-ThalitaMultilingualNeural'
+          assert m['abertura_profissional'] is True
+          assert m['primeira_fala_direta'] is True
+          assert m['movimento_global_artificial_da_imagem'] is False
+          assert m['layout_sem_sobreposicao'] is True
+          assert m['legenda_longa_sobre_apresentadores'] is False
+          print('Manifesto V7 validado.')
+          PY
+
+      - name: Enviar artefatos e diagnóstico
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: piloto-bancada-real-v7-pr
+          path: |
+            output/piloto_bancada_real_rodada_22_v7.mp4
+            output/piloto_bancada_real_rodada_22_v7.json
+            output/geracao_bancada_v7.log
+          if-no-files-found: warn
+          retention-days: 30
