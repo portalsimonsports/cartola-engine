@@ -3,8 +3,18 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 22,
-  "atualizado_em": "2026-08-01T09:49:57.420Z",
+  "atualizado_em": "2026-08-01T09:55:28.923Z",
   "dados": [
+    {
+      "RODADA": 22,
+      "POS": "GOL",
+      "NOME": "Tiago Volpi",
+      "CLUBE": "RBB",
+      "PRECO": 10.55,
+      "EXP_SCORE": 4.4669,
+      "FACTOR": 1.0809327743343629,
+      "ATLETA_ID": 72018
+    },
     {
       "RODADA": 22,
       "POS": "GOL",
@@ -47,16 +57,6 @@
     },
     {
       "RODADA": 22,
-      "POS": "GOL",
-      "NOME": "Tiago Volpi",
-      "CLUBE": "RBB",
-      "PRECO": 10.55,
-      "EXP_SCORE": 4.0202,
-      "FACTOR": 1.0809327743343629,
-      "ATLETA_ID": 72018
-    },
-    {
-      "RODADA": 22,
       "POS": "LAT",
       "NOME": "Juninho Capixaba",
       "CLUBE": "RBB",
@@ -88,16 +88,6 @@
     {
       "RODADA": 22,
       "POS": "LAT",
-      "NOME": "Piquerez",
-      "CLUBE": "PAL",
-      "PRECO": 12.48,
-      "EXP_SCORE": 4.9298,
-      "FACTOR": 1.1437243927206537,
-      "ATLETA_ID": 102130
-    },
-    {
-      "RODADA": 22,
-      "POS": "LAT",
       "NOME": "Matheuzinho",
       "CLUBE": "COR",
       "PRECO": 11.37,
@@ -107,13 +97,13 @@
     },
     {
       "RODADA": 22,
-      "POS": "ZAG",
-      "NOME": "Jonathan Jesus",
-      "CLUBE": "CRU",
-      "PRECO": 6.91,
-      "EXP_SCORE": 4.3464,
-      "FACTOR": 1.186282023688635,
-      "ATLETA_ID": 124912
+      "POS": "LAT",
+      "NOME": "Piquerez",
+      "CLUBE": "PAL",
+      "PRECO": 12.48,
+      "EXP_SCORE": 4.4369,
+      "FACTOR": 1.1437243927206537,
+      "ATLETA_ID": 102130
     },
     {
       "RODADA": 22,
@@ -124,6 +114,16 @@
       "EXP_SCORE": 3.914,
       "FACTOR": 1.20683880351748,
       "ATLETA_ID": 97878
+    },
+    {
+      "RODADA": 22,
+      "POS": "ZAG",
+      "NOME": "Jonathan Jesus",
+      "CLUBE": "CRU",
+      "PRECO": 6.91,
+      "EXP_SCORE": 3.7795,
+      "FACTOR": 1.186282023688635,
+      "ATLETA_ID": 124912
     },
     {
       "RODADA": 22,
