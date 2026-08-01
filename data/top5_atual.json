@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 22,
-  "atualizado_em": "2026-08-01T06:30:00.128Z",
+  "atualizado_em": "2026-08-01T06:35:00.934Z",
   "dados": [
     {
       "RODADA": 22,
@@ -14,6 +14,16 @@
       "EXP_SCORE": 4.4669,
       "FACTOR": 1.0809327743343629,
       "ATLETA_ID": 72018
+    },
+    {
+      "RODADA": 22,
+      "POS": "GOL",
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 8.93,
+      "EXP_SCORE": 4.4594,
+      "FACTOR": 1.1437243927206537,
+      "ATLETA_ID": 104084
     },
     {
       "RODADA": 22,
@@ -34,16 +44,6 @@
       "EXP_SCORE": 4.1557,
       "FACTOR": 1.1144182396588702,
       "ATLETA_ID": 99552
-    },
-    {
-      "RODADA": 22,
-      "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.93,
-      "EXP_SCORE": 4.0135,
-      "FACTOR": 1.1437243927206537,
-      "ATLETA_ID": 104084
     },
     {
       "RODADA": 22,
@@ -208,16 +208,6 @@
     {
       "RODADA": 22,
       "POS": "ATA",
-      "NOME": "Pedro",
-      "CLUBE": "FLA",
-      "PRECO": 16.04,
-      "EXP_SCORE": 9.6308,
-      "FACTOR": 1.0787815646602235,
-      "ATLETA_ID": 94583
-    },
-    {
-      "RODADA": 22,
-      "POS": "ATA",
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 12.06,
@@ -228,22 +218,22 @@
     {
       "RODADA": 22,
       "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 12.08,
-      "EXP_SCORE": 6.8998,
-      "FACTOR": 0.937192050915424,
-      "ATLETA_ID": 143193
+      "NOME": "Pedro",
+      "CLUBE": "FLA",
+      "PRECO": 16.04,
+      "EXP_SCORE": 8.3746,
+      "FACTOR": 1.0787815646602235,
+      "ATLETA_ID": 94583
     },
     {
       "RODADA": 22,
       "POS": "ATA",
-      "NOME": "Breno Lopes",
-      "CLUBE": "CFC",
-      "PRECO": 9.09,
-      "EXP_SCORE": 6.4374,
-      "FACTOR": 1.1587343302837116,
-      "ATLETA_ID": 93988
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 12.08,
+      "EXP_SCORE": 7.9348,
+      "FACTOR": 0.937192050915424,
+      "ATLETA_ID": 143193
     },
     {
       "RODADA": 22,
@@ -254,6 +244,16 @@
       "EXP_SCORE": 6.2278,
       "FACTOR": 1.1587343302837116,
       "ATLETA_ID": 123648
+    },
+    {
+      "RODADA": 22,
+      "POS": "ATA",
+      "NOME": "Flaco López",
+      "CLUBE": "PAL",
+      "PRECO": 13.4,
+      "EXP_SCORE": 5.6884,
+      "FACTOR": 1.0926253308534999,
+      "ATLETA_ID": 113103
     },
     {
       "RODADA": 22,
