@@ -4,14 +4,14 @@ import argparse
 from pathlib import Path
 
 from enriquecer_historico_jogadores_v1 import enrich_history
-from gerar_video_dialogo_cartola_v8 import VERSION, generate as generate_v8
+from gerar_video_dialogo_cartola_v9 import VERSION, generate as generate_v9
 
 __all__ = ["VERSION", "generate", "main"]
 
 
 def generate(round_value: int, repo_root: Path, output_path: Path) -> Path:
     enrich_history(round_value, repo_root)
-    return generate_v8(round_value, repo_root, output_path)
+    return generate_v9(round_value, repo_root, output_path)
 
 
 def main() -> None:
