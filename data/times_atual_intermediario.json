@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 22,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-08-01T06:29:47.825Z",
+  "atualizado_em": "2026-08-01T06:34:47.797Z",
   "dados": [
     {
       "RODADA": 22,
@@ -16,28 +16,6 @@
       "PRECO": 10.55,
       "EXP_SCORE": 4.4669,
       "ATLETA_ID": 72018
-    },
-    {
-      "RODADA": 22,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "LAT",
-      "NOME": "Juninho Capixaba",
-      "CLUBE": "RBB",
-      "PRECO": 13.39,
-      "EXP_SCORE": 5.4445,
-      "ATLETA_ID": 94968
-    },
-    {
-      "RODADA": 22,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "LAT",
-      "NOME": "Luciano Juba",
-      "CLUBE": "BAH",
-      "PRECO": 11.92,
-      "EXP_SCORE": 5.4125,
-      "ATLETA_ID": 107093
     },
     {
       "RODADA": 22,
@@ -60,6 +38,17 @@
       "PRECO": 6.91,
       "EXP_SCORE": 3.7795,
       "ATLETA_ID": 124912
+    },
+    {
+      "RODADA": 22,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "ZAG",
+      "NOME": "David Duarte",
+      "CLUBE": "BAH",
+      "PRECO": 7.02,
+      "EXP_SCORE": 3.7426,
+      "ATLETA_ID": 91772
     },
     {
       "RODADA": 22,
@@ -110,10 +99,21 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ATA",
+      "NOME": "Samuel Lino",
+      "CLUBE": "FLA",
+      "PRECO": 12.06,
+      "EXP_SCORE": 8.4899,
+      "ATLETA_ID": 98873
+    },
+    {
+      "RODADA": 22,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 16.04,
-      "EXP_SCORE": 9.6308,
+      "EXP_SCORE": 8.3746,
       "ATLETA_ID": 94583
     },
     {
@@ -121,11 +121,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Samuel Lino",
-      "CLUBE": "FLA",
-      "PRECO": 12.06,
-      "EXP_SCORE": 8.4899,
-      "ATLETA_ID": 98873
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 12.08,
+      "EXP_SCORE": 7.9348,
+      "ATLETA_ID": 143193
     },
     {
       "RODADA": 22,
@@ -143,22 +143,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Marcelo Rangel",
-      "CLUBE": "REM",
-      "PRECO": 5.77,
-      "EXP_SCORE": 4.341,
-      "ATLETA_ID": 82730
-    },
-    {
-      "RODADA": 22,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "RESERVA",
-      "POS": "LAT",
-      "NOME": "Marcelinho",
-      "CLUBE": "REM",
-      "PRECO": 5.98,
-      "EXP_SCORE": 5.3062,
-      "ATLETA_ID": 97795
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 8.93,
+      "EXP_SCORE": 4.4594,
+      "ATLETA_ID": 104084
     },
     {
       "RODADA": 22,
@@ -168,7 +157,7 @@
       "NOME": "Marllon",
       "CLUBE": "REM",
       "PRECO": 4.62,
-      "EXP_SCORE": 2.5979,
+      "EXP_SCORE": 2.3381,
       "ATLETA_ID": 70666
     },
     {
@@ -176,22 +165,22 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Gabriel Bontempo",
-      "CLUBE": "SAN",
-      "PRECO": 5.62,
-      "EXP_SCORE": 3.9669,
-      "ATLETA_ID": 141754
+      "NOME": "André",
+      "CLUBE": "COR",
+      "PRECO": 6.15,
+      "EXP_SCORE": 3.7096,
+      "ATLETA_ID": 145744
     },
     {
       "RODADA": 22,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Breno Lopes",
+      "NOME": "Lucas Ronier",
       "CLUBE": "CFC",
-      "PRECO": 9.09,
-      "EXP_SCORE": 6.4374,
-      "ATLETA_ID": 93988
+      "PRECO": 10.77,
+      "EXP_SCORE": 6.2278,
+      "ATLETA_ID": 123648
     }
   ]
 }
