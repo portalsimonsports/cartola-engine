@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 22,
-  "atualizado_em": "2026-08-02T02:44:52.339Z",
+  "atualizado_em": "2026-08-02T02:55:21.797Z",
   "dados": [
     {
       "RODADA": 22,
@@ -28,16 +28,6 @@
     {
       "RODADA": 22,
       "POS": "GOL",
-      "NOME": "Ronaldo",
-      "CLUBE": "BAH",
-      "PRECO": 9.57,
-      "EXP_SCORE": 4.3784,
-      "FACTOR": 1.0688025753279204,
-      "ATLETA_ID": 91101
-    },
-    {
-      "RODADA": 22,
-      "POS": "GOL",
       "NOME": "Marcelo Rangel",
       "CLUBE": "REM",
       "PRECO": 5.77,
@@ -54,6 +44,16 @@
       "EXP_SCORE": 4.1557,
       "FACTOR": 1.1144182396588702,
       "ATLETA_ID": 99552
+    },
+    {
+      "RODADA": 22,
+      "POS": "GOL",
+      "NOME": "Ronaldo",
+      "CLUBE": "BAH",
+      "PRECO": 9.57,
+      "EXP_SCORE": 3.8073,
+      "FACTOR": 1.0688025753279204,
+      "ATLETA_ID": 91101
     },
     {
       "RODADA": 22,
@@ -108,22 +108,22 @@
     {
       "RODADA": 22,
       "POS": "ZAG",
-      "NOME": "Jonathan Jesus",
-      "CLUBE": "CRU",
-      "PRECO": 6.91,
-      "EXP_SCORE": 4.3464,
-      "FACTOR": 1.186282023688635,
-      "ATLETA_ID": 124912
-    },
-    {
-      "RODADA": 22,
-      "POS": "ZAG",
       "NOME": "Jacy",
       "CLUBE": "CFC",
       "PRECO": 5.24,
       "EXP_SCORE": 3.914,
       "FACTOR": 1.20683880351748,
       "ATLETA_ID": 97878
+    },
+    {
+      "RODADA": 22,
+      "POS": "ZAG",
+      "NOME": "Jonathan Jesus",
+      "CLUBE": "CRU",
+      "PRECO": 6.91,
+      "EXP_SCORE": 3.7795,
+      "FACTOR": 1.186282023688635,
+      "ATLETA_ID": 124912
     },
     {
       "RODADA": 22,
