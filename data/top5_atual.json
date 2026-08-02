@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 22,
-  "atualizado_em": "2026-08-02T20:15:29.187Z",
+  "atualizado_em": "2026-08-02T20:20:00.910Z",
   "dados": [
     {
       "RODADA": 22,
@@ -28,16 +28,6 @@
     {
       "RODADA": 22,
       "POS": "GOL",
-      "NOME": "Ronaldo",
-      "CLUBE": "BAH",
-      "PRECO": 9.57,
-      "EXP_SCORE": 4.3894,
-      "FACTOR": 1.071478433138226,
-      "ATLETA_ID": 91101
-    },
-    {
-      "RODADA": 22,
-      "POS": "GOL",
       "NOME": "Marcelo Rangel",
       "CLUBE": "REM",
       "PRECO": 5.77,
@@ -54,6 +44,16 @@
       "EXP_SCORE": 4.1639,
       "FACTOR": 1.116611256190905,
       "ATLETA_ID": 99552
+    },
+    {
+      "RODADA": 22,
+      "POS": "GOL",
+      "NOME": "Ronaldo",
+      "CLUBE": "BAH",
+      "PRECO": 9.57,
+      "EXP_SCORE": 3.8168,
+      "FACTOR": 1.071478433138226,
+      "ATLETA_ID": 91101
     },
     {
       "RODADA": 22,
@@ -108,22 +108,22 @@
     {
       "RODADA": 22,
       "POS": "ZAG",
-      "NOME": "Jonathan Jesus",
-      "CLUBE": "CRU",
-      "PRECO": 6.91,
-      "EXP_SCORE": 4.3497,
-      "FACTOR": 1.1871596578117964,
-      "ATLETA_ID": 124912
-    },
-    {
-      "RODADA": 22,
-      "POS": "ZAG",
       "NOME": "Jacy",
       "CLUBE": "CFC",
       "PRECO": 5.24,
       "EXP_SCORE": 3.9179,
       "FACTOR": 1.208053549452199,
       "ATLETA_ID": 97878
+    },
+    {
+      "RODADA": 22,
+      "POS": "ZAG",
+      "NOME": "Jonathan Jesus",
+      "CLUBE": "CRU",
+      "PRECO": 6.91,
+      "EXP_SCORE": 3.7823,
+      "FACTOR": 1.1871596578117964,
+      "ATLETA_ID": 124912
     },
     {
       "RODADA": 22,
@@ -158,22 +158,22 @@
     {
       "RODADA": 22,
       "POS": "MEI",
-      "NOME": "Arias",
-      "CLUBE": "PAL",
-      "PRECO": 16.5,
-      "EXP_SCORE": 8.7557,
-      "FACTOR": 1.097085593476291,
-      "ATLETA_ID": 99815
-    },
-    {
-      "RODADA": 22,
-      "POS": "MEI",
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 15.66,
       "EXP_SCORE": 8.016,
       "FACTOR": 1.114528360012081,
       "ATLETA_ID": 96610
+    },
+    {
+      "RODADA": 22,
+      "POS": "MEI",
+      "NOME": "Arias",
+      "CLUBE": "PAL",
+      "PRECO": 16.5,
+      "EXP_SCORE": 7.6136,
+      "FACTOR": 1.097085593476291,
+      "ATLETA_ID": 99815
     },
     {
       "RODADA": 22,
