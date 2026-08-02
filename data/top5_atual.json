@@ -3,8 +3,18 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 22,
-  "atualizado_em": "2026-08-02T16:55:44.493Z",
+  "atualizado_em": "2026-08-02T17:00:17.918Z",
   "dados": [
+    {
+      "RODADA": 22,
+      "POS": "GOL",
+      "NOME": "Tiago Volpi",
+      "CLUBE": "RBB",
+      "PRECO": 10.55,
+      "EXP_SCORE": 4.4774,
+      "FACTOR": 1.083480234128771,
+      "ATLETA_ID": 72018
+    },
     {
       "RODADA": 22,
       "POS": "GOL",
@@ -28,32 +38,22 @@
     {
       "RODADA": 22,
       "POS": "GOL",
+      "NOME": "Marcelo Rangel",
+      "CLUBE": "REM",
+      "PRECO": 5.77,
+      "EXP_SCORE": 4.3464,
+      "FACTOR": 1.1842348491670418,
+      "ATLETA_ID": 82730
+    },
+    {
+      "RODADA": 22,
+      "POS": "GOL",
       "NOME": "Rossi",
       "CLUBE": "FLA",
       "PRECO": 8.68,
       "EXP_SCORE": 4.1639,
       "FACTOR": 1.116611256190905,
       "ATLETA_ID": 99552
-    },
-    {
-      "RODADA": 22,
-      "POS": "GOL",
-      "NOME": "Tiago Volpi",
-      "CLUBE": "RBB",
-      "PRECO": 10.55,
-      "EXP_SCORE": 4.0297,
-      "FACTOR": 1.083480234128771,
-      "ATLETA_ID": 72018
-    },
-    {
-      "RODADA": 22,
-      "POS": "GOL",
-      "NOME": "Marcelo Rangel",
-      "CLUBE": "REM",
-      "PRECO": 5.77,
-      "EXP_SCORE": 3.7795,
-      "FACTOR": 1.1842348491670418,
-      "ATLETA_ID": 82730
     },
     {
       "RODADA": 22,
@@ -78,22 +78,22 @@
     {
       "RODADA": 22,
       "POS": "LAT",
+      "NOME": "Marcelinho",
+      "CLUBE": "REM",
+      "PRECO": 5.98,
+      "EXP_SCORE": 5.3128,
+      "FACTOR": 1.1842348491670418,
+      "ATLETA_ID": 97795
+    },
+    {
+      "RODADA": 22,
+      "POS": "LAT",
       "NOME": "Matheus Bidu",
       "CLUBE": "COR",
       "PRECO": 13.3,
       "EXP_SCORE": 5.0079,
       "FACTOR": 0.9657240882485366,
       "ATLETA_ID": 105531
-    },
-    {
-      "RODADA": 22,
-      "POS": "LAT",
-      "NOME": "Piquerez",
-      "CLUBE": "PAL",
-      "PRECO": 12.48,
-      "EXP_SCORE": 4.9379,
-      "FACTOR": 1.1456072039621792,
-      "ATLETA_ID": 102130
     },
     {
       "RODADA": 22,
@@ -108,10 +108,20 @@
     {
       "RODADA": 22,
       "POS": "ZAG",
+      "NOME": "Jacy",
+      "CLUBE": "CFC",
+      "PRECO": 5.24,
+      "EXP_SCORE": 3.9179,
+      "FACTOR": 1.208053549452199,
+      "ATLETA_ID": 97878
+    },
+    {
+      "RODADA": 22,
+      "POS": "ZAG",
       "NOME": "Jonathan Jesus",
       "CLUBE": "CRU",
       "PRECO": 6.91,
-      "EXP_SCORE": 4.3497,
+      "EXP_SCORE": 3.7823,
       "FACTOR": 1.1871596578117964,
       "ATLETA_ID": 124912
     },
@@ -134,16 +144,6 @@
       "EXP_SCORE": 3.6372,
       "FACTOR": 1.1456072039621792,
       "ATLETA_ID": 99274
-    },
-    {
-      "RODADA": 22,
-      "POS": "ZAG",
-      "NOME": "Jacy",
-      "CLUBE": "CFC",
-      "PRECO": 5.24,
-      "EXP_SCORE": 3.5261,
-      "FACTOR": 1.208053549452199,
-      "ATLETA_ID": 97878
     },
     {
       "RODADA": 22,
@@ -231,7 +231,7 @@
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 12.08,
-      "EXP_SCORE": 6.9207,
+      "EXP_SCORE": 7.9588,
       "FACTOR": 0.9400237088492902,
       "ATLETA_ID": 143193
     },
