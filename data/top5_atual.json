@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 22,
-  "atualizado_em": "2026-08-02T06:44:45.768Z",
+  "atualizado_em": "2026-08-02T06:50:21.078Z",
   "dados": [
     {
       "RODADA": 22,
@@ -28,6 +28,16 @@
     {
       "RODADA": 22,
       "POS": "GOL",
+      "NOME": "Marcelo Rangel",
+      "CLUBE": "REM",
+      "PRECO": 5.77,
+      "EXP_SCORE": 4.341,
+      "FACTOR": 1.182765285321221,
+      "ATLETA_ID": 82730
+    },
+    {
+      "RODADA": 22,
+      "POS": "GOL",
       "NOME": "Rossi",
       "CLUBE": "FLA",
       "PRECO": 8.68,
@@ -44,16 +54,6 @@
       "EXP_SCORE": 4.0202,
       "FACTOR": 1.0809327743343629,
       "ATLETA_ID": 72018
-    },
-    {
-      "RODADA": 22,
-      "POS": "GOL",
-      "NOME": "Marcelo Rangel",
-      "CLUBE": "REM",
-      "PRECO": 5.77,
-      "EXP_SCORE": 3.7748,
-      "FACTOR": 1.182765285321221,
-      "ATLETA_ID": 82730
     },
     {
       "RODADA": 22,
@@ -78,6 +78,16 @@
     {
       "RODADA": 22,
       "POS": "LAT",
+      "NOME": "Marcelinho",
+      "CLUBE": "REM",
+      "PRECO": 5.98,
+      "EXP_SCORE": 5.3062,
+      "FACTOR": 1.182765285321221,
+      "ATLETA_ID": 97795
+    },
+    {
+      "RODADA": 22,
+      "POS": "LAT",
       "NOME": "Piquerez",
       "CLUBE": "PAL",
       "PRECO": 12.48,
@@ -97,16 +107,6 @@
     },
     {
       "RODADA": 22,
-      "POS": "LAT",
-      "NOME": "Marcelinho",
-      "CLUBE": "REM",
-      "PRECO": 5.98,
-      "EXP_SCORE": 4.6141,
-      "FACTOR": 1.182765285321221,
-      "ATLETA_ID": 97795
-    },
-    {
-      "RODADA": 22,
       "POS": "ZAG",
       "NOME": "Jonathan Jesus",
       "CLUBE": "CRU",
@@ -114,6 +114,16 @@
       "EXP_SCORE": 4.3464,
       "FACTOR": 1.186282023688635,
       "ATLETA_ID": 124912
+    },
+    {
+      "RODADA": 22,
+      "POS": "ZAG",
+      "NOME": "Jacy",
+      "CLUBE": "CFC",
+      "PRECO": 5.24,
+      "EXP_SCORE": 3.914,
+      "FACTOR": 1.20683880351748,
+      "ATLETA_ID": 97878
     },
     {
       "RODADA": 22,
@@ -134,16 +144,6 @@
       "EXP_SCORE": 3.6312,
       "FACTOR": 1.1437243927206537,
       "ATLETA_ID": 99274
-    },
-    {
-      "RODADA": 22,
-      "POS": "ZAG",
-      "NOME": "Jacy",
-      "CLUBE": "CFC",
-      "PRECO": 5.24,
-      "EXP_SCORE": 3.5226,
-      "FACTOR": 1.20683880351748,
-      "ATLETA_ID": 97878
     },
     {
       "RODADA": 22,
