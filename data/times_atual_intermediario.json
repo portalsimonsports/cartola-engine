@@ -4,29 +4,40 @@
   "tipo_publicacao": "times",
   "rodada": 22,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-08-02T16:09:53.665Z",
+  "atualizado_em": "2026-08-02T16:19:49.312Z",
   "dados": [
     {
       "RODADA": 22,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "GOL",
-      "NOME": "Tiago Volpi",
-      "CLUBE": "RBB",
-      "PRECO": 10.55,
-      "EXP_SCORE": 4.4774,
-      "ATLETA_ID": 72018
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 8.93,
+      "EXP_SCORE": 4.4668,
+      "ATLETA_ID": 104084
     },
     {
       "RODADA": 22,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Jacy",
-      "CLUBE": "CFC",
-      "PRECO": 5.24,
-      "EXP_SCORE": 3.9179,
-      "ATLETA_ID": 97878
+      "POS": "LAT",
+      "NOME": "Juninho Capixaba",
+      "CLUBE": "RBB",
+      "PRECO": 13.39,
+      "EXP_SCORE": 5.4573,
+      "ATLETA_ID": 94968
+    },
+    {
+      "RODADA": 22,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Luciano Juba",
+      "CLUBE": "BAH",
+      "PRECO": 11.92,
+      "EXP_SCORE": 5.426,
+      "ATLETA_ID": 107093
     },
     {
       "RODADA": 22,
@@ -36,7 +47,7 @@
       "NOME": "Jonathan Jesus",
       "CLUBE": "CRU",
       "PRECO": 6.91,
-      "EXP_SCORE": 3.7823,
+      "EXP_SCORE": 4.3497,
       "ATLETA_ID": 124912
     },
     {
@@ -58,7 +69,7 @@
       "NOME": "Arias",
       "CLUBE": "PAL",
       "PRECO": 16.5,
-      "EXP_SCORE": 8.7282,
+      "EXP_SCORE": 8.7557,
       "ATLETA_ID": 99815
     },
     {
@@ -69,7 +80,7 @@
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 15.66,
-      "EXP_SCORE": 7.9937,
+      "EXP_SCORE": 8.016,
       "ATLETA_ID": 96610
     },
     {
@@ -80,7 +91,7 @@
       "NOME": "Danilo",
       "CLUBE": "BOT",
       "PRECO": 14.48,
-      "EXP_SCORE": 6.628,
+      "EXP_SCORE": 6.6541,
       "ATLETA_ID": 107231
     },
     {
@@ -91,7 +102,7 @@
       "NOME": "Josué",
       "CLUBE": "CFC",
       "PRECO": 6.23,
-      "EXP_SCORE": 5.0341,
+      "EXP_SCORE": 5.0436,
       "ATLETA_ID": 84626
     },
     {
@@ -102,7 +113,7 @@
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 12.06,
-      "EXP_SCORE": 8.4985,
+      "EXP_SCORE": 8.5276,
       "ATLETA_ID": 98873
     },
     {
@@ -113,19 +124,8 @@
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 16.04,
-      "EXP_SCORE": 8.3831,
+      "EXP_SCORE": 8.4119,
       "ATLETA_ID": 94583
-    },
-    {
-      "RODADA": 22,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 12.08,
-      "EXP_SCORE": 7.929,
-      "ATLETA_ID": 143193
     },
     {
       "RODADA": 22,
@@ -135,7 +135,7 @@
       "NOME": "Rafael Guanaes",
       "CLUBE": "MIR",
       "PRECO": 7.44,
-      "EXP_SCORE": 3.6004,
+      "EXP_SCORE": 3.6107,
       "ATLETA_ID": 104027
     },
     {
@@ -143,22 +143,33 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.93,
-      "EXP_SCORE": 4.4668,
-      "ATLETA_ID": 104084
+      "NOME": "Rossi",
+      "CLUBE": "FLA",
+      "PRECO": 8.68,
+      "EXP_SCORE": 4.1639,
+      "ATLETA_ID": 99552
+    },
+    {
+      "RODADA": 22,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "RESERVA",
+      "POS": "LAT",
+      "NOME": "Matheuzinho",
+      "CLUBE": "COR",
+      "PRECO": 11.37,
+      "EXP_SCORE": 4.7058,
+      "ATLETA_ID": 101727
     },
     {
       "RODADA": 22,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Marllon",
-      "CLUBE": "REM",
-      "PRECO": 4.62,
-      "EXP_SCORE": 2.341,
-      "ATLETA_ID": 70666
+      "NOME": "Jacy",
+      "CLUBE": "CFC",
+      "PRECO": 5.24,
+      "EXP_SCORE": 3.5261,
+      "ATLETA_ID": 97878
     },
     {
       "RODADA": 22,
@@ -168,7 +179,7 @@
       "NOME": "André",
       "CLUBE": "COR",
       "PRECO": 6.15,
-      "EXP_SCORE": 3.7143,
+      "EXP_SCORE": 3.7304,
       "ATLETA_ID": 145744
     },
     {
@@ -179,7 +190,7 @@
       "NOME": "Lucas Ronier",
       "CLUBE": "CFC",
       "PRECO": 10.77,
-      "EXP_SCORE": 6.2312,
+      "EXP_SCORE": 6.243,
       "ATLETA_ID": 123648
     }
   ]
