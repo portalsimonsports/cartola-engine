@@ -3,18 +3,8 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 22,
-  "atualizado_em": "2026-08-02T17:54:46.406Z",
+  "atualizado_em": "2026-08-02T18:00:05.360Z",
   "dados": [
-    {
-      "RODADA": 22,
-      "POS": "GOL",
-      "NOME": "Tiago Volpi",
-      "CLUBE": "RBB",
-      "PRECO": 10.55,
-      "EXP_SCORE": 4.4774,
-      "FACTOR": 1.083480234128771,
-      "ATLETA_ID": 72018
-    },
     {
       "RODADA": 22,
       "POS": "GOL",
@@ -28,12 +18,12 @@
     {
       "RODADA": 22,
       "POS": "GOL",
-      "NOME": "Marcelo Rangel",
-      "CLUBE": "REM",
-      "PRECO": 5.77,
-      "EXP_SCORE": 4.3464,
-      "FACTOR": 1.1842348491670418,
-      "ATLETA_ID": 82730
+      "NOME": "Ronaldo",
+      "CLUBE": "BAH",
+      "PRECO": 9.57,
+      "EXP_SCORE": 4.3894,
+      "FACTOR": 1.071478433138226,
+      "ATLETA_ID": 91101
     },
     {
       "RODADA": 22,
@@ -48,12 +38,22 @@
     {
       "RODADA": 22,
       "POS": "GOL",
-      "NOME": "Ronaldo",
-      "CLUBE": "BAH",
-      "PRECO": 9.57,
-      "EXP_SCORE": 3.8168,
-      "FACTOR": 1.071478433138226,
-      "ATLETA_ID": 91101
+      "NOME": "Tiago Volpi",
+      "CLUBE": "RBB",
+      "PRECO": 10.55,
+      "EXP_SCORE": 4.0297,
+      "FACTOR": 1.083480234128771,
+      "ATLETA_ID": 72018
+    },
+    {
+      "RODADA": 22,
+      "POS": "GOL",
+      "NOME": "Marcelo Rangel",
+      "CLUBE": "REM",
+      "PRECO": 5.77,
+      "EXP_SCORE": 3.7795,
+      "FACTOR": 1.1842348491670418,
+      "ATLETA_ID": 82730
     },
     {
       "RODADA": 22,
@@ -78,22 +78,22 @@
     {
       "RODADA": 22,
       "POS": "LAT",
-      "NOME": "Marcelinho",
-      "CLUBE": "REM",
-      "PRECO": 5.98,
-      "EXP_SCORE": 5.3128,
-      "FACTOR": 1.1842348491670418,
-      "ATLETA_ID": 97795
-    },
-    {
-      "RODADA": 22,
-      "POS": "LAT",
       "NOME": "Matheus Bidu",
       "CLUBE": "COR",
       "PRECO": 13.3,
       "EXP_SCORE": 5.0079,
       "FACTOR": 0.9657240882485366,
       "ATLETA_ID": 105531
+    },
+    {
+      "RODADA": 22,
+      "POS": "LAT",
+      "NOME": "Piquerez",
+      "CLUBE": "PAL",
+      "PRECO": 12.48,
+      "EXP_SCORE": 4.9379,
+      "FACTOR": 1.1456072039621792,
+      "ATLETA_ID": 102130
     },
     {
       "RODADA": 22,
@@ -108,21 +108,11 @@
     {
       "RODADA": 22,
       "POS": "ZAG",
-      "NOME": "Jacy",
-      "CLUBE": "CFC",
-      "PRECO": 5.24,
-      "EXP_SCORE": 3.9179,
-      "FACTOR": 1.208053549452199,
-      "ATLETA_ID": 97878
-    },
-    {
-      "RODADA": 22,
-      "POS": "ZAG",
       "NOME": "Jonathan Jesus",
       "CLUBE": "CRU",
       "PRECO": 6.91,
-      "EXP_SCORE": 3.7823,
-      "FACTOR": 1.1871596578117964,
+      "EXP_SCORE": 4.3497,
+      "FACTOR": 1.1871596578117967,
       "ATLETA_ID": 124912
     },
     {
@@ -148,6 +138,16 @@
     {
       "RODADA": 22,
       "POS": "ZAG",
+      "NOME": "Jacy",
+      "CLUBE": "CFC",
+      "PRECO": 5.24,
+      "EXP_SCORE": 3.5261,
+      "FACTOR": 1.208053549452199,
+      "ATLETA_ID": 97878
+    },
+    {
+      "RODADA": 22,
+      "POS": "ZAG",
       "NOME": "Murilo",
       "CLUBE": "PAL",
       "PRECO": 7.18,
@@ -158,22 +158,22 @@
     {
       "RODADA": 22,
       "POS": "MEI",
+      "NOME": "Arias",
+      "CLUBE": "PAL",
+      "PRECO": 16.5,
+      "EXP_SCORE": 8.7557,
+      "FACTOR": 1.097085593476291,
+      "ATLETA_ID": 99815
+    },
+    {
+      "RODADA": 22,
+      "POS": "MEI",
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 15.66,
       "EXP_SCORE": 8.016,
       "FACTOR": 1.114528360012081,
       "ATLETA_ID": 96610
-    },
-    {
-      "RODADA": 22,
-      "POS": "MEI",
-      "NOME": "Arias",
-      "CLUBE": "PAL",
-      "PRECO": 16.5,
-      "EXP_SCORE": 7.6136,
-      "FACTOR": 1.097085593476291,
-      "ATLETA_ID": 99815
     },
     {
       "RODADA": 22,
@@ -231,7 +231,7 @@
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 12.08,
-      "EXP_SCORE": 7.9588,
+      "EXP_SCORE": 6.9207,
       "FACTOR": 0.9400237088492902,
       "ATLETA_ID": 143193
     },
