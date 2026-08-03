@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 22,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-08-03T02:05:05.033Z",
+  "atualizado_em": "2026-08-03T02:09:50.847Z",
   "dados": [
     {
       "RODADA": 22,
@@ -25,7 +25,7 @@
       "NOME": "Juninho Capixaba",
       "CLUBE": "RBB",
       "PRECO": 13.39,
-      "EXP_SCORE": 5.4769,
+      "EXP_SCORE": 6.0854,
       "ATLETA_ID": 94968
     },
     {
@@ -98,17 +98,6 @@
       "RODADA": 22,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Josué",
-      "CLUBE": "CFC",
-      "PRECO": 6.23,
-      "EXP_SCORE": 5.0135,
-      "ATLETA_ID": 84626
-    },
-    {
-      "RODADA": 22,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
       "POS": "ATA",
       "NOME": "Pedro",
       "CLUBE": "FLA",
@@ -131,6 +120,17 @@
       "RODADA": 22,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Jajá",
+      "CLUBE": "REM",
+      "PRECO": 6.74,
+      "EXP_SCORE": 5.1441,
+      "ATLETA_ID": 105048
+    },
+    {
+      "RODADA": 22,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
       "POS": "TEC",
       "NOME": "Rafael Guanaes",
       "CLUBE": "MIR",
@@ -143,11 +143,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.93,
-      "EXP_SCORE": 4.4779,
-      "ATLETA_ID": 104084
+      "NOME": "Marcelo Rangel",
+      "CLUBE": "REM",
+      "PRECO": 5.77,
+      "EXP_SCORE": 4.3546,
+      "ATLETA_ID": 82730
     },
     {
       "RODADA": 22,
@@ -176,22 +176,22 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "André",
-      "CLUBE": "COR",
-      "PRECO": 6.15,
-      "EXP_SCORE": 3.7337,
-      "ATLETA_ID": 145744
+      "NOME": "Josué",
+      "CLUBE": "CFC",
+      "PRECO": 6.23,
+      "EXP_SCORE": 5.0135,
+      "ATLETA_ID": 84626
     },
     {
       "RODADA": 22,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Breno Lopes",
-      "CLUBE": "CFC",
-      "PRECO": 9.09,
-      "EXP_SCORE": 6.4147,
-      "ATLETA_ID": 93988
+      "NOME": "Leozinho",
+      "CLUBE": "CAP",
+      "PRECO": 5.84,
+      "EXP_SCORE": 4.5873,
+      "ATLETA_ID": 123101
     }
   ]
 }
