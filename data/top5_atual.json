@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 22,
-  "atualizado_em": "2026-08-04T07:25:26.070Z",
+  "atualizado_em": "2026-08-04T07:30:12.466Z",
   "dados": [
     {
       "RODADA": 22,
@@ -28,16 +28,6 @@
     {
       "RODADA": 22,
       "POS": "GOL",
-      "NOME": "Ronaldo",
-      "CLUBE": "BAH",
-      "PRECO": 9.57,
-      "EXP_SCORE": 4.4002,
-      "FACTOR": 1.074128863168576,
-      "ATLETA_ID": 91101
-    },
-    {
-      "RODADA": 22,
-      "POS": "GOL",
       "NOME": "Marcelo Rangel",
       "CLUBE": "REM",
       "PRECO": 5.77,
@@ -54,6 +44,16 @@
       "EXP_SCORE": 4.2216,
       "FACTOR": 1.1320883330514733,
       "ATLETA_ID": 99552
+    },
+    {
+      "RODADA": 22,
+      "POS": "GOL",
+      "NOME": "Ronaldo",
+      "CLUBE": "BAH",
+      "PRECO": 9.57,
+      "EXP_SCORE": 3.8263,
+      "FACTOR": 1.074128863168576,
+      "ATLETA_ID": 91101
     },
     {
       "RODADA": 22,
@@ -158,22 +158,22 @@
     {
       "RODADA": 22,
       "POS": "MEI",
-      "NOME": "Arias",
-      "CLUBE": "PAL",
-      "PRECO": 16.5,
-      "EXP_SCORE": 8.7592,
-      "FACTOR": 1.0975255685503273,
-      "ATLETA_ID": 99815
-    },
-    {
-      "RODADA": 22,
-      "POS": "MEI",
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 15.66,
       "EXP_SCORE": 7.9594,
       "FACTOR": 1.1066686361068687,
       "ATLETA_ID": 96610
+    },
+    {
+      "RODADA": 22,
+      "POS": "MEI",
+      "NOME": "Arias",
+      "CLUBE": "PAL",
+      "PRECO": 16.5,
+      "EXP_SCORE": 7.6167,
+      "FACTOR": 1.0975255685503273,
+      "ATLETA_ID": 99815
     },
     {
       "RODADA": 22,
