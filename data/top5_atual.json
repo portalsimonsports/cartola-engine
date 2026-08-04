@@ -3,8 +3,18 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 22,
-  "atualizado_em": "2026-08-04T03:00:17.613Z",
+  "atualizado_em": "2026-08-04T03:14:46.394Z",
   "dados": [
+    {
+      "RODADA": 22,
+      "POS": "GOL",
+      "NOME": "Tiago Volpi",
+      "CLUBE": "RBB",
+      "PRECO": 10.55,
+      "EXP_SCORE": 4.4879,
+      "FACTOR": 1.0860034862665353,
+      "ATLETA_ID": 72018
+    },
     {
       "RODADA": 22,
       "POS": "GOL",
@@ -14,16 +24,6 @@
       "EXP_SCORE": 4.474,
       "FACTOR": 1.147472123479502,
       "ATLETA_ID": 104084
-    },
-    {
-      "RODADA": 22,
-      "POS": "GOL",
-      "NOME": "Ronaldo",
-      "CLUBE": "BAH",
-      "PRECO": 9.57,
-      "EXP_SCORE": 4.4002,
-      "FACTOR": 1.074128863168576,
-      "ATLETA_ID": 91101
     },
     {
       "RODADA": 22,
@@ -48,12 +48,12 @@
     {
       "RODADA": 22,
       "POS": "GOL",
-      "NOME": "Tiago Volpi",
-      "CLUBE": "RBB",
-      "PRECO": 10.55,
-      "EXP_SCORE": 4.0391,
-      "FACTOR": 1.0860034862665353,
-      "ATLETA_ID": 72018
+      "NOME": "Ronaldo",
+      "CLUBE": "BAH",
+      "PRECO": 9.57,
+      "EXP_SCORE": 3.8263,
+      "FACTOR": 1.074128863168576,
+      "ATLETA_ID": 91101
     },
     {
       "RODADA": 22,
@@ -98,22 +98,12 @@
     {
       "RODADA": 22,
       "POS": "LAT",
-      "NOME": "Piquerez",
-      "CLUBE": "PAL",
-      "PRECO": 12.48,
-      "EXP_SCORE": 4.946,
-      "FACTOR": 1.147472123479502,
-      "ATLETA_ID": 102130
-    },
-    {
-      "RODADA": 22,
-      "POS": "ZAG",
-      "NOME": "Jonathan Jesus",
-      "CLUBE": "CRU",
-      "PRECO": 6.91,
-      "EXP_SCORE": 4.1128,
-      "FACTOR": 1.1225254362989148,
-      "ATLETA_ID": 124912
+      "NOME": "Matheuzinho",
+      "CLUBE": "COR",
+      "PRECO": 11.37,
+      "EXP_SCORE": 4.7132,
+      "FACTOR": 0.9672444404113232,
+      "ATLETA_ID": 101727
     },
     {
       "RODADA": 22,
@@ -144,6 +134,16 @@
       "EXP_SCORE": 3.6431,
       "FACTOR": 1.147472123479502,
       "ATLETA_ID": 99274
+    },
+    {
+      "RODADA": 22,
+      "POS": "ZAG",
+      "NOME": "Jonathan Jesus",
+      "CLUBE": "CRU",
+      "PRECO": 6.91,
+      "EXP_SCORE": 3.5764,
+      "FACTOR": 1.1225254362989148,
+      "ATLETA_ID": 124912
     },
     {
       "RODADA": 22,
