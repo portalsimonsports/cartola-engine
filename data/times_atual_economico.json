@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 22,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-08-05T00:14:46.070Z",
+  "atualizado_em": "2026-08-05T00:34:46.980Z",
   "dados": [
     {
       "RODADA": 22,
@@ -98,6 +98,17 @@
       "RODADA": 22,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Maurício",
+      "CLUBE": "PAL",
+      "PRECO": 7.76,
+      "EXP_SCORE": 4.4182,
+      "ATLETA_ID": 105647
+    },
+    {
+      "RODADA": 22,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
       "POS": "ATA",
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
@@ -110,33 +121,22 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Vitinho",
-      "CLUBE": "INT",
-      "PRECO": 9.03,
-      "EXP_SCORE": 4.005,
-      "ATLETA_ID": 101960
-    },
-    {
-      "RODADA": 22,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Lucas Ronier",
+      "NOME": "Breno Lopes",
       "CLUBE": "CFC",
-      "PRECO": 10.77,
-      "EXP_SCORE": 6.1983,
-      "ATLETA_ID": 123648
+      "PRECO": 9.09,
+      "EXP_SCORE": 6.4069,
+      "ATLETA_ID": 93988
     },
     {
       "RODADA": 22,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Rafael Guanaes",
-      "CLUBE": "MIR",
-      "PRECO": 7.44,
-      "EXP_SCORE": 3.6066,
-      "ATLETA_ID": 104027
+      "NOME": "Fernando Seabra",
+      "CLUBE": "CFC",
+      "PRECO": 7.66,
+      "EXP_SCORE": 5.0163,
+      "ATLETA_ID": 126977
     },
     {
       "RODADA": 22,
@@ -190,7 +190,7 @@
       "NOME": "Renê",
       "CLUBE": "VIT",
       "PRECO": 8.67,
-      "EXP_SCORE": 5.4376,
+      "EXP_SCORE": 4.8939,
       "ATLETA_ID": 130209
     }
   ]
