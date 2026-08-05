@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 22,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-08-05T05:59:55.193Z",
+  "atualizado_em": "2026-08-05T06:15:02.289Z",
   "dados": [
     {
       "RODADA": 22,
@@ -16,6 +16,28 @@
       "PRECO": 10.55,
       "EXP_SCORE": 4.4879,
       "ATLETA_ID": 72018
+    },
+    {
+      "RODADA": 22,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Juninho Capixaba",
+      "CLUBE": "RBB",
+      "PRECO": 13.39,
+      "EXP_SCORE": 6.0778,
+      "ATLETA_ID": 94968
+    },
+    {
+      "RODADA": 22,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Luciano Juba",
+      "CLUBE": "BAH",
+      "PRECO": 11.92,
+      "EXP_SCORE": 5.4394,
+      "ATLETA_ID": 107093
     },
     {
       "RODADA": 22,
@@ -43,12 +65,12 @@
       "RODADA": 22,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Alexander Barboza",
-      "CLUBE": "PAL",
-      "PRECO": 10.15,
-      "EXP_SCORE": 3.6431,
-      "ATLETA_ID": 99274
+      "POS": "MEI",
+      "NOME": "Matheus Pereira",
+      "CLUBE": "CRU",
+      "PRECO": 15.66,
+      "EXP_SCORE": 7.9473,
+      "ATLETA_ID": 96610
     },
     {
       "RODADA": 22,
@@ -58,19 +80,8 @@
       "NOME": "Arias",
       "CLUBE": "PAL",
       "PRECO": 16.5,
-      "EXP_SCORE": 8.7449,
+      "EXP_SCORE": 7.6043,
       "ATLETA_ID": 99815
-    },
-    {
-      "RODADA": 22,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Matheus Pereira",
-      "CLUBE": "CRU",
-      "PRECO": 15.66,
-      "EXP_SCORE": 7.9473,
-      "ATLETA_ID": 96610
     },
     {
       "RODADA": 22,
@@ -87,12 +98,12 @@
       "RODADA": 22,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Josué",
-      "CLUBE": "CFC",
-      "PRECO": 6.23,
-      "EXP_SCORE": 5.0074,
-      "ATLETA_ID": 84626
+      "POS": "ATA",
+      "NOME": "Pedro",
+      "CLUBE": "FLA",
+      "PRECO": 16.04,
+      "EXP_SCORE": 9.6607,
+      "ATLETA_ID": 94583
     },
     {
       "RODADA": 22,
@@ -110,22 +121,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Pedro",
-      "CLUBE": "FLA",
-      "PRECO": 16.04,
-      "EXP_SCORE": 8.4006,
-      "ATLETA_ID": 94583
-    },
-    {
-      "RODADA": 22,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 12.08,
-      "EXP_SCORE": 8.1518,
-      "ATLETA_ID": 143193
+      "NOME": "Jajá",
+      "CLUBE": "REM",
+      "PRECO": 6.74,
+      "EXP_SCORE": 5.1345,
+      "ATLETA_ID": 105048
     },
     {
       "RODADA": 22,
@@ -143,11 +143,22 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.93,
-      "EXP_SCORE": 4.474,
-      "ATLETA_ID": 104084
+      "NOME": "Marcelo Rangel",
+      "CLUBE": "REM",
+      "PRECO": 5.77,
+      "EXP_SCORE": 4.3518,
+      "ATLETA_ID": 82730
+    },
+    {
+      "RODADA": 22,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "RESERVA",
+      "POS": "LAT",
+      "NOME": "Marcelinho",
+      "CLUBE": "REM",
+      "PRECO": 5.98,
+      "EXP_SCORE": 5.3193,
+      "ATLETA_ID": 97795
     },
     {
       "RODADA": 22,
@@ -157,7 +168,7 @@
       "NOME": "Marllon",
       "CLUBE": "REM",
       "PRECO": 4.62,
-      "EXP_SCORE": 2.3439,
+      "EXP_SCORE": 2.6043,
       "ATLETA_ID": 70666
     },
     {
@@ -165,22 +176,22 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "André",
-      "CLUBE": "COR",
-      "PRECO": 6.15,
-      "EXP_SCORE": 3.7241,
-      "ATLETA_ID": 145744
+      "NOME": "Josué",
+      "CLUBE": "CFC",
+      "PRECO": 6.23,
+      "EXP_SCORE": 5.0074,
+      "ATLETA_ID": 84626
     },
     {
       "RODADA": 22,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Lucas Ronier",
-      "CLUBE": "CFC",
-      "PRECO": 10.77,
-      "EXP_SCORE": 6.1983,
-      "ATLETA_ID": 123648
+      "NOME": "Leozinho",
+      "CLUBE": "CAP",
+      "PRECO": 5.84,
+      "EXP_SCORE": 4.695,
+      "ATLETA_ID": 123101
     }
   ]
 }
