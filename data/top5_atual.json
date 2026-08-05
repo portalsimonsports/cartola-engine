@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 22,
-  "atualizado_em": "2026-08-05T05:04:47.155Z",
+  "atualizado_em": "2026-08-05T05:15:00.671Z",
   "dados": [
     {
       "RODADA": 22,
@@ -14,16 +14,6 @@
       "EXP_SCORE": 4.4879,
       "FACTOR": 1.0860034862665353,
       "ATLETA_ID": 72018
-    },
-    {
-      "RODADA": 22,
-      "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.93,
-      "EXP_SCORE": 4.474,
-      "FACTOR": 1.147472123479502,
-      "ATLETA_ID": 104084
     },
     {
       "RODADA": 22,
@@ -48,12 +38,22 @@
     {
       "RODADA": 22,
       "POS": "GOL",
-      "NOME": "Ronaldo",
-      "CLUBE": "BAH",
-      "PRECO": 9.57,
-      "EXP_SCORE": 3.8263,
-      "FACTOR": 1.074128863168576,
-      "ATLETA_ID": 91101
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 8.93,
+      "EXP_SCORE": 4.0266,
+      "FACTOR": 1.147472123479502,
+      "ATLETA_ID": 104084
+    },
+    {
+      "RODADA": 22,
+      "POS": "GOL",
+      "NOME": "Everson",
+      "CLUBE": "CAM",
+      "PRECO": 9.54,
+      "EXP_SCORE": 3.777,
+      "FACTOR": 0.9597069770703317,
+      "ATLETA_ID": 72294
     },
     {
       "RODADA": 22,
@@ -61,7 +61,7 @@
       "NOME": "Juninho Capixaba",
       "CLUBE": "RBB",
       "PRECO": 13.39,
-      "EXP_SCORE": 5.47,
+      "EXP_SCORE": 6.0778,
       "FACTOR": 1.0860034862665353,
       "ATLETA_ID": 94968
     },
