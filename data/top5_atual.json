@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 22,
-  "atualizado_em": "2026-08-05T12:34:47.029Z",
+  "atualizado_em": "2026-08-05T12:44:46.649Z",
   "dados": [
     {
       "RODADA": 22,
@@ -14,16 +14,6 @@
       "EXP_SCORE": 4.4879,
       "FACTOR": 1.0860034862665353,
       "ATLETA_ID": 72018
-    },
-    {
-      "RODADA": 22,
-      "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.93,
-      "EXP_SCORE": 4.474,
-      "FACTOR": 1.147472123479502,
-      "ATLETA_ID": 104084
     },
     {
       "RODADA": 22,
@@ -48,12 +38,22 @@
     {
       "RODADA": 22,
       "POS": "GOL",
-      "NOME": "Ronaldo",
-      "CLUBE": "BAH",
-      "PRECO": 9.57,
-      "EXP_SCORE": 3.8263,
-      "FACTOR": 1.074128863168576,
-      "ATLETA_ID": 91101
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 8.93,
+      "EXP_SCORE": 4.0266,
+      "FACTOR": 1.147472123479502,
+      "ATLETA_ID": 104084
+    },
+    {
+      "RODADA": 22,
+      "POS": "GOL",
+      "NOME": "Everson",
+      "CLUBE": "CAM",
+      "PRECO": 9.54,
+      "EXP_SCORE": 3.777,
+      "FACTOR": 0.9597069770703317,
+      "ATLETA_ID": 72294
     },
     {
       "RODADA": 22,
@@ -61,7 +61,7 @@
       "NOME": "Juninho Capixaba",
       "CLUBE": "RBB",
       "PRECO": 13.39,
-      "EXP_SCORE": 5.47,
+      "EXP_SCORE": 6.0778,
       "FACTOR": 1.0860034862665353,
       "ATLETA_ID": 94968
     },
@@ -158,22 +158,22 @@
     {
       "RODADA": 22,
       "POS": "MEI",
-      "NOME": "Arias",
-      "CLUBE": "PAL",
-      "PRECO": 16.5,
-      "EXP_SCORE": 8.7449,
-      "FACTOR": 1.0957380897233235,
-      "ATLETA_ID": 99815
-    },
-    {
-      "RODADA": 22,
-      "POS": "MEI",
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 15.66,
       "EXP_SCORE": 7.9473,
       "FACTOR": 1.104973556387736,
       "ATLETA_ID": 96610
+    },
+    {
+      "RODADA": 22,
+      "POS": "MEI",
+      "NOME": "Arias",
+      "CLUBE": "PAL",
+      "PRECO": 16.5,
+      "EXP_SCORE": 7.6043,
+      "FACTOR": 1.0957380897233235,
+      "ATLETA_ID": 99815
     },
     {
       "RODADA": 22,
@@ -231,7 +231,7 @@
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 12.08,
-      "EXP_SCORE": 8.1518,
+      "EXP_SCORE": 7.0886,
       "FACTOR": 0.9628246024835794,
       "ATLETA_ID": 143193
     },
