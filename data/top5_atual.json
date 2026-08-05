@@ -3,8 +3,18 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 22,
-  "atualizado_em": "2026-08-05T04:00:26.104Z",
+  "atualizado_em": "2026-08-05T04:09:59.545Z",
   "dados": [
+    {
+      "RODADA": 22,
+      "POS": "GOL",
+      "NOME": "Tiago Volpi",
+      "CLUBE": "RBB",
+      "PRECO": 10.55,
+      "EXP_SCORE": 4.4879,
+      "FACTOR": 1.0860034862665353,
+      "ATLETA_ID": 72018
+    },
     {
       "RODADA": 22,
       "POS": "GOL",
@@ -44,16 +54,6 @@
       "EXP_SCORE": 4.2216,
       "FACTOR": 1.1320883330514733,
       "ATLETA_ID": 99552
-    },
-    {
-      "RODADA": 22,
-      "POS": "GOL",
-      "NOME": "Tiago Volpi",
-      "CLUBE": "RBB",
-      "PRECO": 10.55,
-      "EXP_SCORE": 4.0391,
-      "FACTOR": 1.0860034862665353,
-      "ATLETA_ID": 72018
     },
     {
       "RODADA": 22,
@@ -98,12 +98,12 @@
     {
       "RODADA": 22,
       "POS": "LAT",
-      "NOME": "Piquerez",
-      "CLUBE": "PAL",
-      "PRECO": 12.48,
-      "EXP_SCORE": 4.946,
-      "FACTOR": 1.147472123479502,
-      "ATLETA_ID": 102130
+      "NOME": "Matheuzinho",
+      "CLUBE": "COR",
+      "PRECO": 11.37,
+      "EXP_SCORE": 4.7132,
+      "FACTOR": 0.9672444404113232,
+      "ATLETA_ID": 101727
     },
     {
       "RODADA": 22,
