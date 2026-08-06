@@ -4,18 +4,51 @@
   "tipo_publicacao": "times",
   "rodada": 22,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-08-06T04:55:02.014Z",
+  "atualizado_em": "2026-08-06T05:04:59.310Z",
   "dados": [
     {
       "RODADA": 22,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "GOL",
-      "NOME": "Tiago Volpi",
+      "NOME": "Ronaldo",
+      "CLUBE": "BAH",
+      "PRECO": 9.57,
+      "EXP_SCORE": 4.6581,
+      "ATLETA_ID": 91101
+    },
+    {
+      "RODADA": 22,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Luciano Juba",
+      "CLUBE": "BAH",
+      "PRECO": 11.92,
+      "EXP_SCORE": 5.7582,
+      "ATLETA_ID": 107093
+    },
+    {
+      "RODADA": 22,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Juninho Capixaba",
       "CLUBE": "RBB",
-      "PRECO": 10.55,
-      "EXP_SCORE": 4.4749,
-      "ATLETA_ID": 72018
+      "PRECO": 13.39,
+      "EXP_SCORE": 5.4543,
+      "ATLETA_ID": 94968
+    },
+    {
+      "RODADA": 22,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "ZAG",
+      "NOME": "Jonathan Jesus",
+      "CLUBE": "CRU",
+      "PRECO": 6.91,
+      "EXP_SCORE": 4.2563,
+      "ATLETA_ID": 124912
     },
     {
       "RODADA": 22,
@@ -32,23 +65,12 @@
       "RODADA": 22,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Jacy",
-      "CLUBE": "CFC",
-      "PRECO": 5.24,
-      "EXP_SCORE": 3.8536,
-      "ATLETA_ID": 97878
-    },
-    {
-      "RODADA": 22,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Jonathan Jesus",
-      "CLUBE": "CRU",
-      "PRECO": 6.91,
-      "EXP_SCORE": 3.7011,
-      "ATLETA_ID": 124912
+      "POS": "MEI",
+      "NOME": "Arias",
+      "CLUBE": "PAL",
+      "PRECO": 16.5,
+      "EXP_SCORE": 8.7889,
+      "ATLETA_ID": 99815
     },
     {
       "RODADA": 22,
@@ -60,17 +82,6 @@
       "PRECO": 15.66,
       "EXP_SCORE": 7.9848,
       "ATLETA_ID": 96610
-    },
-    {
-      "RODADA": 22,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Arias",
-      "CLUBE": "PAL",
-      "PRECO": 16.5,
-      "EXP_SCORE": 7.6425,
-      "ATLETA_ID": 99815
     },
     {
       "RODADA": 22,
@@ -120,17 +131,6 @@
       "RODADA": 22,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 12.08,
-      "EXP_SCORE": 8.1931,
-      "ATLETA_ID": 143193
-    },
-    {
-      "RODADA": 22,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
       "POS": "TEC",
       "NOME": "Rafael Guanaes",
       "CLUBE": "MIR",
@@ -153,12 +153,23 @@
       "RODADA": 22,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
+      "POS": "LAT",
+      "NOME": "Matheuzinho",
+      "CLUBE": "COR",
+      "PRECO": 11.37,
+      "EXP_SCORE": 4.704,
+      "ATLETA_ID": 101727
+    },
+    {
+      "RODADA": 22,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Marllon",
-      "CLUBE": "REM",
-      "PRECO": 4.62,
-      "EXP_SCORE": 2.3403,
-      "ATLETA_ID": 70666
+      "NOME": "Jacy",
+      "CLUBE": "CFC",
+      "PRECO": 5.24,
+      "EXP_SCORE": 3.4683,
+      "ATLETA_ID": 97878
     },
     {
       "RODADA": 22,
