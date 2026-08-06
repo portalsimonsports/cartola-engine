@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 22,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-08-06T13:59:54.694Z",
+  "atualizado_em": "2026-08-06T14:09:49.878Z",
   "dados": [
     {
       "RODADA": 22,
@@ -21,39 +21,6 @@
       "RODADA": 22,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
-      "POS": "LAT",
-      "NOME": "Luciano Juba",
-      "CLUBE": "BAH",
-      "PRECO": 11.92,
-      "EXP_SCORE": 5.7582,
-      "ATLETA_ID": 107093
-    },
-    {
-      "RODADA": 22,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "LAT",
-      "NOME": "Juninho Capixaba",
-      "CLUBE": "RBB",
-      "PRECO": 13.39,
-      "EXP_SCORE": 5.4543,
-      "ATLETA_ID": 94968
-    },
-    {
-      "RODADA": 22,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Jonathan Jesus",
-      "CLUBE": "CRU",
-      "PRECO": 6.91,
-      "EXP_SCORE": 4.2563,
-      "ATLETA_ID": 124912
-    },
-    {
-      "RODADA": 22,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
       "POS": "ZAG",
       "NOME": "David Duarte",
       "CLUBE": "BAH",
@@ -65,12 +32,23 @@
       "RODADA": 22,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Arias",
-      "CLUBE": "PAL",
-      "PRECO": 16.5,
-      "EXP_SCORE": 8.7889,
-      "ATLETA_ID": 99815
+      "POS": "ZAG",
+      "NOME": "Jacy",
+      "CLUBE": "CFC",
+      "PRECO": 5.24,
+      "EXP_SCORE": 3.8536,
+      "ATLETA_ID": 97878
+    },
+    {
+      "RODADA": 22,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "ZAG",
+      "NOME": "Jonathan Jesus",
+      "CLUBE": "CRU",
+      "PRECO": 6.91,
+      "EXP_SCORE": 3.7011,
+      "ATLETA_ID": 124912
     },
     {
       "RODADA": 22,
@@ -82,6 +60,17 @@
       "PRECO": 15.66,
       "EXP_SCORE": 7.9848,
       "ATLETA_ID": 96610
+    },
+    {
+      "RODADA": 22,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Arias",
+      "CLUBE": "PAL",
+      "PRECO": 16.5,
+      "EXP_SCORE": 7.6425,
+      "ATLETA_ID": 99815
     },
     {
       "RODADA": 22,
@@ -110,6 +99,17 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ATA",
+      "NOME": "Pedro",
+      "CLUBE": "FLA",
+      "PRECO": 16.04,
+      "EXP_SCORE": 9.7136,
+      "ATLETA_ID": 94583
+    },
+    {
+      "RODADA": 22,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 12.06,
@@ -121,22 +121,22 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Pedro",
-      "CLUBE": "FLA",
-      "PRECO": 16.04,
-      "EXP_SCORE": 8.4466,
-      "ATLETA_ID": 94583
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 12.08,
+      "EXP_SCORE": 7.1244,
+      "ATLETA_ID": 143193
     },
     {
       "RODADA": 22,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Rafael Guanaes",
-      "CLUBE": "MIR",
-      "PRECO": 7.44,
-      "EXP_SCORE": 3.6231,
-      "ATLETA_ID": 104027
+      "NOME": "Fernando Seabra",
+      "CLUBE": "CFC",
+      "PRECO": 7.66,
+      "EXP_SCORE": 4.884,
+      "ATLETA_ID": 126977
     },
     {
       "RODADA": 22,
@@ -153,23 +153,12 @@
       "RODADA": 22,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
-      "POS": "LAT",
-      "NOME": "Matheuzinho",
-      "CLUBE": "COR",
-      "PRECO": 11.37,
-      "EXP_SCORE": 4.704,
-      "ATLETA_ID": 101727
-    },
-    {
-      "RODADA": 22,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Jacy",
-      "CLUBE": "CFC",
-      "PRECO": 5.24,
-      "EXP_SCORE": 3.4683,
-      "ATLETA_ID": 97878
+      "NOME": "Marllon",
+      "CLUBE": "REM",
+      "PRECO": 4.62,
+      "EXP_SCORE": 2.6003,
+      "ATLETA_ID": 70666
     },
     {
       "RODADA": 22,
@@ -187,11 +176,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Lucas Ronier",
+      "NOME": "Breno Lopes",
       "CLUBE": "CFC",
-      "PRECO": 10.77,
-      "EXP_SCORE": 6.0348,
-      "ATLETA_ID": 123648
+      "PRECO": 9.09,
+      "EXP_SCORE": 6.238,
+      "ATLETA_ID": 93988
     }
   ]
 }
