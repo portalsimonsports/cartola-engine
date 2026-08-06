@@ -1,0 +1,10 @@
+name: Marcador de Teste do Vídeo V8
+
+on:
+  workflow_dispatch:
+
+jobs:
+  marcador:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Validação V8 com vídeo e áudio PCM fechados separadamente."
