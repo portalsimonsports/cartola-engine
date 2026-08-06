@@ -2,7 +2,7 @@
   "atletas": [
     {
       "clube": "BAH",
-      "data": "2026-05-08T22:49:46.000Z",
+      "data": "2026-06-08T22:59:39.000Z",
       "nome": "Ronaldo",
       "pos": "GOL",
       "preco": 9.57,
@@ -10,7 +10,7 @@
     },
     {
       "clube": "REM",
-      "data": "2026-05-08T22:49:46.000Z",
+      "data": "2026-06-08T22:59:39.000Z",
       "nome": "Marcelinho",
       "pos": "LAT",
       "preco": 5.98,
@@ -18,7 +18,7 @@
     },
     {
       "clube": "BAH",
-      "data": "2026-05-08T22:49:46.000Z",
+      "data": "2026-06-08T22:59:39.000Z",
       "nome": "Luciano Juba",
       "pos": "LAT",
       "preco": 11.92,
@@ -26,7 +26,7 @@
     },
     {
       "clube": "CRU",
-      "data": "2026-05-08T22:49:46.000Z",
+      "data": "2026-06-08T22:59:39.000Z",
       "nome": "Jonathan Jesus",
       "pos": "ZAG",
       "preco": 6.91,
@@ -34,15 +34,23 @@
     },
     {
       "clube": "FLU",
-      "data": "2026-05-08T22:49:46.000Z",
+      "data": "2026-06-08T22:59:39.000Z",
       "nome": "Igor Rabello",
       "pos": "ZAG",
       "preco": 7.95,
       "status": "TITULAR"
     },
     {
+      "clube": "MIR",
+      "data": "2026-06-08T22:59:39.000Z",
+      "nome": "Denilson",
+      "pos": "MEI",
+      "preco": 6.81,
+      "status": "TITULAR"
+    },
+    {
       "clube": "REM",
-      "data": "2026-05-08T22:49:46.000Z",
+      "data": "2026-06-08T22:59:39.000Z",
       "nome": "Picco",
       "pos": "MEI",
       "preco": 8.25,
@@ -50,23 +58,15 @@
     },
     {
       "clube": "CFC",
-      "data": "2026-05-08T22:49:46.000Z",
+      "data": "2026-06-08T22:59:39.000Z",
       "nome": "Josué",
       "pos": "MEI",
       "preco": 6.23,
       "status": "TITULAR"
     },
     {
-      "clube": "MIR",
-      "data": "2026-05-08T22:49:46.000Z",
-      "nome": "Denilson",
-      "pos": "MEI",
-      "preco": 6.81,
-      "status": "TITULAR"
-    },
-    {
       "clube": "FLA",
-      "data": "2026-05-08T22:49:46.000Z",
+      "data": "2026-06-08T22:59:39.000Z",
       "nome": "Samuel Lino",
       "pos": "ATA",
       "preco": 12.06,
@@ -74,31 +74,31 @@
     },
     {
       "clube": "INT",
-      "data": "2026-05-08T22:49:46.000Z",
+      "data": "2026-06-08T22:59:39.000Z",
       "nome": "Vitinho",
       "pos": "ATA",
       "preco": 9.03,
       "status": "TITULAR"
     },
     {
-      "clube": "CFC",
-      "data": "2026-05-08T22:49:46.000Z",
-      "nome": "Breno Lopes",
+      "clube": "RBB",
+      "data": "2026-06-08T22:59:39.000Z",
+      "nome": "Isidro Pitta",
       "pos": "ATA",
-      "preco": 9.09,
+      "preco": 5.54,
       "status": "TITULAR"
     },
     {
-      "clube": "MIR",
-      "data": "2026-05-08T22:49:46.000Z",
-      "nome": "Rafael Guanaes",
+      "clube": "CFC",
+      "data": "2026-06-08T22:59:39.000Z",
+      "nome": "Fernando Seabra",
       "pos": "TEC",
-      "preco": 7.44,
+      "preco": 7.66,
       "status": "TITULAR"
     },
     {
       "clube": "PAL",
-      "data": "2026-05-08T22:49:46.000Z",
+      "data": "2026-06-08T22:59:39.000Z",
       "nome": "Carlos Miguel",
       "pos": "GOL",
       "preco": 8.93,
@@ -106,7 +106,7 @@
     },
     {
       "clube": "CFC",
-      "data": "2026-05-08T22:49:46.000Z",
+      "data": "2026-06-08T22:59:39.000Z",
       "nome": "Bruno Melo",
       "pos": "LAT",
       "preco": 5.54,
@@ -114,7 +114,7 @@
     },
     {
       "clube": "CFC",
-      "data": "2026-05-08T22:49:46.000Z",
+      "data": "2026-06-08T22:59:39.000Z",
       "nome": "Jacy",
       "pos": "ZAG",
       "preco": 5.24,
@@ -122,18 +122,18 @@
     },
     {
       "clube": "COR",
-      "data": "2026-05-08T22:49:46.000Z",
+      "data": "2026-06-08T22:59:39.000Z",
       "nome": "André",
       "pos": "MEI",
       "preco": 6.15,
       "status": "RESERVA"
     },
     {
-      "clube": "VIT",
-      "data": "2026-05-08T22:49:46.000Z",
-      "nome": "Renê",
+      "clube": "RBB",
+      "data": "2026-06-08T22:59:39.000Z",
+      "nome": "Henry Mosquera",
       "pos": "ATA",
-      "preco": 8.67,
+      "preco": 5.51,
       "status": "RESERVA"
     }
   ],
@@ -141,7 +141,7 @@
     "Alterações identificadas desde a última publicação."
   ],
   "capitao": "Samuel Lino",
-  "custo_total": 101.24,
+  "custo_total": 97.91,
   "evento_programado": "ATUALIZACAO_20H",
   "forcar_envio": true,
   "formacao": "4-3-3",
@@ -149,7 +149,7 @@
   "mensagem_oficial": "Econômico • Rodada 22\nAtualização programada das 20h\nPortal SimonSports",
   "meta": {
     "capitao": "Samuel Lino (ATA)",
-    "custo_total": 101.24,
+    "custo_total": 97.91,
     "esquema": "4-3-3",
     "pontos_total": 0,
     "variacao_total": 0
@@ -195,6 +195,13 @@
         "status": "TITULAR"
       },
       {
+        "clube": "MIR",
+        "nome": "Denilson",
+        "pos": "MEI",
+        "preco": 6.81,
+        "status": "TITULAR"
+      },
+      {
         "clube": "REM",
         "nome": "Picco",
         "pos": "MEI",
@@ -206,13 +213,6 @@
         "nome": "Josué",
         "pos": "MEI",
         "preco": 6.23,
-        "status": "TITULAR"
-      },
-      {
-        "clube": "MIR",
-        "nome": "Denilson",
-        "pos": "MEI",
-        "preco": 6.81,
         "status": "TITULAR"
       },
       {
@@ -230,17 +230,17 @@
         "status": "TITULAR"
       },
       {
-        "clube": "CFC",
-        "nome": "Breno Lopes",
+        "clube": "RBB",
+        "nome": "Isidro Pitta",
         "pos": "ATA",
-        "preco": 9.09,
+        "preco": 5.54,
         "status": "TITULAR"
       },
       {
-        "clube": "MIR",
-        "nome": "Rafael Guanaes",
+        "clube": "CFC",
+        "nome": "Fernando Seabra",
         "pos": "TEC",
-        "preco": 7.44,
+        "preco": 7.66,
         "status": "TITULAR"
       },
       {
@@ -272,10 +272,10 @@
         "status": "RESERVA"
       },
       {
-        "clube": "VIT",
-        "nome": "Renê",
+        "clube": "RBB",
+        "nome": "Henry Mosquera",
         "pos": "ATA",
-        "preco": 8.67,
+        "preco": 5.51,
         "status": "RESERVA"
       }
     ],
@@ -286,12 +286,12 @@
   "titulo": "TIME ECONÔMICO",
   "rodada": 22,
   "origem": "jobTelegramDispatcher",
-  "gerado_em": "2026-08-05T23:00:25.777Z",
-  "payload_hash": "IaH+ENnFe0O0S1lyurZlBw==",
+  "gerado_em": "2026-08-06T23:01:50.247Z",
+  "payload_hash": "BxVpwIPcz5bVF0x/AjWt+w==",
   "jogadores": [
     {
       "clube": "BAH",
-      "data": "2026-05-08T22:49:46.000Z",
+      "data": "2026-06-08T22:59:39.000Z",
       "nome": "Ronaldo",
       "pos": "GOL",
       "preco": 9.57,
@@ -299,7 +299,7 @@
     },
     {
       "clube": "REM",
-      "data": "2026-05-08T22:49:46.000Z",
+      "data": "2026-06-08T22:59:39.000Z",
       "nome": "Marcelinho",
       "pos": "LAT",
       "preco": 5.98,
@@ -307,7 +307,7 @@
     },
     {
       "clube": "BAH",
-      "data": "2026-05-08T22:49:46.000Z",
+      "data": "2026-06-08T22:59:39.000Z",
       "nome": "Luciano Juba",
       "pos": "LAT",
       "preco": 11.92,
@@ -315,7 +315,7 @@
     },
     {
       "clube": "CRU",
-      "data": "2026-05-08T22:49:46.000Z",
+      "data": "2026-06-08T22:59:39.000Z",
       "nome": "Jonathan Jesus",
       "pos": "ZAG",
       "preco": 6.91,
@@ -323,15 +323,23 @@
     },
     {
       "clube": "FLU",
-      "data": "2026-05-08T22:49:46.000Z",
+      "data": "2026-06-08T22:59:39.000Z",
       "nome": "Igor Rabello",
       "pos": "ZAG",
       "preco": 7.95,
       "status": "TITULAR"
     },
     {
+      "clube": "MIR",
+      "data": "2026-06-08T22:59:39.000Z",
+      "nome": "Denilson",
+      "pos": "MEI",
+      "preco": 6.81,
+      "status": "TITULAR"
+    },
+    {
       "clube": "REM",
-      "data": "2026-05-08T22:49:46.000Z",
+      "data": "2026-06-08T22:59:39.000Z",
       "nome": "Picco",
       "pos": "MEI",
       "preco": 8.25,
@@ -339,23 +347,15 @@
     },
     {
       "clube": "CFC",
-      "data": "2026-05-08T22:49:46.000Z",
+      "data": "2026-06-08T22:59:39.000Z",
       "nome": "Josué",
       "pos": "MEI",
       "preco": 6.23,
       "status": "TITULAR"
     },
     {
-      "clube": "MIR",
-      "data": "2026-05-08T22:49:46.000Z",
-      "nome": "Denilson",
-      "pos": "MEI",
-      "preco": 6.81,
-      "status": "TITULAR"
-    },
-    {
       "clube": "FLA",
-      "data": "2026-05-08T22:49:46.000Z",
+      "data": "2026-06-08T22:59:39.000Z",
       "nome": "Samuel Lino",
       "pos": "ATA",
       "preco": 12.06,
@@ -363,33 +363,33 @@
     },
     {
       "clube": "INT",
-      "data": "2026-05-08T22:49:46.000Z",
+      "data": "2026-06-08T22:59:39.000Z",
       "nome": "Vitinho",
       "pos": "ATA",
       "preco": 9.03,
       "status": "TITULAR"
     },
     {
-      "clube": "CFC",
-      "data": "2026-05-08T22:49:46.000Z",
-      "nome": "Breno Lopes",
+      "clube": "RBB",
+      "data": "2026-06-08T22:59:39.000Z",
+      "nome": "Isidro Pitta",
       "pos": "ATA",
-      "preco": 9.09,
+      "preco": 5.54,
       "status": "TITULAR"
     },
     {
-      "clube": "MIR",
-      "data": "2026-05-08T22:49:46.000Z",
-      "nome": "Rafael Guanaes",
+      "clube": "CFC",
+      "data": "2026-06-08T22:59:39.000Z",
+      "nome": "Fernando Seabra",
       "pos": "TEC",
-      "preco": 7.44,
+      "preco": 7.66,
       "status": "TITULAR"
     }
   ],
   "reservas": [
     {
       "clube": "PAL",
-      "data": "2026-05-08T22:49:46.000Z",
+      "data": "2026-06-08T22:59:39.000Z",
       "nome": "Carlos Miguel",
       "pos": "GOL",
       "preco": 8.93,
@@ -397,7 +397,7 @@
     },
     {
       "clube": "CFC",
-      "data": "2026-05-08T22:49:46.000Z",
+      "data": "2026-06-08T22:59:39.000Z",
       "nome": "Bruno Melo",
       "pos": "LAT",
       "preco": 5.54,
@@ -405,7 +405,7 @@
     },
     {
       "clube": "CFC",
-      "data": "2026-05-08T22:49:46.000Z",
+      "data": "2026-06-08T22:59:39.000Z",
       "nome": "Jacy",
       "pos": "ZAG",
       "preco": 5.24,
@@ -413,18 +413,18 @@
     },
     {
       "clube": "COR",
-      "data": "2026-05-08T22:49:46.000Z",
+      "data": "2026-06-08T22:59:39.000Z",
       "nome": "André",
       "pos": "MEI",
       "preco": 6.15,
       "status": "RESERVA"
     },
     {
-      "clube": "VIT",
-      "data": "2026-05-08T22:49:46.000Z",
-      "nome": "Renê",
+      "clube": "RBB",
+      "data": "2026-06-08T22:59:39.000Z",
+      "nome": "Henry Mosquera",
       "pos": "ATA",
-      "preco": 8.67,
+      "preco": 5.51,
       "status": "RESERVA"
     }
   ],
