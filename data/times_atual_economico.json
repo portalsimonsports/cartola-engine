@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 22,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-08-07T23:24:45.803Z",
+  "atualizado_em": "2026-08-07T23:39:44.412Z",
   "dados": [
     {
       "RODADA": 22,
@@ -36,7 +36,7 @@
       "NOME": "Piquerez",
       "CLUBE": "PAL",
       "PRECO": 12.48,
-      "EXP_SCORE": 4.3203,
+      "EXP_SCORE": 4.8004,
       "ATLETA_ID": 102130
     },
     {
@@ -47,7 +47,7 @@
       "NOME": "Jonathan Jesus",
       "CLUBE": "CRU",
       "PRECO": 6.91,
-      "EXP_SCORE": 3.6619,
+      "EXP_SCORE": 4.2112,
       "ATLETA_ID": 124912
     },
     {
@@ -110,6 +110,17 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ATA",
+      "NOME": "Vitinho",
+      "CLUBE": "INT",
+      "PRECO": 9.03,
+      "EXP_SCORE": 4.5984,
+      "ATLETA_ID": 101960
+    },
+    {
+      "RODADA": 22,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 12.06,
@@ -120,23 +131,12 @@
       "RODADA": 22,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Fernando",
-      "CLUBE": "RBB",
-      "PRECO": 5.37,
-      "EXP_SCORE": 3.8033,
-      "ATLETA_ID": 100695
-    },
-    {
-      "RODADA": 22,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Abel Ferreira",
-      "CLUBE": "PAL",
-      "PRECO": 12.52,
-      "EXP_SCORE": 6.2645,
-      "ATLETA_ID": 110506
+      "NOME": "Fernando Seabra",
+      "CLUBE": "CFC",
+      "PRECO": 7.66,
+      "EXP_SCORE": 4.8553,
+      "ATLETA_ID": 126977
     },
     {
       "RODADA": 22,
@@ -187,11 +187,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Marcinho",
-      "CLUBE": "CHA",
-      "PRECO": 5.15,
-      "EXP_SCORE": 2.8286,
-      "ATLETA_ID": 95332
+      "NOME": "Alef Manga",
+      "CLUBE": "REM",
+      "PRECO": 8.31,
+      "EXP_SCORE": 4.8941,
+      "ATLETA_ID": 101254
     }
   ]
 }
