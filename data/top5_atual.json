@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 22,
-  "atualizado_em": "2026-08-07T16:45:02.558Z",
+  "atualizado_em": "2026-08-07T16:50:11.798Z",
   "dados": [
     {
       "RODADA": 22,
@@ -28,16 +28,6 @@
     {
       "RODADA": 22,
       "POS": "GOL",
-      "NOME": "Marcelo Rangel",
-      "CLUBE": "REM",
-      "PRECO": 5.77,
-      "EXP_SCORE": 4.3412,
-      "FACTOR": 1.1828091873499584,
-      "ATLETA_ID": 82730
-    },
-    {
-      "RODADA": 22,
-      "POS": "GOL",
       "NOME": "Rossi",
       "CLUBE": "FLA",
       "PRECO": 8.68,
@@ -54,6 +44,16 @@
       "EXP_SCORE": 4.0205,
       "FACTOR": 1.0810088776308748,
       "ATLETA_ID": 72018
+    },
+    {
+      "RODADA": 22,
+      "POS": "GOL",
+      "NOME": "Marcelo Rangel",
+      "CLUBE": "REM",
+      "PRECO": 5.77,
+      "EXP_SCORE": 3.775,
+      "FACTOR": 1.1828091873499584,
+      "ATLETA_ID": 82730
     },
     {
       "RODADA": 22,
@@ -78,16 +78,6 @@
     {
       "RODADA": 22,
       "POS": "LAT",
-      "NOME": "Marcelinho",
-      "CLUBE": "REM",
-      "PRECO": 5.98,
-      "EXP_SCORE": 5.3064,
-      "FACTOR": 1.1828091873499584,
-      "ATLETA_ID": 97795
-    },
-    {
-      "RODADA": 22,
-      "POS": "LAT",
       "NOME": "Matheus Bidu",
       "CLUBE": "COR",
       "PRECO": 13.3,
@@ -104,6 +94,16 @@
       "EXP_SCORE": 4.8453,
       "FACTOR": 1.124113513277694,
       "ATLETA_ID": 102130
+    },
+    {
+      "RODADA": 22,
+      "POS": "LAT",
+      "NOME": "Matheuzinho",
+      "CLUBE": "COR",
+      "PRECO": 11.37,
+      "EXP_SCORE": 4.7286,
+      "FACTOR": 0.970392810208755,
+      "ATLETA_ID": 101727
     },
     {
       "RODADA": 22,
@@ -131,7 +131,7 @@
       "NOME": "Jacy",
       "CLUBE": "CFC",
       "PRECO": 5.24,
-      "EXP_SCORE": 3.8503,
+      "EXP_SCORE": 3.4652,
       "FACTOR": 1.1871909824629918,
       "ATLETA_ID": 97878
     },
@@ -142,7 +142,7 @@
       "CLUBE": "GRE",
       "PRECO": 7.45,
       "EXP_SCORE": 3.2288,
-      "FACTOR": 1.1246739754433146,
+      "FACTOR": 1.1246739754433144,
       "ATLETA_ID": 130048
     },
     {
@@ -212,7 +212,7 @@
       "CLUBE": "FLA",
       "PRECO": 12.06,
       "EXP_SCORE": 8.5773,
-      "FACTOR": 1.0898950628575603,
+      "FACTOR": 1.08989506285756,
       "ATLETA_ID": 98873
     },
     {
@@ -222,7 +222,7 @@
       "CLUBE": "FLA",
       "PRECO": 16.04,
       "EXP_SCORE": 8.4609,
-      "FACTOR": 1.0898950628575603,
+      "FACTOR": 1.08989506285756,
       "ATLETA_ID": 94583
     },
     {
@@ -272,7 +272,7 @@
       "CLUBE": "FLA",
       "PRECO": 12.81,
       "EXP_SCORE": 6.2319,
-      "FACTOR": 1.0596202000004058,
+      "FACTOR": 1.0596202000004056,
       "ATLETA_ID": 88963
     },
     {
