@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 22,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-08-07T16:44:44.396Z",
+  "atualizado_em": "2026-08-07T16:49:45.144Z",
   "dados": [
     {
       "RODADA": 22,
@@ -25,7 +25,7 @@
       "NOME": "Marcelinho",
       "CLUBE": "REM",
       "PRECO": 5.98,
-      "EXP_SCORE": 5.3064,
+      "EXP_SCORE": 4.6143,
       "ATLETA_ID": 97795
     },
     {
@@ -66,6 +66,17 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "MEI",
+      "NOME": "Picco",
+      "CLUBE": "REM",
+      "PRECO": 8.25,
+      "EXP_SCORE": 4.2584,
+      "ATLETA_ID": 113125
+    },
+    {
+      "RODADA": 22,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
       "NOME": "Denilson",
       "CLUBE": "MIR",
       "PRECO": 6.81,
@@ -77,33 +88,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Picco",
-      "CLUBE": "REM",
-      "PRECO": 8.25,
-      "EXP_SCORE": 3.703,
-      "ATLETA_ID": 113125
-    },
-    {
-      "RODADA": 22,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
       "NOME": "Josué",
       "CLUBE": "CFC",
       "PRECO": 6.23,
       "EXP_SCORE": 4.8445,
       "ATLETA_ID": 84626
-    },
-    {
-      "RODADA": 22,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "José Welison",
-      "CLUBE": "REM",
-      "PRECO": 4.04,
-      "EXP_SCORE": 2.9634,
-      "ATLETA_ID": 86859
     },
     {
       "RODADA": 22,
@@ -131,12 +120,23 @@
       "RODADA": 22,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Fernando",
+      "CLUBE": "RBB",
+      "PRECO": 5.37,
+      "EXP_SCORE": 3.6869,
+      "ATLETA_ID": 100695
+    },
+    {
+      "RODADA": 22,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Fernando Seabra",
-      "CLUBE": "CFC",
-      "PRECO": 7.66,
-      "EXP_SCORE": 4.8531,
-      "ATLETA_ID": 126977
+      "NOME": "Rafael Guanaes",
+      "CLUBE": "MIR",
+      "PRECO": 7.44,
+      "EXP_SCORE": 3.6282,
+      "ATLETA_ID": 104027
     },
     {
       "RODADA": 22,
@@ -157,7 +157,7 @@
       "NOME": "Bruno Melo",
       "CLUBE": "CFC",
       "PRECO": 5.54,
-      "EXP_SCORE": 3.2703,
+      "EXP_SCORE": 2.9433,
       "ATLETA_ID": 84339
     },
     {
@@ -168,7 +168,7 @@
       "NOME": "Jacy",
       "CLUBE": "CFC",
       "PRECO": 5.24,
-      "EXP_SCORE": 3.8503,
+      "EXP_SCORE": 3.4652,
       "ATLETA_ID": 97878
     },
     {
@@ -176,22 +176,22 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Bruno Henrique",
-      "CLUBE": "INT",
-      "PRECO": 3.8,
-      "EXP_SCORE": 1.4662,
-      "ATLETA_ID": 70944
+      "NOME": "André",
+      "CLUBE": "COR",
+      "PRECO": 6.15,
+      "EXP_SCORE": 3.7577,
+      "ATLETA_ID": 145744
     },
     {
       "RODADA": 22,
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Renê",
-      "CLUBE": "VIT",
-      "PRECO": 8.67,
-      "EXP_SCORE": 4.9259,
-      "ATLETA_ID": 130209
+      "NOME": "Marcinho",
+      "CLUBE": "CHA",
+      "PRECO": 5.15,
+      "EXP_SCORE": 2.8271,
+      "ATLETA_ID": 95332
     }
   ]
 }
