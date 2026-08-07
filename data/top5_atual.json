@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 22,
-  "atualizado_em": "2026-08-07T07:35:06.767Z",
+  "atualizado_em": "2026-08-07T07:54:58.307Z",
   "dados": [
     {
       "RODADA": 22,
@@ -52,7 +52,7 @@
       "CLUBE": "BAH",
       "PRECO": 9.57,
       "EXP_SCORE": 4.0466,
-      "FACTOR": 1.1359662576714753,
+      "FACTOR": 1.1359662576714755,
       "ATLETA_ID": 91101
     },
     {
@@ -62,7 +62,7 @@
       "CLUBE": "BAH",
       "PRECO": 11.92,
       "EXP_SCORE": 5.7526,
-      "FACTOR": 1.1359662576714753,
+      "FACTOR": 1.1359662576714755,
       "ATLETA_ID": 107093
     },
     {
@@ -112,7 +112,7 @@
       "CLUBE": "BAH",
       "PRECO": 7.02,
       "EXP_SCORE": 3.9778,
-      "FACTOR": 1.1359662576714753,
+      "FACTOR": 1.1359662576714755,
       "ATLETA_ID": 91772
     },
     {
@@ -208,16 +208,6 @@
     {
       "RODADA": 22,
       "POS": "ATA",
-      "NOME": "Pedro",
-      "CLUBE": "FLA",
-      "PRECO": 16.04,
-      "EXP_SCORE": 9.7188,
-      "FACTOR": 1.088640590972479,
-      "ATLETA_ID": 94583
-    },
-    {
-      "RODADA": 22,
-      "POS": "ATA",
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 12.06,
@@ -228,10 +218,20 @@
     {
       "RODADA": 22,
       "POS": "ATA",
+      "NOME": "Pedro",
+      "CLUBE": "FLA",
+      "PRECO": 16.04,
+      "EXP_SCORE": 8.4511,
+      "FACTOR": 1.088640590972479,
+      "ATLETA_ID": 94583
+    },
+    {
+      "RODADA": 22,
+      "POS": "ATA",
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 12.08,
-      "EXP_SCORE": 7.128,
+      "EXP_SCORE": 8.1972,
       "FACTOR": 0.968179588744898,
       "ATLETA_ID": 143193
     },
