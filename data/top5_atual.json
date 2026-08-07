@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 22,
-  "atualizado_em": "2026-08-07T07:54:58.307Z",
+  "atualizado_em": "2026-08-07T07:59:59.025Z",
   "dados": [
     {
       "RODADA": 22,
@@ -14,16 +14,6 @@
       "EXP_SCORE": 4.469,
       "FACTOR": 1.0814458818423855,
       "ATLETA_ID": 72018
-    },
-    {
-      "RODADA": 22,
-      "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.93,
-      "EXP_SCORE": 4.3844,
-      "FACTOR": 1.1244722232149695,
-      "ATLETA_ID": 104084
     },
     {
       "RODADA": 22,
@@ -48,12 +38,32 @@
     {
       "RODADA": 22,
       "POS": "GOL",
-      "NOME": "Ronaldo",
-      "CLUBE": "BAH",
-      "PRECO": 9.57,
-      "EXP_SCORE": 4.0466,
-      "FACTOR": 1.1359662576714755,
-      "ATLETA_ID": 91101
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 8.93,
+      "EXP_SCORE": 3.9459,
+      "FACTOR": 1.1244722232149695,
+      "ATLETA_ID": 104084
+    },
+    {
+      "RODADA": 22,
+      "POS": "GOL",
+      "NOME": "Everson",
+      "CLUBE": "CAM",
+      "PRECO": 9.54,
+      "EXP_SCORE": 3.7656,
+      "FACTOR": 0.9568150409720981,
+      "ATLETA_ID": 72294
+    },
+    {
+      "RODADA": 22,
+      "POS": "LAT",
+      "NOME": "Juninho Capixaba",
+      "CLUBE": "RBB",
+      "PRECO": 13.39,
+      "EXP_SCORE": 6.0523,
+      "FACTOR": 1.0814458818423855,
+      "ATLETA_ID": 94968
     },
     {
       "RODADA": 22,
@@ -64,16 +74,6 @@
       "EXP_SCORE": 5.7526,
       "FACTOR": 1.1359662576714755,
       "ATLETA_ID": 107093
-    },
-    {
-      "RODADA": 22,
-      "POS": "LAT",
-      "NOME": "Juninho Capixaba",
-      "CLUBE": "RBB",
-      "PRECO": 13.39,
-      "EXP_SCORE": 5.4471,
-      "FACTOR": 1.0814458818423855,
-      "ATLETA_ID": 94968
     },
     {
       "RODADA": 22,
@@ -208,6 +208,16 @@
     {
       "RODADA": 22,
       "POS": "ATA",
+      "NOME": "Pedro",
+      "CLUBE": "FLA",
+      "PRECO": 16.04,
+      "EXP_SCORE": 9.7188,
+      "FACTOR": 1.088640590972479,
+      "ATLETA_ID": 94583
+    },
+    {
+      "RODADA": 22,
+      "POS": "ATA",
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 12.06,
@@ -218,20 +228,10 @@
     {
       "RODADA": 22,
       "POS": "ATA",
-      "NOME": "Pedro",
-      "CLUBE": "FLA",
-      "PRECO": 16.04,
-      "EXP_SCORE": 8.4511,
-      "FACTOR": 1.088640590972479,
-      "ATLETA_ID": 94583
-    },
-    {
-      "RODADA": 22,
-      "POS": "ATA",
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 12.08,
-      "EXP_SCORE": 8.1972,
+      "EXP_SCORE": 7.128,
       "FACTOR": 0.968179588744898,
       "ATLETA_ID": 143193
     },
