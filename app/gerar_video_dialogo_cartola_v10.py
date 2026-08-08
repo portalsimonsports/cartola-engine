@@ -5,11 +5,15 @@ import json
 from pathlib import Path
 from typing import Any, Dict, List
 
+from PIL import Image, ImageDraw
+
+import gerar_video_dialogo_cartola_v1 as base
 import gerar_video_dialogo_cartola_v3 as v3
 import gerar_video_dialogo_cartola_v9 as v9
 
 VERSION = "cartola_dialogo_tecnico_v10_fases_2026_08_08"
 ORIGINAL_BUILD = v9.build_dialogue_v9
+ORIGINAL_CLOSING_CARD = v9.closing_card
 
 
 def clean(value: Any) -> str:
@@ -78,6 +82,33 @@ def build_dialogue_v10(round_value: int, data: Dict[str, Any]) -> List[v3.Segmen
     return adapted
 
 
+def closing_card_v10(data: Dict[str, Any], round_value: int, output: Path) -> None:
+    ORIGINAL_CLOSING_CARD(data, round_value, output)
+    if clean(data.get("fase_video")).upper() != "PRE_FECHAMENTO":
+        return
+
+    image = Image.open(output).convert("RGBA")
+    draw = ImageDraw.Draw(image)
+    # Substitui somente o banner inferior da V9. O restante do quadro aprovado é preservado.
+    draw.rectangle((28, 666, 632, 760), fill=(3, 20, 39, 255))
+    v3.rounded(draw, (35, 678, 625, 748), 20, (23, 14, 3), (255, 190, 55), 2)
+    draw.text(
+        (330, 702),
+        "PRÓXIMO PASSO: ESCALAÇÕES CONFIRMADAS",
+        font=base.font(16, True),
+        fill=(255, 190, 55),
+        anchor="mm",
+    )
+    draw.text(
+        (330, 727),
+        "Depois: acompanhamento e avaliação final da rodada.",
+        font=base.font(13, True),
+        fill=base.SILVER,
+        anchor="mm",
+    )
+    image.convert("RGB").save(output, "PNG", optimize=True)
+
+
 def update_manifest(output_path: Path, data: Dict[str, Any]) -> None:
     path = output_path.with_suffix(".json")
     payload = json.loads(path.read_text(encoding="utf-8"))
@@ -92,6 +123,7 @@ def update_manifest(output_path: Path, data: Dict[str, Any]) -> None:
         if "pré-fechamento" not in spoken and "pre-fechamento" not in spoken:
             raise RuntimeError("Roteiro de pré-fechamento não identificado no áudio.")
         payload["pre_fechamento_identificado_no_audio"] = True
+        payload["encerramento_pre_fechamento_corrigido"] = True
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
@@ -99,13 +131,16 @@ def generate(round_value: int, repo_root: Path, output_path: Path) -> Path:
     data_path = repo_root / "data" / f"analise_tecnica_rodada_{round_value}_v3.json"
     data = json.loads(data_path.read_text(encoding="utf-8"))
     old_build = v9.build_dialogue_v9
+    old_closing = v9.closing_card
     try:
         v9.build_dialogue_v9 = build_dialogue_v10
+        v9.closing_card = closing_card_v10
         result = v9.generate(round_value, repo_root, output_path)
         update_manifest(output_path, data)
         return result
     finally:
         v9.build_dialogue_v9 = old_build
+        v9.closing_card = old_closing
 
 
 def main() -> None:
