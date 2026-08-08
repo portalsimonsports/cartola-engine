@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 22,
-  "atualizado_em": "2026-08-08T16:40:12.882Z",
+  "atualizado_em": "2026-08-08T16:45:14.169Z",
   "dados": [
     {
       "RODADA": 22,
@@ -208,6 +208,16 @@
     {
       "RODADA": 22,
       "POS": "ATA",
+      "NOME": "Pedro",
+      "CLUBE": "FLA",
+      "PRECO": 16.04,
+      "EXP_SCORE": 9.7338,
+      "FACTOR": 1.0903131882829273,
+      "ATLETA_ID": 94583
+    },
+    {
+      "RODADA": 22,
+      "POS": "ATA",
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 12.06,
@@ -218,22 +228,22 @@
     {
       "RODADA": 22,
       "POS": "ATA",
-      "NOME": "Pedro",
-      "CLUBE": "FLA",
-      "PRECO": 16.04,
-      "EXP_SCORE": 8.4641,
-      "FACTOR": 1.0903131882829273,
-      "ATLETA_ID": 94583
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 12.08,
+      "EXP_SCORE": 7.1381,
+      "FACTOR": 0.9695555998454126,
+      "ATLETA_ID": 143193
     },
     {
       "RODADA": 22,
       "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 12.08,
-      "EXP_SCORE": 8.2088,
-      "FACTOR": 0.9695555998454126,
-      "ATLETA_ID": 143193
+      "NOME": "Breno Lopes",
+      "CLUBE": "CFC",
+      "PRECO": 9.09,
+      "EXP_SCORE": 6.2005,
+      "FACTOR": 1.1160853419233174,
+      "ATLETA_ID": 93988
     },
     {
       "RODADA": 22,
@@ -244,16 +254,6 @@
       "EXP_SCORE": 5.7442,
       "FACTOR": 1.1033408703429046,
       "ATLETA_ID": 113103
-    },
-    {
-      "RODADA": 22,
-      "POS": "ATA",
-      "NOME": "Andrés Gómez",
-      "CLUBE": "VAS",
-      "PRECO": 13.56,
-      "EXP_SCORE": 5.5679,
-      "FACTOR": 0.9177178113346511,
-      "ATLETA_ID": 116706
     },
     {
       "RODADA": 22,
