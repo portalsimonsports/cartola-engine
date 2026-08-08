@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 22,
-  "atualizado_em": "2026-08-08T01:59:55.866Z",
+  "atualizado_em": "2026-08-08T02:05:10.397Z",
   "dados": [
     {
       "RODADA": 22,
@@ -11,7 +11,7 @@
       "NOME": "Tiago Volpi",
       "CLUBE": "RBB",
       "PRECO": 10.55,
-      "EXP_SCORE": 4.4703,
+      "EXP_SCORE": 4.967,
       "FACTOR": 1.2019461005062524,
       "ATLETA_ID": 72018
     },
@@ -88,16 +88,6 @@
     {
       "RODADA": 22,
       "POS": "LAT",
-      "NOME": "Piquerez",
-      "CLUBE": "PAL",
-      "PRECO": 12.48,
-      "EXP_SCORE": 4.8004,
-      "FACTOR": 1.1136907420144098,
-      "ATLETA_ID": 102130
-    },
-    {
-      "RODADA": 22,
-      "POS": "LAT",
       "NOME": "Matheuzinho",
       "CLUBE": "COR",
       "PRECO": 11.37,
@@ -107,13 +97,13 @@
     },
     {
       "RODADA": 22,
-      "POS": "ZAG",
-      "NOME": "Jonathan Jesus",
-      "CLUBE": "CRU",
-      "PRECO": 6.91,
-      "EXP_SCORE": 4.2112,
-      "FACTOR": 1.149358848135662,
-      "ATLETA_ID": 124912
+      "POS": "LAT",
+      "NOME": "Piquerez",
+      "CLUBE": "PAL",
+      "PRECO": 12.48,
+      "EXP_SCORE": 4.3203,
+      "FACTOR": 1.1136907420144098,
+      "ATLETA_ID": 102130
     },
     {
       "RODADA": 22,
@@ -134,6 +124,16 @@
       "EXP_SCORE": 3.7906,
       "FACTOR": 1.0825308723545795,
       "ATLETA_ID": 91772
+    },
+    {
+      "RODADA": 22,
+      "POS": "ZAG",
+      "NOME": "Jonathan Jesus",
+      "CLUBE": "CRU",
+      "PRECO": 6.91,
+      "EXP_SCORE": 3.6619,
+      "FACTOR": 1.149358848135662,
+      "ATLETA_ID": 124912
     },
     {
       "RODADA": 22,
