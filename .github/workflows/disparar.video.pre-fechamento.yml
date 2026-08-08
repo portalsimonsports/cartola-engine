@@ -41,6 +41,17 @@ jobs:
 
           base = Path('data/publicacoes_atuais')
           candidatos = []
+
+          def rows(payload):
+              values = (
+                  payload.get('jogadores')
+                  or payload.get('atletas')
+                  or payload.get('dados')
+                  or payload.get('lista')
+                  or []
+              )
+              return [item for item in values if isinstance(item, dict)]
+
           for path in base.glob('top5_rodada_*.json'):
               match = re.search(r'rodada_(\d+)\.json$', path.name)
               if not match:
@@ -61,11 +72,6 @@ jobs:
               raise SystemExit(0)
 
           rodada, top_path, top = max(candidatos, key=lambda item: item[0])
-
-          def rows(payload):
-              values = payload.get('jogadores') or payload.get('atletas') or payload.get('dados') or []
-              return [item for item in values if isinstance(item, dict)]
-
           if len(rows(top)) < 30:
               print(f'Top 5 da rodada {rodada} ainda incompleto: {len(rows(top))}.')
               with output.open('a', encoding='utf-8') as fh:
