@@ -3,7 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
-from typing import Any, Dict, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
 import gerar_base_video_por_snapshot as base
 
@@ -19,23 +19,112 @@ def as_int(value: Any, default: int = 0) -> int:
         return default
 
 
+def rows(payload: Dict[str, Any]) -> List[Dict[str, Any]]:
+    raw = (
+        payload.get("jogadores")
+        or payload.get("atletas")
+        or payload.get("dados")
+        or payload.get("lista")
+        or []
+    )
+    return [item for item in raw if isinstance(item, dict)]
+
+
+def valid_snapshot(
+    payload: Dict[str, Any],
+    rodada: int,
+    evento: str,
+    minimo: int,
+) -> bool:
+    return (
+        isinstance(payload, dict)
+        and as_int(payload.get("rodada")) == rodada
+        and safe(payload.get("evento_programado")).upper() == evento
+        and len(rows(payload)) >= minimo
+    )
+
+
+def recover_from_git(
+    root: Path,
+    relative_path: str,
+    rodada: int,
+    evento: str,
+    minimo: int,
+) -> Tuple[Dict[str, Any], str]:
+    current_path = root / relative_path
+    current = base.read_json(current_path, required=False)
+    if valid_snapshot(current, rodada, evento, minimo):
+        return current, "WORKTREE"
+
+    for commit in base.git_commits_for_path(root, relative_path):
+        payload = base.git_json(root, commit, relative_path)
+        if not valid_snapshot(payload, rodada, evento, minimo):
+            continue
+
+        # O gerador-base antigo reconhece Top 5 em `dados`, enquanto a
+        # publicação aprovada usa `lista`. Mantemos ambos no worktree.
+        if evento == "PRE_FECHAMENTO_TOP5" and not payload.get("dados"):
+            payload["dados"] = rows(payload)
+
+        current_path.parent.mkdir(parents=True, exist_ok=True)
+        current_path.write_text(
+            json.dumps(payload, ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
+        print(
+            f"Snapshot histórico recuperado: {relative_path} | "
+            f"evento={evento} | commit={commit} | registros={len(rows(payload))}"
+        )
+        return payload, commit
+
+    raise RuntimeError(
+        f"Não foi encontrado snapshot histórico {evento} da rodada {rodada} "
+        f"em {relative_path}."
+    )
+
+
+def prepare_preclose_snapshots(rodada: int, root: Path) -> Dict[str, str]:
+    sources: Dict[str, str] = {}
+    team_paths = {
+        "economico": f"data/publicacoes_atuais/time_economico_rodada_{rodada}.json",
+        "intermediario": f"data/publicacoes_atuais/time_intermediario_rodada_{rodada}.json",
+        "pontuacao": f"data/publicacoes_atuais/time_pontuacao_rodada_{rodada}.json",
+    }
+
+    for slug, path in team_paths.items():
+        _, source = recover_from_git(
+            root,
+            path,
+            rodada,
+            "PRE_FECHAMENTO_TIMES",
+            12,
+        )
+        sources[slug] = source
+
+    top_path = f"data/publicacoes_atuais/top5_rodada_{rodada}.json"
+    _, source = recover_from_git(
+        root,
+        top_path,
+        rodada,
+        "PRE_FECHAMENTO_TOP5",
+        30,
+    )
+    sources["top5"] = source
+    return sources
+
+
 def build_pre_fechamento(rodada: int, root: Path) -> Path:
+    sources = prepare_preclose_snapshots(rodada, root)
     original_validate = base.validate_team_snapshot
     original_recover = base.recover_initial_top5
 
     def validate_team(payload: Dict[str, Any], round_value: int, label: str) -> None:
-        if as_int(payload.get("rodada")) != round_value:
+        if not valid_snapshot(payload, round_value, "PRE_FECHAMENTO_TIMES", 12):
             raise RuntimeError(
-                f"Snapshot {label} pertence à rodada {payload.get('rodada')}, não à rodada {round_value}."
-            )
-        event = safe(payload.get("evento_programado")).upper()
-        if event != "PRE_FECHAMENTO_TIMES":
-            raise RuntimeError(
-                f"Snapshot {label} não é de PRE_FECHAMENTO_TIMES: {event or 'SEM_EVENTO'}"
-            )
-        if len(base.athletes(payload)) < 12:
-            raise RuntimeError(
-                f"Snapshot {label} incompleto: {len(base.athletes(payload))} registros."
+                f"Snapshot {label} inválido para PRE_FECHAMENTO_TIMES: "
+                f"rodada={payload.get('rodada')} "
+                f"evento={payload.get('evento_programado')} "
+                f"registros={len(rows(payload))}"
             )
 
     def recover_top5(
@@ -44,19 +133,18 @@ def build_pre_fechamento(rodada: int, root: Path) -> Path:
         current_snapshot: Dict[str, Any],
         target_time: Optional[object],
     ) -> Tuple[Dict[str, Any], str]:
-        del target_time
-        event = safe(current_snapshot.get("evento_programado")).upper()
-        rows = base.athletes(current_snapshot)
-        if as_int(current_snapshot.get("rodada")) != round_value:
-            raise RuntimeError("Top 5 de pré-fechamento pertence a outra rodada.")
-        if event != "PRE_FECHAMENTO_TOP5":
+        del repo_root, target_time
+        if not valid_snapshot(
+            current_snapshot,
+            round_value,
+            "PRE_FECHAMENTO_TOP5",
+            30,
+        ):
             raise RuntimeError(
-                f"Top 5 não é de PRE_FECHAMENTO_TOP5: {event or 'SEM_EVENTO'}"
+                "Top 5 recuperado não corresponde ao PRE_FECHAMENTO_TOP5."
             )
-        if len(rows) < 30:
-            raise RuntimeError(
-                f"Top 5 de pré-fechamento incompleto: {len(rows)} registros."
-            )
+        if not current_snapshot.get("dados"):
+            current_snapshot["dados"] = rows(current_snapshot)
         path = f"data/publicacoes_atuais/top5_rodada_{round_value}.json"
         return current_snapshot, path
 
@@ -74,6 +162,7 @@ def build_pre_fechamento(rodada: int, root: Path) -> Path:
     data["evento_times"] = "PRE_FECHAMENTO_TIMES"
     data["evento_top5"] = "PRE_FECHAMENTO_TOP5"
     data["publicacao_automatica"] = True
+    data["snapshots_recuperados_do_git"] = sources
 
     for item in (data.get("times") or {}).values():
         if isinstance(item, dict):
