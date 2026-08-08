@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import subprocess
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
@@ -44,6 +45,25 @@ def valid_snapshot(
     )
 
 
+def restore_binary(root: Path, commit: str, relative_path: str) -> None:
+    if not commit or commit == "WORKTREE":
+        return
+    result = subprocess.run(
+        ["git", "show", f"{commit}:{relative_path}"],
+        cwd=root,
+        capture_output=True,
+        check=False,
+    )
+    if result.returncode != 0 or not result.stdout:
+        raise RuntimeError(
+            f"Imagem histórica não encontrada no commit {commit}: {relative_path}"
+        )
+    output = root / relative_path
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_bytes(result.stdout)
+    print(f"Imagem histórica recuperada: {relative_path} | commit={commit}")
+
+
 def recover_from_git(
     root: Path,
     relative_path: str,
@@ -61,8 +81,6 @@ def recover_from_git(
         if not valid_snapshot(payload, rodada, evento, minimo):
             continue
 
-        # O gerador-base antigo reconhece Top 5 em `dados`, enquanto a
-        # publicação aprovada usa `lista`. Mantemos ambos no worktree.
         if evento == "PRE_FECHAMENTO_TOP5" and not payload.get("dados"):
             payload["dados"] = rows(payload)
 
@@ -100,6 +118,12 @@ def prepare_preclose_snapshots(rodada: int, root: Path) -> Dict[str, str]:
             12,
         )
         sources[slug] = source
+        if source != "WORKTREE":
+            restore_binary(
+                root,
+                source,
+                f"output/time_{slug}_rodada_{rodada}.png",
+            )
 
     top_path = f"data/publicacoes_atuais/top5_rodada_{rodada}.json"
     _, source = recover_from_git(
@@ -110,6 +134,8 @@ def prepare_preclose_snapshots(rodada: int, root: Path) -> Dict[str, str]:
         30,
     )
     sources["top5"] = source
+    if source != "WORKTREE":
+        restore_binary(root, source, f"output/top5_rodada_{rodada}.png")
     return sources
 
 
