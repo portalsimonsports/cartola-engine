@@ -9,8 +9,7 @@ on:
 
 permissions:
   contents: write
-
-actions: read
+  actions: read
 
 concurrency:
   group: cartola-video-pre-fechamento-guard
