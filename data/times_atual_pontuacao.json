@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 22,
   "tipo": "PONTUACAO",
-  "atualizado_em": "2026-08-08T16:49:52.672Z",
+  "atualizado_em": "2026-08-08T16:54:55.051Z",
   "dados": [
     {
       "RODADA": 22,
@@ -99,6 +99,17 @@
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "ATA",
+      "NOME": "Pedro",
+      "CLUBE": "FLA",
+      "PRECO": 16.04,
+      "EXP_SCORE": 9.7338,
+      "ATLETA_ID": 94583
+    },
+    {
+      "RODADA": 22,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 12.06,
@@ -110,21 +121,10 @@
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Pedro",
-      "CLUBE": "FLA",
-      "PRECO": 16.04,
-      "EXP_SCORE": 8.4641,
-      "ATLETA_ID": 94583
-    },
-    {
-      "RODADA": 22,
-      "TIPO": "PONTUACAO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 12.08,
-      "EXP_SCORE": 8.2088,
+      "EXP_SCORE": 7.1381,
       "ATLETA_ID": 143193
     },
     {
@@ -187,11 +187,11 @@
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Lucas Barbosa",
-      "CLUBE": "RBB",
-      "PRECO": 9.81,
-      "EXP_SCORE": 5.4513,
-      "ATLETA_ID": 112886
+      "NOME": "Breno Lopes",
+      "CLUBE": "CFC",
+      "PRECO": 9.09,
+      "EXP_SCORE": 6.2005,
+      "ATLETA_ID": 93988
     }
   ]
 }
