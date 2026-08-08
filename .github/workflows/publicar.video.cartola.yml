@@ -25,7 +25,7 @@ concurrency:
 jobs:
   gerar-e-publicar:
     runs-on: ubuntu-latest
-    timeout-minutes: 55
+    timeout-minutes: 65
 
     steps:
       - name: Checkout
@@ -67,38 +67,91 @@ jobs:
           echo "video=$VIDEO" >> "$GITHUB_OUTPUT"
           echo "manifesto=$MANIFESTO" >> "$GITHUB_OUTPUT"
 
-      - name: Validar snapshots publicados
+      - name: Aguardar snapshots corretos da fase
         env:
           RODADA: ${{ steps.evento.outputs.rodada }}
+          FASE: ${{ steps.evento.outputs.fase }}
         run: |
           set -e
-          test -s "data/publicacoes_atuais/time_economico_rodada_${RODADA}.json"
-          test -s "data/publicacoes_atuais/time_intermediario_rodada_${RODADA}.json"
-          test -s "data/publicacoes_atuais/time_pontuacao_rodada_${RODADA}.json"
-          test -s "data/publicacoes_atuais/top5_rodada_${RODADA}.json"
-          python - "$RODADA" <<'PY'
+          python - "$RODADA" "$FASE" <<'PY'
           import json
+          import subprocess
           import sys
+          import time
           from pathlib import Path
 
           rodada = int(sys.argv[1])
-          nomes = ['time_economico', 'time_intermediario', 'time_pontuacao', 'top5']
-          for nome in nomes:
-              path = Path(f'data/publicacoes_atuais/{nome}_rodada_{rodada}.json')
-              data = json.loads(path.read_text(encoding='utf-8'))
-              if int(data.get('rodada', 0)) != rodada:
-                  raise SystemExit(f'{path}: rodada incorreta')
-              if str(data.get('evento_programado', '')).upper() != 'SELECAO_INICIAL':
-                  raise SystemExit(f'{path}: não é snapshot da SELECAO_INICIAL')
-              print(f'Snapshot validado: {path}')
+          fase = sys.argv[2].upper()
+          evento_times = 'SELECAO_INICIAL' if fase == 'INICIAL' else 'PRE_FECHAMENTO_TIMES'
+          evento_top5 = 'SELECAO_INICIAL' if fase == 'INICIAL' else 'PRE_FECHAMENTO_TOP5'
+          nomes_times = ['time_economico', 'time_intermediario', 'time_pontuacao']
+
+          def rows(payload):
+              values = payload.get('jogadores') or payload.get('atletas') or payload.get('dados') or []
+              return [item for item in values if isinstance(item, dict)]
+
+          def carregar(path):
+              if not path.exists():
+                  return {}
+              try:
+                  data = json.loads(path.read_text(encoding='utf-8'))
+                  return data if isinstance(data, dict) else {}
+              except Exception:
+                  return {}
+
+          def pronto():
+              problemas = []
+              for nome in nomes_times:
+                  path = Path(f'data/publicacoes_atuais/{nome}_rodada_{rodada}.json')
+                  data = carregar(path)
+                  if int(data.get('rodada') or 0) != rodada:
+                      problemas.append(f'{nome}: rodada')
+                      continue
+                  if str(data.get('evento_programado') or '').upper() != evento_times:
+                      problemas.append(f"{nome}: {data.get('evento_programado') or 'SEM_EVENTO'}")
+                      continue
+                  if len(rows(data)) < 12:
+                      problemas.append(f'{nome}: {len(rows(data))} registros')
+
+              top_path = Path(f'data/publicacoes_atuais/top5_rodada_{rodada}.json')
+              top = carregar(top_path)
+              if int(top.get('rodada') or 0) != rodada:
+                  problemas.append('top5: rodada')
+              elif str(top.get('evento_programado') or '').upper() != evento_top5:
+                  problemas.append(f"top5: {top.get('evento_programado') or 'SEM_EVENTO'}")
+              elif fase == 'PRE_FECHAMENTO' and len(rows(top)) < 30:
+                  problemas.append(f'top5: {len(rows(top))} registros')
+              return problemas
+
+          for tentativa in range(1, 31):
+              subprocess.run(['git', 'fetch', 'origin', 'main'], check=True)
+              subprocess.run(['git', 'reset', '--hard', 'origin/main'], check=True)
+              problemas = pronto()
+              if not problemas:
+                  print(
+                      f'Snapshots prontos: rodada={rodada} fase={fase} '
+                      f'times={evento_times} top5={evento_top5}'
+                  )
+                  raise SystemExit(0)
+              print(f'Tentativa {tentativa}/30 aguardando snapshots: ' + ' | '.join(problemas))
+              if tentativa < 30:
+                  time.sleep(20)
+
+          raise SystemExit(
+              f'Snapshots da fase {fase} não ficaram prontos em 10 minutos.'
+          )
           PY
 
-      - name: Gerar base pelos snapshots publicados
+      - name: Gerar base pelos snapshots da fase
         env:
           RODADA: ${{ steps.evento.outputs.rodada }}
+          FASE: ${{ steps.evento.outputs.fase }}
         run: |
           set -e
-          python app/gerar_base_video_por_snapshot.py --rodada "$RODADA" --repo-root .
+          python app/gerar_base_video_por_fase.py \
+            --rodada "$RODADA" \
+            --fase "$FASE" \
+            --repo-root .
           test -s "data/analise_tecnica_rodada_${RODADA}_v3.json"
 
       - name: Enriquecer classificação forma e desempenho reais
@@ -115,14 +168,11 @@ jobs:
           rodada = int(sys.argv[1])
           path = Path(f'data/analise_tecnica_rodada_{rodada}_v3.json')
           data = json.loads(path.read_text(encoding='utf-8'))
-
           if data.get('contexto_real_validado') is not True:
               raise SystemExit('Contexto real não validado.')
-
           jogos = data.get('jogos') or []
           if len(jogos) != 10:
               raise SystemExit(f'Quantidade de jogos inválida: {len(jogos)}')
-
           for jogo in jogos:
               if int(jogo.get('pos_mandante') or 0) <= 0:
                   raise SystemExit(f"Posição inválida: {jogo.get('mandante')}")
@@ -136,11 +186,10 @@ jobs:
                   raise SystemExit(f"Forma inválida: {jogo.get('mandante')}")
               if len(str(jogo.get('forma_visitante') or '').split()) < 3:
                   raise SystemExit(f"Forma inválida: {jogo.get('visitante')}")
-
           print('Base real validada: nomes completos, classificação e forma recente.')
           PY
 
-      - name: Validar imagens e geradores V6
+      - name: Validar imagens e geradores
         env:
           RODADA: ${{ steps.evento.outputs.rodada }}
         run: |
@@ -150,20 +199,22 @@ jobs:
           test -s "output/time_pontuacao_rodada_${RODADA}.png"
           test -s "output/top5_rodada_${RODADA}.png"
           python -m py_compile app/gerar_base_video_por_snapshot.py
+          python -m py_compile app/gerar_base_video_por_fase.py
           python -m py_compile app/enriquecer_base_video_cartola_v1.py
-          python -m py_compile app/gerar_video_dialogo_cartola_v4.py
           python -m py_compile app/gerar_video_dialogo_cartola_v6.py
+          python -m py_compile app/gerar_video_dialogo_cartola_v9.py
           python -m py_compile app/enviar_video_telegram.py
 
-      - name: Gerar vídeo V6 com contexto real
+      - name: Gerar vídeo com contexto real
         env:
           RODADA: ${{ steps.evento.outputs.rodada }}
+          FASE: ${{ steps.evento.outputs.fase }}
           VIDEO: ${{ steps.evento.outputs.video }}
           MANIFESTO: ${{ steps.evento.outputs.manifesto }}
         run: |
           set -e
           rm -f "$VIDEO" "$MANIFESTO"
-          python app/gerar_video_dialogo_cartola_v6.py \
+          VIDEO_FASE="$FASE" python app/gerar_video_dialogo_cartola_v6.py \
             --rodada "$RODADA" \
             --repo-root . \
             --output "$VIDEO"
@@ -174,10 +225,11 @@ jobs:
         env:
           VIDEO: ${{ steps.evento.outputs.video }}
           MANIFESTO: ${{ steps.evento.outputs.manifesto }}
+          FASE: ${{ steps.evento.outputs.fase }}
         run: |
           set -e
           DURACAO="$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$VIDEO")"
-          python - "$DURACAO" "$MANIFESTO" <<'PY'
+          python - "$DURACAO" "$MANIFESTO" "$FASE" <<'PY'
           import json
           import re
           import sys
@@ -186,6 +238,7 @@ jobs:
 
           duration = float(sys.argv[1])
           manifest = json.loads(Path(sys.argv[2]).read_text(encoding='utf-8'))
+          fase = sys.argv[3].upper()
 
           if duration < 480:
               raise SystemExit(f'Vídeo curto demais: {duration:.2f}s')
@@ -208,29 +261,14 @@ jobs:
               if unicodedata.category(char) != 'Mn'
           )
 
-          encontrados_proibidos = []
-
-          # Detecta apenas zero isolado. Não confunde 10º ou 20º com 0º.
+          encontrados = []
           if re.search(r'(?<!\d)0[ºo]\s+colocado\b', conteudo, flags=re.IGNORECASE):
-              encontrados_proibidos.append('0º colocado isolado')
-
-          proibidos_textuais = [
-              'recorte histórico preservado',
-              'recorte historico preservado',
-              'fora do snapshot',
-              'sem dados',
-              'sem dado',
-          ]
-          encontrados_proibidos.extend(
-              termo for termo in proibidos_textuais
-              if termo in conteudo or termo in sem_acento
-          )
-
-          if encontrados_proibidos:
-              raise SystemExit(
-                  'Vídeo bloqueado por conteúdo provisório ou inválido: '
-                  + ', '.join(encontrados_proibidos)
-              )
+              encontrados.append('0º colocado isolado')
+          for termo in ['recorte histórico preservado', 'recorte historico preservado', 'fora do snapshot', 'sem dados', 'sem dado']:
+              if termo in conteudo or termo in sem_acento:
+                  encontrados.append(termo)
+          if encontrados:
+              raise SystemExit('Vídeo bloqueado por conteúdo inválido: ' + ', '.join(encontrados))
 
           obrigatorios = {
               'classificação real': ['ocupa a', 'colocado da competição', 'posição'],
@@ -239,18 +277,11 @@ jobs:
               'valor': ['cartoletas', 'custa'],
               'nomes completos': ['grêmio', 'gremio', 'são paulo', 'sao paulo'],
           }
-          ausentes = [
-              grupo
-              for grupo, termos in obrigatorios.items()
-              if not any(termo in conteudo or termo in sem_acento for termo in termos)
-          ]
+          ausentes = [grupo for grupo, termos in obrigatorios.items() if not any(t in conteudo or t in sem_acento for t in termos)]
           if ausentes:
               raise SystemExit('Vídeo incompleto; grupos ausentes: ' + ', '.join(ausentes))
 
-          print(
-              f'Vídeo V6 validado: {duration:.2f}s, {len(timeline)} falas, '
-              'sem zero colocado e sem texto provisório.'
-          )
+          print(f'Vídeo validado: fase={fase}, {duration:.2f}s, {len(timeline)} falas.')
           PY
 
       - name: Enviar vídeo ao Telegram
@@ -278,7 +309,7 @@ jobs:
             "${{ steps.evento.outputs.video }}" \
             "${{ steps.evento.outputs.manifesto }}"
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m "Vídeo V6 ${{ steps.evento.outputs.fase }} da rodada ${{ steps.evento.outputs.rodada }}"
+          git commit -m "Vídeo ${{ steps.evento.outputs.fase }} da rodada ${{ steps.evento.outputs.rodada }}"
           enviado=0
           for tentativa in 1 2 3 4 5; do
             git fetch origin main
