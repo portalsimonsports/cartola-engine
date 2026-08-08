@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 22,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-08-08T01:29:43.859Z",
+  "atualizado_em": "2026-08-08T01:34:44.498Z",
   "dados": [
     {
       "RODADA": 22,
@@ -110,17 +110,6 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Vitinho",
-      "CLUBE": "INT",
-      "PRECO": 9.03,
-      "EXP_SCORE": 4.5984,
-      "ATLETA_ID": 101960
-    },
-    {
-      "RODADA": 22,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 12.06,
@@ -131,12 +120,23 @@
       "RODADA": 22,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Fernando",
+      "CLUBE": "RBB",
+      "PRECO": 5.37,
+      "EXP_SCORE": 3.8033,
+      "ATLETA_ID": 100695
+    },
+    {
+      "RODADA": 22,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Fernando Seabra",
-      "CLUBE": "CFC",
-      "PRECO": 7.66,
-      "EXP_SCORE": 4.8553,
-      "ATLETA_ID": 126977
+      "NOME": "Abel Ferreira",
+      "CLUBE": "PAL",
+      "PRECO": 12.52,
+      "EXP_SCORE": 6.2645,
+      "ATLETA_ID": 110506
     },
     {
       "RODADA": 22,
@@ -187,11 +187,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Alef Manga",
-      "CLUBE": "REM",
-      "PRECO": 8.31,
-      "EXP_SCORE": 4.8941,
-      "ATLETA_ID": 101254
+      "NOME": "Marcinho",
+      "CLUBE": "CHA",
+      "PRECO": 5.15,
+      "EXP_SCORE": 2.8286,
+      "ATLETA_ID": 95332
     }
   ]
 }
