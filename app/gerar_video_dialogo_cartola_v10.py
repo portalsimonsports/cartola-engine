@@ -7,7 +7,6 @@ from typing import Any, Dict, List
 
 from PIL import Image, ImageDraw
 
-import gerar_video_dialogo_cartola_v1 as base
 import gerar_video_dialogo_cartola_v3 as v3
 import gerar_video_dialogo_cartola_v9 as v9
 
@@ -26,8 +25,14 @@ def replace_preclose(text: str) -> str:
         ("Análise inicial", "Análise de pré-fechamento"),
         ("seleção inicial", "seleção atualizada de pré-fechamento"),
         ("Seleção inicial", "Seleção atualizada de pré-fechamento"),
-        ("três times publicados na seleção atualizada de pré-fechamento", "três times atualizados no pré-fechamento"),
-        ("snapshot publicado da seleção atualizada de pré-fechamento", "snapshot publicado do pré-fechamento"),
+        (
+            "três times publicados na seleção atualizada de pré-fechamento",
+            "três times atualizados no pré-fechamento",
+        ),
+        (
+            "snapshot publicado da seleção atualizada de pré-fechamento",
+            "snapshot publicado do pré-fechamento",
+        ),
         ("primeira fotografia", "fotografia de pré-fechamento"),
         ("próximo encontro no pré-fechamento", "pré-fechamento concluído"),
     ]
@@ -35,6 +40,36 @@ def replace_preclose(text: str) -> str:
     for source, target in replacements:
         result = result.replace(source, target)
     return result
+
+
+def closing_card_preclose(data: Dict[str, Any], round_value: int, output: Path) -> None:
+    ORIGINAL_CLOSING_CARD(data, round_value, output)
+    image = Image.open(output).convert("RGB")
+    draw = ImageDraw.Draw(image)
+
+    # Substitui somente a chamada inferior do card aprovado da V9.
+    draw.rounded_rectangle(
+        (35, 678, 625, 748),
+        radius=20,
+        fill=(23, 14, 3),
+        outline=(255, 190, 55),
+        width=2,
+    )
+    draw.text(
+        (330, 702),
+        "PRÓXIMA ETAPA: ESCALAÇÕES CONFIRMADAS",
+        font=v9.base.font(16, True),
+        fill=(255, 190, 55),
+        anchor="mm",
+    )
+    draw.text(
+        (330, 727),
+        "Depois: acompanhamento e avaliação final da rodada.",
+        font=v9.base.font(13, True),
+        fill=v9.base.SILVER,
+        anchor="mm",
+    )
+    image.save(output, "PNG", optimize=True)
 
 
 def build_dialogue_v10(round_value: int, data: Dict[str, Any]) -> List[v3.Segment]:
@@ -53,7 +88,9 @@ def build_dialogue_v10(round_value: int, data: Dict[str, Any]) -> List[v3.Segmen
                 "Agora os três modelos e o Top 5 já refletem as escolhas mais próximas do fechamento do mercado. "
                 "Vamos revisar confrontos, indicadores, riscos e as escalações atualizadas."
             )
-            onscreen = f"Pré-fechamento da rodada {round_value}: escolhas atualizadas e riscos finais."
+            onscreen = (
+                f"Pré-fechamento da rodada {round_value}: escolhas atualizadas e riscos finais."
+            )
 
         if "No pré-fechamento, uma nova edição" in text:
             text = (
@@ -62,13 +99,18 @@ def build_dialogue_v10(round_value: int, data: Dict[str, Any]) -> List[v3.Segmen
             )
             onscreen = "Fotografia de pré-fechamento registrada para comparação posterior."
 
-        if "Encerramos a análise de pré-fechamento" in text or "Encerramos a análise inicial" in text:
+        if (
+            "Encerramos a análise de pré-fechamento" in text
+            or "Encerramos a análise inicial" in text
+        ):
             text = (
                 f"Encerramos a análise de pré-fechamento da rodada {round_value}. "
                 "Acompanhe o canal Dicas Cartola Portal SimonSports para as escalações confirmadas, "
                 "o acompanhamento da rodada e a avaliação final dos modelos e do Top 5."
             )
-            onscreen = f"Rodada {round_value} • pré-fechamento concluído • próximas: escalações confirmadas."
+            onscreen = (
+                f"Rodada {round_value} • pré-fechamento concluído • próximas: escalações confirmadas."
+            )
 
         adapted.append(
             v3.Segment(
@@ -80,33 +122,6 @@ def build_dialogue_v10(round_value: int, data: Dict[str, Any]) -> List[v3.Segmen
             )
         )
     return adapted
-
-
-def closing_card_v10(data: Dict[str, Any], round_value: int, output: Path) -> None:
-    ORIGINAL_CLOSING_CARD(data, round_value, output)
-    if clean(data.get("fase_video")).upper() != "PRE_FECHAMENTO":
-        return
-
-    image = Image.open(output).convert("RGBA")
-    draw = ImageDraw.Draw(image)
-    # Substitui somente o banner inferior da V9. O restante do quadro aprovado é preservado.
-    draw.rectangle((28, 666, 632, 760), fill=(3, 20, 39, 255))
-    v3.rounded(draw, (35, 678, 625, 748), 20, (23, 14, 3), (255, 190, 55), 2)
-    draw.text(
-        (330, 702),
-        "PRÓXIMO PASSO: ESCALAÇÕES CONFIRMADAS",
-        font=base.font(16, True),
-        fill=(255, 190, 55),
-        anchor="mm",
-    )
-    draw.text(
-        (330, 727),
-        "Depois: acompanhamento e avaliação final da rodada.",
-        font=base.font(13, True),
-        fill=base.SILVER,
-        anchor="mm",
-    )
-    image.convert("RGB").save(output, "PNG", optimize=True)
 
 
 def update_manifest(output_path: Path, data: Dict[str, Any]) -> None:
@@ -124,17 +139,23 @@ def update_manifest(output_path: Path, data: Dict[str, Any]) -> None:
             raise RuntimeError("Roteiro de pré-fechamento não identificado no áudio.")
         payload["pre_fechamento_identificado_no_audio"] = True
         payload["encerramento_pre_fechamento_corrigido"] = True
-    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    path.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
 
 
 def generate(round_value: int, repo_root: Path, output_path: Path) -> Path:
     data_path = repo_root / "data" / f"analise_tecnica_rodada_{round_value}_v3.json"
     data = json.loads(data_path.read_text(encoding="utf-8"))
+    fase = clean(data.get("fase_video")).upper()
+
     old_build = v9.build_dialogue_v9
     old_closing = v9.closing_card
     try:
         v9.build_dialogue_v9 = build_dialogue_v10
-        v9.closing_card = closing_card_v10
+        if fase == "PRE_FECHAMENTO":
+            v9.closing_card = closing_card_preclose
         result = v9.generate(round_value, repo_root, output_path)
         update_manifest(output_path, data)
         return result
