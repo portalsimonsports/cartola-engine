@@ -59,6 +59,7 @@ jobs:
           python -m py_compile app/render_notice_cards.py
           python -m py_compile app/render_aprovadas_v1.py
           python -m py_compile app/render_mercado_aberto_v2.py
+          python -m py_compile app/publicar_desempenho_times_abertura.py
           python -m py_compile app/gerar_resultados_telegram_v3.py
           echo "Renderizadores aprovados validados."
 
@@ -102,7 +103,7 @@ jobs:
               raise SystemExit(f"ERRO: evento_github incorreto: {evento}")
           if destino and destino != "gerar.resultados.yml":
               raise SystemExit(f"ERRO: workflow_destino incorreto: {destino}")
-          if origem and not any(token in origem.lower() for token in ("live", "cronograma")):
+          if origem and not any(token in origem.lower() for token in ("live", "cronograma", "ciclo")):
               raise SystemExit(f"ERRO: origem incorreta para o pipeline de imagens: {origem}")
 
           inner = payload.get("payload") if isinstance(payload.get("payload"), dict) else payload
