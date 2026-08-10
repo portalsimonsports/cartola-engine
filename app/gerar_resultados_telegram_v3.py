@@ -16,6 +16,7 @@ from gerar_resultados_telegram import (
     obter_bot_token_chat_id,
     validar_bot_e_destino,
 )
+from publicar_desempenho_times_abertura import build_payload as build_team_performance_payload
 from render_aprovadas_v1 import VISUAL_VERSION, is_approved_event, render_approved_event
 from render_desempenho_top5_v1 import is_top5_performance_event, render_top5_performance
 from render_live_cards_v5 import render_live_publication_v5
@@ -24,7 +25,7 @@ from render_mercado_aberto_v2 import is_market_open_v2_event, render_market_open
 from render_notice_cards import is_notice_publication, render_notice_card
 
 RENDERER_VERSION = "approved_cards_v1"
-PIPELINE_VERSION = "approved_cards_v4_top5_final_2026_07_31"
+PIPELINE_VERSION = "approved_cards_v5_team_performance_2026_08_10"
 
 
 def _safe(value: Any, default: str = "") -> str:
@@ -59,6 +60,58 @@ def _save_manifest(publications: List[Dict[str, Any]]) -> None:
         ),
         encoding="utf-8",
     )
+
+
+def _team_performance_event(data: Dict[str, Any], payload_root: Dict[str, Any]) -> bool:
+    inner = payload_root.get("payload") if isinstance(payload_root.get("payload"), dict) else {}
+    values = [
+        data.get("evento_programado"),
+        data.get("tipo_publicacao"),
+        payload_root.get("evento_programado"),
+        payload_root.get("tipo_publicacao"),
+        inner.get("evento_programado"),
+        inner.get("tipo_publicacao"),
+    ]
+    joined = " ".join(_safe(value).upper() for value in values if value)
+    return any(
+        token in joined
+        for token in (
+            "DESEMPENHO_TIMES",
+            "FECHAMENTO_FINAL_TIMES",
+            "DESEMPENHO_FINAL_DOS_TIMES",
+            "RESUMO_RODADA_ANTERIOR",
+        )
+    )
+
+
+def _hydrate_team_performance(data: Dict[str, Any], payload_root: Dict[str, Any]) -> Dict[str, Any]:
+    if not _team_performance_event(data, payload_root):
+        return data
+    if isinstance(data.get("times"), dict) and data.get("times"):
+        return data
+
+    inner = payload_root.get("payload") if isinstance(payload_root.get("payload"), dict) else {}
+    rodada_raw = (
+        data.get("rodada")
+        or payload_root.get("rodada")
+        or payload_root.get("rodada_finalizada")
+        or inner.get("rodada")
+        or inner.get("rodada_finalizada")
+    )
+    try:
+        rodada = int(float(rodada_raw))
+    except Exception as exc:
+        raise RuntimeError(f"Desempenho dos times sem rodada válida: {rodada_raw!r}") from exc
+
+    enriched = build_team_performance_payload(rodada)
+    result = dict(data)
+    for key, value in enriched.items():
+        result[key] = value
+    print(
+        f"DESEMPENHO_TIMES enriquecido automaticamente: rodada={rodada}; "
+        f"modelos={len(result.get('times') or {})}"
+    )
+    return result
 
 
 def _render(data: Dict[str, Any]):
@@ -96,6 +149,8 @@ def executar_publicacao_aprovada() -> List[Dict[str, Any]]:
     ):
         if not data.get(key) and payload_root.get(key) not in (None, ""):
             data[key] = payload_root.get(key)
+
+    data = _hydrate_team_performance(data, payload_root)
 
     rendered = _render(data)
     if not rendered.files:
