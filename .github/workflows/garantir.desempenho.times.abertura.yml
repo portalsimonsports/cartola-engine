@@ -1,0 +1,119 @@
+name: Garantir Desempenho dos Times na Abertura
+
+on:
+  workflow_run:
+    workflows:
+      - Gerar Resultados Live
+    types:
+      - completed
+  push:
+    paths:
+      - 'data/flags/forcar_desempenho_times_rodada_*.json'
+  workflow_dispatch:
+    inputs:
+      rodada:
+        description: "Rodada encerrada a publicar; 0 = rodada anterior à atual"
+        required: false
+        default: "0"
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: cartola-desempenho-times-abertura
+  cancel-in-progress: false
+
+jobs:
+  verificar-e-publicar:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependências mínimas
+        run: |
+          set -e
+          python -m pip install --upgrade pip
+          pip install requests
+          python -m py_compile app/publicar_desempenho_times_abertura.py
+
+      - name: Resolver rodada solicitada
+        id: rodada
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          MANUAL_RODADA: ${{ github.event.inputs.rodada }}
+        run: |
+          set -e
+          python - <<'PY'
+          import json
+          import os
+          import re
+          from pathlib import Path
+
+          event = os.environ.get('EVENT_NAME', '')
+          rodada = 0
+
+          if event == 'workflow_dispatch':
+              try:
+                  rodada = int(os.environ.get('MANUAL_RODADA') or 0)
+              except Exception:
+                  rodada = 0
+          elif event == 'push':
+              candidatos = []
+              for path in Path('data/flags').glob('forcar_desempenho_times_rodada_*.json'):
+                  m = re.search(r'rodada_(\d+)\.json$', path.name)
+                  if not m:
+                      continue
+                  try:
+                      payload = json.loads(path.read_text(encoding='utf-8'))
+                  except Exception:
+                      payload = {}
+                  candidatos.append(int(payload.get('rodada') or m.group(1)))
+              if candidatos:
+                  rodada = max(candidatos)
+
+          with Path(os.environ['GITHUB_OUTPUT']).open('a', encoding='utf-8') as fh:
+              fh.write(f'rodada={rodada}\n')
+          print(f'Rodada explícita: {rodada or "AUTOMÁTICA"}')
+          PY
+
+      - name: Verificar necessidade e disparar resumo
+        id: publicar
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          RODADA: ${{ steps.rodada.outputs.rodada }}
+        run: |
+          set -e
+          if [ "${RODADA:-0}" -gt 0 ]; then
+            python app/publicar_desempenho_times_abertura.py --rodada "$RODADA"
+          else
+            python app/publicar_desempenho_times_abertura.py
+          fi
+
+      - name: Salvar payload calculado no histórico
+        if: success()
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/publicacoes_atuais/desempenho_times_rodada_*.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "Sem novo payload para registrar."
+            exit 0
+          fi
+          git commit -m "Cartola: registrar desempenho dos times da rodada anterior"
+          git pull --rebase origin main
+          git push origin HEAD:main
