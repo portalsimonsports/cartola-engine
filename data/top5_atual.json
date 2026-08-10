@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 23,
-  "atualizado_em": "2026-08-10T15:00:04.863Z",
+  "atualizado_em": "2026-08-10T15:05:25.430Z",
   "dados": [
     {
       "RODADA": 23,
@@ -14,16 +14,6 @@
       "EXP_SCORE": 4.8781,
       "FACTOR": 1.0554503969473705,
       "ATLETA_ID": 37656
-    },
-    {
-      "RODADA": 23,
-      "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.9,
-      "EXP_SCORE": 4.8498,
-      "FACTOR": 0.9405560428152808,
-      "ATLETA_ID": 104084
     },
     {
       "RODADA": 23,
@@ -54,6 +44,16 @@
       "EXP_SCORE": 4.3065,
       "FACTOR": 1.0875095176438776,
       "ATLETA_ID": 104118
+    },
+    {
+      "RODADA": 23,
+      "POS": "GOL",
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 8.9,
+      "EXP_SCORE": 4.2172,
+      "FACTOR": 0.9405560428152808,
+      "ATLETA_ID": 104084
     },
     {
       "RODADA": 23,
@@ -278,22 +278,22 @@
     {
       "RODADA": 23,
       "POS": "TEC",
-      "NOME": "Fernando Diniz",
-      "CLUBE": "COR",
-      "PRECO": 9.61,
-      "EXP_SCORE": 5.9562,
-      "FACTOR": 1.0881835975540946,
-      "ATLETA_ID": 72391
-    },
-    {
-      "RODADA": 23,
-      "POS": "TEC",
       "NOME": "Abel Ferreira",
       "CLUBE": "PAL",
       "PRECO": 12.08,
       "EXP_SCORE": 5.6066,
       "FACTOR": 0.9401214685463748,
       "ATLETA_ID": 110506
+    },
+    {
+      "RODADA": 23,
+      "POS": "TEC",
+      "NOME": "Fernando Diniz",
+      "CLUBE": "COR",
+      "PRECO": 9.61,
+      "EXP_SCORE": 5.1793,
+      "FACTOR": 1.0881835975540946,
+      "ATLETA_ID": 72391
     },
     {
       "RODADA": 23,
