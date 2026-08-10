@@ -1,0 +1,1030 @@
+{
+  "versao": "cartola_dialogo_tecnico_v10_fases_2026_08_08",
+  "status": "PILOTO_PARA_APROVACAO",
+  "publicacao_automatica": false,
+  "rodada": 23,
+  "arquivo": "output/analise_inicial_rodada_23.mp4",
+  "duracao_segundos": 1811.534,
+  "duracao_alvo_minutos": [
+    10,
+    15
+  ],
+  "moeda_falada": "cartoletas",
+  "layout_sem_sobreposicao": true,
+  "jogos_analisados": 10,
+  "jogadores_analisados": 23,
+  "vozes": [
+    "pt-BR-FranciscaNeural",
+    "pt-BR-AntonioNeural",
+    "pt-BR-ThalitaMultilingualNeural"
+  ],
+  "fontes": [
+    "data/publicacoes_atuais/time_economico_rodada_23.json",
+    "data/publicacoes_atuais/time_intermediario_rodada_23.json",
+    "data/publicacoes_atuais/time_pontuacao_rodada_23.json",
+    "data/publicacoes_atuais/top5_inicial_recuperado_rodada_23.json",
+    "API Cartola: partidas/23"
+  ],
+  "timeline": [
+    {
+      "indice": 1,
+      "inicio": 0.0,
+      "fim": 9.692,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Está no ar a análise inicial da rodada 23 do Cartola. Vamos aos confrontos, aos três modelos publicados e ao Top 5.",
+      "texto_tela": "Rodada 23: confrontos, times e Top 5.",
+      "visual": "rodada"
+    },
+    {
+      "indice": 2,
+      "inicio": 9.692,
+      "fim": 23.032,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Vamos a Fluminense contra Palmeiras. O Fluminense é o 4º colocado da competição e o Palmeiras é o 1º colocado. A partida será no Maracanã, com mando do Fluminense.",
+      "texto_tela": "Fluminense (4º colocado) x Palmeiras (1º colocado).",
+      "visual": "jogo_0"
+    },
+    {
+      "indice": 3,
+      "inicio": 23.032,
+      "fim": 54.876,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Fluminense ocupa a 4ª posição, com 35 pontos em 22 jogos. Nos últimos 5 jogos, somou 0 vitórias, 5 empates e 0 derrotas, marcou 4 e sofreu 4 gols. Palmeiras ocupa a 1ª posição, com 48 pontos em 22 jogos. Nos últimos 5 jogos, somou 3 vitórias, 1 empate e 1 derrota, marcou 9 e sofreu 3 gols. A sequência visual é E E E E E para o Fluminense e V V D V E para o Palmeiras.",
+      "texto_tela": "Forma recente: E E E E E x V V D V E.",
+      "visual": "jogo_0"
+    },
+    {
+      "indice": 4,
+      "inicio": 54.876,
+      "fim": 65.816,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Palmeiras apresenta desempenho recente superior, embora atue fora de casa. O confronto pede equilíbrio entre momento coletivo e risco do mando adversário.",
+      "texto_tela": "Na tabela, Fluminense é o 4º colocado e Palmeiras é o 1º colocado.",
+      "visual": "jogo_0"
+    },
+    {
+      "indice": 5,
+      "inicio": 65.816,
+      "fim": 81.436,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Vamos a Athletico Paranaense contra Red Bull Bragantino. O Athletico Paranaense é o 3º colocado da competição e o Red Bull Bragantino é o 8º colocado. A partida será no Arena da Baixada, com mando do Athletico Paranaense.",
+      "texto_tela": "Athletico Paranaense (3º colocado) x Red Bull Bragantino (8º colocado).",
+      "visual": "jogo_1"
+    },
+    {
+      "indice": 6,
+      "inicio": 81.436,
+      "fim": 115.464,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Athletico Paranaense ocupa a 3ª posição, com 40 pontos em 22 jogos. Nos últimos 5 jogos, somou 4 vitórias, 1 empate e 0 derrotas, marcou 7 e sofreu 1 gols. Red Bull Bragantino ocupa a 8ª posição, com 31 pontos em 21 jogos. Nos últimos 5 jogos, somou 2 vitórias, 2 empates e 1 derrota, marcou 7 e sofreu 4 gols. A sequência visual é V V V E V para o Athletico Paranaense e V V E E D para o Red Bull Bragantino.",
+      "texto_tela": "Forma recente: V V V E V x V V E E D.",
+      "visual": "jogo_1"
+    },
+    {
+      "indice": 7,
+      "inicio": 115.464,
+      "fim": 125.396,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Athletico Paranaense chega em momento recente superior e ainda tem o mando, mas a escolha individual deve considerar os scouts e o preço de cada atleta.",
+      "texto_tela": "Na tabela, Athletico Paranaense é o 3º colocado e Red Bull Bragantino é o 8º colocado.",
+      "visual": "jogo_1"
+    },
+    {
+      "indice": 8,
+      "inicio": 125.396,
+      "fim": 137.728,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Vamos a São Paulo contra Coritiba. O São Paulo é o 12º colocado da competição e o Coritiba é o 10º colocado. A partida será no Morumbis, com mando do São Paulo.",
+      "texto_tela": "São Paulo (12º colocado) x Coritiba (10º colocado).",
+      "visual": "jogo_2"
+    },
+    {
+      "indice": 9,
+      "inicio": 137.728,
+      "fim": 171.972,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "São Paulo ocupa a 12ª posição, com 26 pontos em 21 jogos. Nos últimos 5 jogos, somou 0 vitórias, 2 empates e 3 derrotas, marcou 4 e sofreu 7 gols. Coritiba ocupa a 10ª posição, com 30 pontos em 22 jogos. Nos últimos 5 jogos, somou 1 vitória, 1 empate e 3 derrotas, marcou 3 e sofreu 8 gols. A sequência visual é E D D E D para o São Paulo e D D E D V para o Coritiba.",
+      "texto_tela": "Forma recente: E D D E D x D D E D V.",
+      "visual": "jogo_2"
+    },
+    {
+      "indice": 10,
+      "inicio": 171.972,
+      "fim": 182.696,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Coritiba apresenta desempenho recente superior, embora atue fora de casa. O confronto pede equilíbrio entre momento coletivo e risco do mando adversário.",
+      "texto_tela": "Na tabela, São Paulo é o 12º colocado e Coritiba é o 10º colocado.",
+      "visual": "jogo_2"
+    },
+    {
+      "indice": 11,
+      "inicio": 182.696,
+      "fim": 196.468,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Vamos a Chapecoense contra Bahia. O Chapecoense é o 20º colocado da competição e o Bahia é o 6º colocado. A partida será no Arena Condá, com mando do Chapecoense.",
+      "texto_tela": "Chapecoense (20º colocado) x Bahia (6º colocado).",
+      "visual": "jogo_3"
+    },
+    {
+      "indice": 12,
+      "inicio": 196.468,
+      "fim": 227.88,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Chapecoense ocupa a 20ª posição, com 10 pontos em 21 jogos. Nos últimos 5 jogos, somou 0 vitórias, 1 empate e 4 derrotas, marcou 4 e sofreu 11 gols. Bahia ocupa a 6ª posição, com 33 pontos em 22 jogos. Nos últimos 5 jogos, somou 1 vitória, 4 empates e 0 derrotas, marcou 4 e sofreu 3 gols. A sequência visual é D D D E D para o Chapecoense e V E E E E para o Bahia.",
+      "texto_tela": "Forma recente: D D D E D x V E E E E.",
+      "visual": "jogo_3"
+    },
+    {
+      "indice": 13,
+      "inicio": 227.88,
+      "fim": 238.724,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Bahia apresenta desempenho recente superior, embora atue fora de casa. O confronto pede equilíbrio entre momento coletivo e risco do mando adversário.",
+      "texto_tela": "Na tabela, Chapecoense é o 20º colocado e Bahia é o 6º colocado.",
+      "visual": "jogo_3"
+    },
+    {
+      "indice": 14,
+      "inicio": 238.724,
+      "fim": 252.352,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Vamos a Vasco da Gama contra Santos. O Vasco da Gama é o 18º colocado da competição e o Santos é o 17º colocado. A partida será no São Januário, com mando do Vasco da Gama.",
+      "texto_tela": "Vasco da Gama (18º colocado) x Santos (17º colocado).",
+      "visual": "jogo_4"
+    },
+    {
+      "indice": 15,
+      "inicio": 252.352,
+      "fim": 284.244,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Vasco da Gama ocupa a 18ª posição, com 22 pontos em 21 jogos. Nos últimos 5 jogos, somou 0 vitórias, 2 empates e 3 derrotas, marcou 1 e sofreu 6 gols. Santos ocupa a 17ª posição, com 22 pontos em 21 jogos. Nos últimos 5 jogos, somou 1 vitória, 1 empate e 3 derrotas, marcou 8 e sofreu 10 gols. A sequência visual é D D D E E para o Vasco da Gama e D V D E D para o Santos.",
+      "texto_tela": "Forma recente: D D D E E x D V D E D.",
+      "visual": "jogo_4"
+    },
+    {
+      "indice": 16,
+      "inicio": 284.244,
+      "fim": 295.664,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Santos apresenta desempenho recente superior, embora atue fora de casa. O confronto pede equilíbrio entre momento coletivo e risco do mando adversário.",
+      "texto_tela": "Na tabela, Vasco da Gama é o 18º colocado e Santos é o 17º colocado.",
+      "visual": "jogo_4"
+    },
+    {
+      "indice": 17,
+      "inicio": 295.664,
+      "fim": 310.132,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Vamos a Atlético Mineiro contra Grêmio. O Atlético Mineiro é o 11º colocado da competição e o Grêmio é o 14º colocado. A partida será no Arena MRV, com mando do Atlético Mineiro.",
+      "texto_tela": "Atlético Mineiro (11º colocado) x Grêmio (14º colocado).",
+      "visual": "jogo_5"
+    },
+    {
+      "indice": 18,
+      "inicio": 310.132,
+      "fim": 345.552,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Atlético Mineiro ocupa a 11ª posição, com 29 pontos em 21 jogos. Nos últimos 5 jogos, somou 2 vitórias, 2 empates e 1 derrota, marcou 6 e sofreu 5 gols. Grêmio ocupa a 14ª posição, com 25 pontos em 21 jogos. Nos últimos 5 jogos, somou 2 vitórias, 1 empate e 2 derrotas, marcou 8 e sofreu 9 gols. A sequência visual é D V E V E para o Atlético Mineiro e V D D E V para o Grêmio.",
+      "texto_tela": "Forma recente: D V E V E x V D D E V.",
+      "visual": "jogo_5"
+    },
+    {
+      "indice": 19,
+      "inicio": 345.552,
+      "fim": 354.26,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Atlético Mineiro chega em momento recente superior e ainda tem o mando, mas a escolha individual deve considerar os scouts e o preço de cada atleta.",
+      "texto_tela": "Na tabela, Atlético Mineiro é o 11º colocado e Grêmio é o 14º colocado.",
+      "visual": "jogo_5"
+    },
+    {
+      "indice": 20,
+      "inicio": 354.26,
+      "fim": 367.768,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Vamos a Mirassol contra Flamengo. O Mirassol é o 15º colocado da competição e o Flamengo é o 2º colocado. A partida será no Maião, com mando do Mirassol.",
+      "texto_tela": "Mirassol (15º colocado) x Flamengo (2º colocado).",
+      "visual": "jogo_6"
+    },
+    {
+      "indice": 21,
+      "inicio": 367.768,
+      "fim": 400.62,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Mirassol ocupa a 15ª posição, com 23 pontos em 21 jogos. Nos últimos 5 jogos, somou 2 vitórias, 1 empate e 2 derrotas, marcou 6 e sofreu 7 gols. Flamengo ocupa a 2ª posição, com 42 pontos em 21 jogos. Nos últimos 5 jogos, somou 3 vitórias, 2 empates e 0 derrotas, marcou 11 e sofreu 2 gols. A sequência visual é D V E V D para o Mirassol e V V E E V para o Flamengo.",
+      "texto_tela": "Forma recente: D V E V D x V V E E V.",
+      "visual": "jogo_6"
+    },
+    {
+      "indice": 22,
+      "inicio": 400.62,
+      "fim": 411.488,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Flamengo apresenta desempenho recente superior, embora atue fora de casa. O confronto pede equilíbrio entre momento coletivo e risco do mando adversário.",
+      "texto_tela": "Na tabela, Mirassol é o 15º colocado e Flamengo é o 2º colocado.",
+      "visual": "jogo_6"
+    },
+    {
+      "indice": 23,
+      "inicio": 411.488,
+      "fim": 423.964,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Vamos a Vitória contra Botafogo. O Vitória é o 13º colocado da competição e o Botafogo é o 9º colocado. A partida será no Barradão, com mando do Vitória.",
+      "texto_tela": "Vitória (13º colocado) x Botafogo (9º colocado).",
+      "visual": "jogo_7"
+    },
+    {
+      "indice": 24,
+      "inicio": 423.964,
+      "fim": 455.352,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Vitória ocupa a 13ª posição, com 26 pontos em 22 jogos. Nos últimos 5 jogos, somou 1 vitória, 0 empates e 4 derrotas, marcou 2 e sofreu 11 gols. Botafogo ocupa a 9ª posição, com 30 pontos em 21 jogos. Nos últimos 5 jogos, somou 2 vitórias, 2 empates e 1 derrota, marcou 6 e sofreu 5 gols. A sequência visual é D V D D D para o Vitória e E D V V E para o Botafogo.",
+      "texto_tela": "Forma recente: D V D D D x E D V V E.",
+      "visual": "jogo_7"
+    },
+    {
+      "indice": 25,
+      "inicio": 455.352,
+      "fim": 466.82,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Botafogo apresenta desempenho recente superior, embora atue fora de casa. O confronto pede equilíbrio entre momento coletivo e risco do mando adversário.",
+      "texto_tela": "Na tabela, Vitória é o 13º colocado e Botafogo é o 9º colocado.",
+      "visual": "jogo_7"
+    },
+    {
+      "indice": 26,
+      "inicio": 466.82,
+      "fim": 479.032,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Vamos a Corinthians contra Cruzeiro. O Corinthians é o 7º colocado da competição e o Cruzeiro é o 5º colocado. A partida será no Neo Química Arena, com mando do Corinthians.",
+      "texto_tela": "Corinthians (7º colocado) x Cruzeiro (5º colocado).",
+      "visual": "jogo_8"
+    },
+    {
+      "indice": 27,
+      "inicio": 479.032,
+      "fim": 512.628,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Corinthians ocupa a 7ª posição, com 32 pontos em 22 jogos. Nos últimos 5 jogos, somou 3 vitórias, 2 empates e 0 derrotas, marcou 9 e sofreu 2 gols. Cruzeiro ocupa a 5ª posição, com 33 pontos em 22 jogos. Nos últimos 5 jogos, somou 3 vitórias, 1 empate e 1 derrota, marcou 7 e sofreu 4 gols. A sequência visual é V V E E V para o Corinthians e E V D V V para o Cruzeiro.",
+      "texto_tela": "Forma recente: V V E E V x E V D V V.",
+      "visual": "jogo_8"
+    },
+    {
+      "indice": 28,
+      "inicio": 512.628,
+      "fim": 520.76,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Corinthians chega em momento recente superior e ainda tem o mando, mas a escolha individual deve considerar os scouts e o preço de cada atleta.",
+      "texto_tela": "Na tabela, Corinthians é o 7º colocado e Cruzeiro é o 5º colocado.",
+      "visual": "jogo_8"
+    },
+    {
+      "indice": 29,
+      "inicio": 520.76,
+      "fim": 535.108,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Vamos a Internacional contra Remo. O Internacional é o 16º colocado da competição e o Remo é o 19º colocado. A partida será no Beira-Rio, com mando do Internacional.",
+      "texto_tela": "Internacional (16º colocado) x Remo (19º colocado).",
+      "visual": "jogo_9"
+    },
+    {
+      "indice": 30,
+      "inicio": 535.108,
+      "fim": 567.936,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Internacional ocupa a 16ª posição, com 23 pontos em 22 jogos. Nos últimos 5 jogos, somou 0 vitórias, 2 empates e 3 derrotas, marcou 3 e sofreu 8 gols. Remo ocupa a 19ª posição, com 22 pontos em 22 jogos. Nos últimos 5 jogos, somou 2 vitórias, 1 empate e 2 derrotas, marcou 6 e sofreu 7 gols. A sequência visual é D D D E E para o Internacional e V D V D E para o Remo.",
+      "texto_tela": "Forma recente: D D D E E x V D V D E.",
+      "visual": "jogo_9"
+    },
+    {
+      "indice": 31,
+      "inicio": 567.936,
+      "fim": 578.636,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Remo apresenta desempenho recente superior, embora atue fora de casa. O confronto pede equilíbrio entre momento coletivo e risco do mando adversário.",
+      "texto_tela": "Na tabela, Internacional é o 16º colocado e Remo é o 19º colocado.",
+      "visual": "jogo_9"
+    },
+    {
+      "indice": 32,
+      "inicio": 578.636,
+      "fim": 588.856,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Agora vamos aos três times publicados na seleção inicial. A comparação considera formação, custo, capitão e distribuição dos atletas.",
+      "texto_tela": "Três modelos publicados: formação, custo e capitão.",
+      "visual": "pontuacoes"
+    },
+    {
+      "indice": 33,
+      "inicio": 588.856,
+      "fim": 607.668,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "O Time Econômico utiliza a formação 4-3-3, custa 87,57 cartoletas e tem Viveros como capitão. Entre as primeiras escolhas aparecem Matheus Cunha, Fagner, Matheuzinho, Wallace, Tiago Cóser, além de outros 7 titulares.",
+      "texto_tela": "Time Econômico: 4-3-3 • 87,57 cartoletas • capitão Viveros.",
+      "visual": "pontuacoes"
+    },
+    {
+      "indice": 34,
+      "inicio": 607.668,
+      "fim": 625.52,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "O Time Intermediário utiliza a formação 5-3-2, custa 136,92 cartoletas e tem Viveros como capitão. Entre as primeiras escolhas aparecem Santos, Matheuzinho, Matheus Bidu, Aguirre, Léo Pereira, além de outros 7 titulares.",
+      "texto_tela": "Time Intermediário: 5-3-2 • 136,92 cartoletas • capitão Viveros.",
+      "visual": "pontuacoes"
+    },
+    {
+      "indice": 35,
+      "inicio": 625.52,
+      "fim": 643.372,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "O Time para Pontuar utiliza a formação 4-3-3, custa 151,21 cartoletas e tem Viveros como capitão. Entre as primeiras escolhas aparecem Santos, Matheuzinho, Matheus Bidu, Aguirre, Léo Pereira, além de outros 7 titulares.",
+      "texto_tela": "Time para Pontuar: 4-3-3 • 151,21 cartoletas • capitão Viveros.",
+      "visual": "pontuacoes"
+    },
+    {
+      "indice": 36,
+      "inicio": 643.372,
+      "fim": 648.024,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Agora vamos discutir o motivo de cada escolha individual.",
+      "texto_tela": "Escolhas individuais: perguntas, respostas e riscos.",
+      "visual": "Matheus Cunha"
+    },
+    {
+      "indice": 37,
+      "inicio": 648.024,
+      "fim": 653.276,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Os números de Matheus Cunha justificam a escalação diante do Remo?",
+      "texto_tela": "Por que Matheus Cunha foi escalado?",
+      "visual": "Matheus Cunha"
+    },
+    {
+      "indice": 38,
+      "inicio": 653.276,
+      "fim": 682.576,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "A leitura é de custo-benefício: Matheus Cunha enfrenta o Remo em casa. Os dados mostram média de 3,55 em 11 jogos, média em casa de 4,67, última pontuação de 7,10. O Remo marcou 6 gols nos últimos cinco jogos. Isso equilibra possibilidade de defesas com o risco de perder o saldo. O ponto de atenção é que o bom contexto não garante pontuação.",
+      "texto_tela": "Leitura do confronto: média em casa 4,67 • última 7,10. O Remo marcou 6 gols nos últimos cinco jogos. Isso equilibra possibilidade de defesas com o…",
+      "visual": "Matheus Cunha"
+    },
+    {
+      "indice": 39,
+      "inicio": 682.576,
+      "fim": 687.396,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Em Fagner, a aposta é segurança, teto ou custo-benefício?",
+      "texto_tela": "Por que Fagner foi escalado?",
+      "visual": "Fagner"
+    },
+    {
+      "indice": 40,
+      "inicio": 687.396,
+      "fim": 722.072,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "O ponto central é comparar o desempenho de Fagner com o momento do Cruzeiro. Os dados mostram média de 3,55 em 15 jogos, média em casa de 3,67, média fora de casa de 3,37, última pontuação de 11,10, 0,00 pontos no primeiro turno. O Cruzeiro sofreu 4 gols nos últimos cinco jogos. A escolha precisa de scouts defensivos e não pode depender apenas do saldo. O ponto de atenção é que o bom contexto não garante pontuação.",
+      "texto_tela": "Custo de 6,93 • média em casa 3,67 • última 11,10 • 1º turno 0,00. O Cruzeiro sofreu 4 gols nos últimos cinco jogos. A escolha precisa de scouts…",
+      "visual": "Fagner"
+    },
+    {
+      "indice": 41,
+      "inicio": 722.072,
+      "fim": 730.708,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Matheuzinho está nos modelos Econômico e Intermediário e Para Pontuar contra o Cruzeiro. O que sustenta essa escolha?",
+      "texto_tela": "Por que Matheuzinho foi escalado?",
+      "visual": "Matheuzinho"
+    },
+    {
+      "indice": 42,
+      "inicio": 730.708,
+      "fim": 761.376,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "O primeiro argumento é o confronto em casa e o preço de 12,62 cartoletas. Os dados mostram média de 3,24 em 18 jogos, média em casa de 4,81, última pontuação de 1,70, projeção de 6,95. O Corinthians sofreu 2 gols nos últimos cinco jogos. A escolha precisa de scouts defensivos e não pode depender apenas do saldo. O ponto de atenção é que o bom contexto não garante pontuação.",
+      "texto_tela": "Nos modelos econômico e intermediário e para pontuar • média em casa 4,81 • última 1,70 • projeção 6,95. O Corinthians sofreu 2 gols nos últimos…",
+      "visual": "Matheuzinho"
+    },
+    {
+      "indice": 43,
+      "inicio": 761.376,
+      "fim": 766.34,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Por que Wallace ganhou espaço no Econômico para este confronto?",
+      "texto_tela": "Por que Wallace foi escalado?",
+      "visual": "Wallace"
+    },
+    {
+      "indice": 44,
+      "inicio": 766.34,
+      "fim": 797.728,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "A escolha não vem apenas do nome. Wallace custa 6,08 e joga fora de casa. Os dados mostram média de 8,70 em 1 jogos, média em casa de 8,70, última pontuação de 8,70. O Grêmio sofreu 9 gols nos últimos cinco jogos. A escolha precisa de scouts defensivos e não pode depender apenas do saldo. O ponto de atenção é que o bom contexto não garante pontuação.",
+      "texto_tela": "Motivo: média em casa 8,70 • última 8,70. O Grêmio sofreu 9 gols nos últimos cinco jogos. A escolha precisa de scouts defensivos e não pode depender…",
+      "visual": "Wallace"
+    },
+    {
+      "indice": 45,
+      "inicio": 797.728,
+      "fim": 803.34,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Tiago Cóser está no Econômico contra o São Paulo. O que sustenta essa escolha?",
+      "texto_tela": "Por que Tiago Cóser foi escalado?",
+      "visual": "Tiago Cóser"
+    },
+    {
+      "indice": 46,
+      "inicio": 803.34,
+      "fim": 836.072,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "O primeiro argumento é o confronto fora de casa e o preço de 4,39 cartoletas. Os dados mostram média de 2,66 em 19 jogos, média em casa de 3,41, média fora de casa de 1,99, última pontuação de 8,20. O Coritiba sofreu 8 gols nos últimos cinco jogos. A escolha precisa de scouts defensivos e não pode depender apenas do saldo. O ponto de atenção é que o bom contexto não garante pontuação.",
+      "texto_tela": "No econômico • média em casa 3,41 • última 8,20. O Coritiba sofreu 8 gols nos últimos cinco jogos. A escolha precisa de scouts defensivos e não pode…",
+      "visual": "Tiago Cóser"
+    },
+    {
+      "indice": 47,
+      "inicio": 836.072,
+      "fim": 840.988,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Os números de André justificam a escalação diante do Cruzeiro?",
+      "texto_tela": "Por que André foi escalado?",
+      "visual": "André"
+    },
+    {
+      "indice": 48,
+      "inicio": 840.988,
+      "fim": 870.912,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "A leitura é de custo-benefício: André enfrenta o Cruzeiro em casa. Os dados mostram média de 4,07 em 16 jogos, média em casa de 2,15, última pontuação de 0,00, 4,00 pontos no primeiro turno. O Corinthians marcou 9 gols e o Cruzeiro sofreu 4 nos últimos cinco jogos. A escolha busca participação ofensiva nesse confronto. O ponto de atenção é que vem de pontuação abaixo da própria média.",
+      "texto_tela": "Leitura do confronto: média em casa 2,15 • última 0,00 • 1º turno 4,00. O Corinthians marcou 9 gols e o Cruzeiro sofreu 4 nos últimos cinco jogos. A…",
+      "visual": "André"
+    },
+    {
+      "indice": 49,
+      "inicio": 870.912,
+      "fim": 876.02,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Os números de Bernard justificam a escalação diante do Grêmio?",
+      "texto_tela": "Por que Bernard foi escalado?",
+      "visual": "Bernard"
+    },
+    {
+      "indice": 50,
+      "inicio": 876.02,
+      "fim": 906.688,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "A leitura é de custo-benefício: Bernard enfrenta o Grêmio em casa. Os dados mostram média de 3,28 em 18 jogos, média em casa de 2,54, última pontuação de 7,40. O Atlético Mineiro marcou 6 gols e o Grêmio sofreu 9 nos últimos cinco jogos. A escolha busca participação ofensiva nesse confronto. O ponto de atenção é que o bom contexto não garante pontuação.",
+      "texto_tela": "Leitura do confronto: média em casa 2,54 • última 7,40. O Atlético Mineiro marcou 6 gols e o Grêmio sofreu 9 nos últimos cinco jogos. A escolha…",
+      "visual": "Bernard"
+    },
+    {
+      "indice": 51,
+      "inicio": 906.688,
+      "fim": 912.132,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Os números de José Welison justificam a escalação diante do Internacional?",
+      "texto_tela": "Por que José Welison foi escalado?",
+      "visual": "José Welison"
+    },
+    {
+      "indice": 52,
+      "inicio": 912.132,
+      "fim": 947.6,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "A leitura é de custo-benefício: José Welison enfrenta o Internacional fora de casa. Os dados mostram média de 2,59 em 18 jogos, média em casa de 3,09, média fora de casa de 1,95, última pontuação de 1,60, -1,90 pontos no primeiro turno. O Remo marcou 6 gols e o Internacional sofreu 8 nos últimos cinco jogos. A escolha busca participação ofensiva nesse confronto. O ponto de atenção é que o bom contexto não garante pontuação.",
+      "texto_tela": "Leitura do confronto: média em casa 3,09 • última 1,60 • 1º turno -1,90. O Remo marcou 6 gols e o Internacional sofreu 8 nos últimos cinco jogos. A…",
+      "visual": "José Welison"
+    },
+    {
+      "indice": 53,
+      "inicio": 947.6,
+      "fim": 953.332,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Os números de Viveros justificam a escalação diante do Red Bull Bragantino?",
+      "texto_tela": "Por que Viveros foi escalado?",
+      "visual": "Viveros"
+    },
+    {
+      "indice": 54,
+      "inicio": 953.332,
+      "fim": 988.272,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "A leitura é de custo-benefício: Viveros enfrenta o Red Bull Bragantino em casa. Os dados mostram média de 8,77 em 19 jogos, média em casa de 12,03, última pontuação de 17,90, 4,80 pontos no primeiro turno, projeção de 8,33. O Athletico Paranaense marcou 7 gols e o Red Bull Bragantino sofreu 4 nos últimos cinco jogos. A escolha busca participação ofensiva nesse confronto. O ponto de atenção é que o bom contexto não garante pontuação.",
+      "texto_tela": "Leitura do confronto: média em casa 12,03 • última 17,90 • 1º turno 4,80. O Athletico Paranaense marcou 7 gols e o Red Bull Bragantino sofreu 4 nos…",
+      "visual": "Viveros"
+    },
+    {
+      "indice": 55,
+      "inicio": 988.272,
+      "fim": 996.404,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Leozinho está nos modelos Econômico e Intermediário contra o Red Bull Bragantino. O que sustenta essa escolha?",
+      "texto_tela": "Por que Leozinho foi escalado?",
+      "visual": "Leozinho"
+    },
+    {
+      "indice": 56,
+      "inicio": 996.404,
+      "fim": 1031.68,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "O primeiro argumento é o confronto em casa e o preço de 5,80 cartoletas. Os dados mostram média de 5,66 em 9 jogos, média em casa de 8,30, última pontuação de 2,50, -0,30 pontos no primeiro turno. O Athletico Paranaense marcou 7 gols e o Red Bull Bragantino sofreu 4 nos últimos cinco jogos. A escolha busca participação ofensiva nesse confronto. O ponto de atenção é que vem de pontuação abaixo da própria média.",
+      "texto_tela": "Nos modelos econômico e intermediário • média em casa 8,30 • última 2,50 • 1º turno -0,30. O Athletico Paranaense marcou 7 gols e o Red Bull…",
+      "visual": "Leozinho"
+    },
+    {
+      "indice": 57,
+      "inicio": 1031.68,
+      "fim": 1036.62,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Os números de Jajá justificam a escalação diante do Internacional?",
+      "texto_tela": "Por que Jajá foi escalado?",
+      "visual": "Jajá"
+    },
+    {
+      "indice": 58,
+      "inicio": 1036.62,
+      "fim": 1073.96,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "A leitura é de custo-benefício: Jajá enfrenta o Internacional fora de casa. Os dados mostram média de 5,59 em 18 jogos, média em casa de 5,83, média fora de casa de 5,33, última pontuação de 10,20, 2,80 pontos no primeiro turno, projeção de 5,45. O Remo marcou 6 gols e o Internacional sofreu 8 nos últimos cinco jogos. A escolha busca participação ofensiva nesse confronto. O ponto de atenção é que o bom contexto não garante pontuação.",
+      "texto_tela": "Leitura do confronto: média em casa 5,83 • última 10,20 • 1º turno 2,80. O Remo marcou 6 gols e o Internacional sofreu 8 nos últimos cinco jogos. A…",
+      "visual": "Jajá"
+    },
+    {
+      "indice": 59,
+      "inicio": 1073.96,
+      "fim": 1080.124,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Os números de Odair Hellmann justificam a escalação diante do Red Bull Bragantino?",
+      "texto_tela": "Por que Odair Hellmann foi escalado?",
+      "visual": "Odair Hellmann"
+    },
+    {
+      "indice": 60,
+      "inicio": 1080.124,
+      "fim": 1112.352,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "A leitura é de custo-benefício: Odair Hellmann enfrenta o Red Bull Bragantino em casa. Os dados mostram média de 5,89 em 20 jogos, média em casa de 5,74, última pontuação de 8,44, 3,05 pontos no primeiro turno, projeção de 6,13. A escolha acompanha o contexto coletivo do Athletico Paranaense, que enfrenta o Red Bull Bragantino ocupando a 8ª posição. O ponto de atenção é que o bom contexto não garante pontuação.",
+      "texto_tela": "Leitura do confronto: média em casa 5,74 • última 8,44 • 1º turno 3,05. A escolha acompanha o contexto coletivo do Athletico Paranaense, que…",
+      "visual": "Odair Hellmann"
+    },
+    {
+      "indice": 61,
+      "inicio": 1112.352,
+      "fim": 1120.604,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Santos está nos modelos Intermediário e Para Pontuar contra o Red Bull Bragantino. O que sustenta essa escolha?",
+      "texto_tela": "Por que Santos foi escalado?",
+      "visual": "Santos"
+    },
+    {
+      "indice": 62,
+      "inicio": 1120.604,
+      "fim": 1157.2,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "O primeiro argumento é o confronto em casa e o preço de 9,22 cartoletas. Os dados mostram média de 4,25 em 19 jogos, média em casa de 4,68, última pontuação de 0,00, 1,60 pontos no primeiro turno, projeção de 4,77. O Red Bull Bragantino marcou 7 gols nos últimos cinco jogos. Isso equilibra possibilidade de defesas com o risco de perder o saldo. O ponto de atenção é que vem de pontuação abaixo da própria média.",
+      "texto_tela": "Nos modelos intermediário e para pontuar • média em casa 4,68 • última 0,00 • 1º turno 1,60. O Red Bull Bragantino marcou 7 gols nos últimos cinco…",
+      "visual": "Santos"
+    },
+    {
+      "indice": 63,
+      "inicio": 1157.2,
+      "fim": 1162.26,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Em Matheus Bidu, a aposta é segurança, teto ou custo-benefício?",
+      "texto_tela": "Por que Matheus Bidu foi escalado?",
+      "visual": "Matheus Bidu"
+    },
+    {
+      "indice": 64,
+      "inicio": 1162.26,
+      "fim": 1193.336,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "O ponto central é comparar o desempenho de Matheus Bidu com o momento do Corinthians. Os dados mostram média de 7,81 em 16 jogos, média em casa de 10,28, última pontuação de 7,00, projeção de 6,50. O Corinthians sofreu 2 gols nos últimos cinco jogos. A escolha precisa de scouts defensivos e não pode depender apenas do saldo. O ponto de atenção é que o bom contexto não garante pontuação.",
+      "texto_tela": "Custo de 12,92 • média em casa 10,28 • última 7,00 • projeção 6,50. O Corinthians sofreu 2 gols nos últimos cinco jogos. A escolha precisa de scouts…",
+      "visual": "Matheus Bidu"
+    },
+    {
+      "indice": 65,
+      "inicio": 1193.336,
+      "fim": 1198.684,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Em Aguirre, a aposta é segurança, teto ou custo-benefício?",
+      "texto_tela": "Por que Aguirre foi escalado?",
+      "visual": "Aguirre"
+    },
+    {
+      "indice": 66,
+      "inicio": 1198.684,
+      "fim": 1232.16,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "O ponto central é comparar o desempenho de Aguirre com o momento do Athletico Paranaense. Os dados mostram média de 3,86 em 17 jogos, média em casa de 4,26, última pontuação de 8,00, 1,20 pontos no primeiro turno, projeção de 3,86. O Athletico Paranaense sofreu 1 gols nos últimos cinco jogos. A escolha precisa de scouts defensivos e não pode depender apenas do saldo. O ponto de atenção é que o bom contexto não garante pontuação.",
+      "texto_tela": "Custo de 6,59 • média em casa 4,26 • última 8,00 • 1º turno 1,20. O Athletico Paranaense sofreu 1 gols nos últimos cinco jogos. A escolha precisa de…",
+      "visual": "Aguirre"
+    },
+    {
+      "indice": 67,
+      "inicio": 1232.16,
+      "fim": 1239.62,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Léo Pereira está nos modelos Intermediário e Para Pontuar contra o Mirassol. O que sustenta essa escolha?",
+      "texto_tela": "Por que Léo Pereira foi escalado?",
+      "visual": "Léo Pereira"
+    },
+    {
+      "indice": 68,
+      "inicio": 1239.62,
+      "fim": 1276.744,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "O primeiro argumento é o confronto fora de casa e o preço de 10,59 cartoletas. Os dados mostram média de 4,74 em 17 jogos, média em casa de 4,32, média fora de casa de 5,20, última pontuação de 12,70, projeção de 3,43. O Flamengo sofreu 2 gols nos últimos cinco jogos. A escolha precisa de scouts defensivos e não pode depender apenas do saldo. O ponto de atenção é que o bom contexto não garante pontuação.",
+      "texto_tela": "Nos modelos intermediário e para pontuar • média em casa 4,32 • última 12,70 • projeção 3,43. O Flamengo sofreu 2 gols nos últimos cinco jogos. A…",
+      "visual": "Léo Pereira"
+    },
+    {
+      "indice": 69,
+      "inicio": 1276.744,
+      "fim": 1281.732,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Por que David Duarte ganhou espaço no Intermediário para este confronto?",
+      "texto_tela": "Por que David Duarte foi escalado?",
+      "visual": "David Duarte"
+    },
+    {
+      "indice": 70,
+      "inicio": 1281.732,
+      "fim": 1317.392,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "A escolha não vem apenas do nome. David Duarte custa 7,03 e joga fora de casa. Os dados mostram média de 4,38 em 14 jogos, média em casa de 6,21, média fora de casa de 1,93, última pontuação de 8,00, projeção de 3,42. O Bahia sofreu 3 gols e o Chapecoense marcou 4 nos últimos cinco jogos, cenário que favorece a busca pelo saldo. O ponto de atenção é que o bom contexto não garante pontuação.",
+      "texto_tela": "Motivo: média em casa 6,21 • última 8,00 • projeção 3,42. O Bahia sofreu 3 gols e o Chapecoense marcou 4 nos últimos cinco jogos, cenário que…",
+      "visual": "David Duarte"
+    },
+    {
+      "indice": 71,
+      "inicio": 1317.392,
+      "fim": 1325.308,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Arias está nos modelos Intermediário e Para Pontuar contra o Fluminense. O que sustenta essa escolha?",
+      "texto_tela": "Por que Arias foi escalado?",
+      "visual": "Arias"
+    },
+    {
+      "indice": 72,
+      "inicio": 1325.308,
+      "fim": 1360.944,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "O primeiro argumento é o confronto fora de casa e o preço de 15,17 cartoletas. Os dados mostram média de 7,97 em 17 jogos, média em casa de 14,05, média fora de casa de 11,55, última pontuação de 7,70, projeção de 7,43. O Palmeiras marcou 9 gols e o Fluminense sofreu 4 nos últimos cinco jogos. A escolha busca participação ofensiva nesse confronto. O ponto de atenção é que atua fora contra uma equipe do bloco superior.",
+      "texto_tela": "Nos modelos intermediário e para pontuar • média em casa 14,05 • última 7,70 • projeção 7,43. O Palmeiras marcou 9 gols e o Fluminense sofreu 4 nos…",
+      "visual": "Arias"
+    },
+    {
+      "indice": 73,
+      "inicio": 1360.944,
+      "fim": 1368.668,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Neymar está nos modelos Intermediário e Para Pontuar contra o Vasco da Gama. O que sustenta essa escolha?",
+      "texto_tela": "Por que Neymar foi escalado?",
+      "visual": "Neymar"
+    },
+    {
+      "indice": 74,
+      "inicio": 1368.668,
+      "fim": 1405.552,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "O primeiro argumento é o confronto fora de casa e o preço de 21,85 cartoletas. Os dados mostram média de 10,02 em 9 jogos, média em casa de 10,01, última pontuação de 0,00, 19,20 pontos no primeiro turno, projeção de 6,64. O Santos marcou 8 gols e o Vasco da Gama sofreu 6 nos últimos cinco jogos. A escolha busca participação ofensiva nesse confronto. O ponto de atenção é que vem de pontuação abaixo da própria média.",
+      "texto_tela": "Nos modelos intermediário e para pontuar • média em casa 10,01 • última 0,00 • 1º turno 19,20. O Santos marcou 8 gols e o Vasco da Gama sofreu 6 nos…",
+      "visual": "Neymar"
+    },
+    {
+      "indice": 75,
+      "inicio": 1405.552,
+      "fim": 1410.708,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Em Matheus Pereira, a aposta é segurança, teto ou custo-benefício?",
+      "texto_tela": "Por que Matheus Pereira foi escalado?",
+      "visual": "Matheus Pereira"
+    },
+    {
+      "indice": 76,
+      "inicio": 1410.708,
+      "fim": 1445.024,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "O ponto central é comparar o desempenho de Matheus Pereira com o momento do Cruzeiro. Os dados mostram média de 6,76 em 19 jogos, média em casa de 4,72, média fora de casa de 4,07, última pontuação de 2,20, projeção de 6,25. O Cruzeiro marcou 7 gols e o Corinthians sofreu 2 nos últimos cinco jogos. A escolha busca participação ofensiva nesse confronto. O ponto de atenção é que vem de pontuação abaixo da própria média.",
+      "texto_tela": "Custo de 13,80 • média em casa 4,72 • última 2,20 • projeção 6,25. O Cruzeiro marcou 7 gols e o Corinthians sofreu 2 nos últimos cinco jogos. A…",
+      "visual": "Matheus Pereira"
+    },
+    {
+      "indice": 77,
+      "inicio": 1445.024,
+      "fim": 1450.852,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Em Rafael Guanaes, a aposta é segurança, teto ou custo-benefício?",
+      "texto_tela": "Por que Rafael Guanaes foi escalado?",
+      "visual": "Rafael Guanaes"
+    },
+    {
+      "indice": 78,
+      "inicio": 1450.852,
+      "fim": 1479.168,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "O ponto central é comparar o desempenho de Rafael Guanaes com o momento do Mirassol. Os dados mostram média de 4,15 em 19 jogos, média em casa de 3,68, última pontuação de 2,50, 0,00 pontos no primeiro turno. A escolha acompanha o contexto coletivo do Mirassol, que enfrenta o Flamengo ocupando a 2ª posição. O ponto de atenção é que o bom contexto não garante pontuação.",
+      "texto_tela": "Custo de 6,99 • média em casa 3,68 • última 2,50 • 1º turno 0,00. A escolha acompanha o contexto coletivo do Mirassol, que enfrenta o Flamengo…",
+      "visual": "Rafael Guanaes"
+    },
+    {
+      "indice": 79,
+      "inicio": 1479.168,
+      "fim": 1484.612,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Por que Samuel Lino ganhou espaço no Para Pontuar para este confronto?",
+      "texto_tela": "Por que Samuel Lino foi escalado?",
+      "visual": "Samuel Lino"
+    },
+    {
+      "indice": 80,
+      "inicio": 1484.612,
+      "fim": 1523.392,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "A escolha não vem apenas do nome. Samuel Lino custa 11,70 e joga fora de casa. Os dados mostram média de 7,58 em 20 jogos, média em casa de 7,27, média fora de casa de 7,87, última pontuação de 7,40, projeção de 7,73. O Flamengo marcou 11 gols e o Mirassol sofreu 7 nos últimos cinco jogos. A escolha busca participação ofensiva nesse confronto. O ponto de atenção é que o bom contexto não garante pontuação.",
+      "texto_tela": "Motivo: média em casa 7,27 • última 7,40 • projeção 7,73. O Flamengo marcou 11 gols e o Mirassol sofreu 7 nos últimos cinco jogos. A escolha busca…",
+      "visual": "Samuel Lino"
+    },
+    {
+      "indice": 81,
+      "inicio": 1523.392,
+      "fim": 1527.924,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Os números de Pedro justificam a escalação diante do Mirassol?",
+      "texto_tela": "Por que Pedro foi escalado?",
+      "visual": "Pedro"
+    },
+    {
+      "indice": 82,
+      "inicio": 1527.924,
+      "fim": 1561.976,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "A leitura é de custo-benefício: Pedro enfrenta o Mirassol fora de casa. Os dados mostram média de 8,16 em 20 jogos, média em casa de 7,22, média fora de casa de 9,09, última pontuação de -0,30, projeção de 7,23. O Flamengo marcou 11 gols e o Mirassol sofreu 7 nos últimos cinco jogos. A escolha busca participação ofensiva nesse confronto. O ponto de atenção é que vem de pontuação abaixo da própria média.",
+      "texto_tela": "Leitura do confronto: média em casa 7,22 • última -0,30 • projeção 7,23. O Flamengo marcou 11 gols e o Mirassol sofreu 7 nos últimos cinco jogos. A…",
+      "visual": "Pedro"
+    },
+    {
+      "indice": 83,
+      "inicio": 1561.976,
+      "fim": 1572.364,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Agora o Top 5 deixa de ser uma imagem estática e passa a ser comparado por eficiência, média recente, projeção e chance estimada de superar oito pontos.",
+      "texto_tela": "Top 5 com eficiência, média recente, projeção e chance estimada de 8+.",
+      "visual": "top5_resumo"
+    },
+    {
+      "indice": 84,
+      "inicio": 1572.364,
+      "fim": 1579.32,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Entre os goleiros, quem lidera a projeção e quem entrega a melhor relação entre custo e histórico?",
+      "texto_tela": "Top 5 de goleiro: projeção, eficiência e chance estimada de 8+.",
+      "visual": "top5_GOL"
+    },
+    {
+      "indice": 85,
+      "inicio": 1579.32,
+      "fim": 1604.564,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Santos lidera a projeção, com 4,77 pontos esperados. Carlos Miguel apresenta a maior eficiência, com 0,71 ponto por cartoleta. e Lucas Arcanjo tem a maior chance histórica estimada de oito ou mais, em 28%. Esses indicadores ajudam a comparar perfis, mas não garantem a pontuação da rodada.",
+      "texto_tela": "Projeção: Santos • Eficiência: Carlos Miguel • 8+: Lucas Arcanjo.",
+      "visual": "top5_GOL"
+    },
+    {
+      "indice": 86,
+      "inicio": 1604.564,
+      "fim": 1610.944,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Entre os laterais, quem lidera a projeção e quem entrega a melhor relação entre custo e histórico?",
+      "texto_tela": "Top 5 de lateral: projeção, eficiência e chance estimada de 8+.",
+      "visual": "top5_LAT"
+    },
+    {
+      "indice": 87,
+      "inicio": 1610.944,
+      "fim": 1634.076,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Matheuzinho lidera a projeção, com 6,95 pontos esperados. Piquerez apresenta a maior eficiência, com 0,63 ponto por cartoleta. e Matheus Bidu tem a maior chance histórica estimada de oito ou mais, em 44%. Esses indicadores ajudam a comparar perfis, mas não garantem a pontuação da rodada.",
+      "texto_tela": "Projeção: Matheuzinho • Eficiência: Piquerez • 8+: Matheus Bidu.",
+      "visual": "top5_LAT"
+    },
+    {
+      "indice": 88,
+      "inicio": 1634.076,
+      "fim": 1640.792,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Entre os zagueiros, quem lidera a projeção e quem entrega a melhor relação entre custo e histórico?",
+      "texto_tela": "Top 5 de zagueiro: projeção, eficiência e chance estimada de 8+.",
+      "visual": "top5_ZAG"
+    },
+    {
+      "indice": 89,
+      "inicio": 1640.792,
+      "fim": 1663.876,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Aguirre lidera a projeção, com 3,86 pontos esperados. David Duarte apresenta a maior eficiência, com 0,98 ponto por cartoleta. e David Duarte tem a maior chance histórica estimada de oito ou mais, em 31%. Esses indicadores ajudam a comparar perfis, mas não garantem a pontuação da rodada.",
+      "texto_tela": "Projeção: Aguirre • Eficiência: David Duarte • 8+: David Duarte.",
+      "visual": "top5_ZAG"
+    },
+    {
+      "indice": 90,
+      "inicio": 1663.876,
+      "fim": 1670.688,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Entre os meias, quem lidera a projeção e quem entrega a melhor relação entre custo e histórico?",
+      "texto_tela": "Top 5 de meia: projeção, eficiência e chance estimada de 8+.",
+      "visual": "top5_MEI"
+    },
+    {
+      "indice": 91,
+      "inicio": 1670.688,
+      "fim": 1694.468,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Arias lidera a projeção, com 7,43 pontos esperados. Arias apresenta a maior eficiência, com 0,84 ponto por cartoleta. e Arias tem a maior chance histórica estimada de oito ou mais, em 50%. Esses indicadores ajudam a comparar perfis, mas não garantem a pontuação da rodada.",
+      "texto_tela": "Projeção: Arias • Eficiência: Arias • 8+: Arias.",
+      "visual": "top5_MEI"
+    },
+    {
+      "indice": 92,
+      "inicio": 1694.468,
+      "fim": 1700.848,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Entre os atacantes, quem lidera a projeção e quem entrega a melhor relação entre custo e histórico?",
+      "texto_tela": "Top 5 de atacante: projeção, eficiência e chance estimada de 8+.",
+      "visual": "top5_ATA"
+    },
+    {
+      "indice": 93,
+      "inicio": 1700.848,
+      "fim": 1723.476,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Viveros lidera a projeção, com 8,33 pontos esperados. Samuel Lino apresenta a maior eficiência, com 1,10 ponto por cartoleta. e Viveros tem a maior chance histórica estimada de oito ou mais, em 57%. Esses indicadores ajudam a comparar perfis, mas não garantem a pontuação da rodada.",
+      "texto_tela": "Projeção: Viveros • Eficiência: Samuel Lino • 8+: Viveros.",
+      "visual": "top5_ATA"
+    },
+    {
+      "indice": 94,
+      "inicio": 1723.476,
+      "fim": 1730.24,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Entre os técnicos, quem lidera a projeção e quem entrega a melhor relação entre custo e histórico?",
+      "texto_tela": "Top 5 de técnico: projeção, eficiência e chance estimada de 8+.",
+      "visual": "top5_TEC"
+    },
+    {
+      "indice": 95,
+      "inicio": 1730.24,
+      "fim": 1753.444,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Odair Hellmann lidera a projeção, com 6,13 pontos esperados. Odair Hellmann apresenta a maior eficiência, com 0,85 ponto por cartoleta. e Leonardo Jardim tem a maior chance histórica estimada de oito ou mais, em 48%. Esses indicadores ajudam a comparar perfis, mas não garantem a pontuação da rodada.",
+      "texto_tela": "Projeção: Odair Hellmann • Eficiência: Odair Hellmann • 8+: Leonardo Jardim.",
+      "visual": "top5_TEC"
+    },
+    {
+      "indice": 96,
+      "inicio": 1753.444,
+      "fim": 1776.456,
+      "apresentador": "ANTÔNIO",
+      "voz": "pt-BR-AntonioNeural",
+      "texto_falado": "Antes de encerrar, ficam três destaques objetivos. Viveros lidera a projeção, com 8,33 pontos esperados. Samuel Lino apresenta a maior eficiência, com 1,10 ponto por cartoleta. E Viveros registra a maior chance histórica estimada de oito ou mais, em 57%.",
+      "texto_tela": "Resumo: maior projeção, eficiência e chance estimada de 8+.",
+      "visual": "encerramento"
+    },
+    {
+      "indice": 97,
+      "inicio": 1776.456,
+      "fim": 1792.052,
+      "apresentador": "THALITA",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "texto_falado": "Esses números ajudam a comparar as escolhas, mas não garantem pontuação. A seleção inicial fica registrada e será confrontada no pré-fechamento com as mudanças dos três modelos, do capitão, do Top 5 e dos riscos finais da rodada.",
+      "texto_tela": "Próxima análise: mudanças dos times, capitão, Top 5 e riscos finais.",
+      "visual": "encerramento"
+    },
+    {
+      "indice": 98,
+      "inicio": 1792.052,
+      "fim": 1811.104,
+      "apresentador": "FRANCISCA",
+      "voz": "pt-BR-FranciscaNeural",
+      "texto_falado": "Encerramos a análise inicial da rodada 23. Acompanhe o canal Dicas Cartola Portal SimonSports para receber a análise de pré-fechamento e as seleções atualizadas antes do mercado fechar. Portal SimonSports: dados, contexto e análise para acompanhar cada rodada.",
+      "texto_tela": "Rodada 23 analisada • próximo encontro no pré-fechamento.",
+      "visual": "encerramento"
+    }
+  ],
+  "contexto_real_validado": true,
+  "zero_colocado_bloqueado": true,
+  "texto_provisorio_bloqueado": true,
+  "clubes_por_extenso_no_audio": true,
+  "abertura_direta_na_analise": true,
+  "dialogo_individual_real": true,
+  "justificativas_repetidas_bloqueadas": true,
+  "media_por_mando_quando_disponivel": true,
+  "primeiro_turno_quando_disponivel": true,
+  "graficos_eficiencia_prob8": true,
+  "top5_visual_dinamico": true,
+  "top5_sem_imagem_vazia": true,
+  "chance_8_identificada_como_estimativa": true,
+  "top5_atletas_com_historico": 30,
+  "encerramento_reforcado": true,
+  "encerramento_com_sintese": true,
+  "chamada_pre_fechamento": true,
+  "quadro_final_exclusivo": true,
+  "fase_video": "INICIAL",
+  "roteiro_por_fase": true
+}
