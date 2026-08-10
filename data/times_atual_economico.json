@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 23,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-08-10T21:59:44.079Z",
+  "atualizado_em": "2026-08-10T23:29:44.139Z",
   "dados": [
     {
       "RODADA": 23,
@@ -14,7 +14,7 @@
       "NOME": "Matheus Cunha",
       "CLUBE": "INT",
       "PRECO": 5.02,
-      "EXP_SCORE": 2.6536,
+      "EXP_SCORE": 2.9484,
       "ATLETA_ID": 111690
     },
     {
@@ -77,6 +77,17 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "MEI",
+      "NOME": "Garro",
+      "CLUBE": "COR",
+      "PRECO": 11.13,
+      "EXP_SCORE": 5.1496,
+      "ATLETA_ID": 117632
+    },
+    {
+      "RODADA": 23,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
       "NOME": "José Welison",
       "CLUBE": "REM",
       "PRECO": 3.57,
@@ -87,33 +98,11 @@
       "RODADA": 23,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Rodrigo Nestor",
-      "CLUBE": "BAH",
-      "PRECO": 6.1,
-      "EXP_SCORE": 3.3292,
-      "ATLETA_ID": 106822
-    },
-    {
-      "RODADA": 23,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Garro",
-      "CLUBE": "COR",
-      "PRECO": 11.13,
-      "EXP_SCORE": 4.6346,
-      "ATLETA_ID": 117632
-    },
-    {
-      "RODADA": 23,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
       "POS": "ATA",
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 14.34,
-      "EXP_SCORE": 8.34,
+      "EXP_SCORE": 9.591,
       "ATLETA_ID": 143193
     },
     {
@@ -126,6 +115,17 @@
       "PRECO": 5.8,
       "EXP_SCORE": 5.0264,
       "ATLETA_ID": 123101
+    },
+    {
+      "RODADA": 23,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Jajá",
+      "CLUBE": "REM",
+      "PRECO": 7.63,
+      "EXP_SCORE": 5.4566,
+      "ATLETA_ID": 105048
     },
     {
       "RODADA": 23,
@@ -157,7 +157,7 @@
       "NOME": "Marcelinho",
       "CLUBE": "REM",
       "PRECO": 5.98,
-      "EXP_SCORE": 4.1908,
+      "EXP_SCORE": 3.7717,
       "ATLETA_ID": 97795
     },
     {
@@ -190,7 +190,7 @@
       "NOME": "Marcinho",
       "CLUBE": "CHA",
       "PRECO": 4.37,
-      "EXP_SCORE": 3.4218,
+      "EXP_SCORE": 2.9755,
       "ATLETA_ID": 95332
     }
   ]
