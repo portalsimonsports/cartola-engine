@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 23,
-  "atualizado_em": "2026-08-11T18:44:46.710Z",
+  "atualizado_em": "2026-08-11T18:54:49.435Z",
   "dados": [
     {
       "RODADA": 23,
@@ -81,7 +81,7 @@
       "NOME": "Bernabei",
       "CLUBE": "INT",
       "PRECO": 10.84,
-      "EXP_SCORE": 5.542,
+      "EXP_SCORE": 6.1578,
       "FACTOR": 1.1338072504183603,
       "ATLETA_ID": 110426
     },
@@ -211,7 +211,7 @@
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 14.34,
-      "EXP_SCORE": 8.3227,
+      "EXP_SCORE": 9.5711,
       "FACTOR": 1.0515155685145863,
       "ATLETA_ID": 143193
     },
@@ -228,22 +228,22 @@
     {
       "RODADA": 23,
       "POS": "ATA",
-      "NOME": "Pedro",
-      "CLUBE": "FLA",
-      "PRECO": 15.42,
-      "EXP_SCORE": 7.2295,
-      "FACTOR": 0.9714562328768558,
-      "ATLETA_ID": 94583
-    },
-    {
-      "RODADA": 23,
-      "POS": "ATA",
       "NOME": "Andrés Gómez",
       "CLUBE": "VAS",
       "PRECO": 13.56,
       "EXP_SCORE": 6.7134,
       "FACTOR": 1.1054518405480247,
       "ATLETA_ID": 116706
+    },
+    {
+      "RODADA": 23,
+      "POS": "ATA",
+      "NOME": "Pedro",
+      "CLUBE": "FLA",
+      "PRECO": 15.42,
+      "EXP_SCORE": 6.5065,
+      "FACTOR": 0.9714562328768558,
+      "ATLETA_ID": 94583
     },
     {
       "RODADA": 23,
@@ -278,22 +278,22 @@
     {
       "RODADA": 23,
       "POS": "TEC",
+      "NOME": "Fernando Diniz",
+      "CLUBE": "COR",
+      "PRECO": 9.61,
+      "EXP_SCORE": 5.9537,
+      "FACTOR": 1.087723616994963,
+      "ATLETA_ID": 72391
+    },
+    {
+      "RODADA": 23,
+      "POS": "TEC",
       "NOME": "Abel Ferreira",
       "CLUBE": "PAL",
       "PRECO": 12.08,
       "EXP_SCORE": 5.8733,
       "FACTOR": 0.9848442884423101,
       "ATLETA_ID": 110506
-    },
-    {
-      "RODADA": 23,
-      "POS": "TEC",
-      "NOME": "Fernando Diniz",
-      "CLUBE": "COR",
-      "PRECO": 9.61,
-      "EXP_SCORE": 5.1771,
-      "FACTOR": 1.087723616994963,
-      "ATLETA_ID": 72391
     },
     {
       "RODADA": 23,
