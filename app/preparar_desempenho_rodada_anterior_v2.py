@@ -75,6 +75,19 @@ def score_items(payload: Dict[str, Any]) -> List[Dict[str, Any]]:
     return []
 
 
+def aliases_for(item: Dict[str, Any]) -> set[str]:
+    return {
+        norm(value)
+        for value in (
+            item.get("apelido"),
+            item.get("nome"),
+            item.get("slug"),
+            item.get("nome_completo"),
+        )
+        if norm(value)
+    }
+
+
 def club_index(round_value: int) -> Dict[str, int]:
     payload = api_get(f"partidas/{round_value}")
     clubs = payload.get("clubes") or {}
@@ -94,16 +107,7 @@ def score_records(round_value: int) -> List[Dict[str, Any]]:
     payload = api_get(f"atletas/pontuados/{round_value}")
     records: List[Dict[str, Any]] = []
     for item in score_items(payload):
-        aliases = {
-            norm(value)
-            for value in (
-                item.get("apelido"),
-                item.get("nome"),
-                item.get("slug"),
-                item.get("nome_completo"),
-            )
-            if norm(value)
-        }
+        aliases = aliases_for(item)
         if not aliases:
             continue
         points_raw = item.get("pontuacao")
@@ -116,16 +120,43 @@ def score_records(round_value: int) -> List[Dict[str, Any]]:
                 "clube_id": as_int(item.get("clube_id")),
                 "posicao_id": as_int(item.get("posicao_id")),
                 "pontos": as_float(points_raw),
-                "variacao": as_float(
-                    item.get("variacao_num")
-                    if item.get("variacao_num") is not None
-                    else item.get("variacao")
-                ),
                 "raw": item,
             }
         )
     if not records:
         raise RuntimeError(f"API sem atletas pontuados para a rodada {round_value}")
+    return records
+
+
+def market_records() -> List[Dict[str, Any]]:
+    payload = api_get("atletas/mercado")
+    raw = payload.get("atletas") or []
+    if not isinstance(raw, list):
+        raise RuntimeError("API atletas/mercado sem lista de atletas.")
+
+    records: List[Dict[str, Any]] = []
+    for item in raw:
+        if not isinstance(item, dict):
+            continue
+        aliases = aliases_for(item)
+        if not aliases:
+            continue
+        variation_raw = item.get("variacao_num")
+        if variation_raw is None:
+            variation_raw = item.get("variacao")
+        records.append(
+            {
+                "aliases": aliases,
+                "atleta_id": as_int(item.get("atleta_id") or item.get("id")),
+                "clube_id": as_int(item.get("clube_id")),
+                "posicao_id": as_int(item.get("posicao_id")),
+                "variacao": as_float(variation_raw),
+                "preco_atual": as_float(item.get("preco_num") or item.get("preco")),
+                "raw": item,
+            }
+        )
+    if not records:
+        raise RuntimeError("API atletas/mercado sem dados para calcular valorização.")
     return records
 
 
@@ -146,7 +177,7 @@ def _filter_context(
     return current
 
 
-def locate_score(
+def locate_record(
     athlete: Dict[str, Any],
     records: List[Dict[str, Any]],
     clubs: Dict[str, int],
@@ -196,7 +227,8 @@ def team_athletes(payload: Dict[str, Any]) -> List[Dict[str, Any]]:
 
 def build_team_payload(
     round_value: int,
-    records: List[Dict[str, Any]],
+    scores: List[Dict[str, Any]],
+    market: List[Dict[str, Any]],
     clubs: Dict[str, int],
 ) -> Dict[str, Any]:
     times: Dict[str, Dict[str, Any]] = {}
@@ -213,27 +245,43 @@ def build_team_payload(
         total = 0.0
         bonus = 0.0
         appreciation = 0.0
-        located = 0
+        score_located = 0
+        variation_located = 0
         not_scored: List[str] = []
+        not_valued: List[str] = []
         match_methods: Dict[str, str] = {}
+        variation_methods: Dict[str, str] = {}
 
         for athlete in athletes:
-            score, method = locate_score(athlete, records, clubs)
             name = safe(athlete.get("nome"), "SEM_NOME")
-            match_methods[name] = method
+
+            score, score_method = locate_record(athlete, scores, clubs)
+            match_methods[name] = score_method
             if score is None:
                 not_scored.append(name)
-                continue
-            located += 1
-            points = as_float(score.get("pontos"))
-            total += points
-            appreciation += as_float(score.get("variacao"))
-            if captain and captain == norm(name):
-                bonus = points
+            else:
+                score_located += 1
+                points = as_float(score.get("pontos"))
+                total += points
+                if captain and captain == norm(name):
+                    bonus = points
 
-        if located < 9:
+            market_item, variation_method = locate_record(athlete, market, clubs)
+            variation_methods[name] = variation_method
+            if market_item is None:
+                not_valued.append(name)
+            else:
+                variation_located += 1
+                appreciation += as_float(market_item.get("variacao"))
+
+        if score_located < 9:
             raise RuntimeError(
-                f"{title}: apenas {located}/12 atletas localizados; publicação bloqueada."
+                f"{title}: apenas {score_located}/12 atletas com pontuação localizada; publicação bloqueada."
+            )
+        if variation_located != 12:
+            raise RuntimeError(
+                f"{title}: valorização incompleta ({variation_located}/12). "
+                f"Ausentes: {', '.join(not_valued)}"
             )
 
         times[model] = {
@@ -242,11 +290,15 @@ def build_team_payload(
             "pontos_sem_c": round(total, 2),
             "bonus_capitao": round(bonus, 2),
             "pontos_com_c": round(total + bonus, 2),
-            "participacao": f"{located}/12",
+            "participacao": f"{score_located}/12",
             "valorizacao": round(appreciation, 2),
+            "valorizacao_localizada": f"{variation_located}/12",
+            "fonte_valorizacao": "API Cartola atletas/mercado variacao_num após processamento da rodada",
             "capitao": safe(source.get("capitao") or (source.get("snapshot") or {}).get("capitao")),
             "nao_pontuaram_ou_nao_localizados": not_scored,
+            "nao_localizados_valorizacao": not_valued,
             "metodos_localizacao": match_methods,
+            "metodos_localizacao_valorizacao": variation_methods,
             "snapshot": str(path),
         }
 
@@ -259,7 +311,7 @@ def build_team_payload(
         reverse=True,
     )
     return {
-        "origem": "cartola_desempenho_rodada_anterior_v2",
+        "origem": "cartola_desempenho_rodada_anterior_v3_valorizacao_mercado",
         "evento_github": "cartola_live_publish",
         "workflow_destino": "gerar.resultados.yml",
         "evento_programado": "FECHAMENTO_FINAL_TIMES",
@@ -267,6 +319,8 @@ def build_team_payload(
         "contexto": "RODADA_FINALIZADA",
         "rodada": round_value,
         "rodada_finalizada": round_value,
+        "fonte_pontuacao": f"API Cartola atletas/pontuados/{round_value}",
+        "fonte_valorizacao": "API Cartola atletas/mercado variacao_num da abertura seguinte",
         "times": times,
         "ranking_times": ranking,
         "payload": {
@@ -295,7 +349,7 @@ def build_top5_payload(
     players: List[Dict[str, Any]] = []
     located = 0
     for item in rows:
-        score, method = locate_score(item, records, clubs)
+        score, method = locate_record(item, records, clubs)
         copy = dict(item)
         copy["pontos"] = round(as_float(score.get("pontos")), 2) if score else 0.0
         copy["pontuacao_localizada"] = score is not None
@@ -311,7 +365,7 @@ def build_top5_payload(
         )
 
     return {
-        "origem": "cartola_desempenho_rodada_anterior_v2",
+        "origem": "cartola_desempenho_rodada_anterior_v3_valorizacao_mercado",
         "evento_github": "cartola_live_publish",
         "workflow_destino": "gerar.resultados.yml",
         "evento_programado": "FECHAMENTO_FINAL_TOP5",
@@ -333,11 +387,12 @@ def build_top5_payload(
 
 
 def build_payloads(round_value: int) -> Tuple[Dict[str, Any], Dict[str, Any]]:
-    records = score_records(round_value)
+    scores = score_records(round_value)
+    market = market_records()
     clubs = club_index(round_value)
     return (
-        build_team_payload(round_value, records, clubs),
-        build_top5_payload(round_value, records, clubs),
+        build_team_payload(round_value, scores, market, clubs),
+        build_top5_payload(round_value, scores, clubs),
     )
 
 
@@ -353,6 +408,11 @@ def write_payloads(round_value: int) -> Tuple[Path, Path]:
         f"Desempenho preparado: R{round_value}; times={teams_path}; "
         f"top5={top5_path}; localizados_top5={top5['pontuacoes_localizadas']}/{top5['total_top5']}"
     )
+    for model, item in teams.get("times", {}).items():
+        print(
+            f"Valorização {model}: C$ {as_float(item.get('valorizacao')):.2f} "
+            f"({item.get('valorizacao_localizada')})"
+        )
     return teams_path, top5_path
 
 
