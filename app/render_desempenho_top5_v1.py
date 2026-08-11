@@ -12,7 +12,7 @@ import render_live_cards_v2 as v2
 from render_telegram_cards import RenderOutput, _logo_ps
 
 CANVAS = (1600, 2000)
-VERSION = "desempenho_top5_v1_2026_07_31"
+VERSION = "desempenho_top5_v2_2026_08_11"
 
 
 def safe(value: Any, default: str = "") -> str:
@@ -36,6 +36,7 @@ def is_top5_performance_event(data: Dict[str, Any]) -> bool:
         for token in (
             "FECHAMENTO_FINAL_TOP5",
             "DESEMPENHO_FINAL_TOP5",
+            "DESEMPENHO_TOP5",
             "DESEMPENHO_DO_TOP5",
             "TOP5_FINAL",
         )
@@ -89,8 +90,7 @@ def header(image: Image.Image, round_number: str, page: int, pages: int) -> None
     badge = (1260, 45, 1530, 135)
     v2._round(draw, badge, 28, fill=(4, 18, 38), outline=v2.CYAN, width=3)
     v2._centered_text(draw, badge, f"RODADA {round_number}", v2._font(35, "bold", True), fill=v2.WHITE)
-    title = "DESEMPENHO FINAL DO TOP 5"
-    v2._centered_text(draw, (70, 185, 1530, 285), title, v2._font(65, "bold", True), fill=v2.WHITE)
+    v2._centered_text(draw, (70, 185, 1530, 285), "DESEMPENHO FINAL DO TOP 5", v2._font(65, "bold", True), fill=v2.WHITE)
     v2._centered_text(
         draw,
         (100, 275, 1500, 335),
@@ -104,8 +104,9 @@ def header(image: Image.Image, round_number: str, page: int, pages: int) -> None
 def row(image: Image.Image, item: Dict[str, Any], box, rank: int) -> None:
     draw = ImageDraw.Draw(image)
     x1, y1, x2, y2 = box
+    located = item.get("pontuacao_localizada") is not False
     points = float_value(item.get("pontos") or item.get("pontuacao"))
-    accent = v2.GREEN if points >= 8 else v2.ORANGE if points >= 4 else v2.RED
+    accent = v2.MUTED if not located else v2.GREEN if points >= 8 else v2.ORANGE if points >= 4 else v2.RED
     v2._shadow_panel(image, box, radius=24, fill=(4, 16, 33), outline=accent, shadow_alpha=75, outline_width=2)
     rank_box = (x1 + 18, y1 + 18, x1 + 95, y2 - 18)
     v2._round(draw, rank_box, 20, fill=(7, 30, 55), outline=accent, width=2)
@@ -122,12 +123,19 @@ def row(image: Image.Image, item: Dict[str, Any], box, rank: int) -> None:
     draw.text((x1 + 930, y1 + 28), f"C$ {price:.2f}", font=v2._font(28, "semibold", True), fill=v2.SILVER)
     points_box = (x2 - 300, y1 + 18, x2 - 20, y2 - 18)
     v2._round(draw, points_box, 22, fill=(8, 28, 49), outline=accent, width=3)
-    v2._centered_text(draw, points_box, f"{points:.2f} pts", v2._font(42, "bold", True), fill=accent)
+    label = f"{points:.2f} pts" if located else "NÃO PONTUOU"
+    font = v2._fit_text(draw, label, 250, 42, 24, "bold", True)
+    v2._centered_text(draw, points_box, label, font, fill=accent)
 
 
 def render_top5_performance(data: Dict[str, Any], output_dir: str = "output") -> RenderOutput:
     players = extract_list(data)
-    players.sort(key=lambda item: (safe(item.get("pos") or item.get("posicao")), -float_value(item.get("pontos") or item.get("pontuacao"))))
+    players.sort(
+        key=lambda item: (
+            safe(item.get("pos") or item.get("posicao")),
+            -(float_value(item.get("pontos") or item.get("pontuacao")) if item.get("pontuacao_localizada") is not False else -999),
+        )
+    )
     round_number = round_value(data)
     per_page = 10
     pages = max(1, math.ceil(len(players) / per_page))
