@@ -3,27 +3,17 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 23,
-  "atualizado_em": "2026-08-11T06:14:57.700Z",
+  "atualizado_em": "2026-08-11T06:24:50.406Z",
   "dados": [
     {
       "RODADA": 23,
       "POS": "GOL",
-      "NOME": "Fábio",
-      "CLUBE": "FLU",
-      "PRECO": 10.21,
-      "EXP_SCORE": 4.8733,
-      "FACTOR": 1.054398710334356,
-      "ATLETA_ID": 37656
-    },
-    {
-      "RODADA": 23,
-      "POS": "GOL",
-      "NOME": "Ronaldo",
-      "CLUBE": "BAH",
-      "PRECO": 8.81,
-      "EXP_SCORE": 4.6576,
-      "FACTOR": 0.9480573840152455,
-      "ATLETA_ID": 91101
+      "NOME": "Santos",
+      "CLUBE": "CAP",
+      "PRECO": 9.22,
+      "EXP_SCORE": 4.7691,
+      "FACTOR": 1.1567850407405402,
+      "ATLETA_ID": 69012
     },
     {
       "RODADA": 23,
@@ -38,22 +28,32 @@
     {
       "RODADA": 23,
       "POS": "GOL",
+      "NOME": "Fábio",
+      "CLUBE": "FLU",
+      "PRECO": 10.21,
+      "EXP_SCORE": 4.2376,
+      "FACTOR": 1.054398710334356,
+      "ATLETA_ID": 37656
+    },
+    {
+      "RODADA": 23,
+      "POS": "GOL",
+      "NOME": "Everson",
+      "CLUBE": "CAM",
+      "PRECO": 8.86,
+      "EXP_SCORE": 4.2181,
+      "FACTOR": 1.1372032326645058,
+      "ATLETA_ID": 72294
+    },
+    {
+      "RODADA": 23,
+      "POS": "GOL",
       "NOME": "Carlos Miguel",
       "CLUBE": "PAL",
       "PRECO": 8.9,
       "EXP_SCORE": 4.2142,
       "FACTOR": 0.9398896484637479,
       "ATLETA_ID": 104084
-    },
-    {
-      "RODADA": 23,
-      "POS": "GOL",
-      "NOME": "Santos",
-      "CLUBE": "CAP",
-      "PRECO": 9.22,
-      "EXP_SCORE": 4.147,
-      "FACTOR": 1.1567850407405402,
-      "ATLETA_ID": 69012
     },
     {
       "RODADA": 23,
@@ -118,16 +118,6 @@
     {
       "RODADA": 23,
       "POS": "ZAG",
-      "NOME": "Alexander Barboza",
-      "CLUBE": "PAL",
-      "PRECO": 10.94,
-      "EXP_SCORE": 3.4313,
-      "FACTOR": 0.9398896484637479,
-      "ATLETA_ID": 99274
-    },
-    {
-      "RODADA": 23,
-      "POS": "ZAG",
       "NOME": "Léo Pereira",
       "CLUBE": "FLA",
       "PRECO": 10.59,
@@ -154,6 +144,16 @@
       "EXP_SCORE": 3.3738,
       "FACTOR": 1.1106436103215156,
       "ATLETA_ID": 69208
+    },
+    {
+      "RODADA": 23,
+      "POS": "ZAG",
+      "NOME": "Alexander Barboza",
+      "CLUBE": "PAL",
+      "PRECO": 10.94,
+      "EXP_SCORE": 3.0882,
+      "FACTOR": 0.9398896484637479,
+      "ATLETA_ID": 99274
     },
     {
       "RODADA": 23,
