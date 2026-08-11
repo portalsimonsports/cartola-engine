@@ -1,0 +1,210 @@
+{
+  "origem": "cartola_desempenho_rodada_anterior_v2",
+  "evento_github": "cartola_live_publish",
+  "workflow_destino": "gerar.resultados.yml",
+  "evento_programado": "FECHAMENTO_FINAL_TIMES",
+  "tipo_publicacao": "DESEMPENHO_FINAL_DOS_TIMES",
+  "contexto": "RODADA_FINALIZADA",
+  "rodada": 22,
+  "rodada_finalizada": 22,
+  "times": {
+    "ECONOMICO": {
+      "modelo": "ECONOMICO",
+      "nome": "Time Econômico",
+      "pontos_sem_c": 45.71,
+      "bonus_capitao": 7.4,
+      "pontos_com_c": 53.11,
+      "participacao": "12/12",
+      "valorizacao": 0.0,
+      "capitao": "Samuel Lino",
+      "nao_pontuaram_ou_nao_localizados": [],
+      "metodos_localizacao": {
+        "Ronaldo": "EXATO",
+        "Jonathan Jesus": "EXATO",
+        "João Victor": "EXATO",
+        "Jacy": "EXATO",
+        "Denilson": "EXATO",
+        "Picco": "EXATO",
+        "Josué": "EXATO",
+        "José Welison": "EXATO",
+        "Maurício": "EXATO",
+        "Vitinho": "EXATO",
+        "Samuel Lino": "EXATO",
+        "Abel Ferreira": "EXATO"
+      },
+      "snapshot": "data/publicacoes_atuais/time_economico_rodada_22.json"
+    },
+    "INTERMEDIARIO": {
+      "modelo": "INTERMEDIARIO",
+      "nome": "Time Intermediário",
+      "pontos_sem_c": 59.3,
+      "bonus_capitao": 7.4,
+      "pontos_com_c": 66.7,
+      "participacao": "12/12",
+      "valorizacao": 0.0,
+      "capitao": "Samuel Lino",
+      "nao_pontuaram_ou_nao_localizados": [],
+      "metodos_localizacao": {
+        "Tiago Volpi": "EXATO",
+        "Jonathan Jesus": "EXATO",
+        "Jacy": "EXATO",
+        "David Duarte": "EXATO",
+        "Arias": "EXATO",
+        "Matheus Pereira": "EXATO",
+        "Danilo": "EXATO",
+        "Allan": "EXATO",
+        "Samuel Lino": "EXATO",
+        "Pedro": "EXATO",
+        "Viveros": "EXATO",
+        "Rafael Guanaes": "EXATO"
+      },
+      "snapshot": "data/publicacoes_atuais/time_intermediario_rodada_22.json"
+    },
+    "PONTUACAO": {
+      "modelo": "PONTUACAO",
+      "nome": "Time para Pontuar",
+      "pontos_sem_c": 62.21,
+      "bonus_capitao": 7.4,
+      "pontos_com_c": 69.61,
+      "participacao": "12/12",
+      "valorizacao": 0.0,
+      "capitao": "Samuel Lino",
+      "nao_pontuaram_ou_nao_localizados": [],
+      "metodos_localizacao": {
+        "Tiago Volpi": "EXATO",
+        "Juninho Capixaba": "EXATO",
+        "Luciano Juba": "EXATO",
+        "Jonathan Jesus": "EXATO",
+        "Jacy": "EXATO",
+        "Arias": "EXATO",
+        "Matheus Pereira": "EXATO",
+        "Danilo": "EXATO",
+        "Samuel Lino": "EXATO",
+        "Pedro": "EXATO",
+        "Viveros": "EXATO",
+        "Abel Ferreira": "EXATO"
+      },
+      "snapshot": "data/publicacoes_atuais/time_pontuacao_rodada_22.json"
+    }
+  },
+  "ranking_times": [
+    {
+      "modelo": "PONTUACAO",
+      "nome": "Time para Pontuar",
+      "pontos": 69.61
+    },
+    {
+      "modelo": "INTERMEDIARIO",
+      "nome": "Time Intermediário",
+      "pontos": 66.7
+    },
+    {
+      "modelo": "ECONOMICO",
+      "nome": "Time Econômico",
+      "pontos": 53.11
+    }
+  ],
+  "payload": {
+    "rodada": 22,
+    "times": {
+      "ECONOMICO": {
+        "modelo": "ECONOMICO",
+        "nome": "Time Econômico",
+        "pontos_sem_c": 45.71,
+        "bonus_capitao": 7.4,
+        "pontos_com_c": 53.11,
+        "participacao": "12/12",
+        "valorizacao": 0.0,
+        "capitao": "Samuel Lino",
+        "nao_pontuaram_ou_nao_localizados": [],
+        "metodos_localizacao": {
+          "Ronaldo": "EXATO",
+          "Jonathan Jesus": "EXATO",
+          "João Victor": "EXATO",
+          "Jacy": "EXATO",
+          "Denilson": "EXATO",
+          "Picco": "EXATO",
+          "Josué": "EXATO",
+          "José Welison": "EXATO",
+          "Maurício": "EXATO",
+          "Vitinho": "EXATO",
+          "Samuel Lino": "EXATO",
+          "Abel Ferreira": "EXATO"
+        },
+        "snapshot": "data/publicacoes_atuais/time_economico_rodada_22.json"
+      },
+      "INTERMEDIARIO": {
+        "modelo": "INTERMEDIARIO",
+        "nome": "Time Intermediário",
+        "pontos_sem_c": 59.3,
+        "bonus_capitao": 7.4,
+        "pontos_com_c": 66.7,
+        "participacao": "12/12",
+        "valorizacao": 0.0,
+        "capitao": "Samuel Lino",
+        "nao_pontuaram_ou_nao_localizados": [],
+        "metodos_localizacao": {
+          "Tiago Volpi": "EXATO",
+          "Jonathan Jesus": "EXATO",
+          "Jacy": "EXATO",
+          "David Duarte": "EXATO",
+          "Arias": "EXATO",
+          "Matheus Pereira": "EXATO",
+          "Danilo": "EXATO",
+          "Allan": "EXATO",
+          "Samuel Lino": "EXATO",
+          "Pedro": "EXATO",
+          "Viveros": "EXATO",
+          "Rafael Guanaes": "EXATO"
+        },
+        "snapshot": "data/publicacoes_atuais/time_intermediario_rodada_22.json"
+      },
+      "PONTUACAO": {
+        "modelo": "PONTUACAO",
+        "nome": "Time para Pontuar",
+        "pontos_sem_c": 62.21,
+        "bonus_capitao": 7.4,
+        "pontos_com_c": 69.61,
+        "participacao": "12/12",
+        "valorizacao": 0.0,
+        "capitao": "Samuel Lino",
+        "nao_pontuaram_ou_nao_localizados": [],
+        "metodos_localizacao": {
+          "Tiago Volpi": "EXATO",
+          "Juninho Capixaba": "EXATO",
+          "Luciano Juba": "EXATO",
+          "Jonathan Jesus": "EXATO",
+          "Jacy": "EXATO",
+          "Arias": "EXATO",
+          "Matheus Pereira": "EXATO",
+          "Danilo": "EXATO",
+          "Samuel Lino": "EXATO",
+          "Pedro": "EXATO",
+          "Viveros": "EXATO",
+          "Abel Ferreira": "EXATO"
+        },
+        "snapshot": "data/publicacoes_atuais/time_pontuacao_rodada_22.json"
+      }
+    },
+    "ranking_times": [
+      {
+        "modelo": "PONTUACAO",
+        "nome": "Time para Pontuar",
+        "pontos": 69.61
+      },
+      {
+        "modelo": "INTERMEDIARIO",
+        "nome": "Time Intermediário",
+        "pontos": 66.7
+      },
+      {
+        "modelo": "ECONOMICO",
+        "nome": "Time Econômico",
+        "pontos": 53.11
+      }
+    ],
+    "evento_programado": "FECHAMENTO_FINAL_TIMES",
+    "tipo_publicacao": "DESEMPENHO_FINAL_DOS_TIMES",
+    "contexto": "RODADA_FINALIZADA"
+  }
+}
