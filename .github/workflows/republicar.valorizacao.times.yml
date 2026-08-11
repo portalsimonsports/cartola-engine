@@ -1,0 +1,162 @@
+name: Republicar Valorização dos Times
+
+on:
+  push:
+    paths:
+      - 'data/flags/republicar_valorizacao_times_rodada_*.json'
+  workflow_dispatch:
+    inputs:
+      rodada:
+        description: 'Rodada encerrada'
+        required: true
+        default: '22'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: republicar-valorizacao-times
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependências
+        run: |
+          set -e
+          python -m pip install --upgrade pip setuptools wheel
+          pip install --upgrade -r requirements.txt
+          python -m py_compile app/preparar_desempenho_rodada_anterior_v2.py
+          python -m py_compile app/publicar_desempenho_times_abertura.py
+          python -m py_compile app/gerar_resultados_telegram_v3.py
+
+      - name: Resolver rodada
+        id: rodada
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          MANUAL_RODADA: ${{ github.event.inputs.rodada }}
+        run: |
+          set -e
+          python - <<'PY'
+          import json
+          import os
+          import re
+          from pathlib import Path
+
+          rodada = 0
+          if os.environ.get('EVENT_NAME') == 'workflow_dispatch':
+              rodada = int(os.environ.get('MANUAL_RODADA') or 0)
+          else:
+              candidatos = []
+              for path in Path('data/flags').glob('republicar_valorizacao_times_rodada_*.json'):
+                  match = re.search(r'rodada_(\d+)\.json$', path.name)
+                  if not match:
+                      continue
+                  try:
+                      payload = json.loads(path.read_text(encoding='utf-8'))
+                  except Exception:
+                      payload = {}
+                  candidatos.append(int(payload.get('rodada') or match.group(1)))
+              rodada = max(candidatos) if candidatos else 0
+
+          if rodada <= 0:
+              raise SystemExit('Rodada inválida para republicação.')
+
+          with Path(os.environ['GITHUB_OUTPUT']).open('a', encoding='utf-8') as fh:
+              fh.write(f'rodada={rodada}\n')
+          print(f'Republicação da valorização liberada para R{rodada}.')
+          PY
+
+      - name: Calcular desempenho e valorização real
+        env:
+          RODADA: ${{ steps.rodada.outputs.rodada }}
+        run: |
+          set -e
+          python app/publicar_desempenho_times_abertura.py \
+            --rodada "$RODADA" \
+            --nao-disparar \
+            --payload-output "data/publicacoes_atuais/desempenho_times_rodada_${RODADA}.json"
+
+          python - "$RODADA" <<'PY'
+          import json
+          import sys
+          from pathlib import Path
+
+          rodada = int(sys.argv[1])
+          path = Path(f'data/publicacoes_atuais/desempenho_times_rodada_{rodada}.json')
+          data = json.loads(path.read_text(encoding='utf-8'))
+          times = data.get('times') or {}
+          if len(times) != 3:
+              raise SystemExit(f'Esperados 3 times; encontrados {len(times)}.')
+          for nome, item in times.items():
+              if item.get('valorizacao_localizada') != '12/12':
+                  raise SystemExit(f'{nome}: valorização incompleta: {item.get("valorizacao_localizada")}')
+              if 'fonte_valorizacao' not in item:
+                  raise SystemExit(f'{nome}: fonte de valorização ausente.')
+              print(f'{nome}: valorização C$ {float(item.get("valorizacao") or 0):.2f}')
+          PY
+
+      - name: Publicar somente o card dos times
+        env:
+          RODADA: ${{ steps.rodada.outputs.rodada }}
+          PAYLOAD_FILE: data/publicacoes_atuais/desempenho_times_rodada_${{ steps.rodada.outputs.rodada }}.json
+          OUTPUT_DIR: output
+          TZ: America/Sao_Paulo
+          PLANILHA_ID: ${{ secrets.PLANILHA_ID }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_APPLICATION_CREDENTIALS: service_account.json
+          ABA_TELEGRAM: ${{ secrets.ABA_TELEGRAM }}
+          CONTA_TELEGRAM: ${{ secrets.CONTA_TELEGRAM }}
+          TELEGRAM_CHAT_FALLBACK: '@dicascartolaportalsimonsports'
+        run: |
+          set -e
+          python app/gerar_resultados_telegram_v3.py
+          test -s "output/aprovada_desempenho_final_times_rodada_${RODADA}.png"
+          cp output/ultima_publicacao.json "output/ultima_publicacao_desempenho_times_rodada_${RODADA}.json"
+
+      - name: Registrar correção
+        env:
+          RODADA: ${{ steps.rodada.outputs.rodada }}
+        run: |
+          set -e
+          mkdir -p data/flags
+          printf '{\n  "rodada": %s,\n  "valorizacao_corrigida": true,\n  "times_republicados": true,\n  "top5_republicado": false,\n  "registrado_em": "%s"\n}\n' \
+            "$RODADA" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+            > "data/flags/valorizacao_times_rodada_${RODADA}.corrigida.json"
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add \
+            "data/publicacoes_atuais/desempenho_times_rodada_${RODADA}.json" \
+            "data/flags/valorizacao_times_rodada_${RODADA}.corrigida.json" \
+            "output/aprovada_desempenho_final_times_rodada_${RODADA}.png" \
+            "output/ultima_publicacao_desempenho_times_rodada_${RODADA}.json"
+
+          git commit -m "Telegram: corrigir valorização dos times R${RODADA}"
+          enviado=0
+          for tentativa in 1 2 3 4 5; do
+            git fetch origin main
+            if git rebase origin/main && git push origin HEAD:main; then
+              enviado=1
+              break
+            fi
+            git rebase --abort 2>/dev/null || true
+            git reset --hard HEAD
+            sleep $((tentativa * 3))
+          done
+          test "$enviado" -eq 1
