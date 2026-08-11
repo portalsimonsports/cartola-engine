@@ -1,0 +1,218 @@
+name: Publicar Desempenho da Rodada Anterior
+
+on:
+  workflow_run:
+    workflows:
+      - Gerar Resultados Live
+    types:
+      - completed
+  push:
+    paths:
+      - 'data/flags/publicar_desempenho_rodada_*.json'
+  workflow_dispatch:
+    inputs:
+      rodada:
+        description: 'Rodada encerrada'
+        required: true
+        default: '22'
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: publicar-desempenho-rodada-anterior
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependências
+        run: |
+          set -e
+          python -m pip install --upgrade pip setuptools wheel
+          pip install --upgrade -r requirements.txt
+          python -m py_compile app/preparar_desempenho_rodada_anterior_v2.py
+          python -m py_compile app/gerar_resultados_telegram_v3.py
+          python -m py_compile app/render_desempenho_top5_v1.py
+
+      - name: Resolver rodada e verificar necessidade
+        id: rodada
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          MANUAL_RODADA: ${{ github.event.inputs.rodada }}
+        run: |
+          set -e
+          python - <<'PY'
+          import json
+          import os
+          import re
+          from pathlib import Path
+          import requests
+
+          event = os.environ.get('EVENT_NAME', '')
+          rodada = 0
+          force = event in {'push', 'workflow_dispatch'}
+
+          if event == 'workflow_dispatch':
+              rodada = int(os.environ.get('MANUAL_RODADA') or 0)
+          elif event == 'push':
+              candidatos = []
+              for path in Path('data/flags').glob('publicar_desempenho_rodada_*.json'):
+                  match = re.search(r'rodada_(\d+)\.json$', path.name)
+                  if not match:
+                      continue
+                  try:
+                      payload = json.loads(path.read_text(encoding='utf-8'))
+                  except Exception:
+                      payload = {}
+                  candidatos.append(int(payload.get('rodada') or match.group(1)))
+              rodada = max(candidatos) if candidatos else 0
+          else:
+              status = requests.get(
+                  'https://api.cartola.globo.com/mercado/status',
+                  headers={'User-Agent': 'PortalSimonSports-CartolaEngine/2026'},
+                  timeout=45,
+              )
+              status.raise_for_status()
+              data = status.json()
+              mercado_aberto = int(data.get('status_mercado') or 0) == 1
+              atual = int(data.get('rodada_atual') or data.get('rodada') or 0)
+              if not mercado_aberto or atual <= 1:
+                  print('Mercado ainda não está aberto para uma nova rodada; nada a publicar.')
+                  rodada = 0
+              else:
+                  rodada = atual - 1
+
+          output = Path(os.environ['GITHUB_OUTPUT'])
+          if rodada <= 0:
+              with output.open('a', encoding='utf-8') as fh:
+                  fh.write('ready=false\n')
+              raise SystemExit(0)
+
+          team_image = Path(f'output/aprovada_desempenho_final_times_rodada_{rodada}.png')
+          top5_image = Path(f'output/desempenho_final_top5_rodada_{rodada}_p1.png')
+          if not force and team_image.exists() and top5_image.exists():
+              print(f'Desempenho da rodada {rodada} já publicado e arquivado.')
+              with output.open('a', encoding='utf-8') as fh:
+                  fh.write('ready=false\n')
+                  fh.write(f'rodada={rodada}\n')
+              raise SystemExit(0)
+
+          with output.open('a', encoding='utf-8') as fh:
+              fh.write('ready=true\n')
+              fh.write(f'rodada={rodada}\n')
+          print(f'Desempenho da rodada {rodada} liberado para publicação; force={force}.')
+          PY
+
+      - name: Preparar pontuações reais de Times e Top5
+        if: steps.rodada.outputs.ready == 'true'
+        env:
+          RODADA: ${{ steps.rodada.outputs.rodada }}
+        run: |
+          set -e
+          python app/preparar_desempenho_rodada_anterior_v2.py --rodada "$RODADA"
+          test -s "data/publicacoes_atuais/desempenho_times_rodada_${RODADA}.json"
+          test -s "data/publicacoes_atuais/desempenho_top5_rodada_${RODADA}.json"
+
+      - name: Publicar desempenho dos três times
+        if: steps.rodada.outputs.ready == 'true'
+        env:
+          RODADA: ${{ steps.rodada.outputs.rodada }}
+          PAYLOAD_FILE: data/publicacoes_atuais/desempenho_times_rodada_${{ steps.rodada.outputs.rodada }}.json
+          OUTPUT_DIR: output
+          TZ: America/Sao_Paulo
+          PLANILHA_ID: ${{ secrets.PLANILHA_ID }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_APPLICATION_CREDENTIALS: service_account.json
+          ABA_TELEGRAM: ${{ secrets.ABA_TELEGRAM }}
+          CONTA_TELEGRAM: ${{ secrets.CONTA_TELEGRAM }}
+          TELEGRAM_CHAT_FALLBACK: '@dicascartolaportalsimonsports'
+        run: |
+          set -e
+          python app/gerar_resultados_telegram_v3.py
+          test -s "output/aprovada_desempenho_final_times_rodada_${RODADA}.png"
+          cp output/ultima_publicacao.json "output/ultima_publicacao_desempenho_times_rodada_${RODADA}.json"
+
+      - name: Publicar desempenho do Top5
+        if: steps.rodada.outputs.ready == 'true'
+        env:
+          RODADA: ${{ steps.rodada.outputs.rodada }}
+          PAYLOAD_FILE: data/publicacoes_atuais/desempenho_top5_rodada_${{ steps.rodada.outputs.rodada }}.json
+          OUTPUT_DIR: output
+          TZ: America/Sao_Paulo
+          PLANILHA_ID: ${{ secrets.PLANILHA_ID }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_APPLICATION_CREDENTIALS: service_account.json
+          ABA_TELEGRAM: ${{ secrets.ABA_TELEGRAM }}
+          CONTA_TELEGRAM: ${{ secrets.CONTA_TELEGRAM }}
+          TELEGRAM_CHAT_FALLBACK: '@dicascartolaportalsimonsports'
+        run: |
+          set -e
+          python app/gerar_resultados_telegram_v3.py
+          test -s "output/desempenho_final_top5_rodada_${RODADA}_p1.png"
+          cp output/ultima_publicacao.json "output/ultima_publicacao_desempenho_top5_rodada_${RODADA}.json"
+
+      - name: Validar publicação completa
+        if: steps.rodada.outputs.ready == 'true'
+        env:
+          RODADA: ${{ steps.rodada.outputs.rodada }}
+        run: |
+          set -e
+          test -s "output/aprovada_desempenho_final_times_rodada_${RODADA}.png"
+          test -s "output/desempenho_final_top5_rodada_${RODADA}_p1.png"
+          test -s "output/ultima_publicacao_desempenho_times_rodada_${RODADA}.json"
+          test -s "output/ultima_publicacao_desempenho_top5_rodada_${RODADA}.json"
+          echo "Times e Top5 da rodada ${RODADA} enviados e validados."
+
+      - name: Registrar somente após envio concluído
+        if: steps.rodada.outputs.ready == 'true' && success()
+        env:
+          RODADA: ${{ steps.rodada.outputs.rodada }}
+        run: |
+          set -e
+          mkdir -p data/flags
+          printf '{\n  "rodada": %s,\n  "times": true,\n  "top5": true,\n  "telegram_enviado": true,\n  "registrado_em": "%s"\n}\n' \
+            "$RODADA" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+            > "data/flags/desempenho_rodada_${RODADA}.publicado.json"
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add \
+            "data/publicacoes_atuais/desempenho_times_rodada_${RODADA}.json" \
+            "data/publicacoes_atuais/desempenho_top5_rodada_${RODADA}.json" \
+            "data/flags/desempenho_rodada_${RODADA}.publicado.json" \
+            "output/aprovada_desempenho_final_times_rodada_${RODADA}.png" \
+            output/desempenho_final_top5_rodada_${RODADA}_p*.png \
+            "output/ultima_publicacao_desempenho_times_rodada_${RODADA}.json" \
+            "output/ultima_publicacao_desempenho_top5_rodada_${RODADA}.json"
+
+          git commit -m "Telegram: desempenho final Times e Top5 R${RODADA}"
+          enviado=0
+          for tentativa in 1 2 3 4 5; do
+            git fetch origin main
+            if git rebase origin/main && git push origin HEAD:main; then
+              enviado=1
+              break
+            fi
+            git rebase --abort 2>/dev/null || true
+            git reset --hard HEAD
+            sleep $((tentativa * 3))
+          done
+          test "$enviado" -eq 1
