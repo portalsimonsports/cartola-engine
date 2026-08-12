@@ -4,18 +4,18 @@
   "tipo_publicacao": "times",
   "rodada": 23,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-08-12T08:14:50.563Z",
+  "atualizado_em": "2026-08-12T08:19:48.923Z",
   "dados": [
     {
       "RODADA": 23,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "GOL",
-      "NOME": "Lucas Arcanjo",
-      "CLUBE": "VIT",
-      "PRECO": 8.88,
-      "EXP_SCORE": 4.3029,
-      "ATLETA_ID": 104118
+      "NOME": "Fábio",
+      "CLUBE": "FLU",
+      "PRECO": 10.21,
+      "EXP_SCORE": 4.8733,
+      "ATLETA_ID": 37656
     },
     {
       "RODADA": 23,
@@ -44,21 +44,10 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ZAG",
-      "NOME": "Aguirre",
-      "CLUBE": "CAP",
-      "PRECO": 6.59,
-      "EXP_SCORE": 3.8548,
-      "ATLETA_ID": 123869
-    },
-    {
-      "RODADA": 23,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "ZAG",
       "NOME": "Léo Pereira",
       "CLUBE": "FLA",
       "PRECO": 10.59,
-      "EXP_SCORE": 3.4247,
+      "EXP_SCORE": 3.9384,
       "ATLETA_ID": 83528
     },
     {
@@ -66,11 +55,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ZAG",
-      "NOME": "David Duarte",
-      "CLUBE": "BAH",
-      "PRECO": 7.03,
-      "EXP_SCORE": 3.4184,
-      "ATLETA_ID": 91772
+      "NOME": "Aguirre",
+      "CLUBE": "CAP",
+      "PRECO": 6.59,
+      "EXP_SCORE": 3.8548,
+      "ATLETA_ID": 123869
     },
     {
       "RODADA": 23,
@@ -99,11 +88,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Matheus Pereira",
-      "CLUBE": "CRU",
-      "PRECO": 13.8,
-      "EXP_SCORE": 6.2728,
-      "ATLETA_ID": 96610
+      "NOME": "Danilo",
+      "CLUBE": "BOT",
+      "PRECO": 15,
+      "EXP_SCORE": 6.2133,
+      "ATLETA_ID": 107231
     },
     {
       "RODADA": 23,
@@ -113,7 +102,7 @@
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 14.34,
-      "EXP_SCORE": 8.3529,
+      "EXP_SCORE": 9.6059,
       "ATLETA_ID": 143193
     },
     {
@@ -121,11 +110,22 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Leozinho",
-      "CLUBE": "CAP",
-      "PRECO": 5.8,
-      "EXP_SCORE": 5.0341,
-      "ATLETA_ID": 123101
+      "NOME": "Jajá",
+      "CLUBE": "REM",
+      "PRECO": 7.63,
+      "EXP_SCORE": 5.4638,
+      "ATLETA_ID": 105048
+    },
+    {
+      "RODADA": 23,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Rubens",
+      "CLUBE": "CHA",
+      "PRECO": 2.48,
+      "EXP_SCORE": 0.9365,
+      "ATLETA_ID": 116066
     },
     {
       "RODADA": 23,
@@ -143,11 +143,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Ronaldo",
-      "CLUBE": "BAH",
-      "PRECO": 8.81,
-      "EXP_SCORE": 4.0501,
-      "ATLETA_ID": 91101
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 8.9,
+      "EXP_SCORE": 4.8463,
+      "ATLETA_ID": 104084
     },
     {
       "RODADA": 23,
@@ -157,7 +157,7 @@
       "NOME": "Bernabei",
       "CLUBE": "INT",
       "PRECO": 10.84,
-      "EXP_SCORE": 5.542,
+      "EXP_SCORE": 6.1578,
       "ATLETA_ID": 110426
     },
     {
@@ -168,7 +168,7 @@
       "NOME": "Arthur Dias",
       "CLUBE": "CAP",
       "PRECO": 6.45,
-      "EXP_SCORE": 2.9446,
+      "EXP_SCORE": 3.2718,
       "ATLETA_ID": 130843
     },
     {
@@ -176,22 +176,22 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Garro",
-      "CLUBE": "COR",
-      "PRECO": 11.13,
-      "EXP_SCORE": 4.6393,
-      "ATLETA_ID": 117632
+      "NOME": "Matheus Pereira",
+      "CLUBE": "CRU",
+      "PRECO": 13.8,
+      "EXP_SCORE": 5.4546,
+      "ATLETA_ID": 96610
     },
     {
       "RODADA": 23,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Marcinho",
-      "CLUBE": "CHA",
-      "PRECO": 4.37,
-      "EXP_SCORE": 3.4279,
-      "ATLETA_ID": 95332
+      "NOME": "Kauê Furquim",
+      "CLUBE": "BAH",
+      "PRECO": 2,
+      "EXP_SCORE": 0.4752,
+      "ATLETA_ID": 145379
     }
   ]
 }
