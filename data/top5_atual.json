@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 23,
-  "atualizado_em": "2026-08-12T16:24:44.340Z",
+  "atualizado_em": "2026-08-12T16:35:07.711Z",
   "dados": [
     {
       "RODADA": 23,
@@ -14,16 +14,6 @@
       "EXP_SCORE": 4.8733,
       "FACTOR": 1.054398710334356,
       "ATLETA_ID": 37656
-    },
-    {
-      "RODADA": 23,
-      "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.9,
-      "EXP_SCORE": 4.8463,
-      "FACTOR": 0.9398896484637479,
-      "ATLETA_ID": 104084
     },
     {
       "RODADA": 23,
@@ -57,6 +47,16 @@
     },
     {
       "RODADA": 23,
+      "POS": "GOL",
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 8.9,
+      "EXP_SCORE": 4.2142,
+      "FACTOR": 0.9398896484637479,
+      "ATLETA_ID": 104084
+    },
+    {
+      "RODADA": 23,
       "POS": "LAT",
       "NOME": "Matheuzinho",
       "CLUBE": "COR",
@@ -81,7 +81,7 @@
       "NOME": "Bernabei",
       "CLUBE": "INT",
       "PRECO": 10.84,
-      "EXP_SCORE": 6.1578,
+      "EXP_SCORE": 5.542,
       "FACTOR": 1.1338072504183603,
       "ATLETA_ID": 110426
     },
@@ -211,7 +211,7 @@
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 14.34,
-      "EXP_SCORE": 9.6059,
+      "EXP_SCORE": 8.3529,
       "FACTOR": 1.055338341601701,
       "ATLETA_ID": 143193
     },
@@ -228,22 +228,22 @@
     {
       "RODADA": 23,
       "POS": "ATA",
+      "NOME": "Pedro",
+      "CLUBE": "FLA",
+      "PRECO": 15.42,
+      "EXP_SCORE": 7.2486,
+      "FACTOR": 0.974021113180492,
+      "ATLETA_ID": 94583
+    },
+    {
+      "RODADA": 23,
+      "POS": "ATA",
       "NOME": "Andrés Gómez",
       "CLUBE": "VAS",
       "PRECO": 13.56,
       "EXP_SCORE": 6.731,
       "FACTOR": 1.1083495327410875,
       "ATLETA_ID": 116706
-    },
-    {
-      "RODADA": 23,
-      "POS": "ATA",
-      "NOME": "Pedro",
-      "CLUBE": "FLA",
-      "PRECO": 15.42,
-      "EXP_SCORE": 6.5237,
-      "FACTOR": 0.974021113180492,
-      "ATLETA_ID": 94583
     },
     {
       "RODADA": 23,
@@ -278,22 +278,22 @@
     {
       "RODADA": 23,
       "POS": "TEC",
-      "NOME": "Fernando Diniz",
-      "CLUBE": "COR",
-      "PRECO": 9.61,
-      "EXP_SCORE": 5.9679,
-      "FACTOR": 1.0903182140326009,
-      "ATLETA_ID": 72391
-    },
-    {
-      "RODADA": 23,
-      "POS": "TEC",
       "NOME": "Abel Ferreira",
       "CLUBE": "PAL",
       "PRECO": 12.08,
       "EXP_SCORE": 5.5325,
       "FACTOR": 0.9276917376757371,
       "ATLETA_ID": 110506
+    },
+    {
+      "RODADA": 23,
+      "POS": "TEC",
+      "NOME": "Fernando Diniz",
+      "CLUBE": "COR",
+      "PRECO": 9.61,
+      "EXP_SCORE": 5.1895,
+      "FACTOR": 1.0903182140326009,
+      "ATLETA_ID": 72391
     },
     {
       "RODADA": 23,
