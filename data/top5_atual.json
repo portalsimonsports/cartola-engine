@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 23,
-  "atualizado_em": "2026-08-12T14:50:06.532Z",
+  "atualizado_em": "2026-08-12T14:55:08.575Z",
   "dados": [
     {
       "RODADA": 23,
@@ -18,21 +18,11 @@
     {
       "RODADA": 23,
       "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.9,
-      "EXP_SCORE": 4.8463,
-      "FACTOR": 0.939889648463748,
-      "ATLETA_ID": 104084
-    },
-    {
-      "RODADA": 23,
-      "POS": "GOL",
       "NOME": "Ronaldo",
       "CLUBE": "BAH",
       "PRECO": 8.81,
       "EXP_SCORE": 4.6576,
-      "FACTOR": 0.9480573840152455,
+      "FACTOR": 0.9480573840152458,
       "ATLETA_ID": 91101
     },
     {
@@ -54,6 +44,16 @@
       "EXP_SCORE": 4.3029,
       "FACTOR": 1.0865845122194684,
       "ATLETA_ID": 104118
+    },
+    {
+      "RODADA": 23,
+      "POS": "GOL",
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 8.9,
+      "EXP_SCORE": 4.2142,
+      "FACTOR": 0.939889648463748,
+      "ATLETA_ID": 104084
     },
     {
       "RODADA": 23,
@@ -92,7 +92,7 @@
       "CLUBE": "BAH",
       "PRECO": 11.26,
       "EXP_SCORE": 5.3251,
-      "FACTOR": 0.9480573840152455,
+      "FACTOR": 0.9480573840152458,
       "ATLETA_ID": 107093
     },
     {
@@ -102,18 +102,8 @@
       "CLUBE": "RBB",
       "PRECO": 13.21,
       "EXP_SCORE": 5.0252,
-      "FACTOR": 0.8934356525146054,
+      "FACTOR": 0.8934356525146055,
       "ATLETA_ID": 94968
-    },
-    {
-      "RODADA": 23,
-      "POS": "ZAG",
-      "NOME": "Léo Pereira",
-      "CLUBE": "FLA",
-      "PRECO": 10.59,
-      "EXP_SCORE": 3.9384,
-      "FACTOR": 0.9624360018090278,
-      "ATLETA_ID": 83528
     },
     {
       "RODADA": 23,
@@ -138,11 +128,21 @@
     {
       "RODADA": 23,
       "POS": "ZAG",
+      "NOME": "Léo Pereira",
+      "CLUBE": "FLA",
+      "PRECO": 10.59,
+      "EXP_SCORE": 3.4247,
+      "FACTOR": 0.9624360018090278,
+      "ATLETA_ID": 83528
+    },
+    {
+      "RODADA": 23,
+      "POS": "ZAG",
       "NOME": "David Duarte",
       "CLUBE": "BAH",
       "PRECO": 7.03,
       "EXP_SCORE": 3.4184,
-      "FACTOR": 0.9480573840152455,
+      "FACTOR": 0.9480573840152458,
       "ATLETA_ID": 91772
     },
     {
