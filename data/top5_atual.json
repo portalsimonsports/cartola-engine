@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 23,
-  "atualizado_em": "2026-08-12T14:55:08.575Z",
+  "atualizado_em": "2026-08-12T15:05:16.811Z",
   "dados": [
     {
       "RODADA": 23,
@@ -18,11 +18,21 @@
     {
       "RODADA": 23,
       "POS": "GOL",
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 8.9,
+      "EXP_SCORE": 4.8463,
+      "FACTOR": 0.9398896484637479,
+      "ATLETA_ID": 104084
+    },
+    {
+      "RODADA": 23,
+      "POS": "GOL",
       "NOME": "Ronaldo",
       "CLUBE": "BAH",
       "PRECO": 8.81,
       "EXP_SCORE": 4.6576,
-      "FACTOR": 0.9480573840152458,
+      "FACTOR": 0.9480573840152455,
       "ATLETA_ID": 91101
     },
     {
@@ -44,16 +54,6 @@
       "EXP_SCORE": 4.3029,
       "FACTOR": 1.0865845122194684,
       "ATLETA_ID": 104118
-    },
-    {
-      "RODADA": 23,
-      "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.9,
-      "EXP_SCORE": 4.2142,
-      "FACTOR": 0.939889648463748,
-      "ATLETA_ID": 104084
     },
     {
       "RODADA": 23,
@@ -81,7 +81,7 @@
       "NOME": "Bernabei",
       "CLUBE": "INT",
       "PRECO": 10.84,
-      "EXP_SCORE": 5.542,
+      "EXP_SCORE": 6.1578,
       "FACTOR": 1.1338072504183603,
       "ATLETA_ID": 110426
     },
@@ -92,7 +92,7 @@
       "CLUBE": "BAH",
       "PRECO": 11.26,
       "EXP_SCORE": 5.3251,
-      "FACTOR": 0.9480573840152458,
+      "FACTOR": 0.9480573840152455,
       "ATLETA_ID": 107093
     },
     {
@@ -102,8 +102,18 @@
       "CLUBE": "RBB",
       "PRECO": 13.21,
       "EXP_SCORE": 5.0252,
-      "FACTOR": 0.8934356525146055,
+      "FACTOR": 0.8934356525146054,
       "ATLETA_ID": 94968
+    },
+    {
+      "RODADA": 23,
+      "POS": "ZAG",
+      "NOME": "Léo Pereira",
+      "CLUBE": "FLA",
+      "PRECO": 10.59,
+      "EXP_SCORE": 3.9384,
+      "FACTOR": 0.9624360018090278,
+      "ATLETA_ID": 83528
     },
     {
       "RODADA": 23,
@@ -122,18 +132,8 @@
       "CLUBE": "PAL",
       "PRECO": 10.94,
       "EXP_SCORE": 3.4313,
-      "FACTOR": 0.939889648463748,
+      "FACTOR": 0.9398896484637479,
       "ATLETA_ID": 99274
-    },
-    {
-      "RODADA": 23,
-      "POS": "ZAG",
-      "NOME": "Léo Pereira",
-      "CLUBE": "FLA",
-      "PRECO": 10.59,
-      "EXP_SCORE": 3.4247,
-      "FACTOR": 0.9624360018090278,
-      "ATLETA_ID": 83528
     },
     {
       "RODADA": 23,
@@ -142,7 +142,7 @@
       "CLUBE": "BAH",
       "PRECO": 7.03,
       "EXP_SCORE": 3.4184,
-      "FACTOR": 0.9480573840152458,
+      "FACTOR": 0.9480573840152455,
       "ATLETA_ID": 91772
     },
     {
@@ -211,7 +211,7 @@
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 14.34,
-      "EXP_SCORE": 8.3529,
+      "EXP_SCORE": 9.6059,
       "FACTOR": 1.055338341601701,
       "ATLETA_ID": 143193
     },
@@ -228,22 +228,22 @@
     {
       "RODADA": 23,
       "POS": "ATA",
-      "NOME": "Pedro",
-      "CLUBE": "FLA",
-      "PRECO": 15.42,
-      "EXP_SCORE": 7.2486,
-      "FACTOR": 0.974021113180492,
-      "ATLETA_ID": 94583
-    },
-    {
-      "RODADA": 23,
-      "POS": "ATA",
       "NOME": "Andrés Gómez",
       "CLUBE": "VAS",
       "PRECO": 13.56,
       "EXP_SCORE": 6.731,
       "FACTOR": 1.1083495327410875,
       "ATLETA_ID": 116706
+    },
+    {
+      "RODADA": 23,
+      "POS": "ATA",
+      "NOME": "Pedro",
+      "CLUBE": "FLA",
+      "PRECO": 15.42,
+      "EXP_SCORE": 6.5237,
+      "FACTOR": 0.974021113180492,
+      "ATLETA_ID": 94583
     },
     {
       "RODADA": 23,
@@ -278,22 +278,22 @@
     {
       "RODADA": 23,
       "POS": "TEC",
+      "NOME": "Fernando Diniz",
+      "CLUBE": "COR",
+      "PRECO": 9.61,
+      "EXP_SCORE": 5.9679,
+      "FACTOR": 1.0903182140326009,
+      "ATLETA_ID": 72391
+    },
+    {
+      "RODADA": 23,
+      "POS": "TEC",
       "NOME": "Abel Ferreira",
       "CLUBE": "PAL",
       "PRECO": 12.08,
       "EXP_SCORE": 5.5325,
       "FACTOR": 0.9276917376757371,
       "ATLETA_ID": 110506
-    },
-    {
-      "RODADA": 23,
-      "POS": "TEC",
-      "NOME": "Fernando Diniz",
-      "CLUBE": "COR",
-      "PRECO": 9.61,
-      "EXP_SCORE": 5.1895,
-      "FACTOR": 1.0903182140326009,
-      "ATLETA_ID": 72391
     },
     {
       "RODADA": 23,
