@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 23,
-  "atualizado_em": "2026-08-13T07:24:44.903Z",
+  "atualizado_em": "2026-08-13T07:30:07.977Z",
   "dados": [
     {
       "RODADA": 23,
@@ -81,7 +81,7 @@
       "NOME": "Bernabei",
       "CLUBE": "INT",
       "PRECO": 10.84,
-      "EXP_SCORE": 6.1534,
+      "EXP_SCORE": 5.5381,
       "FACTOR": 1.1330035330828612,
       "ATLETA_ID": 110426
     },
@@ -228,6 +228,16 @@
     {
       "RODADA": 23,
       "POS": "ATA",
+      "NOME": "Pedro",
+      "CLUBE": "FLA",
+      "PRECO": 15.42,
+      "EXP_SCORE": 7.2488,
+      "FACTOR": 0.9740544146786572,
+      "ATLETA_ID": 94583
+    },
+    {
+      "RODADA": 23,
+      "POS": "ATA",
       "NOME": "Andrés Gómez",
       "CLUBE": "VAS",
       "PRECO": 13.56,
@@ -238,22 +248,12 @@
     {
       "RODADA": 23,
       "POS": "ATA",
-      "NOME": "Pedro",
-      "CLUBE": "FLA",
-      "PRECO": 15.42,
-      "EXP_SCORE": 6.524,
-      "FACTOR": 0.9740544146786572,
-      "ATLETA_ID": 94583
-    },
-    {
-      "RODADA": 23,
-      "POS": "ATA",
-      "NOME": "Jajá",
-      "CLUBE": "REM",
-      "PRECO": 7.63,
-      "EXP_SCORE": 5.464,
-      "FACTOR": 0.9526958808965712,
-      "ATLETA_ID": 105048
+      "NOME": "Canobbio",
+      "CLUBE": "FLU",
+      "PRECO": 10.45,
+      "EXP_SCORE": 5.4473,
+      "FACTOR": 1.029344860286636,
+      "ATLETA_ID": 102928
     },
     {
       "RODADA": 23,
