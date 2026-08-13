@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 23,
-  "atualizado_em": "2026-08-13T05:35:12.669Z",
+  "atualizado_em": "2026-08-13T05:40:06.042Z",
   "dados": [
     {
       "RODADA": 23,
@@ -81,7 +81,7 @@
       "NOME": "Bernabei",
       "CLUBE": "INT",
       "PRECO": 10.84,
-      "EXP_SCORE": 5.5381,
+      "EXP_SCORE": 6.1534,
       "FACTOR": 1.1330035330828612,
       "ATLETA_ID": 110426
     },
@@ -211,7 +211,7 @@
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 14.34,
-      "EXP_SCORE": 8.3533,
+      "EXP_SCORE": 9.6063,
       "FACTOR": 1.0553879751346051,
       "ATLETA_ID": 143193
     },
@@ -228,16 +228,6 @@
     {
       "RODADA": 23,
       "POS": "ATA",
-      "NOME": "Pedro",
-      "CLUBE": "FLA",
-      "PRECO": 15.42,
-      "EXP_SCORE": 7.2488,
-      "FACTOR": 0.9740544146786572,
-      "ATLETA_ID": 94583
-    },
-    {
-      "RODADA": 23,
-      "POS": "ATA",
       "NOME": "Andrés Gómez",
       "CLUBE": "VAS",
       "PRECO": 13.56,
@@ -248,12 +238,22 @@
     {
       "RODADA": 23,
       "POS": "ATA",
-      "NOME": "Canobbio",
-      "CLUBE": "FLU",
-      "PRECO": 10.45,
-      "EXP_SCORE": 5.4473,
-      "FACTOR": 1.029344860286636,
-      "ATLETA_ID": 102928
+      "NOME": "Pedro",
+      "CLUBE": "FLA",
+      "PRECO": 15.42,
+      "EXP_SCORE": 6.524,
+      "FACTOR": 0.9740544146786572,
+      "ATLETA_ID": 94583
+    },
+    {
+      "RODADA": 23,
+      "POS": "ATA",
+      "NOME": "Jajá",
+      "CLUBE": "REM",
+      "PRECO": 7.63,
+      "EXP_SCORE": 5.464,
+      "FACTOR": 0.9526958808965712,
+      "ATLETA_ID": 105048
     },
     {
       "RODADA": 23,
@@ -278,22 +278,22 @@
     {
       "RODADA": 23,
       "POS": "TEC",
+      "NOME": "Fernando Diniz",
+      "CLUBE": "COR",
+      "PRECO": 9.61,
+      "EXP_SCORE": 5.9681,
+      "FACTOR": 1.090351901362324,
+      "ATLETA_ID": 72391
+    },
+    {
+      "RODADA": 23,
+      "POS": "TEC",
       "NOME": "Abel Ferreira",
       "CLUBE": "PAL",
       "PRECO": 12.08,
       "EXP_SCORE": 5.5328,
       "FACTOR": 0.9277408833064877,
       "ATLETA_ID": 110506
-    },
-    {
-      "RODADA": 23,
-      "POS": "TEC",
-      "NOME": "Fernando Diniz",
-      "CLUBE": "COR",
-      "PRECO": 9.61,
-      "EXP_SCORE": 5.1896,
-      "FACTOR": 1.090351901362324,
-      "ATLETA_ID": 72391
     },
     {
       "RODADA": 23,
