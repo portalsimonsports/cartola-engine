@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 23,
-  "atualizado_em": "2026-08-13T12:10:02.753Z",
+  "atualizado_em": "2026-08-13T12:15:04.669Z",
   "dados": [
     {
       "RODADA": 23,
@@ -28,16 +28,6 @@
     {
       "RODADA": 23,
       "POS": "GOL",
-      "NOME": "Hugo Souza",
-      "CLUBE": "COR",
-      "PRECO": 9.67,
-      "EXP_SCORE": 4.5859,
-      "FACTOR": 1.1097407570015838,
-      "ATLETA_ID": 101574
-    },
-    {
-      "RODADA": 23,
-      "POS": "GOL",
       "NOME": "Lucas Arcanjo",
       "CLUBE": "VIT",
       "PRECO": 8.88,
@@ -54,6 +44,16 @@
       "EXP_SCORE": 4.2109,
       "FACTOR": 0.9391650322849431,
       "ATLETA_ID": 104084
+    },
+    {
+      "RODADA": 23,
+      "POS": "GOL",
+      "NOME": "Santos",
+      "CLUBE": "CAP",
+      "PRECO": 9.22,
+      "EXP_SCORE": 4.1445,
+      "FACTOR": 1.1560796639877022,
+      "ATLETA_ID": 69012
     },
     {
       "RODADA": 23,
@@ -178,6 +178,16 @@
     {
       "RODADA": 23,
       "POS": "MEI",
+      "NOME": "Matheus Pereira",
+      "CLUBE": "CRU",
+      "PRECO": 13.8,
+      "EXP_SCORE": 6.2731,
+      "FACTOR": 0.8941148891644386,
+      "ATLETA_ID": 96610
+    },
+    {
+      "RODADA": 23,
+      "POS": "MEI",
       "NOME": "Danilo",
       "CLUBE": "BOT",
       "PRECO": 15,
@@ -188,20 +198,10 @@
     {
       "RODADA": 23,
       "POS": "MEI",
-      "NOME": "Matheus Pereira",
-      "CLUBE": "CRU",
-      "PRECO": 13.8,
-      "EXP_SCORE": 5.4549,
-      "FACTOR": 0.8941148891644386,
-      "ATLETA_ID": 96610
-    },
-    {
-      "RODADA": 23,
-      "POS": "MEI",
       "NOME": "Garro",
       "CLUBE": "COR",
       "PRECO": 11.13,
-      "EXP_SCORE": 5.155,
+      "EXP_SCORE": 4.6395,
       "FACTOR": 1.1215048128298188,
       "ATLETA_ID": 117632
     },
