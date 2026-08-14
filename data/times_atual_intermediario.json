@@ -4,29 +4,18 @@
   "tipo_publicacao": "times",
   "rodada": 23,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-08-14T23:19:49.175Z",
+  "atualizado_em": "2026-08-14T23:24:52.303Z",
   "dados": [
     {
       "RODADA": 23,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "GOL",
-      "NOME": "Santos",
-      "CLUBE": "CAP",
-      "PRECO": 9.22,
-      "EXP_SCORE": 4.7457,
-      "ATLETA_ID": 69012
-    },
-    {
-      "RODADA": 23,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "LAT",
-      "NOME": "Matheuzinho",
-      "CLUBE": "COR",
-      "PRECO": 12.62,
-      "EXP_SCORE": 6.771,
-      "ATLETA_ID": 101727
+      "NOME": "Fábio",
+      "CLUBE": "FLU",
+      "PRECO": 10.21,
+      "EXP_SCORE": 4.7601,
+      "ATLETA_ID": 37656
     },
     {
       "RODADA": 23,
@@ -36,8 +25,19 @@
       "NOME": "Matheus Bidu",
       "CLUBE": "COR",
       "PRECO": 12.92,
-      "EXP_SCORE": 6.3363,
+      "EXP_SCORE": 6.3169,
       "ATLETA_ID": 105531
+    },
+    {
+      "RODADA": 23,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Bernabei",
+      "CLUBE": "INT",
+      "PRECO": 10.84,
+      "EXP_SCORE": 5.5181,
+      "ATLETA_ID": 110426
     },
     {
       "RODADA": 23,
@@ -47,7 +47,7 @@
       "NOME": "Aguirre",
       "CLUBE": "CAP",
       "PRECO": 6.59,
-      "EXP_SCORE": 3.8359,
+      "EXP_SCORE": 3.828,
       "ATLETA_ID": 123869
     },
     {
@@ -58,19 +58,8 @@
       "NOME": "David Duarte",
       "CLUBE": "BAH",
       "PRECO": 7.03,
-      "EXP_SCORE": 3.4665,
+      "EXP_SCORE": 3.4591,
       "ATLETA_ID": 91772
-    },
-    {
-      "RODADA": 23,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Gabriel Paulista",
-      "CLUBE": "COR",
-      "PRECO": 9.34,
-      "EXP_SCORE": 3.2901,
-      "ATLETA_ID": 69208
     },
     {
       "RODADA": 23,
@@ -80,7 +69,7 @@
       "NOME": "Arias",
       "CLUBE": "PAL",
       "PRECO": 15.17,
-      "EXP_SCORE": 7.1997,
+      "EXP_SCORE": 7.182,
       "ATLETA_ID": 99815
     },
     {
@@ -91,7 +80,7 @@
       "NOME": "Neymar",
       "CLUBE": "SAN",
       "PRECO": 21.85,
-      "EXP_SCORE": 6.6127,
+      "EXP_SCORE": 6.605,
       "ATLETA_ID": 63007
     },
     {
@@ -102,7 +91,7 @@
       "NOME": "Danilo",
       "CLUBE": "BOT",
       "PRECO": 15,
-      "EXP_SCORE": 6.1733,
+      "EXP_SCORE": 6.1645,
       "ATLETA_ID": 107231
     },
     {
@@ -113,7 +102,7 @@
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 14.34,
-      "EXP_SCORE": 7.9855,
+      "EXP_SCORE": 7.9654,
       "ATLETA_ID": 143193
     },
     {
@@ -121,11 +110,22 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Leozinho",
-      "CLUBE": "CAP",
-      "PRECO": 5.8,
-      "EXP_SCORE": 4.8127,
-      "ATLETA_ID": 123101
+      "NOME": "Samuel Lino",
+      "CLUBE": "FLA",
+      "PRECO": 11.7,
+      "EXP_SCORE": 7.7221,
+      "ATLETA_ID": 98873
+    },
+    {
+      "RODADA": 23,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Edson Carioca",
+      "CLUBE": "MIR",
+      "PRECO": 4.05,
+      "EXP_SCORE": 1.658,
+      "ATLETA_ID": 104204
     },
     {
       "RODADA": 23,
@@ -135,7 +135,7 @@
       "NOME": "Rafael Guanaes",
       "CLUBE": "MIR",
       "PRECO": 6.99,
-      "EXP_SCORE": 3.2995,
+      "EXP_SCORE": 3.2923,
       "ATLETA_ID": 104027
     },
     {
@@ -143,55 +143,55 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.9,
-      "EXP_SCORE": 4.3428,
-      "ATLETA_ID": 104084
+      "NOME": "Ronaldo",
+      "CLUBE": "BAH",
+      "PRECO": 8.81,
+      "EXP_SCORE": 4.7131,
+      "ATLETA_ID": 91101
     },
     {
       "RODADA": 23,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "LAT",
-      "NOME": "Bernabei",
-      "CLUBE": "INT",
-      "PRECO": 10.84,
-      "EXP_SCORE": 5.531,
-      "ATLETA_ID": 110426
+      "NOME": "Gilberto",
+      "CLUBE": "CAP",
+      "PRECO": 7.91,
+      "EXP_SCORE": 4.6134,
+      "ATLETA_ID": 80313
     },
     {
       "RODADA": 23,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Jonathan Jesus",
-      "CLUBE": "CRU",
-      "PRECO": 6.2,
-      "EXP_SCORE": 2.9326,
-      "ATLETA_ID": 124912
+      "NOME": "Ruan",
+      "CLUBE": "CAM",
+      "PRECO": 5.44,
+      "EXP_SCORE": 3.0899,
+      "ATLETA_ID": 100842
     },
     {
       "RODADA": 23,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Garro",
-      "CLUBE": "COR",
-      "PRECO": 11.13,
-      "EXP_SCORE": 4.6453,
-      "ATLETA_ID": 117632
+      "NOME": "Baralhas",
+      "CLUBE": "VIT",
+      "PRECO": 9.25,
+      "EXP_SCORE": 4.5179,
+      "ATLETA_ID": 99440
     },
     {
       "RODADA": 23,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Marcinho",
-      "CLUBE": "CHA",
-      "PRECO": 4.37,
-      "EXP_SCORE": 3.538,
-      "ATLETA_ID": 95332
+      "NOME": "Soteldo",
+      "CLUBE": "FLU",
+      "PRECO": 3.96,
+      "EXP_SCORE": 1.5572,
+      "ATLETA_ID": 87258
     }
   ]
 }
