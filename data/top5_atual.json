@@ -3,8 +3,18 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 23,
-  "atualizado_em": "2026-08-14T23:35:16.876Z",
+  "atualizado_em": "2026-08-14T23:44:47.141Z",
   "dados": [
+    {
+      "RODADA": 23,
+      "POS": "GOL",
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 8.9,
+      "EXP_SCORE": 4.9841,
+      "FACTOR": 0.9666129570197933,
+      "ATLETA_ID": 104084
+    },
     {
       "RODADA": 23,
       "POS": "GOL",
@@ -28,12 +38,12 @@
     {
       "RODADA": 23,
       "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.9,
-      "EXP_SCORE": 4.334,
-      "FACTOR": 0.9666129570197933,
-      "ATLETA_ID": 104084
+      "NOME": "Hugo Souza",
+      "CLUBE": "COR",
+      "PRECO": 9.67,
+      "EXP_SCORE": 4.462,
+      "FACTOR": 1.0797654407812909,
+      "ATLETA_ID": 101574
     },
     {
       "RODADA": 23,
@@ -47,21 +57,11 @@
     },
     {
       "RODADA": 23,
-      "POS": "GOL",
-      "NOME": "Lucas Arcanjo",
-      "CLUBE": "VIT",
-      "PRECO": 8.88,
-      "EXP_SCORE": 4.1371,
-      "FACTOR": 1.0447124315526006,
-      "ATLETA_ID": 104118
-    },
-    {
-      "RODADA": 23,
       "POS": "LAT",
       "NOME": "Bernabei",
       "CLUBE": "INT",
       "PRECO": 10.84,
-      "EXP_SCORE": 5.5181,
+      "EXP_SCORE": 6.1312,
       "FACTOR": 1.1289124641063835,
       "ATLETA_ID": 110426
     },
@@ -128,6 +128,16 @@
     {
       "RODADA": 23,
       "POS": "ZAG",
+      "NOME": "Arthur Dias",
+      "CLUBE": "CAP",
+      "PRECO": 6.45,
+      "EXP_SCORE": 3.249,
+      "FACTOR": 1.1487272957326906,
+      "ATLETA_ID": 130843
+    },
+    {
+      "RODADA": 23,
+      "POS": "ZAG",
       "NOME": "Gustavo Gómez",
       "CLUBE": "PAL",
       "PRECO": 10.56,
@@ -138,22 +148,12 @@
     {
       "RODADA": 23,
       "POS": "ZAG",
-      "NOME": "Jonathan Jesus",
-      "CLUBE": "CRU",
-      "PRECO": 6.2,
-      "EXP_SCORE": 3.0674,
-      "FACTOR": 1.032552189549007,
-      "ATLETA_ID": 124912
-    },
-    {
-      "RODADA": 23,
-      "POS": "ZAG",
-      "NOME": "Arthur Dias",
-      "CLUBE": "CAP",
-      "PRECO": 6.45,
-      "EXP_SCORE": 2.9241,
-      "FACTOR": 1.1487272957326906,
-      "ATLETA_ID": 130843
+      "NOME": "Ruan",
+      "CLUBE": "CAM",
+      "PRECO": 5.44,
+      "EXP_SCORE": 3.0899,
+      "FACTOR": 1.1113166162492516,
+      "ATLETA_ID": 100842
     },
     {
       "RODADA": 23,
@@ -211,7 +211,7 @@
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 14.34,
-      "EXP_SCORE": 7.9364,
+      "EXP_SCORE": 9.1268,
       "FACTOR": 1.0027089293271265,
       "ATLETA_ID": 143193
     },
@@ -228,22 +228,22 @@
     {
       "RODADA": 23,
       "POS": "ATA",
-      "NOME": "Pedro",
-      "CLUBE": "FLA",
-      "PRECO": 15.42,
-      "EXP_SCORE": 7.2135,
-      "FACTOR": 0.9693035336436733,
-      "ATLETA_ID": 94583
-    },
-    {
-      "RODADA": 23,
-      "POS": "ATA",
       "NOME": "Andrés Gómez",
       "CLUBE": "VAS",
       "PRECO": 13.56,
       "EXP_SCORE": 6.8693,
       "FACTOR": 1.131116038933559,
       "ATLETA_ID": 116706
+    },
+    {
+      "RODADA": 23,
+      "POS": "ATA",
+      "NOME": "Pedro",
+      "CLUBE": "FLA",
+      "PRECO": 15.42,
+      "EXP_SCORE": 6.4921,
+      "FACTOR": 0.9693035336436733,
+      "ATLETA_ID": 94583
     },
     {
       "RODADA": 23,
@@ -268,6 +268,16 @@
     {
       "RODADA": 23,
       "POS": "TEC",
+      "NOME": "Fernando Diniz",
+      "CLUBE": "COR",
+      "PRECO": 9.61,
+      "EXP_SCORE": 5.9568,
+      "FACTOR": 1.088281898011003,
+      "ATLETA_ID": 72391
+    },
+    {
+      "RODADA": 23,
+      "POS": "TEC",
       "NOME": "Odair Hellmann",
       "CLUBE": "CAP",
       "PRECO": 9.44,
@@ -284,16 +294,6 @@
       "EXP_SCORE": 5.3972,
       "FACTOR": 0.9050145154464664,
       "ATLETA_ID": 110506
-    },
-    {
-      "RODADA": 23,
-      "POS": "TEC",
-      "NOME": "Fernando Diniz",
-      "CLUBE": "COR",
-      "PRECO": 9.61,
-      "EXP_SCORE": 5.1798,
-      "FACTOR": 1.088281898011003,
-      "ATLETA_ID": 72391
     },
     {
       "RODADA": 23,
