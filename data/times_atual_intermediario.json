@@ -4,18 +4,18 @@
   "tipo_publicacao": "times",
   "rodada": 23,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-08-14T18:59:50.999Z",
+  "atualizado_em": "2026-08-14T19:09:49.239Z",
   "dados": [
     {
       "RODADA": 23,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.9,
-      "EXP_SCORE": 4.8287,
-      "ATLETA_ID": 104084
+      "NOME": "Santos",
+      "CLUBE": "CAP",
+      "PRECO": 9.22,
+      "EXP_SCORE": 4.7554,
+      "ATLETA_ID": 69012
     },
     {
       "RODADA": 23,
@@ -44,10 +44,21 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ZAG",
+      "NOME": "Aguirre",
+      "CLUBE": "CAP",
+      "PRECO": 6.59,
+      "EXP_SCORE": 3.8438,
+      "ATLETA_ID": 123869
+    },
+    {
+      "RODADA": 23,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "ZAG",
       "NOME": "Léo Pereira",
       "CLUBE": "FLA",
       "PRECO": 10.59,
-      "EXP_SCORE": 4.1138,
+      "EXP_SCORE": 3.5772,
       "ATLETA_ID": 83528
     },
     {
@@ -55,11 +66,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ZAG",
-      "NOME": "Aguirre",
-      "CLUBE": "CAP",
-      "PRECO": 6.59,
-      "EXP_SCORE": 3.8438,
-      "ATLETA_ID": 123869
+      "NOME": "David Duarte",
+      "CLUBE": "BAH",
+      "PRECO": 7.03,
+      "EXP_SCORE": 3.4622,
+      "ATLETA_ID": 91772
     },
     {
       "RODADA": 23,
@@ -88,11 +99,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Danilo",
-      "CLUBE": "BOT",
-      "PRECO": 15,
-      "EXP_SCORE": 6.1981,
-      "ATLETA_ID": 107231
+      "NOME": "Matheus Pereira",
+      "CLUBE": "CRU",
+      "PRECO": 13.8,
+      "EXP_SCORE": 6.2453,
+      "ATLETA_ID": 96610
     },
     {
       "RODADA": 23,
@@ -102,7 +113,7 @@
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 14.34,
-      "EXP_SCORE": 9.5715,
+      "EXP_SCORE": 8.323,
       "ATLETA_ID": 143193
     },
     {
@@ -110,22 +121,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Samuel Lino",
-      "CLUBE": "FLA",
-      "PRECO": 11.7,
-      "EXP_SCORE": 7.7652,
-      "ATLETA_ID": 98873
-    },
-    {
-      "RODADA": 23,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Franco Rossi",
-      "CLUBE": "CHA",
-      "PRECO": 3.17,
-      "EXP_SCORE": 0.2191,
-      "ATLETA_ID": 142764
+      "NOME": "Leozinho",
+      "CLUBE": "CAP",
+      "PRECO": 5.8,
+      "EXP_SCORE": 5.0161,
+      "ATLETA_ID": 123101
     },
     {
       "RODADA": 23,
@@ -143,11 +143,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Ronaldo",
-      "CLUBE": "BAH",
-      "PRECO": 8.81,
-      "EXP_SCORE": 4.7173,
-      "ATLETA_ID": 91101
+      "NOME": "Lucas Arcanjo",
+      "CLUBE": "VIT",
+      "PRECO": 8.88,
+      "EXP_SCORE": 4.2841,
+      "ATLETA_ID": 104118
     },
     {
       "RODADA": 23,
@@ -157,7 +157,7 @@
       "NOME": "Bernabei",
       "CLUBE": "INT",
       "PRECO": 10.84,
-      "EXP_SCORE": 6.1372,
+      "EXP_SCORE": 5.5235,
       "ATLETA_ID": 110426
     },
     {
@@ -168,7 +168,7 @@
       "NOME": "Arthur Dias",
       "CLUBE": "CAP",
       "PRECO": 6.45,
-      "EXP_SCORE": 3.2624,
+      "EXP_SCORE": 2.9361,
       "ATLETA_ID": 130843
     },
     {
@@ -176,22 +176,22 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Matheus Pereira",
-      "CLUBE": "CRU",
-      "PRECO": 13.8,
-      "EXP_SCORE": 5.4307,
-      "ATLETA_ID": 96610
+      "NOME": "Garro",
+      "CLUBE": "COR",
+      "PRECO": 11.13,
+      "EXP_SCORE": 4.6284,
+      "ATLETA_ID": 117632
     },
     {
       "RODADA": 23,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Bruno Santos",
-      "CLUBE": "MIR",
-      "PRECO": 3.32,
-      "EXP_SCORE": 0.2678,
-      "ATLETA_ID": 103967
+      "NOME": "Marcinho",
+      "CLUBE": "CHA",
+      "PRECO": 4.37,
+      "EXP_SCORE": 3.5571,
+      "ATLETA_ID": 95332
     }
   ]
 }
