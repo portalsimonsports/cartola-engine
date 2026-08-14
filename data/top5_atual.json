@@ -3,27 +3,17 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 23,
-  "atualizado_em": "2026-08-14T16:05:11.345Z",
+  "atualizado_em": "2026-08-14T16:15:00.228Z",
   "dados": [
     {
       "RODADA": 23,
       "POS": "GOL",
-      "NOME": "Fábio",
-      "CLUBE": "FLU",
-      "PRECO": 10.21,
-      "EXP_SCORE": 4.8746,
-      "FACTOR": 1.0546796101224176,
-      "ATLETA_ID": 37656
-    },
-    {
-      "RODADA": 23,
-      "POS": "GOL",
-      "NOME": "Ronaldo",
-      "CLUBE": "BAH",
-      "PRECO": 8.81,
-      "EXP_SCORE": 4.6585,
-      "FACTOR": 0.9482267878633126,
-      "ATLETA_ID": 91101
+      "NOME": "Santos",
+      "CLUBE": "CAP",
+      "PRECO": 9.22,
+      "EXP_SCORE": 4.7698,
+      "FACTOR": 1.1569583052003911,
+      "ATLETA_ID": 69012
     },
     {
       "RODADA": 23,
@@ -38,22 +28,32 @@
     {
       "RODADA": 23,
       "POS": "GOL",
+      "NOME": "Fábio",
+      "CLUBE": "FLU",
+      "PRECO": 10.21,
+      "EXP_SCORE": 4.2387,
+      "FACTOR": 1.0546796101224176,
+      "ATLETA_ID": 37656
+    },
+    {
+      "RODADA": 23,
+      "POS": "GOL",
+      "NOME": "Everson",
+      "CLUBE": "CAM",
+      "PRECO": 8.86,
+      "EXP_SCORE": 4.2188,
+      "FACTOR": 1.1373970828249171,
+      "ATLETA_ID": 72294
+    },
+    {
+      "RODADA": 23,
+      "POS": "GOL",
       "NOME": "Carlos Miguel",
       "CLUBE": "PAL",
       "PRECO": 8.9,
       "EXP_SCORE": 4.215,
       "FACTOR": 0.9400676387792989,
       "ATLETA_ID": 104084
-    },
-    {
-      "RODADA": 23,
-      "POS": "GOL",
-      "NOME": "Santos",
-      "CLUBE": "CAP",
-      "PRECO": 9.22,
-      "EXP_SCORE": 4.1477,
-      "FACTOR": 1.1569583052003911,
-      "ATLETA_ID": 69012
     },
     {
       "RODADA": 23,
