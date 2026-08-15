@@ -2,15 +2,31 @@
   "atletas": [
     {
       "clube": "PAL",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Carlos Miguel",
       "pos": "GOL",
       "preco": 8.9,
       "status": "TITULAR"
     },
     {
+      "clube": "INT",
+      "data": "2026-08-15T16:53:39.000Z",
+      "nome": "Bernabei",
+      "pos": "LAT",
+      "preco": 10.84,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "RBB",
+      "data": "2026-08-15T16:53:39.000Z",
+      "nome": "Juninho Capixaba",
+      "pos": "LAT",
+      "preco": 13.21,
+      "status": "TITULAR"
+    },
+    {
       "clube": "CAP",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Aguirre",
       "pos": "ZAG",
       "preco": 6.59,
@@ -18,23 +34,15 @@
     },
     {
       "clube": "BAH",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "David Duarte",
       "pos": "ZAG",
       "preco": 7.03,
       "status": "TITULAR"
     },
     {
-      "clube": "COR",
-      "data": "2026-08-14T22:59:31.000Z",
-      "nome": "Gabriel Paulista",
-      "pos": "ZAG",
-      "preco": 9.34,
-      "status": "TITULAR"
-    },
-    {
       "clube": "PAL",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Arias",
       "pos": "MEI",
       "preco": 15.17,
@@ -42,7 +50,7 @@
     },
     {
       "clube": "SAN",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Neymar",
       "pos": "MEI",
       "preco": 21.85,
@@ -50,23 +58,15 @@
     },
     {
       "clube": "BOT",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Danilo",
       "pos": "MEI",
       "preco": 15,
       "status": "TITULAR"
     },
     {
-      "clube": "COR",
-      "data": "2026-08-14T22:59:31.000Z",
-      "nome": "Garro",
-      "pos": "MEI",
-      "preco": 11.13,
-      "status": "TITULAR"
-    },
-    {
       "clube": "CAP",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Viveros",
       "pos": "ATA",
       "preco": 14.34,
@@ -74,23 +74,23 @@
     },
     {
       "clube": "FLA",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Samuel Lino",
       "pos": "ATA",
       "preco": 11.7,
       "status": "TITULAR"
     },
     {
-      "clube": "INT",
-      "data": "2026-08-14T22:59:31.000Z",
-      "nome": "Carbonero",
+      "clube": "CHA",
+      "data": "2026-08-15T16:53:39.000Z",
+      "nome": "Marcinho",
       "pos": "ATA",
-      "preco": 8.68,
+      "preco": 4.37,
       "status": "TITULAR"
     },
     {
       "clube": "MIR",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Rafael Guanaes",
       "pos": "TEC",
       "preco": 6.99,
@@ -98,7 +98,7 @@
     },
     {
       "clube": "BAH",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Ronaldo",
       "pos": "GOL",
       "preco": 8.81,
@@ -106,43 +106,51 @@
     },
     {
       "clube": "CAP",
-      "data": "2026-08-14T22:59:31.000Z",
-      "nome": "Arthur Dias",
+      "data": "2026-08-15T16:53:39.000Z",
+      "nome": "Gilberto",
+      "pos": "LAT",
+      "preco": 7.91,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "CAM",
+      "data": "2026-08-15T16:53:39.000Z",
+      "nome": "Ruan",
       "pos": "ZAG",
-      "preco": 6.45,
+      "preco": 5.44,
       "status": "RESERVA"
     },
     {
       "clube": "VIT",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Baralhas",
       "pos": "MEI",
       "preco": 9.25,
       "status": "RESERVA"
     },
     {
-      "clube": "VIT",
-      "data": "2026-08-14T22:59:31.000Z",
-      "nome": "Renê",
+      "clube": "MIR",
+      "data": "2026-08-15T16:53:39.000Z",
+      "nome": "Edson Carioca",
       "pos": "ATA",
-      "preco": 8.44,
+      "preco": 4.05,
       "status": "RESERVA"
     }
   ],
   "blocos_topo": [
-    "Alterações identificadas desde a última publicação."
+    "Pré-fechamento dos times"
   ],
   "capitao": "Viveros",
-  "custo_total": 136.72,
-  "evento_programado": "ATUALIZACAO_20H",
+  "custo_total": 135.99,
+  "evento_programado": "PRE_FECHAMENTO_TIMES",
   "forcar_envio": true,
-  "formacao": "3-4-3",
+  "formacao": "4-3-3",
   "houve_alteracao": true,
-  "mensagem_oficial": "Intermediário • Rodada 23\nAtualização programada das 20h\nPortal SimonSports",
+  "mensagem_oficial": "Intermediário • Rodada 23\nPré-fechamento dos times\nPortal SimonSports",
   "meta": {
     "capitao": "Viveros (ATA)",
-    "custo_total": 136.72,
-    "esquema": "3-4-3",
+    "custo_total": 135.99,
+    "esquema": "4-3-3",
     "pontos_total": 0,
     "variacao_total": 0
   },
@@ -159,6 +167,20 @@
         "status": "TITULAR"
       },
       {
+        "clube": "INT",
+        "nome": "Bernabei",
+        "pos": "LAT",
+        "preco": 10.84,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "RBB",
+        "nome": "Juninho Capixaba",
+        "pos": "LAT",
+        "preco": 13.21,
+        "status": "TITULAR"
+      },
+      {
         "clube": "CAP",
         "nome": "Aguirre",
         "pos": "ZAG",
@@ -170,13 +192,6 @@
         "nome": "David Duarte",
         "pos": "ZAG",
         "preco": 7.03,
-        "status": "TITULAR"
-      },
-      {
-        "clube": "COR",
-        "nome": "Gabriel Paulista",
-        "pos": "ZAG",
-        "preco": 9.34,
         "status": "TITULAR"
       },
       {
@@ -201,13 +216,6 @@
         "status": "TITULAR"
       },
       {
-        "clube": "COR",
-        "nome": "Garro",
-        "pos": "MEI",
-        "preco": 11.13,
-        "status": "TITULAR"
-      },
-      {
         "clube": "CAP",
         "nome": "Viveros",
         "pos": "ATA",
@@ -222,10 +230,10 @@
         "status": "TITULAR"
       },
       {
-        "clube": "INT",
-        "nome": "Carbonero",
+        "clube": "CHA",
+        "nome": "Marcinho",
         "pos": "ATA",
-        "preco": 8.68,
+        "preco": 4.37,
         "status": "TITULAR"
       },
       {
@@ -244,9 +252,16 @@
       },
       {
         "clube": "CAP",
-        "nome": "Arthur Dias",
+        "nome": "Gilberto",
+        "pos": "LAT",
+        "preco": 7.91,
+        "status": "RESERVA"
+      },
+      {
+        "clube": "CAM",
+        "nome": "Ruan",
         "pos": "ZAG",
-        "preco": 6.45,
+        "preco": 5.44,
         "status": "RESERVA"
       },
       {
@@ -257,10 +272,10 @@
         "status": "RESERVA"
       },
       {
-        "clube": "VIT",
-        "nome": "Renê",
+        "clube": "MIR",
+        "nome": "Edson Carioca",
         "pos": "ATA",
-        "preco": 8.44,
+        "preco": 4.05,
         "status": "RESERVA"
       }
     ],
@@ -271,20 +286,36 @@
   "titulo": "TIME INTERMEDIÁRIO",
   "rodada": 23,
   "origem": "jobTelegramDispatcher",
-  "gerado_em": "2026-08-14T23:00:57.434Z",
-  "payload_hash": "W+pFZrEFHIp6mUeUZnib0g==",
+  "gerado_em": "2026-08-15T16:58:29.034Z",
+  "payload_hash": "SP63lK/j3xwz39rC+OWtWg==",
   "jogadores": [
     {
       "clube": "PAL",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Carlos Miguel",
       "pos": "GOL",
       "preco": 8.9,
       "status": "TITULAR"
     },
     {
+      "clube": "INT",
+      "data": "2026-08-15T16:53:39.000Z",
+      "nome": "Bernabei",
+      "pos": "LAT",
+      "preco": 10.84,
+      "status": "TITULAR"
+    },
+    {
+      "clube": "RBB",
+      "data": "2026-08-15T16:53:39.000Z",
+      "nome": "Juninho Capixaba",
+      "pos": "LAT",
+      "preco": 13.21,
+      "status": "TITULAR"
+    },
+    {
       "clube": "CAP",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Aguirre",
       "pos": "ZAG",
       "preco": 6.59,
@@ -292,23 +323,15 @@
     },
     {
       "clube": "BAH",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "David Duarte",
       "pos": "ZAG",
       "preco": 7.03,
       "status": "TITULAR"
     },
     {
-      "clube": "COR",
-      "data": "2026-08-14T22:59:31.000Z",
-      "nome": "Gabriel Paulista",
-      "pos": "ZAG",
-      "preco": 9.34,
-      "status": "TITULAR"
-    },
-    {
       "clube": "PAL",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Arias",
       "pos": "MEI",
       "preco": 15.17,
@@ -316,7 +339,7 @@
     },
     {
       "clube": "SAN",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Neymar",
       "pos": "MEI",
       "preco": 21.85,
@@ -324,23 +347,15 @@
     },
     {
       "clube": "BOT",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Danilo",
       "pos": "MEI",
       "preco": 15,
       "status": "TITULAR"
     },
     {
-      "clube": "COR",
-      "data": "2026-08-14T22:59:31.000Z",
-      "nome": "Garro",
-      "pos": "MEI",
-      "preco": 11.13,
-      "status": "TITULAR"
-    },
-    {
       "clube": "CAP",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Viveros",
       "pos": "ATA",
       "preco": 14.34,
@@ -348,23 +363,23 @@
     },
     {
       "clube": "FLA",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Samuel Lino",
       "pos": "ATA",
       "preco": 11.7,
       "status": "TITULAR"
     },
     {
-      "clube": "INT",
-      "data": "2026-08-14T22:59:31.000Z",
-      "nome": "Carbonero",
+      "clube": "CHA",
+      "data": "2026-08-15T16:53:39.000Z",
+      "nome": "Marcinho",
       "pos": "ATA",
-      "preco": 8.68,
+      "preco": 4.37,
       "status": "TITULAR"
     },
     {
       "clube": "MIR",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Rafael Guanaes",
       "pos": "TEC",
       "preco": 6.99,
@@ -374,7 +389,7 @@
   "reservas": [
     {
       "clube": "BAH",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Ronaldo",
       "pos": "GOL",
       "preco": 8.81,
@@ -382,26 +397,34 @@
     },
     {
       "clube": "CAP",
-      "data": "2026-08-14T22:59:31.000Z",
-      "nome": "Arthur Dias",
+      "data": "2026-08-15T16:53:39.000Z",
+      "nome": "Gilberto",
+      "pos": "LAT",
+      "preco": 7.91,
+      "status": "RESERVA"
+    },
+    {
+      "clube": "CAM",
+      "data": "2026-08-15T16:53:39.000Z",
+      "nome": "Ruan",
       "pos": "ZAG",
-      "preco": 6.45,
+      "preco": 5.44,
       "status": "RESERVA"
     },
     {
       "clube": "VIT",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Baralhas",
       "pos": "MEI",
       "preco": 9.25,
       "status": "RESERVA"
     },
     {
-      "clube": "VIT",
-      "data": "2026-08-14T22:59:31.000Z",
-      "nome": "Renê",
+      "clube": "MIR",
+      "data": "2026-08-15T16:53:39.000Z",
+      "nome": "Edson Carioca",
       "pos": "ATA",
-      "preco": 8.44,
+      "preco": 4.05,
       "status": "RESERVA"
     }
   ],
