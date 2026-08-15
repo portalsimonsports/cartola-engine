@@ -3,18 +3,8 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 23,
-  "atualizado_em": "2026-08-15T17:20:02.230Z",
+  "atualizado_em": "2026-08-15T17:25:11.530Z",
   "dados": [
-    {
-      "RODADA": 23,
-      "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 8.9,
-      "EXP_SCORE": 4.9708,
-      "FACTOR": 0.9640384192096049,
-      "ATLETA_ID": 104084
-    },
     {
       "RODADA": 23,
       "POS": "GOL",
@@ -44,6 +34,16 @@
       "EXP_SCORE": 4.444,
       "FACTOR": 1.075398899449725,
       "ATLETA_ID": 101574
+    },
+    {
+      "RODADA": 23,
+      "POS": "GOL",
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 8.9,
+      "EXP_SCORE": 4.3225,
+      "FACTOR": 0.9640384192096049,
+      "ATLETA_ID": 104084
     },
     {
       "RODADA": 23,
@@ -211,7 +211,7 @@
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 14.34,
-      "EXP_SCORE": 9.1233,
+      "EXP_SCORE": 7.9333,
       "FACTOR": 1.002316722952839,
       "ATLETA_ID": 143193
     },
@@ -268,16 +268,6 @@
     {
       "RODADA": 23,
       "POS": "TEC",
-      "NOME": "Fernando Diniz",
-      "CLUBE": "COR",
-      "PRECO": 9.61,
-      "EXP_SCORE": 5.9556,
-      "FACTOR": 1.0880643251619055,
-      "ATLETA_ID": 72391
-    },
-    {
-      "RODADA": 23,
-      "POS": "TEC",
       "NOME": "Odair Hellmann",
       "CLUBE": "CAP",
       "PRECO": 9.44,
@@ -294,6 +284,16 @@
       "EXP_SCORE": 5.3952,
       "FACTOR": 0.9046686558862093,
       "ATLETA_ID": 110506
+    },
+    {
+      "RODADA": 23,
+      "POS": "TEC",
+      "NOME": "Fernando Diniz",
+      "CLUBE": "COR",
+      "PRECO": 9.61,
+      "EXP_SCORE": 5.1788,
+      "FACTOR": 1.0880643251619055,
+      "ATLETA_ID": 72391
     },
     {
       "RODADA": 23,
