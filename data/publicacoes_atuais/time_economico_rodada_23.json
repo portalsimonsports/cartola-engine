@@ -2,7 +2,7 @@
   "atletas": [
     {
       "clube": "INT",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Matheus Cunha",
       "pos": "GOL",
       "preco": 5.02,
@@ -10,7 +10,7 @@
     },
     {
       "clube": "CRU",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Fagner",
       "pos": "LAT",
       "preco": 6.93,
@@ -18,7 +18,7 @@
     },
     {
       "clube": "INT",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Bernabei",
       "pos": "LAT",
       "preco": 10.84,
@@ -26,7 +26,7 @@
     },
     {
       "clube": "GRE",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Wallace",
       "pos": "ZAG",
       "preco": 6.08,
@@ -34,15 +34,23 @@
     },
     {
       "clube": "CFC",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Tiago Cóser",
       "pos": "ZAG",
       "preco": 4.39,
       "status": "TITULAR"
     },
     {
+      "clube": "CAP",
+      "data": "2026-08-15T16:53:39.000Z",
+      "nome": "Aguirre",
+      "pos": "ZAG",
+      "preco": 6.59,
+      "status": "TITULAR"
+    },
+    {
       "clube": "CAM",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Bernard",
       "pos": "MEI",
       "preco": 5.6,
@@ -50,55 +58,47 @@
     },
     {
       "clube": "CAP",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "João Cruz",
       "pos": "MEI",
       "preco": 6.15,
       "status": "TITULAR"
     },
     {
-      "clube": "COR",
-      "data": "2026-08-14T22:59:31.000Z",
-      "nome": "Garro",
+      "clube": "REM",
+      "data": "2026-08-15T16:53:39.000Z",
+      "nome": "José Welison",
       "pos": "MEI",
-      "preco": 11.13,
+      "preco": 3.57,
       "status": "TITULAR"
     },
     {
       "clube": "CAP",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Viveros",
       "pos": "ATA",
       "preco": 14.34,
       "status": "TITULAR"
     },
     {
-      "clube": "REM",
-      "data": "2026-08-14T22:59:31.000Z",
-      "nome": "Jajá",
-      "pos": "ATA",
-      "preco": 7.63,
-      "status": "TITULAR"
-    },
-    {
       "clube": "CAP",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Leozinho",
       "pos": "ATA",
       "preco": 5.8,
       "status": "TITULAR"
     },
     {
-      "clube": "COR",
-      "data": "2026-08-14T22:59:31.000Z",
-      "nome": "Fernando Diniz",
+      "clube": "CAP",
+      "data": "2026-08-15T16:53:39.000Z",
+      "nome": "Odair Hellmann",
       "pos": "TEC",
-      "preco": 9.61,
+      "preco": 9.44,
       "status": "TITULAR"
     },
     {
       "clube": "CRU",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Otávio",
       "pos": "GOL",
       "preco": 2.43,
@@ -106,7 +106,7 @@
     },
     {
       "clube": "CFC",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Tinga",
       "pos": "LAT",
       "preco": 6.38,
@@ -114,23 +114,23 @@
     },
     {
       "clube": "CFC",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Thiago Santos",
       "pos": "ZAG",
       "preco": 4.36,
       "status": "RESERVA"
     },
     {
-      "clube": "CAP",
-      "data": "2026-08-14T22:59:31.000Z",
-      "nome": "Jadson",
+      "clube": "COR",
+      "data": "2026-08-15T16:53:39.000Z",
+      "nome": "Allan",
       "pos": "MEI",
-      "preco": 4.93,
+      "preco": 3.26,
       "status": "RESERVA"
     },
     {
       "clube": "CHA",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Marcinho",
       "pos": "ATA",
       "preco": 4.37,
@@ -138,19 +138,19 @@
     }
   ],
   "blocos_topo": [
-    "Alterações identificadas desde a última publicação."
+    "Pré-fechamento dos times"
   ],
   "capitao": "Viveros",
-  "custo_total": 93.52,
-  "evento_programado": "ATUALIZACAO_20H",
+  "custo_total": 84.75,
+  "evento_programado": "PRE_FECHAMENTO_TIMES",
   "forcar_envio": true,
-  "formacao": "4-3-3",
+  "formacao": "5-3-2",
   "houve_alteracao": true,
-  "mensagem_oficial": "Econômico • Rodada 23\nAtualização programada das 20h\nPortal SimonSports",
+  "mensagem_oficial": "Econômico • Rodada 23\nPré-fechamento dos times\nPortal SimonSports",
   "meta": {
     "capitao": "Viveros (ATA)",
-    "custo_total": 93.52,
-    "esquema": "4-3-3",
+    "custo_total": 84.75,
+    "esquema": "5-3-2",
     "pontos_total": 0,
     "variacao_total": 0
   },
@@ -195,6 +195,13 @@
         "status": "TITULAR"
       },
       {
+        "clube": "CAP",
+        "nome": "Aguirre",
+        "pos": "ZAG",
+        "preco": 6.59,
+        "status": "TITULAR"
+      },
+      {
         "clube": "CAM",
         "nome": "Bernard",
         "pos": "MEI",
@@ -209,10 +216,10 @@
         "status": "TITULAR"
       },
       {
-        "clube": "COR",
-        "nome": "Garro",
+        "clube": "REM",
+        "nome": "José Welison",
         "pos": "MEI",
-        "preco": 11.13,
+        "preco": 3.57,
         "status": "TITULAR"
       },
       {
@@ -223,13 +230,6 @@
         "status": "TITULAR"
       },
       {
-        "clube": "REM",
-        "nome": "Jajá",
-        "pos": "ATA",
-        "preco": 7.63,
-        "status": "TITULAR"
-      },
-      {
         "clube": "CAP",
         "nome": "Leozinho",
         "pos": "ATA",
@@ -237,10 +237,10 @@
         "status": "TITULAR"
       },
       {
-        "clube": "COR",
-        "nome": "Fernando Diniz",
+        "clube": "CAP",
+        "nome": "Odair Hellmann",
         "pos": "TEC",
-        "preco": 9.61,
+        "preco": 9.44,
         "status": "TITULAR"
       },
       {
@@ -265,10 +265,10 @@
         "status": "RESERVA"
       },
       {
-        "clube": "CAP",
-        "nome": "Jadson",
+        "clube": "COR",
+        "nome": "Allan",
         "pos": "MEI",
-        "preco": 4.93,
+        "preco": 3.26,
         "status": "RESERVA"
       },
       {
@@ -286,12 +286,12 @@
   "titulo": "TIME ECONÔMICO",
   "rodada": 23,
   "origem": "jobTelegramDispatcher",
-  "gerado_em": "2026-08-14T23:00:54.496Z",
-  "payload_hash": "6KX/DEnIQuSRcqo8mdQYew==",
+  "gerado_em": "2026-08-15T16:58:27.180Z",
+  "payload_hash": "tdUZmrmlHKQS/ajSzxtEYw==",
   "jogadores": [
     {
       "clube": "INT",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Matheus Cunha",
       "pos": "GOL",
       "preco": 5.02,
@@ -299,7 +299,7 @@
     },
     {
       "clube": "CRU",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Fagner",
       "pos": "LAT",
       "preco": 6.93,
@@ -307,7 +307,7 @@
     },
     {
       "clube": "INT",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Bernabei",
       "pos": "LAT",
       "preco": 10.84,
@@ -315,7 +315,7 @@
     },
     {
       "clube": "GRE",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Wallace",
       "pos": "ZAG",
       "preco": 6.08,
@@ -323,15 +323,23 @@
     },
     {
       "clube": "CFC",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Tiago Cóser",
       "pos": "ZAG",
       "preco": 4.39,
       "status": "TITULAR"
     },
     {
+      "clube": "CAP",
+      "data": "2026-08-15T16:53:39.000Z",
+      "nome": "Aguirre",
+      "pos": "ZAG",
+      "preco": 6.59,
+      "status": "TITULAR"
+    },
+    {
       "clube": "CAM",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Bernard",
       "pos": "MEI",
       "preco": 5.6,
@@ -339,57 +347,49 @@
     },
     {
       "clube": "CAP",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "João Cruz",
       "pos": "MEI",
       "preco": 6.15,
       "status": "TITULAR"
     },
     {
-      "clube": "COR",
-      "data": "2026-08-14T22:59:31.000Z",
-      "nome": "Garro",
+      "clube": "REM",
+      "data": "2026-08-15T16:53:39.000Z",
+      "nome": "José Welison",
       "pos": "MEI",
-      "preco": 11.13,
+      "preco": 3.57,
       "status": "TITULAR"
     },
     {
       "clube": "CAP",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Viveros",
       "pos": "ATA",
       "preco": 14.34,
       "status": "TITULAR"
     },
     {
-      "clube": "REM",
-      "data": "2026-08-14T22:59:31.000Z",
-      "nome": "Jajá",
-      "pos": "ATA",
-      "preco": 7.63,
-      "status": "TITULAR"
-    },
-    {
       "clube": "CAP",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Leozinho",
       "pos": "ATA",
       "preco": 5.8,
       "status": "TITULAR"
     },
     {
-      "clube": "COR",
-      "data": "2026-08-14T22:59:31.000Z",
-      "nome": "Fernando Diniz",
+      "clube": "CAP",
+      "data": "2026-08-15T16:53:39.000Z",
+      "nome": "Odair Hellmann",
       "pos": "TEC",
-      "preco": 9.61,
+      "preco": 9.44,
       "status": "TITULAR"
     }
   ],
   "reservas": [
     {
       "clube": "CRU",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Otávio",
       "pos": "GOL",
       "preco": 2.43,
@@ -397,7 +397,7 @@
     },
     {
       "clube": "CFC",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Tinga",
       "pos": "LAT",
       "preco": 6.38,
@@ -405,23 +405,23 @@
     },
     {
       "clube": "CFC",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Thiago Santos",
       "pos": "ZAG",
       "preco": 4.36,
       "status": "RESERVA"
     },
     {
-      "clube": "CAP",
-      "data": "2026-08-14T22:59:31.000Z",
-      "nome": "Jadson",
+      "clube": "COR",
+      "data": "2026-08-15T16:53:39.000Z",
+      "nome": "Allan",
       "pos": "MEI",
-      "preco": 4.93,
+      "preco": 3.26,
       "status": "RESERVA"
     },
     {
       "clube": "CHA",
-      "data": "2026-08-14T22:59:31.000Z",
+      "data": "2026-08-15T16:53:39.000Z",
       "nome": "Marcinho",
       "pos": "ATA",
       "preco": 4.37,
