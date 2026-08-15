@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 23,
-  "atualizado_em": "2026-08-15T18:05:12.993Z",
+  "atualizado_em": "2026-08-15T18:10:24.095Z",
   "dados": [
     {
       "RODADA": 23,
@@ -32,7 +32,7 @@
       "CLUBE": "BAH",
       "PRECO": 8.81,
       "EXP_SCORE": 4.6986,
-      "FACTOR": 0.9563853926145092,
+      "FACTOR": 0.9563853926145094,
       "ATLETA_ID": 91101
     },
     {
@@ -61,7 +61,7 @@
       "NOME": "Bernabei",
       "CLUBE": "INT",
       "PRECO": 10.84,
-      "EXP_SCORE": 5.4995,
+      "EXP_SCORE": 6.1106,
       "FACTOR": 1.125115959055929,
       "ATLETA_ID": 110426
     },
@@ -122,8 +122,18 @@
       "CLUBE": "BAH",
       "PRECO": 7.03,
       "EXP_SCORE": 3.4484,
-      "FACTOR": 0.9563853926145092,
+      "FACTOR": 0.9563853926145094,
       "ATLETA_ID": 91772
+    },
+    {
+      "RODADA": 23,
+      "POS": "ZAG",
+      "NOME": "Arthur Dias",
+      "CLUBE": "CAP",
+      "PRECO": 6.45,
+      "EXP_SCORE": 3.2393,
+      "FACTOR": 1.1453212005133357,
+      "ATLETA_ID": 130843
     },
     {
       "RODADA": 23,
@@ -144,16 +154,6 @@
       "EXP_SCORE": 3.0784,
       "FACTOR": 1.1071734218037266,
       "ATLETA_ID": 100842
-    },
-    {
-      "RODADA": 23,
-      "POS": "ZAG",
-      "NOME": "Jonathan Jesus",
-      "CLUBE": "CRU",
-      "PRECO": 6.2,
-      "EXP_SCORE": 3.0585,
-      "FACTOR": 1.0295286949844578,
-      "ATLETA_ID": 124912
     },
     {
       "RODADA": 23,
@@ -211,7 +211,7 @@
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 14.34,
-      "EXP_SCORE": 7.9333,
+      "EXP_SCORE": 9.1233,
       "FACTOR": 1.002316722952839,
       "ATLETA_ID": 143193
     },
@@ -231,7 +231,7 @@
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 15.42,
-      "EXP_SCORE": 7.2118,
+      "EXP_SCORE": 6.4907,
       "FACTOR": 0.9690845484524613,
       "ATLETA_ID": 94583
     },
@@ -282,7 +282,7 @@
       "CLUBE": "CAP",
       "PRECO": 9.44,
       "EXP_SCORE": 5.8381,
-      "FACTOR": 0.9744745917597045,
+      "FACTOR": 0.9744745917597044,
       "ATLETA_ID": 92273
     },
     {
