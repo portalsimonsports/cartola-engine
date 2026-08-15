@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 23,
-  "atualizado_em": "2026-08-15T07:20:07.946Z",
+  "atualizado_em": "2026-08-15T07:25:20.272Z",
   "dados": [
     {
       "RODADA": 23,
@@ -61,7 +61,7 @@
       "NOME": "Bernabei",
       "CLUBE": "INT",
       "PRECO": 10.84,
-      "EXP_SCORE": 6.1118,
+      "EXP_SCORE": 5.5006,
       "FACTOR": 1.1253456943632913,
       "ATLETA_ID": 110426
     },
@@ -128,16 +128,6 @@
     {
       "RODADA": 23,
       "POS": "ZAG",
-      "NOME": "Arthur Dias",
-      "CLUBE": "CAP",
-      "PRECO": 6.45,
-      "EXP_SCORE": 3.2399,
-      "FACTOR": 1.1455273112182405,
-      "ATLETA_ID": 130843
-    },
-    {
-      "RODADA": 23,
-      "POS": "ZAG",
       "NOME": "Gustavo Gómez",
       "CLUBE": "PAL",
       "PRECO": 10.56,
@@ -154,6 +144,16 @@
       "EXP_SCORE": 3.0791,
       "FACTOR": 1.1074241360887742,
       "ATLETA_ID": 100842
+    },
+    {
+      "RODADA": 23,
+      "POS": "ZAG",
+      "NOME": "Jonathan Jesus",
+      "CLUBE": "CRU",
+      "PRECO": 6.2,
+      "EXP_SCORE": 3.0632,
+      "FACTOR": 1.0311333894697858,
+      "ATLETA_ID": 124912
     },
     {
       "RODADA": 23,
@@ -231,7 +231,7 @@
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 15.42,
-      "EXP_SCORE": 6.4907,
+      "EXP_SCORE": 7.2118,
       "FACTOR": 0.9690845484524613,
       "ATLETA_ID": 94583
     },
