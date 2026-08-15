@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 23,
-  "atualizado_em": "2026-08-15T13:49:58.463Z",
+  "atualizado_em": "2026-08-15T13:55:16.206Z",
   "dados": [
     {
       "RODADA": 23,
@@ -28,16 +28,6 @@
     {
       "RODADA": 23,
       "POS": "GOL",
-      "NOME": "Hugo Souza",
-      "CLUBE": "COR",
-      "PRECO": 9.67,
-      "EXP_SCORE": 4.4435,
-      "FACTOR": 1.0752889281482605,
-      "ATLETA_ID": 101574
-    },
-    {
-      "RODADA": 23,
-      "POS": "GOL",
       "NOME": "Carlos Miguel",
       "CLUBE": "PAL",
       "PRECO": 8.9,
@@ -54,6 +44,16 @@
       "EXP_SCORE": 4.2482,
       "FACTOR": 1.002769780404708,
       "ATLETA_ID": 99552
+    },
+    {
+      "RODADA": 23,
+      "POS": "GOL",
+      "NOME": "Lucas Arcanjo",
+      "CLUBE": "VIT",
+      "PRECO": 8.88,
+      "EXP_SCORE": 4.1168,
+      "FACTOR": 1.0395870652605028,
+      "ATLETA_ID": 104118
     },
     {
       "RODADA": 23,
@@ -138,22 +138,22 @@
     {
       "RODADA": 23,
       "POS": "ZAG",
-      "NOME": "Ruan",
-      "CLUBE": "CAM",
-      "PRECO": 5.44,
-      "EXP_SCORE": 3.0791,
-      "FACTOR": 1.1074241360887742,
-      "ATLETA_ID": 100842
-    },
-    {
-      "RODADA": 23,
-      "POS": "ZAG",
       "NOME": "Jonathan Jesus",
       "CLUBE": "CRU",
       "PRECO": 6.2,
       "EXP_SCORE": 3.0632,
       "FACTOR": 1.0311333894697858,
       "ATLETA_ID": 124912
+    },
+    {
+      "RODADA": 23,
+      "POS": "ZAG",
+      "NOME": "Arthur Dias",
+      "CLUBE": "CAP",
+      "PRECO": 6.45,
+      "EXP_SCORE": 2.9159,
+      "FACTOR": 1.1455273112182405,
+      "ATLETA_ID": 130843
     },
     {
       "RODADA": 23,
