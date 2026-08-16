@@ -1,0 +1,323 @@
+/**
+ * PORTAL SIMONSPORTS
+ * CARTOLA LIVE PUBLISHER — V2026.128
+ * CORREÇÃO: 3 TIMES + CADÊNCIA DE PARCIAIS/MITOS E ZICAS
+ *
+ * Requer V125 e V127 no mesmo projeto.
+ *
+ * CORRIGE:
+ * 1) Reconhece os três modelos individuais mesmo quando a origem usa
+ *    SELEÇÃO ECONOMICO / SELEÇÃO INTERMEDIARIO / SELEÇÃO PONTUACAO.
+ * 2) Não deixa um modelo bloquear os outros: a chave de cadência inclui o modelo.
+ * 3) PARCIAIS AO VIVO e MITOS E ZICAS ficam com a mesma cadência máxima: 15 min.
+ * 4) PONTUAÇÃO DO TIME fica com cadência máxima de 15 min POR MODELO.
+ * 5) Mantém o bloqueio de textos do V125 e publica somente as imagens GitHub/Telegram.
+ *
+ * EXECUTAR UMA VEZ:
+ *   PSS_LIVE_IMAGENS_V128_INSTALAR
+ */
+
+var PSS_LIVE_V128 = {
+  VERSAO: "v2026.128",
+  HANDLER: "PSS_LIVE_IMAGENS_V128_EXECUTAR",
+  INTERVALO_MINUTOS: 5,
+  CADENCIA: {
+    LIVE_PONTUACAO_TIME: 15,
+    LIVE_RANKING_PARCIAL: 15,
+    LIVE_MITOS_ZICAS: 15
+  }
+};
+
+function PSS_LIVE_V128_norm_(valor) {
+  return String(valor == null ? "" : valor)
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toUpperCase();
+}
+
+function PSS_LIVE_V128_modelo_(payload, texto) {
+  payload = payload || {};
+  var bruto = [
+    payload.tipo_time,
+    payload.tipo,
+    payload.modelo,
+    payload.nome_time,
+    payload.nome_modelo,
+    texto
+  ].join(" ");
+  var t = PSS_LIVE_V128_norm_(bruto);
+
+  if (/ECONOMICO/.test(t)) return "ECONOMICO";
+  if (/INTERMEDIARIO/.test(t)) return "INTERMEDIARIO";
+  if (/PARA PONTUAR|PONTUACAO/.test(t)) return "PONTUACAO";
+  return "GERAL";
+}
+
+function PSS_LIVE_V128_eventos_(tipoPublicacao, payload) {
+  payload = payload || {};
+  var texto = PSS_LIVE_V128_norm_([
+    tipoPublicacao,
+    payload.tipo_publicacao,
+    payload.contexto,
+    payload.titulo,
+    payload.mensagem_oficial,
+    payload.tipo_time,
+    payload.tipo,
+    payload.modelo,
+    payload.nome_time,
+    payload.nome_modelo
+  ].join(" "));
+
+  // Prioridade absoluta aos cards individuais dos três modelos.
+  // A origem histórica usa tanto TIME quanto SELEÇÃO.
+  var ehModeloIndividual = /(?:TIME|SELECAO)\s+(?:ECONOMICO|INTERMEDIARIO|PONTUACAO|PARA PONTUAR)/.test(texto);
+  var temCamposIndividuais = !!(
+    payload.tipo_time ||
+    payload.tipo ||
+    payload.modelo ||
+    payload.nome_time ||
+    payload.nome_modelo ||
+    payload.pontos_sem_capitao != null ||
+    payload.pontos_com_capitao != null ||
+    payload.participacao != null ||
+    payload.participaram != null ||
+    (Array.isArray(payload.atletas) && payload.atletas.length) ||
+    (Array.isArray(payload.jogadores) && payload.jogadores.length)
+  );
+
+  if (
+    (ehModeloIndividual || temCamposIndividuais) &&
+    /PONTUACAO|PONTOS|PARCIAL|SELECAO|TIME ECONOMICO|TIME INTERMEDIARIO|TIME PARA PONTUAR/.test(texto)
+  ) {
+    return ["LIVE_PONTUACAO_TIME"];
+  }
+
+  // Demais eventos continuam usando exatamente o roteamento V127.
+  return PSS_LIVE_V127_eventos_(tipoPublicacao, payload);
+}
+
+function PSS_LIVE_V128_chaveCadencia_(evento, payload, tipoPublicacao) {
+  payload = payload || {};
+  var rodada = Number(payload.rodada || 0);
+  var texto = [
+    tipoPublicacao,
+    payload.tipo_publicacao,
+    payload.contexto,
+    payload.titulo,
+    payload.mensagem_oficial
+  ].join(" ");
+
+  var sufixo = "GERAL";
+  if (evento === "LIVE_PONTUACAO_TIME") {
+    sufixo = PSS_LIVE_V128_modelo_(payload, texto);
+  }
+
+  return ["PSS_LIVE_V128", "R" + rodada, evento, sufixo, "ULTIMA_PUBLICACAO"].join("_");
+}
+
+function PSS_LIVE_V128_podePublicar_(evento, payload, tipoPublicacao) {
+  var limite = Number(PSS_LIVE_V128.CADENCIA[evento] || 0);
+  if (!limite) return true;
+
+  var props = PropertiesService.getScriptProperties();
+  var chave = PSS_LIVE_V128_chaveCadencia_(evento, payload, tipoPublicacao);
+  var anterior = Number(props.getProperty(chave) || 0);
+  if (!anterior) return true;
+
+  var diff = (Date.now() - anterior) / 60000;
+  if (diff >= limite) return true;
+
+  console.log(
+    "V128 cadência: " + evento + " bloqueado por " +
+    Math.max(0, Math.ceil(limite - diff)) + " min. Chave=" + chave
+  );
+  return false;
+}
+
+function PSS_LIVE_V128_marcarPublicado_(evento, payload, tipoPublicacao) {
+  if (!PSS_LIVE_V128.CADENCIA[evento]) return;
+  PropertiesService.getScriptProperties().setProperty(
+    PSS_LIVE_V128_chaveCadencia_(evento, payload, tipoPublicacao),
+    String(Date.now())
+  );
+}
+
+function PSS_LIVE_V128_disparar_(cfg, tipoPublicacao, payload) {
+  payload = payload || {};
+  var eventos = PSS_LIVE_V128_eventos_(tipoPublicacao, payload);
+  var houveEvento = false;
+  var todosOk = true;
+
+  for (var i = 0; i < eventos.length; i++) {
+    var evento = eventos[i];
+
+    if (!PSS_LIVE_V128_podePublicar_(evento, payload, tipoPublicacao)) {
+      continue;
+    }
+
+    houveEvento = true;
+    var copia = JSON.parse(JSON.stringify(payload));
+    copia.evento_programado = evento;
+    copia.tipo_publicacao = PSS_LIVE_V127_tipoParaEvento_(evento, tipoPublicacao);
+    copia.contexto = String(copia.contexto || evento).toLowerCase();
+
+    // Garante contexto exclusivo por modelo para os três cards individuais.
+    if (evento === "LIVE_PONTUACAO_TIME") {
+      var modelo = PSS_LIVE_V128_modelo_(copia, [
+        tipoPublicacao,
+        copia.titulo,
+        copia.mensagem_oficial
+      ].join(" "));
+      copia.modelo_publicacao = modelo;
+      copia.contexto = "live_pontuacao_time_" + modelo.toLowerCase();
+    }
+
+    var ok = PSS_LIVE_IMAGENS_V125_dispararGithubSemSegundoLock_(
+      cfg,
+      copia.tipo_publicacao,
+      copia
+    );
+
+    if (ok === true) {
+      PSS_LIVE_V128_marcarPublicado_(evento, copia, tipoPublicacao);
+    } else {
+      todosOk = false;
+    }
+  }
+
+  // Evento existente porém retido apenas por cadência não é erro para o núcleo.
+  return houveEvento ? todosOk : true;
+}
+
+function PSS_LIVE_V128_garantirConfig_() {
+  PSS_LIVE_V127_garantirConfig_();
+  PSS_LIVE_V127_upsertConfig_("NOTIF_TIMES", "SIM");
+  PSS_LIVE_V127_upsertConfig_("NOTIF_TOP5", "NAO");
+  PSS_LIVE_V127_upsertConfig_("GITHUB_TESTE_ATIVO", "SIM");
+
+  PropertiesService.getScriptProperties().setProperties({
+    PSS_LIVE_V128_ATIVO: "SIM",
+    PSS_LIVE_V128_VERSAO: PSS_LIVE_V128.VERSAO,
+    PSS_LIVE_V128_CONFIGURADO_EM: new Date().toISOString()
+  });
+}
+
+function PSS_LIVE_IMAGENS_V128_EXECUTAR() {
+  PSS_LIVE_V128_garantirConfig_();
+
+  if (typeof publicarResumoLive !== "function") {
+    throw new Error("publicarResumoLive() não foi encontrada.");
+  }
+  if (typeof PSS_LIVE_IMAGENS_V125_dispararGithubSemSegundoLock_ !== "function") {
+    throw new Error("O módulo V125 não foi encontrado no projeto.");
+  }
+  if (typeof PSS_LIVE_V127_eventos_ !== "function") {
+    throw new Error("O módulo V127 não foi encontrado no projeto.");
+  }
+
+  var enviarAnterior = (typeof enviarTelegram_ === "function") ? enviarTelegram_ : null;
+  var bloquearAnterior = (typeof psLiveBloquearMensagemTelegram_ === "function")
+    ? psLiveBloquearMensagemTelegram_
+    : null;
+  var githubAnterior = (typeof dispararGithubTeste_ === "function")
+    ? dispararGithubTeste_
+    : null;
+
+  try {
+    enviarTelegram_ = function(cfg, texto) {
+      return PSS_LIVE_IMAGENS_V125_enviarTelegramSeguro_(cfg, texto);
+    };
+    psLiveBloquearMensagemTelegram_ = function(texto) {
+      return PSS_LIVE_IMAGENS_V125_bloquearTexto_(texto);
+    };
+    dispararGithubTeste_ = function(cfg, tipoPublicacao, payload) {
+      return PSS_LIVE_V128_disparar_(cfg, tipoPublicacao, payload);
+    };
+    return publicarResumoLive();
+  } finally {
+    if (enviarAnterior) enviarTelegram_ = enviarAnterior;
+    if (bloquearAnterior) psLiveBloquearMensagemTelegram_ = bloquearAnterior;
+    if (githubAnterior) dispararGithubTeste_ = githubAnterior;
+  }
+}
+
+function PSS_LIVE_IMAGENS_V128_INSTALAR() {
+  PSS_LIVE_V128_garantirConfig_();
+  var removidos = [];
+
+  ScriptApp.getProjectTriggers().forEach(function(trigger) {
+    var nome = String(trigger.getHandlerFunction() || "");
+    if (
+      nome === "publicarResumoLive" ||
+      nome === "PSS_LIVE_IMAGENS_V125_EXECUTAR" ||
+      nome === "PSS_LIVE_IMAGENS_V126_EXECUTAR" ||
+      nome === "PSS_LIVE_IMAGENS_V127_EXECUTAR" ||
+      nome === "PSS_LIVE_IMAGENS_V128_EXECUTAR"
+    ) {
+      ScriptApp.deleteTrigger(trigger);
+      removidos.push(nome);
+    }
+  });
+
+  var trigger = ScriptApp.newTrigger(PSS_LIVE_V128.HANDLER)
+    .timeBased()
+    .everyMinutes(PSS_LIVE_V128.INTERVALO_MINUTOS)
+    .create();
+
+  PropertiesService.getScriptProperties().setProperties({
+    PSS_LIVE_V128_INSTALADO: "SIM",
+    PSS_LIVE_V128_TRIGGER_ID: String(trigger.getUniqueId() || ""),
+    PSS_LIVE_V128_INSTALADO_EM: new Date().toISOString()
+  });
+
+  var resultado = {
+    ok: true,
+    versao: PSS_LIVE_V128.VERSAO,
+    acionador: PSS_LIVE_V128.HANDLER,
+    intervalo_executor_min: PSS_LIVE_V128.INTERVALO_MINUTOS,
+    cadencia_pontuacao_time_min_por_modelo: PSS_LIVE_V128.CADENCIA.LIVE_PONTUACAO_TIME,
+    cadencia_parciais_ao_vivo_min: PSS_LIVE_V128.CADENCIA.LIVE_RANKING_PARCIAL,
+    cadencia_mitos_zicas_min: PSS_LIVE_V128.CADENCIA.LIVE_MITOS_ZICAS,
+    modelos_individuais: ["ECONOMICO", "INTERMEDIARIO", "PONTUACAO"],
+    texto_visual: "BLOQUEADO",
+    imagens_github_telegram: "ATIVAS",
+    acionadores_antigos_removidos: removidos
+  };
+
+  console.log(JSON.stringify(resultado));
+  return resultado;
+}
+
+function PSS_LIVE_V128_DIAGNOSTICO() {
+  var amostras = [
+    { tipo: "SELEÇÃO ECONOMICO — R21", esperado: "LIVE_PONTUACAO_TIME" },
+    { tipo: "SELEÇÃO INTERMEDIARIO — R21", esperado: "LIVE_PONTUACAO_TIME" },
+    { tipo: "SELEÇÃO PONTUACAO — R21", esperado: "LIVE_PONTUACAO_TIME" },
+    { tipo: "PARCIAIS AO VIVO", esperado: "LIVE_RANKING_PARCIAL" },
+    { tipo: "MITOS E ZICAS", esperado: "LIVE_MITOS_ZICAS" }
+  ];
+
+  var testes = amostras.map(function(item) {
+    var eventos = PSS_LIVE_V128_eventos_(item.tipo, {
+      rodada: 21,
+      mensagem_oficial: item.tipo
+    });
+    return {
+      entrada: item.tipo,
+      obtido: eventos[0] || "",
+      esperado: item.esperado,
+      ok: (eventos[0] || "") === item.esperado
+    };
+  });
+
+  var resultado = {
+    versao: PSS_LIVE_V128.VERSAO,
+    testes: testes,
+    acionadores: ScriptApp.getProjectTriggers().map(function(trigger) {
+      return String(trigger.getHandlerFunction() || "");
+    })
+  };
+
+  console.log(JSON.stringify(resultado));
+  return resultado;
+}
