@@ -15,8 +15,14 @@ permissions:
   contents: write
   actions: read
 
+# IMPORTANTE:
+# Publicações diferentes não podem compartilhar o mesmo grupo, porque o GitHub
+# mantém apenas uma execução pendente por grupo. Quando vários cards chegam em
+# sequência, uma execução pendente anterior pode ser cancelada antes de iniciar.
+# O grupo abaixo separa evento e modelo de time. Para LIVE_PONTUACAO_TIME sem
+# modelo explícito, usa o payload_hash para preservar os três cards individuais.
 concurrency:
-  group: gerar-resultados-live-${{ github.ref }}
+  group: gerar-resultados-live-${{ github.ref }}-${{ github.event.client_payload.payload.evento_programado || github.event.client_payload.evento_programado || github.event.client_payload.tipo_publicacao || github.event_name }}-${{ github.event.client_payload.payload.tipo_time || github.event.client_payload.payload.modelo || github.event.client_payload.payload.tipo || ((github.event.client_payload.payload.evento_programado == 'LIVE_PONTUACAO_TIME') && github.event.client_payload.payload_hash) || github.event.client_payload.payload.contexto || github.event.client_payload.contexto || 'geral' }}
   cancel-in-progress: false
 
 jobs:
@@ -116,7 +122,72 @@ jobs:
           rm -f output/live_*.png output/resultados_*.png output/boletim_*.png
           rm -f output/aprovada_*.png output/ultima_publicacao.json
 
+      - name: Aplicar cadência das parciais Live
+        shell: bash
+        run: |
+          set -e
+          git fetch origin main >/dev/null 2>&1 || true
+
+          python - <<'PY'
+          import json
+          import os
+          import subprocess
+          import time
+          from pathlib import Path
+
+          payload = json.loads(Path("data/payload_dispatch.json").read_text(encoding="utf-8"))
+          inner = payload.get("payload") if isinstance(payload.get("payload"), dict) else payload
+          evento = str(
+              inner.get("evento_programado")
+              or payload.get("evento_programado")
+              or inner.get("tipo_publicacao")
+              or payload.get("tipo_publicacao")
+              or ""
+          ).strip().upper()
+
+          try:
+              rodada = int(float(inner.get("rodada") or payload.get("rodada") or 0))
+          except Exception:
+              rodada = 0
+
+          regras = {
+              "LIVE_MITOS_ZICAS": (15, f"output/live_mitos_zicas_rodada_{rodada}.png"),
+              "LIVE_RANKING_PARCIAL": (15, f"output/live_parciais_rodada_{rodada}.png"),
+              "LIVE_RESUMO_TIMES": (15, f"output/live_parciais_rodada_{rodada}.png"),
+          }
+
+          regra = regras.get(evento)
+          if not regra or rodada <= 0:
+              raise SystemExit(0)
+
+          limite_min, arquivo = regra
+          try:
+              saida = subprocess.check_output(
+                  ["git", "log", "origin/main", "-1", "--format=%ct", "--", arquivo],
+                  text=True,
+              ).strip()
+              ultimo = int(saida) if saida else 0
+          except Exception:
+              ultimo = 0
+
+          if not ultimo:
+              raise SystemExit(0)
+
+          diff_min = (time.time() - ultimo) / 60.0
+          if diff_min >= limite_min:
+              raise SystemExit(0)
+
+          restante = max(1, int(limite_min - diff_min + 0.999))
+          print(
+              f"Cadência GitHub: {evento} não será republicado agora; "
+              f"faltam aproximadamente {restante} min."
+          )
+          with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as fh:
+              fh.write("PSS_SKIP_PUBLICACAO=1\n")
+          PY
+
       - name: Gerar e publicar imagens aprovadas
+        if: env.PSS_SKIP_PUBLICACAO != '1'
         shell: bash
         env:
           PAYLOAD_FILE: data/payload_dispatch.json
@@ -133,6 +204,7 @@ jobs:
           python app/gerar_resultados_telegram_v3.py
 
       - name: Validar imagens aprovadas geradas
+        if: env.PSS_SKIP_PUBLICACAO != '1'
         shell: bash
         run: |
           set -e
@@ -178,7 +250,7 @@ jobs:
           ls -lh output || true
 
       - name: Publicar arquivos gerados no repositório
-        if: success()
+        if: env.PSS_SKIP_PUBLICACAO != '1' && success()
         shell: bash
         run: |
           set -e
