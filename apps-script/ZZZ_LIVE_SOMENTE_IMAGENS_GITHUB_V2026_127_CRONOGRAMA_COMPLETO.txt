@@ -76,15 +76,39 @@ function PSS_LIVE_V127_eventos_(tipoPublicacao, payload) {
     (payload.modelos && typeof payload.modelos === "object") ||
     /SELECAO ECONOMICO|SELECAO INTERMEDIARIO|SELECAO PONTUACAO/.test(texto);
 
+  // Detalhe individual de um dos três times. Esta rota precisa vir antes de
+  // "Parciais ao Vivo", porque o card individual também pode conter essa frase.
+  var temDetalheTime = !!(
+    payload.tipo_time ||
+    payload.tipo ||
+    payload.modelo ||
+    payload.pontos_sem_capitao != null ||
+    payload.pontos_com_capitao != null ||
+    /PONTUACAO DO TIME|PONTUACAO_TIME|PARCIAL ATUAL DO TIME|TIME PARA PONTUAR/.test(texto)
+  );
+
   var eventos = [];
   if (final && temTimes) eventos.push("FECHAMENTO_FINAL_TIMES");
   if (final && temPartidas) eventos.push("RESUMO_FINAL_RODADA");
   if (eventos.length) return eventos;
 
   if (/ABERTURA LIVE|LIVE ABERTURA|MONITORAMENTO.*INICI/.test(texto)) return ["LIVE_ABERTURA"];
+
+  // RESTABELECIDO: card de pontuação detalhada dos times, como nas rodadas
+  // anteriores (Time Econômico / Intermediário / Para Pontuar).
+  if (temDetalheTime && /PONTUACAO|PONTOS|PARCIAL|TIME ECONOMICO|TIME INTERMEDIARIO|TIME PARA PONTUAR/.test(texto)) {
+    return ["LIVE_PONTUACAO_TIME"];
+  }
+
   if (/DELTA.*15|15 PONTOS/.test(texto)) return ["LIVE_DELTA_15"];
   if (/MITOS|ZICAS|TOP 5 PONTUADORES|PIORES PONTUACOES/.test(texto)) return ["LIVE_MITOS_ZICAS"];
-  if (/RANKING|PARCIAIS DOS TIMES|RESUMO GERAL/.test(texto)) return ["LIVE_RANKING_PARCIAL"];
+
+  // RESTABELECIDO: resumo/parcial dos três modelos. A versão anterior só
+  // reconhecia "PARCIAIS DOS TIMES" e ignorava "PARCIAIS AO VIVO".
+  if (/RANKING|PARCIAIS DOS TIMES|PARCIAL DOS TIMES|PARCIAIS AO VIVO|RESUMO GERAL/.test(texto)) {
+    return ["LIVE_RANKING_PARCIAL"];
+  }
+
   if (/EVENTO DA PARTIDA|GOL|CARTAO|SUBSTITUICAO/.test(texto) && temPartidas) return ["LIVE_EVENTO_PARTIDA"];
   if (/ATUALIZACAO DE PLACAR|PLACAR DELTA|PLACAR/.test(texto) && temPartidas) return ["LIVE_PLACAR"];
   if (/RESULTADOS|STATUS DOS JOGOS/.test(texto) && temPartidas) return ["LIVE_RESULTADOS"];
@@ -102,6 +126,7 @@ function PSS_LIVE_V127_tipoParaEvento_(evento, tipoOriginal) {
     LIVE_DELTA_15: "live_delta_15",
     LIVE_MITOS_ZICAS: "live_mitos_zicas",
     LIVE_RANKING_PARCIAL: "live_ranking_parcial",
+    LIVE_PONTUACAO_TIME: "live_pontuacao_time",
     LIVE_RESULTADOS: "live_resultados",
     LIVE_FECHAMENTO: "live_fechamento"
   };
@@ -225,6 +250,7 @@ function PSS_LIVE_V127_DIAGNOSTICO() {
       "LIVE_DELTA_15",
       "LIVE_MITOS_ZICAS",
       "LIVE_RANKING_PARCIAL",
+      "LIVE_PONTUACAO_TIME",
       "LIVE_RESULTADOS",
       "LIVE_FECHAMENTO",
       "FECHAMENTO_FINAL_TIMES",
