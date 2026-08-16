@@ -11,7 +11,7 @@ import render_live_cards_v2 as v2
 from render_telegram_cards import RenderOutput
 
 
-VISUAL_VERSION = "live_aux_v1_2026_07_29"
+VISUAL_VERSION = "live_aux_v1_2026_08_16"
 AUX_EVENTS = {
     "LIVE_MITOS_ZICAS",
     "LIVE_RESUMO_TIMES",
@@ -32,15 +32,63 @@ def _norm(value: Any) -> str:
 
 
 def event_name(data: Dict[str, Any]) -> str:
-    values = [data.get(key) for key in ("evento_programado", "tipo_publicacao", "contexto", "titulo")]
+    values = [
+        data.get(key)
+        for key in (
+            "evento_programado",
+            "tipo_publicacao",
+            "contexto",
+            "titulo",
+            "tipo_time",
+            "tipo",
+            "modelo",
+            "nome_time",
+            "nome_modelo",
+            "mensagem_oficial",
+        )
+    ]
     joined = " ".join(_norm(value) for value in values if value)
 
     if any(token in joined for token in ("LIVE_MITOS_ZICAS", "MITOS_E_ZICAS", "MITOS", "ZICAS")):
         return "LIVE_MITOS_ZICAS"
-    if any(token in joined for token in ("LIVE_PONTUACAO_TIME", "PONTUACAO_TIME", "TIME_DELTA_15", "LIVE_DELTA_15")):
+
+    # Card individual dos três modelos. Aceita tanto o contrato atual quanto
+    # nomes legados já usados pelo Publisher antes da padronização dos eventos.
+    if any(
+        token in joined
+        for token in (
+            "LIVE_PONTUACAO_TIME",
+            "PONTUACAO_TIME",
+            "PONTUACAO_DO_TIME",
+            "PARCIAL_ATUAL_DO_TIME",
+            "TIME_ECONOMICO",
+            "TIME_INTERMEDIARIO",
+            "TIME_PARA_PONTUAR",
+            "SELECAO_ECONOMICO",
+            "SELECAO_INTERMEDIARIO",
+            "SELECAO_PONTUACAO",
+            "TIME_DELTA_15",
+            "LIVE_DELTA_15",
+        )
+    ):
         return "LIVE_PONTUACAO_TIME"
-    if any(token in joined for token in ("LIVE_RESUMO_TIMES", "LIVE_RANKING_PARCIAL", "RESUMO_GERAL", "PARCIAIS_DOS_TIMES")):
+
+    # Resumo dos modelos. "PARCIAIS AO VIVO" é o título do card aprovado e
+    # precisa ser reconhecido mesmo quando o evento canônico não vier no payload.
+    if any(
+        token in joined
+        for token in (
+            "LIVE_RESUMO_TIMES",
+            "LIVE_RANKING_PARCIAL",
+            "RESUMO_GERAL",
+            "PARCIAIS_DOS_TIMES",
+            "PARCIAL_DOS_TIMES",
+            "PARCIAIS_AO_VIVO",
+            "PARCIAL_AO_VIVO",
+        )
+    ):
         return "LIVE_RESUMO_TIMES"
+
     return _norm(data.get("evento_programado"))
 
 
@@ -56,15 +104,26 @@ def _round_value(data: Dict[str, Any]) -> str:
 
 
 def _team_type(data: Dict[str, Any]) -> str:
-    raw = _safe(v2._value(data, "tipo_time", "tipo", "modelo", default="PONTUACAO"))
-    key = _norm(raw).replace("TIME_", "")
-    aliases = {
-        "ECONOMICO": "ECONOMICO",
-        "ECONOMICO_": "ECONOMICO",
-        "INTERMEDIARIO": "INTERMEDIARIO",
-        "PONTUACAO": "PONTUACAO",
-    }
-    return aliases.get(key, key or "PONTUACAO")
+    raw = " ".join(
+        _safe(value)
+        for value in (
+            v2._value(data, "tipo_time", "tipo", "modelo", "nome_time", "nome_modelo", default=""),
+            data.get("titulo"),
+            data.get("contexto"),
+            data.get("mensagem_oficial"),
+        )
+        if value
+    )
+    key = _norm(raw)
+
+    if "ECONOMICO" in key:
+        return "ECONOMICO"
+    if "INTERMEDIARIO" in key:
+        return "INTERMEDIARIO"
+    if "PARA_PONTUAR" in key or "PONTUACAO" in key:
+        return "PONTUACAO"
+
+    return "PONTUACAO"
 
 
 def _team_label(team_type: str) -> str:
@@ -247,7 +306,7 @@ def render_live_aux(data: Dict[str, Any], output_dir: str = "output") -> RenderO
     event = event_name(data)
     if event == "LIVE_MITOS_ZICAS":
         return v2.render_ranking_v2(data, output_dir)
-    if event == "LIVE_RESUMO_TIMES":
+    if event in {"LIVE_RESUMO_TIMES", "LIVE_RANKING_PARCIAL"}:
         return v2.render_summary_v2(_normalize_summary(data), output_dir)
     if event == "LIVE_PONTUACAO_TIME":
         return render_team_points(data, output_dir)
