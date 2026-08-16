@@ -40,7 +40,9 @@ function PSS_LIVE_V127_garantirConfig_() {
   PSS_LIVE_V127_upsertConfig_("TG_ENVIAR", "SIM");
   PSS_LIVE_V127_upsertConfig_("JOB_TELEGRAM", "SIM");
   PSS_LIVE_V127_upsertConfig_("NOTIF_MERCADO", "NAO");
-  PSS_LIVE_V127_upsertConfig_("NOTIF_TIMES", "NAO");
+  // Precisa ficar SIM para o núcleo montar as parciais dos três times.
+  // O V125 continua bloqueando o texto antigo; o V127 converte a publicação em imagem GitHub.
+  PSS_LIVE_V127_upsertConfig_("NOTIF_TIMES", "SIM");
   PSS_LIVE_V127_upsertConfig_("NOTIF_TOP5", "NAO");
   PSS_LIVE_V127_upsertConfig_("GITHUB_TESTE_ATIVO", "SIM");
   PSS_LIVE_V127_upsertConfig_("GITHUB_LIVE_EVENTO", "cartola_live_publish");
@@ -228,7 +230,7 @@ function PSS_LIVE_IMAGENS_V127_INSTALAR() {
     acionadores_antigos_removidos: removidos,
     qualquer_texto_telegram: "BLOQUEADO",
     notif_mercado: "NAO",
-    notif_times: "NAO",
+    notif_times: "SIM",
     notif_top5: "NAO",
     eventos_pos_rodada: ["FECHAMENTO_FINAL_TIMES", "RESUMO_FINAL_RODADA"]
   };
