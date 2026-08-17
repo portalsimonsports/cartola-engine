@@ -34,6 +34,8 @@ CLUB_NAMES = {
     "MIR": "Mirassol",
     "VIT": "Vitória",
     "SPT": "Sport",
+    "CHA": "Chapecoense",
+    "REM": "Remo",
 }
 
 
@@ -58,7 +60,6 @@ def _background() -> Image.Image:
 
 def _header(image: Image.Image, subtitle: str, rodada: str) -> None:
     draw = ImageDraw.Draw(image)
-    # identidade do Portal no mesmo padrão dos cards Live existentes
     try:
         from render_telegram_cards import _logo_ps
         _logo_ps(image, (64, 34, 202, 165))
