@@ -40,9 +40,9 @@ function PSS_LIVE_V127_garantirConfig_() {
   PSS_LIVE_V127_upsertConfig_("TG_ENVIAR", "SIM");
   PSS_LIVE_V127_upsertConfig_("JOB_TELEGRAM", "SIM");
   PSS_LIVE_V127_upsertConfig_("NOTIF_MERCADO", "NAO");
-  // Precisa ficar SIM para o núcleo montar as parciais dos três times.
-  // O V125 continua bloqueando o texto antigo; o V127 converte a publicação em imagem GitHub.
-  PSS_LIVE_V127_upsertConfig_("NOTIF_TIMES", "SIM");
+  // Publicação antiga em texto deve permanecer DESATIVADA.
+  // As imagens dos times seguem pelo fluxo GitHub.
+  PSS_LIVE_V127_upsertConfig_("NOTIF_TIMES", "NAO");
   PSS_LIVE_V127_upsertConfig_("NOTIF_TOP5", "NAO");
   PSS_LIVE_V127_upsertConfig_("GITHUB_TESTE_ATIVO", "SIM");
   PSS_LIVE_V127_upsertConfig_("GITHUB_LIVE_EVENTO", "cartola_live_publish");
@@ -78,8 +78,6 @@ function PSS_LIVE_V127_eventos_(tipoPublicacao, payload) {
     (payload.modelos && typeof payload.modelos === "object") ||
     /SELECAO ECONOMICO|SELECAO INTERMEDIARIO|SELECAO PONTUACAO/.test(texto);
 
-  // Detalhe individual de um dos três times. Esta rota precisa vir antes de
-  // "Parciais ao Vivo", porque o card individual também pode conter essa frase.
   var temDetalheTime = !!(
     payload.tipo_time ||
     payload.tipo ||
@@ -96,8 +94,6 @@ function PSS_LIVE_V127_eventos_(tipoPublicacao, payload) {
 
   if (/ABERTURA LIVE|LIVE ABERTURA|MONITORAMENTO.*INICI/.test(texto)) return ["LIVE_ABERTURA"];
 
-  // RESTABELECIDO: card de pontuação detalhada dos times, como nas rodadas
-  // anteriores (Time Econômico / Intermediário / Para Pontuar).
   if (temDetalheTime && /PONTUACAO|PONTOS|PARCIAL|TIME ECONOMICO|TIME INTERMEDIARIO|TIME PARA PONTUAR/.test(texto)) {
     return ["LIVE_PONTUACAO_TIME"];
   }
@@ -105,8 +101,6 @@ function PSS_LIVE_V127_eventos_(tipoPublicacao, payload) {
   if (/DELTA.*15|15 PONTOS/.test(texto)) return ["LIVE_DELTA_15"];
   if (/MITOS|ZICAS|TOP 5 PONTUADORES|PIORES PONTUACOES/.test(texto)) return ["LIVE_MITOS_ZICAS"];
 
-  // RESTABELECIDO: resumo/parcial dos três modelos. A versão anterior só
-  // reconhecia "PARCIAIS DOS TIMES" e ignorava "PARCIAIS AO VIVO".
   if (/RANKING|PARCIAIS DOS TIMES|PARCIAL DOS TIMES|PARCIAIS AO VIVO|RESUMO GERAL/.test(texto)) {
     return ["LIVE_RANKING_PARCIAL"];
   }
@@ -230,7 +224,7 @@ function PSS_LIVE_IMAGENS_V127_INSTALAR() {
     acionadores_antigos_removidos: removidos,
     qualquer_texto_telegram: "BLOQUEADO",
     notif_mercado: "NAO",
-    notif_times: "SIM",
+    notif_times: "NAO",
     notif_top5: "NAO",
     eventos_pos_rodada: ["FECHAMENTO_FINAL_TIMES", "RESUMO_FINAL_RODADA"]
   };
