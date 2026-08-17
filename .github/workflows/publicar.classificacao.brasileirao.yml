@@ -1,0 +1,107 @@
+name: Publicar Classificação do Brasileirão
+
+on:
+  schedule:
+    # Consulta a classificação a cada 15 minutos. O script só publica quando
+    # houver alteração real ou quando existir fechamento diário pendente.
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: classificacao-brasileirao-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  publicar-classificacao:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependências
+        shell: bash
+        run: |
+          set -e
+          python -m pip install --upgrade pip setuptools wheel
+          pip install --upgrade -r requirements.txt
+
+      - name: Validar publicação da classificação
+        shell: bash
+        run: |
+          set -e
+          python -m py_compile app/render_classificacao_brasileirao.py
+          python -m py_compile app/publicar_classificacao_brasileirao.py
+          python -m py_compile app/gerar_resultados_telegram.py
+
+      - name: Verificar e publicar classificação
+        shell: bash
+        env:
+          TZ: America/Sao_Paulo
+          PLANILHA_CLASSIFICACAO_ID: "1-A7w4kkE28iHRd61yiSoNOvSekrmmADzHxGCRDVrICI"
+          ABA_CLASSIFICACAO: "ESTATISTICAS_PROPRIA"
+          SNAPSHOT_PATH: "data/publicacoes_atuais/classificacao_brasileirao_snapshot.json"
+          OUTPUT_DIR: "output"
+          FECHAMENTO_HORA: "23"
+          FECHAMENTO_MINUTO: "30"
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_APPLICATION_CREDENTIALS: service_account.json
+          # Mantém a planilha já usada pelo pipeline atual para localizar
+          # TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_ID.
+          PLANILHA_ID: ${{ secrets.PLANILHA_ID }}
+          ABA_TELEGRAM: ${{ secrets.ABA_TELEGRAM }}
+          CONTA_TELEGRAM: ${{ secrets.CONTA_TELEGRAM }}
+          TELEGRAM_CHAT_FALLBACK: "@dicascartolaportalsimonsports"
+        run: |
+          set -e
+          python app/publicar_classificacao_brasileirao.py
+
+      - name: Salvar estado da classificação
+        if: success()
+        shell: bash
+        run: |
+          set -e
+          rm -f service_account.json
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/publicacoes_atuais/classificacao_brasileirao_snapshot.json 2>/dev/null || true
+          git add output/classificacao_brasileirao_*.png 2>/dev/null || true
+
+          if git diff --cached --quiet; then
+            echo "Classificação sem alteração persistente."
+            exit 0
+          fi
+
+          git commit -m "Brasileirão: atualizar classificação automática"
+
+          enviado=0
+          for tentativa in 1 2 3 4 5; do
+            echo "Tentativa de push $tentativa/5"
+            git fetch origin main
+            if git rebase origin/main && git push origin HEAD:main; then
+              enviado=1
+              break
+            fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((tentativa * 3))
+          done
+
+          if [ "$enviado" -ne 1 ]; then
+            echo "ERRO: não foi possível salvar o snapshot da classificação."
+            exit 1
+          fi
