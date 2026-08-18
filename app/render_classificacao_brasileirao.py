@@ -11,31 +11,13 @@ import render_live_cards_v2 as v2
 CANVAS = (1600, 2000)
 
 CLUB_NAMES = {
-    "FLA": "Flamengo",
-    "PAL": "Palmeiras",
-    "CRU": "Cruzeiro",
-    "BAH": "Bahia",
-    "BOT": "Botafogo",
-    "SAO": "São Paulo",
-    "SAO PAULO": "São Paulo",
-    "CAP": "Athletico-PR",
-    "ATH": "Athletico-PR",
-    "INT": "Internacional",
-    "CAM": "Atlético-MG",
-    "FLU": "Fluminense",
-    "CEA": "Ceará",
-    "COR": "Corinthians",
-    "GRE": "Grêmio",
-    "VAS": "Vasco",
-    "SAN": "Santos",
-    "RBB": "Bragantino",
-    "JUV": "Juventude",
-    "FOR": "Fortaleza",
-    "MIR": "Mirassol",
-    "VIT": "Vitória",
-    "SPT": "Sport",
-    "CHA": "Chapecoense",
-    "REM": "Remo",
+    "FLA": "Flamengo", "PAL": "Palmeiras", "CRU": "Cruzeiro", "BAH": "Bahia",
+    "BOT": "Botafogo", "SAO": "São Paulo", "SAO PAULO": "São Paulo",
+    "CAP": "Athletico-PR", "ATH": "Athletico-PR", "INT": "Internacional",
+    "CAM": "Atlético-MG", "FLU": "Fluminense", "CEA": "Ceará", "COR": "Corinthians",
+    "GRE": "Grêmio", "VAS": "Vasco", "SAN": "Santos", "RBB": "Bragantino",
+    "JUV": "Juventude", "FOR": "Fortaleza", "MIR": "Mirassol", "VIT": "Vitória",
+    "SPT": "Sport", "CHA": "Chapecoense", "REM": "Remo", "CFC": "Coritiba",
 }
 
 
@@ -102,7 +84,6 @@ def _column(image: Image.Image, items: List[Dict[str, Any]], box: Tuple[int, int
     draw = ImageDraw.Draw(image)
     x1, y1, x2, y2 = box
     v2._shadow_panel(image, box, radius=25, fill=(5, 16, 29), outline=v2.ORANGE, shadow_alpha=85, outline_width=2)
-
     header_h = 58
     draw.rectangle((x1, y1, x2, y1 + header_h), fill=(218, 93, 0))
     draw.text((x1 + 18, y1 + 14), "POS.", font=v2._font(23, "bold", True), fill=v2.WHITE)
@@ -119,19 +100,15 @@ def _column(image: Image.Image, items: List[Dict[str, Any]], box: Tuple[int, int
         fill = (8, 22, 38) if pos % 2 else (5, 18, 32)
         draw.rectangle((x1, y, x2, y + row_h), fill=fill)
         draw.line((x1, y + row_h, x2, y + row_h), fill=(45, 61, 75), width=2)
-
         pos_color = v2.GOLD if pos == 1 else v2.SILVER if pos == 2 else v2.ORANGE if pos == 3 else v2.WHITE
         draw.text((x1 + 22, y + 30), str(pos), font=v2._font(35, "bold", True), fill=pos_color)
-
         vt, vc = _variation(item.get("variacao"))
         draw.text((x1 + 90, y + 34), vt, font=v2._font(24, "bold", True), fill=vc)
-
         nome = _club_name(item.get("nome"))
         nf = v2._fit_text(draw, nome, x2 - x1 - 340, 31, 22, "bold", True)
         draw.text((x1 + 195, y + 22), nome, font=nf, fill=v2.WHITE)
         small = f"J {int(item.get('j') or 0)}  V {int(item.get('v') or 0)}  SG {int(item.get('saldo') or 0):+d}"
         draw.text((x1 + 195, y + 62), small, font=v2._font(20, "semibold", True), fill=v2.MUTED)
-
         pts = str(int(item.get("pts") or 0))
         pf = v2._font(39, "bold", True)
         pb = draw.textbbox((0, 0), pts, font=pf)
@@ -140,17 +117,22 @@ def _column(image: Image.Image, items: List[Dict[str, Any]], box: Tuple[int, int
 
 
 def render_classificacao_brasileirao(
-    teams: List[Dict[str, Any]],
-    output_dir: str,
-    modo: str,
-    atualizado_em: str,
-    rodada: str = "",
+    teams: List[Dict[str, Any]], output_dir: str, modo: str,
+    atualizado_em: str, rodada: str = "",
 ) -> str:
     if not teams:
         raise RuntimeError("Classificação sem clubes para renderizar.")
 
     image = _background()
-    subtitle = "Classificação final do dia" if modo == "fechamento" else "Classificação após os jogos"
+    if modo == "fechamento":
+        subtitle = "Classificação final do dia"
+        footer = "FECHAMENTO DO DIA"
+    elif modo == "parcial_ao_vivo":
+        subtitle = "Classificação parcial ao vivo"
+        footer = "TABELA PARCIAL • AO VIVO"
+    else:
+        subtitle = "Classificação após os jogos"
+        footer = "TABELA ATUALIZADA"
     _header(image, subtitle, rodada)
 
     _column(image, teams[:10], (55, 545, 785, 1715))
@@ -159,7 +141,6 @@ def render_classificacao_brasileirao(
     draw = ImageDraw.Draw(image)
     draw.line((64, 1810, 1536, 1810), fill=(120, 62, 25), width=3)
     draw.text((64, 1842), f"ATUALIZAÇÃO: {atualizado_em}", font=v2._font(25, "bold", True), fill=v2.WHITE)
-    footer = "FECHAMENTO DO DIA" if modo == "fechamento" else "TABELA ATUALIZADA"
     ff = v2._font(27, "bold", True)
     fb = draw.textbbox((0, 0), footer, font=ff)
     draw.text((1536 - (fb[2] - fb[0]), 1840), footer, font=ff, fill=v2.ORANGE)
