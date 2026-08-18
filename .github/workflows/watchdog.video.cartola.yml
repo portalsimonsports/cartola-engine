@@ -4,6 +4,10 @@ on:
   schedule:
     - cron: '*/10 * * * *'
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/watchdog.video.cartola.yml
 
 permissions:
   contents: write
@@ -39,7 +43,7 @@ jobs:
           BASE = Path('data/publicacoes_atuais')
           FLAGS = Path('data/flags')
           now = int(time.time())
-          retry_after = 5400  # 90 min: evita duplicar enquanto um vídeo longo está sendo gerado
+          retry_after = 5400
 
           def load(path):
               try:
@@ -133,7 +137,7 @@ jobs:
                   attempts = int(p.get('tentativas') or 0)
 
               if last_request and now - last_request < retry_after:
-                  print(f'{fase} R{rodada}: já solicitado há menos de 90 min; aguardando conclusão.')
+                  print(f'{fase} R{rodada}: tentativa já ativa; aguardando publicação real.')
                   continue
 
               attempts += 1
@@ -145,13 +149,12 @@ jobs:
                   'tentativas': attempts,
               }, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
               dispatches.append(fase)
-              print(f'{fase} R{rodada}: pendente; tentativa {attempts} autorizada.')
+              print(f'{fase} R{rodada}: tentativa {attempts} autorizada.')
 
           with OUT.open('a', encoding='utf-8') as fh:
               fh.write(f'rodada={rodada}\n')
               fh.write('dispatches=' + ','.join(dispatches) + '\n')
 
-          # Persiste o estado de retentativa antes de disparar. Esse estado NUNCA significa sucesso.
           changed = subprocess.run(['git','status','--porcelain','data/flags'], text=True, capture_output=True).stdout.strip()
           if changed:
               subprocess.run(['git','config','user.name','github-actions[bot]'], check=True)
