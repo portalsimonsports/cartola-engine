@@ -166,3 +166,5 @@ jobs:
             sleep $((tentativa * 3))
           done
           exit 1
+
+# Recovery trigger: 2026-08-18T17:41-03:00 — R24 INICIAL pendente
