@@ -6,23 +6,19 @@ on:
   workflow_dispatch:
     inputs:
       rodada:
-        description: "Rodada"
-        required: true
-        default: "24"
+        description: "Rodada (vazio = detectar automaticamente)"
+        required: false
+        default: ""
       fase:
         description: "INICIAL ou PRE_FECHAMENTO"
         required: true
         default: "INICIAL"
-  push:
-    branches: [main]
-    paths:
-      - .github/workflows/publicar.video.cartola.yml
 
 permissions:
   contents: write
 
 concurrency:
-  group: publicar-video-cartola-${{ github.event.client_payload.rodada || github.event.inputs.rodada || '24' }}-${{ github.event.client_payload.fase || github.event.inputs.fase || 'INICIAL' }}
+  group: publicar-video-cartola-${{ github.event.client_payload.rodada || github.event.inputs.rodada || 'AUTO' }}-${{ github.event.client_payload.fase || github.event.inputs.fase || 'INICIAL' }}
   cancel-in-progress: false
 
 jobs:
@@ -59,10 +55,79 @@ jobs:
           MANUAL_FASE: ${{ github.event.inputs.fase }}
         run: |
           set -e
-          RODADA="${DISPATCH_RODADA:-${MANUAL_RODADA:-24}}"
           FASE="${DISPATCH_FASE:-${MANUAL_FASE:-INICIAL}}"
           FASE="$(printf '%s' "$FASE" | tr '[:lower:]' '[:upper:]')"
-          case "$FASE" in INICIAL|PRE_FECHAMENTO) ;; *) exit 1;; esac
+          case "$FASE" in INICIAL|PRE_FECHAMENTO) ;; *) echo "Fase inválida: $FASE"; exit 1;; esac
+
+          RODADA="${DISPATCH_RODADA:-${MANUAL_RODADA:-}}"
+          if [ -z "$RODADA" ]; then
+            RODADA="$(python - "$FASE" <<'PY'
+          import json, re, subprocess, sys
+          from pathlib import Path
+
+          fase = sys.argv[1]
+          base = Path('data/publicacoes_atuais')
+
+          def load(path):
+              try:
+                  d=json.loads(path.read_text(encoding='utf-8'))
+                  return d if isinstance(d,dict) else {}
+              except Exception:return {}
+          def rows(d):
+              v=d.get('jogadores') or d.get('atletas') or d.get('dados') or d.get('lista') or []
+              return [x for x in v if isinstance(x,dict)]
+          def git_json(c,p):
+              r=subprocess.run(['git','show',f'{c}:{p}'],text=True,capture_output=True)
+              if r.returncode != 0 or not r.stdout.strip(): return {}
+              try:
+                  d=json.loads(r.stdout); return d if isinstance(d,dict) else {}
+              except Exception:return {}
+          def exists(rel, rodada, evento, minimo):
+              d=load(Path(rel))
+              if int(d.get('rodada') or 0)==rodada and str(d.get('evento_programado') or '').upper()==evento and len(rows(d))>=minimo:
+                  return True
+              commits=subprocess.run(['git','log','--format=%H','--all','--',rel],text=True,capture_output=True).stdout.splitlines()
+              for c in commits:
+                  g=git_json(c,rel)
+                  if int(g.get('rodada') or 0)==rodada and str(g.get('evento_programado') or '').upper()==evento and len(rows(g))>=minimo:
+                      return True
+              return False
+
+          rounds=[]
+          for p in base.glob('top5_rodada_*.json'):
+              m=re.search(r'rodada_(\d+)\.json$',p.name)
+              if m: rounds.append(int(m.group(1)))
+
+          for rodada in sorted(set(rounds), reverse=True):
+              if fase == 'INICIAL':
+                  req=[
+                      (f'data/publicacoes_atuais/time_economico_rodada_{rodada}.json','SELECAO_INICIAL',12),
+                      (f'data/publicacoes_atuais/time_intermediario_rodada_{rodada}.json','SELECAO_INICIAL',12),
+                      (f'data/publicacoes_atuais/time_pontuacao_rodada_{rodada}.json','SELECAO_INICIAL',12),
+                      (f'data/publicacoes_atuais/top5_rodada_{rodada}.json','SELECAO_INICIAL',30),
+                  ]
+                  flag=Path(f'data/flags/video_inicial_rodada_{rodada}.publicado.json')
+                  video=Path(f'output/analise_inicial_rodada_{rodada}.mp4')
+                  manifesto=Path(f'output/analise_inicial_rodada_{rodada}.json')
+              else:
+                  req=[
+                      (f'data/publicacoes_atuais/time_economico_rodada_{rodada}.json','PRE_FECHAMENTO_TIMES',12),
+                      (f'data/publicacoes_atuais/time_intermediario_rodada_{rodada}.json','PRE_FECHAMENTO_TIMES',12),
+                      (f'data/publicacoes_atuais/time_pontuacao_rodada_{rodada}.json','PRE_FECHAMENTO_TIMES',12),
+                      (f'data/publicacoes_atuais/top5_rodada_{rodada}.json','PRE_FECHAMENTO_TOP5',30),
+                  ]
+                  flag=Path(f'data/flags/video_pre_fechamento_rodada_{rodada}.publicado.json')
+                  video=Path(f'output/analise_pre_fechamento_rodada_{rodada}.mp4')
+                  manifesto=Path(f'output/analise_pre_fechamento_rodada_{rodada}.json')
+              if all(exists(*x) for x in req) and not (flag.exists() and video.exists() and manifesto.exists()):
+                  print(rodada)
+                  raise SystemExit(0)
+          raise SystemExit('Nenhuma rodada completa e pendente encontrada para '+fase)
+          PY
+          )"
+          fi
+
+          case "$RODADA" in ''|*[!0-9]*) echo "Rodada inválida: $RODADA"; exit 1;; esac
           VIDEO="output/analise_$(printf '%s' "$FASE" | tr '[:upper:]' '[:lower:]')_rodada_${RODADA}.mp4"
           MANIFESTO="${VIDEO%.mp4}.json"
           if [ "$FASE" = "INICIAL" ]; then FLAG="data/flags/video_inicial_rodada_${RODADA}.publicado.json"; else FLAG="data/flags/video_pre_fechamento_rodada_${RODADA}.publicado.json"; fi
@@ -71,6 +136,7 @@ jobs:
           echo "video=$VIDEO" >> "$GITHUB_OUTPUT"
           echo "manifesto=$MANIFESTO" >> "$GITHUB_OUTPUT"
           echo "flag=$FLAG" >> "$GITHUB_OUTPUT"
+          echo "Fase=$FASE rodada=$RODADA"
 
       - name: Validar código
         run: |
@@ -166,5 +232,3 @@ jobs:
             sleep $((tentativa * 3))
           done
           exit 1
-
-# Recovery trigger: 2026-08-18T17:41-03:00 — R24 INICIAL pendente
