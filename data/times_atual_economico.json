@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 24,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-08-18T15:19:44.535Z",
+  "atualizado_em": "2026-08-18T15:34:48.378Z",
   "dados": [
     {
       "RODADA": 24,
@@ -14,19 +14,8 @@
       "NOME": "Otávio",
       "CLUBE": "CRU",
       "PRECO": 3.11,
-      "EXP_SCORE": 2.0397,
+      "EXP_SCORE": 1.6831,
       "ATLETA_ID": 117404
-    },
-    {
-      "RODADA": 24,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "LAT",
-      "NOME": "Escobar",
-      "CLUBE": "SAN",
-      "PRECO": 10.8,
-      "EXP_SCORE": 6.0444,
-      "ATLETA_ID": 102975
     },
     {
       "RODADA": 24,
@@ -36,8 +25,19 @@
       "NOME": "Luan Cândido",
       "CLUBE": "VIT",
       "PRECO": 6.8,
-      "EXP_SCORE": 3.0404,
+      "EXP_SCORE": 2.8734,
       "ATLETA_ID": 100848
+    },
+    {
+      "RODADA": 24,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Escobar",
+      "CLUBE": "SAN",
+      "PRECO": 10.8,
+      "EXP_SCORE": 5.1412,
+      "ATLETA_ID": 102975
     },
     {
       "RODADA": 24,
@@ -47,7 +47,7 @@
       "NOME": "Jacy",
       "CLUBE": "CFC",
       "PRECO": 6.39,
-      "EXP_SCORE": 4.3827,
+      "EXP_SCORE": 3.8502,
       "ATLETA_ID": 97878
     },
     {
@@ -55,11 +55,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ZAG",
-      "NOME": "Luan Peres",
-      "CLUBE": "SAN",
-      "PRECO": 6.11,
-      "EXP_SCORE": 2.6954,
-      "ATLETA_ID": 84847
+      "NOME": "Tiago Cóser",
+      "CLUBE": "CFC",
+      "PRECO": 4.78,
+      "EXP_SCORE": 3.1914,
+      "ATLETA_ID": 109127
     },
     {
       "RODADA": 24,
@@ -80,7 +80,7 @@
       "NOME": "Acevedo",
       "CLUBE": "BAH",
       "PRECO": 8.76,
-      "EXP_SCORE": 5.0507,
+      "EXP_SCORE": 4.3919,
       "ATLETA_ID": 104783
     },
     {
@@ -88,11 +88,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Matheuzinho",
-      "CLUBE": "VIT",
-      "PRECO": 7.07,
-      "EXP_SCORE": 3.9701,
-      "ATLETA_ID": 90703
+      "NOME": "Jadson",
+      "CLUBE": "CAP",
+      "PRECO": 6.22,
+      "EXP_SCORE": 3.2981,
+      "ATLETA_ID": 80129
     },
     {
       "RODADA": 24,
@@ -102,7 +102,7 @@
       "NOME": "Cuello",
       "CLUBE": "CAM",
       "PRECO": 11.49,
-      "EXP_SCORE": 6.5011,
+      "EXP_SCORE": 5.5183,
       "ATLETA_ID": 98909
     },
     {
@@ -113,7 +113,7 @@
       "NOME": "Marcinho",
       "CLUBE": "CHA",
       "PRECO": 5.36,
-      "EXP_SCORE": 3.8964,
+      "EXP_SCORE": 3.8034,
       "ATLETA_ID": 95332
     },
     {
@@ -124,7 +124,7 @@
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 18.08,
-      "EXP_SCORE": 8.0201,
+      "EXP_SCORE": 7.8288,
       "ATLETA_ID": 94583
     },
     {
@@ -132,11 +132,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Rafael Guanaes",
-      "CLUBE": "MIR",
-      "PRECO": 6.97,
-      "EXP_SCORE": 3.5345,
-      "ATLETA_ID": 104027
+      "NOME": "Jair Ventura",
+      "CLUBE": "VIT",
+      "PRECO": 8.98,
+      "EXP_SCORE": 4.1798,
+      "ATLETA_ID": 92180
     },
     {
       "RODADA": 24,
@@ -146,7 +146,7 @@
       "NOME": "Matheus Cunha",
       "CLUBE": "INT",
       "PRECO": 4.34,
-      "EXP_SCORE": 2.941,
+      "EXP_SCORE": 2.1841,
       "ATLETA_ID": 111690
     },
     {
@@ -157,7 +157,7 @@
       "NOME": "Bruno Melo",
       "CLUBE": "CFC",
       "PRECO": 5.81,
-      "EXP_SCORE": 3.5004,
+      "EXP_SCORE": 2.9773,
       "ATLETA_ID": 84339
     },
     {
@@ -165,22 +165,22 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Tiago Cóser",
-      "CLUBE": "CFC",
-      "PRECO": 4.78,
-      "EXP_SCORE": 3.1589,
-      "ATLETA_ID": 109127
+      "NOME": "Eduardo Doma",
+      "CLUBE": "CHA",
+      "PRECO": 4.18,
+      "EXP_SCORE": 2.0807,
+      "ATLETA_ID": 101393
     },
     {
       "RODADA": 24,
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Willian Arão",
-      "CLUBE": "SAN",
-      "PRECO": 6.57,
-      "EXP_SCORE": 3.6584,
-      "ATLETA_ID": 78478
+      "NOME": "Zé Vitor",
+      "CLUBE": "VIT",
+      "PRECO": 6.21,
+      "EXP_SCORE": 3.5699,
+      "ATLETA_ID": 107256
     },
     {
       "RODADA": 24,
@@ -190,7 +190,7 @@
       "NOME": "Lavega",
       "CLUBE": "CFC",
       "PRECO": 4.94,
-      "EXP_SCORE": 2.8764,
+      "EXP_SCORE": 2.8077,
       "ATLETA_ID": 117930
     }
   ]
