@@ -1,0 +1,198 @@
+name: Watchdog Vídeos Cartola
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: watchdog-videos-cartola
+  cancel-in-progress: false
+
+jobs:
+  verificar-e-recuperar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+
+    steps:
+      - name: Checkout completo
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Detectar vídeos pendentes
+        id: detectar
+        shell: bash
+        run: |
+          set -e
+          python - <<'PY'
+          import json, os, re, subprocess, time
+          from pathlib import Path
+
+          OUT = Path(os.environ['GITHUB_OUTPUT'])
+          BASE = Path('data/publicacoes_atuais')
+          FLAGS = Path('data/flags')
+          now = int(time.time())
+          retry_after = 5400  # 90 min: evita duplicar enquanto um vídeo longo está sendo gerado
+
+          def load(path):
+              try:
+                  data = json.loads(path.read_text(encoding='utf-8'))
+                  return data if isinstance(data, dict) else {}
+              except Exception:
+                  return {}
+
+          def rows(data):
+              raw = data.get('jogadores') or data.get('atletas') or data.get('dados') or data.get('lista') or []
+              return [x for x in raw if isinstance(x, dict)]
+
+          def git_json(commit, path):
+              p = subprocess.run(['git', 'show', f'{commit}:{path}'], text=True, capture_output=True)
+              if p.returncode != 0 or not p.stdout.strip():
+                  return {}
+              try:
+                  d = json.loads(p.stdout)
+                  return d if isinstance(d, dict) else {}
+              except Exception:
+                  return {}
+
+          def exists_in_history(rel, rodada, evento, minimo):
+              current = load(Path(rel))
+              if int(current.get('rodada') or 0) == rodada and str(current.get('evento_programado') or '').upper() == evento and len(rows(current)) >= minimo:
+                  return True
+              commits = subprocess.run(['git','log','--format=%H','--all','--',rel], text=True, capture_output=True).stdout.splitlines()
+              for commit in commits:
+                  d = git_json(commit, rel)
+                  if int(d.get('rodada') or 0) == rodada and str(d.get('evento_programado') or '').upper() == evento and len(rows(d)) >= minimo:
+                      return True
+              return False
+
+          rounds = []
+          for path in BASE.glob('top5_rodada_*.json'):
+              m = re.search(r'rodada_(\d+)\.json$', path.name)
+              if m:
+                  rounds.append(int(m.group(1)))
+          if not rounds:
+              OUT.write_text('dispatches=[]\n', encoding='utf-8')
+              raise SystemExit(0)
+
+          rodada = max(rounds)
+          checks = {
+              'INICIAL': [
+                  (f'data/publicacoes_atuais/time_economico_rodada_{rodada}.json', 'SELECAO_INICIAL', 12),
+                  (f'data/publicacoes_atuais/time_intermediario_rodada_{rodada}.json', 'SELECAO_INICIAL', 12),
+                  (f'data/publicacoes_atuais/time_pontuacao_rodada_{rodada}.json', 'SELECAO_INICIAL', 12),
+                  (f'data/publicacoes_atuais/top5_rodada_{rodada}.json', 'SELECAO_INICIAL', 30),
+              ],
+              'PRE_FECHAMENTO': [
+                  (f'data/publicacoes_atuais/time_economico_rodada_{rodada}.json', 'PRE_FECHAMENTO_TIMES', 12),
+                  (f'data/publicacoes_atuais/time_intermediario_rodada_{rodada}.json', 'PRE_FECHAMENTO_TIMES', 12),
+                  (f'data/publicacoes_atuais/time_pontuacao_rodada_{rodada}.json', 'PRE_FECHAMENTO_TIMES', 12),
+                  (f'data/publicacoes_atuais/top5_rodada_{rodada}.json', 'PRE_FECHAMENTO_TOP5', 30),
+              ],
+          }
+
+          dispatches = []
+          FLAGS.mkdir(parents=True, exist_ok=True)
+
+          for fase, required in checks.items():
+              if fase == 'INICIAL':
+                  stem = f'video_inicial_rodada_{rodada}'
+                  video = Path(f'output/analise_inicial_rodada_{rodada}.mp4')
+                  manifesto = Path(f'output/analise_inicial_rodada_{rodada}.json')
+              else:
+                  stem = f'video_pre_fechamento_rodada_{rodada}'
+                  video = Path(f'output/analise_pre_fechamento_rodada_{rodada}.mp4')
+                  manifesto = Path(f'output/analise_pre_fechamento_rodada_{rodada}.json')
+
+              success = FLAGS / f'{stem}.publicado.json'
+              pending = FLAGS / f'{stem}.pendente.json'
+
+              if video.exists() and manifesto.exists() and success.exists():
+                  if pending.exists():
+                      pending.unlink()
+                  print(f'{fase} R{rodada}: publicação real confirmada.')
+                  continue
+
+              complete = all(exists_in_history(rel, rodada, evento, minimo) for rel, evento, minimo in required)
+              if not complete:
+                  print(f'{fase} R{rodada}: snapshots ainda incompletos; não disparar.')
+                  continue
+
+              last_request = 0
+              attempts = 0
+              if pending.exists():
+                  p = load(pending)
+                  last_request = int(p.get('epoch') or 0)
+                  attempts = int(p.get('tentativas') or 0)
+
+              if last_request and now - last_request < retry_after:
+                  print(f'{fase} R{rodada}: já solicitado há menos de 90 min; aguardando conclusão.')
+                  continue
+
+              attempts += 1
+              pending.write_text(json.dumps({
+                  'rodada': rodada,
+                  'fase': fase,
+                  'status': 'AGUARDANDO_PUBLICACAO_REAL',
+                  'epoch': now,
+                  'tentativas': attempts,
+              }, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+              dispatches.append(fase)
+              print(f'{fase} R{rodada}: pendente; tentativa {attempts} autorizada.')
+
+          with OUT.open('a', encoding='utf-8') as fh:
+              fh.write(f'rodada={rodada}\n')
+              fh.write('dispatches=' + ','.join(dispatches) + '\n')
+
+          # Persiste o estado de retentativa antes de disparar. Esse estado NUNCA significa sucesso.
+          changed = subprocess.run(['git','status','--porcelain','data/flags'], text=True, capture_output=True).stdout.strip()
+          if changed:
+              subprocess.run(['git','config','user.name','github-actions[bot]'], check=True)
+              subprocess.run(['git','config','user.email','41898282+github-actions[bot]@users.noreply.github.com'], check=True)
+              subprocess.run(['git','add','data/flags'], check=True)
+              subprocess.run(['git','commit','-m',f'Cartola: watchdog vídeos R{rodada}'], check=True)
+              for attempt in range(1, 6):
+                  subprocess.run(['git','fetch','origin','main'], check=True)
+                  rb = subprocess.run(['git','rebase','origin/main'])
+                  if rb.returncode == 0:
+                      push = subprocess.run(['git','push','origin','HEAD:main'])
+                      if push.returncode == 0:
+                          break
+                  subprocess.run(['git','rebase','--abort'], check=False)
+                  time.sleep(attempt * 2)
+              else:
+                  raise SystemExit('Falha ao persistir estado do watchdog.')
+          PY
+
+      - name: Disparar análise de abertura pendente
+        if: contains(steps.detectar.outputs.dispatches, 'INICIAL')
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RODADA: ${{ steps.detectar.outputs.rodada }}
+        shell: bash
+        run: |
+          set -e
+          payload="{\"event_type\":\"cartola_video_analise\",\"client_payload\":{\"rodada\":${RODADA},\"fase\":\"INICIAL\",\"origem\":\"watchdog_video_cartola\"}}"
+          code="$(curl -sS -o /tmp/inicial.json -w '%{http_code}' -X POST -H "Authorization: Bearer ${GH_TOKEN}" -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" "https://api.github.com/repos/${GITHUB_REPOSITORY}/dispatches" -d "$payload")"
+          cat /tmp/inicial.json || true
+          test "$code" -ge 200 && test "$code" -lt 300
+
+      - name: Disparar análise de pré-fechamento pendente
+        if: contains(steps.detectar.outputs.dispatches, 'PRE_FECHAMENTO')
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RODADA: ${{ steps.detectar.outputs.rodada }}
+        shell: bash
+        run: |
+          set -e
+          payload="{\"event_type\":\"cartola_video_analise\",\"client_payload\":{\"rodada\":${RODADA},\"fase\":\"PRE_FECHAMENTO\",\"origem\":\"watchdog_video_cartola\"}}"
+          code="$(curl -sS -o /tmp/pre.json -w '%{http_code}' -X POST -H "Authorization: Bearer ${GH_TOKEN}" -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" "https://api.github.com/repos/${GITHUB_REPOSITORY}/dispatches" -d "$payload")"
+          cat /tmp/pre.json || true
+          test "$code" -ge 200 && test "$code" -lt 300
