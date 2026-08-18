@@ -4,18 +4,18 @@
   "tipo_publicacao": "times",
   "rodada": 24,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-08-18T16:19:50.226Z",
+  "atualizado_em": "2026-08-18T16:30:11.321Z",
   "dados": [
     {
       "RODADA": 24,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 7.8,
-      "EXP_SCORE": 4.0316,
-      "ATLETA_ID": 104084
+      "NOME": "Tiago Volpi",
+      "CLUBE": "RBB",
+      "PRECO": 10.21,
+      "EXP_SCORE": 4.276,
+      "ATLETA_ID": 72018
     },
     {
       "RODADA": 24,
@@ -25,7 +25,7 @@
       "NOME": "Juninho Capixaba",
       "CLUBE": "RBB",
       "PRECO": 13.27,
-      "EXP_SCORE": 6.1806,
+      "EXP_SCORE": 6.1808,
       "ATLETA_ID": 94968
     },
     {
@@ -36,7 +36,7 @@
       "NOME": "Matheuzinho",
       "CLUBE": "COR",
       "PRECO": 11.15,
-      "EXP_SCORE": 5.9543,
+      "EXP_SCORE": 5.9544,
       "ATLETA_ID": 101727
     },
     {
@@ -47,7 +47,7 @@
       "NOME": "Gustavo Gómez",
       "CLUBE": "PAL",
       "PRECO": 10.99,
-      "EXP_SCORE": 4.3924,
+      "EXP_SCORE": 4.3926,
       "ATLETA_ID": 71684
     },
     {
@@ -58,7 +58,7 @@
       "NOME": "Jacy",
       "CLUBE": "CFC",
       "PRECO": 6.39,
-      "EXP_SCORE": 3.8468,
+      "EXP_SCORE": 3.847,
       "ATLETA_ID": 97878
     },
     {
@@ -98,17 +98,6 @@
       "RODADA": 24,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Matheus Pereira",
-      "CLUBE": "CRU",
-      "PRECO": 13.56,
-      "EXP_SCORE": 6.2665,
-      "ATLETA_ID": 96610
-    },
-    {
-      "RODADA": 24,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
       "POS": "ATA",
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
@@ -121,11 +110,22 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Jajá",
-      "CLUBE": "REM",
-      "PRECO": 6.23,
-      "EXP_SCORE": 4.4575,
-      "ATLETA_ID": 105048
+      "NOME": "Pedro",
+      "CLUBE": "FLA",
+      "PRECO": 18.08,
+      "EXP_SCORE": 7.8288,
+      "ATLETA_ID": 94583
+    },
+    {
+      "RODADA": 24,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Bruno Santos",
+      "CLUBE": "MIR",
+      "PRECO": 3.45,
+      "EXP_SCORE": 0.6407,
+      "ATLETA_ID": 103967
     },
     {
       "RODADA": 24,
@@ -143,11 +143,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Weverton",
-      "CLUBE": "GRE",
-      "PRECO": 7.21,
-      "EXP_SCORE": 2.8091,
-      "ATLETA_ID": 71631
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 7.8,
+      "EXP_SCORE": 4.0318,
+      "ATLETA_ID": 104084
     },
     {
       "RODADA": 24,
@@ -157,7 +157,7 @@
       "NOME": "Piquerez",
       "CLUBE": "PAL",
       "PRECO": 11.05,
-      "EXP_SCORE": 5.3179,
+      "EXP_SCORE": 5.3181,
       "ATLETA_ID": 102130
     },
     {
@@ -165,33 +165,33 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Aguirre",
-      "CLUBE": "CAP",
-      "PRECO": 5.52,
-      "EXP_SCORE": 3.0295,
-      "ATLETA_ID": 123869
+      "NOME": "Tiago Cóser",
+      "CLUBE": "CFC",
+      "PRECO": 4.78,
+      "EXP_SCORE": 3.1887,
+      "ATLETA_ID": 109127
     },
     {
       "RODADA": 24,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Allan",
-      "CLUBE": "PAL",
-      "PRECO": 12.25,
-      "EXP_SCORE": 5.2488,
-      "ATLETA_ID": 141451
+      "NOME": "Matheus Pereira",
+      "CLUBE": "CRU",
+      "PRECO": 13.56,
+      "EXP_SCORE": 5.6398,
+      "ATLETA_ID": 96610
     },
     {
       "RODADA": 24,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Leozinho",
-      "CLUBE": "CAP",
-      "PRECO": 5.74,
-      "EXP_SCORE": 4.3469,
-      "ATLETA_ID": 123101
+      "NOME": "Pedro Raul",
+      "CLUBE": "COR",
+      "PRECO": 3.54,
+      "EXP_SCORE": 1.1203,
+      "ATLETA_ID": 98225
     }
   ]
 }
