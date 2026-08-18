@@ -6,6 +6,14 @@ on:
       - Gerar Times e Top5
     types:
       - completed
+  push:
+    branches: [main]
+    paths:
+      - 'data/publicacoes_atuais/time_economico_rodada_*.json'
+      - 'data/publicacoes_atuais/time_intermediario_rodada_*.json'
+      - 'data/publicacoes_atuais/time_pontuacao_rodada_*.json'
+      - 'data/publicacoes_atuais/top5_rodada_*.json'
+      - '.github/workflows/disparar.video.pre-fechamento.yml'
   schedule:
     - cron: '*/10 * * * *'
   workflow_dispatch:
