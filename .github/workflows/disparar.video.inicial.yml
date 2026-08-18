@@ -22,100 +22,83 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - name: Checkout main
+      - name: Checkout main com histórico
         uses: actions/checkout@v4
         with:
           ref: main
           fetch-depth: 0
           persist-credentials: true
 
-      - name: Detectar seleção inicial completa
+      - name: Detectar seleção inicial completa e pendente
         id: detectar
         shell: bash
         run: |
           set -e
           python - <<'PY'
-          import json
-          import os
-          import re
+          import json, os, re, subprocess
           from pathlib import Path
 
           base = Path('data/publicacoes_atuais')
+          out = Path(os.environ['GITHUB_OUTPUT'])
 
-          def carregar(path):
+          def load(path):
               try:
                   data = json.loads(path.read_text(encoding='utf-8'))
                   return data if isinstance(data, dict) else {}
               except Exception:
                   return {}
 
-          def rows(payload):
-              values = (
-                  payload.get('jogadores')
-                  or payload.get('atletas')
-                  or payload.get('dados')
-                  or payload.get('lista')
-                  or []
-              )
-              return [item for item in values if isinstance(item, dict)]
+          def rows(data):
+              values = data.get('jogadores') or data.get('atletas') or data.get('dados') or data.get('lista') or []
+              return [x for x in values if isinstance(x, dict)]
+
+          def git_json(commit, path):
+              p = subprocess.run(['git','show',f'{commit}:{path}'], text=True, capture_output=True)
+              if p.returncode != 0 or not p.stdout.strip(): return {}
+              try: return json.loads(p.stdout)
+              except Exception: return {}
 
           candidatos = []
           for path in base.glob('top5_rodada_*.json'):
               m = re.search(r'rodada_(\d+)\.json$', path.name)
-              if not m:
-                  continue
-              data = carregar(path)
-              if str(data.get('evento_programado') or '').upper() == 'SELECAO_INICIAL':
-                  candidatos.append((int(m.group(1)), data))
-
-          out = Path(os.environ['GITHUB_OUTPUT'])
+              if m: candidatos.append(int(m.group(1)))
           if not candidatos:
-              with out.open('a', encoding='utf-8') as fh:
-                  fh.write('ready=false\n')
-              print('Nenhuma seleção inicial completa candidata.')
+              out.write_text('ready=false\n', encoding='utf-8')
               raise SystemExit(0)
 
-          rodada, top5 = max(candidatos, key=lambda item: item[0])
-          problemas = []
-
-          if int(top5.get('rodada') or 0) != rodada:
-              problemas.append('top5: rodada incorreta')
-          if len(rows(top5)) < 30:
-              problemas.append(f'top5: {len(rows(top5))} registros')
-
-          for nome in ('time_economico', 'time_intermediario', 'time_pontuacao'):
-              path = base / f'{nome}_rodada_{rodada}.json'
-              if not path.exists():
-                  problemas.append(f'{nome}: ausente')
-                  continue
-              data = carregar(path)
-              if int(data.get('rodada') or 0) != rodada:
-                  problemas.append(f'{nome}: rodada incorreta')
-              if str(data.get('evento_programado') or '').upper() != 'SELECAO_INICIAL':
-                  problemas.append(f"{nome}: {data.get('evento_programado') or 'SEM_EVENTO'}")
-              if len(rows(data)) < 12:
-                  problemas.append(f'{nome}: {len(rows(data))} registros')
-
-          marker = Path(f'data/flags/video_inicial_rodada_{rodada}.dispatchado.json')
+          rodada = max(candidatos)
+          video = Path(f'output/analise_inicial_rodada_{rodada}.mp4')
           manifesto = Path(f'output/analise_inicial_rodada_{rodada}.json')
+          sucesso = Path(f'data/flags/video_inicial_rodada_{rodada}.publicado.json')
+          if video.exists() and manifesto.exists() and sucesso.exists():
+              out.write_text('ready=false\n', encoding='utf-8')
+              print(f'Vídeo inicial R{rodada} já publicado de fato.')
+              raise SystemExit(0)
+
+          required = {
+              f'data/publicacoes_atuais/time_economico_rodada_{rodada}.json': 12,
+              f'data/publicacoes_atuais/time_intermediario_rodada_{rodada}.json': 12,
+              f'data/publicacoes_atuais/time_pontuacao_rodada_{rodada}.json': 12,
+              f'data/publicacoes_atuais/top5_rodada_{rodada}.json': 30,
+          }
+          problemas = []
+          for rel, minimo in required.items():
+              data = load(Path(rel))
+              ok = int(data.get('rodada') or 0) == rodada and str(data.get('evento_programado') or '').upper() == 'SELECAO_INICIAL' and len(rows(data)) >= minimo
+              if not ok:
+                  commits = subprocess.run(['git','log','--format=%H','--all','--',rel], text=True, capture_output=True).stdout.splitlines()
+                  ok = any(int((d:=git_json(c,rel)).get('rodada') or 0) == rodada and str(d.get('evento_programado') or '').upper() == 'SELECAO_INICIAL' and len(rows(d)) >= minimo for c in commits)
+              if not ok: problemas.append(rel)
 
           if problemas:
-              print('Seleção inicial ainda incompleta: ' + ' | '.join(problemas))
-              with out.open('a', encoding='utf-8') as fh:
-                  fh.write('ready=false\n')
-              raise SystemExit(0)
-
-          if marker.exists() or manifesto.exists():
-              print(f'Vídeo inicial da rodada {rodada} já disparado ou concluído.')
-              with out.open('a', encoding='utf-8') as fh:
-                  fh.write('ready=false\n')
+              out.write_text('ready=false\n', encoding='utf-8')
+              print('Snapshot inicial incompleto: ' + ' | '.join(problemas))
               raise SystemExit(0)
 
           with out.open('a', encoding='utf-8') as fh:
               fh.write('ready=true\n')
               fh.write(f'rodada={rodada}\n')
-              fh.write(f'marker={marker.as_posix()}\n')
-          print(f'Seleção inicial completa da rodada {rodada}; vídeo liberado.')
+          print(f'Vídeo inicial R{rodada} pendente; novo dispatch autorizado.')
           PY
 
       - name: Disparar vídeo inicial
@@ -126,36 +109,8 @@ jobs:
         shell: bash
         run: |
           set -e
-          payload="{\"event_type\":\"cartola_video_analise\",\"client_payload\":{\"rodada\":${RODADA},\"fase\":\"INICIAL\",\"origem\":\"guard_pos_selecao_inicial\"}}"
-          codigo="$(curl -sS -o /tmp/resposta.json -w '%{http_code}' \
-            -X POST \
-            -H "Authorization: Bearer ${GH_TOKEN}" \
-            -H "Accept: application/vnd.github+json" \
-            -H "X-GitHub-Api-Version: 2022-11-28" \
-            "https://api.github.com/repos/${GITHUB_REPOSITORY}/dispatches" \
-            -d "$payload")"
+          payload="{\"event_type\":\"cartola_video_analise\",\"client_payload\":{\"rodada\":${RODADA},\"fase\":\"INICIAL\",\"origem\":\"guard_pos_selecao_inicial_v2\"}}"
+          codigo="$(curl -sS -o /tmp/resposta.json -w '%{http_code}' -X POST -H "Authorization: Bearer ${GH_TOKEN}" -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" "https://api.github.com/repos/${GITHUB_REPOSITORY}/dispatches" -d "$payload")"
           cat /tmp/resposta.json || true
-          if [ "$codigo" -lt 200 ] || [ "$codigo" -ge 300 ]; then
-            echo "Falha ao disparar vídeo inicial: HTTP $codigo"
-            exit 1
-          fi
-          echo "Vídeo INICIAL da rodada ${RODADA} disparado com HTTP ${codigo}."
-
-      - name: Registrar disparo
-        if: steps.detectar.outputs.ready == 'true' && success()
-        env:
-          RODADA: ${{ steps.detectar.outputs.rodada }}
-          MARKER: ${{ steps.detectar.outputs.marker }}
-        shell: bash
-        run: |
-          set -e
-          mkdir -p "$(dirname "$MARKER")"
-          printf '{\n  "rodada": %s,\n  "fase": "INICIAL",\n  "dispatch": "cartola_video_analise",\n  "origem": "guard_pos_selecao_inicial",\n  "registrado_em": "%s"\n}\n' \
-            "$RODADA" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$MARKER"
-
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "$MARKER"
-          git commit -m "Cartola: registrar vídeo inicial R${RODADA}"
-          git pull --rebase origin main
-          git push origin HEAD:main
+          test "$codigo" -ge 200 && test "$codigo" -lt 300
+          echo "Dispatch INICIAL R${RODADA} aceito: HTTP ${codigo}."
