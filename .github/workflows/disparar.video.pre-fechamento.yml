@@ -20,102 +20,60 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
-
     steps:
-      - name: Checkout main
+      - name: Checkout main com histórico
         uses: actions/checkout@v4
         with:
           ref: main
           fetch-depth: 0
           persist-credentials: true
 
-      - name: Detectar snapshots completos do pré-fechamento
+      - name: Detectar pré-fechamento completo e pendente
         id: detectar
         run: |
           set -e
           python - <<'PY'
-          import json
-          import os
-          import re
+          import json, os, re, subprocess
           from pathlib import Path
-
-          base = Path('data/publicacoes_atuais')
-          candidatos = []
-
-          def rows(payload):
-              values = (
-                  payload.get('jogadores')
-                  or payload.get('atletas')
-                  or payload.get('dados')
-                  or payload.get('lista')
-                  or []
-              )
-              return [item for item in values if isinstance(item, dict)]
-
+          base=Path('data/publicacoes_atuais'); out=Path(os.environ['GITHUB_OUTPUT'])
+          def load(path):
+              try:
+                  d=json.loads(path.read_text(encoding='utf-8')); return d if isinstance(d,dict) else {}
+              except Exception:return {}
+          def rows(d):
+              v=d.get('jogadores') or d.get('atletas') or d.get('dados') or d.get('lista') or []; return [x for x in v if isinstance(x,dict)]
+          def git_json(c,p):
+              r=subprocess.run(['git','show',f'{c}:{p}'],text=True,capture_output=True)
+              if r.returncode!=0 or not r.stdout.strip(): return {}
+              try:return json.loads(r.stdout)
+              except Exception:return {}
+          rodas=[]
           for path in base.glob('top5_rodada_*.json'):
-              match = re.search(r'rodada_(\d+)\.json$', path.name)
-              if not match:
-                  continue
-              rodada = int(match.group(1))
-              try:
-                  data = json.loads(path.read_text(encoding='utf-8'))
-              except Exception:
-                  continue
-              if str(data.get('evento_programado') or '').upper() == 'PRE_FECHAMENTO_TOP5':
-                  candidatos.append((rodada, path, data))
-
-          output = Path(os.environ['GITHUB_OUTPUT'])
-          if not candidatos:
-              with output.open('a', encoding='utf-8') as fh:
-                  fh.write('ready=false\n')
-              print('Nenhum Top 5 de pré-fechamento disponível.')
-              raise SystemExit(0)
-
-          rodada, top_path, top = max(candidatos, key=lambda item: item[0])
-          if len(rows(top)) < 30:
-              print(f'Top 5 da rodada {rodada} ainda incompleto: {len(rows(top))}.')
-              with output.open('a', encoding='utf-8') as fh:
-                  fh.write('ready=false\n')
-              raise SystemExit(0)
-
-          problemas = []
-          for nome in ('time_economico', 'time_intermediario', 'time_pontuacao'):
-              path = base / f'{nome}_rodada_{rodada}.json'
-              if not path.exists():
-                  problemas.append(f'{nome}: ausente')
-                  continue
-              try:
-                  data = json.loads(path.read_text(encoding='utf-8'))
-              except Exception:
-                  problemas.append(f'{nome}: inválido')
-                  continue
-              if int(data.get('rodada') or 0) != rodada:
-                  problemas.append(f'{nome}: rodada incorreta')
-              if str(data.get('evento_programado') or '').upper() != 'PRE_FECHAMENTO_TIMES':
-                  problemas.append(f"{nome}: {data.get('evento_programado') or 'SEM_EVENTO'}")
-              if len(rows(data)) < 12:
-                  problemas.append(f'{nome}: {len(rows(data))} registros')
-
-          marker = Path(f'data/flags/video_pre_fechamento_rodada_{rodada}.dispatchado.json')
-          manifest = Path(f'output/analise_pre_fechamento_rodada_{rodada}.json')
-
+              m=re.search(r'rodada_(\d+)\.json$',path.name)
+              if m: rodas.append(int(m.group(1)))
+          if not rodas:
+              out.write_text('ready=false\n',encoding='utf-8'); raise SystemExit(0)
+          rodada=max(rodas)
+          if Path(f'output/analise_pre_fechamento_rodada_{rodada}.mp4').exists() and Path(f'output/analise_pre_fechamento_rodada_{rodada}.json').exists() and Path(f'data/flags/video_pre_fechamento_rodada_{rodada}.publicado.json').exists():
+              out.write_text('ready=false\n',encoding='utf-8'); print(f'Pré-fechamento R{rodada} já publicado de fato.'); raise SystemExit(0)
+          required={
+            f'data/publicacoes_atuais/time_economico_rodada_{rodada}.json':('PRE_FECHAMENTO_TIMES',12),
+            f'data/publicacoes_atuais/time_intermediario_rodada_{rodada}.json':('PRE_FECHAMENTO_TIMES',12),
+            f'data/publicacoes_atuais/time_pontuacao_rodada_{rodada}.json':('PRE_FECHAMENTO_TIMES',12),
+            f'data/publicacoes_atuais/top5_rodada_{rodada}.json':('PRE_FECHAMENTO_TOP5',30),
+          }
+          problemas=[]
+          for rel,(evento,minimo) in required.items():
+              d=load(Path(rel)); ok=int(d.get('rodada') or 0)==rodada and str(d.get('evento_programado') or '').upper()==evento and len(rows(d))>=minimo
+              if not ok:
+                  commits=subprocess.run(['git','log','--format=%H','--all','--',rel],text=True,capture_output=True).stdout.splitlines()
+                  ok=any(int((g:=git_json(c,rel)).get('rodada') or 0)==rodada and str(g.get('evento_programado') or '').upper()==evento and len(rows(g))>=minimo for c in commits)
+              if not ok: problemas.append(rel)
           if problemas:
-              print('Pré-fechamento ainda não completo: ' + ' | '.join(problemas))
-              with output.open('a', encoding='utf-8') as fh:
-                  fh.write('ready=false\n')
-              raise SystemExit(0)
-
-          if marker.exists() or manifest.exists():
-              print(f'Vídeo de pré-fechamento da rodada {rodada} já disparado ou concluído.')
-              with output.open('a', encoding='utf-8') as fh:
-                  fh.write('ready=false\n')
-              raise SystemExit(0)
-
-          with output.open('a', encoding='utf-8') as fh:
-              fh.write('ready=true\n')
-              fh.write(f'rodada={rodada}\n')
-              fh.write(f'marker={marker.as_posix()}\n')
-          print(f'Pré-fechamento completo da rodada {rodada}; vídeo pode ser disparado.')
+              out.write_text('ready=false\n',encoding='utf-8'); print('Pré-fechamento incompleto: '+' | '.join(problemas)); raise SystemExit(0)
+          with out.open('a',encoding='utf-8') as fh:
+              fh.write('ready=true\n'); fh.write(f'rodada={rodada}\n')
+          print(f'Pré-fechamento R{rodada} completo e ainda não publicado; dispatch autorizado.')
           PY
 
       - name: Disparar vídeo de pré-fechamento
@@ -125,35 +83,8 @@ jobs:
           RODADA: ${{ steps.detectar.outputs.rodada }}
         run: |
           set -e
-          payload="{\"event_type\":\"cartola_video_analise\",\"client_payload\":{\"rodada\":${RODADA},\"fase\":\"PRE_FECHAMENTO\",\"origem\":\"guard_pos_publicacao_pre_fechamento\"}}"
-          codigo="$(curl -sS -o /tmp/resposta.json -w '%{http_code}' \
-            -X POST \
-            -H "Authorization: Bearer ${GH_TOKEN}" \
-            -H "Accept: application/vnd.github+json" \
-            -H "X-GitHub-Api-Version: 2022-11-28" \
-            "https://api.github.com/repos/${GITHUB_REPOSITORY}/dispatches" \
-            -d "$payload")"
+          payload="{\"event_type\":\"cartola_video_analise\",\"client_payload\":{\"rodada\":${RODADA},\"fase\":\"PRE_FECHAMENTO\",\"origem\":\"guard_pre_fechamento_v2\"}}"
+          codigo="$(curl -sS -o /tmp/resposta.json -w '%{http_code}' -X POST -H "Authorization: Bearer ${GH_TOKEN}" -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" "https://api.github.com/repos/${GITHUB_REPOSITORY}/dispatches" -d "$payload")"
           cat /tmp/resposta.json || true
-          if [ "$codigo" -lt 200 ] || [ "$codigo" -ge 300 ]; then
-            echo "Falha ao disparar vídeo: HTTP $codigo"
-            exit 1
-          fi
-          echo "Vídeo PRE_FECHAMENTO da rodada ${RODADA} disparado com HTTP ${codigo}."
-
-      - name: Registrar disparo para evitar duplicidade
-        if: steps.detectar.outputs.ready == 'true' && success()
-        env:
-          RODADA: ${{ steps.detectar.outputs.rodada }}
-          MARKER: ${{ steps.detectar.outputs.marker }}
-        run: |
-          set -e
-          mkdir -p "$(dirname "$MARKER")"
-          printf '{\n  "rodada": %s,\n  "fase": "PRE_FECHAMENTO",\n  "dispatch": "cartola_video_analise",\n  "origem": "guard_pos_publicacao_pre_fechamento",\n  "registrado_em": "%s"\n}\n' \
-            "$RODADA" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$MARKER"
-
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "$MARKER"
-          git commit -m "Cartola: registrar vídeo de pré-fechamento R${RODADA}"
-          git pull --rebase origin main
-          git push origin HEAD:main
+          test "$codigo" -ge 200 && test "$codigo" -lt 300
+          echo "Dispatch PRE_FECHAMENTO R${RODADA} aceito: HTTP ${codigo}."
