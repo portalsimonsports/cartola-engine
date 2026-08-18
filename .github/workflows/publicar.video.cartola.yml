@@ -13,12 +13,16 @@ on:
         description: "INICIAL ou PRE_FECHAMENTO"
         required: true
         default: "INICIAL"
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/publicar.video.cartola.yml
 
 permissions:
   contents: write
 
 concurrency:
-  group: publicar-video-cartola-${{ github.event.client_payload.rodada || github.event.inputs.rodada }}-${{ github.event.client_payload.fase || github.event.inputs.fase }}
+  group: publicar-video-cartola-${{ github.event.client_payload.rodada || github.event.inputs.rodada || '24' }}-${{ github.event.client_payload.fase || github.event.inputs.fase || 'INICIAL' }}
   cancel-in-progress: false
 
 jobs:
