@@ -24,7 +24,7 @@ jobs:
   verificar-e-disparar:
     if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 80
 
     steps:
       - name: Checkout main com histórico
@@ -40,105 +40,57 @@ jobs:
         run: |
           set -e
           python - <<'PY'
-          import json, os, re, subprocess
-          from datetime import datetime, timezone
+          import json,os,re,subprocess
+          from datetime import datetime,timezone
           from pathlib import Path
-
-          base = Path('data/publicacoes_atuais')
-          out = Path(os.environ['GITHUB_OUTPUT'])
-
+          base=Path('data/publicacoes_atuais'); out=Path(os.environ['GITHUB_OUTPUT'])
           def load(path):
               try:
-                  d = json.loads(path.read_text(encoding='utf-8'))
-                  return d if isinstance(d, dict) else {}
-              except Exception:
-                  return {}
-
+                  d=json.loads(path.read_text(encoding='utf-8')); return d if isinstance(d,dict) else {}
+              except Exception:return {}
           def rows(d):
-              v = d.get('jogadores') or d.get('atletas') or d.get('dados') or d.get('lista') or []
-              return [x for x in v if isinstance(x, dict)]
-
-          def git_json(commit, rel):
-              p = subprocess.run(['git','show',f'{commit}:{rel}'], text=True, capture_output=True)
-              if p.returncode != 0 or not p.stdout.strip(): return {}
+              v=d.get('jogadores') or d.get('atletas') or d.get('dados') or d.get('lista') or []; return [x for x in v if isinstance(x,dict)]
+          def git_json(c,p):
+              r=subprocess.run(['git','show',f'{c}:{p}'],text=True,capture_output=True)
+              if r.returncode!=0 or not r.stdout.strip():return {}
               try:
-                  d = json.loads(p.stdout)
-                  return d if isinstance(d, dict) else {}
-              except Exception:
-                  return {}
-
-          def has_snapshot(rel, rodada, evento, minimo):
-              d = load(Path(rel))
-              if int(d.get('rodada') or 0) == rodada and str(d.get('evento_programado') or '').upper() == evento and len(rows(d)) >= minimo:
-                  return True
-              commits = subprocess.run(['git','log','--format=%H','--all','--',rel], text=True, capture_output=True).stdout.splitlines()
+                  d=json.loads(r.stdout); return d if isinstance(d,dict) else {}
+              except Exception:return {}
+          def has_snapshot(rel,rodada,evento,minimo):
+              d=load(Path(rel))
+              if int(d.get('rodada') or 0)==rodada and str(d.get('evento_programado') or '').upper()==evento and len(rows(d))>=minimo:return True
+              commits=subprocess.run(['git','log','--format=%H','--all','--',rel],text=True,capture_output=True).stdout.splitlines()
               for c in commits:
-                  d = git_json(c, rel)
-                  if int(d.get('rodada') or 0) == rodada and str(d.get('evento_programado') or '').upper() == evento and len(rows(d)) >= minimo:
-                      return True
+                  d=git_json(c,rel)
+                  if int(d.get('rodada') or 0)==rodada and str(d.get('evento_programado') or '').upper()==evento and len(rows(d))>=minimo:return True
               return False
-
           def lock_recente(path):
-              d = load(path)
-              stamp = str(d.get('registrado_em') or '')
-              if not stamp:
-                  return False
+              d=load(path); stamp=str(d.get('registrado_em') or '')
+              if not stamp:return False
               try:
-                  dt = datetime.fromisoformat(stamp.replace('Z','+00:00'))
-                  return (datetime.now(timezone.utc) - dt).total_seconds() < 4500
-              except Exception:
-                  return False
-
-          rodadas = []
+                  dt=datetime.fromisoformat(stamp.replace('Z','+00:00')); return (datetime.now(timezone.utc)-dt).total_seconds()<4500
+              except Exception:return False
+          rodadas=[]
           for path in base.glob('top5_rodada_*.json'):
-              m = re.search(r'rodada_(\d+)\.json$', path.name)
-              if m: rodadas.append(int(m.group(1)))
-
-          for rodada in sorted(set(rodadas), reverse=True):
-              video = Path(f'output/analise_pre_fechamento_rodada_{rodada}.mp4')
-              manifesto = Path(f'output/analise_pre_fechamento_rodada_{rodada}.json')
-              flag = Path(f'data/flags/video_pre_fechamento_rodada_{rodada}.publicado.json')
-              lock = Path(f'data/flags/video_pre_fechamento_rodada_{rodada}.dispatchado.json')
-              if video.exists() and manifesto.exists() and flag.exists():
-                  continue
-
-              req = [
-                  (f'data/publicacoes_atuais/time_economico_rodada_{rodada}.json', 'PRE_FECHAMENTO_TIMES', 12),
-                  (f'data/publicacoes_atuais/time_intermediario_rodada_{rodada}.json', 'PRE_FECHAMENTO_TIMES', 12),
-                  (f'data/publicacoes_atuais/time_pontuacao_rodada_{rodada}.json', 'PRE_FECHAMENTO_TIMES', 12),
-                  (f'data/publicacoes_atuais/top5_rodada_{rodada}.json', 'PRE_FECHAMENTO_TOP5', 30),
+              m=re.search(r'rodada_(\d+)\.json$',path.name)
+              if m:rodadas.append(int(m.group(1)))
+          for rodada in sorted(set(rodadas),reverse=True):
+              video=Path(f'output/analise_pre_fechamento_rodada_{rodada}.mp4'); manifesto=Path(f'output/analise_pre_fechamento_rodada_{rodada}.json'); flag=Path(f'data/flags/video_pre_fechamento_rodada_{rodada}.publicado.json'); lock=Path(f'data/flags/video_pre_fechamento_rodada_{rodada}.dispatchado.json')
+              if video.exists() and manifesto.exists() and flag.exists():continue
+              req=[
+                  (f'data/publicacoes_atuais/time_economico_rodada_{rodada}.json','PRE_FECHAMENTO_TIMES',12),
+                  (f'data/publicacoes_atuais/time_intermediario_rodada_{rodada}.json','PRE_FECHAMENTO_TIMES',12),
+                  (f'data/publicacoes_atuais/time_pontuacao_rodada_{rodada}.json','PRE_FECHAMENTO_TIMES',12),
+                  (f'data/publicacoes_atuais/top5_rodada_{rodada}.json','PRE_FECHAMENTO_TOP5',30),
               ]
-              if not all(has_snapshot(rel, rodada, evento, minimo) for rel, evento, minimo in req):
-                  continue
+              if not all(has_snapshot(rel,rodada,evento,minimo) for rel,evento,minimo in req):continue
               if lock_recente(lock):
-                  print(f'PRE_FECHAMENTO R{rodada} já possui geração em processamento; não duplicar.')
-                  out.write_text('ready=false\n', encoding='utf-8')
-                  raise SystemExit(0)
-
-              with out.open('a', encoding='utf-8') as fh:
-                  fh.write('ready=true\n')
-                  fh.write(f'rodada={rodada}\n')
-              print(f'Análise de pré-fechamento R{rodada} pronta e ainda não publicada.')
-              raise SystemExit(0)
-
-          out.write_text('ready=false\n', encoding='utf-8')
-          print('Nenhuma análise de pré-fechamento pendente com snapshots completos.')
+                  print(f'PRE_FECHAMENTO R{rodada} já possui geração em processamento; não duplicar.'); out.write_text('ready=false\n',encoding='utf-8'); raise SystemExit(0)
+              with out.open('a',encoding='utf-8') as fh:
+                  fh.write('ready=true\n'); fh.write(f'rodada={rodada}\n')
+              print(f'Análise de pré-fechamento R{rodada} pronta e ainda não publicada.'); raise SystemExit(0)
+          out.write_text('ready=false\n',encoding='utf-8'); print('Nenhuma análise de pré-fechamento pendente com snapshots completos.')
           PY
-
-      - name: Executar Publicar Vídeo Cartola - Pré-Fechamento
-        if: steps.detectar.outputs.ready == 'true'
-        env:
-          GH_TOKEN: ${{ github.token }}
-          RODADA: ${{ steps.detectar.outputs.rodada }}
-        shell: bash
-        run: |
-          set -e
-          gh workflow run publicar.video.cartola.yml \
-            --repo "$GITHUB_REPOSITORY" \
-            --ref main \
-            -f rodada="$RODADA" \
-            -f fase="PRE_FECHAMENTO"
-          echo "Publicar Vídeo Cartola acionado diretamente para PRE_FECHAMENTO R${RODADA}."
 
       - name: Registrar geração em processamento
         if: steps.detectar.outputs.ready == 'true'
@@ -153,7 +105,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add "$FLAG"
-          git commit -m "Cartola: vídeo pré-fechamento R${RODADA} em processamento" || exit 0
+          git commit -m "Cartola: vídeo pré-fechamento R${RODADA} em processamento" || true
           for tentativa in 1 2 3 4 5; do
             git fetch origin main
             if git rebase origin/main && git push origin HEAD:main; then exit 0; fi
@@ -161,3 +113,62 @@ jobs:
             sleep $((tentativa * 2))
           done
           exit 1
+
+      - name: Executar e aguardar Publicar Vídeo Cartola - Pré-Fechamento
+        id: publicar
+        if: steps.detectar.outputs.ready == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RODADA: ${{ steps.detectar.outputs.rodada }}
+        shell: bash
+        run: |
+          set -e
+          RUN_URL="$(gh workflow run publicar.video.cartola.yml --repo "$GITHUB_REPOSITORY" --ref main -f rodada="$RODADA" -f fase="PRE_FECHAMENTO" 2>&1 | tail -n 1)"
+          echo "$RUN_URL"
+          RUN_ID="${RUN_URL##*/}"
+          case "$RUN_ID" in ''|*[!0-9]*) echo "Não foi possível obter o run_id do Publicar Vídeo Cartola."; exit 1;; esac
+          echo "run_id=$RUN_ID" >> "$GITHUB_OUTPUT"
+          gh run watch "$RUN_ID" --repo "$GITHUB_REPOSITORY" --exit-status --interval 10
+
+      - name: Confirmar MP4 e publicação real
+        if: steps.detectar.outputs.ready == 'true'
+        env:
+          RODADA: ${{ steps.detectar.outputs.rodada }}
+        shell: bash
+        run: |
+          set -e
+          git fetch origin main
+          git reset --hard origin/main
+          VIDEO="output/analise_pre_fechamento_rodada_${RODADA}.mp4"
+          MANIFESTO="output/analise_pre_fechamento_rodada_${RODADA}.json"
+          FLAG="data/flags/video_pre_fechamento_rodada_${RODADA}.publicado.json"
+          test -s "$VIDEO"
+          test -s "$MANIFESTO"
+          test -s "$FLAG"
+          python - "$FLAG" <<'PY'
+          import json,sys
+          from pathlib import Path
+          d=json.loads(Path(sys.argv[1]).read_text(encoding='utf-8'))
+          if d.get('status')!='PUBLICADO_COM_SUCESSO':raise SystemExit('Flag final não confirma PUBLICADO_COM_SUCESSO')
+          print('Vídeo de pré-fechamento confirmado como PUBLICADO_COM_SUCESSO.')
+          PY
+
+      - name: Liberar bloqueio se publicação falhar
+        if: ${{ failure() && steps.detectar.outputs.ready == 'true' }}
+        env:
+          RODADA: ${{ steps.detectar.outputs.rodada }}
+        shell: bash
+        run: |
+          set +e
+          git fetch origin main
+          git reset --hard origin/main
+          LOCK="data/flags/video_pre_fechamento_rodada_${RODADA}.dispatchado.json"
+          if [ -f "$LOCK" ]; then
+            git rm -f "$LOCK"
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Cartola: liberar nova tentativa do vídeo pré-fechamento R${RODADA}"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+          exit 0
