@@ -19,7 +19,7 @@ permissions:
 
 concurrency:
   group: publicar-video-cartola-${{ github.event.client_payload.rodada || github.event.inputs.rodada || 'AUTO' }}-${{ github.event.client_payload.fase || github.event.inputs.fase || 'INICIAL' }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   gerar-e-publicar:
