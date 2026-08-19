@@ -9,22 +9,16 @@ on:
   push:
     branches: [main]
     paths:
-      - 'data/publicacoes_atuais/time_economico_rodada_*.json'
-      - 'data/publicacoes_atuais/time_intermediario_rodada_*.json'
-      - 'data/publicacoes_atuais/time_pontuacao_rodada_*.json'
-      - 'data/publicacoes_atuais/top5_rodada_*.json'
       - '.github/workflows/disparar.video.pre-fechamento.yml'
-  schedule:
-    - cron: '*/10 * * * *'
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   actions: write
 
 concurrency:
   group: cartola-video-pre-fechamento-guard
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   verificar-e-disparar:
@@ -38,6 +32,7 @@ jobs:
         with:
           ref: main
           fetch-depth: 0
+          persist-credentials: true
 
       - name: Detectar pré-fechamento completo e ainda não publicado
         id: detectar
@@ -46,6 +41,7 @@ jobs:
           set -e
           python - <<'PY'
           import json, os, re, subprocess
+          from datetime import datetime, timezone
           from pathlib import Path
 
           base = Path('data/publicacoes_atuais')
@@ -64,8 +60,7 @@ jobs:
 
           def git_json(commit, rel):
               p = subprocess.run(['git','show',f'{commit}:{rel}'], text=True, capture_output=True)
-              if p.returncode != 0 or not p.stdout.strip():
-                  return {}
+              if p.returncode != 0 or not p.stdout.strip(): return {}
               try:
                   d = json.loads(p.stdout)
                   return d if isinstance(d, dict) else {}
@@ -83,16 +78,27 @@ jobs:
                       return True
               return False
 
+          def lock_recente(path):
+              d = load(path)
+              stamp = str(d.get('registrado_em') or '')
+              if not stamp:
+                  return False
+              try:
+                  dt = datetime.fromisoformat(stamp.replace('Z','+00:00'))
+                  return (datetime.now(timezone.utc) - dt).total_seconds() < 4500
+              except Exception:
+                  return False
+
           rodadas = []
           for path in base.glob('top5_rodada_*.json'):
               m = re.search(r'rodada_(\d+)\.json$', path.name)
-              if m:
-                  rodadas.append(int(m.group(1)))
+              if m: rodadas.append(int(m.group(1)))
 
           for rodada in sorted(set(rodadas), reverse=True):
               video = Path(f'output/analise_pre_fechamento_rodada_{rodada}.mp4')
               manifesto = Path(f'output/analise_pre_fechamento_rodada_{rodada}.json')
               flag = Path(f'data/flags/video_pre_fechamento_rodada_{rodada}.publicado.json')
+              lock = Path(f'data/flags/video_pre_fechamento_rodada_{rodada}.dispatchado.json')
               if video.exists() and manifesto.exists() and flag.exists():
                   continue
 
@@ -102,12 +108,18 @@ jobs:
                   (f'data/publicacoes_atuais/time_pontuacao_rodada_{rodada}.json', 'PRE_FECHAMENTO_TIMES', 12),
                   (f'data/publicacoes_atuais/top5_rodada_{rodada}.json', 'PRE_FECHAMENTO_TOP5', 30),
               ]
-              if all(has_snapshot(rel, rodada, evento, minimo) for rel, evento, minimo in req):
-                  with out.open('a', encoding='utf-8') as fh:
-                      fh.write('ready=true\n')
-                      fh.write(f'rodada={rodada}\n')
-                  print(f'Análise de pré-fechamento R{rodada} pronta e ainda não publicada.')
+              if not all(has_snapshot(rel, rodada, evento, minimo) for rel, evento, minimo in req):
+                  continue
+              if lock_recente(lock):
+                  print(f'PRE_FECHAMENTO R{rodada} já possui geração em processamento; não duplicar.')
+                  out.write_text('ready=false\n', encoding='utf-8')
                   raise SystemExit(0)
+
+              with out.open('a', encoding='utf-8') as fh:
+                  fh.write('ready=true\n')
+                  fh.write(f'rodada={rodada}\n')
+              print(f'Análise de pré-fechamento R{rodada} pronta e ainda não publicada.')
+              raise SystemExit(0)
 
           out.write_text('ready=false\n', encoding='utf-8')
           print('Nenhuma análise de pré-fechamento pendente com snapshots completos.')
@@ -127,3 +139,25 @@ jobs:
             -f rodada="$RODADA" \
             -f fase="PRE_FECHAMENTO"
           echo "Publicar Vídeo Cartola acionado diretamente para PRE_FECHAMENTO R${RODADA}."
+
+      - name: Registrar geração em processamento
+        if: steps.detectar.outputs.ready == 'true'
+        env:
+          RODADA: ${{ steps.detectar.outputs.rodada }}
+        shell: bash
+        run: |
+          set -e
+          FLAG="data/flags/video_pre_fechamento_rodada_${RODADA}.dispatchado.json"
+          mkdir -p data/flags
+          printf '{\n  "rodada": %s,\n  "fase": "PRE_FECHAMENTO",\n  "status": "GERACAO_EM_PROCESSAMENTO",\n  "registrado_em": "%s"\n}\n' "$RODADA" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$FLAG"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$FLAG"
+          git commit -m "Cartola: vídeo pré-fechamento R${RODADA} em processamento" || exit 0
+          for tentativa in 1 2 3 4 5; do
+            git fetch origin main
+            if git rebase origin/main && git push origin HEAD:main; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((tentativa * 2))
+          done
+          exit 1
