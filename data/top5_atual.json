@@ -3,17 +3,17 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 24,
-  "atualizado_em": "2026-08-19T08:20:00.800Z",
+  "atualizado_em": "2026-08-19T08:25:38.020Z",
   "dados": [
     {
       "RODADA": 24,
       "POS": "GOL",
-      "NOME": "Tiago Volpi",
-      "CLUBE": "RBB",
-      "PRECO": 10.21,
-      "EXP_SCORE": 4.2629,
-      "FACTOR": 1.1443958248547044,
-      "ATLETA_ID": 72018
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 7.8,
+      "EXP_SCORE": 4.0366,
+      "FACTOR": 1.124689607518775,
+      "ATLETA_ID": 104084
     },
     {
       "RODADA": 24,
@@ -28,22 +28,22 @@
     {
       "RODADA": 24,
       "POS": "GOL",
+      "NOME": "Tiago Volpi",
+      "CLUBE": "RBB",
+      "PRECO": 10.21,
+      "EXP_SCORE": 3.8366,
+      "FACTOR": 1.1443958248547044,
+      "ATLETA_ID": 72018
+    },
+    {
+      "RODADA": 24,
+      "POS": "GOL",
       "NOME": "Fábio",
       "CLUBE": "FLU",
       "PRECO": 9.01,
       "EXP_SCORE": 3.7038,
       "FACTOR": 1.1387883646371635,
       "ATLETA_ID": 37656
-    },
-    {
-      "RODADA": 24,
-      "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 7.8,
-      "EXP_SCORE": 3.633,
-      "FACTOR": 1.124689607518775,
-      "ATLETA_ID": 104084
     },
     {
       "RODADA": 24,
@@ -111,7 +111,7 @@
       "NOME": "Gustavo Gómez",
       "CLUBE": "PAL",
       "PRECO": 10.99,
-      "EXP_SCORE": 5.0575,
+      "EXP_SCORE": 4.3979,
       "FACTOR": 1.124689607518775,
       "ATLETA_ID": 71684
     },
