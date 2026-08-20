@@ -6,10 +6,6 @@ on:
       - Gerar Times e Top5
     types:
       - completed
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/disparar.video.pre-fechamento.yml'
   workflow_dispatch:
 
 permissions:
@@ -17,7 +13,7 @@ permissions:
 
 concurrency:
   group: cartola-video-pre-fechamento
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   detectar:
@@ -57,8 +53,7 @@ jobs:
           def has_snapshot(rel,rodada,evento,minimo):
               d=load(Path(rel))
               if int(d.get('rodada') or 0)==rodada and str(d.get('evento_programado') or '').upper()==evento and len(rows(d))>=minimo:return True
-              commits=subprocess.run(['git','log','--format=%H','--all','--',rel],text=True,capture_output=True).stdout.splitlines()
-              for c in commits:
+              for c in subprocess.run(['git','log','--format=%H','--all','--',rel],text=True,capture_output=True).stdout.splitlines():
                   d=git_json(c,rel)
                   if int(d.get('rodada') or 0)==rodada and str(d.get('evento_programado') or '').upper()==evento and len(rows(d))>=minimo:return True
               return False
@@ -67,19 +62,12 @@ jobs:
               m=re.search(r'rodada_(\d+)\.json$',path.name)
               if m:rodadas.append(int(m.group(1)))
           for rodada in sorted(set(rodadas),reverse=True):
-              video=Path(f'output/analise_pre_fechamento_rodada_{rodada}.mp4'); manifesto=Path(f'output/analise_pre_fechamento_rodada_{rodada}.json'); flag=Path(f'data/flags/video_pre_fechamento_rodada_{rodada}.publicado.json')
-              if video.exists() and manifesto.exists() and flag.exists():continue
-              req=[
-                  (f'data/publicacoes_atuais/time_economico_rodada_{rodada}.json','PRE_FECHAMENTO_TIMES',12),
-                  (f'data/publicacoes_atuais/time_intermediario_rodada_{rodada}.json','PRE_FECHAMENTO_TIMES',12),
-                  (f'data/publicacoes_atuais/time_pontuacao_rodada_{rodada}.json','PRE_FECHAMENTO_TIMES',12),
-                  (f'data/publicacoes_atuais/top5_rodada_{rodada}.json','PRE_FECHAMENTO_TOP5',30),
-              ]
+              if all(Path(x).exists() for x in [f'output/analise_pre_fechamento_rodada_{rodada}.mp4',f'output/analise_pre_fechamento_rodada_{rodada}.json',f'data/flags/video_pre_fechamento_rodada_{rodada}.publicado.json']):continue
+              req=[(f'data/publicacoes_atuais/time_economico_rodada_{rodada}.json','PRE_FECHAMENTO_TIMES',12),(f'data/publicacoes_atuais/time_intermediario_rodada_{rodada}.json','PRE_FECHAMENTO_TIMES',12),(f'data/publicacoes_atuais/time_pontuacao_rodada_{rodada}.json','PRE_FECHAMENTO_TIMES',12),(f'data/publicacoes_atuais/top5_rodada_{rodada}.json','PRE_FECHAMENTO_TOP5',30)]
               if all(has_snapshot(rel,rodada,evento,minimo) for rel,evento,minimo in req):
-                  with out.open('a',encoding='utf-8') as fh:
-                      fh.write('ready=true\n'); fh.write(f'rodada={rodada}\n')
+                  with out.open('a',encoding='utf-8') as fh: fh.write('ready=true\n'); fh.write(f'rodada={rodada}\n')
                   print(f'Análise de pré-fechamento R{rodada} pronta e ainda não publicada.'); raise SystemExit(0)
-          out.write_text('ready=false\n',encoding='utf-8'); print('Nenhuma análise de pré-fechamento pendente com snapshots completos.')
+          out.write_text('ready=false\n',encoding='utf-8')
           PY
 
   publicar:
