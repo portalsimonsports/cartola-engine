@@ -115,7 +115,13 @@ jobs:
           RODADA: ${{ steps.evento.outputs.rodada }}
         run: |
           set -e
-          python app/enriquecer_historico_jogadores_v1.py --rodada "$RODADA" --repo-root .
+          PYTHONPATH=app python - "$RODADA" <<'PY'
+          import sys
+          from pathlib import Path
+          from enriquecer_historico_jogadores_v1 import enrich_history
+          rodada=int(sys.argv[1])
+          enrich_history(rodada, Path('.').resolve())
+          PY
           python - "$RODADA" <<'PY'
           import json, sys
           from pathlib import Path
