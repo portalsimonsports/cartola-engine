@@ -3,8 +3,18 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 24,
-  "atualizado_em": "2026-08-20T01:44:51.908Z",
+  "atualizado_em": "2026-08-20T01:55:15.333Z",
   "dados": [
+    {
+      "RODADA": 24,
+      "POS": "GOL",
+      "NOME": "Lucas Arcanjo",
+      "CLUBE": "VIT",
+      "PRECO": 9.76,
+      "EXP_SCORE": 4.3085,
+      "FACTOR": 1.1284322545835495,
+      "ATLETA_ID": 104118
+    },
     {
       "RODADA": 24,
       "POS": "GOL",
@@ -14,16 +24,6 @@
       "EXP_SCORE": 4.2604,
       "FACTOR": 1.1437112984256483,
       "ATLETA_ID": 72018
-    },
-    {
-      "RODADA": 24,
-      "POS": "GOL",
-      "NOME": "Lucas Arcanjo",
-      "CLUBE": "VIT",
-      "PRECO": 9.76,
-      "EXP_SCORE": 3.8776,
-      "FACTOR": 1.1284322545835495,
-      "ATLETA_ID": 104118
     },
     {
       "RODADA": 24,
@@ -48,12 +48,12 @@
     {
       "RODADA": 24,
       "POS": "GOL",
-      "NOME": "Rossi",
-      "CLUBE": "FLA",
-      "PRECO": 8.57,
-      "EXP_SCORE": 3.1415,
-      "FACTOR": 0.897346110937326,
-      "ATLETA_ID": 99552
+      "NOME": "Everson",
+      "CLUBE": "CAM",
+      "PRECO": 9.36,
+      "EXP_SCORE": 3.0249,
+      "FACTOR": 0.9596518992364425,
+      "ATLETA_ID": 72294
     },
     {
       "RODADA": 24,
@@ -121,7 +121,7 @@
       "NOME": "Jacy",
       "CLUBE": "CFC",
       "PRECO": 6.39,
-      "EXP_SCORE": 3.8484,
+      "EXP_SCORE": 4.4257,
       "FACTOR": 1.1697406944447362,
       "ATLETA_ID": 97878
     },
@@ -208,6 +208,16 @@
     {
       "RODADA": 24,
       "POS": "ATA",
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 12.88,
+      "EXP_SCORE": 8.457,
+      "FACTOR": 0.9494975130884702,
+      "ATLETA_ID": 143193
+    },
+    {
+      "RODADA": 24,
+      "POS": "ATA",
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 12.27,
@@ -224,16 +234,6 @@
       "EXP_SCORE": 7.8326,
       "FACTOR": 0.998222669516636,
       "ATLETA_ID": 94583
-    },
-    {
-      "RODADA": 24,
-      "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 12.88,
-      "EXP_SCORE": 7.3539,
-      "FACTOR": 0.9494975130884702,
-      "ATLETA_ID": 143193
     },
     {
       "RODADA": 24,
