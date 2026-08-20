@@ -139,7 +139,7 @@ jobs:
                       missing.append(f"{nome}:{campo}")
           if missing:
               raise SystemExit("Métricas ainda ausentes após enriquecimento: " + " | ".join(missing))
-          print(f"Top 5 enriquecido: 30/30 atletas com métricas históricas.")
+          print("Top 5 enriquecido: 30/30 atletas com métricas históricas.")
           PY
 
       - name: Validar imagens da fase
@@ -193,7 +193,7 @@ jobs:
           set -e
           python app/enviar_video_telegram.py --video "${{ steps.evento.outputs.video }}" --rodada "${{ steps.evento.outputs.rodada }}" --fase "${{ steps.evento.outputs.fase }}"
 
-      - name: Registrar sucesso real e salvar artefatos
+      - name: Registrar sucesso real e salvar metadados
         env:
           RODADA: ${{ steps.evento.outputs.rodada }}
           FASE: ${{ steps.evento.outputs.fase }}
@@ -205,10 +205,10 @@ jobs:
           test -s "$VIDEO"
           test -s "$MANIFESTO"
           mkdir -p "$(dirname "$FLAG")"
-          printf '{\n  "rodada": %s,\n  "fase": "%s",\n  "status": "PUBLICADO_COM_SUCESSO",\n  "video": "%s",\n  "registrado_em": "%s"\n}\n' "$RODADA" "$FASE" "$VIDEO" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$FLAG"
+          printf '{\n  "rodada": %s,\n  "fase": "%s",\n  "status": "PUBLICADO_COM_SUCESSO",\n  "video_gerado_no_runner": "%s",\n  "manifesto": "%s",\n  "registrado_em": "%s"\n}\n' "$RODADA" "$FASE" "$VIDEO" "$MANIFESTO" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$FLAG"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "data/analise_tecnica_rodada_${RODADA}_v3.json" "$VIDEO" "$MANIFESTO" "$FLAG"
+          git add "data/analise_tecnica_rodada_${RODADA}_v3.json" "$MANIFESTO" "$FLAG"
           git commit -m "Cartola: vídeo ${FASE} R${RODADA} publicado com sucesso"
           for tentativa in 1 2 3 4 5; do
             git fetch origin main
