@@ -6,10 +6,6 @@ on:
       - Gerar Times e Top5
     types:
       - completed
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/disparar.video.inicial.yml'
   workflow_dispatch:
 
 permissions:
