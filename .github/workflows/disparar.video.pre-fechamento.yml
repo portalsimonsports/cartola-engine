@@ -57,12 +57,17 @@ jobs:
                   d=git_json(c,rel)
                   if int(d.get('rodada') or 0)==rodada and str(d.get('evento_programado') or '').upper()==evento and len(rows(d))>=minimo:return True
               return False
+          def publicado(rodada):
+              flag=load(Path(f'data/flags/video_pre_fechamento_rodada_{rodada}.publicado.json'))
+              return str(flag.get('status') or '').upper()=='PUBLICADO_COM_SUCESSO'
           rodadas=[]
           for path in base.glob('top5_rodada_*.json'):
               m=re.search(r'rodada_(\d+)\.json$',path.name)
               if m:rodadas.append(int(m.group(1)))
           for rodada in sorted(set(rodadas),reverse=True):
-              if all(Path(x).exists() for x in [f'output/analise_pre_fechamento_rodada_{rodada}.mp4',f'output/analise_pre_fechamento_rodada_{rodada}.json',f'data/flags/video_pre_fechamento_rodada_{rodada}.publicado.json']):continue
+              if publicado(rodada):
+                  print(f'Análise de pré-fechamento R{rodada} já publicada com sucesso; ignorando duplicidade.')
+                  continue
               req=[(f'data/publicacoes_atuais/time_economico_rodada_{rodada}.json','PRE_FECHAMENTO_TIMES',12),(f'data/publicacoes_atuais/time_intermediario_rodada_{rodada}.json','PRE_FECHAMENTO_TIMES',12),(f'data/publicacoes_atuais/time_pontuacao_rodada_{rodada}.json','PRE_FECHAMENTO_TIMES',12),(f'data/publicacoes_atuais/top5_rodada_{rodada}.json','PRE_FECHAMENTO_TOP5',30)]
               if all(has_snapshot(rel,rodada,evento,minimo) for rel,evento,minimo in req):
                   with out.open('a',encoding='utf-8') as fh: fh.write('ready=true\n'); fh.write(f'rodada={rodada}\n')
