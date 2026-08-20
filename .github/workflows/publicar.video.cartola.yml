@@ -50,11 +50,8 @@ jobs:
           command -v ffmpeg >/dev/null 2>&1 || NEED_APT=1
           fc-match DejaVuSans >/dev/null 2>&1 || NEED_APT=1
           if [ "$NEED_APT" -eq 1 ]; then
-            echo "Dependência de sistema ausente; instalando apenas o necessário."
             sudo apt-get update -qq
             sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends ffmpeg fonts-dejavu-core fonts-liberation
-          else
-            echo "FFmpeg e fontes já disponíveis no runner; pulando apt-get."
           fi
 
       - name: Instalar dependências Python
@@ -85,12 +82,13 @@ jobs:
           echo "video=$VIDEO" >> "$GITHUB_OUTPUT"
           echo "manifesto=$MANIFESTO" >> "$GITHUB_OUTPUT"
           echo "flag=$FLAG" >> "$GITHUB_OUTPUT"
-          echo "Fase=$FASE rodada=$RODADA"
 
       - name: Validar código
         run: |
           set -e
           python -m py_compile app/gerar_base_video_por_fase_v2.py
+          python -m py_compile app/enriquecer_base_video_cartola_v1.py
+          python -m py_compile app/enriquecer_historico_jogadores_v1.py
           python -m py_compile app/gerar_video_dialogo_cartola_v10.py
           python -m py_compile app/gerar_video_dialogo_cartola_v11.py
           python -m py_compile app/enviar_video_telegram.py
@@ -111,7 +109,32 @@ jobs:
         run: |
           set -e
           python app/enriquecer_base_video_cartola_v1.py --rodada "$RODADA" --repo-root .
-          test -s "data/analise_tecnica_rodada_${RODADA}_v3.json"
+
+      - name: Calcular histórico individual e métricas do Top 5
+        env:
+          RODADA: ${{ steps.evento.outputs.rodada }}
+        run: |
+          set -e
+          python app/enriquecer_historico_jogadores_v1.py --rodada "$RODADA" --repo-root .
+          python - "$RODADA" <<'PY'
+          import json, sys
+          from pathlib import Path
+          r=int(sys.argv[1])
+          p=Path(f"data/analise_tecnica_rodada_{r}_v3.json")
+          d=json.loads(p.read_text(encoding="utf-8"))
+          rows=((d.get("top5") or {}).get("dados") or [])
+          if len(rows) != 30:
+              raise SystemExit(f"Top 5 incompleto após enriquecimento: {len(rows)}")
+          missing=[]
+          for row in rows:
+              nome=row.get("NOME") or row.get("nome") or "Atleta"
+              for campo in ("MEDIA_ULT5","PROB_8","EFICIENCIA","INDICE_CONFIANCA"):
+                  if row.get(campo) is None:
+                      missing.append(f"{nome}:{campo}")
+          if missing:
+              raise SystemExit("Métricas ainda ausentes após enriquecimento: " + " | ".join(missing))
+          print(f"Top 5 enriquecido: 30/30 atletas com métricas históricas.")
+          PY
 
       - name: Validar imagens da fase
         env:
@@ -133,17 +156,9 @@ jobs:
           set -e
           rm -f "$VIDEO" "$MANIFESTO"
           if [ "$FASE" = "INICIAL" ]; then
-            echo "Gerando análise inicial com V10, versão comprovadamente funcional nas rodadas anteriores."
-            VIDEO_FASE="$FASE" python app/gerar_video_dialogo_cartola_v10.py \
-              --rodada "$RODADA" \
-              --repo-root . \
-              --output "$VIDEO"
+            VIDEO_FASE="$FASE" python app/gerar_video_dialogo_cartola_v10.py --rodada "$RODADA" --repo-root . --output "$VIDEO"
           else
-            echo "Gerando análise de pré-fechamento com V11 e comparação Abertura x Pré-Fechamento."
-            VIDEO_FASE="$FASE" python app/gerar_video_dialogo_cartola_v11.py \
-              --rodada "$RODADA" \
-              --repo-root . \
-              --output "$VIDEO"
+            VIDEO_FASE="$FASE" python app/gerar_video_dialogo_cartola_v11.py --rodada "$RODADA" --repo-root . --output "$VIDEO"
           fi
           test -s "$VIDEO"
           test -s "$MANIFESTO"
@@ -154,14 +169,10 @@ jobs:
           duration=float(sys.argv[1])
           manifest=json.loads(Path(sys.argv[2]).read_text(encoding='utf-8'))
           fase=sys.argv[3]
-          if duration < 480:
-              raise SystemExit(f'Vídeo curto: {duration:.2f}s')
-          timeline=manifest.get('timeline') or []
-          if not timeline:
-              raise SystemExit('Sem transcrição')
+          if duration < 480: raise SystemExit(f'Vídeo curto: {duration:.2f}s')
+          if not (manifest.get('timeline') or []): raise SystemExit('Sem transcrição')
           if fase == 'PRE_FECHAMENTO' and manifest.get('comparacao_abertura_pre_fechamento_no_audio') is not True:
               raise SystemExit('Comparação abertura x pré-fechamento ausente do áudio')
-          print(f'Vídeo validado: {duration:.2f}s')
           PY
 
       - name: Enviar vídeo ao Telegram
@@ -174,10 +185,7 @@ jobs:
           TELEGRAM_CHAT_FALLBACK: "@dicascartolaportalsimonsports"
         run: |
           set -e
-          python app/enviar_video_telegram.py \
-            --video "${{ steps.evento.outputs.video }}" \
-            --rodada "${{ steps.evento.outputs.rodada }}" \
-            --fase "${{ steps.evento.outputs.fase }}"
+          python app/enviar_video_telegram.py --video "${{ steps.evento.outputs.video }}" --rodada "${{ steps.evento.outputs.rodada }}" --fase "${{ steps.evento.outputs.fase }}"
 
       - name: Registrar sucesso real e salvar artefatos
         env:
@@ -191,8 +199,7 @@ jobs:
           test -s "$VIDEO"
           test -s "$MANIFESTO"
           mkdir -p "$(dirname "$FLAG")"
-          printf '{\n  "rodada": %s,\n  "fase": "%s",\n  "status": "PUBLICADO_COM_SUCESSO",\n  "video": "%s",\n  "registrado_em": "%s"\n}\n' \
-            "$RODADA" "$FASE" "$VIDEO" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$FLAG"
+          printf '{\n  "rodada": %s,\n  "fase": "%s",\n  "status": "PUBLICADO_COM_SUCESSO",\n  "video": "%s",\n  "registrado_em": "%s"\n}\n' "$RODADA" "$FASE" "$VIDEO" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$FLAG"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add "data/analise_tecnica_rodada_${RODADA}_v3.json" "$VIDEO" "$MANIFESTO" "$FLAG"
