@@ -29,7 +29,7 @@ jobs:
           ref: main
           fetch-depth: 0
 
-      - name: Detectar seleção inicial completa e ainda não publicada
+      - name: Detectar seleção inicial da rodada atual e ainda não publicada
         id: detectar
         shell: bash
         run: |
@@ -37,42 +37,81 @@ jobs:
           python - <<'PY'
           import json, os, re, subprocess
           from pathlib import Path
-          base=Path('data/publicacoes_atuais'); out=Path(os.environ['GITHUB_OUTPUT'])
+
+          base = Path('data/publicacoes_atuais')
+          out = Path(os.environ['GITHUB_OUTPUT'])
+
           def load(path):
               try:
-                  d=json.loads(path.read_text(encoding='utf-8')); return d if isinstance(d,dict) else {}
-              except Exception:return {}
+                  d = json.loads(path.read_text(encoding='utf-8'))
+                  return d if isinstance(d, dict) else {}
+              except Exception:
+                  return {}
+
           def rows(d):
-              v=d.get('jogadores') or d.get('atletas') or d.get('dados') or d.get('lista') or []; return [x for x in v if isinstance(x,dict)]
-          def git_json(c,p):
-              r=subprocess.run(['git','show',f'{c}:{p}'],text=True,capture_output=True)
-              if r.returncode!=0 or not r.stdout.strip(): return {}
+              v = d.get('jogadores') or d.get('atletas') or d.get('dados') or d.get('lista') or []
+              return [x for x in v if isinstance(x, dict)]
+
+          def git_json(c, p):
+              r = subprocess.run(['git', 'show', f'{c}:{p}'], text=True, capture_output=True)
+              if r.returncode != 0 or not r.stdout.strip():
+                  return {}
               try:
-                  d=json.loads(r.stdout); return d if isinstance(d,dict) else {}
-              except Exception:return {}
-          def has_snapshot(rel,rodada,minimo):
-              d=load(Path(rel))
-              if int(d.get('rodada') or 0)==rodada and str(d.get('evento_programado') or '').upper()=='SELECAO_INICIAL' and len(rows(d))>=minimo:return True
-              for c in subprocess.run(['git','log','--format=%H','--all','--',rel],text=True,capture_output=True).stdout.splitlines():
-                  d=git_json(c,rel)
-                  if int(d.get('rodada') or 0)==rodada and str(d.get('evento_programado') or '').upper()=='SELECAO_INICIAL' and len(rows(d))>=minimo:return True
+                  d = json.loads(r.stdout)
+                  return d if isinstance(d, dict) else {}
+              except Exception:
+                  return {}
+
+          def has_snapshot(rel, rodada, minimo):
+              d = load(Path(rel))
+              if int(d.get('rodada') or 0) == rodada and str(d.get('evento_programado') or '').upper() == 'SELECAO_INICIAL' and len(rows(d)) >= minimo:
+                  return True
+              for c in subprocess.run(['git', 'log', '--format=%H', '--all', '--', rel], text=True, capture_output=True).stdout.splitlines():
+                  d = git_json(c, rel)
+                  if int(d.get('rodada') or 0) == rodada and str(d.get('evento_programado') or '').upper() == 'SELECAO_INICIAL' and len(rows(d)) >= minimo:
+                      return True
               return False
+
           def publicado(rodada):
-              flag=load(Path(f'data/flags/video_inicial_rodada_{rodada}.publicado.json'))
-              return str(flag.get('status') or '').upper()=='PUBLICADO_COM_SUCESSO'
-          rodadas=[]
+              flag = load(Path(f'data/flags/video_inicial_rodada_{rodada}.publicado.json'))
+              return str(flag.get('status') or '').upper() == 'PUBLICADO_COM_SUCESSO'
+
+          rodadas = []
           for path in base.glob('top5_rodada_*.json'):
-              m=re.search(r'rodada_(\d+)\.json$',path.name)
-              if m:rodadas.append(int(m.group(1)))
-          for rodada in sorted(set(rodadas),reverse=True):
-              if publicado(rodada):
-                  print(f'Análise inicial R{rodada} já publicada com sucesso; ignorando duplicidade.')
-                  continue
-              req={f'data/publicacoes_atuais/time_economico_rodada_{rodada}.json':12,f'data/publicacoes_atuais/time_intermediario_rodada_{rodada}.json':12,f'data/publicacoes_atuais/time_pontuacao_rodada_{rodada}.json':12,f'data/publicacoes_atuais/top5_rodada_{rodada}.json':30}
-              if all(has_snapshot(rel,rodada,minimo) for rel,minimo in req.items()):
-                  with out.open('a',encoding='utf-8') as fh: fh.write('ready=true\n'); fh.write(f'rodada={rodada}\n')
-                  print(f'Análise inicial R{rodada} pronta e ainda não publicada.'); raise SystemExit(0)
-          out.write_text('ready=false\n',encoding='utf-8')
+              m = re.search(r'rodada_(\d+)\.json$', path.name)
+              if m:
+                  rodadas.append(int(m.group(1)))
+
+          if not rodadas:
+              out.write_text('ready=false\n', encoding='utf-8')
+              print('Nenhuma rodada atual encontrada.')
+              raise SystemExit(0)
+
+          # REGRA OBRIGATÓRIA: analisar SOMENTE a rodada mais recente.
+          # Nunca retroceder para rodada anterior por falta de flag antiga.
+          rodada = max(set(rodadas))
+          print(f'Rodada atual detectada: R{rodada}.')
+
+          if publicado(rodada):
+              out.write_text(f'ready=false\nrodada={rodada}\n', encoding='utf-8')
+              print(f'Análise inicial R{rodada} já publicada com sucesso. Não procurar rodadas anteriores.')
+              raise SystemExit(0)
+
+          req = {
+              f'data/publicacoes_atuais/time_economico_rodada_{rodada}.json': 12,
+              f'data/publicacoes_atuais/time_intermediario_rodada_{rodada}.json': 12,
+              f'data/publicacoes_atuais/time_pontuacao_rodada_{rodada}.json': 12,
+              f'data/publicacoes_atuais/top5_rodada_{rodada}.json': 30,
+          }
+
+          if all(has_snapshot(rel, rodada, minimo) for rel, minimo in req.items()):
+              with out.open('a', encoding='utf-8') as fh:
+                  fh.write('ready=true\n')
+                  fh.write(f'rodada={rodada}\n')
+              print(f'Análise inicial R{rodada} pronta e ainda não publicada.')
+          else:
+              out.write_text(f'ready=false\nrodada={rodada}\n', encoding='utf-8')
+              print(f'R{rodada} ainda não possui seleção inicial completa. Nenhuma rodada anterior será considerada.')
           PY
 
   publicar:
