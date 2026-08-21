@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 24,
-  "atualizado_em": "2026-08-21T13:05:32.025Z",
+  "atualizado_em": "2026-08-21T13:15:17.372Z",
   "dados": [
     {
       "RODADA": 24,
@@ -48,12 +48,12 @@
     {
       "RODADA": 24,
       "POS": "GOL",
-      "NOME": "Ronaldo",
-      "CLUBE": "BAH",
-      "PRECO": 6.92,
-      "EXP_SCORE": 3.3614,
-      "FACTOR": 0.9188176727562384,
-      "ATLETA_ID": 91101
+      "NOME": "Rossi",
+      "CLUBE": "FLA",
+      "PRECO": 8.57,
+      "EXP_SCORE": 3.1465,
+      "FACTOR": 0.8987774277832109,
+      "ATLETA_ID": 99552
     },
     {
       "RODADA": 24,
@@ -98,12 +98,12 @@
     {
       "RODADA": 24,
       "POS": "LAT",
-      "NOME": "Bernabei",
-      "CLUBE": "INT",
-      "PRECO": 9.63,
-      "EXP_SCORE": 5.1954,
-      "FACTOR": 1.140196447182122,
-      "ATLETA_ID": 110426
+      "NOME": "Renê",
+      "CLUBE": "FLU",
+      "PRECO": 10,
+      "EXP_SCORE": 5.2401,
+      "FACTOR": 1.1393220511173714,
+      "ATLETA_ID": 78445
     },
     {
       "RODADA": 24,
@@ -111,7 +111,7 @@
       "NOME": "Gustavo Gómez",
       "CLUBE": "PAL",
       "PRECO": 10.99,
-      "EXP_SCORE": 3.9601,
+      "EXP_SCORE": 4.4001,
       "FACTOR": 1.1252644528456115,
       "ATLETA_ID": 71684
     },
@@ -138,6 +138,16 @@
     {
       "RODADA": 24,
       "POS": "ZAG",
+      "NOME": "Léo Pereira",
+      "CLUBE": "FLA",
+      "PRECO": 8.96,
+      "EXP_SCORE": 3.6203,
+      "FACTOR": 0.8987774277832109,
+      "ATLETA_ID": 83528
+    },
+    {
+      "RODADA": 24,
+      "POS": "ZAG",
       "NOME": "Gustavo Marques",
       "CLUBE": "RBB",
       "PRECO": 7.16,
@@ -147,22 +157,12 @@
     },
     {
       "RODADA": 24,
-      "POS": "ZAG",
-      "NOME": "David Duarte",
-      "CLUBE": "BAH",
-      "PRECO": 6.23,
-      "EXP_SCORE": 3.3057,
-      "FACTOR": 0.9188176727562384,
-      "ATLETA_ID": 91772
-    },
-    {
-      "RODADA": 24,
       "POS": "MEI",
       "NOME": "Arias",
       "CLUBE": "PAL",
       "PRECO": 13.91,
-      "EXP_SCORE": 8.5505,
-      "FACTOR": 1.0994502490998483,
+      "EXP_SCORE": 8.539,
+      "FACTOR": 1.0979757266028125,
       "ATLETA_ID": 99815
     },
     {
@@ -171,19 +171,9 @@
       "NOME": "Neymar",
       "CLUBE": "SAN",
       "PRECO": 19.51,
-      "EXP_SCORE": 7.5172,
-      "FACTOR": 1.1146093828290715,
+      "EXP_SCORE": 7.5081,
+      "FACTOR": 1.1132626254966287,
       "ATLETA_ID": 63007
-    },
-    {
-      "RODADA": 24,
-      "POS": "MEI",
-      "NOME": "Matheus Pereira",
-      "CLUBE": "CRU",
-      "PRECO": 13.56,
-      "EXP_SCORE": 7.1642,
-      "FACTOR": 1.0412925662393075,
-      "ATLETA_ID": 96610
     },
     {
       "RODADA": 24,
@@ -191,9 +181,19 @@
       "NOME": "Danilo",
       "CLUBE": "BOT",
       "PRECO": 14.19,
-      "EXP_SCORE": 6.4473,
-      "FACTOR": 1.0408158639207785,
+      "EXP_SCORE": 6.4351,
+      "FACTOR": 1.0388471554097496,
       "ATLETA_ID": 107231
+    },
+    {
+      "RODADA": 24,
+      "POS": "MEI",
+      "NOME": "Matheus Pereira",
+      "CLUBE": "CRU",
+      "PRECO": 13.56,
+      "EXP_SCORE": 6.218,
+      "FACTOR": 1.0393278755007502,
+      "ATLETA_ID": 96610
     },
     {
       "RODADA": 24,
@@ -201,8 +201,8 @@
       "NOME": "Allan",
       "CLUBE": "PAL",
       "PRECO": 12.25,
-      "EXP_SCORE": 5.2521,
-      "FACTOR": 1.0994502490998483,
+      "EXP_SCORE": 5.2451,
+      "FACTOR": 1.0979757266028125,
       "ATLETA_ID": 141451
     },
     {
@@ -211,8 +211,8 @@
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 12.27,
-      "EXP_SCORE": 8.0376,
-      "FACTOR": 0.998222669516636,
+      "EXP_SCORE": 8.0293,
+      "FACTOR": 0.997187869895646,
       "ATLETA_ID": 98873
     },
     {
@@ -221,8 +221,8 @@
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 18.08,
-      "EXP_SCORE": 7.8326,
-      "FACTOR": 0.998222669516636,
+      "EXP_SCORE": 7.8245,
+      "FACTOR": 0.997187869895646,
       "ATLETA_ID": 94583
     },
     {
@@ -231,8 +231,8 @@
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 12.88,
-      "EXP_SCORE": 7.3539,
-      "FACTOR": 0.9494975130884702,
+      "EXP_SCORE": 7.566,
+      "FACTOR": 0.9768767041988823,
       "ATLETA_ID": 143193
     },
     {
@@ -241,19 +241,19 @@
       "NOME": "Canobbio",
       "CLUBE": "FLU",
       "PRECO": 11.26,
-      "EXP_SCORE": 6.2568,
-      "FACTOR": 1.1699068517784381,
+      "EXP_SCORE": 6.2521,
+      "FACTOR": 1.169026156052688,
       "ATLETA_ID": 102928
     },
     {
       "RODADA": 24,
       "POS": "ATA",
-      "NOME": "Flaco López",
-      "CLUBE": "PAL",
-      "PRECO": 13.77,
-      "EXP_SCORE": 5.5408,
-      "FACTOR": 1.0994502490998483,
-      "ATLETA_ID": 113103
+      "NOME": "Carbonero",
+      "CLUBE": "INT",
+      "PRECO": 9.9,
+      "EXP_SCORE": 6.03,
+      "FACTOR": 1.0591335432499713,
+      "ATLETA_ID": 107989
     },
     {
       "RODADA": 24,
@@ -261,8 +261,8 @@
       "NOME": "Leonardo Jardim",
       "CLUBE": "FLA",
       "PRECO": 13.84,
-      "EXP_SCORE": 6.5161,
-      "FACTOR": 1.019237883611723,
+      "EXP_SCORE": 6.5093,
+      "FACTOR": 1.0181812987355545,
       "ATLETA_ID": 88963
     },
     {
@@ -271,8 +271,8 @@
       "NOME": "Abel Ferreira",
       "CLUBE": "PAL",
       "PRECO": 11.69,
-      "EXP_SCORE": 6.3263,
-      "FACTOR": 1.0689099644026303,
+      "EXP_SCORE": 6.3178,
+      "FACTOR": 1.0674764008638455,
       "ATLETA_ID": 110506
     },
     {
@@ -281,19 +281,9 @@
       "NOME": "Odair Hellmann",
       "CLUBE": "CAP",
       "PRECO": 9.02,
-      "EXP_SCORE": 5.8335,
-      "FACTOR": 0.9694869344166486,
+      "EXP_SCORE": 6.0017,
+      "FACTOR": 0.9974425295504378,
       "ATLETA_ID": 92273
-    },
-    {
-      "RODADA": 24,
-      "POS": "TEC",
-      "NOME": "Fernando Diniz",
-      "CLUBE": "COR",
-      "PRECO": 9.19,
-      "EXP_SCORE": 5.4873,
-      "FACTOR": 0.9938058149181996,
-      "ATLETA_ID": 72391
     },
     {
       "RODADA": 24,
@@ -301,9 +291,19 @@
       "NOME": "Artur Jorge",
       "CLUBE": "CRU",
       "PRECO": 11.92,
-      "EXP_SCORE": 5.3787,
-      "FACTOR": 1.01236777273266,
+      "EXP_SCORE": 5.3685,
+      "FACTOR": 1.0104576567368404,
       "ATLETA_ID": 127273
+    },
+    {
+      "RODADA": 24,
+      "POS": "TEC",
+      "NOME": "Rogério Ceni",
+      "CLUBE": "BAH",
+      "PRECO": 10.37,
+      "EXP_SCORE": 4.8664,
+      "FACTOR": 0.9946936711782257,
+      "ATLETA_ID": 97341
     }
   ]
 }
