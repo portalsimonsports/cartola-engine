@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 24,
-  "atualizado_em": "2026-08-21T09:34:45.274Z",
+  "atualizado_em": "2026-08-21T09:40:03.070Z",
   "dados": [
     {
       "RODADA": 24,
@@ -48,12 +48,12 @@
     {
       "RODADA": 24,
       "POS": "GOL",
-      "NOME": "Everson",
-      "CLUBE": "CAM",
-      "PRECO": 9.36,
-      "EXP_SCORE": 3.0281,
-      "FACTOR": 0.9606622687738627,
-      "ATLETA_ID": 72294
+      "NOME": "Rossi",
+      "CLUBE": "FLA",
+      "PRECO": 8.57,
+      "EXP_SCORE": 3.1465,
+      "FACTOR": 0.8987774277832109,
+      "ATLETA_ID": 99552
     },
     {
       "RODADA": 24,
@@ -121,7 +121,7 @@
       "NOME": "Jacy",
       "CLUBE": "CFC",
       "PRECO": 6.39,
-      "EXP_SCORE": 4.4296,
+      "EXP_SCORE": 3.8518,
       "FACTOR": 1.1707666788305187,
       "ATLETA_ID": 97878
     },
@@ -208,16 +208,6 @@
     {
       "RODADA": 24,
       "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 12.88,
-      "EXP_SCORE": 8.457,
-      "FACTOR": 0.9494975130884702,
-      "ATLETA_ID": 143193
-    },
-    {
-      "RODADA": 24,
-      "POS": "ATA",
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 12.27,
@@ -234,6 +224,16 @@
       "EXP_SCORE": 7.8326,
       "FACTOR": 0.998222669516636,
       "ATLETA_ID": 94583
+    },
+    {
+      "RODADA": 24,
+      "POS": "ATA",
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 12.88,
+      "EXP_SCORE": 7.3539,
+      "FACTOR": 0.9494975130884702,
+      "ATLETA_ID": 143193
     },
     {
       "RODADA": 24,
