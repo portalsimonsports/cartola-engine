@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 24,
-  "atualizado_em": "2026-08-21T06:45:29.280Z",
+  "atualizado_em": "2026-08-21T06:54:49.325Z",
   "dados": [
     {
       "RODADA": 24,
@@ -12,7 +12,7 @@
       "CLUBE": "PAL",
       "PRECO": 7.8,
       "EXP_SCORE": 4.0387,
-      "FACTOR": 1.1252644528456117,
+      "FACTOR": 1.1252644528456115,
       "ATLETA_ID": 104084
     },
     {
@@ -82,7 +82,7 @@
       "CLUBE": "PAL",
       "PRECO": 11.05,
       "EXP_SCORE": 5.3272,
-      "FACTOR": 1.1252644528456117,
+      "FACTOR": 1.1252644528456115,
       "ATLETA_ID": 102130
     },
     {
@@ -112,7 +112,7 @@
       "CLUBE": "PAL",
       "PRECO": 10.99,
       "EXP_SCORE": 4.4001,
-      "FACTOR": 1.1252644528456117,
+      "FACTOR": 1.1252644528456115,
       "ATLETA_ID": 71684
     },
     {
@@ -132,7 +132,7 @@
       "CLUBE": "PAL",
       "PRECO": 10.94,
       "EXP_SCORE": 3.7354,
-      "FACTOR": 1.1252644528456117,
+      "FACTOR": 1.1252644528456115,
       "ATLETA_ID": 99274
     },
     {
@@ -288,22 +288,22 @@
     {
       "RODADA": 24,
       "POS": "TEC",
-      "NOME": "Fernando Diniz",
-      "CLUBE": "COR",
-      "PRECO": 9.19,
-      "EXP_SCORE": 5.4873,
-      "FACTOR": 0.9938058149181996,
-      "ATLETA_ID": 72391
-    },
-    {
-      "RODADA": 24,
-      "POS": "TEC",
       "NOME": "Artur Jorge",
       "CLUBE": "CRU",
       "PRECO": 11.92,
       "EXP_SCORE": 5.3787,
       "FACTOR": 1.01236777273266,
       "ATLETA_ID": 127273
+    },
+    {
+      "RODADA": 24,
+      "POS": "TEC",
+      "NOME": "Rogério Ceni",
+      "CLUBE": "BAH",
+      "PRECO": 10.37,
+      "EXP_SCORE": 4.8725,
+      "FACTOR": 0.9959465614412234,
+      "ATLETA_ID": 97341
     }
   ]
 }
