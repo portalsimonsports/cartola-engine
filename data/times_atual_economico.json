@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 24,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-08-22T08:59:44.814Z",
+  "atualizado_em": "2026-08-22T09:04:44.242Z",
   "dados": [
     {
       "RODADA": 24,
@@ -69,7 +69,7 @@
       "NOME": "Giovanni Augusto",
       "CLUBE": "CHA",
       "PRECO": 7.19,
-      "EXP_SCORE": 3.0229,
+      "EXP_SCORE": 3.4764,
       "ATLETA_ID": 68938
     },
     {
@@ -80,7 +80,7 @@
       "NOME": "Acevedo",
       "CLUBE": "BAH",
       "PRECO": 8.76,
-      "EXP_SCORE": 4.2738,
+      "EXP_SCORE": 4.9148,
       "ATLETA_ID": 104783
     },
     {
@@ -102,8 +102,19 @@
       "NOME": "Cuello",
       "CLUBE": "CAM",
       "PRECO": 11.49,
-      "EXP_SCORE": 5.525,
+      "EXP_SCORE": 6.3537,
       "ATLETA_ID": 98909
+    },
+    {
+      "RODADA": 24,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Tarzia",
+      "CLUBE": "VIT",
+      "PRECO": 4.67,
+      "EXP_SCORE": 3.352,
+      "ATLETA_ID": 143153
     },
     {
       "RODADA": 24,
@@ -120,23 +131,12 @@
       "RODADA": 24,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Carbonero",
-      "CLUBE": "INT",
-      "PRECO": 9.9,
-      "EXP_SCORE": 6.0889,
-      "ATLETA_ID": 107989
-    },
-    {
-      "RODADA": 24,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Odair Hellmann",
-      "CLUBE": "CAP",
-      "PRECO": 9.02,
-      "EXP_SCORE": 6.1209,
-      "ATLETA_ID": 92273
+      "NOME": "Cuca",
+      "CLUBE": "SAN",
+      "PRECO": 10.71,
+      "EXP_SCORE": 5.1504,
+      "ATLETA_ID": 42411
     },
     {
       "RODADA": 24,
@@ -187,11 +187,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Tarzia",
-      "CLUBE": "VIT",
-      "PRECO": 4.67,
-      "EXP_SCORE": 2.9148,
-      "ATLETA_ID": 143153
+      "NOME": "Herrera",
+      "CLUBE": "RBB",
+      "PRECO": 4.56,
+      "EXP_SCORE": 2.2135,
+      "ATLETA_ID": 123738
     }
   ]
 }
