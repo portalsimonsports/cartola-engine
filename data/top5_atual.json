@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 24,
-  "atualizado_em": "2026-08-22T01:54:57.014Z",
+  "atualizado_em": "2026-08-22T02:14:48.541Z",
   "dados": [
     {
       "RODADA": 24,
@@ -48,12 +48,12 @@
     {
       "RODADA": 24,
       "POS": "GOL",
-      "NOME": "Rossi",
-      "CLUBE": "FLA",
-      "PRECO": 8.57,
-      "EXP_SCORE": 3.2734,
-      "FACTOR": 0.935012334752892,
-      "ATLETA_ID": 99552
+      "NOME": "Santos",
+      "CLUBE": "CAP",
+      "PRECO": 8.38,
+      "EXP_SCORE": 3.2203,
+      "FACTOR": 0.936764222190722,
+      "ATLETA_ID": 69012
     },
     {
       "RODADA": 24,
@@ -88,22 +88,22 @@
     {
       "RODADA": 24,
       "POS": "LAT",
+      "NOME": "Igor Vinícius",
+      "CLUBE": "SAN",
+      "PRECO": 10.68,
+      "EXP_SCORE": 5.7022,
+      "FACTOR": 1.1993406213599414,
+      "ATLETA_ID": 95466
+    },
+    {
+      "RODADA": 24,
+      "POS": "LAT",
       "NOME": "Piquerez",
       "CLUBE": "PAL",
       "PRECO": 11.05,
       "EXP_SCORE": 5.341,
       "FACTOR": 1.1281717472897934,
       "ATLETA_ID": 102130
-    },
-    {
-      "RODADA": 24,
-      "POS": "LAT",
-      "NOME": "Matheus Bidu",
-      "CLUBE": "COR",
-      "PRECO": 12.32,
-      "EXP_SCORE": 5.1863,
-      "FACTOR": 0.950445628848062,
-      "ATLETA_ID": 105531
     },
     {
       "RODADA": 24,
@@ -121,7 +121,7 @@
       "NOME": "Jacy",
       "CLUBE": "CFC",
       "PRECO": 6.39,
-      "EXP_SCORE": 3.8078,
+      "EXP_SCORE": 4.379,
       "FACTOR": 1.1573947207208317,
       "ATLETA_ID": 97878
     },
@@ -208,6 +208,16 @@
     {
       "RODADA": 24,
       "POS": "ATA",
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 12.88,
+      "EXP_SCORE": 8.872,
+      "FACTOR": 0.9960898465010729,
+      "ATLETA_ID": 143193
+    },
+    {
+      "RODADA": 24,
+      "POS": "ATA",
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 12.27,
@@ -224,16 +234,6 @@
       "EXP_SCORE": 7.8888,
       "FACTOR": 1.0053862719982867,
       "ATLETA_ID": 94583
-    },
-    {
-      "RODADA": 24,
-      "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 12.88,
-      "EXP_SCORE": 7.7148,
-      "FACTOR": 0.9960898465010729,
-      "ATLETA_ID": 143193
     },
     {
       "RODADA": 24,
