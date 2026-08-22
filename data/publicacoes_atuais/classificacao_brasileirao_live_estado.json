@@ -155,11 +155,19 @@
       "fora_nome": "Remo",
       "fora_sigla": "REM",
       "goleadores_casa": [],
-      "goleadores_fora": [],
+      "goleadores_fora": [
+        {
+          "clube_origem": "Remo",
+          "gol_contra": false,
+          "nome": "Jajá",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "hora": "16:00",
       "link_resumo": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/22-08-2026/fluminense-remo.ghtml?utm_source=cartolafc",
       "placar_casa": 0,
-      "placar_fora": 0,
+      "placar_fora": 1,
       "status": "EM_ANDAMENTO"
     },
     "INTxCAM": {
@@ -229,9 +237,9 @@
     {
       "nome": "FLU",
       "pos": 4,
-      "pts": 39,
+      "pts": 38,
       "v": 10,
-      "saldo": 6,
+      "saldo": 5,
       "gm": 34
     },
     {
@@ -307,8 +315,16 @@
       "gm": 27
     },
     {
-      "nome": "SAN",
+      "nome": "REM",
       "pos": 14,
+      "pts": 26,
+      "v": 6,
+      "saldo": -9,
+      "gm": 28
+    },
+    {
+      "nome": "SAN",
+      "pos": 15,
       "pts": 25,
       "v": 6,
       "saldo": -3,
@@ -316,7 +332,7 @@
     },
     {
       "nome": "GRE",
-      "pos": 15,
+      "pos": 16,
       "pts": 25,
       "v": 6,
       "saldo": -6,
@@ -324,19 +340,11 @@
     },
     {
       "nome": "INT",
-      "pos": 16,
+      "pos": 17,
       "pts": 24,
       "v": 5,
       "saldo": -4,
       "gm": 24
-    },
-    {
-      "nome": "REM",
-      "pos": 17,
-      "pts": 24,
-      "v": 5,
-      "saldo": -10,
-      "gm": 27
     },
     {
       "nome": "MIR",
@@ -363,6 +371,6 @@
       "gm": 23
     }
   ],
-  "updated_at": "2026-08-22T16:13:59.152966-03:00",
+  "updated_at": "2026-08-22T16:43:18.937544-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
