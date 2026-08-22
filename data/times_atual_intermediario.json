@@ -4,18 +4,18 @@
   "tipo_publicacao": "times",
   "rodada": 24,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-08-22T15:04:52.655Z",
+  "atualizado_em": "2026-08-22T15:09:55.682Z",
   "dados": [
     {
       "RODADA": 24,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "GOL",
-      "NOME": "Tiago Volpi",
-      "CLUBE": "RBB",
-      "PRECO": 10.21,
-      "EXP_SCORE": 4.2757,
-      "ATLETA_ID": 72018
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 7.8,
+      "EXP_SCORE": 4.0523,
+      "ATLETA_ID": 104084
     },
     {
       "RODADA": 24,
@@ -33,11 +33,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "LAT",
-      "NOME": "Escobar",
-      "CLUBE": "SAN",
-      "PRECO": 10.8,
-      "EXP_SCORE": 5.8811,
-      "ATLETA_ID": 102975
+      "NOME": "Matheuzinho",
+      "CLUBE": "COR",
+      "PRECO": 11.15,
+      "EXP_SCORE": 5.7358,
+      "ATLETA_ID": 101727
     },
     {
       "RODADA": 24,
@@ -47,7 +47,7 @@
       "NOME": "Gustavo Gómez",
       "CLUBE": "PAL",
       "PRECO": 10.99,
-      "EXP_SCORE": 5.0772,
+      "EXP_SCORE": 4.415,
       "ATLETA_ID": 71684
     },
     {
@@ -80,7 +80,7 @@
       "NOME": "Neymar",
       "CLUBE": "SAN",
       "PRECO": 19.51,
-      "EXP_SCORE": 8.3451,
+      "EXP_SCORE": 7.5106,
       "ATLETA_ID": 63007
     },
     {
@@ -98,6 +98,17 @@
       "RODADA": 24,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Matheus Pereira",
+      "CLUBE": "CRU",
+      "PRECO": 13.56,
+      "EXP_SCORE": 6.437,
+      "ATLETA_ID": 96610
+    },
+    {
+      "RODADA": 24,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
       "POS": "ATA",
       "NOME": "Viveros",
       "CLUBE": "CAP",
@@ -110,22 +121,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Cuello",
-      "CLUBE": "CAM",
-      "PRECO": 11.49,
-      "EXP_SCORE": 6.3537,
-      "ATLETA_ID": 98909
-    },
-    {
-      "RODADA": 24,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Jajá",
-      "CLUBE": "REM",
-      "PRECO": 6.23,
-      "EXP_SCORE": 4.4558,
-      "ATLETA_ID": 105048
+      "NOME": "Leozinho",
+      "CLUBE": "CAP",
+      "PRECO": 5.74,
+      "EXP_SCORE": 4.5644,
+      "ATLETA_ID": 123101
     },
     {
       "RODADA": 24,
@@ -135,7 +135,7 @@
       "NOME": "Rafael Guanaes",
       "CLUBE": "MIR",
       "PRECO": 6.97,
-      "EXP_SCORE": 3.4313,
+      "EXP_SCORE": 3.0882,
       "ATLETA_ID": 104027
     },
     {
@@ -143,55 +143,55 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Lucas Arcanjo",
-      "CLUBE": "VIT",
-      "PRECO": 9.76,
-      "EXP_SCORE": 4.2757,
-      "ATLETA_ID": 104118
+      "NOME": "Ronaldo",
+      "CLUBE": "BAH",
+      "PRECO": 6.92,
+      "EXP_SCORE": 2.9774,
+      "ATLETA_ID": 91101
     },
     {
       "RODADA": 24,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "LAT",
-      "NOME": "Igor Vinícius",
-      "CLUBE": "SAN",
-      "PRECO": 10.68,
-      "EXP_SCORE": 5.7049,
-      "ATLETA_ID": 95466
+      "NOME": "Piquerez",
+      "CLUBE": "PAL",
+      "PRECO": 11.05,
+      "EXP_SCORE": 5.3452,
+      "ATLETA_ID": 102130
     },
     {
       "RODADA": 24,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Tiago Cóser",
-      "CLUBE": "CFC",
-      "PRECO": 4.78,
-      "EXP_SCORE": 3.1583,
-      "ATLETA_ID": 109127
+      "NOME": "Ruan",
+      "CLUBE": "CAM",
+      "PRECO": 6.33,
+      "EXP_SCORE": 3.0135,
+      "ATLETA_ID": 100842
     },
     {
       "RODADA": 24,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Matheus Pereira",
-      "CLUBE": "CRU",
-      "PRECO": 13.56,
-      "EXP_SCORE": 5.7933,
-      "ATLETA_ID": 96610
+      "NOME": "Allan",
+      "CLUBE": "PAL",
+      "PRECO": 12.25,
+      "EXP_SCORE": 5.247,
+      "ATLETA_ID": 141451
     },
     {
       "RODADA": 24,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Leozinho",
-      "CLUBE": "CAP",
-      "PRECO": 5.74,
-      "EXP_SCORE": 3.969,
-      "ATLETA_ID": 123101
+      "NOME": "Marcinho",
+      "CLUBE": "CHA",
+      "PRECO": 5.36,
+      "EXP_SCORE": 3.7818,
+      "ATLETA_ID": 95332
     }
   ]
 }
