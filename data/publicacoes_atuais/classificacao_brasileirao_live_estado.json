@@ -161,6 +161,13 @@
           "nome": "Hulk",
           "quantidade": 1,
           "tipo": "gol"
+        },
+        {
+          "clube_origem": "Fluminense",
+          "gol_contra": false,
+          "nome": "Serna",
+          "quantidade": 1,
+          "tipo": "gol"
         }
       ],
       "goleadores_fora": [
@@ -174,7 +181,7 @@
       ],
       "hora": "16:00",
       "link_resumo": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/22-08-2026/fluminense-remo.ghtml?utm_source=cartolafc",
-      "placar_casa": 1,
+      "placar_casa": 2,
       "placar_fora": 1,
       "status": "EM_ANDAMENTO"
     },
@@ -245,10 +252,10 @@
     {
       "nome": "FLU",
       "pos": 4,
-      "pts": 39,
-      "v": 10,
-      "saldo": 6,
-      "gm": 35
+      "pts": 41,
+      "v": 11,
+      "saldo": 7,
+      "gm": 36
     },
     {
       "nome": "CRU",
@@ -347,20 +354,20 @@
       "gm": 24
     },
     {
-      "nome": "REM",
-      "pos": 17,
-      "pts": 24,
-      "v": 5,
-      "saldo": -10,
-      "gm": 28
-    },
-    {
       "nome": "MIR",
-      "pos": 18,
+      "pos": 17,
       "pts": 23,
       "v": 6,
       "saldo": -10,
       "gm": 25
+    },
+    {
+      "nome": "REM",
+      "pos": 18,
+      "pts": 23,
+      "v": 5,
+      "saldo": -11,
+      "gm": 28
     },
     {
       "nome": "VAS",
@@ -379,6 +386,6 @@
       "gm": 23
     }
   ],
-  "updated_at": "2026-08-22T17:33:30.300552-03:00",
+  "updated_at": "2026-08-22T17:53:30.762156-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
