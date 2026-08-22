@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 24,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-08-22T02:59:44.160Z",
+  "atualizado_em": "2026-08-22T03:09:44.657Z",
   "dados": [
     {
       "RODADA": 24,
@@ -25,7 +25,7 @@
       "NOME": "Igor Vinícius",
       "CLUBE": "SAN",
       "PRECO": 10.68,
-      "EXP_SCORE": 5.1344,
+      "EXP_SCORE": 5.7049,
       "ATLETA_ID": 95466
     },
     {
@@ -36,7 +36,7 @@
       "NOME": "Escobar",
       "CLUBE": "SAN",
       "PRECO": 10.8,
-      "EXP_SCORE": 5.293,
+      "EXP_SCORE": 5.8811,
       "ATLETA_ID": 102975
     },
     {
@@ -47,7 +47,7 @@
       "NOME": "Jacy",
       "CLUBE": "CFC",
       "PRECO": 6.39,
-      "EXP_SCORE": 3.8103,
+      "EXP_SCORE": 4.3818,
       "ATLETA_ID": 97878
     },
     {
@@ -58,7 +58,7 @@
       "NOME": "Luan Peres",
       "CLUBE": "SAN",
       "PRECO": 6.11,
-      "EXP_SCORE": 2.1941,
+      "EXP_SCORE": 2.8035,
       "ATLETA_ID": 84847
     },
     {
@@ -69,7 +69,7 @@
       "NOME": "Giovanni Augusto",
       "CLUBE": "CHA",
       "PRECO": 7.19,
-      "EXP_SCORE": 3.0229,
+      "EXP_SCORE": 3.4764,
       "ATLETA_ID": 68938
     },
     {
@@ -77,22 +77,33 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "José Welison",
-      "CLUBE": "REM",
-      "PRECO": 3.87,
-      "EXP_SCORE": 2.6247,
-      "ATLETA_ID": 86859
+      "NOME": "Acevedo",
+      "CLUBE": "BAH",
+      "PRECO": 8.76,
+      "EXP_SCORE": 4.9148,
+      "ATLETA_ID": 104783
     },
     {
       "RODADA": 24,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Zé Vitor",
+      "NOME": "Matheuzinho",
       "CLUBE": "VIT",
-      "PRECO": 6.21,
-      "EXP_SCORE": 3.5682,
-      "ATLETA_ID": 107256
+      "PRECO": 7.07,
+      "EXP_SCORE": 3.9681,
+      "ATLETA_ID": 90703
+    },
+    {
+      "RODADA": 24,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Cuello",
+      "CLUBE": "CAM",
+      "PRECO": 11.49,
+      "EXP_SCORE": 6.3537,
+      "ATLETA_ID": 98909
     },
     {
       "RODADA": 24,
@@ -120,23 +131,12 @@
       "RODADA": 24,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Cuello",
-      "CLUBE": "CAM",
-      "PRECO": 11.49,
-      "EXP_SCORE": 4.9725,
-      "ATLETA_ID": 98909
-    },
-    {
-      "RODADA": 24,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Odair Hellmann",
-      "CLUBE": "CAP",
-      "PRECO": 9.02,
-      "EXP_SCORE": 6.1209,
-      "ATLETA_ID": 92273
+      "NOME": "Jair Ventura",
+      "CLUBE": "VIT",
+      "PRECO": 8.98,
+      "EXP_SCORE": 4.6419,
+      "ATLETA_ID": 92180
     },
     {
       "RODADA": 24,
@@ -154,33 +154,33 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "LAT",
-      "NOME": "Bernabei",
-      "CLUBE": "INT",
-      "PRECO": 9.63,
-      "EXP_SCORE": 5.1083,
-      "ATLETA_ID": 110426
+      "NOME": "Renê",
+      "CLUBE": "FLU",
+      "PRECO": 10,
+      "EXP_SCORE": 5.1879,
+      "ATLETA_ID": 78445
     },
     {
       "RODADA": 24,
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Aguirre",
-      "CLUBE": "CAP",
-      "PRECO": 5.52,
-      "EXP_SCORE": 3.0477,
-      "ATLETA_ID": 123869
+      "NOME": "Tiago Cóser",
+      "CLUBE": "CFC",
+      "PRECO": 4.78,
+      "EXP_SCORE": 3.1583,
+      "ATLETA_ID": 109127
     },
     {
       "RODADA": 24,
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Sebastián Gómez",
-      "CLUBE": "CFC",
-      "PRECO": 3.73,
-      "EXP_SCORE": 2.1484,
-      "ATLETA_ID": 104811
+      "NOME": "Willian Arão",
+      "CLUBE": "SAN",
+      "PRECO": 6.57,
+      "EXP_SCORE": 3.6572,
+      "ATLETA_ID": 78478
     },
     {
       "RODADA": 24,
@@ -190,7 +190,7 @@
       "NOME": "Herrera",
       "CLUBE": "RBB",
       "PRECO": 4.56,
-      "EXP_SCORE": 1.9922,
+      "EXP_SCORE": 2.2135,
       "ATLETA_ID": 123738
     }
   ]
