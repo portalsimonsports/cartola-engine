@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 24,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-08-22T00:09:45.241Z",
+  "atualizado_em": "2026-08-22T00:59:43.949Z",
   "dados": [
     {
       "RODADA": 24,
@@ -110,17 +110,6 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Tarzia",
-      "CLUBE": "VIT",
-      "PRECO": 4.67,
-      "EXP_SCORE": 3.3508,
-      "ATLETA_ID": 143153
-    },
-    {
-      "RODADA": 24,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
       "NOME": "Marcinho",
       "CLUBE": "CHA",
       "PRECO": 5.36,
@@ -131,12 +120,23 @@
       "RODADA": 24,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Pedro",
+      "CLUBE": "FLA",
+      "PRECO": 18.08,
+      "EXP_SCORE": 7.8888,
+      "ATLETA_ID": 94583
+    },
+    {
+      "RODADA": 24,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Cuca",
-      "CLUBE": "SAN",
-      "PRECO": 10.71,
-      "EXP_SCORE": 5.1492,
-      "ATLETA_ID": 42411
+      "NOME": "Rafael Guanaes",
+      "CLUBE": "MIR",
+      "PRECO": 6.97,
+      "EXP_SCORE": 3.0872,
+      "ATLETA_ID": 104027
     },
     {
       "RODADA": 24,
@@ -187,11 +187,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Herrera",
-      "CLUBE": "RBB",
-      "PRECO": 4.56,
-      "EXP_SCORE": 2.2128,
-      "ATLETA_ID": 123738
+      "NOME": "Tarzia",
+      "CLUBE": "VIT",
+      "PRECO": 4.67,
+      "EXP_SCORE": 2.9138,
+      "ATLETA_ID": 143153
     }
   ]
 }
