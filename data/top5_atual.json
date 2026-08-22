@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 24,
-  "atualizado_em": "2026-08-22T14:44:46.508Z",
+  "atualizado_em": "2026-08-22T14:55:12.966Z",
   "dados": [
     {
       "RODADA": 24,
@@ -21,7 +21,7 @@
       "NOME": "Lucas Arcanjo",
       "CLUBE": "VIT",
       "PRECO": 9.76,
-      "EXP_SCORE": 4.2757,
+      "EXP_SCORE": 3.8481,
       "FACTOR": 1.1198437564030994,
       "ATLETA_ID": 104118
     },
@@ -48,12 +48,12 @@
     {
       "RODADA": 24,
       "POS": "GOL",
-      "NOME": "Santos",
-      "CLUBE": "CAP",
-      "PRECO": 8.38,
-      "EXP_SCORE": 3.223,
-      "FACTOR": 0.9375576042746631,
-      "ATLETA_ID": 69012
+      "NOME": "Rossi",
+      "CLUBE": "FLA",
+      "PRECO": 8.57,
+      "EXP_SCORE": 3.2762,
+      "FACTOR": 0.9358137773224462,
+      "ATLETA_ID": 99552
     },
     {
       "RODADA": 24,
@@ -64,16 +64,6 @@
       "EXP_SCORE": 6.1805,
       "FACTOR": 1.1478356831301724,
       "ATLETA_ID": 94968
-    },
-    {
-      "RODADA": 24,
-      "POS": "LAT",
-      "NOME": "Escobar",
-      "CLUBE": "SAN",
-      "PRECO": 10.8,
-      "EXP_SCORE": 5.8811,
-      "FACTOR": 1.1999031403559357,
-      "ATLETA_ID": 102975
     },
     {
       "RODADA": 24,
@@ -107,6 +97,16 @@
     },
     {
       "RODADA": 24,
+      "POS": "LAT",
+      "NOME": "Escobar",
+      "CLUBE": "SAN",
+      "PRECO": 10.8,
+      "EXP_SCORE": 5.293,
+      "FACTOR": 1.1999031403559357,
+      "ATLETA_ID": 102975
+    },
+    {
+      "RODADA": 24,
       "POS": "ZAG",
       "NOME": "Gustavo Gómez",
       "CLUBE": "PAL",
@@ -121,7 +121,7 @@
       "NOME": "Jacy",
       "CLUBE": "CFC",
       "PRECO": 6.39,
-      "EXP_SCORE": 4.3818,
+      "EXP_SCORE": 3.8103,
       "FACTOR": 1.158150234039029,
       "ATLETA_ID": 97878
     },
@@ -211,7 +211,7 @@
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 12.88,
-      "EXP_SCORE": 8.8738,
+      "EXP_SCORE": 7.7163,
       "FACTOR": 0.9962870836023306,
       "ATLETA_ID": 143193
     },
@@ -248,12 +248,12 @@
     {
       "RODADA": 24,
       "POS": "ATA",
-      "NOME": "Hulk",
-      "CLUBE": "FLU",
-      "PRECO": 12.39,
-      "EXP_SCORE": 5.6253,
-      "FACTOR": 1.1401992738098665,
-      "ATLETA_ID": 39148
+      "NOME": "Flaco López",
+      "CLUBE": "PAL",
+      "PRECO": 13.77,
+      "EXP_SCORE": 5.5354,
+      "FACTOR": 1.098375459214514,
+      "ATLETA_ID": 113103
     },
     {
       "RODADA": 24,
