@@ -283,7 +283,7 @@
       "goleadores_fora": [],
       "hora": "16:00",
       "link_resumo": "https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/23-08-2026/palmeiras-vasco.ghtml?utm_source=cartolafc",
-      "placar_casa": 3,
+      "placar_casa": 4,
       "placar_fora": 0,
       "status": "EM_ANDAMENTO"
     },
@@ -318,11 +318,19 @@
       "fora_nome": "Bahia",
       "fora_sigla": "BAH",
       "goleadores_casa": [],
-      "goleadores_fora": [],
+      "goleadores_fora": [
+        {
+          "clube_origem": "Bahia",
+          "gol_contra": false,
+          "nome": "A. Véliz",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "hora": "16:00",
       "link_resumo": "https://ge.globo.com/ba/futebol/brasileirao-serie-a/jogo/23-08-2026/vitoria-bahia.ghtml?utm_source=cartolafc",
       "placar_casa": 0,
-      "placar_fora": 0,
+      "placar_fora": 1,
       "status": "EM_ANDAMENTO"
     },
     "SANxMIR": {
@@ -389,8 +397,8 @@
       "pos": 1,
       "pts": 51,
       "v": 15,
-      "saldo": 24,
-      "gm": 43
+      "saldo": 25,
+      "gm": 44
     },
     {
       "nome": "FLA",
@@ -425,8 +433,16 @@
       "gm": 34
     },
     {
-      "nome": "RBB",
+      "nome": "BAH",
       "pos": 6,
+      "pts": 34,
+      "v": 8,
+      "saldo": 3,
+      "gm": 31
+    },
+    {
+      "nome": "RBB",
+      "pos": 7,
       "pts": 33,
       "v": 9,
       "saldo": 4,
@@ -434,7 +450,7 @@
     },
     {
       "nome": "CAM",
-      "pos": 7,
+      "pos": 8,
       "pts": 33,
       "v": 9,
       "saldo": 3,
@@ -442,19 +458,11 @@
     },
     {
       "nome": "COR",
-      "pos": 8,
+      "pos": 9,
       "pts": 32,
       "v": 8,
       "saldo": 3,
       "gm": 25
-    },
-    {
-      "nome": "BAH",
-      "pos": 9,
-      "pts": 32,
-      "v": 7,
-      "saldo": 2,
-      "gm": 30
     },
     {
       "nome": "CFC",
@@ -475,9 +483,9 @@
     {
       "nome": "VIT",
       "pos": 12,
-      "pts": 29,
+      "pts": 28,
       "v": 8,
-      "saldo": -10,
+      "saldo": -11,
       "gm": 23
     },
     {
@@ -533,7 +541,7 @@
       "pos": 19,
       "pts": 22,
       "v": 5,
-      "saldo": -14,
+      "saldo": -15,
       "gm": 23
     },
     {
@@ -545,6 +553,6 @@
       "gm": 23
     }
   ],
-  "updated_at": "2026-08-23T17:23:14.489406-03:00",
+  "updated_at": "2026-08-23T17:33:34.645806-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
