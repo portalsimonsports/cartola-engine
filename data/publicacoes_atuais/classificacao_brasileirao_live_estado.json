@@ -183,7 +183,7 @@
       "link_resumo": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/22-08-2026/fluminense-remo.ghtml?utm_source=cartolafc",
       "placar_casa": 2,
       "placar_fora": 1,
-      "status": "EM_ANDAMENTO"
+      "status": "ENCERRADA"
     },
     "INTxCAM": {
       "casa_id": "285",
@@ -202,7 +202,7 @@
       "link_resumo": "https://ge.globo.com/rs/futebol/brasileirao-serie-a/jogo/22-08-2026/internacional-atletico-mg.ghtml?utm_source=cartolafc",
       "placar_casa": 0,
       "placar_fora": 0,
-      "status": "CRIADA"
+      "status": "ENCERRADA"
     },
     "CRUxFLA": {
       "casa_id": "283",
@@ -244,7 +244,7 @@
       "link_resumo": "https://ge.globo.com/mg/futebol/brasileirao-serie-a/jogo/22-08-2026/cruzeiro-flamengo.ghtml?utm_source=cartolafc",
       "placar_casa": 2,
       "placar_fora": 1,
-      "status": "EM_ANDAMENTO"
+      "status": "ENCERRADA"
     }
   },
   "last_signature": [
@@ -289,20 +289,20 @@
       "gm": 34
     },
     {
-      "nome": "RBB",
+      "nome": "CAM",
       "pos": 6,
+      "pts": 33,
+      "v": 9,
+      "saldo": 3,
+      "gm": 30
+    },
+    {
+      "nome": "RBB",
+      "pos": 7,
       "pts": 32,
       "v": 9,
       "saldo": 4,
       "gm": 27
-    },
-    {
-      "nome": "CAM",
-      "pos": 7,
-      "pts": 32,
-      "v": 9,
-      "saldo": 3,
-      "gm": 30
     },
     {
       "nome": "COR",
@@ -371,7 +371,7 @@
     {
       "nome": "INT",
       "pos": 16,
-      "pts": 24,
+      "pts": 25,
       "v": 5,
       "saldo": -4,
       "gm": 24
@@ -409,6 +409,6 @@
       "gm": 23
     }
   ],
-  "updated_at": "2026-08-22T22:33:23.667408-03:00",
+  "updated_at": "2026-08-22T22:43:54.498579-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
