@@ -257,11 +257,26 @@
       "fora_id": "267",
       "fora_nome": "Vasco",
       "fora_sigla": "VAS",
-      "goleadores_casa": [],
+      "goleadores_casa": [
+        {
+          "clube_origem": "Palmeiras",
+          "gol_contra": false,
+          "nome": "F. López",
+          "quantidade": 1,
+          "tipo": "gol"
+        },
+        {
+          "clube_origem": "Palmeiras",
+          "gol_contra": false,
+          "nome": "V. Roque",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "goleadores_fora": [],
       "hora": "16:00",
       "link_resumo": "https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/23-08-2026/palmeiras-vasco.ghtml?utm_source=cartolafc",
-      "placar_casa": 0,
+      "placar_casa": 1,
       "placar_fora": 0,
       "status": "EM_ANDAMENTO"
     },
@@ -365,10 +380,10 @@
     {
       "nome": "PAL",
       "pos": 1,
-      "pts": 49,
-      "v": 14,
-      "saldo": 21,
-      "gm": 40
+      "pts": 51,
+      "v": 15,
+      "saldo": 22,
+      "gm": 41
     },
     {
       "nome": "FLA",
@@ -509,9 +524,9 @@
     {
       "nome": "VAS",
       "pos": 19,
-      "pts": 23,
+      "pts": 22,
       "v": 5,
-      "saldo": -11,
+      "saldo": -12,
       "gm": 23
     },
     {
@@ -523,6 +538,6 @@
       "gm": 23
     }
   ],
-  "updated_at": "2026-08-23T16:04:12.350148-03:00",
+  "updated_at": "2026-08-23T17:13:33.552422-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
