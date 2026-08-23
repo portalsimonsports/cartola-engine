@@ -219,6 +219,13 @@
         {
           "clube_origem": "Cruzeiro",
           "gol_contra": false,
+          "nome": "M. Pereira",
+          "quantidade": 1,
+          "tipo": "gol"
+        },
+        {
+          "clube_origem": "Cruzeiro",
+          "gol_contra": false,
           "nome": "Arroyo",
           "quantidade": 1,
           "tipo": "gol"
@@ -235,7 +242,7 @@
       ],
       "hora": "20:30",
       "link_resumo": "https://ge.globo.com/mg/futebol/brasileirao-serie-a/jogo/22-08-2026/cruzeiro-flamengo.ghtml?utm_source=cartolafc",
-      "placar_casa": 1,
+      "placar_casa": 2,
       "placar_fora": 1,
       "status": "EM_ANDAMENTO"
     }
@@ -252,9 +259,9 @@
     {
       "nome": "FLA",
       "pos": 2,
-      "pts": 46,
+      "pts": 45,
       "v": 13,
-      "saldo": 25,
+      "saldo": 24,
       "gm": 45
     },
     {
@@ -276,10 +283,10 @@
     {
       "nome": "CRU",
       "pos": 5,
-      "pts": 37,
-      "v": 10,
-      "saldo": 0,
-      "gm": 33
+      "pts": 39,
+      "v": 11,
+      "saldo": 1,
+      "gm": 34
     },
     {
       "nome": "RBB",
@@ -402,6 +409,6 @@
       "gm": 23
     }
   ],
-  "updated_at": "2026-08-22T21:53:33.428207-03:00",
+  "updated_at": "2026-08-22T22:33:23.667408-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
