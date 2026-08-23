@@ -298,11 +298,19 @@
       "fora_id": "284",
       "fora_nome": "GRÊMIO",
       "fora_sigla": "GRE",
-      "goleadores_casa": [],
+      "goleadores_casa": [
+        {
+          "clube_origem": "RB Bragantino",
+          "gol_contra": false,
+          "nome": "G. Marques",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "goleadores_fora": [],
       "hora": "16:00",
       "link_resumo": "https://ge.globo.com/sp/vale-do-paraiba-regiao/futebol/brasileirao-serie-a/jogo/23-08-2026/bragantino-gremio.ghtml?utm_source=cartolafc",
-      "placar_casa": 0,
+      "placar_casa": 1,
       "placar_fora": 0,
       "status": "EM_ANDAMENTO"
     },
@@ -433,20 +441,20 @@
       "gm": 34
     },
     {
-      "nome": "BAH",
+      "nome": "RBB",
       "pos": 6,
+      "pts": 35,
+      "v": 10,
+      "saldo": 5,
+      "gm": 28
+    },
+    {
+      "nome": "BAH",
+      "pos": 7,
       "pts": 34,
       "v": 8,
       "saldo": 3,
       "gm": 31
-    },
-    {
-      "nome": "RBB",
-      "pos": 7,
-      "pts": 33,
-      "v": 9,
-      "saldo": 4,
-      "gm": 27
     },
     {
       "nome": "CAM",
@@ -497,20 +505,20 @@
       "gm": 27
     },
     {
-      "nome": "GRE",
-      "pos": 14,
-      "pts": 26,
-      "v": 6,
-      "saldo": -6,
-      "gm": 24
-    },
-    {
       "nome": "SAN",
-      "pos": 15,
+      "pos": 14,
       "pts": 25,
       "v": 6,
       "saldo": -3,
       "gm": 32
+    },
+    {
+      "nome": "GRE",
+      "pos": 15,
+      "pts": 25,
+      "v": 6,
+      "saldo": -7,
+      "gm": 24
     },
     {
       "nome": "INT",
@@ -553,6 +561,6 @@
       "gm": 23
     }
   ],
-  "updated_at": "2026-08-23T17:53:27.417308-03:00",
+  "updated_at": "2026-08-23T18:13:24.094535-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
