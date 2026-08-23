@@ -371,13 +371,21 @@
       "fora_id": "276",
       "fora_nome": "SÃO PAULO",
       "fora_sigla": "SAO",
-      "goleadores_casa": [],
+      "goleadores_casa": [
+        {
+          "clube_origem": "Chapecoense",
+          "gol_contra": false,
+          "nome": "B. Pacheco",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "goleadores_fora": [],
       "hora": "18:30",
       "link_resumo": "https://ge.globo.com/sc/futebol/brasileirao-serie-a/jogo/23-08-2026/chapecoense-sao-paulo.ghtml?utm_source=cartolafc",
-      "placar_casa": 0,
+      "placar_casa": 1,
       "placar_fora": 0,
-      "status": "CRIADA"
+      "status": "EM_ANDAMENTO"
     },
     "CFCxCOR": {
       "casa_id": "294",
@@ -501,7 +509,7 @@
       "pos": 13,
       "pts": 27,
       "v": 7,
-      "saldo": 1,
+      "saldo": 0,
       "gm": 27
     },
     {
@@ -555,12 +563,12 @@
     {
       "nome": "CHA",
       "pos": 20,
-      "pts": 11,
-      "v": 1,
-      "saldo": -21,
-      "gm": 23
+      "pts": 14,
+      "v": 2,
+      "saldo": -20,
+      "gm": 24
     }
   ],
-  "updated_at": "2026-08-23T18:13:24.094535-03:00",
+  "updated_at": "2026-08-23T19:13:34.338474-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
