@@ -215,13 +215,29 @@
       "fora_id": "262",
       "fora_nome": "Flamengo",
       "fora_sigla": "FLA",
-      "goleadores_casa": [],
-      "goleadores_fora": [],
+      "goleadores_casa": [
+        {
+          "clube_origem": "Cruzeiro",
+          "gol_contra": false,
+          "nome": "Arroyo",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
+      "goleadores_fora": [
+        {
+          "clube_origem": "Flamengo",
+          "gol_contra": false,
+          "nome": "Pedro",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "hora": "20:30",
       "link_resumo": "https://ge.globo.com/mg/futebol/brasileirao-serie-a/jogo/22-08-2026/cruzeiro-flamengo.ghtml?utm_source=cartolafc",
-      "placar_casa": 0,
-      "placar_fora": 0,
-      "status": "CRIADA"
+      "placar_casa": 1,
+      "placar_fora": 1,
+      "status": "EM_ANDAMENTO"
     }
   },
   "last_signature": [
@@ -236,10 +252,10 @@
     {
       "nome": "FLA",
       "pos": 2,
-      "pts": 45,
+      "pts": 46,
       "v": 13,
       "saldo": 25,
-      "gm": 44
+      "gm": 45
     },
     {
       "nome": "CAP",
@@ -260,10 +276,10 @@
     {
       "nome": "CRU",
       "pos": 5,
-      "pts": 36,
+      "pts": 37,
       "v": 10,
       "saldo": 0,
-      "gm": 32
+      "gm": 33
     },
     {
       "nome": "RBB",
@@ -386,6 +402,6 @@
       "gm": 23
     }
   ],
-  "updated_at": "2026-08-22T17:53:30.762156-03:00",
+  "updated_at": "2026-08-22T21:53:33.428207-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
