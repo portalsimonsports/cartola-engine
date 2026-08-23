@@ -261,6 +261,13 @@
         {
           "clube_origem": "Palmeiras",
           "gol_contra": false,
+          "nome": "Maurício",
+          "quantidade": 1,
+          "tipo": "gol"
+        },
+        {
+          "clube_origem": "Palmeiras",
+          "gol_contra": false,
           "nome": "F. López",
           "quantidade": 1,
           "tipo": "gol"
@@ -276,7 +283,7 @@
       "goleadores_fora": [],
       "hora": "16:00",
       "link_resumo": "https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/23-08-2026/palmeiras-vasco.ghtml?utm_source=cartolafc",
-      "placar_casa": 1,
+      "placar_casa": 3,
       "placar_fora": 0,
       "status": "EM_ANDAMENTO"
     },
@@ -382,8 +389,8 @@
       "pos": 1,
       "pts": 51,
       "v": 15,
-      "saldo": 22,
-      "gm": 41
+      "saldo": 24,
+      "gm": 43
     },
     {
       "nome": "FLA",
@@ -526,7 +533,7 @@
       "pos": 19,
       "pts": 22,
       "v": 5,
-      "saldo": -12,
+      "saldo": -14,
       "gm": 23
     },
     {
@@ -538,6 +545,6 @@
       "gm": 23
     }
   ],
-  "updated_at": "2026-08-23T17:13:33.552422-03:00",
+  "updated_at": "2026-08-23T17:23:14.489406-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
