@@ -38,7 +38,9 @@ function PSS_LIVE_V127_upsertConfig_(chave, valor) {
 
 function PSS_LIVE_V127_garantirConfig_() {
   PSS_LIVE_V127_upsertConfig_("TG_ENVIAR", "SIM");
-  PSS_LIVE_V127_upsertConfig_("JOB_TELEGRAM", "SIM");
+  // O dispatcher textual legado deve permanecer desligado. As imagens e vídeos
+  // seguem por GitHub/Telegram em seus fluxos próprios.
+  PSS_LIVE_V127_upsertConfig_("JOB_TELEGRAM", "NAO");
   PSS_LIVE_V127_upsertConfig_("NOTIF_MERCADO", "NAO");
   // Publicação antiga em texto deve permanecer DESATIVADA.
   // As imagens dos times seguem pelo fluxo GitHub.
@@ -196,6 +198,8 @@ function PSS_LIVE_IMAGENS_V127_INSTALAR() {
     var nome = String(trigger.getHandlerFunction() || "");
     if (
       nome === "publicarResumoLive" ||
+      nome === "jobTelegramDispatcher" ||
+      nome === "jobTelegramDispatcherProgramado" ||
       nome === "PSS_LIVE_IMAGENS_V125_EXECUTAR" ||
       nome === "PSS_LIVE_IMAGENS_V126_EXECUTAR" ||
       nome === "PSS_LIVE_IMAGENS_V127_EXECUTAR"
@@ -223,6 +227,7 @@ function PSS_LIVE_IMAGENS_V127_INSTALAR() {
     intervalo_minutos: PSS_LIVE_V127.INTERVALO_MINUTOS,
     acionadores_antigos_removidos: removidos,
     qualquer_texto_telegram: "BLOQUEADO",
+    job_telegram: "NAO",
     notif_mercado: "NAO",
     notif_times: "NAO",
     notif_top5: "NAO",
