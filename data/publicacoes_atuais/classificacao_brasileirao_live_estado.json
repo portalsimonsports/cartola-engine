@@ -245,13 +245,127 @@
       "placar_casa": 2,
       "placar_fora": 1,
       "status": "ENCERRADA"
+    },
+    "PALxVAS": {
+      "casa_id": "275",
+      "casa_nome": "Palmeiras",
+      "casa_sigla": "PAL",
+      "chave": "MjAyNi0wOC0yMyAxNjowMHwyNzV8MjY3",
+      "data": "23/08",
+      "data_iso": "2026-08-23T19:00:00.000Z",
+      "estadio": "Nubank Parque",
+      "fora_id": "267",
+      "fora_nome": "Vasco",
+      "fora_sigla": "VAS",
+      "goleadores_casa": [],
+      "goleadores_fora": [],
+      "hora": "16:00",
+      "link_resumo": "https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/23-08-2026/palmeiras-vasco.ghtml?utm_source=cartolafc",
+      "placar_casa": 0,
+      "placar_fora": 0,
+      "status": "EM_ANDAMENTO"
+    },
+    "RBBxGRE": {
+      "casa_id": "280",
+      "casa_nome": "RB Bragantino",
+      "casa_sigla": "RBB",
+      "chave": "MjAyNi0wOC0yMyAxNjowMHwyODB8Mjg0",
+      "data": "23/08",
+      "data_iso": "2026-08-23T19:00:00.000Z",
+      "estadio": "Cícero de Souza Marques",
+      "fora_id": "284",
+      "fora_nome": "GRÊMIO",
+      "fora_sigla": "GRE",
+      "goleadores_casa": [],
+      "goleadores_fora": [],
+      "hora": "16:00",
+      "link_resumo": "https://ge.globo.com/sp/vale-do-paraiba-regiao/futebol/brasileirao-serie-a/jogo/23-08-2026/bragantino-gremio.ghtml?utm_source=cartolafc",
+      "placar_casa": 0,
+      "placar_fora": 0,
+      "status": "EM_ANDAMENTO"
+    },
+    "VITxBAH": {
+      "casa_id": "287",
+      "casa_nome": "VITÓRIA",
+      "casa_sigla": "VIT",
+      "chave": "MjAyNi0wOC0yMyAxNjowMHwyODd8MjY1",
+      "data": "23/08",
+      "data_iso": "2026-08-23T19:00:00.000Z",
+      "estadio": "Barradão",
+      "fora_id": "265",
+      "fora_nome": "Bahia",
+      "fora_sigla": "BAH",
+      "goleadores_casa": [],
+      "goleadores_fora": [],
+      "hora": "16:00",
+      "link_resumo": "https://ge.globo.com/ba/futebol/brasileirao-serie-a/jogo/23-08-2026/vitoria-bahia.ghtml?utm_source=cartolafc",
+      "placar_casa": 0,
+      "placar_fora": 0,
+      "status": "EM_ANDAMENTO"
+    },
+    "SANxMIR": {
+      "casa_id": "277",
+      "casa_nome": "Santos",
+      "casa_sigla": "SAN",
+      "chave": "MjAyNi0wOC0yMyAxODozMHwyNzd8MjMwNQ",
+      "data": "23/08",
+      "data_iso": "2026-08-23T21:30:00.000Z",
+      "estadio": "Vila Belmiro",
+      "fora_id": "2305",
+      "fora_nome": "Mirassol",
+      "fora_sigla": "MIR",
+      "goleadores_casa": [],
+      "goleadores_fora": [],
+      "hora": "18:30",
+      "link_resumo": "https://ge.globo.com/sp/santos-e-regiao/futebol/brasileirao-serie-a/jogo/23-08-2026/santos-mirassol.ghtml?utm_source=cartolafc",
+      "placar_casa": 0,
+      "placar_fora": 0,
+      "status": "CRIADA"
+    },
+    "CHAxSAO": {
+      "casa_id": "315",
+      "casa_nome": "Chapecoense",
+      "casa_sigla": "CHA",
+      "chave": "MjAyNi0wOC0yMyAxODozMHwzMTV8Mjc2",
+      "data": "23/08",
+      "data_iso": "2026-08-23T21:30:00.000Z",
+      "estadio": "Arena Condá",
+      "fora_id": "276",
+      "fora_nome": "SÃO PAULO",
+      "fora_sigla": "SAO",
+      "goleadores_casa": [],
+      "goleadores_fora": [],
+      "hora": "18:30",
+      "link_resumo": "https://ge.globo.com/sc/futebol/brasileirao-serie-a/jogo/23-08-2026/chapecoense-sao-paulo.ghtml?utm_source=cartolafc",
+      "placar_casa": 0,
+      "placar_fora": 0,
+      "status": "CRIADA"
+    },
+    "CFCxCOR": {
+      "casa_id": "294",
+      "casa_nome": "Coritiba",
+      "casa_sigla": "CFC",
+      "chave": "MjAyNi0wOC0yMyAxOTozMHwyOTR8MjY0",
+      "data": "23/08",
+      "data_iso": "2026-08-23T22:30:00.000Z",
+      "estadio": "Couto Pereira",
+      "fora_id": "264",
+      "fora_nome": "Corinthians",
+      "fora_sigla": "COR",
+      "goleadores_casa": [],
+      "goleadores_fora": [],
+      "hora": "19:30",
+      "link_resumo": "https://ge.globo.com/pr/futebol/brasileirao-serie-a/jogo/23-08-2026/coritiba-corinthians.ghtml?utm_source=cartolafc",
+      "placar_casa": 0,
+      "placar_fora": 0,
+      "status": "CRIADA"
     }
   },
   "last_signature": [
     {
       "nome": "PAL",
       "pos": 1,
-      "pts": 48,
+      "pts": 49,
       "v": 14,
       "saldo": 21,
       "gm": 40
@@ -289,20 +403,20 @@
       "gm": 34
     },
     {
-      "nome": "CAM",
+      "nome": "RBB",
       "pos": 6,
+      "pts": 33,
+      "v": 9,
+      "saldo": 4,
+      "gm": 27
+    },
+    {
+      "nome": "CAM",
+      "pos": 7,
       "pts": 33,
       "v": 9,
       "saldo": 3,
       "gm": 30
-    },
-    {
-      "nome": "RBB",
-      "pos": 7,
-      "pts": 32,
-      "v": 9,
-      "saldo": 4,
-      "gm": 27
     },
     {
       "nome": "COR",
@@ -313,20 +427,20 @@
       "gm": 25
     },
     {
-      "nome": "CFC",
+      "nome": "BAH",
       "pos": 9,
+      "pts": 32,
+      "v": 7,
+      "saldo": 2,
+      "gm": 30
+    },
+    {
+      "nome": "CFC",
+      "pos": 10,
       "pts": 31,
       "v": 8,
       "saldo": -2,
       "gm": 28
-    },
-    {
-      "nome": "BAH",
-      "pos": 10,
-      "pts": 31,
-      "v": 7,
-      "saldo": 2,
-      "gm": 30
     },
     {
       "nome": "BOT",
@@ -339,7 +453,7 @@
     {
       "nome": "VIT",
       "pos": 12,
-      "pts": 28,
+      "pts": 29,
       "v": 8,
       "saldo": -10,
       "gm": 23
@@ -353,20 +467,20 @@
       "gm": 27
     },
     {
-      "nome": "SAN",
+      "nome": "GRE",
       "pos": 14,
+      "pts": 26,
+      "v": 6,
+      "saldo": -6,
+      "gm": 24
+    },
+    {
+      "nome": "SAN",
+      "pos": 15,
       "pts": 25,
       "v": 6,
       "saldo": -3,
       "gm": 32
-    },
-    {
-      "nome": "GRE",
-      "pos": 15,
-      "pts": 25,
-      "v": 6,
-      "saldo": -6,
-      "gm": 24
     },
     {
       "nome": "INT",
@@ -395,7 +509,7 @@
     {
       "nome": "VAS",
       "pos": 19,
-      "pts": 22,
+      "pts": 23,
       "v": 5,
       "saldo": -11,
       "gm": 23
@@ -409,6 +523,6 @@
       "gm": 23
     }
   ],
-  "updated_at": "2026-08-22T22:43:54.498579-03:00",
+  "updated_at": "2026-08-23T16:04:12.350148-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
