@@ -353,12 +353,20 @@
       "fora_nome": "Mirassol",
       "fora_sigla": "MIR",
       "goleadores_casa": [],
-      "goleadores_fora": [],
+      "goleadores_fora": [
+        {
+          "clube_origem": "Mirassol",
+          "gol_contra": false,
+          "nome": "Eduardo",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "hora": "18:30",
       "link_resumo": "https://ge.globo.com/sp/santos-e-regiao/futebol/brasileirao-serie-a/jogo/23-08-2026/santos-mirassol.ghtml?utm_source=cartolafc",
       "placar_casa": 0,
-      "placar_fora": 0,
-      "status": "CRIADA"
+      "placar_fora": 1,
+      "status": "EM_ANDAMENTO"
     },
     "CHAxSAO": {
       "casa_id": "315",
@@ -513,16 +521,24 @@
       "gm": 27
     },
     {
-      "nome": "SAN",
+      "nome": "MIR",
       "pos": 14,
+      "pts": 26,
+      "v": 7,
+      "saldo": -9,
+      "gm": 26
+    },
+    {
+      "nome": "SAN",
+      "pos": 15,
       "pts": 25,
       "v": 6,
-      "saldo": -3,
+      "saldo": -4,
       "gm": 32
     },
     {
       "nome": "GRE",
-      "pos": 15,
+      "pos": 16,
       "pts": 25,
       "v": 6,
       "saldo": -7,
@@ -530,19 +546,11 @@
     },
     {
       "nome": "INT",
-      "pos": 16,
+      "pos": 17,
       "pts": 25,
       "v": 5,
       "saldo": -4,
       "gm": 24
-    },
-    {
-      "nome": "MIR",
-      "pos": 17,
-      "pts": 23,
-      "v": 6,
-      "saldo": -10,
-      "gm": 25
     },
     {
       "nome": "REM",
@@ -569,6 +577,6 @@
       "gm": 24
     }
   ],
-  "updated_at": "2026-08-23T19:13:34.338474-03:00",
+  "updated_at": "2026-08-23T19:23:17.063865-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
