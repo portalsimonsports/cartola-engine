@@ -280,12 +280,20 @@
           "tipo": "gol"
         }
       ],
-      "goleadores_fora": [],
+      "goleadores_fora": [
+        {
+          "clube_origem": "Vasco",
+          "gol_contra": false,
+          "nome": "Colidio",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "hora": "16:00",
       "link_resumo": "https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/23-08-2026/palmeiras-vasco.ghtml?utm_source=cartolafc",
       "placar_casa": 4,
-      "placar_fora": 0,
-      "status": "EM_ANDAMENTO"
+      "placar_fora": 1,
+      "status": "ENCERRADA"
     },
     "RBBxGRE": {
       "casa_id": "280",
@@ -312,7 +320,7 @@
       "link_resumo": "https://ge.globo.com/sp/vale-do-paraiba-regiao/futebol/brasileirao-serie-a/jogo/23-08-2026/bragantino-gremio.ghtml?utm_source=cartolafc",
       "placar_casa": 1,
       "placar_fora": 0,
-      "status": "EM_ANDAMENTO"
+      "status": "ENCERRADA"
     },
     "VITxBAH": {
       "casa_id": "287",
@@ -330,6 +338,13 @@
         {
           "clube_origem": "Bahia",
           "gol_contra": false,
+          "nome": "J. Lucas",
+          "quantidade": 1,
+          "tipo": "gol"
+        },
+        {
+          "clube_origem": "Bahia",
+          "gol_contra": false,
           "nome": "A. Véliz",
           "quantidade": 1,
           "tipo": "gol"
@@ -338,8 +353,8 @@
       "hora": "16:00",
       "link_resumo": "https://ge.globo.com/ba/futebol/brasileirao-serie-a/jogo/23-08-2026/vitoria-bahia.ghtml?utm_source=cartolafc",
       "placar_casa": 0,
-      "placar_fora": 1,
-      "status": "EM_ANDAMENTO"
+      "placar_fora": 2,
+      "status": "ENCERRADA"
     },
     "SANxMIR": {
       "casa_id": "277",
@@ -352,7 +367,15 @@
       "fora_id": "2305",
       "fora_nome": "Mirassol",
       "fora_sigla": "MIR",
-      "goleadores_casa": [],
+      "goleadores_casa": [
+        {
+          "clube_origem": "Santos",
+          "gol_contra": false,
+          "nome": "Barreal",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "goleadores_fora": [
         {
           "clube_origem": "Mirassol",
@@ -364,9 +387,9 @@
       ],
       "hora": "18:30",
       "link_resumo": "https://ge.globo.com/sp/santos-e-regiao/futebol/brasileirao-serie-a/jogo/23-08-2026/santos-mirassol.ghtml?utm_source=cartolafc",
-      "placar_casa": 0,
+      "placar_casa": 1,
       "placar_fora": 1,
-      "status": "EM_ANDAMENTO"
+      "status": "ENCERRADA"
     },
     "CHAxSAO": {
       "casa_id": "315",
@@ -393,7 +416,7 @@
       "link_resumo": "https://ge.globo.com/sc/futebol/brasileirao-serie-a/jogo/23-08-2026/chapecoense-sao-paulo.ghtml?utm_source=cartolafc",
       "placar_casa": 1,
       "placar_fora": 0,
-      "status": "EM_ANDAMENTO"
+      "status": "ENCERRADA"
     },
     "CFCxCOR": {
       "casa_id": "294",
@@ -406,13 +429,36 @@
       "fora_id": "264",
       "fora_nome": "Corinthians",
       "fora_sigla": "COR",
-      "goleadores_casa": [],
-      "goleadores_fora": [],
+      "goleadores_casa": [
+        {
+          "clube_origem": "Coritiba",
+          "gol_contra": false,
+          "nome": "P. Rocha",
+          "quantidade": 1,
+          "tipo": "gol"
+        },
+        {
+          "clube_origem": "Coritiba",
+          "gol_contra": false,
+          "nome": "P. Roberto",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
+      "goleadores_fora": [
+        {
+          "clube_origem": "Corinthians",
+          "gol_contra": false,
+          "nome": "Raniele",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "hora": "19:30",
       "link_resumo": "https://ge.globo.com/pr/futebol/brasileirao-serie-a/jogo/23-08-2026/coritiba-corinthians.ghtml?utm_source=cartolafc",
-      "placar_casa": 0,
-      "placar_fora": 0,
-      "status": "CRIADA"
+      "placar_casa": 2,
+      "placar_fora": 1,
+      "status": "ENCERRADA"
     }
   },
   "last_signature": [
@@ -421,7 +467,7 @@
       "pos": 1,
       "pts": 51,
       "v": 15,
-      "saldo": 25,
+      "saldo": 24,
       "gm": 44
     },
     {
@@ -465,16 +511,24 @@
       "gm": 28
     },
     {
-      "nome": "BAH",
+      "nome": "CFC",
       "pos": 7,
       "pts": 34,
+      "v": 9,
+      "saldo": -1,
+      "gm": 30
+    },
+    {
+      "nome": "BAH",
+      "pos": 8,
+      "pts": 34,
       "v": 8,
-      "saldo": 3,
-      "gm": 31
+      "saldo": 4,
+      "gm": 32
     },
     {
       "nome": "CAM",
-      "pos": 8,
+      "pos": 9,
       "pts": 33,
       "v": 9,
       "saldo": 3,
@@ -482,19 +536,11 @@
     },
     {
       "nome": "COR",
-      "pos": 9,
+      "pos": 10,
       "pts": 32,
       "v": 8,
-      "saldo": 3,
-      "gm": 25
-    },
-    {
-      "nome": "CFC",
-      "pos": 10,
-      "pts": 31,
-      "v": 8,
-      "saldo": -2,
-      "gm": 28
+      "saldo": 2,
+      "gm": 26
     },
     {
       "nome": "BOT",
@@ -509,7 +555,7 @@
       "pos": 12,
       "pts": 28,
       "v": 8,
-      "saldo": -11,
+      "saldo": -12,
       "gm": 23
     },
     {
@@ -521,24 +567,16 @@
       "gm": 27
     },
     {
-      "nome": "MIR",
+      "nome": "SAN",
       "pos": 14,
       "pts": 26,
-      "v": 7,
-      "saldo": -9,
-      "gm": 26
-    },
-    {
-      "nome": "SAN",
-      "pos": 15,
-      "pts": 25,
       "v": 6,
-      "saldo": -4,
-      "gm": 32
+      "saldo": -3,
+      "gm": 33
     },
     {
       "nome": "GRE",
-      "pos": 16,
+      "pos": 15,
       "pts": 25,
       "v": 6,
       "saldo": -7,
@@ -546,11 +584,19 @@
     },
     {
       "nome": "INT",
-      "pos": 17,
+      "pos": 16,
       "pts": 25,
       "v": 5,
       "saldo": -4,
       "gm": 24
+    },
+    {
+      "nome": "MIR",
+      "pos": 17,
+      "pts": 24,
+      "v": 6,
+      "saldo": -10,
+      "gm": 26
     },
     {
       "nome": "REM",
@@ -565,8 +611,8 @@
       "pos": 19,
       "pts": 22,
       "v": 5,
-      "saldo": -15,
-      "gm": 23
+      "saldo": -14,
+      "gm": 24
     },
     {
       "nome": "CHA",
@@ -577,6 +623,6 @@
       "gm": 24
     }
   ],
-  "updated_at": "2026-08-23T19:23:17.063865-03:00",
+  "updated_at": "2026-08-23T21:54:18.799513-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
