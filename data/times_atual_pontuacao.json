@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 25,
   "tipo": "PONTUACAO",
-  "atualizado_em": "2026-08-25T15:30:44.470Z",
+  "atualizado_em": "2026-08-25T15:45:08.838Z",
   "dados": [
     {
       "RODADA": 25,
@@ -66,17 +66,6 @@
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Arias",
-      "CLUBE": "PAL",
-      "PRECO": 14.45,
-      "EXP_SCORE": 7.674,
-      "ATLETA_ID": 99815
-    },
-    {
-      "RODADA": 25,
-      "TIPO": "PONTUACAO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
       "NOME": "Neymar",
       "CLUBE": "SAN",
       "PRECO": 19.92,
@@ -88,10 +77,21 @@
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "MEI",
+      "NOME": "Arias",
+      "CLUBE": "PAL",
+      "PRECO": 14.45,
+      "EXP_SCORE": 6.673,
+      "ATLETA_ID": 99815
+    },
+    {
+      "RODADA": 25,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 14.41,
-      "EXP_SCORE": 6.967,
+      "EXP_SCORE": 6.0582,
       "ATLETA_ID": 96610
     },
     {
@@ -143,11 +143,11 @@
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Rossi",
-      "CLUBE": "FLA",
-      "PRECO": 8.35,
-      "EXP_SCORE": 3.7836,
-      "ATLETA_ID": 99552
+      "NOME": "Marcelo Rangel",
+      "CLUBE": "REM",
+      "PRECO": 6.24,
+      "EXP_SCORE": 3.795,
+      "ATLETA_ID": 82730
     },
     {
       "RODADA": 25,
