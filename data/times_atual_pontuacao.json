@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 25,
   "tipo": "PONTUACAO",
-  "atualizado_em": "2026-08-25T16:05:06.988Z",
+  "atualizado_em": "2026-08-25T16:09:55.617Z",
   "dados": [
     {
       "RODADA": 25,
@@ -55,22 +55,11 @@
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "ZAG",
-      "NOME": "Aguirre",
-      "CLUBE": "CAP",
-      "PRECO": 6.13,
-      "EXP_SCORE": 3.8728,
-      "ATLETA_ID": 123869
-    },
-    {
-      "RODADA": 25,
-      "TIPO": "PONTUACAO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Arias",
-      "CLUBE": "PAL",
-      "PRECO": 14.45,
-      "EXP_SCORE": 7.674,
-      "ATLETA_ID": 99815
+      "NOME": "Gustavo Marques",
+      "CLUBE": "RBB",
+      "PRECO": 8.6,
+      "EXP_SCORE": 4.1852,
+      "ATLETA_ID": 110750
     },
     {
       "RODADA": 25,
@@ -88,10 +77,21 @@
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "MEI",
+      "NOME": "Arias",
+      "CLUBE": "PAL",
+      "PRECO": 14.45,
+      "EXP_SCORE": 6.673,
+      "ATLETA_ID": 99815
+    },
+    {
+      "RODADA": 25,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 14.41,
-      "EXP_SCORE": 6.967,
+      "EXP_SCORE": 6.0582,
       "ATLETA_ID": 96610
     },
     {
@@ -143,11 +143,11 @@
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Rossi",
-      "CLUBE": "FLA",
-      "PRECO": 8.35,
-      "EXP_SCORE": 3.7836,
-      "ATLETA_ID": 99552
+      "NOME": "Marcelo Rangel",
+      "CLUBE": "REM",
+      "PRECO": 6.24,
+      "EXP_SCORE": 3.795,
+      "ATLETA_ID": 82730
     },
     {
       "RODADA": 25,
@@ -165,11 +165,11 @@
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Arthur Dias",
+      "NOME": "Aguirre",
       "CLUBE": "CAP",
-      "PRECO": 5.95,
-      "EXP_SCORE": 3.2767,
-      "ATLETA_ID": 130843
+      "PRECO": 6.13,
+      "EXP_SCORE": 3.8728,
+      "ATLETA_ID": 123869
     },
     {
       "RODADA": 25,
