@@ -53,6 +53,10 @@ def num(v: Any) -> float:
         return 0.0
 
 
+def limpar_capitao(v: Any) -> str:
+    return re.sub(r"\s*\([^)]*\)\s*$", "", str(v or "").strip()).strip()
+
+
 def materializar_google() -> None:
     if GOOGLE_SERVICE_ACCOUNT_JSON:
         Path(GOOGLE_APPLICATION_CREDENTIALS).write_text(
@@ -99,25 +103,40 @@ def equipes_mitadas() -> List[Dict[str, Any]]:
     h, rows = rows_by_header(values("HIST_TIMES"))
     if not h:
         raise RuntimeError("HIST_TIMES sem cabeçalho")
+
+    print("HIST_TIMES cabeçalhos:", sorted(h.keys()))
     melhor: Dict[int, Dict[str, Any]] = {}
     for row in rows:
         rodada = int(num(getv(row, h, "RODADA")))
         if rodada <= 0:
             continue
-        tipo = norm(getv(row, h, "TIPO", "ORIGEM"))
-        pontos = num(getv(row, h, "PONTOS_TOTAL", "PONTOS COM C", "PONTOS_COM_C", "PONTOS"))
+
+        tipo = norm(getv(row, h, "TIPO_TIME", "TIPO", "ORIGEM"))
+        pontos = num(getv(
+            row,
+            h,
+            "PONTOS_COM_CAPITAO",
+            "PONTOS_TOTAL",
+            "PONTOS COM C",
+            "PONTOS_COM_C",
+            "PONTOS",
+        ))
         if pontos < LIMITE:
             continue
+
         item = {
             "rodada": rodada,
             "tipo": tipo,
             "pontos": pontos,
-            "capitao": str(getv(row, h, "CAPITAO", "CAPITÃO") or "").strip(),
-            "esquema": str(getv(row, h, "ESQUEMA") or "").strip(),
+            "capitao": limpar_capitao(getv(row, h, "CAPITAO_SUGERIDO", "CAPITAO", "CAPITÃO")),
+            "esquema": str(getv(row, h, "OBS", "ESQUEMA") or "").strip(),
         }
         if rodada not in melhor or pontos > melhor[rodada]["pontos"]:
             melhor[rodada] = item
-    return [melhor[k] for k in sorted(melhor)]
+
+    encontrados = [melhor[k] for k in sorted(melhor)]
+    print("Rodadas >= 100 encontradas:", [(x["rodada"], x["tipo"], x["pontos"]) for x in encontrados])
+    return encontrados
 
 
 def jogadores(rodada: int, tipo: str) -> List[Dict[str, Any]]:
@@ -163,7 +182,6 @@ def render_card(item: Dict[str, Any], players: List[Dict[str, Any]]) -> Path:
     im = Image.new("RGB", (W, H), BG)
     d = ImageDraw.Draw(im)
 
-    # Fundo esportivo
     for y in range(H):
         ratio = y / H
         c = (int(BG[0] + 5*ratio), int(BG[1] + 12*ratio), int(BG[2] + 20*ratio))
@@ -171,13 +189,11 @@ def render_card(item: Dict[str, Any], players: List[Dict[str, Any]]) -> Path:
     for x in range(-200, W, 150):
         d.line((x, 0, x+650, H), fill=(8, 31, 65), width=2)
 
-    # Branding
     d.text((55, 35), "PORTAL", font=fnt(24, True), fill=WHITE)
     d.text((55, 62), "SIMON", font=fnt(42, True), fill=WHITE)
     d.text((205, 62), "SPORTS", font=fnt(42, True), fill=BLUE)
     d.text((57, 108), "CARTOLA • DICAS • ANÁLISES", font=fnt(18), fill=MUTED)
 
-    # Título
     text_center(d, (W/2, 130), "MITOU", fnt(92, True), WHITE)
     text_center(d, (W/2, 220), "NA RODADA", fnt(72, True), ORANGE)
 
@@ -185,7 +201,6 @@ def render_card(item: Dict[str, Any], players: List[Dict[str, Any]]) -> Path:
     rounded(d, (250, 310, 830, 365), 18, NAVY, BLUE, 3)
     text_center(d, (540, 321), f"{modelo} • RODADA {item['rodada']}", fnt(28, True), WHITE)
 
-    # Score e pergunta
     d.text((55, 405), "VOCÊ FEZ", font=fnt(30, True), fill=WHITE)
     d.text((55, 440), "QUANTOS", font=fnt(46, True), fill=ORANGE)
     d.text((55, 490), "PONTOS?", font=fnt(42, True), fill=WHITE)
@@ -202,7 +217,6 @@ def render_card(item: Dict[str, Any], players: List[Dict[str, Any]]) -> Path:
     text_center(d, (187, 790), f"{count_pts}/{len(tit) or 12}", fnt(46, True), WHITE)
     text_center(d, (187, 842), "ATLETAS PONTUADOS", fnt(17, True), MUTED)
 
-    # Campo
     fx1, fy1, fx2, fy2 = 365, 410, 1030, 1015
     d.rounded_rectangle((fx1, fy1, fx2, fy2), radius=28, fill=GREEN2, outline=BLUE, width=4)
     d.rectangle((fx1+18, fy1+18, fx2-18, fy2-18), outline=(220, 245, 220), width=3)
@@ -229,10 +243,7 @@ def render_card(item: Dict[str, Any], players: List[Dict[str, Any]]) -> Path:
         text_center(d, (x, y-16), name, fnt(17, True), WHITE)
         pts = str(p.get("pontos", "")).strip()
         if pts:
-            try:
-                pts = f"{num(pts):.2f}".replace(".", ",")
-            except Exception:
-                pass
+            pts = f"{num(pts):.2f}".replace(".", ",")
         text_center(d, (x, y+21), pts or "—", fnt(21, True), ORANGE)
 
     tecnicos = []
@@ -251,7 +262,6 @@ def render_card(item: Dict[str, Any], players: List[Dict[str, Any]]) -> Path:
         counters[pos] = idx + 1
         card(x, y, p)
 
-    # Capitão / técnico / reservas
     cap = item.get("capitao") or "—"
     rounded(d, (45, 900, 330, 980), 18, NAVY, ORANGE, 3)
     d.text((65, 918), "CAPITÃO:", font=fnt(18, True), fill=GOLD)
@@ -270,7 +280,6 @@ def render_card(item: Dict[str, Any], players: List[Dict[str, Any]]) -> Path:
     else:
         d.text((390, 1085), "SEM RESERVAS REGISTRADAS", font=fnt(18, True), fill=MUTED)
 
-    # Rodapé
     d.line((40, 1170, 1040, 1170), fill=ORANGE, width=3)
     d.text((55, 1200), "PORTAL", font=fnt(22, True), fill=WHITE)
     d.text((55, 1230), "SIMON", font=fnt(38, True), fill=WHITE)
@@ -294,6 +303,8 @@ def publicar(item: Dict[str, Any], force: bool = False) -> bool:
         print(f"R{item['rodada']} já possui flag de Mitou. Pulando.")
         return False
     ps = jogadores(item["rodada"], item["tipo"])
+    if not ps:
+        raise RuntimeError(f"HIST_JOGADORES sem escalação para R{item['rodada']} {item['tipo']}")
     img = render_card(item, ps)
     caption = (
         f"🏆 <b>MITOU NA RODADA {item['rodada']}</b>\n"
