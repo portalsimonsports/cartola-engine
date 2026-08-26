@@ -97,6 +97,7 @@ jobs:
       - name: Publicar cards Mitou
         env:
           PLANILHA_ID: '1-A7w4kkE28iHRd61yiSoNOvSekrmmADzHxGCRDVrICI'
+          TELEGRAM_PLANILHA_ID: ${{ secrets.PLANILHA_ID }}
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
           GOOGLE_APPLICATION_CREDENTIALS: service_account.json
           ABA_TELEGRAM: ${{ secrets.ABA_TELEGRAM }}
@@ -107,13 +108,26 @@ jobs:
           RETROATIVO: ${{ steps.modo.outputs.retroativo }}
         run: |
           set -e
-          echo "Planilha fixa do Cartola: $PLANILHA_ID"
+          echo "Planilha de dados Cartola: $PLANILHA_ID"
+          test -n "$TELEGRAM_PLANILHA_ID"
+          executar_mitou() {
+            python - "$@" <<'PY'
+          import os
+          import sys
+          sys.path.insert(0, 'app')
+          import publicar_mitou_rodada as mitou
+          import gerar_resultados_telegram as telegram
+          telegram.PLANILHA_ID = os.environ['TELEGRAM_PLANILHA_ID'].strip()
+          sys.argv = ['publicar_mitou_rodada.py'] + sys.argv[1:]
+          mitou.main()
+          PY
+          }
           if [ "$RETROATIVO" = "true" ]; then
-            python app/publicar_mitou_rodada.py --retroativo
+            executar_mitou --retroativo
           elif [ "$RODADA_MANUAL" != "0" ] && [ -n "$RODADA_MANUAL" ]; then
-            python app/publicar_mitou_rodada.py --rodada "$RODADA_MANUAL"
+            executar_mitou --rodada "$RODADA_MANUAL"
           elif [ "$RODADA_AUTO" != "0" ] && [ -n "$RODADA_AUTO" ]; then
-            python app/publicar_mitou_rodada.py --rodada "$RODADA_AUTO"
+            executar_mitou --rodada "$RODADA_AUTO"
           else
             echo 'Sem rodada elegível para publicar.'
           fi
