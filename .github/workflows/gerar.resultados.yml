@@ -15,12 +15,6 @@ permissions:
   contents: write
   actions: read
 
-# IMPORTANTE:
-# Publicações diferentes não podem compartilhar o mesmo grupo, porque o GitHub
-# mantém apenas uma execução pendente por grupo. Quando vários cards chegam em
-# sequência, uma execução pendente anterior pode ser cancelada antes de iniciar.
-# O grupo abaixo separa evento e modelo de time. Para LIVE_PONTUACAO_TIME sem
-# modelo explícito, usa o payload_hash para preservar os três cards individuais.
 concurrency:
   group: gerar-resultados-live-${{ github.ref }}-${{ github.event.client_payload.payload.evento_programado || github.event.client_payload.evento_programado || github.event.client_payload.tipo_publicacao || github.event_name }}-${{ github.event.client_payload.payload.tipo_time || github.event.client_payload.payload.modelo || github.event.client_payload.payload.tipo || ((github.event.client_payload.payload.evento_programado == 'LIVE_PONTUACAO_TIME') && github.event.client_payload.payload_hash) || github.event.client_payload.payload.contexto || github.event.client_payload.contexto || 'geral' }}
   cancel-in-progress: false
@@ -119,8 +113,12 @@ jobs:
           print(f"Payload validado: evento={evento_programado}; tipo={tipo}; contexto={contexto}")
           PY
 
+          # Limpeza da execução atual: remove artefatos temporários e resíduos históricos
+          # que não pertencem ao payload da rodada corrente.
           rm -f output/live_*.png output/resultados_*.png output/boletim_*.png
           rm -f output/aprovada_*.png output/ultima_publicacao.json
+          rm -f output/analise_inicial_rodada_*.json output/analise_inicial_rodada_*.mp4
+          rm -f output/analise_pre_fechamento_rodada_*.json output/analise_pre_fechamento_rodada_*.mp4
 
       - name: Aplicar cadência das parciais Live
         shell: bash
@@ -247,7 +245,17 @@ jobs:
               f"{len(files)} card(s)."
           )
           PY
-          ls -lh output || true
+          echo "Arquivos desta execução:"
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path('output/ultima_publicacao.json')
+          if p.exists():
+              data = json.loads(p.read_text(encoding='utf-8'))
+              for pub in data.get('publicacoes') or []:
+                  for arq in pub.get('arquivos') or []:
+                      print(arq)
+          PY
 
       - name: Publicar arquivos gerados no repositório
         if: env.PSS_SKIP_PUBLICACAO != '1' && success()
