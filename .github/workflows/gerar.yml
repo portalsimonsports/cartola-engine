@@ -17,6 +17,12 @@ permissions:
   contents: write
   actions: read
 
+# Serializa TODAS as publicações de Times/Top5. A próxima execução só entra
+# depois que a anterior terminar, permitindo que a trava persistente seja vista.
+concurrency:
+  group: cartola-times-top5-publicacao
+  cancel-in-progress: false
+
 jobs:
   gerar-times-top5:
     runs-on: ubuntu-latest
@@ -59,7 +65,7 @@ jobs:
           MANUAL_PAYLOAD: ${{ github.event.inputs.payload_json }}
         run: |
           set -e
-          mkdir -p data output
+          mkdir -p data output data/flags
 
           if [ "$EVENT_NAME" = "repository_dispatch" ]; then
             printf '%s' "$DISPATCH_PAYLOAD" > data/payload_dispatch.json
@@ -79,55 +85,202 @@ jobs:
           rm -f output/boletim_*.png output/ultima_publicacao.json
           echo "Payload preparado e saídas anteriores limpas."
 
-      - name: Validar autorização programada
+      - name: Validar janela e trava persistente
         id: gate
         shell: bash
         env:
           EVENT_NAME: ${{ github.event_name }}
+          DISPATCH_TYPE: ${{ github.event.action }}
+          TZ: America/Sao_Paulo
         run: |
           set -e
-
-          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
-            echo "allowed=true" >> "$GITHUB_OUTPUT"
-            echo "Execução manual autorizada."
-            exit 0
-          fi
 
           python - <<'PY'
           import json
           import os
+          import re
+          from datetime import datetime
           from pathlib import Path
-
-          allowed = {
-              "SELECAO_INICIAL",
-              "ATUALIZACAO_20H",
-              "PRE_FECHAMENTO_TIMES",
-              "PRE_FECHAMENTO_TOP5",
-              "CONFIRMADOS",
-          }
+          from zoneinfo import ZoneInfo
 
           payload = json.loads(Path("data/payload_dispatch.json").read_text(encoding="utf-8"))
+          nested = payload.get("payload") if isinstance(payload.get("payload"), dict) else {}
+
           evento = str(
               payload.get("evento_programado")
-              or (payload.get("payload") or {}).get("evento_programado")
+              or nested.get("evento_programado")
               or ""
           ).strip().upper()
 
+          rodada_raw = payload.get("rodada") or nested.get("rodada") or 0
+          try:
+              rodada = int(rodada_raw)
+          except Exception:
+              rodada = 0
+
+          event_name = str(os.environ.get("EVENT_NAME") or "").strip()
+          dispatch_type = str(os.environ.get("DISPATCH_TYPE") or "").strip()
           output = Path(os.environ["GITHUB_OUTPUT"])
-          if evento in allowed:
+
+          # Execução manual continua possível apenas quando o operador a dispara conscientemente.
+          if event_name == "workflow_dispatch":
+              if rodada <= 0:
+                  # Tenta extrair a rodada do próprio payload salvo.
+                  rodada = int(payload.get("rodada") or nested.get("rodada") or 0)
               with output.open("a", encoding="utf-8") as fh:
                   fh.write("allowed=true\n")
-                  fh.write(f"evento={evento}\n")
-              print(f"Publicação autorizada pelo evento programado: {evento}")
-          else:
+                  fh.write(f"evento={evento or 'MANUAL'}\n")
+                  fh.write(f"rodada={rodada}\n")
+                  fh.write("marker=\n")
+              print("Execução manual explicitamente autorizada.")
+              raise SystemExit(0)
+
+          # Mapeamento rígido por tipo de repository_dispatch.
+          # Alteração de dados, hash, preço ou escalação NÃO é autorização.
+          permitidos_por_dispatch = {
+              "cartola_publish_times": {
+                  "SELECAO_INICIAL",
+                  "ATUALIZACAO_20H",
+                  "PRE_FECHAMENTO_TIMES",
+                  "CONFIRMADOS",
+              },
+              "cartola_publish_top5": {
+                  "SELECAO_INICIAL",
+                  "ATUALIZACAO_20H",
+                  "PRE_FECHAMENTO_TOP5",
+                  "CONFIRMADOS",
+              },
+              # Mantido exclusivamente para teste explícito. Em produção o payload
+              # ainda precisa trazer um dos eventos programados válidos.
+              "cartola_publish_test": {
+                  "SELECAO_INICIAL",
+                  "ATUALIZACAO_20H",
+                  "PRE_FECHAMENTO_TIMES",
+                  "PRE_FECHAMENTO_TOP5",
+                  "CONFIRMADOS",
+              },
+          }
+
+          permitidos = permitidos_por_dispatch.get(dispatch_type, set())
+          if evento not in permitidos:
               with output.open("a", encoding="utf-8") as fh:
                   fh.write("allowed=false\n")
                   fh.write(f"evento={evento}\n")
+                  fh.write(f"rodada={rodada}\n")
+                  fh.write("marker=\n")
               print(
-                  "Publicação bloqueada: atualização de dados sem evento programado autorizado. "
-                  f"evento_recebido={evento!r}"
+                  "BLOQUEADO: chamada não corresponde a uma janela programada válida. "
+                  f"dispatch={dispatch_type!r} evento={evento!r}"
               )
+              raise SystemExit(0)
+
+          if rodada <= 0:
+              with output.open("a", encoding="utf-8") as fh:
+                  fh.write("allowed=false\n")
+                  fh.write(f"evento={evento}\n")
+                  fh.write("rodada=0\n")
+                  fh.write("marker=\n")
+              print("BLOQUEADO: rodada inválida ou ausente no payload.")
+              raise SystemExit(0)
+
+          hoje_sp = datetime.now(ZoneInfo("America/Sao_Paulo")).strftime("%Y-%m-%d")
+          evento_slug = re.sub(r"[^A-Z0-9_]+", "_", evento)
+
+          # 20h pode ocorrer 1x por DIA elegível; os demais eventos são 1x por rodada.
+          if evento == "ATUALIZACAO_20H":
+              marker = Path(f"data/flags/publicacao_{evento_slug}_rodada_{rodada}_{hoje_sp}.json")
+          else:
+              marker = Path(f"data/flags/publicacao_{evento_slug}_rodada_{rodada}.json")
+
+          if marker.exists():
+              with output.open("a", encoding="utf-8") as fh:
+                  fh.write("allowed=false\n")
+                  fh.write(f"evento={evento}\n")
+                  fh.write(f"rodada={rodada}\n")
+                  fh.write(f"marker={marker.as_posix()}\n")
+              print(
+                  "BLOQUEADO: esta janela já foi reservada/publicada. "
+                  f"evento={evento} rodada={rodada} marker={marker}"
+              )
+              raise SystemExit(0)
+
+          with output.open("a", encoding="utf-8") as fh:
+              fh.write("allowed=true\n")
+              fh.write(f"evento={evento}\n")
+              fh.write(f"rodada={rodada}\n")
+              fh.write(f"marker={marker.as_posix()}\n")
+
+          print(
+              "AUTORIZADO: evento programado válido e ainda não reservado. "
+              f"dispatch={dispatch_type} evento={evento} rodada={rodada}"
+          )
           PY
+
+      # Reserva ANTES de enviar ao Telegram. É fail-closed: se houver falha depois,
+      # o automático não repete a publicação indefinidamente.
+      - name: Reservar publicação antes do envio
+        if: steps.gate.outputs.allowed == 'true' && github.event_name != 'workflow_dispatch'
+        shell: bash
+        env:
+          EVENTO: ${{ steps.gate.outputs.evento }}
+          RODADA: ${{ steps.gate.outputs.rodada }}
+          MARKER: ${{ steps.gate.outputs.marker }}
+          RUN_ID: ${{ github.run_id }}
+          RUN_ATTEMPT: ${{ github.run_attempt }}
+        run: |
+          set -e
+
+          if [ -z "$MARKER" ]; then
+            echo "ERRO: marker vazio em execução automática."
+            exit 1
+          fi
+
+          mkdir -p "$(dirname "$MARKER")"
+          python - <<'PY'
+          import json
+          import os
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          marker = Path(os.environ["MARKER"])
+          marker.write_text(
+              json.dumps({
+                  "status": "RESERVADO_ANTES_DO_ENVIO",
+                  "evento_programado": os.environ.get("EVENTO", ""),
+                  "rodada": int(os.environ.get("RODADA") or 0),
+                  "github_run_id": os.environ.get("RUN_ID", ""),
+                  "github_run_attempt": os.environ.get("RUN_ATTEMPT", ""),
+                  "reservado_em_utc": datetime.now(timezone.utc).isoformat(),
+                  "regra": "uma_publicacao_por_janela; alteracao_de_dados_nao_publica"
+              }, ensure_ascii=False, indent=2) + "\n",
+              encoding="utf-8"
+          )
+          print(f"Trava criada: {marker}")
+          PY
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$MARKER"
+          git commit -m "Trava publicação ${EVENTO} R${RODADA}"
+
+          enviado=0
+          for tentativa in 1 2 3 4 5; do
+            echo "Tentativa de persistir trava $tentativa/5"
+            git fetch origin main
+            if git rebase origin/main && git push origin HEAD:main; then
+              enviado=1
+              break
+            fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((tentativa * 2))
+          done
+
+          if [ "$enviado" -ne 1 ]; then
+            echo "ERRO: não foi possível persistir a trava; publicação será bloqueada."
+            exit 1
+          fi
+
+          echo "Trava persistida antes do envio ao Telegram."
 
       - name: Gerar e publicar Times e Top 5 aprovados
         if: steps.gate.outputs.allowed == 'true'
@@ -187,6 +340,49 @@ jobs:
           PY
           ls -lh output || true
 
+      - name: Marcar reserva como publicada
+        if: steps.gate.outputs.allowed == 'true' && success() && github.event_name != 'workflow_dispatch'
+        shell: bash
+        env:
+          EVENTO: ${{ steps.gate.outputs.evento }}
+          RODADA: ${{ steps.gate.outputs.rodada }}
+          MARKER: ${{ steps.gate.outputs.marker }}
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          set -e
+          git fetch origin main
+          git reset --hard origin/main
+
+          python - <<'PY'
+          import json
+          import os
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          marker = Path(os.environ["MARKER"])
+          data = {}
+          if marker.exists():
+              try:
+                  data = json.loads(marker.read_text(encoding="utf-8"))
+              except Exception:
+                  data = {}
+          data.update({
+              "status": "PUBLICADO_COM_SUCESSO",
+              "evento_programado": os.environ.get("EVENTO", ""),
+              "rodada": int(os.environ.get("RODADA") or 0),
+              "github_run_id": os.environ.get("RUN_ID", ""),
+              "publicado_em_utc": datetime.now(timezone.utc).isoformat(),
+              "regra": "uma_publicacao_por_janela; alteracao_de_dados_nao_publica"
+          })
+          marker.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+          PY
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$MARKER"
+          git commit -m "Confirmar publicação ${EVENTO} R${RODADA}" || true
+          git push origin HEAD:main
+
       - name: Publicar arquivos gerados no repositório
         if: steps.gate.outputs.allowed == 'true' && success()
         shell: bash
@@ -194,6 +390,10 @@ jobs:
           set -e
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Parte sempre do estado mais recente, inclusive da trava persistida acima.
+          git fetch origin main
+          git reset --hard origin/main
 
           git add \
             data/publicacoes_atuais/ \
@@ -206,29 +406,15 @@ jobs:
 
           git commit -m "Telegram: Times e Top 5 no padrão aprovado"
 
-          echo "Estado antes da limpeza temporária:"
-          git status --short || true
-          git reset --hard HEAD
-          git clean -fd
-          echo "Árvore de trabalho limpa para sincronização com origin/main."
-
           enviado=0
           for tentativa in 1 2 3 4 5; do
             echo "Tentativa de push $tentativa/5"
-            git rebase --abort 2>/dev/null || true
-            git reset --hard HEAD
-            git clean -fd
             git fetch origin main
-
-            if git rebase origin/main; then
-              if git push origin HEAD:main; then
-                enviado=1
-                break
-              fi
+            if git rebase origin/main && git push origin HEAD:main; then
+              enviado=1
+              break
             fi
-
             git rebase --abort 2>/dev/null || true
-            git reset --hard HEAD
             sleep $((tentativa * 3))
           done
 
