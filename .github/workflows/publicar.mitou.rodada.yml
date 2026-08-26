@@ -1,0 +1,143 @@
+name: Publicar Mitou na Rodada
+
+on:
+  workflow_run:
+    workflows:
+      - Publicar Desempenho da Rodada Anterior
+    types:
+      - completed
+  push:
+    paths:
+      - 'data/flags/disparar_mitou_retroativo.json'
+  workflow_dispatch:
+    inputs:
+      rodada:
+        description: 'Rodada específica; 0 = automática'
+        required: false
+        default: '0'
+      retroativo:
+        description: 'Publicar todas as rodadas históricas elegíveis ainda sem flag'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: publicar-mitou-rodada
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependências
+        run: |
+          set -e
+          python -m pip install --upgrade pip setuptools wheel
+          pip install --upgrade -r requirements.txt
+          pip install --upgrade pillow
+          python -m py_compile app/publicar_mitou_rodada.py
+
+      - name: Resolver modo de execução
+        id: modo
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          MANUAL_RODADA: ${{ github.event.inputs.rodada }}
+          MANUAL_RETRO: ${{ github.event.inputs.retroativo }}
+        run: |
+          set -e
+          if [ "$EVENT_NAME" = "push" ]; then
+            echo 'retroativo=true' >> "$GITHUB_OUTPUT"
+            echo 'rodada=0' >> "$GITHUB_OUTPUT"
+          elif [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            echo "retroativo=${MANUAL_RETRO:-false}" >> "$GITHUB_OUTPUT"
+            echo "rodada=${MANUAL_RODADA:-0}" >> "$GITHUB_OUTPUT"
+          else
+            echo 'retroativo=false' >> "$GITHUB_OUTPUT"
+            echo 'rodada=0' >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Descobrir rodada anterior na abertura
+        id: rodada_auto
+        if: steps.modo.outputs.retroativo != 'true' && steps.modo.outputs.rodada == '0'
+        run: |
+          set -e
+          python - <<'PY'
+          import os, requests
+          from pathlib import Path
+          r = requests.get('https://api.cartola.globo.com/mercado/status', headers={'User-Agent':'PortalSimonSports-CartolaEngine/2026'}, timeout=45)
+          r.raise_for_status()
+          d = r.json()
+          atual = int(d.get('rodada_atual') or d.get('rodada') or 0)
+          aberto = int(d.get('status_mercado') or 0) == 1
+          rodada = atual - 1 if aberto and atual > 1 else 0
+          with Path(os.environ['GITHUB_OUTPUT']).open('a', encoding='utf-8') as fh:
+              fh.write(f'rodada={rodada}\n')
+          print(f'Rodada anterior elegível na abertura: {rodada}')
+          PY
+
+      - name: Publicar cards Mitou
+        env:
+          PLANILHA_ID: ${{ secrets.PLANILHA_ID }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_APPLICATION_CREDENTIALS: service_account.json
+          ABA_TELEGRAM: ${{ secrets.ABA_TELEGRAM }}
+          CONTA_TELEGRAM: ${{ secrets.CONTA_TELEGRAM }}
+          TELEGRAM_CHAT_FALLBACK: '@dicascartolaportalsimonsports'
+          RODADA_MANUAL: ${{ steps.modo.outputs.rodada }}
+          RODADA_AUTO: ${{ steps.rodada_auto.outputs.rodada }}
+          RETROATIVO: ${{ steps.modo.outputs.retroativo }}
+        run: |
+          set -e
+          if [ "$RETROATIVO" = "true" ]; then
+            python app/publicar_mitou_rodada.py --retroativo
+          elif [ "$RODADA_MANUAL" != "0" ] && [ -n "$RODADA_MANUAL" ]; then
+            python app/publicar_mitou_rodada.py --rodada "$RODADA_MANUAL"
+          elif [ "$RODADA_AUTO" != "0" ] && [ -n "$RODADA_AUTO" ]; then
+            python app/publicar_mitou_rodada.py --rodada "$RODADA_AUTO"
+          else
+            echo 'Sem rodada elegível para publicar.'
+          fi
+
+      - name: Registrar imagens e flags
+        if: success()
+        run: |
+          set -e
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/flags/mitou_rodada_*.publicado.json output/mitou_na_rodada_*.png 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo 'Nenhum card Mitou novo para registrar.'
+            exit 0
+          fi
+          git commit -m 'Telegram: publicar cards Mitou na Rodada'
+          enviado=0
+          for tentativa in 1 2 3 4 5; do
+            git fetch origin main
+            if git rebase origin/main && git push origin HEAD:main; then
+              enviado=1
+              break
+            fi
+            git rebase --abort 2>/dev/null || true
+            git reset --hard HEAD
+            sleep $((tentativa * 3))
+          done
+          test "$enviado" -eq 1
