@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 25,
-  "atualizado_em": "2026-08-26T06:31:02.625Z",
+  "atualizado_em": "2026-08-26T06:40:07.653Z",
   "dados": [
     {
       "RODADA": 25,
@@ -28,12 +28,12 @@
     {
       "RODADA": 25,
       "POS": "GOL",
-      "NOME": "Marcelo Rangel",
-      "CLUBE": "REM",
-      "PRECO": 6.24,
-      "EXP_SCORE": 3.7501,
-      "FACTOR": 1.1540142835162368,
-      "ATLETA_ID": 82730
+      "NOME": "Rossi",
+      "CLUBE": "FLA",
+      "PRECO": 8.35,
+      "EXP_SCORE": 3.7389,
+      "FACTOR": 1.0891261671788517,
+      "ATLETA_ID": 99552
     },
     {
       "RODADA": 25,
@@ -158,22 +158,22 @@
     {
       "RODADA": 25,
       "POS": "MEI",
+      "NOME": "Arias",
+      "CLUBE": "PAL",
+      "PRECO": 14.45,
+      "EXP_SCORE": 7.6742,
+      "FACTOR": 0.9832671892037105,
+      "ATLETA_ID": 99815
+    },
+    {
+      "RODADA": 25,
+      "POS": "MEI",
       "NOME": "Neymar",
       "CLUBE": "SAN",
       "PRECO": 19.92,
       "EXP_SCORE": 7.1571,
       "FACTOR": 0.9050375468149997,
       "ATLETA_ID": 63007
-    },
-    {
-      "RODADA": 25,
-      "POS": "MEI",
-      "NOME": "Arias",
-      "CLUBE": "PAL",
-      "PRECO": 14.45,
-      "EXP_SCORE": 6.6732,
-      "FACTOR": 0.9832671892037105,
-      "ATLETA_ID": 99815
     },
     {
       "RODADA": 25,
@@ -198,12 +198,12 @@
     {
       "RODADA": 25,
       "POS": "MEI",
-      "NOME": "Barreal",
-      "CLUBE": "SAN",
-      "PRECO": 12.55,
-      "EXP_SCORE": 5.2093,
-      "FACTOR": 0.9050375468149997,
-      "ATLETA_ID": 126471
+      "NOME": "Arrascaeta",
+      "CLUBE": "FLA",
+      "PRECO": 14.35,
+      "EXP_SCORE": 5.0421,
+      "FACTOR": 1.1002169118692815,
+      "ATLETA_ID": 87863
     },
     {
       "RODADA": 25,
@@ -211,7 +211,7 @@
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 14.28,
-      "EXP_SCORE": 8.997,
+      "EXP_SCORE": 7.8235,
       "FACTOR": 1.0886968663579906,
       "ATLETA_ID": 143193
     },
@@ -221,7 +221,7 @@
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 17.02,
-      "EXP_SCORE": 7.0048,
+      "EXP_SCORE": 7.7832,
       "FACTOR": 1.1002169118692815,
       "ATLETA_ID": 94583
     },
