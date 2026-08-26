@@ -2,15 +2,23 @@
   "atletas": [
     {
       "clube": "BAH",
-      "data": "2026-08-26T00:09:35.000Z",
+      "data": "2026-08-26T00:13:24.000Z",
       "nome": "Ronaldo",
       "pos": "GOL",
       "preco": 8.53,
       "status": "TITULAR"
     },
     {
+      "clube": "BAH",
+      "data": "2026-08-26T00:13:24.000Z",
+      "nome": "Luciano Juba",
+      "pos": "LAT",
+      "preco": 11.99,
+      "status": "TITULAR"
+    },
+    {
       "clube": "REM",
-      "data": "2026-08-26T00:09:35.000Z",
+      "data": "2026-08-26T00:13:24.000Z",
       "nome": "Marcelinho",
       "pos": "LAT",
       "preco": 6.61,
@@ -18,15 +26,7 @@
     },
     {
       "clube": "BAH",
-      "data": "2026-08-26T00:09:35.000Z",
-      "nome": "Luciano Juba",
-      "pos": "LAT",
-      "preco": 11.99,
-      "status": "TITULAR"
-    },
-    {
-      "clube": "BAH",
-      "data": "2026-08-26T00:09:35.000Z",
+      "data": "2026-08-26T00:13:24.000Z",
       "nome": "David Duarte",
       "pos": "ZAG",
       "preco": 6.97,
@@ -34,23 +34,15 @@
     },
     {
       "clube": "CAP",
-      "data": "2026-08-26T00:09:35.000Z",
+      "data": "2026-08-26T00:13:24.000Z",
       "nome": "Aguirre",
       "pos": "ZAG",
       "preco": 6.13,
       "status": "TITULAR"
     },
     {
-      "clube": "RBB",
-      "data": "2026-08-26T00:09:35.000Z",
-      "nome": "Gustavo Marques",
-      "pos": "ZAG",
-      "preco": 8.6,
-      "status": "TITULAR"
-    },
-    {
       "clube": "CAP",
-      "data": "2026-08-26T00:09:35.000Z",
+      "data": "2026-08-26T00:13:24.000Z",
       "nome": "João Cruz",
       "pos": "MEI",
       "preco": 7.25,
@@ -58,23 +50,23 @@
     },
     {
       "clube": "SAN",
-      "data": "2026-08-26T00:09:35.000Z",
-      "nome": "Gustavo Henrique",
-      "pos": "MEI",
-      "preco": 5.21,
-      "status": "TITULAR"
-    },
-    {
-      "clube": "SAN",
-      "data": "2026-08-26T00:09:35.000Z",
+      "data": "2026-08-26T00:13:24.000Z",
       "nome": "Barreal",
       "pos": "MEI",
       "preco": 12.55,
       "status": "TITULAR"
     },
     {
+      "clube": "SAN",
+      "data": "2026-08-26T00:13:24.000Z",
+      "nome": "Gustavo Henrique",
+      "pos": "MEI",
+      "preco": 5.21,
+      "status": "TITULAR"
+    },
+    {
       "clube": "REM",
-      "data": "2026-08-26T00:09:35.000Z",
+      "data": "2026-08-26T00:13:24.000Z",
       "nome": "Jajá",
       "pos": "ATA",
       "preco": 8.11,
@@ -82,31 +74,39 @@
     },
     {
       "clube": "CAP",
-      "data": "2026-08-26T00:09:35.000Z",
+      "data": "2026-08-26T00:13:24.000Z",
       "nome": "Viveros",
       "pos": "ATA",
       "preco": 14.28,
       "status": "TITULAR"
     },
     {
+      "clube": "CAP",
+      "data": "2026-08-26T00:13:24.000Z",
+      "nome": "Leozinho",
+      "pos": "ATA",
+      "preco": 5.68,
+      "status": "TITULAR"
+    },
+    {
       "clube": "MIR",
-      "data": "2026-08-26T00:09:35.000Z",
+      "data": "2026-08-26T00:13:24.000Z",
       "nome": "Rafael Guanaes",
       "pos": "TEC",
       "preco": 7.02,
       "status": "TITULAR"
     },
     {
-      "clube": "REM",
-      "data": "2026-08-26T00:09:35.000Z",
-      "nome": "Marcelo Rangel",
+      "clube": "FLA",
+      "data": "2026-08-26T00:13:24.000Z",
+      "nome": "Rossi",
       "pos": "GOL",
-      "preco": 6.24,
+      "preco": 8.35,
       "status": "RESERVA"
     },
     {
       "clube": "INT",
-      "data": "2026-08-26T00:09:35.000Z",
+      "data": "2026-08-26T00:13:24.000Z",
       "nome": "Aguirre",
       "pos": "LAT",
       "preco": 6.52,
@@ -114,7 +114,7 @@
     },
     {
       "clube": "CAP",
-      "data": "2026-08-26T00:09:35.000Z",
+      "data": "2026-08-26T00:13:24.000Z",
       "nome": "Arthur Dias",
       "pos": "ZAG",
       "preco": 5.95,
@@ -122,18 +122,18 @@
     },
     {
       "clube": "REM",
-      "data": "2026-08-26T00:09:35.000Z",
+      "data": "2026-08-26T00:13:24.000Z",
       "nome": "Zé Ricardo",
       "pos": "MEI",
       "preco": 4.94,
       "status": "RESERVA"
     },
     {
-      "clube": "CAP",
-      "data": "2026-08-26T00:09:35.000Z",
-      "nome": "Leozinho",
+      "clube": "RBB",
+      "data": "2026-08-26T00:13:24.000Z",
+      "nome": "Isidro Pitta",
       "pos": "ATA",
-      "preco": 5.68,
+      "preco": 5.5,
       "status": "RESERVA"
     }
   ],
@@ -167,17 +167,17 @@
         "status": "TITULAR"
       },
       {
-        "clube": "REM",
-        "nome": "Marcelinho",
-        "pos": "LAT",
-        "preco": 6.61,
-        "status": "TITULAR"
-      },
-      {
         "clube": "BAH",
         "nome": "Luciano Juba",
         "pos": "LAT",
         "preco": 11.99,
+        "status": "TITULAR"
+      },
+      {
+        "clube": "REM",
+        "nome": "Marcelinho",
+        "pos": "LAT",
+        "preco": 6.61,
         "status": "TITULAR"
       },
       {
@@ -195,13 +195,6 @@
         "status": "TITULAR"
       },
       {
-        "clube": "RBB",
-        "nome": "Gustavo Marques",
-        "pos": "ZAG",
-        "preco": 8.6,
-        "status": "TITULAR"
-      },
-      {
         "clube": "CAP",
         "nome": "João Cruz",
         "pos": "MEI",
@@ -210,16 +203,16 @@
       },
       {
         "clube": "SAN",
-        "nome": "Gustavo Henrique",
+        "nome": "Barreal",
         "pos": "MEI",
-        "preco": 5.21,
+        "preco": 12.55,
         "status": "TITULAR"
       },
       {
         "clube": "SAN",
-        "nome": "Barreal",
+        "nome": "Gustavo Henrique",
         "pos": "MEI",
-        "preco": 12.55,
+        "preco": 5.21,
         "status": "TITULAR"
       },
       {
@@ -237,6 +230,13 @@
         "status": "TITULAR"
       },
       {
+        "clube": "CAP",
+        "nome": "Leozinho",
+        "pos": "ATA",
+        "preco": 5.68,
+        "status": "TITULAR"
+      },
+      {
         "clube": "MIR",
         "nome": "Rafael Guanaes",
         "pos": "TEC",
@@ -244,10 +244,10 @@
         "status": "TITULAR"
       },
       {
-        "clube": "REM",
-        "nome": "Marcelo Rangel",
+        "clube": "FLA",
+        "nome": "Rossi",
         "pos": "GOL",
-        "preco": 6.24,
+        "preco": 8.35,
         "status": "RESERVA"
       },
       {
@@ -272,10 +272,10 @@
         "status": "RESERVA"
       },
       {
-        "clube": "CAP",
-        "nome": "Leozinho",
+        "clube": "RBB",
+        "nome": "Isidro Pitta",
         "pos": "ATA",
-        "preco": 5.68,
+        "preco": 5.5,
         "status": "RESERVA"
       }
     ],
@@ -286,20 +286,28 @@
   "titulo": "TIME ECONÔMICO",
   "rodada": 25,
   "origem": "jobTelegramDispatcher",
-  "gerado_em": "2026-08-26T00:10:56.403Z",
-  "payload_hash": "cBzkJBXvIZqjFgD2APzFFA==",
+  "gerado_em": "2026-08-26T00:13:40.061Z",
+  "payload_hash": "XFaVA8lOf8uoRz7z/PBYMQ==",
   "jogadores": [
     {
       "clube": "BAH",
-      "data": "2026-08-26T00:09:35.000Z",
+      "data": "2026-08-26T00:13:24.000Z",
       "nome": "Ronaldo",
       "pos": "GOL",
       "preco": 8.53,
       "status": "TITULAR"
     },
     {
+      "clube": "BAH",
+      "data": "2026-08-26T00:13:24.000Z",
+      "nome": "Luciano Juba",
+      "pos": "LAT",
+      "preco": 11.99,
+      "status": "TITULAR"
+    },
+    {
       "clube": "REM",
-      "data": "2026-08-26T00:09:35.000Z",
+      "data": "2026-08-26T00:13:24.000Z",
       "nome": "Marcelinho",
       "pos": "LAT",
       "preco": 6.61,
@@ -307,15 +315,7 @@
     },
     {
       "clube": "BAH",
-      "data": "2026-08-26T00:09:35.000Z",
-      "nome": "Luciano Juba",
-      "pos": "LAT",
-      "preco": 11.99,
-      "status": "TITULAR"
-    },
-    {
-      "clube": "BAH",
-      "data": "2026-08-26T00:09:35.000Z",
+      "data": "2026-08-26T00:13:24.000Z",
       "nome": "David Duarte",
       "pos": "ZAG",
       "preco": 6.97,
@@ -323,23 +323,15 @@
     },
     {
       "clube": "CAP",
-      "data": "2026-08-26T00:09:35.000Z",
+      "data": "2026-08-26T00:13:24.000Z",
       "nome": "Aguirre",
       "pos": "ZAG",
       "preco": 6.13,
       "status": "TITULAR"
     },
     {
-      "clube": "RBB",
-      "data": "2026-08-26T00:09:35.000Z",
-      "nome": "Gustavo Marques",
-      "pos": "ZAG",
-      "preco": 8.6,
-      "status": "TITULAR"
-    },
-    {
       "clube": "CAP",
-      "data": "2026-08-26T00:09:35.000Z",
+      "data": "2026-08-26T00:13:24.000Z",
       "nome": "João Cruz",
       "pos": "MEI",
       "preco": 7.25,
@@ -347,23 +339,23 @@
     },
     {
       "clube": "SAN",
-      "data": "2026-08-26T00:09:35.000Z",
-      "nome": "Gustavo Henrique",
-      "pos": "MEI",
-      "preco": 5.21,
-      "status": "TITULAR"
-    },
-    {
-      "clube": "SAN",
-      "data": "2026-08-26T00:09:35.000Z",
+      "data": "2026-08-26T00:13:24.000Z",
       "nome": "Barreal",
       "pos": "MEI",
       "preco": 12.55,
       "status": "TITULAR"
     },
     {
+      "clube": "SAN",
+      "data": "2026-08-26T00:13:24.000Z",
+      "nome": "Gustavo Henrique",
+      "pos": "MEI",
+      "preco": 5.21,
+      "status": "TITULAR"
+    },
+    {
       "clube": "REM",
-      "data": "2026-08-26T00:09:35.000Z",
+      "data": "2026-08-26T00:13:24.000Z",
       "nome": "Jajá",
       "pos": "ATA",
       "preco": 8.11,
@@ -371,15 +363,23 @@
     },
     {
       "clube": "CAP",
-      "data": "2026-08-26T00:09:35.000Z",
+      "data": "2026-08-26T00:13:24.000Z",
       "nome": "Viveros",
       "pos": "ATA",
       "preco": 14.28,
       "status": "TITULAR"
     },
     {
+      "clube": "CAP",
+      "data": "2026-08-26T00:13:24.000Z",
+      "nome": "Leozinho",
+      "pos": "ATA",
+      "preco": 5.68,
+      "status": "TITULAR"
+    },
+    {
       "clube": "MIR",
-      "data": "2026-08-26T00:09:35.000Z",
+      "data": "2026-08-26T00:13:24.000Z",
       "nome": "Rafael Guanaes",
       "pos": "TEC",
       "preco": 7.02,
@@ -388,16 +388,16 @@
   ],
   "reservas": [
     {
-      "clube": "REM",
-      "data": "2026-08-26T00:09:35.000Z",
-      "nome": "Marcelo Rangel",
+      "clube": "FLA",
+      "data": "2026-08-26T00:13:24.000Z",
+      "nome": "Rossi",
       "pos": "GOL",
-      "preco": 6.24,
+      "preco": 8.35,
       "status": "RESERVA"
     },
     {
       "clube": "INT",
-      "data": "2026-08-26T00:09:35.000Z",
+      "data": "2026-08-26T00:13:24.000Z",
       "nome": "Aguirre",
       "pos": "LAT",
       "preco": 6.52,
@@ -405,7 +405,7 @@
     },
     {
       "clube": "CAP",
-      "data": "2026-08-26T00:09:35.000Z",
+      "data": "2026-08-26T00:13:24.000Z",
       "nome": "Arthur Dias",
       "pos": "ZAG",
       "preco": 5.95,
@@ -413,18 +413,18 @@
     },
     {
       "clube": "REM",
-      "data": "2026-08-26T00:09:35.000Z",
+      "data": "2026-08-26T00:13:24.000Z",
       "nome": "Zé Ricardo",
       "pos": "MEI",
       "preco": 4.94,
       "status": "RESERVA"
     },
     {
-      "clube": "CAP",
-      "data": "2026-08-26T00:09:35.000Z",
-      "nome": "Leozinho",
+      "clube": "RBB",
+      "data": "2026-08-26T00:13:24.000Z",
+      "nome": "Isidro Pitta",
       "pos": "ATA",
-      "preco": 5.68,
+      "preco": 5.5,
       "status": "RESERVA"
     }
   ],
