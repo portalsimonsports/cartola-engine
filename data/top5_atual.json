@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 25,
-  "atualizado_em": "2026-08-27T17:55:14.159Z",
+  "atualizado_em": "2026-08-27T18:04:47.499Z",
   "dados": [
     {
       "RODADA": 25,
@@ -188,6 +188,16 @@
     {
       "RODADA": 25,
       "POS": "MEI",
+      "NOME": "Barreal",
+      "CLUBE": "SAN",
+      "PRECO": 12.55,
+      "EXP_SCORE": 5.2068,
+      "FACTOR": 0.9046143910635753,
+      "ATLETA_ID": 126471
+    },
+    {
+      "RODADA": 25,
+      "POS": "MEI",
       "NOME": "Arrascaeta",
       "CLUBE": "FLA",
       "PRECO": 14.35,
@@ -197,21 +207,11 @@
     },
     {
       "RODADA": 25,
-      "POS": "MEI",
-      "NOME": "Raniele",
-      "CLUBE": "COR",
-      "PRECO": 8.6,
-      "EXP_SCORE": 4.9491,
-      "FACTOR": 1.0549748350347743,
-      "ATLETA_ID": 95556
-    },
-    {
-      "RODADA": 25,
       "POS": "ATA",
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 14.28,
-      "EXP_SCORE": 7.8209,
+      "EXP_SCORE": 8.994,
       "FACTOR": 1.0883330005660474,
       "ATLETA_ID": 143193
     },
@@ -221,7 +221,7 @@
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 17.02,
-      "EXP_SCORE": 7.7807,
+      "EXP_SCORE": 7.0027,
       "FACTOR": 1.0998756183969378,
       "ATLETA_ID": 94583
     },
@@ -248,12 +248,12 @@
     {
       "RODADA": 25,
       "POS": "ATA",
-      "NOME": "Cuello",
-      "CLUBE": "CAM",
-      "PRECO": 11.49,
-      "EXP_SCORE": 4.986,
-      "FACTOR": 1.0981211404866424,
-      "ATLETA_ID": 98909
+      "NOME": "Jajá",
+      "CLUBE": "REM",
+      "PRECO": 8.11,
+      "EXP_SCORE": 5.7059,
+      "FACTOR": 1.1051390521278237,
+      "ATLETA_ID": 105048
     },
     {
       "RODADA": 25,
@@ -298,12 +298,12 @@
     {
       "RODADA": 25,
       "POS": "TEC",
-      "NOME": "Fernando Diniz",
-      "CLUBE": "COR",
-      "PRECO": 8.98,
-      "EXP_SCORE": 5.4567,
-      "FACTOR": 1.0256699785060306,
-      "ATLETA_ID": 72391
+      "NOME": "Artur Jorge",
+      "CLUBE": "CRU",
+      "PRECO": 11.72,
+      "EXP_SCORE": 5.1895,
+      "FACTOR": 0.9994622683856564,
+      "ATLETA_ID": 127273
     }
   ]
 }
