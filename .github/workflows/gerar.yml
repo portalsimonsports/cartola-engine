@@ -17,6 +17,12 @@ permissions:
   contents: write
   actions: read
 
+# Um único publicador por vez. Isso elimina a corrida entre dispatches de
+# Times e Top5 e permite que a trava persistente seja verificada antes do envio.
+concurrency:
+  group: cartola-times-top5-publicador-unico
+  cancel-in-progress: false
+
 jobs:
   gerar-times-top5:
     runs-on: ubuntu-latest
@@ -59,7 +65,7 @@ jobs:
           MANUAL_PAYLOAD: ${{ github.event.inputs.payload_json }}
         run: |
           set -e
-          mkdir -p data output
+          mkdir -p data output data/flags
 
           if [ "$EVENT_NAME" = "repository_dispatch" ]; then
             printf '%s' "$DISPATCH_PAYLOAD" > data/payload_dispatch.json
@@ -79,7 +85,7 @@ jobs:
           rm -f output/boletim_*.png output/ultima_publicacao.json
           echo "Payload preparado e saídas anteriores limpas."
 
-      - name: Validar autorização programada
+      - name: Validar evento e impedir publicação duplicada
         id: gate
         shell: bash
         env:
@@ -89,6 +95,7 @@ jobs:
 
           if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
             echo "allowed=true" >> "$GITHUB_OUTPUT"
+            echo "marker=" >> "$GITHUB_OUTPUT"
             echo "Execução manual autorizada."
             exit 0
           fi
@@ -96,9 +103,45 @@ jobs:
           python - <<'PY'
           import json
           import os
+          import re
+          from datetime import datetime
           from pathlib import Path
+          from zoneinfo import ZoneInfo
 
-          allowed = {
+          payload = json.loads(Path("data/payload_dispatch.json").read_text(encoding="utf-8"))
+          nested = payload.get("payload") if isinstance(payload.get("payload"), dict) else {}
+
+          evento = str(
+              payload.get("evento_programado")
+              or nested.get("evento_programado")
+              or ""
+          ).strip().upper()
+
+          rodada_raw = payload.get("rodada") or nested.get("rodada") or 0
+          try:
+              rodada = int(rodada_raw)
+          except Exception:
+              rodada = 0
+
+          tipo = str(payload.get("tipo_publicacao") or nested.get("tipo_publicacao") or "").strip().upper()
+          modelo = str(nested.get("modelo") or nested.get("tipo") or "").strip().upper()
+          action = str(os.environ.get("GITHUB_EVENT_ACTION") or "").strip().lower()
+
+          if "TOP5" in tipo or tipo == "TOP5":
+              componente = "TOP5"
+          elif modelo:
+              componente = "TIME_" + modelo
+          elif "ECON" in tipo:
+              componente = "TIME_ECONOMICO"
+          elif "INTER" in tipo:
+              componente = "TIME_INTERMEDIARIO"
+          elif "PONT" in tipo:
+              componente = "TIME_PONTUACAO"
+          else:
+              componente = "TIMES"
+          componente = re.sub(r"[^A-Z0-9_]+", "_", componente).strip("_") or "COMPONENTE"
+
+          allowed_events = {
               "SELECAO_INICIAL",
               "ATUALIZACAO_20H",
               "PRE_FECHAMENTO_TIMES",
@@ -106,28 +149,47 @@ jobs:
               "CONFIRMADOS",
           }
 
-          payload = json.loads(Path("data/payload_dispatch.json").read_text(encoding="utf-8"))
-          evento = str(
-              payload.get("evento_programado")
-              or (payload.get("payload") or {}).get("evento_programado")
-              or ""
-          ).strip().upper()
-
           output = Path(os.environ["GITHUB_OUTPUT"])
-          if evento in allowed:
+
+          def finish(ok, marker="", reason=""):
               with output.open("a", encoding="utf-8") as fh:
-                  fh.write("allowed=true\n")
+                  fh.write(f"allowed={'true' if ok else 'false'}\n")
                   fh.write(f"evento={evento}\n")
-              print(f"Publicação autorizada pelo evento programado: {evento}")
+                  fh.write(f"rodada={rodada}\n")
+                  fh.write(f"componente={componente}\n")
+                  fh.write(f"marker={marker}\n")
+              print(reason)
+
+          if evento not in allowed_events or rodada <= 0:
+              finish(False, reason=f"BLOQUEADO: evento/rodada inválidos. evento={evento!r} rodada={rodada}")
+              raise SystemExit(0)
+
+          # REGRA DEFINITIVA: a atualização das 20h tem UM ÚNICO publicador.
+          # Somente o Top 5 é publicado nessa janela; dispatches de Times são ignorados.
+          if evento == "ATUALIZACAO_20H" and componente != "TOP5":
+              finish(False, reason=f"BLOQUEADO: 20h publica somente TOP5; componente recebido={componente}")
+              raise SystemExit(0)
+
+          # Seleção inicial nunca pode ser repetida por perda/reset de flags do Apps Script.
+          legacy = Path(f"data/flags/publicacao_SELECAO_INICIAL_rodada_{rodada}.json")
+          if evento == "SELECAO_INICIAL" and legacy.exists():
+              finish(False, legacy.as_posix(), f"BLOQUEADO: seleção inicial R{rodada} já registrada em {legacy}")
+              raise SystemExit(0)
+
+          hoje_sp = datetime.now(ZoneInfo("America/Sao_Paulo")).strftime("%Y-%m-%d")
+          if evento == "ATUALIZACAO_20H":
+              marker = Path(f"data/flags/publicacao_ATUALIZACAO_20H_rodada_{rodada}_{hoje_sp}_TOP5.json")
           else:
-              with output.open("a", encoding="utf-8") as fh:
-                  fh.write("allowed=false\n")
-                  fh.write(f"evento={evento}\n")
-              print(
-                  "Publicação bloqueada: atualização de dados sem evento programado autorizado. "
-                  f"evento_recebido={evento!r}"
-              )
+              marker = Path(f"data/flags/publicacao_{evento}_rodada_{rodada}_{componente}.json")
+
+          if marker.exists():
+              finish(False, marker.as_posix(), f"BLOQUEADO: publicação já realizada: {marker}")
+              raise SystemExit(0)
+
+          finish(True, marker.as_posix(), f"AUTORIZADO: evento={evento} rodada={rodada} componente={componente}")
           PY
+        env:
+          GITHUB_EVENT_ACTION: ${{ github.event.action }}
 
       - name: Gerar e publicar Times e Top 5 aprovados
         if: steps.gate.outputs.allowed == 'true'
@@ -187,16 +249,28 @@ jobs:
           PY
           ls -lh output || true
 
-      - name: Publicar arquivos gerados no repositório
+      - name: Registrar publicação e persistir arquivos
         if: steps.gate.outputs.allowed == 'true' && success()
         shell: bash
+        env:
+          EVENTO: ${{ steps.gate.outputs.evento }}
+          RODADA: ${{ steps.gate.outputs.rodada }}
+          COMPONENTE: ${{ steps.gate.outputs.componente }}
+          MARKER: ${{ steps.gate.outputs.marker }}
         run: |
           set -e
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+          if [ -n "$MARKER" ]; then
+            mkdir -p "$(dirname "$MARKER")"
+            printf '{\n  "status": "PUBLICADO_COM_SUCESSO",\n  "evento_programado": "%s",\n  "rodada": %s,\n  "componente": "%s",\n  "github_run_id": "%s",\n  "registrado_em": "%s"\n}\n' \
+              "$EVENTO" "$RODADA" "$COMPONENTE" "${{ github.run_id }}" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$MARKER"
+          fi
+
           git add \
             data/publicacoes_atuais/ \
+            data/flags/ \
             output/*.png 2>/dev/null || true
 
           if git diff --cached --quiet; then
@@ -204,7 +278,7 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Telegram: Times e Top 5 no padrão aprovado"
+          git commit -m "Telegram: ${EVENTO} R${RODADA} ${COMPONENTE}"
 
           echo "Estado antes da limpeza temporária:"
           git status --short || true
@@ -237,4 +311,4 @@ jobs:
             exit 1
           fi
 
-          echo "Commit publicado com sucesso no branch main."
+          echo "Publicação registrada e commit enviado ao branch main."
