@@ -1,13 +1,28 @@
 from __future__ import annotations
 
-from typing import Any, Dict
+import json
+from pathlib import Path
+from typing import Any, Dict, List
 
 import gerar_resultados_telegram as publisher
 import publicar_times_top5_automatico as base
 import render_telegram_cards as rtc
 
 
-PIPELINE_VERSION = "times_top5_aprovados_v2_2026_07_27"
+PIPELINE_VERSION = "times_top5_aprovados_v2_2026_08_27_pacote_unico"
+
+MODEL_ORDER = ("ECONOMICO", "INTERMEDIARIO", "PONTUACAO")
+MODEL_TITLES = {
+    "ECONOMICO": "TIME ECONÔMICO",
+    "INTERMEDIARIO": "TIME INTERMEDIÁRIO",
+    "PONTUACAO": "TIME PARA PONTUAR",
+}
+MODEL_FILES = {
+    "ECONOMICO": Path("data/times_atual_economico.json"),
+    "INTERMEDIARIO": Path("data/times_atual_intermediario.json"),
+    "PONTUACAO": Path("data/times_atual_pontuacao.json"),
+}
+TOP5_FILE = Path("data/top5_atual.json")
 
 
 def _safe(value: Any) -> str:
@@ -19,13 +34,117 @@ def _event(payload_root: Dict[str, Any]) -> str:
     return _safe(payload_root.get("evento_programado") or inner.get("evento_programado")).upper()
 
 
+def _round(payload_root: Dict[str, Any]) -> int:
+    inner = payload_root.get("payload") if isinstance(payload_root.get("payload"), dict) else {}
+    value = payload_root.get("rodada") or inner.get("rodada") or 0
+    try:
+        return int(float(value))
+    except Exception:
+        return 0
+
+
+def _read_json(path: Path) -> Dict[str, Any]:
+    if not path.exists():
+        raise RuntimeError(f"Arquivo obrigatório ausente: {path}")
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        raise RuntimeError(f"JSON inválido em {path}: {exc}") from exc
+    if not isinstance(data, dict):
+        raise RuntimeError(f"Conteúdo inválido em {path}: esperado objeto JSON")
+    return data
+
+
+def _validate_round(data: Dict[str, Any], rodada: int, path: Path) -> None:
+    current = data.get("rodada") or data.get("RODADA") or 0
+    try:
+        current = int(float(current))
+    except Exception:
+        current = 0
+    if current != rodada:
+        raise RuntimeError(f"Rodada divergente em {path}: esperado R{rodada}, encontrado R{current}")
+
+
+def _team_publication(model: str, rodada: int) -> Dict[str, Any]:
+    path = MODEL_FILES[model]
+    data = _read_json(path)
+    _validate_round(data, rodada, path)
+    payload = dict(data)
+    payload.update(
+        {
+            "tipo_publicacao": "times",
+            "tipo": model,
+            "modelo": model,
+            "nome_modelo": MODEL_TITLES[model],
+            "titulo": f"{MODEL_TITLES[model]} • RODADA {rodada}",
+            "rodada": rodada,
+        }
+    )
+    return payload
+
+
+def _top5_publication(rodada: int) -> Dict[str, Any]:
+    data = _read_json(TOP5_FILE)
+    _validate_round(data, rodada, TOP5_FILE)
+    payload = dict(data)
+    payload.update(
+        {
+            "tipo_publicacao": "top5",
+            "titulo": "TOP 5 DA RODADA",
+            "rodada": rodada,
+        }
+    )
+    return payload
+
+
+def _package_root(original: Dict[str, Any], event: str, rodada: int) -> Dict[str, Any]:
+    """Monta uma única execução com o conjunto correto de imagens.
+
+    SELECAO_INICIAL, ATUALIZACAO_20H e CONFIRMADOS:
+      3 times + Top 5, exatamente uma vez cada.
+    PRE_FECHAMENTO_TIMES:
+      3 times, exatamente uma vez cada.
+    PRE_FECHAMENTO_TOP5:
+      somente Top 5.
+    """
+    if rodada <= 0:
+        raise RuntimeError("Rodada não informada no dispatch.")
+
+    publications: List[Dict[str, Any]] = []
+    if event in {"SELECAO_INICIAL", "ATUALIZACAO_20H", "CONFIRMADOS"}:
+        publications.extend(_team_publication(model, rodada) for model in MODEL_ORDER)
+        publications.append(_top5_publication(rodada))
+    elif event == "PRE_FECHAMENTO_TIMES":
+        publications.extend(_team_publication(model, rodada) for model in MODEL_ORDER)
+    elif event == "PRE_FECHAMENTO_TOP5":
+        publications.append(_top5_publication(rodada))
+    else:
+        return original
+
+    if not publications:
+        raise RuntimeError(f"Pacote vazio para evento {event} R{rodada}")
+
+    return {
+        "origem": "publicador_unico_github",
+        "pipeline": "jobtelegram",
+        "evento_programado": event,
+        "rodada": rodada,
+        "tipo_publicacao": "pacote_times_top5",
+        "payload": publications[0],
+        "publicacoes": publications[1:],
+    }
+
+
 def _event_title(event: str, round_value: str, kind: str, model_name: str = "") -> tuple[str, str]:
     if event == "SELECAO_INICIAL":
         if kind == "top5":
-            return f"TOP 5 INICIAL DA RODADA • RODADA {round_value}", "Mercado aberto • Primeira fotografia do Top 5"
+            return f"TOP 5 INICIAL DA RODADA • RODADA {round_value}", "Mercado aberto • Seleção inicial do Top 5"
         return f"SELEÇÃO INICIAL • RODADA {round_value}", "Mercado aberto • Seleção inicial da rodada"
     if event == "ATUALIZACAO_20H":
-        return (f"{model_name} • RODADA {round_value}" if kind == "team" else f"TOP 5 DA RODADA • RODADA {round_value}", "Atualização programada das 20h")
+        return (
+            f"{model_name} • RODADA {round_value}" if kind == "team" else f"TOP 5 DA RODADA • RODADA {round_value}",
+            "Atualização programada das 20h",
+        )
     if event == "PRE_FECHAMENTO_TIMES":
         return f"{model_name} • RODADA {round_value}", "Pré-fechamento dos times"
     if event == "PRE_FECHAMENTO_TOP5":
@@ -34,7 +153,10 @@ def _event_title(event: str, round_value: str, kind: str, model_name: str = "") 
         if kind == "top5":
             return f"TOP 5 CONFIRMADO • RODADA {round_value}", "Versão final confirmada para a rodada"
         return f"{model_name} CONFIRMADO • RODADA {round_value}", "Escalação final confirmada para a rodada"
-    return (f"{model_name} • RODADA {round_value}" if kind == "team" else f"TOP 5 DA RODADA • RODADA {round_value}", "Publicação programada do Portal SimonSports")
+    return (
+        f"{model_name} • RODADA {round_value}" if kind == "team" else f"TOP 5 DA RODADA • RODADA {round_value}",
+        "Publicação programada do Portal SimonSports",
+    )
 
 
 def _custom_top5_header(image, badge: str, subtitle: str, title: str) -> None:
@@ -69,8 +191,10 @@ def _custom_top5_header(image, badge: str, subtitle: str, title: str) -> None:
 
 
 def executar_pacote_aprovado():
-    payload_root = publisher.carregar_payload()
-    event = _event(payload_root)
+    original_payload = publisher.carregar_payload()
+    event = _event(original_payload)
+    rodada = _round(original_payload)
+    payload_root = _package_root(original_payload, event, rodada)
 
     original_load = publisher.carregar_payload
     original_prepare = base._prepare_publication
@@ -114,7 +238,11 @@ def executar_pacote_aprovado():
     base._prepare_publication = prepare
     publisher.render_publication = render
     try:
-        return base.executar_pacote()
+        results = base.executar_pacote()
+        expected = 4 if event in {"SELECAO_INICIAL", "ATUALIZACAO_20H", "CONFIRMADOS"} else (3 if event == "PRE_FECHAMENTO_TIMES" else 1)
+        if event in {"SELECAO_INICIAL", "ATUALIZACAO_20H", "CONFIRMADOS", "PRE_FECHAMENTO_TIMES", "PRE_FECHAMENTO_TOP5"} and len(results) != expected:
+            raise RuntimeError(f"Pacote incompleto: evento={event} esperado={expected} publicado={len(results)}")
+        return results
     finally:
         publisher.carregar_payload = original_load
         base._prepare_publication = original_prepare
