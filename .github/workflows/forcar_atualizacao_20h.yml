@@ -1,0 +1,155 @@
+name: Forçar Atualização 20h
+
+on:
+  push:
+    paths:
+      - data/force_20h_publish.json
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: cartola-times-top5-publicador-unico
+  cancel-in-progress: false
+
+jobs:
+  publicar-20h:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependências
+        shell: bash
+        run: |
+          set -e
+          python -m pip install --upgrade pip setuptools wheel
+          pip install --upgrade -r requirements.txt
+
+      - name: Preparar atualização das 20h
+        shell: bash
+        run: |
+          set -e
+          test -s data/force_20h_publish.json
+          cp data/force_20h_publish.json data/payload_dispatch.json
+          python -m json.tool data/payload_dispatch.json >/dev/null
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=json.loads(Path('data/payload_dispatch.json').read_text(encoding='utf-8'))
+          if str(p.get('evento_programado','')).upper() != 'ATUALIZACAO_20H':
+              raise SystemExit('ERRO: evento diferente de ATUALIZACAO_20H')
+          rodada=int(p.get('rodada') or 0)
+          if rodada <= 0:
+              raise SystemExit('ERRO: rodada inválida')
+          for f in [
+              'data/times_atual_economico.json',
+              'data/times_atual_intermediario.json',
+              'data/times_atual_pontuacao.json',
+              'data/top5_atual.json',
+          ]:
+              d=json.loads(Path(f).read_text(encoding='utf-8'))
+              r=int(float(d.get('rodada') or d.get('RODADA') or 0))
+              if r != rodada:
+                  raise SystemExit(f'ERRO: {f} está na R{r}, esperado R{rodada}')
+          print(f'PACOTE 20H PRONTO: rodada={rodada}')
+          PY
+          rm -f output/top5_*.png output/time_*.png output/resultados_*.png output/boletim_*.png output/ultima_publicacao.json
+
+      - name: Verificar se já foi publicado hoje
+        id: gate
+        shell: bash
+        run: |
+          set -e
+          python - <<'PY'
+          import json, os
+          from datetime import datetime
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+          p=json.loads(Path('data/payload_dispatch.json').read_text(encoding='utf-8'))
+          rodada=int(p['rodada'])
+          hoje=datetime.now(ZoneInfo('America/Sao_Paulo')).strftime('%Y-%m-%d')
+          marker=Path(f'data/flags/publicacao_ATUALIZACAO_20H_rodada_{rodada}_{hoje}_PACOTE.json')
+          with open(os.environ['GITHUB_OUTPUT'],'a',encoding='utf-8') as fh:
+              fh.write(f'rodada={rodada}\n')
+              fh.write(f'marker={marker.as_posix()}\n')
+              fh.write(f'allowed={"false" if marker.exists() else "true"}\n')
+          print('JÁ PUBLICADO' if marker.exists() else 'AUTORIZADO PARA PUBLICAR AGORA')
+          PY
+
+      - name: Gerar e publicar Econômico + Intermediário + Pontuação + Top5
+        if: steps.gate.outputs.allowed == 'true'
+        shell: bash
+        env:
+          PAYLOAD_FILE: data/payload_dispatch.json
+          OUTPUT_DIR: output
+          TZ: America/Sao_Paulo
+          PLANILHA_ID: ${{ secrets.PLANILHA_ID }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_APPLICATION_CREDENTIALS: service_account.json
+          ABA_TELEGRAM: ${{ secrets.ABA_TELEGRAM }}
+          CONTA_TELEGRAM: ${{ secrets.CONTA_TELEGRAM }}
+          TELEGRAM_CHAT_FALLBACK: "@dicascartolaportalsimonsports"
+          EVENTO_PROGRAMADO: ATUALIZACAO_20H
+        run: |
+          set -e
+          python app/publicar_times_top5_automatico_v2.py
+
+      - name: Validar pacote completo
+        if: steps.gate.outputs.allowed == 'true'
+        shell: bash
+        run: |
+          set -e
+          python - <<'PY'
+          import json
+          from collections import Counter
+          from pathlib import Path
+          m=Path('output/ultima_publicacao.json')
+          if not m.exists():
+              raise SystemExit('ERRO: manifesto não foi criado')
+          d=json.loads(m.read_text(encoding='utf-8'))
+          pubs=d.get('publicacoes') or []
+          tipos=[str(x.get('tipo_publicacao') or '').lower() for x in pubs]
+          esperado={'time_economico','time_intermediario','time_pontuacao','top5'}
+          if Counter(tipos).most_common(1) and any(v>1 for v in Counter(tipos).values()):
+              raise SystemExit(f'ERRO: duplicidade no pacote: {tipos}')
+          if set(tipos) != esperado or len(tipos) != 4:
+              raise SystemExit(f'ERRO: pacote incompleto: {tipos}')
+          arquivos=[a for p in pubs for a in (p.get('arquivos') or [])]
+          faltando=[a for a in arquivos if not Path(a).exists()]
+          if not arquivos or faltando:
+              raise SystemExit(f'ERRO: imagens ausentes: {faltando}')
+          print(f'PACOTE VALIDADO: {tipos}')
+          PY
+
+      - name: Registrar publicação concluída
+        if: steps.gate.outputs.allowed == 'true' && success()
+        shell: bash
+        env:
+          RODADA: ${{ steps.gate.outputs.rodada }}
+          MARKER: ${{ steps.gate.outputs.marker }}
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p "$(dirname "$MARKER")"
+          printf '{\n  "status": "PUBLICADO_COM_SUCESSO",\n  "evento_programado": "ATUALIZACAO_20H",\n  "rodada": %s,\n  "publicador": "PACOTE_3_TIMES_TOP5",\n  "github_run_id": "%s",\n  "registrado_em": "%s"\n}\n' "$RODADA" "${{ github.run_id }}" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$MARKER"
+          git add data/flags/ output/*.png 2>/dev/null || true
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "Telegram: ATUALIZACAO_20H R${RODADA} pacote completo"
+          git pull --rebase origin main
+          git push origin HEAD:main
