@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 25,
-  "atualizado_em": "2026-08-27T05:30:02.134Z",
+  "atualizado_em": "2026-08-27T05:44:50.678Z",
   "dados": [
     {
       "RODADA": 25,
@@ -28,12 +28,12 @@
     {
       "RODADA": 25,
       "POS": "GOL",
-      "NOME": "Rossi",
-      "CLUBE": "FLA",
-      "PRECO": 8.35,
-      "EXP_SCORE": 3.746,
-      "FACTOR": 1.0911928780447597,
-      "ATLETA_ID": 99552
+      "NOME": "Marcelo Rangel",
+      "CLUBE": "REM",
+      "PRECO": 6.24,
+      "EXP_SCORE": 3.7549,
+      "FACTOR": 1.1555041338663812,
+      "ATLETA_ID": 82730
     },
     {
       "RODADA": 25,
@@ -92,7 +92,7 @@
       "CLUBE": "VAS",
       "PRECO": 12.01,
       "EXP_SCORE": 6.0132,
-      "FACTOR": 1.085293525120554,
+      "FACTOR": 1.0852935251205542,
       "ATLETA_ID": 116065
     },
     {
@@ -158,16 +158,6 @@
     {
       "RODADA": 25,
       "POS": "MEI",
-      "NOME": "Arias",
-      "CLUBE": "PAL",
-      "PRECO": 14.45,
-      "EXP_SCORE": 7.6773,
-      "FACTOR": 0.9836643451405521,
-      "ATLETA_ID": 99815
-    },
-    {
-      "RODADA": 25,
-      "POS": "MEI",
       "NOME": "Neymar",
       "CLUBE": "SAN",
       "PRECO": 19.92,
@@ -178,10 +168,20 @@
     {
       "RODADA": 25,
       "POS": "MEI",
+      "NOME": "Arias",
+      "CLUBE": "PAL",
+      "PRECO": 14.45,
+      "EXP_SCORE": 6.6759,
+      "FACTOR": 0.9836643451405521,
+      "ATLETA_ID": 99815
+    },
+    {
+      "RODADA": 25,
+      "POS": "MEI",
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 14.41,
-      "EXP_SCORE": 6.9701,
+      "EXP_SCORE": 6.061,
       "FACTOR": 0.9795418504979201,
       "ATLETA_ID": 96610
     },
@@ -238,6 +238,16 @@
     {
       "RODADA": 25,
       "POS": "ATA",
+      "NOME": "Flaco López",
+      "CLUBE": "PAL",
+      "PRECO": 15.87,
+      "EXP_SCORE": 6.3245,
+      "FACTOR": 0.9836643451405521,
+      "ATLETA_ID": 113103
+    },
+    {
+      "RODADA": 25,
+      "POS": "ATA",
       "NOME": "Andrés Gómez",
       "CLUBE": "VAS",
       "PRECO": 12.06,
@@ -247,13 +257,13 @@
     },
     {
       "RODADA": 25,
-      "POS": "ATA",
-      "NOME": "Jajá",
-      "CLUBE": "REM",
-      "PRECO": 8.11,
-      "EXP_SCORE": 5.7101,
-      "FACTOR": 1.1059571662674903,
-      "ATLETA_ID": 105048
+      "POS": "TEC",
+      "NOME": "Abel Ferreira",
+      "CLUBE": "PAL",
+      "PRECO": 12.41,
+      "EXP_SCORE": 6.7983,
+      "FACTOR": 1.0043730681961427,
+      "ATLETA_ID": 110506
     },
     {
       "RODADA": 25,
@@ -284,16 +294,6 @@
       "EXP_SCORE": 5.9737,
       "FACTOR": 1.0525432686247322,
       "ATLETA_ID": 97341
-    },
-    {
-      "RODADA": 25,
-      "POS": "TEC",
-      "NOME": "Abel Ferreira",
-      "CLUBE": "PAL",
-      "PRECO": 12.41,
-      "EXP_SCORE": 5.9116,
-      "FACTOR": 1.0043730681961427,
-      "ATLETA_ID": 110506
     },
     {
       "RODADA": 25,
