@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 25,
-  "atualizado_em": "2026-08-27T20:44:44.154Z",
+  "atualizado_em": "2026-08-27T20:54:49.644Z",
   "dados": [
     {
       "RODADA": 25,
@@ -28,12 +28,12 @@
     {
       "RODADA": 25,
       "POS": "GOL",
-      "NOME": "Rossi",
-      "CLUBE": "FLA",
-      "PRECO": 8.35,
-      "EXP_SCORE": 3.7329,
-      "FACTOR": 1.0873753027422777,
-      "ATLETA_ID": 99552
+      "NOME": "Marcelo Rangel",
+      "CLUBE": "REM",
+      "PRECO": 6.24,
+      "EXP_SCORE": 3.746,
+      "FACTOR": 1.1527521205127347,
+      "ATLETA_ID": 82730
     },
     {
       "RODADA": 25,
@@ -92,7 +92,7 @@
       "CLUBE": "VAS",
       "PRECO": 12.01,
       "EXP_SCORE": 5.9915,
-      "FACTOR": 1.0813782044713443,
+      "FACTOR": 1.0813782044713445,
       "ATLETA_ID": 116065
     },
     {
@@ -238,6 +238,16 @@
     {
       "RODADA": 25,
       "POS": "ATA",
+      "NOME": "Flaco López",
+      "CLUBE": "PAL",
+      "PRECO": 15.87,
+      "EXP_SCORE": 6.3233,
+      "FACTOR": 0.9834741918305357,
+      "ATLETA_ID": 113103
+    },
+    {
+      "RODADA": 25,
+      "POS": "ATA",
       "NOME": "Andrés Gómez",
       "CLUBE": "VAS",
       "PRECO": 12.06,
@@ -247,13 +257,13 @@
     },
     {
       "RODADA": 25,
-      "POS": "ATA",
-      "NOME": "Jajá",
-      "CLUBE": "REM",
-      "PRECO": 8.11,
-      "EXP_SCORE": 5.7089,
-      "FACTOR": 1.1057239423285536,
-      "ATLETA_ID": 105048
+      "POS": "TEC",
+      "NOME": "Abel Ferreira",
+      "CLUBE": "PAL",
+      "PRECO": 12.41,
+      "EXP_SCORE": 6.797,
+      "FACTOR": 1.0041789116585471,
+      "ATLETA_ID": 110506
     },
     {
       "RODADA": 25,
@@ -284,16 +294,6 @@
       "EXP_SCORE": 5.9722,
       "FACTOR": 1.0522851028579316,
       "ATLETA_ID": 97341
-    },
-    {
-      "RODADA": 25,
-      "POS": "TEC",
-      "NOME": "Abel Ferreira",
-      "CLUBE": "PAL",
-      "PRECO": 12.41,
-      "EXP_SCORE": 5.9104,
-      "FACTOR": 1.0041789116585471,
-      "ATLETA_ID": 110506
     },
     {
       "RODADA": 25,
