@@ -125,7 +125,6 @@ jobs:
 
           tipo = str(payload.get("tipo_publicacao") or nested.get("tipo_publicacao") or "").strip().upper()
           modelo = str(nested.get("modelo") or nested.get("tipo") or "").strip().upper()
-          action = str(os.environ.get("GITHUB_EVENT_ACTION") or "").strip().lower()
 
           if "TOP5" in tipo or tipo == "TOP5":
               componente = "TOP5"
@@ -188,8 +187,6 @@ jobs:
 
           finish(True, marker.as_posix(), f"AUTORIZADO: evento={evento} rodada={rodada} componente={componente}")
           PY
-        env:
-          GITHUB_EVENT_ACTION: ${{ github.event.action }}
 
       - name: Gerar e publicar Times e Top 5 aprovados
         if: steps.gate.outputs.allowed == 'true'
