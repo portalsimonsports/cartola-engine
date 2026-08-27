@@ -17,8 +17,8 @@ permissions:
   contents: write
   actions: read
 
-# Serializa TODAS as publicações de Times/Top5. A próxima execução só entra
-# depois que a anterior terminar, permitindo que a trava persistente seja vista.
+# Uma execução por vez. A trava é por EVENTO + RODADA + COMPONENTE,
+# portanto os 3 times e o Top 5 da mesma janela não se bloqueiam entre si.
 concurrency:
   group: cartola-times-top5-publicacao
   cancel-in-progress: false
@@ -65,7 +65,7 @@ jobs:
           MANUAL_PAYLOAD: ${{ github.event.inputs.payload_json }}
         run: |
           set -e
-          mkdir -p data output data/flags
+          mkdir -p data output data/flags data/publicacoes_atuais
 
           if [ "$EVENT_NAME" = "repository_dispatch" ]; then
             printf '%s' "$DISPATCH_PAYLOAD" > data/payload_dispatch.json
@@ -94,7 +94,6 @@ jobs:
           TZ: America/Sao_Paulo
         run: |
           set -e
-
           python - <<'PY'
           import json
           import os
@@ -106,12 +105,7 @@ jobs:
           payload = json.loads(Path("data/payload_dispatch.json").read_text(encoding="utf-8"))
           nested = payload.get("payload") if isinstance(payload.get("payload"), dict) else {}
 
-          evento = str(
-              payload.get("evento_programado")
-              or nested.get("evento_programado")
-              or ""
-          ).strip().upper()
-
+          evento = str(payload.get("evento_programado") or nested.get("evento_programado") or "").strip().upper()
           rodada_raw = payload.get("rodada") or nested.get("rodada") or 0
           try:
               rodada = int(rodada_raw)
@@ -122,114 +116,109 @@ jobs:
           dispatch_type = str(os.environ.get("DISPATCH_TYPE") or "").strip()
           output = Path(os.environ["GITHUB_OUTPUT"])
 
-          # Execução manual continua possível apenas quando o operador a dispara conscientemente.
+          tipo = str(payload.get("tipo_publicacao") or nested.get("tipo_publicacao") or "").strip().upper()
+          modelo = str(payload.get("modelo") or nested.get("modelo") or "").strip().upper()
+          nome_modelo = str(payload.get("nome_modelo") or nested.get("nome_modelo") or "").strip().upper()
+
+          if dispatch_type == "cartola_publish_top5" or "TOP5" in tipo or tipo == "TOP5":
+              componente = "TOP5"
+          elif modelo:
+              componente = "TIME_" + modelo
+          elif nome_modelo:
+              componente = "TIME_" + nome_modelo
+          elif "ECON" in tipo:
+              componente = "TIME_ECONOMICO"
+          elif "INTER" in tipo:
+              componente = "TIME_INTERMEDIARIO"
+          elif "PONT" in tipo:
+              componente = "TIME_PONTUACAO"
+          else:
+              componente = "TIMES"
+
+          componente = re.sub(r"[^A-Z0-9_]+", "_", componente).strip("_") or "COMPONENTE"
+
           if event_name == "workflow_dispatch":
-              if rodada <= 0:
-                  # Tenta extrair a rodada do próprio payload salvo.
-                  rodada = int(payload.get("rodada") or nested.get("rodada") or 0)
               with output.open("a", encoding="utf-8") as fh:
                   fh.write("allowed=true\n")
                   fh.write(f"evento={evento or 'MANUAL'}\n")
                   fh.write(f"rodada={rodada}\n")
+                  fh.write(f"componente={componente}\n")
                   fh.write("marker=\n")
               print("Execução manual explicitamente autorizada.")
               raise SystemExit(0)
 
-          # Mapeamento rígido por tipo de repository_dispatch.
-          # Alteração de dados, hash, preço ou escalação NÃO é autorização.
           permitidos_por_dispatch = {
-              "cartola_publish_times": {
-                  "SELECAO_INICIAL",
-                  "ATUALIZACAO_20H",
-                  "PRE_FECHAMENTO_TIMES",
-                  "CONFIRMADOS",
-              },
-              "cartola_publish_top5": {
-                  "SELECAO_INICIAL",
-                  "ATUALIZACAO_20H",
-                  "PRE_FECHAMENTO_TOP5",
-                  "CONFIRMADOS",
-              },
-              # Mantido exclusivamente para teste explícito. Em produção o payload
-              # ainda precisa trazer um dos eventos programados válidos.
-              "cartola_publish_test": {
-                  "SELECAO_INICIAL",
-                  "ATUALIZACAO_20H",
-                  "PRE_FECHAMENTO_TIMES",
-                  "PRE_FECHAMENTO_TOP5",
-                  "CONFIRMADOS",
-              },
+              "cartola_publish_times": {"SELECAO_INICIAL", "ATUALIZACAO_20H", "PRE_FECHAMENTO_TIMES", "CONFIRMADOS"},
+              "cartola_publish_top5": {"SELECAO_INICIAL", "ATUALIZACAO_20H", "PRE_FECHAMENTO_TOP5", "CONFIRMADOS"},
+              "cartola_publish_test": {"SELECAO_INICIAL", "ATUALIZACAO_20H", "PRE_FECHAMENTO_TIMES", "PRE_FECHAMENTO_TOP5", "CONFIRMADOS"},
           }
 
-          permitidos = permitidos_por_dispatch.get(dispatch_type, set())
-          if evento not in permitidos:
+          if evento not in permitidos_por_dispatch.get(dispatch_type, set()):
               with output.open("a", encoding="utf-8") as fh:
                   fh.write("allowed=false\n")
                   fh.write(f"evento={evento}\n")
                   fh.write(f"rodada={rodada}\n")
+                  fh.write(f"componente={componente}\n")
                   fh.write("marker=\n")
-              print(
-                  "BLOQUEADO: chamada não corresponde a uma janela programada válida. "
-                  f"dispatch={dispatch_type!r} evento={evento!r}"
-              )
+              print(f"BLOQUEADO: janela inválida. dispatch={dispatch_type!r} evento={evento!r}")
               raise SystemExit(0)
 
           if rodada <= 0:
               with output.open("a", encoding="utf-8") as fh:
-                  fh.write("allowed=false\n")
-                  fh.write(f"evento={evento}\n")
-                  fh.write("rodada=0\n")
-                  fh.write("marker=\n")
-              print("BLOQUEADO: rodada inválida ou ausente no payload.")
+                  fh.write("allowed=false\nrodada=0\nmarker=\n")
+                  fh.write(f"evento={evento}\ncomponente={componente}\n")
+              print("BLOQUEADO: rodada inválida ou ausente.")
               raise SystemExit(0)
 
           hoje_sp = datetime.now(ZoneInfo("America/Sao_Paulo")).strftime("%Y-%m-%d")
           evento_slug = re.sub(r"[^A-Z0-9_]+", "_", evento)
 
-          # 20h pode ocorrer 1x por DIA elegível; os demais eventos são 1x por rodada.
+          # Compatibilidade: a seleção inicial R25 e anteriores já publicada usava trava global.
+          # Mantemos essa trava antiga apenas para SELECAO_INICIAL, impedindo republicação histórica.
+          legacy_marker = Path(f"data/flags/publicacao_{evento_slug}_rodada_{rodada}.json")
+          if evento == "SELECAO_INICIAL" and legacy_marker.exists():
+              with output.open("a", encoding="utf-8") as fh:
+                  fh.write("allowed=false\n")
+                  fh.write(f"evento={evento}\nrodada={rodada}\ncomponente={componente}\n")
+                  fh.write(f"marker={legacy_marker.as_posix()}\n")
+              print(f"BLOQUEADO: seleção inicial já publicada pela trava legada: {legacy_marker}")
+              raise SystemExit(0)
+
           if evento == "ATUALIZACAO_20H":
-              marker = Path(f"data/flags/publicacao_{evento_slug}_rodada_{rodada}_{hoje_sp}.json")
+              marker = Path(f"data/flags/publicacao_{evento_slug}_rodada_{rodada}_{hoje_sp}_{componente}.json")
           else:
-              marker = Path(f"data/flags/publicacao_{evento_slug}_rodada_{rodada}.json")
+              marker = Path(f"data/flags/publicacao_{evento_slug}_rodada_{rodada}_{componente}.json")
 
           if marker.exists():
               with output.open("a", encoding="utf-8") as fh:
                   fh.write("allowed=false\n")
-                  fh.write(f"evento={evento}\n")
-                  fh.write(f"rodada={rodada}\n")
+                  fh.write(f"evento={evento}\nrodada={rodada}\ncomponente={componente}\n")
                   fh.write(f"marker={marker.as_posix()}\n")
-              print(
-                  "BLOQUEADO: esta janela já foi reservada/publicada. "
-                  f"evento={evento} rodada={rodada} marker={marker}"
-              )
+              print(f"BLOQUEADO: componente já reservado/publicado: {marker}")
               raise SystemExit(0)
 
           with output.open("a", encoding="utf-8") as fh:
               fh.write("allowed=true\n")
               fh.write(f"evento={evento}\n")
               fh.write(f"rodada={rodada}\n")
+              fh.write(f"componente={componente}\n")
               fh.write(f"marker={marker.as_posix()}\n")
 
-          print(
-              "AUTORIZADO: evento programado válido e ainda não reservado. "
-              f"dispatch={dispatch_type} evento={evento} rodada={rodada}"
-          )
+          print(f"AUTORIZADO: evento={evento} rodada={rodada} componente={componente}")
           PY
 
-      # Reserva ANTES de enviar ao Telegram. É fail-closed: se houver falha depois,
-      # o automático não repete a publicação indefinidamente.
       - name: Reservar publicação antes do envio
         if: steps.gate.outputs.allowed == 'true' && github.event_name != 'workflow_dispatch'
         shell: bash
         env:
           EVENTO: ${{ steps.gate.outputs.evento }}
           RODADA: ${{ steps.gate.outputs.rodada }}
+          COMPONENTE: ${{ steps.gate.outputs.componente }}
           MARKER: ${{ steps.gate.outputs.marker }}
           RUN_ID: ${{ github.run_id }}
           RUN_ATTEMPT: ${{ github.run_attempt }}
         run: |
           set -e
-
           if [ -z "$MARKER" ]; then
             echo "ERRO: marker vazio em execução automática."
             exit 1
@@ -237,31 +226,31 @@ jobs:
 
           mkdir -p "$(dirname "$MARKER")"
           python - <<'PY'
-          import json
-          import os
+          import json, os
           from datetime import datetime, timezone
           from pathlib import Path
-
           marker = Path(os.environ["MARKER"])
-          marker.write_text(
-              json.dumps({
-                  "status": "RESERVADO_ANTES_DO_ENVIO",
-                  "evento_programado": os.environ.get("EVENTO", ""),
-                  "rodada": int(os.environ.get("RODADA") or 0),
-                  "github_run_id": os.environ.get("RUN_ID", ""),
-                  "github_run_attempt": os.environ.get("RUN_ATTEMPT", ""),
-                  "reservado_em_utc": datetime.now(timezone.utc).isoformat(),
-                  "regra": "uma_publicacao_por_janela; alteracao_de_dados_nao_publica"
-              }, ensure_ascii=False, indent=2) + "\n",
-              encoding="utf-8"
-          )
+          marker.write_text(json.dumps({
+              "status": "RESERVADO_ANTES_DO_ENVIO",
+              "evento_programado": os.environ.get("EVENTO", ""),
+              "rodada": int(os.environ.get("RODADA") or 0),
+              "componente": os.environ.get("COMPONENTE", ""),
+              "github_run_id": os.environ.get("RUN_ID", ""),
+              "github_run_attempt": os.environ.get("RUN_ATTEMPT", ""),
+              "reservado_em_utc": datetime.now(timezone.utc).isoformat(),
+              "regra": "uma_publicacao_por_janela_e_componente"
+          }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
           print(f"Trava criada: {marker}")
           PY
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add "$MARKER"
-          git commit -m "Trava publicação ${EVENTO} R${RODADA}"
+          git commit -m "Trava ${EVENTO} R${RODADA} ${COMPONENTE}"
+
+          # data/payload_dispatch.json é transitório e fica modificado no checkout.
+          # Guardamos somente esse arquivo antes do rebase para não bloquear o Git.
+          git stash push -m "payload-transitorio-${RUN_ID}" -- data/payload_dispatch.json >/dev/null 2>&1 || true
 
           enviado=0
           for tentativa in 1 2 3 4 5; do
@@ -275,12 +264,13 @@ jobs:
             sleep $((tentativa * 2))
           done
 
+          git stash pop >/dev/null 2>&1 || true
+
           if [ "$enviado" -ne 1 ]; then
-            echo "ERRO: não foi possível persistir a trava; publicação será bloqueada."
+            echo "ERRO: não foi possível persistir a trava; publicação bloqueada."
             exit 1
           fi
-
-          echo "Trava persistida antes do envio ao Telegram."
+          echo "Trava persistida antes do envio."
 
       - name: Gerar e publicar Times e Top 5 aprovados
         if: steps.gate.outputs.allowed == 'true'
@@ -308,57 +298,42 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
-
           manifest = Path("output/ultima_publicacao.json")
           if not manifest.exists():
               raise SystemExit("ERRO: manifesto da publicação não foi gerado.")
-
           data = json.loads(manifest.read_text(encoding="utf-8"))
           publications = data.get("publicacoes") or []
           if not publications:
               raise SystemExit("ERRO: manifesto sem publicações.")
-
-          files = [
-              path
-              for publication in publications
-              for path in publication.get("arquivos", [])
-          ]
+          files = [p for publication in publications for p in publication.get("arquivos", [])]
           if not files:
               raise SystemExit("ERRO: nenhuma imagem foi gerada.")
-
-          missing = [path for path in files if not Path(path).exists()]
+          missing = [p for p in files if not Path(p).exists()]
           if missing:
               raise SystemExit(f"ERRO: imagens ausentes: {missing}")
-
-          if any("boletim_" in Path(path).name for path in files):
+          if any("boletim_" in Path(p).name for p in files):
               raise SystemExit("ERRO: publicação genérica/textual detectada.")
-
-          print(
-              f"Validação concluída: {len(publications)} publicação(ões), "
-              f"{len(files)} imagem(ns)."
-          )
+          print(f"Validação concluída: {len(publications)} publicação(ões), {len(files)} imagem(ns).")
           PY
           ls -lh output || true
 
-      - name: Marcar reserva como publicada
-        if: steps.gate.outputs.allowed == 'true' && success() && github.event_name != 'workflow_dispatch'
+      - name: Confirmar publicação e persistir snapshots
+        if: steps.gate.outputs.allowed == 'true' && success()
         shell: bash
         env:
           EVENTO: ${{ steps.gate.outputs.evento }}
           RODADA: ${{ steps.gate.outputs.rodada }}
+          COMPONENTE: ${{ steps.gate.outputs.componente }}
           MARKER: ${{ steps.gate.outputs.marker }}
           RUN_ID: ${{ github.run_id }}
         run: |
           set -e
-          git fetch origin main
-          git reset --hard origin/main
 
-          python - <<'PY'
-          import json
-          import os
+          if [ "${{ github.event_name }}" != "workflow_dispatch" ] && [ -n "$MARKER" ]; then
+            python - <<'PY'
+          import json, os
           from datetime import datetime, timezone
           from pathlib import Path
-
           marker = Path(os.environ["MARKER"])
           data = {}
           if marker.exists():
@@ -370,45 +345,32 @@ jobs:
               "status": "PUBLICADO_COM_SUCESSO",
               "evento_programado": os.environ.get("EVENTO", ""),
               "rodada": int(os.environ.get("RODADA") or 0),
+              "componente": os.environ.get("COMPONENTE", ""),
               "github_run_id": os.environ.get("RUN_ID", ""),
               "publicado_em_utc": datetime.now(timezone.utc).isoformat(),
-              "regra": "uma_publicacao_por_janela; alteracao_de_dados_nao_publica"
+              "regra": "uma_publicacao_por_janela_e_componente"
           })
           marker.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
           PY
+          fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "$MARKER"
-          git commit -m "Confirmar publicação ${EVENTO} R${RODADA}" || true
-          git push origin HEAD:main
 
-      - name: Publicar arquivos gerados no repositório
-        if: steps.gate.outputs.allowed == 'true' && success()
-        shell: bash
-        run: |
-          set -e
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          # Parte sempre do estado mais recente, inclusive da trava persistida acima.
-          git fetch origin main
-          git reset --hard origin/main
-
-          git add \
-            data/publicacoes_atuais/ \
-            output/*.png 2>/dev/null || true
-
+          git add data/flags/ data/publicacoes_atuais/ output/*.png 2>/dev/null || true
           if git diff --cached --quiet; then
-            echo "Sem alterações permanentes para commit."
+            echo "Sem alterações permanentes adicionais; Telegram já foi enviado com sucesso."
             exit 0
           fi
 
-          git commit -m "Telegram: Times e Top 5 no padrão aprovado"
+          git commit -m "Publicação ${EVENTO} R${RODADA} ${COMPONENTE}"
+
+          # O payload é transitório e não faz parte do commit permanente.
+          git stash push -m "payload-pos-publicacao-${RUN_ID}" -- data/payload_dispatch.json >/dev/null 2>&1 || true
 
           enviado=0
           for tentativa in 1 2 3 4 5; do
-            echo "Tentativa de push $tentativa/5"
+            echo "Tentativa de persistir publicação $tentativa/5"
             git fetch origin main
             if git rebase origin/main && git push origin HEAD:main; then
               enviado=1
@@ -418,9 +380,11 @@ jobs:
             sleep $((tentativa * 3))
           done
 
+          git stash pop >/dev/null 2>&1 || true
+
           if [ "$enviado" -ne 1 ]; then
-            echo "ERRO: não foi possível publicar o commit após 5 tentativas."
+            echo "ERRO: Telegram foi enviado, mas o commit de snapshots não pôde ser persistido."
             exit 1
           fi
 
-          echo "Commit publicado com sucesso no branch main."
+          echo "Publicação e snapshots persistidos com sucesso."
