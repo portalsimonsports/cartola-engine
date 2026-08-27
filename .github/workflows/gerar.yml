@@ -17,8 +17,8 @@ permissions:
   contents: write
   actions: read
 
-# Há somente UM publicador efetivo por evento. Os dispatches auxiliares são
-# bloqueados pelo gate e o publicador autorizado monta o pacote completo.
+# Todos os dispatches do mesmo pacote entram na mesma fila. O primeiro válido
+# publica o pacote completo e grava a flag; os seguintes são bloqueados pela flag.
 concurrency:
   group: cartola-times-top5-publicador-unico
   cancel-in-progress: false
@@ -55,7 +55,7 @@ jobs:
           python -m py_compile app/gerar_resultados_telegram.py
           python -m py_compile app/publicar_times_top5_automatico.py
           python -m py_compile app/publicar_times_top5_automatico_v2.py
-          echo "Renderizador e publicador de Times/Top 5 aprovados validados."
+          echo "Renderizador e publicador de Times/Top 5 validados."
 
       - name: Preparar payload
         shell: bash
@@ -69,21 +69,20 @@ jobs:
 
           if [ "$EVENT_NAME" = "repository_dispatch" ]; then
             printf '%s' "$DISPATCH_PAYLOAD" > data/payload_dispatch.json
-            echo "Payload recebido automaticamente via repository_dispatch."
+            echo "Payload recebido via repository_dispatch."
           elif [ -n "$MANUAL_PAYLOAD" ]; then
             printf '%s' "$MANUAL_PAYLOAD" > data/payload_dispatch.json
-            echo "Payload manual informado no Run workflow."
+            echo "Payload manual informado."
           elif [ -s data/payload_dispatch.json ]; then
             echo "Reutilizando data/payload_dispatch.json existente."
           else
-            echo "ERRO: não existe payload manual nem payload salvo."
+            echo "ERRO: não existe payload para processar."
             exit 1
           fi
 
           python -m json.tool data/payload_dispatch.json >/dev/null
           rm -f output/top5_*.png output/time_*.png output/resultados_*.png
           rm -f output/boletim_*.png output/ultima_publicacao.json
-          echo "Payload preparado e saídas anteriores limpas."
 
       - name: Validar evento e escolher o único publicador
         id: gate
@@ -101,26 +100,17 @@ jobs:
           payload = json.loads(Path("data/payload_dispatch.json").read_text(encoding="utf-8"))
           nested = payload.get("payload") if isinstance(payload.get("payload"), dict) else {}
 
-          evento = str(
-              payload.get("evento_programado")
-              or nested.get("evento_programado")
-              or ""
-          ).strip().upper()
-
+          evento = str(payload.get("evento_programado") or nested.get("evento_programado") or "").strip().upper()
           rodada_raw = payload.get("rodada") or nested.get("rodada") or 0
           try:
               rodada = int(float(rodada_raw))
           except Exception:
               rodada = 0
 
-          tipo = str(
-              payload.get("tipo_publicacao")
-              or nested.get("tipo_publicacao")
-              or ""
-          ).strip().upper()
-          modelo = str(nested.get("modelo") or nested.get("tipo") or "").strip().upper()
+          tipo = str(payload.get("tipo_publicacao") or nested.get("tipo_publicacao") or "").strip().upper()
+          modelo = str(payload.get("modelo") or nested.get("modelo") or nested.get("tipo") or "").strip().upper()
 
-          if "TOP5" in tipo or tipo == "TOP5":
+          if "TOP5" in tipo:
               componente = "TOP5"
           elif modelo:
               componente = "TIME_" + modelo
@@ -160,30 +150,25 @@ jobs:
 
           hoje_sp = datetime.now(ZoneInfo("America/Sao_Paulo")).strftime("%Y-%m-%d")
 
-          # EVENTOS DE PACOTE: 3 times + Top5. O único disparo autorizado é o
-          # dispatch TOP5; ele carrega as quatro bases atuais e publica cada uma
-          # exatamente uma vez. Os três dispatches de Times são apenas auxiliares.
+          # CORREÇÃO 27/08/2026:
+          # Para os eventos de pacote, NÃO dependemos mais de o dispatch TOP5 chegar.
+          # O primeiro dispatch válido (qualquer um dos 3 times ou Top5) vira o
+          # publicador único e carrega as quatro bases atuais. A concurrency + flag
+          # impedem que os demais dispatches repitam a publicação.
           if evento in {"SELECAO_INICIAL", "ATUALIZACAO_20H", "CONFIRMADOS"}:
-              if componente != "TOP5":
-                  finish(False, reason=f"BLOQUEADO: {evento} usa publicador único TOP5/PACOTE; recebido={componente}")
-                  raise SystemExit(0)
               if evento == "ATUALIZACAO_20H":
                   marker = Path(f"data/flags/publicacao_ATUALIZACAO_20H_rodada_{rodada}_{hoje_sp}_PACOTE.json")
               else:
                   marker = Path(f"data/flags/publicacao_{evento}_rodada_{rodada}_PACOTE.json")
               publisher_name = "PACOTE_3_TIMES_TOP5"
 
-          # Pré-fechamento dos times publica os três modelos em um único pacote.
-          # Somente o dispatch ECONOMICO abre a execução; INTERMEDIARIO e PONTUACAO
-          # são carregados diretamente das bases atuais pelo publicador.
           elif evento == "PRE_FECHAMENTO_TIMES":
-              if componente != "TIME_ECONOMICO":
-                  finish(False, reason=f"BLOQUEADO: PRE_FECHAMENTO_TIMES usa publicador único ECONOMICO/PACOTE; recebido={componente}")
+              if componente == "TOP5":
+                  finish(False, reason="BLOQUEADO: PRE_FECHAMENTO_TIMES não aceita dispatch TOP5")
                   raise SystemExit(0)
               marker = Path(f"data/flags/publicacao_PRE_FECHAMENTO_TIMES_rodada_{rodada}_PACOTE.json")
               publisher_name = "PACOTE_3_TIMES"
 
-          # Pré-fechamento do Top5 é naturalmente uma publicação única.
           else:
               if componente != "TOP5":
                   finish(False, reason=f"BLOQUEADO: PRE_FECHAMENTO_TOP5 aceita somente TOP5; recebido={componente}")
@@ -191,18 +176,16 @@ jobs:
               marker = Path(f"data/flags/publicacao_PRE_FECHAMENTO_TOP5_rodada_{rodada}_TOP5.json")
               publisher_name = "TOP5"
 
-          # Compatibilidade com flag antiga da seleção inicial: se a rodada já foi
-          # publicada antes desta correção, não repetir no Telegram.
           legacy = Path(f"data/flags/publicacao_SELECAO_INICIAL_rodada_{rodada}.json")
           if evento == "SELECAO_INICIAL" and legacy.exists():
-              finish(False, legacy.as_posix(), publisher_name, f"BLOQUEADO: seleção inicial R{rodada} já registrada anteriormente")
+              finish(False, legacy.as_posix(), publisher_name, f"BLOQUEADO: seleção inicial R{rodada} já registrada")
               raise SystemExit(0)
 
           if marker.exists():
               finish(False, marker.as_posix(), publisher_name, f"BLOQUEADO: pacote já publicado: {marker}")
               raise SystemExit(0)
 
-          finish(True, marker.as_posix(), publisher_name, f"AUTORIZADO: evento={evento} rodada={rodada} publicador={publisher_name}")
+          finish(True, marker.as_posix(), publisher_name, f"AUTORIZADO: evento={evento} rodada={rodada} disparador={componente} publicador={publisher_name}")
           PY
 
       - name: Gerar e publicar pacote aprovado
@@ -259,15 +242,9 @@ jobs:
           if duplicates:
               raise SystemExit(f"ERRO: publicação duplicada detectada: {duplicates}")
           if set(actual) != expected_types or len(actual) != len(expected_types):
-              raise SystemExit(
-                  f"ERRO: pacote incompleto/incorreto. esperado={sorted(expected_types)} recebido={actual}"
-              )
+              raise SystemExit(f"ERRO: pacote incompleto/incorreto. esperado={sorted(expected_types)} recebido={actual}")
 
-          files = [
-              path
-              for publication in publications
-              for path in publication.get("arquivos", [])
-          ]
+          files = [path for publication in publications for path in publication.get("arquivos", [])]
           if not files:
               raise SystemExit("ERRO: nenhuma imagem foi gerada.")
 
@@ -280,7 +257,6 @@ jobs:
 
           print(f"PACOTE OK: evento={event}; publicações={actual}; imagens={len(files)}")
           PY
-          ls -lh output || true
 
       - name: Registrar pacote somente após envio completo
         if: steps.gate.outputs.allowed == 'true' && success()
@@ -302,10 +278,7 @@ jobs:
               "$EVENTO" "$RODADA" "$PUBLICADOR" "$COMPONENTE" "${{ github.run_id }}" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$MARKER"
           fi
 
-          git add \
-            data/publicacoes_atuais/ \
-            data/flags/ \
-            output/*.png 2>/dev/null || true
+          git add data/publicacoes_atuais/ data/flags/ output/*.png 2>/dev/null || true
 
           if git diff --cached --quiet; then
             echo "Sem alterações permanentes para commit."
@@ -318,17 +291,12 @@ jobs:
           for tentativa in 1 2 3 4 5; do
             echo "Tentativa de push $tentativa/5"
             git rebase --abort 2>/dev/null || true
-            git reset --hard HEAD
-            git clean -fd
             git fetch origin main
-
             if git rebase origin/main && git push origin HEAD:main; then
               enviado=1
               break
             fi
-
             git rebase --abort 2>/dev/null || true
-            git reset --hard HEAD
             sleep $((tentativa * 3))
           done
 
