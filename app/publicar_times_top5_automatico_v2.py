@@ -9,7 +9,7 @@ import publicar_times_top5_automatico as base
 import render_telegram_cards as rtc
 
 
-PIPELINE_VERSION = "times_top5_aprovados_v2_2026_08_27_pacote_unico"
+PIPELINE_VERSION = "times_top5_aprovados_v2_2026_08_27_capitao_reservas"
 
 MODEL_ORDER = ("ECONOMICO", "INTERMEDIARIO", "PONTUACAO")
 MODEL_TITLES = {
@@ -65,10 +65,69 @@ def _validate_round(data: Dict[str, Any], rodada: int, path: Path) -> None:
         raise RuntimeError(f"Rodada divergente em {path}: esperado R{rodada}, encontrado R{current}")
 
 
+def _normalized_player(item: Dict[str, Any]) -> Dict[str, Any]:
+    return {
+        "rodada": item.get("rodada") if item.get("rodada") is not None else item.get("RODADA"),
+        "tipo": _safe(item.get("tipo") or item.get("TIPO")),
+        "status": _safe(item.get("status") or item.get("STATUS") or "TITULAR").upper(),
+        "pos": _safe(item.get("pos") or item.get("POS")).upper(),
+        "nome": _safe(item.get("nome") or item.get("NOME")),
+        "clube": _safe(item.get("clube") or item.get("CLUBE")).upper(),
+        "preco": item.get("preco") if item.get("preco") is not None else item.get("PRECO"),
+        "exp_score": item.get("exp_score") if item.get("exp_score") is not None else item.get("EXP_SCORE"),
+        "atleta_id": item.get("atleta_id") if item.get("atleta_id") is not None else item.get("ATLETA_ID"),
+    }
+
+
+def _captain_from_data(data: Dict[str, Any], starters: List[Dict[str, Any]]) -> str:
+    explicit = _safe(data.get("capitao") or data.get("capitão"))
+    if explicit:
+        return explicit
+
+    meta = data.get("meta") if isinstance(data.get("meta"), dict) else {}
+    explicit = _safe(meta.get("capitao") or meta.get("capitão"))
+    if explicit:
+        return explicit.split("(", 1)[0].strip()
+
+    scored = []
+    for player in starters:
+        try:
+            score = float(player.get("exp_score") or 0)
+        except Exception:
+            score = 0.0
+        if player.get("nome"):
+            scored.append((score, player["nome"]))
+    if scored:
+        scored.sort(key=lambda value: value[0], reverse=True)
+        return scored[0][1]
+    return ""
+
+
 def _team_publication(model: str, rodada: int) -> Dict[str, Any]:
     path = MODEL_FILES[model]
     data = _read_json(path)
     _validate_round(data, rodada, path)
+
+    raw_players = data.get("dados") or data.get("atletas") or data.get("jogadores") or []
+    players = [_normalized_player(item) for item in raw_players if isinstance(item, dict)]
+    starters = [item for item in players if item.get("status") != "RESERVA"]
+    reserves = [item for item in players if item.get("status") == "RESERVA"]
+
+    if not starters:
+        raise RuntimeError(f"Time {model} R{rodada} sem titulares válidos em {path}")
+    if not reserves:
+        raise RuntimeError(f"Time {model} R{rodada} sem reservas válidos em {path}")
+
+    captain = _captain_from_data(data, starters)
+    if not captain:
+        raise RuntimeError(f"Time {model} R{rodada} sem capitão identificável em {path}")
+
+    starter_names = {_safe(item.get("nome")).upper() for item in starters}
+    if captain.upper() not in starter_names:
+        raise RuntimeError(
+            f"Capitão inválido no {model} R{rodada}: {captain!r} não está entre os titulares"
+        )
+
     payload = dict(data)
     payload.update(
         {
@@ -78,6 +137,11 @@ def _team_publication(model: str, rodada: int) -> Dict[str, Any]:
             "nome_modelo": MODEL_TITLES[model],
             "titulo": f"{MODEL_TITLES[model]} • RODADA {rodada}",
             "rodada": rodada,
+            "atletas": players,
+            "jogadores": starters,
+            "reservas": reserves,
+            "capitao": captain,
+            "formacao": _safe(data.get("formacao") or "4-3-3"),
         }
     )
     return payload
@@ -98,15 +162,6 @@ def _top5_publication(rodada: int) -> Dict[str, Any]:
 
 
 def _package_root(original: Dict[str, Any], event: str, rodada: int) -> Dict[str, Any]:
-    """Monta uma única execução com o conjunto correto de imagens.
-
-    SELECAO_INICIAL, ATUALIZACAO_20H e CONFIRMADOS:
-      3 times + Top 5, exatamente uma vez cada.
-    PRE_FECHAMENTO_TIMES:
-      3 times, exatamente uma vez cada.
-    PRE_FECHAMENTO_TOP5:
-      somente Top 5.
-    """
     if rodada <= 0:
         raise RuntimeError("Rodada não informada no dispatch.")
 
