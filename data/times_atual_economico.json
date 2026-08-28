@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 25,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-08-28T19:49:44.207Z",
+  "atualizado_em": "2026-08-28T20:29:43.826Z",
   "dados": [
     {
       "RODADA": 25,
@@ -14,7 +14,7 @@
       "NOME": "Ronaldo",
       "CLUBE": "BAH",
       "PRECO": 8.53,
-      "EXP_SCORE": 4.4681,
+      "EXP_SCORE": 4.4552,
       "ATLETA_ID": 91101
     },
     {
@@ -25,7 +25,7 @@
       "NOME": "Marcelinho",
       "CLUBE": "REM",
       "PRECO": 6.61,
-      "EXP_SCORE": 5.3114,
+      "EXP_SCORE": 5.2966,
       "ATLETA_ID": 97795
     },
     {
@@ -36,7 +36,7 @@
       "NOME": "Luciano Juba",
       "CLUBE": "BAH",
       "PRECO": 11.99,
-      "EXP_SCORE": 6.712,
+      "EXP_SCORE": 6.6926,
       "ATLETA_ID": 107093
     },
     {
@@ -47,7 +47,7 @@
       "NOME": "David Duarte",
       "CLUBE": "BAH",
       "PRECO": 6.97,
-      "EXP_SCORE": 4.1867,
+      "EXP_SCORE": 4.1747,
       "ATLETA_ID": 91772
     },
     {
@@ -58,7 +58,7 @@
       "NOME": "Aguirre",
       "CLUBE": "CAP",
       "PRECO": 6.13,
-      "EXP_SCORE": 3.6699,
+      "EXP_SCORE": 3.6594,
       "ATLETA_ID": 123869
     },
     {
@@ -69,7 +69,7 @@
       "NOME": "João Cruz",
       "CLUBE": "CAP",
       "PRECO": 7.25,
-      "EXP_SCORE": 3.8669,
+      "EXP_SCORE": 3.7545,
       "ATLETA_ID": 128431
     },
     {
@@ -80,7 +80,7 @@
       "NOME": "José Welison",
       "CLUBE": "REM",
       "PRECO": 3.72,
-      "EXP_SCORE": 3.0627,
+      "EXP_SCORE": 3.067,
       "ATLETA_ID": 86859
     },
     {
@@ -91,7 +91,7 @@
       "NOME": "Gustavo Henrique",
       "CLUBE": "SAN",
       "PRECO": 5.21,
-      "EXP_SCORE": 1.9289,
+      "EXP_SCORE": 1.9332,
       "ATLETA_ID": 141776
     },
     {
@@ -102,8 +102,19 @@
       "NOME": "Barreal",
       "CLUBE": "SAN",
       "PRECO": 12.55,
-      "EXP_SCORE": 4.4808,
+      "EXP_SCORE": 4.4907,
       "ATLETA_ID": 126471
+    },
+    {
+      "RODADA": 25,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Josué",
+      "CLUBE": "CFC",
+      "PRECO": 5.98,
+      "EXP_SCORE": 4.3686,
+      "ATLETA_ID": 84626
     },
     {
       "RODADA": 25,
@@ -113,19 +124,8 @@
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 14.28,
-      "EXP_SCORE": 7.9257,
+      "EXP_SCORE": 7.6955,
       "ATLETA_ID": 143193
-    },
-    {
-      "RODADA": 25,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Leozinho",
-      "CLUBE": "CAP",
-      "PRECO": 5.68,
-      "EXP_SCORE": 4.3821,
-      "ATLETA_ID": 123101
     },
     {
       "RODADA": 25,
@@ -135,7 +135,7 @@
       "NOME": "Fernando Seabra",
       "CLUBE": "CFC",
       "PRECO": 8.19,
-      "EXP_SCORE": 4.551,
+      "EXP_SCORE": 4.5568,
       "ATLETA_ID": 126977
     },
     {
@@ -146,7 +146,7 @@
       "NOME": "Rossi",
       "CLUBE": "FLA",
       "PRECO": 8.35,
-      "EXP_SCORE": 3.7194,
+      "EXP_SCORE": 3.7041,
       "ATLETA_ID": 99552
     },
     {
@@ -157,7 +157,7 @@
       "NOME": "Aguirre",
       "CLUBE": "INT",
       "PRECO": 6.52,
-      "EXP_SCORE": 3.1871,
+      "EXP_SCORE": 3.1757,
       "ATLETA_ID": 110510
     },
     {
@@ -168,7 +168,7 @@
       "NOME": "Jacy",
       "CLUBE": "CFC",
       "PRECO": 5.98,
-      "EXP_SCORE": 3.1301,
+      "EXP_SCORE": 3.122,
       "ATLETA_ID": 97878
     },
     {
@@ -179,7 +179,7 @@
       "NOME": "Cissé",
       "CLUBE": "CAM",
       "PRECO": 2.49,
-      "EXP_SCORE": 1.4691,
+      "EXP_SCORE": 1.4709,
       "ATLETA_ID": 147088
     },
     {
@@ -187,11 +187,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Marcinho",
-      "CLUBE": "CHA",
-      "PRECO": 4.33,
-      "EXP_SCORE": 2.9381,
-      "ATLETA_ID": 95332
+      "NOME": "Samuel Lino",
+      "CLUBE": "FLA",
+      "PRECO": 11.23,
+      "EXP_SCORE": 7.6567,
+      "ATLETA_ID": 98873
     }
   ]
 }
