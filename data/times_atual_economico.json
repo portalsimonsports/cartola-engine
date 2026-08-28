@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 25,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-08-28T16:29:46.735Z",
+  "atualizado_em": "2026-08-28T16:39:44.854Z",
   "dados": [
     {
       "RODADA": 25,
@@ -14,19 +14,8 @@
       "NOME": "Ronaldo",
       "CLUBE": "BAH",
       "PRECO": 8.53,
-      "EXP_SCORE": 4.4797,
+      "EXP_SCORE": 4.4738,
       "ATLETA_ID": 91101
-    },
-    {
-      "RODADA": 25,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "LAT",
-      "NOME": "Luciano Juba",
-      "CLUBE": "BAH",
-      "PRECO": 11.99,
-      "EXP_SCORE": 7.4772,
-      "ATLETA_ID": 107093
     },
     {
       "RODADA": 25,
@@ -36,8 +25,19 @@
       "NOME": "Marcelinho",
       "CLUBE": "REM",
       "PRECO": 6.61,
-      "EXP_SCORE": 4.7923,
+      "EXP_SCORE": 5.318,
       "ATLETA_ID": 97795
+    },
+    {
+      "RODADA": 25,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "JP Chermont",
+      "CLUBE": "CFC",
+      "PRECO": 7.32,
+      "EXP_SCORE": 3.5949,
+      "ATLETA_ID": 131516
     },
     {
       "RODADA": 25,
@@ -47,7 +47,7 @@
       "NOME": "David Duarte",
       "CLUBE": "BAH",
       "PRECO": 6.97,
-      "EXP_SCORE": 4.1977,
+      "EXP_SCORE": 4.1921,
       "ATLETA_ID": 91772
     },
     {
@@ -58,7 +58,7 @@
       "NOME": "Aguirre",
       "CLUBE": "CAP",
       "PRECO": 6.13,
-      "EXP_SCORE": 3.6795,
+      "EXP_SCORE": 3.6746,
       "ATLETA_ID": 123869
     },
     {
@@ -69,19 +69,8 @@
       "NOME": "João Cruz",
       "CLUBE": "CAP",
       "PRECO": 7.25,
-      "EXP_SCORE": 4.3903,
+      "EXP_SCORE": 4.3773,
       "ATLETA_ID": 128431
-    },
-    {
-      "RODADA": 25,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Barreal",
-      "CLUBE": "SAN",
-      "PRECO": 12.55,
-      "EXP_SCORE": 5.2106,
-      "ATLETA_ID": 126471
     },
     {
       "RODADA": 25,
@@ -91,7 +80,7 @@
       "NOME": "Gustavo Henrique",
       "CLUBE": "SAN",
       "PRECO": 5.21,
-      "EXP_SCORE": 2.1672,
+      "EXP_SCORE": 2.4819,
       "ATLETA_ID": 141776
     },
     {
@@ -99,11 +88,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Bernard",
-      "CLUBE": "CAM",
-      "PRECO": 4.44,
-      "EXP_SCORE": 3.3804,
-      "ATLETA_ID": 72460
+      "NOME": "Barreal",
+      "CLUBE": "SAN",
+      "PRECO": 12.55,
+      "EXP_SCORE": 5.189,
+      "ATLETA_ID": 126471
     },
     {
       "RODADA": 25,
@@ -113,7 +102,7 @@
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 14.28,
-      "EXP_SCORE": 8.9986,
+      "EXP_SCORE": 8.9719,
       "ATLETA_ID": 143193
     },
     {
@@ -121,33 +110,44 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Leozinho",
-      "CLUBE": "CAP",
-      "PRECO": 5.68,
-      "EXP_SCORE": 4.3264,
-      "ATLETA_ID": 123101
+      "NOME": "Flaco López",
+      "CLUBE": "PAL",
+      "PRECO": 15.87,
+      "EXP_SCORE": 6.3075,
+      "ATLETA_ID": 113103
+    },
+    {
+      "RODADA": 25,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Arroyo",
+      "CLUBE": "CRU",
+      "PRECO": 6.92,
+      "EXP_SCORE": 3.1191,
+      "ATLETA_ID": 132264
     },
     {
       "RODADA": 25,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Fernando Seabra",
-      "CLUBE": "CFC",
-      "PRECO": 8.19,
-      "EXP_SCORE": 4.5802,
-      "ATLETA_ID": 126977
+      "NOME": "Rafael Guanaes",
+      "CLUBE": "MIR",
+      "PRECO": 7.02,
+      "EXP_SCORE": 3.6199,
+      "ATLETA_ID": 104027
     },
     {
       "RODADA": 25,
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Rossi",
-      "CLUBE": "FLA",
-      "PRECO": 8.35,
-      "EXP_SCORE": 3.7332,
-      "ATLETA_ID": 99552
+      "NOME": "Marcelo Rangel",
+      "CLUBE": "REM",
+      "PRECO": 6.24,
+      "EXP_SCORE": 3.7414,
+      "ATLETA_ID": 82730
     },
     {
       "RODADA": 25,
@@ -157,7 +157,7 @@
       "NOME": "Aguirre",
       "CLUBE": "INT",
       "PRECO": 6.52,
-      "EXP_SCORE": 3.1974,
+      "EXP_SCORE": 3.671,
       "ATLETA_ID": 110510
     },
     {
@@ -168,7 +168,7 @@
       "NOME": "Jacy",
       "CLUBE": "CFC",
       "PRECO": 5.98,
-      "EXP_SCORE": 3.1298,
+      "EXP_SCORE": 3.126,
       "ATLETA_ID": 97878
     },
     {
@@ -176,22 +176,22 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "José Welison",
+      "NOME": "Zé Ricardo",
       "CLUBE": "REM",
-      "PRECO": 3.72,
-      "EXP_SCORE": 2.6822,
-      "ATLETA_ID": 86859
+      "PRECO": 4.94,
+      "EXP_SCORE": 3.3218,
+      "ATLETA_ID": 102911
     },
     {
       "RODADA": 25,
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Isidro Pitta",
-      "CLUBE": "RBB",
-      "PRECO": 5.5,
-      "EXP_SCORE": 2.5812,
-      "ATLETA_ID": 108133
+      "NOME": "Leozinho",
+      "CLUBE": "CAP",
+      "PRECO": 5.68,
+      "EXP_SCORE": 3.7509,
+      "ATLETA_ID": 123101
     }
   ]
 }
