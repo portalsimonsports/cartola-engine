@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 25,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-08-28T15:54:44.862Z",
+  "atualizado_em": "2026-08-28T15:59:45.316Z",
   "dados": [
     {
       "RODADA": 25,
@@ -22,22 +22,22 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "LAT",
-      "NOME": "Luciano Juba",
-      "CLUBE": "BAH",
-      "PRECO": 11.99,
-      "EXP_SCORE": 7.4772,
-      "ATLETA_ID": 107093
+      "NOME": "Marcelinho",
+      "CLUBE": "REM",
+      "PRECO": 6.61,
+      "EXP_SCORE": 5.3248,
+      "ATLETA_ID": 97795
     },
     {
       "RODADA": 25,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "LAT",
-      "NOME": "Marcelinho",
-      "CLUBE": "REM",
-      "PRECO": 6.61,
-      "EXP_SCORE": 4.7923,
-      "ATLETA_ID": 97795
+      "NOME": "Luciano Juba",
+      "CLUBE": "BAH",
+      "PRECO": 11.99,
+      "EXP_SCORE": 7.4772,
+      "ATLETA_ID": 107093
     },
     {
       "RODADA": 25,
@@ -69,7 +69,7 @@
       "NOME": "João Cruz",
       "CLUBE": "CAP",
       "PRECO": 7.25,
-      "EXP_SCORE": 4.3903,
+      "EXP_SCORE": 3.8177,
       "ATLETA_ID": 128431
     },
     {
@@ -77,22 +77,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Barreal",
-      "CLUBE": "SAN",
-      "PRECO": 12.55,
-      "EXP_SCORE": 5.2106,
-      "ATLETA_ID": 126471
-    },
-    {
-      "RODADA": 25,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Gustavo Henrique",
-      "CLUBE": "SAN",
-      "PRECO": 5.21,
-      "EXP_SCORE": 2.1672,
-      "ATLETA_ID": 141776
+      "NOME": "José Welison",
+      "CLUBE": "REM",
+      "PRECO": 3.72,
+      "EXP_SCORE": 3.0845,
+      "ATLETA_ID": 86859
     },
     {
       "RODADA": 25,
@@ -109,34 +98,45 @@
       "RODADA": 25,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Gustavo Henrique",
+      "CLUBE": "SAN",
+      "PRECO": 5.21,
+      "EXP_SCORE": 1.9505,
+      "ATLETA_ID": 141776
+    },
+    {
+      "RODADA": 25,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Barreal",
+      "CLUBE": "SAN",
+      "PRECO": 12.55,
+      "EXP_SCORE": 4.5309,
+      "ATLETA_ID": 126471
+    },
+    {
+      "RODADA": 25,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
       "POS": "ATA",
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 14.28,
-      "EXP_SCORE": 8.9986,
+      "EXP_SCORE": 7.8249,
       "ATLETA_ID": 143193
     },
     {
       "RODADA": 25,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Leozinho",
-      "CLUBE": "CAP",
-      "PRECO": 5.68,
-      "EXP_SCORE": 4.3264,
-      "ATLETA_ID": 123101
-    },
-    {
-      "RODADA": 25,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Fernando Seabra",
-      "CLUBE": "CFC",
-      "PRECO": 8.19,
-      "EXP_SCORE": 4.5802,
-      "ATLETA_ID": 126977
+      "NOME": "Odair Hellmann",
+      "CLUBE": "CAP",
+      "PRECO": 9.34,
+      "EXP_SCORE": 6.3075,
+      "ATLETA_ID": 92273
     },
     {
       "RODADA": 25,
@@ -176,22 +176,22 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "José Welison",
-      "CLUBE": "REM",
-      "PRECO": 3.72,
-      "EXP_SCORE": 2.6822,
-      "ATLETA_ID": 86859
+      "NOME": "Bruno Henrique",
+      "CLUBE": "INT",
+      "PRECO": 3.47,
+      "EXP_SCORE": 1.454,
+      "ATLETA_ID": 70944
     },
     {
       "RODADA": 25,
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Isidro Pitta",
-      "CLUBE": "RBB",
-      "PRECO": 5.5,
-      "EXP_SCORE": 2.5812,
-      "ATLETA_ID": 108133
+      "NOME": "Samuel Lino",
+      "CLUBE": "FLA",
+      "PRECO": 11.23,
+      "EXP_SCORE": 7.7021,
+      "ATLETA_ID": 98873
     }
   ]
 }
