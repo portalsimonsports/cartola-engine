@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 25,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-08-28T03:19:48.684Z",
+  "atualizado_em": "2026-08-28T03:29:52.021Z",
   "dados": [
     {
       "RODADA": 25,
@@ -55,17 +55,6 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ZAG",
-      "NOME": "Gustavo Marques",
-      "CLUBE": "RBB",
-      "PRECO": 8.6,
-      "EXP_SCORE": 3.9094,
-      "ATLETA_ID": 110750
-    },
-    {
-      "RODADA": 25,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "ZAG",
       "NOME": "Aguirre",
       "CLUBE": "CAP",
       "PRECO": 6.13,
@@ -109,11 +98,22 @@
       "RODADA": 25,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Acevedo",
+      "CLUBE": "BAH",
+      "PRECO": 7.51,
+      "EXP_SCORE": 4.9431,
+      "ATLETA_ID": 104783
+    },
+    {
+      "RODADA": 25,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
       "POS": "ATA",
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 14.28,
-      "EXP_SCORE": 8.9993,
+      "EXP_SCORE": 7.8255,
       "ATLETA_ID": 143193
     },
     {
@@ -124,7 +124,7 @@
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 11.23,
-      "EXP_SCORE": 6.6979,
+      "EXP_SCORE": 7.7026,
       "ATLETA_ID": 98873
     },
     {
@@ -165,22 +165,22 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Arthur Dias",
-      "CLUBE": "CAP",
-      "PRECO": 5.95,
-      "EXP_SCORE": 3.1162,
-      "ATLETA_ID": 130843
+      "NOME": "Jacy",
+      "CLUBE": "CFC",
+      "PRECO": 5.98,
+      "EXP_SCORE": 3.0628,
+      "ATLETA_ID": 97878
     },
     {
       "RODADA": 25,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Barreal",
-      "CLUBE": "SAN",
-      "PRECO": 12.55,
-      "EXP_SCORE": 5.2111,
-      "ATLETA_ID": 126471
+      "NOME": "Josué",
+      "CLUBE": "CFC",
+      "PRECO": 5.98,
+      "EXP_SCORE": 4.3913,
+      "ATLETA_ID": 84626
     },
     {
       "RODADA": 25,
@@ -190,7 +190,7 @@
       "NOME": "Jajá",
       "CLUBE": "REM",
       "PRECO": 8.11,
-      "EXP_SCORE": 5.7089,
+      "EXP_SCORE": 4.9643,
       "ATLETA_ID": 105048
     }
   ]
