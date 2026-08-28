@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 25,
-  "atualizado_em": "2026-08-28T17:44:45.421Z",
+  "atualizado_em": "2026-08-28T17:54:44.230Z",
   "dados": [
     {
       "RODADA": 25,
@@ -182,8 +182,18 @@
       "CLUBE": "BOT",
       "PRECO": 14.19,
       "EXP_SCORE": 5.7555,
-      "FACTOR": 0.9291297793445986,
+      "FACTOR": 0.9291297793445985,
       "ATLETA_ID": 107231
+    },
+    {
+      "RODADA": 25,
+      "POS": "MEI",
+      "NOME": "Barreal",
+      "CLUBE": "SAN",
+      "PRECO": 12.55,
+      "EXP_SCORE": 5.189,
+      "FACTOR": 0.901507882844449,
+      "ATLETA_ID": 126471
     },
     {
       "RODADA": 25,
@@ -197,21 +207,11 @@
     },
     {
       "RODADA": 25,
-      "POS": "MEI",
-      "NOME": "Arrascaeta",
-      "CLUBE": "FLA",
-      "PRECO": 14.35,
-      "EXP_SCORE": 4.5261,
-      "FACTOR": 1.0973700847408288,
-      "ATLETA_ID": 87863
-    },
-    {
-      "RODADA": 25,
       "POS": "ATA",
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 14.28,
-      "EXP_SCORE": 7.8017,
+      "EXP_SCORE": 8.9719,
       "FACTOR": 1.0856617570120475,
       "ATLETA_ID": 143193
     },
@@ -221,7 +221,7 @@
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 17.02,
-      "EXP_SCORE": 7.763,
+      "EXP_SCORE": 6.9867,
       "FACTOR": 1.0973700847408288,
       "ATLETA_ID": 94583
     },
@@ -231,7 +231,7 @@
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 11.23,
-      "EXP_SCORE": 7.6808,
+      "EXP_SCORE": 6.679,
       "FACTOR": 1.0973700847408288,
       "ATLETA_ID": 98873
     },
@@ -288,22 +288,22 @@
     {
       "RODADA": 25,
       "POS": "TEC",
-      "NOME": "Fernando Diniz",
-      "CLUBE": "COR",
-      "PRECO": 8.98,
-      "EXP_SCORE": 5.4404,
-      "FACTOR": 1.022607337379318,
-      "ATLETA_ID": 72391
-    },
-    {
-      "RODADA": 25,
-      "POS": "TEC",
       "NOME": "Rogério Ceni",
       "CLUBE": "BAH",
       "PRECO": 11.04,
       "EXP_SCORE": 5.1852,
       "FACTOR": 1.0506476981853297,
       "ATLETA_ID": 97341
+    },
+    {
+      "RODADA": 25,
+      "POS": "TEC",
+      "NOME": "Artur Jorge",
+      "CLUBE": "CRU",
+      "PRECO": 11.72,
+      "EXP_SCORE": 5.1786,
+      "FACTOR": 0.9973786198547702,
+      "ATLETA_ID": 127273
     }
   ]
 }
