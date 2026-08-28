@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 25,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-08-28T19:09:44.367Z",
+  "atualizado_em": "2026-08-28T19:29:45.572Z",
   "dados": [
     {
       "RODADA": 25,
@@ -69,7 +69,7 @@
       "NOME": "João Cruz",
       "CLUBE": "CAP",
       "PRECO": 7.25,
-      "EXP_SCORE": 3.8063,
+      "EXP_SCORE": 3.8935,
       "ATLETA_ID": 128431
     },
     {
@@ -80,7 +80,7 @@
       "NOME": "José Welison",
       "CLUBE": "REM",
       "PRECO": 3.72,
-      "EXP_SCORE": 3.0763,
+      "EXP_SCORE": 3.0741,
       "ATLETA_ID": 86859
     },
     {
@@ -91,7 +91,7 @@
       "NOME": "Gustavo Henrique",
       "CLUBE": "SAN",
       "PRECO": 5.21,
-      "EXP_SCORE": 1.9424,
+      "EXP_SCORE": 1.9402,
       "ATLETA_ID": 141776
     },
     {
@@ -102,19 +102,8 @@
       "NOME": "Barreal",
       "CLUBE": "SAN",
       "PRECO": 12.55,
-      "EXP_SCORE": 4.5121,
+      "EXP_SCORE": 4.5071,
       "ATLETA_ID": 126471
-    },
-    {
-      "RODADA": 25,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Josué",
-      "CLUBE": "CFC",
-      "PRECO": 5.98,
-      "EXP_SCORE": 4.3806,
-      "ATLETA_ID": 84626
     },
     {
       "RODADA": 25,
@@ -124,8 +113,19 @@
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 14.28,
-      "EXP_SCORE": 7.8017,
+      "EXP_SCORE": 7.9802,
       "ATLETA_ID": 143193
+    },
+    {
+      "RODADA": 25,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Leozinho",
+      "CLUBE": "CAP",
+      "PRECO": 5.68,
+      "EXP_SCORE": 4.4123,
+      "ATLETA_ID": 123101
     },
     {
       "RODADA": 25,
@@ -135,7 +135,7 @@
       "NOME": "Fernando Seabra",
       "CLUBE": "CFC",
       "PRECO": 8.19,
-      "EXP_SCORE": 4.5692,
+      "EXP_SCORE": 4.5663,
       "ATLETA_ID": 126977
     },
     {
@@ -179,7 +179,7 @@
       "NOME": "Bruno Henrique",
       "CLUBE": "INT",
       "PRECO": 3.47,
-      "EXP_SCORE": 1.4482,
+      "EXP_SCORE": 1.4467,
       "ATLETA_ID": 70944
     },
     {
@@ -187,11 +187,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Samuel Lino",
-      "CLUBE": "FLA",
-      "PRECO": 11.23,
-      "EXP_SCORE": 7.6808,
-      "ATLETA_ID": 98873
+      "NOME": "Marcinho",
+      "CLUBE": "CHA",
+      "PRECO": 4.33,
+      "EXP_SCORE": 2.9498,
+      "ATLETA_ID": 95332
     }
   ]
 }
