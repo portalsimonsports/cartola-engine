@@ -3,6 +3,9 @@ name: Garantir Abertura da Live após Fechamento
 on:
   schedule:
     - cron: "*/5 * * * *"
+  push:
+    paths:
+      - data/force_live_abertura.json
   workflow_dispatch:
 
 permissions:
@@ -32,13 +35,15 @@ jobs:
       - name: Verificar fechamento e preparar abertura da Live
         id: gate
         shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
         run: |
           set -e
           python - <<'PY'
           import json
           import os
           import urllib.request
-          from datetime import datetime, timezone
+          from datetime import datetime
           from pathlib import Path
           from zoneinfo import ZoneInfo
 
@@ -50,29 +55,37 @@ jobs:
           status = get_json("https://api.cartola.globo.com/mercado/status")
           rodada = int(status.get("rodada_atual") or status.get("rodada") or 0)
           fechamento = status.get("fechamento") or {}
-          if isinstance(fechamento, dict):
-              ano = int(fechamento.get("ano") or 0)
-              mes = int(fechamento.get("mes") or 0)
-              dia = int(fechamento.get("dia") or 0)
-              hora = int(fechamento.get("hora") or 0)
-              minuto = int(fechamento.get("minuto") or 0)
-              if not all([ano, mes, dia]):
-                  raise SystemExit("Sem data de fechamento válida")
-              dt_fechamento = datetime(ano, mes, dia, hora, minuto, tzinfo=ZoneInfo("America/Sao_Paulo"))
-          else:
+          if not isinstance(fechamento, dict):
               raise SystemExit("Formato de fechamento inesperado")
 
+          ano = int(fechamento.get("ano") or 0)
+          mes = int(fechamento.get("mes") or 0)
+          dia = int(fechamento.get("dia") or 0)
+          hora = int(fechamento.get("hora") or 0)
+          minuto = int(fechamento.get("minuto") or 0)
+          if not all([ano, mes, dia]):
+              raise SystemExit("Sem data de fechamento válida")
+
+          dt_fechamento = datetime(ano, mes, dia, hora, minuto, tzinfo=ZoneInfo("America/Sao_Paulo"))
           agora = datetime.now(ZoneInfo("America/Sao_Paulo"))
           diff_min = (agora - dt_fechamento).total_seconds() / 60.0
           mercado_status = int(status.get("status_mercado") or status.get("status") or 0)
 
-          # Abertura da Live: imediatamente após o fechamento. Janela de segurança
-          # de 0 a 20 minutos para absorver atraso do scheduler do GitHub.
-          permitido = rodada > 0 and mercado_status != 1 and 0 <= diff_min <= 20
+          force_file = Path("data/force_live_abertura.json")
+          forcado = os.environ.get("EVENT_NAME") == "push" and force_file.exists()
+          if force_file.exists():
+              try:
+                  f = json.loads(force_file.read_text(encoding="utf-8"))
+                  rodada_forcada = int(f.get("rodada") or 0)
+                  if rodada_forcada and rodada_forcada != rodada:
+                      forcado = False
+              except Exception:
+                  pass
 
-          # Não repetir se a abertura da rodada já foi publicada.
+          permitido = rodada > 0 and mercado_status != 1 and ((0 <= diff_min <= 20) or forcado)
+
           ja_publicado = any(Path("output").glob(f"live_abertura_rodada_{rodada}_p*.png"))
-          if ja_publicado:
+          if ja_publicado and not forcado:
               permitido = False
 
           payload_path = Path("data/live_abertura_fallback_payload.json")
@@ -110,8 +123,9 @@ jobs:
               fh.write(f"allowed={'true' if permitido else 'false'}\n")
               fh.write(f"rodada={rodada}\n")
               fh.write(f"diff_min={diff_min:.2f}\n")
+              fh.write(f"forcado={'true' if forcado else 'false'}\n")
 
-          print(f"rodada={rodada} mercado_status={mercado_status} diff_min={diff_min:.2f} ja_publicado={ja_publicado} permitido={permitido}")
+          print(f"rodada={rodada} mercado_status={mercado_status} diff_min={diff_min:.2f} forcado={forcado} ja_publicado={ja_publicado} permitido={permitido}")
           PY
 
       - name: Disparar abertura da Live e classificação
@@ -122,7 +136,6 @@ jobs:
           REPO: ${{ github.repository }}
         run: |
           set -e
-          PAYLOAD=$(cat data/live_abertura_fallback_payload.json)
           python - <<'PY' > /tmp/body.json
           import json
           from pathlib import Path
