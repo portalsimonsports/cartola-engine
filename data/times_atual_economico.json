@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 25,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-08-29T04:29:44.208Z",
+  "atualizado_em": "2026-08-29T04:34:43.594Z",
   "dados": [
     {
       "RODADA": 25,
@@ -33,11 +33,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "LAT",
-      "NOME": "Luciano Juba",
-      "CLUBE": "BAH",
-      "PRECO": 11.99,
-      "EXP_SCORE": 6.6584,
-      "ATLETA_ID": 107093
+      "NOME": "JP Chermont",
+      "CLUBE": "CFC",
+      "PRECO": 7.32,
+      "EXP_SCORE": 3.5739,
+      "ATLETA_ID": 131516
     },
     {
       "RODADA": 25,
@@ -65,34 +65,12 @@
       "RODADA": 25,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Vitão",
-      "CLUBE": "CAM",
-      "PRECO": 3.24,
-      "EXP_SCORE": 0.9788,
-      "ATLETA_ID": 141131
-    },
-    {
-      "RODADA": 25,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
       "POS": "MEI",
       "NOME": "João Cruz",
       "CLUBE": "CAP",
       "PRECO": 7.25,
-      "EXP_SCORE": 3.7502,
+      "EXP_SCORE": 4.3127,
       "ATLETA_ID": 128431
-    },
-    {
-      "RODADA": 25,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "José Welison",
-      "CLUBE": "REM",
-      "PRECO": 3.72,
-      "EXP_SCORE": 3.064,
-      "ATLETA_ID": 86859
     },
     {
       "RODADA": 25,
@@ -102,7 +80,7 @@
       "NOME": "Barreal",
       "CLUBE": "SAN",
       "PRECO": 12.55,
-      "EXP_SCORE": 4.4839,
+      "EXP_SCORE": 5.1565,
       "ATLETA_ID": 126471
     },
     {
@@ -110,11 +88,33 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Josué",
+      "NOME": "Sebastián Gómez",
       "CLUBE": "CFC",
-      "PRECO": 5.98,
-      "EXP_SCORE": 4.3648,
-      "ATLETA_ID": 84626
+      "PRECO": 4.74,
+      "EXP_SCORE": 2.6412,
+      "ATLETA_ID": 104811
+    },
+    {
+      "RODADA": 25,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Zé Ricardo",
+      "CLUBE": "REM",
+      "PRECO": 4.94,
+      "EXP_SCORE": 3.3085,
+      "ATLETA_ID": 102911
+    },
+    {
+      "RODADA": 25,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Raniele",
+      "CLUBE": "COR",
+      "PRECO": 8.6,
+      "EXP_SCORE": 4.941,
+      "ATLETA_ID": 95556
     },
     {
       "RODADA": 25,
@@ -124,7 +124,7 @@
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 14.28,
-      "EXP_SCORE": 7.6866,
+      "EXP_SCORE": 8.8396,
       "ATLETA_ID": 143193
     },
     {
@@ -143,11 +143,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Rossi",
-      "CLUBE": "FLA",
-      "PRECO": 8.35,
-      "EXP_SCORE": 3.6771,
-      "ATLETA_ID": 99552
+      "NOME": "Marcelo Rangel",
+      "CLUBE": "REM",
+      "PRECO": 6.24,
+      "EXP_SCORE": 3.7079,
+      "ATLETA_ID": 82730
     },
     {
       "RODADA": 25,
@@ -157,7 +157,7 @@
       "NOME": "Aguirre",
       "CLUBE": "INT",
       "PRECO": 6.52,
-      "EXP_SCORE": 3.1555,
+      "EXP_SCORE": 3.6288,
       "ATLETA_ID": 110510
     },
     {
@@ -165,22 +165,22 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Kauan",
-      "CLUBE": "CHA",
-      "PRECO": 1.81,
-      "EXP_SCORE": 0.3986,
-      "ATLETA_ID": 130806
+      "NOME": "Jacy",
+      "CLUBE": "CFC",
+      "PRECO": 5.98,
+      "EXP_SCORE": 3.1077,
+      "ATLETA_ID": 97878
     },
     {
       "RODADA": 25,
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Bruno Henrique",
-      "CLUBE": "INT",
-      "PRECO": 3.47,
-      "EXP_SCORE": 1.4396,
-      "ATLETA_ID": 70944
+      "NOME": "José Welison",
+      "CLUBE": "REM",
+      "PRECO": 3.72,
+      "EXP_SCORE": 2.6644,
+      "ATLETA_ID": 86859
     },
     {
       "RODADA": 25,
@@ -190,7 +190,7 @@
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 11.23,
-      "EXP_SCORE": 7.8427,
+      "EXP_SCORE": 6.8197,
       "ATLETA_ID": 98873
     }
   ]
