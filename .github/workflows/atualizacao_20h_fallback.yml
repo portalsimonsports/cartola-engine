@@ -1,0 +1,179 @@
+name: Fallback Atualização 20h
+
+on:
+  schedule:
+    - cron: '10 23 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: cartola-times-top5-publicador-unico
+  cancel-in-progress: false
+
+jobs:
+  garantir-publicacao-20h:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependências
+        run: |
+          set -e
+          python -m pip install --upgrade pip setuptools wheel
+          pip install --upgrade -r requirements.txt
+
+      - name: Validar mercado e preparar payload
+        id: prep
+        env:
+          TZ: America/Sao_Paulo
+        run: |
+          set -e
+          mkdir -p data output data/flags
+          python - <<'PY'
+          import json, os
+          from datetime import datetime
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+          import requests
+
+          agora = datetime.now(ZoneInfo('America/Sao_Paulo'))
+          output = Path(os.environ['GITHUB_OUTPUT'])
+
+          def out(key, value):
+              with output.open('a', encoding='utf-8') as fh:
+                  fh.write(f'{key}={value}\n')
+
+          # Só atua na janela da atualização das 20h.
+          if agora.hour < 20 or agora.hour > 21:
+              out('allowed', 'false')
+              print('Fora da janela da atualização das 20h.')
+              raise SystemExit(0)
+
+          # Confirma estado e data de fechamento diretamente na API oficial do Cartola.
+          try:
+              r = requests.get('https://api.cartola.globo.com/mercado/status', timeout=30)
+              r.raise_for_status()
+              st = r.json()
+          except Exception as exc:
+              raise SystemExit(f'ERRO consultando mercado/status: {exc}')
+
+          rodada = int(st.get('rodada_atual') or st.get('rodada') or 0)
+          status = int(st.get('status_mercado') or 0)
+          fechamento = st.get('fechamento') or {}
+          if isinstance(fechamento, dict):
+              ano = fechamento.get('ano')
+              mes = fechamento.get('mes')
+              dia = fechamento.get('dia')
+              dia_fechamento = f'{int(ano):04d}-{int(mes):02d}-{int(dia):02d}' if ano and mes and dia else ''
+          else:
+              dia_fechamento = ''
+
+          hoje = agora.strftime('%Y-%m-%d')
+          if status != 1 or rodada <= 0:
+              out('allowed', 'false')
+              print(f'Mercado não está aberto. status={status} rodada={rodada}')
+              raise SystemExit(0)
+          if dia_fechamento and hoje == dia_fechamento:
+              out('allowed', 'false')
+              print('Dia de fechamento: atualização das 20h não se aplica.')
+              raise SystemExit(0)
+
+          marker = Path(f'data/flags/publicacao_ATUALIZACAO_20H_rodada_{rodada}_{hoje}_PACOTE.json')
+          if marker.exists():
+              out('allowed', 'false')
+              print(f'Atualização das 20h já publicada: {marker}')
+              raise SystemExit(0)
+
+          arquivos = [
+              Path('data/times_atual_economico.json'),
+              Path('data/times_atual_intermediario.json'),
+              Path('data/times_atual_pontuacao.json'),
+              Path('data/top5_atual.json'),
+          ]
+          for path in arquivos:
+              if not path.exists():
+                  raise SystemExit(f'ERRO: base ausente: {path}')
+              d = json.loads(path.read_text(encoding='utf-8'))
+              rbase = int(float(d.get('rodada') or d.get('RODADA') or 0))
+              if rbase != rodada:
+                  raise SystemExit(f'ERRO: {path} está na R{rbase}; mercado está na R{rodada}')
+
+          payload = {
+              'evento_programado': 'ATUALIZACAO_20H',
+              'rodada': rodada,
+              'tipo_publicacao': 'times',
+              'modelo': 'ECONOMICO',
+              'origem': 'fallback_20h_github',
+              'forcar_envio': True,
+          }
+          Path('data/payload_dispatch.json').write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding='utf-8')
+          out('allowed', 'true')
+          out('rodada', rodada)
+          out('marker', marker.as_posix())
+          print(f'Fallback autorizado: ATUALIZACAO_20H R{rodada}')
+          PY
+
+      - name: Publicar pacote completo das 20h
+        if: steps.prep.outputs.allowed == 'true'
+        env:
+          PAYLOAD_FILE: data/payload_dispatch.json
+          OUTPUT_DIR: output
+          TZ: America/Sao_Paulo
+          PLANILHA_ID: ${{ secrets.PLANILHA_ID }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_APPLICATION_CREDENTIALS: service_account.json
+          ABA_TELEGRAM: ${{ secrets.ABA_TELEGRAM }}
+          CONTA_TELEGRAM: ${{ secrets.CONTA_TELEGRAM }}
+          TELEGRAM_CHAT_FALLBACK: '@dicascartolaportalsimonsports'
+          EVENTO_PROGRAMADO: ATUALIZACAO_20H
+        run: |
+          set -e
+          rm -f output/top5_*.png output/time_*.png output/resultados_*.png output/boletim_*.png output/ultima_publicacao.json
+          python app/publicar_times_top5_automatico_v2.py
+
+      - name: Validar e registrar pacote
+        if: steps.prep.outputs.allowed == 'true' && success()
+        env:
+          RODADA: ${{ steps.prep.outputs.rodada }}
+          MARKER: ${{ steps.prep.outputs.marker }}
+        run: |
+          set -e
+          python - <<'PY'
+          import json
+          from collections import Counter
+          from pathlib import Path
+          m = Path('output/ultima_publicacao.json')
+          if not m.exists():
+              raise SystemExit('ERRO: manifesto ausente')
+          pubs = json.loads(m.read_text(encoding='utf-8')).get('publicacoes') or []
+          tipos = [str(p.get('tipo_publicacao') or '').lower() for p in pubs]
+          esperado = {'time_economico','time_intermediario','time_pontuacao','top5'}
+          if set(tipos) != esperado or len(tipos) != 4 or any(v > 1 for v in Counter(tipos).values()):
+              raise SystemExit(f'ERRO: pacote incorreto: {tipos}')
+          print(f'PACOTE 20H VALIDADO: {tipos}')
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          mkdir -p "$(dirname "$MARKER")"
+          printf '{\n  "status": "PUBLICADO_COM_SUCESSO",\n  "evento_programado": "ATUALIZACAO_20H",\n  "rodada": %s,\n  "publicador": "FALLBACK_PACOTE_3_TIMES_TOP5",\n  "github_run_id": "%s",\n  "registrado_em": "%s"\n}\n' "$RODADA" "${{ github.run_id }}" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$MARKER"
+          git add data/flags/ output/*.png 2>/dev/null || true
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "Telegram: garantir ATUALIZACAO_20H R${RODADA}"
+          git pull --rebase origin main
+          git push origin HEAD:main
