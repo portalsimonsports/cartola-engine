@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 25,
-  "atualizado_em": "2026-08-29T10:04:45.014Z",
+  "atualizado_em": "2026-08-29T10:14:45.071Z",
   "dados": [
     {
       "RODADA": 25,
@@ -28,12 +28,12 @@
     {
       "RODADA": 25,
       "POS": "GOL",
-      "NOME": "Marcelo Rangel",
-      "CLUBE": "REM",
-      "PRECO": 6.24,
-      "EXP_SCORE": 3.7079,
-      "FACTOR": 1.1410225081999534,
-      "ATLETA_ID": 82730
+      "NOME": "Rossi",
+      "CLUBE": "FLA",
+      "PRECO": 8.35,
+      "EXP_SCORE": 3.6771,
+      "FACTOR": 1.07110405964906,
+      "ATLETA_ID": 99552
     },
     {
       "RODADA": 25,
@@ -188,22 +188,22 @@
     {
       "RODADA": 25,
       "POS": "MEI",
-      "NOME": "Arrascaeta",
-      "CLUBE": "FLA",
-      "PRECO": 14.35,
-      "EXP_SCORE": 5.135,
-      "FACTOR": 1.1204911432754499,
-      "ATLETA_ID": 87863
+      "NOME": "Acevedo",
+      "CLUBE": "BAH",
+      "PRECO": 7.51,
+      "EXP_SCORE": 4.8637,
+      "FACTOR": 1.064960981485943,
+      "ATLETA_ID": 104783
     },
     {
       "RODADA": 25,
       "POS": "MEI",
-      "NOME": "Raniele",
-      "CLUBE": "COR",
-      "PRECO": 8.6,
-      "EXP_SCORE": 4.941,
-      "FACTOR": 1.0532400822846977,
-      "ATLETA_ID": 95556
+      "NOME": "Arrascaeta",
+      "CLUBE": "FLA",
+      "PRECO": 14.35,
+      "EXP_SCORE": 4.6215,
+      "FACTOR": 1.1204911432754499,
+      "ATLETA_ID": 87863
     },
     {
       "RODADA": 25,
@@ -238,16 +238,6 @@
     {
       "RODADA": 25,
       "POS": "ATA",
-      "NOME": "Flaco López",
-      "CLUBE": "PAL",
-      "PRECO": 15.87,
-      "EXP_SCORE": 6.2844,
-      "FACTOR": 0.9774198743490426,
-      "ATLETA_ID": 113103
-    },
-    {
-      "RODADA": 25,
-      "POS": "ATA",
       "NOME": "Andrés Gómez",
       "CLUBE": "VAS",
       "PRECO": 12.06,
@@ -257,13 +247,13 @@
     },
     {
       "RODADA": 25,
-      "POS": "TEC",
-      "NOME": "Abel Ferreira",
+      "POS": "ATA",
+      "NOME": "Flaco López",
       "CLUBE": "PAL",
-      "PRECO": 12.41,
-      "EXP_SCORE": 6.7552,
-      "FACTOR": 0.9979971348616541,
-      "ATLETA_ID": 110506
+      "PRECO": 15.87,
+      "EXP_SCORE": 4.9182,
+      "FACTOR": 0.9774198743490426,
+      "ATLETA_ID": 113103
     },
     {
       "RODADA": 25,
@@ -294,6 +284,16 @@
       "EXP_SCORE": 5.8763,
       "FACTOR": 1.0353787320002223,
       "ATLETA_ID": 97341
+    },
+    {
+      "RODADA": 25,
+      "POS": "TEC",
+      "NOME": "Abel Ferreira",
+      "CLUBE": "PAL",
+      "PRECO": 12.41,
+      "EXP_SCORE": 5.874,
+      "FACTOR": 0.9979971348616541,
+      "ATLETA_ID": 110506
     },
     {
       "RODADA": 25,
