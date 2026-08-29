@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 25,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-08-29T16:54:44.459Z",
+  "atualizado_em": "2026-08-29T16:59:43.737Z",
   "dados": [
     {
       "RODADA": 25,
@@ -25,7 +25,7 @@
       "NOME": "Marcelinho",
       "CLUBE": "REM",
       "PRECO": 6.61,
-      "EXP_SCORE": 4.7507,
+      "EXP_SCORE": 5.2786,
       "ATLETA_ID": 97795
     },
     {
@@ -36,7 +36,7 @@
       "NOME": "JP Chermont",
       "CLUBE": "CFC",
       "PRECO": 7.32,
-      "EXP_SCORE": 3.1122,
+      "EXP_SCORE": 3.579,
       "ATLETA_ID": 131516
     },
     {
@@ -65,12 +65,34 @@
       "RODADA": 25,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
+      "POS": "ZAG",
+      "NOME": "Gustavo Marques",
+      "CLUBE": "RBB",
+      "PRECO": 8.6,
+      "EXP_SCORE": 3.9061,
+      "ATLETA_ID": 110750
+    },
+    {
+      "RODADA": 25,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
       "POS": "MEI",
       "NOME": "João Cruz",
       "CLUBE": "CAP",
       "PRECO": 7.25,
       "EXP_SCORE": 4.3127,
       "ATLETA_ID": 128431
+    },
+    {
+      "RODADA": 25,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Gustavo Henrique",
+      "CLUBE": "SAN",
+      "PRECO": 5.21,
+      "EXP_SCORE": 2.4664,
+      "ATLETA_ID": 141776
     },
     {
       "RODADA": 25,
@@ -88,22 +110,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Gustavo Henrique",
-      "CLUBE": "SAN",
-      "PRECO": 5.21,
-      "EXP_SCORE": 2.1447,
-      "ATLETA_ID": 141776
-    },
-    {
-      "RODADA": 25,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Zé Ricardo",
-      "CLUBE": "REM",
-      "PRECO": 4.94,
-      "EXP_SCORE": 3.3085,
-      "ATLETA_ID": 102911
+      "NOME": "Sebastián Gómez",
+      "CLUBE": "CFC",
+      "PRECO": 4.74,
+      "EXP_SCORE": 2.6412,
+      "ATLETA_ID": 104811
     },
     {
       "RODADA": 25,
@@ -115,17 +126,6 @@
       "PRECO": 14.28,
       "EXP_SCORE": 8.8396,
       "ATLETA_ID": 143193
-    },
-    {
-      "RODADA": 25,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Pedro Rocha",
-      "CLUBE": "CFC",
-      "PRECO": 7.79,
-      "EXP_SCORE": 3.5566,
-      "ATLETA_ID": 90302
     },
     {
       "RODADA": 25,
@@ -143,11 +143,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Rossi",
-      "CLUBE": "FLA",
-      "PRECO": 8.35,
-      "EXP_SCORE": 3.6856,
-      "ATLETA_ID": 99552
+      "NOME": "Marcelo Rangel",
+      "CLUBE": "REM",
+      "PRECO": 6.24,
+      "EXP_SCORE": 3.7137,
+      "ATLETA_ID": 82730
     },
     {
       "RODADA": 25,
@@ -157,7 +157,7 @@
       "NOME": "Aguirre",
       "CLUBE": "INT",
       "PRECO": 6.52,
-      "EXP_SCORE": 3.1618,
+      "EXP_SCORE": 3.6361,
       "ATLETA_ID": 110510
     },
     {
@@ -187,11 +187,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Vitinho",
-      "CLUBE": "INT",
-      "PRECO": 7.08,
-      "EXP_SCORE": 3.2516,
-      "ATLETA_ID": 101960
+      "NOME": "Samuel Lino",
+      "CLUBE": "FLA",
+      "PRECO": 11.23,
+      "EXP_SCORE": 6.8197,
+      "ATLETA_ID": 98873
     }
   ]
 }
