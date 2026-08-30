@@ -1,506 +1,258 @@
 {
-  "rodada": 24,
+  "rodada": 25,
   "base_signature": [
     {
       "nome": "PAL",
-      "j": 23,
-      "pts": 48,
-      "v": 14,
-      "saldo": 21
+      "j": 24,
+      "pts": 51,
+      "v": 15,
+      "saldo": 24
     },
     {
       "nome": "FLA",
-      "j": 22,
+      "j": 23,
       "pts": 45,
       "v": 13,
-      "saldo": 25
+      "saldo": 24
     },
     {
       "nome": "CAP",
-      "j": 23,
-      "pts": 41,
-      "v": 12,
-      "saldo": 11
+      "j": 24,
+      "pts": 44,
+      "v": 13,
+      "saldo": 12
     },
     {
       "nome": "FLU",
-      "j": 23,
-      "pts": 38,
-      "v": 10,
-      "saldo": 6
+      "j": 24,
+      "pts": 41,
+      "v": 11,
+      "saldo": 7
     },
     {
       "nome": "CRU",
-      "j": 23,
-      "pts": 36,
-      "v": 10,
-      "saldo": 0
+      "j": 24,
+      "pts": 39,
+      "v": 11,
+      "saldo": 1
     },
     {
       "nome": "RBB",
-      "j": 22,
-      "pts": 32,
+      "j": 23,
+      "pts": 35,
+      "v": 10,
+      "saldo": 5
+    },
+    {
+      "nome": "CFC",
+      "j": 24,
+      "pts": 34,
       "v": 9,
+      "saldo": -1
+    },
+    {
+      "nome": "BAH",
+      "j": 23,
+      "pts": 34,
+      "v": 8,
       "saldo": 4
     },
     {
       "nome": "CAM",
-      "j": 22,
-      "pts": 32,
+      "j": 23,
+      "pts": 33,
       "v": 9,
       "saldo": 3
     },
     {
       "nome": "COR",
-      "j": 23,
+      "j": 24,
       "pts": 32,
       "v": 8,
-      "saldo": 3
-    },
-    {
-      "nome": "CFC",
-      "j": 23,
-      "pts": 31,
-      "v": 8,
-      "saldo": -2
-    },
-    {
-      "nome": "BAH",
-      "j": 22,
-      "pts": 31,
-      "v": 7,
       "saldo": 2
     },
     {
       "nome": "BOT",
-      "j": 21,
+      "j": 22,
       "pts": 29,
       "v": 8,
-      "saldo": 1
+      "saldo": 0
     },
     {
       "nome": "VIT",
-      "j": 22,
+      "j": 23,
       "pts": 28,
       "v": 8,
-      "saldo": -10
+      "saldo": -12
     },
     {
       "nome": "SAO",
-      "j": 22,
+      "j": 23,
       "pts": 27,
       "v": 7,
-      "saldo": 1
+      "saldo": 0
     },
     {
       "nome": "SAN",
-      "j": 22,
-      "pts": 25,
+      "j": 23,
+      "pts": 26,
       "v": 6,
       "saldo": -3
     },
     {
       "nome": "GRE",
-      "j": 22,
+      "j": 23,
       "pts": 25,
       "v": 6,
-      "saldo": -6
+      "saldo": -7
     },
     {
       "nome": "INT",
-      "j": 23,
-      "pts": 24,
+      "j": 24,
+      "pts": 25,
       "v": 5,
       "saldo": -4
     },
     {
       "nome": "MIR",
-      "j": 22,
-      "pts": 23,
+      "j": 23,
+      "pts": 24,
       "v": 6,
       "saldo": -10
     },
     {
       "nome": "REM",
-      "j": 23,
+      "j": 24,
       "pts": 23,
-      "v": 5,
-      "saldo": -10
-    },
-    {
-      "nome": "VAS",
-      "j": 22,
-      "pts": 22,
       "v": 5,
       "saldo": -11
     },
     {
+      "nome": "VAS",
+      "j": 23,
+      "pts": 22,
+      "v": 5,
+      "saldo": -14
+    },
+    {
       "nome": "CHA",
-      "j": 21,
-      "pts": 11,
-      "v": 1,
-      "saldo": -21
+      "j": 22,
+      "pts": 14,
+      "v": 2,
+      "saldo": -20
     }
   ],
   "partidas": {
-    "FLUxREM": {
-      "casa_id": "266",
-      "casa_nome": "Fluminense",
-      "casa_sigla": "FLU",
-      "chave": "MjAyNi0wOC0yMiAxNjowMHwyNjZ8MzY0",
-      "data": "22/08",
-      "data_iso": "2026-08-22T19:00:00.000Z",
-      "estadio": "Maracanã",
-      "fora_id": "364",
-      "fora_nome": "Remo",
-      "fora_sigla": "REM",
+    "CAMxVIT": {
+      "casa_id": "282",
+      "casa_nome": "ATLÉTICO-MG",
+      "casa_sigla": "CAM",
+      "chave": "MjAyNi0wOC0yOSAxODozMHwyODJ8Mjg3",
+      "data": "29/08",
+      "data_iso": "2026-08-29T21:30:00.000Z",
+      "estadio": "Arena MRV",
+      "fora_id": "287",
+      "fora_nome": "VITÓRIA",
+      "fora_sigla": "VIT",
       "goleadores_casa": [
         {
-          "clube_origem": "Fluminense",
+          "clube_origem": "ATLÉTICO-MG",
           "gol_contra": false,
-          "nome": "Hulk",
+          "nome": "Reinier",
           "quantidade": 1,
           "tipo": "gol"
         },
         {
-          "clube_origem": "Fluminense",
+          "clube_origem": "ATLÉTICO-MG",
           "gol_contra": false,
-          "nome": "Serna",
+          "nome": "T. Borbas",
           "quantidade": 1,
           "tipo": "gol"
         }
       ],
       "goleadores_fora": [
         {
-          "clube_origem": "Remo",
+          "clube_origem": "VITÓRIA",
           "gol_contra": false,
-          "nome": "Jajá",
+          "nome": "Erick",
           "quantidade": 1,
           "tipo": "gol"
         }
       ],
-      "hora": "16:00",
-      "link_resumo": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/22-08-2026/fluminense-remo.ghtml?utm_source=cartolafc",
-      "placar_casa": 2,
-      "placar_fora": 1,
-      "status": "ENCERRADA"
-    },
-    "INTxCAM": {
-      "casa_id": "285",
-      "casa_nome": "Internacional",
-      "casa_sigla": "INT",
-      "chave": "MjAyNi0wOC0yMiAxODozMHwyODV8Mjgy",
-      "data": "22/08",
-      "data_iso": "2026-08-22T21:30:00.000Z",
-      "estadio": "Beira-Rio",
-      "fora_id": "282",
-      "fora_nome": "ATLÉTICO-MG",
-      "fora_sigla": "CAM",
-      "goleadores_casa": [],
-      "goleadores_fora": [],
       "hora": "18:30",
-      "link_resumo": "https://ge.globo.com/rs/futebol/brasileirao-serie-a/jogo/22-08-2026/internacional-atletico-mg.ghtml?utm_source=cartolafc",
-      "placar_casa": 0,
-      "placar_fora": 0,
-      "status": "ENCERRADA"
-    },
-    "CRUxFLA": {
-      "casa_id": "283",
-      "casa_nome": "Cruzeiro",
-      "casa_sigla": "CRU",
-      "chave": "MjAyNi0wOC0yMiAyMDozMHwyODN8MjYy",
-      "data": "22/08",
-      "data_iso": "2026-08-22T23:30:00.000Z",
-      "estadio": "Mineirão",
-      "fora_id": "262",
-      "fora_nome": "Flamengo",
-      "fora_sigla": "FLA",
-      "goleadores_casa": [
-        {
-          "clube_origem": "Cruzeiro",
-          "gol_contra": false,
-          "nome": "M. Pereira",
-          "quantidade": 1,
-          "tipo": "gol"
-        },
-        {
-          "clube_origem": "Cruzeiro",
-          "gol_contra": false,
-          "nome": "Arroyo",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
-      "goleadores_fora": [
-        {
-          "clube_origem": "Flamengo",
-          "gol_contra": false,
-          "nome": "Pedro",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
-      "hora": "20:30",
-      "link_resumo": "https://ge.globo.com/mg/futebol/brasileirao-serie-a/jogo/22-08-2026/cruzeiro-flamengo.ghtml?utm_source=cartolafc",
+      "link_resumo": "https://ge.globo.com/mg/futebol/brasileirao-serie-a/jogo/29-08-2026/atletico-mg-vitoria.ghtml?utm_source=cartolafc",
       "placar_casa": 2,
       "placar_fora": 1,
       "status": "ENCERRADA"
     },
-    "PALxVAS": {
-      "casa_id": "275",
-      "casa_nome": "Palmeiras",
-      "casa_sigla": "PAL",
-      "chave": "MjAyNi0wOC0yMyAxNjowMHwyNzV8MjY3",
-      "data": "23/08",
-      "data_iso": "2026-08-23T19:00:00.000Z",
-      "estadio": "Nubank Parque",
-      "fora_id": "267",
-      "fora_nome": "Vasco",
-      "fora_sigla": "VAS",
+    "SAOxRBB": {
+      "casa_id": "276",
+      "casa_nome": "SÃO PAULO",
+      "casa_sigla": "SAO",
+      "chave": "MjAyNi0wOC0yOSAyMDowMHwyNzZ8Mjgw",
+      "data": "29/08",
+      "data_iso": "2026-08-29T23:00:00.000Z",
+      "estadio": "Morumbis",
+      "fora_id": "280",
+      "fora_nome": "RB Bragantino",
+      "fora_sigla": "RBB",
       "goleadores_casa": [
         {
-          "clube_origem": "Palmeiras",
+          "clube_origem": "SÃO PAULO",
           "gol_contra": false,
-          "nome": "Maurício",
+          "nome": "Luciano",
           "quantidade": 1,
           "tipo": "gol"
         },
         {
-          "clube_origem": "Palmeiras",
+          "clube_origem": "SÃO PAULO",
           "gol_contra": false,
-          "nome": "F. López",
-          "quantidade": 2,
-          "tipo": "gol"
-        },
-        {
-          "clube_origem": "Palmeiras",
-          "gol_contra": false,
-          "nome": "V. Roque",
+          "nome": "G. Santana",
           "quantidade": 1,
           "tipo": "gol"
         }
       ],
       "goleadores_fora": [
-        {
-          "clube_origem": "Vasco",
-          "gol_contra": false,
-          "nome": "Colidio",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
-      "hora": "16:00",
-      "link_resumo": "https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/23-08-2026/palmeiras-vasco.ghtml?utm_source=cartolafc",
-      "placar_casa": 4,
-      "placar_fora": 1,
-      "status": "ENCERRADA"
-    },
-    "RBBxGRE": {
-      "casa_id": "280",
-      "casa_nome": "RB Bragantino",
-      "casa_sigla": "RBB",
-      "chave": "MjAyNi0wOC0yMyAxNjowMHwyODB8Mjg0",
-      "data": "23/08",
-      "data_iso": "2026-08-23T19:00:00.000Z",
-      "estadio": "Cícero de Souza Marques",
-      "fora_id": "284",
-      "fora_nome": "GRÊMIO",
-      "fora_sigla": "GRE",
-      "goleadores_casa": [
         {
           "clube_origem": "RB Bragantino",
           "gol_contra": false,
-          "nome": "G. Marques",
+          "nome": "Fernando",
           "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
-      "goleadores_fora": [],
-      "hora": "16:00",
-      "link_resumo": "https://ge.globo.com/sp/vale-do-paraiba-regiao/futebol/brasileirao-serie-a/jogo/23-08-2026/bragantino-gremio.ghtml?utm_source=cartolafc",
-      "placar_casa": 1,
-      "placar_fora": 0,
-      "status": "ENCERRADA"
-    },
-    "VITxBAH": {
-      "casa_id": "287",
-      "casa_nome": "VITÓRIA",
-      "casa_sigla": "VIT",
-      "chave": "MjAyNi0wOC0yMyAxNjowMHwyODd8MjY1",
-      "data": "23/08",
-      "data_iso": "2026-08-23T19:00:00.000Z",
-      "estadio": "Barradão",
-      "fora_id": "265",
-      "fora_nome": "Bahia",
-      "fora_sigla": "BAH",
-      "goleadores_casa": [],
-      "goleadores_fora": [
-        {
-          "clube_origem": "Bahia",
-          "gol_contra": false,
-          "nome": "J. Lucas",
-          "quantidade": 1,
-          "tipo": "gol"
-        },
-        {
-          "clube_origem": "Bahia",
-          "gol_contra": false,
-          "nome": "A. Véliz",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
-      "hora": "16:00",
-      "link_resumo": "https://ge.globo.com/ba/futebol/brasileirao-serie-a/jogo/23-08-2026/vitoria-bahia.ghtml?utm_source=cartolafc",
-      "placar_casa": 0,
-      "placar_fora": 2,
-      "status": "ENCERRADA"
-    },
-    "SANxMIR": {
-      "casa_id": "277",
-      "casa_nome": "Santos",
-      "casa_sigla": "SAN",
-      "chave": "MjAyNi0wOC0yMyAxODozMHwyNzd8MjMwNQ",
-      "data": "23/08",
-      "data_iso": "2026-08-23T21:30:00.000Z",
-      "estadio": "Vila Belmiro",
-      "fora_id": "2305",
-      "fora_nome": "Mirassol",
-      "fora_sigla": "MIR",
-      "goleadores_casa": [
-        {
-          "clube_origem": "Santos",
-          "gol_contra": false,
-          "nome": "Barreal",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
-      "goleadores_fora": [
-        {
-          "clube_origem": "Mirassol",
-          "gol_contra": false,
-          "nome": "Eduardo",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
-      "hora": "18:30",
-      "link_resumo": "https://ge.globo.com/sp/santos-e-regiao/futebol/brasileirao-serie-a/jogo/23-08-2026/santos-mirassol.ghtml?utm_source=cartolafc",
-      "placar_casa": 1,
-      "placar_fora": 1,
-      "status": "ENCERRADA"
-    },
-    "CHAxSAO": {
-      "casa_id": "315",
-      "casa_nome": "Chapecoense",
-      "casa_sigla": "CHA",
-      "chave": "MjAyNi0wOC0yMyAxODozMHwzMTV8Mjc2",
-      "data": "23/08",
-      "data_iso": "2026-08-23T21:30:00.000Z",
-      "estadio": "Arena Condá",
-      "fora_id": "276",
-      "fora_nome": "SÃO PAULO",
-      "fora_sigla": "SAO",
-      "goleadores_casa": [
-        {
-          "clube_origem": "Chapecoense",
-          "gol_contra": false,
-          "nome": "B. Pacheco",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
-      "goleadores_fora": [],
-      "hora": "18:30",
-      "link_resumo": "https://ge.globo.com/sc/futebol/brasileirao-serie-a/jogo/23-08-2026/chapecoense-sao-paulo.ghtml?utm_source=cartolafc",
-      "placar_casa": 1,
-      "placar_fora": 0,
-      "status": "ENCERRADA"
-    },
-    "CFCxCOR": {
-      "casa_id": "294",
-      "casa_nome": "Coritiba",
-      "casa_sigla": "CFC",
-      "chave": "MjAyNi0wOC0yMyAxOTozMHwyOTR8MjY0",
-      "data": "23/08",
-      "data_iso": "2026-08-23T22:30:00.000Z",
-      "estadio": "Couto Pereira",
-      "fora_id": "264",
-      "fora_nome": "Corinthians",
-      "fora_sigla": "COR",
-      "goleadores_casa": [
-        {
-          "clube_origem": "Coritiba",
-          "gol_contra": false,
-          "nome": "P. Rocha",
-          "quantidade": 1,
-          "tipo": "gol"
-        },
-        {
-          "clube_origem": "Coritiba",
-          "gol_contra": false,
-          "nome": "P. Roberto",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
-      "goleadores_fora": [
-        {
-          "clube_origem": "Corinthians",
-          "gol_contra": false,
-          "nome": "Raniele",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
-      "hora": "19:30",
-      "link_resumo": "https://ge.globo.com/pr/futebol/brasileirao-serie-a/jogo/23-08-2026/coritiba-corinthians.ghtml?utm_source=cartolafc",
-      "placar_casa": 2,
-      "placar_fora": 1,
-      "status": "ENCERRADA"
-    },
-    "BOTxCAP": {
-      "casa_id": "263",
-      "casa_nome": "Botafogo",
-      "casa_sigla": "BOT",
-      "chave": "MjAyNi0wOC0yNCAyMDowMHwyNjN8Mjkz",
-      "data": "24/08",
-      "data_iso": "2026-08-24T23:00:00.000Z",
-      "estadio": "Nilton Santos (Engenhão)",
-      "fora_id": "293",
-      "fora_nome": "Athletico-PR",
-      "fora_sigla": "CAP",
-      "goleadores_casa": [
-        {
-          "clube_origem": "Botafogo",
-          "gol_contra": false,
-          "nome": "S. Rodríguez",
-          "quantidade": 2,
-          "tipo": "gol"
-        }
-      ],
-      "goleadores_fora": [
-        {
-          "clube_origem": "Athletico-PR",
-          "gol_contra": false,
-          "nome": "J. Cruz",
-          "quantidade": 1,
-          "tipo": "gol"
-        },
-        {
-          "clube_origem": "Athletico-PR",
-          "gol_contra": false,
-          "nome": "Viveros",
-          "quantidade": 2,
           "tipo": "gol"
         }
       ],
       "hora": "20:00",
-      "link_resumo": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/24-08-2026/botafogo-atletico-pr.ghtml?utm_source=cartolafc",
+      "link_resumo": "https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/29-08-2026/sao-paulo-bragantino.ghtml?utm_source=cartolafc",
       "placar_casa": 2,
-      "placar_fora": 3,
-      "status": "ENCERRADA"
+      "placar_fora": 1,
+      "status": "EM_ANDAMENTO"
+    },
+    "VASxCRU": {
+      "casa_id": "267",
+      "casa_nome": "Vasco",
+      "casa_sigla": "VAS",
+      "chave": "MjAyNi0wOC0yOSAyMToyMHwyNjd8Mjgz",
+      "data": "29/08",
+      "data_iso": "2026-08-30T00:20:00.000Z",
+      "estadio": "São Januário",
+      "fora_id": "283",
+      "fora_nome": "Cruzeiro",
+      "fora_sigla": "CRU",
+      "goleadores_casa": [
+        {
+          "clube_origem": "Vasco",
+          "gol_contra": false,
+          "nome": "T. Tchê",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
+      "goleadores_fora": [],
+      "hora": "21:20",
+      "link_resumo": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/29-08-2026/vasco-cruzeiro.ghtml?utm_source=cartolafc",
+      "placar_casa": 1,
+      "placar_fora": 0,
+      "status": "EM_ANDAMENTO"
     }
   },
   "last_signature": [
@@ -541,20 +293,28 @@
       "pos": 5,
       "pts": 39,
       "v": 11,
-      "saldo": 1,
+      "saldo": 0,
       "gm": 34
     },
     {
-      "nome": "RBB",
+      "nome": "CAM",
       "pos": 6,
+      "pts": 36,
+      "v": 10,
+      "saldo": 4,
+      "gm": 32
+    },
+    {
+      "nome": "RBB",
+      "pos": 7,
       "pts": 35,
       "v": 10,
-      "saldo": 5,
-      "gm": 28
+      "saldo": 4,
+      "gm": 29
     },
     {
       "nome": "CFC",
-      "pos": 7,
+      "pos": 8,
       "pts": 34,
       "v": 9,
       "saldo": -1,
@@ -562,19 +322,11 @@
     },
     {
       "nome": "BAH",
-      "pos": 8,
+      "pos": 9,
       "pts": 34,
       "v": 8,
       "saldo": 4,
       "gm": 32
-    },
-    {
-      "nome": "CAM",
-      "pos": 9,
-      "pts": 33,
-      "v": 9,
-      "saldo": 3,
-      "gm": 30
     },
     {
       "nome": "COR",
@@ -585,8 +337,16 @@
       "gm": 26
     },
     {
-      "nome": "BOT",
+      "nome": "SAO",
       "pos": 11,
+      "pts": 30,
+      "v": 8,
+      "saldo": 1,
+      "gm": 29
+    },
+    {
+      "nome": "BOT",
+      "pos": 12,
       "pts": 29,
       "v": 8,
       "saldo": 0,
@@ -594,19 +354,11 @@
     },
     {
       "nome": "VIT",
-      "pos": 12,
+      "pos": 13,
       "pts": 28,
       "v": 8,
-      "saldo": -12,
-      "gm": 23
-    },
-    {
-      "nome": "SAO",
-      "pos": 13,
-      "pts": 27,
-      "v": 7,
-      "saldo": 0,
-      "gm": 27
+      "saldo": -13,
+      "gm": 24
     },
     {
       "nome": "SAN",
@@ -625,8 +377,16 @@
       "gm": 24
     },
     {
-      "nome": "INT",
+      "nome": "VAS",
       "pos": 16,
+      "pts": 25,
+      "v": 6,
+      "saldo": -13,
+      "gm": 25
+    },
+    {
+      "nome": "INT",
+      "pos": 17,
       "pts": 25,
       "v": 5,
       "saldo": -4,
@@ -634,7 +394,7 @@
     },
     {
       "nome": "MIR",
-      "pos": 17,
+      "pos": 18,
       "pts": 24,
       "v": 6,
       "saldo": -10,
@@ -642,19 +402,11 @@
     },
     {
       "nome": "REM",
-      "pos": 18,
+      "pos": 19,
       "pts": 23,
       "v": 5,
       "saldo": -11,
       "gm": 28
-    },
-    {
-      "nome": "VAS",
-      "pos": 19,
-      "pts": 22,
-      "v": 5,
-      "saldo": -14,
-      "gm": 24
     },
     {
       "nome": "CHA",
@@ -665,6 +417,6 @@
       "gm": 24
     }
   ],
-  "updated_at": "2026-08-24T22:03:48.312046-03:00",
+  "updated_at": "2026-08-29T22:32:04.923077-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
