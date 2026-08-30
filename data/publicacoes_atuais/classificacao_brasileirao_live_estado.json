@@ -225,7 +225,7 @@
       "link_resumo": "https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/29-08-2026/sao-paulo-bragantino.ghtml?utm_source=cartolafc",
       "placar_casa": 2,
       "placar_fora": 1,
-      "status": "EM_ANDAMENTO"
+      "status": "ENCERRADA"
     },
     "VASxCRU": {
       "casa_id": "267",
@@ -273,8 +273,8 @@
       "hora": "21:20",
       "link_resumo": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/29-08-2026/vasco-cruzeiro.ghtml?utm_source=cartolafc",
       "placar_casa": 3,
-      "placar_fora": 0,
-      "status": "EM_ANDAMENTO"
+      "placar_fora": 1,
+      "status": "ENCERRADA"
     }
   },
   "last_signature": [
@@ -315,8 +315,8 @@
       "pos": 5,
       "pts": 39,
       "v": 11,
-      "saldo": -2,
-      "gm": 34
+      "saldo": -1,
+      "gm": 35
     },
     {
       "nome": "CAM",
@@ -403,7 +403,7 @@
       "pos": 16,
       "pts": 25,
       "v": 6,
-      "saldo": -11,
+      "saldo": -12,
       "gm": 27
     },
     {
@@ -439,6 +439,6 @@
       "gm": 24
     }
   ],
-  "updated_at": "2026-08-29T23:23:29.803603-03:00",
+  "updated_at": "2026-08-29T23:33:53.579263-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
