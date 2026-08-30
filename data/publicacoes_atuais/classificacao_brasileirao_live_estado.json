@@ -249,15 +249,30 @@
         {
           "clube_origem": "Vasco",
           "gol_contra": false,
+          "nome": "David",
+          "quantidade": 1,
+          "tipo": "gol"
+        },
+        {
+          "clube_origem": "Vasco",
+          "gol_contra": false,
           "nome": "L. Freitas",
           "quantidade": 1,
           "tipo": "gol"
         }
       ],
-      "goleadores_fora": [],
+      "goleadores_fora": [
+        {
+          "clube_origem": "Cruzeiro",
+          "gol_contra": false,
+          "nome": "F. Morais",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "hora": "21:20",
       "link_resumo": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/29-08-2026/vasco-cruzeiro.ghtml?utm_source=cartolafc",
-      "placar_casa": 2,
+      "placar_casa": 3,
       "placar_fora": 0,
       "status": "EM_ANDAMENTO"
     }
@@ -300,7 +315,7 @@
       "pos": 5,
       "pts": 39,
       "v": 11,
-      "saldo": -1,
+      "saldo": -2,
       "gm": 34
     },
     {
@@ -388,8 +403,8 @@
       "pos": 16,
       "pts": 25,
       "v": 6,
-      "saldo": -12,
-      "gm": 26
+      "saldo": -11,
+      "gm": 27
     },
     {
       "nome": "INT",
@@ -424,6 +439,6 @@
       "gm": 24
     }
   ],
-  "updated_at": "2026-08-29T22:53:23.086751-03:00",
+  "updated_at": "2026-08-29T23:23:29.803603-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
