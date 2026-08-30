@@ -378,12 +378,20 @@
       "fora_nome": "Santos",
       "fora_sigla": "SAN",
       "goleadores_casa": [],
-      "goleadores_fora": [],
+      "goleadores_fora": [
+        {
+          "clube_origem": "Santos",
+          "gol_contra": false,
+          "nome": "Oliva",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "hora": "16:00",
       "link_resumo": "https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/30-08-2026/corinthians-santos.ghtml?utm_source=cartolafc",
       "placar_casa": 0,
-      "placar_fora": 0,
-      "status": "CRIADA"
+      "placar_fora": 1,
+      "status": "EM_ANDAMENTO"
     },
     "MIRxPAL": {
       "casa_id": "2305",
@@ -521,7 +529,7 @@
       "pos": 10,
       "pts": 32,
       "v": 8,
-      "saldo": 2,
+      "saldo": 1,
       "gm": 26
     },
     {
@@ -541,20 +549,20 @@
       "gm": 37
     },
     {
-      "nome": "VIT",
+      "nome": "SAN",
       "pos": 13,
+      "pts": 29,
+      "v": 7,
+      "saldo": -2,
+      "gm": 34
+    },
+    {
+      "nome": "VIT",
+      "pos": 14,
       "pts": 28,
       "v": 8,
       "saldo": -13,
       "gm": 24
-    },
-    {
-      "nome": "SAN",
-      "pos": 14,
-      "pts": 26,
-      "v": 6,
-      "saldo": -3,
-      "gm": 33
     },
     {
       "nome": "GRE",
@@ -605,6 +613,6 @@
       "gm": 24
     }
   ],
-  "updated_at": "2026-08-30T16:23:27.134658-03:00",
+  "updated_at": "2026-08-30T16:44:00.248089-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
