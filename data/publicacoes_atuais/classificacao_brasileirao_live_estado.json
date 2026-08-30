@@ -350,13 +350,21 @@
       "fora_id": "263",
       "fora_nome": "Botafogo",
       "fora_sigla": "BOT",
-      "goleadores_casa": [],
+      "goleadores_casa": [
+        {
+          "clube_origem": "Flamengo",
+          "gol_contra": false,
+          "nome": "S. Lino",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "goleadores_fora": [],
       "hora": "16:00",
       "link_resumo": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/30-08-2026/flamengo-botafogo.ghtml?utm_source=cartolafc",
-      "placar_casa": 0,
+      "placar_casa": 1,
       "placar_fora": 0,
-      "status": "CRIADA"
+      "status": "EM_ANDAMENTO"
     },
     "CORxSAN": {
       "casa_id": "264",
@@ -447,10 +455,10 @@
     {
       "nome": "FLA",
       "pos": 2,
-      "pts": 45,
-      "v": 13,
-      "saldo": 24,
-      "gm": 45
+      "pts": 48,
+      "v": 14,
+      "saldo": 25,
+      "gm": 46
     },
     {
       "nome": "CAP",
@@ -529,7 +537,7 @@
       "pos": 12,
       "pts": 29,
       "v": 8,
-      "saldo": 0,
+      "saldo": -1,
       "gm": 37
     },
     {
@@ -597,6 +605,6 @@
       "gm": 24
     }
   ],
-  "updated_at": "2026-08-30T13:13:19.150376-03:00",
+  "updated_at": "2026-08-30T16:23:27.134658-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
