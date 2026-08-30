@@ -12,9 +12,25 @@ import render_live_cobertura_v2 as base
 from render_telegram_cards import RenderOutput
 
 
-VISUAL_VERSION = "live_cobertura_v3_tres_jogos_2026_07_30"
+VISUAL_VERSION = "live_cobertura_v3_placar_ao_vivo_2026_08_29"
 is_coverage_event = base.is_coverage_event
 render_match_cards = base.render_match_cards
+
+
+def _mostrar_placar_na_abertura(match: Dict[str, Any]) -> bool:
+    """Mostra o placar quando a partida já começou ou terminou.
+
+    Na abertura da Live, jogos ainda não iniciados continuam com "X".
+    Jogos AO VIVO, INTERVALO ou ENCERRADOS exibem o placar atual/oficial.
+    """
+    status, _accent = v2._status_label(match)
+    status = str(status or "").upper()
+    return (
+        "AO VIVO" in status
+        or "INTERVALO" in status
+        or "ENCERRADO" in status
+        or "FINAL" in status
+    )
 
 
 def _render_board(data: Dict[str, Any], output_dir: str, opening: bool) -> RenderOutput:
@@ -43,12 +59,13 @@ def _render_board(data: Dict[str, Any], output_dir: str, opening: bool) -> Rende
         chunk = matches[page * 3:(page + 1) * 3]
         y = 325
         for index, match in enumerate(chunk, start=page * 3 + 1):
+            mostrar_resultado = (not opening) or _mostrar_placar_na_abertura(match)
             base._draw_schedule_row(
                 image,
                 (48, y, 1552, y + 340),
                 match,
                 index,
-                results=not opening,
+                results=mostrar_resultado,
             )
             y += 365
 
