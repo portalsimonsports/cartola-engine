@@ -287,12 +287,28 @@
       "fora_id": "266",
       "fora_nome": "Fluminense",
       "fora_sigla": "FLU",
-      "goleadores_casa": [],
-      "goleadores_fora": [],
+      "goleadores_casa": [
+        {
+          "clube_origem": "Athletico-PR",
+          "gol_contra": false,
+          "nome": "Leozinho",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
+      "goleadores_fora": [
+        {
+          "clube_origem": "Fluminense",
+          "gol_contra": false,
+          "nome": "Hulk",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "hora": "11:00",
       "link_resumo": "https://ge.globo.com/pr/futebol/brasileirao-serie-a/jogo/30-08-2026/atletico-pr-fluminense.ghtml?utm_source=cartolafc",
-      "placar_casa": 0,
-      "placar_fora": 0,
+      "placar_casa": 1,
+      "placar_fora": 1,
       "status": "EM_ANDAMENTO"
     },
     "FLAxBOT": {
@@ -414,7 +430,7 @@
       "pts": 45,
       "v": 13,
       "saldo": 12,
-      "gm": 34
+      "gm": 35
     },
     {
       "nome": "FLU",
@@ -422,7 +438,7 @@
       "pts": 42,
       "v": 11,
       "saldo": 7,
-      "gm": 36
+      "gm": 37
     },
     {
       "nome": "CRU",
@@ -553,6 +569,6 @@
       "gm": 24
     }
   ],
-  "updated_at": "2026-08-30T11:03:51.335865-03:00",
+  "updated_at": "2026-08-30T11:53:16.688996-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
