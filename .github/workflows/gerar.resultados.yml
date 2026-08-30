@@ -61,7 +61,8 @@ jobs:
           python -m py_compile app/render_mercado_aberto_v2.py
           python -m py_compile app/publicar_desempenho_times_abertura.py
           python -m py_compile app/gerar_resultados_telegram_v3.py
-          echo "Renderizadores aprovados validados."
+          python -m py_compile app/preparar_whatsapp_canal.py
+          echo "Renderizadores aprovados e segundo destino WhatsApp validados."
 
       - name: Preparar e validar payload
         shell: bash
@@ -113,8 +114,6 @@ jobs:
           print(f"Payload validado: evento={evento_programado}; tipo={tipo}; contexto={contexto}")
           PY
 
-          # Limpeza da execução atual: remove artefatos temporários e resíduos históricos
-          # que não pertencem ao payload da rodada corrente.
           rm -f output/live_*.png output/resultados_*.png output/boletim_*.png
           rm -f output/aprovada_*.png output/ultima_publicacao.json
           rm -f output/analise_inicial_rodada_*.json output/analise_inicial_rodada_*.mp4
@@ -257,6 +256,15 @@ jobs:
                       print(arq)
           PY
 
+      - name: Preparar segundo destino WhatsApp
+        if: env.PSS_SKIP_PUBLICACAO != '1' && success()
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -e
+          python app/preparar_whatsapp_canal.py
+          echo "WhatsApp preparado em fila independente; qualquer falha aqui não bloqueia o Telegram."
+
       - name: Publicar arquivos gerados no repositório
         if: env.PSS_SKIP_PUBLICACAO != '1' && success()
         shell: bash
@@ -267,6 +275,7 @@ jobs:
 
           git add \
             data/publicacoes_atuais/ \
+            data/whatsapp_outbox/ \
             output/*.png 2>/dev/null || true
 
           if git diff --cached --quiet; then
@@ -274,7 +283,7 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Telegram: imagens aprovadas do cronograma completo"
+          git commit -m "Telegram + WhatsApp outbox: imagens aprovadas do cronograma completo"
           git reset --hard HEAD
           git clean -fd
 
