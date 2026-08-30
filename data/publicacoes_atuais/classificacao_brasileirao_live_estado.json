@@ -423,13 +423,36 @@
       "fora_id": "315",
       "fora_nome": "Chapecoense",
       "fora_sigla": "CHA",
-      "goleadores_casa": [],
-      "goleadores_fora": [],
+      "goleadores_casa": [
+        {
+          "clube_origem": "GRÊMIO",
+          "gol_contra": false,
+          "nome": "Pavón",
+          "quantidade": 1,
+          "tipo": "gol"
+        },
+        {
+          "clube_origem": "GRÊMIO",
+          "gol_contra": false,
+          "nome": "Enamorado",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
+      "goleadores_fora": [
+        {
+          "clube_origem": "Chapecoense",
+          "gol_contra": false,
+          "nome": "Garcez",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "hora": "18:30",
       "link_resumo": "https://ge.globo.com/rs/futebol/brasileirao-serie-a/jogo/30-08-2026/gremio-chapecoense.ghtml?utm_source=cartolafc",
-      "placar_casa": 0,
-      "placar_fora": 0,
-      "status": "CRIADA"
+      "placar_casa": 2,
+      "placar_fora": 1,
+      "status": "EM_ANDAMENTO"
     },
     "BAHxINT": {
       "casa_id": "265",
@@ -567,10 +590,10 @@
     {
       "nome": "GRE",
       "pos": 15,
-      "pts": 25,
-      "v": 6,
-      "saldo": -7,
-      "gm": 24
+      "pts": 28,
+      "v": 7,
+      "saldo": -6,
+      "gm": 26
     },
     {
       "nome": "VAS",
@@ -609,10 +632,10 @@
       "pos": 20,
       "pts": 14,
       "v": 2,
-      "saldo": -20,
-      "gm": 24
+      "saldo": -21,
+      "gm": 25
     }
   ],
-  "updated_at": "2026-08-30T17:53:57.369218-03:00",
+  "updated_at": "2026-08-30T19:13:27.505428-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
