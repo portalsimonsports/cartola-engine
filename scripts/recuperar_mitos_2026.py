@@ -5,6 +5,7 @@ from pathlib import Path
 
 import requests
 
+# Coleta histórica 2026 - execução pontual
 MITOS = {
     1: 24137264, 2: 46095320, 3: 24807770, 4: 48921295,
     5: 28933900, 6: 45564289, 7: 17950024, 8: 2275569,
