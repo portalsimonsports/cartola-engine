@@ -301,6 +301,13 @@
           "nome": "Leozinho",
           "quantidade": 1,
           "tipo": "gol"
+        },
+        {
+          "clube_origem": "Athletico-PR",
+          "gol_contra": false,
+          "nome": "Viveros",
+          "quantidade": 1,
+          "tipo": "gol"
         }
       ],
       "goleadores_fora": [
@@ -317,12 +324,19 @@
           "nome": "Canobbio",
           "quantidade": 1,
           "tipo": "gol"
+        },
+        {
+          "clube_origem": "Fluminense",
+          "gol_contra": false,
+          "nome": "Ignácio",
+          "quantidade": 1,
+          "tipo": "gol"
         }
       ],
       "hora": "11:00",
       "link_resumo": "https://ge.globo.com/pr/futebol/brasileirao-serie-a/jogo/30-08-2026/atletico-pr-fluminense.ghtml?utm_source=cartolafc",
       "placar_casa": 2,
-      "placar_fora": 2,
+      "placar_fora": 3,
       "status": "EM_ANDAMENTO"
     },
     "FLAxBOT": {
@@ -441,18 +455,18 @@
     {
       "nome": "CAP",
       "pos": 3,
-      "pts": 45,
+      "pts": 44,
       "v": 13,
-      "saldo": 12,
+      "saldo": 11,
       "gm": 36
     },
     {
       "nome": "FLU",
       "pos": 4,
-      "pts": 42,
-      "v": 11,
-      "saldo": 7,
-      "gm": 38
+      "pts": 44,
+      "v": 12,
+      "saldo": 8,
+      "gm": 39
     },
     {
       "nome": "CRU",
@@ -583,6 +597,6 @@
       "gm": 24
     }
   ],
-  "updated_at": "2026-08-30T12:43:21.927906-03:00",
+  "updated_at": "2026-08-30T13:04:28.254121-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
