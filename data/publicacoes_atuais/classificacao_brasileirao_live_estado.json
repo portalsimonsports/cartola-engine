@@ -525,6 +525,25 @@
       "placar_casa": 3,
       "placar_fora": 2,
       "status": "ENCERRADA"
+    },
+    "REMxCFC": {
+      "casa_id": "364",
+      "casa_nome": "Remo",
+      "casa_sigla": "REM",
+      "chave": "MjAyNi0wOC0zMSAyMDowMHwzNjR8Mjk0",
+      "data": "31/08",
+      "data_iso": "2026-08-31T23:00:00.000Z",
+      "estadio": "Mangueirão",
+      "fora_id": "294",
+      "fora_nome": "Coritiba",
+      "fora_sigla": "CFC",
+      "goleadores_casa": [],
+      "goleadores_fora": [],
+      "hora": "20:00",
+      "link_resumo": "https://ge.globo.com/pa/futebol/brasileirao-serie-a/jogo/31-08-2026/remo-coritiba.ghtml?utm_source=cartolafc",
+      "placar_casa": 0,
+      "placar_fora": 0,
+      "status": "EM_ANDAMENTO"
     }
   },
   "last_signature": [
@@ -595,7 +614,7 @@
     {
       "nome": "CFC",
       "pos": 9,
-      "pts": 34,
+      "pts": 35,
       "v": 9,
       "saldo": -1,
       "gm": 30
@@ -675,7 +694,7 @@
     {
       "nome": "REM",
       "pos": 19,
-      "pts": 23,
+      "pts": 24,
       "v": 5,
       "saldo": -11,
       "gm": 28
@@ -689,6 +708,6 @@
       "gm": 25
     }
   ],
-  "updated_at": "2026-08-30T21:53:58.022307-03:00",
+  "updated_at": "2026-08-31T20:13:52.504880-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
