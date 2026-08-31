@@ -337,7 +337,7 @@
       "link_resumo": "https://ge.globo.com/pr/futebol/brasileirao-serie-a/jogo/30-08-2026/atletico-pr-fluminense.ghtml?utm_source=cartolafc",
       "placar_casa": 3,
       "placar_fora": 3,
-      "status": "EM_ANDAMENTO"
+      "status": "ENCERRADA"
     },
     "FLAxBOT": {
       "casa_id": "262",
@@ -357,14 +357,21 @@
           "nome": "S. Lino",
           "quantidade": 2,
           "tipo": "gol"
+        },
+        {
+          "clube_origem": "Flamengo",
+          "gol_contra": false,
+          "nome": "Carrascal",
+          "quantidade": 1,
+          "tipo": "gol"
         }
       ],
       "goleadores_fora": [],
       "hora": "16:00",
       "link_resumo": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/30-08-2026/flamengo-botafogo.ghtml?utm_source=cartolafc",
-      "placar_casa": 2,
+      "placar_casa": 3,
       "placar_fora": 0,
-      "status": "EM_ANDAMENTO"
+      "status": "ENCERRADA"
     },
     "CORxSAN": {
       "casa_id": "264",
@@ -391,7 +398,7 @@
       "link_resumo": "https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/30-08-2026/corinthians-santos.ghtml?utm_source=cartolafc",
       "placar_casa": 0,
       "placar_fora": 1,
-      "status": "EM_ANDAMENTO"
+      "status": "ENCERRADA"
     },
     "MIRxPAL": {
       "casa_id": "2305",
@@ -404,13 +411,29 @@
       "fora_id": "275",
       "fora_nome": "Palmeiras",
       "fora_sigla": "PAL",
-      "goleadores_casa": [],
-      "goleadores_fora": [],
+      "goleadores_casa": [
+        {
+          "clube_origem": "Mirassol",
+          "gol_contra": false,
+          "nome": "Eduardo",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
+      "goleadores_fora": [
+        {
+          "clube_origem": "Palmeiras",
+          "gol_contra": false,
+          "nome": "Maurício",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "hora": "18:30",
       "link_resumo": "https://ge.globo.com/sp/tem-esporte/futebol/brasileirao-serie-a/jogo/30-08-2026/mirassol-palmeiras.ghtml?utm_source=cartolafc",
-      "placar_casa": 0,
-      "placar_fora": 0,
-      "status": "CRIADA"
+      "placar_casa": 1,
+      "placar_fora": 1,
+      "status": "ENCERRADA"
     },
     "GRExCHA": {
       "casa_id": "284",
@@ -434,8 +457,8 @@
         {
           "clube_origem": "GRÊMIO",
           "gol_contra": false,
-          "nome": "Enamorado",
-          "quantidade": 1,
+          "nome": "G. Martins",
+          "quantidade": 2,
           "tipo": "gol"
         }
       ],
@@ -450,9 +473,9 @@
       ],
       "hora": "18:30",
       "link_resumo": "https://ge.globo.com/rs/futebol/brasileirao-serie-a/jogo/30-08-2026/gremio-chapecoense.ghtml?utm_source=cartolafc",
-      "placar_casa": 2,
+      "placar_casa": 3,
       "placar_fora": 1,
-      "status": "EM_ANDAMENTO"
+      "status": "ENCERRADA"
     },
     "BAHxINT": {
       "casa_id": "265",
@@ -465,31 +488,61 @@
       "fora_id": "285",
       "fora_nome": "Internacional",
       "fora_sigla": "INT",
-      "goleadores_casa": [],
-      "goleadores_fora": [],
+      "goleadores_casa": [
+        {
+          "clube_origem": "Bahia",
+          "gol_contra": false,
+          "nome": "Erick",
+          "quantidade": 1,
+          "tipo": "gol"
+        },
+        {
+          "clube_origem": "Bahia",
+          "gol_contra": false,
+          "nome": "E. Pulga",
+          "quantidade": 2,
+          "tipo": "gol"
+        }
+      ],
+      "goleadores_fora": [
+        {
+          "clube_origem": "Internacional",
+          "gol_contra": false,
+          "nome": "A. Patrick",
+          "quantidade": 1,
+          "tipo": "gol"
+        },
+        {
+          "clube_origem": "Internacional",
+          "gol_contra": false,
+          "nome": "Vitinho",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "hora": "19:30",
       "link_resumo": "https://ge.globo.com/ba/futebol/brasileirao-serie-a/jogo/30-08-2026/bahia-internacional.ghtml?utm_source=cartolafc",
-      "placar_casa": 0,
-      "placar_fora": 0,
-      "status": "CRIADA"
+      "placar_casa": 3,
+      "placar_fora": 2,
+      "status": "ENCERRADA"
     }
   },
   "last_signature": [
     {
       "nome": "PAL",
       "pos": 1,
-      "pts": 51,
+      "pts": 52,
       "v": 15,
       "saldo": 24,
-      "gm": 44
+      "gm": 45
     },
     {
       "nome": "FLA",
       "pos": 2,
       "pts": 48,
       "v": 14,
-      "saldo": 26,
-      "gm": 47
+      "saldo": 27,
+      "gm": 48
     },
     {
       "nome": "CAP",
@@ -516,8 +569,16 @@
       "gm": 35
     },
     {
-      "nome": "CAM",
+      "nome": "BAH",
       "pos": 6,
+      "pts": 37,
+      "v": 9,
+      "saldo": 5,
+      "gm": 35
+    },
+    {
+      "nome": "CAM",
+      "pos": 7,
       "pts": 36,
       "v": 10,
       "saldo": 4,
@@ -525,7 +586,7 @@
     },
     {
       "nome": "RBB",
-      "pos": 7,
+      "pos": 8,
       "pts": 35,
       "v": 10,
       "saldo": 4,
@@ -533,19 +594,11 @@
     },
     {
       "nome": "CFC",
-      "pos": 8,
+      "pos": 9,
       "pts": 34,
       "v": 9,
       "saldo": -1,
       "gm": 30
-    },
-    {
-      "nome": "BAH",
-      "pos": 9,
-      "pts": 34,
-      "v": 8,
-      "saldo": 4,
-      "gm": 32
     },
     {
       "nome": "COR",
@@ -568,7 +621,7 @@
       "pos": 12,
       "pts": 29,
       "v": 8,
-      "saldo": -2,
+      "saldo": -3,
       "gm": 37
     },
     {
@@ -592,12 +645,20 @@
       "pos": 15,
       "pts": 28,
       "v": 7,
-      "saldo": -6,
-      "gm": 26
+      "saldo": -5,
+      "gm": 27
+    },
+    {
+      "nome": "MIR",
+      "pos": 16,
+      "pts": 25,
+      "v": 6,
+      "saldo": -10,
+      "gm": 27
     },
     {
       "nome": "VAS",
-      "pos": 16,
+      "pos": 17,
       "pts": 25,
       "v": 6,
       "saldo": -12,
@@ -605,18 +666,10 @@
     },
     {
       "nome": "INT",
-      "pos": 17,
+      "pos": 18,
       "pts": 25,
       "v": 5,
-      "saldo": -4,
-      "gm": 24
-    },
-    {
-      "nome": "MIR",
-      "pos": 18,
-      "pts": 24,
-      "v": 6,
-      "saldo": -10,
+      "saldo": -5,
       "gm": 26
     },
     {
@@ -632,10 +685,10 @@
       "pos": 20,
       "pts": 14,
       "v": 2,
-      "saldo": -21,
+      "saldo": -22,
       "gm": 25
     }
   ],
-  "updated_at": "2026-08-30T19:13:27.505428-03:00",
+  "updated_at": "2026-08-30T21:53:58.022307-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
