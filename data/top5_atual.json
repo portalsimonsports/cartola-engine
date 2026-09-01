@@ -3,8 +3,18 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 26,
-  "atualizado_em": "2026-09-01T14:25:33.549Z",
+  "atualizado_em": "2026-09-01T14:35:31.791Z",
   "dados": [
+    {
+      "RODADA": 26,
+      "POS": "GOL",
+      "NOME": "Rossi",
+      "CLUBE": "FLA",
+      "PRECO": 9.32,
+      "EXP_SCORE": 4.0906,
+      "FACTOR": 0.9812679445499417,
+      "ATLETA_ID": 99552
+    },
     {
       "RODADA": 26,
       "POS": "GOL",
@@ -24,16 +34,6 @@
       "EXP_SCORE": 3.7898,
       "FACTOR": 1.083839664170718,
       "ATLETA_ID": 72018
-    },
-    {
-      "RODADA": 26,
-      "POS": "GOL",
-      "NOME": "Rossi",
-      "CLUBE": "FLA",
-      "PRECO": 9.32,
-      "EXP_SCORE": 3.5571,
-      "FACTOR": 0.9812679445499417,
-      "ATLETA_ID": 99552
     },
     {
       "RODADA": 26,
@@ -261,7 +261,7 @@
       "NOME": "Leonardo Jardim",
       "CLUBE": "FLA",
       "PRECO": 13.56,
-      "EXP_SCORE": 6.1881,
+      "EXP_SCORE": 7.1163,
       "FACTOR": 0.9819813315147898,
       "ATLETA_ID": 88963
     },
@@ -288,22 +288,22 @@
     {
       "RODADA": 26,
       "POS": "TEC",
+      "NOME": "Cuca",
+      "CLUBE": "SAN",
+      "PRECO": 10.43,
+      "EXP_SCORE": 5.5769,
+      "FACTOR": 0.9781636774358538,
+      "ATLETA_ID": 42411
+    },
+    {
+      "RODADA": 26,
+      "POS": "TEC",
       "NOME": "Artur Jorge",
       "CLUBE": "CRU",
       "PRECO": 11.51,
       "EXP_SCORE": 5.4334,
       "FACTOR": 1.0431527576506692,
       "ATLETA_ID": 127273
-    },
-    {
-      "RODADA": 26,
-      "POS": "TEC",
-      "NOME": "Rogério Ceni",
-      "CLUBE": "BAH",
-      "PRECO": 10.65,
-      "EXP_SCORE": 5.3288,
-      "FACTOR": 0.9221490921490069,
-      "ATLETA_ID": 97341
     }
   ]
 }
