@@ -564,6 +564,13 @@
         {
           "clube_origem": "Coritiba",
           "gol_contra": false,
+          "nome": "P. Rocha",
+          "quantidade": 1,
+          "tipo": "gol"
+        },
+        {
+          "clube_origem": "Coritiba",
+          "gol_contra": false,
           "nome": "Fabinho",
           "quantidade": 1,
           "tipo": "gol"
@@ -572,7 +579,7 @@
       "hora": "20:00",
       "link_resumo": "https://ge.globo.com/pa/futebol/brasileirao-serie-a/jogo/31-08-2026/remo-coritiba.ghtml?utm_source=cartolafc",
       "placar_casa": 2,
-      "placar_fora": 2,
+      "placar_fora": 3,
       "status": "EM_ANDAMENTO"
     }
   },
@@ -618,8 +625,16 @@
       "gm": 35
     },
     {
-      "nome": "BAH",
+      "nome": "CFC",
       "pos": 6,
+      "pts": 37,
+      "v": 10,
+      "saldo": 0,
+      "gm": 33
+    },
+    {
+      "nome": "BAH",
+      "pos": 7,
       "pts": 37,
       "v": 9,
       "saldo": 5,
@@ -627,7 +642,7 @@
     },
     {
       "nome": "CAM",
-      "pos": 7,
+      "pos": 8,
       "pts": 36,
       "v": 10,
       "saldo": 4,
@@ -635,19 +650,11 @@
     },
     {
       "nome": "RBB",
-      "pos": 8,
+      "pos": 9,
       "pts": 35,
       "v": 10,
       "saldo": 4,
       "gm": 29
-    },
-    {
-      "nome": "CFC",
-      "pos": 9,
-      "pts": 35,
-      "v": 9,
-      "saldo": -1,
-      "gm": 32
     },
     {
       "nome": "COR",
@@ -724,9 +731,9 @@
     {
       "nome": "REM",
       "pos": 19,
-      "pts": 24,
+      "pts": 23,
       "v": 5,
-      "saldo": -11,
+      "saldo": -12,
       "gm": 30
     },
     {
@@ -738,6 +745,6 @@
       "gm": 25
     }
   ],
-  "updated_at": "2026-08-31T21:53:29.263128-03:00",
+  "updated_at": "2026-08-31T22:03:28.174870-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
