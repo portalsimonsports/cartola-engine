@@ -537,12 +537,42 @@
       "fora_id": "294",
       "fora_nome": "Coritiba",
       "fora_sigla": "CFC",
-      "goleadores_casa": [],
-      "goleadores_fora": [],
+      "goleadores_casa": [
+        {
+          "clube_origem": "Remo",
+          "gol_contra": false,
+          "nome": "Y. Pikachu",
+          "quantidade": 1,
+          "tipo": "gol"
+        },
+        {
+          "clube_origem": "Remo",
+          "gol_contra": false,
+          "nome": "Z. Ricardo",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
+      "goleadores_fora": [
+        {
+          "clube_origem": "Remo",
+          "gol_contra": true,
+          "nome": "J. Welison",
+          "quantidade": 1,
+          "tipo": "gol_contra"
+        },
+        {
+          "clube_origem": "Coritiba",
+          "gol_contra": false,
+          "nome": "Fabinho",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "hora": "20:00",
       "link_resumo": "https://ge.globo.com/pa/futebol/brasileirao-serie-a/jogo/31-08-2026/remo-coritiba.ghtml?utm_source=cartolafc",
-      "placar_casa": 0,
-      "placar_fora": 0,
+      "placar_casa": 2,
+      "placar_fora": 2,
       "status": "EM_ANDAMENTO"
     }
   },
@@ -617,7 +647,7 @@
       "pts": 35,
       "v": 9,
       "saldo": -1,
-      "gm": 30
+      "gm": 32
     },
     {
       "nome": "COR",
@@ -697,7 +727,7 @@
       "pts": 24,
       "v": 5,
       "saldo": -11,
-      "gm": 28
+      "gm": 30
     },
     {
       "nome": "CHA",
@@ -708,6 +738,6 @@
       "gm": 25
     }
   ],
-  "updated_at": "2026-08-31T20:13:52.504880-03:00",
+  "updated_at": "2026-08-31T21:53:29.263128-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
