@@ -3,748 +3,839 @@
   "base_signature": [
     {
       "nome": "PAL",
-      "j": 24,
-      "pts": 51,
+      "j": 25,
+      "pts": 52,
       "v": 15,
       "saldo": 24
     },
     {
       "nome": "FLA",
-      "j": 23,
-      "pts": 45,
-      "v": 13,
-      "saldo": 24
+      "j": 24,
+      "pts": 48,
+      "v": 14,
+      "saldo": 27
     },
     {
       "nome": "CAP",
-      "j": 24,
-      "pts": 44,
+      "j": 25,
+      "pts": 45,
       "v": 13,
       "saldo": 12
     },
     {
       "nome": "FLU",
-      "j": 24,
-      "pts": 41,
+      "j": 25,
+      "pts": 42,
       "v": 11,
       "saldo": 7
     },
     {
       "nome": "CRU",
-      "j": 24,
+      "j": 25,
       "pts": 39,
       "v": 11,
-      "saldo": 1
-    },
-    {
-      "nome": "RBB",
-      "j": 23,
-      "pts": 35,
-      "v": 10,
-      "saldo": 5
-    },
-    {
-      "nome": "CFC",
-      "j": 24,
-      "pts": 34,
-      "v": 9,
       "saldo": -1
     },
     {
+      "nome": "CFC",
+      "j": 25,
+      "pts": 37,
+      "v": 10,
+      "saldo": 0
+    },
+    {
       "nome": "BAH",
-      "j": 23,
-      "pts": 34,
-      "v": 8,
-      "saldo": 4
+      "j": 24,
+      "pts": 37,
+      "v": 9,
+      "saldo": 5
     },
     {
       "nome": "CAM",
-      "j": 23,
-      "pts": 33,
-      "v": 9,
-      "saldo": 3
+      "j": 24,
+      "pts": 36,
+      "v": 10,
+      "saldo": 4
+    },
+    {
+      "nome": "RBB",
+      "j": 24,
+      "pts": 35,
+      "v": 10,
+      "saldo": 4
     },
     {
       "nome": "COR",
-      "j": 24,
+      "j": 25,
       "pts": 32,
       "v": 8,
-      "saldo": 2
-    },
-    {
-      "nome": "BOT",
-      "j": 22,
-      "pts": 29,
-      "v": 8,
-      "saldo": 0
-    },
-    {
-      "nome": "VIT",
-      "j": 23,
-      "pts": 28,
-      "v": 8,
-      "saldo": -12
+      "saldo": 1
     },
     {
       "nome": "SAO",
-      "j": 23,
-      "pts": 27,
-      "v": 7,
-      "saldo": 0
+      "j": 24,
+      "pts": 30,
+      "v": 8,
+      "saldo": 1
     },
     {
-      "nome": "SAN",
+      "nome": "BOT",
       "j": 23,
-      "pts": 26,
-      "v": 6,
+      "pts": 29,
+      "v": 8,
       "saldo": -3
     },
     {
-      "nome": "GRE",
-      "j": 23,
-      "pts": 25,
-      "v": 6,
-      "saldo": -7
+      "nome": "SAN",
+      "j": 24,
+      "pts": 29,
+      "v": 7,
+      "saldo": -2
     },
     {
-      "nome": "INT",
+      "nome": "VIT",
       "j": 24,
-      "pts": 25,
-      "v": 5,
-      "saldo": -4
+      "pts": 28,
+      "v": 8,
+      "saldo": -13
+    },
+    {
+      "nome": "GRE",
+      "j": 24,
+      "pts": 28,
+      "v": 7,
+      "saldo": -5
     },
     {
       "nome": "MIR",
-      "j": 23,
-      "pts": 24,
+      "j": 24,
+      "pts": 25,
       "v": 6,
       "saldo": -10
     },
     {
-      "nome": "REM",
+      "nome": "VAS",
       "j": 24,
-      "pts": 23,
-      "v": 5,
-      "saldo": -11
+      "pts": 25,
+      "v": 6,
+      "saldo": -12
     },
     {
-      "nome": "VAS",
-      "j": 23,
-      "pts": 22,
+      "nome": "INT",
+      "j": 25,
+      "pts": 25,
       "v": 5,
-      "saldo": -14
+      "saldo": -5
+    },
+    {
+      "nome": "REM",
+      "j": 25,
+      "pts": 23,
+      "v": 5,
+      "saldo": -12
     },
     {
       "nome": "CHA",
-      "j": 22,
+      "j": 23,
       "pts": 14,
       "v": 2,
-      "saldo": -20
+      "saldo": -22
     }
   ],
   "partidas": {
-    "CAMxVIT": {
-      "casa_id": "282",
-      "casa_nome": "ATLÉTICO-MG",
+    "ID:346450": {
+      "__pss_tem_placar_final": true,
+      "__pss_tem_times": true,
+      "aproveitamento_mandante": [
+        "v",
+        "e",
+        "v",
+        "e",
+        "v"
+      ],
+      "aproveitamento_visitante": [
+        "d",
+        "d",
+        "v",
+        "d",
+        "d"
+      ],
+      "campeonato_id": 26,
+      "casa_nome": "CAM",
       "casa_sigla": "CAM",
-      "chave": "MjAyNi0wOC0yOSAxODozMHwyODJ8Mjg3",
-      "data": "29/08",
-      "data_iso": "2026-08-29T21:30:00.000Z",
+      "clube_casa_id": 282,
+      "clube_casa_posicao": 8,
+      "clube_visitante_id": 287,
+      "clube_visitante_posicao": 13,
+      "data": "29/08/2026",
       "estadio": "Arena MRV",
-      "fora_id": "287",
-      "fora_nome": "VITÓRIA",
+      "fora_nome": "VIT",
       "fora_sigla": "VIT",
-      "goleadores_casa": [
-        {
-          "clube_origem": "ATLÉTICO-MG",
-          "gol_contra": false,
-          "nome": "Reinier",
-          "quantidade": 1,
-          "tipo": "gol"
-        },
-        {
-          "clube_origem": "ATLÉTICO-MG",
-          "gol_contra": false,
-          "nome": "T. Borbas",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
-      "goleadores_fora": [
-        {
-          "clube_origem": "VITÓRIA",
-          "gol_contra": false,
-          "nome": "Erick",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
+      "gols_mandante": 2,
+      "gols_visitante": 1,
       "hora": "18:30",
-      "link_resumo": "https://ge.globo.com/mg/futebol/brasileirao-serie-a/jogo/29-08-2026/atletico-mg-vitoria.ghtml?utm_source=cartolafc",
+      "inicio_cronometro_tr": "",
+      "local": "Arena MRV",
+      "partida_data": "2026-08-29 18:30:00",
+      "partida_id": 346450,
+      "periodo_tr": "",
       "placar_casa": 2,
       "placar_fora": 1,
-      "status": "ENCERRADA"
+      "placar_mandante": 2,
+      "placar_oficial_mandante": 2,
+      "placar_oficial_visitante": 1,
+      "placar_visitante": 1,
+      "rodada": 25,
+      "status": "ENCERRADO",
+      "status_cronometro_tr": "",
+      "status_transmissao_tr": "",
+      "timestamp": 1788039000,
+      "transmissao": {
+        "label": "saiba como foi",
+        "url": "https://ge.globo.com/mg/futebol/brasileirao-serie-a/jogo/29-08-2026/atletico-mg-vitoria.ghtml?utm_source=cartolafc"
+      },
+      "valida": true
     },
-    "SAOxRBB": {
-      "casa_id": "276",
-      "casa_nome": "SÃO PAULO",
+    "ID:346447": {
+      "__pss_tem_placar_final": true,
+      "__pss_tem_times": true,
+      "aproveitamento_mandante": [
+        "e",
+        "d",
+        "e",
+        "d",
+        "v"
+      ],
+      "aproveitamento_visitante": [
+        "e",
+        "d",
+        "e",
+        "v",
+        "d"
+      ],
+      "campeonato_id": 26,
+      "casa_nome": "SAO",
       "casa_sigla": "SAO",
-      "chave": "MjAyNi0wOC0yOSAyMDowMHwyNzZ8Mjgw",
-      "data": "29/08",
-      "data_iso": "2026-08-29T23:00:00.000Z",
+      "clube_casa_id": 276,
+      "clube_casa_posicao": 11,
+      "clube_visitante_id": 280,
+      "clube_visitante_posicao": 9,
+      "data": "29/08/2026",
       "estadio": "Morumbis",
-      "fora_id": "280",
-      "fora_nome": "RB Bragantino",
+      "fora_nome": "RBB",
       "fora_sigla": "RBB",
-      "goleadores_casa": [
-        {
-          "clube_origem": "SÃO PAULO",
-          "gol_contra": false,
-          "nome": "Luciano",
-          "quantidade": 1,
-          "tipo": "gol"
-        },
-        {
-          "clube_origem": "SÃO PAULO",
-          "gol_contra": false,
-          "nome": "G. Santana",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
-      "goleadores_fora": [
-        {
-          "clube_origem": "RB Bragantino",
-          "gol_contra": false,
-          "nome": "Fernando",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
+      "gols_mandante": 2,
+      "gols_visitante": 1,
       "hora": "20:00",
-      "link_resumo": "https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/29-08-2026/sao-paulo-bragantino.ghtml?utm_source=cartolafc",
+      "inicio_cronometro_tr": "",
+      "local": "Morumbis",
+      "partida_data": "2026-08-29 20:00:00",
+      "partida_id": 346447,
+      "periodo_tr": "",
       "placar_casa": 2,
       "placar_fora": 1,
-      "status": "ENCERRADA"
+      "placar_mandante": 2,
+      "placar_oficial_mandante": 2,
+      "placar_oficial_visitante": 1,
+      "placar_visitante": 1,
+      "rodada": 25,
+      "status": "ENCERRADO",
+      "status_cronometro_tr": "",
+      "status_transmissao_tr": "",
+      "timestamp": 1788044400,
+      "transmissao": {
+        "label": "saiba como foi",
+        "url": "https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/29-08-2026/sao-paulo-bragantino.ghtml?utm_source=cartolafc"
+      },
+      "valida": true
     },
-    "VASxCRU": {
-      "casa_id": "267",
-      "casa_nome": "Vasco",
+    "ID:346446": {
+      "__pss_tem_placar_final": true,
+      "__pss_tem_times": true,
+      "aproveitamento_mandante": [
+        "e",
+        "e",
+        "d",
+        "d",
+        "v"
+      ],
+      "aproveitamento_visitante": [
+        "v",
+        "v",
+        "v",
+        "v",
+        "d"
+      ],
+      "campeonato_id": 26,
+      "casa_nome": "VAS",
       "casa_sigla": "VAS",
-      "chave": "MjAyNi0wOC0yOSAyMToyMHwyNjd8Mjgz",
-      "data": "29/08",
-      "data_iso": "2026-08-30T00:20:00.000Z",
+      "clube_casa_id": 267,
+      "clube_casa_posicao": 17,
+      "clube_visitante_id": 283,
+      "clube_visitante_posicao": 6,
+      "data": "29/08/2026",
       "estadio": "São Januário",
-      "fora_id": "283",
-      "fora_nome": "Cruzeiro",
+      "fora_nome": "CRU",
       "fora_sigla": "CRU",
-      "goleadores_casa": [
-        {
-          "clube_origem": "Vasco",
-          "gol_contra": false,
-          "nome": "T. Tchê",
-          "quantidade": 1,
-          "tipo": "gol"
-        },
-        {
-          "clube_origem": "Vasco",
-          "gol_contra": false,
-          "nome": "David",
-          "quantidade": 1,
-          "tipo": "gol"
-        },
-        {
-          "clube_origem": "Vasco",
-          "gol_contra": false,
-          "nome": "L. Freitas",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
-      "goleadores_fora": [
-        {
-          "clube_origem": "Cruzeiro",
-          "gol_contra": false,
-          "nome": "F. Morais",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
+      "gols_mandante": 3,
+      "gols_visitante": 1,
       "hora": "21:20",
-      "link_resumo": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/29-08-2026/vasco-cruzeiro.ghtml?utm_source=cartolafc",
+      "inicio_cronometro_tr": "",
+      "local": "São Januário",
+      "partida_data": "2026-08-29 21:20:00",
+      "partida_id": 346446,
+      "periodo_tr": "",
       "placar_casa": 3,
       "placar_fora": 1,
-      "status": "ENCERRADA"
+      "placar_mandante": 3,
+      "placar_oficial_mandante": 3,
+      "placar_oficial_visitante": 1,
+      "placar_visitante": 1,
+      "rodada": 25,
+      "status": "ENCERRADO",
+      "status_cronometro_tr": "",
+      "status_transmissao_tr": "",
+      "timestamp": 1788049200,
+      "transmissao": {
+        "label": "saiba como foi",
+        "url": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/29-08-2026/vasco-cruzeiro.ghtml?utm_source=cartolafc"
+      },
+      "valida": true
     },
-    "CAPxFLU": {
-      "casa_id": "293",
-      "casa_nome": "Athletico-PR",
+    "ID:346452": {
+      "__pss_tem_placar_final": true,
+      "__pss_tem_times": true,
+      "aproveitamento_mandante": [
+        "e",
+        "v",
+        "e",
+        "v",
+        "e"
+      ],
+      "aproveitamento_visitante": [
+        "e",
+        "e",
+        "v",
+        "v",
+        "e"
+      ],
+      "campeonato_id": 26,
+      "casa_nome": "CAP",
       "casa_sigla": "CAP",
-      "chave": "MjAyNi0wOC0zMCAxMTowMHwyOTN8MjY2",
-      "data": "30/08",
-      "data_iso": "2026-08-30T14:00:00.000Z",
+      "clube_casa_id": 293,
+      "clube_casa_posicao": 3,
+      "clube_visitante_id": 266,
+      "clube_visitante_posicao": 4,
+      "data": "30/08/2026",
       "estadio": "Arena da Baixada",
-      "fora_id": "266",
-      "fora_nome": "Fluminense",
+      "fora_nome": "FLU",
       "fora_sigla": "FLU",
-      "goleadores_casa": [
-        {
-          "clube_origem": "Athletico-PR",
-          "gol_contra": false,
-          "nome": "Benavídez",
-          "quantidade": 1,
-          "tipo": "gol"
-        },
-        {
-          "clube_origem": "Athletico-PR",
-          "gol_contra": false,
-          "nome": "Leozinho",
-          "quantidade": 1,
-          "tipo": "gol"
-        },
-        {
-          "clube_origem": "Athletico-PR",
-          "gol_contra": false,
-          "nome": "Viveros",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
-      "goleadores_fora": [
-        {
-          "clube_origem": "Fluminense",
-          "gol_contra": false,
-          "nome": "Hulk",
-          "quantidade": 1,
-          "tipo": "gol"
-        },
-        {
-          "clube_origem": "Fluminense",
-          "gol_contra": false,
-          "nome": "Canobbio",
-          "quantidade": 1,
-          "tipo": "gol"
-        },
-        {
-          "clube_origem": "Fluminense",
-          "gol_contra": false,
-          "nome": "Ignácio",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
+      "gols_mandante": 3,
+      "gols_visitante": 3,
       "hora": "11:00",
-      "link_resumo": "https://ge.globo.com/pr/futebol/brasileirao-serie-a/jogo/30-08-2026/atletico-pr-fluminense.ghtml?utm_source=cartolafc",
+      "inicio_cronometro_tr": "",
+      "local": "Arena da Baixada",
+      "partida_data": "2026-08-30 11:00:00",
+      "partida_id": 346452,
+      "periodo_tr": "",
       "placar_casa": 3,
       "placar_fora": 3,
-      "status": "ENCERRADA"
+      "placar_mandante": 3,
+      "placar_oficial_mandante": 3,
+      "placar_oficial_visitante": 3,
+      "placar_visitante": 3,
+      "rodada": 25,
+      "status": "ENCERRADO",
+      "status_cronometro_tr": "",
+      "status_transmissao_tr": "",
+      "timestamp": 1788098400,
+      "transmissao": {
+        "label": "saiba como foi",
+        "url": "https://ge.globo.com/pr/futebol/brasileirao-serie-a/jogo/30-08-2026/atletico-pr-fluminense.ghtml?utm_source=cartolafc"
+      },
+      "valida": true
     },
-    "FLAxBOT": {
-      "casa_id": "262",
-      "casa_nome": "Flamengo",
-      "casa_sigla": "FLA",
-      "chave": "MjAyNi0wOC0zMCAxNjowMHwyNjJ8MjYz",
-      "data": "30/08",
-      "data_iso": "2026-08-30T19:00:00.000Z",
-      "estadio": "Maracanã",
-      "fora_id": "263",
-      "fora_nome": "Botafogo",
-      "fora_sigla": "BOT",
-      "goleadores_casa": [
-        {
-          "clube_origem": "Flamengo",
-          "gol_contra": false,
-          "nome": "S. Lino",
-          "quantidade": 2,
-          "tipo": "gol"
-        },
-        {
-          "clube_origem": "Flamengo",
-          "gol_contra": false,
-          "nome": "Carrascal",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
+    "ID:346445": {
+      "__pss_tem_placar_final": true,
+      "__pss_tem_times": true,
+      "aproveitamento_mandante": [
+        "e",
+        "v",
+        "v",
+        "d",
+        "v"
       ],
-      "goleadores_fora": [],
+      "aproveitamento_visitante": [
+        "v",
+        "e",
+        "d",
+        "d",
+        "d"
+      ],
+      "campeonato_id": 26,
+      "casa_nome": "FLA",
+      "casa_sigla": "FLA",
+      "clube_casa_id": 262,
+      "clube_casa_posicao": 2,
+      "clube_visitante_id": 263,
+      "clube_visitante_posicao": 12,
+      "data": "30/08/2026",
+      "estadio": "Maracanã",
+      "fora_nome": "BOT",
+      "fora_sigla": "BOT",
+      "gols_mandante": 3,
+      "gols_visitante": 0,
       "hora": "16:00",
-      "link_resumo": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/30-08-2026/flamengo-botafogo.ghtml?utm_source=cartolafc",
+      "inicio_cronometro_tr": "",
+      "local": "Maracanã",
+      "partida_data": "2026-08-30 16:00:00",
+      "partida_id": 346445,
+      "periodo_tr": "",
       "placar_casa": 3,
       "placar_fora": 0,
-      "status": "ENCERRADA"
+      "placar_mandante": 3,
+      "placar_oficial_mandante": 3,
+      "placar_oficial_visitante": 0,
+      "placar_visitante": 0,
+      "rodada": 25,
+      "status": "ENCERRADO",
+      "status_cronometro_tr": "",
+      "status_transmissao_tr": "",
+      "timestamp": 1788116400,
+      "transmissao": {
+        "label": "saiba como foi",
+        "url": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/30-08-2026/flamengo-botafogo.ghtml?utm_source=cartolafc"
+      },
+      "valida": true
     },
-    "CORxSAN": {
-      "casa_id": "264",
-      "casa_nome": "Corinthians",
-      "casa_sigla": "COR",
-      "chave": "MjAyNi0wOC0zMCAxNjowMHwyNjR8Mjc3",
-      "data": "30/08",
-      "data_iso": "2026-08-30T19:00:00.000Z",
-      "estadio": "Neo Química Arena",
-      "fora_id": "277",
-      "fora_nome": "Santos",
-      "fora_sigla": "SAN",
-      "goleadores_casa": [],
-      "goleadores_fora": [
-        {
-          "clube_origem": "Santos",
-          "gol_contra": false,
-          "nome": "Oliva",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
+    "ID:346448": {
+      "__pss_tem_placar_final": true,
+      "__pss_tem_times": true,
+      "aproveitamento_mandante": [
+        "e",
+        "v",
+        "d",
+        "d",
+        "d"
       ],
+      "aproveitamento_visitante": [
+        "e",
+        "d",
+        "v",
+        "e",
+        "v"
+      ],
+      "campeonato_id": 26,
+      "casa_nome": "COR",
+      "casa_sigla": "COR",
+      "clube_casa_id": 264,
+      "clube_casa_posicao": 10,
+      "clube_visitante_id": 277,
+      "clube_visitante_posicao": 14,
+      "data": "30/08/2026",
+      "estadio": "Neo Química Arena",
+      "fora_nome": "SAN",
+      "fora_sigla": "SAN",
+      "gols_mandante": 0,
+      "gols_visitante": 1,
       "hora": "16:00",
-      "link_resumo": "https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/30-08-2026/corinthians-santos.ghtml?utm_source=cartolafc",
+      "inicio_cronometro_tr": "",
+      "local": "Neo Química Arena",
+      "partida_data": "2026-08-30 16:00:00",
+      "partida_id": 346448,
+      "periodo_tr": "",
       "placar_casa": 0,
       "placar_fora": 1,
-      "status": "ENCERRADA"
+      "placar_mandante": 0,
+      "placar_oficial_mandante": 0,
+      "placar_oficial_visitante": 1,
+      "placar_visitante": 1,
+      "rodada": 25,
+      "status": "ENCERRADO",
+      "status_cronometro_tr": "",
+      "status_transmissao_tr": "",
+      "timestamp": 1788116400,
+      "transmissao": {
+        "label": "saiba como foi",
+        "url": "https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/30-08-2026/corinthians-santos.ghtml?utm_source=cartolafc"
+      },
+      "valida": true
     },
-    "MIRxPAL": {
-      "casa_id": "2305",
-      "casa_nome": "Mirassol",
+    "ID:346449": {
+      "__pss_tem_placar_final": true,
+      "__pss_tem_times": true,
+      "aproveitamento_mandante": [
+        "v",
+        "d",
+        "d",
+        "e",
+        "e"
+      ],
+      "aproveitamento_visitante": [
+        "v",
+        "e",
+        "d",
+        "v",
+        "e"
+      ],
+      "campeonato_id": 26,
+      "casa_nome": "MIR",
       "casa_sigla": "MIR",
-      "chave": "MjAyNi0wOC0zMCAxODozMHwyMzA1fDI3NQ",
-      "data": "30/08",
-      "data_iso": "2026-08-30T21:30:00.000Z",
+      "clube_casa_id": 2305,
+      "clube_casa_posicao": 16,
+      "clube_visitante_id": 275,
+      "clube_visitante_posicao": 1,
+      "data": "30/08/2026",
       "estadio": "Maião",
-      "fora_id": "275",
-      "fora_nome": "Palmeiras",
+      "fora_nome": "PAL",
       "fora_sigla": "PAL",
-      "goleadores_casa": [
-        {
-          "clube_origem": "Mirassol",
-          "gol_contra": false,
-          "nome": "Eduardo",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
-      "goleadores_fora": [
-        {
-          "clube_origem": "Palmeiras",
-          "gol_contra": false,
-          "nome": "Maurício",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
+      "gols_mandante": 1,
+      "gols_visitante": 1,
       "hora": "18:30",
-      "link_resumo": "https://ge.globo.com/sp/tem-esporte/futebol/brasileirao-serie-a/jogo/30-08-2026/mirassol-palmeiras.ghtml?utm_source=cartolafc",
+      "inicio_cronometro_tr": "",
+      "local": "Maião",
+      "partida_data": "2026-08-30 18:30:00",
+      "partida_id": 346449,
+      "periodo_tr": "",
       "placar_casa": 1,
       "placar_fora": 1,
-      "status": "ENCERRADA"
+      "placar_mandante": 1,
+      "placar_oficial_mandante": 1,
+      "placar_oficial_visitante": 1,
+      "placar_visitante": 1,
+      "rodada": 25,
+      "status": "ENCERRADO",
+      "status_cronometro_tr": "",
+      "status_transmissao_tr": "",
+      "timestamp": 1788125400,
+      "transmissao": {
+        "label": "saiba como foi",
+        "url": "https://ge.globo.com/sp/tem-esporte/futebol/brasileirao-serie-a/jogo/30-08-2026/mirassol-palmeiras.ghtml?utm_source=cartolafc"
+      },
+      "valida": true
     },
-    "GRExCHA": {
-      "casa_id": "284",
-      "casa_nome": "GRÊMIO",
+    "ID:346451": {
+      "__pss_tem_placar_final": true,
+      "__pss_tem_times": true,
+      "aproveitamento_mandante": [
+        "e",
+        "v",
+        "d",
+        "d",
+        "v"
+      ],
+      "aproveitamento_visitante": [
+        "e",
+        "d",
+        "e",
+        "v",
+        "d"
+      ],
+      "campeonato_id": 26,
+      "casa_nome": "GRE",
       "casa_sigla": "GRE",
-      "chave": "MjAyNi0wOC0zMCAxODozMHwyODR8MzE1",
-      "data": "30/08",
-      "data_iso": "2026-08-30T21:30:00.000Z",
+      "clube_casa_id": 284,
+      "clube_casa_posicao": 15,
+      "clube_visitante_id": 315,
+      "clube_visitante_posicao": 20,
+      "data": "30/08/2026",
       "estadio": "Arena do Grêmio",
-      "fora_id": "315",
-      "fora_nome": "Chapecoense",
+      "fora_nome": "CHA",
       "fora_sigla": "CHA",
-      "goleadores_casa": [
-        {
-          "clube_origem": "GRÊMIO",
-          "gol_contra": false,
-          "nome": "Pavón",
-          "quantidade": 1,
-          "tipo": "gol"
-        },
-        {
-          "clube_origem": "GRÊMIO",
-          "gol_contra": false,
-          "nome": "G. Martins",
-          "quantidade": 2,
-          "tipo": "gol"
-        }
-      ],
-      "goleadores_fora": [
-        {
-          "clube_origem": "Chapecoense",
-          "gol_contra": false,
-          "nome": "Garcez",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
+      "gols_mandante": 3,
+      "gols_visitante": 1,
       "hora": "18:30",
-      "link_resumo": "https://ge.globo.com/rs/futebol/brasileirao-serie-a/jogo/30-08-2026/gremio-chapecoense.ghtml?utm_source=cartolafc",
+      "inicio_cronometro_tr": "",
+      "local": "Arena do Grêmio",
+      "partida_data": "2026-08-30 18:30:00",
+      "partida_id": 346451,
+      "periodo_tr": "",
       "placar_casa": 3,
       "placar_fora": 1,
-      "status": "ENCERRADA"
+      "placar_mandante": 3,
+      "placar_oficial_mandante": 3,
+      "placar_oficial_visitante": 1,
+      "placar_visitante": 1,
+      "rodada": 25,
+      "status": "ENCERRADO",
+      "status_cronometro_tr": "",
+      "status_transmissao_tr": "",
+      "timestamp": 1788125400,
+      "transmissao": {
+        "label": "saiba como foi",
+        "url": "https://ge.globo.com/rs/futebol/brasileirao-serie-a/jogo/30-08-2026/gremio-chapecoense.ghtml?utm_source=cartolafc"
+      },
+      "valida": true
     },
-    "BAHxINT": {
-      "casa_id": "265",
-      "casa_nome": "Bahia",
+    "ID:346453": {
+      "__pss_tem_placar_final": true,
+      "__pss_tem_times": true,
+      "aproveitamento_mandante": [
+        "e",
+        "e",
+        "e",
+        "v",
+        "v"
+      ],
+      "aproveitamento_visitante": [
+        "e",
+        "e",
+        "e",
+        "e",
+        "d"
+      ],
+      "campeonato_id": 26,
+      "casa_nome": "BAH",
       "casa_sigla": "BAH",
-      "chave": "MjAyNi0wOC0zMCAxOTozMHwyNjV8Mjg1",
-      "data": "30/08",
-      "data_iso": "2026-08-30T22:30:00.000Z",
+      "clube_casa_id": 265,
+      "clube_casa_posicao": 5,
+      "clube_visitante_id": 285,
+      "clube_visitante_posicao": 18,
+      "data": "30/08/2026",
       "estadio": "Casa de Apostas Arena Fonte Nova",
-      "fora_id": "285",
-      "fora_nome": "Internacional",
+      "fora_nome": "INT",
       "fora_sigla": "INT",
-      "goleadores_casa": [
-        {
-          "clube_origem": "Bahia",
-          "gol_contra": false,
-          "nome": "Erick",
-          "quantidade": 1,
-          "tipo": "gol"
-        },
-        {
-          "clube_origem": "Bahia",
-          "gol_contra": false,
-          "nome": "E. Pulga",
-          "quantidade": 2,
-          "tipo": "gol"
-        }
-      ],
-      "goleadores_fora": [
-        {
-          "clube_origem": "Internacional",
-          "gol_contra": false,
-          "nome": "A. Patrick",
-          "quantidade": 1,
-          "tipo": "gol"
-        },
-        {
-          "clube_origem": "Internacional",
-          "gol_contra": false,
-          "nome": "Vitinho",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
+      "gols_mandante": 3,
+      "gols_visitante": 2,
       "hora": "19:30",
-      "link_resumo": "https://ge.globo.com/ba/futebol/brasileirao-serie-a/jogo/30-08-2026/bahia-internacional.ghtml?utm_source=cartolafc",
+      "inicio_cronometro_tr": "",
+      "local": "Casa de Apostas Arena Fonte Nova",
+      "partida_data": "2026-08-30 19:30:00",
+      "partida_id": 346453,
+      "periodo_tr": "",
       "placar_casa": 3,
       "placar_fora": 2,
-      "status": "ENCERRADA"
+      "placar_mandante": 3,
+      "placar_oficial_mandante": 3,
+      "placar_oficial_visitante": 2,
+      "placar_visitante": 2,
+      "rodada": 25,
+      "status": "ENCERRADO",
+      "status_cronometro_tr": "",
+      "status_transmissao_tr": "",
+      "timestamp": 1788129000,
+      "transmissao": {
+        "label": "saiba como foi",
+        "url": "https://ge.globo.com/ba/futebol/brasileirao-serie-a/jogo/30-08-2026/bahia-internacional.ghtml?utm_source=cartolafc"
+      },
+      "valida": true
     },
-    "REMxCFC": {
-      "casa_id": "364",
-      "casa_nome": "Remo",
+    "ID:346454": {
+      "__pss_tem_placar_final": true,
+      "__pss_tem_times": true,
+      "aproveitamento_mandante": [
+        "d",
+        "e",
+        "e",
+        "d",
+        "d"
+      ],
+      "aproveitamento_visitante": [
+        "d",
+        "v",
+        "e",
+        "v",
+        "v"
+      ],
+      "campeonato_id": 26,
+      "casa_nome": "REM",
       "casa_sigla": "REM",
-      "chave": "MjAyNi0wOC0zMSAyMDowMHwzNjR8Mjk0",
-      "data": "31/08",
-      "data_iso": "2026-08-31T23:00:00.000Z",
+      "clube_casa_id": 364,
+      "clube_casa_posicao": 19,
+      "clube_visitante_id": 294,
+      "clube_visitante_posicao": 7,
+      "data": "31/08/2026",
       "estadio": "Mangueirão",
-      "fora_id": "294",
-      "fora_nome": "Coritiba",
+      "fora_nome": "CFC",
       "fora_sigla": "CFC",
-      "goleadores_casa": [
-        {
-          "clube_origem": "Remo",
-          "gol_contra": false,
-          "nome": "Y. Pikachu",
-          "quantidade": 1,
-          "tipo": "gol"
-        },
-        {
-          "clube_origem": "Remo",
-          "gol_contra": false,
-          "nome": "Z. Ricardo",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
-      "goleadores_fora": [
-        {
-          "clube_origem": "Remo",
-          "gol_contra": true,
-          "nome": "J. Welison",
-          "quantidade": 1,
-          "tipo": "gol_contra"
-        },
-        {
-          "clube_origem": "Coritiba",
-          "gol_contra": false,
-          "nome": "P. Rocha",
-          "quantidade": 1,
-          "tipo": "gol"
-        },
-        {
-          "clube_origem": "Coritiba",
-          "gol_contra": false,
-          "nome": "Fabinho",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
+      "gols_mandante": 2,
+      "gols_visitante": 3,
       "hora": "20:00",
-      "link_resumo": "https://ge.globo.com/pa/futebol/brasileirao-serie-a/jogo/31-08-2026/remo-coritiba.ghtml?utm_source=cartolafc",
+      "inicio_cronometro_tr": "",
+      "local": "Mangueirão",
+      "partida_data": "2026-08-31 20:00:00",
+      "partida_id": 346454,
+      "periodo_tr": "",
       "placar_casa": 2,
       "placar_fora": 3,
-      "status": "ENCERRADA"
+      "placar_mandante": 2,
+      "placar_oficial_mandante": 2,
+      "placar_oficial_visitante": 3,
+      "placar_visitante": 3,
+      "rodada": 25,
+      "status": "ENCERRADO",
+      "status_cronometro_tr": "",
+      "status_transmissao_tr": "",
+      "timestamp": 1788217200,
+      "transmissao": {
+        "label": "saiba como foi",
+        "url": "https://ge.globo.com/pa/futebol/brasileirao-serie-a/jogo/31-08-2026/remo-coritiba.ghtml?utm_source=cartolafc"
+      },
+      "valida": true
     }
   },
   "last_signature": [
     {
       "nome": "PAL",
       "pos": 1,
-      "pts": 52,
+      "pts": 53,
       "v": 15,
       "saldo": 24,
-      "gm": 45
+      "gm": 46
     },
     {
       "nome": "FLA",
       "pos": 2,
-      "pts": 48,
-      "v": 14,
-      "saldo": 27,
-      "gm": 48
+      "pts": 51,
+      "v": 15,
+      "saldo": 30,
+      "gm": 51
     },
     {
       "nome": "CAP",
       "pos": 3,
-      "pts": 45,
+      "pts": 46,
       "v": 13,
       "saldo": 12,
-      "gm": 37
+      "gm": 40
     },
     {
       "nome": "FLU",
       "pos": 4,
-      "pts": 42,
+      "pts": 43,
       "v": 11,
       "saldo": 7,
-      "gm": 39
-    },
-    {
-      "nome": "CRU",
-      "pos": 5,
-      "pts": 39,
-      "v": 11,
-      "saldo": -1,
-      "gm": 35
+      "gm": 42
     },
     {
       "nome": "CFC",
-      "pos": 6,
-      "pts": 37,
-      "v": 10,
-      "saldo": 0,
-      "gm": 33
+      "pos": 5,
+      "pts": 40,
+      "v": 11,
+      "saldo": 1,
+      "gm": 36
     },
     {
       "nome": "BAH",
-      "pos": 7,
-      "pts": 37,
-      "v": 9,
-      "saldo": 5,
-      "gm": 35
+      "pos": 6,
+      "pts": 40,
+      "v": 10,
+      "saldo": 6,
+      "gm": 38
     },
     {
       "nome": "CAM",
+      "pos": 7,
+      "pts": 39,
+      "v": 11,
+      "saldo": 5,
+      "gm": 34
+    },
+    {
+      "nome": "CRU",
       "pos": 8,
-      "pts": 36,
-      "v": 10,
-      "saldo": 4,
-      "gm": 32
+      "pts": 39,
+      "v": 11,
+      "saldo": -3,
+      "gm": 36
     },
     {
       "nome": "RBB",
       "pos": 9,
       "pts": 35,
       "v": 10,
-      "saldo": 4,
-      "gm": 29
-    },
-    {
-      "nome": "COR",
-      "pos": 10,
-      "pts": 32,
-      "v": 8,
-      "saldo": 1,
-      "gm": 26
+      "saldo": 3,
+      "gm": 30
     },
     {
       "nome": "SAO",
-      "pos": 11,
-      "pts": 30,
-      "v": 8,
-      "saldo": 1,
-      "gm": 29
+      "pos": 10,
+      "pts": 33,
+      "v": 9,
+      "saldo": 2,
+      "gm": 31
     },
     {
-      "nome": "BOT",
-      "pos": 12,
-      "pts": 29,
+      "nome": "COR",
+      "pos": 11,
+      "pts": 32,
       "v": 8,
-      "saldo": -3,
-      "gm": 37
+      "saldo": 0,
+      "gm": 26
     },
     {
       "nome": "SAN",
-      "pos": 13,
-      "pts": 29,
-      "v": 7,
-      "saldo": -2,
-      "gm": 34
-    },
-    {
-      "nome": "VIT",
-      "pos": 14,
-      "pts": 28,
+      "pos": 12,
+      "pts": 32,
       "v": 8,
-      "saldo": -13,
-      "gm": 24
+      "saldo": -1,
+      "gm": 35
     },
     {
       "nome": "GRE",
-      "pos": 15,
-      "pts": 28,
-      "v": 7,
-      "saldo": -5,
-      "gm": 27
+      "pos": 13,
+      "pts": 31,
+      "v": 8,
+      "saldo": -3,
+      "gm": 30
     },
     {
-      "nome": "MIR",
-      "pos": 16,
-      "pts": 25,
-      "v": 6,
-      "saldo": -10,
-      "gm": 27
+      "nome": "BOT",
+      "pos": 14,
+      "pts": 29,
+      "v": 8,
+      "saldo": -6,
+      "gm": 37
+    },
+    {
+      "nome": "VIT",
+      "pos": 15,
+      "pts": 28,
+      "v": 8,
+      "saldo": -14,
+      "gm": 25
     },
     {
       "nome": "VAS",
+      "pos": 16,
+      "pts": 28,
+      "v": 7,
+      "saldo": -10,
+      "gm": 30
+    },
+    {
+      "nome": "MIR",
       "pos": 17,
-      "pts": 25,
+      "pts": 26,
       "v": 6,
-      "saldo": -12,
-      "gm": 27
+      "saldo": -10,
+      "gm": 28
     },
     {
       "nome": "INT",
       "pos": 18,
       "pts": 25,
       "v": 5,
-      "saldo": -5,
-      "gm": 26
+      "saldo": -6,
+      "gm": 28
     },
     {
       "nome": "REM",
       "pos": 19,
       "pts": 23,
       "v": 5,
-      "saldo": -12,
-      "gm": 30
+      "saldo": -13,
+      "gm": 32
     },
     {
       "nome": "CHA",
       "pos": 20,
       "pts": 14,
       "v": 2,
-      "saldo": -22,
-      "gm": 25
+      "saldo": -24,
+      "gm": 26
     }
   ],
-  "updated_at": "2026-08-31T22:03:28.174870-03:00",
+  "updated_at": "2026-09-01T21:38:32.524686-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
