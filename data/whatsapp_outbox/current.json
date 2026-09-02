@@ -1,6 +1,6 @@
 {
   "schema": "portalsimonsports.whatsapp_channel_outbox.v1",
-  "gerado_em": "2026-09-02T00:51:20.949222+00:00",
+  "gerado_em": "2026-09-02T14:55:09.814803+00:00",
   "origem": "telegram_approved_cards_pipeline",
   "politica": {
     "telegram_intacto": true,
@@ -9,29 +9,21 @@
   },
   "publicacoes": [
     {
-      "id": "e4132533f6d8e5cca66a854e3b666740f037d36da3059674d464d938c61a26cc",
+      "id": "d3cd10c6deb5c596e6a3e4f016c0881c6ccdab73124c8f8c993dffc3fa7cf0d9",
       "status": "PENDENTE_BRIDGE",
       "destino": "whatsapp_channel",
       "canal": "Portal SimonSports",
-      "texto": "Resumo Final da Rodada • Rodada 25\n\n📡 Portal SimonSports",
+      "texto": "Lembrete de Mercado • Rodada 26\n\n📡 Portal SimonSports",
       "midias": [
         {
-          "path": "output/aprovada_resumo_final_rodada_25_p1.png",
-          "sha256": "f0534f4684b63b47b656607169cbc830260cec0771679b9877fb76031561c209"
-        },
-        {
-          "path": "output/aprovada_resumo_final_rodada_25_p2.png",
-          "sha256": "1e2ced6c76e9afc474c8a1e7d52bf7326106e890f8883b97b0d376d82efa5fb1"
-        },
-        {
-          "path": "output/aprovada_resumo_final_rodada_25_p3.png",
-          "sha256": "7a93da98fdc0e38aabf5759a1450800212d008b919da50a3dfcaebb03b28297a"
+          "path": "output/aprovada_lembrete_mercado_rodada_26.png",
+          "sha256": "d12e687c32ec0b42ba3a286cd401a12b59508c801bbddd39244b443ae2004d4b"
         }
       ],
-      "tipo_detectado": "approved_resumo_final",
-      "tipo_publicacao": "JOGOS_FINALIZADOS",
-      "evento_programado": "RESUMO_FINAL_RODADA",
-      "rodada": 25,
+      "tipo_detectado": "approved_lembrete_v2",
+      "tipo_publicacao": "LEMBRETE_MERCADO",
+      "evento_programado": "LEMBRETE_MERCADO_6H",
+      "rodada": 26,
       "versao_visual": "approved_cards_v1",
       "pipeline_visual": "approved_cards_v6_desempenho_times_top5_2026_08_11",
       "base_visual": "approved_cards_v1_2026_07_27"
