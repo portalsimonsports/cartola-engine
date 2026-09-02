@@ -1,0 +1,38 @@
+{
+  "schema": "portalsimonsports.whatsapp_channel_outbox.v1",
+  "gerado_em": "2026-09-02T00:38:54.068793+00:00",
+  "origem": "telegram_approved_cards_pipeline",
+  "politica": {
+    "telegram_intacto": true,
+    "falha_whatsapp_nao_bloqueia_telegram": true,
+    "antiduplicidade_por_hash_de_conteudo": true
+  },
+  "publicacao": {
+    "id": "7bc32699a1ee9032525312cf30aafbfda64e53f7720fa31b11805fbb91264ae1",
+    "status": "PENDENTE_BRIDGE",
+    "destino": "whatsapp_channel",
+    "canal": "Portal SimonSports",
+    "texto": "Resumo Final da Rodada • Rodada 25\n\n📡 Portal SimonSports",
+    "midias": [
+      {
+        "path": "output/aprovada_resumo_final_rodada_25_p1.png",
+        "sha256": "6891a93d1dcfeb31fdc4654faef69b0b6de0717e5f00a29b0ba7971ab6a7430d"
+      },
+      {
+        "path": "output/aprovada_resumo_final_rodada_25_p2.png",
+        "sha256": "7a64a997037365f77a5c1659a041d2e6473cd07930c1a725583f0328b8367ec9"
+      },
+      {
+        "path": "output/aprovada_resumo_final_rodada_25_p3.png",
+        "sha256": "c05263a351d85751311c35ae89b308d0641dd33a6b286f314d4b24f2f7ad65b8"
+      }
+    ],
+    "tipo_detectado": "approved_resumo_final",
+    "tipo_publicacao": "JOGOS_FINALIZADOS",
+    "evento_programado": "RESUMO_FINAL_RODADA",
+    "rodada": 25,
+    "versao_visual": "approved_cards_v1",
+    "pipeline_visual": "approved_cards_v6_desempenho_times_top5_2026_08_11",
+    "base_visual": "approved_cards_v1_2026_07_27"
+  }
+}
