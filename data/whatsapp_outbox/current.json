@@ -1,6 +1,6 @@
 {
   "schema": "portalsimonsports.whatsapp_channel_outbox.v1",
-  "gerado_em": "2026-09-01T01:24:02.130763+00:00",
+  "gerado_em": "2026-09-02T00:18:33.930838+00:00",
   "origem": "telegram_approved_cards_pipeline",
   "politica": {
     "telegram_intacto": true,
@@ -9,21 +9,21 @@
   },
   "publicacoes": [
     {
-      "id": "fc9f4d8384ee2bf22fee1a6ca9b8c104b6234f976cf827421e031efccca979aa",
+      "id": "fbbefcd5679fdf5e0ca1f13b5853a46fc1823d56c738d1c9bfd5c8ee5b870d66",
       "status": "PENDENTE_BRIDGE",
       "destino": "whatsapp_channel",
       "canal": "Portal SimonSports",
-      "texto": "RESULTADOS DA NOITE • RODADA 25\n\n📡 Portal SimonSports",
+      "texto": "Abertura da Rodada • Rodada 26\n\nMercado Aberto • Rodada 26\n\n📡 Portal SimonSports",
       "midias": [
         {
-          "path": "output/live_resultados_noite_rodada_25_p1.png",
-          "sha256": "40f1ee5bbf87704fb0b286cd21cbde3b7ab6213398cf3a2c00be317814bdb0e2"
+          "path": "output/aprovada_abertura_rodada_26.png",
+          "sha256": "d96721cf4942424608df3a8aefa6ae52c57785fae91c3471b48f632af65bb994"
         }
       ],
-      "tipo_detectado": "night_results_v3",
-      "tipo_publicacao": "live_resultados_noite",
-      "evento_programado": "LIVE_RESULTADOS_NOITE",
-      "rodada": 25,
+      "tipo_detectado": "approved_abertura",
+      "tipo_publicacao": "MERCADO_ABERTO",
+      "evento_programado": "ABERTURA",
+      "rodada": 26,
       "versao_visual": "approved_cards_v1",
       "pipeline_visual": "approved_cards_v6_desempenho_times_top5_2026_08_11",
       "base_visual": "approved_cards_v1_2026_07_27"
