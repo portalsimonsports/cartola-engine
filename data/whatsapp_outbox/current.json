@@ -1,6 +1,6 @@
 {
   "schema": "portalsimonsports.whatsapp_channel_outbox.v1",
-  "gerado_em": "2026-09-02T00:38:54.068793+00:00",
+  "gerado_em": "2026-09-02T00:51:20.949222+00:00",
   "origem": "telegram_approved_cards_pipeline",
   "politica": {
     "telegram_intacto": true,
@@ -9,7 +9,7 @@
   },
   "publicacoes": [
     {
-      "id": "7bc32699a1ee9032525312cf30aafbfda64e53f7720fa31b11805fbb91264ae1",
+      "id": "e4132533f6d8e5cca66a854e3b666740f037d36da3059674d464d938c61a26cc",
       "status": "PENDENTE_BRIDGE",
       "destino": "whatsapp_channel",
       "canal": "Portal SimonSports",
@@ -17,15 +17,15 @@
       "midias": [
         {
           "path": "output/aprovada_resumo_final_rodada_25_p1.png",
-          "sha256": "6891a93d1dcfeb31fdc4654faef69b0b6de0717e5f00a29b0ba7971ab6a7430d"
+          "sha256": "f0534f4684b63b47b656607169cbc830260cec0771679b9877fb76031561c209"
         },
         {
           "path": "output/aprovada_resumo_final_rodada_25_p2.png",
-          "sha256": "7a64a997037365f77a5c1659a041d2e6473cd07930c1a725583f0328b8367ec9"
+          "sha256": "1e2ced6c76e9afc474c8a1e7d52bf7326106e890f8883b97b0d376d82efa5fb1"
         },
         {
           "path": "output/aprovada_resumo_final_rodada_25_p3.png",
-          "sha256": "c05263a351d85751311c35ae89b308d0641dd33a6b286f314d4b24f2f7ad65b8"
+          "sha256": "7a93da98fdc0e38aabf5759a1450800212d008b919da50a3dfcaebb03b28297a"
         }
       ],
       "tipo_detectado": "approved_resumo_final",
