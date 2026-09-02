@@ -161,6 +161,7 @@
         "d"
       ],
       "campeonato_id": 26,
+      "casa_escudo": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/escudos/CAM/60x60.png",
       "casa_nome": "CAM",
       "casa_sigla": "CAM",
       "clube_casa_id": 282,
@@ -169,6 +170,7 @@
       "clube_visitante_posicao": 13,
       "data": "29/08/2026",
       "estadio": "Arena MRV",
+      "fora_escudo": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/escudos/VIT/60x60.png",
       "fora_nome": "VIT",
       "fora_sigla": "VIT",
       "gols_mandante": 2,
@@ -176,6 +178,8 @@
       "hora": "18:30",
       "inicio_cronometro_tr": "",
       "local": "Arena MRV",
+      "mandante": "CAM",
+      "mandante_abrev": "CAM",
       "partida_data": "2026-08-29 18:30:00",
       "partida_id": 346450,
       "periodo_tr": "",
@@ -194,7 +198,9 @@
         "label": "saiba como foi",
         "url": "https://ge.globo.com/mg/futebol/brasileirao-serie-a/jogo/29-08-2026/atletico-mg-vitoria.ghtml?utm_source=cartolafc"
       },
-      "valida": true
+      "valida": true,
+      "visitante": "VIT",
+      "visitante_abrev": "VIT"
     },
     "ID:346447": {
       "__pss_tem_placar_final": true,
@@ -214,6 +220,7 @@
         "d"
       ],
       "campeonato_id": 26,
+      "casa_escudo": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/escudos/SAO/60x60.png",
       "casa_nome": "SAO",
       "casa_sigla": "SAO",
       "clube_casa_id": 276,
@@ -222,6 +229,7 @@
       "clube_visitante_posicao": 9,
       "data": "29/08/2026",
       "estadio": "Morumbis",
+      "fora_escudo": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/escudos/RBB/60x60.png",
       "fora_nome": "RBB",
       "fora_sigla": "RBB",
       "gols_mandante": 2,
@@ -229,6 +237,8 @@
       "hora": "20:00",
       "inicio_cronometro_tr": "",
       "local": "Morumbis",
+      "mandante": "SAO",
+      "mandante_abrev": "SAO",
       "partida_data": "2026-08-29 20:00:00",
       "partida_id": 346447,
       "periodo_tr": "",
@@ -247,7 +257,9 @@
         "label": "saiba como foi",
         "url": "https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/29-08-2026/sao-paulo-bragantino.ghtml?utm_source=cartolafc"
       },
-      "valida": true
+      "valida": true,
+      "visitante": "RBB",
+      "visitante_abrev": "RBB"
     },
     "ID:346446": {
       "__pss_tem_placar_final": true,
@@ -267,6 +279,7 @@
         "d"
       ],
       "campeonato_id": 26,
+      "casa_escudo": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/escudos/VAS/60x60.png",
       "casa_nome": "VAS",
       "casa_sigla": "VAS",
       "clube_casa_id": 267,
@@ -275,6 +288,7 @@
       "clube_visitante_posicao": 6,
       "data": "29/08/2026",
       "estadio": "São Januário",
+      "fora_escudo": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/escudos/CRU/60x60.png",
       "fora_nome": "CRU",
       "fora_sigla": "CRU",
       "gols_mandante": 3,
@@ -282,6 +296,8 @@
       "hora": "21:20",
       "inicio_cronometro_tr": "",
       "local": "São Januário",
+      "mandante": "VAS",
+      "mandante_abrev": "VAS",
       "partida_data": "2026-08-29 21:20:00",
       "partida_id": 346446,
       "periodo_tr": "",
@@ -300,7 +316,9 @@
         "label": "saiba como foi",
         "url": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/29-08-2026/vasco-cruzeiro.ghtml?utm_source=cartolafc"
       },
-      "valida": true
+      "valida": true,
+      "visitante": "CRU",
+      "visitante_abrev": "CRU"
     },
     "ID:346452": {
       "__pss_tem_placar_final": true,
@@ -320,6 +338,7 @@
         "e"
       ],
       "campeonato_id": 26,
+      "casa_escudo": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/escudos/CAP/60x60.png",
       "casa_nome": "CAP",
       "casa_sigla": "CAP",
       "clube_casa_id": 293,
@@ -328,6 +347,7 @@
       "clube_visitante_posicao": 4,
       "data": "30/08/2026",
       "estadio": "Arena da Baixada",
+      "fora_escudo": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/escudos/FLU/60x60.png",
       "fora_nome": "FLU",
       "fora_sigla": "FLU",
       "gols_mandante": 3,
@@ -335,6 +355,8 @@
       "hora": "11:00",
       "inicio_cronometro_tr": "",
       "local": "Arena da Baixada",
+      "mandante": "CAP",
+      "mandante_abrev": "CAP",
       "partida_data": "2026-08-30 11:00:00",
       "partida_id": 346452,
       "periodo_tr": "",
@@ -353,7 +375,9 @@
         "label": "saiba como foi",
         "url": "https://ge.globo.com/pr/futebol/brasileirao-serie-a/jogo/30-08-2026/atletico-pr-fluminense.ghtml?utm_source=cartolafc"
       },
-      "valida": true
+      "valida": true,
+      "visitante": "FLU",
+      "visitante_abrev": "FLU"
     },
     "ID:346445": {
       "__pss_tem_placar_final": true,
@@ -373,6 +397,7 @@
         "d"
       ],
       "campeonato_id": 26,
+      "casa_escudo": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/escudos/FLA/60x60.png",
       "casa_nome": "FLA",
       "casa_sigla": "FLA",
       "clube_casa_id": 262,
@@ -381,6 +406,7 @@
       "clube_visitante_posicao": 12,
       "data": "30/08/2026",
       "estadio": "Maracanã",
+      "fora_escudo": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/escudos/BOT/60x60.png",
       "fora_nome": "BOT",
       "fora_sigla": "BOT",
       "gols_mandante": 3,
@@ -388,6 +414,8 @@
       "hora": "16:00",
       "inicio_cronometro_tr": "",
       "local": "Maracanã",
+      "mandante": "FLA",
+      "mandante_abrev": "FLA",
       "partida_data": "2026-08-30 16:00:00",
       "partida_id": 346445,
       "periodo_tr": "",
@@ -406,7 +434,9 @@
         "label": "saiba como foi",
         "url": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/30-08-2026/flamengo-botafogo.ghtml?utm_source=cartolafc"
       },
-      "valida": true
+      "valida": true,
+      "visitante": "BOT",
+      "visitante_abrev": "BOT"
     },
     "ID:346448": {
       "__pss_tem_placar_final": true,
@@ -426,6 +456,7 @@
         "v"
       ],
       "campeonato_id": 26,
+      "casa_escudo": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/escudos/COR/60x60.png",
       "casa_nome": "COR",
       "casa_sigla": "COR",
       "clube_casa_id": 264,
@@ -434,6 +465,7 @@
       "clube_visitante_posicao": 14,
       "data": "30/08/2026",
       "estadio": "Neo Química Arena",
+      "fora_escudo": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/escudos/SAN/60x60.png",
       "fora_nome": "SAN",
       "fora_sigla": "SAN",
       "gols_mandante": 0,
@@ -441,6 +473,8 @@
       "hora": "16:00",
       "inicio_cronometro_tr": "",
       "local": "Neo Química Arena",
+      "mandante": "COR",
+      "mandante_abrev": "COR",
       "partida_data": "2026-08-30 16:00:00",
       "partida_id": 346448,
       "periodo_tr": "",
@@ -459,7 +493,9 @@
         "label": "saiba como foi",
         "url": "https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/30-08-2026/corinthians-santos.ghtml?utm_source=cartolafc"
       },
-      "valida": true
+      "valida": true,
+      "visitante": "SAN",
+      "visitante_abrev": "SAN"
     },
     "ID:346449": {
       "__pss_tem_placar_final": true,
@@ -479,6 +515,7 @@
         "e"
       ],
       "campeonato_id": 26,
+      "casa_escudo": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/escudos/MIR/60x60.png",
       "casa_nome": "MIR",
       "casa_sigla": "MIR",
       "clube_casa_id": 2305,
@@ -487,6 +524,7 @@
       "clube_visitante_posicao": 1,
       "data": "30/08/2026",
       "estadio": "Maião",
+      "fora_escudo": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/escudos/PAL/60x60.png",
       "fora_nome": "PAL",
       "fora_sigla": "PAL",
       "gols_mandante": 1,
@@ -494,6 +532,8 @@
       "hora": "18:30",
       "inicio_cronometro_tr": "",
       "local": "Maião",
+      "mandante": "MIR",
+      "mandante_abrev": "MIR",
       "partida_data": "2026-08-30 18:30:00",
       "partida_id": 346449,
       "periodo_tr": "",
@@ -512,7 +552,9 @@
         "label": "saiba como foi",
         "url": "https://ge.globo.com/sp/tem-esporte/futebol/brasileirao-serie-a/jogo/30-08-2026/mirassol-palmeiras.ghtml?utm_source=cartolafc"
       },
-      "valida": true
+      "valida": true,
+      "visitante": "PAL",
+      "visitante_abrev": "PAL"
     },
     "ID:346451": {
       "__pss_tem_placar_final": true,
@@ -532,6 +574,7 @@
         "d"
       ],
       "campeonato_id": 26,
+      "casa_escudo": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/escudos/GRE/60x60.png",
       "casa_nome": "GRE",
       "casa_sigla": "GRE",
       "clube_casa_id": 284,
@@ -540,6 +583,7 @@
       "clube_visitante_posicao": 20,
       "data": "30/08/2026",
       "estadio": "Arena do Grêmio",
+      "fora_escudo": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/escudos/CHA/60x60.png",
       "fora_nome": "CHA",
       "fora_sigla": "CHA",
       "gols_mandante": 3,
@@ -547,6 +591,8 @@
       "hora": "18:30",
       "inicio_cronometro_tr": "",
       "local": "Arena do Grêmio",
+      "mandante": "GRE",
+      "mandante_abrev": "GRE",
       "partida_data": "2026-08-30 18:30:00",
       "partida_id": 346451,
       "periodo_tr": "",
@@ -565,7 +611,9 @@
         "label": "saiba como foi",
         "url": "https://ge.globo.com/rs/futebol/brasileirao-serie-a/jogo/30-08-2026/gremio-chapecoense.ghtml?utm_source=cartolafc"
       },
-      "valida": true
+      "valida": true,
+      "visitante": "CHA",
+      "visitante_abrev": "CHA"
     },
     "ID:346453": {
       "__pss_tem_placar_final": true,
@@ -585,6 +633,7 @@
         "d"
       ],
       "campeonato_id": 26,
+      "casa_escudo": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/escudos/BAH/60x60.png",
       "casa_nome": "BAH",
       "casa_sigla": "BAH",
       "clube_casa_id": 265,
@@ -593,6 +642,7 @@
       "clube_visitante_posicao": 18,
       "data": "30/08/2026",
       "estadio": "Casa de Apostas Arena Fonte Nova",
+      "fora_escudo": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/escudos/INT/60x60.png",
       "fora_nome": "INT",
       "fora_sigla": "INT",
       "gols_mandante": 3,
@@ -600,6 +650,8 @@
       "hora": "19:30",
       "inicio_cronometro_tr": "",
       "local": "Casa de Apostas Arena Fonte Nova",
+      "mandante": "BAH",
+      "mandante_abrev": "BAH",
       "partida_data": "2026-08-30 19:30:00",
       "partida_id": 346453,
       "periodo_tr": "",
@@ -618,7 +670,9 @@
         "label": "saiba como foi",
         "url": "https://ge.globo.com/ba/futebol/brasileirao-serie-a/jogo/30-08-2026/bahia-internacional.ghtml?utm_source=cartolafc"
       },
-      "valida": true
+      "valida": true,
+      "visitante": "INT",
+      "visitante_abrev": "INT"
     },
     "ID:346454": {
       "__pss_tem_placar_final": true,
@@ -638,6 +692,7 @@
         "v"
       ],
       "campeonato_id": 26,
+      "casa_escudo": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/escudos/REM/60x60.png",
       "casa_nome": "REM",
       "casa_sigla": "REM",
       "clube_casa_id": 364,
@@ -646,6 +701,7 @@
       "clube_visitante_posicao": 7,
       "data": "31/08/2026",
       "estadio": "Mangueirão",
+      "fora_escudo": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/escudos/CFC/60x60.png",
       "fora_nome": "CFC",
       "fora_sigla": "CFC",
       "gols_mandante": 2,
@@ -653,6 +709,8 @@
       "hora": "20:00",
       "inicio_cronometro_tr": "",
       "local": "Mangueirão",
+      "mandante": "REM",
+      "mandante_abrev": "REM",
       "partida_data": "2026-08-31 20:00:00",
       "partida_id": 346454,
       "periodo_tr": "",
@@ -671,7 +729,9 @@
         "label": "saiba como foi",
         "url": "https://ge.globo.com/pa/futebol/brasileirao-serie-a/jogo/31-08-2026/remo-coritiba.ghtml?utm_source=cartolafc"
       },
-      "valida": true
+      "valida": true,
+      "visitante": "CFC",
+      "visitante_abrev": "CFC"
     }
   },
   "last_signature": [
