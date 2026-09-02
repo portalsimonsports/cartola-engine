@@ -3,8 +3,18 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 26,
-  "atualizado_em": "2026-09-02T08:55:40.145Z",
+  "atualizado_em": "2026-09-02T09:05:41.608Z",
   "dados": [
+    {
+      "RODADA": 26,
+      "POS": "GOL",
+      "NOME": "Rossi",
+      "CLUBE": "FLA",
+      "PRECO": 9.32,
+      "EXP_SCORE": 4.0825,
+      "FACTOR": 0.9823755979115203,
+      "ATLETA_ID": 99552
+    },
     {
       "RODADA": 26,
       "POS": "GOL",
@@ -24,16 +34,6 @@
       "EXP_SCORE": 3.7852,
       "FACTOR": 1.0858982259151135,
       "ATLETA_ID": 72018
-    },
-    {
-      "RODADA": 26,
-      "POS": "GOL",
-      "NOME": "Rossi",
-      "CLUBE": "FLA",
-      "PRECO": 9.32,
-      "EXP_SCORE": 3.55,
-      "FACTOR": 0.9823755979115203,
-      "ATLETA_ID": 99552
     },
     {
       "RODADA": 26,
@@ -88,22 +88,22 @@
     {
       "RODADA": 26,
       "POS": "LAT",
-      "NOME": "Luciano Juba",
-      "CLUBE": "BAH",
-      "PRECO": 10.4,
-      "EXP_SCORE": 5.348,
-      "FACTOR": 0.9669294801257579,
-      "ATLETA_ID": 107093
+      "NOME": "Escobar",
+      "CLUBE": "SAN",
+      "PRECO": 10.8,
+      "EXP_SCORE": 5.6181,
+      "FACTOR": 0.9710458061980687,
+      "ATLETA_ID": 102975
     },
     {
       "RODADA": 26,
       "POS": "LAT",
-      "NOME": "Renê",
-      "CLUBE": "FLU",
-      "PRECO": 9.1,
-      "EXP_SCORE": 5.3417,
-      "FACTOR": 1.0864759263417922,
-      "ATLETA_ID": 78445
+      "NOME": "Igor Vinícius",
+      "CLUBE": "SAN",
+      "PRECO": 10.43,
+      "EXP_SCORE": 5.4416,
+      "FACTOR": 0.9710458061980687,
+      "ATLETA_ID": 95466
     },
     {
       "RODADA": 26,
@@ -168,16 +168,6 @@
     {
       "RODADA": 26,
       "POS": "MEI",
-      "NOME": "Arias",
-      "CLUBE": "PAL",
-      "PRECO": 14.45,
-      "EXP_SCORE": 5.8983,
-      "FACTOR": 1.0142930869157512,
-      "ATLETA_ID": 99815
-    },
-    {
-      "RODADA": 26,
-      "POS": "MEI",
       "NOME": "Neymar",
       "CLUBE": "SAN",
       "PRECO": 18.9,
@@ -204,6 +194,16 @@
       "EXP_SCORE": 5.3847,
       "FACTOR": 1.030662908452806,
       "ATLETA_ID": 107231
+    },
+    {
+      "RODADA": 26,
+      "POS": "MEI",
+      "NOME": "Arias",
+      "CLUBE": "PAL",
+      "PRECO": 14.45,
+      "EXP_SCORE": 5.3085,
+      "FACTOR": 1.0142930869157512,
+      "ATLETA_ID": 99815
     },
     {
       "RODADA": 26,
@@ -261,7 +261,7 @@
       "NOME": "Leonardo Jardim",
       "CLUBE": "FLA",
       "PRECO": 13.56,
-      "EXP_SCORE": 6.2148,
+      "EXP_SCORE": 7.1471,
       "FACTOR": 0.9830769920177467,
       "ATLETA_ID": 88963
     },
@@ -288,22 +288,22 @@
     {
       "RODADA": 26,
       "POS": "TEC",
+      "NOME": "Cuca",
+      "CLUBE": "SAN",
+      "PRECO": 10.43,
+      "EXP_SCORE": 5.6011,
+      "FACTOR": 0.9792850597875209,
+      "ATLETA_ID": 42411
+    },
+    {
+      "RODADA": 26,
+      "POS": "TEC",
       "NOME": "Artur Jorge",
       "CLUBE": "CRU",
       "PRECO": 11.51,
       "EXP_SCORE": 5.4577,
       "FACTOR": 1.0444722991894975,
       "ATLETA_ID": 127273
-    },
-    {
-      "RODADA": 26,
-      "POS": "TEC",
-      "NOME": "Rogério Ceni",
-      "CLUBE": "BAH",
-      "PRECO": 10.65,
-      "EXP_SCORE": 5.3545,
-      "FACTOR": 0.923647878701926,
-      "ATLETA_ID": 97341
     }
   ]
 }
