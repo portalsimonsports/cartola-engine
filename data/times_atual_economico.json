@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 26,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-09-02T18:24:46.922Z",
+  "atualizado_em": "2026-09-02T18:34:51.119Z",
   "dados": [
     {
       "RODADA": 26,
@@ -25,7 +25,7 @@
       "NOME": "Marcelinho",
       "CLUBE": "REM",
       "PRECO": 6.63,
-      "EXP_SCORE": 4.8837,
+      "EXP_SCORE": 4.3953,
       "ATLETA_ID": 97795
     },
     {
@@ -66,6 +66,17 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "MEI",
+      "NOME": "Josué",
+      "CLUBE": "CFC",
+      "PRECO": 5.98,
+      "EXP_SCORE": 4.2254,
+      "ATLETA_ID": 84626
+    },
+    {
+      "RODADA": 26,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
       "NOME": "Tchê Tchê",
       "CLUBE": "VAS",
       "PRECO": 6.06,
@@ -82,17 +93,6 @@
       "PRECO": 8.64,
       "EXP_SCORE": 3.3936,
       "ATLETA_ID": 68685
-    },
-    {
-      "RODADA": 26,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Zé Ricardo",
-      "CLUBE": "REM",
-      "PRECO": 5.78,
-      "EXP_SCORE": 3.0198,
-      "ATLETA_ID": 102911
     },
     {
       "RODADA": 26,
@@ -121,11 +121,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Vitinho",
-      "CLUBE": "INT",
-      "PRECO": 8.49,
-      "EXP_SCORE": 5.1565,
-      "ATLETA_ID": 101960
+      "NOME": "Leozinho",
+      "CLUBE": "CAP",
+      "PRECO": 6.67,
+      "EXP_SCORE": 4.7217,
+      "ATLETA_ID": 123101
     },
     {
       "RODADA": 26,
@@ -187,11 +187,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Carbonero",
-      "CLUBE": "INT",
-      "PRECO": 8.13,
-      "EXP_SCORE": 4.264,
-      "ATLETA_ID": 107989
+      "NOME": "Lavega",
+      "CLUBE": "CFC",
+      "PRECO": 4.92,
+      "EXP_SCORE": 3.2553,
+      "ATLETA_ID": 117930
     }
   ]
 }
