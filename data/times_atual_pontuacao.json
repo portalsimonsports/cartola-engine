@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 26,
   "tipo": "PONTUACAO",
-  "atualizado_em": "2026-09-03T17:34:52.920Z",
+  "atualizado_em": "2026-09-03T17:44:51.768Z",
   "dados": [
     {
       "RODADA": 26,
@@ -14,7 +14,7 @@
       "NOME": "Lucas Arcanjo",
       "CLUBE": "VIT",
       "PRECO": 9.28,
-      "EXP_SCORE": 3.9458,
+      "EXP_SCORE": 3.9433,
       "ATLETA_ID": 104118
     },
     {
@@ -25,7 +25,7 @@
       "NOME": "Juninho Capixaba",
       "CLUBE": "RBB",
       "PRECO": 12.51,
-      "EXP_SCORE": 6.2112,
+      "EXP_SCORE": 6.2053,
       "ATLETA_ID": 94968
     },
     {
@@ -36,8 +36,19 @@
       "NOME": "Matheus Bidu",
       "CLUBE": "COR",
       "PRECO": 12.06,
-      "EXP_SCORE": 6.1701,
+      "EXP_SCORE": 6.164,
       "ATLETA_ID": 105531
+    },
+    {
+      "RODADA": 26,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "ZAG",
+      "NOME": "Léo Pereira",
+      "CLUBE": "FLA",
+      "PRECO": 10,
+      "EXP_SCORE": 3.71,
+      "ATLETA_ID": 83528
     },
     {
       "RODADA": 26,
@@ -47,19 +58,8 @@
       "NOME": "Gustavo Marques",
       "CLUBE": "RBB",
       "PRECO": 7.18,
-      "EXP_SCORE": 3.4697,
+      "EXP_SCORE": 3.4664,
       "ATLETA_ID": 110750
-    },
-    {
-      "RODADA": 26,
-      "TIPO": "PONTUACAO",
-      "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Ignácio",
-      "CLUBE": "FLU",
-      "PRECO": 8.11,
-      "EXP_SCORE": 3.3677,
-      "ATLETA_ID": 103523
     },
     {
       "RODADA": 26,
@@ -69,7 +69,7 @@
       "NOME": "Arias",
       "CLUBE": "PAL",
       "PRECO": 14.45,
-      "EXP_SCORE": 6.7877,
+      "EXP_SCORE": 5.9024,
       "ATLETA_ID": 99815
     },
     {
@@ -121,11 +121,11 @@
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Pedro",
-      "CLUBE": "FLA",
-      "PRECO": 15.51,
-      "EXP_SCORE": 6.5646,
-      "ATLETA_ID": 94583
+      "NOME": "Hulk",
+      "CLUBE": "FLU",
+      "PRECO": 13.66,
+      "EXP_SCORE": 7.0001,
+      "ATLETA_ID": 39148
     },
     {
       "RODADA": 26,
@@ -146,7 +146,7 @@
       "NOME": "Ronaldo",
       "CLUBE": "BAH",
       "PRECO": 7.12,
-      "EXP_SCORE": 3.5308,
+      "EXP_SCORE": 3.5285,
       "ATLETA_ID": 91101
     },
     {
@@ -157,7 +157,7 @@
       "NOME": "Matheuzinho",
       "CLUBE": "COR",
       "PRECO": 10.79,
-      "EXP_SCORE": 6.0435,
+      "EXP_SCORE": 6.0375,
       "ATLETA_ID": 101727
     },
     {
@@ -168,7 +168,7 @@
       "NOME": "David Duarte",
       "CLUBE": "BAH",
       "PRECO": 6.2,
-      "EXP_SCORE": 3.185,
+      "EXP_SCORE": 3.1829,
       "ATLETA_ID": 91772
     },
     {
