@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 26,
-  "atualizado_em": "2026-09-03T03:10:08.098Z",
+  "atualizado_em": "2026-09-03T03:34:45.037Z",
   "dados": [
     {
       "RODADA": 26,
@@ -58,6 +58,16 @@
     {
       "RODADA": 26,
       "POS": "LAT",
+      "NOME": "Matheuzinho",
+      "CLUBE": "COR",
+      "PRECO": 10.79,
+      "EXP_SCORE": 6.9572,
+      "FACTOR": 1.07609388572356,
+      "ATLETA_ID": 101727
+    },
+    {
+      "RODADA": 26,
+      "POS": "LAT",
       "NOME": "Juninho Capixaba",
       "CLUBE": "RBB",
       "PRECO": 12.51,
@@ -74,16 +84,6 @@
       "EXP_SCORE": 6.1765,
       "FACTOR": 1.07609388572356,
       "ATLETA_ID": 105531
-    },
-    {
-      "RODADA": 26,
-      "POS": "LAT",
-      "NOME": "Matheuzinho",
-      "CLUBE": "COR",
-      "PRECO": 10.79,
-      "EXP_SCORE": 6.0497,
-      "FACTOR": 1.07609388572356,
-      "ATLETA_ID": 101727
     },
     {
       "RODADA": 26,
@@ -108,16 +108,6 @@
     {
       "RODADA": 26,
       "POS": "ZAG",
-      "NOME": "Gustavo Marques",
-      "CLUBE": "RBB",
-      "PRECO": 7.18,
-      "EXP_SCORE": 3.4732,
-      "FACTOR": 1.0833028743972564,
-      "ATLETA_ID": 110750
-    },
-    {
-      "RODADA": 26,
-      "POS": "ZAG",
       "NOME": "Léo Pereira",
       "CLUBE": "FLA",
       "PRECO": 10,
@@ -138,6 +128,16 @@
     {
       "RODADA": 26,
       "POS": "ZAG",
+      "NOME": "Gustavo Marques",
+      "CLUBE": "RBB",
+      "PRECO": 7.18,
+      "EXP_SCORE": 3.1258,
+      "FACTOR": 1.0833028743972564,
+      "ATLETA_ID": 110750
+    },
+    {
+      "RODADA": 26,
+      "POS": "ZAG",
       "NOME": "Ignácio",
       "CLUBE": "FLU",
       "PRECO": 8.11,
@@ -148,12 +148,12 @@
     {
       "RODADA": 26,
       "POS": "ZAG",
-      "NOME": "Gustavo Gómez",
-      "CLUBE": "PAL",
-      "PRECO": 10.45,
-      "EXP_SCORE": 2.8516,
-      "FACTOR": 0.9190325286897251,
-      "ATLETA_ID": 71684
+      "NOME": "Gustavo Henrique",
+      "CLUBE": "COR",
+      "PRECO": 8.08,
+      "EXP_SCORE": 2.8948,
+      "FACTOR": 1.07609388572356,
+      "ATLETA_ID": 78248
     },
     {
       "RODADA": 26,
