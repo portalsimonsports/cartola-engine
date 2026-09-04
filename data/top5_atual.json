@@ -3,18 +3,8 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 26,
-  "atualizado_em": "2026-09-04T08:55:09.322Z",
+  "atualizado_em": "2026-09-04T09:07:39.715Z",
   "dados": [
-    {
-      "RODADA": 26,
-      "POS": "GOL",
-      "NOME": "Rossi",
-      "CLUBE": "FLA",
-      "PRECO": 9.32,
-      "EXP_SCORE": 4.0779,
-      "FACTOR": 0.9812708138278933,
-      "ATLETA_ID": 99552
-    },
     {
       "RODADA": 26,
       "POS": "GOL",
@@ -34,6 +24,16 @@
       "EXP_SCORE": 3.7703,
       "FACTOR": 1.0816168627035345,
       "ATLETA_ID": 72018
+    },
+    {
+      "RODADA": 26,
+      "POS": "GOL",
+      "NOME": "Rossi",
+      "CLUBE": "FLA",
+      "PRECO": 9.32,
+      "EXP_SCORE": 3.546,
+      "FACTOR": 0.9812708138278933,
+      "ATLETA_ID": 99552
     },
     {
       "RODADA": 26,
@@ -168,22 +168,22 @@
     {
       "RODADA": 26,
       "POS": "MEI",
+      "NOME": "Arias",
+      "CLUBE": "PAL",
+      "PRECO": 14.45,
+      "EXP_SCORE": 5.9067,
+      "FACTOR": 1.0157347319756187,
+      "ATLETA_ID": 99815
+    },
+    {
+      "RODADA": 26,
+      "POS": "MEI",
       "NOME": "Danilo",
       "CLUBE": "BOT",
       "PRECO": 13.96,
       "EXP_SCORE": 5.4019,
       "FACTOR": 1.0339558757384217,
       "ATLETA_ID": 107231
-    },
-    {
-      "RODADA": 26,
-      "POS": "MEI",
-      "NOME": "Arias",
-      "CLUBE": "PAL",
-      "PRECO": 14.45,
-      "EXP_SCORE": 5.316,
-      "FACTOR": 1.0157347319756187,
-      "ATLETA_ID": 99815
     },
     {
       "RODADA": 26,
