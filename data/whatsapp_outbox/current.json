@@ -1,6 +1,6 @@
 {
   "schema": "portalsimonsports.whatsapp_channel_outbox.v1",
-  "gerado_em": "2026-09-04T14:56:05.730949+00:00",
+  "gerado_em": "2026-09-04T20:55:32.379586+00:00",
   "origem": "telegram_approved_cards_pipeline",
   "politica": {
     "telegram_intacto": true,
@@ -9,7 +9,7 @@
   },
   "publicacoes": [
     {
-      "id": "60578c27066905a6cac9660a341b230bce79c17c1f0856a54f26791067049c55",
+      "id": "f992176a3921151811bf2a3be34f38ac461d031023ff0d6c315e8a50f7e7b04d",
       "status": "PENDENTE_BRIDGE",
       "destino": "whatsapp_channel",
       "canal": "Portal SimonSports",
@@ -17,7 +17,7 @@
       "midias": [
         {
           "path": "output/aprovada_lembrete_mercado_rodada_26.png",
-          "sha256": "93f8476a5d451990668fdb35ae4129a197e9d6e59c0fb815fec3f3cb0ebcad7c"
+          "sha256": "f9bf48a0a1d4e1958f0a1d28999da223d5501e80bd8a1d8ea2f72821b27962ce"
         }
       ],
       "tipo_detectado": "approved_lembrete_v2",
