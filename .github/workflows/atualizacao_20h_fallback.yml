@@ -40,12 +40,14 @@ jobs:
         id: prep
         env:
           TZ: America/Sao_Paulo
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
           set -e
           mkdir -p data output data/flags
           python - <<'PY'
           import json, os
-          from datetime import datetime
+          from datetime import datetime, timezone
           from pathlib import Path
           from zoneinfo import ZoneInfo
           import requests
@@ -57,11 +59,14 @@ jobs:
               with output.open('a', encoding='utf-8') as fh:
                   fh.write(f'{key}={value}\n')
 
+          def bloquear(msg):
+              out('allowed', 'false')
+              print(msg)
+              raise SystemExit(0)
+
           # Só atua na janela da atualização das 20h.
           if agora.hour < 20 or agora.hour > 21:
-              out('allowed', 'false')
-              print('Fora da janela da atualização das 20h.')
-              raise SystemExit(0)
+              bloquear('Fora da janela da atualização das 20h.')
 
           # Confirma estado e data de fechamento diretamente na API oficial do Cartola.
           try:
@@ -84,19 +89,79 @@ jobs:
 
           hoje = agora.strftime('%Y-%m-%d')
           if status != 1 or rodada <= 0:
-              out('allowed', 'false')
-              print(f'Mercado não está aberto. status={status} rodada={rodada}')
-              raise SystemExit(0)
+              bloquear(f'Mercado não está aberto. status={status} rodada={rodada}')
           if dia_fechamento and hoje == dia_fechamento:
-              out('allowed', 'false')
-              print('Dia de fechamento: atualização das 20h não se aplica.')
-              raise SystemExit(0)
+              bloquear('Dia de fechamento: atualização das 20h não se aplica.')
 
+          # PROTEÇÃO 1: marker persistido no repositório.
           marker = Path(f'data/flags/publicacao_ATUALIZACAO_20H_rodada_{rodada}_{hoje}_PACOTE.json')
           if marker.exists():
-              out('allowed', 'false')
-              print(f'Atualização das 20h já publicada: {marker}')
-              raise SystemExit(0)
+              bloquear(f'Atualização das 20h já registrada: {marker}')
+
+          # PROTEÇÃO 2: deduplicação cruzada com o workflow normal gerar.yml.
+          # O envio ao Telegram acontece ANTES do commit do marker. Se o envio tiver
+          # sucesso e o commit/push posterior falhar, o marker não existe, mas a
+          # publicação já ocorreu. O fallback deve detectar isso e NÃO repostar.
+          token = os.environ.get('GITHUB_TOKEN', '').strip()
+          repo = os.environ.get('GITHUB_REPOSITORY', '').strip()
+          if not token or not repo:
+              raise SystemExit('ERRO: credenciais GitHub indisponíveis para checagem anti-duplicidade.')
+
+          headers = {
+              'Authorization': f'Bearer {token}',
+              'Accept': 'application/vnd.github+json',
+              'X-GitHub-Api-Version': '2022-11-28',
+          }
+
+          inicio_sp = agora.replace(hour=20, minute=0, second=0, microsecond=0)
+          inicio_utc = inicio_sp.astimezone(timezone.utc)
+
+          try:
+              runs_url = f'https://api.github.com/repos/{repo}/actions/workflows/gerar.yml/runs'
+              rr = requests.get(
+                  runs_url,
+                  headers=headers,
+                  params={'branch': 'main', 'per_page': 30},
+                  timeout=30,
+              )
+              rr.raise_for_status()
+              runs = rr.json().get('workflow_runs') or []
+
+              for run in runs:
+                  created_raw = str(run.get('created_at') or '').strip()
+                  try:
+                      created = datetime.fromisoformat(created_raw.replace('Z', '+00:00'))
+                  except Exception:
+                      continue
+                  if created < inicio_utc:
+                      continue
+
+                  run_id = int(run.get('id') or 0)
+                  if not run_id:
+                      continue
+
+                  jobs_url = f'https://api.github.com/repos/{repo}/actions/runs/{run_id}/jobs'
+                  jr = requests.get(jobs_url, headers=headers, params={'per_page': 100}, timeout=30)
+                  jr.raise_for_status()
+
+                  for job in jr.json().get('jobs') or []:
+                      for step in job.get('steps') or []:
+                          nome = str(step.get('name') or '').strip()
+                          conclusao = str(step.get('conclusion') or '').strip().lower()
+                          if nome == 'Gerar e publicar pacote aprovado' and conclusao == 'success':
+                              criado_sp = created.astimezone(ZoneInfo('America/Sao_Paulo'))
+                              bloquear(
+                                  'Fallback bloqueado: o publicador normal já concluiu o passo de envio '
+                                  f'hoje após 20h. run_id={run_id} | '
+                                  f'run_status={run.get("status")} | run_conclusion={run.get("conclusion")} | '
+                                  f'iniciado={criado_sp.strftime("%d/%m/%Y %H:%M:%S")}'
+                              )
+          except SystemExit:
+              raise
+          except Exception as exc:
+              # Fail closed: se não for possível provar que não houve envio anterior,
+              # não publica novamente. Evita duplicidade e perda de credibilidade.
+              raise SystemExit(f'ERRO na checagem anti-duplicidade; fallback BLOQUEADO: {exc}')
 
           arquivos = [
               Path('data/times_atual_economico.json'),
