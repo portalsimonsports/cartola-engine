@@ -4,29 +4,18 @@
   "tipo_publicacao": "times",
   "rodada": 26,
   "tipo": "PONTUACAO",
-  "atualizado_em": "2026-09-04T07:59:53.735Z",
+  "atualizado_em": "2026-09-04T08:14:53.731Z",
   "dados": [
     {
       "RODADA": 26,
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "GOL",
-      "NOME": "Rossi",
-      "CLUBE": "FLA",
-      "PRECO": 9.32,
-      "EXP_SCORE": 4.0779,
-      "ATLETA_ID": 99552
-    },
-    {
-      "RODADA": 26,
-      "TIPO": "PONTUACAO",
-      "STATUS": "TITULAR",
-      "POS": "LAT",
-      "NOME": "Matheuzinho",
-      "CLUBE": "COR",
-      "PRECO": 10.79,
-      "EXP_SCORE": 6.946,
-      "ATLETA_ID": 101727
+      "NOME": "Lucas Arcanjo",
+      "CLUBE": "VIT",
+      "PRECO": 9.28,
+      "EXP_SCORE": 3.9443,
+      "ATLETA_ID": 104118
     },
     {
       "RODADA": 26,
@@ -38,6 +27,17 @@
       "PRECO": 12.51,
       "EXP_SCORE": 6.2077,
       "ATLETA_ID": 94968
+    },
+    {
+      "RODADA": 26,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Matheus Bidu",
+      "CLUBE": "COR",
+      "PRECO": 12.06,
+      "EXP_SCORE": 6.1665,
+      "ATLETA_ID": 105531
     },
     {
       "RODADA": 26,
@@ -55,11 +55,22 @@
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "ZAG",
-      "NOME": "Ignácio",
-      "CLUBE": "FLU",
-      "PRECO": 8.11,
-      "EXP_SCORE": 3.3657,
-      "ATLETA_ID": 103523
+      "NOME": "Gustavo Marques",
+      "CLUBE": "RBB",
+      "PRECO": 7.18,
+      "EXP_SCORE": 3.4678,
+      "ATLETA_ID": 110750
+    },
+    {
+      "RODADA": 26,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Arias",
+      "CLUBE": "PAL",
+      "PRECO": 14.45,
+      "EXP_SCORE": 5.9067,
+      "ATLETA_ID": 99815
     },
     {
       "RODADA": 26,
@@ -69,7 +80,7 @@
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 14.19,
-      "EXP_SCORE": 6.4845,
+      "EXP_SCORE": 5.6387,
       "ATLETA_ID": 96610
     },
     {
@@ -82,17 +93,6 @@
       "PRECO": 13.96,
       "EXP_SCORE": 5.4019,
       "ATLETA_ID": 107231
-    },
-    {
-      "RODADA": 26,
-      "TIPO": "PONTUACAO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Arias",
-      "CLUBE": "PAL",
-      "PRECO": 14.45,
-      "EXP_SCORE": 5.316,
-      "ATLETA_ID": 99815
     },
     {
       "RODADA": 26,
@@ -121,11 +121,11 @@
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Flaco López",
-      "CLUBE": "PAL",
-      "PRECO": 14.16,
-      "EXP_SCORE": 7.3361,
-      "ATLETA_ID": 113103
+      "NOME": "Hulk",
+      "CLUBE": "FLU",
+      "PRECO": 13.66,
+      "EXP_SCORE": 7.0055,
+      "ATLETA_ID": 39148
     },
     {
       "RODADA": 26,
@@ -135,7 +135,7 @@
       "NOME": "Leonardo Jardim",
       "CLUBE": "FLA",
       "PRECO": 13.56,
-      "EXP_SCORE": 7.1629,
+      "EXP_SCORE": 6.2286,
       "ATLETA_ID": 88963
     },
     {
@@ -143,44 +143,44 @@
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Lucas Arcanjo",
-      "CLUBE": "VIT",
-      "PRECO": 9.28,
-      "EXP_SCORE": 3.9443,
-      "ATLETA_ID": 104118
+      "NOME": "Ronaldo",
+      "CLUBE": "BAH",
+      "PRECO": 7.12,
+      "EXP_SCORE": 3.5294,
+      "ATLETA_ID": 91101
     },
     {
       "RODADA": 26,
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "LAT",
-      "NOME": "Igor Vinícius",
-      "CLUBE": "SAN",
-      "PRECO": 10.43,
-      "EXP_SCORE": 5.4275,
-      "ATLETA_ID": 95466
+      "NOME": "Matheuzinho",
+      "CLUBE": "COR",
+      "PRECO": 10.79,
+      "EXP_SCORE": 6.04,
+      "ATLETA_ID": 101727
     },
     {
       "RODADA": 26,
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Gustavo Marques",
-      "CLUBE": "RBB",
-      "PRECO": 7.18,
-      "EXP_SCORE": 3.121,
-      "ATLETA_ID": 110750
+      "NOME": "David Duarte",
+      "CLUBE": "BAH",
+      "PRECO": 6.2,
+      "EXP_SCORE": 3.1837,
+      "ATLETA_ID": 91772
     },
     {
       "RODADA": 26,
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Acevedo",
-      "CLUBE": "BAH",
-      "PRECO": 8.68,
-      "EXP_SCORE": 4.4274,
-      "ATLETA_ID": 104783
+      "NOME": "Maurício",
+      "CLUBE": "PAL",
+      "PRECO": 8.08,
+      "EXP_SCORE": 4.2394,
+      "ATLETA_ID": 105647
     },
     {
       "RODADA": 26,
@@ -190,7 +190,7 @@
       "NOME": "Canobbio",
       "CLUBE": "FLU",
       "PRECO": 12.17,
-      "EXP_SCORE": 7.0475,
+      "EXP_SCORE": 6.3428,
       "ATLETA_ID": 102928
     }
   ]
