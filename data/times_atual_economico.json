@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 26,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-09-04T13:45:32.828Z",
+  "atualizado_em": "2026-09-04T13:55:08.001Z",
   "dados": [
     {
       "RODADA": 26,
@@ -98,6 +98,28 @@
       "RODADA": 26,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Zé Ricardo",
+      "CLUBE": "REM",
+      "PRECO": 5.78,
+      "EXP_SCORE": 3.025,
+      "ATLETA_ID": 102911
+    },
+    {
+      "RODADA": 26,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Carrascal",
+      "CLUBE": "FLA",
+      "PRECO": 12.1,
+      "EXP_SCORE": 5.5951,
+      "ATLETA_ID": 105436
+    },
+    {
+      "RODADA": 26,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
       "POS": "ATA",
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
@@ -109,34 +131,12 @@
       "RODADA": 26,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Pavón",
-      "CLUBE": "GRE",
-      "PRECO": 8.3,
-      "EXP_SCORE": 4.3274,
-      "ATLETA_ID": 91908
-    },
-    {
-      "RODADA": 26,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Fernando",
-      "CLUBE": "RBB",
-      "PRECO": 6.97,
-      "EXP_SCORE": 4.2786,
-      "ATLETA_ID": 100695
-    },
-    {
-      "RODADA": 26,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Odair Hellmann",
-      "CLUBE": "CAP",
-      "PRECO": 9.17,
-      "EXP_SCORE": 6.187,
-      "ATLETA_ID": 92273
+      "NOME": "Fernando Seabra",
+      "CLUBE": "CFC",
+      "PRECO": 8.09,
+      "EXP_SCORE": 4.9613,
+      "ATLETA_ID": 126977
     },
     {
       "RODADA": 26,
@@ -187,11 +187,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Leozinho",
+      "NOME": "Viveros",
       "CLUBE": "CAP",
-      "PRECO": 6.67,
-      "EXP_SCORE": 4.138,
-      "ATLETA_ID": 123101
+      "PRECO": 13.47,
+      "EXP_SCORE": 9.2224,
+      "ATLETA_ID": 143193
     }
   ]
 }
