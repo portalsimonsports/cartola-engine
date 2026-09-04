@@ -272,37 +272,47 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          if [ -n "$MARKER" ]; then
-            mkdir -p "$(dirname "$MARKER")"
-            printf '{\n  "status": "PUBLICADO_COM_SUCESSO",\n  "evento_programado": "%s",\n  "rodada": %s,\n  "publicador": "%s",\n  "componente_disparador": "%s",\n  "github_run_id": "%s",\n  "registrado_em": "%s"\n}\n' \
-              "$EVENTO" "$RODADA" "$PUBLICADOR" "$COMPONENTE" "${{ github.run_id }}" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$MARKER"
-          fi
-
-          git add data/publicacoes_atuais/ data/flags/ output/*.png 2>/dev/null || true
-
-          if git diff --cached --quiet; then
-            echo "Sem alterações permanentes para commit."
+          if [ -z "$MARKER" ]; then
+            echo "Sem marker para registrar."
             exit 0
           fi
 
-          git commit -m "Telegram: ${EVENTO} R${RODADA} pacote único"
+          marker_tmp="$(mktemp)"
+          printf '{\n  "status": "PUBLICADO_COM_SUCESSO",\n  "evento_programado": "%s",\n  "rodada": %s,\n  "publicador": "%s",\n  "componente_disparador": "%s",\n  "github_run_id": "%s",\n  "registrado_em": "%s"\n}\n' \
+            "$EVENTO" "$RODADA" "$PUBLICADOR" "$COMPONENTE" "${{ github.run_id }}" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$marker_tmp"
 
           enviado=0
           for tentativa in 1 2 3 4 5; do
-            echo "Tentativa de push $tentativa/5"
-            git rebase --abort 2>/dev/null || true
+            echo "Tentativa de registrar marker $tentativa/5"
+
             git fetch origin main
-            if git rebase origin/main && git push origin HEAD:main; then
+            git reset --hard origin/main
+
+            if [ -f "$MARKER" ]; then
+              echo "Marker já existe no branch main: $MARKER"
               enviado=1
               break
             fi
-            git rebase --abort 2>/dev/null || true
-            sleep $((tentativa * 3))
+
+            mkdir -p "$(dirname "$MARKER")"
+            cp "$marker_tmp" "$MARKER"
+            git add "$MARKER"
+
+            git commit -m "Telegram: registrar ${EVENTO} R${RODADA} pacote único"
+
+            if git push origin HEAD:main; then
+              enviado=1
+              break
+            fi
+
+            sleep $((tentativa * 2))
           done
 
+          rm -f "$marker_tmp"
+
           if [ "$enviado" -ne 1 ]; then
-            echo "ERRO: não foi possível publicar o commit após 5 tentativas."
+            echo "ERRO: não foi possível registrar o marker após 5 tentativas."
             exit 1
           fi
 
-          echo "Pacote registrado e commit enviado ao branch main."
+          echo "Pacote já enviado ao Telegram e marker registrado com sucesso."
