@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 26,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-09-04T08:34:47.298Z",
+  "atualizado_em": "2026-09-04T08:44:54.091Z",
   "dados": [
     {
       "RODADA": 26,
@@ -58,8 +58,30 @@
       "NOME": "Gustavo Martins",
       "CLUBE": "GRE",
       "PRECO": 8.21,
-      "EXP_SCORE": 2.2886,
+      "EXP_SCORE": 2.6319,
       "ATLETA_ID": 111309
+    },
+    {
+      "RODADA": 26,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Alan Patrick",
+      "CLUBE": "INT",
+      "PRECO": 8.64,
+      "EXP_SCORE": 3.9085,
+      "ATLETA_ID": 68685
+    },
+    {
+      "RODADA": 26,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Acevedo",
+      "CLUBE": "BAH",
+      "PRECO": 8.68,
+      "EXP_SCORE": 4.4274,
+      "ATLETA_ID": 104783
     },
     {
       "RODADA": 26,
@@ -71,28 +93,6 @@
       "PRECO": 6.06,
       "EXP_SCORE": 2.3531,
       "ATLETA_ID": 86686
-    },
-    {
-      "RODADA": 26,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Alan Patrick",
-      "CLUBE": "INT",
-      "PRECO": 8.64,
-      "EXP_SCORE": 3.3987,
-      "ATLETA_ID": 68685
-    },
-    {
-      "RODADA": 26,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Zé Ricardo",
-      "CLUBE": "REM",
-      "PRECO": 5.78,
-      "EXP_SCORE": 3.025,
-      "ATLETA_ID": 102911
     },
     {
       "RODADA": 26,
@@ -121,11 +121,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Vitinho",
-      "CLUBE": "INT",
-      "PRECO": 8.49,
-      "EXP_SCORE": 5.1643,
-      "ATLETA_ID": 101960
+      "NOME": "Fernando",
+      "CLUBE": "RBB",
+      "PRECO": 6.97,
+      "EXP_SCORE": 4.2786,
+      "ATLETA_ID": 100695
     },
     {
       "RODADA": 26,
@@ -157,7 +157,7 @@
       "NOME": "JP Chermont",
       "CLUBE": "CFC",
       "PRECO": 5.41,
-      "EXP_SCORE": 3.6988,
+      "EXP_SCORE": 4.2536,
       "ATLETA_ID": 131516
     },
     {
@@ -168,7 +168,7 @@
       "NOME": "Gustavo Marques",
       "CLUBE": "RBB",
       "PRECO": 7.18,
-      "EXP_SCORE": 3.4678,
+      "EXP_SCORE": 3.121,
       "ATLETA_ID": 110750
     },
     {
@@ -187,11 +187,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Carbonero",
-      "CLUBE": "INT",
-      "PRECO": 8.13,
-      "EXP_SCORE": 4.2704,
-      "ATLETA_ID": 107989
+      "NOME": "Leozinho",
+      "CLUBE": "CAP",
+      "PRECO": 6.67,
+      "EXP_SCORE": 4.138,
+      "ATLETA_ID": 123101
     }
   ]
 }
