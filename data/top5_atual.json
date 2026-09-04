@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 26,
-  "atualizado_em": "2026-09-04T00:15:15.763Z",
+  "atualizado_em": "2026-09-04T01:05:11.411Z",
   "dados": [
     {
       "RODADA": 26,
@@ -58,16 +58,6 @@
     {
       "RODADA": 26,
       "POS": "LAT",
-      "NOME": "Matheuzinho",
-      "CLUBE": "COR",
-      "PRECO": 10.79,
-      "EXP_SCORE": 6.946,
-      "FACTOR": 1.0743568686340617,
-      "ATLETA_ID": 101727
-    },
-    {
-      "RODADA": 26,
-      "POS": "LAT",
       "NOME": "Juninho Capixaba",
       "CLUBE": "RBB",
       "PRECO": 12.51,
@@ -84,6 +74,16 @@
       "EXP_SCORE": 6.1665,
       "FACTOR": 1.0743568686340617,
       "ATLETA_ID": 105531
+    },
+    {
+      "RODADA": 26,
+      "POS": "LAT",
+      "NOME": "Matheuzinho",
+      "CLUBE": "COR",
+      "PRECO": 10.79,
+      "EXP_SCORE": 6.04,
+      "FACTOR": 1.0743568686340617,
+      "ATLETA_ID": 101727
     },
     {
       "RODADA": 26,
@@ -138,22 +138,22 @@
     {
       "RODADA": 26,
       "POS": "ZAG",
+      "NOME": "David Duarte",
+      "CLUBE": "BAH",
+      "PRECO": 6.2,
+      "EXP_SCORE": 3.1837,
+      "FACTOR": 0.9643452324159276,
+      "ATLETA_ID": 91772
+    },
+    {
+      "RODADA": 26,
+      "POS": "ZAG",
       "NOME": "Gustavo Gómez",
       "CLUBE": "PAL",
       "PRECO": 10.45,
       "EXP_SCORE": 2.8475,
       "FACTOR": 0.9176870463236091,
       "ATLETA_ID": 71684
-    },
-    {
-      "RODADA": 26,
-      "POS": "ZAG",
-      "NOME": "David Duarte",
-      "CLUBE": "BAH",
-      "PRECO": 6.2,
-      "EXP_SCORE": 2.7685,
-      "FACTOR": 0.9643452324159276,
-      "ATLETA_ID": 91772
     },
     {
       "RODADA": 26,
@@ -188,22 +188,22 @@
     {
       "RODADA": 26,
       "POS": "MEI",
-      "NOME": "Acevedo",
-      "CLUBE": "BAH",
-      "PRECO": 8.68,
-      "EXP_SCORE": 4.4274,
-      "FACTOR": 0.9075271783049658,
-      "ATLETA_ID": 104783
-    },
-    {
-      "RODADA": 26,
-      "POS": "MEI",
       "NOME": "Maurício",
       "CLUBE": "PAL",
       "PRECO": 8.08,
       "EXP_SCORE": 4.2394,
       "FACTOR": 1.0157347319756187,
       "ATLETA_ID": 105647
+    },
+    {
+      "RODADA": 26,
+      "POS": "MEI",
+      "NOME": "Garro",
+      "CLUBE": "COR",
+      "PRECO": 9.82,
+      "EXP_SCORE": 4.044,
+      "FACTOR": 1.1113110761694158,
+      "ATLETA_ID": 117632
     },
     {
       "RODADA": 26,
