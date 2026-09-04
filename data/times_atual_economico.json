@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 26,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-09-04T04:39:45.281Z",
+  "atualizado_em": "2026-09-04T04:50:47.232Z",
   "dados": [
     {
       "RODADA": 26,
@@ -14,7 +14,7 @@
       "NOME": "Otávio",
       "CLUBE": "CRU",
       "PRECO": 3.61,
-      "EXP_SCORE": 2.0738,
+      "EXP_SCORE": 1.8033,
       "ATLETA_ID": 117404
     },
     {
@@ -25,7 +25,7 @@
       "NOME": "Marcelinho",
       "CLUBE": "REM",
       "PRECO": 6.63,
-      "EXP_SCORE": 4.7555,
+      "EXP_SCORE": 4.28,
       "ATLETA_ID": 97795
     },
     {
@@ -33,11 +33,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "LAT",
-      "NOME": "Matheus Bahia",
-      "CLUBE": "INT",
-      "PRECO": 7.45,
-      "EXP_SCORE": 5.331,
-      "ATLETA_ID": 97899
+      "NOME": "Fagner",
+      "CLUBE": "CRU",
+      "PRECO": 6.62,
+      "EXP_SCORE": 4.1475,
+      "ATLETA_ID": 42500
     },
     {
       "RODADA": 26,
@@ -47,7 +47,7 @@
       "NOME": "Ignácio",
       "CLUBE": "FLU",
       "PRECO": 8.11,
-      "EXP_SCORE": 3.3657,
+      "EXP_SCORE": 2.9267,
       "ATLETA_ID": 103523
     },
     {
@@ -58,19 +58,8 @@
       "NOME": "Gustavo Martins",
       "CLUBE": "GRE",
       "PRECO": 8.21,
-      "EXP_SCORE": 2.2886,
+      "EXP_SCORE": 2.0598,
       "ATLETA_ID": 111309
-    },
-    {
-      "RODADA": 26,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Tchê Tchê",
-      "CLUBE": "VAS",
-      "PRECO": 6.06,
-      "EXP_SCORE": 2.3531,
-      "ATLETA_ID": 86686
     },
     {
       "RODADA": 26,
@@ -80,7 +69,7 @@
       "NOME": "Alan Patrick",
       "CLUBE": "INT",
       "PRECO": 8.64,
-      "EXP_SCORE": 3.3987,
+      "EXP_SCORE": 3.0588,
       "ATLETA_ID": 68685
     },
     {
@@ -91,8 +80,30 @@
       "NOME": "Zé Ricardo",
       "CLUBE": "REM",
       "PRECO": 5.78,
-      "EXP_SCORE": 3.025,
+      "EXP_SCORE": 2.6305,
       "ATLETA_ID": 102911
+    },
+    {
+      "RODADA": 26,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Tchê Tchê",
+      "CLUBE": "VAS",
+      "PRECO": 6.06,
+      "EXP_SCORE": 1.8416,
+      "ATLETA_ID": 86686
+    },
+    {
+      "RODADA": 26,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Acevedo",
+      "CLUBE": "BAH",
+      "PRECO": 8.68,
+      "EXP_SCORE": 3.4649,
+      "ATLETA_ID": 104783
     },
     {
       "RODADA": 26,
@@ -102,7 +113,7 @@
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 13.77,
-      "EXP_SCORE": 8.1037,
+      "EXP_SCORE": 7.0467,
       "ATLETA_ID": 98873
     },
     {
@@ -110,22 +121,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Pavón",
-      "CLUBE": "GRE",
-      "PRECO": 8.3,
-      "EXP_SCORE": 4.3274,
-      "ATLETA_ID": 91908
-    },
-    {
-      "RODADA": 26,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Vitinho",
-      "CLUBE": "INT",
-      "PRECO": 8.49,
-      "EXP_SCORE": 5.1643,
-      "ATLETA_ID": 101960
+      "NOME": "Leozinho",
+      "CLUBE": "CAP",
+      "PRECO": 6.67,
+      "EXP_SCORE": 4.7588,
+      "ATLETA_ID": 123101
     },
     {
       "RODADA": 26,
@@ -165,11 +165,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Gustavo Marques",
-      "CLUBE": "RBB",
-      "PRECO": 7.18,
-      "EXP_SCORE": 3.4678,
-      "ATLETA_ID": 110750
+      "NOME": "David Duarte",
+      "CLUBE": "BAH",
+      "PRECO": 6.2,
+      "EXP_SCORE": 3.1837,
+      "ATLETA_ID": 91772
     },
     {
       "RODADA": 26,
@@ -187,11 +187,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Carbonero",
-      "CLUBE": "INT",
-      "PRECO": 8.13,
-      "EXP_SCORE": 4.2704,
-      "ATLETA_ID": 107989
+      "NOME": "Lavega",
+      "CLUBE": "CFC",
+      "PRECO": 4.92,
+      "EXP_SCORE": 3.2332,
+      "ATLETA_ID": 117930
     }
   ]
 }
