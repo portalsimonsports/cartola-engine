@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 26,
-  "atualizado_em": "2026-09-04T03:45:19.157Z",
+  "atualizado_em": "2026-09-04T03:55:03.966Z",
   "dados": [
     {
       "RODADA": 26,
@@ -72,7 +72,7 @@
       "CLUBE": "COR",
       "PRECO": 12.06,
       "EXP_SCORE": 6.1665,
-      "FACTOR": 1.0743568686340617,
+      "FACTOR": 1.0743568686340614,
       "ATLETA_ID": 105531
     },
     {
@@ -82,7 +82,7 @@
       "CLUBE": "COR",
       "PRECO": 10.79,
       "EXP_SCORE": 6.04,
-      "FACTOR": 1.0743568686340617,
+      "FACTOR": 1.0743568686340614,
       "ATLETA_ID": 101727
     },
     {
@@ -98,12 +98,12 @@
     {
       "RODADA": 26,
       "POS": "LAT",
-      "NOME": "Matheus Bahia",
-      "CLUBE": "INT",
-      "PRECO": 7.45,
-      "EXP_SCORE": 5.331,
-      "FACTOR": 1.156737634672386,
-      "ATLETA_ID": 97899
+      "NOME": "Renê",
+      "CLUBE": "FLU",
+      "PRECO": 9.1,
+      "EXP_SCORE": 5.291,
+      "FACTOR": 1.0761550616096023,
+      "ATLETA_ID": 78445
     },
     {
       "RODADA": 26,
@@ -161,7 +161,7 @@
       "NOME": "Arias",
       "CLUBE": "PAL",
       "PRECO": 14.45,
-      "EXP_SCORE": 5.9067,
+      "EXP_SCORE": 6.7927,
       "FACTOR": 1.0157347319756187,
       "ATLETA_ID": 99815
     },
@@ -228,16 +228,6 @@
     {
       "RODADA": 26,
       "POS": "ATA",
-      "NOME": "Hulk",
-      "CLUBE": "FLU",
-      "PRECO": 13.66,
-      "EXP_SCORE": 7.0055,
-      "FACTOR": 1.1511577726130888,
-      "ATLETA_ID": 39148
-    },
-    {
-      "RODADA": 26,
-      "POS": "ATA",
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 15.51,
@@ -248,12 +238,22 @@
     {
       "RODADA": 26,
       "POS": "ATA",
-      "NOME": "Flaco López",
-      "CLUBE": "PAL",
-      "PRECO": 14.16,
-      "EXP_SCORE": 6.3792,
-      "FACTOR": 1.0157347319756187,
-      "ATLETA_ID": 113103
+      "NOME": "Canobbio",
+      "CLUBE": "FLU",
+      "PRECO": 12.17,
+      "EXP_SCORE": 6.3428,
+      "FACTOR": 1.1511577726130888,
+      "ATLETA_ID": 102928
+    },
+    {
+      "RODADA": 26,
+      "POS": "ATA",
+      "NOME": "Hulk",
+      "CLUBE": "FLU",
+      "PRECO": 13.66,
+      "EXP_SCORE": 6.0917,
+      "FACTOR": 1.1511577726130888,
+      "ATLETA_ID": 39148
     },
     {
       "RODADA": 26,
