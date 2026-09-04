@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 26,
-  "atualizado_em": "2026-09-04T17:45:10.603Z",
+  "atualizado_em": "2026-09-04T17:58:08.474Z",
   "dados": [
     {
       "RODADA": 26,
@@ -128,22 +128,22 @@
     {
       "RODADA": 26,
       "POS": "ZAG",
-      "NOME": "Gustavo Gómez",
-      "CLUBE": "PAL",
-      "PRECO": 10.45,
-      "EXP_SCORE": 3.1649,
-      "FACTOR": 0.918003421658815,
-      "ATLETA_ID": 71684
-    },
-    {
-      "RODADA": 26,
-      "POS": "ZAG",
       "NOME": "Gustavo Marques",
       "CLUBE": "RBB",
       "PRECO": 7.18,
       "EXP_SCORE": 3.1221,
       "FACTOR": 1.0820133097534517,
       "ATLETA_ID": 110750
+    },
+    {
+      "RODADA": 26,
+      "POS": "ZAG",
+      "NOME": "Gustavo Gómez",
+      "CLUBE": "PAL",
+      "PRECO": 10.45,
+      "EXP_SCORE": 2.8485,
+      "FACTOR": 0.918003421658815,
+      "ATLETA_ID": 71684
     },
     {
       "RODADA": 26,
@@ -228,16 +228,6 @@
     {
       "RODADA": 26,
       "POS": "ATA",
-      "NOME": "Flaco López",
-      "CLUBE": "PAL",
-      "PRECO": 14.16,
-      "EXP_SCORE": 7.3345,
-      "FACTOR": 1.0155126965692582,
-      "ATLETA_ID": 113103
-    },
-    {
-      "RODADA": 26,
-      "POS": "ATA",
       "NOME": "Canobbio",
       "CLUBE": "FLU",
       "PRECO": 12.17,
@@ -254,6 +244,16 @@
       "EXP_SCORE": 7.0039,
       "FACTOR": 1.1508978185128222,
       "ATLETA_ID": 39148
+    },
+    {
+      "RODADA": 26,
+      "POS": "ATA",
+      "NOME": "Pedro",
+      "CLUBE": "FLA",
+      "PRECO": 15.51,
+      "EXP_SCORE": 6.5699,
+      "FACTOR": 0.9646154304905991,
+      "ATLETA_ID": 94583
     },
     {
       "RODADA": 26,
