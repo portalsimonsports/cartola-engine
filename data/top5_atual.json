@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 26,
-  "atualizado_em": "2026-09-04T13:08:14.246Z",
+  "atualizado_em": "2026-09-04T13:18:03.523Z",
   "dados": [
     {
       "RODADA": 26,
@@ -198,12 +198,12 @@
     {
       "RODADA": 26,
       "POS": "MEI",
-      "NOME": "Acevedo",
-      "CLUBE": "BAH",
-      "PRECO": 8.68,
-      "EXP_SCORE": 4.4274,
-      "FACTOR": 0.9075271783049658,
-      "ATLETA_ID": 104783
+      "NOME": "Maurício",
+      "CLUBE": "PAL",
+      "PRECO": 8.08,
+      "EXP_SCORE": 4.2394,
+      "FACTOR": 1.0157347319756187,
+      "ATLETA_ID": 105647
     },
     {
       "RODADA": 26,
@@ -288,22 +288,22 @@
     {
       "RODADA": 26,
       "POS": "TEC",
-      "NOME": "Rogério Ceni",
-      "CLUBE": "BAH",
-      "PRECO": 10.65,
-      "EXP_SCORE": 5.3718,
-      "FACTOR": 0.9266330136377019,
-      "ATLETA_ID": 97341
-    },
-    {
-      "RODADA": 26,
-      "POS": "TEC",
       "NOME": "Artur Jorge",
       "CLUBE": "CRU",
       "PRECO": 11.51,
       "EXP_SCORE": 5.2927,
       "FACTOR": 1.012907073187539,
       "ATLETA_ID": 127273
+    },
+    {
+      "RODADA": 26,
+      "POS": "TEC",
+      "NOME": "Fernando Seabra",
+      "CLUBE": "CFC",
+      "PRECO": 8.09,
+      "EXP_SCORE": 4.9613,
+      "FACTOR": 1.068980392279695,
+      "ATLETA_ID": 126977
     }
   ]
 }
