@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 26,
-  "atualizado_em": "2026-09-05T13:55:16.520Z",
+  "atualizado_em": "2026-09-05T14:18:00.744Z",
   "dados": [
     {
       "RODADA": 26,
@@ -118,6 +118,16 @@
     {
       "RODADA": 26,
       "POS": "ZAG",
+      "NOME": "Gustavo Marques",
+      "CLUBE": "RBB",
+      "PRECO": 7.18,
+      "EXP_SCORE": 3.5355,
+      "FACTOR": 1.10275160888002,
+      "ATLETA_ID": 110750
+    },
+    {
+      "RODADA": 26,
+      "POS": "ZAG",
       "NOME": "Jacy",
       "CLUBE": "CFC",
       "PRECO": 5.21,
@@ -134,16 +144,6 @@
       "EXP_SCORE": 3.3652,
       "FACTOR": 1.075974864554752,
       "ATLETA_ID": 103523
-    },
-    {
-      "RODADA": 26,
-      "POS": "ZAG",
-      "NOME": "Gustavo Marques",
-      "CLUBE": "RBB",
-      "PRECO": 7.18,
-      "EXP_SCORE": 3.182,
-      "FACTOR": 1.10275160888002,
-      "ATLETA_ID": 110750
     },
     {
       "RODADA": 26,
@@ -188,22 +188,22 @@
     {
       "RODADA": 26,
       "POS": "MEI",
-      "NOME": "Acevedo",
-      "CLUBE": "BAH",
-      "PRECO": 8.68,
-      "EXP_SCORE": 4.3202,
-      "FACTOR": 0.8855487841888425,
-      "ATLETA_ID": 104783
-    },
-    {
-      "RODADA": 26,
-      "POS": "MEI",
       "NOME": "Josué",
       "CLUBE": "CFC",
       "PRECO": 5.98,
       "EXP_SCORE": 4.1997,
       "FACTOR": 1.1003169614906523,
       "ATLETA_ID": 84626
+    },
+    {
+      "RODADA": 26,
+      "POS": "MEI",
+      "NOME": "Garro",
+      "CLUBE": "COR",
+      "PRECO": 9.82,
+      "EXP_SCORE": 4.0467,
+      "FACTOR": 1.112051806983483,
+      "ATLETA_ID": 117632
     },
     {
       "RODADA": 26,
@@ -298,12 +298,12 @@
     {
       "RODADA": 26,
       "POS": "TEC",
-      "NOME": "Rogério Ceni",
-      "CLUBE": "BAH",
-      "PRECO": 10.65,
-      "EXP_SCORE": 5.2418,
-      "FACTOR": 0.904191916487555,
-      "ATLETA_ID": 97341
+      "NOME": "Fernando Seabra",
+      "CLUBE": "CFC",
+      "PRECO": 8.09,
+      "EXP_SCORE": 4.9649,
+      "FACTOR": 1.0697526014492453,
+      "ATLETA_ID": 126977
     }
   ]
 }
