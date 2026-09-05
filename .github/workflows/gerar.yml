@@ -8,8 +8,23 @@ on:
       - cartola_publish_top5
   workflow_dispatch:
     inputs:
+      evento_programado:
+        description: "Evento a publicar"
+        required: true
+        default: "ATUALIZACAO_20H"
+        type: choice
+        options:
+          - ATUALIZACAO_20H
+          - SELECAO_INICIAL
+          - PRE_FECHAMENTO_TIMES
+          - PRE_FECHAMENTO_TOP5
+          - CONFIRMADOS
+      rodada:
+        description: "Rodada atual do Cartola"
+        required: true
+        type: string
       payload_json:
-        description: "Payload JSON manual; deixe vazio para reutilizar data/payload_dispatch.json"
+        description: "Payload JSON manual opcional; se informado, tem prioridade"
         required: false
         default: ""
 
@@ -63,6 +78,8 @@ jobs:
           EVENT_NAME: ${{ github.event_name }}
           DISPATCH_PAYLOAD: ${{ toJson(github.event.client_payload) }}
           MANUAL_PAYLOAD: ${{ github.event.inputs.payload_json }}
+          MANUAL_EVENTO: ${{ github.event.inputs.evento_programado }}
+          MANUAL_RODADA: ${{ github.event.inputs.rodada }}
         run: |
           set -e
           mkdir -p data output data/flags
@@ -72,11 +89,40 @@ jobs:
             echo "Payload recebido via repository_dispatch."
           elif [ -n "$MANUAL_PAYLOAD" ]; then
             printf '%s' "$MANUAL_PAYLOAD" > data/payload_dispatch.json
-            echo "Payload manual informado."
-          elif [ -s data/payload_dispatch.json ]; then
-            echo "Reutilizando data/payload_dispatch.json existente."
+            echo "Payload JSON manual informado."
+          elif [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          evento = str(os.environ.get("MANUAL_EVENTO") or "").strip().upper()
+          rodada_raw = str(os.environ.get("MANUAL_RODADA") or "").strip()
+
+          try:
+              rodada = int(rodada_raw)
+          except Exception:
+              raise SystemExit("ERRO: informe uma rodada numérica válida na execução manual.")
+
+          if rodada <= 0:
+              raise SystemExit("ERRO: a rodada manual deve ser maior que zero.")
+
+          payload = {
+              "evento_programado": evento,
+              "rodada": rodada,
+              "tipo_publicacao": "top5" if evento == "PRE_FECHAMENTO_TOP5" else "times",
+              "modelo": "" if evento == "PRE_FECHAMENTO_TOP5" else "ECONOMICO",
+              "origem": "workflow_dispatch_manual",
+          }
+
+          Path("data/payload_dispatch.json").write_text(
+              json.dumps(payload, ensure_ascii=False, indent=2),
+              encoding="utf-8",
+          )
+          print(f"Payload manual construído: evento={evento} rodada={rodada}")
+          PY
           else
-            echo "ERRO: não existe payload para processar."
+            echo "ERRO: origem de execução não reconhecida."
             exit 1
           fi
 
