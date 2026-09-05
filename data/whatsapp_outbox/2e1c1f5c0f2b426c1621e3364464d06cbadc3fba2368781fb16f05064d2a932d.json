@@ -1,0 +1,30 @@
+{
+  "schema": "portalsimonsports.whatsapp_channel_outbox.v1",
+  "gerado_em": "2026-09-05T08:55:41.454716+00:00",
+  "origem": "telegram_approved_cards_pipeline",
+  "politica": {
+    "telegram_intacto": true,
+    "falha_whatsapp_nao_bloqueia_telegram": true,
+    "antiduplicidade_por_hash_de_conteudo": true
+  },
+  "publicacao": {
+    "id": "2e1c1f5c0f2b426c1621e3364464d06cbadc3fba2368781fb16f05064d2a932d",
+    "status": "PENDENTE_BRIDGE",
+    "destino": "whatsapp_channel",
+    "canal": "Portal SimonSports",
+    "texto": "Lembrete de Mercado • Rodada 26\n\n📡 Portal SimonSports",
+    "midias": [
+      {
+        "path": "output/aprovada_lembrete_mercado_rodada_26.png",
+        "sha256": "ecf7a604bff0fbd30bcde66a16d2a02f885e5d31e17c60fe3911567cd57a05ae"
+      }
+    ],
+    "tipo_detectado": "approved_lembrete_v2",
+    "tipo_publicacao": "LEMBRETE_MERCADO",
+    "evento_programado": "LEMBRETE_MERCADO_6H",
+    "rodada": 26,
+    "versao_visual": "approved_cards_v1",
+    "pipeline_visual": "approved_cards_v6_desempenho_times_top5_2026_08_11",
+    "base_visual": "approved_cards_v1_2026_07_27"
+  }
+}
