@@ -32,8 +32,6 @@ permissions:
   contents: write
   actions: read
 
-# Todos os dispatches do mesmo pacote entram na mesma fila. O primeiro válido
-# publica o pacote completo e grava a flag; os seguintes são bloqueados pela flag.
 concurrency:
   group: cartola-times-top5-publicador-unico
   cancel-in-progress: false
@@ -196,11 +194,6 @@ jobs:
 
           hoje_sp = datetime.now(ZoneInfo("America/Sao_Paulo")).strftime("%Y-%m-%d")
 
-          # CORREÇÃO 27/08/2026:
-          # Para os eventos de pacote, NÃO dependemos mais de o dispatch TOP5 chegar.
-          # O primeiro dispatch válido (qualquer um dos 3 times ou Top5) vira o
-          # publicador único e carrega as quatro bases atuais. A concurrency + flag
-          # impedem que os demais dispatches repitam a publicação.
           if evento in {"SELECAO_INICIAL", "ATUALIZACAO_20H", "CONFIRMADOS"}:
               if evento == "ATUALIZACAO_20H":
                   marker = Path(f"data/flags/publicacao_ATUALIZACAO_20H_rodada_{rodada}_{hoje_sp}_PACOTE.json")
@@ -323,13 +316,42 @@ jobs:
             exit 0
           fi
 
-          marker_tmp="$(mktemp)"
+          tmp_dir="$(mktemp -d)"
+          marker_tmp="$tmp_dir/marker.json"
+          mkdir -p "$tmp_dir/publicacoes_atuais"
+
           printf '{\n  "status": "PUBLICADO_COM_SUCESSO",\n  "evento_programado": "%s",\n  "rodada": %s,\n  "publicador": "%s",\n  "componente_disparador": "%s",\n  "github_run_id": "%s",\n  "registrado_em": "%s"\n}\n' \
             "$EVENTO" "$RODADA" "$PUBLICADOR" "$COMPONENTE" "${{ github.run_id }}" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$marker_tmp"
 
+          # Preservar os snapshots gerados ANTES do reset do repositório.
+          # Esses arquivos alimentam os workflows de análise em vídeo.
+          case "$EVENTO" in
+            PRE_FECHAMENTO_TIMES)
+              for f in \
+                "data/publicacoes_atuais/time_economico_rodada_${RODADA}.json" \
+                "data/publicacoes_atuais/time_intermediario_rodada_${RODADA}.json" \
+                "data/publicacoes_atuais/time_pontuacao_rodada_${RODADA}.json"; do
+                [ -f "$f" ] && cp "$f" "$tmp_dir/publicacoes_atuais/"
+              done
+              ;;
+            PRE_FECHAMENTO_TOP5)
+              f="data/publicacoes_atuais/top5_rodada_${RODADA}.json"
+              [ -f "$f" ] && cp "$f" "$tmp_dir/publicacoes_atuais/"
+              ;;
+            *)
+              for f in \
+                "data/publicacoes_atuais/time_economico_rodada_${RODADA}.json" \
+                "data/publicacoes_atuais/time_intermediario_rodada_${RODADA}.json" \
+                "data/publicacoes_atuais/time_pontuacao_rodada_${RODADA}.json" \
+                "data/publicacoes_atuais/top5_rodada_${RODADA}.json"; do
+                [ -f "$f" ] && cp "$f" "$tmp_dir/publicacoes_atuais/"
+              done
+              ;;
+          esac
+
           enviado=0
           for tentativa in 1 2 3 4 5; do
-            echo "Tentativa de registrar marker $tentativa/5"
+            echo "Tentativa de registrar marker/snapshots $tentativa/5"
 
             git fetch origin main
             git reset --hard origin/main
@@ -340,9 +362,17 @@ jobs:
               break
             fi
 
-            mkdir -p "$(dirname "$MARKER")"
+            mkdir -p "$(dirname "$MARKER")" data/publicacoes_atuais
             cp "$marker_tmp" "$MARKER"
-            git add "$MARKER"
+            cp "$tmp_dir"/publicacoes_atuais/*.json data/publicacoes_atuais/ 2>/dev/null || true
+
+            git add "$MARKER" data/publicacoes_atuais/*.json 2>/dev/null || true
+
+            if git diff --cached --quiet; then
+              echo "Nada novo para registrar."
+              enviado=1
+              break
+            fi
 
             git commit -m "Telegram: registrar ${EVENTO} R${RODADA} pacote único"
 
@@ -354,11 +384,11 @@ jobs:
             sleep $((tentativa * 2))
           done
 
-          rm -f "$marker_tmp"
+          rm -rf "$tmp_dir"
 
           if [ "$enviado" -ne 1 ]; then
-            echo "ERRO: não foi possível registrar o marker após 5 tentativas."
+            echo "ERRO: não foi possível registrar o marker/snapshots após 5 tentativas."
             exit 1
           fi
 
-          echo "Pacote já enviado ao Telegram e marker registrado com sucesso."
+          echo "Pacote enviado ao Telegram e snapshots persistidos para análises em vídeo."
