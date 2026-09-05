@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 26,
-  "atualizado_em": "2026-09-05T04:55:13.937Z",
+  "atualizado_em": "2026-09-05T05:07:57.567Z",
   "dados": [
     {
       "RODADA": 26,
@@ -118,22 +118,22 @@
     {
       "RODADA": 26,
       "POS": "ZAG",
+      "NOME": "Gustavo Marques",
+      "CLUBE": "RBB",
+      "PRECO": 7.18,
+      "EXP_SCORE": 3.5337,
+      "FACTOR": 1.1021745017576785,
+      "ATLETA_ID": 110750
+    },
+    {
+      "RODADA": 26,
+      "POS": "ZAG",
       "NOME": "Ignácio",
       "CLUBE": "FLU",
       "PRECO": 8.11,
       "EXP_SCORE": 3.3964,
       "FACTOR": 1.0859596028066836,
       "ATLETA_ID": 103523
-    },
-    {
-      "RODADA": 26,
-      "POS": "ZAG",
-      "NOME": "Gustavo Marques",
-      "CLUBE": "RBB",
-      "PRECO": 7.18,
-      "EXP_SCORE": 3.1803,
-      "FACTOR": 1.1021745017576785,
-      "ATLETA_ID": 110750
     },
     {
       "RODADA": 26,
@@ -172,7 +172,7 @@
       "CLUBE": "CRU",
       "PRECO": 14.19,
       "EXP_SCORE": 5.6359,
-      "FACTOR": 1.0413396840012556,
+      "FACTOR": 1.0413396840012559,
       "ATLETA_ID": 96610
     },
     {
@@ -302,7 +302,7 @@
       "CLUBE": "CRU",
       "PRECO": 11.51,
       "EXP_SCORE": 5.2901,
-      "FACTOR": 1.0124135816678874,
+      "FACTOR": 1.0124135816678876,
       "ATLETA_ID": 127273
     }
   ]
