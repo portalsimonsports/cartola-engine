@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 26,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-09-05T05:45:02.790Z",
+  "atualizado_em": "2026-09-05T06:14:57.025Z",
   "dados": [
     {
       "RODADA": 26,
@@ -25,7 +25,7 @@
       "NOME": "Marcelinho",
       "CLUBE": "REM",
       "PRECO": 6.63,
-      "EXP_SCORE": 4.5637,
+      "EXP_SCORE": 4.1073,
       "ATLETA_ID": 97795
     },
     {
@@ -65,6 +65,17 @@
       "RODADA": 26,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
+      "POS": "ZAG",
+      "NOME": "Jacy",
+      "CLUBE": "CFC",
+      "PRECO": 5.21,
+      "EXP_SCORE": 3.39,
+      "ATLETA_ID": 97878
+    },
+    {
+      "RODADA": 26,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
       "POS": "MEI",
       "NOME": "Alan Patrick",
       "CLUBE": "INT",
@@ -88,11 +99,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Zé Ricardo",
-      "CLUBE": "REM",
-      "PRECO": 5.78,
-      "EXP_SCORE": 3.1439,
-      "ATLETA_ID": 102911
+      "NOME": "Tchê Tchê",
+      "CLUBE": "VAS",
+      "PRECO": 6.06,
+      "EXP_SCORE": 2.3522,
+      "ATLETA_ID": 86686
     },
     {
       "RODADA": 26,
@@ -120,23 +131,12 @@
       "RODADA": 26,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Fernando",
-      "CLUBE": "RBB",
-      "PRECO": 6.97,
-      "EXP_SCORE": 4.3221,
-      "ATLETA_ID": 100695
-    },
-    {
-      "RODADA": 26,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Fernando Seabra",
-      "CLUBE": "CFC",
-      "PRECO": 8.09,
-      "EXP_SCORE": 4.9596,
-      "ATLETA_ID": 126977
+      "NOME": "Odair Hellmann",
+      "CLUBE": "CAP",
+      "PRECO": 9.17,
+      "EXP_SCORE": 6.196,
+      "ATLETA_ID": 92273
     },
     {
       "RODADA": 26,
@@ -165,11 +165,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Gustavo Marques",
-      "CLUBE": "RBB",
-      "PRECO": 7.18,
-      "EXP_SCORE": 3.1803,
-      "ATLETA_ID": 110750
+      "NOME": "Thiago Santos",
+      "CLUBE": "CFC",
+      "PRECO": 4.88,
+      "EXP_SCORE": 2.3757,
+      "ATLETA_ID": 78855
     },
     {
       "RODADA": 26,
@@ -187,11 +187,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Leozinho",
-      "CLUBE": "CAP",
-      "PRECO": 6.67,
-      "EXP_SCORE": 4.1441,
-      "ATLETA_ID": 123101
+      "NOME": "Jajá",
+      "CLUBE": "REM",
+      "PRECO": 8.11,
+      "EXP_SCORE": 6.0824,
+      "ATLETA_ID": 105048
     }
   ]
 }
