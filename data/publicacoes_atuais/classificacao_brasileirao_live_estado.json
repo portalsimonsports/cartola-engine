@@ -198,6 +198,40 @@
       "placar_casa": 2,
       "placar_fora": 3,
       "status": "EM_ANDAMENTO"
+    },
+    "SAOxCAM": {
+      "casa_id": "276",
+      "casa_nome": "SÃO PAULO",
+      "casa_sigla": "SAO",
+      "chave": "MjAyNi0wOS0wNSAxODozMHwyNzZ8Mjgy",
+      "data": "05/09",
+      "data_iso": "2026-09-05T21:30:00.000Z",
+      "estadio": "Morumbis",
+      "fora_id": "282",
+      "fora_nome": "ATLÉTICO-MG",
+      "fora_sigla": "CAM",
+      "goleadores_casa": [
+        {
+          "clube_origem": "SÃO PAULO",
+          "gol_contra": false,
+          "nome": "Luciano",
+          "quantidade": 1,
+          "tipo": "gol"
+        },
+        {
+          "clube_origem": "SÃO PAULO",
+          "gol_contra": false,
+          "nome": "Iago",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
+      "goleadores_fora": [],
+      "hora": "18:30",
+      "link_resumo": "https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/05-09-2026/sao-paulo-atletico-mg.ghtml?utm_source=cartolafc",
+      "placar_casa": 2,
+      "placar_fora": 0,
+      "status": "EM_ANDAMENTO"
     }
   },
   "last_signature": [
@@ -262,7 +296,7 @@
       "pos": 8,
       "pts": 36,
       "v": 10,
-      "saldo": 4,
+      "saldo": 2,
       "gm": 32
     },
     {
@@ -274,20 +308,20 @@
       "gm": 31
     },
     {
-      "nome": "COR",
+      "nome": "SAO",
       "pos": 10,
+      "pts": 33,
+      "v": 9,
+      "saldo": 3,
+      "gm": 31
+    },
+    {
+      "nome": "COR",
+      "pos": 11,
       "pts": 32,
       "v": 8,
       "saldo": 1,
       "gm": 26
-    },
-    {
-      "nome": "SAO",
-      "pos": 11,
-      "pts": 30,
-      "v": 8,
-      "saldo": 1,
-      "gm": 29
     },
     {
       "nome": "BOT",
@@ -362,6 +396,6 @@
       "gm": 25
     }
   ],
-  "updated_at": "2026-09-05T17:23:54.569065-03:00",
+  "updated_at": "2026-09-05T20:33:55.470390-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
