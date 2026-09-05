@@ -3,18 +3,8 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 26,
-  "atualizado_em": "2026-09-05T01:15:17.293Z",
+  "atualizado_em": "2026-09-05T01:27:48.788Z",
   "dados": [
-    {
-      "RODADA": 26,
-      "POS": "GOL",
-      "NOME": "Rossi",
-      "CLUBE": "FLA",
-      "PRECO": 9.32,
-      "EXP_SCORE": 3.9858,
-      "FACTOR": 0.9590954996628699,
-      "ATLETA_ID": 99552
-    },
     {
       "RODADA": 26,
       "POS": "GOL",
@@ -44,6 +34,16 @@
       "EXP_SCORE": 3.5506,
       "FACTOR": 0.9701315995974444,
       "ATLETA_ID": 91101
+    },
+    {
+      "RODADA": 26,
+      "POS": "GOL",
+      "NOME": "Rossi",
+      "CLUBE": "FLA",
+      "PRECO": 9.32,
+      "EXP_SCORE": 3.4659,
+      "FACTOR": 0.9590954996628699,
+      "ATLETA_ID": 99552
     },
     {
       "RODADA": 26,
@@ -172,7 +172,7 @@
       "CLUBE": "CRU",
       "PRECO": 14.19,
       "EXP_SCORE": 6.4817,
-      "FACTOR": 1.0414040461774712,
+      "FACTOR": 1.0414040461774714,
       "ATLETA_ID": 96610
     },
     {
@@ -212,7 +212,7 @@
       "CLUBE": "CAP",
       "PRECO": 13.47,
       "EXP_SCORE": 9.2361,
-      "FACTOR": 1.0020825512257783,
+      "FACTOR": 1.0020825512257785,
       "ATLETA_ID": 143193
     },
     {
@@ -248,12 +248,12 @@
     {
       "RODADA": 26,
       "POS": "ATA",
-      "NOME": "Hulk",
-      "CLUBE": "FLU",
-      "PRECO": 13.66,
-      "EXP_SCORE": 7.004,
-      "FACTOR": 1.150922881614789,
-      "ATLETA_ID": 39148
+      "NOME": "Pedro",
+      "CLUBE": "FLA",
+      "PRECO": 15.51,
+      "EXP_SCORE": 6.5701,
+      "FACTOR": 0.9646471666297056,
+      "ATLETA_ID": 94583
     },
     {
       "RODADA": 26,
@@ -272,7 +272,7 @@
       "CLUBE": "CAP",
       "PRECO": 9.17,
       "EXP_SCORE": 6.1962,
-      "FACTOR": 1.0231790259884261,
+      "FACTOR": 1.0231790259884264,
       "ATLETA_ID": 92273
     },
     {
