@@ -174,6 +174,13 @@
         {
           "clube_origem": "Bahia",
           "gol_contra": false,
+          "nome": "Erick",
+          "quantidade": 1,
+          "tipo": "gol"
+        },
+        {
+          "clube_origem": "Bahia",
+          "gol_contra": false,
           "nome": "L. Juba",
           "quantidade": 1,
           "tipo": "gol"
@@ -189,7 +196,7 @@
       "hora": "16:00",
       "link_resumo": "https://ge.globo.com/sp/vale-do-paraiba-regiao/futebol/brasileirao-serie-a/jogo/05-09-2026/bragantino-bahia.ghtml?utm_source=cartolafc",
       "placar_casa": 2,
-      "placar_fora": 2,
+      "placar_fora": 3,
       "status": "EM_ANDAMENTO"
     }
   },
@@ -227,20 +234,20 @@
       "gm": 39
     },
     {
-      "nome": "CRU",
+      "nome": "BAH",
       "pos": 5,
+      "pts": 40,
+      "v": 10,
+      "saldo": 6,
+      "gm": 38
+    },
+    {
+      "nome": "CRU",
+      "pos": 6,
       "pts": 39,
       "v": 11,
       "saldo": -1,
       "gm": 35
-    },
-    {
-      "nome": "BAH",
-      "pos": 6,
-      "pts": 38,
-      "v": 9,
-      "saldo": 5,
-      "gm": 37
     },
     {
       "nome": "CFC",
@@ -261,9 +268,9 @@
     {
       "nome": "RBB",
       "pos": 9,
-      "pts": 36,
+      "pts": 35,
       "v": 10,
-      "saldo": 4,
+      "saldo": 3,
       "gm": 31
     },
     {
@@ -355,6 +362,6 @@
       "gm": 25
     }
   ],
-  "updated_at": "2026-09-05T16:53:43.515007-03:00",
+  "updated_at": "2026-09-05T17:23:54.569065-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
