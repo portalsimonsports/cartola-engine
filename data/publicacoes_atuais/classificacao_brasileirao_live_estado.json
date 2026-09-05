@@ -156,6 +156,13 @@
       "fora_sigla": "BAH",
       "goleadores_casa": [
         {
+          "clube_origem": "Bahia",
+          "gol_contra": true,
+          "nome": "S. Mingo",
+          "quantidade": 1,
+          "tipo": "gol_contra"
+        },
+        {
           "clube_origem": "RB Bragantino",
           "gol_contra": false,
           "nome": "L. Barbosa",
@@ -163,11 +170,26 @@
           "tipo": "gol"
         }
       ],
-      "goleadores_fora": [],
+      "goleadores_fora": [
+        {
+          "clube_origem": "Bahia",
+          "gol_contra": false,
+          "nome": "L. Juba",
+          "quantidade": 1,
+          "tipo": "gol"
+        },
+        {
+          "clube_origem": "Bahia",
+          "gol_contra": false,
+          "nome": "A. Véliz",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "hora": "16:00",
       "link_resumo": "https://ge.globo.com/sp/vale-do-paraiba-regiao/futebol/brasileirao-serie-a/jogo/05-09-2026/bragantino-bahia.ghtml?utm_source=cartolafc",
-      "placar_casa": 1,
-      "placar_fora": 0,
+      "placar_casa": 2,
+      "placar_fora": 2,
       "status": "EM_ANDAMENTO"
     }
   },
@@ -213,12 +235,12 @@
       "gm": 35
     },
     {
-      "nome": "RBB",
+      "nome": "BAH",
       "pos": 6,
       "pts": 38,
-      "v": 11,
+      "v": 9,
       "saldo": 5,
-      "gm": 30
+      "gm": 37
     },
     {
       "nome": "CFC",
@@ -229,20 +251,20 @@
       "gm": 33
     },
     {
-      "nome": "BAH",
-      "pos": 8,
-      "pts": 37,
-      "v": 9,
-      "saldo": 4,
-      "gm": 35
-    },
-    {
       "nome": "CAM",
-      "pos": 9,
+      "pos": 8,
       "pts": 36,
       "v": 10,
       "saldo": 4,
       "gm": 32
+    },
+    {
+      "nome": "RBB",
+      "pos": 9,
+      "pts": 36,
+      "v": 10,
+      "saldo": 4,
+      "gm": 31
     },
     {
       "nome": "COR",
@@ -333,6 +355,6 @@
       "gm": 25
     }
   ],
-  "updated_at": "2026-09-05T16:34:51.580438-03:00",
+  "updated_at": "2026-09-05T16:53:43.515007-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
