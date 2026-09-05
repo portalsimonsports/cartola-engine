@@ -1,6 +1,6 @@
 {
   "schema": "portalsimonsports.whatsapp_channel_outbox.v1",
-  "gerado_em": "2026-09-05T19:11:51.260703+00:00",
+  "gerado_em": "2026-09-05T19:16:03.157140+00:00",
   "origem": "telegram_approved_cards_pipeline",
   "politica": {
     "telegram_intacto": true,
@@ -9,20 +9,20 @@
   },
   "publicacoes": [
     {
-      "id": "2d20d43bdf4678de5b028fad03ef6be9f55eeada744335ec8c3acca743b6321d",
+      "id": "558af22fec938caeb295e41d3099f7e8ec349c6ca0cb308a18a2a6917e6aa8f5",
       "status": "PENDENTE_BRIDGE",
       "destino": "whatsapp_channel",
       "canal": "Portal SimonSports",
-      "texto": "Mercado Fechado • Rodada 26\n\n📡 Portal SimonSports",
+      "texto": "ABERTURA DO LIVE • RODADA 26\n\n📡 Portal SimonSports",
       "midias": [
         {
-          "path": "output/aprovada_mercado_fechado_rodada_26.png",
-          "sha256": "2a69fbb459d56506f539f4800924034d7c4bfea1a2be28486c0ac96af1a827fa"
+          "path": "output/live_abertura_rodada_26_p1.png",
+          "sha256": "2bdb1312e5caac6cbb1ba95e715af999ceb1b2993ebabdc471cda7f5a872868a"
         }
       ],
-      "tipo_detectado": "approved_mercado_fechado",
-      "tipo_publicacao": "MERCADO_FECHADO",
-      "evento_programado": "MERCADO_FECHADO",
+      "tipo_detectado": "live_opening_v3",
+      "tipo_publicacao": "live_abertura",
+      "evento_programado": "LIVE_ABERTURA",
       "rodada": 26,
       "versao_visual": "approved_cards_v1",
       "pipeline_visual": "approved_cards_v6_desempenho_times_top5_2026_08_11",
