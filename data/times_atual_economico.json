@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 26,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-09-05T17:24:49.541Z",
+  "atualizado_em": "2026-09-05T17:55:20.435Z",
   "dados": [
     {
       "RODADA": 26,
@@ -25,7 +25,7 @@
       "NOME": "Marcelinho",
       "CLUBE": "REM",
       "PRECO": 6.63,
-      "EXP_SCORE": 4.5678,
+      "EXP_SCORE": 4.1111,
       "ATLETA_ID": 97795
     },
     {
@@ -69,8 +69,19 @@
       "NOME": "Alan Patrick",
       "CLUBE": "INT",
       "PRECO": 8.64,
-      "EXP_SCORE": 3.8249,
+      "EXP_SCORE": 3.8279,
       "ATLETA_ID": 68685
+    },
+    {
+      "RODADA": 26,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Josué",
+      "CLUBE": "CFC",
+      "PRECO": 5.98,
+      "EXP_SCORE": 4.2016,
+      "ATLETA_ID": 84626
     },
     {
       "RODADA": 26,
@@ -80,19 +91,8 @@
       "NOME": "Acevedo",
       "CLUBE": "BAH",
       "PRECO": 8.68,
-      "EXP_SCORE": 4.3196,
+      "EXP_SCORE": 4.3236,
       "ATLETA_ID": 104783
-    },
-    {
-      "RODADA": 26,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Zé Ricardo",
-      "CLUBE": "REM",
-      "PRECO": 5.78,
-      "EXP_SCORE": 3.1476,
-      "ATLETA_ID": 102911
     },
     {
       "RODADA": 26,
@@ -102,7 +102,7 @@
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 13.77,
-      "EXP_SCORE": 8.1091,
+      "EXP_SCORE": 8.1135,
       "ATLETA_ID": 98873
     },
     {
@@ -113,7 +113,7 @@
       "NOME": "Pavón",
       "CLUBE": "GRE",
       "PRECO": 8.3,
-      "EXP_SCORE": 4.2957,
+      "EXP_SCORE": 4.2981,
       "ATLETA_ID": 91908
     },
     {
@@ -121,11 +121,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Fernando",
-      "CLUBE": "RBB",
-      "PRECO": 6.97,
-      "EXP_SCORE": 4.328,
-      "ATLETA_ID": 100695
+      "NOME": "Leozinho",
+      "CLUBE": "CAP",
+      "PRECO": 6.67,
+      "EXP_SCORE": 4.7711,
+      "ATLETA_ID": 123101
     },
     {
       "RODADA": 26,
@@ -135,7 +135,7 @@
       "NOME": "Fernando Seabra",
       "CLUBE": "CFC",
       "PRECO": 8.09,
-      "EXP_SCORE": 4.9646,
+      "EXP_SCORE": 4.9672,
       "ATLETA_ID": 126977
     },
     {
@@ -179,7 +179,7 @@
       "NOME": "João Cruz",
       "CLUBE": "CAP",
       "PRECO": 5.71,
-      "EXP_SCORE": 3.4734,
+      "EXP_SCORE": 3.4748,
       "ATLETA_ID": 128431
     },
     {
@@ -187,11 +187,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Leozinho",
-      "CLUBE": "CAP",
-      "PRECO": 6.67,
-      "EXP_SCORE": 4.1471,
-      "ATLETA_ID": 123101
+      "NOME": "Lavega",
+      "CLUBE": "CFC",
+      "PRECO": 4.92,
+      "EXP_SCORE": 3.237,
+      "ATLETA_ID": 117930
     }
   ]
 }
