@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 26,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-09-05T06:14:57.025Z",
+  "atualizado_em": "2026-09-05T06:39:44.656Z",
   "dados": [
     {
       "RODADA": 26,
@@ -58,19 +58,8 @@
       "NOME": "Gustavo Martins",
       "CLUBE": "GRE",
       "PRECO": 8.21,
-      "EXP_SCORE": 2.6687,
+      "EXP_SCORE": 2.3206,
       "ATLETA_ID": 111309
-    },
-    {
-      "RODADA": 26,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Jacy",
-      "CLUBE": "CFC",
-      "PRECO": 5.21,
-      "EXP_SCORE": 3.39,
-      "ATLETA_ID": 97878
     },
     {
       "RODADA": 26,
@@ -104,6 +93,17 @@
       "PRECO": 6.06,
       "EXP_SCORE": 2.3522,
       "ATLETA_ID": 86686
+    },
+    {
+      "RODADA": 26,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Josué",
+      "CLUBE": "CFC",
+      "PRECO": 5.98,
+      "EXP_SCORE": 3.648,
+      "ATLETA_ID": 84626
     },
     {
       "RODADA": 26,
@@ -165,11 +165,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Thiago Santos",
+      "NOME": "Jacy",
       "CLUBE": "CFC",
-      "PRECO": 4.88,
-      "EXP_SCORE": 2.3757,
-      "ATLETA_ID": 78855
+      "PRECO": 5.21,
+      "EXP_SCORE": 3.39,
+      "ATLETA_ID": 97878
     },
     {
       "RODADA": 26,
