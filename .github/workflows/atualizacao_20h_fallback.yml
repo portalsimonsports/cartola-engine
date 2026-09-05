@@ -231,14 +231,45 @@ jobs:
               raise SystemExit(f'ERRO: pacote incorreto: {tipos}')
           print(f'PACOTE 20H VALIDADO: {tipos}')
           PY
+
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          mkdir -p "$(dirname "$MARKER")"
-          printf '{\n  "status": "PUBLICADO_COM_SUCESSO",\n  "evento_programado": "ATUALIZACAO_20H",\n  "rodada": %s,\n  "publicador": "FALLBACK_PACOTE_3_TIMES_TOP5",\n  "github_run_id": "%s",\n  "registrado_em": "%s"\n}\n' "$RODADA" "${{ github.run_id }}" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$MARKER"
-          git add data/flags/ output/*.png 2>/dev/null || true
-          if git diff --cached --quiet; then
-            exit 0
+
+          marker_tmp="$(mktemp)"
+          printf '{\n  "status": "PUBLICADO_COM_SUCESSO",\n  "evento_programado": "ATUALIZACAO_20H",\n  "rodada": %s,\n  "publicador": "FALLBACK_PACOTE_3_TIMES_TOP5",\n  "github_run_id": "%s",\n  "registrado_em": "%s"\n}\n' \
+            "$RODADA" "${{ github.run_id }}" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$marker_tmp"
+
+          enviado=0
+          for tentativa in 1 2 3 4 5; do
+            echo "Tentativa de registrar marker $tentativa/5"
+
+            git fetch origin main
+            git reset --hard origin/main
+
+            if [ -f "$MARKER" ]; then
+              echo "Marker já existe no branch main: $MARKER"
+              enviado=1
+              break
+            fi
+
+            mkdir -p "$(dirname "$MARKER")"
+            cp "$marker_tmp" "$MARKER"
+            git add "$MARKER"
+            git commit -m "Telegram: garantir ATUALIZACAO_20H R${RODADA}"
+
+            if git push origin HEAD:main; then
+              enviado=1
+              break
+            fi
+
+            sleep $((tentativa * 2))
+          done
+
+          rm -f "$marker_tmp"
+
+          if [ "$enviado" -ne 1 ]; then
+            echo "ERRO: não foi possível registrar o marker do fallback após 5 tentativas."
+            exit 1
           fi
-          git commit -m "Telegram: garantir ATUALIZACAO_20H R${RODADA}"
-          git pull --rebase origin main
-          git push origin HEAD:main
+
+          echo "Fallback 20h publicado e marker registrado com sucesso."
