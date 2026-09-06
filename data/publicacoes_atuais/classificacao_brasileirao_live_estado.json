@@ -232,6 +232,33 @@
       "placar_casa": 2,
       "placar_fora": 0,
       "status": "EM_ANDAMENTO"
+    },
+    "FLUxVAS": {
+      "casa_id": "266",
+      "casa_nome": "Fluminense",
+      "casa_sigla": "FLU",
+      "chave": "MjAyNi0wOS0wNSAyMTowMHwyNjZ8MjY3",
+      "data": "05/09",
+      "data_iso": "2026-09-06T00:00:00.000Z",
+      "estadio": "Maracanã",
+      "fora_id": "267",
+      "fora_nome": "Vasco",
+      "fora_sigla": "VAS",
+      "goleadores_casa": [
+        {
+          "clube_origem": "Fluminense",
+          "gol_contra": false,
+          "nome": "L. Acosta",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
+      "goleadores_fora": [],
+      "hora": "21:00",
+      "link_resumo": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/05-09-2026/fluminense-vasco.ghtml?utm_source=cartolafc",
+      "placar_casa": 1,
+      "placar_fora": 0,
+      "status": "EM_ANDAMENTO"
     }
   },
   "last_signature": [
@@ -262,10 +289,10 @@
     {
       "nome": "FLU",
       "pos": 4,
-      "pts": 42,
-      "v": 11,
-      "saldo": 7,
-      "gm": 39
+      "pts": 45,
+      "v": 12,
+      "saldo": 8,
+      "gm": 40
     },
     {
       "nome": "BAH",
@@ -368,7 +395,7 @@
       "pos": 17,
       "pts": 25,
       "v": 6,
-      "saldo": -12,
+      "saldo": -13,
       "gm": 27
     },
     {
@@ -396,6 +423,6 @@
       "gm": 25
     }
   ],
-  "updated_at": "2026-09-05T20:33:55.470390-03:00",
+  "updated_at": "2026-09-05T22:34:42.665270-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
