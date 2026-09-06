@@ -1,6 +1,6 @@
 {
   "schema": "portalsimonsports.whatsapp_channel_outbox.v1",
-  "gerado_em": "2026-09-06T02:05:16.138244+00:00",
+  "gerado_em": "2026-09-06T14:06:12.918945+00:00",
   "origem": "telegram_approved_cards_pipeline",
   "politica": {
     "telegram_intacto": true,
@@ -9,20 +9,24 @@
   },
   "publicacoes": [
     {
-      "id": "a83b0f779f75dd218264f9e3656796e37bcfc26d4b3d7920063587fa4a59aeb7",
+      "id": "201cc782c2913f037a201fff9d866a63b618f9cf137b4e369861e228bba51180",
       "status": "PENDENTE_BRIDGE",
       "destino": "whatsapp_channel",
       "canal": "Portal SimonSports",
-      "texto": "RESULTADOS DA NOITE • RODADA 26\n\n📡 Portal SimonSports",
+      "texto": "ABERTURA DO LIVE • RODADA 26\n\n📡 Portal SimonSports",
       "midias": [
         {
-          "path": "output/live_resultados_noite_rodada_26_p1.png",
-          "sha256": "867c9a0f9b8233983da7a8c4d82c186e8e87928b790200307f3ed6d45bf2dfd7"
+          "path": "output/live_abertura_rodada_26_p1.png",
+          "sha256": "cf9664b018eb24ce371ec89ef28881648740f96ee01c8a3bce7860c8c0c288d6"
+        },
+        {
+          "path": "output/live_abertura_rodada_26_p2.png",
+          "sha256": "9e41b1cbb66ee3481348b2fe7f561efaabe4a9b5962978530684ccb1607d8993"
         }
       ],
-      "tipo_detectado": "night_results_v3",
-      "tipo_publicacao": "live_resultados_noite",
-      "evento_programado": "LIVE_RESULTADOS_NOITE",
+      "tipo_detectado": "live_opening_v3",
+      "tipo_publicacao": "live_abertura",
+      "evento_programado": "LIVE_ABERTURA",
       "rodada": 26,
       "versao_visual": "approved_cards_v1",
       "pipeline_visual": "approved_cards_v6_desempenho_times_top5_2026_08_11",
