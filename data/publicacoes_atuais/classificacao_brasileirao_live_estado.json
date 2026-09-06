@@ -271,11 +271,27 @@
       "fora_id": "2305",
       "fora_nome": "Mirassol",
       "fora_sigla": "MIR",
-      "goleadores_casa": [],
-      "goleadores_fora": [],
+      "goleadores_casa": [
+        {
+          "clube_origem": "Coritiba",
+          "gol_contra": false,
+          "nome": "P. Rocha",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
+      "goleadores_fora": [
+        {
+          "clube_origem": "Mirassol",
+          "gol_contra": false,
+          "nome": "G. Mosquito",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "hora": "11:00",
       "link_resumo": "https://ge.globo.com/pr/futebol/brasileirao-serie-a/jogo/06-09-2026/coritiba-mirassol.ghtml?utm_source=cartolafc",
-      "placar_casa": 0,
+      "placar_casa": 1,
       "placar_fora": 0,
       "status": "EM_ANDAMENTO"
     },
@@ -409,8 +425,16 @@
       "gm": 40
     },
     {
-      "nome": "BAH",
+      "nome": "CFC",
       "pos": 5,
+      "pts": 40,
+      "v": 11,
+      "saldo": 1,
+      "gm": 34
+    },
+    {
+      "nome": "BAH",
+      "pos": 6,
       "pts": 40,
       "v": 10,
       "saldo": 6,
@@ -418,19 +442,11 @@
     },
     {
       "nome": "CRU",
-      "pos": 6,
+      "pos": 7,
       "pts": 39,
       "v": 11,
       "saldo": -1,
       "gm": 35
-    },
-    {
-      "nome": "CFC",
-      "pos": 7,
-      "pts": 38,
-      "v": 10,
-      "saldo": 0,
-      "gm": 33
     },
     {
       "nome": "CAM",
@@ -499,9 +515,9 @@
     {
       "nome": "MIR",
       "pos": 16,
-      "pts": 26,
+      "pts": 25,
       "v": 6,
-      "saldo": -10,
+      "saldo": -11,
       "gm": 27
     },
     {
@@ -537,6 +553,6 @@
       "gm": 25
     }
   ],
-  "updated_at": "2026-09-06T11:06:17.257607-03:00",
+  "updated_at": "2026-09-06T12:34:41.895210-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
