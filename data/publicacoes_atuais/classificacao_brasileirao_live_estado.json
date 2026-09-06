@@ -333,12 +333,20 @@
       "fora_nome": "Santos",
       "fora_sigla": "SAN",
       "goleadores_casa": [],
-      "goleadores_fora": [],
+      "goleadores_fora": [
+        {
+          "clube_origem": "Santos",
+          "gol_contra": false,
+          "nome": "Gabriel",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "hora": "16:00",
       "link_resumo": "https://ge.globo.com/rs/futebol/brasileirao-serie-a/jogo/06-09-2026/internacional-santos.ghtml?utm_source=cartolafc",
       "placar_casa": 0,
-      "placar_fora": 0,
-      "status": "CRIADA"
+      "placar_fora": 1,
+      "status": "EM_ANDAMENTO"
     },
     "REMxFLA": {
       "casa_id": "364",
@@ -488,20 +496,20 @@
       "gm": 26
     },
     {
-      "nome": "BOT",
+      "nome": "SAN",
       "pos": 12,
+      "pts": 32,
+      "v": 8,
+      "saldo": -1,
+      "gm": 35
+    },
+    {
+      "nome": "BOT",
+      "pos": 13,
       "pts": 29,
       "v": 8,
       "saldo": -3,
       "gm": 37
-    },
-    {
-      "nome": "SAN",
-      "pos": 13,
-      "pts": 29,
-      "v": 7,
-      "saldo": -2,
-      "gm": 34
     },
     {
       "nome": "VIT",
@@ -540,7 +548,7 @@
       "pos": 18,
       "pts": 25,
       "v": 5,
-      "saldo": -5,
+      "saldo": -6,
       "gm": 26
     },
     {
@@ -560,6 +568,6 @@
       "gm": 25
     }
   ],
-  "updated_at": "2026-09-06T13:04:17.894978-03:00",
+  "updated_at": "2026-09-06T16:23:58.815709-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
