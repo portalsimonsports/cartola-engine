@@ -292,7 +292,7 @@
       "hora": "11:00",
       "link_resumo": "https://ge.globo.com/pr/futebol/brasileirao-serie-a/jogo/06-09-2026/coritiba-mirassol.ghtml?utm_source=cartolafc",
       "placar_casa": 1,
-      "placar_fora": 0,
+      "placar_fora": 1,
       "status": "EM_ANDAMENTO"
     },
     "CRUxCAP": {
@@ -425,16 +425,8 @@
       "gm": 40
     },
     {
-      "nome": "CFC",
-      "pos": 5,
-      "pts": 40,
-      "v": 11,
-      "saldo": 1,
-      "gm": 34
-    },
-    {
       "nome": "BAH",
-      "pos": 6,
+      "pos": 5,
       "pts": 40,
       "v": 10,
       "saldo": 6,
@@ -442,11 +434,19 @@
     },
     {
       "nome": "CRU",
-      "pos": 7,
+      "pos": 6,
       "pts": 39,
       "v": 11,
       "saldo": -1,
       "gm": 35
+    },
+    {
+      "nome": "CFC",
+      "pos": 7,
+      "pts": 38,
+      "v": 10,
+      "saldo": 0,
+      "gm": 34
     },
     {
       "nome": "CAM",
@@ -515,10 +515,10 @@
     {
       "nome": "MIR",
       "pos": 16,
-      "pts": 25,
+      "pts": 26,
       "v": 6,
-      "saldo": -11,
-      "gm": 27
+      "saldo": -10,
+      "gm": 28
     },
     {
       "nome": "VAS",
@@ -553,6 +553,6 @@
       "gm": 25
     }
   ],
-  "updated_at": "2026-09-06T12:34:41.895210-03:00",
+  "updated_at": "2026-09-06T12:43:49.953871-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
