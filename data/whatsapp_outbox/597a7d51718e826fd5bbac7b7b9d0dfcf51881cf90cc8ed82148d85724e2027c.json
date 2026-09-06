@@ -1,0 +1,30 @@
+{
+  "schema": "portalsimonsports.whatsapp_channel_outbox.v1",
+  "gerado_em": "2026-09-06T21:18:31.845613+00:00",
+  "origem": "telegram_approved_cards_pipeline",
+  "politica": {
+    "telegram_intacto": true,
+    "falha_whatsapp_nao_bloqueia_telegram": true,
+    "antiduplicidade_por_hash_de_conteudo": true
+  },
+  "publicacao": {
+    "id": "597a7d51718e826fd5bbac7b7b9d0dfcf51881cf90cc8ed82148d85724e2027c",
+    "status": "PENDENTE_BRIDGE",
+    "destino": "whatsapp_channel",
+    "canal": "Portal SimonSports",
+    "texto": "MITOS E ZICAS • RODADA 26\n\n📡 Portal SimonSports",
+    "midias": [
+      {
+        "path": "output/live_mitos_zicas_rodada_26.png",
+        "sha256": "909fc9eca68938f26cc64b53b185c8e4b8b3a097b263ddbb883aed38d5483632"
+      }
+    ],
+    "tipo_detectado": "ranking_v2",
+    "tipo_publicacao": "live_mitos_zicas",
+    "evento_programado": "LIVE_MITOS_ZICAS",
+    "rodada": 26,
+    "versao_visual": "approved_cards_v1",
+    "pipeline_visual": "approved_cards_v6_desempenho_times_top5_2026_08_11",
+    "base_visual": "approved_cards_v1_2026_07_27"
+  }
+}
