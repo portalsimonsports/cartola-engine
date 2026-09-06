@@ -287,12 +287,19 @@
           "nome": "G. Mosquito",
           "quantidade": 1,
           "tipo": "gol"
+        },
+        {
+          "clube_origem": "Mirassol",
+          "gol_contra": false,
+          "nome": "B. Santos",
+          "quantidade": 1,
+          "tipo": "gol"
         }
       ],
       "hora": "11:00",
       "link_resumo": "https://ge.globo.com/pr/futebol/brasileirao-serie-a/jogo/06-09-2026/coritiba-mirassol.ghtml?utm_source=cartolafc",
       "placar_casa": 1,
-      "placar_fora": 1,
+      "placar_fora": 2,
       "status": "EM_ANDAMENTO"
     },
     "CRUxCAP": {
@@ -443,9 +450,9 @@
     {
       "nome": "CFC",
       "pos": 7,
-      "pts": 38,
+      "pts": 37,
       "v": 10,
-      "saldo": 0,
+      "saldo": -1,
       "gm": 34
     },
     {
@@ -515,10 +522,10 @@
     {
       "nome": "MIR",
       "pos": 16,
-      "pts": 26,
-      "v": 6,
-      "saldo": -10,
-      "gm": 28
+      "pts": 28,
+      "v": 7,
+      "saldo": -9,
+      "gm": 29
     },
     {
       "nome": "VAS",
@@ -553,6 +560,6 @@
       "gm": 25
     }
   ],
-  "updated_at": "2026-09-06T12:43:49.953871-03:00",
+  "updated_at": "2026-09-06T13:04:17.894978-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
