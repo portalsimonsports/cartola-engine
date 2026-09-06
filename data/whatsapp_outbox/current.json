@@ -1,6 +1,6 @@
 {
   "schema": "portalsimonsports.whatsapp_channel_outbox.v1",
-  "gerado_em": "2026-09-06T19:13:50.597353+00:00",
+  "gerado_em": "2026-09-06T19:23:27.834162+00:00",
   "origem": "telegram_approved_cards_pipeline",
   "politica": {
     "telegram_intacto": true,
@@ -9,20 +9,20 @@
   },
   "publicacoes": [
     {
-      "id": "3eee1cbc768229c9170a356f68a788f499aa33b93e9e20e41e99c6e2f0f34feb",
+      "id": "22bf9aba34443789ff2eb35379f8c82a95e48a0def1fc1d6250924c2d34cc1b1",
       "status": "PENDENTE_BRIDGE",
       "destino": "whatsapp_channel",
       "canal": "Portal SimonSports",
-      "texto": "MITOS E ZICAS • RODADA 26\n\n📡 Portal SimonSports",
+      "texto": "Pontuação do TIME ECONÔMICO • Rodada 26\n\nTime Econômico • Rodada 26\n\n📡 Portal SimonSports",
       "midias": [
         {
-          "path": "output/live_mitos_zicas_rodada_26.png",
-          "sha256": "cbe4b735de8359e827573b2cabd9b4870b8f6e77f5e10e09b3a24e2e75c765d9"
+          "path": "output/live_pontuacao_economico_rodada_26.png",
+          "sha256": "42397ad3989e533c43923469221c2221b361ece47e6d63938485aaadabbcd506"
         }
       ],
-      "tipo_detectado": "ranking_v2",
-      "tipo_publicacao": "live_mitos_zicas",
-      "evento_programado": "LIVE_MITOS_ZICAS",
+      "tipo_detectado": "live_pontuacao_time",
+      "tipo_publicacao": "live_resumo_times",
+      "evento_programado": "LIVE_RESUMO_TIMES",
       "rodada": 26,
       "versao_visual": "approved_cards_v1",
       "pipeline_visual": "approved_cards_v6_desempenho_times_top5_2026_08_11",
