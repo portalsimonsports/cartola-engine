@@ -322,11 +322,19 @@
           "tipo": "gol"
         }
       ],
-      "goleadores_fora": [],
+      "goleadores_fora": [
+        {
+          "clube_origem": "Athletico-PR",
+          "gol_contra": false,
+          "nome": "J. Cruz",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "hora": "16:00",
       "link_resumo": "https://ge.globo.com/mg/futebol/brasileirao-serie-a/jogo/06-09-2026/cruzeiro-atletico-pr.ghtml?utm_source=cartolafc",
       "placar_casa": 1,
-      "placar_fora": 0,
+      "placar_fora": 1,
       "status": "EM_ANDAMENTO"
     },
     "INTxSAN": {
@@ -360,7 +368,7 @@
       "hora": "16:00",
       "link_resumo": "https://ge.globo.com/rs/futebol/brasileirao-serie-a/jogo/06-09-2026/internacional-santos.ghtml?utm_source=cartolafc",
       "placar_casa": 0,
-      "placar_fora": 2,
+      "placar_fora": 3,
       "status": "EM_ANDAMENTO"
     },
     "REMxFLA": {
@@ -441,10 +449,10 @@
     {
       "nome": "CAP",
       "pos": 3,
-      "pts": 45,
+      "pts": 46,
       "v": 13,
-      "saldo": 11,
-      "gm": 37
+      "saldo": 12,
+      "gm": 38
     },
     {
       "nome": "FLU",
@@ -457,9 +465,9 @@
     {
       "nome": "CRU",
       "pos": 5,
-      "pts": 42,
-      "v": 12,
-      "saldo": 0,
+      "pts": 40,
+      "v": 11,
+      "saldo": -1,
       "gm": 36
     },
     {
@@ -503,20 +511,20 @@
       "gm": 31
     },
     {
-      "nome": "COR",
+      "nome": "SAN",
       "pos": 11,
       "pts": 32,
       "v": 8,
       "saldo": 1,
-      "gm": 26
+      "gm": 37
     },
     {
-      "nome": "SAN",
+      "nome": "COR",
       "pos": 12,
       "pts": 32,
       "v": 8,
-      "saldo": 0,
-      "gm": 36
+      "saldo": 1,
+      "gm": 26
     },
     {
       "nome": "BOT",
@@ -563,7 +571,7 @@
       "pos": 18,
       "pts": 25,
       "v": 5,
-      "saldo": -7,
+      "saldo": -8,
       "gm": 26
     },
     {
@@ -583,6 +591,6 @@
       "gm": 25
     }
   ],
-  "updated_at": "2026-09-06T16:45:35.019523-03:00",
+  "updated_at": "2026-09-06T16:55:48.479683-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
