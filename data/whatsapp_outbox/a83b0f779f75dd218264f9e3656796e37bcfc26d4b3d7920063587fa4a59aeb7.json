@@ -1,0 +1,30 @@
+{
+  "schema": "portalsimonsports.whatsapp_channel_outbox.v1",
+  "gerado_em": "2026-09-06T02:05:16.138244+00:00",
+  "origem": "telegram_approved_cards_pipeline",
+  "politica": {
+    "telegram_intacto": true,
+    "falha_whatsapp_nao_bloqueia_telegram": true,
+    "antiduplicidade_por_hash_de_conteudo": true
+  },
+  "publicacao": {
+    "id": "a83b0f779f75dd218264f9e3656796e37bcfc26d4b3d7920063587fa4a59aeb7",
+    "status": "PENDENTE_BRIDGE",
+    "destino": "whatsapp_channel",
+    "canal": "Portal SimonSports",
+    "texto": "RESULTADOS DA NOITE • RODADA 26\n\n📡 Portal SimonSports",
+    "midias": [
+      {
+        "path": "output/live_resultados_noite_rodada_26_p1.png",
+        "sha256": "867c9a0f9b8233983da7a8c4d82c186e8e87928b790200307f3ed6d45bf2dfd7"
+      }
+    ],
+    "tipo_detectado": "night_results_v3",
+    "tipo_publicacao": "live_resultados_noite",
+    "evento_programado": "LIVE_RESULTADOS_NOITE",
+    "rodada": 26,
+    "versao_visual": "approved_cards_v1",
+    "pipeline_visual": "approved_cards_v6_desempenho_times_top5_2026_08_11",
+    "base_visual": "approved_cards_v1_2026_07_27"
+  }
+}
