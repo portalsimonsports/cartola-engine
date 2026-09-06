@@ -313,13 +313,21 @@
       "fora_id": "293",
       "fora_nome": "Athletico-PR",
       "fora_sigla": "CAP",
-      "goleadores_casa": [],
+      "goleadores_casa": [
+        {
+          "clube_origem": "Cruzeiro",
+          "gol_contra": false,
+          "nome": "M. Pereira",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "goleadores_fora": [],
       "hora": "16:00",
       "link_resumo": "https://ge.globo.com/mg/futebol/brasileirao-serie-a/jogo/06-09-2026/cruzeiro-atletico-pr.ghtml?utm_source=cartolafc",
-      "placar_casa": 0,
+      "placar_casa": 1,
       "placar_fora": 0,
-      "status": "CRIADA"
+      "status": "EM_ANDAMENTO"
     },
     "INTxSAN": {
       "casa_id": "285",
@@ -338,6 +346,13 @@
           "clube_origem": "Santos",
           "gol_contra": false,
           "nome": "Gabriel",
+          "quantidade": 2,
+          "tipo": "gol"
+        },
+        {
+          "clube_origem": "Santos",
+          "gol_contra": false,
+          "nome": "Oliva",
           "quantidade": 1,
           "tipo": "gol"
         }
@@ -345,7 +360,7 @@
       "hora": "16:00",
       "link_resumo": "https://ge.globo.com/rs/futebol/brasileirao-serie-a/jogo/06-09-2026/internacional-santos.ghtml?utm_source=cartolafc",
       "placar_casa": 0,
-      "placar_fora": 1,
+      "placar_fora": 2,
       "status": "EM_ANDAMENTO"
     },
     "REMxFLA": {
@@ -428,7 +443,7 @@
       "pos": 3,
       "pts": 45,
       "v": 13,
-      "saldo": 12,
+      "saldo": 11,
       "gm": 37
     },
     {
@@ -440,20 +455,20 @@
       "gm": 40
     },
     {
-      "nome": "BAH",
+      "nome": "CRU",
       "pos": 5,
+      "pts": 42,
+      "v": 12,
+      "saldo": 0,
+      "gm": 36
+    },
+    {
+      "nome": "BAH",
+      "pos": 6,
       "pts": 40,
       "v": 10,
       "saldo": 6,
       "gm": 38
-    },
-    {
-      "nome": "CRU",
-      "pos": 6,
-      "pts": 39,
-      "v": 11,
-      "saldo": -1,
-      "gm": 35
     },
     {
       "nome": "CFC",
@@ -500,8 +515,8 @@
       "pos": 12,
       "pts": 32,
       "v": 8,
-      "saldo": -1,
-      "gm": 35
+      "saldo": 0,
+      "gm": 36
     },
     {
       "nome": "BOT",
@@ -548,7 +563,7 @@
       "pos": 18,
       "pts": 25,
       "v": 5,
-      "saldo": -6,
+      "saldo": -7,
       "gm": 26
     },
     {
@@ -568,6 +583,6 @@
       "gm": 25
     }
   ],
-  "updated_at": "2026-09-06T16:23:58.815709-03:00",
+  "updated_at": "2026-09-06T16:45:35.019523-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
