@@ -427,6 +427,25 @@
       "placar_casa": 0,
       "placar_fora": 0,
       "status": "CRIADA"
+    },
+    "VITxGRE": {
+      "casa_id": "287",
+      "casa_nome": "VITÓRIA",
+      "casa_sigla": "VIT",
+      "chave": "MjAyNi0wOS0wNyAyMDowMHwyODd8Mjg0",
+      "data": "07/09",
+      "data_iso": "2026-09-07T23:00:00.000Z",
+      "estadio": "Barradão",
+      "fora_id": "284",
+      "fora_nome": "GRÊMIO",
+      "fora_sigla": "GRE",
+      "goleadores_casa": [],
+      "goleadores_fora": [],
+      "hora": "20:00",
+      "link_resumo": "https://ge.globo.com/ba/futebol/brasileirao-serie-a/jogo/07-09-2026/vitoria-gremio.ghtml?utm_source=cartolafc",
+      "placar_casa": 0,
+      "placar_fora": 0,
+      "status": "EM_ANDAMENTO"
     }
   },
   "last_signature": [
@@ -537,7 +556,7 @@
     {
       "nome": "VIT",
       "pos": 14,
-      "pts": 28,
+      "pts": 29,
       "v": 8,
       "saldo": -13,
       "gm": 24
@@ -545,7 +564,7 @@
     {
       "nome": "GRE",
       "pos": 15,
-      "pts": 28,
+      "pts": 29,
       "v": 7,
       "saldo": -5,
       "gm": 27
@@ -591,6 +610,6 @@
       "gm": 25
     }
   ],
-  "updated_at": "2026-09-06T16:55:48.479683-03:00",
+  "updated_at": "2026-09-07T20:13:46.222229-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
