@@ -1,163 +1,163 @@
 {
-  "updated_at": "2026-09-01T12:13:43.108556-03:00",
+  "updated_at": "2026-09-07T22:06:24.984665-03:00",
   "last_publication_mode": "apos_jogos",
   "signature": [
     {
-      "nome": "PAL",
+      "nome": "FLA",
       "pos": 1,
-      "pts": 52,
-      "v": 15,
-      "saldo": 24
+      "pts": 54,
+      "v": 16,
+      "saldo": 30
     },
     {
-      "nome": "FLA",
+      "nome": "PAL",
       "pos": 2,
-      "pts": 48,
-      "v": 14,
-      "saldo": 27
+      "pts": 53,
+      "v": 15,
+      "saldo": 24
     },
     {
       "nome": "CAP",
       "pos": 3,
       "pts": 45,
       "v": 13,
-      "saldo": 12
+      "saldo": 10
     },
     {
       "nome": "FLU",
       "pos": 4,
-      "pts": 42,
-      "v": 11,
-      "saldo": 7
-    },
-    {
-      "nome": "CRU",
-      "pos": 5,
-      "pts": 39,
-      "v": 11,
-      "saldo": -1
-    },
-    {
-      "nome": "CFC",
-      "pos": 6,
-      "pts": 37,
-      "v": 10,
-      "saldo": 0
+      "pts": 45,
+      "v": 12,
+      "saldo": 8
     },
     {
       "nome": "BAH",
+      "pos": 5,
+      "pts": 43,
+      "v": 11,
+      "saldo": 8
+    },
+    {
+      "nome": "CRU",
+      "pos": 6,
+      "pts": 42,
+      "v": 12,
+      "saldo": 1
+    },
+    {
+      "nome": "CFC",
       "pos": 7,
       "pts": 37,
-      "v": 9,
-      "saldo": 5
+      "v": 10,
+      "saldo": -1
     },
     {
       "nome": "CAM",
       "pos": 8,
       "pts": 36,
       "v": 10,
-      "saldo": 4
+      "saldo": 2
     },
     {
       "nome": "RBB",
       "pos": 9,
       "pts": 35,
       "v": 10,
-      "saldo": 4
-    },
-    {
-      "nome": "COR",
-      "pos": 10,
-      "pts": 32,
-      "v": 8,
-      "saldo": 1
+      "saldo": 3
     },
     {
       "nome": "SAO",
-      "pos": 11,
-      "pts": 30,
-      "v": 8,
-      "saldo": 1
+      "pos": 10,
+      "pts": 33,
+      "v": 9,
+      "saldo": 3
     },
     {
-      "nome": "BOT",
+      "nome": "VIT",
+      "pos": 11,
+      "pts": 32,
+      "v": 9,
+      "saldo": -12
+    },
+    {
+      "nome": "COR",
       "pos": 12,
-      "pts": 29,
+      "pts": 32,
       "v": 8,
-      "saldo": -3
+      "saldo": 0
     },
     {
       "nome": "SAN",
       "pos": 13,
-      "pts": 29,
-      "v": 7,
-      "saldo": -2
+      "pts": 32,
+      "v": 8,
+      "saldo": -1
     },
     {
-      "nome": "VIT",
+      "nome": "BOT",
       "pos": 14,
-      "pts": 28,
+      "pts": 31,
       "v": 8,
-      "saldo": -13
+      "saldo": -3
     },
     {
       "nome": "GRE",
       "pos": 15,
       "pts": 28,
       "v": 7,
-      "saldo": -5
+      "saldo": -6
     },
     {
       "nome": "MIR",
       "pos": 16,
-      "pts": 25,
-      "v": 6,
-      "saldo": -10
+      "pts": 28,
+      "v": 7,
+      "saldo": -11
     },
     {
       "nome": "VAS",
       "pos": 17,
       "pts": 25,
       "v": 6,
-      "saldo": -12
+      "saldo": -13
     },
     {
       "nome": "INT",
       "pos": 18,
       "pts": 25,
       "v": 5,
-      "saldo": -5
+      "saldo": -6
     },
     {
       "nome": "REM",
       "pos": 19,
       "pts": 23,
       "v": 5,
-      "saldo": -12
+      "saldo": -13
     },
     {
       "nome": "CHA",
       "pos": 20,
-      "pts": 14,
-      "v": 2,
-      "saldo": -22
+      "pts": 17,
+      "v": 3,
+      "saldo": -23
     }
   ],
   "positions": {
-    "PAL": 1,
-    "FLA": 2,
+    "FLA": 1,
+    "PAL": 2,
     "CAP": 3,
     "FLU": 4,
-    "CRU": 5,
-    "CFC": 6,
-    "BAH": 7,
+    "BAH": 5,
+    "CRU": 6,
+    "CFC": 7,
     "CAM": 8,
     "RBB": 9,
-    "COR": 10,
-    "SAO": 11,
-    "BOT": 12,
+    "SAO": 10,
+    "VIT": 11,
+    "COR": 12,
     "SAN": 13,
-    "VIT": 14,
+    "BOT": 14,
     "GRE": 15,
     "MIR": 16,
     "VAS": 17,
