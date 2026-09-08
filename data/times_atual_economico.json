@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 27,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-09-08T14:15:09.026Z",
+  "atualizado_em": "2026-09-08T14:25:28.653Z",
   "dados": [
     {
       "RODADA": 27,
@@ -14,7 +14,7 @@
       "NOME": "Ronaldo",
       "CLUBE": "BAH",
       "PRECO": 8.62,
-      "EXP_SCORE": 4.4809,
+      "EXP_SCORE": 4.4738,
       "ATLETA_ID": 91101
     },
     {
@@ -25,7 +25,7 @@
       "NOME": "Igor Formiga",
       "CLUBE": "MIR",
       "PRECO": 9.52,
-      "EXP_SCORE": 6.2166,
+      "EXP_SCORE": 6.2073,
       "ATLETA_ID": 106708
     },
     {
@@ -36,7 +36,7 @@
       "NOME": "Renê",
       "CLUBE": "FLU",
       "PRECO": 11.17,
-      "EXP_SCORE": 6.2344,
+      "EXP_SCORE": 6.2276,
       "ATLETA_ID": 78445
     },
     {
@@ -47,7 +47,7 @@
       "NOME": "Ferraresi",
       "CLUBE": "BOT",
       "PRECO": 7.09,
-      "EXP_SCORE": 3.2983,
+      "EXP_SCORE": 3.2822,
       "ATLETA_ID": 105300
     },
     {
@@ -55,11 +55,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ZAG",
-      "NOME": "Jacy",
-      "CLUBE": "CFC",
-      "PRECO": 5.43,
-      "EXP_SCORE": 2.7092,
-      "ATLETA_ID": 97878
+      "NOME": "Eduardo Doma",
+      "CLUBE": "CHA",
+      "PRECO": 4,
+      "EXP_SCORE": 1.9453,
+      "ATLETA_ID": 101393
     },
     {
       "RODADA": 27,
@@ -69,7 +69,7 @@
       "NOME": "Wallisson",
       "CLUBE": "MIR",
       "PRECO": 5.61,
-      "EXP_SCORE": 2.3578,
+      "EXP_SCORE": 2.3635,
       "ATLETA_ID": 101405
     },
     {
@@ -80,19 +80,8 @@
       "NOME": "Rodrigo Nestor",
       "CLUBE": "BAH",
       "PRECO": 6.91,
-      "EXP_SCORE": 3.9374,
+      "EXP_SCORE": 3.944,
       "ATLETA_ID": 106822
-    },
-    {
-      "RODADA": 27,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "João Cruz",
-      "CLUBE": "CAP",
-      "PRECO": 6.55,
-      "EXP_SCORE": 3.5732,
-      "ATLETA_ID": 128431
     },
     {
       "RODADA": 27,
@@ -102,19 +91,8 @@
       "NOME": "Gerson",
       "CLUBE": "CRU",
       "PRECO": 9.61,
-      "EXP_SCORE": 4.0018,
+      "EXP_SCORE": 4.0091,
       "ATLETA_ID": 89256
-    },
-    {
-      "RODADA": 27,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Lucas Romero",
-      "CLUBE": "CRU",
-      "PRECO": 9.88,
-      "EXP_SCORE": 4.2907,
-      "ATLETA_ID": 84558
     },
     {
       "RODADA": 27,
@@ -124,8 +102,30 @@
       "NOME": "Marcinho",
       "CLUBE": "CHA",
       "PRECO": 7.32,
-      "EXP_SCORE": 4.5036,
+      "EXP_SCORE": 4.5136,
       "ATLETA_ID": 95332
+    },
+    {
+      "RODADA": 27,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Tarzia",
+      "CLUBE": "VIT",
+      "PRECO": 3.87,
+      "EXP_SCORE": 2.7535,
+      "ATLETA_ID": 143153
+    },
+    {
+      "RODADA": 27,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Lucas Barbosa",
+      "CLUBE": "RBB",
+      "PRECO": 10.87,
+      "EXP_SCORE": 5.3164,
+      "ATLETA_ID": 112886
     },
     {
       "RODADA": 27,
@@ -135,7 +135,7 @@
       "NOME": "Rafael Guanaes",
       "CLUBE": "MIR",
       "PRECO": 7.59,
-      "EXP_SCORE": 4.4695,
+      "EXP_SCORE": 4.4803,
       "ATLETA_ID": 104027
     },
     {
@@ -146,7 +146,7 @@
       "NOME": "Weverton",
       "CLUBE": "GRE",
       "PRECO": 7.94,
-      "EXP_SCORE": 3.1911,
+      "EXP_SCORE": 3.1841,
       "ATLETA_ID": 71631
     },
     {
@@ -157,7 +157,7 @@
       "NOME": "Vitinho",
       "CLUBE": "BOT",
       "PRECO": 9.43,
-      "EXP_SCORE": 4.8177,
+      "EXP_SCORE": 4.7942,
       "ATLETA_ID": 100898
     },
     {
@@ -165,11 +165,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Willian Machado",
-      "CLUBE": "MIR",
-      "PRECO": 4.96,
-      "EXP_SCORE": 2.3582,
-      "ATLETA_ID": 101908
+      "NOME": "Justino",
+      "CLUBE": "BOT",
+      "PRECO": 3.34,
+      "EXP_SCORE": 1.6443,
+      "ATLETA_ID": 146430
     },
     {
       "RODADA": 27,
@@ -179,7 +179,7 @@
       "NOME": "Gabriel Bontempo",
       "CLUBE": "SAN",
       "PRECO": 5.29,
-      "EXP_SCORE": 3.0063,
+      "EXP_SCORE": 3.0109,
       "ATLETA_ID": 141754
     },
     {
@@ -187,11 +187,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Jajá",
-      "CLUBE": "REM",
-      "PRECO": 6.28,
-      "EXP_SCORE": 4.3352,
-      "ATLETA_ID": 105048
+      "NOME": "Caballero",
+      "CLUBE": "SAN",
+      "PRECO": 3.75,
+      "EXP_SCORE": 1.1806,
+      "ATLETA_ID": 122781
     }
   ]
 }
