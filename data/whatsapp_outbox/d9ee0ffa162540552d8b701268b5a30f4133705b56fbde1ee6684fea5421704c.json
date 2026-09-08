@@ -1,0 +1,30 @@
+{
+  "schema": "portalsimonsports.whatsapp_channel_outbox.v1",
+  "gerado_em": "2026-09-08T14:01:26.062960+00:00",
+  "origem": "telegram_approved_cards_pipeline",
+  "politica": {
+    "telegram_intacto": true,
+    "falha_whatsapp_nao_bloqueia_telegram": true,
+    "antiduplicidade_por_hash_de_conteudo": true
+  },
+  "publicacao": {
+    "id": "d9ee0ffa162540552d8b701268b5a30f4133705b56fbde1ee6684fea5421704c",
+    "status": "PENDENTE_BRIDGE",
+    "destino": "whatsapp_channel",
+    "canal": "Portal SimonSports",
+    "texto": "Abertura da Rodada • Rodada 27\n\nMercado Aberto • Rodada 27\n\n📡 Portal SimonSports",
+    "midias": [
+      {
+        "path": "output/aprovada_abertura_rodada_27.png",
+        "sha256": "134cf5ef858f75f439e9c032b7d56a82e6aec3113f353161a5950cc04659ce89"
+      }
+    ],
+    "tipo_detectado": "approved_abertura",
+    "tipo_publicacao": "MERCADO_ABERTO",
+    "evento_programado": "ABERTURA",
+    "rodada": 27,
+    "versao_visual": "approved_cards_v1",
+    "pipeline_visual": "approved_cards_v6_desempenho_times_top5_2026_08_11",
+    "base_visual": "approved_cards_v1_2026_07_27"
+  }
+}
