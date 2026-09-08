@@ -1,6 +1,6 @@
 {
   "schema": "portalsimonsports.whatsapp_channel_outbox.v1",
-  "gerado_em": "2026-09-08T01:26:04.661025+00:00",
+  "gerado_em": "2026-09-08T02:06:01.854812+00:00",
   "origem": "telegram_approved_cards_pipeline",
   "politica": {
     "telegram_intacto": true,
@@ -9,20 +9,20 @@
   },
   "publicacoes": [
     {
-      "id": "8aba0fce0e199f4f175d9e924b94cfdf5d9472946f11ac4b3b005d6a326914fd",
+      "id": "d72d95d1094bc69c7b12fdc5eecdde2d5262267f192e40ea1bed737fa2f3252d",
       "status": "PENDENTE_BRIDGE",
       "destino": "whatsapp_channel",
       "canal": "Portal SimonSports",
-      "texto": "RESULTADOS DA NOITE • RODADA 26\n\n📡 Portal SimonSports",
+      "texto": "MITOS E ZICAS • RODADA 26\n\n📡 Portal SimonSports",
       "midias": [
         {
-          "path": "output/live_resultados_noite_rodada_26_p1.png",
-          "sha256": "e05d8a9d58af8a7e0a4b1aa20fbf19c8a1e02c501842e52d1248c96ee74695c7"
+          "path": "output/live_mitos_zicas_rodada_26.png",
+          "sha256": "5226ac520ab60da706147d37dc06debc4267e7af0b0b25df72817a0f9a9be180"
         }
       ],
-      "tipo_detectado": "night_results_v3",
-      "tipo_publicacao": "live_resultados_noite",
-      "evento_programado": "LIVE_RESULTADOS_NOITE",
+      "tipo_detectado": "ranking_v2",
+      "tipo_publicacao": "live_mitos_zicas",
+      "evento_programado": "LIVE_MITOS_ZICAS",
       "rodada": 26,
       "versao_visual": "approved_cards_v1",
       "pipeline_visual": "approved_cards_v6_desempenho_times_top5_2026_08_11",
