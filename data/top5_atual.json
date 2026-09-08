@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 27,
-  "atualizado_em": "2026-09-08T21:35:03.842Z",
+  "atualizado_em": "2026-09-08T21:54:46.525Z",
   "dados": [
     {
       "RODADA": 27,
@@ -28,22 +28,22 @@
     {
       "RODADA": 27,
       "POS": "GOL",
+      "NOME": "Rossi",
+      "CLUBE": "FLA",
+      "PRECO": 8.93,
+      "EXP_SCORE": 4.1489,
+      "FACTOR": 1.1284611314446016,
+      "ATLETA_ID": 99552
+    },
+    {
+      "RODADA": 27,
+      "POS": "GOL",
       "NOME": "Lucas Arcanjo",
       "CLUBE": "VIT",
       "PRECO": 10.37,
       "EXP_SCORE": 4.0254,
       "FACTOR": 0.9814771609515127,
       "ATLETA_ID": 104118
-    },
-    {
-      "RODADA": 27,
-      "POS": "GOL",
-      "NOME": "Rossi",
-      "CLUBE": "FLA",
-      "PRECO": 8.93,
-      "EXP_SCORE": 3.734,
-      "FACTOR": 1.1284611314446016,
-      "ATLETA_ID": 99552
     },
     {
       "RODADA": 27,
@@ -78,16 +78,6 @@
     {
       "RODADA": 27,
       "POS": "LAT",
-      "NOME": "Igor Formiga",
-      "CLUBE": "MIR",
-      "PRECO": 9.52,
-      "EXP_SCORE": 6.2131,
-      "FACTOR": 1.144741692680416,
-      "ATLETA_ID": 106708
-    },
-    {
-      "RODADA": 27,
-      "POS": "LAT",
       "NOME": "Juninho Capixaba",
       "CLUBE": "RBB",
       "PRECO": 12.86,
@@ -104,6 +94,16 @@
       "EXP_SCORE": 5.673,
       "FACTOR": 0.8505900173320047,
       "ATLETA_ID": 105531
+    },
+    {
+      "RODADA": 27,
+      "POS": "LAT",
+      "NOME": "Piquerez",
+      "CLUBE": "PAL",
+      "PRECO": 11.1,
+      "EXP_SCORE": 5.5985,
+      "FACTOR": 1.1014525372260293,
+      "ATLETA_ID": 102130
     },
     {
       "RODADA": 27,
@@ -221,7 +221,7 @@
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 16.1,
-      "EXP_SCORE": 6.9512,
+      "EXP_SCORE": 7.7235,
       "FACTOR": 1.023758703400002,
       "ATLETA_ID": 94583
     },
