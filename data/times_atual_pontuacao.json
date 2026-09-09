@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 27,
   "tipo": "PONTUACAO",
-  "atualizado_em": "2026-09-09T19:34:52.435Z",
+  "atualizado_em": "2026-09-09T21:24:58.749Z",
   "dados": [
     {
       "RODADA": 27,
@@ -33,11 +33,11 @@
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "LAT",
-      "NOME": "Renê",
-      "CLUBE": "FLU",
-      "PRECO": 11.17,
-      "EXP_SCORE": 6.2232,
-      "ATLETA_ID": 78445
+      "NOME": "Juninho Capixaba",
+      "CLUBE": "RBB",
+      "PRECO": 12.86,
+      "EXP_SCORE": 6.0428,
+      "ATLETA_ID": 94968
     },
     {
       "RODADA": 27,
@@ -98,6 +98,17 @@
       "RODADA": 27,
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Carrascal",
+      "CLUBE": "FLA",
+      "PRECO": 10.52,
+      "EXP_SCORE": 5.0145,
+      "ATLETA_ID": 105436
+    },
+    {
+      "RODADA": 27,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
       "POS": "ATA",
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
@@ -115,17 +126,6 @@
       "PRECO": 16.1,
       "EXP_SCORE": 7.7445,
       "ATLETA_ID": 94583
-    },
-    {
-      "RODADA": 27,
-      "TIPO": "PONTUACAO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Flaco López",
-      "CLUBE": "PAL",
-      "PRECO": 13.45,
-      "EXP_SCORE": 5.9319,
-      "ATLETA_ID": 113103
     },
     {
       "RODADA": 27,
@@ -176,22 +176,22 @@
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Carrascal",
-      "CLUBE": "FLA",
-      "PRECO": 10.52,
-      "EXP_SCORE": 5.0145,
-      "ATLETA_ID": 105436
+      "NOME": "Acevedo",
+      "CLUBE": "BAH",
+      "PRECO": 7.23,
+      "EXP_SCORE": 4.6778,
+      "ATLETA_ID": 104783
     },
     {
       "RODADA": 27,
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Canobbio",
-      "CLUBE": "FLU",
-      "PRECO": 11.05,
-      "EXP_SCORE": 5.3371,
-      "ATLETA_ID": 102928
+      "NOME": "Flaco López",
+      "CLUBE": "PAL",
+      "PRECO": 13.45,
+      "EXP_SCORE": 5.9319,
+      "ATLETA_ID": 113103
     }
   ]
 }
