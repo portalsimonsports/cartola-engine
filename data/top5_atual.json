@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 27,
-  "atualizado_em": "2026-09-09T06:38:06.601Z",
+  "atualizado_em": "2026-09-09T06:47:40.510Z",
   "dados": [
     {
       "RODADA": 27,
@@ -128,16 +128,6 @@
     {
       "RODADA": 27,
       "POS": "ZAG",
-      "NOME": "Léo Ortiz",
-      "CLUBE": "FLA",
-      "PRECO": 9.07,
-      "EXP_SCORE": 3.2761,
-      "FACTOR": 1.1257126566271987,
-      "ATLETA_ID": 97867
-    },
-    {
-      "RODADA": 27,
-      "POS": "ZAG",
       "NOME": "David Duarte",
       "CLUBE": "BAH",
       "PRECO": 5.87,
@@ -157,6 +147,16 @@
     },
     {
       "RODADA": 27,
+      "POS": "ZAG",
+      "NOME": "Léo Ortiz",
+      "CLUBE": "FLA",
+      "PRECO": 9.07,
+      "EXP_SCORE": 2.9485,
+      "FACTOR": 1.1257126566271987,
+      "ATLETA_ID": 97867
+    },
+    {
+      "RODADA": 27,
       "POS": "MEI",
       "NOME": "Arias",
       "CLUBE": "PAL",
@@ -171,7 +171,7 @@
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 15,
-      "EXP_SCORE": 6.3876,
+      "EXP_SCORE": 5.5544,
       "FACTOR": 0.9777578009323988,
       "ATLETA_ID": 96610
     },
