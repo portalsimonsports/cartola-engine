@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 27,
-  "atualizado_em": "2026-09-09T18:19:31.488Z",
+  "atualizado_em": "2026-09-09T18:34:48.113Z",
   "dados": [
     {
       "RODADA": 27,
@@ -38,22 +38,22 @@
     {
       "RODADA": 27,
       "POS": "GOL",
-      "NOME": "Lucas Arcanjo",
-      "CLUBE": "VIT",
-      "PRECO": 10.37,
-      "EXP_SCORE": 4.0175,
-      "FACTOR": 0.9795478110797905,
-      "ATLETA_ID": 104118
-    },
-    {
-      "RODADA": 27,
-      "POS": "GOL",
       "NOME": "Fábio",
       "CLUBE": "FLU",
       "PRECO": 9.76,
       "EXP_SCORE": 3.722,
       "FACTOR": 0.9966303629983316,
       "ATLETA_ID": 37656
+    },
+    {
+      "RODADA": 27,
+      "POS": "GOL",
+      "NOME": "Lucas Arcanjo",
+      "CLUBE": "VIT",
+      "PRECO": 10.37,
+      "EXP_SCORE": 3.6157,
+      "FACTOR": 0.9795478110797905,
+      "ATLETA_ID": 104118
     },
     {
       "RODADA": 27,
@@ -128,16 +128,6 @@
     {
       "RODADA": 27,
       "POS": "ZAG",
-      "NOME": "Ferraresi",
-      "CLUBE": "BOT",
-      "PRECO": 7.09,
-      "EXP_SCORE": 3.278,
-      "FACTOR": 1.1572918828740726,
-      "ATLETA_ID": 105300
-    },
-    {
-      "RODADA": 27,
-      "POS": "ZAG",
       "NOME": "Léo Ortiz",
       "CLUBE": "FLA",
       "PRECO": 9.07,
@@ -154,6 +144,16 @@
       "EXP_SCORE": 3.1089,
       "FACTOR": 1.132154219639878,
       "ATLETA_ID": 91772
+    },
+    {
+      "RODADA": 27,
+      "POS": "ZAG",
+      "NOME": "Gustavo Marques",
+      "CLUBE": "RBB",
+      "PRECO": 7.62,
+      "EXP_SCORE": 3.0954,
+      "FACTOR": 0.9481567968705056,
+      "ATLETA_ID": 110750
     },
     {
       "RODADA": 27,
@@ -202,7 +202,7 @@
       "CLUBE": "BAH",
       "PRECO": 7.23,
       "EXP_SCORE": 4.6764,
-      "FACTOR": 1.1273174495867284,
+      "FACTOR": 1.127317449586728,
       "ATLETA_ID": 104783
     },
     {
@@ -262,7 +262,7 @@
       "CLUBE": "BAH",
       "PRECO": 10.69,
       "EXP_SCORE": 6.4426,
-      "FACTOR": 1.096003075987097,
+      "FACTOR": 1.0960030759870967,
       "ATLETA_ID": 97341
     },
     {
@@ -272,7 +272,7 @@
       "CLUBE": "FLA",
       "PRECO": 13.42,
       "EXP_SCORE": 6.4048,
-      "FACTOR": 0.997489965017741,
+      "FACTOR": 0.9974899650177409,
       "ATLETA_ID": 88963
     },
     {
