@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 27,
-  "atualizado_em": "2026-09-09T05:08:11.456Z",
+  "atualizado_em": "2026-09-09T05:28:07.029Z",
   "dados": [
     {
       "RODADA": 27,
@@ -78,16 +78,6 @@
     {
       "RODADA": 27,
       "POS": "LAT",
-      "NOME": "Igor Formiga",
-      "CLUBE": "MIR",
-      "PRECO": 9.52,
-      "EXP_SCORE": 6.1994,
-      "FACTOR": 1.1422248994137258,
-      "ATLETA_ID": 106708
-    },
-    {
-      "RODADA": 27,
-      "POS": "LAT",
       "NOME": "Juninho Capixaba",
       "CLUBE": "RBB",
       "PRECO": 12.86,
@@ -104,6 +94,16 @@
       "EXP_SCORE": 5.6652,
       "FACTOR": 1.1145886193815382,
       "ATLETA_ID": 102130
+    },
+    {
+      "RODADA": 27,
+      "POS": "LAT",
+      "NOME": "Matheus Bidu",
+      "CLUBE": "COR",
+      "PRECO": 13.3,
+      "EXP_SCORE": 5.6485,
+      "FACTOR": 0.8469098517070927,
+      "ATLETA_ID": 105531
     },
     {
       "RODADA": 27,
@@ -221,7 +221,7 @@
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 16.1,
-      "EXP_SCORE": 6.95,
+      "EXP_SCORE": 7.7222,
       "FACTOR": 1.023589806873347,
       "ATLETA_ID": 94583
     },
