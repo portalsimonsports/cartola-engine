@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 27,
-  "atualizado_em": "2026-09-09T22:14:46.289Z",
+  "atualizado_em": "2026-09-09T22:45:06.501Z",
   "dados": [
     {
       "RODADA": 27,
@@ -68,16 +68,6 @@
     {
       "RODADA": 27,
       "POS": "LAT",
-      "NOME": "Juninho Capixaba",
-      "CLUBE": "RBB",
-      "PRECO": 12.86,
-      "EXP_SCORE": 6.0428,
-      "FACTOR": 0.9485772269558481,
-      "ATLETA_ID": 94968
-    },
-    {
-      "RODADA": 27,
-      "POS": "LAT",
       "NOME": "Piquerez",
       "CLUBE": "PAL",
       "PRECO": 11.1,
@@ -92,7 +82,7 @@
       "CLUBE": "COR",
       "PRECO": 13.3,
       "EXP_SCORE": 5.6515,
-      "FACTOR": 0.8473688613477923,
+      "FACTOR": 0.8473688613477922,
       "ATLETA_ID": 105531
     },
     {
@@ -104,6 +94,16 @@
       "EXP_SCORE": 5.4934,
       "FACTOR": 1.0820709527498065,
       "ATLETA_ID": 95466
+    },
+    {
+      "RODADA": 27,
+      "POS": "LAT",
+      "NOME": "Juninho Capixaba",
+      "CLUBE": "RBB",
+      "PRECO": 12.86,
+      "EXP_SCORE": 5.4385,
+      "FACTOR": 0.9485772269558481,
+      "ATLETA_ID": 94968
     },
     {
       "RODADA": 27,
@@ -248,12 +248,12 @@
     {
       "RODADA": 27,
       "POS": "ATA",
-      "NOME": "Lucas Barbosa",
-      "CLUBE": "RBB",
-      "PRECO": 10.87,
-      "EXP_SCORE": 5.319,
-      "FACTOR": 0.9638821374937994,
-      "ATLETA_ID": 112886
+      "NOME": "Erick Pulga",
+      "CLUBE": "BAH",
+      "PRECO": 7.62,
+      "EXP_SCORE": 5.2032,
+      "FACTOR": 1.1276439376745515,
+      "ATLETA_ID": 109401
     },
     {
       "RODADA": 27,
