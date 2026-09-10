@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 27,
-  "atualizado_em": "2026-09-10T00:25:09.686Z",
+  "atualizado_em": "2026-09-10T00:55:20.429Z",
   "dados": [
     {
       "RODADA": 27,
@@ -28,22 +28,22 @@
     {
       "RODADA": 27,
       "POS": "GOL",
+      "NOME": "Rossi",
+      "CLUBE": "FLA",
+      "PRECO": 8.93,
+      "EXP_SCORE": 4.1401,
+      "FACTOR": 1.1260554608830364,
+      "ATLETA_ID": 99552
+    },
+    {
+      "RODADA": 27,
+      "POS": "GOL",
       "NOME": "Lucas Arcanjo",
       "CLUBE": "VIT",
       "PRECO": 10.37,
       "EXP_SCORE": 4.0189,
       "FACTOR": 0.9798862896979086,
       "ATLETA_ID": 104118
-    },
-    {
-      "RODADA": 27,
-      "POS": "GOL",
-      "NOME": "Rossi",
-      "CLUBE": "FLA",
-      "PRECO": 8.93,
-      "EXP_SCORE": 3.7261,
-      "FACTOR": 1.1260554608830364,
-      "ATLETA_ID": 99552
     },
     {
       "RODADA": 27,
@@ -78,16 +78,6 @@
     {
       "RODADA": 27,
       "POS": "LAT",
-      "NOME": "Igor Formiga",
-      "CLUBE": "MIR",
-      "PRECO": 9.52,
-      "EXP_SCORE": 6.2011,
-      "FACTOR": 1.1425388071262588,
-      "ATLETA_ID": 106708
-    },
-    {
-      "RODADA": 27,
-      "POS": "LAT",
       "NOME": "Piquerez",
       "CLUBE": "PAL",
       "PRECO": 11.1,
@@ -104,6 +94,16 @@
       "EXP_SCORE": 5.6515,
       "FACTOR": 0.8473688613477923,
       "ATLETA_ID": 105531
+    },
+    {
+      "RODADA": 27,
+      "POS": "LAT",
+      "NOME": "Igor Vinícius",
+      "CLUBE": "SAN",
+      "PRECO": 10.22,
+      "EXP_SCORE": 5.4934,
+      "FACTOR": 1.0820709527498065,
+      "ATLETA_ID": 95466
     },
     {
       "RODADA": 27,
@@ -161,7 +161,7 @@
       "NOME": "Arias",
       "CLUBE": "PAL",
       "PRECO": 13.83,
-      "EXP_SCORE": 6.0592,
+      "EXP_SCORE": 6.9681,
       "FACTOR": 1.0665618981534504,
       "ATLETA_ID": 99815
     },
@@ -221,7 +221,7 @@
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 16.1,
-      "EXP_SCORE": 6.9845,
+      "EXP_SCORE": 7.7606,
       "FACTOR": 1.028671715654242,
       "ATLETA_ID": 94583
     },
