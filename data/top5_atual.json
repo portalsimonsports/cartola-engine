@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 27,
-  "atualizado_em": "2026-09-10T05:18:24.113Z",
+  "atualizado_em": "2026-09-10T05:25:35.904Z",
   "dados": [
     {
       "RODADA": 27,
@@ -38,22 +38,22 @@
     {
       "RODADA": 27,
       "POS": "GOL",
-      "NOME": "Fábio",
-      "CLUBE": "FLU",
-      "PRECO": 9.76,
-      "EXP_SCORE": 3.7231,
-      "FACTOR": 0.9969242447714949,
-      "ATLETA_ID": 37656
-    },
-    {
-      "RODADA": 27,
-      "POS": "GOL",
       "NOME": "Lucas Arcanjo",
       "CLUBE": "VIT",
       "PRECO": 10.37,
       "EXP_SCORE": 3.617,
       "FACTOR": 0.9798862896979086,
       "ATLETA_ID": 104118
+    },
+    {
+      "RODADA": 27,
+      "POS": "GOL",
+      "NOME": "Fábio",
+      "CLUBE": "FLU",
+      "PRECO": 9.76,
+      "EXP_SCORE": 3.2375,
+      "FACTOR": 0.9969242447714949,
+      "ATLETA_ID": 37656
     },
     {
       "RODADA": 27,
@@ -168,16 +168,6 @@
     {
       "RODADA": 27,
       "POS": "MEI",
-      "NOME": "Carrascal",
-      "CLUBE": "FLA",
-      "PRECO": 10.52,
-      "EXP_SCORE": 5.7786,
-      "FACTOR": 1.028671715654242,
-      "ATLETA_ID": 105436
-    },
-    {
-      "RODADA": 27,
-      "POS": "MEI",
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 15,
@@ -194,6 +184,16 @@
       "EXP_SCORE": 5.155,
       "FACTOR": 0.9971777605615776,
       "ATLETA_ID": 107231
+    },
+    {
+      "RODADA": 27,
+      "POS": "MEI",
+      "NOME": "Carrascal",
+      "CLUBE": "FLA",
+      "PRECO": 10.52,
+      "EXP_SCORE": 5.0249,
+      "FACTOR": 1.028671715654242,
+      "ATLETA_ID": 105436
     },
     {
       "RODADA": 27,
