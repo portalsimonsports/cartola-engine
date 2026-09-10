@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 27,
-  "atualizado_em": "2026-09-10T20:19:00.829Z",
+  "atualizado_em": "2026-09-10T20:25:01.459Z",
   "dados": [
     {
       "RODADA": 27,
@@ -28,22 +28,22 @@
     {
       "RODADA": 27,
       "POS": "GOL",
+      "NOME": "Rossi",
+      "CLUBE": "FLA",
+      "PRECO": 8.93,
+      "EXP_SCORE": 4.1332,
+      "FACTOR": 1.124191262121863,
+      "ATLETA_ID": 99552
+    },
+    {
+      "RODADA": 27,
+      "POS": "GOL",
       "NOME": "Lucas Arcanjo",
       "CLUBE": "VIT",
       "PRECO": 10.37,
       "EXP_SCORE": 4.0138,
       "FACTOR": 0.9786534940410394,
       "ATLETA_ID": 104118
-    },
-    {
-      "RODADA": 27,
-      "POS": "GOL",
-      "NOME": "Rossi",
-      "CLUBE": "FLA",
-      "PRECO": 8.93,
-      "EXP_SCORE": 3.7199,
-      "FACTOR": 1.124191262121863,
-      "ATLETA_ID": 99552
     },
     {
       "RODADA": 27,
@@ -221,7 +221,7 @@
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 16.1,
-      "EXP_SCORE": 6.9759,
+      "EXP_SCORE": 7.751,
       "FACTOR": 1.0274071249128178,
       "ATLETA_ID": 94583
     },
