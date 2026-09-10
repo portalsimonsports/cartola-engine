@@ -3,18 +3,8 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 27,
-  "atualizado_em": "2026-09-10T01:58:06.634Z",
+  "atualizado_em": "2026-09-10T02:05:30.212Z",
   "dados": [
-    {
-      "RODADA": 27,
-      "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 9,
-      "EXP_SCORE": 4.7191,
-      "FACTOR": 1.1149508907823393,
-      "ATLETA_ID": 104084
-    },
     {
       "RODADA": 27,
       "POS": "GOL",
@@ -34,6 +24,16 @@
       "EXP_SCORE": 4.1401,
       "FACTOR": 1.1260554608830364,
       "ATLETA_ID": 99552
+    },
+    {
+      "RODADA": 27,
+      "POS": "GOL",
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 9,
+      "EXP_SCORE": 4.1036,
+      "FACTOR": 1.1149508907823393,
+      "ATLETA_ID": 104084
     },
     {
       "RODADA": 27,
@@ -78,16 +78,6 @@
     {
       "RODADA": 27,
       "POS": "LAT",
-      "NOME": "Matheus Bidu",
-      "CLUBE": "COR",
-      "PRECO": 13.3,
-      "EXP_SCORE": 5.6515,
-      "FACTOR": 0.8473688613477923,
-      "ATLETA_ID": 105531
-    },
-    {
-      "RODADA": 27,
-      "POS": "LAT",
       "NOME": "Igor Vinícius",
       "CLUBE": "SAN",
       "PRECO": 10.22,
@@ -104,6 +94,16 @@
       "EXP_SCORE": 5.4385,
       "FACTOR": 0.9485772269558481,
       "ATLETA_ID": 94968
+    },
+    {
+      "RODADA": 27,
+      "POS": "LAT",
+      "NOME": "Igor Formiga",
+      "CLUBE": "MIR",
+      "PRECO": 9.52,
+      "EXP_SCORE": 5.3923,
+      "FACTOR": 1.1425388071262588,
+      "ATLETA_ID": 106708
     },
     {
       "RODADA": 27,
