@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 27,
-  "atualizado_em": "2026-09-10T04:18:18.755Z",
+  "atualizado_em": "2026-09-10T04:35:00.259Z",
   "dados": [
     {
       "RODADA": 27,
@@ -68,16 +68,6 @@
     {
       "RODADA": 27,
       "POS": "LAT",
-      "NOME": "Renê",
-      "CLUBE": "FLU",
-      "PRECO": 11.17,
-      "EXP_SCORE": 6.2232,
-      "FACTOR": 0.9969242447714949,
-      "ATLETA_ID": 78445
-    },
-    {
-      "RODADA": 27,
-      "POS": "LAT",
       "NOME": "Piquerez",
       "CLUBE": "PAL",
       "PRECO": 11.1,
@@ -107,11 +97,21 @@
     },
     {
       "RODADA": 27,
+      "POS": "LAT",
+      "NOME": "Igor Formiga",
+      "CLUBE": "MIR",
+      "PRECO": 9.52,
+      "EXP_SCORE": 5.3923,
+      "FACTOR": 1.1425388071262588,
+      "ATLETA_ID": 106708
+    },
+    {
+      "RODADA": 27,
       "POS": "ZAG",
       "NOME": "Léo Pereira",
       "CLUBE": "FLA",
       "PRECO": 10.07,
-      "EXP_SCORE": 4.4814,
+      "EXP_SCORE": 3.8969,
       "FACTOR": 1.1260554608830364,
       "ATLETA_ID": 83528
     },
