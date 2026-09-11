@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 27,
   "tipo": "PONTUACAO",
-  "atualizado_em": "2026-09-11T19:24:54.411Z",
+  "atualizado_em": "2026-09-11T19:29:54.510Z",
   "dados": [
     {
       "RODADA": 27,
@@ -14,7 +14,7 @@
       "NOME": "Carlos Miguel",
       "CLUBE": "PAL",
       "PRECO": 9,
-      "EXP_SCORE": 4.7299,
+      "EXP_SCORE": 4.7224,
       "ATLETA_ID": 104084
     },
     {
@@ -25,7 +25,7 @@
       "NOME": "Luciano Juba",
       "CLUBE": "BAH",
       "PRECO": 11.86,
-      "EXP_SCORE": 7.327,
+      "EXP_SCORE": 7.3175,
       "ATLETA_ID": 107093
     },
     {
@@ -36,19 +36,8 @@
       "NOME": "Renê",
       "CLUBE": "FLU",
       "PRECO": 11.17,
-      "EXP_SCORE": 6.1726,
+      "EXP_SCORE": 6.166,
       "ATLETA_ID": 78445
-    },
-    {
-      "RODADA": 27,
-      "TIPO": "PONTUACAO",
-      "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Léo Pereira",
-      "CLUBE": "FLA",
-      "PRECO": 10.07,
-      "EXP_SCORE": 4.491,
-      "ATLETA_ID": 83528
     },
     {
       "RODADA": 27,
@@ -58,8 +47,19 @@
       "NOME": "Gustavo Gómez",
       "CLUBE": "PAL",
       "PRECO": 10.94,
-      "EXP_SCORE": 4.0577,
+      "EXP_SCORE": 4.0512,
       "ATLETA_ID": 71684
+    },
+    {
+      "RODADA": 27,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "ZAG",
+      "NOME": "Ferraresi",
+      "CLUBE": "BOT",
+      "PRECO": 7.09,
+      "EXP_SCORE": 3.3777,
+      "ATLETA_ID": 105300
     },
     {
       "RODADA": 27,
@@ -69,7 +69,7 @@
       "NOME": "Arias",
       "CLUBE": "PAL",
       "PRECO": 13.83,
-      "EXP_SCORE": 6.9583,
+      "EXP_SCORE": 6.9452,
       "ATLETA_ID": 99815
     },
     {
@@ -80,7 +80,7 @@
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 15,
-      "EXP_SCORE": 6.2796,
+      "EXP_SCORE": 6.2696,
       "ATLETA_ID": 96610
     },
     {
@@ -91,19 +91,8 @@
       "NOME": "Danilo",
       "CLUBE": "BOT",
       "PRECO": 13.98,
-      "EXP_SCORE": 5.1447,
+      "EXP_SCORE": 5.1309,
       "ATLETA_ID": 107231
-    },
-    {
-      "RODADA": 27,
-      "TIPO": "PONTUACAO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Samuel Lino",
-      "CLUBE": "FLA",
-      "PRECO": 13.46,
-      "EXP_SCORE": 9.0669,
-      "ATLETA_ID": 98873
     },
     {
       "RODADA": 27,
@@ -113,7 +102,7 @@
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 16.1,
-      "EXP_SCORE": 7.7472,
+      "EXP_SCORE": 7.7293,
       "ATLETA_ID": 94583
     },
     {
@@ -124,19 +113,30 @@
       "NOME": "Flaco López",
       "CLUBE": "PAL",
       "PRECO": 13.45,
-      "EXP_SCORE": 6.5928,
+      "EXP_SCORE": 6.5804,
       "ATLETA_ID": 113103
     },
     {
       "RODADA": 27,
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Canobbio",
+      "CLUBE": "FLU",
+      "PRECO": 11.05,
+      "EXP_SCORE": 5.336,
+      "ATLETA_ID": 102928
+    },
+    {
+      "RODADA": 27,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Rogério Ceni",
-      "CLUBE": "BAH",
-      "PRECO": 10.69,
-      "EXP_SCORE": 6.3665,
-      "ATLETA_ID": 97341
+      "NOME": "Leonardo Jardim",
+      "CLUBE": "FLA",
+      "PRECO": 13.42,
+      "EXP_SCORE": 6.3957,
+      "ATLETA_ID": 88963
     },
     {
       "RODADA": 27,
@@ -146,7 +146,7 @@
       "NOME": "Ronaldo",
       "CLUBE": "BAH",
       "PRECO": 8.62,
-      "EXP_SCORE": 4.5318,
+      "EXP_SCORE": 4.5259,
       "ATLETA_ID": 91101
     },
     {
@@ -157,7 +157,7 @@
       "NOME": "Igor Vinícius",
       "CLUBE": "SAN",
       "PRECO": 10.22,
-      "EXP_SCORE": 5.5083,
+      "EXP_SCORE": 5.4979,
       "ATLETA_ID": 95466
     },
     {
@@ -165,11 +165,11 @@
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Ferraresi",
-      "CLUBE": "BOT",
-      "PRECO": 7.09,
-      "EXP_SCORE": 3.3808,
-      "ATLETA_ID": 105300
+      "NOME": "David Duarte",
+      "CLUBE": "BAH",
+      "PRECO": 5.87,
+      "EXP_SCORE": 3.1498,
+      "ATLETA_ID": 91772
     },
     {
       "RODADA": 27,
@@ -179,7 +179,7 @@
       "NOME": "Carrascal",
       "CLUBE": "FLA",
       "PRECO": 10.52,
-      "EXP_SCORE": 5.0162,
+      "EXP_SCORE": 5.0047,
       "ATLETA_ID": 105436
     },
     {
@@ -187,11 +187,11 @@
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Canobbio",
-      "CLUBE": "FLU",
-      "PRECO": 11.05,
-      "EXP_SCORE": 5.344,
-      "ATLETA_ID": 102928
+      "NOME": "Lucas Barbosa",
+      "CLUBE": "RBB",
+      "PRECO": 10.87,
+      "EXP_SCORE": 5.312,
+      "ATLETA_ID": 112886
     }
   ]
 }
