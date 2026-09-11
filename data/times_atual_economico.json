@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 27,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-09-11T18:04:45.239Z",
+  "atualizado_em": "2026-09-11T18:14:45.811Z",
   "dados": [
     {
       "RODADA": 27,
@@ -14,7 +14,7 @@
       "NOME": "Ronaldo",
       "CLUBE": "BAH",
       "PRECO": 8.62,
-      "EXP_SCORE": 4.529,
+      "EXP_SCORE": 4.5297,
       "ATLETA_ID": 91101
     },
     {
@@ -25,7 +25,7 @@
       "NOME": "Renê",
       "CLUBE": "FLU",
       "PRECO": 11.17,
-      "EXP_SCORE": 6.2289,
+      "EXP_SCORE": 6.2296,
       "ATLETA_ID": 78445
     },
     {
@@ -36,7 +36,7 @@
       "NOME": "Luciano Juba",
       "CLUBE": "BAH",
       "PRECO": 11.86,
-      "EXP_SCORE": 7.3224,
+      "EXP_SCORE": 7.3236,
       "ATLETA_ID": 107093
     },
     {
@@ -47,7 +47,7 @@
       "NOME": "Justino",
       "CLUBE": "BOT",
       "PRECO": 3.34,
-      "EXP_SCORE": 2.1632,
+      "EXP_SCORE": 2.1634,
       "ATLETA_ID": 146430
     },
     {
@@ -58,7 +58,7 @@
       "NOME": "Ferraresi",
       "CLUBE": "BOT",
       "PRECO": 7.09,
-      "EXP_SCORE": 3.3793,
+      "EXP_SCORE": 3.3797,
       "ATLETA_ID": 105300
     },
     {
@@ -69,7 +69,7 @@
       "NOME": "Gustavo Henrique",
       "CLUBE": "SAN",
       "PRECO": 4.77,
-      "EXP_SCORE": 2.6877,
+      "EXP_SCORE": 2.6896,
       "ATLETA_ID": 141776
     },
     {
@@ -80,8 +80,19 @@
       "NOME": "Rodrigo Nestor",
       "CLUBE": "BAH",
       "PRECO": 6.91,
-      "EXP_SCORE": 3.8988,
+      "EXP_SCORE": 3.9021,
       "ATLETA_ID": 106822
+    },
+    {
+      "RODADA": 27,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Wallisson",
+      "CLUBE": "MIR",
+      "PRECO": 5.61,
+      "EXP_SCORE": 1.8445,
+      "ATLETA_ID": 101405
     },
     {
       "RODADA": 27,
@@ -91,7 +102,7 @@
       "NOME": "Lucas Romero",
       "CLUBE": "CRU",
       "PRECO": 9.88,
-      "EXP_SCORE": 4.2986,
+      "EXP_SCORE": 4.2221,
       "ATLETA_ID": 84558
     },
     {
@@ -102,7 +113,7 @@
       "NOME": "Marcinho",
       "CLUBE": "CHA",
       "PRECO": 7.32,
-      "EXP_SCORE": 3.5362,
+      "EXP_SCORE": 3.5398,
       "ATLETA_ID": 95332
     },
     {
@@ -113,19 +124,8 @@
       "NOME": "Renê",
       "CLUBE": "VIT",
       "PRECO": 10.32,
-      "EXP_SCORE": 4.5183,
+      "EXP_SCORE": 4.5235,
       "ATLETA_ID": 130209
-    },
-    {
-      "RODADA": 27,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Tarzia",
-      "CLUBE": "VIT",
-      "PRECO": 3.87,
-      "EXP_SCORE": 2.6727,
-      "ATLETA_ID": 143153
     },
     {
       "RODADA": 27,
@@ -135,7 +135,7 @@
       "NOME": "Jair Ventura",
       "CLUBE": "VIT",
       "PRECO": 9.1,
-      "EXP_SCORE": 4.4089,
+      "EXP_SCORE": 4.414,
       "ATLETA_ID": 92180
     },
     {
@@ -146,7 +146,7 @@
       "NOME": "Weverton",
       "CLUBE": "GRE",
       "PRECO": 7.94,
-      "EXP_SCORE": 3.1855,
+      "EXP_SCORE": 3.1862,
       "ATLETA_ID": 71631
     },
     {
@@ -157,7 +157,7 @@
       "NOME": "Igor Vinícius",
       "CLUBE": "SAN",
       "PRECO": 10.22,
-      "EXP_SCORE": 5.5033,
+      "EXP_SCORE": 5.5046,
       "ATLETA_ID": 95466
     },
     {
@@ -168,7 +168,7 @@
       "NOME": "Vitão",
       "CLUBE": "CAM",
       "PRECO": 3.1,
-      "EXP_SCORE": 0.9391,
+      "EXP_SCORE": 0.9393,
       "ATLETA_ID": 141131
     },
     {
@@ -179,7 +179,7 @@
       "NOME": "Bernard",
       "CLUBE": "CAM",
       "PRECO": 4.71,
-      "EXP_SCORE": 2.4554,
+      "EXP_SCORE": 2.4584,
       "ATLETA_ID": 72460
     },
     {
@@ -187,11 +187,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Gustavo Santana",
-      "CLUBE": "SAO",
-      "PRECO": 3.6,
-      "EXP_SCORE": 1.596,
-      "ATLETA_ID": 141382
+      "NOME": "Cristian Olivera",
+      "CLUBE": "BAH",
+      "PRECO": 7.07,
+      "EXP_SCORE": 3.2716,
+      "ATLETA_ID": 113397
     }
   ]
 }
