@@ -4,7 +4,7 @@
   "tipo_publicacao": "time_economico",
   "rodada": 27,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-09-10T22:44:45.626Z",
+  "atualizado_em": "2026-09-11T21:34:44.939Z",
   "dados": [
     {
       "rodada": 27,
@@ -14,8 +14,19 @@
       "nome": "Ronaldo",
       "clube": "BAH",
       "preco": 8.62,
-      "exp_score": 4.4611,
+      "exp_score": 4.5227,
       "atleta_id": 91101
+    },
+    {
+      "rodada": 27,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "LAT",
+      "nome": "Luciano Juba",
+      "clube": "BAH",
+      "preco": 11.86,
+      "exp_score": 7.3123,
+      "atleta_id": 107093
     },
     {
       "rodada": 27,
@@ -25,19 +36,19 @@
       "nome": "Igor Formiga",
       "clube": "MIR",
       "preco": 9.52,
-      "exp_score": 6.1908,
+      "exp_score": 5.2481,
       "atleta_id": 106708
     },
     {
       "rodada": 27,
       "tipo": "ECONOMICO",
       "status": "TITULAR",
-      "pos": "LAT",
-      "nome": "Renê",
-      "clube": "FLU",
-      "preco": 11.17,
-      "exp_score": 6.2157,
-      "atleta_id": 78445
+      "pos": "ZAG",
+      "nome": "Justino",
+      "clube": "BOT",
+      "preco": 3.34,
+      "exp_score": 2.1611,
+      "atleta_id": 146430
     },
     {
       "rodada": 27,
@@ -47,19 +58,8 @@
       "nome": "Ferraresi",
       "clube": "BOT",
       "preco": 7.09,
-      "exp_score": 3.3724,
+      "exp_score": 3.376,
       "atleta_id": 105300
-    },
-    {
-      "rodada": 27,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "ZAG",
-      "nome": "Eduardo Doma",
-      "clube": "CHA",
-      "preco": 4,
-      "exp_score": 1.9407,
-      "atleta_id": 101393
     },
     {
       "rodada": 27,
@@ -69,19 +69,8 @@
       "nome": "Gustavo Henrique",
       "clube": "SAN",
       "preco": 4.77,
-      "exp_score": 3.0901,
+      "exp_score": 2.6724,
       "atleta_id": 141776
-    },
-    {
-      "rodada": 27,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "MEI",
-      "nome": "Wallisson",
-      "clube": "MIR",
-      "preco": 5.61,
-      "exp_score": 2.3531,
-      "atleta_id": 101405
     },
     {
       "rodada": 27,
@@ -91,8 +80,19 @@
       "nome": "Rodrigo Nestor",
       "clube": "BAH",
       "preco": 6.91,
-      "exp_score": 3.946,
+      "exp_score": 3.8768,
       "atleta_id": 106822
+    },
+    {
+      "rodada": 27,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Lucas Romero",
+      "clube": "CRU",
+      "preco": 9.88,
+      "exp_score": 4.4291,
+      "atleta_id": 84558
     },
     {
       "rodada": 27,
@@ -102,8 +102,19 @@
       "nome": "Marcinho",
       "clube": "CHA",
       "preco": 7.32,
-      "exp_score": 4.5168,
+      "exp_score": 3.5121,
       "atleta_id": 95332
+    },
+    {
+      "rodada": 27,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "ATA",
+      "nome": "Renê",
+      "clube": "VIT",
+      "preco": 10.32,
+      "exp_score": 4.4839,
+      "atleta_id": 130209
     },
     {
       "rodada": 27,
@@ -113,30 +124,19 @@
       "nome": "Tarzia",
       "clube": "VIT",
       "preco": 3.87,
-      "exp_score": 2.6716,
+      "exp_score": 2.6524,
       "atleta_id": 143153
     },
     {
       "rodada": 27,
       "tipo": "ECONOMICO",
       "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Lucas Barbosa",
-      "clube": "RBB",
-      "preco": 10.87,
-      "exp_score": 5.3199,
-      "atleta_id": 112886
-    },
-    {
-      "rodada": 27,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
       "pos": "TEC",
-      "nome": "Rafael Guanaes",
-      "clube": "MIR",
-      "preco": 7.59,
-      "exp_score": 4.4607,
-      "atleta_id": 104027
+      "nome": "Rogério Ceni",
+      "clube": "BAH",
+      "preco": 10.69,
+      "exp_score": 6.3323,
+      "atleta_id": 97341
     },
     {
       "rodada": 27,
@@ -146,7 +146,7 @@
       "nome": "Weverton",
       "clube": "GRE",
       "preco": 7.94,
-      "exp_score": 3.1719,
+      "exp_score": 3.1912,
       "atleta_id": 71631
     },
     {
@@ -154,44 +154,44 @@
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "LAT",
-      "nome": "Vitinho",
-      "clube": "BOT",
-      "preco": 9.43,
-      "exp_score": 4.926,
-      "atleta_id": 100898
+      "nome": "Román Gómez",
+      "clube": "BAH",
+      "preco": 8.35,
+      "exp_score": 5.4563,
+      "atleta_id": 132412
     },
     {
       "rodada": 27,
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "ZAG",
-      "nome": "Justino",
-      "clube": "BOT",
-      "preco": 3.34,
-      "exp_score": 1.6895,
-      "atleta_id": 146430
+      "nome": "Vitão",
+      "clube": "CAM",
+      "preco": 3.1,
+      "exp_score": 0.9367,
+      "atleta_id": 141131
     },
     {
       "rodada": 27,
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "MEI",
-      "nome": "Giovanni Augusto",
-      "clube": "CHA",
-      "preco": 4.54,
-      "exp_score": 2.6899,
-      "atleta_id": 68938
+      "nome": "Reinier",
+      "clube": "CAM",
+      "preco": 4.44,
+      "exp_score": 3.2684,
+      "atleta_id": 105068
     },
     {
       "rodada": 27,
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "ATA",
-      "nome": "Gustavo Santana",
-      "clube": "SAO",
-      "preco": 3.6,
-      "exp_score": 1.5953,
-      "atleta_id": 141382
+      "nome": "Gui Negão",
+      "clube": "COR",
+      "preco": 3.01,
+      "exp_score": 0.5435,
+      "atleta_id": 133543
     }
   ],
   "modelo": "ECONOMICO",
@@ -206,8 +206,19 @@
       "nome": "Ronaldo",
       "clube": "BAH",
       "preco": 8.62,
-      "exp_score": 4.4611,
+      "exp_score": 4.5227,
       "atleta_id": 91101
+    },
+    {
+      "rodada": 27,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "LAT",
+      "nome": "Luciano Juba",
+      "clube": "BAH",
+      "preco": 11.86,
+      "exp_score": 7.3123,
+      "atleta_id": 107093
     },
     {
       "rodada": 27,
@@ -217,19 +228,19 @@
       "nome": "Igor Formiga",
       "clube": "MIR",
       "preco": 9.52,
-      "exp_score": 6.1908,
+      "exp_score": 5.2481,
       "atleta_id": 106708
     },
     {
       "rodada": 27,
       "tipo": "ECONOMICO",
       "status": "TITULAR",
-      "pos": "LAT",
-      "nome": "Renê",
-      "clube": "FLU",
-      "preco": 11.17,
-      "exp_score": 6.2157,
-      "atleta_id": 78445
+      "pos": "ZAG",
+      "nome": "Justino",
+      "clube": "BOT",
+      "preco": 3.34,
+      "exp_score": 2.1611,
+      "atleta_id": 146430
     },
     {
       "rodada": 27,
@@ -239,19 +250,8 @@
       "nome": "Ferraresi",
       "clube": "BOT",
       "preco": 7.09,
-      "exp_score": 3.3724,
+      "exp_score": 3.376,
       "atleta_id": 105300
-    },
-    {
-      "rodada": 27,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "ZAG",
-      "nome": "Eduardo Doma",
-      "clube": "CHA",
-      "preco": 4,
-      "exp_score": 1.9407,
-      "atleta_id": 101393
     },
     {
       "rodada": 27,
@@ -261,19 +261,8 @@
       "nome": "Gustavo Henrique",
       "clube": "SAN",
       "preco": 4.77,
-      "exp_score": 3.0901,
+      "exp_score": 2.6724,
       "atleta_id": 141776
-    },
-    {
-      "rodada": 27,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "MEI",
-      "nome": "Wallisson",
-      "clube": "MIR",
-      "preco": 5.61,
-      "exp_score": 2.3531,
-      "atleta_id": 101405
     },
     {
       "rodada": 27,
@@ -283,8 +272,19 @@
       "nome": "Rodrigo Nestor",
       "clube": "BAH",
       "preco": 6.91,
-      "exp_score": 3.946,
+      "exp_score": 3.8768,
       "atleta_id": 106822
+    },
+    {
+      "rodada": 27,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Lucas Romero",
+      "clube": "CRU",
+      "preco": 9.88,
+      "exp_score": 4.4291,
+      "atleta_id": 84558
     },
     {
       "rodada": 27,
@@ -294,8 +294,19 @@
       "nome": "Marcinho",
       "clube": "CHA",
       "preco": 7.32,
-      "exp_score": 4.5168,
+      "exp_score": 3.5121,
       "atleta_id": 95332
+    },
+    {
+      "rodada": 27,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "ATA",
+      "nome": "Renê",
+      "clube": "VIT",
+      "preco": 10.32,
+      "exp_score": 4.4839,
+      "atleta_id": 130209
     },
     {
       "rodada": 27,
@@ -305,30 +316,19 @@
       "nome": "Tarzia",
       "clube": "VIT",
       "preco": 3.87,
-      "exp_score": 2.6716,
+      "exp_score": 2.6524,
       "atleta_id": 143153
     },
     {
       "rodada": 27,
       "tipo": "ECONOMICO",
       "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Lucas Barbosa",
-      "clube": "RBB",
-      "preco": 10.87,
-      "exp_score": 5.3199,
-      "atleta_id": 112886
-    },
-    {
-      "rodada": 27,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
       "pos": "TEC",
-      "nome": "Rafael Guanaes",
-      "clube": "MIR",
-      "preco": 7.59,
-      "exp_score": 4.4607,
-      "atleta_id": 104027
+      "nome": "Rogério Ceni",
+      "clube": "BAH",
+      "preco": 10.69,
+      "exp_score": 6.3323,
+      "atleta_id": 97341
     },
     {
       "rodada": 27,
@@ -338,7 +338,7 @@
       "nome": "Weverton",
       "clube": "GRE",
       "preco": 7.94,
-      "exp_score": 3.1719,
+      "exp_score": 3.1912,
       "atleta_id": 71631
     },
     {
@@ -346,44 +346,44 @@
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "LAT",
-      "nome": "Vitinho",
-      "clube": "BOT",
-      "preco": 9.43,
-      "exp_score": 4.926,
-      "atleta_id": 100898
+      "nome": "Román Gómez",
+      "clube": "BAH",
+      "preco": 8.35,
+      "exp_score": 5.4563,
+      "atleta_id": 132412
     },
     {
       "rodada": 27,
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "ZAG",
-      "nome": "Justino",
-      "clube": "BOT",
-      "preco": 3.34,
-      "exp_score": 1.6895,
-      "atleta_id": 146430
+      "nome": "Vitão",
+      "clube": "CAM",
+      "preco": 3.1,
+      "exp_score": 0.9367,
+      "atleta_id": 141131
     },
     {
       "rodada": 27,
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "MEI",
-      "nome": "Giovanni Augusto",
-      "clube": "CHA",
-      "preco": 4.54,
-      "exp_score": 2.6899,
-      "atleta_id": 68938
+      "nome": "Reinier",
+      "clube": "CAM",
+      "preco": 4.44,
+      "exp_score": 3.2684,
+      "atleta_id": 105068
     },
     {
       "rodada": 27,
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "ATA",
-      "nome": "Gustavo Santana",
-      "clube": "SAO",
-      "preco": 3.6,
-      "exp_score": 1.5953,
-      "atleta_id": 141382
+      "nome": "Gui Negão",
+      "clube": "COR",
+      "preco": 3.01,
+      "exp_score": 0.5435,
+      "atleta_id": 133543
     }
   ],
   "jogadores": [
@@ -395,8 +395,19 @@
       "nome": "Ronaldo",
       "clube": "BAH",
       "preco": 8.62,
-      "exp_score": 4.4611,
+      "exp_score": 4.5227,
       "atleta_id": 91101
+    },
+    {
+      "rodada": 27,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "LAT",
+      "nome": "Luciano Juba",
+      "clube": "BAH",
+      "preco": 11.86,
+      "exp_score": 7.3123,
+      "atleta_id": 107093
     },
     {
       "rodada": 27,
@@ -406,19 +417,19 @@
       "nome": "Igor Formiga",
       "clube": "MIR",
       "preco": 9.52,
-      "exp_score": 6.1908,
+      "exp_score": 5.2481,
       "atleta_id": 106708
     },
     {
       "rodada": 27,
       "tipo": "ECONOMICO",
       "status": "TITULAR",
-      "pos": "LAT",
-      "nome": "Renê",
-      "clube": "FLU",
-      "preco": 11.17,
-      "exp_score": 6.2157,
-      "atleta_id": 78445
+      "pos": "ZAG",
+      "nome": "Justino",
+      "clube": "BOT",
+      "preco": 3.34,
+      "exp_score": 2.1611,
+      "atleta_id": 146430
     },
     {
       "rodada": 27,
@@ -428,19 +439,8 @@
       "nome": "Ferraresi",
       "clube": "BOT",
       "preco": 7.09,
-      "exp_score": 3.3724,
+      "exp_score": 3.376,
       "atleta_id": 105300
-    },
-    {
-      "rodada": 27,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "ZAG",
-      "nome": "Eduardo Doma",
-      "clube": "CHA",
-      "preco": 4,
-      "exp_score": 1.9407,
-      "atleta_id": 101393
     },
     {
       "rodada": 27,
@@ -450,19 +450,8 @@
       "nome": "Gustavo Henrique",
       "clube": "SAN",
       "preco": 4.77,
-      "exp_score": 3.0901,
+      "exp_score": 2.6724,
       "atleta_id": 141776
-    },
-    {
-      "rodada": 27,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "MEI",
-      "nome": "Wallisson",
-      "clube": "MIR",
-      "preco": 5.61,
-      "exp_score": 2.3531,
-      "atleta_id": 101405
     },
     {
       "rodada": 27,
@@ -472,8 +461,19 @@
       "nome": "Rodrigo Nestor",
       "clube": "BAH",
       "preco": 6.91,
-      "exp_score": 3.946,
+      "exp_score": 3.8768,
       "atleta_id": 106822
+    },
+    {
+      "rodada": 27,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Lucas Romero",
+      "clube": "CRU",
+      "preco": 9.88,
+      "exp_score": 4.4291,
+      "atleta_id": 84558
     },
     {
       "rodada": 27,
@@ -483,8 +483,19 @@
       "nome": "Marcinho",
       "clube": "CHA",
       "preco": 7.32,
-      "exp_score": 4.5168,
+      "exp_score": 3.5121,
       "atleta_id": 95332
+    },
+    {
+      "rodada": 27,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "ATA",
+      "nome": "Renê",
+      "clube": "VIT",
+      "preco": 10.32,
+      "exp_score": 4.4839,
+      "atleta_id": 130209
     },
     {
       "rodada": 27,
@@ -494,30 +505,19 @@
       "nome": "Tarzia",
       "clube": "VIT",
       "preco": 3.87,
-      "exp_score": 2.6716,
+      "exp_score": 2.6524,
       "atleta_id": 143153
     },
     {
       "rodada": 27,
       "tipo": "ECONOMICO",
       "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Lucas Barbosa",
-      "clube": "RBB",
-      "preco": 10.87,
-      "exp_score": 5.3199,
-      "atleta_id": 112886
-    },
-    {
-      "rodada": 27,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
       "pos": "TEC",
-      "nome": "Rafael Guanaes",
-      "clube": "MIR",
-      "preco": 7.59,
-      "exp_score": 4.4607,
-      "atleta_id": 104027
+      "nome": "Rogério Ceni",
+      "clube": "BAH",
+      "preco": 10.69,
+      "exp_score": 6.3323,
+      "atleta_id": 97341
     }
   ],
   "reservas": [
@@ -529,7 +529,7 @@
       "nome": "Weverton",
       "clube": "GRE",
       "preco": 7.94,
-      "exp_score": 3.1719,
+      "exp_score": 3.1912,
       "atleta_id": 71631
     },
     {
@@ -537,47 +537,47 @@
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "LAT",
-      "nome": "Vitinho",
-      "clube": "BOT",
-      "preco": 9.43,
-      "exp_score": 4.926,
-      "atleta_id": 100898
+      "nome": "Román Gómez",
+      "clube": "BAH",
+      "preco": 8.35,
+      "exp_score": 5.4563,
+      "atleta_id": 132412
     },
     {
       "rodada": 27,
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "ZAG",
-      "nome": "Justino",
-      "clube": "BOT",
-      "preco": 3.34,
-      "exp_score": 1.6895,
-      "atleta_id": 146430
+      "nome": "Vitão",
+      "clube": "CAM",
+      "preco": 3.1,
+      "exp_score": 0.9367,
+      "atleta_id": 141131
     },
     {
       "rodada": 27,
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "MEI",
-      "nome": "Giovanni Augusto",
-      "clube": "CHA",
-      "preco": 4.54,
-      "exp_score": 2.6899,
-      "atleta_id": 68938
+      "nome": "Reinier",
+      "clube": "CAM",
+      "preco": 4.44,
+      "exp_score": 3.2684,
+      "atleta_id": 105068
     },
     {
       "rodada": 27,
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "ATA",
-      "nome": "Gustavo Santana",
-      "clube": "SAO",
-      "preco": 3.6,
-      "exp_score": 1.5953,
-      "atleta_id": 141382
+      "nome": "Gui Negão",
+      "clube": "COR",
+      "preco": 3.01,
+      "exp_score": 0.5435,
+      "atleta_id": 133543
     }
   ],
-  "capitao": "Renê",
+  "capitao": "Luciano Juba",
   "formacao": "4-3-3",
   "evento_programado": "ATUALIZACAO_20H",
   "blocos_topo": [],
