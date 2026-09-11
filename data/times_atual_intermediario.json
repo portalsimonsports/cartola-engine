@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 27,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-09-11T16:48:01.985Z",
+  "atualizado_em": "2026-09-11T16:49:51.368Z",
   "dados": [
     {
       "RODADA": 27,
@@ -98,17 +98,6 @@
       "RODADA": 27,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Carrascal",
-      "CLUBE": "FLA",
-      "PRECO": 10.52,
-      "EXP_SCORE": 5.0206,
-      "ATLETA_ID": 105436
-    },
-    {
-      "RODADA": 27,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
       "POS": "ATA",
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
@@ -121,11 +110,22 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Erick Pulga",
-      "CLUBE": "BAH",
-      "PRECO": 7.62,
-      "EXP_SCORE": 5.2066,
-      "ATLETA_ID": 109401
+      "NOME": "Pedro",
+      "CLUBE": "FLA",
+      "PRECO": 16.1,
+      "EXP_SCORE": 7.754,
+      "ATLETA_ID": 94583
+    },
+    {
+      "RODADA": 27,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Tarzia",
+      "CLUBE": "VIT",
+      "PRECO": 3.87,
+      "EXP_SCORE": 2.6737,
+      "ATLETA_ID": 143153
     },
     {
       "RODADA": 27,
@@ -176,22 +176,22 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Acevedo",
-      "CLUBE": "BAH",
-      "PRECO": 7.23,
-      "EXP_SCORE": 4.6808,
-      "ATLETA_ID": 104783
+      "NOME": "Carrascal",
+      "CLUBE": "FLA",
+      "PRECO": 10.52,
+      "EXP_SCORE": 5.0206,
+      "ATLETA_ID": 105436
     },
     {
       "RODADA": 27,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Jajá",
-      "CLUBE": "REM",
-      "PRECO": 6.28,
-      "EXP_SCORE": 4.8637,
-      "ATLETA_ID": 105048
+      "NOME": "Gustavo Santana",
+      "CLUBE": "SAO",
+      "PRECO": 3.6,
+      "EXP_SCORE": 1.5967,
+      "ATLETA_ID": 141382
     }
   ]
 }
