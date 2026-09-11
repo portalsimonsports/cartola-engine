@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 27,
-  "atualizado_em": "2026-09-10T22:45:00.650Z",
+  "atualizado_em": "2026-09-11T01:08:33.224Z",
   "dados": [
     {
       "RODADA": 27,
@@ -28,22 +28,22 @@
     {
       "RODADA": 27,
       "POS": "GOL",
+      "NOME": "Rossi",
+      "CLUBE": "FLA",
+      "PRECO": 8.93,
+      "EXP_SCORE": 4.1324,
+      "FACTOR": 1.123978537188805,
+      "ATLETA_ID": 99552
+    },
+    {
+      "RODADA": 27,
+      "POS": "GOL",
       "NOME": "Lucas Arcanjo",
       "CLUBE": "VIT",
       "PRECO": 10.37,
       "EXP_SCORE": 4.0132,
       "FACTOR": 0.9785128189268595,
       "ATLETA_ID": 104118
-    },
-    {
-      "RODADA": 27,
-      "POS": "GOL",
-      "NOME": "Rossi",
-      "CLUBE": "FLA",
-      "PRECO": 8.93,
-      "EXP_SCORE": 3.7192,
-      "FACTOR": 1.123978537188805,
-      "ATLETA_ID": 99552
     },
     {
       "RODADA": 27,
@@ -78,16 +78,6 @@
     {
       "RODADA": 27,
       "POS": "LAT",
-      "NOME": "Igor Formiga",
-      "CLUBE": "MIR",
-      "PRECO": 9.52,
-      "EXP_SCORE": 6.1908,
-      "FACTOR": 1.140636956857894,
-      "ATLETA_ID": 106708
-    },
-    {
-      "RODADA": 27,
-      "POS": "LAT",
       "NOME": "Juninho Capixaba",
       "CLUBE": "RBB",
       "PRECO": 12.86,
@@ -104,6 +94,16 @@
       "EXP_SCORE": 5.633,
       "FACTOR": 0.8445878923766816,
       "ATLETA_ID": 105531
+    },
+    {
+      "RODADA": 27,
+      "POS": "LAT",
+      "NOME": "Igor Vinícius",
+      "CLUBE": "SAN",
+      "PRECO": 10.22,
+      "EXP_SCORE": 5.4805,
+      "FACTOR": 1.0795268594402352,
+      "ATLETA_ID": 95466
     },
     {
       "RODADA": 27,
@@ -158,22 +158,22 @@
     {
       "RODADA": 27,
       "POS": "MEI",
+      "NOME": "Arias",
+      "CLUBE": "PAL",
+      "PRECO": 13.83,
+      "EXP_SCORE": 6.9577,
+      "FACTOR": 1.0649718475073315,
+      "ATLETA_ID": 99815
+    },
+    {
+      "RODADA": 27,
+      "POS": "MEI",
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 15,
       "EXP_SCORE": 6.3995,
       "FACTOR": 0.9795865102639294,
       "ATLETA_ID": 96610
-    },
-    {
-      "RODADA": 27,
-      "POS": "MEI",
-      "NOME": "Arias",
-      "CLUBE": "PAL",
-      "PRECO": 13.83,
-      "EXP_SCORE": 6.0502,
-      "FACTOR": 1.0649718475073315,
-      "ATLETA_ID": 99815
     },
     {
       "RODADA": 27,
@@ -221,7 +221,7 @@
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 16.1,
-      "EXP_SCORE": 6.9718,
+      "EXP_SCORE": 7.7464,
       "FACTOR": 1.026791788856305,
       "ATLETA_ID": 94583
     },
