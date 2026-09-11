@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 27,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-09-11T03:47:27.963Z",
+  "atualizado_em": "2026-09-11T04:07:57.108Z",
   "dados": [
     {
       "RODADA": 27,
@@ -98,17 +98,6 @@
       "RODADA": 27,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Carrascal",
-      "CLUBE": "FLA",
-      "PRECO": 10.52,
-      "EXP_SCORE": 5.0157,
-      "ATLETA_ID": 105436
-    },
-    {
-      "RODADA": 27,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
       "POS": "ATA",
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
@@ -121,11 +110,22 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Erick Pulga",
-      "CLUBE": "BAH",
-      "PRECO": 7.62,
-      "EXP_SCORE": 5.2039,
-      "ATLETA_ID": 109401
+      "NOME": "Pedro",
+      "CLUBE": "FLA",
+      "PRECO": 16.1,
+      "EXP_SCORE": 7.7464,
+      "ATLETA_ID": 94583
+    },
+    {
+      "RODADA": 27,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Tarzia",
+      "CLUBE": "VIT",
+      "PRECO": 3.87,
+      "EXP_SCORE": 2.6716,
+      "ATLETA_ID": 143153
     },
     {
       "RODADA": 27,
@@ -154,11 +154,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "LAT",
-      "NOME": "Igor Formiga",
-      "CLUBE": "MIR",
-      "PRECO": 9.52,
-      "EXP_SCORE": 6.1908,
-      "ATLETA_ID": 106708
+      "NOME": "Igor Vinícius",
+      "CLUBE": "SAN",
+      "PRECO": 10.22,
+      "EXP_SCORE": 5.4805,
+      "ATLETA_ID": 95466
     },
     {
       "RODADA": 27,
@@ -176,22 +176,22 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Acevedo",
-      "CLUBE": "BAH",
-      "PRECO": 7.23,
-      "EXP_SCORE": 4.6784,
-      "ATLETA_ID": 104783
+      "NOME": "Carrascal",
+      "CLUBE": "FLA",
+      "PRECO": 10.52,
+      "EXP_SCORE": 5.0157,
+      "ATLETA_ID": 105436
     },
     {
       "RODADA": 27,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Jajá",
-      "CLUBE": "REM",
-      "PRECO": 6.28,
-      "EXP_SCORE": 4.8587,
-      "ATLETA_ID": 105048
+      "NOME": "Gustavo Santana",
+      "CLUBE": "SAO",
+      "PRECO": 3.6,
+      "EXP_SCORE": 1.5953,
+      "ATLETA_ID": 141382
     }
   ]
 }
