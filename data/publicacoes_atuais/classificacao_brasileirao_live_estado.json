@@ -197,11 +197,26 @@
           "tipo": "gol"
         }
       ],
-      "goleadores_fora": [],
+      "goleadores_fora": [
+        {
+          "clube_origem": "Vasco",
+          "gol_contra": false,
+          "nome": "T. Mendes",
+          "quantidade": 1,
+          "tipo": "gol"
+        },
+        {
+          "clube_origem": "Vasco",
+          "gol_contra": false,
+          "nome": "Colidio",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "hora": "16:00",
       "link_resumo": "https://ge.globo.com/rs/futebol/brasileirao-serie-a/jogo/12-09-2026/gremio-vasco.ghtml?utm_source=cartolafc",
       "placar_casa": 1,
-      "placar_fora": 0,
+      "placar_fora": 1,
       "status": "EM_ANDAMENTO"
     },
     "CHAxINT": {
@@ -216,12 +231,20 @@
       "fora_nome": "Internacional",
       "fora_sigla": "INT",
       "goleadores_casa": [],
-      "goleadores_fora": [],
+      "goleadores_fora": [
+        {
+          "clube_origem": "Internacional",
+          "gol_contra": false,
+          "nome": "B. Henrique",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "hora": "17:00",
       "link_resumo": "https://ge.globo.com/sc/futebol/brasileirao-serie-a/jogo/12-09-2026/chapecoense-internacional.ghtml?utm_source=cartolafc",
       "placar_casa": 0,
-      "placar_fora": 0,
-      "status": ""
+      "placar_fora": 1,
+      "status": "EM_ANDAMENTO"
     },
     "PALxSAO": {
       "casa_id": "275",
@@ -397,9 +420,9 @@
     {
       "nome": "GRE",
       "pos": 15,
-      "pts": 31,
-      "v": 8,
-      "saldo": -5,
+      "pts": 29,
+      "v": 7,
+      "saldo": -6,
       "gm": 28
     },
     {
@@ -411,19 +434,19 @@
       "gm": 29
     },
     {
-      "nome": "VAS",
+      "nome": "INT",
       "pos": 17,
-      "pts": 25,
+      "pts": 28,
       "v": 6,
-      "saldo": -14,
-      "gm": 27
+      "saldo": -5,
+      "gm": 29
     },
     {
-      "nome": "INT",
+      "nome": "VAS",
       "pos": 18,
-      "pts": 25,
-      "v": 5,
-      "saldo": -6,
+      "pts": 26,
+      "v": 6,
+      "saldo": -13,
       "gm": 28
     },
     {
@@ -439,10 +462,10 @@
       "pos": 20,
       "pts": 17,
       "v": 3,
-      "saldo": -23,
+      "saldo": -24,
       "gm": 27
     }
   ],
-  "updated_at": "2026-09-12T17:34:04.050718-03:00",
+  "updated_at": "2026-09-12T17:44:13.810711-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
