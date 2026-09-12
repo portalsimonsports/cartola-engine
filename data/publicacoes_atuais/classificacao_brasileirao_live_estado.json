@@ -173,13 +173,21 @@
       "fora_id": "267",
       "fora_nome": "Vasco",
       "fora_sigla": "VAS",
-      "goleadores_casa": [],
+      "goleadores_casa": [
+        {
+          "clube_origem": "GRÊMIO",
+          "gol_contra": false,
+          "nome": "Villasanti",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "goleadores_fora": [],
       "hora": "16:00",
       "link_resumo": "https://ge.globo.com/rs/futebol/brasileirao-serie-a/jogo/12-09-2026/gremio-vasco.ghtml?utm_source=cartolafc",
-      "placar_casa": 0,
+      "placar_casa": 1,
       "placar_fora": 0,
-      "status": ""
+      "status": "EM_ANDAMENTO"
     },
     "CHAxINT": {
       "casa_id": "315",
@@ -258,5 +266,168 @@
       "status": ""
     }
   },
-  "last_signature": []
+  "last_signature": [
+    {
+      "nome": "FLA",
+      "pos": 1,
+      "pts": 54,
+      "v": 16,
+      "saldo": 30,
+      "gm": 51
+    },
+    {
+      "nome": "PAL",
+      "pos": 2,
+      "pts": 53,
+      "v": 15,
+      "saldo": 24,
+      "gm": 45
+    },
+    {
+      "nome": "CAP",
+      "pos": 3,
+      "pts": 46,
+      "v": 13,
+      "saldo": 10,
+      "gm": 41
+    },
+    {
+      "nome": "FLU",
+      "pos": 4,
+      "pts": 45,
+      "v": 12,
+      "saldo": 8,
+      "gm": 40
+    },
+    {
+      "nome": "BAH",
+      "pos": 5,
+      "pts": 43,
+      "v": 11,
+      "saldo": 8,
+      "gm": 40
+    },
+    {
+      "nome": "CRU",
+      "pos": 6,
+      "pts": 42,
+      "v": 12,
+      "saldo": 1,
+      "gm": 38
+    },
+    {
+      "nome": "CFC",
+      "pos": 7,
+      "pts": 38,
+      "v": 10,
+      "saldo": -1,
+      "gm": 37
+    },
+    {
+      "nome": "CAM",
+      "pos": 8,
+      "pts": 36,
+      "v": 10,
+      "saldo": 2,
+      "gm": 32
+    },
+    {
+      "nome": "RBB",
+      "pos": 9,
+      "pts": 35,
+      "v": 10,
+      "saldo": 3,
+      "gm": 31
+    },
+    {
+      "nome": "SAO",
+      "pos": 10,
+      "pts": 33,
+      "v": 9,
+      "saldo": 3,
+      "gm": 31
+    },
+    {
+      "nome": "VIT",
+      "pos": 11,
+      "pts": 32,
+      "v": 9,
+      "saldo": -12,
+      "gm": 25
+    },
+    {
+      "nome": "COR",
+      "pos": 12,
+      "pts": 32,
+      "v": 8,
+      "saldo": 0,
+      "gm": 27
+    },
+    {
+      "nome": "SAN",
+      "pos": 13,
+      "pts": 32,
+      "v": 8,
+      "saldo": -1,
+      "gm": 37
+    },
+    {
+      "nome": "BOT",
+      "pos": 14,
+      "pts": 31,
+      "v": 8,
+      "saldo": -3,
+      "gm": 37
+    },
+    {
+      "nome": "GRE",
+      "pos": 15,
+      "pts": 31,
+      "v": 8,
+      "saldo": -5,
+      "gm": 28
+    },
+    {
+      "nome": "MIR",
+      "pos": 16,
+      "pts": 28,
+      "v": 7,
+      "saldo": -11,
+      "gm": 29
+    },
+    {
+      "nome": "VAS",
+      "pos": 17,
+      "pts": 25,
+      "v": 6,
+      "saldo": -14,
+      "gm": 27
+    },
+    {
+      "nome": "INT",
+      "pos": 18,
+      "pts": 25,
+      "v": 5,
+      "saldo": -6,
+      "gm": 28
+    },
+    {
+      "nome": "REM",
+      "pos": 19,
+      "pts": 23,
+      "v": 5,
+      "saldo": -13,
+      "gm": 30
+    },
+    {
+      "nome": "CHA",
+      "pos": 20,
+      "pts": 17,
+      "v": 3,
+      "saldo": -23,
+      "gm": 27
+    }
+  ],
+  "updated_at": "2026-09-12T17:04:16.368545-03:00",
+  "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
