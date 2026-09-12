@@ -168,12 +168,27 @@
           "nome": "Reinier",
           "quantidade": 1,
           "tipo": "gol"
+        },
+        {
+          "clube_origem": "ATLÉTICO-MG",
+          "gol_contra": false,
+          "nome": "Vitão",
+          "quantidade": 1,
+          "tipo": "gol"
         }
       ],
-      "goleadores_fora": [],
+      "goleadores_fora": [
+        {
+          "clube_origem": "Fluminense",
+          "gol_contra": false,
+          "nome": "R. Castillo",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "hora": "16:00",
       "link_resumo": "https://ge.globo.com/mg/futebol/brasileirao-serie-a/jogo/12-09-2026/atletico-mg-fluminense.ghtml?utm_source=cartolafc",
-      "placar_casa": 2,
+      "placar_casa": 3,
       "placar_fora": 0,
       "status": "EM_ANDAMENTO"
     },
@@ -216,7 +231,7 @@
       "hora": "16:00",
       "link_resumo": "https://ge.globo.com/rs/futebol/brasileirao-serie-a/jogo/12-09-2026/gremio-vasco.ghtml?utm_source=cartolafc",
       "placar_casa": 1,
-      "placar_fora": 1,
+      "placar_fora": 2,
       "status": "EM_ANDAMENTO"
     },
     "CHAxINT": {
@@ -230,7 +245,15 @@
       "fora_id": "285",
       "fora_nome": "Internacional",
       "fora_sigla": "INT",
-      "goleadores_casa": [],
+      "goleadores_casa": [
+        {
+          "clube_origem": "Chapecoense",
+          "gol_contra": false,
+          "nome": "Garcez",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "goleadores_fora": [
         {
           "clube_origem": "Internacional",
@@ -242,7 +265,7 @@
       ],
       "hora": "17:00",
       "link_resumo": "https://ge.globo.com/sc/futebol/brasileirao-serie-a/jogo/12-09-2026/chapecoense-internacional.ghtml?utm_source=cartolafc",
-      "placar_casa": 0,
+      "placar_casa": 1,
       "placar_fora": 1,
       "status": "EM_ANDAMENTO"
     },
@@ -334,7 +357,7 @@
       "pos": 4,
       "pts": 45,
       "v": 12,
-      "saldo": 6,
+      "saldo": 5,
       "gm": 40
     },
     {
@@ -358,8 +381,8 @@
       "pos": 7,
       "pts": 39,
       "v": 11,
-      "saldo": 4,
-      "gm": 34
+      "saldo": 5,
+      "gm": 35
     },
     {
       "nome": "CFC",
@@ -420,9 +443,9 @@
     {
       "nome": "GRE",
       "pos": 15,
-      "pts": 29,
+      "pts": 28,
       "v": 7,
-      "saldo": -6,
+      "saldo": -7,
       "gm": 28
     },
     {
@@ -434,20 +457,20 @@
       "gm": 29
     },
     {
-      "nome": "INT",
+      "nome": "VAS",
       "pos": 17,
       "pts": 28,
-      "v": 6,
-      "saldo": -5,
+      "v": 7,
+      "saldo": -12,
       "gm": 29
     },
     {
-      "nome": "VAS",
+      "nome": "INT",
       "pos": 18,
       "pts": 26,
-      "v": 6,
-      "saldo": -13,
-      "gm": 28
+      "v": 5,
+      "saldo": -6,
+      "gm": 29
     },
     {
       "nome": "REM",
@@ -460,12 +483,12 @@
     {
       "nome": "CHA",
       "pos": 20,
-      "pts": 17,
+      "pts": 18,
       "v": 3,
-      "saldo": -24,
-      "gm": 27
+      "saldo": -23,
+      "gm": 28
     }
   ],
-  "updated_at": "2026-09-12T17:44:13.810711-03:00",
+  "updated_at": "2026-09-12T17:54:06.286551-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
