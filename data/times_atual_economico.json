@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 27,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-09-11T21:34:44.939Z",
+  "atualizado_em": "2026-09-12T01:05:26.688Z",
   "dados": [
     {
       "RODADA": 27,
@@ -14,7 +14,7 @@
       "NOME": "Ronaldo",
       "CLUBE": "BAH",
       "PRECO": 8.62,
-      "EXP_SCORE": 4.5227,
+      "EXP_SCORE": 4.5182,
       "ATLETA_ID": 91101
     },
     {
@@ -25,7 +25,7 @@
       "NOME": "Luciano Juba",
       "CLUBE": "BAH",
       "PRECO": 11.86,
-      "EXP_SCORE": 7.3123,
+      "EXP_SCORE": 7.3049,
       "ATLETA_ID": 107093
     },
     {
@@ -36,7 +36,7 @@
       "NOME": "Igor Formiga",
       "CLUBE": "MIR",
       "PRECO": 9.52,
-      "EXP_SCORE": 5.2481,
+      "EXP_SCORE": 5.2416,
       "ATLETA_ID": 106708
     },
     {
@@ -44,11 +44,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ZAG",
-      "NOME": "Justino",
-      "CLUBE": "BOT",
-      "PRECO": 3.34,
-      "EXP_SCORE": 2.1611,
-      "ATLETA_ID": 146430
+      "NOME": "Eduardo Doma",
+      "CLUBE": "CHA",
+      "PRECO": 4,
+      "EXP_SCORE": 1.9013,
+      "ATLETA_ID": 101393
     },
     {
       "RODADA": 27,
@@ -58,8 +58,19 @@
       "NOME": "Ferraresi",
       "CLUBE": "BOT",
       "PRECO": 7.09,
-      "EXP_SCORE": 3.376,
+      "EXP_SCORE": 2.9335,
       "ATLETA_ID": 105300
+    },
+    {
+      "RODADA": 27,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ZAG",
+      "NOME": "David Duarte",
+      "CLUBE": "BAH",
+      "PRECO": 5.87,
+      "EXP_SCORE": 3.1444,
+      "ATLETA_ID": 91772
     },
     {
       "RODADA": 27,
@@ -69,7 +80,7 @@
       "NOME": "Gustavo Henrique",
       "CLUBE": "SAN",
       "PRECO": 4.77,
-      "EXP_SCORE": 2.6724,
+      "EXP_SCORE": 2.6716,
       "ATLETA_ID": 141776
     },
     {
@@ -80,7 +91,7 @@
       "NOME": "Rodrigo Nestor",
       "CLUBE": "BAH",
       "PRECO": 6.91,
-      "EXP_SCORE": 3.8768,
+      "EXP_SCORE": 3.8756,
       "ATLETA_ID": 106822
     },
     {
@@ -91,7 +102,7 @@
       "NOME": "Lucas Romero",
       "CLUBE": "CRU",
       "PRECO": 9.88,
-      "EXP_SCORE": 4.4291,
+      "EXP_SCORE": 4.428,
       "ATLETA_ID": 84558
     },
     {
@@ -102,7 +113,7 @@
       "NOME": "Marcinho",
       "CLUBE": "CHA",
       "PRECO": 7.32,
-      "EXP_SCORE": 3.5121,
+      "EXP_SCORE": 3.5107,
       "ATLETA_ID": 95332
     },
     {
@@ -113,19 +124,8 @@
       "NOME": "Renê",
       "CLUBE": "VIT",
       "PRECO": 10.32,
-      "EXP_SCORE": 4.4839,
+      "EXP_SCORE": 4.482,
       "ATLETA_ID": 130209
-    },
-    {
-      "RODADA": 27,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Tarzia",
-      "CLUBE": "VIT",
-      "PRECO": 3.87,
-      "EXP_SCORE": 2.6524,
-      "ATLETA_ID": 143153
     },
     {
       "RODADA": 27,
@@ -135,7 +135,7 @@
       "NOME": "Rogério Ceni",
       "CLUBE": "BAH",
       "PRECO": 10.69,
-      "EXP_SCORE": 6.3323,
+      "EXP_SCORE": 6.3302,
       "ATLETA_ID": 97341
     },
     {
@@ -146,7 +146,7 @@
       "NOME": "Weverton",
       "CLUBE": "GRE",
       "PRECO": 7.94,
-      "EXP_SCORE": 3.1912,
+      "EXP_SCORE": 3.1865,
       "ATLETA_ID": 71631
     },
     {
@@ -157,7 +157,7 @@
       "NOME": "Román Gómez",
       "CLUBE": "BAH",
       "PRECO": 8.35,
-      "EXP_SCORE": 5.4563,
+      "EXP_SCORE": 5.4508,
       "ATLETA_ID": 132412
     },
     {
@@ -168,7 +168,7 @@
       "NOME": "Vitão",
       "CLUBE": "CAM",
       "PRECO": 3.1,
-      "EXP_SCORE": 0.9367,
+      "EXP_SCORE": 0.9357,
       "ATLETA_ID": 141131
     },
     {
@@ -179,7 +179,7 @@
       "NOME": "Reinier",
       "CLUBE": "CAM",
       "PRECO": 4.44,
-      "EXP_SCORE": 3.2684,
+      "EXP_SCORE": 3.267,
       "ATLETA_ID": 105068
     },
     {
@@ -187,11 +187,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Gui Negão",
-      "CLUBE": "COR",
-      "PRECO": 3.01,
-      "EXP_SCORE": 0.5435,
-      "ATLETA_ID": 133543
+      "NOME": "Cristian Olivera",
+      "CLUBE": "BAH",
+      "PRECO": 7.07,
+      "EXP_SCORE": 3.2494,
+      "ATLETA_ID": 113397
     }
   ]
 }
