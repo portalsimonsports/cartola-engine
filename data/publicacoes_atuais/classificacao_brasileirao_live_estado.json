@@ -1,5 +1,5 @@
 {
-  "rodada": 26,
+  "rodada": 27,
   "base_signature": [
     {
       "nome": "FLA",
@@ -17,8 +17,8 @@
     },
     {
       "nome": "CAP",
-      "j": 26,
-      "pts": 45,
+      "j": 27,
+      "pts": 46,
       "v": 13,
       "saldo": 10
     },
@@ -45,8 +45,8 @@
     },
     {
       "nome": "CFC",
-      "j": 26,
-      "pts": 37,
+      "j": 27,
+      "pts": 38,
       "v": 10,
       "saldo": -1
     },
@@ -143,196 +143,120 @@
     }
   ],
   "partidas": {
-    "VITxGRE": {
-      "casa_id": "287",
-      "casa_nome": "VITÓRIA",
-      "casa_sigla": "VIT",
-      "chave": "MjAyNi0wOS0wNyAyMDowMHwyODd8Mjg0",
-      "data": "07/09",
-      "data_iso": "2026-09-07T23:00:00.000Z",
-      "estadio": "Barradão",
-      "fora_id": "284",
-      "fora_nome": "GRÊMIO",
-      "fora_sigla": "GRE",
-      "goleadores_casa": [
-        {
-          "clube_origem": "VITÓRIA",
-          "gol_contra": false,
-          "nome": "Renê",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
+    "CAMxFLU": {
+      "casa_id": "282",
+      "casa_nome": "ATLÉTICO-MG",
+      "casa_sigla": "CAM",
+      "chave": "MjAyNi0wOS0xMiAxNjowMHwyODJ8MjY2",
+      "data": "12/09",
+      "data_iso": "2026-09-12T19:00:00.000Z",
+      "estadio": "Arena MRV",
+      "fora_id": "266",
+      "fora_nome": "Fluminense",
+      "fora_sigla": "FLU",
+      "goleadores_casa": [],
       "goleadores_fora": [],
-      "hora": "20:00",
-      "link_resumo": "https://ge.globo.com/ba/futebol/brasileirao-serie-a/jogo/07-09-2026/vitoria-gremio.ghtml?utm_source=cartolafc",
-      "placar_casa": 1,
+      "hora": "16:00",
+      "link_resumo": "https://ge.globo.com/mg/futebol/brasileirao-serie-a/jogo/12-09-2026/atletico-mg-fluminense.ghtml?utm_source=cartolafc",
+      "placar_casa": 0,
       "placar_fora": 0,
-      "status": "ENCERRADA"
+      "status": ""
+    },
+    "GRExVAS": {
+      "casa_id": "284",
+      "casa_nome": "GRÊMIO",
+      "casa_sigla": "GRE",
+      "chave": "MjAyNi0wOS0xMiAxNjowMHwyODR8MjY3",
+      "data": "12/09",
+      "data_iso": "2026-09-12T19:00:00.000Z",
+      "estadio": "Arena do Grêmio",
+      "fora_id": "267",
+      "fora_nome": "Vasco",
+      "fora_sigla": "VAS",
+      "goleadores_casa": [],
+      "goleadores_fora": [],
+      "hora": "16:00",
+      "link_resumo": "https://ge.globo.com/rs/futebol/brasileirao-serie-a/jogo/12-09-2026/gremio-vasco.ghtml?utm_source=cartolafc",
+      "placar_casa": 0,
+      "placar_fora": 0,
+      "status": ""
+    },
+    "CHAxINT": {
+      "casa_id": "315",
+      "casa_nome": "Chapecoense",
+      "casa_sigla": "CHA",
+      "chave": "MjAyNi0wOS0xMiAxNzowMHwzMTV8Mjg1",
+      "data": "12/09",
+      "data_iso": "2026-09-12T20:00:00.000Z",
+      "estadio": "Arena Condá",
+      "fora_id": "285",
+      "fora_nome": "Internacional",
+      "fora_sigla": "INT",
+      "goleadores_casa": [],
+      "goleadores_fora": [],
+      "hora": "17:00",
+      "link_resumo": "https://ge.globo.com/sc/futebol/brasileirao-serie-a/jogo/12-09-2026/chapecoense-internacional.ghtml?utm_source=cartolafc",
+      "placar_casa": 0,
+      "placar_fora": 0,
+      "status": ""
+    },
+    "PALxSAO": {
+      "casa_id": "275",
+      "casa_nome": "Palmeiras",
+      "casa_sigla": "PAL",
+      "chave": "MjAyNi0wOS0xMiAxODozMHwyNzV8Mjc2",
+      "data": "12/09",
+      "data_iso": "2026-09-12T21:30:00.000Z",
+      "estadio": "Nubank Parque",
+      "fora_id": "276",
+      "fora_nome": "SÃO PAULO",
+      "fora_sigla": "SAO",
+      "goleadores_casa": [],
+      "goleadores_fora": [],
+      "hora": "18:30",
+      "link_resumo": "https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/12-09-2026/palmeiras-sao-paulo.ghtml?utm_source=cartolafc",
+      "placar_casa": 0,
+      "placar_fora": 0,
+      "status": ""
+    },
+    "BOTxRBB": {
+      "casa_id": "263",
+      "casa_nome": "Botafogo",
+      "casa_sigla": "BOT",
+      "chave": "MjAyNi0wOS0xMiAyMDozMHwyNjN8Mjgw",
+      "data": "12/09",
+      "data_iso": "2026-09-12T23:30:00.000Z",
+      "estadio": "Nilton Santos (Engenhão)",
+      "fora_id": "280",
+      "fora_nome": "RB Bragantino",
+      "fora_sigla": "RBB",
+      "goleadores_casa": [],
+      "goleadores_fora": [],
+      "hora": "20:30",
+      "link_resumo": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/12-09-2026/botafogo-bragantino.ghtml?utm_source=cartolafc",
+      "placar_casa": 0,
+      "placar_fora": 0,
+      "status": ""
+    },
+    "SANxCRU": {
+      "casa_id": "277",
+      "casa_nome": "Santos",
+      "casa_sigla": "SAN",
+      "chave": "MjAyNi0wOS0xMiAyMTowMHwyNzd8Mjgz",
+      "data": "12/09",
+      "data_iso": "2026-09-13T00:00:00.000Z",
+      "estadio": "Vila Belmiro",
+      "fora_id": "283",
+      "fora_nome": "Cruzeiro",
+      "fora_sigla": "CRU",
+      "goleadores_casa": [],
+      "goleadores_fora": [],
+      "hora": "21:00",
+      "link_resumo": "https://ge.globo.com/sp/santos-e-regiao/futebol/brasileirao-serie-a/jogo/12-09-2026/santos-cruzeiro.ghtml?utm_source=cartolafc",
+      "placar_casa": 0,
+      "placar_fora": 0,
+      "status": ""
     }
   },
-  "last_signature": [
-    {
-      "nome": "FLA",
-      "pos": 1,
-      "pts": 54,
-      "v": 16,
-      "saldo": 30,
-      "gm": 51
-    },
-    {
-      "nome": "PAL",
-      "pos": 2,
-      "pts": 53,
-      "v": 15,
-      "saldo": 24,
-      "gm": 45
-    },
-    {
-      "nome": "CAP",
-      "pos": 3,
-      "pts": 45,
-      "v": 13,
-      "saldo": 10,
-      "gm": 38
-    },
-    {
-      "nome": "FLU",
-      "pos": 4,
-      "pts": 45,
-      "v": 12,
-      "saldo": 8,
-      "gm": 40
-    },
-    {
-      "nome": "BAH",
-      "pos": 5,
-      "pts": 43,
-      "v": 11,
-      "saldo": 8,
-      "gm": 40
-    },
-    {
-      "nome": "CRU",
-      "pos": 6,
-      "pts": 42,
-      "v": 12,
-      "saldo": 1,
-      "gm": 38
-    },
-    {
-      "nome": "CFC",
-      "pos": 7,
-      "pts": 37,
-      "v": 10,
-      "saldo": -1,
-      "gm": 34
-    },
-    {
-      "nome": "CAM",
-      "pos": 8,
-      "pts": 36,
-      "v": 10,
-      "saldo": 2,
-      "gm": 32
-    },
-    {
-      "nome": "RBB",
-      "pos": 9,
-      "pts": 35,
-      "v": 10,
-      "saldo": 3,
-      "gm": 31
-    },
-    {
-      "nome": "VIT",
-      "pos": 10,
-      "pts": 35,
-      "v": 10,
-      "saldo": -11,
-      "gm": 26
-    },
-    {
-      "nome": "SAO",
-      "pos": 11,
-      "pts": 33,
-      "v": 9,
-      "saldo": 3,
-      "gm": 31
-    },
-    {
-      "nome": "COR",
-      "pos": 12,
-      "pts": 32,
-      "v": 8,
-      "saldo": 0,
-      "gm": 27
-    },
-    {
-      "nome": "SAN",
-      "pos": 13,
-      "pts": 32,
-      "v": 8,
-      "saldo": -1,
-      "gm": 37
-    },
-    {
-      "nome": "BOT",
-      "pos": 14,
-      "pts": 31,
-      "v": 8,
-      "saldo": -3,
-      "gm": 37
-    },
-    {
-      "nome": "GRE",
-      "pos": 15,
-      "pts": 28,
-      "v": 7,
-      "saldo": -7,
-      "gm": 27
-    },
-    {
-      "nome": "MIR",
-      "pos": 16,
-      "pts": 28,
-      "v": 7,
-      "saldo": -11,
-      "gm": 29
-    },
-    {
-      "nome": "VAS",
-      "pos": 17,
-      "pts": 25,
-      "v": 6,
-      "saldo": -13,
-      "gm": 27
-    },
-    {
-      "nome": "INT",
-      "pos": 18,
-      "pts": 25,
-      "v": 5,
-      "saldo": -6,
-      "gm": 28
-    },
-    {
-      "nome": "REM",
-      "pos": 19,
-      "pts": 23,
-      "v": 5,
-      "saldo": -13,
-      "gm": 30
-    },
-    {
-      "nome": "CHA",
-      "pos": 20,
-      "pts": 17,
-      "v": 3,
-      "saldo": -23,
-      "gm": 27
-    }
-  ],
-  "updated_at": "2026-09-07T21:53:26.352897-03:00",
-  "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
+  "last_signature": []
 }
