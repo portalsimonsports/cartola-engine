@@ -1,6 +1,6 @@
 {
   "schema": "portalsimonsports.whatsapp_channel_outbox.v1",
-  "gerado_em": "2026-09-12T21:58:29.187087+00:00",
+  "gerado_em": "2026-09-12T22:29:04.257995+00:00",
   "origem": "telegram_approved_cards_pipeline",
   "politica": {
     "telegram_intacto": true,
@@ -9,7 +9,7 @@
   },
   "publicacoes": [
     {
-      "id": "7a9660ae0fdc3ef409aa062b92c406dd6f19668dfaaec9456fd26b9057fb10fd",
+      "id": "5b63839e2ae415068c45d0ade181cde53a7beb4be00aeec2ec61ca477fd53f9a",
       "status": "PENDENTE_BRIDGE",
       "destino": "whatsapp_channel",
       "canal": "Portal SimonSports",
@@ -17,7 +17,7 @@
       "midias": [
         {
           "path": "output/live_mitos_zicas_rodada_27.png",
-          "sha256": "6dd744e9655dd90248ce857baab609108c763b99457daf4e1d83fd2d97ada72a"
+          "sha256": "55655d575e9b22d2519a060003507f31f21a7f15266c894b54de65b3113336af"
         }
       ],
       "tipo_detectado": "ranking_v2",
