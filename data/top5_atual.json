@@ -3,18 +3,8 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 27,
-  "atualizado_em": "2026-09-12T06:40:52.337Z",
+  "atualizado_em": "2026-09-12T07:05:40.071Z",
   "dados": [
-    {
-      "RODADA": 27,
-      "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 9,
-      "EXP_SCORE": 4.6053,
-      "FACTOR": 1.0880558250923882,
-      "ATLETA_ID": 104084
-    },
     {
       "RODADA": 27,
       "POS": "GOL",
@@ -34,6 +24,16 @@
       "EXP_SCORE": 4.5182,
       "FACTOR": 1.1450933459958297,
       "ATLETA_ID": 91101
+    },
+    {
+      "RODADA": 27,
+      "POS": "GOL",
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 9,
+      "EXP_SCORE": 4.0046,
+      "FACTOR": 1.0880558250923882,
+      "ATLETA_ID": 104084
     },
     {
       "RODADA": 27,
@@ -111,7 +111,7 @@
       "NOME": "Gustavo Gómez",
       "CLUBE": "PAL",
       "PRECO": 10.94,
-      "EXP_SCORE": 3.9508,
+      "EXP_SCORE": 3.5557,
       "FACTOR": 1.0880558250923882,
       "ATLETA_ID": 71684
     },
@@ -221,7 +221,7 @@
       "NOME": "Flaco López",
       "CLUBE": "PAL",
       "PRECO": 13.45,
-      "EXP_SCORE": 6.5497,
+      "EXP_SCORE": 5.8947,
       "FACTOR": 1.058088151917307,
       "ATLETA_ID": 113103
     },
