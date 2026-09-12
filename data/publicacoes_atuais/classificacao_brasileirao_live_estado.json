@@ -154,13 +154,28 @@
       "fora_id": "266",
       "fora_nome": "Fluminense",
       "fora_sigla": "FLU",
-      "goleadores_casa": [],
+      "goleadores_casa": [
+        {
+          "clube_origem": "ATLÉTICO-MG",
+          "gol_contra": false,
+          "nome": "Cuello",
+          "quantidade": 1,
+          "tipo": "gol"
+        },
+        {
+          "clube_origem": "ATLÉTICO-MG",
+          "gol_contra": false,
+          "nome": "Reinier",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "goleadores_fora": [],
       "hora": "16:00",
       "link_resumo": "https://ge.globo.com/mg/futebol/brasileirao-serie-a/jogo/12-09-2026/atletico-mg-fluminense.ghtml?utm_source=cartolafc",
-      "placar_casa": 0,
+      "placar_casa": 2,
       "placar_fora": 0,
-      "status": ""
+      "status": "EM_ANDAMENTO"
     },
     "GRExVAS": {
       "casa_id": "284",
@@ -296,7 +311,7 @@
       "pos": 4,
       "pts": 45,
       "v": 12,
-      "saldo": 8,
+      "saldo": 6,
       "gm": 40
     },
     {
@@ -316,20 +331,20 @@
       "gm": 38
     },
     {
-      "nome": "CFC",
+      "nome": "CAM",
       "pos": 7,
+      "pts": 39,
+      "v": 11,
+      "saldo": 4,
+      "gm": 34
+    },
+    {
+      "nome": "CFC",
+      "pos": 8,
       "pts": 38,
       "v": 10,
       "saldo": -1,
       "gm": 37
-    },
-    {
-      "nome": "CAM",
-      "pos": 8,
-      "pts": 36,
-      "v": 10,
-      "saldo": 2,
-      "gm": 32
     },
     {
       "nome": "RBB",
@@ -428,6 +443,6 @@
       "gm": 27
     }
   ],
-  "updated_at": "2026-09-12T17:04:16.368545-03:00",
+  "updated_at": "2026-09-12T17:34:04.050718-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
