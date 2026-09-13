@@ -376,7 +376,22 @@
       "fora_id": "287",
       "fora_nome": "VITÓRIA",
       "fora_sigla": "VIT",
-      "goleadores_casa": [],
+      "goleadores_casa": [
+        {
+          "clube_origem": "Mirassol",
+          "gol_contra": false,
+          "nome": "B. Santos",
+          "quantidade": 1,
+          "tipo": "gol"
+        },
+        {
+          "clube_origem": "Mirassol",
+          "gol_contra": false,
+          "nome": "E. Carioca",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "goleadores_fora": [
         {
           "clube_origem": "VITÓRIA",
@@ -388,8 +403,8 @@
       ],
       "hora": "16:00",
       "link_resumo": "https://ge.globo.com/sp/tem-esporte/futebol/brasileirao-serie-a/jogo/13-09-2026/mirassol-vitoria.ghtml?utm_source=cartolafc",
-      "placar_casa": 0,
-      "placar_fora": 3,
+      "placar_casa": 2,
+      "placar_fora": 2,
       "status": "EM_ANDAMENTO"
     },
     "FLAxCOR": {
@@ -486,16 +501,8 @@
       "gm": 32
     },
     {
-      "nome": "VIT",
-      "pos": 10,
-      "pts": 35,
-      "v": 10,
-      "saldo": -9,
-      "gm": 28
-    },
-    {
       "nome": "SAN",
-      "pos": 11,
+      "pos": 10,
       "pts": 35,
       "v": 9,
       "saldo": 0,
@@ -503,11 +510,19 @@
     },
     {
       "nome": "SAO",
-      "pos": 12,
+      "pos": 11,
       "pts": 33,
       "v": 9,
       "saldo": 3,
       "gm": 31
+    },
+    {
+      "nome": "VIT",
+      "pos": 12,
+      "pts": 33,
+      "v": 9,
+      "saldo": -12,
+      "gm": 27
     },
     {
       "nome": "COR",
@@ -526,8 +541,16 @@
       "gm": 38
     },
     {
-      "nome": "GRE",
+      "nome": "MIR",
       "pos": 15,
+      "pts": 29,
+      "v": 7,
+      "saldo": -11,
+      "gm": 31
+    },
+    {
+      "nome": "GRE",
+      "pos": 16,
       "pts": 28,
       "v": 7,
       "saldo": -7,
@@ -535,18 +558,10 @@
     },
     {
       "nome": "VAS",
-      "pos": 16,
-      "pts": 28,
-      "v": 7,
-      "saldo": -12,
-      "gm": 29
-    },
-    {
-      "nome": "MIR",
       "pos": 17,
       "pts": 28,
       "v": 7,
-      "saldo": -14,
+      "saldo": -12,
       "gm": 29
     },
     {
@@ -574,6 +589,6 @@
       "gm": 28
     }
   ],
-  "updated_at": "2026-09-13T17:34:45.606076-03:00",
+  "updated_at": "2026-09-13T18:13:42.996253-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
