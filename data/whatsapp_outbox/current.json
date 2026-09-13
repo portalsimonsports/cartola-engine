@@ -1,6 +1,6 @@
 {
   "schema": "portalsimonsports.whatsapp_channel_outbox.v1",
-  "gerado_em": "2026-09-13T03:13:31.014401+00:00",
+  "gerado_em": "2026-09-13T19:03:56.393595+00:00",
   "origem": "telegram_approved_cards_pipeline",
   "politica": {
     "telegram_intacto": true,
@@ -9,20 +9,20 @@
   },
   "publicacoes": [
     {
-      "id": "3822f7793cf55784ada4367a2a16f27159c2662ce83dcbd82fb2183c36cbf15d",
+      "id": "a979c2c1223e03dd89dc2779293032364ff46864cffd4ee3692581df23d0b1bf",
       "status": "PENDENTE_BRIDGE",
       "destino": "whatsapp_channel",
       "canal": "Portal SimonSports",
-      "texto": "MITOS E ZICAS • RODADA 27\n\n📡 Portal SimonSports",
+      "texto": "ABERTURA DO LIVE • RODADA 27\n\n📡 Portal SimonSports",
       "midias": [
         {
-          "path": "output/live_mitos_zicas_rodada_27.png",
-          "sha256": "66f568bd0567a37ba41b6df91843fa5cc289fd5a206f8ac2ebe097221821dbd0"
+          "path": "output/live_abertura_rodada_27_p1.png",
+          "sha256": "3828ca1bef670fc19c2f851906a699f3365ab610e55d3a4ae94052eb2d11dce7"
         }
       ],
-      "tipo_detectado": "ranking_v2",
-      "tipo_publicacao": "live_mitos_zicas",
-      "evento_programado": "LIVE_MITOS_ZICAS",
+      "tipo_detectado": "live_opening_v3",
+      "tipo_publicacao": "live_abertura",
+      "evento_programado": "LIVE_ABERTURA",
       "rodada": 27,
       "versao_visual": "approved_cards_v1",
       "pipeline_visual": "approved_cards_v6_desempenho_times_top5_2026_08_11",

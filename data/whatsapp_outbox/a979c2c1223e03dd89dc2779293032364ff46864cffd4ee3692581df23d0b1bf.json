@@ -1,0 +1,30 @@
+{
+  "schema": "portalsimonsports.whatsapp_channel_outbox.v1",
+  "gerado_em": "2026-09-13T19:03:56.393595+00:00",
+  "origem": "telegram_approved_cards_pipeline",
+  "politica": {
+    "telegram_intacto": true,
+    "falha_whatsapp_nao_bloqueia_telegram": true,
+    "antiduplicidade_por_hash_de_conteudo": true
+  },
+  "publicacao": {
+    "id": "a979c2c1223e03dd89dc2779293032364ff46864cffd4ee3692581df23d0b1bf",
+    "status": "PENDENTE_BRIDGE",
+    "destino": "whatsapp_channel",
+    "canal": "Portal SimonSports",
+    "texto": "ABERTURA DO LIVE • RODADA 27\n\n📡 Portal SimonSports",
+    "midias": [
+      {
+        "path": "output/live_abertura_rodada_27_p1.png",
+        "sha256": "3828ca1bef670fc19c2f851906a699f3365ab610e55d3a4ae94052eb2d11dce7"
+      }
+    ],
+    "tipo_detectado": "live_opening_v3",
+    "tipo_publicacao": "live_abertura",
+    "evento_programado": "LIVE_ABERTURA",
+    "rodada": 27,
+    "versao_visual": "approved_cards_v1",
+    "pipeline_visual": "approved_cards_v6_desempenho_times_top5_2026_08_11",
+    "base_visual": "approved_cards_v1_2026_07_27"
+  }
+}
