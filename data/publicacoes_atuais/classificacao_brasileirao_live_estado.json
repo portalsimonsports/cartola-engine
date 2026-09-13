@@ -319,7 +319,7 @@
       ],
       "hora": "20:30",
       "link_resumo": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/12-09-2026/botafogo-bragantino.ghtml?utm_source=cartolafc",
-      "placar_casa": 0,
+      "placar_casa": 1,
       "placar_fora": 1,
       "status": "EM_ANDAMENTO"
     },
@@ -416,20 +416,20 @@
       "gm": 35
     },
     {
-      "nome": "RBB",
-      "pos": 8,
-      "pts": 38,
-      "v": 11,
-      "saldo": 4,
-      "gm": 32
-    },
-    {
       "nome": "CFC",
-      "pos": 9,
+      "pos": 8,
       "pts": 38,
       "v": 10,
       "saldo": -1,
       "gm": 37
+    },
+    {
+      "nome": "RBB",
+      "pos": 9,
+      "pts": 36,
+      "v": 10,
+      "saldo": 3,
+      "gm": 32
     },
     {
       "nome": "SAN",
@@ -466,10 +466,10 @@
     {
       "nome": "BOT",
       "pos": 14,
-      "pts": 31,
+      "pts": 32,
       "v": 8,
-      "saldo": -4,
-      "gm": 37
+      "saldo": -3,
+      "gm": 38
     },
     {
       "nome": "GRE",
@@ -520,6 +520,6 @@
       "gm": 28
     }
   ],
-  "updated_at": "2026-09-12T21:54:30.503922-03:00",
+  "updated_at": "2026-09-12T22:04:50.708158-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
