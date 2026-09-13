@@ -1,0 +1,30 @@
+{
+  "schema": "portalsimonsports.whatsapp_channel_outbox.v1",
+  "gerado_em": "2026-09-13T21:43:56.646959+00:00",
+  "origem": "telegram_approved_cards_pipeline",
+  "politica": {
+    "telegram_intacto": true,
+    "falha_whatsapp_nao_bloqueia_telegram": true,
+    "antiduplicidade_por_hash_de_conteudo": true
+  },
+  "publicacao": {
+    "id": "e5ae4f3f9f47c76763a4b8301eeb58074996db4ce0f63877b298c0a8f1b7e26e",
+    "status": "PENDENTE_BRIDGE",
+    "destino": "whatsapp_channel",
+    "canal": "Portal SimonSports",
+    "texto": "ATUALIZAÇÃO DE PLACAR • RODADA 27\n\n📡 Portal SimonSports",
+    "midias": [
+      {
+        "path": "output/live_placar_gc_rodada_27_j01.png",
+        "sha256": "38112f318cc9264aec9bceabfda5f909e50c4ba15e9e416029b0a57ed81543f5"
+      }
+    ],
+    "tipo_detectado": "results_own_goal_v2",
+    "tipo_publicacao": "live_placar",
+    "evento_programado": "LIVE_PLACAR",
+    "rodada": 27,
+    "versao_visual": "approved_cards_v1",
+    "pipeline_visual": "approved_cards_v6_desempenho_times_top5_2026_08_11",
+    "base_visual": "approved_cards_v1_2026_07_27"
+  }
+}

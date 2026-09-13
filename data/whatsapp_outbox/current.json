@@ -1,6 +1,6 @@
 {
   "schema": "portalsimonsports.whatsapp_channel_outbox.v1",
-  "gerado_em": "2026-09-13T21:13:47.455682+00:00",
+  "gerado_em": "2026-09-13T21:43:56.646959+00:00",
   "origem": "telegram_approved_cards_pipeline",
   "politica": {
     "telegram_intacto": true,
@@ -9,7 +9,7 @@
   },
   "publicacoes": [
     {
-      "id": "288f83dc7787b496d33fd46081910d3e52d3ee853ad60bea7d102c76225e917d",
+      "id": "e5ae4f3f9f47c76763a4b8301eeb58074996db4ce0f63877b298c0a8f1b7e26e",
       "status": "PENDENTE_BRIDGE",
       "destino": "whatsapp_channel",
       "canal": "Portal SimonSports",
@@ -17,7 +17,7 @@
       "midias": [
         {
           "path": "output/live_placar_gc_rodada_27_j01.png",
-          "sha256": "55aaaa52a15d67de0f7a20d835194c1b2e82cc5c2cb45079279678f00839abfe"
+          "sha256": "38112f318cc9264aec9bceabfda5f909e50c4ba15e9e416029b0a57ed81543f5"
         }
       ],
       "tipo_detectado": "results_own_goal_v2",
