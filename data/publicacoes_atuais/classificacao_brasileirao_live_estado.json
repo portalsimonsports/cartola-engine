@@ -350,11 +350,19 @@
           "tipo": "gol"
         }
       ],
-      "goleadores_fora": [],
+      "goleadores_fora": [
+        {
+          "clube_origem": "Cruzeiro",
+          "gol_contra": false,
+          "nome": "M. Pereira",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "hora": "21:00",
       "link_resumo": "https://ge.globo.com/sp/santos-e-regiao/futebol/brasileirao-serie-a/jogo/12-09-2026/santos-cruzeiro.ghtml?utm_source=cartolafc",
       "placar_casa": 2,
-      "placar_fora": 0,
+      "placar_fora": 1,
       "status": "EM_ANDAMENTO"
     }
   },
@@ -404,8 +412,8 @@
       "pos": 6,
       "pts": 42,
       "v": 12,
-      "saldo": -1,
-      "gm": 38
+      "saldo": 0,
+      "gm": 39
     },
     {
       "nome": "CAM",
@@ -436,7 +444,7 @@
       "pos": 10,
       "pts": 35,
       "v": 9,
-      "saldo": 1,
+      "saldo": 0,
       "gm": 39
     },
     {
@@ -520,6 +528,6 @@
       "gm": 28
     }
   ],
-  "updated_at": "2026-09-12T22:04:50.708158-03:00",
+  "updated_at": "2026-09-12T23:08:52.129347-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
