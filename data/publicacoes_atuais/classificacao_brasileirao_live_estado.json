@@ -364,13 +364,51 @@
       "placar_casa": 2,
       "placar_fora": 1,
       "status": "EM_ANDAMENTO"
+    },
+    "MIRxVIT": {
+      "casa_id": "2305",
+      "casa_nome": "Mirassol",
+      "casa_sigla": "MIR",
+      "chave": "MjAyNi0wOS0xMyAxNjowMHwyMzA1fDI4Nw",
+      "data": "13/09",
+      "data_iso": "2026-09-13T19:00:00.000Z",
+      "estadio": "Maião",
+      "fora_id": "287",
+      "fora_nome": "VITÓRIA",
+      "fora_sigla": "VIT",
+      "goleadores_casa": [],
+      "goleadores_fora": [],
+      "hora": "16:00",
+      "link_resumo": "https://ge.globo.com/sp/tem-esporte/futebol/brasileirao-serie-a/jogo/13-09-2026/mirassol-vitoria.ghtml?utm_source=cartolafc",
+      "placar_casa": 0,
+      "placar_fora": 0,
+      "status": "EM_ANDAMENTO"
+    },
+    "FLAxCOR": {
+      "casa_id": "262",
+      "casa_nome": "Flamengo",
+      "casa_sigla": "FLA",
+      "chave": "MjAyNi0wOS0xMyAxNzozMHwyNjJ8MjY0",
+      "data": "13/09",
+      "data_iso": "2026-09-13T20:30:00.000Z",
+      "estadio": "Maracanã",
+      "fora_id": "264",
+      "fora_nome": "Corinthians",
+      "fora_sigla": "COR",
+      "goleadores_casa": [],
+      "goleadores_fora": [],
+      "hora": "17:30",
+      "link_resumo": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/13-09-2026/flamengo-corinthians.ghtml?utm_source=cartolafc",
+      "placar_casa": 0,
+      "placar_fora": 0,
+      "status": "EM_ANDAMENTO"
     }
   },
   "last_signature": [
     {
       "nome": "FLA",
       "pos": 1,
-      "pts": 54,
+      "pts": 55,
       "v": 16,
       "saldo": 30,
       "gm": 51
@@ -458,7 +496,7 @@
     {
       "nome": "VIT",
       "pos": 12,
-      "pts": 32,
+      "pts": 33,
       "v": 9,
       "saldo": -12,
       "gm": 25
@@ -466,7 +504,7 @@
     {
       "nome": "COR",
       "pos": 13,
-      "pts": 32,
+      "pts": 33,
       "v": 8,
       "saldo": 0,
       "gm": 27
@@ -480,20 +518,20 @@
       "gm": 38
     },
     {
-      "nome": "GRE",
+      "nome": "MIR",
       "pos": 15,
+      "pts": 29,
+      "v": 7,
+      "saldo": -11,
+      "gm": 29
+    },
+    {
+      "nome": "GRE",
+      "pos": 16,
       "pts": 28,
       "v": 7,
       "saldo": -7,
       "gm": 28
-    },
-    {
-      "nome": "MIR",
-      "pos": 16,
-      "pts": 28,
-      "v": 7,
-      "saldo": -11,
-      "gm": 29
     },
     {
       "nome": "VAS",
@@ -528,6 +566,6 @@
       "gm": 28
     }
   ],
-  "updated_at": "2026-09-12T23:08:52.129347-03:00",
+  "updated_at": "2026-09-13T16:03:54.618002-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
