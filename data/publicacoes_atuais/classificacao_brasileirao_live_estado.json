@@ -299,13 +299,29 @@
       "fora_id": "280",
       "fora_nome": "RB Bragantino",
       "fora_sigla": "RBB",
-      "goleadores_casa": [],
-      "goleadores_fora": [],
+      "goleadores_casa": [
+        {
+          "clube_origem": "Botafogo",
+          "gol_contra": false,
+          "nome": "Vitinho",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
+      "goleadores_fora": [
+        {
+          "clube_origem": "Botafogo",
+          "gol_contra": true,
+          "nome": "L. Monzón",
+          "quantidade": 1,
+          "tipo": "gol_contra"
+        }
+      ],
       "hora": "20:30",
       "link_resumo": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/12-09-2026/botafogo-bragantino.ghtml?utm_source=cartolafc",
       "placar_casa": 0,
-      "placar_fora": 0,
-      "status": ""
+      "placar_fora": 1,
+      "status": "EM_ANDAMENTO"
     },
     "SANxCRU": {
       "casa_id": "277",
@@ -318,13 +334,28 @@
       "fora_id": "283",
       "fora_nome": "Cruzeiro",
       "fora_sigla": "CRU",
-      "goleadores_casa": [],
+      "goleadores_casa": [
+        {
+          "clube_origem": "Cruzeiro",
+          "gol_contra": true,
+          "nome": "F. Bruno",
+          "quantidade": 1,
+          "tipo": "gol_contra"
+        },
+        {
+          "clube_origem": "Santos",
+          "gol_contra": false,
+          "nome": "Rollheiser",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "goleadores_fora": [],
       "hora": "21:00",
       "link_resumo": "https://ge.globo.com/sp/santos-e-regiao/futebol/brasileirao-serie-a/jogo/12-09-2026/santos-cruzeiro.ghtml?utm_source=cartolafc",
-      "placar_casa": 0,
+      "placar_casa": 2,
       "placar_fora": 0,
-      "status": ""
+      "status": "EM_ANDAMENTO"
     }
   },
   "last_signature": [
@@ -373,7 +404,7 @@
       "pos": 6,
       "pts": 42,
       "v": 12,
-      "saldo": 1,
+      "saldo": -1,
       "gm": 38
     },
     {
@@ -385,24 +416,32 @@
       "gm": 35
     },
     {
-      "nome": "CFC",
+      "nome": "RBB",
       "pos": 8,
+      "pts": 38,
+      "v": 11,
+      "saldo": 4,
+      "gm": 32
+    },
+    {
+      "nome": "CFC",
+      "pos": 9,
       "pts": 38,
       "v": 10,
       "saldo": -1,
       "gm": 37
     },
     {
-      "nome": "RBB",
-      "pos": 9,
+      "nome": "SAN",
+      "pos": 10,
       "pts": 35,
-      "v": 10,
-      "saldo": 3,
-      "gm": 31
+      "v": 9,
+      "saldo": 1,
+      "gm": 39
     },
     {
       "nome": "SAO",
-      "pos": 10,
+      "pos": 11,
       "pts": 33,
       "v": 9,
       "saldo": 3,
@@ -410,7 +449,7 @@
     },
     {
       "nome": "VIT",
-      "pos": 11,
+      "pos": 12,
       "pts": 32,
       "v": 9,
       "saldo": -12,
@@ -418,26 +457,18 @@
     },
     {
       "nome": "COR",
-      "pos": 12,
+      "pos": 13,
       "pts": 32,
       "v": 8,
       "saldo": 0,
       "gm": 27
     },
     {
-      "nome": "SAN",
-      "pos": 13,
-      "pts": 32,
-      "v": 8,
-      "saldo": -1,
-      "gm": 37
-    },
-    {
       "nome": "BOT",
       "pos": 14,
       "pts": 31,
       "v": 8,
-      "saldo": -3,
+      "saldo": -4,
       "gm": 37
     },
     {
@@ -489,6 +520,6 @@
       "gm": 28
     }
   ],
-  "updated_at": "2026-09-12T17:54:06.286551-03:00",
+  "updated_at": "2026-09-12T21:54:30.503922-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
