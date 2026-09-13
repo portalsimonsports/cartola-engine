@@ -1,6 +1,6 @@
 {
   "schema": "portalsimonsports.whatsapp_channel_outbox.v1",
-  "gerado_em": "2026-09-13T19:03:56.393595+00:00",
+  "gerado_em": "2026-09-13T19:13:56.885824+00:00",
   "origem": "telegram_approved_cards_pipeline",
   "politica": {
     "telegram_intacto": true,
@@ -9,20 +9,20 @@
   },
   "publicacoes": [
     {
-      "id": "a979c2c1223e03dd89dc2779293032364ff46864cffd4ee3692581df23d0b1bf",
+      "id": "0f7569c7752cfc81a71e1b8d5c6ad8bb6d1553fcca8396f2c425d4f69dbc3dad",
       "status": "PENDENTE_BRIDGE",
       "destino": "whatsapp_channel",
       "canal": "Portal SimonSports",
-      "texto": "ABERTURA DO LIVE • RODADA 27\n\n📡 Portal SimonSports",
+      "texto": "Pontuação do TIME ECONÔMICO • Rodada 27\n\nTime Econômico • Rodada 27\n\n📡 Portal SimonSports",
       "midias": [
         {
-          "path": "output/live_abertura_rodada_27_p1.png",
-          "sha256": "3828ca1bef670fc19c2f851906a699f3365ab610e55d3a4ae94052eb2d11dce7"
+          "path": "output/live_pontuacao_economico_rodada_27.png",
+          "sha256": "4aa6733f7e72edb29845c537c569a4b342674bf4366c3c7f5ca5d3649a230cd2"
         }
       ],
-      "tipo_detectado": "live_opening_v3",
-      "tipo_publicacao": "live_abertura",
-      "evento_programado": "LIVE_ABERTURA",
+      "tipo_detectado": "live_pontuacao_time",
+      "tipo_publicacao": "live_resumo_times",
+      "evento_programado": "LIVE_RESUMO_TIMES",
       "rodada": 27,
       "versao_visual": "approved_cards_v1",
       "pipeline_visual": "approved_cards_v6_desempenho_times_top5_2026_08_11",
