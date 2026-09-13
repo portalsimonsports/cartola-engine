@@ -405,7 +405,7 @@
       "link_resumo": "https://ge.globo.com/sp/tem-esporte/futebol/brasileirao-serie-a/jogo/13-09-2026/mirassol-vitoria.ghtml?utm_source=cartolafc",
       "placar_casa": 2,
       "placar_fora": 2,
-      "status": "EM_ANDAMENTO"
+      "status": "ENCERRADA"
     },
     "FLAxCOR": {
       "casa_id": "262",
@@ -422,17 +422,32 @@
         {
           "clube_origem": "Flamengo",
           "gol_contra": false,
+          "nome": "B. Henrique",
+          "quantidade": 1,
+          "tipo": "gol"
+        },
+        {
+          "clube_origem": "Flamengo",
+          "gol_contra": false,
           "nome": "L. Paquetá",
           "quantidade": 1,
           "tipo": "gol"
         }
       ],
-      "goleadores_fora": [],
+      "goleadores_fora": [
+        {
+          "clube_origem": "Corinthians",
+          "gol_contra": false,
+          "nome": "G. Negão",
+          "quantidade": 1,
+          "tipo": "gol"
+        }
+      ],
       "hora": "17:30",
       "link_resumo": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/13-09-2026/flamengo-corinthians.ghtml?utm_source=cartolafc",
-      "placar_casa": 1,
-      "placar_fora": 0,
-      "status": "EM_ANDAMENTO"
+      "placar_casa": 2,
+      "placar_fora": 1,
+      "status": "ENCERRADA"
     }
   },
   "last_signature": [
@@ -442,7 +457,7 @@
       "pts": 57,
       "v": 17,
       "saldo": 31,
-      "gm": 52
+      "gm": 53
     },
     {
       "nome": "PAL",
@@ -538,7 +553,7 @@
       "pts": 32,
       "v": 8,
       "saldo": -1,
-      "gm": 27
+      "gm": 28
     },
     {
       "nome": "BOT",
@@ -597,6 +612,6 @@
       "gm": 28
     }
   ],
-  "updated_at": "2026-09-13T18:44:16.395660-03:00",
+  "updated_at": "2026-09-13T20:34:26.546138-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
