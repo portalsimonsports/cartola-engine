@@ -1,6 +1,6 @@
 {
   "schema": "portalsimonsports.whatsapp_channel_outbox.v1",
-  "gerado_em": "2026-09-13T01:58:46.979219+00:00",
+  "gerado_em": "2026-09-13T02:08:26.093856+00:00",
   "origem": "telegram_approved_cards_pipeline",
   "politica": {
     "telegram_intacto": true,
@@ -9,20 +9,20 @@
   },
   "publicacoes": [
     {
-      "id": "54034687954c172a23c5205b71a0526d01b27e086cf7f049a2dc427c52d680e5",
+      "id": "1922d34213d0dca216ff7db3159dd5141feb21a72ebe994e3adfd5bd2c621d68",
       "status": "PENDENTE_BRIDGE",
       "destino": "whatsapp_channel",
       "canal": "Portal SimonSports",
-      "texto": "MITOS E ZICAS • RODADA 27\n\n📡 Portal SimonSports",
+      "texto": "Pontuação do TIME INTERMEDIÁRIO • Rodada 27\n\nTime Intermediário • Rodada 27\n\n📡 Portal SimonSports",
       "midias": [
         {
-          "path": "output/live_mitos_zicas_rodada_27.png",
-          "sha256": "c9e2545493ddf42afe3933aa37240d620fb32bbfd6de702bebfd3870ad7ed046"
+          "path": "output/live_pontuacao_intermediario_rodada_27.png",
+          "sha256": "e59840259316f994844adb84a79046102a5d327ebc4da0f3b7ffbbd0c2555746"
         }
       ],
-      "tipo_detectado": "ranking_v2",
-      "tipo_publicacao": "live_mitos_zicas",
-      "evento_programado": "LIVE_MITOS_ZICAS",
+      "tipo_detectado": "live_pontuacao_time",
+      "tipo_publicacao": "live_pontuacao_time",
+      "evento_programado": "LIVE_PONTUACAO_TIME",
       "rodada": 27,
       "versao_visual": "approved_cards_v1",
       "pipeline_visual": "approved_cards_v6_desempenho_times_top5_2026_08_11",
