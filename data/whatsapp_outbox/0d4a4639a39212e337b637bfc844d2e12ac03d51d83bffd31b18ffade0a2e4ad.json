@@ -1,0 +1,30 @@
+{
+  "schema": "portalsimonsports.whatsapp_channel_outbox.v1",
+  "gerado_em": "2026-09-13T19:15:03.218275+00:00",
+  "origem": "telegram_approved_cards_pipeline",
+  "politica": {
+    "telegram_intacto": true,
+    "falha_whatsapp_nao_bloqueia_telegram": true,
+    "antiduplicidade_por_hash_de_conteudo": true
+  },
+  "publicacao": {
+    "id": "0d4a4639a39212e337b637bfc844d2e12ac03d51d83bffd31b18ffade0a2e4ad",
+    "status": "PENDENTE_BRIDGE",
+    "destino": "whatsapp_channel",
+    "canal": "Portal SimonSports",
+    "texto": "Pontuação do TIME ECONÔMICO • Rodada 27\n\nTime Econômico • Rodada 27\n\n📡 Portal SimonSports",
+    "midias": [
+      {
+        "path": "output/live_pontuacao_economico_rodada_27.png",
+        "sha256": "c335f2faf39132cf1470d19cbf91c07173417c7f21a6174a45689a188b3e5d84"
+      }
+    ],
+    "tipo_detectado": "live_pontuacao_time",
+    "tipo_publicacao": "live_pontuacao_time",
+    "evento_programado": "LIVE_PONTUACAO_TIME",
+    "rodada": 27,
+    "versao_visual": "approved_cards_v1",
+    "pipeline_visual": "approved_cards_v6_desempenho_times_top5_2026_08_11",
+    "base_visual": "approved_cards_v1_2026_07_27"
+  }
+}
