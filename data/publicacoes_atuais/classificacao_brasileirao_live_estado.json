@@ -448,6 +448,25 @@
       "placar_casa": 2,
       "placar_fora": 1,
       "status": "ENCERRADA"
+    },
+    "BAHxREM": {
+      "casa_id": "265",
+      "casa_nome": "Bahia",
+      "casa_sigla": "BAH",
+      "chave": "MjAyNi0wOS0xNCAyMDowMHwyNjV8MzY0",
+      "data": "14/09",
+      "data_iso": "2026-09-14T23:00:00.000Z",
+      "estadio": "Casa de Apostas Arena Fonte Nova",
+      "fora_id": "364",
+      "fora_nome": "Remo",
+      "fora_sigla": "REM",
+      "goleadores_casa": [],
+      "goleadores_fora": [],
+      "hora": "20:00",
+      "link_resumo": "https://ge.globo.com/ba/futebol/brasileirao-serie-a/jogo/14-09-2026/bahia-remo.ghtml?utm_source=cartolafc",
+      "placar_casa": 0,
+      "placar_fora": 0,
+      "status": "EM_ANDAMENTO"
     }
   },
   "last_signature": [
@@ -486,7 +505,7 @@
     {
       "nome": "BAH",
       "pos": 5,
-      "pts": 43,
+      "pts": 44,
       "v": 11,
       "saldo": 8,
       "gm": 40
@@ -598,7 +617,7 @@
     {
       "nome": "REM",
       "pos": 19,
-      "pts": 23,
+      "pts": 24,
       "v": 5,
       "saldo": -13,
       "gm": 30
@@ -612,6 +631,6 @@
       "gm": 28
     }
   ],
-  "updated_at": "2026-09-13T20:34:26.546138-03:00",
+  "updated_at": "2026-09-14T20:13:48.576339-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
