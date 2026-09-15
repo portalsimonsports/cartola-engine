@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 28,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-09-15T14:05:15.979Z",
+  "atualizado_em": "2026-09-15T14:14:59.482Z",
   "dados": [
     {
       "RODADA": 28,
@@ -14,8 +14,19 @@
       "NOME": "Marcelo Rangel",
       "CLUBE": "REM",
       "PRECO": 6.43,
-      "EXP_SCORE": 3.8483,
+      "EXP_SCORE": 3.8022,
       "ATLETA_ID": 82730
+    },
+    {
+      "RODADA": 28,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Marcelinho",
+      "CLUBE": "REM",
+      "PRECO": 6.06,
+      "EXP_SCORE": 4.6933,
+      "ATLETA_ID": 97795
     },
     {
       "RODADA": 28,
@@ -25,19 +36,8 @@
       "NOME": "Matheuzinho",
       "CLUBE": "COR",
       "PRECO": 10.44,
-      "EXP_SCORE": 7.2864,
+      "EXP_SCORE": 7.2897,
       "ATLETA_ID": 101727
-    },
-    {
-      "RODADA": 28,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "LAT",
-      "NOME": "Bruno Pacheco",
-      "CLUBE": "CHA",
-      "PRECO": 7.76,
-      "EXP_SCORE": 3.8816,
-      "ATLETA_ID": 90061
     },
     {
       "RODADA": 28,
@@ -47,7 +47,7 @@
       "NOME": "Vitão",
       "CLUBE": "CAM",
       "PRECO": 5.76,
-      "EXP_SCORE": 2.0336,
+      "EXP_SCORE": 2.0349,
       "ATLETA_ID": 141131
     },
     {
@@ -58,7 +58,7 @@
       "NOME": "Aguirre",
       "CLUBE": "CAP",
       "PRECO": 5.1,
-      "EXP_SCORE": 2.9954,
+      "EXP_SCORE": 2.9928,
       "ATLETA_ID": 123869
     },
     {
@@ -69,7 +69,7 @@
       "NOME": "Reinier",
       "CLUBE": "CAM",
       "PRECO": 7.03,
-      "EXP_SCORE": 4.2519,
+      "EXP_SCORE": 4.2566,
       "ATLETA_ID": 105068
     },
     {
@@ -80,7 +80,7 @@
       "NOME": "Villasanti",
       "CLUBE": "GRE",
       "PRECO": 8.46,
-      "EXP_SCORE": 2.3296,
+      "EXP_SCORE": 2.333,
       "ATLETA_ID": 97145
     },
     {
@@ -91,7 +91,7 @@
       "NOME": "Jadson",
       "CLUBE": "CAP",
       "PRECO": 5.15,
-      "EXP_SCORE": 3.3977,
+      "EXP_SCORE": 3.405,
       "ATLETA_ID": 80129
     },
     {
@@ -102,7 +102,7 @@
       "NOME": "Cuello",
       "CLUBE": "CAM",
       "PRECO": 11.04,
-      "EXP_SCORE": 5.9604,
+      "EXP_SCORE": 5.9669,
       "ATLETA_ID": 98909
     },
     {
@@ -113,7 +113,7 @@
       "NOME": "Tarzia",
       "CLUBE": "VIT",
       "PRECO": 3.96,
-      "EXP_SCORE": 3.2606,
+      "EXP_SCORE": 3.2866,
       "ATLETA_ID": 143153
     },
     {
@@ -124,7 +124,7 @@
       "NOME": "Bruno Santos",
       "CLUBE": "MIR",
       "PRECO": 6.57,
-      "EXP_SCORE": 3.67,
+      "EXP_SCORE": 3.6762,
       "ATLETA_ID": 103967
     },
     {
@@ -135,7 +135,7 @@
       "NOME": "Abel Ferreira",
       "CLUBE": "PAL",
       "PRECO": 12.37,
-      "EXP_SCORE": 6.8882,
+      "EXP_SCORE": 6.8985,
       "ATLETA_ID": 110506
     },
     {
@@ -146,7 +146,7 @@
       "NOME": "Otávio",
       "CLUBE": "CRU",
       "PRECO": 4.25,
-      "EXP_SCORE": 2.3238,
+      "EXP_SCORE": 2.3254,
       "ATLETA_ID": 117404
     },
     {
@@ -154,22 +154,22 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "LAT",
-      "NOME": "Jamerson",
-      "CLUBE": "VIT",
-      "PRECO": 7.73,
-      "EXP_SCORE": 4.1417,
-      "ATLETA_ID": 116461
+      "NOME": "Matheus Bahia",
+      "CLUBE": "INT",
+      "PRECO": 6.05,
+      "EXP_SCORE": 3.4739,
+      "ATLETA_ID": 97899
     },
     {
       "RODADA": 28,
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Willian Machado",
+      "NOME": "João Victor",
       "CLUBE": "MIR",
-      "PRECO": 4.88,
-      "EXP_SCORE": 2.2052,
-      "ATLETA_ID": 101908
+      "PRECO": 5.05,
+      "EXP_SCORE": 2.2349,
+      "ATLETA_ID": 97460
     },
     {
       "RODADA": 28,
@@ -179,7 +179,7 @@
       "NOME": "Zé Ricardo",
       "CLUBE": "REM",
       "PRECO": 4.32,
-      "EXP_SCORE": 2.8498,
+      "EXP_SCORE": 2.7224,
       "ATLETA_ID": 102911
     },
     {
@@ -190,7 +190,7 @@
       "NOME": "Fernandinho",
       "CLUBE": "MIR",
       "PRECO": 3.53,
-      "EXP_SCORE": 1.0952,
+      "EXP_SCORE": 1.097,
       "ATLETA_ID": 91130
     }
   ]
