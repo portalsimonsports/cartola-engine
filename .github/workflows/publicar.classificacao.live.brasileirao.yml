@@ -16,11 +16,17 @@ permissions:
   actions: read
 
 concurrency:
-  group: classificacao-live-brasileirao-${{ github.ref }}
+  group: classificacao-live-brasileirao-${{ github.ref }}-${{ github.event.client_payload.payload.contexto || github.event.client_payload.contexto || 'geral' }}
   cancel-in-progress: false
 
 jobs:
   classificacao-live:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event.client_payload.payload.evento_programado == 'LIVE_CLASSIFICACAO' ||
+      github.event.client_payload.evento_programado == 'LIVE_CLASSIFICACAO' ||
+      github.event.client_payload.payload.tipo_publicacao == 'live_classificacao' ||
+      github.event.client_payload.tipo_publicacao == 'live_classificacao'
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
@@ -67,9 +73,10 @@ jobs:
           set -e
           python -m py_compile app/publicar_classificacao_brasileirao.py
           python -m py_compile app/publicar_classificacao_live_brasileirao.py
+          python -m py_compile app/publicar_classificacao_live_v2.py
           python -m py_compile app/render_classificacao_brasileirao.py
 
-      - name: Calcular e publicar classificação parcial
+      - name: Calcular e publicar classificação
         shell: bash
         env:
           PAYLOAD_FILE: data/payload_classificacao_live.json
@@ -86,7 +93,7 @@ jobs:
           TELEGRAM_CHAT_FALLBACK: "@dicascartolaportalsimonsports"
         run: |
           set -e
-          python app/publicar_classificacao_live_brasileirao.py
+          python app/publicar_classificacao_live_v2.py
 
       - name: Salvar estado e imagem
         if: success()
@@ -96,14 +103,14 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/publicacoes_atuais/classificacao_brasileirao_live_estado.json 2>/dev/null || true
-          git add output/classificacao_brasileirao_parcial_ao_vivo.png 2>/dev/null || true
+          git add output/classificacao_brasileirao_*.png 2>/dev/null || true
 
           if git diff --cached --quiet; then
             echo "Sem mudança de classificação para salvar."
             exit 0
           fi
 
-          git commit -m "Classificação: parcial ao vivo do Brasileirão"
+          git commit -m "Classificação Live: abertura, parciais e fechamento"
 
           enviado=0
           for tentativa in 1 2 3 4 5; do
