@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 28,
-  "atualizado_em": "2026-09-15T14:38:15.339Z",
+  "atualizado_em": "2026-09-15T14:44:44.432Z",
   "dados": [
     {
       "RODADA": 28,
@@ -12,7 +12,7 @@
       "CLUBE": "VIT",
       "PRECO": 9.9,
       "EXP_SCORE": 4.1329,
-      "FACTOR": 1.088770801341015,
+      "FACTOR": 1.0887708013410147,
       "ATLETA_ID": 104118
     },
     {
@@ -288,22 +288,22 @@
     {
       "RODADA": 28,
       "POS": "TEC",
+      "NOME": "Odair Hellmann",
+      "CLUBE": "CAP",
+      "PRECO": 8.82,
+      "EXP_SCORE": 5.2919,
+      "FACTOR": 1.0143088852640905,
+      "ATLETA_ID": 92273
+    },
+    {
+      "RODADA": 28,
+      "POS": "TEC",
       "NOME": "Eduardo Domínguez",
       "CLUBE": "CAM",
       "PRECO": 10.56,
       "EXP_SCORE": 5.226,
       "FACTOR": 1.1132743825192717,
       "ATLETA_ID": 92747
-    },
-    {
-      "RODADA": 28,
-      "POS": "TEC",
-      "NOME": "Cuca",
-      "CLUBE": "SAN",
-      "PRECO": 10.43,
-      "EXP_SCORE": 5.0936,
-      "FACTOR": 0.9857767862022141,
-      "ATLETA_ID": 42411
     }
   ]
 }
