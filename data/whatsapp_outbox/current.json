@@ -1,6 +1,6 @@
 {
   "schema": "portalsimonsports.whatsapp_channel_outbox.v1",
-  "gerado_em": "2026-09-15T00:38:58.611712+00:00",
+  "gerado_em": "2026-09-15T00:53:43.440907+00:00",
   "origem": "telegram_approved_cards_pipeline",
   "politica": {
     "telegram_intacto": true,
@@ -9,20 +9,20 @@
   },
   "publicacoes": [
     {
-      "id": "80dfcb7894f16ceac0f8b5237ed442f00b3f6acbe17cfce33f48610f8ed3c273",
+      "id": "4508184627cf078ee4a927766a8d7321fb012a11f2e578e9781c64bd93995fc4",
       "status": "PENDENTE_BRIDGE",
       "destino": "whatsapp_channel",
       "canal": "Portal SimonSports",
-      "texto": "Abertura da Rodada • Rodada 27\n\nMercado Aberto • Rodada 27\n\n📡 Portal SimonSports",
+      "texto": "Pontuação do TIME INTERMEDIÁRIO • Rodada 27\n\nTime Intermediário • Rodada 27\n\n📡 Portal SimonSports",
       "midias": [
         {
-          "path": "output/aprovada_abertura_rodada_27.png",
-          "sha256": "cf19673999346309b160b09d6d22d1e116fb96b361b70f8fa65749a7a2700024"
+          "path": "output/live_pontuacao_intermediario_rodada_27.png",
+          "sha256": "49c091bc6a6afb5c2f0dfea462e7e7f9290429a3520a954df8b5d809b046ee80"
         }
       ],
-      "tipo_detectado": "approved_abertura",
-      "tipo_publicacao": "live_classificacao",
-      "evento_programado": "LIVE_CLASSIFICACAO",
+      "tipo_detectado": "live_pontuacao_time",
+      "tipo_publicacao": "live_resumo_times",
+      "evento_programado": "LIVE_RESUMO_TIMES",
       "rodada": 27,
       "versao_visual": "approved_cards_v1",
       "pipeline_visual": "approved_cards_v6_desempenho_times_top5_2026_08_11",
