@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 28,
-  "atualizado_em": "2026-09-15T15:15:12.050Z",
+  "atualizado_em": "2026-09-15T15:28:40.354Z",
   "dados": [
     {
       "RODADA": 28,
@@ -14,6 +14,16 @@
       "EXP_SCORE": 4.1329,
       "FACTOR": 1.088770801341015,
       "ATLETA_ID": 104118
+    },
+    {
+      "RODADA": 28,
+      "POS": "GOL",
+      "NOME": "Rossi",
+      "CLUBE": "FLA",
+      "PRECO": 7.86,
+      "EXP_SCORE": 4.0572,
+      "FACTOR": 1.1520451592794294,
+      "ATLETA_ID": 99552
     },
     {
       "RODADA": 28,
@@ -34,16 +44,6 @@
       "EXP_SCORE": 3.7576,
       "FACTOR": 0.9785095874820129,
       "ATLETA_ID": 91101
-    },
-    {
-      "RODADA": 28,
-      "POS": "GOL",
-      "NOME": "Rossi",
-      "CLUBE": "FLA",
-      "PRECO": 7.86,
-      "EXP_SCORE": 3.6515,
-      "FACTOR": 1.1520451592794294,
-      "ATLETA_ID": 99552
     },
     {
       "RODADA": 28,
@@ -211,7 +211,7 @@
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 15.41,
-      "EXP_SCORE": 7.0337,
+      "EXP_SCORE": 7.8153,
       "FACTOR": 1.0587415995296963,
       "ATLETA_ID": 94583
     },
