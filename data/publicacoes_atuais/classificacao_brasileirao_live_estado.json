@@ -471,7 +471,7 @@
   },
   "last_signature": [
     {
-      "nome": "FLA",
+      "nome": "Flamengo",
       "pos": 1,
       "pts": 57,
       "v": 17,
@@ -479,15 +479,15 @@
       "gm": 53
     },
     {
-      "nome": "PAL",
+      "nome": "Palmeiras",
       "pos": 2,
-      "pts": 53,
-      "v": 15,
-      "saldo": 24,
-      "gm": 45
+      "pts": 56,
+      "v": 16,
+      "saldo": 26,
+      "gm": 47
     },
     {
-      "nome": "CAP",
+      "nome": "Athletico-PR",
       "pos": 3,
       "pts": 46,
       "v": 13,
@@ -495,23 +495,23 @@
       "gm": 41
     },
     {
-      "nome": "FLU",
+      "nome": "Bahia",
       "pos": 4,
+      "pts": 46,
+      "v": 12,
+      "saldo": 9,
+      "gm": 41
+    },
+    {
+      "nome": "Fluminense",
+      "pos": 5,
       "pts": 45,
       "v": 12,
-      "saldo": 5,
-      "gm": 40
+      "saldo": 6,
+      "gm": 41
     },
     {
-      "nome": "BAH",
-      "pos": 5,
-      "pts": 44,
-      "v": 11,
-      "saldo": 8,
-      "gm": 40
-    },
-    {
-      "nome": "CRU",
+      "nome": "Cruzeiro",
       "pos": 6,
       "pts": 42,
       "v": 12,
@@ -519,15 +519,15 @@
       "gm": 39
     },
     {
-      "nome": "CAM",
+      "nome": "ATLÉTICO-MG",
       "pos": 7,
       "pts": 39,
       "v": 11,
-      "saldo": 5,
+      "saldo": 4,
       "gm": 35
     },
     {
-      "nome": "CFC",
+      "nome": "Coritiba",
       "pos": 8,
       "pts": 38,
       "v": 10,
@@ -535,7 +535,7 @@
       "gm": 37
     },
     {
-      "nome": "RBB",
+      "nome": "RB Bragantino",
       "pos": 9,
       "pts": 36,
       "v": 10,
@@ -543,7 +543,7 @@
       "gm": 32
     },
     {
-      "nome": "SAN",
+      "nome": "Santos",
       "pos": 10,
       "pts": 35,
       "v": 9,
@@ -551,15 +551,15 @@
       "gm": 39
     },
     {
-      "nome": "SAO",
+      "nome": "SÃO PAULO",
       "pos": 11,
       "pts": 33,
       "v": 9,
-      "saldo": 3,
+      "saldo": 1,
       "gm": 31
     },
     {
-      "nome": "VIT",
+      "nome": "VITÓRIA",
       "pos": 12,
       "pts": 33,
       "v": 9,
@@ -567,7 +567,7 @@
       "gm": 27
     },
     {
-      "nome": "COR",
+      "nome": "Corinthians",
       "pos": 13,
       "pts": 32,
       "v": 8,
@@ -575,7 +575,7 @@
       "gm": 28
     },
     {
-      "nome": "BOT",
+      "nome": "Botafogo",
       "pos": 14,
       "pts": 32,
       "v": 8,
@@ -583,7 +583,7 @@
       "gm": 38
     },
     {
-      "nome": "MIR",
+      "nome": "Mirassol",
       "pos": 15,
       "pts": 29,
       "v": 7,
@@ -591,7 +591,7 @@
       "gm": 31
     },
     {
-      "nome": "GRE",
+      "nome": "GRÊMIO",
       "pos": 16,
       "pts": 28,
       "v": 7,
@@ -599,7 +599,7 @@
       "gm": 28
     },
     {
-      "nome": "VAS",
+      "nome": "Vasco",
       "pos": 17,
       "pts": 28,
       "v": 7,
@@ -607,30 +607,31 @@
       "gm": 29
     },
     {
-      "nome": "INT",
+      "nome": "Internacional",
       "pos": 18,
-      "pts": 26,
-      "v": 5,
-      "saldo": -6,
-      "gm": 29
-    },
-    {
-      "nome": "REM",
-      "pos": 19,
-      "pts": 24,
-      "v": 5,
-      "saldo": -13,
+      "pts": 28,
+      "v": 6,
+      "saldo": -5,
       "gm": 30
     },
     {
-      "nome": "CHA",
+      "nome": "Remo",
+      "pos": 19,
+      "pts": 23,
+      "v": 5,
+      "saldo": -14,
+      "gm": 30
+    },
+    {
+      "nome": "Chapecoense",
       "pos": 20,
-      "pts": 18,
+      "pts": 17,
       "v": 3,
-      "saldo": -23,
+      "saldo": -24,
       "gm": 28
     }
   ],
-  "updated_at": "2026-09-14T20:13:48.576339-03:00",
-  "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
+  "updated_at": "2026-09-14T21:38:52.605831-03:00",
+  "last_image": "output/classificacao_brasileirao_abertura.png",
+  "last_context": "classificacao_abertura"
 }
