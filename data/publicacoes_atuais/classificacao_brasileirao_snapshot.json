@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15T13:49:07.633975-03:00",
+  "updated_at": "2026-09-16T22:19:55.068757-03:00",
   "last_publication_mode": "apos_jogos",
   "signature": [
     {
@@ -73,32 +73,32 @@
       "saldo": 0
     },
     {
-      "nome": "SAO",
+      "nome": "BOT",
       "pos": 11,
+      "pts": 35,
+      "v": 9,
+      "saldo": -2
+    },
+    {
+      "nome": "SAO",
+      "pos": 12,
       "pts": 33,
       "v": 9,
       "saldo": 1
     },
     {
       "nome": "VIT",
-      "pos": 12,
+      "pos": 13,
       "pts": 33,
       "v": 9,
       "saldo": -12
     },
     {
       "nome": "COR",
-      "pos": 13,
-      "pts": 32,
-      "v": 8,
-      "saldo": -1
-    },
-    {
-      "nome": "BOT",
       "pos": 14,
       "pts": 32,
       "v": 8,
-      "saldo": -3
+      "saldo": -1
     },
     {
       "nome": "MIR",
@@ -112,7 +112,7 @@
       "pos": 16,
       "pts": 28,
       "v": 7,
-      "saldo": -7
+      "saldo": -8
     },
     {
       "nome": "VAS",
@@ -154,10 +154,10 @@
     "CFC": 8,
     "RBB": 9,
     "SAN": 10,
-    "SAO": 11,
-    "VIT": 12,
-    "COR": 13,
-    "BOT": 14,
+    "BOT": 11,
+    "SAO": 12,
+    "VIT": 13,
+    "COR": 14,
     "MIR": 15,
     "GRE": 16,
     "VAS": 17,
