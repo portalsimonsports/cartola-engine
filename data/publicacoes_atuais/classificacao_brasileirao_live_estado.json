@@ -1,19 +1,19 @@
 {
-  "rodada": 27,
+  "rodada": 28,
   "base_signature": [
     {
       "nome": "FLA",
-      "j": 26,
-      "pts": 54,
-      "v": 16,
-      "saldo": 30
+      "j": 27,
+      "pts": 57,
+      "v": 17,
+      "saldo": 31
     },
     {
       "nome": "PAL",
-      "j": 26,
-      "pts": 53,
-      "v": 15,
-      "saldo": 24
+      "j": 27,
+      "pts": 56,
+      "v": 16,
+      "saldo": 26
     },
     {
       "nome": "CAP",
@@ -23,25 +23,32 @@
       "saldo": 10
     },
     {
-      "nome": "FLU",
-      "j": 26,
-      "pts": 45,
+      "nome": "BAH",
+      "j": 27,
+      "pts": 46,
       "v": 12,
-      "saldo": 8
+      "saldo": 9
     },
     {
-      "nome": "BAH",
-      "j": 26,
-      "pts": 43,
-      "v": 11,
-      "saldo": 8
+      "nome": "FLU",
+      "j": 27,
+      "pts": 45,
+      "v": 12,
+      "saldo": 6
     },
     {
       "nome": "CRU",
-      "j": 26,
+      "j": 27,
       "pts": 42,
       "v": 12,
-      "saldo": 1
+      "saldo": 0
+    },
+    {
+      "nome": "CAM",
+      "j": 26,
+      "pts": 39,
+      "v": 11,
+      "saldo": 4
     },
     {
       "nome": "CFC",
@@ -51,424 +58,91 @@
       "saldo": -1
     },
     {
-      "nome": "CAM",
-      "j": 25,
+      "nome": "RBB",
+      "j": 26,
       "pts": 36,
       "v": 10,
-      "saldo": 2
+      "saldo": 3
     },
     {
-      "nome": "RBB",
-      "j": 25,
+      "nome": "SAN",
+      "j": 26,
       "pts": 35,
-      "v": 10,
-      "saldo": 3
+      "v": 9,
+      "saldo": 0
+    },
+    {
+      "nome": "BOT",
+      "j": 27,
+      "pts": 35,
+      "v": 9,
+      "saldo": -2
     },
     {
       "nome": "SAO",
-      "j": 25,
+      "j": 26,
       "pts": 33,
       "v": 9,
-      "saldo": 3
+      "saldo": 1
     },
     {
       "nome": "VIT",
-      "j": 26,
-      "pts": 32,
+      "j": 27,
+      "pts": 33,
       "v": 9,
       "saldo": -12
     },
     {
       "nome": "COR",
-      "j": 26,
-      "pts": 32,
-      "v": 8,
-      "saldo": 0
-    },
-    {
-      "nome": "SAN",
-      "j": 25,
+      "j": 27,
       "pts": 32,
       "v": 8,
       "saldo": -1
     },
     {
-      "nome": "BOT",
-      "j": 25,
-      "pts": 31,
-      "v": 8,
-      "saldo": -3
-    },
-    {
-      "nome": "GRE",
-      "j": 25,
-      "pts": 28,
-      "v": 7,
-      "saldo": -6
-    },
-    {
       "nome": "MIR",
-      "j": 26,
-      "pts": 28,
+      "j": 27,
+      "pts": 29,
       "v": 7,
       "saldo": -11
     },
     {
+      "nome": "GRE",
+      "j": 27,
+      "pts": 28,
+      "v": 7,
+      "saldo": -8
+    },
+    {
       "nome": "VAS",
-      "j": 25,
-      "pts": 25,
-      "v": 6,
-      "saldo": -13
+      "j": 26,
+      "pts": 28,
+      "v": 7,
+      "saldo": -12
     },
     {
       "nome": "INT",
-      "j": 26,
-      "pts": 25,
-      "v": 5,
-      "saldo": -6
+      "j": 27,
+      "pts": 28,
+      "v": 6,
+      "saldo": -5
     },
     {
       "nome": "REM",
-      "j": 26,
+      "j": 27,
       "pts": 23,
       "v": 5,
-      "saldo": -13
+      "saldo": -14
     },
     {
       "nome": "CHA",
-      "j": 25,
+      "j": 26,
       "pts": 17,
       "v": 3,
-      "saldo": -23
+      "saldo": -24
     }
   ],
-  "partidas": {
-    "CAMxFLU": {
-      "casa_id": "282",
-      "casa_nome": "ATLÉTICO-MG",
-      "casa_sigla": "CAM",
-      "chave": "MjAyNi0wOS0xMiAxNjowMHwyODJ8MjY2",
-      "data": "12/09",
-      "data_iso": "2026-09-12T19:00:00.000Z",
-      "estadio": "Arena MRV",
-      "fora_id": "266",
-      "fora_nome": "Fluminense",
-      "fora_sigla": "FLU",
-      "goleadores_casa": [
-        {
-          "clube_origem": "ATLÉTICO-MG",
-          "gol_contra": false,
-          "nome": "Cuello",
-          "quantidade": 1,
-          "tipo": "gol"
-        },
-        {
-          "clube_origem": "ATLÉTICO-MG",
-          "gol_contra": false,
-          "nome": "Reinier",
-          "quantidade": 1,
-          "tipo": "gol"
-        },
-        {
-          "clube_origem": "ATLÉTICO-MG",
-          "gol_contra": false,
-          "nome": "Vitão",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
-      "goleadores_fora": [
-        {
-          "clube_origem": "Fluminense",
-          "gol_contra": false,
-          "nome": "R. Castillo",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
-      "hora": "16:00",
-      "link_resumo": "https://ge.globo.com/mg/futebol/brasileirao-serie-a/jogo/12-09-2026/atletico-mg-fluminense.ghtml?utm_source=cartolafc",
-      "placar_casa": 3,
-      "placar_fora": 0,
-      "status": "EM_ANDAMENTO"
-    },
-    "GRExVAS": {
-      "casa_id": "284",
-      "casa_nome": "GRÊMIO",
-      "casa_sigla": "GRE",
-      "chave": "MjAyNi0wOS0xMiAxNjowMHwyODR8MjY3",
-      "data": "12/09",
-      "data_iso": "2026-09-12T19:00:00.000Z",
-      "estadio": "Arena do Grêmio",
-      "fora_id": "267",
-      "fora_nome": "Vasco",
-      "fora_sigla": "VAS",
-      "goleadores_casa": [
-        {
-          "clube_origem": "GRÊMIO",
-          "gol_contra": false,
-          "nome": "Villasanti",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
-      "goleadores_fora": [
-        {
-          "clube_origem": "Vasco",
-          "gol_contra": false,
-          "nome": "T. Mendes",
-          "quantidade": 1,
-          "tipo": "gol"
-        },
-        {
-          "clube_origem": "Vasco",
-          "gol_contra": false,
-          "nome": "Colidio",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
-      "hora": "16:00",
-      "link_resumo": "https://ge.globo.com/rs/futebol/brasileirao-serie-a/jogo/12-09-2026/gremio-vasco.ghtml?utm_source=cartolafc",
-      "placar_casa": 1,
-      "placar_fora": 2,
-      "status": "EM_ANDAMENTO"
-    },
-    "CHAxINT": {
-      "casa_id": "315",
-      "casa_nome": "Chapecoense",
-      "casa_sigla": "CHA",
-      "chave": "MjAyNi0wOS0xMiAxNzowMHwzMTV8Mjg1",
-      "data": "12/09",
-      "data_iso": "2026-09-12T20:00:00.000Z",
-      "estadio": "Arena Condá",
-      "fora_id": "285",
-      "fora_nome": "Internacional",
-      "fora_sigla": "INT",
-      "goleadores_casa": [
-        {
-          "clube_origem": "Chapecoense",
-          "gol_contra": false,
-          "nome": "Garcez",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
-      "goleadores_fora": [
-        {
-          "clube_origem": "Internacional",
-          "gol_contra": false,
-          "nome": "B. Henrique",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
-      "hora": "17:00",
-      "link_resumo": "https://ge.globo.com/sc/futebol/brasileirao-serie-a/jogo/12-09-2026/chapecoense-internacional.ghtml?utm_source=cartolafc",
-      "placar_casa": 1,
-      "placar_fora": 1,
-      "status": "EM_ANDAMENTO"
-    },
-    "PALxSAO": {
-      "casa_id": "275",
-      "casa_nome": "Palmeiras",
-      "casa_sigla": "PAL",
-      "chave": "MjAyNi0wOS0xMiAxODozMHwyNzV8Mjc2",
-      "data": "12/09",
-      "data_iso": "2026-09-12T21:30:00.000Z",
-      "estadio": "Nubank Parque",
-      "fora_id": "276",
-      "fora_nome": "SÃO PAULO",
-      "fora_sigla": "SAO",
-      "goleadores_casa": [],
-      "goleadores_fora": [],
-      "hora": "18:30",
-      "link_resumo": "https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/12-09-2026/palmeiras-sao-paulo.ghtml?utm_source=cartolafc",
-      "placar_casa": 0,
-      "placar_fora": 0,
-      "status": ""
-    },
-    "BOTxRBB": {
-      "casa_id": "263",
-      "casa_nome": "Botafogo",
-      "casa_sigla": "BOT",
-      "chave": "MjAyNi0wOS0xMiAyMDozMHwyNjN8Mjgw",
-      "data": "12/09",
-      "data_iso": "2026-09-12T23:30:00.000Z",
-      "estadio": "Nilton Santos (Engenhão)",
-      "fora_id": "280",
-      "fora_nome": "RB Bragantino",
-      "fora_sigla": "RBB",
-      "goleadores_casa": [
-        {
-          "clube_origem": "Botafogo",
-          "gol_contra": false,
-          "nome": "Vitinho",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
-      "goleadores_fora": [
-        {
-          "clube_origem": "Botafogo",
-          "gol_contra": true,
-          "nome": "L. Monzón",
-          "quantidade": 1,
-          "tipo": "gol_contra"
-        }
-      ],
-      "hora": "20:30",
-      "link_resumo": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/12-09-2026/botafogo-bragantino.ghtml?utm_source=cartolafc",
-      "placar_casa": 1,
-      "placar_fora": 1,
-      "status": "EM_ANDAMENTO"
-    },
-    "SANxCRU": {
-      "casa_id": "277",
-      "casa_nome": "Santos",
-      "casa_sigla": "SAN",
-      "chave": "MjAyNi0wOS0xMiAyMTowMHwyNzd8Mjgz",
-      "data": "12/09",
-      "data_iso": "2026-09-13T00:00:00.000Z",
-      "estadio": "Vila Belmiro",
-      "fora_id": "283",
-      "fora_nome": "Cruzeiro",
-      "fora_sigla": "CRU",
-      "goleadores_casa": [
-        {
-          "clube_origem": "Cruzeiro",
-          "gol_contra": true,
-          "nome": "F. Bruno",
-          "quantidade": 1,
-          "tipo": "gol_contra"
-        },
-        {
-          "clube_origem": "Santos",
-          "gol_contra": false,
-          "nome": "Rollheiser",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
-      "goleadores_fora": [
-        {
-          "clube_origem": "Cruzeiro",
-          "gol_contra": false,
-          "nome": "M. Pereira",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
-      "hora": "21:00",
-      "link_resumo": "https://ge.globo.com/sp/santos-e-regiao/futebol/brasileirao-serie-a/jogo/12-09-2026/santos-cruzeiro.ghtml?utm_source=cartolafc",
-      "placar_casa": 2,
-      "placar_fora": 1,
-      "status": "EM_ANDAMENTO"
-    },
-    "MIRxVIT": {
-      "casa_id": "2305",
-      "casa_nome": "Mirassol",
-      "casa_sigla": "MIR",
-      "chave": "MjAyNi0wOS0xMyAxNjowMHwyMzA1fDI4Nw",
-      "data": "13/09",
-      "data_iso": "2026-09-13T19:00:00.000Z",
-      "estadio": "Maião",
-      "fora_id": "287",
-      "fora_nome": "VITÓRIA",
-      "fora_sigla": "VIT",
-      "goleadores_casa": [
-        {
-          "clube_origem": "Mirassol",
-          "gol_contra": false,
-          "nome": "B. Santos",
-          "quantidade": 1,
-          "tipo": "gol"
-        },
-        {
-          "clube_origem": "Mirassol",
-          "gol_contra": false,
-          "nome": "E. Carioca",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
-      "goleadores_fora": [
-        {
-          "clube_origem": "VITÓRIA",
-          "gol_contra": false,
-          "nome": "Renê",
-          "quantidade": 2,
-          "tipo": "gol"
-        }
-      ],
-      "hora": "16:00",
-      "link_resumo": "https://ge.globo.com/sp/tem-esporte/futebol/brasileirao-serie-a/jogo/13-09-2026/mirassol-vitoria.ghtml?utm_source=cartolafc",
-      "placar_casa": 2,
-      "placar_fora": 2,
-      "status": "ENCERRADA"
-    },
-    "FLAxCOR": {
-      "casa_id": "262",
-      "casa_nome": "Flamengo",
-      "casa_sigla": "FLA",
-      "chave": "MjAyNi0wOS0xMyAxNzozMHwyNjJ8MjY0",
-      "data": "13/09",
-      "data_iso": "2026-09-13T20:30:00.000Z",
-      "estadio": "Maracanã",
-      "fora_id": "264",
-      "fora_nome": "Corinthians",
-      "fora_sigla": "COR",
-      "goleadores_casa": [
-        {
-          "clube_origem": "Flamengo",
-          "gol_contra": false,
-          "nome": "B. Henrique",
-          "quantidade": 1,
-          "tipo": "gol"
-        },
-        {
-          "clube_origem": "Flamengo",
-          "gol_contra": false,
-          "nome": "L. Paquetá",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
-      "goleadores_fora": [
-        {
-          "clube_origem": "Corinthians",
-          "gol_contra": false,
-          "nome": "G. Negão",
-          "quantidade": 1,
-          "tipo": "gol"
-        }
-      ],
-      "hora": "17:30",
-      "link_resumo": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/13-09-2026/flamengo-corinthians.ghtml?utm_source=cartolafc",
-      "placar_casa": 2,
-      "placar_fora": 1,
-      "status": "ENCERRADA"
-    },
-    "BAHxREM": {
-      "casa_id": "265",
-      "casa_nome": "Bahia",
-      "casa_sigla": "BAH",
-      "chave": "MjAyNi0wOS0xNCAyMDowMHwyNjV8MzY0",
-      "data": "14/09",
-      "data_iso": "2026-09-14T23:00:00.000Z",
-      "estadio": "Casa de Apostas Arena Fonte Nova",
-      "fora_id": "364",
-      "fora_nome": "Remo",
-      "fora_sigla": "REM",
-      "goleadores_casa": [],
-      "goleadores_fora": [],
-      "hora": "20:00",
-      "link_resumo": "https://ge.globo.com/ba/futebol/brasileirao-serie-a/jogo/14-09-2026/bahia-remo.ghtml?utm_source=cartolafc",
-      "placar_casa": 0,
-      "placar_fora": 0,
-      "status": "EM_ANDAMENTO"
-    }
-  },
+  "partidas": {},
   "last_signature": [
     {
       "nome": "Flamengo",
@@ -551,8 +225,16 @@
       "gm": 39
     },
     {
-      "nome": "SÃO PAULO",
+      "nome": "Botafogo",
       "pos": 11,
+      "pts": 35,
+      "v": 9,
+      "saldo": -2,
+      "gm": 41
+    },
+    {
+      "nome": "SÃO PAULO",
+      "pos": 12,
       "pts": 33,
       "v": 9,
       "saldo": 1,
@@ -560,7 +242,7 @@
     },
     {
       "nome": "VITÓRIA",
-      "pos": 12,
+      "pos": 13,
       "pts": 33,
       "v": 9,
       "saldo": -12,
@@ -568,19 +250,11 @@
     },
     {
       "nome": "Corinthians",
-      "pos": 13,
+      "pos": 14,
       "pts": 32,
       "v": 8,
       "saldo": -1,
       "gm": 28
-    },
-    {
-      "nome": "Botafogo",
-      "pos": 14,
-      "pts": 32,
-      "v": 8,
-      "saldo": -3,
-      "gm": 38
     },
     {
       "nome": "Mirassol",
@@ -595,8 +269,8 @@
       "pos": 16,
       "pts": 28,
       "v": 7,
-      "saldo": -7,
-      "gm": 28
+      "saldo": -8,
+      "gm": 30
     },
     {
       "nome": "Vasco",
@@ -631,7 +305,7 @@
       "gm": 28
     }
   ],
-  "updated_at": "2026-09-14T22:13:41.065394-03:00",
-  "last_image": "output/classificacao_brasileirao_fechamento.png",
-  "last_context": "classificacao_final"
+  "last_context": "classificacao_abertura",
+  "updated_at": "2026-09-19T16:08:22.080766-03:00",
+  "last_image": "output/classificacao_brasileirao_abertura.png"
 }
