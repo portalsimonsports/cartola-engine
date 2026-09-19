@@ -217,20 +217,20 @@
       "gm": 32
     },
     {
-      "nome": "Santos",
+      "nome": "Botafogo",
       "pos": 10,
+      "pts": 36,
+      "v": 9,
+      "saldo": -2,
+      "gm": 41
+    },
+    {
+      "nome": "Santos",
+      "pos": 11,
       "pts": 35,
       "v": 9,
       "saldo": 0,
       "gm": 39
-    },
-    {
-      "nome": "Botafogo",
-      "pos": 11,
-      "pts": 35,
-      "v": 9,
-      "saldo": -2,
-      "gm": 41
     },
     {
       "nome": "SÃO PAULO",
@@ -259,7 +259,7 @@
     {
       "nome": "Mirassol",
       "pos": 15,
-      "pts": 29,
+      "pts": 30,
       "v": 7,
       "saldo": -11,
       "gm": 31
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-09-19T16:53:18.165409-03:00",
+  "updated_at": "2026-09-19T17:13:25.622133-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
