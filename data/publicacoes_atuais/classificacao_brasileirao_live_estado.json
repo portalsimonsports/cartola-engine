@@ -45,8 +45,8 @@
     },
     {
       "nome": "CAM",
-      "j": 26,
-      "pts": 39,
+      "j": 27,
+      "pts": 40,
       "v": 11,
       "saldo": 4
     },
@@ -66,17 +66,17 @@
     },
     {
       "nome": "SAN",
-      "j": 26,
-      "pts": 35,
+      "j": 27,
+      "pts": 36,
       "v": 9,
       "saldo": 0
     },
     {
       "nome": "BOT",
-      "j": 27,
+      "j": 28,
       "pts": 35,
       "v": 9,
-      "saldo": -2
+      "saldo": -4
     },
     {
       "nome": "SAO",
@@ -101,10 +101,10 @@
     },
     {
       "nome": "MIR",
-      "j": 27,
-      "pts": 29,
-      "v": 7,
-      "saldo": -11
+      "j": 28,
+      "pts": 32,
+      "v": 8,
+      "saldo": -9
     },
     {
       "nome": "GRE",
@@ -129,15 +129,15 @@
     },
     {
       "nome": "REM",
-      "j": 27,
-      "pts": 23,
+      "j": 28,
+      "pts": 24,
       "v": 5,
       "saldo": -14
     },
     {
       "nome": "CHA",
-      "j": 26,
-      "pts": 17,
+      "j": 27,
+      "pts": 18,
       "v": 3,
       "saldo": -24
     }
@@ -201,8 +201,16 @@
       "gm": 36
     },
     {
-      "nome": "Coritiba",
+      "nome": "Santos",
       "pos": 8,
+      "pts": 38,
+      "v": 10,
+      "saldo": 1,
+      "gm": 41
+    },
+    {
+      "nome": "Coritiba",
+      "pos": 9,
       "pts": 38,
       "v": 10,
       "saldo": -1,
@@ -210,19 +218,11 @@
     },
     {
       "nome": "RB Bragantino",
-      "pos": 9,
+      "pos": 10,
       "pts": 36,
       "v": 10,
       "saldo": 3,
       "gm": 32
-    },
-    {
-      "nome": "Santos",
-      "pos": 10,
-      "pts": 36,
-      "v": 9,
-      "saldo": 0,
-      "gm": 39
     },
     {
       "nome": "Botafogo",
@@ -291,10 +291,10 @@
     {
       "nome": "Remo",
       "pos": 19,
-      "pts": 24,
+      "pts": 23,
       "v": 5,
-      "saldo": -14,
-      "gm": 31
+      "saldo": -15,
+      "gm": 32
     },
     {
       "nome": "Chapecoense",
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-09-19T18:43:18.431029-03:00",
+  "updated_at": "2026-09-19T20:39:29.068255-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
