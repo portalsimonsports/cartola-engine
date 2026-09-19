@@ -195,10 +195,10 @@
     {
       "nome": "ATLÉTICO-MG",
       "pos": 7,
-      "pts": 39,
+      "pts": 40,
       "v": 11,
-      "saldo": 3,
-      "gm": 35
+      "saldo": 4,
+      "gm": 36
     },
     {
       "nome": "Coritiba",
@@ -217,20 +217,20 @@
       "gm": 32
     },
     {
-      "nome": "Botafogo",
-      "pos": 10,
-      "pts": 36,
-      "v": 9,
-      "saldo": -2,
-      "gm": 41
-    },
-    {
       "nome": "Santos",
-      "pos": 11,
+      "pos": 10,
       "pts": 35,
       "v": 9,
       "saldo": 0,
       "gm": 39
+    },
+    {
+      "nome": "Botafogo",
+      "pos": 11,
+      "pts": 35,
+      "v": 9,
+      "saldo": -3,
+      "gm": 41
     },
     {
       "nome": "SÃO PAULO",
@@ -259,10 +259,10 @@
     {
       "nome": "Mirassol",
       "pos": 15,
-      "pts": 30,
-      "v": 7,
-      "saldo": -11,
-      "gm": 31
+      "pts": 32,
+      "v": 8,
+      "saldo": -10,
+      "gm": 32
     },
     {
       "nome": "GRÊMIO",
@@ -299,13 +299,13 @@
     {
       "nome": "Chapecoense",
       "pos": 20,
-      "pts": 20,
-      "v": 4,
-      "saldo": -23,
+      "pts": 18,
+      "v": 3,
+      "saldo": -24,
       "gm": 29
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-09-19T17:13:25.622133-03:00",
+  "updated_at": "2026-09-19T17:33:14.116152-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
