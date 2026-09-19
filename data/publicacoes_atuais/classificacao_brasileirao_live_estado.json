@@ -52,10 +52,17 @@
     },
     {
       "nome": "CFC",
+      "j": 28,
+      "pts": 39,
+      "v": 10,
+      "saldo": -1
+    },
+    {
+      "nome": "SAN",
       "j": 27,
       "pts": 38,
       "v": 10,
-      "saldo": -1
+      "saldo": 1
     },
     {
       "nome": "RBB",
@@ -63,13 +70,6 @@
       "pts": 36,
       "v": 10,
       "saldo": 3
-    },
-    {
-      "nome": "SAN",
-      "j": 27,
-      "pts": 36,
-      "v": 9,
-      "saldo": 0
     },
     {
       "nome": "BOT",
@@ -107,18 +107,18 @@
       "saldo": -9
     },
     {
+      "nome": "VAS",
+      "j": 27,
+      "pts": 29,
+      "v": 7,
+      "saldo": -12
+    },
+    {
       "nome": "GRE",
       "j": 27,
       "pts": 28,
       "v": 7,
       "saldo": -8
-    },
-    {
-      "nome": "VAS",
-      "j": 26,
-      "pts": 28,
-      "v": 7,
-      "saldo": -12
     },
     {
       "nome": "INT",
@@ -130,9 +130,9 @@
     {
       "nome": "REM",
       "j": 28,
-      "pts": 24,
+      "pts": 23,
       "v": 5,
-      "saldo": -14
+      "saldo": -15
     },
     {
       "nome": "CHA",
@@ -201,20 +201,20 @@
       "gm": 36
     },
     {
-      "nome": "Santos",
+      "nome": "Coritiba",
       "pos": 8,
+      "pts": 39,
+      "v": 10,
+      "saldo": -1,
+      "gm": 37
+    },
+    {
+      "nome": "Santos",
+      "pos": 9,
       "pts": 38,
       "v": 10,
       "saldo": 1,
       "gm": 41
-    },
-    {
-      "nome": "Coritiba",
-      "pos": 9,
-      "pts": 38,
-      "v": 10,
-      "saldo": -1,
-      "gm": 37
     },
     {
       "nome": "RB Bragantino",
@@ -265,20 +265,20 @@
       "gm": 33
     },
     {
-      "nome": "GRÊMIO",
+      "nome": "Vasco",
       "pos": 16,
+      "pts": 29,
+      "v": 7,
+      "saldo": -12,
+      "gm": 29
+    },
+    {
+      "nome": "GRÊMIO",
+      "pos": 17,
       "pts": 28,
       "v": 7,
       "saldo": -8,
       "gm": 30
-    },
-    {
-      "nome": "Vasco",
-      "pos": 17,
-      "pts": 28,
-      "v": 7,
-      "saldo": -12,
-      "gm": 29
     },
     {
       "nome": "Internacional",
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-09-19T20:39:29.068255-03:00",
+  "updated_at": "2026-09-19T20:53:50.523683-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
