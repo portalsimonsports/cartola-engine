@@ -51,18 +51,18 @@
       "saldo": 4
     },
     {
-      "nome": "CFC",
-      "j": 28,
-      "pts": 39,
-      "v": 10,
-      "saldo": -1
-    },
-    {
       "nome": "SAN",
       "j": 27,
       "pts": 38,
       "v": 10,
       "saldo": 1
+    },
+    {
+      "nome": "CFC",
+      "j": 28,
+      "pts": 38,
+      "v": 10,
+      "saldo": -2
     },
     {
       "nome": "RBB",
@@ -80,8 +80,8 @@
     },
     {
       "nome": "SAO",
-      "j": 26,
-      "pts": 33,
+      "j": 27,
+      "pts": 34,
       "v": 9,
       "saldo": 1
     },
@@ -109,9 +109,16 @@
     {
       "nome": "VAS",
       "j": 27,
+      "pts": 31,
+      "v": 8,
+      "saldo": -11
+    },
+    {
+      "nome": "INT",
+      "j": 28,
       "pts": 29,
-      "v": 7,
-      "saldo": -12
+      "v": 6,
+      "saldo": -5
     },
     {
       "nome": "GRE",
@@ -119,13 +126,6 @@
       "pts": 28,
       "v": 7,
       "saldo": -8
-    },
-    {
-      "nome": "INT",
-      "j": 27,
-      "pts": 28,
-      "v": 6,
-      "saldo": -5
     },
     {
       "nome": "REM",
@@ -201,20 +201,20 @@
       "gm": 36
     },
     {
-      "nome": "Coritiba",
-      "pos": 8,
-      "pts": 39,
-      "v": 10,
-      "saldo": -1,
-      "gm": 37
-    },
-    {
       "nome": "Santos",
-      "pos": 9,
+      "pos": 8,
       "pts": 38,
       "v": 10,
       "saldo": 1,
       "gm": 41
+    },
+    {
+      "nome": "Coritiba",
+      "pos": 9,
+      "pts": 38,
+      "v": 10,
+      "saldo": -3,
+      "gm": 37
     },
     {
       "nome": "RB Bragantino",
@@ -225,20 +225,20 @@
       "gm": 32
     },
     {
-      "nome": "Botafogo",
+      "nome": "SÃO PAULO",
       "pos": 11,
+      "pts": 36,
+      "v": 10,
+      "saldo": 2,
+      "gm": 32
+    },
+    {
+      "nome": "Botafogo",
+      "pos": 12,
       "pts": 35,
       "v": 9,
       "saldo": -4,
       "gm": 41
-    },
-    {
-      "nome": "SÃO PAULO",
-      "pos": 12,
-      "pts": 33,
-      "v": 9,
-      "saldo": 1,
-      "gm": 31
     },
     {
       "nome": "VITÓRIA",
@@ -267,10 +267,10 @@
     {
       "nome": "Vasco",
       "pos": 16,
-      "pts": 29,
-      "v": 7,
-      "saldo": -12,
-      "gm": 29
+      "pts": 31,
+      "v": 8,
+      "saldo": -10,
+      "gm": 31
     },
     {
       "nome": "GRÊMIO",
@@ -285,7 +285,7 @@
       "pos": 18,
       "pts": 28,
       "v": 6,
-      "saldo": -5,
+      "saldo": -6,
       "gm": 30
     },
     {
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-09-19T20:53:50.523683-03:00",
+  "updated_at": "2026-09-19T21:33:50.795658-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
