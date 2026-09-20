@@ -187,9 +187,9 @@
     {
       "nome": "Cruzeiro",
       "pos": 6,
-      "pts": 43,
+      "pts": 42,
       "v": 12,
-      "saldo": 0,
+      "saldo": -1,
       "gm": 39
     },
     {
@@ -233,20 +233,20 @@
       "gm": 32
     },
     {
-      "nome": "Botafogo",
+      "nome": "VITÓRIA",
       "pos": 12,
+      "pts": 36,
+      "v": 10,
+      "saldo": -11,
+      "gm": 28
+    },
+    {
+      "nome": "Botafogo",
+      "pos": 13,
       "pts": 35,
       "v": 9,
       "saldo": -4,
       "gm": 41
-    },
-    {
-      "nome": "VITÓRIA",
-      "pos": 13,
-      "pts": 34,
-      "v": 9,
-      "saldo": -12,
-      "gm": 27
     },
     {
       "nome": "Corinthians",
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-09-20T16:33:16.518290-03:00",
+  "updated_at": "2026-09-20T16:53:16.002376-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
