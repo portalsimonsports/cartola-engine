@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T22:19:55.068757-03:00",
+  "updated_at": "2026-09-19T21:20:01.318693-03:00",
   "last_publication_mode": "apos_jogos",
   "signature": [
     {
@@ -47,42 +47,42 @@
     {
       "nome": "CAM",
       "pos": 7,
-      "pts": 39,
+      "pts": 40,
       "v": 11,
       "saldo": 4
     },
     {
-      "nome": "CFC",
+      "nome": "SAN",
       "pos": 8,
       "pts": 38,
       "v": 10,
-      "saldo": -1
+      "saldo": 1
+    },
+    {
+      "nome": "CFC",
+      "pos": 9,
+      "pts": 38,
+      "v": 10,
+      "saldo": -2
     },
     {
       "nome": "RBB",
-      "pos": 9,
+      "pos": 10,
       "pts": 36,
       "v": 10,
       "saldo": 3
-    },
-    {
-      "nome": "SAN",
-      "pos": 10,
-      "pts": 35,
-      "v": 9,
-      "saldo": 0
     },
     {
       "nome": "BOT",
       "pos": 11,
       "pts": 35,
       "v": 9,
-      "saldo": -2
+      "saldo": -4
     },
     {
       "nome": "SAO",
       "pos": 12,
-      "pts": 33,
+      "pts": 34,
       "v": 9,
       "saldo": 1
     },
@@ -103,42 +103,42 @@
     {
       "nome": "MIR",
       "pos": 15,
-      "pts": 29,
-      "v": 7,
-      "saldo": -11
-    },
-    {
-      "nome": "GRE",
-      "pos": 16,
-      "pts": 28,
-      "v": 7,
-      "saldo": -8
+      "pts": 32,
+      "v": 8,
+      "saldo": -9
     },
     {
       "nome": "VAS",
-      "pos": 17,
-      "pts": 28,
-      "v": 7,
-      "saldo": -12
+      "pos": 16,
+      "pts": 31,
+      "v": 8,
+      "saldo": -11
     },
     {
       "nome": "INT",
-      "pos": 18,
-      "pts": 28,
+      "pos": 17,
+      "pts": 29,
       "v": 6,
       "saldo": -5
+    },
+    {
+      "nome": "GRE",
+      "pos": 18,
+      "pts": 28,
+      "v": 7,
+      "saldo": -8
     },
     {
       "nome": "REM",
       "pos": 19,
       "pts": 23,
       "v": 5,
-      "saldo": -14
+      "saldo": -15
     },
     {
       "nome": "CHA",
       "pos": 20,
-      "pts": 17,
+      "pts": 18,
       "v": 3,
       "saldo": -24
     }
@@ -151,17 +151,17 @@
     "FLU": 5,
     "CRU": 6,
     "CAM": 7,
-    "CFC": 8,
-    "RBB": 9,
-    "SAN": 10,
+    "SAN": 8,
+    "CFC": 9,
+    "RBB": 10,
     "BOT": 11,
     "SAO": 12,
     "VIT": 13,
     "COR": 14,
     "MIR": 15,
-    "GRE": 16,
-    "VAS": 17,
-    "INT": 18,
+    "VAS": 16,
+    "INT": 17,
+    "GRE": 18,
     "REM": 19,
     "CHA": 20
   },
