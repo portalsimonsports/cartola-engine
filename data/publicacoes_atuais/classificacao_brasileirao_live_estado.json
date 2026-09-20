@@ -62,7 +62,7 @@
       "j": 28,
       "pts": 38,
       "v": 10,
-      "saldo": -2
+      "saldo": -6
     },
     {
       "nome": "RBB",
@@ -72,18 +72,18 @@
       "saldo": 3
     },
     {
+      "nome": "SAO",
+      "j": 27,
+      "pts": 36,
+      "v": 10,
+      "saldo": 2
+    },
+    {
       "nome": "BOT",
       "j": 28,
       "pts": 35,
       "v": 9,
       "saldo": -4
-    },
-    {
-      "nome": "SAO",
-      "j": 27,
-      "pts": 34,
-      "v": 9,
-      "saldo": 1
     },
     {
       "nome": "VIT",
@@ -111,14 +111,7 @@
       "j": 27,
       "pts": 31,
       "v": 8,
-      "saldo": -11
-    },
-    {
-      "nome": "INT",
-      "j": 28,
-      "pts": 29,
-      "v": 6,
-      "saldo": -5
+      "saldo": -7
     },
     {
       "nome": "GRE",
@@ -126,6 +119,13 @@
       "pts": 28,
       "v": 7,
       "saldo": -8
+    },
+    {
+      "nome": "INT",
+      "j": 28,
+      "pts": 28,
+      "v": 6,
+      "saldo": -6
     },
     {
       "nome": "REM",
@@ -155,7 +155,7 @@
     {
       "nome": "Palmeiras",
       "pos": 2,
-      "pts": 56,
+      "pts": 57,
       "v": 16,
       "saldo": 26,
       "gm": 47
@@ -213,7 +213,7 @@
       "pos": 9,
       "pts": 38,
       "v": 10,
-      "saldo": -3,
+      "saldo": -6,
       "gm": 37
     },
     {
@@ -269,13 +269,13 @@
       "pos": 16,
       "pts": 31,
       "v": 8,
-      "saldo": -10,
-      "gm": 31
+      "saldo": -7,
+      "gm": 34
     },
     {
       "nome": "GRÊMIO",
       "pos": 17,
-      "pts": 28,
+      "pts": 29,
       "v": 7,
       "saldo": -8,
       "gm": 30
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-09-19T21:33:50.795658-03:00",
+  "updated_at": "2026-09-20T11:13:56.853492-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
