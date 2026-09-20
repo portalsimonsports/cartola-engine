@@ -161,8 +161,16 @@
       "gm": 47
     },
     {
-      "nome": "Athletico-PR",
+      "nome": "Fluminense",
       "pos": 3,
+      "pts": 48,
+      "v": 13,
+      "saldo": 7,
+      "gm": 42
+    },
+    {
+      "nome": "Athletico-PR",
+      "pos": 4,
       "pts": 46,
       "v": 13,
       "saldo": 10,
@@ -170,19 +178,11 @@
     },
     {
       "nome": "Bahia",
-      "pos": 4,
+      "pos": 5,
       "pts": 46,
       "v": 12,
       "saldo": 9,
       "gm": 42
-    },
-    {
-      "nome": "Fluminense",
-      "pos": 5,
-      "pts": 46,
-      "v": 12,
-      "saldo": 6,
-      "gm": 41
     },
     {
       "nome": "Cruzeiro",
@@ -251,9 +251,9 @@
     {
       "nome": "Corinthians",
       "pos": 14,
-      "pts": 33,
+      "pts": 32,
       "v": 8,
-      "saldo": -1,
+      "saldo": -2,
       "gm": 28
     },
     {
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-09-20T16:13:27.019786-03:00",
+  "updated_at": "2026-09-20T16:33:16.518290-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
