@@ -161,16 +161,8 @@
       "gm": 47
     },
     {
-      "nome": "Fluminense",
-      "pos": 3,
-      "pts": 48,
-      "v": 13,
-      "saldo": 7,
-      "gm": 42
-    },
-    {
       "nome": "Athletico-PR",
-      "pos": 4,
+      "pos": 3,
       "pts": 46,
       "v": 13,
       "saldo": 10,
@@ -178,19 +170,27 @@
     },
     {
       "nome": "Bahia",
-      "pos": 5,
+      "pos": 4,
       "pts": 46,
       "v": 12,
       "saldo": 9,
       "gm": 42
     },
     {
+      "nome": "Fluminense",
+      "pos": 5,
+      "pts": 46,
+      "v": 12,
+      "saldo": 6,
+      "gm": 42
+    },
+    {
       "nome": "Cruzeiro",
       "pos": 6,
-      "pts": 42,
+      "pts": 43,
       "v": 12,
-      "saldo": -1,
-      "gm": 39
+      "saldo": 0,
+      "gm": 40
     },
     {
       "nome": "ATLÉTICO-MG",
@@ -233,28 +233,28 @@
       "gm": 32
     },
     {
-      "nome": "VITÓRIA",
-      "pos": 12,
-      "pts": 36,
-      "v": 10,
-      "saldo": -11,
-      "gm": 28
-    },
-    {
       "nome": "Botafogo",
-      "pos": 13,
+      "pos": 12,
       "pts": 35,
       "v": 9,
       "saldo": -4,
       "gm": 41
     },
     {
+      "nome": "VITÓRIA",
+      "pos": 13,
+      "pts": 34,
+      "v": 9,
+      "saldo": -12,
+      "gm": 28
+    },
+    {
       "nome": "Corinthians",
       "pos": 14,
-      "pts": 32,
+      "pts": 33,
       "v": 8,
-      "saldo": -2,
-      "gm": 28
+      "saldo": -1,
+      "gm": 29
     },
     {
       "nome": "Mirassol",
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-09-20T16:53:16.002376-03:00",
+  "updated_at": "2026-09-20T17:33:27.872359-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
