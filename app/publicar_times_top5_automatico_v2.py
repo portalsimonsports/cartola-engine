@@ -9,7 +9,7 @@ import publicar_times_top5_automatico as base
 import render_telegram_cards as rtc
 
 
-PIPELINE_VERSION = "times_top5_aprovados_v2_2026_08_27_capitao_reservas"
+PIPELINE_VERSION = "times_top5_aprovados_v2_2026_09_21_formacao_dinamica"
 
 MODEL_ORDER = ("ECONOMICO", "INTERMEDIARIO", "PONTUACAO")
 MODEL_TITLES = {
@@ -103,6 +103,23 @@ def _captain_from_data(data: Dict[str, Any], starters: List[Dict[str, Any]]) -> 
     return ""
 
 
+def _formation_from_starters(starters: List[Dict[str, Any]]) -> str:
+    counts = {"GOL": 0, "LAT": 0, "ZAG": 0, "MEI": 0, "ATA": 0, "TEC": 0}
+    for player in starters:
+        pos = _safe(player.get("pos")).upper()
+        if pos in counts:
+            counts[pos] += 1
+    defenders = counts["LAT"] + counts["ZAG"]
+    midfielders = counts["MEI"]
+    attackers = counts["ATA"]
+    if defenders <= 0 or midfielders <= 0 or attackers <= 0:
+        raise RuntimeError(
+            "Não foi possível determinar a formação real pelos titulares: "
+            f"LAT={counts['LAT']} ZAG={counts['ZAG']} MEI={midfielders} ATA={attackers}"
+        )
+    return f"{defenders}-{midfielders}-{attackers}"
+
+
 def _team_publication(model: str, rodada: int) -> Dict[str, Any]:
     path = MODEL_FILES[model]
     data = _read_json(path)
@@ -128,6 +145,8 @@ def _team_publication(model: str, rodada: int) -> Dict[str, Any]:
             f"Capitão inválido no {model} R{rodada}: {captain!r} não está entre os titulares"
         )
 
+    formation = _formation_from_starters(starters)
+
     payload = dict(data)
     payload.update(
         {
@@ -141,7 +160,7 @@ def _team_publication(model: str, rodada: int) -> Dict[str, Any]:
             "jogadores": starters,
             "reservas": reserves,
             "capitao": captain,
-            "formacao": _safe(data.get("formacao") or "4-3-3"),
+            "formacao": formation,
         }
     )
     return payload
