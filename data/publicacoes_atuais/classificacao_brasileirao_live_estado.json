@@ -3,45 +3,45 @@
   "base_signature": [
     {
       "nome": "FLA",
-      "j": 27,
-      "pts": 57,
-      "v": 17,
-      "saldo": 31
+      "j": 28,
+      "pts": 60,
+      "v": 18,
+      "saldo": 32
     },
     {
       "nome": "PAL",
-      "j": 27,
-      "pts": 56,
+      "j": 28,
+      "pts": 57,
       "v": 16,
       "saldo": 26
     },
     {
       "nome": "CAP",
-      "j": 27,
-      "pts": 46,
-      "v": 13,
-      "saldo": 10
-    },
-    {
-      "nome": "BAH",
-      "j": 27,
-      "pts": 46,
-      "v": 12,
-      "saldo": 9
+      "j": 28,
+      "pts": 49,
+      "v": 14,
+      "saldo": 11
     },
     {
       "nome": "FLU",
-      "j": 27,
-      "pts": 45,
+      "j": 28,
+      "pts": 48,
+      "v": 13,
+      "saldo": 8
+    },
+    {
+      "nome": "BAH",
+      "j": 28,
+      "pts": 46,
       "v": 12,
-      "saldo": 6
+      "saldo": 8
     },
     {
       "nome": "CRU",
-      "j": 27,
-      "pts": 42,
-      "v": 12,
-      "saldo": 0
+      "j": 28,
+      "pts": 45,
+      "v": 13,
+      "saldo": 2
     },
     {
       "nome": "CAM",
@@ -66,10 +66,10 @@
     },
     {
       "nome": "RBB",
-      "j": 26,
+      "j": 27,
       "pts": 36,
       "v": 10,
-      "saldo": 3
+      "saldo": 2
     },
     {
       "nome": "SAO",
@@ -87,17 +87,17 @@
     },
     {
       "nome": "VIT",
-      "j": 27,
+      "j": 28,
       "pts": 33,
       "v": 9,
-      "saldo": -12
+      "saldo": -14
     },
     {
       "nome": "COR",
-      "j": 27,
+      "j": 28,
       "pts": 32,
       "v": 8,
-      "saldo": -1
+      "saldo": -3
     },
     {
       "nome": "MIR",
@@ -115,8 +115,8 @@
     },
     {
       "nome": "GRE",
-      "j": 27,
-      "pts": 28,
+      "j": 28,
+      "pts": 29,
       "v": 7,
       "saldo": -8
     },
@@ -147,10 +147,10 @@
     {
       "nome": "Flamengo",
       "pos": 1,
-      "pts": 57,
-      "v": 17,
-      "saldo": 31,
-      "gm": 53
+      "pts": 60,
+      "v": 18,
+      "saldo": 32,
+      "gm": 55
     },
     {
       "nome": "Palmeiras",
@@ -161,36 +161,36 @@
       "gm": 47
     },
     {
-      "nome": "Fluminense",
+      "nome": "Athletico-PR",
       "pos": 3,
-      "pts": 48,
-      "v": 13,
-      "saldo": 7,
+      "pts": 49,
+      "v": 14,
+      "saldo": 11,
       "gm": 43
     },
     {
-      "nome": "Athletico-PR",
+      "nome": "Fluminense",
       "pos": 4,
-      "pts": 46,
+      "pts": 48,
       "v": 13,
-      "saldo": 10,
-      "gm": 41
+      "saldo": 8,
+      "gm": 44
     },
     {
       "nome": "Bahia",
       "pos": 5,
       "pts": 46,
       "v": 12,
-      "saldo": 9,
-      "gm": 42
+      "saldo": 8,
+      "gm": 43
     },
     {
       "nome": "Cruzeiro",
       "pos": 6,
       "pts": 45,
       "v": 13,
-      "saldo": 1,
-      "gm": 41
+      "saldo": 2,
+      "gm": 42
     },
     {
       "nome": "ATLÉTICO-MG",
@@ -221,8 +221,8 @@
       "pos": 10,
       "pts": 36,
       "v": 10,
-      "saldo": 3,
-      "gm": 32
+      "saldo": 2,
+      "gm": 33
     },
     {
       "nome": "SÃO PAULO",
@@ -245,7 +245,7 @@
       "pos": 13,
       "pts": 33,
       "v": 9,
-      "saldo": -13,
+      "saldo": -14,
       "gm": 28
     },
     {
@@ -253,7 +253,7 @@
       "pos": 14,
       "pts": 32,
       "v": 8,
-      "saldo": -2,
+      "saldo": -3,
       "gm": 29
     },
     {
@@ -305,7 +305,7 @@
       "gm": 29
     }
   ],
-  "last_context": "classificacao_delta",
-  "updated_at": "2026-09-20T17:53:17.175041-03:00",
-  "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
+  "last_context": "classificacao_final",
+  "updated_at": "2026-09-20T22:03:29.316655-03:00",
+  "last_image": "output/classificacao_brasileirao_fechamento.png"
 }
