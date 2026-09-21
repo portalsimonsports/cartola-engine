@@ -29,7 +29,7 @@ jobs:
           ref: main
           fetch-depth: 0
 
-      - name: Detectar seleção inicial da rodada atual e ainda não publicada
+      - name: Detectar seleção inicial confirmada e vídeo ainda não publicado
         id: detectar
         shell: bash
         run: |
@@ -39,6 +39,7 @@ jobs:
           from pathlib import Path
 
           base = Path('data/publicacoes_atuais')
+          flags_dir = Path('data/flags')
           out = Path(os.environ['GITHUB_OUTPUT'])
 
           def load(path):
@@ -64,37 +65,49 @@ jobs:
 
           def has_snapshot(rel, rodada, minimo):
               d = load(Path(rel))
-              if int(d.get('rodada') or 0) == rodada and str(d.get('evento_programado') or '').upper() == 'SELECAO_INICIAL' and len(rows(d)) >= minimo:
+              if int(d.get('rodada') or 0) == rodada and len(rows(d)) >= minimo:
                   return True
               for c in subprocess.run(['git', 'log', '--format=%H', '--all', '--', rel], text=True, capture_output=True).stdout.splitlines():
                   d = git_json(c, rel)
-                  if int(d.get('rodada') or 0) == rodada and str(d.get('evento_programado') or '').upper() == 'SELECAO_INICIAL' and len(rows(d)) >= minimo:
+                  if int(d.get('rodada') or 0) == rodada and len(rows(d)) >= minimo:
                       return True
               return False
 
+          def selecao_confirmada(rodada):
+              flag = load(flags_dir / f'publicacao_SELECAO_INICIAL_rodada_{rodada}_PACOTE.json')
+              return (
+                  str(flag.get('status') or '').upper() == 'PUBLICADO_COM_SUCESSO'
+                  and str(flag.get('evento_programado') or '').upper() == 'SELECAO_INICIAL'
+                  and int(flag.get('rodada') or 0) == rodada
+              )
+
           def publicado(rodada):
-              flag = load(Path(f'data/flags/video_inicial_rodada_{rodada}.publicado.json'))
+              flag = load(flags_dir / f'video_inicial_rodada_{rodada}.publicado.json')
               return str(flag.get('status') or '').upper() == 'PUBLICADO_COM_SUCESSO'
 
+          # A rodada-alvo vem da confirmação REAL da Seleção Inicial.
+          # Não depende de evento_programado gravado nos snapshots, pois os snapshots
+          # podem ser atualizados depois pelo sincronizador sem preservar esse campo.
           rodadas = []
-          for path in base.glob('top5_rodada_*.json'):
-              m = re.search(r'rodada_(\d+)\.json$', path.name)
-              if m:
-                  rodadas.append(int(m.group(1)))
+          for path in flags_dir.glob('publicacao_SELECAO_INICIAL_rodada_*_PACOTE.json'):
+              m = re.search(r'rodada_(\d+)_PACOTE\.json$', path.name)
+              if not m:
+                  continue
+              r = int(m.group(1))
+              if selecao_confirmada(r):
+                  rodadas.append(r)
 
           if not rodadas:
               out.write_text('ready=false\n', encoding='utf-8')
-              print('Nenhuma rodada atual encontrada.')
+              print('Nenhuma Seleção Inicial confirmada por marker real.')
               raise SystemExit(0)
 
-          # REGRA OBRIGATÓRIA: analisar SOMENTE a rodada mais recente.
-          # Nunca retroceder para rodada anterior por falta de flag antiga.
           rodada = max(set(rodadas))
-          print(f'Rodada atual detectada: R{rodada}.')
+          print(f'Seleção Inicial confirmada: R{rodada}.')
 
           if publicado(rodada):
               out.write_text(f'ready=false\nrodada={rodada}\n', encoding='utf-8')
-              print(f'Análise inicial R{rodada} já publicada com sucesso. Não procurar rodadas anteriores.')
+              print(f'Vídeo de análise inicial R{rodada} já publicado com sucesso.')
               raise SystemExit(0)
 
           req = {
@@ -104,14 +117,17 @@ jobs:
               f'data/publicacoes_atuais/top5_rodada_{rodada}.json': 30,
           }
 
-          if all(has_snapshot(rel, rodada, minimo) for rel, minimo in req.items()):
-              with out.open('a', encoding='utf-8') as fh:
-                  fh.write('ready=true\n')
-                  fh.write(f'rodada={rodada}\n')
-              print(f'Análise inicial R{rodada} pronta e ainda não publicada.')
+          faltando = []
+          for rel, minimo in req.items():
+              if not has_snapshot(rel, rodada, minimo):
+                  faltando.append(f'{rel} (mínimo={minimo})')
+
+          if not faltando:
+              out.write_text(f'ready=true\nrodada={rodada}\n', encoding='utf-8')
+              print(f'Vídeo de análise inicial R{rodada} LIBERADO: Seleção Inicial confirmada + 3 times + Top5 disponíveis.')
           else:
               out.write_text(f'ready=false\nrodada={rodada}\n', encoding='utf-8')
-              print(f'R{rodada} ainda não possui seleção inicial completa. Nenhuma rodada anterior será considerada.')
+              print(f'R{rodada} com Seleção Inicial confirmada, mas snapshots incompletos: {faltando}')
           PY
 
   publicar:
