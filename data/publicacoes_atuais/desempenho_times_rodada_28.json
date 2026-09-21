@@ -1,0 +1,318 @@
+{
+  "origem": "cartola_desempenho_rodada_anterior_v3_valorizacao_mercado",
+  "evento_github": "cartola_live_publish",
+  "workflow_destino": "gerar.resultados.yml",
+  "evento_programado": "FECHAMENTO_FINAL_TIMES",
+  "tipo_publicacao": "DESEMPENHO_FINAL_DOS_TIMES",
+  "contexto": "RODADA_FINALIZADA",
+  "rodada": 28,
+  "rodada_finalizada": 28,
+  "fonte_pontuacao": "API Cartola atletas/pontuados/28",
+  "fonte_valorizacao": "API Cartola atletas/mercado variacao_num da abertura seguinte",
+  "times": {
+    "ECONOMICO": {
+      "modelo": "ECONOMICO",
+      "nome": "Time Econômico",
+      "pontos_sem_c": 51.06,
+      "bonus_capitao": 6.0,
+      "pontos_com_c": 57.06,
+      "participacao": "11/12",
+      "valorizacao": -3.56,
+      "valorizacao_localizada": "12/12",
+      "fonte_valorizacao": "API Cartola atletas/mercado variacao_num após processamento da rodada",
+      "capitao": "Matheuzinho",
+      "nao_pontuaram_ou_nao_localizados": [
+        "Reinier"
+      ],
+      "nao_localizados_valorizacao": [],
+      "metodos_localizacao": {
+        "Otávio": "EXATO",
+        "Marcelinho": "EXATO",
+        "Matheuzinho": "EXATO",
+        "Vitão": "EXATO",
+        "Aguirre": "EXATO",
+        "Reinier": "NAO_LOCALIZADO",
+        "Villasanti": "EXATO",
+        "Jadson": "EXATO",
+        "Cuello": "EXATO",
+        "Tarzia": "EXATO",
+        "Bruno Santos": "EXATO",
+        "Odair Hellmann": "EXATO"
+      },
+      "metodos_localizacao_valorizacao": {
+        "Otávio": "EXATO",
+        "Marcelinho": "EXATO",
+        "Matheuzinho": "EXATO",
+        "Vitão": "EXATO",
+        "Aguirre": "EXATO",
+        "Reinier": "EXATO",
+        "Villasanti": "EXATO",
+        "Jadson": "EXATO",
+        "Cuello": "EXATO",
+        "Tarzia": "EXATO",
+        "Bruno Santos": "EXATO",
+        "Odair Hellmann": "EXATO"
+      },
+      "snapshot": "data/publicacoes_atuais/time_economico_rodada_28.json"
+    },
+    "INTERMEDIARIO": {
+      "modelo": "INTERMEDIARIO",
+      "nome": "Time Intermediário",
+      "pontos_sem_c": 77.22,
+      "bonus_capitao": 9.9,
+      "pontos_com_c": 87.12,
+      "participacao": "12/12",
+      "valorizacao": -2.26,
+      "valorizacao_localizada": "12/12",
+      "fonte_valorizacao": "API Cartola atletas/mercado variacao_num após processamento da rodada",
+      "capitao": "Pedro",
+      "nao_pontuaram_ou_nao_localizados": [],
+      "nao_localizados_valorizacao": [],
+      "metodos_localizacao": {
+        "Lucas Arcanjo": "EXATO",
+        "Matheuzinho": "EXATO",
+        "Matheus Bidu": "EXATO",
+        "Léo Pereira": "EXATO",
+        "Gustavo Gómez": "EXATO",
+        "Arias": "EXATO",
+        "Carrascal": "EXATO",
+        "Matheus Pereira": "EXATO",
+        "Pedro": "EXATO",
+        "Renê": "EXATO",
+        "Kaio César": "EXATO",
+        "Rafael Guanaes": "EXATO"
+      },
+      "metodos_localizacao_valorizacao": {
+        "Lucas Arcanjo": "EXATO",
+        "Matheuzinho": "EXATO",
+        "Matheus Bidu": "EXATO",
+        "Léo Pereira": "EXATO",
+        "Gustavo Gómez": "EXATO",
+        "Arias": "EXATO",
+        "Carrascal": "EXATO",
+        "Matheus Pereira": "EXATO",
+        "Pedro": "EXATO",
+        "Renê": "EXATO",
+        "Kaio César": "EXATO",
+        "Rafael Guanaes": "EXATO"
+      },
+      "snapshot": "data/publicacoes_atuais/time_intermediario_rodada_28.json"
+    },
+    "PONTUACAO": {
+      "modelo": "PONTUACAO",
+      "nome": "Time para Pontuar",
+      "pontos_sem_c": 83.4,
+      "bonus_capitao": 9.9,
+      "pontos_com_c": 93.3,
+      "participacao": "12/12",
+      "valorizacao": -1.61,
+      "valorizacao_localizada": "12/12",
+      "fonte_valorizacao": "API Cartola atletas/mercado variacao_num após processamento da rodada",
+      "capitao": "Pedro",
+      "nao_pontuaram_ou_nao_localizados": [],
+      "nao_localizados_valorizacao": [],
+      "metodos_localizacao": {
+        "Lucas Arcanjo": "EXATO",
+        "Matheuzinho": "EXATO",
+        "Matheus Bidu": "EXATO",
+        "Léo Pereira": "EXATO",
+        "Gustavo Gómez": "EXATO",
+        "Arias": "EXATO",
+        "Carrascal": "EXATO",
+        "Matheus Pereira": "EXATO",
+        "Pedro": "EXATO",
+        "Renê": "EXATO",
+        "Andrés Gómez": "EXATO",
+        "Abel Ferreira": "EXATO"
+      },
+      "metodos_localizacao_valorizacao": {
+        "Lucas Arcanjo": "EXATO",
+        "Matheuzinho": "EXATO",
+        "Matheus Bidu": "EXATO",
+        "Léo Pereira": "EXATO",
+        "Gustavo Gómez": "EXATO",
+        "Arias": "EXATO",
+        "Carrascal": "EXATO",
+        "Matheus Pereira": "EXATO",
+        "Pedro": "EXATO",
+        "Renê": "EXATO",
+        "Andrés Gómez": "EXATO",
+        "Abel Ferreira": "EXATO"
+      },
+      "snapshot": "data/publicacoes_atuais/time_pontuacao_rodada_28.json"
+    }
+  },
+  "ranking_times": [
+    {
+      "modelo": "PONTUACAO",
+      "nome": "Time para Pontuar",
+      "pontos": 93.3
+    },
+    {
+      "modelo": "INTERMEDIARIO",
+      "nome": "Time Intermediário",
+      "pontos": 87.12
+    },
+    {
+      "modelo": "ECONOMICO",
+      "nome": "Time Econômico",
+      "pontos": 57.06
+    }
+  ],
+  "payload": {
+    "rodada": 28,
+    "times": {
+      "ECONOMICO": {
+        "modelo": "ECONOMICO",
+        "nome": "Time Econômico",
+        "pontos_sem_c": 51.06,
+        "bonus_capitao": 6.0,
+        "pontos_com_c": 57.06,
+        "participacao": "11/12",
+        "valorizacao": -3.56,
+        "valorizacao_localizada": "12/12",
+        "fonte_valorizacao": "API Cartola atletas/mercado variacao_num após processamento da rodada",
+        "capitao": "Matheuzinho",
+        "nao_pontuaram_ou_nao_localizados": [
+          "Reinier"
+        ],
+        "nao_localizados_valorizacao": [],
+        "metodos_localizacao": {
+          "Otávio": "EXATO",
+          "Marcelinho": "EXATO",
+          "Matheuzinho": "EXATO",
+          "Vitão": "EXATO",
+          "Aguirre": "EXATO",
+          "Reinier": "NAO_LOCALIZADO",
+          "Villasanti": "EXATO",
+          "Jadson": "EXATO",
+          "Cuello": "EXATO",
+          "Tarzia": "EXATO",
+          "Bruno Santos": "EXATO",
+          "Odair Hellmann": "EXATO"
+        },
+        "metodos_localizacao_valorizacao": {
+          "Otávio": "EXATO",
+          "Marcelinho": "EXATO",
+          "Matheuzinho": "EXATO",
+          "Vitão": "EXATO",
+          "Aguirre": "EXATO",
+          "Reinier": "EXATO",
+          "Villasanti": "EXATO",
+          "Jadson": "EXATO",
+          "Cuello": "EXATO",
+          "Tarzia": "EXATO",
+          "Bruno Santos": "EXATO",
+          "Odair Hellmann": "EXATO"
+        },
+        "snapshot": "data/publicacoes_atuais/time_economico_rodada_28.json"
+      },
+      "INTERMEDIARIO": {
+        "modelo": "INTERMEDIARIO",
+        "nome": "Time Intermediário",
+        "pontos_sem_c": 77.22,
+        "bonus_capitao": 9.9,
+        "pontos_com_c": 87.12,
+        "participacao": "12/12",
+        "valorizacao": -2.26,
+        "valorizacao_localizada": "12/12",
+        "fonte_valorizacao": "API Cartola atletas/mercado variacao_num após processamento da rodada",
+        "capitao": "Pedro",
+        "nao_pontuaram_ou_nao_localizados": [],
+        "nao_localizados_valorizacao": [],
+        "metodos_localizacao": {
+          "Lucas Arcanjo": "EXATO",
+          "Matheuzinho": "EXATO",
+          "Matheus Bidu": "EXATO",
+          "Léo Pereira": "EXATO",
+          "Gustavo Gómez": "EXATO",
+          "Arias": "EXATO",
+          "Carrascal": "EXATO",
+          "Matheus Pereira": "EXATO",
+          "Pedro": "EXATO",
+          "Renê": "EXATO",
+          "Kaio César": "EXATO",
+          "Rafael Guanaes": "EXATO"
+        },
+        "metodos_localizacao_valorizacao": {
+          "Lucas Arcanjo": "EXATO",
+          "Matheuzinho": "EXATO",
+          "Matheus Bidu": "EXATO",
+          "Léo Pereira": "EXATO",
+          "Gustavo Gómez": "EXATO",
+          "Arias": "EXATO",
+          "Carrascal": "EXATO",
+          "Matheus Pereira": "EXATO",
+          "Pedro": "EXATO",
+          "Renê": "EXATO",
+          "Kaio César": "EXATO",
+          "Rafael Guanaes": "EXATO"
+        },
+        "snapshot": "data/publicacoes_atuais/time_intermediario_rodada_28.json"
+      },
+      "PONTUACAO": {
+        "modelo": "PONTUACAO",
+        "nome": "Time para Pontuar",
+        "pontos_sem_c": 83.4,
+        "bonus_capitao": 9.9,
+        "pontos_com_c": 93.3,
+        "participacao": "12/12",
+        "valorizacao": -1.61,
+        "valorizacao_localizada": "12/12",
+        "fonte_valorizacao": "API Cartola atletas/mercado variacao_num após processamento da rodada",
+        "capitao": "Pedro",
+        "nao_pontuaram_ou_nao_localizados": [],
+        "nao_localizados_valorizacao": [],
+        "metodos_localizacao": {
+          "Lucas Arcanjo": "EXATO",
+          "Matheuzinho": "EXATO",
+          "Matheus Bidu": "EXATO",
+          "Léo Pereira": "EXATO",
+          "Gustavo Gómez": "EXATO",
+          "Arias": "EXATO",
+          "Carrascal": "EXATO",
+          "Matheus Pereira": "EXATO",
+          "Pedro": "EXATO",
+          "Renê": "EXATO",
+          "Andrés Gómez": "EXATO",
+          "Abel Ferreira": "EXATO"
+        },
+        "metodos_localizacao_valorizacao": {
+          "Lucas Arcanjo": "EXATO",
+          "Matheuzinho": "EXATO",
+          "Matheus Bidu": "EXATO",
+          "Léo Pereira": "EXATO",
+          "Gustavo Gómez": "EXATO",
+          "Arias": "EXATO",
+          "Carrascal": "EXATO",
+          "Matheus Pereira": "EXATO",
+          "Pedro": "EXATO",
+          "Renê": "EXATO",
+          "Andrés Gómez": "EXATO",
+          "Abel Ferreira": "EXATO"
+        },
+        "snapshot": "data/publicacoes_atuais/time_pontuacao_rodada_28.json"
+      }
+    },
+    "ranking_times": [
+      {
+        "modelo": "PONTUACAO",
+        "nome": "Time para Pontuar",
+        "pontos": 93.3
+      },
+      {
+        "modelo": "INTERMEDIARIO",
+        "nome": "Time Intermediário",
+        "pontos": 87.12
+      },
+      {
+        "modelo": "ECONOMICO",
+        "nome": "Time Econômico",
+        "pontos": 57.06
+      }
+    ],
+    "evento_programado": "FECHAMENTO_FINAL_TIMES",
+    "tipo_publicacao": "DESEMPENHO_FINAL_DOS_TIMES",
+    "contexto": "RODADA_FINALIZADA"
+  }
+}
