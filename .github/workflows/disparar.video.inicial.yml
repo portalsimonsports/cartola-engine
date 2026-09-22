@@ -7,6 +7,9 @@ on:
     types:
       - completed
   workflow_dispatch:
+  push:
+    paths:
+      - 'data/flags/video_inicial_solicitar_rodada_*.json'
 
 permissions:
   contents: write
@@ -86,8 +89,6 @@ jobs:
               return str(flag.get('status') or '').upper() == 'PUBLICADO_COM_SUCESSO'
 
           # A rodada-alvo vem da confirmação REAL da Seleção Inicial.
-          # Não depende de evento_programado gravado nos snapshots, pois os snapshots
-          # podem ser atualizados depois pelo sincronizador sem preservar esse campo.
           rodadas = []
           for path in flags_dir.glob('publicacao_SELECAO_INICIAL_rodada_*_PACOTE.json'):
               m = re.search(r'rodada_(\d+)_PACOTE\.json$', path.name)
