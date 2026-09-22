@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 29,
-  "atualizado_em": "2026-09-22T23:29:52.860Z",
+  "atualizado_em": "2026-09-22T23:50:08.790Z",
   "dados": [
     {
       "RODADA": 29,
@@ -48,12 +48,12 @@
     {
       "RODADA": 29,
       "POS": "GOL",
-      "NOME": "Marcelo Rangel",
-      "CLUBE": "REM",
-      "PRECO": 5.4,
-      "EXP_SCORE": 4.0416,
-      "FACTOR": 1.1606691334184773,
-      "ATLETA_ID": 82730
+      "NOME": "Rossi",
+      "CLUBE": "FLA",
+      "PRECO": 8.43,
+      "EXP_SCORE": 4.1568,
+      "FACTOR": 0.9582749565286646,
+      "ATLETA_ID": 99552
     },
     {
       "RODADA": 29,
@@ -218,10 +218,20 @@
     {
       "RODADA": 29,
       "POS": "ATA",
+      "NOME": "Pedro",
+      "CLUBE": "FLA",
+      "PRECO": 16.24,
+      "EXP_SCORE": 7.4813,
+      "FACTOR": 0.942724980988904,
+      "ATLETA_ID": 94583
+    },
+    {
+      "RODADA": 29,
+      "POS": "ATA",
       "NOME": "Hulk",
       "CLUBE": "FLU",
       "PRECO": 14.05,
-      "EXP_SCORE": 8.1061,
+      "EXP_SCORE": 7.0488,
       "FACTOR": 1.1120728129062856,
       "ATLETA_ID": 39148
     },
@@ -244,16 +254,6 @@
       "EXP_SCORE": 6.9641,
       "FACTOR": 0.942724980988904,
       "ATLETA_ID": 98873
-    },
-    {
-      "RODADA": 29,
-      "POS": "ATA",
-      "NOME": "Pedro",
-      "CLUBE": "FLA",
-      "PRECO": 16.24,
-      "EXP_SCORE": 6.7332,
-      "FACTOR": 0.942724980988904,
-      "ATLETA_ID": 94583
     },
     {
       "RODADA": 29,
