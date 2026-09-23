@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 29,
-  "atualizado_em": "2026-09-23T04:29:44.265Z",
+  "atualizado_em": "2026-09-23T08:09:51.825Z",
   "dados": [
     {
       "RODADA": 29,
@@ -48,12 +48,12 @@
     {
       "RODADA": 29,
       "POS": "GOL",
-      "NOME": "Ronaldo",
-      "CLUBE": "BAH",
-      "PRECO": 8.01,
-      "EXP_SCORE": 4.2666,
-      "FACTOR": 0.8837967285547663,
-      "ATLETA_ID": 91101
+      "NOME": "Marcelo Rangel",
+      "CLUBE": "REM",
+      "PRECO": 5.4,
+      "EXP_SCORE": 4.0416,
+      "FACTOR": 1.1606691334184773,
+      "ATLETA_ID": 82730
     },
     {
       "RODADA": 29,
@@ -78,16 +78,6 @@
     {
       "RODADA": 29,
       "POS": "LAT",
-      "NOME": "Matheuzinho",
-      "CLUBE": "COR",
-      "PRECO": 10.63,
-      "EXP_SCORE": 5.8658,
-      "FACTOR": 0.9712231066090858,
-      "ATLETA_ID": 101727
-    },
-    {
-      "RODADA": 29,
-      "POS": "LAT",
       "NOME": "Bernabei",
       "CLUBE": "INT",
       "PRECO": 8.83,
@@ -104,6 +94,16 @@
       "EXP_SCORE": 5.7278,
       "FACTOR": 0.9673660030783418,
       "ATLETA_ID": 106708
+    },
+    {
+      "RODADA": 29,
+      "POS": "LAT",
+      "NOME": "Luciano Juba",
+      "CLUBE": "BAH",
+      "PRECO": 10.8,
+      "EXP_SCORE": 5.4319,
+      "FACTOR": 0.8837967285547664,
+      "ATLETA_ID": 107093
     },
     {
       "RODADA": 29,
@@ -152,7 +152,7 @@
       "CLUBE": "FLA",
       "PRECO": 8.97,
       "EXP_SCORE": 3.894,
-      "FACTOR": 0.9582749565286643,
+      "FACTOR": 0.9582749565286646,
       "ATLETA_ID": 83528
     },
     {
