@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 29,
   "tipo": "PONTUACAO",
-  "atualizado_em": "2026-09-23T00:49:48.252Z",
+  "atualizado_em": "2026-09-23T03:00:06.241Z",
   "dados": [
     {
       "RODADA": 29,
@@ -14,7 +14,7 @@
       "NOME": "Carlos Miguel",
       "CLUBE": "PAL",
       "PRECO": 9.1,
-      "EXP_SCORE": 5.2731,
+      "EXP_SCORE": 6.0641,
       "ATLETA_ID": 104084
     },
     {
@@ -44,6 +44,17 @@
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "ZAG",
+      "NOME": "Gustavo Gómez",
+      "CLUBE": "PAL",
+      "PRECO": 10.67,
+      "EXP_SCORE": 5.1119,
+      "ATLETA_ID": 71684
+    },
+    {
+      "RODADA": 29,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "ZAG",
       "NOME": "Alexander Barboza",
       "CLUBE": "PAL",
       "PRECO": 10.36,
@@ -54,12 +65,12 @@
       "RODADA": 29,
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Gustavo Gómez",
-      "CLUBE": "PAL",
-      "PRECO": 10.67,
-      "EXP_SCORE": 4.6007,
-      "ATLETA_ID": 71684
+      "POS": "MEI",
+      "NOME": "Matheus Pereira",
+      "CLUBE": "CRU",
+      "PRECO": 14.51,
+      "EXP_SCORE": 7.1974,
+      "ATLETA_ID": 96610
     },
     {
       "RODADA": 29,
@@ -69,19 +80,8 @@
       "NOME": "Arias",
       "CLUBE": "PAL",
       "PRECO": 13.53,
-      "EXP_SCORE": 6.5926,
+      "EXP_SCORE": 5.7327,
       "ATLETA_ID": 99815
-    },
-    {
-      "RODADA": 29,
-      "TIPO": "PONTUACAO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Matheus Pereira",
-      "CLUBE": "CRU",
-      "PRECO": 14.51,
-      "EXP_SCORE": 6.2586,
-      "ATLETA_ID": 96610
     },
     {
       "RODADA": 29,
@@ -110,33 +110,33 @@
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Pedro",
-      "CLUBE": "FLA",
-      "PRECO": 16.24,
-      "EXP_SCORE": 7.4813,
-      "ATLETA_ID": 94583
-    },
-    {
-      "RODADA": 29,
-      "TIPO": "PONTUACAO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
       "NOME": "Hulk",
       "CLUBE": "FLU",
       "PRECO": 14.05,
-      "EXP_SCORE": 7.0488,
+      "EXP_SCORE": 8.1061,
       "ATLETA_ID": 39148
     },
     {
       "RODADA": 29,
       "TIPO": "PONTUACAO",
       "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Flaco López",
+      "CLUBE": "PAL",
+      "PRECO": 13.42,
+      "EXP_SCORE": 7.0072,
+      "ATLETA_ID": 113103
+    },
+    {
+      "RODADA": 29,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Odair Hellmann",
-      "CLUBE": "CAP",
-      "PRECO": 9.18,
-      "EXP_SCORE": 6.7355,
-      "ATLETA_ID": 92273
+      "NOME": "Abel Ferreira",
+      "CLUBE": "PAL",
+      "PRECO": 12.06,
+      "EXP_SCORE": 7.7201,
+      "ATLETA_ID": 110506
     },
     {
       "RODADA": 29,
@@ -165,11 +165,11 @@
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Gustavo Marques",
-      "CLUBE": "RBB",
-      "PRECO": 6.81,
-      "EXP_SCORE": 3.9286,
-      "ATLETA_ID": 110750
+      "NOME": "Jonathan Jesus",
+      "CLUBE": "CRU",
+      "PRECO": 7.06,
+      "EXP_SCORE": 4.5044,
+      "ATLETA_ID": 124912
     },
     {
       "RODADA": 29,
