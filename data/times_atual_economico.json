@@ -4,29 +4,18 @@
   "tipo_publicacao": "times",
   "rodada": 29,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-09-23T16:19:53.647Z",
+  "atualizado_em": "2026-09-23T16:34:44.635Z",
   "dados": [
     {
       "RODADA": 29,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "GOL",
-      "NOME": "Matheus Cunha",
-      "CLUBE": "INT",
-      "PRECO": 4.12,
-      "EXP_SCORE": 3.3756,
-      "ATLETA_ID": 111690
-    },
-    {
-      "RODADA": 29,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "LAT",
-      "NOME": "Esquivel",
-      "CLUBE": "CAP",
-      "PRECO": 8.6,
-      "EXP_SCORE": 4.4309,
-      "ATLETA_ID": 110668
+      "NOME": "Weverton",
+      "CLUBE": "GRE",
+      "PRECO": 10.2,
+      "EXP_SCORE": 4.5348,
+      "ATLETA_ID": 71631
     },
     {
       "RODADA": 29,
@@ -36,8 +25,19 @@
       "NOME": "Marcelinho",
       "CLUBE": "REM",
       "PRECO": 6.23,
-      "EXP_SCORE": 4.5892,
+      "EXP_SCORE": 5.0991,
       "ATLETA_ID": 97795
+    },
+    {
+      "RODADA": 29,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Esquivel",
+      "CLUBE": "CAP",
+      "PRECO": 8.6,
+      "EXP_SCORE": 4.9232,
+      "ATLETA_ID": 110668
     },
     {
       "RODADA": 29,
@@ -47,7 +47,7 @@
       "NOME": "Tiago Cóser",
       "CLUBE": "CFC",
       "PRECO": 3.61,
-      "EXP_SCORE": 2.2332,
+      "EXP_SCORE": 2.5682,
       "ATLETA_ID": 109127
     },
     {
@@ -58,19 +58,8 @@
       "NOME": "Jonathan Jesus",
       "CLUBE": "CRU",
       "PRECO": 7.06,
-      "EXP_SCORE": 3.5252,
+      "EXP_SCORE": 3.9169,
       "ATLETA_ID": 124912
-    },
-    {
-      "RODADA": 29,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Lescano",
-      "CLUBE": "VAS",
-      "PRECO": 10.74,
-      "EXP_SCORE": 2.1497,
-      "ATLETA_ID": 124552
     },
     {
       "RODADA": 29,
@@ -80,7 +69,7 @@
       "NOME": "Eduardo",
       "CLUBE": "MIR",
       "PRECO": 8.37,
-      "EXP_SCORE": 2.5559,
+      "EXP_SCORE": 3.2658,
       "ATLETA_ID": 68708
     },
     {
@@ -88,22 +77,22 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Zé Vitor",
-      "CLUBE": "VIT",
-      "PRECO": 6.64,
-      "EXP_SCORE": 3.8322,
-      "ATLETA_ID": 107256
+      "NOME": "Lescano",
+      "CLUBE": "VAS",
+      "PRECO": 10.74,
+      "EXP_SCORE": 2.3886,
+      "ATLETA_ID": 124552
     },
     {
       "RODADA": 29,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Carrascal",
-      "CLUBE": "FLA",
-      "PRECO": 11.5,
-      "EXP_SCORE": 5.151,
-      "ATLETA_ID": 105436
+      "NOME": "Zé Ricardo",
+      "CLUBE": "REM",
+      "PRECO": 4.75,
+      "EXP_SCORE": 3.0798,
+      "ATLETA_ID": 102911
     },
     {
       "RODADA": 29,
@@ -113,8 +102,19 @@
       "NOME": "Arroyo",
       "CLUBE": "CRU",
       "PRECO": 8.42,
-      "EXP_SCORE": 4.2634,
+      "EXP_SCORE": 4.903,
       "ATLETA_ID": 132264
+    },
+    {
+      "RODADA": 29,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Tarzia",
+      "CLUBE": "VIT",
+      "PRECO": 4.29,
+      "EXP_SCORE": 3.553,
+      "ATLETA_ID": 143153
     },
     {
       "RODADA": 29,
@@ -143,11 +143,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Gabriel Delfim",
-      "CLUBE": "CAM",
-      "PRECO": 2.09,
-      "EXP_SCORE": 0.4461,
-      "ATLETA_ID": 115674
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 9.1,
+      "EXP_SCORE": 5.2731,
+      "ATLETA_ID": 104084
     },
     {
       "RODADA": 29,
@@ -157,7 +157,7 @@
       "NOME": "Fagner",
       "CLUBE": "CRU",
       "PRECO": 5.63,
-      "EXP_SCORE": 4.1243,
+      "EXP_SCORE": 3.5863,
       "ATLETA_ID": 42500
     },
     {
@@ -176,22 +176,22 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "João Cruz",
-      "CLUBE": "CAP",
-      "PRECO": 6.55,
-      "EXP_SCORE": 3.9099,
-      "ATLETA_ID": 128431
+      "NOME": "Gustavo Henrique",
+      "CLUBE": "SAN",
+      "PRECO": 3.73,
+      "EXP_SCORE": 2.4239,
+      "ATLETA_ID": 141776
     },
     {
       "RODADA": 29,
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Carbonero",
-      "CLUBE": "INT",
-      "PRECO": 8.32,
-      "EXP_SCORE": 5.11,
-      "ATLETA_ID": 107989
+      "NOME": "Fabinho",
+      "CLUBE": "CFC",
+      "PRECO": 2.09,
+      "EXP_SCORE": 0.9624,
+      "ATLETA_ID": 101729
     }
   ]
 }
