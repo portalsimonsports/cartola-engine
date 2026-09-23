@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 29,
-  "atualizado_em": "2026-09-22T23:29:52.860Z",
+  "atualizado_em": "2026-09-23T16:49:58.980Z",
   "dados": [
     {
       "rodada": 29,
@@ -11,7 +11,7 @@
       "nome": "Carlos Miguel",
       "clube": "PAL",
       "preco": 9.1,
-      "exp_score": 6.0641,
+      "exp_score": 5.2731,
       "factor": 1.0872892190510928,
       "atleta_id": 104084
     },
@@ -88,22 +88,22 @@
     {
       "rodada": 29,
       "pos": "LAT",
+      "nome": "Igor Formiga",
+      "clube": "MIR",
+      "preco": 9.88,
+      "exp_score": 5.7278,
+      "factor": 0.9673660030783418,
+      "atleta_id": 106708
+    },
+    {
+      "rodada": 29,
+      "pos": "LAT",
       "nome": "Luciano Juba",
       "clube": "BAH",
       "preco": 10.8,
       "exp_score": 5.4319,
       "factor": 0.8837967285547664,
       "atleta_id": 107093
-    },
-    {
-      "rodada": 29,
-      "pos": "LAT",
-      "nome": "Matheus Bidu",
-      "clube": "COR",
-      "preco": 12.13,
-      "exp_score": 5.3772,
-      "factor": 0.9712231066090858,
-      "atleta_id": 105531
     },
     {
       "rodada": 29,
@@ -128,26 +128,6 @@
     {
       "rodada": 29,
       "pos": "ZAG",
-      "nome": "Jonathan Jesus",
-      "clube": "CRU",
-      "preco": 7.06,
-      "exp_score": 4.5044,
-      "factor": 1.1153869665058627,
-      "atleta_id": 124912
-    },
-    {
-      "rodada": 29,
-      "pos": "ZAG",
-      "nome": "Gustavo Henrique",
-      "clube": "COR",
-      "preco": 9.46,
-      "exp_score": 4.0793,
-      "factor": 0.9712231066090858,
-      "atleta_id": 78248
-    },
-    {
-      "rodada": 29,
-      "pos": "ZAG",
       "nome": "Gustavo Marques",
       "clube": "RBB",
       "preco": 6.81,
@@ -157,11 +137,31 @@
     },
     {
       "rodada": 29,
+      "pos": "ZAG",
+      "nome": "Jonathan Jesus",
+      "clube": "CRU",
+      "preco": 7.06,
+      "exp_score": 3.9169,
+      "factor": 1.1153869665058627,
+      "atleta_id": 124912
+    },
+    {
+      "rodada": 29,
+      "pos": "ZAG",
+      "nome": "Léo Pereira",
+      "clube": "FLA",
+      "preco": 8.97,
+      "exp_score": 3.894,
+      "factor": 0.9582749565286646,
+      "atleta_id": 83528
+    },
+    {
+      "rodada": 29,
       "pos": "MEI",
       "nome": "Matheus Pereira",
       "clube": "CRU",
       "preco": 14.51,
-      "exp_score": 7.1974,
+      "exp_score": 6.2586,
       "factor": 1.0662454254805924,
       "atleta_id": 96610
     },
@@ -171,7 +171,7 @@
       "nome": "Arias",
       "clube": "PAL",
       "preco": 13.53,
-      "exp_score": 6.5926,
+      "exp_score": 5.7327,
       "factor": 1.0767842939728693,
       "atleta_id": 99815
     },
@@ -314,7 +314,7 @@
       "nome": "Carlos Miguel",
       "clube": "PAL",
       "preco": 9.1,
-      "exp_score": 6.0641,
+      "exp_score": 5.2731,
       "factor": 1.0872892190510928,
       "atleta_id": 104084
     },
@@ -391,22 +391,22 @@
     {
       "rodada": 29,
       "pos": "LAT",
+      "nome": "Igor Formiga",
+      "clube": "MIR",
+      "preco": 9.88,
+      "exp_score": 5.7278,
+      "factor": 0.9673660030783418,
+      "atleta_id": 106708
+    },
+    {
+      "rodada": 29,
+      "pos": "LAT",
       "nome": "Luciano Juba",
       "clube": "BAH",
       "preco": 10.8,
       "exp_score": 5.4319,
       "factor": 0.8837967285547664,
       "atleta_id": 107093
-    },
-    {
-      "rodada": 29,
-      "pos": "LAT",
-      "nome": "Matheus Bidu",
-      "clube": "COR",
-      "preco": 12.13,
-      "exp_score": 5.3772,
-      "factor": 0.9712231066090858,
-      "atleta_id": 105531
     },
     {
       "rodada": 29,
@@ -431,26 +431,6 @@
     {
       "rodada": 29,
       "pos": "ZAG",
-      "nome": "Jonathan Jesus",
-      "clube": "CRU",
-      "preco": 7.06,
-      "exp_score": 4.5044,
-      "factor": 1.1153869665058627,
-      "atleta_id": 124912
-    },
-    {
-      "rodada": 29,
-      "pos": "ZAG",
-      "nome": "Gustavo Henrique",
-      "clube": "COR",
-      "preco": 9.46,
-      "exp_score": 4.0793,
-      "factor": 0.9712231066090858,
-      "atleta_id": 78248
-    },
-    {
-      "rodada": 29,
-      "pos": "ZAG",
       "nome": "Gustavo Marques",
       "clube": "RBB",
       "preco": 6.81,
@@ -460,11 +440,31 @@
     },
     {
       "rodada": 29,
+      "pos": "ZAG",
+      "nome": "Jonathan Jesus",
+      "clube": "CRU",
+      "preco": 7.06,
+      "exp_score": 3.9169,
+      "factor": 1.1153869665058627,
+      "atleta_id": 124912
+    },
+    {
+      "rodada": 29,
+      "pos": "ZAG",
+      "nome": "Léo Pereira",
+      "clube": "FLA",
+      "preco": 8.97,
+      "exp_score": 3.894,
+      "factor": 0.9582749565286646,
+      "atleta_id": 83528
+    },
+    {
+      "rodada": 29,
       "pos": "MEI",
       "nome": "Matheus Pereira",
       "clube": "CRU",
       "preco": 14.51,
-      "exp_score": 7.1974,
+      "exp_score": 6.2586,
       "factor": 1.0662454254805924,
       "atleta_id": 96610
     },
@@ -474,7 +474,7 @@
       "nome": "Arias",
       "clube": "PAL",
       "preco": 13.53,
-      "exp_score": 6.5926,
+      "exp_score": 5.7327,
       "factor": 1.0767842939728693,
       "atleta_id": 99815
     },
