@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 29,
-  "atualizado_em": "2026-09-24T01:17:26.048Z",
+  "atualizado_em": "2026-09-24T01:49:29.937Z",
   "dados": [
     {
       "RODADA": 29,
@@ -128,26 +128,6 @@
     {
       "RODADA": 29,
       "POS": "ZAG",
-      "NOME": "Jonathan Jesus",
-      "CLUBE": "CRU",
-      "PRECO": 7.06,
-      "EXP_SCORE": 4.5063,
-      "FACTOR": 1.1158565753789071,
-      "ATLETA_ID": 124912
-    },
-    {
-      "RODADA": 29,
-      "POS": "ZAG",
-      "NOME": "Gustavo Henrique",
-      "CLUBE": "COR",
-      "PRECO": 9.46,
-      "EXP_SCORE": 4.0806,
-      "FACTOR": 0.9715373213428179,
-      "ATLETA_ID": 78248
-    },
-    {
-      "RODADA": 29,
-      "POS": "ZAG",
       "NOME": "Gustavo Marques",
       "CLUBE": "RBB",
       "PRECO": 6.81,
@@ -157,11 +137,31 @@
     },
     {
       "RODADA": 29,
+      "POS": "ZAG",
+      "NOME": "Jonathan Jesus",
+      "CLUBE": "CRU",
+      "PRECO": 7.06,
+      "EXP_SCORE": 3.9185,
+      "FACTOR": 1.1158565753789071,
+      "ATLETA_ID": 124912
+    },
+    {
+      "RODADA": 29,
+      "POS": "ZAG",
+      "NOME": "Léo Pereira",
+      "CLUBE": "FLA",
+      "PRECO": 8.97,
+      "EXP_SCORE": 3.8954,
+      "FACTOR": 0.9586186580802969,
+      "ATLETA_ID": 83528
+    },
+    {
+      "RODADA": 29,
       "POS": "MEI",
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 14.51,
-      "EXP_SCORE": 7.1974,
+      "EXP_SCORE": 6.2586,
       "FACTOR": 1.0662454254805924,
       "ATLETA_ID": 96610
     },
