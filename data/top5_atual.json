@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 29,
-  "atualizado_em": "2026-09-24T11:39:53.435Z",
+  "atualizado_em": "2026-09-24T11:49:58.088Z",
   "dados": [
     {
       "RODADA": 29,
@@ -11,19 +11,9 @@
       "NOME": "Carlos Miguel",
       "CLUBE": "PAL",
       "PRECO": 9.1,
-      "EXP_SCORE": 6.0671,
+      "EXP_SCORE": 5.2757,
       "FACTOR": 1.0878228149151326,
       "ATLETA_ID": 104084
-    },
-    {
-      "RODADA": 29,
-      "POS": "GOL",
-      "NOME": "Weverton",
-      "CLUBE": "GRE",
-      "PRECO": 10.2,
-      "EXP_SCORE": 5.2166,
-      "FACTOR": 0.9771685335341732,
-      "ATLETA_ID": 71631
     },
     {
       "RODADA": 29,
@@ -44,6 +34,16 @@
       "EXP_SCORE": 4.8086,
       "FACTOR": 1.164318415206719,
       "ATLETA_ID": 37656
+    },
+    {
+      "RODADA": 29,
+      "POS": "GOL",
+      "NOME": "Weverton",
+      "CLUBE": "GRE",
+      "PRECO": 10.2,
+      "EXP_SCORE": 4.5362,
+      "FACTOR": 0.9771685335341732,
+      "ATLETA_ID": 71631
     },
     {
       "RODADA": 29,
@@ -108,22 +108,22 @@
     {
       "RODADA": 29,
       "POS": "ZAG",
-      "NOME": "Gustavo Gómez",
-      "CLUBE": "PAL",
-      "PRECO": 10.67,
-      "EXP_SCORE": 5.1144,
-      "FACTOR": 1.0878228149151326,
-      "ATLETA_ID": 71684
-    },
-    {
-      "RODADA": 29,
-      "POS": "ZAG",
       "NOME": "Alexander Barboza",
       "CLUBE": "PAL",
       "PRECO": 10.36,
       "EXP_SCORE": 4.6119,
       "FACTOR": 1.0878228149151326,
       "ATLETA_ID": 99274
+    },
+    {
+      "RODADA": 29,
+      "POS": "ZAG",
+      "NOME": "Gustavo Gómez",
+      "CLUBE": "PAL",
+      "PRECO": 10.67,
+      "EXP_SCORE": 4.603,
+      "FACTOR": 1.0878228149151326,
+      "ATLETA_ID": 71684
     },
     {
       "RODADA": 29,
