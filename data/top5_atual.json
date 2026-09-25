@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 29,
-  "atualizado_em": "2026-09-25T03:30:02.152Z",
+  "atualizado_em": "2026-09-25T03:50:02.714Z",
   "dados": [
     {
       "RODADA": 29,
@@ -68,16 +68,6 @@
     {
       "RODADA": 29,
       "POS": "LAT",
-      "NOME": "Renê",
-      "CLUBE": "FLU",
-      "PRECO": 9.68,
-      "EXP_SCORE": 6.0092,
-      "FACTOR": 1.164318415206719,
-      "ATLETA_ID": 78445
-    },
-    {
-      "RODADA": 29,
-      "POS": "LAT",
       "NOME": "Matheuzinho",
       "CLUBE": "COR",
       "PRECO": 10.63,
@@ -104,6 +94,16 @@
       "EXP_SCORE": 5.435,
       "FACTOR": 0.8843100393503563,
       "ATLETA_ID": 107093
+    },
+    {
+      "RODADA": 29,
+      "POS": "LAT",
+      "NOME": "Renê",
+      "CLUBE": "FLU",
+      "PRECO": 9.68,
+      "EXP_SCORE": 5.4082,
+      "FACTOR": 1.164318415206719,
+      "ATLETA_ID": 78445
     },
     {
       "RODADA": 29,
@@ -138,22 +138,22 @@
     {
       "RODADA": 29,
       "POS": "ZAG",
-      "NOME": "Jonathan Jesus",
-      "CLUBE": "CRU",
-      "PRECO": 7.06,
-      "EXP_SCORE": 3.9185,
-      "FACTOR": 1.1158565753789071,
-      "ATLETA_ID": 124912
-    },
-    {
-      "RODADA": 29,
-      "POS": "ZAG",
       "NOME": "Léo Pereira",
       "CLUBE": "FLA",
       "PRECO": 8.97,
       "EXP_SCORE": 3.8954,
       "FACTOR": 0.9586186580802969,
       "ATLETA_ID": 83528
+    },
+    {
+      "RODADA": 29,
+      "POS": "ZAG",
+      "NOME": "Arthur Dias",
+      "CLUBE": "CAP",
+      "PRECO": 6.19,
+      "EXP_SCORE": 3.6332,
+      "FACTOR": 1.1737930136707078,
+      "ATLETA_ID": 130843
     },
     {
       "RODADA": 29,
@@ -218,6 +218,16 @@
     {
       "RODADA": 29,
       "POS": "ATA",
+      "NOME": "Samuel Lino",
+      "CLUBE": "FLA",
+      "PRECO": 12.45,
+      "EXP_SCORE": 7.7339,
+      "FACTOR": 0.9422338370462688,
+      "ATLETA_ID": 98873
+    },
+    {
+      "RODADA": 29,
+      "POS": "ATA",
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 16.24,
@@ -234,16 +244,6 @@
       "EXP_SCORE": 7.0459,
       "FACTOR": 1.1116256049064865,
       "ATLETA_ID": 39148
-    },
-    {
-      "RODADA": 29,
-      "POS": "ATA",
-      "NOME": "Samuel Lino",
-      "CLUBE": "FLA",
-      "PRECO": 12.45,
-      "EXP_SCORE": 6.9605,
-      "FACTOR": 0.9422338370462688,
-      "ATLETA_ID": 98873
     },
     {
       "RODADA": 29,
