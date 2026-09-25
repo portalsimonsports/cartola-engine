@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 29,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-09-25T05:19:44.350Z",
+  "atualizado_em": "2026-09-25T05:49:45.061Z",
   "dados": [
     {
       "RODADA": 29,
@@ -66,17 +66,6 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Eduardo",
-      "CLUBE": "MIR",
-      "PRECO": 8.37,
-      "EXP_SCORE": 3.2638,
-      "ATLETA_ID": 68708
-    },
-    {
-      "RODADA": 29,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
       "NOME": "Lescano",
       "CLUBE": "VAS",
       "PRECO": 10.74,
@@ -99,11 +88,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Zé Vitor",
-      "CLUBE": "VIT",
-      "PRECO": 6.64,
-      "EXP_SCORE": 3.8305,
-      "ATLETA_ID": 107256
+      "NOME": "Eduardo",
+      "CLUBE": "MIR",
+      "PRECO": 8.37,
+      "EXP_SCORE": 2.5543,
+      "ATLETA_ID": 68708
     },
     {
       "RODADA": 29,
@@ -126,6 +115,17 @@
       "PRECO": 12.78,
       "EXP_SCORE": 10.4944,
       "ATLETA_ID": 143193
+    },
+    {
+      "RODADA": 29,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Serna",
+      "CLUBE": "FLU",
+      "PRECO": 7.83,
+      "EXP_SCORE": 5.0358,
+      "ATLETA_ID": 132071
     },
     {
       "RODADA": 29,
@@ -187,11 +187,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Serna",
-      "CLUBE": "FLU",
-      "PRECO": 7.83,
-      "EXP_SCORE": 5.0358,
-      "ATLETA_ID": 132071
+      "NOME": "Vitinho",
+      "CLUBE": "INT",
+      "PRECO": 7.57,
+      "EXP_SCORE": 4.6424,
+      "ATLETA_ID": 101960
     }
   ]
 }
