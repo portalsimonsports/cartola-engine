@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 29,
-  "atualizado_em": "2026-09-25T05:39:44.447Z",
+  "atualizado_em": "2026-09-25T05:50:03.705Z",
   "dados": [
     {
       "RODADA": 29,
@@ -218,10 +218,20 @@
     {
       "RODADA": 29,
       "POS": "ATA",
+      "NOME": "Pedro",
+      "CLUBE": "FLA",
+      "PRECO": 16.24,
+      "EXP_SCORE": 7.4774,
+      "FACTOR": 0.9422338370462688,
+      "ATLETA_ID": 94583
+    },
+    {
+      "RODADA": 29,
+      "POS": "ATA",
       "NOME": "Hulk",
       "CLUBE": "FLU",
       "PRECO": 14.05,
-      "EXP_SCORE": 8.1028,
+      "EXP_SCORE": 7.0459,
       "FACTOR": 1.1116256049064865,
       "ATLETA_ID": 39148
     },
@@ -244,16 +254,6 @@
       "EXP_SCORE": 6.9605,
       "FACTOR": 0.9422338370462688,
       "ATLETA_ID": 98873
-    },
-    {
-      "RODADA": 29,
-      "POS": "ATA",
-      "NOME": "Pedro",
-      "CLUBE": "FLA",
-      "PRECO": 16.24,
-      "EXP_SCORE": 6.7297,
-      "FACTOR": 0.9422338370462688,
-      "ATLETA_ID": 94583
     },
     {
       "RODADA": 29,
@@ -302,7 +302,7 @@
       "CLUBE": "SAN",
       "PRECO": 10.22,
       "EXP_SCORE": 5.6025,
-      "FACTOR": 1.0289569534523333,
+      "FACTOR": 1.028956953452333,
       "ATLETA_ID": 42411
     }
   ]
