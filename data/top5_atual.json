@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 29,
-  "atualizado_em": "2026-09-25T04:19:55.530Z",
+  "atualizado_em": "2026-09-25T04:29:58.071Z",
   "dados": [
     {
       "RODADA": 29,
@@ -108,16 +108,6 @@
     {
       "RODADA": 29,
       "POS": "ZAG",
-      "NOME": "Alexander Barboza",
-      "CLUBE": "PAL",
-      "PRECO": 10.36,
-      "EXP_SCORE": 4.6119,
-      "FACTOR": 1.0878228149151326,
-      "ATLETA_ID": 99274
-    },
-    {
-      "RODADA": 29,
-      "POS": "ZAG",
       "NOME": "Gustavo Gómez",
       "CLUBE": "PAL",
       "PRECO": 10.67,
@@ -134,6 +124,16 @@
       "EXP_SCORE": 4.3666,
       "FACTOR": 1.1513660052996881,
       "ATLETA_ID": 110750
+    },
+    {
+      "RODADA": 29,
+      "POS": "ZAG",
+      "NOME": "Alexander Barboza",
+      "CLUBE": "PAL",
+      "PRECO": 10.36,
+      "EXP_SCORE": 4.1508,
+      "FACTOR": 1.0878228149151326,
+      "ATLETA_ID": 99274
     },
     {
       "RODADA": 29,
@@ -302,7 +302,7 @@
       "CLUBE": "SAN",
       "PRECO": 10.22,
       "EXP_SCORE": 5.6025,
-      "FACTOR": 1.0289569534523333,
+      "FACTOR": 1.028956953452333,
       "ATLETA_ID": 42411
     }
   ]
