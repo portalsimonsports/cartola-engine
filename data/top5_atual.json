@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 29,
-  "atualizado_em": "2026-09-25T06:29:44.944Z",
+  "atualizado_em": "2026-09-25T06:50:04.336Z",
   "dados": [
     {
       "RODADA": 29,
@@ -38,22 +38,22 @@
     {
       "RODADA": 29,
       "POS": "GOL",
-      "NOME": "Weverton",
-      "CLUBE": "GRE",
-      "PRECO": 10.2,
-      "EXP_SCORE": 4.5362,
-      "FACTOR": 0.9771685335341732,
-      "ATLETA_ID": 71631
-    },
-    {
-      "RODADA": 29,
-      "POS": "GOL",
       "NOME": "Ronaldo",
       "CLUBE": "BAH",
       "PRECO": 8.01,
       "EXP_SCORE": 4.2691,
       "FACTOR": 0.8843100393503563,
       "ATLETA_ID": 91101
+    },
+    {
+      "RODADA": 29,
+      "POS": "GOL",
+      "NOME": "Rossi",
+      "CLUBE": "FLA",
+      "PRECO": 8.43,
+      "EXP_SCORE": 4.1583,
+      "FACTOR": 0.9586186580802969,
+      "ATLETA_ID": 99552
     },
     {
       "RODADA": 29,
@@ -64,16 +64,6 @@
       "EXP_SCORE": 6.2854,
       "FACTOR": 1.1513660052996881,
       "ATLETA_ID": 94968
-    },
-    {
-      "RODADA": 29,
-      "POS": "LAT",
-      "NOME": "Renê",
-      "CLUBE": "FLU",
-      "PRECO": 9.68,
-      "EXP_SCORE": 6.0092,
-      "FACTOR": 1.164318415206719,
-      "ATLETA_ID": 78445
     },
     {
       "RODADA": 29,
@@ -104,6 +94,16 @@
       "EXP_SCORE": 5.435,
       "FACTOR": 0.8843100393503563,
       "ATLETA_ID": 107093
+    },
+    {
+      "RODADA": 29,
+      "POS": "LAT",
+      "NOME": "Renê",
+      "CLUBE": "FLU",
+      "PRECO": 9.68,
+      "EXP_SCORE": 5.4082,
+      "FACTOR": 1.164318415206719,
+      "ATLETA_ID": 78445
     },
     {
       "RODADA": 29,
