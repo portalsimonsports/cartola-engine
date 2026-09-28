@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 29,
-  "atualizado_em": "2026-09-28T00:59:51.032Z",
+  "atualizado_em": "2026-09-28T01:09:45.132Z",
   "dados": [
     {
       "RODADA": 29,
@@ -38,22 +38,22 @@
     {
       "RODADA": 29,
       "POS": "GOL",
+      "NOME": "Ronaldo",
+      "CLUBE": "BAH",
+      "PRECO": 8.01,
+      "EXP_SCORE": 4.2691,
+      "FACTOR": 0.8843100393503563,
+      "ATLETA_ID": 91101
+    },
+    {
+      "RODADA": 29,
+      "POS": "GOL",
       "NOME": "Rossi",
       "CLUBE": "FLA",
       "PRECO": 8.43,
       "EXP_SCORE": 4.1583,
       "FACTOR": 0.9586186580802969,
       "ATLETA_ID": 99552
-    },
-    {
-      "RODADA": 29,
-      "POS": "GOL",
-      "NOME": "Weverton",
-      "CLUBE": "GRE",
-      "PRECO": 10.2,
-      "EXP_SCORE": 4.0825,
-      "FACTOR": 0.9771685335341732,
-      "ATLETA_ID": 71631
     },
     {
       "RODADA": 29,
@@ -198,12 +198,12 @@
     {
       "RODADA": 29,
       "POS": "MEI",
-      "NOME": "Acevedo",
-      "CLUBE": "BAH",
-      "PRECO": 7.55,
-      "EXP_SCORE": 4.2147,
-      "FACTOR": 0.9115281196448044,
-      "ATLETA_ID": 104783
+      "NOME": "Andreas Pereira",
+      "CLUBE": "PAL",
+      "PRECO": 11.73,
+      "EXP_SCORE": 4.0384,
+      "FACTOR": 1.0762398668426794,
+      "ATLETA_ID": 89274
     },
     {
       "RODADA": 29,
@@ -302,7 +302,7 @@
       "CLUBE": "SAN",
       "PRECO": 10.22,
       "EXP_SCORE": 5.6025,
-      "FACTOR": 1.028956953452333,
+      "FACTOR": 1.0289569534523333,
       "ATLETA_ID": 42411
     }
   ]
