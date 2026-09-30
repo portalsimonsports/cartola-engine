@@ -4,7 +4,7 @@
   "tipo_publicacao": "time_pontuacao",
   "rodada": 29,
   "tipo": "PONTUACAO",
-  "atualizado_em": "2026-09-29T10:55:41.301Z",
+  "atualizado_em": "2026-09-30T17:00:00.357Z",
   "dados": [
     {
       "rodada": 29,
@@ -14,7 +14,7 @@
       "nome": "Carlos Miguel",
       "clube": "PAL",
       "preco": 9.1,
-      "exp_score": 6.0673,
+      "exp_score": 6.0687,
       "atleta_id": 104084
     },
     {
@@ -25,7 +25,7 @@
       "nome": "Juninho Capixaba",
       "clube": "RBB",
       "preco": 12.69,
-      "exp_score": 6.2856,
+      "exp_score": 6.2866,
       "atleta_id": 94968
     },
     {
@@ -36,7 +36,7 @@
       "nome": "Renê",
       "clube": "FLU",
       "preco": 9.68,
-      "exp_score": 6.0093,
+      "exp_score": 5.9876,
       "atleta_id": 78445
     },
     {
@@ -47,7 +47,7 @@
       "nome": "Gustavo Gómez",
       "clube": "PAL",
       "preco": 10.67,
-      "exp_score": 5.1147,
+      "exp_score": 5.1159,
       "atleta_id": 71684
     },
     {
@@ -58,7 +58,7 @@
       "nome": "Alexander Barboza",
       "clube": "PAL",
       "preco": 10.36,
-      "exp_score": 4.6121,
+      "exp_score": 4.6132,
       "atleta_id": 99274
     },
     {
@@ -80,7 +80,7 @@
       "nome": "Arias",
       "clube": "PAL",
       "preco": 13.53,
-      "exp_score": 5.7231,
+      "exp_score": 6.5816,
       "atleta_id": 99815
     },
     {
@@ -102,19 +102,8 @@
       "nome": "Viveros",
       "clube": "CAP",
       "preco": 12.78,
-      "exp_score": 9.1157,
+      "exp_score": 10.483,
       "atleta_id": 143193
-    },
-    {
-      "rodada": 29,
-      "tipo": "PONTUACAO",
-      "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Hulk",
-      "clube": "FLU",
-      "preco": 14.05,
-      "exp_score": 8.0953,
-      "atleta_id": 39148
     },
     {
       "rodada": 29,
@@ -126,6 +115,17 @@
       "preco": 16.24,
       "exp_score": 7.4685,
       "atleta_id": 94583
+    },
+    {
+      "rodada": 29,
+      "tipo": "PONTUACAO",
+      "status": "TITULAR",
+      "pos": "ATA",
+      "nome": "Hulk",
+      "clube": "FLU",
+      "preco": 14.05,
+      "exp_score": 7.0394,
+      "atleta_id": 39148
     },
     {
       "rodada": 29,
@@ -146,7 +146,7 @@
       "nome": "Lucas Arcanjo",
       "clube": "VIT",
       "preco": 8.62,
-      "exp_score": 5.0299,
+      "exp_score": 5.0308,
       "atleta_id": 104118
     },
     {
@@ -157,7 +157,7 @@
       "nome": "Bernabei",
       "clube": "INT",
       "preco": 8.83,
-      "exp_score": 5.2151,
+      "exp_score": 5.7956,
       "atleta_id": 110426
     },
     {
@@ -168,7 +168,7 @@
       "nome": "Jonathan Jesus",
       "clube": "CRU",
       "preco": 7.06,
-      "exp_score": 4.5065,
+      "exp_score": 4.5074,
       "atleta_id": 124912
     },
     {
@@ -206,7 +206,7 @@
       "nome": "Carlos Miguel",
       "clube": "PAL",
       "preco": 9.1,
-      "exp_score": 6.0673,
+      "exp_score": 6.0687,
       "atleta_id": 104084
     },
     {
@@ -217,7 +217,7 @@
       "nome": "Juninho Capixaba",
       "clube": "RBB",
       "preco": 12.69,
-      "exp_score": 6.2856,
+      "exp_score": 6.2866,
       "atleta_id": 94968
     },
     {
@@ -228,7 +228,7 @@
       "nome": "Renê",
       "clube": "FLU",
       "preco": 9.68,
-      "exp_score": 6.0093,
+      "exp_score": 5.9876,
       "atleta_id": 78445
     },
     {
@@ -239,7 +239,7 @@
       "nome": "Gustavo Gómez",
       "clube": "PAL",
       "preco": 10.67,
-      "exp_score": 5.1147,
+      "exp_score": 5.1159,
       "atleta_id": 71684
     },
     {
@@ -250,7 +250,7 @@
       "nome": "Alexander Barboza",
       "clube": "PAL",
       "preco": 10.36,
-      "exp_score": 4.6121,
+      "exp_score": 4.6132,
       "atleta_id": 99274
     },
     {
@@ -272,7 +272,7 @@
       "nome": "Arias",
       "clube": "PAL",
       "preco": 13.53,
-      "exp_score": 5.7231,
+      "exp_score": 6.5816,
       "atleta_id": 99815
     },
     {
@@ -294,19 +294,8 @@
       "nome": "Viveros",
       "clube": "CAP",
       "preco": 12.78,
-      "exp_score": 9.1157,
+      "exp_score": 10.483,
       "atleta_id": 143193
-    },
-    {
-      "rodada": 29,
-      "tipo": "PONTUACAO",
-      "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Hulk",
-      "clube": "FLU",
-      "preco": 14.05,
-      "exp_score": 8.0953,
-      "atleta_id": 39148
     },
     {
       "rodada": 29,
@@ -318,6 +307,17 @@
       "preco": 16.24,
       "exp_score": 7.4685,
       "atleta_id": 94583
+    },
+    {
+      "rodada": 29,
+      "tipo": "PONTUACAO",
+      "status": "TITULAR",
+      "pos": "ATA",
+      "nome": "Hulk",
+      "clube": "FLU",
+      "preco": 14.05,
+      "exp_score": 7.0394,
+      "atleta_id": 39148
     },
     {
       "rodada": 29,
@@ -338,7 +338,7 @@
       "nome": "Lucas Arcanjo",
       "clube": "VIT",
       "preco": 8.62,
-      "exp_score": 5.0299,
+      "exp_score": 5.0308,
       "atleta_id": 104118
     },
     {
@@ -349,7 +349,7 @@
       "nome": "Bernabei",
       "clube": "INT",
       "preco": 8.83,
-      "exp_score": 5.2151,
+      "exp_score": 5.7956,
       "atleta_id": 110426
     },
     {
@@ -360,7 +360,7 @@
       "nome": "Jonathan Jesus",
       "clube": "CRU",
       "preco": 7.06,
-      "exp_score": 4.5065,
+      "exp_score": 4.5074,
       "atleta_id": 124912
     },
     {
@@ -395,7 +395,7 @@
       "nome": "Carlos Miguel",
       "clube": "PAL",
       "preco": 9.1,
-      "exp_score": 6.0673,
+      "exp_score": 6.0687,
       "atleta_id": 104084
     },
     {
@@ -406,7 +406,7 @@
       "nome": "Juninho Capixaba",
       "clube": "RBB",
       "preco": 12.69,
-      "exp_score": 6.2856,
+      "exp_score": 6.2866,
       "atleta_id": 94968
     },
     {
@@ -417,7 +417,7 @@
       "nome": "Renê",
       "clube": "FLU",
       "preco": 9.68,
-      "exp_score": 6.0093,
+      "exp_score": 5.9876,
       "atleta_id": 78445
     },
     {
@@ -428,7 +428,7 @@
       "nome": "Gustavo Gómez",
       "clube": "PAL",
       "preco": 10.67,
-      "exp_score": 5.1147,
+      "exp_score": 5.1159,
       "atleta_id": 71684
     },
     {
@@ -439,7 +439,7 @@
       "nome": "Alexander Barboza",
       "clube": "PAL",
       "preco": 10.36,
-      "exp_score": 4.6121,
+      "exp_score": 4.6132,
       "atleta_id": 99274
     },
     {
@@ -461,7 +461,7 @@
       "nome": "Arias",
       "clube": "PAL",
       "preco": 13.53,
-      "exp_score": 5.7231,
+      "exp_score": 6.5816,
       "atleta_id": 99815
     },
     {
@@ -483,19 +483,8 @@
       "nome": "Viveros",
       "clube": "CAP",
       "preco": 12.78,
-      "exp_score": 9.1157,
+      "exp_score": 10.483,
       "atleta_id": 143193
-    },
-    {
-      "rodada": 29,
-      "tipo": "PONTUACAO",
-      "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Hulk",
-      "clube": "FLU",
-      "preco": 14.05,
-      "exp_score": 8.0953,
-      "atleta_id": 39148
     },
     {
       "rodada": 29,
@@ -507,6 +496,17 @@
       "preco": 16.24,
       "exp_score": 7.4685,
       "atleta_id": 94583
+    },
+    {
+      "rodada": 29,
+      "tipo": "PONTUACAO",
+      "status": "TITULAR",
+      "pos": "ATA",
+      "nome": "Hulk",
+      "clube": "FLU",
+      "preco": 14.05,
+      "exp_score": 7.0394,
+      "atleta_id": 39148
     },
     {
       "rodada": 29,
@@ -529,7 +529,7 @@
       "nome": "Lucas Arcanjo",
       "clube": "VIT",
       "preco": 8.62,
-      "exp_score": 5.0299,
+      "exp_score": 5.0308,
       "atleta_id": 104118
     },
     {
@@ -540,7 +540,7 @@
       "nome": "Bernabei",
       "clube": "INT",
       "preco": 8.83,
-      "exp_score": 5.2151,
+      "exp_score": 5.7956,
       "atleta_id": 110426
     },
     {
@@ -551,7 +551,7 @@
       "nome": "Jonathan Jesus",
       "clube": "CRU",
       "preco": 7.06,
-      "exp_score": 4.5065,
+      "exp_score": 4.5074,
       "atleta_id": 124912
     },
     {
