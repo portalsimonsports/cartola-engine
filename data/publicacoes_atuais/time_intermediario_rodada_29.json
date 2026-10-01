@@ -4,7 +4,7 @@
   "tipo_publicacao": "time_intermediario",
   "rodada": 29,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-09-30T16:59:53.851Z",
+  "atualizado_em": "2026-10-01T13:59:50.695Z",
   "dados": [
     {
       "rodada": 29,
@@ -14,7 +14,7 @@
       "nome": "Carlos Miguel",
       "clube": "PAL",
       "preco": 9.1,
-      "exp_score": 6.0687,
+      "exp_score": 5.2772,
       "atleta_id": 104084
     },
     {
@@ -44,17 +44,6 @@
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
       "pos": "ZAG",
-      "nome": "Gustavo Gómez",
-      "clube": "PAL",
-      "preco": 10.67,
-      "exp_score": 5.1159,
-      "atleta_id": 71684
-    },
-    {
-      "rodada": 29,
-      "tipo": "INTERMEDIARIO",
-      "status": "TITULAR",
-      "pos": "ZAG",
       "nome": "Alexander Barboza",
       "clube": "PAL",
       "preco": 10.36,
@@ -65,11 +54,22 @@
       "rodada": 29,
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
+      "pos": "ZAG",
+      "nome": "Gustavo Gómez",
+      "clube": "PAL",
+      "preco": 10.67,
+      "exp_score": 4.6043,
+      "atleta_id": 71684
+    },
+    {
+      "rodada": 29,
+      "tipo": "INTERMEDIARIO",
+      "status": "TITULAR",
       "pos": "MEI",
       "nome": "Matheus Pereira",
       "clube": "CRU",
       "preco": 14.51,
-      "exp_score": 7.1846,
+      "exp_score": 6.2475,
       "atleta_id": 96610
     },
     {
@@ -80,7 +80,7 @@
       "nome": "Arias",
       "clube": "PAL",
       "preco": 13.53,
-      "exp_score": 6.5816,
+      "exp_score": 5.7231,
       "atleta_id": 99815
     },
     {
@@ -110,22 +110,22 @@
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
       "pos": "ATA",
-      "nome": "Pedro",
-      "clube": "FLA",
-      "preco": 16.24,
-      "exp_score": 7.4685,
-      "atleta_id": 94583
+      "nome": "Hulk",
+      "clube": "FLU",
+      "preco": 14.05,
+      "exp_score": 8.0953,
+      "atleta_id": 39148
     },
     {
       "rodada": 29,
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
       "pos": "ATA",
-      "nome": "Fernando",
-      "clube": "RBB",
-      "preco": 5.7,
-      "exp_score": 4.5434,
-      "atleta_id": 100695
+      "nome": "Arthur Cabral",
+      "clube": "BOT",
+      "preco": 9.48,
+      "exp_score": 5.0739,
+      "atleta_id": 92171
     },
     {
       "rodada": 29,
@@ -165,11 +165,11 @@
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "ZAG",
-      "nome": "Jonathan Jesus",
-      "clube": "CRU",
-      "preco": 7.06,
-      "exp_score": 4.5074,
-      "atleta_id": 124912
+      "nome": "Gustavo Marques",
+      "clube": "RBB",
+      "preco": 6.81,
+      "exp_score": 3.9307,
+      "atleta_id": 110750
     },
     {
       "rodada": 29,
@@ -187,11 +187,11 @@
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "ATA",
-      "nome": "Marcinho",
-      "clube": "CHA",
-      "preco": 5.09,
-      "exp_score": 3.4124,
-      "atleta_id": 95332
+      "nome": "Serna",
+      "clube": "FLU",
+      "preco": 7.83,
+      "exp_score": 5.0312,
+      "atleta_id": 132071
     }
   ],
   "modelo": "INTERMEDIARIO",
@@ -206,7 +206,7 @@
       "nome": "Carlos Miguel",
       "clube": "PAL",
       "preco": 9.1,
-      "exp_score": 6.0687,
+      "exp_score": 5.2772,
       "atleta_id": 104084
     },
     {
@@ -236,17 +236,6 @@
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
       "pos": "ZAG",
-      "nome": "Gustavo Gómez",
-      "clube": "PAL",
-      "preco": 10.67,
-      "exp_score": 5.1159,
-      "atleta_id": 71684
-    },
-    {
-      "rodada": 29,
-      "tipo": "INTERMEDIARIO",
-      "status": "TITULAR",
-      "pos": "ZAG",
       "nome": "Alexander Barboza",
       "clube": "PAL",
       "preco": 10.36,
@@ -257,11 +246,22 @@
       "rodada": 29,
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
+      "pos": "ZAG",
+      "nome": "Gustavo Gómez",
+      "clube": "PAL",
+      "preco": 10.67,
+      "exp_score": 4.6043,
+      "atleta_id": 71684
+    },
+    {
+      "rodada": 29,
+      "tipo": "INTERMEDIARIO",
+      "status": "TITULAR",
       "pos": "MEI",
       "nome": "Matheus Pereira",
       "clube": "CRU",
       "preco": 14.51,
-      "exp_score": 7.1846,
+      "exp_score": 6.2475,
       "atleta_id": 96610
     },
     {
@@ -272,7 +272,7 @@
       "nome": "Arias",
       "clube": "PAL",
       "preco": 13.53,
-      "exp_score": 6.5816,
+      "exp_score": 5.7231,
       "atleta_id": 99815
     },
     {
@@ -302,22 +302,22 @@
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
       "pos": "ATA",
-      "nome": "Pedro",
-      "clube": "FLA",
-      "preco": 16.24,
-      "exp_score": 7.4685,
-      "atleta_id": 94583
+      "nome": "Hulk",
+      "clube": "FLU",
+      "preco": 14.05,
+      "exp_score": 8.0953,
+      "atleta_id": 39148
     },
     {
       "rodada": 29,
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
       "pos": "ATA",
-      "nome": "Fernando",
-      "clube": "RBB",
-      "preco": 5.7,
-      "exp_score": 4.5434,
-      "atleta_id": 100695
+      "nome": "Arthur Cabral",
+      "clube": "BOT",
+      "preco": 9.48,
+      "exp_score": 5.0739,
+      "atleta_id": 92171
     },
     {
       "rodada": 29,
@@ -357,11 +357,11 @@
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "ZAG",
-      "nome": "Jonathan Jesus",
-      "clube": "CRU",
-      "preco": 7.06,
-      "exp_score": 4.5074,
-      "atleta_id": 124912
+      "nome": "Gustavo Marques",
+      "clube": "RBB",
+      "preco": 6.81,
+      "exp_score": 3.9307,
+      "atleta_id": 110750
     },
     {
       "rodada": 29,
@@ -379,11 +379,11 @@
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "ATA",
-      "nome": "Marcinho",
-      "clube": "CHA",
-      "preco": 5.09,
-      "exp_score": 3.4124,
-      "atleta_id": 95332
+      "nome": "Serna",
+      "clube": "FLU",
+      "preco": 7.83,
+      "exp_score": 5.0312,
+      "atleta_id": 132071
     }
   ],
   "jogadores": [
@@ -395,7 +395,7 @@
       "nome": "Carlos Miguel",
       "clube": "PAL",
       "preco": 9.1,
-      "exp_score": 6.0687,
+      "exp_score": 5.2772,
       "atleta_id": 104084
     },
     {
@@ -425,17 +425,6 @@
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
       "pos": "ZAG",
-      "nome": "Gustavo Gómez",
-      "clube": "PAL",
-      "preco": 10.67,
-      "exp_score": 5.1159,
-      "atleta_id": 71684
-    },
-    {
-      "rodada": 29,
-      "tipo": "INTERMEDIARIO",
-      "status": "TITULAR",
-      "pos": "ZAG",
       "nome": "Alexander Barboza",
       "clube": "PAL",
       "preco": 10.36,
@@ -446,11 +435,22 @@
       "rodada": 29,
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
+      "pos": "ZAG",
+      "nome": "Gustavo Gómez",
+      "clube": "PAL",
+      "preco": 10.67,
+      "exp_score": 4.6043,
+      "atleta_id": 71684
+    },
+    {
+      "rodada": 29,
+      "tipo": "INTERMEDIARIO",
+      "status": "TITULAR",
       "pos": "MEI",
       "nome": "Matheus Pereira",
       "clube": "CRU",
       "preco": 14.51,
-      "exp_score": 7.1846,
+      "exp_score": 6.2475,
       "atleta_id": 96610
     },
     {
@@ -461,7 +461,7 @@
       "nome": "Arias",
       "clube": "PAL",
       "preco": 13.53,
-      "exp_score": 6.5816,
+      "exp_score": 5.7231,
       "atleta_id": 99815
     },
     {
@@ -491,22 +491,22 @@
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
       "pos": "ATA",
-      "nome": "Pedro",
-      "clube": "FLA",
-      "preco": 16.24,
-      "exp_score": 7.4685,
-      "atleta_id": 94583
+      "nome": "Hulk",
+      "clube": "FLU",
+      "preco": 14.05,
+      "exp_score": 8.0953,
+      "atleta_id": 39148
     },
     {
       "rodada": 29,
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
       "pos": "ATA",
-      "nome": "Fernando",
-      "clube": "RBB",
-      "preco": 5.7,
-      "exp_score": 4.5434,
-      "atleta_id": 100695
+      "nome": "Arthur Cabral",
+      "clube": "BOT",
+      "preco": 9.48,
+      "exp_score": 5.0739,
+      "atleta_id": 92171
     },
     {
       "rodada": 29,
@@ -548,11 +548,11 @@
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "ZAG",
-      "nome": "Jonathan Jesus",
-      "clube": "CRU",
-      "preco": 7.06,
-      "exp_score": 4.5074,
-      "atleta_id": 124912
+      "nome": "Gustavo Marques",
+      "clube": "RBB",
+      "preco": 6.81,
+      "exp_score": 3.9307,
+      "atleta_id": 110750
     },
     {
       "rodada": 29,
@@ -570,11 +570,11 @@
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "ATA",
-      "nome": "Marcinho",
-      "clube": "CHA",
-      "preco": 5.09,
-      "exp_score": 3.4124,
-      "atleta_id": 95332
+      "nome": "Serna",
+      "clube": "FLU",
+      "preco": 7.83,
+      "exp_score": 5.0312,
+      "atleta_id": 132071
     }
   ],
   "capitao": "Viveros",

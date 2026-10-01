@@ -4,7 +4,7 @@
   "tipo_publicacao": "time_economico",
   "rodada": 29,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-09-30T16:59:45.982Z",
+  "atualizado_em": "2026-10-01T13:59:45.410Z",
   "dados": [
     {
       "rodada": 29,
@@ -14,8 +14,19 @@
       "nome": "Weverton",
       "clube": "GRE",
       "preco": 10.2,
-      "exp_score": 5.2175,
+      "exp_score": 4.537,
       "atleta_id": 71631
+    },
+    {
+      "rodada": 29,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "LAT",
+      "nome": "Marcelinho",
+      "clube": "REM",
+      "preco": 6.23,
+      "exp_score": 5.1017,
+      "atleta_id": 97795
     },
     {
       "rodada": 29,
@@ -32,28 +43,6 @@
       "rodada": 29,
       "tipo": "ECONOMICO",
       "status": "TITULAR",
-      "pos": "LAT",
-      "nome": "Marcelinho",
-      "clube": "REM",
-      "preco": 6.23,
-      "exp_score": 4.5915,
-      "atleta_id": 97795
-    },
-    {
-      "rodada": 29,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "ZAG",
-      "nome": "Jonathan Jesus",
-      "clube": "CRU",
-      "preco": 7.06,
-      "exp_score": 4.5074,
-      "atleta_id": 124912
-    },
-    {
-      "rodada": 29,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
       "pos": "ZAG",
       "nome": "Tiago Cóser",
       "clube": "CFC",
@@ -65,12 +54,12 @@
       "rodada": 29,
       "tipo": "ECONOMICO",
       "status": "TITULAR",
-      "pos": "MEI",
-      "nome": "Lescano",
-      "clube": "VAS",
-      "preco": 10.74,
-      "exp_score": 2.3849,
-      "atleta_id": 124552
+      "pos": "ZAG",
+      "nome": "Jonathan Jesus",
+      "clube": "CRU",
+      "preco": 7.06,
+      "exp_score": 3.9195,
+      "atleta_id": 124912
     },
     {
       "rodada": 29,
@@ -80,7 +69,7 @@
       "nome": "Eduardo",
       "clube": "MIR",
       "preco": 8.37,
-      "exp_score": 2.5506,
+      "exp_score": 3.259,
       "atleta_id": 68708
     },
     {
@@ -88,11 +77,22 @@
       "tipo": "ECONOMICO",
       "status": "TITULAR",
       "pos": "MEI",
-      "nome": "Zé Vitor",
-      "clube": "VIT",
-      "preco": 6.64,
-      "exp_score": 3.8265,
-      "atleta_id": 107256
+      "nome": "Lescano",
+      "clube": "VAS",
+      "preco": 10.74,
+      "exp_score": 2.1464,
+      "atleta_id": 124552
+    },
+    {
+      "rodada": 29,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Zé Ricardo",
+      "clube": "REM",
+      "preco": 4.75,
+      "exp_score": 3.0759,
+      "atleta_id": 102911
     },
     {
       "rodada": 29,
@@ -110,22 +110,22 @@
       "tipo": "ECONOMICO",
       "status": "TITULAR",
       "pos": "ATA",
-      "nome": "Viveros",
-      "clube": "CAP",
-      "preco": 12.78,
-      "exp_score": 10.483,
-      "atleta_id": 143193
+      "nome": "Tarzia",
+      "clube": "VIT",
+      "preco": 4.29,
+      "exp_score": 3.5477,
+      "atleta_id": 143153
     },
     {
       "rodada": 29,
       "tipo": "ECONOMICO",
       "status": "TITULAR",
       "pos": "ATA",
-      "nome": "Fernando",
-      "clube": "RBB",
-      "preco": 5.7,
-      "exp_score": 4.5434,
-      "atleta_id": 100695
+      "nome": "Viveros",
+      "clube": "CAP",
+      "preco": 12.78,
+      "exp_score": 10.483,
+      "atleta_id": 143193
     },
     {
       "rodada": 29,
@@ -146,7 +146,7 @@
       "nome": "Carlos Miguel",
       "clube": "PAL",
       "preco": 9.1,
-      "exp_score": 6.0687,
+      "exp_score": 5.2772,
       "atleta_id": 104084
     },
     {
@@ -176,22 +176,22 @@
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "MEI",
-      "nome": "João Cruz",
-      "clube": "CAP",
-      "preco": 6.55,
-      "exp_score": 3.9038,
-      "atleta_id": 128431
+      "nome": "Gustavo Henrique",
+      "clube": "SAN",
+      "preco": 3.73,
+      "exp_score": 2.4194,
+      "atleta_id": 141776
     },
     {
       "rodada": 29,
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "ATA",
-      "nome": "Marcinho",
-      "clube": "CHA",
-      "preco": 5.09,
-      "exp_score": 3.4124,
-      "atleta_id": 95332
+      "nome": "Fabinho",
+      "clube": "CFC",
+      "preco": 2.09,
+      "exp_score": 0.961,
+      "atleta_id": 101729
     }
   ],
   "modelo": "ECONOMICO",
@@ -206,8 +206,19 @@
       "nome": "Weverton",
       "clube": "GRE",
       "preco": 10.2,
-      "exp_score": 5.2175,
+      "exp_score": 4.537,
       "atleta_id": 71631
+    },
+    {
+      "rodada": 29,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "LAT",
+      "nome": "Marcelinho",
+      "clube": "REM",
+      "preco": 6.23,
+      "exp_score": 5.1017,
+      "atleta_id": 97795
     },
     {
       "rodada": 29,
@@ -224,28 +235,6 @@
       "rodada": 29,
       "tipo": "ECONOMICO",
       "status": "TITULAR",
-      "pos": "LAT",
-      "nome": "Marcelinho",
-      "clube": "REM",
-      "preco": 6.23,
-      "exp_score": 4.5915,
-      "atleta_id": 97795
-    },
-    {
-      "rodada": 29,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "ZAG",
-      "nome": "Jonathan Jesus",
-      "clube": "CRU",
-      "preco": 7.06,
-      "exp_score": 4.5074,
-      "atleta_id": 124912
-    },
-    {
-      "rodada": 29,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
       "pos": "ZAG",
       "nome": "Tiago Cóser",
       "clube": "CFC",
@@ -257,12 +246,12 @@
       "rodada": 29,
       "tipo": "ECONOMICO",
       "status": "TITULAR",
-      "pos": "MEI",
-      "nome": "Lescano",
-      "clube": "VAS",
-      "preco": 10.74,
-      "exp_score": 2.3849,
-      "atleta_id": 124552
+      "pos": "ZAG",
+      "nome": "Jonathan Jesus",
+      "clube": "CRU",
+      "preco": 7.06,
+      "exp_score": 3.9195,
+      "atleta_id": 124912
     },
     {
       "rodada": 29,
@@ -272,7 +261,7 @@
       "nome": "Eduardo",
       "clube": "MIR",
       "preco": 8.37,
-      "exp_score": 2.5506,
+      "exp_score": 3.259,
       "atleta_id": 68708
     },
     {
@@ -280,11 +269,22 @@
       "tipo": "ECONOMICO",
       "status": "TITULAR",
       "pos": "MEI",
-      "nome": "Zé Vitor",
-      "clube": "VIT",
-      "preco": 6.64,
-      "exp_score": 3.8265,
-      "atleta_id": 107256
+      "nome": "Lescano",
+      "clube": "VAS",
+      "preco": 10.74,
+      "exp_score": 2.1464,
+      "atleta_id": 124552
+    },
+    {
+      "rodada": 29,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Zé Ricardo",
+      "clube": "REM",
+      "preco": 4.75,
+      "exp_score": 3.0759,
+      "atleta_id": 102911
     },
     {
       "rodada": 29,
@@ -302,22 +302,22 @@
       "tipo": "ECONOMICO",
       "status": "TITULAR",
       "pos": "ATA",
-      "nome": "Viveros",
-      "clube": "CAP",
-      "preco": 12.78,
-      "exp_score": 10.483,
-      "atleta_id": 143193
+      "nome": "Tarzia",
+      "clube": "VIT",
+      "preco": 4.29,
+      "exp_score": 3.5477,
+      "atleta_id": 143153
     },
     {
       "rodada": 29,
       "tipo": "ECONOMICO",
       "status": "TITULAR",
       "pos": "ATA",
-      "nome": "Fernando",
-      "clube": "RBB",
-      "preco": 5.7,
-      "exp_score": 4.5434,
-      "atleta_id": 100695
+      "nome": "Viveros",
+      "clube": "CAP",
+      "preco": 12.78,
+      "exp_score": 10.483,
+      "atleta_id": 143193
     },
     {
       "rodada": 29,
@@ -338,7 +338,7 @@
       "nome": "Carlos Miguel",
       "clube": "PAL",
       "preco": 9.1,
-      "exp_score": 6.0687,
+      "exp_score": 5.2772,
       "atleta_id": 104084
     },
     {
@@ -368,22 +368,22 @@
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "MEI",
-      "nome": "João Cruz",
-      "clube": "CAP",
-      "preco": 6.55,
-      "exp_score": 3.9038,
-      "atleta_id": 128431
+      "nome": "Gustavo Henrique",
+      "clube": "SAN",
+      "preco": 3.73,
+      "exp_score": 2.4194,
+      "atleta_id": 141776
     },
     {
       "rodada": 29,
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "ATA",
-      "nome": "Marcinho",
-      "clube": "CHA",
-      "preco": 5.09,
-      "exp_score": 3.4124,
-      "atleta_id": 95332
+      "nome": "Fabinho",
+      "clube": "CFC",
+      "preco": 2.09,
+      "exp_score": 0.961,
+      "atleta_id": 101729
     }
   ],
   "jogadores": [
@@ -395,8 +395,19 @@
       "nome": "Weverton",
       "clube": "GRE",
       "preco": 10.2,
-      "exp_score": 5.2175,
+      "exp_score": 4.537,
       "atleta_id": 71631
+    },
+    {
+      "rodada": 29,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "LAT",
+      "nome": "Marcelinho",
+      "clube": "REM",
+      "preco": 6.23,
+      "exp_score": 5.1017,
+      "atleta_id": 97795
     },
     {
       "rodada": 29,
@@ -413,28 +424,6 @@
       "rodada": 29,
       "tipo": "ECONOMICO",
       "status": "TITULAR",
-      "pos": "LAT",
-      "nome": "Marcelinho",
-      "clube": "REM",
-      "preco": 6.23,
-      "exp_score": 4.5915,
-      "atleta_id": 97795
-    },
-    {
-      "rodada": 29,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "ZAG",
-      "nome": "Jonathan Jesus",
-      "clube": "CRU",
-      "preco": 7.06,
-      "exp_score": 4.5074,
-      "atleta_id": 124912
-    },
-    {
-      "rodada": 29,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
       "pos": "ZAG",
       "nome": "Tiago Cóser",
       "clube": "CFC",
@@ -446,12 +435,12 @@
       "rodada": 29,
       "tipo": "ECONOMICO",
       "status": "TITULAR",
-      "pos": "MEI",
-      "nome": "Lescano",
-      "clube": "VAS",
-      "preco": 10.74,
-      "exp_score": 2.3849,
-      "atleta_id": 124552
+      "pos": "ZAG",
+      "nome": "Jonathan Jesus",
+      "clube": "CRU",
+      "preco": 7.06,
+      "exp_score": 3.9195,
+      "atleta_id": 124912
     },
     {
       "rodada": 29,
@@ -461,7 +450,7 @@
       "nome": "Eduardo",
       "clube": "MIR",
       "preco": 8.37,
-      "exp_score": 2.5506,
+      "exp_score": 3.259,
       "atleta_id": 68708
     },
     {
@@ -469,11 +458,22 @@
       "tipo": "ECONOMICO",
       "status": "TITULAR",
       "pos": "MEI",
-      "nome": "Zé Vitor",
-      "clube": "VIT",
-      "preco": 6.64,
-      "exp_score": 3.8265,
-      "atleta_id": 107256
+      "nome": "Lescano",
+      "clube": "VAS",
+      "preco": 10.74,
+      "exp_score": 2.1464,
+      "atleta_id": 124552
+    },
+    {
+      "rodada": 29,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Zé Ricardo",
+      "clube": "REM",
+      "preco": 4.75,
+      "exp_score": 3.0759,
+      "atleta_id": 102911
     },
     {
       "rodada": 29,
@@ -491,22 +491,22 @@
       "tipo": "ECONOMICO",
       "status": "TITULAR",
       "pos": "ATA",
-      "nome": "Viveros",
-      "clube": "CAP",
-      "preco": 12.78,
-      "exp_score": 10.483,
-      "atleta_id": 143193
+      "nome": "Tarzia",
+      "clube": "VIT",
+      "preco": 4.29,
+      "exp_score": 3.5477,
+      "atleta_id": 143153
     },
     {
       "rodada": 29,
       "tipo": "ECONOMICO",
       "status": "TITULAR",
       "pos": "ATA",
-      "nome": "Fernando",
-      "clube": "RBB",
-      "preco": 5.7,
-      "exp_score": 4.5434,
-      "atleta_id": 100695
+      "nome": "Viveros",
+      "clube": "CAP",
+      "preco": 12.78,
+      "exp_score": 10.483,
+      "atleta_id": 143193
     },
     {
       "rodada": 29,
@@ -529,7 +529,7 @@
       "nome": "Carlos Miguel",
       "clube": "PAL",
       "preco": 9.1,
-      "exp_score": 6.0687,
+      "exp_score": 5.2772,
       "atleta_id": 104084
     },
     {
@@ -559,22 +559,22 @@
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "MEI",
-      "nome": "João Cruz",
-      "clube": "CAP",
-      "preco": 6.55,
-      "exp_score": 3.9038,
-      "atleta_id": 128431
+      "nome": "Gustavo Henrique",
+      "clube": "SAN",
+      "preco": 3.73,
+      "exp_score": 2.4194,
+      "atleta_id": 141776
     },
     {
       "rodada": 29,
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "ATA",
-      "nome": "Marcinho",
-      "clube": "CHA",
-      "preco": 5.09,
-      "exp_score": 3.4124,
-      "atleta_id": 95332
+      "nome": "Fabinho",
+      "clube": "CFC",
+      "preco": 2.09,
+      "exp_score": 0.961,
+      "atleta_id": 101729
     }
   ],
   "capitao": "Viveros",
