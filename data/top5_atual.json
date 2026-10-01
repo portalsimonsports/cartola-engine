@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 29,
-  "atualizado_em": "2026-10-01T00:09:58.567Z",
+  "atualizado_em": "2026-10-01T11:20:08.766Z",
   "dados": [
     {
       "RODADA": 29,
@@ -11,9 +11,19 @@
       "NOME": "Carlos Miguel",
       "CLUBE": "PAL",
       "PRECO": 9.1,
-      "EXP_SCORE": 5.2772,
+      "EXP_SCORE": 6.0687,
       "FACTOR": 1.0881239518650954,
       "ATLETA_ID": 104084
+    },
+    {
+      "RODADA": 29,
+      "POS": "GOL",
+      "NOME": "Weverton",
+      "CLUBE": "GRE",
+      "PRECO": 10.2,
+      "EXP_SCORE": 5.2175,
+      "FACTOR": 0.9773386080993888,
+      "ATLETA_ID": 71631
     },
     {
       "RODADA": 29,
@@ -38,22 +48,12 @@
     {
       "RODADA": 29,
       "POS": "GOL",
-      "NOME": "Weverton",
-      "CLUBE": "GRE",
-      "PRECO": 10.2,
-      "EXP_SCORE": 4.537,
-      "FACTOR": 0.9773386080993888,
-      "ATLETA_ID": 71631
-    },
-    {
-      "RODADA": 29,
-      "POS": "GOL",
-      "NOME": "Rossi",
-      "CLUBE": "FLA",
-      "PRECO": 8.43,
-      "EXP_SCORE": 4.1562,
-      "FACTOR": 0.9581315251882461,
-      "ATLETA_ID": 99552
+      "NOME": "Otávio",
+      "CLUBE": "CRU",
+      "PRECO": 4.46,
+      "EXP_SCORE": 3.8702,
+      "FACTOR": 1.1161216010157877,
+      "ATLETA_ID": 117404
     },
     {
       "RODADA": 29,
@@ -88,6 +88,16 @@
     {
       "RODADA": 29,
       "POS": "LAT",
+      "NOME": "Igor Formiga",
+      "CLUBE": "MIR",
+      "PRECO": 9.88,
+      "EXP_SCORE": 5.7308,
+      "FACTOR": 0.9678712870899959,
+      "ATLETA_ID": 106708
+    },
+    {
+      "RODADA": 29,
+      "POS": "LAT",
       "NOME": "Luciano Juba",
       "CLUBE": "BAH",
       "PRECO": 10.8,
@@ -97,13 +107,13 @@
     },
     {
       "RODADA": 29,
-      "POS": "LAT",
-      "NOME": "Cuiabano",
-      "CLUBE": "VAS",
-      "PRECO": 13.16,
-      "EXP_SCORE": 5.1557,
-      "FACTOR": 0.9402866467388865,
-      "ATLETA_ID": 116065
+      "POS": "ZAG",
+      "NOME": "Gustavo Gómez",
+      "CLUBE": "PAL",
+      "PRECO": 10.67,
+      "EXP_SCORE": 5.1159,
+      "FACTOR": 1.0881239518650954,
+      "ATLETA_ID": 71684
     },
     {
       "RODADA": 29,
@@ -114,16 +124,6 @@
       "EXP_SCORE": 4.6132,
       "FACTOR": 1.0881239518650954,
       "ATLETA_ID": 99274
-    },
-    {
-      "RODADA": 29,
-      "POS": "ZAG",
-      "NOME": "Gustavo Gómez",
-      "CLUBE": "PAL",
-      "PRECO": 10.67,
-      "EXP_SCORE": 4.6043,
-      "FACTOR": 1.0881239518650954,
-      "ATLETA_ID": 71684
     },
     {
       "RODADA": 29,
@@ -171,7 +171,7 @@
       "NOME": "Arias",
       "CLUBE": "PAL",
       "PRECO": 13.53,
-      "EXP_SCORE": 6.5816,
+      "EXP_SCORE": 5.7231,
       "FACTOR": 1.074986594276143,
       "ATLETA_ID": 99815
     },
@@ -211,19 +211,9 @@
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 12.78,
-      "EXP_SCORE": 10.483,
+      "EXP_SCORE": 9.1157,
       "FACTOR": 1.0864393912264996,
       "ATLETA_ID": 143193
-    },
-    {
-      "RODADA": 29,
-      "POS": "ATA",
-      "NOME": "Pedro",
-      "CLUBE": "FLA",
-      "PRECO": 16.24,
-      "EXP_SCORE": 7.4685,
-      "FACTOR": 0.9411032225059718,
-      "ATLETA_ID": 94583
     },
     {
       "RODADA": 29,
@@ -231,7 +221,7 @@
       "NOME": "Hulk",
       "CLUBE": "FLU",
       "PRECO": 14.05,
-      "EXP_SCORE": 7.0394,
+      "EXP_SCORE": 8.0953,
       "FACTOR": 1.1105961310125458,
       "ATLETA_ID": 39148
     },
@@ -257,13 +247,13 @@
     },
     {
       "RODADA": 29,
-      "POS": "TEC",
-      "NOME": "Odair Hellmann",
-      "CLUBE": "CAP",
-      "PRECO": 9.18,
-      "EXP_SCORE": 6.725,
-      "FACTOR": 1.0562605192479857,
-      "ATLETA_ID": 92273
+      "POS": "ATA",
+      "NOME": "Pedro",
+      "CLUBE": "FLA",
+      "PRECO": 16.24,
+      "EXP_SCORE": 6.7216,
+      "FACTOR": 0.9411032225059718,
+      "ATLETA_ID": 94583
     },
     {
       "RODADA": 29,
@@ -271,9 +261,19 @@
       "NOME": "Abel Ferreira",
       "CLUBE": "PAL",
       "PRECO": 12.06,
-      "EXP_SCORE": 6.7019,
+      "EXP_SCORE": 7.7072,
       "FACTOR": 1.0451258555462501,
       "ATLETA_ID": 110506
+    },
+    {
+      "RODADA": 29,
+      "POS": "TEC",
+      "NOME": "Odair Hellmann",
+      "CLUBE": "CAP",
+      "PRECO": 9.18,
+      "EXP_SCORE": 6.725,
+      "FACTOR": 1.0562605192479857,
+      "ATLETA_ID": 92273
     },
     {
       "RODADA": 29,
