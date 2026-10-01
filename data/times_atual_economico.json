@@ -4,18 +4,18 @@
   "tipo_publicacao": "times",
   "rodada": 29,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-09-30T16:59:45.982Z",
+  "atualizado_em": "2026-10-01T00:09:44.897Z",
   "dados": [
     {
       "RODADA": 29,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "GOL",
-      "NOME": "Weverton",
-      "CLUBE": "GRE",
-      "PRECO": 10.2,
-      "EXP_SCORE": 5.2175,
-      "ATLETA_ID": 71631
+      "NOME": "Otávio",
+      "CLUBE": "CRU",
+      "PRECO": 4.46,
+      "EXP_SCORE": 3.8702,
+      "ATLETA_ID": 117404
     },
     {
       "RODADA": 29,
@@ -25,7 +25,7 @@
       "NOME": "Esquivel",
       "CLUBE": "CAP",
       "PRECO": 8.6,
-      "EXP_SCORE": 4.9254,
+      "EXP_SCORE": 4.4329,
       "ATLETA_ID": 110668
     },
     {
@@ -58,7 +58,7 @@
       "NOME": "Tiago Cóser",
       "CLUBE": "CFC",
       "PRECO": 3.61,
-      "EXP_SCORE": 2.5695,
+      "EXP_SCORE": 2.2344,
       "ATLETA_ID": 109127
     },
     {
@@ -98,6 +98,17 @@
       "RODADA": 29,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Carrascal",
+      "CLUBE": "FLA",
+      "PRECO": 11.5,
+      "EXP_SCORE": 5.1421,
+      "ATLETA_ID": 105436
+    },
+    {
+      "RODADA": 29,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
       "POS": "ATA",
       "NOME": "Arroyo",
       "CLUBE": "CRU",
@@ -120,17 +131,6 @@
       "RODADA": 29,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Fernando",
-      "CLUBE": "RBB",
-      "PRECO": 5.7,
-      "EXP_SCORE": 4.5434,
-      "ATLETA_ID": 100695
-    },
-    {
-      "RODADA": 29,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
       "POS": "TEC",
       "NOME": "Odair Hellmann",
       "CLUBE": "CAP",
@@ -143,11 +143,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Carlos Miguel",
-      "CLUBE": "PAL",
-      "PRECO": 9.1,
-      "EXP_SCORE": 6.0687,
-      "ATLETA_ID": 104084
+      "NOME": "Matheus Cunha",
+      "CLUBE": "INT",
+      "PRECO": 4.12,
+      "EXP_SCORE": 3.3776,
+      "ATLETA_ID": 111690
     },
     {
       "RODADA": 29,
@@ -187,11 +187,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Marcinho",
-      "CLUBE": "CHA",
-      "PRECO": 5.09,
-      "EXP_SCORE": 3.4124,
-      "ATLETA_ID": 95332
+      "NOME": "Serna",
+      "CLUBE": "FLU",
+      "PRECO": 7.83,
+      "EXP_SCORE": 5.0312,
+      "ATLETA_ID": 132071
     }
   ]
 }
