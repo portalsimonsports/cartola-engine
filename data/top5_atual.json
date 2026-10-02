@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 29,
-  "atualizado_em": "2026-10-02T06:00:01.342Z",
+  "atualizado_em": "2026-10-02T06:49:57.517Z",
   "dados": [
     {
       "RODADA": 29,
@@ -11,19 +11,9 @@
       "NOME": "Carlos Miguel",
       "CLUBE": "PAL",
       "PRECO": 9.1,
-      "EXP_SCORE": 6.0627,
+      "EXP_SCORE": 5.2719,
       "FACTOR": 1.0870381083554415,
       "ATLETA_ID": 104084
-    },
-    {
-      "RODADA": 29,
-      "POS": "GOL",
-      "NOME": "Weverton",
-      "CLUBE": "GRE",
-      "PRECO": 10.2,
-      "EXP_SCORE": 5.2142,
-      "FACTOR": 0.9767253510320666,
-      "ATLETA_ID": 71631
     },
     {
       "RODADA": 29,
@@ -44,6 +34,16 @@
       "EXP_SCORE": 4.7882,
       "FACTOR": 1.1593878555384034,
       "ATLETA_ID": 37656
+    },
+    {
+      "RODADA": 29,
+      "POS": "GOL",
+      "NOME": "Weverton",
+      "CLUBE": "GRE",
+      "PRECO": 10.2,
+      "EXP_SCORE": 4.5341,
+      "FACTOR": 0.9767253510320666,
+      "ATLETA_ID": 71631
     },
     {
       "RODADA": 29,
@@ -108,22 +108,22 @@
     {
       "RODADA": 29,
       "POS": "ZAG",
-      "NOME": "Gustavo Gómez",
-      "CLUBE": "PAL",
-      "PRECO": 10.67,
-      "EXP_SCORE": 5.1107,
-      "FACTOR": 1.0870381083554415,
-      "ATLETA_ID": 71684
-    },
-    {
-      "RODADA": 29,
-      "POS": "ZAG",
       "NOME": "Alexander Barboza",
       "CLUBE": "PAL",
       "PRECO": 10.36,
       "EXP_SCORE": 4.6086,
       "FACTOR": 1.0870381083554415,
       "ATLETA_ID": 99274
+    },
+    {
+      "RODADA": 29,
+      "POS": "ZAG",
+      "NOME": "Gustavo Gómez",
+      "CLUBE": "PAL",
+      "PRECO": 10.67,
+      "EXP_SCORE": 4.5997,
+      "FACTOR": 1.0870381083554415,
+      "ATLETA_ID": 71684
     },
     {
       "RODADA": 29,
@@ -258,22 +258,22 @@
     {
       "RODADA": 29,
       "POS": "TEC",
-      "NOME": "Abel Ferreira",
-      "CLUBE": "PAL",
-      "PRECO": 12.06,
-      "EXP_SCORE": 7.7173,
-      "FACTOR": 1.0464899275521136,
-      "ATLETA_ID": 110506
-    },
-    {
-      "RODADA": 29,
-      "POS": "TEC",
       "NOME": "Odair Hellmann",
       "CLUBE": "CAP",
       "PRECO": 9.18,
       "EXP_SCORE": 6.7332,
       "FACTOR": 1.0575462492805396,
       "ATLETA_ID": 92273
+    },
+    {
+      "RODADA": 29,
+      "POS": "TEC",
+      "NOME": "Abel Ferreira",
+      "CLUBE": "PAL",
+      "PRECO": 12.06,
+      "EXP_SCORE": 6.7107,
+      "FACTOR": 1.0464899275521136,
+      "ATLETA_ID": 110506
     },
     {
       "RODADA": 29,
