@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 29,
-  "atualizado_em": "2026-10-02T07:10:15.334Z",
+  "atualizado_em": "2026-10-02T08:09:51.289Z",
   "dados": [
     {
       "RODADA": 29,
@@ -48,12 +48,12 @@
     {
       "RODADA": 29,
       "POS": "GOL",
-      "NOME": "Marcelo Rangel",
-      "CLUBE": "REM",
-      "PRECO": 5.4,
-      "EXP_SCORE": 4.041,
-      "FACTOR": 1.160496663924349,
-      "ATLETA_ID": 82730
+      "NOME": "Ronaldo",
+      "CLUBE": "BAH",
+      "PRECO": 8.01,
+      "EXP_SCORE": 4.2654,
+      "FACTOR": 0.8835551640306524,
+      "ATLETA_ID": 91101
     },
     {
       "RODADA": 29,
@@ -78,6 +78,16 @@
     {
       "RODADA": 29,
       "POS": "LAT",
+      "NOME": "Matheuzinho",
+      "CLUBE": "COR",
+      "PRECO": 10.63,
+      "EXP_SCORE": 5.8649,
+      "FACTOR": 0.9710752368715394,
+      "ATLETA_ID": 101727
+    },
+    {
+      "RODADA": 29,
+      "POS": "LAT",
       "NOME": "Bernabei",
       "CLUBE": "INT",
       "PRECO": 8.83,
@@ -94,16 +104,6 @@
       "EXP_SCORE": 5.7269,
       "FACTOR": 0.9672139996857119,
       "ATLETA_ID": 106708
-    },
-    {
-      "RODADA": 29,
-      "POS": "LAT",
-      "NOME": "Luciano Juba",
-      "CLUBE": "BAH",
-      "PRECO": 10.8,
-      "EXP_SCORE": 5.4304,
-      "FACTOR": 0.8835551640306524,
-      "ATLETA_ID": 107093
     },
     {
       "RODADA": 29,
@@ -128,16 +128,6 @@
     {
       "RODADA": 29,
       "POS": "ZAG",
-      "NOME": "Gustavo Henrique",
-      "CLUBE": "COR",
-      "PRECO": 9.46,
-      "EXP_SCORE": 4.0787,
-      "FACTOR": 0.9710752368715394,
-      "ATLETA_ID": 78248
-    },
-    {
-      "RODADA": 29,
-      "POS": "ZAG",
       "NOME": "Gustavo Marques",
       "CLUBE": "RBB",
       "PRECO": 6.81,
@@ -154,6 +144,16 @@
       "EXP_SCORE": 3.9161,
       "FACTOR": 1.1151659681459776,
       "ATLETA_ID": 124912
+    },
+    {
+      "RODADA": 29,
+      "POS": "ZAG",
+      "NOME": "Léo Pereira",
+      "CLUBE": "FLA",
+      "PRECO": 8.97,
+      "EXP_SCORE": 3.8906,
+      "FACTOR": 0.9574289403869441,
+      "ATLETA_ID": 83528
     },
     {
       "RODADA": 29,
@@ -188,22 +188,22 @@
     {
       "RODADA": 29,
       "POS": "MEI",
-      "NOME": "Acevedo",
-      "CLUBE": "BAH",
-      "PRECO": 7.55,
-      "EXP_SCORE": 4.2155,
-      "FACTOR": 0.9116864421881432,
-      "ATLETA_ID": 104783
-    },
-    {
-      "RODADA": 29,
-      "POS": "MEI",
       "NOME": "Andreas Pereira",
       "CLUBE": "PAL",
       "PRECO": 11.73,
       "EXP_SCORE": 4.0389,
       "FACTOR": 1.0763896397678883,
       "ATLETA_ID": 89274
+    },
+    {
+      "RODADA": 29,
+      "POS": "MEI",
+      "NOME": "Lucas Paquetá",
+      "CLUBE": "FLA",
+      "PRECO": 14.75,
+      "EXP_SCORE": 4.0222,
+      "FACTOR": 0.9423689516665881,
+      "ATLETA_ID": 94930
     },
     {
       "RODADA": 29,
