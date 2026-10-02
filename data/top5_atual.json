@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 29,
-  "atualizado_em": "2026-10-02T06:49:57.517Z",
+  "atualizado_em": "2026-10-02T07:10:15.334Z",
   "dados": [
     {
       "RODADA": 29,
@@ -128,16 +128,6 @@
     {
       "RODADA": 29,
       "POS": "ZAG",
-      "NOME": "Jonathan Jesus",
-      "CLUBE": "CRU",
-      "PRECO": 7.06,
-      "EXP_SCORE": 4.5035,
-      "FACTOR": 1.1151659681459776,
-      "ATLETA_ID": 124912
-    },
-    {
-      "RODADA": 29,
-      "POS": "ZAG",
       "NOME": "Gustavo Henrique",
       "CLUBE": "COR",
       "PRECO": 9.46,
@@ -157,11 +147,21 @@
     },
     {
       "RODADA": 29,
+      "POS": "ZAG",
+      "NOME": "Jonathan Jesus",
+      "CLUBE": "CRU",
+      "PRECO": 7.06,
+      "EXP_SCORE": 3.9161,
+      "FACTOR": 1.1151659681459776,
+      "ATLETA_ID": 124912
+    },
+    {
+      "RODADA": 29,
       "POS": "MEI",
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 14.51,
-      "EXP_SCORE": 7.1946,
+      "EXP_SCORE": 6.2562,
       "FACTOR": 1.0658297243211468,
       "ATLETA_ID": 96610
     },
