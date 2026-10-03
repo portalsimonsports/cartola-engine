@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T21:40:52.842541-03:00",
+  "updated_at": "2026-10-03T02:49:09.367356-03:00",
   "last_publication_mode": "apos_jogos",
   "signature": [
     {
@@ -45,18 +45,18 @@
       "saldo": 2
     },
     {
-      "nome": "CAM",
+      "nome": "SAN",
       "pos": 7,
+      "pts": 41,
+      "v": 11,
+      "saldo": 2
+    },
+    {
+      "nome": "CAM",
+      "pos": 8,
       "pts": 40,
       "v": 11,
       "saldo": 4
-    },
-    {
-      "nome": "SAN",
-      "pos": 8,
-      "pts": 39,
-      "v": 10,
-      "saldo": 1
     },
     {
       "nome": "CFC",
@@ -66,18 +66,18 @@
       "saldo": -6
     },
     {
-      "nome": "SAO",
+      "nome": "RBB",
       "pos": 10,
-      "pts": 37,
+      "pts": 36,
       "v": 10,
       "saldo": 2
     },
     {
-      "nome": "RBB",
+      "nome": "SAO",
       "pos": 11,
       "pts": 36,
       "v": 10,
-      "saldo": 2
+      "saldo": 1
     },
     {
       "nome": "BOT",
@@ -150,11 +150,11 @@
     "FLU": 4,
     "BAH": 5,
     "CRU": 6,
-    "CAM": 7,
-    "SAN": 8,
+    "SAN": 7,
+    "CAM": 8,
     "CFC": 9,
-    "SAO": 10,
-    "RBB": 11,
+    "RBB": 10,
+    "SAO": 11,
     "BOT": 12,
     "VIT": 13,
     "COR": 14,
