@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 29,
-  "atualizado_em": "2026-10-05T04:59:56.506Z",
+  "atualizado_em": "2026-10-05T05:45:15.204Z",
   "dados": [
     {
       "RODADA": 29,
@@ -11,19 +11,9 @@
       "NOME": "Carlos Miguel",
       "CLUBE": "PAL",
       "PRECO": 9.1,
-      "EXP_SCORE": 6.0576,
+      "EXP_SCORE": 5.2675,
       "FACTOR": 1.0861229440965474,
       "ATLETA_ID": 104084
-    },
-    {
-      "RODADA": 29,
-      "POS": "GOL",
-      "NOME": "Weverton",
-      "CLUBE": "GRE",
-      "PRECO": 10.2,
-      "EXP_SCORE": 5.2115,
-      "FACTOR": 0.9762084893070226,
-      "ATLETA_ID": 71631
     },
     {
       "RODADA": 29,
@@ -44,6 +34,16 @@
       "EXP_SCORE": 4.7856,
       "FACTOR": 1.1587549703074351,
       "ATLETA_ID": 37656
+    },
+    {
+      "RODADA": 29,
+      "POS": "GOL",
+      "NOME": "Weverton",
+      "CLUBE": "GRE",
+      "PRECO": 10.2,
+      "EXP_SCORE": 4.5317,
+      "FACTOR": 0.9762084893070226,
+      "ATLETA_ID": 71631
     },
     {
       "RODADA": 29,
@@ -108,16 +108,6 @@
     {
       "RODADA": 29,
       "POS": "ZAG",
-      "NOME": "Gustavo Gómez",
-      "CLUBE": "PAL",
-      "PRECO": 10.67,
-      "EXP_SCORE": 5.1064,
-      "FACTOR": 1.0861229440965474,
-      "ATLETA_ID": 71684
-    },
-    {
-      "RODADA": 29,
-      "POS": "ZAG",
       "NOME": "Alexander Barboza",
       "CLUBE": "PAL",
       "PRECO": 10.36,
@@ -128,22 +118,22 @@
     {
       "RODADA": 29,
       "POS": "ZAG",
-      "NOME": "Jonathan Jesus",
-      "CLUBE": "CRU",
-      "PRECO": 7.06,
-      "EXP_SCORE": 4.5169,
-      "FACTOR": 1.1184856927598166,
-      "ATLETA_ID": 124912
+      "NOME": "Gustavo Gómez",
+      "CLUBE": "PAL",
+      "PRECO": 10.67,
+      "EXP_SCORE": 4.5958,
+      "FACTOR": 1.0861229440965474,
+      "ATLETA_ID": 71684
     },
     {
       "RODADA": 29,
       "POS": "ZAG",
-      "NOME": "Gustavo Henrique",
-      "CLUBE": "COR",
-      "PRECO": 9.46,
-      "EXP_SCORE": 4.0764,
-      "FACTOR": 0.9705363307193204,
-      "ATLETA_ID": 78248
+      "NOME": "Jonathan Jesus",
+      "CLUBE": "CRU",
+      "PRECO": 7.06,
+      "EXP_SCORE": 3.9278,
+      "FACTOR": 1.1184856927598166,
+      "ATLETA_ID": 124912
     },
     {
       "RODADA": 29,
@@ -157,11 +147,21 @@
     },
     {
       "RODADA": 29,
+      "POS": "ZAG",
+      "NOME": "Léo Pereira",
+      "CLUBE": "FLA",
+      "PRECO": 8.97,
+      "EXP_SCORE": 3.8745,
+      "FACTOR": 0.9534845266328301,
+      "ATLETA_ID": 83528
+    },
+    {
+      "RODADA": 29,
       "POS": "MEI",
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 14.51,
-      "EXP_SCORE": 7.133,
+      "EXP_SCORE": 6.2026,
       "FACTOR": 1.0567047588699883,
       "ATLETA_ID": 96610
     },
