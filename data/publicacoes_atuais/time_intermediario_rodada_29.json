@@ -4,7 +4,7 @@
   "tipo_publicacao": "time_intermediario",
   "rodada": 29,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-10-04T06:19:47.703Z",
+  "atualizado_em": "2026-10-05T23:49:49.335Z",
   "dados": [
     {
       "rodada": 29,
@@ -14,7 +14,7 @@
       "nome": "Carlos Miguel",
       "clube": "PAL",
       "preco": 9.1,
-      "exp_score": 5.2675,
+      "exp_score": 5.2554,
       "atleta_id": 104084
     },
     {
@@ -25,7 +25,7 @@
       "nome": "Juninho Capixaba",
       "clube": "RBB",
       "preco": 12.69,
-      "exp_score": 6.2787,
+      "exp_score": 6.2688,
       "atleta_id": 94968
     },
     {
@@ -36,7 +36,7 @@
       "nome": "Bernabei",
       "clube": "INT",
       "preco": 8.83,
-      "exp_score": 5.7875,
+      "exp_score": 5.7774,
       "atleta_id": 110426
     },
     {
@@ -47,7 +47,7 @@
       "nome": "Alexander Barboza",
       "clube": "PAL",
       "preco": 10.36,
-      "exp_score": 4.6047,
+      "exp_score": 4.5942,
       "atleta_id": 99274
     },
     {
@@ -58,19 +58,19 @@
       "nome": "Gustavo Gómez",
       "clube": "PAL",
       "preco": 10.67,
-      "exp_score": 4.5958,
+      "exp_score": 4.5852,
       "atleta_id": 71684
     },
     {
       "rodada": 29,
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
-      "pos": "MEI",
-      "nome": "Matheus Pereira",
+      "pos": "ZAG",
+      "nome": "Jonathan Jesus",
       "clube": "CRU",
-      "preco": 14.51,
-      "exp_score": 7.133,
-      "atleta_id": 96610
+      "preco": 7.06,
+      "exp_score": 3.9202,
+      "atleta_id": 124912
     },
     {
       "rodada": 29,
@@ -80,8 +80,19 @@
       "nome": "Arias",
       "clube": "PAL",
       "preco": 13.53,
-      "exp_score": 5.7198,
+      "exp_score": 6.5855,
       "atleta_id": 99815
+    },
+    {
+      "rodada": 29,
+      "tipo": "INTERMEDIARIO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Matheus Pereira",
+      "clube": "CRU",
+      "preco": 14.51,
+      "exp_score": 6.2107,
+      "atleta_id": 96610
     },
     {
       "rodada": 29,
@@ -91,52 +102,41 @@
       "nome": "Carrascal",
       "clube": "FLA",
       "preco": 11.5,
-      "exp_score": 5.1391,
+      "exp_score": 5.1453,
       "atleta_id": 105436
     },
     {
       "rodada": 29,
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Viveros",
-      "clube": "CAP",
-      "preco": 12.78,
-      "exp_score": 10.4774,
-      "atleta_id": 143193
+      "pos": "MEI",
+      "nome": "Acevedo",
+      "clube": "BAH",
+      "preco": 7.55,
+      "exp_score": 4.2118,
+      "atleta_id": 104783
     },
     {
       "rodada": 29,
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
       "pos": "ATA",
-      "nome": "Hulk",
-      "clube": "FLU",
-      "preco": 14.05,
-      "exp_score": 8.0916,
-      "atleta_id": 39148
-    },
-    {
-      "rodada": 29,
-      "tipo": "INTERMEDIARIO",
-      "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Renê",
-      "clube": "VIT",
-      "preco": 9.78,
-      "exp_score": 6.4356,
-      "atleta_id": 130209
+      "nome": "Samuel Lino",
+      "clube": "FLA",
+      "preco": 12.45,
+      "exp_score": 7.7294,
+      "atleta_id": 98873
     },
     {
       "rodada": 29,
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
       "pos": "TEC",
-      "nome": "Fernando Seabra",
-      "clube": "CFC",
-      "preco": 7.39,
-      "exp_score": 4.8015,
-      "atleta_id": 126977
+      "nome": "Odair Hellmann",
+      "clube": "CAP",
+      "preco": 9.18,
+      "exp_score": 6.7288,
+      "atleta_id": 92273
     },
     {
       "rodada": 29,
@@ -146,7 +146,7 @@
       "nome": "Lucas Arcanjo",
       "clube": "VIT",
       "preco": 8.62,
-      "exp_score": 5.0231,
+      "exp_score": 5.0135,
       "atleta_id": 104118
     },
     {
@@ -157,7 +157,7 @@
       "nome": "Marcelinho",
       "clube": "REM",
       "preco": 6.23,
-      "exp_score": 5.1568,
+      "exp_score": 4.5875,
       "atleta_id": 97795
     },
     {
@@ -165,33 +165,33 @@
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "ZAG",
-      "nome": "Jonathan Jesus",
-      "clube": "CRU",
-      "preco": 7.06,
-      "exp_score": 4.5169,
-      "atleta_id": 124912
+      "nome": "Gustavo Marques",
+      "clube": "RBB",
+      "preco": 6.81,
+      "exp_score": 3.9195,
+      "atleta_id": 110750
     },
     {
       "rodada": 29,
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "MEI",
-      "nome": "Acevedo",
-      "clube": "BAH",
-      "preco": 7.55,
-      "exp_score": 4.2056,
-      "atleta_id": 104783
+      "nome": "João Cruz",
+      "clube": "CAP",
+      "preco": 6.55,
+      "exp_score": 3.906,
+      "atleta_id": 128431
     },
     {
       "rodada": 29,
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "ATA",
-      "nome": "Arthur Cabral",
-      "clube": "BOT",
-      "preco": 9.48,
-      "exp_score": 5.0714,
-      "atleta_id": 92171
+      "nome": "Renê",
+      "clube": "VIT",
+      "preco": 9.78,
+      "exp_score": 6.4422,
+      "atleta_id": 130209
     }
   ],
   "modelo": "INTERMEDIARIO",
@@ -206,7 +206,7 @@
       "nome": "Carlos Miguel",
       "clube": "PAL",
       "preco": 9.1,
-      "exp_score": 5.2675,
+      "exp_score": 5.2554,
       "atleta_id": 104084
     },
     {
@@ -217,7 +217,7 @@
       "nome": "Juninho Capixaba",
       "clube": "RBB",
       "preco": 12.69,
-      "exp_score": 6.2787,
+      "exp_score": 6.2688,
       "atleta_id": 94968
     },
     {
@@ -228,7 +228,7 @@
       "nome": "Bernabei",
       "clube": "INT",
       "preco": 8.83,
-      "exp_score": 5.7875,
+      "exp_score": 5.7774,
       "atleta_id": 110426
     },
     {
@@ -239,7 +239,7 @@
       "nome": "Alexander Barboza",
       "clube": "PAL",
       "preco": 10.36,
-      "exp_score": 4.6047,
+      "exp_score": 4.5942,
       "atleta_id": 99274
     },
     {
@@ -250,19 +250,19 @@
       "nome": "Gustavo Gómez",
       "clube": "PAL",
       "preco": 10.67,
-      "exp_score": 4.5958,
+      "exp_score": 4.5852,
       "atleta_id": 71684
     },
     {
       "rodada": 29,
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
-      "pos": "MEI",
-      "nome": "Matheus Pereira",
+      "pos": "ZAG",
+      "nome": "Jonathan Jesus",
       "clube": "CRU",
-      "preco": 14.51,
-      "exp_score": 7.133,
-      "atleta_id": 96610
+      "preco": 7.06,
+      "exp_score": 3.9202,
+      "atleta_id": 124912
     },
     {
       "rodada": 29,
@@ -272,8 +272,19 @@
       "nome": "Arias",
       "clube": "PAL",
       "preco": 13.53,
-      "exp_score": 5.7198,
+      "exp_score": 6.5855,
       "atleta_id": 99815
+    },
+    {
+      "rodada": 29,
+      "tipo": "INTERMEDIARIO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Matheus Pereira",
+      "clube": "CRU",
+      "preco": 14.51,
+      "exp_score": 6.2107,
+      "atleta_id": 96610
     },
     {
       "rodada": 29,
@@ -283,52 +294,41 @@
       "nome": "Carrascal",
       "clube": "FLA",
       "preco": 11.5,
-      "exp_score": 5.1391,
+      "exp_score": 5.1453,
       "atleta_id": 105436
     },
     {
       "rodada": 29,
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Viveros",
-      "clube": "CAP",
-      "preco": 12.78,
-      "exp_score": 10.4774,
-      "atleta_id": 143193
+      "pos": "MEI",
+      "nome": "Acevedo",
+      "clube": "BAH",
+      "preco": 7.55,
+      "exp_score": 4.2118,
+      "atleta_id": 104783
     },
     {
       "rodada": 29,
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
       "pos": "ATA",
-      "nome": "Hulk",
-      "clube": "FLU",
-      "preco": 14.05,
-      "exp_score": 8.0916,
-      "atleta_id": 39148
-    },
-    {
-      "rodada": 29,
-      "tipo": "INTERMEDIARIO",
-      "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Renê",
-      "clube": "VIT",
-      "preco": 9.78,
-      "exp_score": 6.4356,
-      "atleta_id": 130209
+      "nome": "Samuel Lino",
+      "clube": "FLA",
+      "preco": 12.45,
+      "exp_score": 7.7294,
+      "atleta_id": 98873
     },
     {
       "rodada": 29,
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
       "pos": "TEC",
-      "nome": "Fernando Seabra",
-      "clube": "CFC",
-      "preco": 7.39,
-      "exp_score": 4.8015,
-      "atleta_id": 126977
+      "nome": "Odair Hellmann",
+      "clube": "CAP",
+      "preco": 9.18,
+      "exp_score": 6.7288,
+      "atleta_id": 92273
     },
     {
       "rodada": 29,
@@ -338,7 +338,7 @@
       "nome": "Lucas Arcanjo",
       "clube": "VIT",
       "preco": 8.62,
-      "exp_score": 5.0231,
+      "exp_score": 5.0135,
       "atleta_id": 104118
     },
     {
@@ -349,7 +349,7 @@
       "nome": "Marcelinho",
       "clube": "REM",
       "preco": 6.23,
-      "exp_score": 5.1568,
+      "exp_score": 4.5875,
       "atleta_id": 97795
     },
     {
@@ -357,33 +357,33 @@
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "ZAG",
-      "nome": "Jonathan Jesus",
-      "clube": "CRU",
-      "preco": 7.06,
-      "exp_score": 4.5169,
-      "atleta_id": 124912
+      "nome": "Gustavo Marques",
+      "clube": "RBB",
+      "preco": 6.81,
+      "exp_score": 3.9195,
+      "atleta_id": 110750
     },
     {
       "rodada": 29,
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "MEI",
-      "nome": "Acevedo",
-      "clube": "BAH",
-      "preco": 7.55,
-      "exp_score": 4.2056,
-      "atleta_id": 104783
+      "nome": "João Cruz",
+      "clube": "CAP",
+      "preco": 6.55,
+      "exp_score": 3.906,
+      "atleta_id": 128431
     },
     {
       "rodada": 29,
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "ATA",
-      "nome": "Arthur Cabral",
-      "clube": "BOT",
-      "preco": 9.48,
-      "exp_score": 5.0714,
-      "atleta_id": 92171
+      "nome": "Renê",
+      "clube": "VIT",
+      "preco": 9.78,
+      "exp_score": 6.4422,
+      "atleta_id": 130209
     }
   ],
   "jogadores": [
@@ -395,7 +395,7 @@
       "nome": "Carlos Miguel",
       "clube": "PAL",
       "preco": 9.1,
-      "exp_score": 5.2675,
+      "exp_score": 5.2554,
       "atleta_id": 104084
     },
     {
@@ -406,7 +406,7 @@
       "nome": "Juninho Capixaba",
       "clube": "RBB",
       "preco": 12.69,
-      "exp_score": 6.2787,
+      "exp_score": 6.2688,
       "atleta_id": 94968
     },
     {
@@ -417,7 +417,7 @@
       "nome": "Bernabei",
       "clube": "INT",
       "preco": 8.83,
-      "exp_score": 5.7875,
+      "exp_score": 5.7774,
       "atleta_id": 110426
     },
     {
@@ -428,7 +428,7 @@
       "nome": "Alexander Barboza",
       "clube": "PAL",
       "preco": 10.36,
-      "exp_score": 4.6047,
+      "exp_score": 4.5942,
       "atleta_id": 99274
     },
     {
@@ -439,19 +439,19 @@
       "nome": "Gustavo Gómez",
       "clube": "PAL",
       "preco": 10.67,
-      "exp_score": 4.5958,
+      "exp_score": 4.5852,
       "atleta_id": 71684
     },
     {
       "rodada": 29,
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
-      "pos": "MEI",
-      "nome": "Matheus Pereira",
+      "pos": "ZAG",
+      "nome": "Jonathan Jesus",
       "clube": "CRU",
-      "preco": 14.51,
-      "exp_score": 7.133,
-      "atleta_id": 96610
+      "preco": 7.06,
+      "exp_score": 3.9202,
+      "atleta_id": 124912
     },
     {
       "rodada": 29,
@@ -461,8 +461,19 @@
       "nome": "Arias",
       "clube": "PAL",
       "preco": 13.53,
-      "exp_score": 5.7198,
+      "exp_score": 6.5855,
       "atleta_id": 99815
+    },
+    {
+      "rodada": 29,
+      "tipo": "INTERMEDIARIO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Matheus Pereira",
+      "clube": "CRU",
+      "preco": 14.51,
+      "exp_score": 6.2107,
+      "atleta_id": 96610
     },
     {
       "rodada": 29,
@@ -472,52 +483,41 @@
       "nome": "Carrascal",
       "clube": "FLA",
       "preco": 11.5,
-      "exp_score": 5.1391,
+      "exp_score": 5.1453,
       "atleta_id": 105436
     },
     {
       "rodada": 29,
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Viveros",
-      "clube": "CAP",
-      "preco": 12.78,
-      "exp_score": 10.4774,
-      "atleta_id": 143193
+      "pos": "MEI",
+      "nome": "Acevedo",
+      "clube": "BAH",
+      "preco": 7.55,
+      "exp_score": 4.2118,
+      "atleta_id": 104783
     },
     {
       "rodada": 29,
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
       "pos": "ATA",
-      "nome": "Hulk",
-      "clube": "FLU",
-      "preco": 14.05,
-      "exp_score": 8.0916,
-      "atleta_id": 39148
-    },
-    {
-      "rodada": 29,
-      "tipo": "INTERMEDIARIO",
-      "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Renê",
-      "clube": "VIT",
-      "preco": 9.78,
-      "exp_score": 6.4356,
-      "atleta_id": 130209
+      "nome": "Samuel Lino",
+      "clube": "FLA",
+      "preco": 12.45,
+      "exp_score": 7.7294,
+      "atleta_id": 98873
     },
     {
       "rodada": 29,
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
       "pos": "TEC",
-      "nome": "Fernando Seabra",
-      "clube": "CFC",
-      "preco": 7.39,
-      "exp_score": 4.8015,
-      "atleta_id": 126977
+      "nome": "Odair Hellmann",
+      "clube": "CAP",
+      "preco": 9.18,
+      "exp_score": 6.7288,
+      "atleta_id": 92273
     }
   ],
   "reservas": [
@@ -529,7 +529,7 @@
       "nome": "Lucas Arcanjo",
       "clube": "VIT",
       "preco": 8.62,
-      "exp_score": 5.0231,
+      "exp_score": 5.0135,
       "atleta_id": 104118
     },
     {
@@ -540,7 +540,7 @@
       "nome": "Marcelinho",
       "clube": "REM",
       "preco": 6.23,
-      "exp_score": 5.1568,
+      "exp_score": 4.5875,
       "atleta_id": 97795
     },
     {
@@ -548,37 +548,37 @@
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "ZAG",
-      "nome": "Jonathan Jesus",
-      "clube": "CRU",
-      "preco": 7.06,
-      "exp_score": 4.5169,
-      "atleta_id": 124912
+      "nome": "Gustavo Marques",
+      "clube": "RBB",
+      "preco": 6.81,
+      "exp_score": 3.9195,
+      "atleta_id": 110750
     },
     {
       "rodada": 29,
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "MEI",
-      "nome": "Acevedo",
-      "clube": "BAH",
-      "preco": 7.55,
-      "exp_score": 4.2056,
-      "atleta_id": 104783
+      "nome": "João Cruz",
+      "clube": "CAP",
+      "preco": 6.55,
+      "exp_score": 3.906,
+      "atleta_id": 128431
     },
     {
       "rodada": 29,
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "ATA",
-      "nome": "Arthur Cabral",
-      "clube": "BOT",
-      "preco": 9.48,
-      "exp_score": 5.0714,
-      "atleta_id": 92171
+      "nome": "Renê",
+      "clube": "VIT",
+      "preco": 9.78,
+      "exp_score": 6.4422,
+      "atleta_id": 130209
     }
   ],
-  "capitao": "Viveros",
-  "formacao": "4-3-3",
+  "capitao": "Samuel Lino",
+  "formacao": "5-4-1",
   "evento_programado": "ATUALIZACAO_20H",
   "blocos_topo": [],
   "pipeline_visual": "times_top5_aprovados_v2_2026_09_21_formacao_dinamica"
