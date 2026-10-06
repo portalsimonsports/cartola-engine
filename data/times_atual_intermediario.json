@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 29,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-10-06T05:29:46.877Z",
+  "atualizado_em": "2026-10-06T05:44:59.782Z",
   "dados": [
     {
       "RODADA": 29,
@@ -65,17 +65,6 @@
       "RODADA": 29,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Jonathan Jesus",
-      "CLUBE": "CRU",
-      "PRECO": 7.06,
-      "EXP_SCORE": 3.9202,
-      "ATLETA_ID": 124912
-    },
-    {
-      "RODADA": 29,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
       "POS": "MEI",
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
@@ -109,17 +98,6 @@
       "RODADA": 29,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Acevedo",
-      "CLUBE": "BAH",
-      "PRECO": 7.55,
-      "EXP_SCORE": 4.2118,
-      "ATLETA_ID": 104783
-    },
-    {
-      "RODADA": 29,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
       "POS": "ATA",
       "NOME": "Hulk",
       "CLUBE": "FLU",
@@ -131,12 +109,34 @@
       "RODADA": 29,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Flaco López",
+      "CLUBE": "PAL",
+      "PRECO": 13.42,
+      "EXP_SCORE": 6.9997,
+      "ATLETA_ID": 113103
+    },
+    {
+      "RODADA": 29,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Renê",
+      "CLUBE": "VIT",
+      "PRECO": 9.78,
+      "EXP_SCORE": 6.4422,
+      "ATLETA_ID": 130209
+    },
+    {
+      "RODADA": 29,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Odair Hellmann",
-      "CLUBE": "CAP",
-      "PRECO": 9.18,
-      "EXP_SCORE": 6.7288,
-      "ATLETA_ID": 92273
+      "NOME": "Eduardo Baptista",
+      "CLUBE": "INT",
+      "PRECO": 7.18,
+      "EXP_SCORE": 0,
+      "ATLETA_ID": 87211
     },
     {
       "RODADA": 29,
@@ -165,33 +165,33 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Gustavo Marques",
-      "CLUBE": "RBB",
-      "PRECO": 6.81,
-      "EXP_SCORE": 3.9195,
-      "ATLETA_ID": 110750
+      "NOME": "Jonathan Jesus",
+      "CLUBE": "CRU",
+      "PRECO": 7.06,
+      "EXP_SCORE": 3.9202,
+      "ATLETA_ID": 124912
     },
     {
       "RODADA": 29,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "João Cruz",
-      "CLUBE": "CAP",
-      "PRECO": 6.55,
-      "EXP_SCORE": 3.906,
-      "ATLETA_ID": 128431
+      "NOME": "Raniele",
+      "CLUBE": "COR",
+      "PRECO": 8.19,
+      "EXP_SCORE": 3.9193,
+      "ATLETA_ID": 95556
     },
     {
       "RODADA": 29,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Flaco López",
-      "CLUBE": "PAL",
-      "PRECO": 13.42,
-      "EXP_SCORE": 6.9997,
-      "ATLETA_ID": 113103
+      "NOME": "Arthur Cabral",
+      "CLUBE": "BOT",
+      "PRECO": 9.48,
+      "EXP_SCORE": 5.0766,
+      "ATLETA_ID": 92171
     }
   ]
 }
