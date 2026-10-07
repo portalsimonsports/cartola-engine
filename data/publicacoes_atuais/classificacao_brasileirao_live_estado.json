@@ -219,7 +219,7 @@
     {
       "nome": "RB Bragantino",
       "pos": 10,
-      "pts": 36,
+      "pts": 37,
       "v": 10,
       "saldo": 1,
       "gm": 33
@@ -249,20 +249,20 @@
       "gm": 28
     },
     {
-      "nome": "Corinthians",
-      "pos": 14,
-      "pts": 32,
-      "v": 8,
-      "saldo": -3,
-      "gm": 29
-    },
-    {
       "nome": "Mirassol",
-      "pos": 15,
-      "pts": 32,
+      "pos": 14,
+      "pts": 33,
       "v": 8,
       "saldo": -9,
       "gm": 33
+    },
+    {
+      "nome": "Corinthians",
+      "pos": 15,
+      "pts": 32,
+      "v": 8,
+      "saldo": -4,
+      "gm": 29
     },
     {
       "nome": "Vasco",
@@ -273,25 +273,25 @@
       "gm": 34
     },
     {
-      "nome": "GRÊMIO",
+      "nome": "Internacional",
       "pos": 17,
-      "pts": 29,
+      "pts": 31,
+      "v": 7,
+      "saldo": -5,
+      "gm": 31
+    },
+    {
+      "nome": "GRÊMIO",
+      "pos": 18,
+      "pts": 30,
       "v": 7,
       "saldo": -8,
       "gm": 30
     },
     {
-      "nome": "Internacional",
-      "pos": 18,
-      "pts": 28,
-      "v": 6,
-      "saldo": -6,
-      "gm": 30
-    },
-    {
       "nome": "Remo",
       "pos": 19,
-      "pts": 23,
+      "pts": 24,
       "v": 5,
       "saldo": -15,
       "gm": 32
@@ -305,7 +305,7 @@
       "gm": 29
     }
   ],
-  "last_context": "classificacao_abertura",
-  "updated_at": "2026-10-07T19:38:20.342943-03:00",
-  "last_image": "output/classificacao_brasileirao_abertura.png"
+  "last_context": "classificacao_delta",
+  "updated_at": "2026-10-07T19:43:25.310338-03:00",
+  "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
