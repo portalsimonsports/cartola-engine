@@ -1,5 +1,5 @@
 {
-  "rodada": 28,
+  "rodada": 29,
   "base_signature": [
     {
       "nome": "FLA",
@@ -45,17 +45,17 @@
     },
     {
       "nome": "CAM",
-      "j": 27,
-      "pts": 40,
-      "v": 11,
-      "saldo": 4
+      "j": 28,
+      "pts": 43,
+      "v": 12,
+      "saldo": 5
     },
     {
       "nome": "SAN",
-      "j": 27,
-      "pts": 38,
-      "v": 10,
-      "saldo": 1
+      "j": 28,
+      "pts": 41,
+      "v": 11,
+      "saldo": 2
     },
     {
       "nome": "CFC",
@@ -66,17 +66,17 @@
     },
     {
       "nome": "RBB",
-      "j": 27,
+      "j": 28,
       "pts": 36,
       "v": 10,
-      "saldo": 2
+      "saldo": 1
     },
     {
       "nome": "SAO",
-      "j": 27,
+      "j": 28,
       "pts": 36,
       "v": 10,
-      "saldo": 2
+      "saldo": 1
     },
     {
       "nome": "BOT",
@@ -195,18 +195,18 @@
     {
       "nome": "ATLÉTICO-MG",
       "pos": 7,
-      "pts": 40,
-      "v": 11,
-      "saldo": 4,
-      "gm": 36
+      "pts": 43,
+      "v": 12,
+      "saldo": 5,
+      "gm": 37
     },
     {
       "nome": "Santos",
       "pos": 8,
-      "pts": 38,
-      "v": 10,
-      "saldo": 1,
-      "gm": 41
+      "pts": 41,
+      "v": 11,
+      "saldo": 2,
+      "gm": 43
     },
     {
       "nome": "Coritiba",
@@ -221,7 +221,7 @@
       "pos": 10,
       "pts": 36,
       "v": 10,
-      "saldo": 2,
+      "saldo": 1,
       "gm": 33
     },
     {
@@ -229,8 +229,8 @@
       "pos": 11,
       "pts": 36,
       "v": 10,
-      "saldo": 2,
-      "gm": 32
+      "saldo": 1,
+      "gm": 33
     },
     {
       "nome": "Botafogo",
@@ -305,7 +305,7 @@
       "gm": 29
     }
   ],
-  "last_context": "classificacao_final",
-  "updated_at": "2026-09-20T22:03:29.316655-03:00",
-  "last_image": "output/classificacao_brasileirao_fechamento.png"
+  "last_context": "classificacao_abertura",
+  "updated_at": "2026-10-07T19:38:20.342943-03:00",
+  "last_image": "output/classificacao_brasileirao_abertura.png"
 }
