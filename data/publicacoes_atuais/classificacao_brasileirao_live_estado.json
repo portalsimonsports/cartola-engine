@@ -23,18 +23,18 @@
       "saldo": 11
     },
     {
+      "nome": "CRU",
+      "j": 29,
+      "pts": 48,
+      "v": 14,
+      "saldo": 4
+    },
+    {
       "nome": "FLU",
       "j": 28,
       "pts": 48,
       "v": 13,
       "saldo": 8
-    },
-    {
-      "nome": "CRU",
-      "j": 29,
-      "pts": 46,
-      "v": 13,
-      "saldo": 2
     },
     {
       "nome": "BAH",
@@ -74,9 +74,9 @@
     {
       "nome": "SAO",
       "j": 29,
-      "pts": 37,
+      "pts": 36,
       "v": 10,
-      "saldo": 1
+      "saldo": -1
     },
     {
       "nome": "VIT",
@@ -147,7 +147,7 @@
     {
       "nome": "Flamengo",
       "pos": 1,
-      "pts": 60,
+      "pts": 61,
       "v": 18,
       "saldo": 32,
       "gm": 55
@@ -163,7 +163,7 @@
     {
       "nome": "Athletico-PR",
       "pos": 3,
-      "pts": 49,
+      "pts": 50,
       "v": 14,
       "saldo": 11,
       "gm": 43
@@ -173,8 +173,8 @@
       "pos": 4,
       "pts": 48,
       "v": 14,
-      "saldo": 3,
-      "gm": 43
+      "saldo": 4,
+      "gm": 44
     },
     {
       "nome": "Fluminense",
@@ -195,7 +195,7 @@
     {
       "nome": "ATLÉTICO-MG",
       "pos": 7,
-      "pts": 43,
+      "pts": 44,
       "v": 12,
       "saldo": 5,
       "gm": 37
@@ -203,7 +203,7 @@
     {
       "nome": "Santos",
       "pos": 8,
-      "pts": 41,
+      "pts": 42,
       "v": 11,
       "saldo": 2,
       "gm": 43
@@ -229,7 +229,7 @@
       "pos": 11,
       "pts": 36,
       "v": 10,
-      "saldo": 0,
+      "saldo": -1,
       "gm": 33
     },
     {
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-10-07T22:23:27.014797-03:00",
+  "updated_at": "2026-10-08T20:14:04.608159-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
