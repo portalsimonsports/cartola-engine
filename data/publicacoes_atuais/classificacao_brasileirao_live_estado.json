@@ -169,20 +169,20 @@
       "gm": 43
     },
     {
-      "nome": "Fluminense",
+      "nome": "Cruzeiro",
       "pos": 4,
+      "pts": 48,
+      "v": 14,
+      "saldo": 3,
+      "gm": 43
+    },
+    {
+      "nome": "Fluminense",
+      "pos": 5,
       "pts": 48,
       "v": 13,
       "saldo": 8,
       "gm": 44
-    },
-    {
-      "nome": "Cruzeiro",
-      "pos": 5,
-      "pts": 46,
-      "v": 13,
-      "saldo": 2,
-      "gm": 42
     },
     {
       "nome": "Bahia",
@@ -227,9 +227,9 @@
     {
       "nome": "SÃO PAULO",
       "pos": 11,
-      "pts": 37,
+      "pts": 36,
       "v": 10,
-      "saldo": 1,
+      "saldo": 0,
       "gm": 33
     },
     {
@@ -246,7 +246,7 @@
       "pts": 35,
       "v": 9,
       "saldo": -5,
-      "gm": 41
+      "gm": 42
     },
     {
       "nome": "Vasco",
@@ -254,7 +254,7 @@
       "pts": 34,
       "v": 9,
       "saldo": -6,
-      "gm": 35
+      "gm": 36
     },
     {
       "nome": "Mirassol",
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-10-07T21:53:20.428168-03:00",
+  "updated_at": "2026-10-07T22:23:27.014797-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
