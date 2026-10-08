@@ -26,7 +26,7 @@ permissions:
 jobs:
   gerar-e-publicar:
     runs-on: ubuntu-latest
-    timeout-minutes: 70
+    timeout-minutes: 55
     steps:
       - name: Checkout completo
         uses: actions/checkout@v4
@@ -44,15 +44,28 @@ jobs:
 
       - name: Garantir FFmpeg e fontes
         shell: bash
+        timeout-minutes: 2
         run: |
           set -euo pipefail
-          NEED_APT=0
-          command -v ffmpeg >/dev/null 2>&1 || NEED_APT=1
-          fc-match DejaVuSans >/dev/null 2>&1 || NEED_APT=1
-          if [ "$NEED_APT" -eq 1 ]; then
-            sudo apt-get update -qq
-            sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends ffmpeg fonts-dejavu-core fonts-liberation
+          # ubuntu-latest ja fornece FFmpeg e fontes. Nao executar apt-get
+          # nem downloads: o antigo apt-get bloqueava o job ate seu cancelamento.
+          for bin in ffmpeg ffprobe; do
+            if ! command -v "$bin" >/dev/null 2>&1; then
+              echo "::error::$bin ausente no runner ubuntu-latest."
+              exit 1
+            fi
+          done
+          timeout 10s ffmpeg -version | head -n 1
+          timeout 10s ffprobe -version | head -n 1
+          if ! command -v fc-list >/dev/null 2>&1; then
+            echo "::error::fontconfig ausente no runner."
+            exit 1
           fi
+          if ! timeout 15s fc-list : family | grep -qiE 'DejaVu Sans|Liberation Sans|Arial'; then
+            echo "::error::Nenhuma fonte compativel encontrada (DejaVu/Liberation/Arial)."
+            exit 1
+          fi
+          echo "FFmpeg, FFprobe e fontes verificados sem apt-get."
 
       - name: Instalar dependências Python
         run: |
