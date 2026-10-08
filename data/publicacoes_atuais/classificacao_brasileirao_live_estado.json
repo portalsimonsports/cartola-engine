@@ -3,8 +3,8 @@
   "base_signature": [
     {
       "nome": "FLA",
-      "j": 28,
-      "pts": 60,
+      "j": 29,
+      "pts": 61,
       "v": 18,
       "saldo": 32
     },
@@ -17,10 +17,10 @@
     },
     {
       "nome": "CAP",
-      "j": 28,
-      "pts": 49,
-      "v": 14,
-      "saldo": 11
+      "j": 29,
+      "pts": 52,
+      "v": 15,
+      "saldo": 12
     },
     {
       "nome": "CRU",
@@ -45,15 +45,15 @@
     },
     {
       "nome": "CAM",
-      "j": 28,
+      "j": 29,
       "pts": 43,
       "v": 12,
-      "saldo": 5
+      "saldo": 4
     },
     {
       "nome": "SAN",
-      "j": 28,
-      "pts": 41,
+      "j": 29,
+      "pts": 42,
       "v": 11,
       "saldo": 2
     },
@@ -147,10 +147,10 @@
     {
       "nome": "Flamengo",
       "pos": 1,
-      "pts": 61,
-      "v": 18,
-      "saldo": 32,
-      "gm": 55
+      "pts": 63,
+      "v": 19,
+      "saldo": 33,
+      "gm": 56
     },
     {
       "nome": "Palmeiras",
@@ -163,10 +163,10 @@
     {
       "nome": "Athletico-PR",
       "pos": 3,
-      "pts": 50,
-      "v": 14,
-      "saldo": 11,
-      "gm": 43
+      "pts": 52,
+      "v": 15,
+      "saldo": 12,
+      "gm": 44
     },
     {
       "nome": "Cruzeiro",
@@ -195,17 +195,17 @@
     {
       "nome": "ATLÉTICO-MG",
       "pos": 7,
-      "pts": 44,
+      "pts": 43,
       "v": 12,
-      "saldo": 5,
+      "saldo": 4,
       "gm": 37
     },
     {
       "nome": "Santos",
       "pos": 8,
-      "pts": 42,
+      "pts": 41,
       "v": 11,
-      "saldo": 2,
+      "saldo": 1,
       "gm": 43
     },
     {
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-10-08T20:14:04.608159-03:00",
+  "updated_at": "2026-10-08T20:23:48.501113-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
