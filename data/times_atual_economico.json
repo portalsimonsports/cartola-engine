@@ -4,18 +4,18 @@
   "tipo_publicacao": "times",
   "rodada": 30,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-10-09T12:35:48.067Z",
+  "atualizado_em": "2026-10-09T13:05:22.039Z",
   "dados": [
     {
       "RODADA": 30,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "GOL",
-      "NOME": "Otávio",
-      "CLUBE": "CRU",
-      "PRECO": 4.79,
-      "EXP_SCORE": 3.9937,
-      "ATLETA_ID": 117404
+      "NOME": "Ronaldo",
+      "CLUBE": "BAH",
+      "PRECO": 9.02,
+      "EXP_SCORE": 6.5239,
+      "ATLETA_ID": 91101
     },
     {
       "RODADA": 30,
@@ -33,6 +33,17 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ZAG",
+      "NOME": "Thiago Santos",
+      "CLUBE": "CFC",
+      "PRECO": 4.02,
+      "EXP_SCORE": 2.9105,
+      "ATLETA_ID": 78855
+    },
+    {
+      "RODADA": 30,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ZAG",
       "NOME": "Gustavo Marques",
       "CLUBE": "RBB",
       "PRECO": 7.21,
@@ -43,22 +54,11 @@
       "RODADA": 30,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Wallace",
-      "CLUBE": "GRE",
-      "PRECO": 6.68,
-      "EXP_SCORE": 4.0509,
-      "ATLETA_ID": 130307
-    },
-    {
-      "RODADA": 30,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
       "POS": "MEI",
       "NOME": "Savarino",
       "CLUBE": "FLU",
       "PRECO": 12.44,
-      "EXP_SCORE": 4.7367,
+      "EXP_SCORE": 4.1189,
       "ATLETA_ID": 98672
     },
     {
@@ -98,28 +98,6 @@
       "RODADA": 30,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Bernard",
-      "CLUBE": "CAM",
-      "PRECO": 6.34,
-      "EXP_SCORE": 3.4465,
-      "ATLETA_ID": 72460
-    },
-    {
-      "RODADA": 30,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Fernando",
-      "CLUBE": "RBB",
-      "PRECO": 6.29,
-      "EXP_SCORE": 4.8298,
-      "ATLETA_ID": 100695
-    },
-    {
-      "RODADA": 30,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
       "POS": "ATA",
       "NOME": "Viveros",
       "CLUBE": "CAP",
@@ -131,23 +109,45 @@
       "RODADA": 30,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Fernando",
+      "CLUBE": "RBB",
+      "PRECO": 6.29,
+      "EXP_SCORE": 4.3468,
+      "ATLETA_ID": 100695
+    },
+    {
+      "RODADA": 30,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Samuel Lino",
+      "CLUBE": "FLA",
+      "PRECO": 12.81,
+      "EXP_SCORE": 9.202,
+      "ATLETA_ID": 98873
+    },
+    {
+      "RODADA": 30,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Odair Hellmann",
-      "CLUBE": "CAP",
-      "PRECO": 9.08,
-      "EXP_SCORE": 6.546,
-      "ATLETA_ID": 92273
+      "NOME": "Rafael Guanaes",
+      "CLUBE": "MIR",
+      "PRECO": 7.35,
+      "EXP_SCORE": 3.7075,
+      "ATLETA_ID": 104027
     },
     {
       "RODADA": 30,
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Matheus Cunha",
-      "CLUBE": "INT",
-      "PRECO": 4.12,
-      "EXP_SCORE": 3.0463,
-      "ATLETA_ID": 111690
+      "NOME": "Carlos Miguel",
+      "CLUBE": "PAL",
+      "PRECO": 8.68,
+      "EXP_SCORE": 6.0031,
+      "ATLETA_ID": 104084
     },
     {
       "RODADA": 30,
