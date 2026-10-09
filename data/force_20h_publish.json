@@ -1,9 +1,9 @@
 {
   "evento_programado": "ATUALIZACAO_20H",
-  "rodada": 25,
+  "rodada": 30,
   "tipo_publicacao": "times",
   "modelo": "ECONOMICO",
-  "origem": "correcao_emergencial_28_08_2026",
+  "origem": "recuperacao_atualizacao_20h_09_10_2026",
   "forcar_envio": true,
-  "correcao": "manter_publicacao_20h_com_capitao_e_reservas"
+  "correcao": "publicar pacote oficial R30 usando bases atuais e marker de idempotencia"
 }
