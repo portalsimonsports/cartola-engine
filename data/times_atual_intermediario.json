@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 30,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-10-09T22:29:49.878Z",
+  "atualizado_em": "2026-10-09T23:37:38.421Z",
   "dados": [
     {
       "RODADA": 30,
@@ -14,19 +14,8 @@
       "NOME": "Ronaldo",
       "CLUBE": "BAH",
       "PRECO": 9.02,
-      "EXP_SCORE": 6.5346,
+      "EXP_SCORE": 6.5332,
       "ATLETA_ID": 91101
-    },
-    {
-      "RODADA": 30,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "LAT",
-      "NOME": "Cuiabano",
-      "CLUBE": "VAS",
-      "PRECO": 12.84,
-      "EXP_SCORE": 5.6018,
-      "ATLETA_ID": 116065
     },
     {
       "RODADA": 30,
@@ -36,8 +25,19 @@
       "NOME": "Luciano Juba",
       "CLUBE": "BAH",
       "PRECO": 10.48,
-      "EXP_SCORE": 5.5707,
+      "EXP_SCORE": 5.5696,
       "ATLETA_ID": 107093
+    },
+    {
+      "RODADA": 30,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Juninho Capixaba",
+      "CLUBE": "RBB",
+      "PRECO": 11.82,
+      "EXP_SCORE": 4.8928,
+      "ATLETA_ID": 94968
     },
     {
       "RODADA": 30,
@@ -47,7 +47,7 @@
       "NOME": "Gustavo Gómez",
       "CLUBE": "PAL",
       "PRECO": 11.14,
-      "EXP_SCORE": 5.2296,
+      "EXP_SCORE": 5.2283,
       "ATLETA_ID": 71684
     },
     {
@@ -58,7 +58,7 @@
       "NOME": "Murilo",
       "CLUBE": "PAL",
       "PRECO": 7.53,
-      "EXP_SCORE": 4.7198,
+      "EXP_SCORE": 4.7187,
       "ATLETA_ID": 97653
     },
     {
@@ -69,7 +69,7 @@
       "NOME": "Carrascal",
       "CLUBE": "FLA",
       "PRECO": 11.99,
-      "EXP_SCORE": 6.5226,
+      "EXP_SCORE": 6.5119,
       "ATLETA_ID": 105436
     },
     {
@@ -80,7 +80,7 @@
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 14.46,
-      "EXP_SCORE": 5.6328,
+      "EXP_SCORE": 5.6206,
       "ATLETA_ID": 96610
     },
     {
@@ -91,7 +91,7 @@
       "NOME": "Arias",
       "CLUBE": "PAL",
       "PRECO": 13.74,
-      "EXP_SCORE": 5.5938,
+      "EXP_SCORE": 5.5798,
       "ATLETA_ID": 99815
     },
     {
@@ -102,7 +102,7 @@
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 13.49,
-      "EXP_SCORE": 9.9267,
+      "EXP_SCORE": 9.9155,
       "ATLETA_ID": 143193
     },
     {
@@ -113,7 +113,7 @@
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 12.81,
-      "EXP_SCORE": 9.239,
+      "EXP_SCORE": 9.2238,
       "ATLETA_ID": 98873
     },
     {
@@ -121,11 +121,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Colidio",
+      "NOME": "Andrés Gómez",
       "CLUBE": "VAS",
-      "PRECO": 11.51,
-      "EXP_SCORE": 6.2974,
-      "ATLETA_ID": 114323
+      "PRECO": 13.07,
+      "EXP_SCORE": 6.7127,
+      "ATLETA_ID": 116706
     },
     {
       "RODADA": 30,
@@ -135,7 +135,7 @@
       "NOME": "Rafael Guanaes",
       "CLUBE": "MIR",
       "PRECO": 7.35,
-      "EXP_SCORE": 3.9243,
+      "EXP_SCORE": 3.9141,
       "ATLETA_ID": 104027
     },
     {
@@ -146,7 +146,7 @@
       "NOME": "Carlos Miguel",
       "CLUBE": "PAL",
       "PRECO": 8.68,
-      "EXP_SCORE": 6.0145,
+      "EXP_SCORE": 6.013,
       "ATLETA_ID": 104084
     },
     {
@@ -157,7 +157,7 @@
       "NOME": "Igor Formiga",
       "CLUBE": "MIR",
       "PRECO": 8.67,
-      "EXP_SCORE": 4.303,
+      "EXP_SCORE": 4.3018,
       "ATLETA_ID": 106708
     },
     {
@@ -168,7 +168,7 @@
       "NOME": "Gustavo Marques",
       "CLUBE": "RBB",
       "PRECO": 7.21,
-      "EXP_SCORE": 4.1202,
+      "EXP_SCORE": 4.1184,
       "ATLETA_ID": 110750
     },
     {
@@ -179,7 +179,7 @@
       "NOME": "Reinier",
       "CLUBE": "CAM",
       "PRECO": 5.49,
-      "EXP_SCORE": 4.1266,
+      "EXP_SCORE": 4.1201,
       "ATLETA_ID": 105068
     },
     {
@@ -187,11 +187,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Lucas Barbosa",
-      "CLUBE": "RBB",
-      "PRECO": 9.57,
-      "EXP_SCORE": 5.8449,
-      "ATLETA_ID": 112886
+      "NOME": "Colidio",
+      "CLUBE": "VAS",
+      "PRECO": 11.51,
+      "EXP_SCORE": 6.287,
+      "ATLETA_ID": 114323
     }
   ]
 }
