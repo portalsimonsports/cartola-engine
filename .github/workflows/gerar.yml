@@ -6,6 +6,10 @@ on:
       - cartola_publish_test
       - cartola_publish_times
       - cartola_publish_top5
+  # Recuperacao diaria caso o Apps Script nao dispare a publicacao das 20h.
+  # Sao Paulo permanece UTC-3: 23:10 UTC = 20:10 BRT.
+  schedule:
+    - cron: "10 23 * * *"
   workflow_dispatch:
     inputs:
       evento_programado:
@@ -85,6 +89,50 @@ jobs:
           if [ "$EVENT_NAME" = "repository_dispatch" ]; then
             printf '%s' "$DISPATCH_PAYLOAD" > data/payload_dispatch.json
             echo "Payload recebido via repository_dispatch."
+          elif [ "$EVENT_NAME" = "schedule" ]; then
+            # Recuperacao somente com mercado realmente aberto e rodada oficial valida.
+            # Nunca publica baseado em dados de uma rodada encerrada.
+            python - <<'PY'
+          import json
+          import urllib.request
+          from datetime import datetime
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+
+          agora = datetime.now(ZoneInfo("America/Sao_Paulo"))
+          if agora.hour < 20 or agora.hour >= 22:
+              raise SystemExit("Recuperacao 20h: fora da janela 20:00-21:59; nada publicado.")
+          url = "https://api.cartola.globo.com/mercado/status"
+          with urllib.request.urlopen(urllib.request.Request(
+                  url, headers={"User-Agent": "PortalSimonSports-GitHub/1.0"}), timeout=25) as response:
+              status = json.load(response)
+          rodada = int(status.get("rodada_atual") or 0)
+          mercado = int(status.get("status_mercado") or 0)
+          if rodada < 1 or mercado != 1:
+              raise SystemExit(f"Recuperacao 20h: mercado nao aberto ou rodada invalida (rodada={rodada}, status={mercado}).")
+          fontes = [
+              "data/times_atual_economico.json",
+              "data/times_atual_intermediario.json",
+              "data/times_atual_pontuacao.json",
+              "data/top5_atual.json",
+          ]
+          for fonte in fontes:
+              arquivo = Path(fonte)
+              if not arquivo.is_file():
+                  raise SystemExit(f"Recuperacao 20h: fonte ausente: {fonte}.")
+              dados = json.loads(arquivo.read_text(encoding="utf-8"))
+              if int(dados.get("rodada") or 0) != rodada:
+                  raise SystemExit(f"Recuperacao 20h: fonte desatualizada: {fonte}.")
+          payload = {
+              "evento_programado": "ATUALIZACAO_20H",
+              "rodada": rodada,
+              "tipo_publicacao": "times",
+              "modelo": "ECONOMICO",
+              "origem": "github_schedule_recuperacao_20h",
+          }
+          Path("data/payload_dispatch.json").write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
+          print(f"Recuperacao das 20h elegivel: R{rodada}, mercado aberto, quatro bases da rodada.")
+          PY
           elif [ -n "$MANUAL_PAYLOAD" ]; then
             printf '%s' "$MANUAL_PAYLOAD" > data/payload_dispatch.json
             echo "Payload JSON manual informado."
