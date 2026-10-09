@@ -94,14 +94,23 @@ jobs:
             # Nunca publica baseado em dados de uma rodada encerrada.
             python - <<'PY'
           import json
+          import sys
           import urllib.request
           from datetime import datetime
           from pathlib import Path
           from zoneinfo import ZoneInfo
 
+          def ignorar(motivo):
+              Path("data/payload_dispatch.json").write_text(
+                  json.dumps({"evento_programado": "IGNORAR_SEM_MERCADO", "rodada": 0,
+                              "origem": "github_schedule_recuperacao_20h", "motivo": motivo}),
+                  encoding="utf-8")
+              print("Recuperacao 20h ignorada: " + motivo)
+              sys.exit(0)
+
           agora = datetime.now(ZoneInfo("America/Sao_Paulo"))
           if agora.hour < 20 or agora.hour >= 22:
-              raise SystemExit("Recuperacao 20h: fora da janela 20:00-21:59; nada publicado.")
+              ignorar("fora da janela 20:00-21:59")
           url = "https://api.cartola.globo.com/mercado/status"
           with urllib.request.urlopen(urllib.request.Request(
                   url, headers={"User-Agent": "PortalSimonSports-GitHub/1.0"}), timeout=25) as response:
@@ -109,7 +118,7 @@ jobs:
           rodada = int(status.get("rodada_atual") or 0)
           mercado = int(status.get("status_mercado") or 0)
           if rodada < 1 or mercado != 1:
-              raise SystemExit(f"Recuperacao 20h: mercado nao aberto ou rodada invalida (rodada={rodada}, status={mercado}).")
+              ignorar(f"mercado nao aberto ou rodada invalida (rodada={rodada}, status={mercado})")
           fontes = [
               "data/times_atual_economico.json",
               "data/times_atual_intermediario.json",
@@ -119,10 +128,10 @@ jobs:
           for fonte in fontes:
               arquivo = Path(fonte)
               if not arquivo.is_file():
-                  raise SystemExit(f"Recuperacao 20h: fonte ausente: {fonte}.")
+                  ignorar(f"fonte ausente: {fonte}")
               dados = json.loads(arquivo.read_text(encoding="utf-8"))
               if int(dados.get("rodada") or 0) != rodada:
-                  raise SystemExit(f"Recuperacao 20h: fonte desatualizada: {fonte}.")
+                  ignorar(f"fonte desatualizada: {fonte}")
           payload = {
               "evento_programado": "ATUALIZACAO_20H",
               "rodada": rodada,
