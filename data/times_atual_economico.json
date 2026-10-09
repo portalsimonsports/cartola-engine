@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 30,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-10-09T14:29:49.045Z",
+  "atualizado_em": "2026-10-09T15:24:44.814Z",
   "dados": [
     {
       "RODADA": 30,
@@ -25,19 +25,8 @@
       "NOME": "Tiago Cóser",
       "CLUBE": "CFC",
       "PRECO": 3.61,
-      "EXP_SCORE": 2.383,
+      "EXP_SCORE": 2.6478,
       "ATLETA_ID": 109127
-    },
-    {
-      "RODADA": 30,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Kauan",
-      "CLUBE": "CHA",
-      "PRECO": 1.67,
-      "EXP_SCORE": 1.0638,
-      "ATLETA_ID": 130806
     },
     {
       "RODADA": 30,
@@ -49,6 +38,17 @@
       "PRECO": 7.21,
       "EXP_SCORE": 4.1063,
       "ATLETA_ID": 110750
+    },
+    {
+      "RODADA": 30,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ZAG",
+      "NOME": "Wallace",
+      "CLUBE": "GRE",
+      "PRECO": 6.68,
+      "EXP_SCORE": 4.0509,
+      "ATLETA_ID": 130307
     },
     {
       "RODADA": 30,
@@ -132,11 +132,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Abel Ferreira",
-      "CLUBE": "PAL",
-      "PRECO": 12.53,
-      "EXP_SCORE": 7.4938,
-      "ATLETA_ID": 110506
+      "NOME": "Odair Hellmann",
+      "CLUBE": "CAP",
+      "PRECO": 9.08,
+      "EXP_SCORE": 6.546,
+      "ATLETA_ID": 92273
     },
     {
       "RODADA": 30,
@@ -154,11 +154,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Kanu",
-      "CLUBE": "BAH",
-      "PRECO": 2.65,
-      "EXP_SCORE": 0.4168,
-      "ATLETA_ID": 98484
+      "NOME": "Kauan",
+      "CLUBE": "CHA",
+      "PRECO": 1.67,
+      "EXP_SCORE": 0.9251,
+      "ATLETA_ID": 130806
     },
     {
       "RODADA": 30,
@@ -168,7 +168,7 @@
       "NOME": "Giovanni Augusto",
       "CLUBE": "CHA",
       "PRECO": 4.69,
-      "EXP_SCORE": 2.6198,
+      "EXP_SCORE": 2.9108,
       "ATLETA_ID": 68938
     },
     {
