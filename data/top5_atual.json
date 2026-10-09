@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 30,
-  "atualizado_em": "2026-10-09T13:20:12.419Z",
+  "atualizado_em": "2026-10-09T14:30:14.146Z",
   "dados": [
     {
       "RODADA": 30,
@@ -31,7 +31,7 @@
       "NOME": "Weverton",
       "CLUBE": "GRE",
       "PRECO": 9.18,
-      "EXP_SCORE": 5.37,
+      "EXP_SCORE": 5.9667,
       "FACTOR": 1.155862781198271,
       "ATLETA_ID": 71631
     },
@@ -61,7 +61,7 @@
       "NOME": "Cuiabano",
       "CLUBE": "VAS",
       "PRECO": 12.84,
-      "EXP_SCORE": 5.6888,
+      "EXP_SCORE": 6.3209,
       "FACTOR": 1.1583436376844387,
       "ATLETA_ID": 116065
     },
@@ -111,7 +111,7 @@
       "NOME": "Gustavo Gómez",
       "CLUBE": "PAL",
       "PRECO": 11.14,
-      "EXP_SCORE": 5.2197,
+      "EXP_SCORE": 5.7997,
       "FACTOR": 1.1632253230281884,
       "ATLETA_ID": 71684
     },
@@ -128,22 +128,22 @@
     {
       "RODADA": 30,
       "POS": "ZAG",
-      "NOME": "Léo Pereira",
-      "CLUBE": "FLA",
-      "PRECO": 8.75,
-      "EXP_SCORE": 4.5119,
-      "FACTOR": 1.1253722547069822,
-      "ATLETA_ID": 83528
-    },
-    {
-      "RODADA": 30,
-      "POS": "ZAG",
       "NOME": "Gustavo Marques",
       "CLUBE": "RBB",
       "PRECO": 7.21,
       "EXP_SCORE": 4.1063,
       "FACTOR": 1.063150773481321,
       "ATLETA_ID": 110750
+    },
+    {
+      "RODADA": 30,
+      "POS": "ZAG",
+      "NOME": "Léo Pereira",
+      "CLUBE": "FLA",
+      "PRECO": 8.75,
+      "EXP_SCORE": 4.0608,
+      "FACTOR": 1.1253722547069822,
+      "ATLETA_ID": 83528
     },
     {
       "RODADA": 30,
@@ -178,22 +178,22 @@
     {
       "RODADA": 30,
       "POS": "MEI",
-      "NOME": "Arias",
-      "CLUBE": "PAL",
-      "PRECO": 13.74,
-      "EXP_SCORE": 5.5739,
-      "FACTOR": 1.030918848938943,
-      "ATLETA_ID": 99815
+      "NOME": "Lucas Paquetá",
+      "CLUBE": "FLA",
+      "PRECO": 13.94,
+      "EXP_SCORE": 5.4488,
+      "FACTOR": 1.1011737985460752,
+      "ATLETA_ID": 94930
     },
     {
       "RODADA": 30,
       "POS": "MEI",
-      "NOME": "Lucas Paquetá",
-      "CLUBE": "FLA",
-      "PRECO": 13.94,
-      "EXP_SCORE": 4.904,
-      "FACTOR": 1.1011737985460752,
-      "ATLETA_ID": 94930
+      "NOME": "Arias",
+      "CLUBE": "PAL",
+      "PRECO": 13.74,
+      "EXP_SCORE": 5.0166,
+      "FACTOR": 1.030918848938943,
+      "ATLETA_ID": 99815
     },
     {
       "RODADA": 30,
@@ -228,22 +228,22 @@
     {
       "RODADA": 30,
       "POS": "ATA",
+      "NOME": "Flaco López",
+      "CLUBE": "PAL",
+      "PRECO": 14.41,
+      "EXP_SCORE": 8.0028,
+      "FACTOR": 1.030918848938943,
+      "ATLETA_ID": 113103
+    },
+    {
+      "RODADA": 30,
+      "POS": "ATA",
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 15.66,
       "EXP_SCORE": 7.8073,
       "FACTOR": 1.1011737985460752,
       "ATLETA_ID": 94583
-    },
-    {
-      "RODADA": 30,
-      "POS": "ATA",
-      "NOME": "Flaco López",
-      "CLUBE": "PAL",
-      "PRECO": 14.41,
-      "EXP_SCORE": 6.959,
-      "FACTOR": 1.030918848938943,
-      "ATLETA_ID": 113103
     },
     {
       "RODADA": 30,
@@ -278,22 +278,22 @@
     {
       "RODADA": 30,
       "POS": "TEC",
-      "NOME": "Odair Hellmann",
-      "CLUBE": "CAP",
-      "PRECO": 9.08,
-      "EXP_SCORE": 6.546,
-      "FACTOR": 1.0340275135127466,
-      "ATLETA_ID": 92273
+      "NOME": "Artur Jorge",
+      "CLUBE": "CRU",
+      "PRECO": 12.31,
+      "EXP_SCORE": 6.498,
+      "FACTOR": 0.952244637562497,
+      "ATLETA_ID": 127273
     },
     {
       "RODADA": 30,
       "POS": "TEC",
-      "NOME": "Artur Jorge",
-      "CLUBE": "CRU",
-      "PRECO": 12.31,
-      "EXP_SCORE": 5.6505,
-      "FACTOR": 0.952244637562497,
-      "ATLETA_ID": 127273
+      "NOME": "Odair Hellmann",
+      "CLUBE": "CAP",
+      "PRECO": 9.08,
+      "EXP_SCORE": 5.6921,
+      "FACTOR": 1.0340275135127466,
+      "ATLETA_ID": 92273
     },
     {
       "RODADA": 30,
