@@ -16,18 +16,18 @@
       "saldo": 27
     },
     {
+      "nome": "FLU",
+      "j": 29,
+      "pts": 51,
+      "v": 14,
+      "saldo": 11
+    },
+    {
       "nome": "CAP",
       "j": 29,
       "pts": 50,
       "v": 14,
       "saldo": 11
-    },
-    {
-      "nome": "FLU",
-      "j": 29,
-      "pts": 49,
-      "v": 13,
-      "saldo": 8
     },
     {
       "nome": "CRU",
@@ -60,9 +60,9 @@
     {
       "nome": "CFC",
       "j": 29,
-      "pts": 39,
+      "pts": 38,
       "v": 10,
-      "saldo": -6
+      "saldo": -9
     },
     {
       "nome": "RBB",
@@ -165,8 +165,8 @@
       "pos": 3,
       "pts": 51,
       "v": 14,
-      "saldo": 9,
-      "gm": 45
+      "saldo": 12,
+      "gm": 48
     },
     {
       "nome": "Athletico-PR",
@@ -213,7 +213,7 @@
       "pos": 9,
       "pts": 38,
       "v": 10,
-      "saldo": -7,
+      "saldo": -10,
       "gm": 37
     },
     {
@@ -305,7 +305,7 @@
       "gm": 29
     }
   ],
-  "last_context": "classificacao_delta",
-  "updated_at": "2026-10-08T22:13:26.622940-03:00",
-  "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
+  "last_context": "classificacao_final",
+  "updated_at": "2026-10-08T23:43:21.998331-03:00",
+  "last_image": "output/classificacao_brasileirao_fechamento.png"
 }
