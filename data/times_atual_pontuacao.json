@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 30,
   "tipo": "PONTUACAO",
-  "atualizado_em": "2026-10-09T16:29:52.324Z",
+  "atualizado_em": "2026-10-09T16:49:53.160Z",
   "dados": [
     {
       "RODADA": 30,
@@ -69,19 +69,8 @@
       "NOME": "Carrascal",
       "CLUBE": "FLA",
       "PRECO": 11.99,
-      "EXP_SCORE": 6.5081,
+      "EXP_SCORE": 6.5011,
       "ATLETA_ID": 105436
-    },
-    {
-      "RODADA": 30,
-      "TIPO": "PONTUACAO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Arias",
-      "CLUBE": "PAL",
-      "PRECO": 13.74,
-      "EXP_SCORE": 5.5889,
-      "ATLETA_ID": 99815
     },
     {
       "RODADA": 30,
@@ -91,8 +80,19 @@
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 14.46,
-      "EXP_SCORE": 5.5001,
+      "EXP_SCORE": 5.6346,
       "ATLETA_ID": 96610
+    },
+    {
+      "RODADA": 30,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Arias",
+      "CLUBE": "PAL",
+      "PRECO": 13.74,
+      "EXP_SCORE": 5.5798,
+      "ATLETA_ID": 99815
     },
     {
       "RODADA": 30,
@@ -102,7 +102,7 @@
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 13.49,
-      "EXP_SCORE": 9.9227,
+      "EXP_SCORE": 9.9155,
       "ATLETA_ID": 143193
     },
     {
@@ -113,7 +113,7 @@
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 12.81,
-      "EXP_SCORE": 9.2184,
+      "EXP_SCORE": 9.2085,
       "ATLETA_ID": 98873
     },
     {
@@ -124,7 +124,7 @@
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 15.66,
-      "EXP_SCORE": 7.8212,
+      "EXP_SCORE": 7.8128,
       "ATLETA_ID": 94583
     },
     {
@@ -135,7 +135,7 @@
       "NOME": "Abel Ferreira",
       "CLUBE": "PAL",
       "PRECO": 12.53,
-      "EXP_SCORE": 7.5138,
+      "EXP_SCORE": 7.5017,
       "ATLETA_ID": 110506
     },
     {
@@ -179,7 +179,7 @@
       "NOME": "Jean Lucas",
       "CLUBE": "BAH",
       "PRECO": 9.11,
-      "EXP_SCORE": 4.0849,
+      "EXP_SCORE": 4.08,
       "ATLETA_ID": 98517
     },
     {
@@ -190,7 +190,7 @@
       "NOME": "Colidio",
       "CLUBE": "VAS",
       "PRECO": 11.51,
-      "EXP_SCORE": 6.2937,
+      "EXP_SCORE": 6.287,
       "ATLETA_ID": 114323
     }
   ]
