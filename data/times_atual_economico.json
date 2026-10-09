@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 30,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-10-09T16:04:44.841Z",
+  "atualizado_em": "2026-10-09T16:19:44.716Z",
   "dados": [
     {
       "RODADA": 30,
@@ -33,6 +33,17 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ZAG",
+      "NOME": "Thiago Santos",
+      "CLUBE": "CFC",
+      "PRECO": 4.02,
+      "EXP_SCORE": 2.9105,
+      "ATLETA_ID": 78855
+    },
+    {
+      "RODADA": 30,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ZAG",
       "NOME": "Gustavo Marques",
       "CLUBE": "RBB",
       "PRECO": 7.21,
@@ -43,22 +54,11 @@
       "RODADA": 30,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Wallace",
-      "CLUBE": "GRE",
-      "PRECO": 6.68,
-      "EXP_SCORE": 4.0509,
-      "ATLETA_ID": 130307
-    },
-    {
-      "RODADA": 30,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
       "POS": "MEI",
       "NOME": "Savarino",
       "CLUBE": "FLU",
       "PRECO": 12.44,
-      "EXP_SCORE": 4.7402,
+      "EXP_SCORE": 4.7464,
       "ATLETA_ID": 98672
     },
     {
@@ -69,7 +69,7 @@
       "NOME": "Matheuzinho",
       "CLUBE": "VIT",
       "PRECO": 9.83,
-      "EXP_SCORE": 3.88,
+      "EXP_SCORE": 3.8867,
       "ATLETA_ID": 90703
     },
     {
@@ -80,7 +80,7 @@
       "NOME": "Gustavo Henrique",
       "CLUBE": "SAN",
       "PRECO": 4.72,
-      "EXP_SCORE": 2.8148,
+      "EXP_SCORE": 2.8185,
       "ATLETA_ID": 141776
     },
     {
@@ -91,19 +91,8 @@
       "NOME": "Alan Patrick",
       "CLUBE": "INT",
       "PRECO": 9.22,
-      "EXP_SCORE": 3.9077,
+      "EXP_SCORE": 3.9121,
       "ATLETA_ID": 68685
-    },
-    {
-      "RODADA": 30,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Josué",
-      "CLUBE": "CFC",
-      "PRECO": 6.38,
-      "EXP_SCORE": 3.9581,
-      "ATLETA_ID": 84626
     },
     {
       "RODADA": 30,
@@ -113,7 +102,7 @@
       "NOME": "Fernando",
       "CLUBE": "RBB",
       "PRECO": 6.29,
-      "EXP_SCORE": 4.8329,
+      "EXP_SCORE": 4.8383,
       "ATLETA_ID": 100695
     },
     {
@@ -124,8 +113,19 @@
       "NOME": "Viveros",
       "CLUBE": "CAP",
       "PRECO": 13.49,
-      "EXP_SCORE": 9.9151,
+      "EXP_SCORE": 9.9227,
       "ATLETA_ID": 143193
+    },
+    {
+      "RODADA": 30,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Vitinho",
+      "CLUBE": "INT",
+      "PRECO": 8.6,
+      "EXP_SCORE": 5.3425,
+      "ATLETA_ID": 101960
     },
     {
       "RODADA": 30,
@@ -135,7 +135,7 @@
       "NOME": "Odair Hellmann",
       "CLUBE": "CAP",
       "PRECO": 9.08,
-      "EXP_SCORE": 6.5488,
+      "EXP_SCORE": 6.5539,
       "ATLETA_ID": 92273
     },
     {
@@ -143,11 +143,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "GOL",
-      "NOME": "Matheus Cunha",
-      "CLUBE": "INT",
-      "PRECO": 4.12,
-      "EXP_SCORE": 3.0463,
-      "ATLETA_ID": 111690
+      "NOME": "Gabriel Delfim",
+      "CLUBE": "CAM",
+      "PRECO": 3.89,
+      "EXP_SCORE": 1.8884,
+      "ATLETA_ID": 115674
     },
     {
       "RODADA": 30,
@@ -168,7 +168,7 @@
       "NOME": "Giovanni Augusto",
       "CLUBE": "CHA",
       "PRECO": 4.69,
-      "EXP_SCORE": 2.9132,
+      "EXP_SCORE": 2.9174,
       "ATLETA_ID": 68938
     },
     {
@@ -176,11 +176,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Pavón",
-      "CLUBE": "GRE",
-      "PRECO": 5.69,
-      "EXP_SCORE": 3.7111,
-      "ATLETA_ID": 91908
+      "NOME": "Marcinho",
+      "CLUBE": "CHA",
+      "PRECO": 4.66,
+      "EXP_SCORE": 3.7127,
+      "ATLETA_ID": 95332
     }
   ]
 }
