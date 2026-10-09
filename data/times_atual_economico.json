@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 30,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-10-09T13:05:22.039Z",
+  "atualizado_em": "2026-10-09T13:19:45.792Z",
   "dados": [
     {
       "RODADA": 30,
@@ -58,7 +58,7 @@
       "NOME": "Savarino",
       "CLUBE": "FLU",
       "PRECO": 12.44,
-      "EXP_SCORE": 4.1189,
+      "EXP_SCORE": 4.7367,
       "ATLETA_ID": 98672
     },
     {
@@ -69,8 +69,19 @@
       "NOME": "Matheuzinho",
       "CLUBE": "VIT",
       "PRECO": 9.83,
-      "EXP_SCORE": 3.0336,
+      "EXP_SCORE": 3.8762,
       "ATLETA_ID": 90703
+    },
+    {
+      "RODADA": 30,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Gustavo Henrique",
+      "CLUBE": "SAN",
+      "PRECO": 4.72,
+      "EXP_SCORE": 2.8127,
+      "ATLETA_ID": 141776
     },
     {
       "RODADA": 30,
@@ -87,12 +98,12 @@
       "RODADA": 30,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Josué",
-      "CLUBE": "CFC",
-      "PRECO": 6.38,
-      "EXP_SCORE": 3.9549,
-      "ATLETA_ID": 84626
+      "POS": "ATA",
+      "NOME": "Fernando",
+      "CLUBE": "RBB",
+      "PRECO": 6.29,
+      "EXP_SCORE": 4.8298,
+      "ATLETA_ID": 100695
     },
     {
       "RODADA": 30,
@@ -110,33 +121,22 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Fernando",
-      "CLUBE": "RBB",
-      "PRECO": 6.29,
-      "EXP_SCORE": 4.3468,
-      "ATLETA_ID": 100695
-    },
-    {
-      "RODADA": 30,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Samuel Lino",
-      "CLUBE": "FLA",
-      "PRECO": 12.81,
-      "EXP_SCORE": 9.202,
-      "ATLETA_ID": 98873
+      "NOME": "Vitinho",
+      "CLUBE": "INT",
+      "PRECO": 8.6,
+      "EXP_SCORE": 5.3331,
+      "ATLETA_ID": 101960
     },
     {
       "RODADA": 30,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Rafael Guanaes",
-      "CLUBE": "MIR",
-      "PRECO": 7.35,
-      "EXP_SCORE": 3.7075,
-      "ATLETA_ID": 104027
+      "NOME": "Odair Hellmann",
+      "CLUBE": "CAP",
+      "PRECO": 9.08,
+      "EXP_SCORE": 6.546,
+      "ATLETA_ID": 92273
     },
     {
       "RODADA": 30,
@@ -165,11 +165,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Reinier",
-      "CLUBE": "CAM",
-      "PRECO": 5.49,
-      "EXP_SCORE": 3.998,
-      "ATLETA_ID": 105068
+      "NOME": "Giovanni Augusto",
+      "CLUBE": "CHA",
+      "PRECO": 4.69,
+      "EXP_SCORE": 2.9108,
+      "ATLETA_ID": 68938
     },
     {
       "RODADA": 30,
