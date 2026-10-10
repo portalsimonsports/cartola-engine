@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 30,
-  "atualizado_em": "2026-10-10T04:16:29.043Z",
+  "atualizado_em": "2026-10-10T04:39:52.860Z",
   "dados": [
     {
       "RODADA": 30,
@@ -31,7 +31,7 @@
       "NOME": "Weverton",
       "CLUBE": "GRE",
       "PRECO": 9.18,
-      "EXP_SCORE": 5.9767,
+      "EXP_SCORE": 5.379,
       "FACTOR": 1.1578001235815099,
       "ATLETA_ID": 71631
     },
@@ -111,7 +111,7 @@
       "NOME": "Gustavo Gómez",
       "CLUBE": "PAL",
       "PRECO": 11.14,
-      "EXP_SCORE": 5.8089,
+      "EXP_SCORE": 5.2281,
       "FACTOR": 1.165076602881607,
       "ATLETA_ID": 71684
     },
@@ -228,22 +228,22 @@
     {
       "RODADA": 30,
       "POS": "ATA",
-      "NOME": "Flaco López",
-      "CLUBE": "PAL",
-      "PRECO": 14.41,
-      "EXP_SCORE": 8.0071,
-      "FACTOR": 1.0314702648708,
-      "ATLETA_ID": 113103
-    },
-    {
-      "RODADA": 30,
-      "POS": "ATA",
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 15.66,
       "EXP_SCORE": 7.8231,
       "FACTOR": 1.1034057689624563,
       "ATLETA_ID": 94583
+    },
+    {
+      "RODADA": 30,
+      "POS": "ATA",
+      "NOME": "Flaco López",
+      "CLUBE": "PAL",
+      "PRECO": 14.41,
+      "EXP_SCORE": 6.9627,
+      "FACTOR": 1.0314702648708,
+      "ATLETA_ID": 113103
     },
     {
       "RODADA": 30,
