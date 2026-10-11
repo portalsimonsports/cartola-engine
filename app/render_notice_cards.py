@@ -1,3 +1,5 @@
+# ARQUIVO: app/render_notice_cards.py — ATUALIZADO EM 11/10/2026 08:15 (America/Sao_Paulo)
+# Correção: is_notice_publication() ignora classificação/Live (evita 'abertura' em 'classificacao_abertura').
 from __future__ import annotations
 
 import re
@@ -36,6 +38,9 @@ def _kind(data: Dict[str, Any]) -> str:
 
 def is_notice_publication(data: Dict[str, Any]) -> bool:
     kind = _kind(data)
+    # CORREÇÃO 11/10/2026 08:15: classificação do Live não é aviso de mercado.
+    if "classificacao" in kind or kind.startswith("live_") or " live_" in kind:
+        return False
     return any(
         token in kind
         for token in (
