@@ -1,3 +1,5 @@
+# ARQUIVO: .github/workflows/gerar.resultados.yml — ATUALIZADO EM 11/10/2026 08:15 (America/Sao_Paulo)
+# Correção: ignora payloads LIVE_CLASSIFICACAO (evita card 'Mercado Aberto' no início da rodada).
 name: Gerar Resultados Live
 
 on:
@@ -21,6 +23,17 @@ concurrency:
 
 jobs:
   gerar-resultados-live:
+    # CORREÇÃO 11/10/2026 08:15 — a classificação do Live (LIVE_CLASSIFICACAO) tem workflow próprio
+    # (publicar.classificacao.live.brasileirao.yml). Sem este filtro, este workflow também recebia
+    # o payload e o card de 'classificacao_abertura' saía como 'ABERTURA DA RODADA / MERCADO ABERTO'.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (
+        github.event.client_payload.payload.evento_programado != 'LIVE_CLASSIFICACAO' &&
+        github.event.client_payload.evento_programado != 'LIVE_CLASSIFICACAO' &&
+        github.event.client_payload.payload.tipo_publicacao != 'live_classificacao' &&
+        github.event.client_payload.tipo_publicacao != 'live_classificacao'
+      )
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
