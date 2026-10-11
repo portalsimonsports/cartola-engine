@@ -1,3 +1,5 @@
+# ARQUIVO: app/render_aprovadas_v1.py — ATUALIZADO EM 11/10/2026 08:15 (America/Sao_Paulo)
+# Correção: event_name() não classifica publicações do Live/classificação como ABERTURA (Mercado Aberto).
 from __future__ import annotations
 
 import math
@@ -53,7 +55,14 @@ def event_name(data: Dict[str, Any]) -> str:
         ("MERCADO_FECHADO", ("MERCADO_FECHADO", "MERCADO_ENCERRADO")),
         ("ABERTURA", ("ABERTURA", "MERCADO_ABERTO")),
     )
+    # CORREÇÃO 11/10/2026 08:15: 'ABERTURA' aqui significa SOMENTE a abertura do mercado.
+    # Publicações do Live (classificação, abertura do Live, etc.) também contêm a palavra
+    # ABERTURA e não podem cair no card 'Mercado Aberto'.
+    live_markers = ("LIVE_", "CLASSIFICACAO", "ABERTURA_DIA", "ABERTURA_DO_LIVE")
+    is_live_publication = any(marker in joined for marker in live_markers)
     for canonical, tokens in aliases:
+        if canonical == "ABERTURA" and is_live_publication:
+            continue
         if any(token in joined for token in tokens):
             return canonical
     return _norm(data.get("evento_programado"))
