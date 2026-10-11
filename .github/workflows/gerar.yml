@@ -1,3 +1,5 @@
+# ARQUIVO: .github/workflows/gerar.yml — 11-10-2026 09h00
+# CORREÇÃO: step 'Registrar pacote' agora commita também os PNGs (output/*.png) usados pelos vídeos
 name: Gerar Times e Top5
 
 on:
@@ -375,34 +377,40 @@ jobs:
 
           tmp_dir="$(mktemp -d)"
           marker_tmp="$tmp_dir/marker.json"
-          mkdir -p "$tmp_dir/publicacoes_atuais"
+          mkdir -p "$tmp_dir/publicacoes_atuais" "$tmp_dir/output"
 
           printf '{\n  "status": "PUBLICADO_COM_SUCESSO",\n  "evento_programado": "%s",\n  "rodada": %s,\n  "publicador": "%s",\n  "componente_disparador": "%s",\n  "github_run_id": "%s",\n  "registrado_em": "%s"\n}\n' \
             "$EVENTO" "$RODADA" "$PUBLICADOR" "$COMPONENTE" "${{ github.run_id }}" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$marker_tmp"
 
           # Preservar os snapshots gerados ANTES do reset do repositório.
           # Esses arquivos alimentam os workflows de análise em vídeo.
+          # CORREÇÃO: guarda o JSON E a imagem (PNG) de cada snapshot. Os workflows de vídeo
+          # recuperam a imagem do commit histórico do snapshot; sem o PNG no commit eles falham
+          # com "Imagem histórica não encontrada" e o vídeo nunca é publicado.
+          guardar_snapshot() {
+            nome="$1"
+            if [ -f "data/publicacoes_atuais/${nome}.json" ]; then
+              cp "data/publicacoes_atuais/${nome}.json" "$tmp_dir/publicacoes_atuais/"
+            fi
+            if [ -f "output/${nome}.png" ]; then
+              cp "output/${nome}.png" "$tmp_dir/output/"
+            fi
+          }
+
           case "$EVENTO" in
             PRE_FECHAMENTO_TIMES)
-              for f in \
-                "data/publicacoes_atuais/time_economico_rodada_${RODADA}.json" \
-                "data/publicacoes_atuais/time_intermediario_rodada_${RODADA}.json" \
-                "data/publicacoes_atuais/time_pontuacao_rodada_${RODADA}.json"; do
-                [ -f "$f" ] && cp "$f" "$tmp_dir/publicacoes_atuais/"
-              done
+              guardar_snapshot "time_economico_rodada_${RODADA}"
+              guardar_snapshot "time_intermediario_rodada_${RODADA}"
+              guardar_snapshot "time_pontuacao_rodada_${RODADA}"
               ;;
             PRE_FECHAMENTO_TOP5)
-              f="data/publicacoes_atuais/top5_rodada_${RODADA}.json"
-              [ -f "$f" ] && cp "$f" "$tmp_dir/publicacoes_atuais/"
+              guardar_snapshot "top5_rodada_${RODADA}"
               ;;
             *)
-              for f in \
-                "data/publicacoes_atuais/time_economico_rodada_${RODADA}.json" \
-                "data/publicacoes_atuais/time_intermediario_rodada_${RODADA}.json" \
-                "data/publicacoes_atuais/time_pontuacao_rodada_${RODADA}.json" \
-                "data/publicacoes_atuais/top5_rodada_${RODADA}.json"; do
-                [ -f "$f" ] && cp "$f" "$tmp_dir/publicacoes_atuais/"
-              done
+              guardar_snapshot "time_economico_rodada_${RODADA}"
+              guardar_snapshot "time_intermediario_rodada_${RODADA}"
+              guardar_snapshot "time_pontuacao_rodada_${RODADA}"
+              guardar_snapshot "top5_rodada_${RODADA}"
               ;;
           esac
 
@@ -422,8 +430,15 @@ jobs:
             mkdir -p "$(dirname "$MARKER")" data/publicacoes_atuais
             cp "$marker_tmp" "$MARKER"
             cp "$tmp_dir"/publicacoes_atuais/*.json data/publicacoes_atuais/ 2>/dev/null || true
+            mkdir -p output
+            cp "$tmp_dir"/output/*.png output/ 2>/dev/null || true
 
             git add "$MARKER" data/publicacoes_atuais/*.json 2>/dev/null || true
+            for png in "$tmp_dir"/output/*.png; do
+              if [ -f "$png" ]; then
+                git add -f "output/$(basename "$png")"
+              fi
+            done
 
             if git diff --cached --quiet; then
               echo "Nada novo para registrar."
@@ -448,4 +463,4 @@ jobs:
             exit 1
           fi
 
-          echo "Pacote enviado ao Telegram e snapshots persistidos para análises em vídeo."
+          echo "Pacote enviado ao Telegram; snapshots (JSON + imagens) persistidos para análises em vídeo."
