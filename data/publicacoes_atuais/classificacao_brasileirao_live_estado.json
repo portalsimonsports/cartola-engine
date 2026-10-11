@@ -58,13 +58,6 @@
       "saldo": 2
     },
     {
-      "nome": "SAO",
-      "j": 30,
-      "pts": 39,
-      "v": 11,
-      "saldo": 0
-    },
-    {
       "nome": "CFC",
       "j": 29,
       "pts": 38,
@@ -79,11 +72,18 @@
       "saldo": 1
     },
     {
+      "nome": "SAO",
+      "j": 30,
+      "pts": 37,
+      "v": 10,
+      "saldo": -1
+    },
+    {
       "nome": "VIT",
       "j": 30,
-      "pts": 36,
+      "pts": 37,
       "v": 10,
-      "saldo": -11
+      "saldo": -10
     },
     {
       "nome": "BOT",
@@ -209,8 +209,16 @@
       "gm": 45
     },
     {
-      "nome": "Coritiba",
+      "nome": "SÃO PAULO",
       "pos": 9,
+      "pts": 39,
+      "v": 11,
+      "saldo": 0,
+      "gm": 35
+    },
+    {
+      "nome": "Coritiba",
+      "pos": 10,
       "pts": 38,
       "v": 10,
       "saldo": -10,
@@ -218,26 +226,18 @@
     },
     {
       "nome": "RB Bragantino",
-      "pos": 10,
+      "pos": 11,
       "pts": 37,
       "v": 10,
       "saldo": 1,
       "gm": 34
     },
     {
-      "nome": "SÃO PAULO",
-      "pos": 11,
-      "pts": 37,
-      "v": 10,
-      "saldo": -1,
-      "gm": 34
-    },
-    {
       "nome": "VITÓRIA",
       "pos": 12,
-      "pts": 37,
+      "pts": 36,
       "v": 10,
-      "saldo": -10,
+      "saldo": -11,
       "gm": 33
     },
     {
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-10-10T21:53:25.181990-03:00",
+  "updated_at": "2026-10-10T22:43:16.848964-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
