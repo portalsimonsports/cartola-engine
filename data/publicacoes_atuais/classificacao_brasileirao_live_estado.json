@@ -257,16 +257,8 @@
       "gm": 36
     },
     {
-      "nome": "Internacional",
-      "pos": 15,
-      "pts": 34,
-      "v": 8,
-      "saldo": -4,
-      "gm": 33
-    },
-    {
       "nome": "Mirassol",
-      "pos": 16,
+      "pos": 15,
       "pts": 33,
       "v": 8,
       "saldo": -9,
@@ -274,19 +266,27 @@
     },
     {
       "nome": "Corinthians",
-      "pos": 17,
+      "pos": 16,
       "pts": 32,
       "v": 8,
       "saldo": -8,
       "gm": 30
     },
     {
+      "nome": "Internacional",
+      "pos": 17,
+      "pts": 32,
+      "v": 7,
+      "saldo": -5,
+      "gm": 33
+    },
+    {
       "nome": "GRÊMIO",
       "pos": 18,
-      "pts": 30,
+      "pts": 31,
       "v": 7,
-      "saldo": -9,
-      "gm": 31
+      "saldo": -8,
+      "gm": 32
     },
     {
       "nome": "Remo",
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-10-11T19:08:18.918232-03:00",
+  "updated_at": "2026-10-11T19:23:19.536452-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
