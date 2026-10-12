@@ -209,20 +209,20 @@
       "gm": 46
     },
     {
-      "nome": "SÃO PAULO",
+      "nome": "Coritiba",
       "pos": 9,
+      "pts": 41,
+      "v": 11,
+      "saldo": -9,
+      "gm": 38
+    },
+    {
+      "nome": "SÃO PAULO",
+      "pos": 10,
       "pts": 39,
       "v": 11,
       "saldo": 0,
       "gm": 35
-    },
-    {
-      "nome": "Coritiba",
-      "pos": 10,
-      "pts": 39,
-      "v": 10,
-      "saldo": -10,
-      "gm": 37
     },
     {
       "nome": "RB Bragantino",
@@ -243,9 +243,9 @@
     {
       "nome": "Botafogo",
       "pos": 13,
-      "pts": 36,
+      "pts": 35,
       "v": 9,
-      "saldo": -5,
+      "saldo": -6,
       "gm": 42
     },
     {
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-10-12T16:13:29.807125-03:00",
+  "updated_at": "2026-10-12T16:33:22.972663-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
