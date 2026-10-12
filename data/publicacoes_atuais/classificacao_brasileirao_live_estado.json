@@ -3,24 +3,24 @@
   "base_signature": [
     {
       "nome": "FLA",
-      "j": 29,
-      "pts": 61,
-      "v": 18,
-      "saldo": 32
+      "j": 30,
+      "pts": 64,
+      "v": 19,
+      "saldo": 33
     },
     {
       "nome": "PAL",
-      "j": 29,
-      "pts": 60,
-      "v": 17,
-      "saldo": 27
+      "j": 30,
+      "pts": 63,
+      "v": 18,
+      "saldo": 30
     },
     {
       "nome": "FLU",
-      "j": 29,
+      "j": 30,
       "pts": 51,
       "v": 14,
-      "saldo": 12
+      "saldo": 11
     },
     {
       "nome": "CAP",
@@ -30,6 +30,13 @@
       "saldo": 11
     },
     {
+      "nome": "BAH",
+      "j": 30,
+      "pts": 49,
+      "v": 13,
+      "saldo": 8
+    },
+    {
       "nome": "CRU",
       "j": 29,
       "pts": 48,
@@ -37,25 +44,18 @@
       "saldo": 4
     },
     {
-      "nome": "BAH",
-      "j": 29,
-      "pts": 46,
-      "v": 12,
-      "saldo": 7
-    },
-    {
       "nome": "CAM",
-      "j": 29,
-      "pts": 44,
-      "v": 12,
-      "saldo": 5
+      "j": 30,
+      "pts": 47,
+      "v": 13,
+      "saldo": 6
     },
     {
       "nome": "SAN",
-      "j": 29,
+      "j": 30,
       "pts": 42,
       "v": 11,
-      "saldo": 2
+      "saldo": 1
     },
     {
       "nome": "SAO",
@@ -101,29 +101,29 @@
     },
     {
       "nome": "MIR",
-      "j": 29,
+      "j": 30,
       "pts": 33,
       "v": 8,
-      "saldo": -9
+      "saldo": -10
     },
     {
       "nome": "COR",
-      "j": 29,
+      "j": 30,
       "pts": 32,
       "v": 8,
-      "saldo": -4
+      "saldo": -7
     },
     {
       "nome": "INT",
-      "j": 29,
-      "pts": 31,
+      "j": 30,
+      "pts": 32,
       "v": 7,
       "saldo": -5
     },
     {
       "nome": "GRE",
-      "j": 29,
-      "pts": 30,
+      "j": 30,
+      "pts": 31,
       "v": 7,
       "saldo": -8
     },
@@ -157,7 +157,7 @@
       "pos": 2,
       "pts": 63,
       "v": 18,
-      "saldo": 31,
+      "saldo": 30,
       "gm": 52
     },
     {
@@ -177,8 +177,16 @@
       "gm": 45
     },
     {
-      "nome": "Cruzeiro",
+      "nome": "Bahia",
       "pos": 5,
+      "pts": 49,
+      "v": 13,
+      "saldo": 8,
+      "gm": 44
+    },
+    {
+      "nome": "Cruzeiro",
+      "pos": 6,
       "pts": 48,
       "v": 14,
       "saldo": 4,
@@ -186,19 +194,11 @@
     },
     {
       "nome": "ATLÉTICO-MG",
-      "pos": 6,
+      "pos": 7,
       "pts": 47,
       "v": 13,
       "saldo": 6,
       "gm": 41
-    },
-    {
-      "nome": "Bahia",
-      "pos": 7,
-      "pts": 46,
-      "v": 12,
-      "saldo": 7,
-      "gm": 43
     },
     {
       "nome": "Santos",
@@ -261,7 +261,7 @@
       "pos": 15,
       "pts": 33,
       "v": 8,
-      "saldo": -9,
+      "saldo": -10,
       "gm": 34
     },
     {
@@ -269,8 +269,8 @@
       "pos": 16,
       "pts": 32,
       "v": 8,
-      "saldo": -8,
-      "gm": 30
+      "saldo": -7,
+      "gm": 31
     },
     {
       "nome": "Internacional",
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-10-11T19:23:19.536452-03:00",
+  "updated_at": "2026-10-11T21:53:25.473760-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
