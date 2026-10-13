@@ -135,6 +135,18 @@ def publicar(item: Dict[str, Any], force: bool = False) -> bool:
 def registrar_processamento(rodada: int, elegiveis: List[Dict[str, Any]]) -> None:
     path = Path("data/flags") / f"mitou_rodada_{rodada}.processado.json"
     path.parent.mkdir(parents=True, exist_ok=True)
+    if path.exists():
+        try:
+            anterior = json.loads(path.read_text(encoding="utf-8"))
+            anteriores = anterior.get("times", [])
+            atuais = [
+                {"tipo": _tipo_simples(x["tipo"]), "pontos": round(float(x["pontos"]), 2)}
+                for x in elegiveis
+            ]
+            if anteriores == atuais and anterior.get("status") == ("ELEGIVEIS_ENCONTRADOS" if elegiveis else "SEM_TIMES_ELEGIVEIS"):
+                return
+        except (ValueError, OSError, TypeError):
+            pass
     path.write_text(json.dumps({
         "status": "ELEGIVEIS_ENCONTRADOS" if elegiveis else "SEM_TIMES_ELEGIVEIS",
         "rodada": rodada,
