@@ -147,7 +147,11 @@ jobs:
           set -e
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A -- data/flags/mitou_rodada_*.publicado.json data/flags/mitou_rodada_*.processado.json output/mitou_na_rodada_*.png data/flags/selecao_fantastica_rodada_*.publicado.json output/selecao_fantastica_rodada_*.png 2>/dev/null || true
+          for arquivo in data/flags/mitou_rodada_*.publicado.json data/flags/mitou_rodada_*.processado.json output/mitou_na_rodada_*.png data/flags/selecao_fantastica_rodada_*.publicado.json output/selecao_fantastica_rodada_*.png; do
+            if [ -f "$arquivo" ]; then
+              git add -- "$arquivo"
+            fi
+          done
           if git diff --cached --quiet; then
             echo 'Nenhum card/flag Mitou novo para registrar.'
             exit 0
