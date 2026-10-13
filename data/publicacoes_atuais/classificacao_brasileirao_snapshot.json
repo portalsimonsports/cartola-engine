@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-11T21:25:21.743719-03:00",
+  "updated_at": "2026-10-13T00:28:55.072489-03:00",
   "last_publication_mode": "apos_jogos",
   "signature": [
     {
@@ -17,16 +17,16 @@
       "saldo": 30
     },
     {
-      "nome": "FLU",
+      "nome": "CAP",
       "pos": 3,
-      "pts": 51,
-      "v": 14,
-      "saldo": 11
+      "pts": 53,
+      "v": 15,
+      "saldo": 14
     },
     {
-      "nome": "CAP",
+      "nome": "FLU",
       "pos": 4,
-      "pts": 50,
+      "pts": 51,
       "v": 14,
       "saldo": 11
     },
@@ -42,7 +42,7 @@
       "pos": 6,
       "pts": 48,
       "v": 14,
-      "saldo": 4
+      "saldo": 2
     },
     {
       "nome": "CAM",
@@ -59,25 +59,25 @@
       "saldo": 1
     },
     {
-      "nome": "SAO",
+      "nome": "RBB",
       "pos": 9,
+      "pts": 40,
+      "v": 11,
+      "saldo": 3
+    },
+    {
+      "nome": "SAO",
+      "pos": 10,
       "pts": 39,
       "v": 11,
       "saldo": 0
     },
     {
       "nome": "CFC",
-      "pos": 10,
-      "pts": 38,
+      "pos": 11,
+      "pts": 39,
       "v": 10,
       "saldo": -10
-    },
-    {
-      "nome": "RBB",
-      "pos": 11,
-      "pts": 37,
-      "v": 10,
-      "saldo": 1
     },
     {
       "nome": "VIT",
@@ -89,7 +89,7 @@
     {
       "nome": "BOT",
       "pos": 13,
-      "pts": 35,
+      "pts": 36,
       "v": 9,
       "saldo": -5
     },
@@ -140,21 +140,21 @@
       "pos": 20,
       "pts": 18,
       "v": 3,
-      "saldo": -28
+      "saldo": -31
     }
   ],
   "positions": {
     "FLA": 1,
     "PAL": 2,
-    "FLU": 3,
-    "CAP": 4,
+    "CAP": 3,
+    "FLU": 4,
     "BAH": 5,
     "CRU": 6,
     "CAM": 7,
     "SAN": 8,
-    "SAO": 9,
-    "CFC": 10,
-    "RBB": 11,
+    "RBB": 9,
+    "SAO": 10,
+    "CFC": 11,
     "VIT": 12,
     "BOT": 13,
     "VAS": 14,
