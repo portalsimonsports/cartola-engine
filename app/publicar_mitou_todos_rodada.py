@@ -136,7 +136,7 @@ def registrar_processamento(rodada: int, elegiveis: List[Dict[str, Any]]) -> Non
     path = Path("data/flags") / f"mitou_rodada_{rodada}.processado.json"
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps({
-        "status": "PUBLICADO_COM_SUCESSO",
+        "status": "ELEGIVEIS_ENCONTRADOS" if elegiveis else "SEM_TIMES_ELEGIVEIS",
         "rodada": rodada,
         "limite": LIMITE,
         "quantidade_mitou": len(elegiveis),
