@@ -73,6 +73,9 @@ jobs:
           elif [ "$EVENT_NAME" = "workflow_dispatch" ]; then
             echo "retroativo=${MANUAL_RETRO:-false}" >> "$GITHUB_OUTPUT"
             echo "rodada=${MANUAL_RODADA:-0}" >> "$GITHUB_OUTPUT"
+          elif [ "$EVENT_NAME" = "schedule" ]; then
+            echo 'retroativo=true' >> "$GITHUB_OUTPUT"
+            echo 'rodada=0' >> "$GITHUB_OUTPUT"
           else
             echo 'retroativo=false' >> "$GITHUB_OUTPUT"
             echo 'rodada=0' >> "$GITHUB_OUTPUT"
@@ -80,7 +83,7 @@ jobs:
 
       - name: Descobrir rodada anterior na abertura
         id: rodada_auto
-        if: steps.modo.outputs.retroativo != 'true' && steps.modo.outputs.rodada == '0'
+        if: steps.modo.outputs.retroativo != 'true' && steps.modo.outputs.rodada == '0' && github.event_name != 'schedule'
         run: |
           set -e
           python - <<'PY'
@@ -129,7 +132,7 @@ jobs:
           set -e
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/flags/mitou_rodada_*.publicado.json data/flags/mitou_rodada_*.processado.json output/mitou_na_rodada_*.png 2>/dev/null || true
+          git add -A -- data/flags/mitou_rodada_*.publicado.json data/flags/mitou_rodada_*.processado.json output/mitou_na_rodada_*.png 2>/dev/null || true
           if git diff --cached --quiet; then
             echo 'Nenhum card/flag Mitou novo para registrar.'
             exit 0
