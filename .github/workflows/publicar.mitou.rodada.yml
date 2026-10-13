@@ -58,6 +58,7 @@ jobs:
           pip install --upgrade pillow
           python -m py_compile app/publicar_mitou_rodada.py
           python -m py_compile app/publicar_mitou_todos_rodada.py
+          python -m py_compile app/publicar_selecao_fantastica.py
 
       - name: Resolver modo de execução
         id: modo
@@ -126,13 +127,27 @@ jobs:
             echo 'Sem rodada elegível para processar.'
           fi
 
+      - name: Publicar Seleção Fantástica quando a rodada estiver encerrada
+        env:
+          PLANILHA_ID: '1-A7w4kkE28iHRd61yiSoNOvSekrmmADzHxGCRDVrICI'
+          TELEGRAM_PLANILHA_ID: ${{ secrets.PLANILHA_ID }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_APPLICATION_CREDENTIALS: service_account.json
+          ABA_TELEGRAM: ${{ secrets.ABA_TELEGRAM }}
+          CONTA_TELEGRAM: ${{ secrets.CONTA_TELEGRAM }}
+          TELEGRAM_CHAT_FALLBACK: '@dicascartolaportalsimonsports'
+        run: |
+          set -e
+          export PYTHONPATH="$PWD/app:${PYTHONPATH:-}"
+          python app/publicar_selecao_fantastica.py
+
       - name: Registrar imagens e flags
         if: success()
         run: |
           set -e
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A -- data/flags/mitou_rodada_*.publicado.json data/flags/mitou_rodada_*.processado.json output/mitou_na_rodada_*.png 2>/dev/null || true
+          git add -A -- data/flags/mitou_rodada_*.publicado.json data/flags/mitou_rodada_*.processado.json output/mitou_na_rodada_*.png data/flags/selecao_fantastica_rodada_*.publicado.json output/selecao_fantastica_rodada_*.png 2>/dev/null || true
           if git diff --cached --quiet; then
             echo 'Nenhum card/flag Mitou novo para registrar.'
             exit 0
