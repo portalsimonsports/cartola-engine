@@ -4,7 +4,7 @@
   "tipo_publicacao": "time_intermediario",
   "rodada": 31,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-10-15T22:59:50.981Z",
+  "atualizado_em": "2026-10-16T22:49:51.009Z",
   "dados": [
     {
       "rodada": 31,
@@ -14,7 +14,7 @@
       "nome": "Ronaldo",
       "clube": "BAH",
       "preco": 8.68,
-      "exp_score": 5.9589,
+      "exp_score": 5.9674,
       "atleta_id": 91101
     },
     {
@@ -25,7 +25,7 @@
       "nome": "Luciano Juba",
       "clube": "BAH",
       "preco": 12.32,
-      "exp_score": 6.228,
+      "exp_score": 6.2369,
       "atleta_id": 107093
     },
     {
@@ -33,11 +33,11 @@
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
       "pos": "LAT",
-      "nome": "Cuiabano",
-      "clube": "VAS",
-      "preco": 13.02,
-      "exp_score": 6.0061,
-      "atleta_id": 116065
+      "nome": "Matheus Bidu",
+      "clube": "COR",
+      "preco": 11.21,
+      "exp_score": 5.6979,
+      "atleta_id": 105531
     },
     {
       "rodada": 31,
@@ -47,7 +47,7 @@
       "nome": "Alexander Barboza",
       "clube": "PAL",
       "preco": 11.4,
-      "exp_score": 5.2565,
+      "exp_score": 5.2623,
       "atleta_id": 99274
     },
     {
@@ -58,8 +58,19 @@
       "nome": "Gustavo Henrique",
       "clube": "COR",
       "preco": 9.04,
-      "exp_score": 4.2098,
+      "exp_score": 4.1758,
       "atleta_id": 78248
+    },
+    {
+      "rodada": 31,
+      "tipo": "INTERMEDIARIO",
+      "status": "TITULAR",
+      "pos": "ZAG",
+      "nome": "David Duarte",
+      "clube": "BAH",
+      "preco": 6.72,
+      "exp_score": 3.9093,
+      "atleta_id": 91772
     },
     {
       "rodada": 31,
@@ -69,19 +80,8 @@
       "nome": "Neymar",
       "clube": "SAN",
       "preco": 20.23,
-      "exp_score": 6.8782,
+      "exp_score": 6.7274,
       "atleta_id": 63007
-    },
-    {
-      "rodada": 31,
-      "tipo": "INTERMEDIARIO",
-      "status": "TITULAR",
-      "pos": "MEI",
-      "nome": "Carrascal",
-      "clube": "FLA",
-      "preco": 12.15,
-      "exp_score": 6.5402,
-      "atleta_id": 105436
     },
     {
       "rodada": 31,
@@ -91,8 +91,19 @@
       "nome": "Matheus Pereira",
       "clube": "CRU",
       "preco": 14.48,
-      "exp_score": 6.5209,
+      "exp_score": 6.4867,
       "atleta_id": 96610
+    },
+    {
+      "rodada": 31,
+      "tipo": "INTERMEDIARIO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Danilo",
+      "clube": "BOT",
+      "preco": 14.18,
+      "exp_score": 6.3891,
+      "atleta_id": 107231
     },
     {
       "rodada": 31,
@@ -102,7 +113,7 @@
       "nome": "Viveros",
       "clube": "CAP",
       "preco": 14.96,
-      "exp_score": 10.7882,
+      "exp_score": 10.7662,
       "atleta_id": 143193
     },
     {
@@ -110,22 +121,11 @@
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
       "pos": "ATA",
-      "nome": "Samuel Lino",
-      "clube": "FLA",
-      "preco": 12.28,
-      "exp_score": 7.7969,
-      "atleta_id": 98873
-    },
-    {
-      "rodada": 31,
-      "tipo": "INTERMEDIARIO",
-      "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Soteldo",
+      "nome": "Serna",
       "clube": "FLU",
-      "preco": 3.9,
-      "exp_score": 2.0733,
-      "atleta_id": 87258
+      "preco": 6.47,
+      "exp_score": 5.2012,
+      "atleta_id": 132071
     },
     {
       "rodada": 31,
@@ -135,7 +135,7 @@
       "nome": "Fernando Seabra",
       "clube": "CFC",
       "preco": 7.56,
-      "exp_score": 4.4594,
+      "exp_score": 4.6491,
       "atleta_id": 126977
     },
     {
@@ -146,7 +146,7 @@
       "nome": "Weverton",
       "clube": "GRE",
       "preco": 8.16,
-      "exp_score": 5.6876,
+      "exp_score": 5.6935,
       "atleta_id": 71631
     },
     {
@@ -154,44 +154,44 @@
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "LAT",
-      "nome": "Matheus Bidu",
+      "nome": "Matheuzinho",
       "clube": "COR",
-      "preco": 11.21,
-      "exp_score": 5.7444,
-      "atleta_id": 105531
+      "preco": 10.46,
+      "exp_score": 5.1421,
+      "atleta_id": 101727
     },
     {
       "rodada": 31,
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "ZAG",
-      "nome": "David Duarte",
-      "clube": "BAH",
-      "preco": 6.72,
-      "exp_score": 3.9037,
-      "atleta_id": 91772
+      "nome": "Marllon",
+      "clube": "REM",
+      "preco": 6.35,
+      "exp_score": 3.8615,
+      "atleta_id": 70666
     },
     {
       "rodada": 31,
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "MEI",
-      "nome": "Jean Lucas",
-      "clube": "BAH",
-      "preco": 10.19,
-      "exp_score": 5.2689,
-      "atleta_id": 98517
+      "nome": "Carrascal",
+      "clube": "FLA",
+      "preco": 12.15,
+      "exp_score": 6.1031,
+      "atleta_id": 105436
     },
     {
       "rodada": 31,
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "ATA",
-      "nome": "Galeano",
-      "clube": "REM",
-      "preco": 4.26,
-      "exp_score": 1.5054,
-      "atleta_id": 108713
+      "nome": "Arroyo",
+      "clube": "CRU",
+      "preco": 5.88,
+      "exp_score": 3.6543,
+      "atleta_id": 132264
     }
   ],
   "modelo": "INTERMEDIARIO",
@@ -206,7 +206,7 @@
       "nome": "Ronaldo",
       "clube": "BAH",
       "preco": 8.68,
-      "exp_score": 5.9589,
+      "exp_score": 5.9674,
       "atleta_id": 91101
     },
     {
@@ -217,7 +217,7 @@
       "nome": "Luciano Juba",
       "clube": "BAH",
       "preco": 12.32,
-      "exp_score": 6.228,
+      "exp_score": 6.2369,
       "atleta_id": 107093
     },
     {
@@ -225,11 +225,11 @@
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
       "pos": "LAT",
-      "nome": "Cuiabano",
-      "clube": "VAS",
-      "preco": 13.02,
-      "exp_score": 6.0061,
-      "atleta_id": 116065
+      "nome": "Matheus Bidu",
+      "clube": "COR",
+      "preco": 11.21,
+      "exp_score": 5.6979,
+      "atleta_id": 105531
     },
     {
       "rodada": 31,
@@ -239,7 +239,7 @@
       "nome": "Alexander Barboza",
       "clube": "PAL",
       "preco": 11.4,
-      "exp_score": 5.2565,
+      "exp_score": 5.2623,
       "atleta_id": 99274
     },
     {
@@ -250,8 +250,19 @@
       "nome": "Gustavo Henrique",
       "clube": "COR",
       "preco": 9.04,
-      "exp_score": 4.2098,
+      "exp_score": 4.1758,
       "atleta_id": 78248
+    },
+    {
+      "rodada": 31,
+      "tipo": "INTERMEDIARIO",
+      "status": "TITULAR",
+      "pos": "ZAG",
+      "nome": "David Duarte",
+      "clube": "BAH",
+      "preco": 6.72,
+      "exp_score": 3.9093,
+      "atleta_id": 91772
     },
     {
       "rodada": 31,
@@ -261,19 +272,8 @@
       "nome": "Neymar",
       "clube": "SAN",
       "preco": 20.23,
-      "exp_score": 6.8782,
+      "exp_score": 6.7274,
       "atleta_id": 63007
-    },
-    {
-      "rodada": 31,
-      "tipo": "INTERMEDIARIO",
-      "status": "TITULAR",
-      "pos": "MEI",
-      "nome": "Carrascal",
-      "clube": "FLA",
-      "preco": 12.15,
-      "exp_score": 6.5402,
-      "atleta_id": 105436
     },
     {
       "rodada": 31,
@@ -283,8 +283,19 @@
       "nome": "Matheus Pereira",
       "clube": "CRU",
       "preco": 14.48,
-      "exp_score": 6.5209,
+      "exp_score": 6.4867,
       "atleta_id": 96610
+    },
+    {
+      "rodada": 31,
+      "tipo": "INTERMEDIARIO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Danilo",
+      "clube": "BOT",
+      "preco": 14.18,
+      "exp_score": 6.3891,
+      "atleta_id": 107231
     },
     {
       "rodada": 31,
@@ -294,7 +305,7 @@
       "nome": "Viveros",
       "clube": "CAP",
       "preco": 14.96,
-      "exp_score": 10.7882,
+      "exp_score": 10.7662,
       "atleta_id": 143193
     },
     {
@@ -302,22 +313,11 @@
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
       "pos": "ATA",
-      "nome": "Samuel Lino",
-      "clube": "FLA",
-      "preco": 12.28,
-      "exp_score": 7.7969,
-      "atleta_id": 98873
-    },
-    {
-      "rodada": 31,
-      "tipo": "INTERMEDIARIO",
-      "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Soteldo",
+      "nome": "Serna",
       "clube": "FLU",
-      "preco": 3.9,
-      "exp_score": 2.0733,
-      "atleta_id": 87258
+      "preco": 6.47,
+      "exp_score": 5.2012,
+      "atleta_id": 132071
     },
     {
       "rodada": 31,
@@ -327,7 +327,7 @@
       "nome": "Fernando Seabra",
       "clube": "CFC",
       "preco": 7.56,
-      "exp_score": 4.4594,
+      "exp_score": 4.6491,
       "atleta_id": 126977
     },
     {
@@ -338,7 +338,7 @@
       "nome": "Weverton",
       "clube": "GRE",
       "preco": 8.16,
-      "exp_score": 5.6876,
+      "exp_score": 5.6935,
       "atleta_id": 71631
     },
     {
@@ -346,44 +346,44 @@
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "LAT",
-      "nome": "Matheus Bidu",
+      "nome": "Matheuzinho",
       "clube": "COR",
-      "preco": 11.21,
-      "exp_score": 5.7444,
-      "atleta_id": 105531
+      "preco": 10.46,
+      "exp_score": 5.1421,
+      "atleta_id": 101727
     },
     {
       "rodada": 31,
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "ZAG",
-      "nome": "David Duarte",
-      "clube": "BAH",
-      "preco": 6.72,
-      "exp_score": 3.9037,
-      "atleta_id": 91772
+      "nome": "Marllon",
+      "clube": "REM",
+      "preco": 6.35,
+      "exp_score": 3.8615,
+      "atleta_id": 70666
     },
     {
       "rodada": 31,
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "MEI",
-      "nome": "Jean Lucas",
-      "clube": "BAH",
-      "preco": 10.19,
-      "exp_score": 5.2689,
-      "atleta_id": 98517
+      "nome": "Carrascal",
+      "clube": "FLA",
+      "preco": 12.15,
+      "exp_score": 6.1031,
+      "atleta_id": 105436
     },
     {
       "rodada": 31,
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "ATA",
-      "nome": "Galeano",
-      "clube": "REM",
-      "preco": 4.26,
-      "exp_score": 1.5054,
-      "atleta_id": 108713
+      "nome": "Arroyo",
+      "clube": "CRU",
+      "preco": 5.88,
+      "exp_score": 3.6543,
+      "atleta_id": 132264
     }
   ],
   "jogadores": [
@@ -395,7 +395,7 @@
       "nome": "Ronaldo",
       "clube": "BAH",
       "preco": 8.68,
-      "exp_score": 5.9589,
+      "exp_score": 5.9674,
       "atleta_id": 91101
     },
     {
@@ -406,7 +406,7 @@
       "nome": "Luciano Juba",
       "clube": "BAH",
       "preco": 12.32,
-      "exp_score": 6.228,
+      "exp_score": 6.2369,
       "atleta_id": 107093
     },
     {
@@ -414,11 +414,11 @@
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
       "pos": "LAT",
-      "nome": "Cuiabano",
-      "clube": "VAS",
-      "preco": 13.02,
-      "exp_score": 6.0061,
-      "atleta_id": 116065
+      "nome": "Matheus Bidu",
+      "clube": "COR",
+      "preco": 11.21,
+      "exp_score": 5.6979,
+      "atleta_id": 105531
     },
     {
       "rodada": 31,
@@ -428,7 +428,7 @@
       "nome": "Alexander Barboza",
       "clube": "PAL",
       "preco": 11.4,
-      "exp_score": 5.2565,
+      "exp_score": 5.2623,
       "atleta_id": 99274
     },
     {
@@ -439,8 +439,19 @@
       "nome": "Gustavo Henrique",
       "clube": "COR",
       "preco": 9.04,
-      "exp_score": 4.2098,
+      "exp_score": 4.1758,
       "atleta_id": 78248
+    },
+    {
+      "rodada": 31,
+      "tipo": "INTERMEDIARIO",
+      "status": "TITULAR",
+      "pos": "ZAG",
+      "nome": "David Duarte",
+      "clube": "BAH",
+      "preco": 6.72,
+      "exp_score": 3.9093,
+      "atleta_id": 91772
     },
     {
       "rodada": 31,
@@ -450,19 +461,8 @@
       "nome": "Neymar",
       "clube": "SAN",
       "preco": 20.23,
-      "exp_score": 6.8782,
+      "exp_score": 6.7274,
       "atleta_id": 63007
-    },
-    {
-      "rodada": 31,
-      "tipo": "INTERMEDIARIO",
-      "status": "TITULAR",
-      "pos": "MEI",
-      "nome": "Carrascal",
-      "clube": "FLA",
-      "preco": 12.15,
-      "exp_score": 6.5402,
-      "atleta_id": 105436
     },
     {
       "rodada": 31,
@@ -472,8 +472,19 @@
       "nome": "Matheus Pereira",
       "clube": "CRU",
       "preco": 14.48,
-      "exp_score": 6.5209,
+      "exp_score": 6.4867,
       "atleta_id": 96610
+    },
+    {
+      "rodada": 31,
+      "tipo": "INTERMEDIARIO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Danilo",
+      "clube": "BOT",
+      "preco": 14.18,
+      "exp_score": 6.3891,
+      "atleta_id": 107231
     },
     {
       "rodada": 31,
@@ -483,7 +494,7 @@
       "nome": "Viveros",
       "clube": "CAP",
       "preco": 14.96,
-      "exp_score": 10.7882,
+      "exp_score": 10.7662,
       "atleta_id": 143193
     },
     {
@@ -491,22 +502,11 @@
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
       "pos": "ATA",
-      "nome": "Samuel Lino",
-      "clube": "FLA",
-      "preco": 12.28,
-      "exp_score": 7.7969,
-      "atleta_id": 98873
-    },
-    {
-      "rodada": 31,
-      "tipo": "INTERMEDIARIO",
-      "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Soteldo",
+      "nome": "Serna",
       "clube": "FLU",
-      "preco": 3.9,
-      "exp_score": 2.0733,
-      "atleta_id": 87258
+      "preco": 6.47,
+      "exp_score": 5.2012,
+      "atleta_id": 132071
     },
     {
       "rodada": 31,
@@ -516,7 +516,7 @@
       "nome": "Fernando Seabra",
       "clube": "CFC",
       "preco": 7.56,
-      "exp_score": 4.4594,
+      "exp_score": 4.6491,
       "atleta_id": 126977
     }
   ],
@@ -529,7 +529,7 @@
       "nome": "Weverton",
       "clube": "GRE",
       "preco": 8.16,
-      "exp_score": 5.6876,
+      "exp_score": 5.6935,
       "atleta_id": 71631
     },
     {
@@ -537,48 +537,48 @@
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "LAT",
-      "nome": "Matheus Bidu",
+      "nome": "Matheuzinho",
       "clube": "COR",
-      "preco": 11.21,
-      "exp_score": 5.7444,
-      "atleta_id": 105531
+      "preco": 10.46,
+      "exp_score": 5.1421,
+      "atleta_id": 101727
     },
     {
       "rodada": 31,
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "ZAG",
-      "nome": "David Duarte",
-      "clube": "BAH",
-      "preco": 6.72,
-      "exp_score": 3.9037,
-      "atleta_id": 91772
+      "nome": "Marllon",
+      "clube": "REM",
+      "preco": 6.35,
+      "exp_score": 3.8615,
+      "atleta_id": 70666
     },
     {
       "rodada": 31,
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "MEI",
-      "nome": "Jean Lucas",
-      "clube": "BAH",
-      "preco": 10.19,
-      "exp_score": 5.2689,
-      "atleta_id": 98517
+      "nome": "Carrascal",
+      "clube": "FLA",
+      "preco": 12.15,
+      "exp_score": 6.1031,
+      "atleta_id": 105436
     },
     {
       "rodada": 31,
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "ATA",
-      "nome": "Galeano",
-      "clube": "REM",
-      "preco": 4.26,
-      "exp_score": 1.5054,
-      "atleta_id": 108713
+      "nome": "Arroyo",
+      "clube": "CRU",
+      "preco": 5.88,
+      "exp_score": 3.6543,
+      "atleta_id": 132264
     }
   ],
   "capitao": "Viveros",
-  "formacao": "4-3-3",
+  "formacao": "5-3-2",
   "evento_programado": "ATUALIZACAO_20H",
   "blocos_topo": [],
   "pipeline_visual": "times_top5_aprovados_v2_2026_09_21_formacao_dinamica"
