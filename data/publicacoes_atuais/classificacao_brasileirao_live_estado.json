@@ -1,5 +1,5 @@
 {
-  "rodada": 30,
+  "rodada": 31,
   "base_signature": [
     {
       "nome": "FLA",
@@ -93,18 +93,18 @@
       "saldo": -5
     },
     {
+      "nome": "MIR",
+      "j": 31,
+      "pts": 36,
+      "v": 9,
+      "saldo": -8
+    },
+    {
       "nome": "VAS",
       "j": 29,
       "pts": 35,
       "v": 9,
       "saldo": -6
-    },
-    {
-      "nome": "MIR",
-      "j": 30,
-      "pts": 33,
-      "v": 8,
-      "saldo": -10
     },
     {
       "nome": "COR",
@@ -115,10 +115,10 @@
     },
     {
       "nome": "INT",
-      "j": 30,
+      "j": 31,
       "pts": 32,
       "v": 7,
-      "saldo": -5
+      "saldo": -7
     },
     {
       "nome": "GRE",
@@ -305,7 +305,7 @@
       "gm": 30
     }
   ],
-  "last_context": "classificacao_final",
-  "updated_at": "2026-10-12T23:23:36.321750-03:00",
-  "last_image": "output/classificacao_brasileirao_fechamento.png"
+  "last_context": "classificacao_abertura",
+  "updated_at": "2026-10-17T18:13:15.046539-03:00",
+  "last_image": "output/classificacao_brasileirao_abertura.png"
 }
