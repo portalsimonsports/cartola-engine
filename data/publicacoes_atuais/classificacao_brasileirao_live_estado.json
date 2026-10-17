@@ -225,8 +225,16 @@
       "gm": 35
     },
     {
-      "nome": "Coritiba",
+      "nome": "Botafogo",
       "pos": 11,
+      "pts": 39,
+      "v": 10,
+      "saldo": -4,
+      "gm": 44
+    },
+    {
+      "nome": "Coritiba",
+      "pos": 12,
       "pts": 39,
       "v": 10,
       "saldo": -10,
@@ -234,35 +242,27 @@
     },
     {
       "nome": "VITÓRIA",
-      "pos": 12,
+      "pos": 13,
       "pts": 36,
       "v": 10,
       "saldo": -11,
       "gm": 33
     },
     {
-      "nome": "Botafogo",
-      "pos": 13,
+      "nome": "Mirassol",
+      "pos": 14,
       "pts": 36,
       "v": 9,
-      "saldo": -5,
-      "gm": 43
+      "saldo": -8,
+      "gm": 36
     },
     {
       "nome": "Vasco",
-      "pos": 14,
+      "pos": 15,
       "pts": 35,
       "v": 9,
       "saldo": -6,
       "gm": 36
-    },
-    {
-      "nome": "Mirassol",
-      "pos": 15,
-      "pts": 33,
-      "v": 8,
-      "saldo": -10,
-      "gm": 34
     },
     {
       "nome": "Corinthians",
@@ -277,7 +277,7 @@
       "pos": 17,
       "pts": 32,
       "v": 7,
-      "saldo": -5,
+      "saldo": -7,
       "gm": 33
     },
     {
@@ -301,11 +301,11 @@
       "pos": 20,
       "pts": 18,
       "v": 3,
-      "saldo": -31,
+      "saldo": -32,
       "gm": 30
     }
   ],
-  "last_context": "classificacao_abertura",
-  "updated_at": "2026-10-17T18:13:15.046539-03:00",
-  "last_image": "output/classificacao_brasileirao_abertura.png"
+  "last_context": "classificacao_delta",
+  "updated_at": "2026-10-17T18:33:14.802975-03:00",
+  "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
