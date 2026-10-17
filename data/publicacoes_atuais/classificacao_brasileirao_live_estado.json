@@ -2,6 +2,13 @@
   "rodada": 31,
   "base_signature": [
     {
+      "nome": "PAL",
+      "j": 31,
+      "pts": 66,
+      "v": 19,
+      "saldo": 32
+    },
+    {
       "nome": "FLA",
       "j": 30,
       "pts": 64,
@@ -9,18 +16,11 @@
       "saldo": 33
     },
     {
-      "nome": "PAL",
-      "j": 30,
-      "pts": 63,
-      "v": 18,
-      "saldo": 30
-    },
-    {
       "nome": "CAP",
-      "j": 30,
+      "j": 31,
       "pts": 53,
       "v": 15,
-      "saldo": 14
+      "saldo": 12
     },
     {
       "nome": "FLU",
@@ -28,6 +28,13 @@
       "pts": 51,
       "v": 14,
       "saldo": 11
+    },
+    {
+      "nome": "CAM",
+      "j": 31,
+      "pts": 50,
+      "v": 14,
+      "saldo": 7
     },
     {
       "nome": "BAH",
@@ -42,13 +49,6 @@
       "pts": 48,
       "v": 14,
       "saldo": 2
-    },
-    {
-      "nome": "CAM",
-      "j": 30,
-      "pts": 47,
-      "v": 13,
-      "saldo": 6
     },
     {
       "nome": "SAN",
@@ -72,11 +72,18 @@
       "saldo": 0
     },
     {
-      "nome": "CFC",
-      "j": 30,
+      "nome": "BOT",
+      "j": 31,
       "pts": 39,
       "v": 10,
-      "saldo": -10
+      "saldo": -4
+    },
+    {
+      "nome": "CFC",
+      "j": 31,
+      "pts": 39,
+      "v": 10,
+      "saldo": -11
     },
     {
       "nome": "VIT",
@@ -84,13 +91,6 @@
       "pts": 36,
       "v": 10,
       "saldo": -11
-    },
-    {
-      "nome": "BOT",
-      "j": 30,
-      "pts": 36,
-      "v": 9,
-      "saldo": -5
     },
     {
       "nome": "MIR",
@@ -136,10 +136,10 @@
     },
     {
       "nome": "CHA",
-      "j": 29,
+      "j": 30,
       "pts": 18,
       "v": 3,
-      "saldo": -31
+      "saldo": -32
     }
   ],
   "partidas": {},
@@ -177,8 +177,16 @@
       "gm": 48
     },
     {
-      "nome": "Bahia",
+      "nome": "ATLÉTICO-MG",
       "pos": 5,
+      "pts": 50,
+      "v": 14,
+      "saldo": 7,
+      "gm": 42
+    },
+    {
+      "nome": "Bahia",
+      "pos": 6,
       "pts": 49,
       "v": 13,
       "saldo": 8,
@@ -186,19 +194,11 @@
     },
     {
       "nome": "Cruzeiro",
-      "pos": 6,
+      "pos": 7,
       "pts": 48,
       "v": 14,
       "saldo": 2,
       "gm": 46
-    },
-    {
-      "nome": "ATLÉTICO-MG",
-      "pos": 7,
-      "pts": 48,
-      "v": 13,
-      "saldo": 6,
-      "gm": 41
     },
     {
       "nome": "Santos",
@@ -217,16 +217,8 @@
       "gm": 38
     },
     {
-      "nome": "Coritiba",
-      "pos": 10,
-      "pts": 40,
-      "v": 10,
-      "saldo": -10,
-      "gm": 38
-    },
-    {
       "nome": "SÃO PAULO",
-      "pos": 11,
+      "pos": 10,
       "pts": 39,
       "v": 11,
       "saldo": 0,
@@ -234,11 +226,19 @@
     },
     {
       "nome": "Botafogo",
-      "pos": 12,
+      "pos": 11,
       "pts": 39,
       "v": 10,
       "saldo": -4,
       "gm": 44
+    },
+    {
+      "nome": "Coritiba",
+      "pos": 12,
+      "pts": 39,
+      "v": 10,
+      "saldo": -11,
+      "gm": 38
     },
     {
       "nome": "VITÓRIA",
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-10-17T20:13:21.501140-03:00",
+  "updated_at": "2026-10-17T20:53:18.946041-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
