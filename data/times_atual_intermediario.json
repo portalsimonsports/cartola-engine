@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 31,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-10-16T23:14:47.164Z",
+  "atualizado_em": "2026-10-17T15:04:50.475Z",
   "dados": [
     {
       "RODADA": 31,
@@ -14,30 +14,8 @@
       "NOME": "Ronaldo",
       "CLUBE": "BAH",
       "PRECO": 8.68,
-      "EXP_SCORE": 5.9536,
+      "EXP_SCORE": 5.9002,
       "ATLETA_ID": 91101
-    },
-    {
-      "RODADA": 31,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "LAT",
-      "NOME": "Luciano Juba",
-      "CLUBE": "BAH",
-      "PRECO": 12.32,
-      "EXP_SCORE": 6.2224,
-      "ATLETA_ID": 107093
-    },
-    {
-      "RODADA": 31,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "LAT",
-      "NOME": "Matheus Bidu",
-      "CLUBE": "COR",
-      "PRECO": 11.21,
-      "EXP_SCORE": 5.6891,
-      "ATLETA_ID": 105531
     },
     {
       "RODADA": 31,
@@ -47,7 +25,7 @@
       "NOME": "Alexander Barboza",
       "CLUBE": "PAL",
       "PRECO": 11.4,
-      "EXP_SCORE": 5.2528,
+      "EXP_SCORE": 5.2162,
       "ATLETA_ID": 99274
     },
     {
@@ -58,7 +36,7 @@
       "NOME": "Gustavo Henrique",
       "CLUBE": "COR",
       "PRECO": 9.04,
-      "EXP_SCORE": 4.1693,
+      "EXP_SCORE": 4.1445,
       "ATLETA_ID": 78248
     },
     {
@@ -69,7 +47,7 @@
       "NOME": "David Duarte",
       "CLUBE": "BAH",
       "PRECO": 6.72,
-      "EXP_SCORE": 3.9002,
+      "EXP_SCORE": 3.8652,
       "ATLETA_ID": 91772
     },
     {
@@ -109,6 +87,28 @@
       "RODADA": 31,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Carrascal",
+      "CLUBE": "FLA",
+      "PRECO": 12.15,
+      "EXP_SCORE": 6.1095,
+      "ATLETA_ID": 105436
+    },
+    {
+      "RODADA": 31,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Jean Lucas",
+      "CLUBE": "BAH",
+      "PRECO": 10.19,
+      "EXP_SCORE": 5.2633,
+      "ATLETA_ID": 98517
+    },
+    {
+      "RODADA": 31,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
       "POS": "ATA",
       "NOME": "Viveros",
       "CLUBE": "CAP",
@@ -121,11 +121,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Serna",
-      "CLUBE": "FLU",
-      "PRECO": 6.47,
-      "EXP_SCORE": 5.2038,
-      "ATLETA_ID": 132071
+      "NOME": "Leozinho",
+      "CLUBE": "CAP",
+      "PRECO": 7.54,
+      "EXP_SCORE": 5.7789,
+      "ATLETA_ID": 123101
     },
     {
       "RODADA": 31,
@@ -146,19 +146,8 @@
       "NOME": "Weverton",
       "CLUBE": "GRE",
       "PRECO": 8.16,
-      "EXP_SCORE": 5.6892,
+      "EXP_SCORE": 5.6524,
       "ATLETA_ID": 71631
-    },
-    {
-      "RODADA": 31,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "RESERVA",
-      "POS": "LAT",
-      "NOME": "Matheuzinho",
-      "CLUBE": "COR",
-      "PRECO": 10.46,
-      "EXP_SCORE": 5.1341,
-      "ATLETA_ID": 101727
     },
     {
       "RODADA": 31,
@@ -168,7 +157,7 @@
       "NOME": "Marllon",
       "CLUBE": "REM",
       "PRECO": 6.35,
-      "EXP_SCORE": 3.8575,
+      "EXP_SCORE": 3.8421,
       "ATLETA_ID": 70666
     },
     {
@@ -176,22 +165,22 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Carrascal",
-      "CLUBE": "FLA",
-      "PRECO": 12.15,
-      "EXP_SCORE": 6.1095,
-      "ATLETA_ID": 105436
+      "NOME": "Lucho Acosta",
+      "CLUBE": "FLU",
+      "PRECO": 9.55,
+      "EXP_SCORE": 4.3614,
+      "ATLETA_ID": 89837
     },
     {
       "RODADA": 31,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Arroyo",
-      "CLUBE": "CRU",
-      "PRECO": 5.88,
-      "EXP_SCORE": 3.6568,
-      "ATLETA_ID": 132264
+      "NOME": "Serna",
+      "CLUBE": "FLU",
+      "PRECO": 6.47,
+      "EXP_SCORE": 5.2038,
+      "ATLETA_ID": 132071
     }
   ]
 }
