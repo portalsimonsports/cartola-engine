@@ -51,6 +51,13 @@
       "saldo": 2
     },
     {
+      "nome": "SAO",
+      "j": 31,
+      "pts": 42,
+      "v": 12,
+      "saldo": 1
+    },
+    {
       "nome": "SAN",
       "j": 30,
       "pts": 42,
@@ -63,13 +70,6 @@
       "pts": 40,
       "v": 11,
       "saldo": 3
-    },
-    {
-      "nome": "SAO",
-      "j": 31,
-      "pts": 40,
-      "v": 11,
-      "saldo": 0
     },
     {
       "nome": "BOT",
@@ -93,18 +93,18 @@
       "saldo": -11
     },
     {
-      "nome": "VAS",
-      "j": 30,
-      "pts": 36,
-      "v": 9,
-      "saldo": -6
-    },
-    {
       "nome": "MIR",
       "j": 31,
       "pts": 36,
       "v": 9,
       "saldo": -8
+    },
+    {
+      "nome": "VAS",
+      "j": 30,
+      "pts": 35,
+      "v": 9,
+      "saldo": -7
     },
     {
       "nome": "COR",
@@ -171,7 +171,7 @@
     {
       "nome": "Fluminense",
       "pos": 4,
-      "pts": 51,
+      "pts": 52,
       "v": 14,
       "saldo": 11,
       "gm": 48
@@ -185,36 +185,36 @@
       "gm": 42
     },
     {
-      "nome": "Bahia",
+      "nome": "Cruzeiro",
       "pos": 6,
+      "pts": 49,
+      "v": 14,
+      "saldo": 2,
+      "gm": 46
+    },
+    {
+      "nome": "Bahia",
+      "pos": 7,
       "pts": 49,
       "v": 13,
       "saldo": 8,
       "gm": 44
     },
     {
-      "nome": "Cruzeiro",
-      "pos": 7,
-      "pts": 48,
-      "v": 14,
-      "saldo": 2,
+      "nome": "Santos",
+      "pos": 8,
+      "pts": 43,
+      "v": 11,
+      "saldo": 1,
       "gm": 46
     },
     {
       "nome": "SÃO PAULO",
-      "pos": 8,
+      "pos": 9,
       "pts": 42,
       "v": 12,
       "saldo": 1,
       "gm": 36
-    },
-    {
-      "nome": "Santos",
-      "pos": 9,
-      "pts": 42,
-      "v": 11,
-      "saldo": 1,
-      "gm": 46
     },
     {
       "nome": "RB Bragantino",
@@ -283,7 +283,7 @@
     {
       "nome": "GRÊMIO",
       "pos": 18,
-      "pts": 31,
+      "pts": 32,
       "v": 7,
       "saldo": -8,
       "gm": 32
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-10-17T22:43:20.538724-03:00",
+  "updated_at": "2026-10-18T16:13:35.503993-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
