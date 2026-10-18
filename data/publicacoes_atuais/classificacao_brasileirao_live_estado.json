@@ -66,8 +66,8 @@
     },
     {
       "nome": "SAO",
-      "j": 30,
-      "pts": 39,
+      "j": 31,
+      "pts": 40,
       "v": 11,
       "saldo": 0
     },
@@ -93,18 +93,18 @@
       "saldo": -11
     },
     {
+      "nome": "VAS",
+      "j": 30,
+      "pts": 36,
+      "v": 9,
+      "saldo": -6
+    },
+    {
       "nome": "MIR",
       "j": 31,
       "pts": 36,
       "v": 9,
       "saldo": -8
-    },
-    {
-      "nome": "VAS",
-      "j": 29,
-      "pts": 35,
-      "v": 9,
-      "saldo": -6
     },
     {
       "nome": "COR",
@@ -219,7 +219,7 @@
     {
       "nome": "SÃO PAULO",
       "pos": 10,
-      "pts": 39,
+      "pts": 40,
       "v": 11,
       "saldo": 0,
       "gm": 35
@@ -249,19 +249,19 @@
       "gm": 33
     },
     {
-      "nome": "Mirassol",
+      "nome": "Vasco",
       "pos": 14,
       "pts": 36,
       "v": 9,
-      "saldo": -8,
+      "saldo": -6,
       "gm": 36
     },
     {
-      "nome": "Vasco",
+      "nome": "Mirassol",
       "pos": 15,
-      "pts": 35,
+      "pts": 36,
       "v": 9,
-      "saldo": -6,
+      "saldo": -8,
       "gm": 36
     },
     {
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-10-17T20:53:18.946041-03:00",
+  "updated_at": "2026-10-17T21:33:49.848215-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
