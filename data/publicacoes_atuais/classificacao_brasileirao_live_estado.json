@@ -185,20 +185,20 @@
       "gm": 42
     },
     {
-      "nome": "Cruzeiro",
-      "pos": 6,
-      "pts": 49,
-      "v": 14,
-      "saldo": 2,
-      "gm": 46
-    },
-    {
       "nome": "Bahia",
-      "pos": 7,
+      "pos": 6,
       "pts": 49,
       "v": 13,
       "saldo": 8,
       "gm": 44
+    },
+    {
+      "nome": "Cruzeiro",
+      "pos": 7,
+      "pts": 48,
+      "v": 14,
+      "saldo": 1,
+      "gm": 47
     },
     {
       "nome": "SÃO PAULO",
@@ -265,8 +265,16 @@
       "gm": 36
     },
     {
-      "nome": "Corinthians",
+      "nome": "GRÊMIO",
       "pos": 16,
+      "pts": 34,
+      "v": 8,
+      "saldo": -7,
+      "gm": 34
+    },
+    {
+      "nome": "Corinthians",
+      "pos": 17,
       "pts": 32,
       "v": 8,
       "saldo": -7,
@@ -274,19 +282,11 @@
     },
     {
       "nome": "Internacional",
-      "pos": 17,
+      "pos": 18,
       "pts": 32,
       "v": 7,
       "saldo": -7,
       "gm": 33
-    },
-    {
-      "nome": "GRÊMIO",
-      "pos": 18,
-      "pts": 32,
-      "v": 7,
-      "saldo": -8,
-      "gm": 32
     },
     {
       "nome": "Remo",
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-10-18T16:23:22.437621-03:00",
+  "updated_at": "2026-10-18T16:53:24.633116-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
