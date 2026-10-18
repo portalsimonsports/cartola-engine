@@ -161,20 +161,20 @@
       "gm": 58
     },
     {
-      "nome": "Athletico-PR",
+      "nome": "Fluminense",
       "pos": 3,
-      "pts": 53,
+      "pts": 54,
       "v": 15,
       "saldo": 12,
       "gm": 49
     },
     {
-      "nome": "Fluminense",
+      "nome": "Athletico-PR",
       "pos": 4,
-      "pts": 52,
-      "v": 14,
-      "saldo": 11,
-      "gm": 48
+      "pts": 53,
+      "v": 15,
+      "saldo": 12,
+      "gm": 49
     },
     {
       "nome": "ATLÉTICO-MG",
@@ -201,20 +201,20 @@
       "gm": 44
     },
     {
-      "nome": "Santos",
-      "pos": 8,
-      "pts": 43,
-      "v": 11,
-      "saldo": 1,
-      "gm": 46
-    },
-    {
       "nome": "SÃO PAULO",
-      "pos": 9,
+      "pos": 8,
       "pts": 42,
       "v": 12,
       "saldo": 1,
       "gm": 36
+    },
+    {
+      "nome": "Santos",
+      "pos": 9,
+      "pts": 42,
+      "v": 11,
+      "saldo": 0,
+      "gm": 46
     },
     {
       "nome": "RB Bragantino",
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-10-18T16:13:35.503993-03:00",
+  "updated_at": "2026-10-18T16:23:22.437621-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
