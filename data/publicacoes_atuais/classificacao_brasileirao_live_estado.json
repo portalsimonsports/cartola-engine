@@ -2,18 +2,18 @@
   "rodada": 31,
   "base_signature": [
     {
+      "nome": "FLA",
+      "j": 31,
+      "pts": 67,
+      "v": 20,
+      "saldo": 36
+    },
+    {
       "nome": "PAL",
       "j": 31,
       "pts": 66,
       "v": 19,
       "saldo": 32
-    },
-    {
-      "nome": "FLA",
-      "j": 30,
-      "pts": 64,
-      "v": 19,
-      "saldo": 33
     },
     {
       "nome": "CAP",
@@ -23,11 +23,18 @@
       "saldo": 12
     },
     {
+      "nome": "CRU",
+      "j": 31,
+      "pts": 51,
+      "v": 15,
+      "saldo": 4
+    },
+    {
       "nome": "FLU",
-      "j": 30,
+      "j": 31,
       "pts": 51,
       "v": 14,
-      "saldo": 11
+      "saldo": 10
     },
     {
       "nome": "CAM",
@@ -38,17 +45,24 @@
     },
     {
       "nome": "BAH",
-      "j": 30,
+      "j": 31,
       "pts": 49,
       "v": 13,
-      "saldo": 8
+      "saldo": 5
     },
     {
-      "nome": "CRU",
-      "j": 30,
-      "pts": 48,
-      "v": 14,
+      "nome": "SAN",
+      "j": 31,
+      "pts": 45,
+      "v": 12,
       "saldo": 2
+    },
+    {
+      "nome": "RBB",
+      "j": 31,
+      "pts": 43,
+      "v": 12,
+      "saldo": 4
     },
     {
       "nome": "SAO",
@@ -56,20 +70,6 @@
       "pts": 42,
       "v": 12,
       "saldo": 1
-    },
-    {
-      "nome": "SAN",
-      "j": 30,
-      "pts": 42,
-      "v": 11,
-      "saldo": 1
-    },
-    {
-      "nome": "RBB",
-      "j": 30,
-      "pts": 40,
-      "v": 11,
-      "saldo": 3
     },
     {
       "nome": "BOT",
@@ -122,17 +122,17 @@
     },
     {
       "nome": "GRE",
-      "j": 30,
+      "j": 31,
       "pts": 31,
       "v": 7,
-      "saldo": -8
+      "saldo": -10
     },
     {
       "nome": "REM",
-      "j": 30,
+      "j": 31,
       "pts": 25,
       "v": 5,
-      "saldo": -15
+      "saldo": -16
     },
     {
       "nome": "CHA",
@@ -145,20 +145,20 @@
   "partidas": {},
   "last_signature": [
     {
-      "nome": "Palmeiras",
+      "nome": "Flamengo",
       "pos": 1,
+      "pts": 67,
+      "v": 20,
+      "saldo": 36,
+      "gm": 61
+    },
+    {
+      "nome": "Palmeiras",
+      "pos": 2,
       "pts": 66,
       "v": 19,
       "saldo": 32,
       "gm": 54
-    },
-    {
-      "nome": "Flamengo",
-      "pos": 2,
-      "pts": 65,
-      "v": 19,
-      "saldo": 33,
-      "gm": 58
     },
     {
       "nome": "Athletico-PR",
@@ -195,9 +195,9 @@
     {
       "nome": "Bahia",
       "pos": 7,
-      "pts": 50,
+      "pts": 49,
       "v": 13,
-      "saldo": 8,
+      "saldo": 5,
       "gm": 44
     },
     {
@@ -209,20 +209,20 @@
       "gm": 48
     },
     {
-      "nome": "SÃO PAULO",
+      "nome": "RB Bragantino",
       "pos": 9,
+      "pts": 43,
+      "v": 12,
+      "saldo": 4,
+      "gm": 39
+    },
+    {
+      "nome": "SÃO PAULO",
+      "pos": 10,
       "pts": 42,
       "v": 12,
       "saldo": 1,
       "gm": 36
-    },
-    {
-      "nome": "RB Bragantino",
-      "pos": 10,
-      "pts": 40,
-      "v": 11,
-      "saldo": 3,
-      "gm": 38
     },
     {
       "nome": "Botafogo",
@@ -293,7 +293,7 @@
       "pos": 19,
       "pts": 25,
       "v": 5,
-      "saldo": -15,
+      "saldo": -16,
       "gm": 33
     },
     {
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-10-18T18:58:23.245758-03:00",
+  "updated_at": "2026-10-18T20:43:58.621522-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
