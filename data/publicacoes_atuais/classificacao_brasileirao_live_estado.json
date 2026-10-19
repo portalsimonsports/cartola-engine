@@ -58,18 +58,18 @@
       "saldo": 2
     },
     {
-      "nome": "RBB",
-      "j": 31,
-      "pts": 43,
-      "v": 12,
-      "saldo": 4
-    },
-    {
       "nome": "SAO",
       "j": 31,
       "pts": 42,
       "v": 12,
       "saldo": 1
+    },
+    {
+      "nome": "RBB",
+      "j": 31,
+      "pts": 41,
+      "v": 11,
+      "saldo": 3
     },
     {
       "nome": "BOT",
@@ -130,9 +130,9 @@
     {
       "nome": "REM",
       "j": 31,
-      "pts": 25,
+      "pts": 26,
       "v": 5,
-      "saldo": -16
+      "saldo": -15
     },
     {
       "nome": "CHA",
@@ -209,20 +209,20 @@
       "gm": 48
     },
     {
-      "nome": "RB Bragantino",
-      "pos": 9,
-      "pts": 43,
-      "v": 12,
-      "saldo": 4,
-      "gm": 39
-    },
-    {
       "nome": "SÃO PAULO",
-      "pos": 10,
+      "pos": 9,
       "pts": 42,
       "v": 12,
       "saldo": 1,
       "gm": 36
+    },
+    {
+      "nome": "RB Bragantino",
+      "pos": 10,
+      "pts": 41,
+      "v": 11,
+      "saldo": 3,
+      "gm": 39
     },
     {
       "nome": "Botafogo",
@@ -291,10 +291,10 @@
     {
       "nome": "Remo",
       "pos": 19,
-      "pts": 25,
+      "pts": 26,
       "v": 5,
-      "saldo": -16,
-      "gm": 33
+      "saldo": -15,
+      "gm": 34
     },
     {
       "nome": "Chapecoense",
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-10-18T20:43:58.621522-03:00",
+  "updated_at": "2026-10-18T21:53:18.291465-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
