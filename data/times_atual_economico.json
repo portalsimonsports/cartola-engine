@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 32,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-10-20T14:04:47.124Z",
+  "atualizado_em": "2026-10-20T14:09:44.360Z",
   "dados": [
     {
       "RODADA": 32,
@@ -21,33 +21,11 @@
       "RODADA": 32,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
-      "POS": "LAT",
-      "NOME": "Arthur",
-      "CLUBE": "PAL",
-      "PRECO": 5.19,
-      "EXP_SCORE": 3.713,
-      "ATLETA_ID": 145404
-    },
-    {
-      "RODADA": 32,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "LAT",
-      "NOME": "Aguirre",
-      "CLUBE": "INT",
-      "PRECO": 5.61,
-      "EXP_SCORE": 3.6048,
-      "ATLETA_ID": 110510
-    },
-    {
-      "RODADA": 32,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
       "POS": "ZAG",
       "NOME": "João Marcelo",
       "CLUBE": "CRU",
       "PRECO": 5.54,
-      "EXP_SCORE": 2.3782,
+      "EXP_SCORE": 2.7349,
       "ATLETA_ID": 105047
     },
     {
@@ -58,8 +36,19 @@
       "NOME": "Murilo",
       "CLUBE": "PAL",
       "PRECO": 7.78,
-      "EXP_SCORE": 3.5799,
+      "EXP_SCORE": 4.1169,
       "ATLETA_ID": 97653
+    },
+    {
+      "RODADA": 32,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ZAG",
+      "NOME": "Ferraresi",
+      "CLUBE": "BOT",
+      "PRECO": 7.97,
+      "EXP_SCORE": 3.5159,
+      "ATLETA_ID": 105300
     },
     {
       "RODADA": 32,
@@ -98,6 +87,17 @@
       "RODADA": 32,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Maurício",
+      "CLUBE": "PAL",
+      "PRECO": 8.02,
+      "EXP_SCORE": 4.5666,
+      "ATLETA_ID": 105647
+    },
+    {
+      "RODADA": 32,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
       "POS": "ATA",
       "NOME": "Kaio Jorge",
       "CLUBE": "CRU",
@@ -121,22 +121,22 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Pedro Rocha",
-      "CLUBE": "CFC",
-      "PRECO": 7.43,
-      "EXP_SCORE": 5.4571,
-      "ATLETA_ID": 90302
+      "NOME": "Pavón",
+      "CLUBE": "GRE",
+      "PRECO": 7.91,
+      "EXP_SCORE": 4.819,
+      "ATLETA_ID": 91908
     },
     {
       "RODADA": 32,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "TEC",
-      "NOME": "Fernando Seabra",
-      "CLUBE": "CFC",
-      "PRECO": 7.64,
-      "EXP_SCORE": 4.7577,
-      "ATLETA_ID": 126977
+      "NOME": "Abel Ferreira",
+      "CLUBE": "PAL",
+      "PRECO": 12.61,
+      "EXP_SCORE": 7.9441,
+      "ATLETA_ID": 110506
     },
     {
       "RODADA": 32,
@@ -148,17 +148,6 @@
       "PRECO": 1,
       "EXP_SCORE": 0,
       "ATLETA_ID": 124264
-    },
-    {
-      "RODADA": 32,
-      "TIPO": "ECONOMICO",
-      "STATUS": "RESERVA",
-      "POS": "LAT",
-      "NOME": "Bruno Melo",
-      "CLUBE": "CFC",
-      "PRECO": 4.82,
-      "EXP_SCORE": 2.38,
-      "ATLETA_ID": 84339
     },
     {
       "RODADA": 32,
