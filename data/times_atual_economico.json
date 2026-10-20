@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 32,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-10-20T13:59:44.478Z",
+  "atualizado_em": "2026-10-20T14:04:47.124Z",
   "dados": [
     {
       "RODADA": 32,
@@ -14,19 +14,8 @@
       "NOME": "Otávio",
       "CLUBE": "CRU",
       "PRECO": 4.24,
-      "EXP_SCORE": 3.7623,
+      "EXP_SCORE": 3.7673,
       "ATLETA_ID": 117404
-    },
-    {
-      "RODADA": 32,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "LAT",
-      "NOME": "Emerson Royal",
-      "CLUBE": "FLA",
-      "PRECO": 8.57,
-      "EXP_SCORE": 4.3268,
-      "ATLETA_ID": 96870
     },
     {
       "RODADA": 32,
@@ -36,8 +25,19 @@
       "NOME": "Arthur",
       "CLUBE": "PAL",
       "PRECO": 5.19,
-      "EXP_SCORE": 3.764,
+      "EXP_SCORE": 3.713,
       "ATLETA_ID": 145404
+    },
+    {
+      "RODADA": 32,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Aguirre",
+      "CLUBE": "INT",
+      "PRECO": 5.61,
+      "EXP_SCORE": 3.6048,
+      "ATLETA_ID": 110510
     },
     {
       "RODADA": 32,
@@ -47,7 +47,7 @@
       "NOME": "João Marcelo",
       "CLUBE": "CRU",
       "PRECO": 5.54,
-      "EXP_SCORE": 2.3751,
+      "EXP_SCORE": 2.3782,
       "ATLETA_ID": 105047
     },
     {
@@ -58,7 +58,7 @@
       "NOME": "Murilo",
       "CLUBE": "PAL",
       "PRECO": 7.78,
-      "EXP_SCORE": 3.6291,
+      "EXP_SCORE": 3.5799,
       "ATLETA_ID": 97653
     },
     {
@@ -69,7 +69,7 @@
       "NOME": "Gustavo Henrique",
       "CLUBE": "SAN",
       "PRECO": 5.69,
-      "EXP_SCORE": 4.4012,
+      "EXP_SCORE": 4.4042,
       "ATLETA_ID": 141776
     },
     {
@@ -80,7 +80,7 @@
       "NOME": "Matheuzinho",
       "CLUBE": "VIT",
       "PRECO": 6.07,
-      "EXP_SCORE": 4.8939,
+      "EXP_SCORE": 4.8967,
       "ATLETA_ID": 90703
     },
     {
@@ -91,19 +91,8 @@
       "NOME": "Gabriel Bontempo",
       "CLUBE": "SAN",
       "PRECO": 5.93,
-      "EXP_SCORE": 4.405,
+      "EXP_SCORE": 4.408,
       "ATLETA_ID": 141754
-    },
-    {
-      "RODADA": 32,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Josué",
-      "CLUBE": "CFC",
-      "PRECO": 6.44,
-      "EXP_SCORE": 4.1764,
-      "ATLETA_ID": 84626
     },
     {
       "RODADA": 32,
@@ -113,7 +102,7 @@
       "NOME": "Kaio Jorge",
       "CLUBE": "CRU",
       "PRECO": 13.9,
-      "EXP_SCORE": 7.0531,
+      "EXP_SCORE": 7.0574,
       "ATLETA_ID": 103445
     },
     {
@@ -121,11 +110,22 @@
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
       "POS": "ATA",
-      "NOME": "Plata",
-      "CLUBE": "FLA",
-      "PRECO": 12.55,
-      "EXP_SCORE": 5.9248,
-      "ATLETA_ID": 109096
+      "NOME": "Marcinho",
+      "CLUBE": "CHA",
+      "PRECO": 4.8,
+      "EXP_SCORE": 3.7399,
+      "ATLETA_ID": 95332
+    },
+    {
+      "RODADA": 32,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Pedro Rocha",
+      "CLUBE": "CFC",
+      "PRECO": 7.43,
+      "EXP_SCORE": 5.4571,
+      "ATLETA_ID": 90302
     },
     {
       "RODADA": 32,
@@ -135,7 +135,7 @@
       "NOME": "Fernando Seabra",
       "CLUBE": "CFC",
       "PRECO": 7.64,
-      "EXP_SCORE": 4.8205,
+      "EXP_SCORE": 4.7577,
       "ATLETA_ID": 126977
     },
     {
@@ -157,7 +157,7 @@
       "NOME": "Bruno Melo",
       "CLUBE": "CFC",
       "PRECO": 4.82,
-      "EXP_SCORE": 2.3759,
+      "EXP_SCORE": 2.38,
       "ATLETA_ID": 84339
     },
     {
@@ -168,7 +168,7 @@
       "NOME": "Robert Renan",
       "CLUBE": "VAS",
       "PRECO": 5.22,
-      "EXP_SCORE": 3.228,
+      "EXP_SCORE": 3.2035,
       "ATLETA_ID": 117330
     },
     {
@@ -179,7 +179,7 @@
       "NOME": "João Cruz",
       "CLUBE": "CAP",
       "PRECO": 5.68,
-      "EXP_SCORE": 3.8574,
+      "EXP_SCORE": 3.7935,
       "ATLETA_ID": 128431
     },
     {
@@ -187,11 +187,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Samuel Lino",
-      "CLUBE": "FLA",
-      "PRECO": 12.32,
-      "EXP_SCORE": 8.8622,
-      "ATLETA_ID": 98873
+      "NOME": "Tarzia",
+      "CLUBE": "VIT",
+      "PRECO": 4.01,
+      "EXP_SCORE": 3.1342,
+      "ATLETA_ID": 143153
     }
   ]
 }
