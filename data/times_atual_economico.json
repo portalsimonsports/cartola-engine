@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 32,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-10-23T15:19:44.521Z",
+  "atualizado_em": "2026-10-23T15:34:44.096Z",
   "dados": [
     {
       "RODADA": 32,
@@ -69,7 +69,7 @@
       "NOME": "Gustavo Henrique",
       "CLUBE": "SAN",
       "PRECO": 5.69,
-      "EXP_SCORE": 4.4328,
+      "EXP_SCORE": 4.4237,
       "ATLETA_ID": 141776
     },
     {
@@ -80,7 +80,7 @@
       "NOME": "Matheuzinho",
       "CLUBE": "VIT",
       "PRECO": 6.07,
-      "EXP_SCORE": 4.924,
+      "EXP_SCORE": 5.0687,
       "ATLETA_ID": 90703
     },
     {
@@ -91,8 +91,30 @@
       "NOME": "Gabriel Bontempo",
       "CLUBE": "SAN",
       "PRECO": 5.93,
-      "EXP_SCORE": 4.4367,
+      "EXP_SCORE": 4.4275,
       "ATLETA_ID": 141754
+    },
+    {
+      "RODADA": 32,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Maurício",
+      "CLUBE": "PAL",
+      "PRECO": 8.02,
+      "EXP_SCORE": 4.6337,
+      "ATLETA_ID": 105647
+    },
+    {
+      "RODADA": 32,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Giovanni Augusto",
+      "CLUBE": "CHA",
+      "PRECO": 5.39,
+      "EXP_SCORE": 3.5493,
+      "ATLETA_ID": 68938
     },
     {
       "RODADA": 32,
@@ -102,30 +124,8 @@
       "NOME": "Marcinho",
       "CLUBE": "CHA",
       "PRECO": 4.8,
-      "EXP_SCORE": 3.6857,
+      "EXP_SCORE": 3.6795,
       "ATLETA_ID": 95332
-    },
-    {
-      "RODADA": 32,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Pavón",
-      "CLUBE": "GRE",
-      "PRECO": 7.91,
-      "EXP_SCORE": 4.8402,
-      "ATLETA_ID": 91908
-    },
-    {
-      "RODADA": 32,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Flaco López",
-      "CLUBE": "PAL",
-      "PRECO": 14.27,
-      "EXP_SCORE": 8.6366,
-      "ATLETA_ID": 113103
     },
     {
       "RODADA": 32,
@@ -135,7 +135,7 @@
       "NOME": "Abel Ferreira",
       "CLUBE": "PAL",
       "PRECO": 12.61,
-      "EXP_SCORE": 8.0733,
+      "EXP_SCORE": 8.0608,
       "ATLETA_ID": 110506
     },
     {
@@ -176,11 +176,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "João Cruz",
+      "NOME": "Jadson",
       "CLUBE": "CAP",
-      "PRECO": 5.68,
-      "EXP_SCORE": 3.8165,
-      "ATLETA_ID": 128431
+      "PRECO": 5.32,
+      "EXP_SCORE": 3.4123,
+      "ATLETA_ID": 80129
     },
     {
       "RODADA": 32,
@@ -190,7 +190,7 @@
       "NOME": "Tarzia",
       "CLUBE": "VIT",
       "PRECO": 4.01,
-      "EXP_SCORE": 3.1517,
+      "EXP_SCORE": 3.2443,
       "ATLETA_ID": 143153
     }
   ]
