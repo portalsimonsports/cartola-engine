@@ -4,7 +4,7 @@
   "tipo_publicacao": "time_economico",
   "rodada": 32,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-10-22T22:39:44.791Z",
+  "atualizado_em": "2026-10-23T20:49:43.442Z",
   "dados": [
     {
       "rodada": 32,
@@ -14,7 +14,7 @@
       "nome": "Anderson",
       "clube": "CHA",
       "preco": 7.58,
-      "exp_score": 3.9581,
+      "exp_score": 3.9659,
       "atleta_id": 102906
     },
     {
@@ -25,7 +25,7 @@
       "nome": "Pedro Lima",
       "clube": "SAO",
       "preco": 11.05,
-      "exp_score": 3.974,
+      "exp_score": 3.9593,
       "atleta_id": 130525
     },
     {
@@ -36,7 +36,7 @@
       "nome": "Arthur",
       "clube": "PAL",
       "preco": 5.19,
-      "exp_score": 4.113,
+      "exp_score": 4.0954,
       "atleta_id": 145404
     },
     {
@@ -47,7 +47,7 @@
       "nome": "Murilo",
       "clube": "PAL",
       "preco": 7.78,
-      "exp_score": 4.1044,
+      "exp_score": 4.0869,
       "atleta_id": 97653
     },
     {
@@ -58,7 +58,7 @@
       "nome": "Ferraresi",
       "clube": "BOT",
       "preco": 7.97,
-      "exp_score": 3.4793,
+      "exp_score": 3.5367,
       "atleta_id": 105300
     },
     {
@@ -69,7 +69,7 @@
       "nome": "Gustavo Henrique",
       "clube": "SAN",
       "preco": 5.69,
-      "exp_score": 4.4328,
+      "exp_score": 4.4082,
       "atleta_id": 141776
     },
     {
@@ -80,7 +80,7 @@
       "nome": "Matheuzinho",
       "clube": "VIT",
       "preco": 6.07,
-      "exp_score": 4.924,
+      "exp_score": 5.0525,
       "atleta_id": 90703
     },
     {
@@ -91,8 +91,30 @@
       "nome": "Gabriel Bontempo",
       "clube": "SAN",
       "preco": 5.93,
-      "exp_score": 4.4367,
+      "exp_score": 4.412,
       "atleta_id": 141754
+    },
+    {
+      "rodada": 32,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Maurício",
+      "clube": "PAL",
+      "preco": 8.02,
+      "exp_score": 4.6215,
+      "atleta_id": 105647
+    },
+    {
+      "rodada": 32,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Giovanni Augusto",
+      "clube": "CHA",
+      "preco": 5.39,
+      "exp_score": 3.5391,
+      "atleta_id": 68938
     },
     {
       "rodada": 32,
@@ -102,30 +124,8 @@
       "nome": "Marcinho",
       "clube": "CHA",
       "preco": 4.8,
-      "exp_score": 3.6857,
+      "exp_score": 3.669,
       "atleta_id": 95332
-    },
-    {
-      "rodada": 32,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Pavón",
-      "clube": "GRE",
-      "preco": 7.91,
-      "exp_score": 4.8402,
-      "atleta_id": 91908
-    },
-    {
-      "rodada": 32,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Flaco López",
-      "clube": "PAL",
-      "preco": 14.27,
-      "exp_score": 8.6366,
-      "atleta_id": 113103
     },
     {
       "rodada": 32,
@@ -135,7 +135,7 @@
       "nome": "Abel Ferreira",
       "clube": "PAL",
       "preco": 12.61,
-      "exp_score": 8.0733,
+      "exp_score": 8.0395,
       "atleta_id": 110506
     },
     {
@@ -146,7 +146,7 @@
       "nome": "Weverton",
       "clube": "GRE",
       "preco": 7.53,
-      "exp_score": 3.8053,
+      "exp_score": 3.9132,
       "atleta_id": 71631
     },
     {
@@ -154,33 +154,33 @@
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "LAT",
-      "nome": "Bruno Melo",
-      "clube": "CFC",
-      "preco": 4.82,
-      "exp_score": 2.3912,
-      "atleta_id": 84339
+      "nome": "Ryan Augusto",
+      "clube": "RBB",
+      "preco": 3.9,
+      "exp_score": 1.7063,
+      "atleta_id": 148125
     },
     {
       "rodada": 32,
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "ZAG",
-      "nome": "Jacy",
-      "clube": "CFC",
-      "preco": 5.57,
-      "exp_score": 3.413,
-      "atleta_id": 97878
+      "nome": "Wallace",
+      "clube": "GRE",
+      "preco": 7.28,
+      "exp_score": 3.506,
+      "atleta_id": 130307
     },
     {
       "rodada": 32,
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "MEI",
-      "nome": "João Cruz",
+      "nome": "Jadson",
       "clube": "CAP",
-      "preco": 5.68,
-      "exp_score": 3.8165,
-      "atleta_id": 128431
+      "preco": 5.32,
+      "exp_score": 3.4557,
+      "atleta_id": 80129
     },
     {
       "rodada": 32,
@@ -190,7 +190,7 @@
       "nome": "Tarzia",
       "clube": "VIT",
       "preco": 4.01,
-      "exp_score": 3.1517,
+      "exp_score": 3.234,
       "atleta_id": 143153
     }
   ],
@@ -206,7 +206,7 @@
       "nome": "Anderson",
       "clube": "CHA",
       "preco": 7.58,
-      "exp_score": 3.9581,
+      "exp_score": 3.9659,
       "atleta_id": 102906
     },
     {
@@ -217,7 +217,7 @@
       "nome": "Pedro Lima",
       "clube": "SAO",
       "preco": 11.05,
-      "exp_score": 3.974,
+      "exp_score": 3.9593,
       "atleta_id": 130525
     },
     {
@@ -228,7 +228,7 @@
       "nome": "Arthur",
       "clube": "PAL",
       "preco": 5.19,
-      "exp_score": 4.113,
+      "exp_score": 4.0954,
       "atleta_id": 145404
     },
     {
@@ -239,7 +239,7 @@
       "nome": "Murilo",
       "clube": "PAL",
       "preco": 7.78,
-      "exp_score": 4.1044,
+      "exp_score": 4.0869,
       "atleta_id": 97653
     },
     {
@@ -250,7 +250,7 @@
       "nome": "Ferraresi",
       "clube": "BOT",
       "preco": 7.97,
-      "exp_score": 3.4793,
+      "exp_score": 3.5367,
       "atleta_id": 105300
     },
     {
@@ -261,7 +261,7 @@
       "nome": "Gustavo Henrique",
       "clube": "SAN",
       "preco": 5.69,
-      "exp_score": 4.4328,
+      "exp_score": 4.4082,
       "atleta_id": 141776
     },
     {
@@ -272,7 +272,7 @@
       "nome": "Matheuzinho",
       "clube": "VIT",
       "preco": 6.07,
-      "exp_score": 4.924,
+      "exp_score": 5.0525,
       "atleta_id": 90703
     },
     {
@@ -283,8 +283,30 @@
       "nome": "Gabriel Bontempo",
       "clube": "SAN",
       "preco": 5.93,
-      "exp_score": 4.4367,
+      "exp_score": 4.412,
       "atleta_id": 141754
+    },
+    {
+      "rodada": 32,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Maurício",
+      "clube": "PAL",
+      "preco": 8.02,
+      "exp_score": 4.6215,
+      "atleta_id": 105647
+    },
+    {
+      "rodada": 32,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Giovanni Augusto",
+      "clube": "CHA",
+      "preco": 5.39,
+      "exp_score": 3.5391,
+      "atleta_id": 68938
     },
     {
       "rodada": 32,
@@ -294,30 +316,8 @@
       "nome": "Marcinho",
       "clube": "CHA",
       "preco": 4.8,
-      "exp_score": 3.6857,
+      "exp_score": 3.669,
       "atleta_id": 95332
-    },
-    {
-      "rodada": 32,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Pavón",
-      "clube": "GRE",
-      "preco": 7.91,
-      "exp_score": 4.8402,
-      "atleta_id": 91908
-    },
-    {
-      "rodada": 32,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Flaco López",
-      "clube": "PAL",
-      "preco": 14.27,
-      "exp_score": 8.6366,
-      "atleta_id": 113103
     },
     {
       "rodada": 32,
@@ -327,7 +327,7 @@
       "nome": "Abel Ferreira",
       "clube": "PAL",
       "preco": 12.61,
-      "exp_score": 8.0733,
+      "exp_score": 8.0395,
       "atleta_id": 110506
     },
     {
@@ -338,7 +338,7 @@
       "nome": "Weverton",
       "clube": "GRE",
       "preco": 7.53,
-      "exp_score": 3.8053,
+      "exp_score": 3.9132,
       "atleta_id": 71631
     },
     {
@@ -346,33 +346,33 @@
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "LAT",
-      "nome": "Bruno Melo",
-      "clube": "CFC",
-      "preco": 4.82,
-      "exp_score": 2.3912,
-      "atleta_id": 84339
+      "nome": "Ryan Augusto",
+      "clube": "RBB",
+      "preco": 3.9,
+      "exp_score": 1.7063,
+      "atleta_id": 148125
     },
     {
       "rodada": 32,
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "ZAG",
-      "nome": "Jacy",
-      "clube": "CFC",
-      "preco": 5.57,
-      "exp_score": 3.413,
-      "atleta_id": 97878
+      "nome": "Wallace",
+      "clube": "GRE",
+      "preco": 7.28,
+      "exp_score": 3.506,
+      "atleta_id": 130307
     },
     {
       "rodada": 32,
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "MEI",
-      "nome": "João Cruz",
+      "nome": "Jadson",
       "clube": "CAP",
-      "preco": 5.68,
-      "exp_score": 3.8165,
-      "atleta_id": 128431
+      "preco": 5.32,
+      "exp_score": 3.4557,
+      "atleta_id": 80129
     },
     {
       "rodada": 32,
@@ -382,7 +382,7 @@
       "nome": "Tarzia",
       "clube": "VIT",
       "preco": 4.01,
-      "exp_score": 3.1517,
+      "exp_score": 3.234,
       "atleta_id": 143153
     }
   ],
@@ -395,7 +395,7 @@
       "nome": "Anderson",
       "clube": "CHA",
       "preco": 7.58,
-      "exp_score": 3.9581,
+      "exp_score": 3.9659,
       "atleta_id": 102906
     },
     {
@@ -406,7 +406,7 @@
       "nome": "Pedro Lima",
       "clube": "SAO",
       "preco": 11.05,
-      "exp_score": 3.974,
+      "exp_score": 3.9593,
       "atleta_id": 130525
     },
     {
@@ -417,7 +417,7 @@
       "nome": "Arthur",
       "clube": "PAL",
       "preco": 5.19,
-      "exp_score": 4.113,
+      "exp_score": 4.0954,
       "atleta_id": 145404
     },
     {
@@ -428,7 +428,7 @@
       "nome": "Murilo",
       "clube": "PAL",
       "preco": 7.78,
-      "exp_score": 4.1044,
+      "exp_score": 4.0869,
       "atleta_id": 97653
     },
     {
@@ -439,7 +439,7 @@
       "nome": "Ferraresi",
       "clube": "BOT",
       "preco": 7.97,
-      "exp_score": 3.4793,
+      "exp_score": 3.5367,
       "atleta_id": 105300
     },
     {
@@ -450,7 +450,7 @@
       "nome": "Gustavo Henrique",
       "clube": "SAN",
       "preco": 5.69,
-      "exp_score": 4.4328,
+      "exp_score": 4.4082,
       "atleta_id": 141776
     },
     {
@@ -461,7 +461,7 @@
       "nome": "Matheuzinho",
       "clube": "VIT",
       "preco": 6.07,
-      "exp_score": 4.924,
+      "exp_score": 5.0525,
       "atleta_id": 90703
     },
     {
@@ -472,8 +472,30 @@
       "nome": "Gabriel Bontempo",
       "clube": "SAN",
       "preco": 5.93,
-      "exp_score": 4.4367,
+      "exp_score": 4.412,
       "atleta_id": 141754
+    },
+    {
+      "rodada": 32,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Maurício",
+      "clube": "PAL",
+      "preco": 8.02,
+      "exp_score": 4.6215,
+      "atleta_id": 105647
+    },
+    {
+      "rodada": 32,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Giovanni Augusto",
+      "clube": "CHA",
+      "preco": 5.39,
+      "exp_score": 3.5391,
+      "atleta_id": 68938
     },
     {
       "rodada": 32,
@@ -483,30 +505,8 @@
       "nome": "Marcinho",
       "clube": "CHA",
       "preco": 4.8,
-      "exp_score": 3.6857,
+      "exp_score": 3.669,
       "atleta_id": 95332
-    },
-    {
-      "rodada": 32,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Pavón",
-      "clube": "GRE",
-      "preco": 7.91,
-      "exp_score": 4.8402,
-      "atleta_id": 91908
-    },
-    {
-      "rodada": 32,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Flaco López",
-      "clube": "PAL",
-      "preco": 14.27,
-      "exp_score": 8.6366,
-      "atleta_id": 113103
     },
     {
       "rodada": 32,
@@ -516,7 +516,7 @@
       "nome": "Abel Ferreira",
       "clube": "PAL",
       "preco": 12.61,
-      "exp_score": 8.0733,
+      "exp_score": 8.0395,
       "atleta_id": 110506
     }
   ],
@@ -529,7 +529,7 @@
       "nome": "Weverton",
       "clube": "GRE",
       "preco": 7.53,
-      "exp_score": 3.8053,
+      "exp_score": 3.9132,
       "atleta_id": 71631
     },
     {
@@ -537,33 +537,33 @@
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "LAT",
-      "nome": "Bruno Melo",
-      "clube": "CFC",
-      "preco": 4.82,
-      "exp_score": 2.3912,
-      "atleta_id": 84339
+      "nome": "Ryan Augusto",
+      "clube": "RBB",
+      "preco": 3.9,
+      "exp_score": 1.7063,
+      "atleta_id": 148125
     },
     {
       "rodada": 32,
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "ZAG",
-      "nome": "Jacy",
-      "clube": "CFC",
-      "preco": 5.57,
-      "exp_score": 3.413,
-      "atleta_id": 97878
+      "nome": "Wallace",
+      "clube": "GRE",
+      "preco": 7.28,
+      "exp_score": 3.506,
+      "atleta_id": 130307
     },
     {
       "rodada": 32,
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "MEI",
-      "nome": "João Cruz",
+      "nome": "Jadson",
       "clube": "CAP",
-      "preco": 5.68,
-      "exp_score": 3.8165,
-      "atleta_id": 128431
+      "preco": 5.32,
+      "exp_score": 3.4557,
+      "atleta_id": 80129
     },
     {
       "rodada": 32,
@@ -573,12 +573,12 @@
       "nome": "Tarzia",
       "clube": "VIT",
       "preco": 4.01,
-      "exp_score": 3.1517,
+      "exp_score": 3.234,
       "atleta_id": 143153
     }
   ],
-  "capitao": "Flaco López",
-  "formacao": "4-3-3",
+  "capitao": "Abel Ferreira",
+  "formacao": "4-5-1",
   "evento_programado": "ATUALIZACAO_20H",
   "blocos_topo": [],
   "pipeline_visual": "times_top5_aprovados_v2_2026_09_21_formacao_dinamica"
