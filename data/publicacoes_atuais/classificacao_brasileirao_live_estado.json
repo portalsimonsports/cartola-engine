@@ -161,20 +161,20 @@
       "gm": 54
     },
     {
-      "nome": "Athletico-PR",
-      "pos": 3,
-      "pts": 56,
-      "v": 16,
-      "saldo": 13,
-      "gm": 50
-    },
-    {
       "nome": "Cruzeiro",
-      "pos": 4,
+      "pos": 3,
       "pts": 54,
       "v": 16,
       "saldo": 5,
       "gm": 51
+    },
+    {
+      "nome": "Athletico-PR",
+      "pos": 4,
+      "pts": 54,
+      "v": 15,
+      "saldo": 12,
+      "gm": 50
     },
     {
       "nome": "Fluminense",
@@ -211,10 +211,10 @@
     {
       "nome": "SÃO PAULO",
       "pos": 9,
-      "pts": 42,
+      "pts": 43,
       "v": 12,
-      "saldo": 0,
-      "gm": 36
+      "saldo": 1,
+      "gm": 37
     },
     {
       "nome": "RB Bragantino",
@@ -227,22 +227,14 @@
     {
       "nome": "Botafogo",
       "pos": 11,
-      "pts": 40,
+      "pts": 39,
       "v": 10,
-      "saldo": -4,
+      "saldo": -6,
       "gm": 44
     },
     {
-      "nome": "Mirassol",
-      "pos": 12,
-      "pts": 39,
-      "v": 10,
-      "saldo": -7,
-      "gm": 37
-    },
-    {
       "nome": "Coritiba",
-      "pos": 13,
+      "pos": 12,
       "pts": 39,
       "v": 10,
       "saldo": -11,
@@ -250,11 +242,19 @@
     },
     {
       "nome": "VITÓRIA",
+      "pos": 13,
+      "pts": 38,
+      "v": 10,
+      "saldo": -11,
+      "gm": 35
+    },
+    {
+      "nome": "Mirassol",
       "pos": 14,
       "pts": 37,
-      "v": 10,
-      "saldo": -12,
-      "gm": 34
+      "v": 9,
+      "saldo": -8,
+      "gm": 37
     },
     {
       "nome": "Vasco",
@@ -265,20 +265,20 @@
       "gm": 36
     },
     {
-      "nome": "Corinthians",
+      "nome": "Internacional",
       "pos": 16,
+      "pts": 35,
+      "v": 8,
+      "saldo": -5,
+      "gm": 35
+    },
+    {
+      "nome": "Corinthians",
+      "pos": 17,
       "pts": 33,
       "v": 8,
       "saldo": -7,
       "gm": 32
-    },
-    {
-      "nome": "Internacional",
-      "pos": 17,
-      "pts": 33,
-      "v": 7,
-      "saldo": -7,
-      "gm": 33
     },
     {
       "nome": "GRÊMIO",
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-10-24T17:08:20.211077-03:00",
+  "updated_at": "2026-10-24T17:23:20.486972-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
