@@ -145,20 +145,20 @@
   "partidas": {},
   "last_signature": [
     {
-      "nome": "Palmeiras",
-      "pos": 1,
-      "pts": 69,
-      "v": 20,
-      "saldo": 33,
-      "gm": 55
-    },
-    {
       "nome": "Flamengo",
-      "pos": 2,
+      "pos": 1,
       "pts": 67,
       "v": 20,
       "saldo": 36,
       "gm": 61
+    },
+    {
+      "nome": "Palmeiras",
+      "pos": 2,
+      "pts": 67,
+      "v": 19,
+      "saldo": 32,
+      "gm": 54
     },
     {
       "nome": "Cruzeiro",
@@ -219,9 +219,9 @@
     {
       "nome": "RB Bragantino",
       "pos": 10,
-      "pts": 41,
+      "pts": 42,
       "v": 11,
-      "saldo": 2,
+      "saldo": 3,
       "gm": 39
     },
     {
@@ -241,8 +241,16 @@
       "gm": 38
     },
     {
-      "nome": "VITÓRIA",
+      "nome": "Vasco",
       "pos": 13,
+      "pts": 38,
+      "v": 10,
+      "saldo": -6,
+      "gm": 37
+    },
+    {
+      "nome": "VITÓRIA",
+      "pos": 14,
       "pts": 38,
       "v": 10,
       "saldo": -11,
@@ -250,19 +258,11 @@
     },
     {
       "nome": "Mirassol",
-      "pos": 14,
+      "pos": 15,
       "pts": 37,
       "v": 9,
       "saldo": -8,
       "gm": 37
-    },
-    {
-      "nome": "Vasco",
-      "pos": 15,
-      "pts": 36,
-      "v": 9,
-      "saldo": -7,
-      "gm": 36
     },
     {
       "nome": "Internacional",
@@ -275,9 +275,9 @@
     {
       "nome": "Corinthians",
       "pos": 17,
-      "pts": 34,
+      "pts": 33,
       "v": 8,
-      "saldo": -7,
+      "saldo": -8,
       "gm": 32
     },
     {
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-10-24T19:03:18.780294-03:00",
+  "updated_at": "2026-10-24T19:23:24.991464-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
