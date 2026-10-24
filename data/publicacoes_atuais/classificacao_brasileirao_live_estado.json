@@ -1,5 +1,5 @@
 {
-  "rodada": 31,
+  "rodada": 32,
   "base_signature": [
     {
       "nome": "FLA",
@@ -16,18 +16,18 @@
       "saldo": 32
     },
     {
+      "nome": "CRU",
+      "j": 32,
+      "pts": 54,
+      "v": 16,
+      "saldo": 5
+    },
+    {
       "nome": "CAP",
       "j": 31,
       "pts": 53,
       "v": 15,
       "saldo": 12
-    },
-    {
-      "nome": "CRU",
-      "j": 31,
-      "pts": 51,
-      "v": 15,
-      "saldo": 4
     },
     {
       "nome": "FLU",
@@ -129,10 +129,10 @@
     },
     {
       "nome": "REM",
-      "j": 31,
+      "j": 32,
       "pts": 26,
       "v": 5,
-      "saldo": -15
+      "saldo": -16
     },
     {
       "nome": "CHA",
@@ -305,7 +305,7 @@
       "gm": 30
     }
   ],
-  "last_context": "classificacao_final",
-  "updated_at": "2026-10-19T22:23:28.453552-03:00",
-  "last_image": "output/classificacao_brasileirao_fechamento.png"
+  "last_context": "classificacao_abertura",
+  "updated_at": "2026-10-24T16:38:21.787527-03:00",
+  "last_image": "output/classificacao_brasileirao_abertura.png"
 }
