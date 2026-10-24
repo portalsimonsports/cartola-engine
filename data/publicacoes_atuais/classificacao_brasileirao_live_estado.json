@@ -145,20 +145,20 @@
   "partidas": {},
   "last_signature": [
     {
-      "nome": "Flamengo",
+      "nome": "Palmeiras",
       "pos": 1,
+      "pts": 69,
+      "v": 20,
+      "saldo": 33,
+      "gm": 55
+    },
+    {
+      "nome": "Flamengo",
+      "pos": 2,
       "pts": 67,
       "v": 20,
       "saldo": 36,
       "gm": 61
-    },
-    {
-      "nome": "Palmeiras",
-      "pos": 2,
-      "pts": 66,
-      "v": 19,
-      "saldo": 32,
-      "gm": 54
     },
     {
       "nome": "Cruzeiro",
@@ -221,7 +221,7 @@
       "pos": 10,
       "pts": 41,
       "v": 11,
-      "saldo": 3,
+      "saldo": 2,
       "gm": 39
     },
     {
@@ -229,7 +229,7 @@
       "pos": 11,
       "pts": 39,
       "v": 10,
-      "saldo": -6,
+      "saldo": -7,
       "gm": 44
     },
     {
@@ -259,7 +259,7 @@
     {
       "nome": "Vasco",
       "pos": 15,
-      "pts": 35,
+      "pts": 36,
       "v": 9,
       "saldo": -7,
       "gm": 36
@@ -269,13 +269,13 @@
       "pos": 16,
       "pts": 35,
       "v": 8,
-      "saldo": -5,
-      "gm": 35
+      "saldo": -4,
+      "gm": 36
     },
     {
       "nome": "Corinthians",
       "pos": 17,
-      "pts": 33,
+      "pts": 34,
       "v": 8,
       "saldo": -7,
       "gm": 32
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-10-24T17:23:20.486972-03:00",
+  "updated_at": "2026-10-24T19:03:18.780294-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
