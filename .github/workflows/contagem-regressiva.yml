@@ -1,0 +1,127 @@
+name: Cartola — Contagem Regressiva Aprovada
+
+on:
+  repository_dispatch:
+    types: [cartola_countdown_publish]
+  workflow_dispatch:
+    inputs:
+      ano:
+        description: Ano da próxima temporada (somente teste sem publicar)
+        type: string
+        required: true
+        default: '2027'
+      dias:
+        description: Dias restantes (somente teste sem publicar)
+        type: string
+        required: true
+        default: '95'
+      data_inicio:
+        description: Data DD/MM/AAAA
+        type: string
+        required: true
+        default: '27/01/2027'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cartola-contagem-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  contagem:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Dependências
+        run: pip install Pillow requests google-api-python-client google-auth
+      - name: Validar o pedido e renderizar somente a arte aprovada
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          PAYLOAD_JSON: ${{ toJSON(github.event.client_payload) }}
+          MANUAL_ANO: ${{ inputs.ano }}
+          MANUAL_DIAS: ${{ inputs.dias }}
+          MANUAL_DATA: ${{ inputs.data_inicio }}
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, os, subprocess, sys
+          from datetime import date, datetime
+          from pathlib import Path
+
+          manual = os.environ['EVENT_NAME'] == 'workflow_dispatch'
+          root = json.loads(os.environ.get('PAYLOAD_JSON') or '{}') if not manual else {}
+          data = root.get('payload') if isinstance(root.get('payload'), dict) else root
+          if not manual and str(root.get('evento_programado')) != 'CONTAGEM_REGRESSIVA':
+              sys.exit('Evento de contagem incorreto')
+          ano = int(os.environ['MANUAL_ANO'] if manual else data.get('ano'))
+          dias = int(os.environ['MANUAL_DIAS'] if manual else data.get('dias_restantes'))
+          data_inicio = os.environ['MANUAL_DATA'] if manual else data.get('data_inicio')
+          estreia = datetime.strptime(data_inicio, '%d/%m/%Y').date()
+          if estreia.year != ano or not (1 <= dias <= 400):
+              sys.exit('Ano/data/dias incompatíveis')
+          if not manual and abs((estreia - date.today()).days - dias) > 1:
+              sys.exit('Contagem não confere com a data do campeonato')
+          if not manual and data.get('arte_aprovada') != 'CONTAGEM_BRASILEIRAO_PORTAL_SIMONSPORTS':
+              sys.exit('Arte não aprovada, publicação bloqueada')
+          day_key = date.today().isoformat() if not manual else 'PREVIA'
+          marker = Path(f'data/contagem_publicadas/{ano}/{day_key}.json')
+          if not manual and marker.exists():
+              print('Publicação já registrada:', marker)
+              Path('/tmp/contagem_skip').touch()
+              sys.exit(0)
+          output = Path(f'output/contagem_brasileirao_{ano}_{day_key}.png')
+          subprocess.run([sys.executable, 'app/render_contagem_regressiva.py',
+                          '--ano', str(ano), '--dias', str(dias),
+                          '--data', data_inicio, '--saida', str(output)], check=True)
+          Path('/tmp/contagem_file').write_text(str(output))
+          if manual:
+              print('PRÉVIA: imagem gerada sem envio ao Telegram')
+          else:
+              marker.parent.mkdir(parents=True, exist_ok=True)
+              Path('/tmp/contagem_marker').write_text(str(marker))
+              Path('/tmp/contagem_metadata').write_text(json.dumps({
+                  'ano': ano, 'dias': dias, 'data_inicio': data_inicio,
+                  'fonte': data.get('fonte', 'CBF'), 'renderizador': 'aprovado_v1'},
+                  ensure_ascii=False, indent=2))
+          PY
+      - name: Publicar no Telegram somente no disparo automático
+        if: github.event_name == 'repository_dispatch'
+        env:
+          PLANILHA_ID: ${{ secrets.PLANILHA_ID }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          ABA_TELEGRAM: ${{ secrets.ABA_TELEGRAM }}
+          CONTA_TELEGRAM: ${{ secrets.CONTA_TELEGRAM }}
+          TELEGRAM_CHAT_FALLBACK: '@dicascartolaportalsimonsports'
+        shell: bash
+        run: |
+          if [ -f /tmp/contagem_skip ]; then exit 0; fi
+          python - <<'PY'
+          import sys
+          from pathlib import Path
+          sys.path.insert(0, 'app')
+          from gerar_resultados_telegram import enviar_foto
+          imagem = Path('/tmp/contagem_file').read_text().strip()
+          enviar_foto(imagem, '🏆 Contagem regressiva para o Brasileirão!')
+          Path('/tmp/contagem_enviada').touch()
+          PY
+      - name: Registrar imagem e confirmação do envio
+        if: github.event_name == 'repository_dispatch'
+        shell: bash
+        run: |
+          if [ ! -f /tmp/contagem_enviada ]; then exit 0; fi
+          marker="$(cat /tmp/contagem_marker)"
+          mkdir -p "$(dirname "$marker")"
+          cp /tmp/contagem_metadata "$marker"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$marker" "$(cat /tmp/contagem_file)"
+          git commit -m 'Cartola: contagem regressiva semanal publicada'
+          git pull --rebase origin main
+          git push origin HEAD:main
