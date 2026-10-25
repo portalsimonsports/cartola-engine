@@ -30,6 +30,13 @@
       "saldo": 12
     },
     {
+      "nome": "BAH",
+      "j": 32,
+      "pts": 52,
+      "v": 14,
+      "saldo": 6
+    },
+    {
       "nome": "FLU",
       "j": 32,
       "pts": 51,
@@ -44,18 +51,11 @@
       "saldo": 7
     },
     {
-      "nome": "BAH",
-      "j": 32,
-      "pts": 50,
-      "v": 13,
-      "saldo": 5
-    },
-    {
       "nome": "SAN",
       "j": 32,
-      "pts": 46,
+      "pts": 45,
       "v": 12,
-      "saldo": 2
+      "saldo": 1
     },
     {
       "nome": "SAO",
@@ -177,16 +177,8 @@
       "gm": 50
     },
     {
-      "nome": "Bahia",
-      "pos": 5,
-      "pts": 52,
-      "v": 14,
-      "saldo": 6,
-      "gm": 45
-    },
-    {
       "nome": "Fluminense",
-      "pos": 6,
+      "pos": 5,
       "pts": 51,
       "v": 14,
       "saldo": 9,
@@ -194,19 +186,27 @@
     },
     {
       "nome": "ATLÉTICO-MG",
-      "pos": 7,
+      "pos": 6,
       "pts": 50,
       "v": 14,
       "saldo": 7,
       "gm": 42
     },
     {
+      "nome": "Bahia",
+      "pos": 7,
+      "pts": 50,
+      "v": 13,
+      "saldo": 5,
+      "gm": 45
+    },
+    {
       "nome": "Santos",
       "pos": 8,
-      "pts": 45,
+      "pts": 46,
       "v": 12,
-      "saldo": 1,
-      "gm": 48
+      "saldo": 2,
+      "gm": 49
     },
     {
       "nome": "SÃO PAULO",
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-10-24T21:53:19.358181-03:00",
+  "updated_at": "2026-10-24T23:13:21.797126-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
