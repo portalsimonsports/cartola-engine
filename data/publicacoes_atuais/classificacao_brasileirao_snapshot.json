@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-10-23T22:10:18.522455-03:00",
+  "updated_at": "2026-10-24T21:29:50.267495-03:00",
   "last_publication_mode": "apos_jogos",
   "signature": [
     {
-      "nome": "FLA",
+      "nome": "PAL",
       "pos": 1,
+      "pts": 69,
+      "v": 20,
+      "saldo": 34
+    },
+    {
+      "nome": "FLA",
+      "pos": 2,
       "pts": 67,
       "v": 20,
       "saldo": 36
-    },
-    {
-      "nome": "PAL",
-      "pos": 2,
-      "pts": 66,
-      "v": 19,
-      "saldo": 32
     },
     {
       "nome": "CRU",
@@ -26,7 +26,7 @@
     {
       "nome": "CAP",
       "pos": 4,
-      "pts": 53,
+      "pts": 54,
       "v": 15,
       "saldo": 12
     },
@@ -35,7 +35,7 @@
       "pos": 5,
       "pts": 51,
       "v": 14,
-      "saldo": 10
+      "saldo": 9
     },
     {
       "nome": "CAM",
@@ -47,21 +47,21 @@
     {
       "nome": "BAH",
       "pos": 7,
-      "pts": 49,
+      "pts": 50,
       "v": 13,
       "saldo": 5
     },
     {
       "nome": "SAN",
       "pos": 8,
-      "pts": 45,
+      "pts": 46,
       "v": 12,
       "saldo": 2
     },
     {
       "nome": "SAO",
       "pos": 9,
-      "pts": 42,
+      "pts": 43,
       "v": 12,
       "saldo": 1
     },
@@ -70,14 +70,14 @@
       "pos": 10,
       "pts": 41,
       "v": 11,
-      "saldo": 3
+      "saldo": 1
     },
     {
       "nome": "BOT",
       "pos": 11,
       "pts": 39,
       "v": 10,
-      "saldo": -4
+      "saldo": -7
     },
     {
       "nome": "CFC",
@@ -87,39 +87,39 @@
       "saldo": -11
     },
     {
-      "nome": "VIT",
+      "nome": "VAS",
       "pos": 13,
-      "pts": 37,
+      "pts": 38,
+      "v": 10,
+      "saldo": -6
+    },
+    {
+      "nome": "VIT",
+      "pos": 14,
+      "pts": 38,
       "v": 10,
       "saldo": -11
     },
     {
       "nome": "MIR",
-      "pos": 14,
-      "pts": 36,
+      "pos": 15,
+      "pts": 37,
       "v": 9,
       "saldo": -8
     },
     {
-      "nome": "VAS",
-      "pos": 15,
+      "nome": "INT",
+      "pos": 16,
       "pts": 35,
-      "v": 9,
-      "saldo": -7
+      "v": 8,
+      "saldo": -4
     },
     {
       "nome": "COR",
-      "pos": 16,
+      "pos": 17,
       "pts": 33,
       "v": 8,
-      "saldo": -7
-    },
-    {
-      "nome": "INT",
-      "pos": 17,
-      "pts": 32,
-      "v": 7,
-      "saldo": -7
+      "saldo": -8
     },
     {
       "nome": "GRE",
@@ -138,14 +138,14 @@
     {
       "nome": "CHA",
       "pos": 20,
-      "pts": 18,
-      "v": 3,
-      "saldo": -32
+      "pts": 21,
+      "v": 4,
+      "saldo": -31
     }
   ],
   "positions": {
-    "FLA": 1,
-    "PAL": 2,
+    "PAL": 1,
+    "FLA": 2,
     "CRU": 3,
     "CAP": 4,
     "FLU": 5,
@@ -156,11 +156,11 @@
     "RBB": 10,
     "BOT": 11,
     "CFC": 12,
-    "VIT": 13,
-    "MIR": 14,
-    "VAS": 15,
-    "COR": 16,
-    "INT": 17,
+    "VAS": 13,
+    "VIT": 14,
+    "MIR": 15,
+    "INT": 16,
+    "COR": 17,
     "GRE": 18,
     "REM": 19,
     "CHA": 20
