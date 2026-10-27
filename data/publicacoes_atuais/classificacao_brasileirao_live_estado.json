@@ -10,8 +10,8 @@
     },
     {
       "nome": "FLA",
-      "j": 31,
-      "pts": 67,
+      "j": 32,
+      "pts": 68,
       "v": 20,
       "saldo": 36
     },
@@ -30,13 +30,6 @@
       "saldo": 12
     },
     {
-      "nome": "BAH",
-      "j": 32,
-      "pts": 52,
-      "v": 14,
-      "saldo": 6
-    },
-    {
       "nome": "FLU",
       "j": 32,
       "pts": 51,
@@ -45,17 +38,24 @@
     },
     {
       "nome": "CAM",
-      "j": 31,
-      "pts": 50,
+      "j": 32,
+      "pts": 51,
       "v": 14,
       "saldo": 7
     },
     {
+      "nome": "BAH",
+      "j": 32,
+      "pts": 50,
+      "v": 13,
+      "saldo": 5
+    },
+    {
       "nome": "SAN",
       "j": 32,
-      "pts": 45,
+      "pts": 46,
       "v": 12,
-      "saldo": 1
+      "saldo": 2
     },
     {
       "nome": "SAO",
@@ -80,10 +80,10 @@
     },
     {
       "nome": "CFC",
-      "j": 31,
+      "j": 32,
       "pts": 39,
       "v": 10,
-      "saldo": -11
+      "saldo": -12
     },
     {
       "nome": "VAS",
@@ -114,18 +114,18 @@
       "saldo": -4
     },
     {
+      "nome": "GRE",
+      "j": 32,
+      "pts": 34,
+      "v": 8,
+      "saldo": -9
+    },
+    {
       "nome": "COR",
       "j": 32,
       "pts": 33,
       "v": 8,
       "saldo": -8
-    },
-    {
-      "nome": "GRE",
-      "j": 31,
-      "pts": 31,
-      "v": 7,
-      "saldo": -10
     },
     {
       "nome": "REM",
@@ -155,10 +155,10 @@
     {
       "nome": "Flamengo",
       "pos": 2,
-      "pts": 67,
+      "pts": 68,
       "v": 20,
       "saldo": 36,
-      "gm": 61
+      "gm": 63
     },
     {
       "nome": "Cruzeiro",
@@ -187,10 +187,10 @@
     {
       "nome": "ATLÉTICO-MG",
       "pos": 6,
-      "pts": 50,
+      "pts": 51,
       "v": 14,
       "saldo": 7,
-      "gm": 42
+      "gm": 44
     },
     {
       "nome": "Bahia",
@@ -237,7 +237,7 @@
       "pos": 12,
       "pts": 39,
       "v": 10,
-      "saldo": -11,
+      "saldo": -12,
       "gm": 38
     },
     {
@@ -273,19 +273,19 @@
       "gm": 36
     },
     {
-      "nome": "Corinthians",
+      "nome": "GRÊMIO",
       "pos": 17,
+      "pts": 34,
+      "v": 8,
+      "saldo": -9,
+      "gm": 35
+    },
+    {
+      "nome": "Corinthians",
+      "pos": 18,
       "pts": 33,
       "v": 8,
       "saldo": -8,
-      "gm": 34
-    },
-    {
-      "nome": "GRÊMIO",
-      "pos": 18,
-      "pts": 31,
-      "v": 7,
-      "saldo": -10,
       "gm": 34
     },
     {
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-10-24T23:13:21.797126-03:00",
+  "updated_at": "2026-10-26T21:54:12.133102-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
