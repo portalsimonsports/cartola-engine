@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 33,
-  "atualizado_em": "2026-10-27T03:54:55.830Z",
+  "atualizado_em": "2026-10-27T03:59:56.896Z",
   "dados": [
     {
       "RODADA": 33,
@@ -18,22 +18,22 @@
     {
       "RODADA": 33,
       "POS": "GOL",
+      "NOME": "Weverton",
+      "CLUBE": "GRE",
+      "PRECO": 8.98,
+      "EXP_SCORE": 5.4171,
+      "FACTOR": 1.107403477216279,
+      "ATLETA_ID": 71631
+    },
+    {
+      "RODADA": 33,
+      "POS": "GOL",
       "NOME": "Lucas Arcanjo",
       "CLUBE": "VIT",
       "PRECO": 8.54,
       "EXP_SCORE": 4.887,
       "FACTOR": 0.9744688538605975,
       "ATLETA_ID": 104118
-    },
-    {
-      "RODADA": 33,
-      "POS": "GOL",
-      "NOME": "Weverton",
-      "CLUBE": "GRE",
-      "PRECO": 8.98,
-      "EXP_SCORE": 4.8754,
-      "FACTOR": 1.107403477216279,
-      "ATLETA_ID": 71631
     },
     {
       "RODADA": 33,
@@ -48,12 +48,12 @@
     {
       "RODADA": 33,
       "POS": "GOL",
-      "NOME": "Rossi",
-      "CLUBE": "FLA",
-      "PRECO": 7.86,
-      "EXP_SCORE": 4.5043,
-      "FACTOR": 0.8810400675313712,
-      "ATLETA_ID": 99552
+      "NOME": "Hugo Souza",
+      "CLUBE": "COR",
+      "PRECO": 8.81,
+      "EXP_SCORE": 4.4756,
+      "FACTOR": 1.1538572685508353,
+      "ATLETA_ID": 101574
     },
     {
       "RODADA": 33,
@@ -88,22 +88,22 @@
     {
       "RODADA": 33,
       "POS": "LAT",
+      "NOME": "Matheuzinho",
+      "CLUBE": "COR",
+      "PRECO": 10.43,
+      "EXP_SCORE": 6.4768,
+      "FACTOR": 1.1538572685508353,
+      "ATLETA_ID": 101727
+    },
+    {
+      "RODADA": 33,
+      "POS": "LAT",
       "NOME": "Juninho Capixaba",
       "CLUBE": "RBB",
       "PRECO": 12.01,
       "EXP_SCORE": 6.4327,
       "FACTOR": 1.1727781735144993,
       "ATLETA_ID": 94968
-    },
-    {
-      "RODADA": 33,
-      "POS": "LAT",
-      "NOME": "Matheuzinho",
-      "CLUBE": "COR",
-      "PRECO": 10.43,
-      "EXP_SCORE": 5.8291,
-      "FACTOR": 1.1538572685508353,
-      "ATLETA_ID": 101727
     },
     {
       "RODADA": 33,
@@ -121,7 +121,7 @@
       "NOME": "Wallace",
       "CLUBE": "GRE",
       "PRECO": 7.57,
-      "EXP_SCORE": 4.0683,
+      "EXP_SCORE": 4.6785,
       "FACTOR": 1.107403477216279,
       "ATLETA_ID": 130307
     },
@@ -131,7 +131,7 @@
       "NOME": "Gustavo Gómez",
       "CLUBE": "PAL",
       "PRECO": 11.1,
-      "EXP_SCORE": 3.8991,
+      "EXP_SCORE": 4.3323,
       "FACTOR": 0.9168591830219206,
       "ATLETA_ID": 71684
     },
@@ -141,7 +141,7 @@
       "NOME": "Gustavo Henrique",
       "CLUBE": "COR",
       "PRECO": 9.5,
-      "EXP_SCORE": 3.8159,
+      "EXP_SCORE": 4.2399,
       "FACTOR": 1.1538572685508353,
       "ATLETA_ID": 78248
     },
@@ -168,22 +168,32 @@
     {
       "RODADA": 33,
       "POS": "MEI",
+      "NOME": "Arias",
+      "CLUBE": "PAL",
+      "PRECO": 13.53,
+      "EXP_SCORE": 6.0943,
+      "FACTOR": 1.0143643111034557,
+      "ATLETA_ID": 99815
+    },
+    {
+      "RODADA": 33,
+      "POS": "MEI",
       "NOME": "Lucas Paquetá",
       "CLUBE": "FLA",
       "PRECO": 13.12,
-      "EXP_SCORE": 6.1783,
+      "EXP_SCORE": 5.3724,
       "FACTOR": 0.9410648262687314,
       "ATLETA_ID": 94930
     },
     {
       "RODADA": 33,
       "POS": "MEI",
-      "NOME": "Arias",
-      "CLUBE": "PAL",
-      "PRECO": 13.53,
-      "EXP_SCORE": 5.4848,
-      "FACTOR": 1.0143643111034557,
-      "ATLETA_ID": 99815
+      "NOME": "Bernard",
+      "CLUBE": "CAM",
+      "PRECO": 6.91,
+      "EXP_SCORE": 4.3936,
+      "FACTOR": 1.094156196858901,
+      "ATLETA_ID": 72460
     },
     {
       "RODADA": 33,
@@ -194,16 +204,6 @@
       "EXP_SCORE": 4.3591,
       "FACTOR": 1.0104838043937805,
       "ATLETA_ID": 141776
-    },
-    {
-      "RODADA": 33,
-      "POS": "MEI",
-      "NOME": "Acevedo",
-      "CLUBE": "BAH",
-      "PRECO": 6.9,
-      "EXP_SCORE": 4.3528,
-      "FACTOR": 1.0337705275355058,
-      "ATLETA_ID": 104783
     },
     {
       "RODADA": 33,
@@ -278,16 +278,6 @@
     {
       "RODADA": 33,
       "POS": "TEC",
-      "NOME": "Eduardo Domínguez",
-      "CLUBE": "CAM",
-      "PRECO": 10.32,
-      "EXP_SCORE": 6.1988,
-      "FACTOR": 1.063762969168376,
-      "ATLETA_ID": 92747
-    },
-    {
-      "RODADA": 33,
-      "POS": "TEC",
       "NOME": "Artur Jorge",
       "CLUBE": "CRU",
       "PRECO": 12.02,
@@ -304,6 +294,16 @@
       "EXP_SCORE": 5.7169,
       "FACTOR": 1.0384373894117094,
       "ATLETA_ID": 128177
+    },
+    {
+      "RODADA": 33,
+      "POS": "TEC",
+      "NOME": "Eduardo Domínguez",
+      "CLUBE": "CAM",
+      "PRECO": 10.32,
+      "EXP_SCORE": 5.3903,
+      "FACTOR": 1.063762969168376,
+      "ATLETA_ID": 92747
     }
   ]
 }
