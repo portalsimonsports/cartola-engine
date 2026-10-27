@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-10-24T21:29:50.267495-03:00",
+  "updated_at": "2026-10-26T22:23:02.792475-03:00",
   "last_publication_mode": "apos_jogos",
   "signature": [
     {
-      "nome": "PAL",
+      "nome": "FLA",
       "pos": 1,
+      "pts": 70,
+      "v": 21,
+      "saldo": 37
+    },
+    {
+      "nome": "PAL",
+      "pos": 2,
       "pts": 69,
       "v": 20,
       "saldo": 34
-    },
-    {
-      "nome": "FLA",
-      "pos": 2,
-      "pts": 67,
-      "v": 20,
-      "saldo": 36
     },
     {
       "nome": "CRU",
@@ -42,7 +42,7 @@
       "pos": 6,
       "pts": 50,
       "v": 14,
-      "saldo": 7
+      "saldo": 6
     },
     {
       "nome": "BAH",
@@ -84,7 +84,7 @@
       "pos": 12,
       "pts": 39,
       "v": 10,
-      "saldo": -11
+      "saldo": -12
     },
     {
       "nome": "VAS",
@@ -115,18 +115,18 @@
       "saldo": -4
     },
     {
-      "nome": "COR",
+      "nome": "GRE",
       "pos": 17,
+      "pts": 34,
+      "v": 8,
+      "saldo": -9
+    },
+    {
+      "nome": "COR",
+      "pos": 18,
       "pts": 33,
       "v": 8,
       "saldo": -8
-    },
-    {
-      "nome": "GRE",
-      "pos": 18,
-      "pts": 31,
-      "v": 7,
-      "saldo": -10
     },
     {
       "nome": "REM",
@@ -144,8 +144,8 @@
     }
   ],
   "positions": {
-    "PAL": 1,
-    "FLA": 2,
+    "FLA": 1,
+    "PAL": 2,
     "CRU": 3,
     "CAP": 4,
     "FLU": 5,
@@ -160,8 +160,8 @@
     "VIT": 14,
     "MIR": 15,
     "INT": 16,
-    "COR": 17,
-    "GRE": 18,
+    "GRE": 17,
+    "COR": 18,
     "REM": 19,
     "CHA": 20
   },
