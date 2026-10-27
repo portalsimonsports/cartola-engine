@@ -145,20 +145,20 @@
   "partidas": {},
   "last_signature": [
     {
-      "nome": "Palmeiras",
+      "nome": "Flamengo",
       "pos": 1,
+      "pts": 70,
+      "v": 21,
+      "saldo": 37,
+      "gm": 64
+    },
+    {
+      "nome": "Palmeiras",
+      "pos": 2,
       "pts": 69,
       "v": 20,
       "saldo": 34,
       "gm": 56
-    },
-    {
-      "nome": "Flamengo",
-      "pos": 2,
-      "pts": 68,
-      "v": 20,
-      "saldo": 36,
-      "gm": 63
     },
     {
       "nome": "Cruzeiro",
@@ -187,9 +187,9 @@
     {
       "nome": "ATLÉTICO-MG",
       "pos": 6,
-      "pts": 51,
+      "pts": 50,
       "v": 14,
-      "saldo": 7,
+      "saldo": 6,
       "gm": 44
     },
     {
@@ -305,7 +305,7 @@
       "gm": 32
     }
   ],
-  "last_context": "classificacao_delta",
-  "updated_at": "2026-10-26T21:54:12.133102-03:00",
-  "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
+  "last_context": "classificacao_final",
+  "updated_at": "2026-10-26T22:13:25.037584-03:00",
+  "last_image": "output/classificacao_brasileirao_fechamento.png"
 }
