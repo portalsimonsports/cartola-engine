@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 33,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-10-27T03:59:44.242Z",
+  "atualizado_em": "2026-10-27T04:04:45.427Z",
   "dados": [
     {
       "RODADA": 33,
@@ -14,7 +14,7 @@
       "NOME": "Kauan Jesus",
       "CLUBE": "INT",
       "PRECO": 4.77,
-      "EXP_SCORE": 1.5207,
+      "EXP_SCORE": 1.5255,
       "ATLETA_ID": 124264
     },
     {
@@ -25,7 +25,7 @@
       "NOME": "Marcelinho",
       "CLUBE": "REM",
       "PRECO": 6.22,
-      "EXP_SCORE": 5.5032,
+      "EXP_SCORE": 5.5159,
       "ATLETA_ID": 97795
     },
     {
@@ -36,7 +36,7 @@
       "NOME": "Ryan Augusto",
       "CLUBE": "RBB",
       "PRECO": 4.85,
-      "EXP_SCORE": 3.1678,
+      "EXP_SCORE": 3.1742,
       "ATLETA_ID": 148125
     },
     {
@@ -47,7 +47,7 @@
       "NOME": "Luan Peres",
       "CLUBE": "SAN",
       "PRECO": 6.38,
-      "EXP_SCORE": 3.4259,
+      "EXP_SCORE": 3.4379,
       "ATLETA_ID": 84847
     },
     {
@@ -58,7 +58,7 @@
       "NOME": "Gustavo Henrique",
       "CLUBE": "COR",
       "PRECO": 9.5,
-      "EXP_SCORE": 4.2399,
+      "EXP_SCORE": 4.2498,
       "ATLETA_ID": 78248
     },
     {
@@ -69,7 +69,7 @@
       "NOME": "Giovanni Augusto",
       "CLUBE": "CHA",
       "PRECO": 7.08,
-      "EXP_SCORE": 4.1977,
+      "EXP_SCORE": 4.2005,
       "ATLETA_ID": 68938
     },
     {
@@ -80,7 +80,7 @@
       "NOME": "Gustavo Henrique",
       "CLUBE": "SAN",
       "PRECO": 5.51,
-      "EXP_SCORE": 4.3591,
+      "EXP_SCORE": 4.3988,
       "ATLETA_ID": 141776
     },
     {
@@ -91,8 +91,19 @@
       "NOME": "Bernard",
       "CLUBE": "CAM",
       "PRECO": 6.91,
-      "EXP_SCORE": 4.3936,
+      "EXP_SCORE": 4.3974,
       "ATLETA_ID": 72460
+    },
+    {
+      "RODADA": 33,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Reinier",
+      "CLUBE": "CAM",
+      "PRECO": 4.83,
+      "EXP_SCORE": 3.7483,
+      "ATLETA_ID": 105068
     },
     {
       "RODADA": 33,
@@ -102,7 +113,7 @@
       "NOME": "Fernando",
       "CLUBE": "RBB",
       "PRECO": 5.77,
-      "EXP_SCORE": 5.7706,
+      "EXP_SCORE": 5.7744,
       "ATLETA_ID": 100695
     },
     {
@@ -113,19 +124,8 @@
       "NOME": "Garcez",
       "CLUBE": "CHA",
       "PRECO": 5.29,
-      "EXP_SCORE": 4.1075,
+      "EXP_SCORE": 4.1103,
       "ATLETA_ID": 108131
-    },
-    {
-      "RODADA": 33,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Pedro Rocha",
-      "CLUBE": "CFC",
-      "PRECO": 8.06,
-      "EXP_SCORE": 5.4049,
-      "ATLETA_ID": 90302
     },
     {
       "RODADA": 33,
@@ -135,7 +135,7 @@
       "NOME": "Abel Ferreira",
       "CLUBE": "PAL",
       "PRECO": 12.78,
-      "EXP_SCORE": 7.9524,
+      "EXP_SCORE": 7.9569,
       "ATLETA_ID": 110506
     },
     {
@@ -146,7 +146,7 @@
       "NOME": "Otávio",
       "CLUBE": "CRU",
       "PRECO": 4.24,
-      "EXP_SCORE": 3.3285,
+      "EXP_SCORE": 3.3362,
       "ATLETA_ID": 117404
     },
     {
@@ -157,7 +157,7 @@
       "NOME": "João Pedro",
       "CLUBE": "GRE",
       "PRECO": 4.14,
-      "EXP_SCORE": 1.3177,
+      "EXP_SCORE": 1.3217,
       "ATLETA_ID": 89273
     },
     {
@@ -165,22 +165,22 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Jacy",
-      "CLUBE": "CFC",
-      "PRECO": 5.82,
-      "EXP_SCORE": 3.6848,
-      "ATLETA_ID": 97878
+      "NOME": "Marllon",
+      "CLUBE": "REM",
+      "PRECO": 5.74,
+      "EXP_SCORE": 3.6319,
+      "ATLETA_ID": 70666
     },
     {
       "RODADA": 33,
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Gabriel Bontempo",
-      "CLUBE": "SAN",
-      "PRECO": 5.21,
-      "EXP_SCORE": 4.0013,
-      "ATLETA_ID": 141754
+      "NOME": "Zé Ricardo",
+      "CLUBE": "REM",
+      "PRECO": 4.69,
+      "EXP_SCORE": 2.9466,
+      "ATLETA_ID": 102911
     },
     {
       "RODADA": 33,
@@ -190,7 +190,7 @@
       "NOME": "Marcinho",
       "CLUBE": "CHA",
       "PRECO": 4.93,
-      "EXP_SCORE": 3.2601,
+      "EXP_SCORE": 3.2624,
       "ATLETA_ID": 95332
     }
   ]
