@@ -10,8 +10,8 @@
     },
     {
       "nome": "PAL",
-      "j": 32,
-      "pts": 69,
+      "j": 33,
+      "pts": 70,
       "v": 20,
       "saldo": 34
     },
@@ -31,8 +31,8 @@
     },
     {
       "nome": "FLU",
-      "j": 32,
-      "pts": 51,
+      "j": 33,
+      "pts": 52,
       "v": 14,
       "saldo": 9
     },
@@ -52,8 +52,15 @@
     },
     {
       "nome": "SAN",
-      "j": 32,
-      "pts": 46,
+      "j": 33,
+      "pts": 47,
+      "v": 12,
+      "saldo": 2
+    },
+    {
+      "nome": "RBB",
+      "j": 33,
+      "pts": 44,
       "v": 12,
       "saldo": 2
     },
@@ -62,13 +69,6 @@
       "j": 32,
       "pts": 43,
       "v": 12,
-      "saldo": 1
-    },
-    {
-      "nome": "RBB",
-      "j": 32,
-      "pts": 41,
-      "v": 11,
       "saldo": 1
     },
     {
@@ -108,8 +108,8 @@
     },
     {
       "nome": "INT",
-      "j": 32,
-      "pts": 35,
+      "j": 33,
+      "pts": 36,
       "v": 8,
       "saldo": -4
     },
@@ -136,10 +136,10 @@
     },
     {
       "nome": "CHA",
-      "j": 31,
+      "j": 32,
       "pts": 21,
       "v": 4,
-      "saldo": -31
+      "saldo": -32
     }
   ],
   "partidas": {},
@@ -155,7 +155,7 @@
     {
       "nome": "Palmeiras",
       "pos": 2,
-      "pts": 69,
+      "pts": 70,
       "v": 20,
       "saldo": 34,
       "gm": 56
@@ -179,7 +179,7 @@
     {
       "nome": "Fluminense",
       "pos": 5,
-      "pts": 51,
+      "pts": 52,
       "v": 14,
       "saldo": 9,
       "gm": 50
@@ -203,26 +203,26 @@
     {
       "nome": "Santos",
       "pos": 8,
-      "pts": 46,
+      "pts": 47,
       "v": 12,
       "saldo": 2,
       "gm": 49
     },
     {
-      "nome": "SÃO PAULO",
+      "nome": "RB Bragantino",
       "pos": 9,
+      "pts": 44,
+      "v": 12,
+      "saldo": 2,
+      "gm": 40
+    },
+    {
+      "nome": "SÃO PAULO",
+      "pos": 10,
       "pts": 43,
       "v": 12,
       "saldo": 1,
       "gm": 37
-    },
-    {
-      "nome": "RB Bragantino",
-      "pos": 10,
-      "pts": 41,
-      "v": 11,
-      "saldo": 1,
-      "gm": 39
     },
     {
       "nome": "Botafogo",
@@ -267,7 +267,7 @@
     {
       "nome": "Internacional",
       "pos": 16,
-      "pts": 35,
+      "pts": 36,
       "v": 8,
       "saldo": -4,
       "gm": 36
@@ -301,11 +301,11 @@
       "pos": 20,
       "pts": 21,
       "v": 4,
-      "saldo": -31,
+      "saldo": -32,
       "gm": 32
     }
   ],
-  "last_context": "classificacao_abertura",
-  "updated_at": "2026-10-28T19:58:24.270020-03:00",
-  "last_image": "output/classificacao_brasileirao_abertura.png"
+  "last_context": "classificacao_delta",
+  "updated_at": "2026-10-28T20:48:49.792230-03:00",
+  "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
