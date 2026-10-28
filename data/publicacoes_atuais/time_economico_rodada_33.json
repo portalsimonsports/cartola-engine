@@ -4,7 +4,7 @@
   "tipo_publicacao": "time_economico",
   "rodada": 33,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-10-27T21:19:44.119Z",
+  "atualizado_em": "2026-10-28T18:49:44.165Z",
   "dados": [
     {
       "rodada": 33,
@@ -14,7 +14,7 @@
       "nome": "Kauan Jesus",
       "clube": "INT",
       "preco": 4.77,
-      "exp_score": 1.5256,
+      "exp_score": 1.5464,
       "atleta_id": 124264
     },
     {
@@ -25,7 +25,7 @@
       "nome": "Marcelinho",
       "clube": "REM",
       "preco": 6.22,
-      "exp_score": 5.5162,
+      "exp_score": 5.5853,
       "atleta_id": 97795
     },
     {
@@ -36,7 +36,7 @@
       "nome": "Ryan Augusto",
       "clube": "RBB",
       "preco": 4.85,
-      "exp_score": 3.09,
+      "exp_score": 3.1032,
       "atleta_id": 148125
     },
     {
@@ -47,7 +47,7 @@
       "nome": "Luan Peres",
       "clube": "SAN",
       "preco": 6.38,
-      "exp_score": 3.4414,
+      "exp_score": 3.3942,
       "atleta_id": 84847
     },
     {
@@ -55,11 +55,11 @@
       "tipo": "ECONOMICO",
       "status": "TITULAR",
       "pos": "ZAG",
-      "nome": "Gustavo Henrique",
-      "clube": "COR",
-      "preco": 9.5,
-      "exp_score": 4.25,
-      "atleta_id": 78248
+      "nome": "Juninho",
+      "clube": "INT",
+      "preco": 7.33,
+      "exp_score": 2.8476,
+      "atleta_id": 92182
     },
     {
       "rodada": 33,
@@ -69,7 +69,7 @@
       "nome": "Giovanni Augusto",
       "clube": "CHA",
       "preco": 7.08,
-      "exp_score": 4.1881,
+      "exp_score": 4.176,
       "atleta_id": 68938
     },
     {
@@ -80,7 +80,7 @@
       "nome": "Gustavo Henrique",
       "clube": "SAN",
       "preco": 5.51,
-      "exp_score": 4.3388,
+      "exp_score": 4.3525,
       "atleta_id": 141776
     },
     {
@@ -91,19 +91,8 @@
       "nome": "Bernard",
       "clube": "CAM",
       "preco": 6.91,
-      "exp_score": 4.3807,
+      "exp_score": 4.4521,
       "atleta_id": 72460
-    },
-    {
-      "rodada": 33,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "MEI",
-      "nome": "João Cruz",
-      "clube": "CAP",
-      "preco": 5.95,
-      "exp_score": 3.7882,
-      "atleta_id": 128431
     },
     {
       "rodada": 33,
@@ -113,7 +102,7 @@
       "nome": "Fernando",
       "clube": "RBB",
       "preco": 5.77,
-      "exp_score": 5.8777,
+      "exp_score": 5.8849,
       "atleta_id": 100695
     },
     {
@@ -124,8 +113,19 @@
       "nome": "Garcez",
       "clube": "CHA",
       "preco": 5.29,
-      "exp_score": 4.0981,
+      "exp_score": 4.0863,
       "atleta_id": 108131
+    },
+    {
+      "rodada": 33,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "ATA",
+      "nome": "Jajá",
+      "clube": "REM",
+      "preco": 7.61,
+      "exp_score": 5.1824,
+      "atleta_id": 105048
     },
     {
       "rodada": 33,
@@ -135,7 +135,7 @@
       "nome": "Abel Ferreira",
       "clube": "PAL",
       "preco": 12.78,
-      "exp_score": 7.9376,
+      "exp_score": 7.9476,
       "atleta_id": 110506
     },
     {
@@ -146,7 +146,7 @@
       "nome": "Otávio",
       "clube": "CRU",
       "preco": 4.24,
-      "exp_score": 3.4076,
+      "exp_score": 3.396,
       "atleta_id": 117404
     },
     {
@@ -157,7 +157,7 @@
       "nome": "João Pedro",
       "clube": "GRE",
       "preco": 4.14,
-      "exp_score": 1.3218,
+      "exp_score": 1.3287,
       "atleta_id": 89273
     },
     {
@@ -168,7 +168,7 @@
       "nome": "Marllon",
       "clube": "REM",
       "preco": 5.74,
-      "exp_score": 3.6321,
+      "exp_score": 3.6776,
       "atleta_id": 70666
     },
     {
@@ -179,7 +179,7 @@
       "nome": "Gabriel Bontempo",
       "clube": "SAN",
       "preco": 5.21,
-      "exp_score": 3.9827,
+      "exp_score": 3.9952,
       "atleta_id": 141754
     },
     {
@@ -187,11 +187,11 @@
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "ATA",
-      "nome": "Marcinho",
-      "clube": "CHA",
-      "preco": 4.93,
-      "exp_score": 3.2527,
-      "atleta_id": 95332
+      "nome": "Wallace Yan",
+      "clube": "RBB",
+      "preco": 4.33,
+      "exp_score": 3.6455,
+      "atleta_id": 122573
     }
   ],
   "modelo": "ECONOMICO",
@@ -206,7 +206,7 @@
       "nome": "Kauan Jesus",
       "clube": "INT",
       "preco": 4.77,
-      "exp_score": 1.5256,
+      "exp_score": 1.5464,
       "atleta_id": 124264
     },
     {
@@ -217,7 +217,7 @@
       "nome": "Marcelinho",
       "clube": "REM",
       "preco": 6.22,
-      "exp_score": 5.5162,
+      "exp_score": 5.5853,
       "atleta_id": 97795
     },
     {
@@ -228,7 +228,7 @@
       "nome": "Ryan Augusto",
       "clube": "RBB",
       "preco": 4.85,
-      "exp_score": 3.09,
+      "exp_score": 3.1032,
       "atleta_id": 148125
     },
     {
@@ -239,7 +239,7 @@
       "nome": "Luan Peres",
       "clube": "SAN",
       "preco": 6.38,
-      "exp_score": 3.4414,
+      "exp_score": 3.3942,
       "atleta_id": 84847
     },
     {
@@ -247,11 +247,11 @@
       "tipo": "ECONOMICO",
       "status": "TITULAR",
       "pos": "ZAG",
-      "nome": "Gustavo Henrique",
-      "clube": "COR",
-      "preco": 9.5,
-      "exp_score": 4.25,
-      "atleta_id": 78248
+      "nome": "Juninho",
+      "clube": "INT",
+      "preco": 7.33,
+      "exp_score": 2.8476,
+      "atleta_id": 92182
     },
     {
       "rodada": 33,
@@ -261,7 +261,7 @@
       "nome": "Giovanni Augusto",
       "clube": "CHA",
       "preco": 7.08,
-      "exp_score": 4.1881,
+      "exp_score": 4.176,
       "atleta_id": 68938
     },
     {
@@ -272,7 +272,7 @@
       "nome": "Gustavo Henrique",
       "clube": "SAN",
       "preco": 5.51,
-      "exp_score": 4.3388,
+      "exp_score": 4.3525,
       "atleta_id": 141776
     },
     {
@@ -283,19 +283,8 @@
       "nome": "Bernard",
       "clube": "CAM",
       "preco": 6.91,
-      "exp_score": 4.3807,
+      "exp_score": 4.4521,
       "atleta_id": 72460
-    },
-    {
-      "rodada": 33,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "MEI",
-      "nome": "João Cruz",
-      "clube": "CAP",
-      "preco": 5.95,
-      "exp_score": 3.7882,
-      "atleta_id": 128431
     },
     {
       "rodada": 33,
@@ -305,7 +294,7 @@
       "nome": "Fernando",
       "clube": "RBB",
       "preco": 5.77,
-      "exp_score": 5.8777,
+      "exp_score": 5.8849,
       "atleta_id": 100695
     },
     {
@@ -316,8 +305,19 @@
       "nome": "Garcez",
       "clube": "CHA",
       "preco": 5.29,
-      "exp_score": 4.0981,
+      "exp_score": 4.0863,
       "atleta_id": 108131
+    },
+    {
+      "rodada": 33,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "ATA",
+      "nome": "Jajá",
+      "clube": "REM",
+      "preco": 7.61,
+      "exp_score": 5.1824,
+      "atleta_id": 105048
     },
     {
       "rodada": 33,
@@ -327,7 +327,7 @@
       "nome": "Abel Ferreira",
       "clube": "PAL",
       "preco": 12.78,
-      "exp_score": 7.9376,
+      "exp_score": 7.9476,
       "atleta_id": 110506
     },
     {
@@ -338,7 +338,7 @@
       "nome": "Otávio",
       "clube": "CRU",
       "preco": 4.24,
-      "exp_score": 3.4076,
+      "exp_score": 3.396,
       "atleta_id": 117404
     },
     {
@@ -349,7 +349,7 @@
       "nome": "João Pedro",
       "clube": "GRE",
       "preco": 4.14,
-      "exp_score": 1.3218,
+      "exp_score": 1.3287,
       "atleta_id": 89273
     },
     {
@@ -360,7 +360,7 @@
       "nome": "Marllon",
       "clube": "REM",
       "preco": 5.74,
-      "exp_score": 3.6321,
+      "exp_score": 3.6776,
       "atleta_id": 70666
     },
     {
@@ -371,7 +371,7 @@
       "nome": "Gabriel Bontempo",
       "clube": "SAN",
       "preco": 5.21,
-      "exp_score": 3.9827,
+      "exp_score": 3.9952,
       "atleta_id": 141754
     },
     {
@@ -379,11 +379,11 @@
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "ATA",
-      "nome": "Marcinho",
-      "clube": "CHA",
-      "preco": 4.93,
-      "exp_score": 3.2527,
-      "atleta_id": 95332
+      "nome": "Wallace Yan",
+      "clube": "RBB",
+      "preco": 4.33,
+      "exp_score": 3.6455,
+      "atleta_id": 122573
     }
   ],
   "jogadores": [
@@ -395,7 +395,7 @@
       "nome": "Kauan Jesus",
       "clube": "INT",
       "preco": 4.77,
-      "exp_score": 1.5256,
+      "exp_score": 1.5464,
       "atleta_id": 124264
     },
     {
@@ -406,7 +406,7 @@
       "nome": "Marcelinho",
       "clube": "REM",
       "preco": 6.22,
-      "exp_score": 5.5162,
+      "exp_score": 5.5853,
       "atleta_id": 97795
     },
     {
@@ -417,7 +417,7 @@
       "nome": "Ryan Augusto",
       "clube": "RBB",
       "preco": 4.85,
-      "exp_score": 3.09,
+      "exp_score": 3.1032,
       "atleta_id": 148125
     },
     {
@@ -428,7 +428,7 @@
       "nome": "Luan Peres",
       "clube": "SAN",
       "preco": 6.38,
-      "exp_score": 3.4414,
+      "exp_score": 3.3942,
       "atleta_id": 84847
     },
     {
@@ -436,11 +436,11 @@
       "tipo": "ECONOMICO",
       "status": "TITULAR",
       "pos": "ZAG",
-      "nome": "Gustavo Henrique",
-      "clube": "COR",
-      "preco": 9.5,
-      "exp_score": 4.25,
-      "atleta_id": 78248
+      "nome": "Juninho",
+      "clube": "INT",
+      "preco": 7.33,
+      "exp_score": 2.8476,
+      "atleta_id": 92182
     },
     {
       "rodada": 33,
@@ -450,7 +450,7 @@
       "nome": "Giovanni Augusto",
       "clube": "CHA",
       "preco": 7.08,
-      "exp_score": 4.1881,
+      "exp_score": 4.176,
       "atleta_id": 68938
     },
     {
@@ -461,7 +461,7 @@
       "nome": "Gustavo Henrique",
       "clube": "SAN",
       "preco": 5.51,
-      "exp_score": 4.3388,
+      "exp_score": 4.3525,
       "atleta_id": 141776
     },
     {
@@ -472,19 +472,8 @@
       "nome": "Bernard",
       "clube": "CAM",
       "preco": 6.91,
-      "exp_score": 4.3807,
+      "exp_score": 4.4521,
       "atleta_id": 72460
-    },
-    {
-      "rodada": 33,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "MEI",
-      "nome": "João Cruz",
-      "clube": "CAP",
-      "preco": 5.95,
-      "exp_score": 3.7882,
-      "atleta_id": 128431
     },
     {
       "rodada": 33,
@@ -494,7 +483,7 @@
       "nome": "Fernando",
       "clube": "RBB",
       "preco": 5.77,
-      "exp_score": 5.8777,
+      "exp_score": 5.8849,
       "atleta_id": 100695
     },
     {
@@ -505,8 +494,19 @@
       "nome": "Garcez",
       "clube": "CHA",
       "preco": 5.29,
-      "exp_score": 4.0981,
+      "exp_score": 4.0863,
       "atleta_id": 108131
+    },
+    {
+      "rodada": 33,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "ATA",
+      "nome": "Jajá",
+      "clube": "REM",
+      "preco": 7.61,
+      "exp_score": 5.1824,
+      "atleta_id": 105048
     },
     {
       "rodada": 33,
@@ -516,7 +516,7 @@
       "nome": "Abel Ferreira",
       "clube": "PAL",
       "preco": 12.78,
-      "exp_score": 7.9376,
+      "exp_score": 7.9476,
       "atleta_id": 110506
     }
   ],
@@ -529,7 +529,7 @@
       "nome": "Otávio",
       "clube": "CRU",
       "preco": 4.24,
-      "exp_score": 3.4076,
+      "exp_score": 3.396,
       "atleta_id": 117404
     },
     {
@@ -540,7 +540,7 @@
       "nome": "João Pedro",
       "clube": "GRE",
       "preco": 4.14,
-      "exp_score": 1.3218,
+      "exp_score": 1.3287,
       "atleta_id": 89273
     },
     {
@@ -551,7 +551,7 @@
       "nome": "Marllon",
       "clube": "REM",
       "preco": 5.74,
-      "exp_score": 3.6321,
+      "exp_score": 3.6776,
       "atleta_id": 70666
     },
     {
@@ -562,7 +562,7 @@
       "nome": "Gabriel Bontempo",
       "clube": "SAN",
       "preco": 5.21,
-      "exp_score": 3.9827,
+      "exp_score": 3.9952,
       "atleta_id": 141754
     },
     {
@@ -570,16 +570,16 @@
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "ATA",
-      "nome": "Marcinho",
-      "clube": "CHA",
-      "preco": 4.93,
-      "exp_score": 3.2527,
-      "atleta_id": 95332
+      "nome": "Wallace Yan",
+      "clube": "RBB",
+      "preco": 4.33,
+      "exp_score": 3.6455,
+      "atleta_id": 122573
     }
   ],
   "capitao": "Abel Ferreira",
-  "formacao": "4-4-2",
-  "evento_programado": "ATUALIZACAO_20H",
+  "formacao": "4-3-3",
+  "evento_programado": "PRE_FECHAMENTO_TIMES",
   "blocos_topo": [],
   "pipeline_visual": "times_top5_aprovados_v2_2026_09_21_formacao_dinamica"
 }
