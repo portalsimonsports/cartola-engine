@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 33,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-10-28T14:24:44.667Z",
+  "atualizado_em": "2026-10-28T14:29:46.359Z",
   "dados": [
     {
       "RODADA": 33,
@@ -65,11 +65,22 @@
       "RODADA": 33,
       "TIPO": "ECONOMICO",
       "STATUS": "TITULAR",
+      "POS": "ZAG",
+      "NOME": "Wallace",
+      "CLUBE": "GRE",
+      "PRECO": 7.57,
+      "EXP_SCORE": 4.711,
+      "ATLETA_ID": 130307
+    },
+    {
+      "RODADA": 33,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
       "POS": "MEI",
       "NOME": "Giovanni Augusto",
       "CLUBE": "CHA",
       "PRECO": 7.08,
-      "EXP_SCORE": 4.1455,
+      "EXP_SCORE": 4.1756,
       "ATLETA_ID": 68938
     },
     {
@@ -80,7 +91,7 @@
       "NOME": "Gustavo Henrique",
       "CLUBE": "SAN",
       "PRECO": 5.51,
-      "EXP_SCORE": 4.3454,
+      "EXP_SCORE": 4.3518,
       "ATLETA_ID": 141776
     },
     {
@@ -91,7 +102,7 @@
       "NOME": "Bernard",
       "CLUBE": "CAM",
       "PRECO": 6.91,
-      "EXP_SCORE": 4.3848,
+      "EXP_SCORE": 4.3889,
       "ATLETA_ID": 72460
     },
     {
@@ -102,7 +113,7 @@
       "NOME": "Fernando",
       "CLUBE": "RBB",
       "PRECO": 5.77,
-      "EXP_SCORE": 5.8811,
+      "EXP_SCORE": 5.8845,
       "ATLETA_ID": 100695
     },
     {
@@ -113,19 +124,8 @@
       "NOME": "Garcez",
       "CLUBE": "CHA",
       "PRECO": 5.29,
-      "EXP_SCORE": 4.0565,
+      "EXP_SCORE": 4.0859,
       "ATLETA_ID": 108131
-    },
-    {
-      "RODADA": 33,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Erick Pulga",
-      "CLUBE": "BAH",
-      "PRECO": 7.93,
-      "EXP_SCORE": 5.2886,
-      "ATLETA_ID": 109401
     },
     {
       "RODADA": 33,
@@ -135,7 +135,7 @@
       "NOME": "Abel Ferreira",
       "CLUBE": "PAL",
       "PRECO": 12.78,
-      "EXP_SCORE": 7.9424,
+      "EXP_SCORE": 7.9471,
       "ATLETA_ID": 110506
     },
     {
@@ -179,7 +179,7 @@
       "NOME": "Gabriel Bontempo",
       "CLUBE": "SAN",
       "PRECO": 5.21,
-      "EXP_SCORE": 3.9887,
+      "EXP_SCORE": 3.9945,
       "ATLETA_ID": 141754
     },
     {
@@ -190,7 +190,7 @@
       "NOME": "Wallace Yan",
       "CLUBE": "RBB",
       "PRECO": 4.33,
-      "EXP_SCORE": 3.6432,
+      "EXP_SCORE": 3.6453,
       "ATLETA_ID": 122573
     }
   ]
