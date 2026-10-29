@@ -32,9 +32,9 @@
     {
       "nome": "FLU",
       "j": 33,
-      "pts": 52,
+      "pts": 51,
       "v": 14,
-      "saldo": 9
+      "saldo": 8
     },
     {
       "nome": "CAM",
@@ -62,7 +62,7 @@
       "j": 33,
       "pts": 44,
       "v": 12,
-      "saldo": 2
+      "saldo": 3
     },
     {
       "nome": "SAO",
@@ -100,18 +100,18 @@
       "saldo": -11
     },
     {
+      "nome": "INT",
+      "j": 33,
+      "pts": 38,
+      "v": 9,
+      "saldo": -3
+    },
+    {
       "nome": "MIR",
       "j": 32,
       "pts": 37,
       "v": 9,
       "saldo": -8
-    },
-    {
-      "nome": "INT",
-      "j": 33,
-      "pts": 36,
-      "v": 8,
-      "saldo": -4
     },
     {
       "nome": "GRE",
@@ -139,7 +139,7 @@
       "j": 32,
       "pts": 21,
       "v": 4,
-      "saldo": -32
+      "saldo": -33
     }
   ],
   "partidas": {},
@@ -179,9 +179,9 @@
     {
       "nome": "Fluminense",
       "pos": 5,
-      "pts": 52,
+      "pts": 51,
       "v": 14,
-      "saldo": 9,
+      "saldo": 8,
       "gm": 50
     },
     {
@@ -213,8 +213,8 @@
       "pos": 9,
       "pts": 44,
       "v": 12,
-      "saldo": 2,
-      "gm": 40
+      "saldo": 3,
+      "gm": 41
     },
     {
       "nome": "SÃO PAULO",
@@ -257,20 +257,20 @@
       "gm": 35
     },
     {
-      "nome": "Mirassol",
+      "nome": "Internacional",
       "pos": 15,
+      "pts": 38,
+      "v": 9,
+      "saldo": -3,
+      "gm": 37
+    },
+    {
+      "nome": "Mirassol",
+      "pos": 16,
       "pts": 37,
       "v": 9,
       "saldo": -8,
       "gm": 37
-    },
-    {
-      "nome": "Internacional",
-      "pos": 16,
-      "pts": 36,
-      "v": 8,
-      "saldo": -4,
-      "gm": 36
     },
     {
       "nome": "GRÊMIO",
@@ -301,11 +301,11 @@
       "pos": 20,
       "pts": 21,
       "v": 4,
-      "saldo": -32,
+      "saldo": -33,
       "gm": 32
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-10-28T20:48:49.792230-03:00",
+  "updated_at": "2026-10-28T21:23:16.677940-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
