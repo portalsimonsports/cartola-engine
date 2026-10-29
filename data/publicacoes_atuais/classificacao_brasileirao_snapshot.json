@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:21:53.738344-03:00",
+  "updated_at": "2026-10-29T03:20:40.330733-03:00",
   "last_publication_mode": "apos_jogos",
   "signature": [
     {
@@ -33,23 +33,23 @@
     {
       "nome": "FLU",
       "pos": 5,
-      "pts": 51,
-      "v": 14,
-      "saldo": 8
+      "pts": 54,
+      "v": 15,
+      "saldo": 10
     },
     {
-      "nome": "CAM",
+      "nome": "BAH",
       "pos": 6,
-      "pts": 50,
+      "pts": 53,
       "v": 14,
       "saldo": 6
     },
     {
-      "nome": "BAH",
+      "nome": "CAM",
       "pos": 7,
       "pts": 50,
-      "v": 13,
-      "saldo": 5
+      "v": 14,
+      "saldo": 6
     },
     {
       "nome": "SAN",
@@ -63,21 +63,21 @@
       "pos": 9,
       "pts": 44,
       "v": 12,
-      "saldo": 3
+      "saldo": 4
     },
     {
       "nome": "SAO",
       "pos": 10,
       "pts": 43,
       "v": 12,
-      "saldo": 1
+      "saldo": 0
     },
     {
       "nome": "BOT",
       "pos": 11,
       "pts": 39,
       "v": 10,
-      "saldo": -7
+      "saldo": -8
     },
     {
       "nome": "CFC",
@@ -101,18 +101,18 @@
       "saldo": -11
     },
     {
-      "nome": "INT",
-      "pos": 15,
-      "pts": 38,
-      "v": 9,
-      "saldo": -3
-    },
-    {
       "nome": "MIR",
-      "pos": 16,
+      "pos": 15,
       "pts": 37,
       "v": 9,
       "saldo": -8
+    },
+    {
+      "nome": "INT",
+      "pos": 16,
+      "pts": 35,
+      "v": 8,
+      "saldo": -5
     },
     {
       "nome": "GRE",
@@ -131,16 +131,16 @@
     {
       "nome": "REM",
       "pos": 19,
-      "pts": 26,
-      "v": 5,
-      "saldo": -16
+      "pts": 29,
+      "v": 6,
+      "saldo": -15
     },
     {
       "nome": "CHA",
       "pos": 20,
       "pts": 21,
       "v": 4,
-      "saldo": -33
+      "saldo": -34
     }
   ],
   "positions": {
@@ -149,8 +149,8 @@
     "CRU": 3,
     "CAP": 4,
     "FLU": 5,
-    "CAM": 6,
-    "BAH": 7,
+    "BAH": 6,
+    "CAM": 7,
     "SAN": 8,
     "RBB": 9,
     "SAO": 10,
@@ -158,8 +158,8 @@
     "CFC": 12,
     "VAS": 13,
     "VIT": 14,
-    "INT": 15,
-    "MIR": 16,
+    "MIR": 15,
+    "INT": 16,
     "GRE": 17,
     "COR": 18,
     "REM": 19,
