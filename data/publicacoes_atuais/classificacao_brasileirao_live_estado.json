@@ -32,9 +32,16 @@
     {
       "nome": "FLU",
       "j": 33,
+      "pts": 54,
+      "v": 15,
+      "saldo": 10
+    },
+    {
+      "nome": "BAH",
+      "j": 33,
       "pts": 51,
-      "v": 14,
-      "saldo": 8
+      "v": 13,
+      "saldo": 5
     },
     {
       "nome": "CAM",
@@ -42,13 +49,6 @@
       "pts": 50,
       "v": 14,
       "saldo": 6
-    },
-    {
-      "nome": "BAH",
-      "j": 32,
-      "pts": 50,
-      "v": 13,
-      "saldo": 5
     },
     {
       "nome": "SAN",
@@ -62,19 +62,19 @@
       "j": 33,
       "pts": 44,
       "v": 12,
-      "saldo": 3
+      "saldo": 4
     },
     {
       "nome": "SAO",
-      "j": 32,
-      "pts": 43,
+      "j": 33,
+      "pts": 44,
       "v": 12,
       "saldo": 1
     },
     {
       "nome": "BOT",
-      "j": 32,
-      "pts": 39,
+      "j": 33,
+      "pts": 40,
       "v": 10,
       "saldo": -7
     },
@@ -100,18 +100,18 @@
       "saldo": -11
     },
     {
-      "nome": "INT",
-      "j": 33,
-      "pts": 38,
-      "v": 9,
-      "saldo": -3
-    },
-    {
       "nome": "MIR",
       "j": 32,
       "pts": 37,
       "v": 9,
       "saldo": -8
+    },
+    {
+      "nome": "INT",
+      "j": 33,
+      "pts": 35,
+      "v": 8,
+      "saldo": -5
     },
     {
       "nome": "GRE",
@@ -129,8 +129,8 @@
     },
     {
       "nome": "REM",
-      "j": 32,
-      "pts": 26,
+      "j": 33,
+      "pts": 27,
       "v": 5,
       "saldo": -16
     },
@@ -139,7 +139,7 @@
       "j": 32,
       "pts": 21,
       "v": 4,
-      "saldo": -33
+      "saldo": -34
     }
   ],
   "partidas": {},
@@ -179,26 +179,26 @@
     {
       "nome": "Fluminense",
       "pos": 5,
-      "pts": 51,
+      "pts": 54,
+      "v": 15,
+      "saldo": 10,
+      "gm": 52
+    },
+    {
+      "nome": "Bahia",
+      "pos": 6,
+      "pts": 53,
       "v": 14,
-      "saldo": 8,
-      "gm": 50
+      "saldo": 7,
+      "gm": 47
     },
     {
       "nome": "ATLÉTICO-MG",
-      "pos": 6,
+      "pos": 7,
       "pts": 50,
       "v": 14,
       "saldo": 6,
       "gm": 44
-    },
-    {
-      "nome": "Bahia",
-      "pos": 7,
-      "pts": 50,
-      "v": 13,
-      "saldo": 5,
-      "gm": 45
     },
     {
       "nome": "Santos",
@@ -213,15 +213,15 @@
       "pos": 9,
       "pts": 44,
       "v": 12,
-      "saldo": 3,
-      "gm": 41
+      "saldo": 4,
+      "gm": 42
     },
     {
       "nome": "SÃO PAULO",
       "pos": 10,
       "pts": 43,
       "v": 12,
-      "saldo": 1,
+      "saldo": -1,
       "gm": 37
     },
     {
@@ -229,7 +229,7 @@
       "pos": 11,
       "pts": 39,
       "v": 10,
-      "saldo": -7,
+      "saldo": -8,
       "gm": 44
     },
     {
@@ -257,19 +257,19 @@
       "gm": 35
     },
     {
-      "nome": "Internacional",
-      "pos": 15,
-      "pts": 38,
-      "v": 9,
-      "saldo": -3,
-      "gm": 37
-    },
-    {
       "nome": "Mirassol",
-      "pos": 16,
+      "pos": 15,
       "pts": 37,
       "v": 9,
       "saldo": -8,
+      "gm": 37
+    },
+    {
+      "nome": "Internacional",
+      "pos": 16,
+      "pts": 35,
+      "v": 8,
+      "saldo": -5,
       "gm": 37
     },
     {
@@ -291,21 +291,21 @@
     {
       "nome": "Remo",
       "pos": 19,
-      "pts": 26,
-      "v": 5,
-      "saldo": -16,
-      "gm": 34
+      "pts": 29,
+      "v": 6,
+      "saldo": -15,
+      "gm": 35
     },
     {
       "nome": "Chapecoense",
       "pos": 20,
       "pts": 21,
       "v": 4,
-      "saldo": -33,
+      "saldo": -34,
       "gm": 32
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-10-28T21:23:16.677940-03:00",
+  "updated_at": "2026-10-28T21:53:39.988016-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
