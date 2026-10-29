@@ -147,10 +147,10 @@
     {
       "nome": "Flamengo",
       "pos": 1,
-      "pts": 71,
-      "v": 21,
-      "saldo": 37,
-      "gm": 65
+      "pts": 73,
+      "v": 22,
+      "saldo": 38,
+      "gm": 66
     },
     {
       "nome": "Palmeiras",
@@ -225,16 +225,8 @@
       "gm": 39
     },
     {
-      "nome": "Vasco",
-      "pos": 11,
-      "pts": 39,
-      "v": 10,
-      "saldo": -6,
-      "gm": 40
-    },
-    {
       "nome": "Botafogo",
-      "pos": 12,
+      "pos": 11,
       "pts": 39,
       "v": 10,
       "saldo": -8,
@@ -242,11 +234,19 @@
     },
     {
       "nome": "Coritiba",
-      "pos": 13,
+      "pos": 12,
       "pts": 39,
       "v": 10,
       "saldo": -12,
       "gm": 38
+    },
+    {
+      "nome": "Vasco",
+      "pos": 13,
+      "pts": 38,
+      "v": 10,
+      "saldo": -7,
+      "gm": 40
     },
     {
       "nome": "VITÓRIA",
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-10-29T20:23:54.550298-03:00",
+  "updated_at": "2026-10-29T20:53:20.163196-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
