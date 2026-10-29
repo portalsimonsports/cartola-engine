@@ -3,10 +3,10 @@
   "base_signature": [
     {
       "nome": "FLA",
-      "j": 32,
-      "pts": 70,
-      "v": 21,
-      "saldo": 37
+      "j": 33,
+      "pts": 73,
+      "v": 22,
+      "saldo": 38
     },
     {
       "nome": "PAL",
@@ -17,10 +17,10 @@
     },
     {
       "nome": "CRU",
-      "j": 32,
-      "pts": 54,
-      "v": 16,
-      "saldo": 5
+      "j": 33,
+      "pts": 57,
+      "v": 17,
+      "saldo": 6
     },
     {
       "nome": "CAP",
@@ -39,16 +39,16 @@
     {
       "nome": "BAH",
       "j": 33,
-      "pts": 51,
-      "v": 13,
-      "saldo": 5
+      "pts": 53,
+      "v": 14,
+      "saldo": 6
     },
     {
       "nome": "CAM",
-      "j": 32,
+      "j": 33,
       "pts": 50,
       "v": 14,
-      "saldo": 6
+      "saldo": 5
     },
     {
       "nome": "SAN",
@@ -67,16 +67,16 @@
     {
       "nome": "SAO",
       "j": 33,
-      "pts": 44,
+      "pts": 43,
       "v": 12,
-      "saldo": 1
+      "saldo": 0
     },
     {
       "nome": "BOT",
       "j": 33,
       "pts": 39,
       "v": 10,
-      "saldo": -9
+      "saldo": -8
     },
     {
       "nome": "CFC",
@@ -87,10 +87,10 @@
     },
     {
       "nome": "VAS",
-      "j": 31,
+      "j": 32,
       "pts": 38,
       "v": 10,
-      "saldo": -6
+      "saldo": -7
     },
     {
       "nome": "VIT",
@@ -132,7 +132,7 @@
       "j": 33,
       "pts": 29,
       "v": 6,
-      "saldo": -14
+      "saldo": -15
     },
     {
       "nome": "CHA",
@@ -147,10 +147,10 @@
     {
       "nome": "Flamengo",
       "pos": 1,
-      "pts": 70,
+      "pts": 71,
       "v": 21,
       "saldo": 37,
-      "gm": 64
+      "gm": 65
     },
     {
       "nome": "Palmeiras",
@@ -163,10 +163,10 @@
     {
       "nome": "Cruzeiro",
       "pos": 3,
-      "pts": 54,
-      "v": 16,
-      "saldo": 5,
-      "gm": 51
+      "pts": 57,
+      "v": 17,
+      "saldo": 6,
+      "gm": 52
     },
     {
       "nome": "Athletico-PR",
@@ -197,7 +197,7 @@
       "pos": 7,
       "pts": 50,
       "v": 14,
-      "saldo": 6,
+      "saldo": 5,
       "gm": 44
     },
     {
@@ -225,8 +225,16 @@
       "gm": 39
     },
     {
-      "nome": "Botafogo",
+      "nome": "Vasco",
       "pos": 11,
+      "pts": 39,
+      "v": 10,
+      "saldo": -6,
+      "gm": 40
+    },
+    {
+      "nome": "Botafogo",
+      "pos": 12,
       "pts": 39,
       "v": 10,
       "saldo": -8,
@@ -234,19 +242,11 @@
     },
     {
       "nome": "Coritiba",
-      "pos": 12,
+      "pos": 13,
       "pts": 39,
       "v": 10,
       "saldo": -12,
       "gm": 38
-    },
-    {
-      "nome": "Vasco",
-      "pos": 13,
-      "pts": 38,
-      "v": 10,
-      "saldo": -6,
-      "gm": 39
     },
     {
       "nome": "VITÓRIA",
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-10-28T23:33:34.813057-03:00",
+  "updated_at": "2026-10-29T20:23:54.550298-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
