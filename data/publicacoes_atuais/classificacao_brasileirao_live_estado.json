@@ -39,9 +39,9 @@
     {
       "nome": "BAH",
       "j": 33,
-      "pts": 53,
-      "v": 14,
-      "saldo": 7
+      "pts": 51,
+      "v": 13,
+      "saldo": 5
     },
     {
       "nome": "CAM",
@@ -67,16 +67,16 @@
     {
       "nome": "SAO",
       "j": 33,
-      "pts": 43,
+      "pts": 44,
       "v": 12,
-      "saldo": -1
+      "saldo": 1
     },
     {
       "nome": "BOT",
       "j": 33,
       "pts": 39,
       "v": 10,
-      "saldo": -8
+      "saldo": -9
     },
     {
       "nome": "CFC",
@@ -132,7 +132,7 @@
       "j": 33,
       "pts": 29,
       "v": 6,
-      "saldo": -15
+      "saldo": -14
     },
     {
       "nome": "CHA",
@@ -187,10 +187,10 @@
     {
       "nome": "Bahia",
       "pos": 6,
-      "pts": 51,
-      "v": 13,
-      "saldo": 5,
-      "gm": 47
+      "pts": 53,
+      "v": 14,
+      "saldo": 6,
+      "gm": 48
     },
     {
       "nome": "ATLÉTICO-MG",
@@ -219,9 +219,9 @@
     {
       "nome": "SÃO PAULO",
       "pos": 10,
-      "pts": 44,
+      "pts": 43,
       "v": 12,
-      "saldo": 1,
+      "saldo": 0,
       "gm": 39
     },
     {
@@ -230,7 +230,7 @@
       "pts": 39,
       "v": 10,
       "saldo": -8,
-      "gm": 44
+      "gm": 45
     },
     {
       "nome": "Coritiba",
@@ -294,7 +294,7 @@
       "pts": 29,
       "v": 6,
       "saldo": -15,
-      "gm": 35
+      "gm": 36
     },
     {
       "nome": "Chapecoense",
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-10-28T22:33:31.798267-03:00",
+  "updated_at": "2026-10-28T23:33:34.813057-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
