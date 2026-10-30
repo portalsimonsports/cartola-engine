@@ -23,14 +23,14 @@
       "saldo": 6
     },
     {
-      "nome": "CAP",
+      "nome": "FLU",
       "j": 33,
       "pts": 54,
       "v": 15,
-      "saldo": 11
+      "saldo": 10
     },
     {
-      "nome": "FLU",
+      "nome": "CAP",
       "j": 33,
       "pts": 54,
       "v": 15,
@@ -101,8 +101,8 @@
     },
     {
       "nome": "MIR",
-      "j": 32,
-      "pts": 37,
+      "j": 33,
+      "pts": 38,
       "v": 9,
       "saldo": -8
     },
@@ -111,7 +111,7 @@
       "j": 33,
       "pts": 37,
       "v": 9,
-      "saldo": -8
+      "saldo": -7
     },
     {
       "nome": "INT",
@@ -122,8 +122,8 @@
     },
     {
       "nome": "COR",
-      "j": 32,
-      "pts": 33,
+      "j": 33,
+      "pts": 34,
       "v": 8,
       "saldo": -8
     },
@@ -169,20 +169,20 @@
       "gm": 52
     },
     {
-      "nome": "Athletico-PR",
-      "pos": 4,
-      "pts": 54,
-      "v": 15,
-      "saldo": 11,
-      "gm": 50
-    },
-    {
       "nome": "Fluminense",
-      "pos": 5,
+      "pos": 4,
       "pts": 54,
       "v": 15,
       "saldo": 10,
       "gm": 52
+    },
+    {
+      "nome": "Athletico-PR",
+      "pos": 5,
+      "pts": 54,
+      "v": 15,
+      "saldo": 10,
+      "gm": 50
     },
     {
       "nome": "Bahia",
@@ -259,7 +259,7 @@
     {
       "nome": "Mirassol",
       "pos": 15,
-      "pts": 37,
+      "pts": 38,
       "v": 9,
       "saldo": -8,
       "gm": 37
@@ -269,8 +269,8 @@
       "pos": 16,
       "pts": 37,
       "v": 9,
-      "saldo": -8,
-      "gm": 36
+      "saldo": -7,
+      "gm": 37
     },
     {
       "nome": "Internacional",
@@ -283,7 +283,7 @@
     {
       "nome": "Corinthians",
       "pos": 18,
-      "pts": 33,
+      "pts": 34,
       "v": 8,
       "saldo": -8,
       "gm": 34
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-10-29T22:23:29.100639-03:00",
+  "updated_at": "2026-10-30T20:23:11.995939-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
