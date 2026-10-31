@@ -1,0 +1,318 @@
+{
+  "origem": "cartola_desempenho_rodada_anterior_v3_valorizacao_mercado",
+  "evento_github": "cartola_live_publish",
+  "workflow_destino": "gerar.resultados.yml",
+  "evento_programado": "FECHAMENTO_FINAL_TIMES",
+  "tipo_publicacao": "DESEMPENHO_FINAL_DOS_TIMES",
+  "contexto": "RODADA_FINALIZADA",
+  "rodada": 33,
+  "rodada_finalizada": 33,
+  "fonte_pontuacao": "API Cartola atletas/pontuados/33",
+  "fonte_valorizacao": "API Cartola atletas/mercado variacao_num da abertura seguinte",
+  "times": {
+    "ECONOMICO": {
+      "modelo": "ECONOMICO",
+      "nome": "Time Econômico",
+      "pontos_sem_c": 65.23,
+      "bonus_capitao": 6.13,
+      "pontos_com_c": 71.36,
+      "participacao": "11/12",
+      "valorizacao": -3.64,
+      "valorizacao_localizada": "12/12",
+      "fonte_valorizacao": "API Cartola atletas/mercado variacao_num após processamento da rodada",
+      "capitao": "Abel Ferreira",
+      "nao_pontuaram_ou_nao_localizados": [
+        "Garcez"
+      ],
+      "nao_localizados_valorizacao": [],
+      "metodos_localizacao": {
+        "Kauan Jesus": "EXATO",
+        "Marcelinho": "EXATO",
+        "Ryan Augusto": "EXATO",
+        "Luan Peres": "EXATO",
+        "Juninho": "EXATO",
+        "Giovanni Augusto": "EXATO",
+        "Gustavo Henrique": "EXATO",
+        "Bernard": "EXATO",
+        "Fernando": "EXATO",
+        "Garcez": "NAO_LOCALIZADO",
+        "Jajá": "EXATO",
+        "Abel Ferreira": "EXATO"
+      },
+      "metodos_localizacao_valorizacao": {
+        "Kauan Jesus": "EXATO",
+        "Marcelinho": "EXATO",
+        "Ryan Augusto": "EXATO",
+        "Luan Peres": "EXATO",
+        "Juninho": "EXATO",
+        "Giovanni Augusto": "EXATO",
+        "Gustavo Henrique": "EXATO",
+        "Bernard": "EXATO",
+        "Fernando": "EXATO",
+        "Garcez": "EXATO",
+        "Jajá": "EXATO",
+        "Abel Ferreira": "EXATO"
+      },
+      "snapshot": "data/publicacoes_atuais/time_economico_rodada_33.json"
+    },
+    "INTERMEDIARIO": {
+      "modelo": "INTERMEDIARIO",
+      "nome": "Time Intermediário",
+      "pontos_sem_c": 69.52,
+      "bonus_capitao": 2.7,
+      "pontos_com_c": 72.22,
+      "participacao": "12/12",
+      "valorizacao": -1.91,
+      "valorizacao_localizada": "12/12",
+      "fonte_valorizacao": "API Cartola atletas/mercado variacao_num após processamento da rodada",
+      "capitao": "Luciano Juba",
+      "nao_pontuaram_ou_nao_localizados": [],
+      "nao_localizados_valorizacao": [],
+      "metodos_localizacao": {
+        "Ronaldo": "EXATO",
+        "Luciano Juba": "EXATO",
+        "Cuiabano": "EXATO",
+        "Alexander Barboza": "EXATO",
+        "Wallace": "EXATO",
+        "Matheus Pereira": "EXATO",
+        "Arias": "EXATO",
+        "Savarino": "EXATO",
+        "Flaco López": "EXATO",
+        "Samuel Lino": "EXATO",
+        "Lucas Barbosa": "EXATO",
+        "Rafael Guanaes": "EXATO"
+      },
+      "metodos_localizacao_valorizacao": {
+        "Ronaldo": "EXATO",
+        "Luciano Juba": "EXATO",
+        "Cuiabano": "EXATO",
+        "Alexander Barboza": "EXATO",
+        "Wallace": "EXATO",
+        "Matheus Pereira": "EXATO",
+        "Arias": "EXATO",
+        "Savarino": "EXATO",
+        "Flaco López": "EXATO",
+        "Samuel Lino": "EXATO",
+        "Lucas Barbosa": "EXATO",
+        "Rafael Guanaes": "EXATO"
+      },
+      "snapshot": "data/publicacoes_atuais/time_intermediario_rodada_33.json"
+    },
+    "PONTUACAO": {
+      "modelo": "PONTUACAO",
+      "nome": "Time para Pontuar",
+      "pontos_sem_c": 73.43,
+      "bonus_capitao": 2.7,
+      "pontos_com_c": 76.13,
+      "participacao": "12/12",
+      "valorizacao": -2.31,
+      "valorizacao_localizada": "12/12",
+      "fonte_valorizacao": "API Cartola atletas/mercado variacao_num após processamento da rodada",
+      "capitao": "Luciano Juba",
+      "nao_pontuaram_ou_nao_localizados": [],
+      "nao_localizados_valorizacao": [],
+      "metodos_localizacao": {
+        "Ronaldo": "EXATO",
+        "Luciano Juba": "EXATO",
+        "Cuiabano": "EXATO",
+        "Alexander Barboza": "EXATO",
+        "Wallace": "EXATO",
+        "Matheus Pereira": "EXATO",
+        "Arias": "EXATO",
+        "Savarino": "EXATO",
+        "Flaco López": "EXATO",
+        "Samuel Lino": "EXATO",
+        "Lucas Barbosa": "EXATO",
+        "Abel Ferreira": "EXATO"
+      },
+      "metodos_localizacao_valorizacao": {
+        "Ronaldo": "EXATO",
+        "Luciano Juba": "EXATO",
+        "Cuiabano": "EXATO",
+        "Alexander Barboza": "EXATO",
+        "Wallace": "EXATO",
+        "Matheus Pereira": "EXATO",
+        "Arias": "EXATO",
+        "Savarino": "EXATO",
+        "Flaco López": "EXATO",
+        "Samuel Lino": "EXATO",
+        "Lucas Barbosa": "EXATO",
+        "Abel Ferreira": "EXATO"
+      },
+      "snapshot": "data/publicacoes_atuais/time_pontuacao_rodada_33.json"
+    }
+  },
+  "ranking_times": [
+    {
+      "modelo": "PONTUACAO",
+      "nome": "Time para Pontuar",
+      "pontos": 76.13
+    },
+    {
+      "modelo": "INTERMEDIARIO",
+      "nome": "Time Intermediário",
+      "pontos": 72.22
+    },
+    {
+      "modelo": "ECONOMICO",
+      "nome": "Time Econômico",
+      "pontos": 71.36
+    }
+  ],
+  "payload": {
+    "rodada": 33,
+    "times": {
+      "ECONOMICO": {
+        "modelo": "ECONOMICO",
+        "nome": "Time Econômico",
+        "pontos_sem_c": 65.23,
+        "bonus_capitao": 6.13,
+        "pontos_com_c": 71.36,
+        "participacao": "11/12",
+        "valorizacao": -3.64,
+        "valorizacao_localizada": "12/12",
+        "fonte_valorizacao": "API Cartola atletas/mercado variacao_num após processamento da rodada",
+        "capitao": "Abel Ferreira",
+        "nao_pontuaram_ou_nao_localizados": [
+          "Garcez"
+        ],
+        "nao_localizados_valorizacao": [],
+        "metodos_localizacao": {
+          "Kauan Jesus": "EXATO",
+          "Marcelinho": "EXATO",
+          "Ryan Augusto": "EXATO",
+          "Luan Peres": "EXATO",
+          "Juninho": "EXATO",
+          "Giovanni Augusto": "EXATO",
+          "Gustavo Henrique": "EXATO",
+          "Bernard": "EXATO",
+          "Fernando": "EXATO",
+          "Garcez": "NAO_LOCALIZADO",
+          "Jajá": "EXATO",
+          "Abel Ferreira": "EXATO"
+        },
+        "metodos_localizacao_valorizacao": {
+          "Kauan Jesus": "EXATO",
+          "Marcelinho": "EXATO",
+          "Ryan Augusto": "EXATO",
+          "Luan Peres": "EXATO",
+          "Juninho": "EXATO",
+          "Giovanni Augusto": "EXATO",
+          "Gustavo Henrique": "EXATO",
+          "Bernard": "EXATO",
+          "Fernando": "EXATO",
+          "Garcez": "EXATO",
+          "Jajá": "EXATO",
+          "Abel Ferreira": "EXATO"
+        },
+        "snapshot": "data/publicacoes_atuais/time_economico_rodada_33.json"
+      },
+      "INTERMEDIARIO": {
+        "modelo": "INTERMEDIARIO",
+        "nome": "Time Intermediário",
+        "pontos_sem_c": 69.52,
+        "bonus_capitao": 2.7,
+        "pontos_com_c": 72.22,
+        "participacao": "12/12",
+        "valorizacao": -1.91,
+        "valorizacao_localizada": "12/12",
+        "fonte_valorizacao": "API Cartola atletas/mercado variacao_num após processamento da rodada",
+        "capitao": "Luciano Juba",
+        "nao_pontuaram_ou_nao_localizados": [],
+        "nao_localizados_valorizacao": [],
+        "metodos_localizacao": {
+          "Ronaldo": "EXATO",
+          "Luciano Juba": "EXATO",
+          "Cuiabano": "EXATO",
+          "Alexander Barboza": "EXATO",
+          "Wallace": "EXATO",
+          "Matheus Pereira": "EXATO",
+          "Arias": "EXATO",
+          "Savarino": "EXATO",
+          "Flaco López": "EXATO",
+          "Samuel Lino": "EXATO",
+          "Lucas Barbosa": "EXATO",
+          "Rafael Guanaes": "EXATO"
+        },
+        "metodos_localizacao_valorizacao": {
+          "Ronaldo": "EXATO",
+          "Luciano Juba": "EXATO",
+          "Cuiabano": "EXATO",
+          "Alexander Barboza": "EXATO",
+          "Wallace": "EXATO",
+          "Matheus Pereira": "EXATO",
+          "Arias": "EXATO",
+          "Savarino": "EXATO",
+          "Flaco López": "EXATO",
+          "Samuel Lino": "EXATO",
+          "Lucas Barbosa": "EXATO",
+          "Rafael Guanaes": "EXATO"
+        },
+        "snapshot": "data/publicacoes_atuais/time_intermediario_rodada_33.json"
+      },
+      "PONTUACAO": {
+        "modelo": "PONTUACAO",
+        "nome": "Time para Pontuar",
+        "pontos_sem_c": 73.43,
+        "bonus_capitao": 2.7,
+        "pontos_com_c": 76.13,
+        "participacao": "12/12",
+        "valorizacao": -2.31,
+        "valorizacao_localizada": "12/12",
+        "fonte_valorizacao": "API Cartola atletas/mercado variacao_num após processamento da rodada",
+        "capitao": "Luciano Juba",
+        "nao_pontuaram_ou_nao_localizados": [],
+        "nao_localizados_valorizacao": [],
+        "metodos_localizacao": {
+          "Ronaldo": "EXATO",
+          "Luciano Juba": "EXATO",
+          "Cuiabano": "EXATO",
+          "Alexander Barboza": "EXATO",
+          "Wallace": "EXATO",
+          "Matheus Pereira": "EXATO",
+          "Arias": "EXATO",
+          "Savarino": "EXATO",
+          "Flaco López": "EXATO",
+          "Samuel Lino": "EXATO",
+          "Lucas Barbosa": "EXATO",
+          "Abel Ferreira": "EXATO"
+        },
+        "metodos_localizacao_valorizacao": {
+          "Ronaldo": "EXATO",
+          "Luciano Juba": "EXATO",
+          "Cuiabano": "EXATO",
+          "Alexander Barboza": "EXATO",
+          "Wallace": "EXATO",
+          "Matheus Pereira": "EXATO",
+          "Arias": "EXATO",
+          "Savarino": "EXATO",
+          "Flaco López": "EXATO",
+          "Samuel Lino": "EXATO",
+          "Lucas Barbosa": "EXATO",
+          "Abel Ferreira": "EXATO"
+        },
+        "snapshot": "data/publicacoes_atuais/time_pontuacao_rodada_33.json"
+      }
+    },
+    "ranking_times": [
+      {
+        "modelo": "PONTUACAO",
+        "nome": "Time para Pontuar",
+        "pontos": 76.13
+      },
+      {
+        "modelo": "INTERMEDIARIO",
+        "nome": "Time Intermediário",
+        "pontos": 72.22
+      },
+      {
+        "modelo": "ECONOMICO",
+        "nome": "Time Econômico",
+        "pontos": 71.36
+      }
+    ],
+    "evento_programado": "FECHAMENTO_FINAL_TIMES",
+    "tipo_publicacao": "DESEMPENHO_FINAL_DOS_TIMES",
+    "contexto": "RODADA_FINALIZADA"
+  }
+}
