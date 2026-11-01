@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 34,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-11-01T15:04:46.563Z",
+  "atualizado_em": "2026-11-01T22:59:46.232Z",
   "dados": [
     {
       "RODADA": 34,
@@ -65,11 +65,22 @@
       "RODADA": 34,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
+      "POS": "ZAG",
+      "NOME": "Murilo",
+      "CLUBE": "PAL",
+      "PRECO": 8.05,
+      "EXP_SCORE": 4.9837,
+      "ATLETA_ID": 97653
+    },
+    {
+      "RODADA": 34,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
       "POS": "MEI",
       "NOME": "Carrascal",
       "CLUBE": "FLA",
       "PRECO": 11.72,
-      "EXP_SCORE": 7.2366,
+      "EXP_SCORE": 7.3562,
       "ATLETA_ID": 105436
     },
     {
@@ -80,7 +91,7 @@
       "NOME": "Arias",
       "CLUBE": "PAL",
       "PRECO": 12.95,
-      "EXP_SCORE": 5.2596,
+      "EXP_SCORE": 5.2546,
       "ATLETA_ID": 99815
     },
     {
@@ -88,11 +99,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "TITULAR",
       "POS": "MEI",
-      "NOME": "Giovanni Augusto",
-      "CLUBE": "CHA",
-      "PRECO": 5.54,
-      "EXP_SCORE": 4.3156,
-      "ATLETA_ID": 68938
+      "NOME": "Arrascaeta",
+      "CLUBE": "FLA",
+      "PRECO": 13.24,
+      "EXP_SCORE": 4.3798,
+      "ATLETA_ID": 87863
     },
     {
       "RODADA": 34,
@@ -102,7 +113,7 @@
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 14.44,
-      "EXP_SCORE": 11.3003,
+      "EXP_SCORE": 11.4871,
       "ATLETA_ID": 98873
     },
     {
@@ -113,19 +124,8 @@
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 16.93,
-      "EXP_SCORE": 8.7471,
+      "EXP_SCORE": 8.8917,
       "ATLETA_ID": 94583
-    },
-    {
-      "RODADA": 34,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "ATA",
-      "NOME": "Viveros",
-      "CLUBE": "CAP",
-      "PRECO": 12.38,
-      "EXP_SCORE": 8.053,
-      "ATLETA_ID": 143193
     },
     {
       "RODADA": 34,
@@ -135,7 +135,7 @@
       "NOME": "Rafael Guanaes",
       "CLUBE": "MIR",
       "PRECO": 7.01,
-      "EXP_SCORE": 3.6154,
+      "EXP_SCORE": 3.6131,
       "ATLETA_ID": 104027
     },
     {
@@ -165,33 +165,33 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Murilo",
-      "CLUBE": "PAL",
-      "PRECO": 8.05,
-      "EXP_SCORE": 4.9837,
-      "ATLETA_ID": 97653
+      "NOME": "Ferraresi",
+      "CLUBE": "BOT",
+      "PRECO": 7.04,
+      "EXP_SCORE": 4.7488,
+      "ATLETA_ID": 105300
     },
     {
       "RODADA": 34,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "MEI",
-      "NOME": "Bernard",
-      "CLUBE": "CAM",
-      "PRECO": 5.2,
-      "EXP_SCORE": 3.4467,
-      "ATLETA_ID": 72460
+      "NOME": "Giovanni Augusto",
+      "CLUBE": "CHA",
+      "PRECO": 5.54,
+      "EXP_SCORE": 4.312,
+      "ATLETA_ID": 68938
     },
     {
       "RODADA": 34,
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Calleri",
-      "CLUBE": "SAO",
-      "PRECO": 11.5,
-      "EXP_SCORE": 5.6952,
-      "ATLETA_ID": 89840
+      "NOME": "Viveros",
+      "CLUBE": "CAP",
+      "PRECO": 12.38,
+      "EXP_SCORE": 8.0451,
+      "ATLETA_ID": 143193
     }
   ]
 }
