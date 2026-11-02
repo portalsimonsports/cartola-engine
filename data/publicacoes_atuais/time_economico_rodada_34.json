@@ -4,7 +4,7 @@
   "tipo_publicacao": "time_economico",
   "rodada": 34,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-11-01T22:59:43.906Z",
+  "atualizado_em": "2026-11-02T22:39:44.312Z",
   "dados": [
     {
       "rodada": 34,
@@ -14,19 +14,8 @@
       "nome": "Otávio",
       "clube": "CRU",
       "preco": 5.13,
-      "exp_score": 4.8992,
+      "exp_score": 4.8572,
       "atleta_id": 117404
-    },
-    {
-      "rodada": 34,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "LAT",
-      "nome": "Giay",
-      "clube": "PAL",
-      "preco": 8.44,
-      "exp_score": 7.6312,
-      "atleta_id": 124526
     },
     {
       "rodada": 34,
@@ -36,8 +25,19 @@
       "nome": "Varela",
       "clube": "FLA",
       "preco": 8.66,
-      "exp_score": 6.262,
+      "exp_score": 6.4826,
       "atleta_id": 84816
+    },
+    {
+      "rodada": 34,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "LAT",
+      "nome": "Giay",
+      "clube": "PAL",
+      "preco": 8.44,
+      "exp_score": 7.6182,
+      "atleta_id": 124526
     },
     {
       "rodada": 34,
@@ -47,7 +47,7 @@
       "nome": "Kauan",
       "clube": "CHA",
       "preco": 2.63,
-      "exp_score": 1.9604,
+      "exp_score": 1.9491,
       "atleta_id": 130806
     },
     {
@@ -55,22 +55,11 @@
       "tipo": "ECONOMICO",
       "status": "TITULAR",
       "pos": "ZAG",
-      "nome": "Ferraresi",
-      "clube": "BOT",
-      "preco": 7.04,
-      "exp_score": 4.7488,
-      "atleta_id": 105300
-    },
-    {
-      "rodada": 34,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "MEI",
-      "nome": "Lescano",
-      "clube": "VAS",
-      "preco": 12.1,
-      "exp_score": 4.3058,
-      "atleta_id": 124552
+      "nome": "Marcos Victor",
+      "clube": "BAH",
+      "preco": 7.19,
+      "exp_score": 3.1777,
+      "atleta_id": 115537
     },
     {
       "rodada": 34,
@@ -80,7 +69,7 @@
       "nome": "Luiz Gustavo",
       "clube": "CAP",
       "preco": 6.75,
-      "exp_score": 3.8107,
+      "exp_score": 3.9853,
       "atleta_id": 71536
     },
     {
@@ -91,8 +80,41 @@
       "nome": "Hércules",
       "clube": "FLU",
       "preco": 8.07,
-      "exp_score": 3.4618,
+      "exp_score": 3.4565,
       "atleta_id": 116447
+    },
+    {
+      "rodada": 34,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Rodrigo Nestor",
+      "clube": "BAH",
+      "preco": 7.36,
+      "exp_score": 3.9665,
+      "atleta_id": 106822
+    },
+    {
+      "rodada": 34,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Matheuzinho",
+      "clube": "VIT",
+      "preco": 6.27,
+      "exp_score": 4.2327,
+      "atleta_id": 90703
+    },
+    {
+      "rodada": 34,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Carrascal",
+      "clube": "FLA",
+      "preco": 11.72,
+      "exp_score": 7.3463,
+      "atleta_id": 105436
     },
     {
       "rodada": 34,
@@ -102,52 +124,30 @@
       "nome": "Samuel Lino",
       "clube": "FLA",
       "preco": 14.44,
-      "exp_score": 11.4871,
+      "exp_score": 11.4717,
       "atleta_id": 98873
     },
     {
       "rodada": 34,
       "tipo": "ECONOMICO",
       "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Arroyo",
-      "clube": "CRU",
-      "preco": 8.26,
-      "exp_score": 4.7239,
-      "atleta_id": 132264
-    },
-    {
-      "rodada": 34,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Leozinho",
-      "clube": "CAP",
-      "preco": 6.21,
-      "exp_score": 4.8579,
-      "atleta_id": 123101
-    },
-    {
-      "rodada": 34,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
       "pos": "TEC",
-      "nome": "Jair Ventura",
-      "clube": "VIT",
-      "preco": 8.59,
-      "exp_score": 4.9319,
-      "atleta_id": 92180
+      "nome": "Odair Hellmann",
+      "clube": "CAP",
+      "preco": 8.67,
+      "exp_score": 5.0785,
+      "atleta_id": 92273
     },
     {
       "rodada": 34,
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "GOL",
-      "nome": "Gabriel Delfim",
-      "clube": "CAM",
-      "preco": 4.84,
-      "exp_score": 3.2236,
-      "atleta_id": 115674
+      "nome": "Kauan Jesus",
+      "clube": "INT",
+      "preco": 5.05,
+      "exp_score": 2.3137,
+      "atleta_id": 124264
     },
     {
       "rodada": 34,
@@ -157,7 +157,7 @@
       "nome": "Matheus Bahia",
       "clube": "INT",
       "preco": 7.85,
-      "exp_score": 4.8956,
+      "exp_score": 4.8574,
       "atleta_id": 97899
     },
     {
@@ -165,11 +165,11 @@
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "ZAG",
-      "nome": "Kanu",
-      "clube": "BAH",
-      "preco": 2.32,
-      "exp_score": 0.2026,
-      "atleta_id": 98484
+      "nome": "Tiago Cóser",
+      "clube": "CFC",
+      "preco": 3.44,
+      "exp_score": 1.833,
+      "atleta_id": 109127
     },
     {
       "rodada": 34,
@@ -179,7 +179,7 @@
       "nome": "Giovanni Augusto",
       "clube": "CHA",
       "preco": 5.54,
-      "exp_score": 4.312,
+      "exp_score": 4.3062,
       "atleta_id": 68938
     },
     {
@@ -187,11 +187,11 @@
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "ATA",
-      "nome": "Marcinho",
-      "clube": "CHA",
-      "preco": 4.68,
-      "exp_score": 3.6433,
-      "atleta_id": 95332
+      "nome": "Viveros",
+      "clube": "CAP",
+      "preco": 12.38,
+      "exp_score": 8.4136,
+      "atleta_id": 143193
     }
   ],
   "modelo": "ECONOMICO",
@@ -206,19 +206,8 @@
       "nome": "Otávio",
       "clube": "CRU",
       "preco": 5.13,
-      "exp_score": 4.8992,
+      "exp_score": 4.8572,
       "atleta_id": 117404
-    },
-    {
-      "rodada": 34,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "LAT",
-      "nome": "Giay",
-      "clube": "PAL",
-      "preco": 8.44,
-      "exp_score": 7.6312,
-      "atleta_id": 124526
     },
     {
       "rodada": 34,
@@ -228,8 +217,19 @@
       "nome": "Varela",
       "clube": "FLA",
       "preco": 8.66,
-      "exp_score": 6.262,
+      "exp_score": 6.4826,
       "atleta_id": 84816
+    },
+    {
+      "rodada": 34,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "LAT",
+      "nome": "Giay",
+      "clube": "PAL",
+      "preco": 8.44,
+      "exp_score": 7.6182,
+      "atleta_id": 124526
     },
     {
       "rodada": 34,
@@ -239,7 +239,7 @@
       "nome": "Kauan",
       "clube": "CHA",
       "preco": 2.63,
-      "exp_score": 1.9604,
+      "exp_score": 1.9491,
       "atleta_id": 130806
     },
     {
@@ -247,22 +247,11 @@
       "tipo": "ECONOMICO",
       "status": "TITULAR",
       "pos": "ZAG",
-      "nome": "Ferraresi",
-      "clube": "BOT",
-      "preco": 7.04,
-      "exp_score": 4.7488,
-      "atleta_id": 105300
-    },
-    {
-      "rodada": 34,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "MEI",
-      "nome": "Lescano",
-      "clube": "VAS",
-      "preco": 12.1,
-      "exp_score": 4.3058,
-      "atleta_id": 124552
+      "nome": "Marcos Victor",
+      "clube": "BAH",
+      "preco": 7.19,
+      "exp_score": 3.1777,
+      "atleta_id": 115537
     },
     {
       "rodada": 34,
@@ -272,7 +261,7 @@
       "nome": "Luiz Gustavo",
       "clube": "CAP",
       "preco": 6.75,
-      "exp_score": 3.8107,
+      "exp_score": 3.9853,
       "atleta_id": 71536
     },
     {
@@ -283,8 +272,41 @@
       "nome": "Hércules",
       "clube": "FLU",
       "preco": 8.07,
-      "exp_score": 3.4618,
+      "exp_score": 3.4565,
       "atleta_id": 116447
+    },
+    {
+      "rodada": 34,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Rodrigo Nestor",
+      "clube": "BAH",
+      "preco": 7.36,
+      "exp_score": 3.9665,
+      "atleta_id": 106822
+    },
+    {
+      "rodada": 34,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Matheuzinho",
+      "clube": "VIT",
+      "preco": 6.27,
+      "exp_score": 4.2327,
+      "atleta_id": 90703
+    },
+    {
+      "rodada": 34,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Carrascal",
+      "clube": "FLA",
+      "preco": 11.72,
+      "exp_score": 7.3463,
+      "atleta_id": 105436
     },
     {
       "rodada": 34,
@@ -294,52 +316,30 @@
       "nome": "Samuel Lino",
       "clube": "FLA",
       "preco": 14.44,
-      "exp_score": 11.4871,
+      "exp_score": 11.4717,
       "atleta_id": 98873
     },
     {
       "rodada": 34,
       "tipo": "ECONOMICO",
       "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Arroyo",
-      "clube": "CRU",
-      "preco": 8.26,
-      "exp_score": 4.7239,
-      "atleta_id": 132264
-    },
-    {
-      "rodada": 34,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Leozinho",
-      "clube": "CAP",
-      "preco": 6.21,
-      "exp_score": 4.8579,
-      "atleta_id": 123101
-    },
-    {
-      "rodada": 34,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
       "pos": "TEC",
-      "nome": "Jair Ventura",
-      "clube": "VIT",
-      "preco": 8.59,
-      "exp_score": 4.9319,
-      "atleta_id": 92180
+      "nome": "Odair Hellmann",
+      "clube": "CAP",
+      "preco": 8.67,
+      "exp_score": 5.0785,
+      "atleta_id": 92273
     },
     {
       "rodada": 34,
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "GOL",
-      "nome": "Gabriel Delfim",
-      "clube": "CAM",
-      "preco": 4.84,
-      "exp_score": 3.2236,
-      "atleta_id": 115674
+      "nome": "Kauan Jesus",
+      "clube": "INT",
+      "preco": 5.05,
+      "exp_score": 2.3137,
+      "atleta_id": 124264
     },
     {
       "rodada": 34,
@@ -349,7 +349,7 @@
       "nome": "Matheus Bahia",
       "clube": "INT",
       "preco": 7.85,
-      "exp_score": 4.8956,
+      "exp_score": 4.8574,
       "atleta_id": 97899
     },
     {
@@ -357,11 +357,11 @@
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "ZAG",
-      "nome": "Kanu",
-      "clube": "BAH",
-      "preco": 2.32,
-      "exp_score": 0.2026,
-      "atleta_id": 98484
+      "nome": "Tiago Cóser",
+      "clube": "CFC",
+      "preco": 3.44,
+      "exp_score": 1.833,
+      "atleta_id": 109127
     },
     {
       "rodada": 34,
@@ -371,7 +371,7 @@
       "nome": "Giovanni Augusto",
       "clube": "CHA",
       "preco": 5.54,
-      "exp_score": 4.312,
+      "exp_score": 4.3062,
       "atleta_id": 68938
     },
     {
@@ -379,11 +379,11 @@
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "ATA",
-      "nome": "Marcinho",
-      "clube": "CHA",
-      "preco": 4.68,
-      "exp_score": 3.6433,
-      "atleta_id": 95332
+      "nome": "Viveros",
+      "clube": "CAP",
+      "preco": 12.38,
+      "exp_score": 8.4136,
+      "atleta_id": 143193
     }
   ],
   "jogadores": [
@@ -395,19 +395,8 @@
       "nome": "Otávio",
       "clube": "CRU",
       "preco": 5.13,
-      "exp_score": 4.8992,
+      "exp_score": 4.8572,
       "atleta_id": 117404
-    },
-    {
-      "rodada": 34,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "LAT",
-      "nome": "Giay",
-      "clube": "PAL",
-      "preco": 8.44,
-      "exp_score": 7.6312,
-      "atleta_id": 124526
     },
     {
       "rodada": 34,
@@ -417,8 +406,19 @@
       "nome": "Varela",
       "clube": "FLA",
       "preco": 8.66,
-      "exp_score": 6.262,
+      "exp_score": 6.4826,
       "atleta_id": 84816
+    },
+    {
+      "rodada": 34,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "LAT",
+      "nome": "Giay",
+      "clube": "PAL",
+      "preco": 8.44,
+      "exp_score": 7.6182,
+      "atleta_id": 124526
     },
     {
       "rodada": 34,
@@ -428,7 +428,7 @@
       "nome": "Kauan",
       "clube": "CHA",
       "preco": 2.63,
-      "exp_score": 1.9604,
+      "exp_score": 1.9491,
       "atleta_id": 130806
     },
     {
@@ -436,22 +436,11 @@
       "tipo": "ECONOMICO",
       "status": "TITULAR",
       "pos": "ZAG",
-      "nome": "Ferraresi",
-      "clube": "BOT",
-      "preco": 7.04,
-      "exp_score": 4.7488,
-      "atleta_id": 105300
-    },
-    {
-      "rodada": 34,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "MEI",
-      "nome": "Lescano",
-      "clube": "VAS",
-      "preco": 12.1,
-      "exp_score": 4.3058,
-      "atleta_id": 124552
+      "nome": "Marcos Victor",
+      "clube": "BAH",
+      "preco": 7.19,
+      "exp_score": 3.1777,
+      "atleta_id": 115537
     },
     {
       "rodada": 34,
@@ -461,7 +450,7 @@
       "nome": "Luiz Gustavo",
       "clube": "CAP",
       "preco": 6.75,
-      "exp_score": 3.8107,
+      "exp_score": 3.9853,
       "atleta_id": 71536
     },
     {
@@ -472,8 +461,41 @@
       "nome": "Hércules",
       "clube": "FLU",
       "preco": 8.07,
-      "exp_score": 3.4618,
+      "exp_score": 3.4565,
       "atleta_id": 116447
+    },
+    {
+      "rodada": 34,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Rodrigo Nestor",
+      "clube": "BAH",
+      "preco": 7.36,
+      "exp_score": 3.9665,
+      "atleta_id": 106822
+    },
+    {
+      "rodada": 34,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Matheuzinho",
+      "clube": "VIT",
+      "preco": 6.27,
+      "exp_score": 4.2327,
+      "atleta_id": 90703
+    },
+    {
+      "rodada": 34,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Carrascal",
+      "clube": "FLA",
+      "preco": 11.72,
+      "exp_score": 7.3463,
+      "atleta_id": 105436
     },
     {
       "rodada": 34,
@@ -483,41 +505,19 @@
       "nome": "Samuel Lino",
       "clube": "FLA",
       "preco": 14.44,
-      "exp_score": 11.4871,
+      "exp_score": 11.4717,
       "atleta_id": 98873
     },
     {
       "rodada": 34,
       "tipo": "ECONOMICO",
       "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Arroyo",
-      "clube": "CRU",
-      "preco": 8.26,
-      "exp_score": 4.7239,
-      "atleta_id": 132264
-    },
-    {
-      "rodada": 34,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Leozinho",
-      "clube": "CAP",
-      "preco": 6.21,
-      "exp_score": 4.8579,
-      "atleta_id": 123101
-    },
-    {
-      "rodada": 34,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
       "pos": "TEC",
-      "nome": "Jair Ventura",
-      "clube": "VIT",
-      "preco": 8.59,
-      "exp_score": 4.9319,
-      "atleta_id": 92180
+      "nome": "Odair Hellmann",
+      "clube": "CAP",
+      "preco": 8.67,
+      "exp_score": 5.0785,
+      "atleta_id": 92273
     }
   ],
   "reservas": [
@@ -526,11 +526,11 @@
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "GOL",
-      "nome": "Gabriel Delfim",
-      "clube": "CAM",
-      "preco": 4.84,
-      "exp_score": 3.2236,
-      "atleta_id": 115674
+      "nome": "Kauan Jesus",
+      "clube": "INT",
+      "preco": 5.05,
+      "exp_score": 2.3137,
+      "atleta_id": 124264
     },
     {
       "rodada": 34,
@@ -540,7 +540,7 @@
       "nome": "Matheus Bahia",
       "clube": "INT",
       "preco": 7.85,
-      "exp_score": 4.8956,
+      "exp_score": 4.8574,
       "atleta_id": 97899
     },
     {
@@ -548,11 +548,11 @@
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "ZAG",
-      "nome": "Kanu",
-      "clube": "BAH",
-      "preco": 2.32,
-      "exp_score": 0.2026,
-      "atleta_id": 98484
+      "nome": "Tiago Cóser",
+      "clube": "CFC",
+      "preco": 3.44,
+      "exp_score": 1.833,
+      "atleta_id": 109127
     },
     {
       "rodada": 34,
@@ -562,7 +562,7 @@
       "nome": "Giovanni Augusto",
       "clube": "CHA",
       "preco": 5.54,
-      "exp_score": 4.312,
+      "exp_score": 4.3062,
       "atleta_id": 68938
     },
     {
@@ -570,15 +570,15 @@
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "ATA",
-      "nome": "Marcinho",
-      "clube": "CHA",
-      "preco": 4.68,
-      "exp_score": 3.6433,
-      "atleta_id": 95332
+      "nome": "Viveros",
+      "clube": "CAP",
+      "preco": 12.38,
+      "exp_score": 8.4136,
+      "atleta_id": 143193
     }
   ],
   "capitao": "Samuel Lino",
-  "formacao": "4-3-3",
+  "formacao": "4-5-1",
   "evento_programado": "ATUALIZACAO_20H",
   "blocos_topo": [],
   "pipeline_visual": "times_top5_aprovados_v2_2026_09_21_formacao_dinamica"
