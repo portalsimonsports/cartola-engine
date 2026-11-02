@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 34,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-11-02T15:14:48.406Z",
+  "atualizado_em": "2026-11-02T19:59:46.518Z",
   "dados": [
     {
       "RODADA": 34,
@@ -14,7 +14,7 @@
       "NOME": "Carlos Miguel",
       "CLUBE": "PAL",
       "PRECO": 9.47,
-      "EXP_SCORE": 7.4444,
+      "EXP_SCORE": 7.4428,
       "ATLETA_ID": 104084
     },
     {
@@ -25,7 +25,7 @@
       "NOME": "Giay",
       "CLUBE": "PAL",
       "PRECO": 8.44,
-      "EXP_SCORE": 7.6405,
+      "EXP_SCORE": 7.6388,
       "ATLETA_ID": 124526
     },
     {
@@ -36,7 +36,7 @@
       "NOME": "Luciano Juba",
       "CLUBE": "BAH",
       "PRECO": 10.91,
-      "EXP_SCORE": 6.5973,
+      "EXP_SCORE": 6.5957,
       "ATLETA_ID": 107093
     },
     {
@@ -47,7 +47,7 @@
       "NOME": "Alexander Barboza",
       "CLUBE": "PAL",
       "PRECO": 10.81,
-      "EXP_SCORE": 7.0176,
+      "EXP_SCORE": 7.0161,
       "ATLETA_ID": 99274
     },
     {
@@ -58,19 +58,8 @@
       "NOME": "Gustavo Gómez",
       "CLUBE": "PAL",
       "PRECO": 10.53,
-      "EXP_SCORE": 5.6891,
+      "EXP_SCORE": 5.6879,
       "ATLETA_ID": 71684
-    },
-    {
-      "RODADA": 34,
-      "TIPO": "INTERMEDIARIO",
-      "STATUS": "TITULAR",
-      "POS": "ZAG",
-      "NOME": "Murilo",
-      "CLUBE": "PAL",
-      "PRECO": 8.05,
-      "EXP_SCORE": 4.9897,
-      "ATLETA_ID": 97653
     },
     {
       "RODADA": 34,
@@ -80,7 +69,7 @@
       "NOME": "Carrascal",
       "CLUBE": "FLA",
       "PRECO": 11.72,
-      "EXP_SCORE": 7.3556,
+      "EXP_SCORE": 7.3592,
       "ATLETA_ID": 105436
     },
     {
@@ -91,7 +80,7 @@
       "NOME": "Arias",
       "CLUBE": "PAL",
       "PRECO": 12.95,
-      "EXP_SCORE": 5.254,
+      "EXP_SCORE": 5.2575,
       "ATLETA_ID": 99815
     },
     {
@@ -102,7 +91,7 @@
       "NOME": "Arrascaeta",
       "CLUBE": "FLA",
       "PRECO": 13.24,
-      "EXP_SCORE": 4.3794,
+      "EXP_SCORE": 4.3816,
       "ATLETA_ID": 87863
     },
     {
@@ -113,7 +102,7 @@
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 14.44,
-      "EXP_SCORE": 11.4861,
+      "EXP_SCORE": 11.4918,
       "ATLETA_ID": 98873
     },
     {
@@ -124,8 +113,19 @@
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 16.93,
-      "EXP_SCORE": 8.8909,
+      "EXP_SCORE": 8.8953,
       "ATLETA_ID": 94583
+    },
+    {
+      "RODADA": 34,
+      "TIPO": "INTERMEDIARIO",
+      "STATUS": "TITULAR",
+      "POS": "ATA",
+      "NOME": "Vitinho",
+      "CLUBE": "INT",
+      "PRECO": 7.84,
+      "EXP_SCORE": 5.6842,
+      "ATLETA_ID": 101960
     },
     {
       "RODADA": 34,
@@ -135,7 +135,7 @@
       "NOME": "Rafael Guanaes",
       "CLUBE": "MIR",
       "PRECO": 7.01,
-      "EXP_SCORE": 3.6128,
+      "EXP_SCORE": 3.6145,
       "ATLETA_ID": 104027
     },
     {
@@ -146,7 +146,7 @@
       "NOME": "Ronaldo",
       "CLUBE": "BAH",
       "PRECO": 8.42,
-      "EXP_SCORE": 6.0067,
+      "EXP_SCORE": 6.0053,
       "ATLETA_ID": 91101
     },
     {
@@ -157,7 +157,7 @@
       "NOME": "Matheus Bahia",
       "CLUBE": "INT",
       "PRECO": 7.85,
-      "EXP_SCORE": 4.8705,
+      "EXP_SCORE": 4.8695,
       "ATLETA_ID": 97899
     },
     {
@@ -165,11 +165,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ZAG",
-      "NOME": "Ferraresi",
-      "CLUBE": "BOT",
-      "PRECO": 7.04,
-      "EXP_SCORE": 4.7532,
-      "ATLETA_ID": 105300
+      "NOME": "Murilo",
+      "CLUBE": "PAL",
+      "PRECO": 8.05,
+      "EXP_SCORE": 4.9887,
+      "ATLETA_ID": 97653
     },
     {
       "RODADA": 34,
@@ -179,7 +179,7 @@
       "NOME": "Giovanni Augusto",
       "CLUBE": "CHA",
       "PRECO": 5.54,
-      "EXP_SCORE": 4.3116,
+      "EXP_SCORE": 4.3141,
       "ATLETA_ID": 68938
     },
     {
@@ -187,11 +187,11 @@
       "TIPO": "INTERMEDIARIO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Viveros",
+      "NOME": "Leozinho",
       "CLUBE": "CAP",
-      "PRECO": 12.38,
-      "EXP_SCORE": 8.0441,
-      "ATLETA_ID": 143193
+      "PRECO": 6.21,
+      "EXP_SCORE": 4.8607,
+      "ATLETA_ID": 123101
     }
   ]
 }
