@@ -4,7 +4,7 @@
   "tipo_publicacao": "time_intermediario",
   "rodada": 34,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-11-03T16:54:48.000Z",
+  "atualizado_em": "2026-11-03T21:49:48.374Z",
   "dados": [
     {
       "rodada": 34,
@@ -14,19 +14,8 @@
       "nome": "Carlos Miguel",
       "clube": "PAL",
       "preco": 9.47,
-      "exp_score": 7.3686,
+      "exp_score": 7.3829,
       "atleta_id": 104084
-    },
-    {
-      "rodada": 34,
-      "tipo": "INTERMEDIARIO",
-      "status": "TITULAR",
-      "pos": "LAT",
-      "nome": "Giay",
-      "clube": "PAL",
-      "preco": 8.44,
-      "exp_score": 7.5626,
-      "atleta_id": 124526
     },
     {
       "rodada": 34,
@@ -36,8 +25,19 @@
       "nome": "Matheus Bidu",
       "clube": "COR",
       "preco": 14.31,
-      "exp_score": 6.5966,
+      "exp_score": 6.6102,
       "atleta_id": 105531
+    },
+    {
+      "rodada": 34,
+      "tipo": "INTERMEDIARIO",
+      "status": "TITULAR",
+      "pos": "LAT",
+      "nome": "Varela",
+      "clube": "FLA",
+      "preco": 8.66,
+      "exp_score": 6.4845,
+      "atleta_id": 84816
     },
     {
       "rodada": 34,
@@ -47,7 +47,7 @@
       "nome": "Alexander Barboza",
       "clube": "PAL",
       "preco": 10.81,
-      "exp_score": 6.9461,
+      "exp_score": 6.9597,
       "atleta_id": 99274
     },
     {
@@ -58,7 +58,7 @@
       "nome": "Gustavo Gómez",
       "clube": "PAL",
       "preco": 10.53,
-      "exp_score": 5.6312,
+      "exp_score": 5.6422,
       "atleta_id": 71684
     },
     {
@@ -69,7 +69,7 @@
       "nome": "Carrascal",
       "clube": "FLA",
       "preco": 11.72,
-      "exp_score": 7.4983,
+      "exp_score": 7.5052,
       "atleta_id": 105436
     },
     {
@@ -80,7 +80,7 @@
       "nome": "Arias",
       "clube": "PAL",
       "preco": 12.95,
-      "exp_score": 5.2708,
+      "exp_score": 5.2785,
       "atleta_id": 99815
     },
     {
@@ -91,7 +91,7 @@
       "nome": "Arrascaeta",
       "clube": "FLA",
       "preco": 13.24,
-      "exp_score": 4.4644,
+      "exp_score": 4.4685,
       "atleta_id": 87863
     },
     {
@@ -102,7 +102,7 @@
       "nome": "Samuel Lino",
       "clube": "FLA",
       "preco": 14.44,
-      "exp_score": 11.709,
+      "exp_score": 11.7197,
       "atleta_id": 98873
     },
     {
@@ -113,7 +113,7 @@
       "nome": "Pedro",
       "clube": "FLA",
       "preco": 16.93,
-      "exp_score": 9.0634,
+      "exp_score": 9.0717,
       "atleta_id": 94583
     },
     {
@@ -124,7 +124,7 @@
       "nome": "Leozinho",
       "clube": "CAP",
       "preco": 6.21,
-      "exp_score": 5.0759,
+      "exp_score": 5.1024,
       "atleta_id": 123101
     },
     {
@@ -135,7 +135,7 @@
       "nome": "Rafael Guanaes",
       "clube": "MIR",
       "preco": 7.01,
-      "exp_score": 3.6063,
+      "exp_score": 3.4526,
       "atleta_id": 104027
     },
     {
@@ -146,7 +146,7 @@
       "nome": "Ronaldo",
       "clube": "BAH",
       "preco": 8.42,
-      "exp_score": 5.8713,
+      "exp_score": 5.8852,
       "atleta_id": 91101
     },
     {
@@ -157,7 +157,7 @@
       "nome": "Matheus Bahia",
       "clube": "INT",
       "preco": 7.85,
-      "exp_score": 4.8516,
+      "exp_score": 4.8599,
       "atleta_id": 97899
     },
     {
@@ -168,7 +168,7 @@
       "nome": "Murilo",
       "clube": "PAL",
       "preco": 8.05,
-      "exp_score": 4.9389,
+      "exp_score": 4.9485,
       "atleta_id": 97653
     },
     {
@@ -179,7 +179,7 @@
       "nome": "Giovanni Augusto",
       "clube": "CHA",
       "preco": 5.54,
-      "exp_score": 4.3016,
+      "exp_score": 4.3222,
       "atleta_id": 68938
     },
     {
@@ -190,7 +190,7 @@
       "nome": "Marcinho",
       "clube": "CHA",
       "preco": 4.68,
-      "exp_score": 3.6346,
+      "exp_score": 3.6519,
       "atleta_id": 95332
     }
   ],
@@ -206,19 +206,8 @@
       "nome": "Carlos Miguel",
       "clube": "PAL",
       "preco": 9.47,
-      "exp_score": 7.3686,
+      "exp_score": 7.3829,
       "atleta_id": 104084
-    },
-    {
-      "rodada": 34,
-      "tipo": "INTERMEDIARIO",
-      "status": "TITULAR",
-      "pos": "LAT",
-      "nome": "Giay",
-      "clube": "PAL",
-      "preco": 8.44,
-      "exp_score": 7.5626,
-      "atleta_id": 124526
     },
     {
       "rodada": 34,
@@ -228,8 +217,19 @@
       "nome": "Matheus Bidu",
       "clube": "COR",
       "preco": 14.31,
-      "exp_score": 6.5966,
+      "exp_score": 6.6102,
       "atleta_id": 105531
+    },
+    {
+      "rodada": 34,
+      "tipo": "INTERMEDIARIO",
+      "status": "TITULAR",
+      "pos": "LAT",
+      "nome": "Varela",
+      "clube": "FLA",
+      "preco": 8.66,
+      "exp_score": 6.4845,
+      "atleta_id": 84816
     },
     {
       "rodada": 34,
@@ -239,7 +239,7 @@
       "nome": "Alexander Barboza",
       "clube": "PAL",
       "preco": 10.81,
-      "exp_score": 6.9461,
+      "exp_score": 6.9597,
       "atleta_id": 99274
     },
     {
@@ -250,7 +250,7 @@
       "nome": "Gustavo Gómez",
       "clube": "PAL",
       "preco": 10.53,
-      "exp_score": 5.6312,
+      "exp_score": 5.6422,
       "atleta_id": 71684
     },
     {
@@ -261,7 +261,7 @@
       "nome": "Carrascal",
       "clube": "FLA",
       "preco": 11.72,
-      "exp_score": 7.4983,
+      "exp_score": 7.5052,
       "atleta_id": 105436
     },
     {
@@ -272,7 +272,7 @@
       "nome": "Arias",
       "clube": "PAL",
       "preco": 12.95,
-      "exp_score": 5.2708,
+      "exp_score": 5.2785,
       "atleta_id": 99815
     },
     {
@@ -283,7 +283,7 @@
       "nome": "Arrascaeta",
       "clube": "FLA",
       "preco": 13.24,
-      "exp_score": 4.4644,
+      "exp_score": 4.4685,
       "atleta_id": 87863
     },
     {
@@ -294,7 +294,7 @@
       "nome": "Samuel Lino",
       "clube": "FLA",
       "preco": 14.44,
-      "exp_score": 11.709,
+      "exp_score": 11.7197,
       "atleta_id": 98873
     },
     {
@@ -305,7 +305,7 @@
       "nome": "Pedro",
       "clube": "FLA",
       "preco": 16.93,
-      "exp_score": 9.0634,
+      "exp_score": 9.0717,
       "atleta_id": 94583
     },
     {
@@ -316,7 +316,7 @@
       "nome": "Leozinho",
       "clube": "CAP",
       "preco": 6.21,
-      "exp_score": 5.0759,
+      "exp_score": 5.1024,
       "atleta_id": 123101
     },
     {
@@ -327,7 +327,7 @@
       "nome": "Rafael Guanaes",
       "clube": "MIR",
       "preco": 7.01,
-      "exp_score": 3.6063,
+      "exp_score": 3.4526,
       "atleta_id": 104027
     },
     {
@@ -338,7 +338,7 @@
       "nome": "Ronaldo",
       "clube": "BAH",
       "preco": 8.42,
-      "exp_score": 5.8713,
+      "exp_score": 5.8852,
       "atleta_id": 91101
     },
     {
@@ -349,7 +349,7 @@
       "nome": "Matheus Bahia",
       "clube": "INT",
       "preco": 7.85,
-      "exp_score": 4.8516,
+      "exp_score": 4.8599,
       "atleta_id": 97899
     },
     {
@@ -360,7 +360,7 @@
       "nome": "Murilo",
       "clube": "PAL",
       "preco": 8.05,
-      "exp_score": 4.9389,
+      "exp_score": 4.9485,
       "atleta_id": 97653
     },
     {
@@ -371,7 +371,7 @@
       "nome": "Giovanni Augusto",
       "clube": "CHA",
       "preco": 5.54,
-      "exp_score": 4.3016,
+      "exp_score": 4.3222,
       "atleta_id": 68938
     },
     {
@@ -382,7 +382,7 @@
       "nome": "Marcinho",
       "clube": "CHA",
       "preco": 4.68,
-      "exp_score": 3.6346,
+      "exp_score": 3.6519,
       "atleta_id": 95332
     }
   ],
@@ -395,19 +395,8 @@
       "nome": "Carlos Miguel",
       "clube": "PAL",
       "preco": 9.47,
-      "exp_score": 7.3686,
+      "exp_score": 7.3829,
       "atleta_id": 104084
-    },
-    {
-      "rodada": 34,
-      "tipo": "INTERMEDIARIO",
-      "status": "TITULAR",
-      "pos": "LAT",
-      "nome": "Giay",
-      "clube": "PAL",
-      "preco": 8.44,
-      "exp_score": 7.5626,
-      "atleta_id": 124526
     },
     {
       "rodada": 34,
@@ -417,8 +406,19 @@
       "nome": "Matheus Bidu",
       "clube": "COR",
       "preco": 14.31,
-      "exp_score": 6.5966,
+      "exp_score": 6.6102,
       "atleta_id": 105531
+    },
+    {
+      "rodada": 34,
+      "tipo": "INTERMEDIARIO",
+      "status": "TITULAR",
+      "pos": "LAT",
+      "nome": "Varela",
+      "clube": "FLA",
+      "preco": 8.66,
+      "exp_score": 6.4845,
+      "atleta_id": 84816
     },
     {
       "rodada": 34,
@@ -428,7 +428,7 @@
       "nome": "Alexander Barboza",
       "clube": "PAL",
       "preco": 10.81,
-      "exp_score": 6.9461,
+      "exp_score": 6.9597,
       "atleta_id": 99274
     },
     {
@@ -439,7 +439,7 @@
       "nome": "Gustavo Gómez",
       "clube": "PAL",
       "preco": 10.53,
-      "exp_score": 5.6312,
+      "exp_score": 5.6422,
       "atleta_id": 71684
     },
     {
@@ -450,7 +450,7 @@
       "nome": "Carrascal",
       "clube": "FLA",
       "preco": 11.72,
-      "exp_score": 7.4983,
+      "exp_score": 7.5052,
       "atleta_id": 105436
     },
     {
@@ -461,7 +461,7 @@
       "nome": "Arias",
       "clube": "PAL",
       "preco": 12.95,
-      "exp_score": 5.2708,
+      "exp_score": 5.2785,
       "atleta_id": 99815
     },
     {
@@ -472,7 +472,7 @@
       "nome": "Arrascaeta",
       "clube": "FLA",
       "preco": 13.24,
-      "exp_score": 4.4644,
+      "exp_score": 4.4685,
       "atleta_id": 87863
     },
     {
@@ -483,7 +483,7 @@
       "nome": "Samuel Lino",
       "clube": "FLA",
       "preco": 14.44,
-      "exp_score": 11.709,
+      "exp_score": 11.7197,
       "atleta_id": 98873
     },
     {
@@ -494,7 +494,7 @@
       "nome": "Pedro",
       "clube": "FLA",
       "preco": 16.93,
-      "exp_score": 9.0634,
+      "exp_score": 9.0717,
       "atleta_id": 94583
     },
     {
@@ -505,7 +505,7 @@
       "nome": "Leozinho",
       "clube": "CAP",
       "preco": 6.21,
-      "exp_score": 5.0759,
+      "exp_score": 5.1024,
       "atleta_id": 123101
     },
     {
@@ -516,7 +516,7 @@
       "nome": "Rafael Guanaes",
       "clube": "MIR",
       "preco": 7.01,
-      "exp_score": 3.6063,
+      "exp_score": 3.4526,
       "atleta_id": 104027
     }
   ],
@@ -529,7 +529,7 @@
       "nome": "Ronaldo",
       "clube": "BAH",
       "preco": 8.42,
-      "exp_score": 5.8713,
+      "exp_score": 5.8852,
       "atleta_id": 91101
     },
     {
@@ -540,7 +540,7 @@
       "nome": "Matheus Bahia",
       "clube": "INT",
       "preco": 7.85,
-      "exp_score": 4.8516,
+      "exp_score": 4.8599,
       "atleta_id": 97899
     },
     {
@@ -551,7 +551,7 @@
       "nome": "Murilo",
       "clube": "PAL",
       "preco": 8.05,
-      "exp_score": 4.9389,
+      "exp_score": 4.9485,
       "atleta_id": 97653
     },
     {
@@ -562,7 +562,7 @@
       "nome": "Giovanni Augusto",
       "clube": "CHA",
       "preco": 5.54,
-      "exp_score": 4.3016,
+      "exp_score": 4.3222,
       "atleta_id": 68938
     },
     {
@@ -573,13 +573,13 @@
       "nome": "Marcinho",
       "clube": "CHA",
       "preco": 4.68,
-      "exp_score": 3.6346,
+      "exp_score": 3.6519,
       "atleta_id": 95332
     }
   ],
   "capitao": "Samuel Lino",
   "formacao": "4-3-3",
-  "evento_programado": "PRE_FECHAMENTO_TIMES",
+  "evento_programado": "CONFIRMADOS",
   "blocos_topo": [],
   "pipeline_visual": "times_top5_aprovados_v2_2026_09_21_formacao_dinamica"
 }
