@@ -108,10 +108,10 @@
     },
     {
       "nome": "MIR",
-      "j": 33,
+      "j": 34,
       "pts": 37,
       "v": 9,
-      "saldo": -10
+      "saldo": -11
     },
     {
       "nome": "COR",
@@ -136,10 +136,10 @@
     },
     {
       "nome": "CHA",
-      "j": 32,
-      "pts": 21,
-      "v": 4,
-      "saldo": -34
+      "j": 33,
+      "pts": 24,
+      "v": 5,
+      "saldo": -33
     }
   ],
   "partidas": {},
@@ -257,19 +257,19 @@
       "gm": 35
     },
     {
-      "nome": "GRÊMIO",
+      "nome": "Mirassol",
       "pos": 15,
-      "pts": 37,
+      "pts": 38,
       "v": 9,
-      "saldo": -7,
-      "gm": 37
+      "saldo": -10,
+      "gm": 38
     },
     {
-      "nome": "Mirassol",
+      "nome": "GRÊMIO",
       "pos": 16,
       "pts": 37,
       "v": 9,
-      "saldo": -11,
+      "saldo": -7,
       "gm": 37
     },
     {
@@ -299,13 +299,13 @@
     {
       "nome": "Chapecoense",
       "pos": 20,
-      "pts": 24,
-      "v": 5,
-      "saldo": -33,
+      "pts": 22,
+      "v": 4,
+      "saldo": -34,
       "gm": 33
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-11-03T19:53:40.221462-03:00",
+  "updated_at": "2026-11-03T20:33:35.822216-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
