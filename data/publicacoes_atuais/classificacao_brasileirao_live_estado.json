@@ -74,9 +74,9 @@
     {
       "nome": "CFC",
       "j": 34,
-      "pts": 43,
+      "pts": 42,
       "v": 11,
-      "saldo": -10
+      "saldo": -11
     },
     {
       "nome": "MIR",
@@ -107,6 +107,13 @@
       "saldo": -13
     },
     {
+      "nome": "INT",
+      "j": 34,
+      "pts": 38,
+      "v": 9,
+      "saldo": -4
+    },
+    {
       "nome": "GRE",
       "j": 33,
       "pts": 37,
@@ -119,13 +126,6 @@
       "pts": 36,
       "v": 9,
       "saldo": -6
-    },
-    {
-      "nome": "INT",
-      "j": 34,
-      "pts": 36,
-      "v": 8,
-      "saldo": -5
     },
     {
       "nome": "REM",
@@ -147,7 +147,7 @@
     {
       "nome": "Flamengo",
       "pos": 1,
-      "pts": 73,
+      "pts": 74,
       "v": 22,
       "saldo": 40,
       "gm": 68
@@ -169,20 +169,20 @@
       "gm": 52
     },
     {
-      "nome": "Fluminense",
+      "nome": "Athletico-PR",
       "pos": 4,
-      "pts": 54,
+      "pts": 55,
       "v": 15,
       "saldo": 10,
-      "gm": 52
+      "gm": 50
     },
     {
-      "nome": "Athletico-PR",
+      "nome": "Fluminense",
       "pos": 5,
       "pts": 54,
       "v": 15,
       "saldo": 10,
-      "gm": 50
+      "gm": 52
     },
     {
       "nome": "Bahia",
@@ -251,7 +251,7 @@
     {
       "nome": "Vasco",
       "pos": 14,
-      "pts": 38,
+      "pts": 39,
       "v": 10,
       "saldo": -9,
       "gm": 40
@@ -275,7 +275,7 @@
     {
       "nome": "GRÊMIO",
       "pos": 17,
-      "pts": 37,
+      "pts": 38,
       "v": 9,
       "saldo": -7,
       "gm": 37
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-11-03T23:43:26.972968-03:00",
+  "updated_at": "2026-11-04T19:43:34.165428-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
