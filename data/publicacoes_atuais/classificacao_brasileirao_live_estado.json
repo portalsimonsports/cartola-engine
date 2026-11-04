@@ -73,8 +73,8 @@
     },
     {
       "nome": "CFC",
-      "j": 33,
-      "pts": 42,
+      "j": 34,
+      "pts": 43,
       "v": 11,
       "saldo": -10
     },
@@ -122,8 +122,8 @@
     },
     {
       "nome": "INT",
-      "j": 33,
-      "pts": 35,
+      "j": 34,
+      "pts": 36,
       "v": 8,
       "saldo": -5
     },
@@ -227,9 +227,9 @@
     {
       "nome": "Coritiba",
       "pos": 11,
-      "pts": 43,
+      "pts": 42,
       "v": 11,
-      "saldo": -10,
+      "saldo": -11,
       "gm": 40
     },
     {
@@ -265,8 +265,16 @@
       "gm": 35
     },
     {
-      "nome": "GRÊMIO",
+      "nome": "Internacional",
       "pos": 16,
+      "pts": 38,
+      "v": 9,
+      "saldo": -4,
+      "gm": 38
+    },
+    {
+      "nome": "GRÊMIO",
+      "pos": 17,
       "pts": 37,
       "v": 9,
       "saldo": -7,
@@ -274,19 +282,11 @@
     },
     {
       "nome": "Corinthians",
-      "pos": 17,
+      "pos": 18,
       "pts": 36,
       "v": 9,
       "saldo": -6,
       "gm": 36
-    },
-    {
-      "nome": "Internacional",
-      "pos": 18,
-      "pts": 36,
-      "v": 8,
-      "saldo": -5,
-      "gm": 37
     },
     {
       "nome": "Remo",
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-11-03T21:43:47.200106-03:00",
+  "updated_at": "2026-11-03T23:43:26.972968-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
