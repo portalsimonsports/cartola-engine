@@ -79,6 +79,13 @@
       "saldo": -10
     },
     {
+      "nome": "MIR",
+      "j": 34,
+      "pts": 40,
+      "v": 10,
+      "saldo": -9
+    },
+    {
       "nome": "BOT",
       "j": 33,
       "pts": 39,
@@ -98,13 +105,6 @@
       "pts": 38,
       "v": 10,
       "saldo": -13
-    },
-    {
-      "nome": "MIR",
-      "j": 34,
-      "pts": 38,
-      "v": 9,
-      "saldo": -10
     },
     {
       "nome": "GRE",
@@ -137,9 +137,9 @@
     {
       "nome": "CHA",
       "j": 33,
-      "pts": 22,
+      "pts": 21,
       "v": 4,
-      "saldo": -34
+      "saldo": -35
     }
   ],
   "partidas": {},
@@ -227,7 +227,7 @@
     {
       "nome": "Coritiba",
       "pos": 11,
-      "pts": 42,
+      "pts": 43,
       "v": 11,
       "saldo": -10,
       "gm": 40
@@ -283,7 +283,7 @@
     {
       "nome": "Internacional",
       "pos": 18,
-      "pts": 35,
+      "pts": 36,
       "v": 8,
       "saldo": -5,
       "gm": 37
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-11-03T21:13:28.145219-03:00",
+  "updated_at": "2026-11-03T21:43:47.200106-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
