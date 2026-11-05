@@ -46,9 +46,9 @@
     {
       "nome": "CAM",
       "j": 34,
-      "pts": 51,
+      "pts": 50,
       "v": 14,
-      "saldo": 5
+      "saldo": 4
     },
     {
       "nome": "RBB",
@@ -72,6 +72,13 @@
       "saldo": 0
     },
     {
+      "nome": "BOT",
+      "j": 34,
+      "pts": 42,
+      "v": 11,
+      "saldo": -7
+    },
+    {
       "nome": "CFC",
       "j": 34,
       "pts": 42,
@@ -84,13 +91,6 @@
       "pts": 41,
       "v": 11,
       "saldo": -7
-    },
-    {
-      "nome": "BOT",
-      "j": 34,
-      "pts": 40,
-      "v": 10,
-      "saldo": -8
     },
     {
       "nome": "MIR",
@@ -155,10 +155,10 @@
     {
       "nome": "Palmeiras",
       "pos": 2,
-      "pts": 70,
-      "v": 20,
-      "saldo": 34,
-      "gm": 56
+      "pts": 73,
+      "v": 21,
+      "saldo": 35,
+      "gm": 57
     },
     {
       "nome": "Cruzeiro",
@@ -293,7 +293,7 @@
       "pos": 19,
       "pts": 29,
       "v": 6,
-      "saldo": -15,
+      "saldo": -16,
       "gm": 36
     },
     {
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-11-04T22:03:29.622919-03:00",
+  "updated_at": "2026-11-05T19:43:23.389332-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
