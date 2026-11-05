@@ -3,10 +3,10 @@
   "base_signature": [
     {
       "nome": "FLA",
-      "j": 33,
-      "pts": 73,
-      "v": 22,
-      "saldo": 40
+      "j": 34,
+      "pts": 76,
+      "v": 23,
+      "saldo": 43
     },
     {
       "nome": "PAL",
@@ -23,14 +23,14 @@
       "saldo": 6
     },
     {
-      "nome": "FLU",
-      "j": 33,
-      "pts": 54,
-      "v": 15,
-      "saldo": 10
+      "nome": "CAP",
+      "j": 34,
+      "pts": 57,
+      "v": 16,
+      "saldo": 11
     },
     {
-      "nome": "CAP",
+      "nome": "FLU",
       "j": 33,
       "pts": 54,
       "v": 15,
@@ -94,10 +94,10 @@
     },
     {
       "nome": "VAS",
-      "j": 32,
+      "j": 33,
       "pts": 38,
       "v": 10,
-      "saldo": -9
+      "saldo": -10
     },
     {
       "nome": "VIT",
@@ -115,10 +115,10 @@
     },
     {
       "nome": "GRE",
-      "j": 33,
+      "j": 34,
       "pts": 37,
       "v": 9,
-      "saldo": -7
+      "saldo": -10
     },
     {
       "nome": "COR",
@@ -149,8 +149,8 @@
       "pos": 1,
       "pts": 76,
       "v": 23,
-      "saldo": 42,
-      "gm": 70
+      "saldo": 43,
+      "gm": 71
     },
     {
       "nome": "Palmeiras",
@@ -169,20 +169,20 @@
       "gm": 52
     },
     {
-      "nome": "Athletico-PR",
-      "pos": 4,
-      "pts": 57,
-      "v": 16,
-      "saldo": 11,
-      "gm": 51
-    },
-    {
       "nome": "Fluminense",
-      "pos": 5,
+      "pos": 4,
       "pts": 54,
       "v": 15,
       "saldo": 10,
       "gm": 52
+    },
+    {
+      "nome": "Athletico-PR",
+      "pos": 5,
+      "pts": 54,
+      "v": 15,
+      "saldo": 9,
+      "gm": 51
     },
     {
       "nome": "Bahia",
@@ -233,8 +233,16 @@
       "gm": 40
     },
     {
-      "nome": "Mirassol",
+      "nome": "Vasco",
       "pos": 12,
+      "pts": 41,
+      "v": 11,
+      "saldo": -8,
+      "gm": 42
+    },
+    {
+      "nome": "Mirassol",
+      "pos": 13,
       "pts": 40,
       "v": 10,
       "saldo": -9,
@@ -242,19 +250,11 @@
     },
     {
       "nome": "Botafogo",
-      "pos": 13,
+      "pos": 14,
       "pts": 39,
       "v": 10,
       "saldo": -8,
       "gm": 45
-    },
-    {
-      "nome": "Vasco",
-      "pos": 14,
-      "pts": 38,
-      "v": 10,
-      "saldo": -10,
-      "gm": 40
     },
     {
       "nome": "VITÓRIA",
@@ -277,7 +277,7 @@
       "pos": 17,
       "pts": 37,
       "v": 9,
-      "saldo": -9,
+      "saldo": -10,
       "gm": 37
     },
     {
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-11-04T20:14:14.333268-03:00",
+  "updated_at": "2026-11-04T21:03:22.149962-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
