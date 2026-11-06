@@ -13,14 +13,21 @@
       "j": 34,
       "pts": 73,
       "v": 21,
-      "saldo": 38
+      "saldo": 39
     },
     {
       "nome": "CRU",
-      "j": 33,
+      "j": 34,
       "pts": 57,
       "v": 17,
-      "saldo": 6
+      "saldo": 5
+    },
+    {
+      "nome": "BAH",
+      "j": 34,
+      "pts": 56,
+      "v": 15,
+      "saldo": 7
     },
     {
       "nome": "FLU",
@@ -35,13 +42,6 @@
       "pts": 54,
       "v": 15,
       "saldo": 8
-    },
-    {
-      "nome": "BAH",
-      "j": 33,
-      "pts": 53,
-      "v": 14,
-      "saldo": 6
     },
     {
       "nome": "CAM",
@@ -132,7 +132,7 @@
       "j": 34,
       "pts": 29,
       "v": 6,
-      "saldo": -19
+      "saldo": -20
     },
     {
       "nome": "CHA",
@@ -166,7 +166,7 @@
       "pts": 58,
       "v": 17,
       "saldo": 6,
-      "gm": 52
+      "gm": 53
     },
     {
       "nome": "Fluminense",
@@ -190,7 +190,7 @@
       "pts": 54,
       "v": 14,
       "saldo": 6,
-      "gm": 48
+      "gm": 49
     },
     {
       "nome": "ATLÉTICO-MG",
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-11-05T21:43:17.504106-03:00",
+  "updated_at": "2026-11-05T22:33:32.715519-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
