@@ -18,16 +18,9 @@
     {
       "nome": "CRU",
       "j": 34,
-      "pts": 57,
+      "pts": 58,
       "v": 17,
-      "saldo": 5
-    },
-    {
-      "nome": "BAH",
-      "j": 34,
-      "pts": 56,
-      "v": 15,
-      "saldo": 7
+      "saldo": 6
     },
     {
       "nome": "FLU",
@@ -42,6 +35,13 @@
       "pts": 54,
       "v": 15,
       "saldo": 8
+    },
+    {
+      "nome": "BAH",
+      "j": 34,
+      "pts": 54,
+      "v": 14,
+      "saldo": 6
     },
     {
       "nome": "CAM",
@@ -163,10 +163,10 @@
     {
       "nome": "Cruzeiro",
       "pos": 3,
-      "pts": 58,
-      "v": 17,
-      "saldo": 6,
-      "gm": 53
+      "pts": 60,
+      "v": 18,
+      "saldo": 7,
+      "gm": 54
     },
     {
       "nome": "Fluminense",
@@ -187,9 +187,9 @@
     {
       "nome": "Bahia",
       "pos": 6,
-      "pts": 54,
+      "pts": 53,
       "v": 14,
-      "saldo": 6,
+      "saldo": 5,
       "gm": 49
     },
     {
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-11-05T22:33:32.715519-03:00",
+  "updated_at": "2026-11-05T23:13:23.012879-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
