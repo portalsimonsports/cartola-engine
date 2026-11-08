@@ -264,7 +264,7 @@ def build_team_payload(
                 points = as_float(score.get("pontos"))
                 total += points
                 if captain and captain == norm(name):
-                    bonus = points
+                    bonus = points * 0.5
 
             market_item, variation_method = locate_record(athlete, market, clubs)
             variation_methods[name] = variation_method
