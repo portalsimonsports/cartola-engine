@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 35,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-11-17T20:49:45.529Z",
+  "atualizado_em": "2026-11-17T20:59:45.077Z",
   "dados": [
     {
       "RODADA": 35,
@@ -14,8 +14,19 @@
       "NOME": "Otávio",
       "CLUBE": "CRU",
       "PRECO": 4.06,
-      "EXP_SCORE": 3.829,
+      "EXP_SCORE": 3.8198,
       "ATLETA_ID": 117404
+    },
+    {
+      "RODADA": 35,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Iago",
+      "CLUBE": "SAO",
+      "PRECO": 7.48,
+      "EXP_SCORE": 4.9045,
+      "ATLETA_ID": 97868
     },
     {
       "RODADA": 35,
@@ -25,19 +36,8 @@
       "NOME": "Angileri",
       "CLUBE": "COR",
       "PRECO": 6.55,
-      "EXP_SCORE": 5.8143,
+      "EXP_SCORE": 5.8014,
       "ATLETA_ID": 98720
-    },
-    {
-      "RODADA": 35,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "LAT",
-      "NOME": "Arthur",
-      "CLUBE": "PAL",
-      "PRECO": 5.01,
-      "EXP_SCORE": 4.0998,
-      "ATLETA_ID": 145404
     },
     {
       "RODADA": 35,
@@ -47,7 +47,7 @@
       "NOME": "Kauan",
       "CLUBE": "CHA",
       "PRECO": 4.25,
-      "EXP_SCORE": 2.2707,
+      "EXP_SCORE": 2.2646,
       "ATLETA_ID": 130806
     },
     {
@@ -58,7 +58,7 @@
       "NOME": "Juninho",
       "CLUBE": "INT",
       "PRECO": 7.02,
-      "EXP_SCORE": 3.12,
+      "EXP_SCORE": 3.1076,
       "ATLETA_ID": 92182
     },
     {
@@ -69,7 +69,7 @@
       "NOME": "José Welison",
       "CLUBE": "REM",
       "PRECO": 5.76,
-      "EXP_SCORE": 3.5924,
+      "EXP_SCORE": 3.5916,
       "ATLETA_ID": 86859
     },
     {
@@ -80,7 +80,7 @@
       "NOME": "Gustavo Henrique",
       "CLUBE": "SAN",
       "PRECO": 5.64,
-      "EXP_SCORE": 4.1183,
+      "EXP_SCORE": 4.1164,
       "ATLETA_ID": 141776
     },
     {
@@ -91,7 +91,7 @@
       "NOME": "Giovanni Augusto",
       "CLUBE": "CHA",
       "PRECO": 5.88,
-      "EXP_SCORE": 3.8709,
+      "EXP_SCORE": 3.8688,
       "ATLETA_ID": 68938
     },
     {
@@ -102,7 +102,7 @@
       "NOME": "Amuzu",
       "CLUBE": "GRE",
       "PRECO": 8.32,
-      "EXP_SCORE": 4.7798,
+      "EXP_SCORE": 4.7767,
       "ATLETA_ID": 142004
     },
     {
@@ -113,7 +113,7 @@
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 14.19,
-      "EXP_SCORE": 11.2937,
+      "EXP_SCORE": 11.2864,
       "ATLETA_ID": 98873
     },
     {
@@ -124,7 +124,7 @@
       "NOME": "Jajá",
       "CLUBE": "REM",
       "PRECO": 6.73,
-      "EXP_SCORE": 6.0945,
+      "EXP_SCORE": 6.0931,
       "ATLETA_ID": 105048
     },
     {
@@ -135,7 +135,7 @@
       "NOME": "Abel Ferreira",
       "CLUBE": "PAL",
       "PRECO": 12.76,
-      "EXP_SCORE": 7.9478,
+      "EXP_SCORE": 7.9439,
       "ATLETA_ID": 110506
     },
     {
@@ -154,11 +154,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "LAT",
-      "NOME": "Bruno Melo",
-      "CLUBE": "CFC",
-      "PRECO": 4.73,
-      "EXP_SCORE": 2.3607,
-      "ATLETA_ID": 84339
+      "NOME": "Marcelinho",
+      "CLUBE": "REM",
+      "PRECO": 5.19,
+      "EXP_SCORE": 4.8662,
+      "ATLETA_ID": 97795
     },
     {
       "RODADA": 35,
@@ -168,7 +168,7 @@
       "NOME": "Tchamba",
       "CLUBE": "REM",
       "PRECO": 4.23,
-      "EXP_SCORE": 2.0789,
+      "EXP_SCORE": 2.0747,
       "ATLETA_ID": 100804
     },
     {
@@ -179,7 +179,7 @@
       "NOME": "Patrick",
       "CLUBE": "REM",
       "PRECO": 5.44,
-      "EXP_SCORE": 3.2464,
+      "EXP_SCORE": 3.2457,
       "ATLETA_ID": 83433
     },
     {
@@ -190,7 +190,7 @@
       "NOME": "Pavón",
       "CLUBE": "GRE",
       "PRECO": 6.25,
-      "EXP_SCORE": 4.4939,
+      "EXP_SCORE": 4.491,
       "ATLETA_ID": 91908
     }
   ]
