@@ -4,7 +4,7 @@
   "tipo_publicacao": "times",
   "rodada": 35,
   "tipo": "PONTUACAO",
-  "atualizado_em": "2026-11-17T18:59:51.718Z",
+  "atualizado_em": "2026-11-17T19:09:49.341Z",
   "dados": [
     {
       "RODADA": 35,
@@ -14,7 +14,7 @@
       "NOME": "Carlos Miguel",
       "CLUBE": "PAL",
       "PRECO": 8.71,
-      "EXP_SCORE": 5.2814,
+      "EXP_SCORE": 5.2752,
       "ATLETA_ID": 104084
     },
     {
@@ -25,7 +25,7 @@
       "NOME": "Matheus Bidu",
       "CLUBE": "COR",
       "PRECO": 12.54,
-      "EXP_SCORE": 8.1612,
+      "EXP_SCORE": 8.1548,
       "ATLETA_ID": 105531
     },
     {
@@ -36,7 +36,7 @@
       "NOME": "Pedro Lima",
       "CLUBE": "SAO",
       "PRECO": 11.51,
-      "EXP_SCORE": 7.1123,
+      "EXP_SCORE": 7.1053,
       "ATLETA_ID": 130525
     },
     {
@@ -47,7 +47,7 @@
       "NOME": "Gustavo Henrique",
       "CLUBE": "COR",
       "PRECO": 8.84,
-      "EXP_SCORE": 5.1202,
+      "EXP_SCORE": 5.1162,
       "ATLETA_ID": 78248
     },
     {
@@ -58,19 +58,8 @@
       "NOME": "Léo Ortiz",
       "CLUBE": "FLA",
       "PRECO": 8.79,
-      "EXP_SCORE": 4.8077,
+      "EXP_SCORE": 4.8348,
       "ATLETA_ID": 97867
-    },
-    {
-      "RODADA": 35,
-      "TIPO": "PONTUACAO",
-      "STATUS": "TITULAR",
-      "POS": "MEI",
-      "NOME": "Carrascal",
-      "CLUBE": "FLA",
-      "PRECO": 11.35,
-      "EXP_SCORE": 6.3014,
-      "ATLETA_ID": 105436
     },
     {
       "RODADA": 35,
@@ -80,8 +69,19 @@
       "NOME": "Neymar",
       "CLUBE": "SAN",
       "PRECO": 18.37,
-      "EXP_SCORE": 6.2418,
+      "EXP_SCORE": 6.2318,
       "ATLETA_ID": 63007
+    },
+    {
+      "RODADA": 35,
+      "TIPO": "PONTUACAO",
+      "STATUS": "TITULAR",
+      "POS": "MEI",
+      "NOME": "Carrascal",
+      "CLUBE": "FLA",
+      "PRECO": 11.35,
+      "EXP_SCORE": 6.1099,
+      "ATLETA_ID": 105436
     },
     {
       "RODADA": 35,
@@ -91,7 +91,7 @@
       "NOME": "Matheus Pereira",
       "CLUBE": "CRU",
       "PRECO": 13.64,
-      "EXP_SCORE": 5.8029,
+      "EXP_SCORE": 5.7873,
       "ATLETA_ID": 96610
     },
     {
@@ -102,7 +102,7 @@
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 14.19,
-      "EXP_SCORE": 11.7186,
+      "EXP_SCORE": 11.3626,
       "ATLETA_ID": 98873
     },
     {
@@ -113,7 +113,7 @@
       "NOME": "Pedro",
       "CLUBE": "FLA",
       "PRECO": 17.59,
-      "EXP_SCORE": 9.2144,
+      "EXP_SCORE": 8.9344,
       "ATLETA_ID": 94583
     },
     {
@@ -124,7 +124,7 @@
       "NOME": "Kaio Jorge",
       "CLUBE": "CRU",
       "PRECO": 13.1,
-      "EXP_SCORE": 7.6063,
+      "EXP_SCORE": 7.5859,
       "ATLETA_ID": 103445
     },
     {
@@ -135,7 +135,7 @@
       "NOME": "Dorival Júnior",
       "CLUBE": "SAO",
       "PRECO": 9.79,
-      "EXP_SCORE": 5.5037,
+      "EXP_SCORE": 5.491,
       "ATLETA_ID": 40990
     },
     {
@@ -146,7 +146,7 @@
       "NOME": "Ronaldo",
       "CLUBE": "BAH",
       "PRECO": 8.42,
-      "EXP_SCORE": 5.242,
+      "EXP_SCORE": 5.2365,
       "ATLETA_ID": 91101
     },
     {
@@ -157,7 +157,7 @@
       "NOME": "Luciano Juba",
       "CLUBE": "BAH",
       "PRECO": 11.14,
-      "EXP_SCORE": 6.4968,
+      "EXP_SCORE": 6.49,
       "ATLETA_ID": 107093
     },
     {
@@ -168,7 +168,7 @@
       "NOME": "Wallace",
       "CLUBE": "GRE",
       "PRECO": 8.28,
-      "EXP_SCORE": 4.5583,
+      "EXP_SCORE": 4.553,
       "ATLETA_ID": 130307
     },
     {
@@ -179,7 +179,7 @@
       "NOME": "Lucas Romero",
       "CLUBE": "CRU",
       "PRECO": 9.44,
-      "EXP_SCORE": 4.2204,
+      "EXP_SCORE": 4.2091,
       "ATLETA_ID": 84558
     },
     {
@@ -187,11 +187,11 @@
       "TIPO": "PONTUACAO",
       "STATUS": "RESERVA",
       "POS": "ATA",
-      "NOME": "Renê",
-      "CLUBE": "VIT",
-      "PRECO": 9.1,
-      "EXP_SCORE": 6.0753,
-      "ATLETA_ID": 130209
+      "NOME": "Jajá",
+      "CLUBE": "REM",
+      "PRECO": 6.73,
+      "EXP_SCORE": 6.1071,
+      "ATLETA_ID": 105048
     }
   ]
 }
