@@ -4,7 +4,7 @@
   "tipo_publicacao": "time_economico",
   "rodada": 35,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-11-16T19:39:44.218Z",
+  "atualizado_em": "2026-11-17T22:39:44.411Z",
   "dados": [
     {
       "rodada": 35,
@@ -14,7 +14,7 @@
       "nome": "Otávio",
       "clube": "CRU",
       "preco": 4.06,
-      "exp_score": 3.8342,
+      "exp_score": 3.8219,
       "atleta_id": 117404
     },
     {
@@ -22,11 +22,11 @@
       "tipo": "ECONOMICO",
       "status": "TITULAR",
       "pos": "LAT",
-      "nome": "Jamerson",
-      "clube": "VIT",
-      "preco": 7.67,
-      "exp_score": 4.8778,
-      "atleta_id": 116461
+      "nome": "Iago",
+      "clube": "SAO",
+      "preco": 7.48,
+      "exp_score": 4.9078,
+      "atleta_id": 97868
     },
     {
       "rodada": 35,
@@ -36,7 +36,7 @@
       "nome": "Angileri",
       "clube": "COR",
       "preco": 6.55,
-      "exp_score": 5.7892,
+      "exp_score": 5.8043,
       "atleta_id": 98720
     },
     {
@@ -47,7 +47,7 @@
       "nome": "Kauan",
       "clube": "CHA",
       "preco": 4.25,
-      "exp_score": 2.2741,
+      "exp_score": 2.2659,
       "atleta_id": 130806
     },
     {
@@ -58,7 +58,7 @@
       "nome": "Juninho",
       "clube": "INT",
       "preco": 7.02,
-      "exp_score": 3.1269,
+      "exp_score": 3.0712,
       "atleta_id": 92182
     },
     {
@@ -69,7 +69,7 @@
       "nome": "José Welison",
       "clube": "REM",
       "preco": 5.76,
-      "exp_score": 3.3821,
+      "exp_score": 3.5951,
       "atleta_id": 86859
     },
     {
@@ -80,7 +80,7 @@
       "nome": "Gustavo Henrique",
       "clube": "SAN",
       "preco": 5.64,
-      "exp_score": 4.1662,
+      "exp_score": 4.1251,
       "atleta_id": 141776
     },
     {
@@ -91,30 +91,8 @@
       "nome": "Giovanni Augusto",
       "clube": "CHA",
       "preco": 5.88,
-      "exp_score": 3.8803,
+      "exp_score": 3.8781,
       "atleta_id": 68938
-    },
-    {
-      "rodada": 35,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "MEI",
-      "nome": "Nonato",
-      "clube": "FLU",
-      "preco": 7.33,
-      "exp_score": 3.2368,
-      "atleta_id": 100987
-    },
-    {
-      "rodada": 35,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Samuel Lino",
-      "clube": "FLA",
-      "preco": 14.19,
-      "exp_score": 11.8597,
-      "atleta_id": 98873
     },
     {
       "rodada": 35,
@@ -124,8 +102,30 @@
       "nome": "Amuzu",
       "clube": "GRE",
       "preco": 8.32,
-      "exp_score": 4.6207,
+      "exp_score": 4.7905,
       "atleta_id": 142004
+    },
+    {
+      "rodada": 35,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "ATA",
+      "nome": "Samuel Lino",
+      "clube": "FLA",
+      "preco": 14.19,
+      "exp_score": 11.3188,
+      "atleta_id": 98873
+    },
+    {
+      "rodada": 35,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "ATA",
+      "nome": "Jajá",
+      "clube": "REM",
+      "preco": 6.73,
+      "exp_score": 6.0991,
+      "atleta_id": 105048
     },
     {
       "rodada": 35,
@@ -135,7 +135,7 @@
       "nome": "Abel Ferreira",
       "clube": "PAL",
       "preco": 12.76,
-      "exp_score": 7.8676,
+      "exp_score": 7.9613,
       "atleta_id": 110506
     },
     {
@@ -157,7 +157,7 @@
       "nome": "Marcelinho",
       "clube": "REM",
       "preco": 5.19,
-      "exp_score": 4.8288,
+      "exp_score": 4.8684,
       "atleta_id": 97795
     },
     {
@@ -168,7 +168,7 @@
       "nome": "Tchamba",
       "clube": "REM",
       "preco": 4.23,
-      "exp_score": 2.0588,
+      "exp_score": 2.0756,
       "atleta_id": 100804
     },
     {
@@ -179,7 +179,7 @@
       "nome": "Patrick",
       "clube": "REM",
       "preco": 5.44,
-      "exp_score": 3.0564,
+      "exp_score": 3.2488,
       "atleta_id": 83433
     },
     {
@@ -187,11 +187,11 @@
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "ATA",
-      "nome": "Jajá",
-      "clube": "REM",
-      "preco": 6.73,
-      "exp_score": 5.7378,
-      "atleta_id": 105048
+      "nome": "Pavón",
+      "clube": "GRE",
+      "preco": 6.25,
+      "exp_score": 4.504,
+      "atleta_id": 91908
     }
   ],
   "modelo": "ECONOMICO",
@@ -206,7 +206,7 @@
       "nome": "Otávio",
       "clube": "CRU",
       "preco": 4.06,
-      "exp_score": 3.8342,
+      "exp_score": 3.8219,
       "atleta_id": 117404
     },
     {
@@ -214,11 +214,11 @@
       "tipo": "ECONOMICO",
       "status": "TITULAR",
       "pos": "LAT",
-      "nome": "Jamerson",
-      "clube": "VIT",
-      "preco": 7.67,
-      "exp_score": 4.8778,
-      "atleta_id": 116461
+      "nome": "Iago",
+      "clube": "SAO",
+      "preco": 7.48,
+      "exp_score": 4.9078,
+      "atleta_id": 97868
     },
     {
       "rodada": 35,
@@ -228,7 +228,7 @@
       "nome": "Angileri",
       "clube": "COR",
       "preco": 6.55,
-      "exp_score": 5.7892,
+      "exp_score": 5.8043,
       "atleta_id": 98720
     },
     {
@@ -239,7 +239,7 @@
       "nome": "Kauan",
       "clube": "CHA",
       "preco": 4.25,
-      "exp_score": 2.2741,
+      "exp_score": 2.2659,
       "atleta_id": 130806
     },
     {
@@ -250,7 +250,7 @@
       "nome": "Juninho",
       "clube": "INT",
       "preco": 7.02,
-      "exp_score": 3.1269,
+      "exp_score": 3.0712,
       "atleta_id": 92182
     },
     {
@@ -261,7 +261,7 @@
       "nome": "José Welison",
       "clube": "REM",
       "preco": 5.76,
-      "exp_score": 3.3821,
+      "exp_score": 3.5951,
       "atleta_id": 86859
     },
     {
@@ -272,7 +272,7 @@
       "nome": "Gustavo Henrique",
       "clube": "SAN",
       "preco": 5.64,
-      "exp_score": 4.1662,
+      "exp_score": 4.1251,
       "atleta_id": 141776
     },
     {
@@ -283,30 +283,8 @@
       "nome": "Giovanni Augusto",
       "clube": "CHA",
       "preco": 5.88,
-      "exp_score": 3.8803,
+      "exp_score": 3.8781,
       "atleta_id": 68938
-    },
-    {
-      "rodada": 35,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "MEI",
-      "nome": "Nonato",
-      "clube": "FLU",
-      "preco": 7.33,
-      "exp_score": 3.2368,
-      "atleta_id": 100987
-    },
-    {
-      "rodada": 35,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Samuel Lino",
-      "clube": "FLA",
-      "preco": 14.19,
-      "exp_score": 11.8597,
-      "atleta_id": 98873
     },
     {
       "rodada": 35,
@@ -316,8 +294,30 @@
       "nome": "Amuzu",
       "clube": "GRE",
       "preco": 8.32,
-      "exp_score": 4.6207,
+      "exp_score": 4.7905,
       "atleta_id": 142004
+    },
+    {
+      "rodada": 35,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "ATA",
+      "nome": "Samuel Lino",
+      "clube": "FLA",
+      "preco": 14.19,
+      "exp_score": 11.3188,
+      "atleta_id": 98873
+    },
+    {
+      "rodada": 35,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "ATA",
+      "nome": "Jajá",
+      "clube": "REM",
+      "preco": 6.73,
+      "exp_score": 6.0991,
+      "atleta_id": 105048
     },
     {
       "rodada": 35,
@@ -327,7 +327,7 @@
       "nome": "Abel Ferreira",
       "clube": "PAL",
       "preco": 12.76,
-      "exp_score": 7.8676,
+      "exp_score": 7.9613,
       "atleta_id": 110506
     },
     {
@@ -349,7 +349,7 @@
       "nome": "Marcelinho",
       "clube": "REM",
       "preco": 5.19,
-      "exp_score": 4.8288,
+      "exp_score": 4.8684,
       "atleta_id": 97795
     },
     {
@@ -360,7 +360,7 @@
       "nome": "Tchamba",
       "clube": "REM",
       "preco": 4.23,
-      "exp_score": 2.0588,
+      "exp_score": 2.0756,
       "atleta_id": 100804
     },
     {
@@ -371,7 +371,7 @@
       "nome": "Patrick",
       "clube": "REM",
       "preco": 5.44,
-      "exp_score": 3.0564,
+      "exp_score": 3.2488,
       "atleta_id": 83433
     },
     {
@@ -379,11 +379,11 @@
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "ATA",
-      "nome": "Jajá",
-      "clube": "REM",
-      "preco": 6.73,
-      "exp_score": 5.7378,
-      "atleta_id": 105048
+      "nome": "Pavón",
+      "clube": "GRE",
+      "preco": 6.25,
+      "exp_score": 4.504,
+      "atleta_id": 91908
     }
   ],
   "jogadores": [
@@ -395,7 +395,7 @@
       "nome": "Otávio",
       "clube": "CRU",
       "preco": 4.06,
-      "exp_score": 3.8342,
+      "exp_score": 3.8219,
       "atleta_id": 117404
     },
     {
@@ -403,11 +403,11 @@
       "tipo": "ECONOMICO",
       "status": "TITULAR",
       "pos": "LAT",
-      "nome": "Jamerson",
-      "clube": "VIT",
-      "preco": 7.67,
-      "exp_score": 4.8778,
-      "atleta_id": 116461
+      "nome": "Iago",
+      "clube": "SAO",
+      "preco": 7.48,
+      "exp_score": 4.9078,
+      "atleta_id": 97868
     },
     {
       "rodada": 35,
@@ -417,7 +417,7 @@
       "nome": "Angileri",
       "clube": "COR",
       "preco": 6.55,
-      "exp_score": 5.7892,
+      "exp_score": 5.8043,
       "atleta_id": 98720
     },
     {
@@ -428,7 +428,7 @@
       "nome": "Kauan",
       "clube": "CHA",
       "preco": 4.25,
-      "exp_score": 2.2741,
+      "exp_score": 2.2659,
       "atleta_id": 130806
     },
     {
@@ -439,7 +439,7 @@
       "nome": "Juninho",
       "clube": "INT",
       "preco": 7.02,
-      "exp_score": 3.1269,
+      "exp_score": 3.0712,
       "atleta_id": 92182
     },
     {
@@ -450,7 +450,7 @@
       "nome": "José Welison",
       "clube": "REM",
       "preco": 5.76,
-      "exp_score": 3.3821,
+      "exp_score": 3.5951,
       "atleta_id": 86859
     },
     {
@@ -461,7 +461,7 @@
       "nome": "Gustavo Henrique",
       "clube": "SAN",
       "preco": 5.64,
-      "exp_score": 4.1662,
+      "exp_score": 4.1251,
       "atleta_id": 141776
     },
     {
@@ -472,30 +472,8 @@
       "nome": "Giovanni Augusto",
       "clube": "CHA",
       "preco": 5.88,
-      "exp_score": 3.8803,
+      "exp_score": 3.8781,
       "atleta_id": 68938
-    },
-    {
-      "rodada": 35,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "MEI",
-      "nome": "Nonato",
-      "clube": "FLU",
-      "preco": 7.33,
-      "exp_score": 3.2368,
-      "atleta_id": 100987
-    },
-    {
-      "rodada": 35,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Samuel Lino",
-      "clube": "FLA",
-      "preco": 14.19,
-      "exp_score": 11.8597,
-      "atleta_id": 98873
     },
     {
       "rodada": 35,
@@ -505,8 +483,30 @@
       "nome": "Amuzu",
       "clube": "GRE",
       "preco": 8.32,
-      "exp_score": 4.6207,
+      "exp_score": 4.7905,
       "atleta_id": 142004
+    },
+    {
+      "rodada": 35,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "ATA",
+      "nome": "Samuel Lino",
+      "clube": "FLA",
+      "preco": 14.19,
+      "exp_score": 11.3188,
+      "atleta_id": 98873
+    },
+    {
+      "rodada": 35,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "ATA",
+      "nome": "Jajá",
+      "clube": "REM",
+      "preco": 6.73,
+      "exp_score": 6.0991,
+      "atleta_id": 105048
     },
     {
       "rodada": 35,
@@ -516,7 +516,7 @@
       "nome": "Abel Ferreira",
       "clube": "PAL",
       "preco": 12.76,
-      "exp_score": 7.8676,
+      "exp_score": 7.9613,
       "atleta_id": 110506
     }
   ],
@@ -540,7 +540,7 @@
       "nome": "Marcelinho",
       "clube": "REM",
       "preco": 5.19,
-      "exp_score": 4.8288,
+      "exp_score": 4.8684,
       "atleta_id": 97795
     },
     {
@@ -551,7 +551,7 @@
       "nome": "Tchamba",
       "clube": "REM",
       "preco": 4.23,
-      "exp_score": 2.0588,
+      "exp_score": 2.0756,
       "atleta_id": 100804
     },
     {
@@ -562,7 +562,7 @@
       "nome": "Patrick",
       "clube": "REM",
       "preco": 5.44,
-      "exp_score": 3.0564,
+      "exp_score": 3.2488,
       "atleta_id": 83433
     },
     {
@@ -570,15 +570,15 @@
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "ATA",
-      "nome": "Jajá",
-      "clube": "REM",
-      "preco": 6.73,
-      "exp_score": 5.7378,
-      "atleta_id": 105048
+      "nome": "Pavón",
+      "clube": "GRE",
+      "preco": 6.25,
+      "exp_score": 4.504,
+      "atleta_id": 91908
     }
   ],
   "capitao": "Samuel Lino",
-  "formacao": "4-4-2",
+  "formacao": "4-3-3",
   "evento_programado": "ATUALIZACAO_20H",
   "blocos_topo": [],
   "pipeline_visual": "times_top5_aprovados_v2_2026_09_21_formacao_dinamica"
