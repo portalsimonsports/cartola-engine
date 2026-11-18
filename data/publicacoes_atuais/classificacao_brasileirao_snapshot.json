@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15T04:45:07.842239-03:00",
+  "updated_at": "2026-11-18T20:37:10.693840-03:00",
   "last_publication_mode": "apos_jogos",
   "signature": [
     {
@@ -52,18 +52,18 @@
       "saldo": 4
     },
     {
-      "nome": "RBB",
+      "nome": "SAN",
       "pos": 8,
+      "pts": 48,
+      "v": 12,
+      "saldo": 1
+    },
+    {
+      "nome": "RBB",
+      "pos": 9,
       "pts": 47,
       "v": 13,
       "saldo": 5
-    },
-    {
-      "nome": "SAN",
-      "pos": 9,
-      "pts": 47,
-      "v": 12,
-      "saldo": 1
     },
     {
       "nome": "SAO",
@@ -80,18 +80,18 @@
       "saldo": -5
     },
     {
-      "nome": "BOT",
+      "nome": "CFC",
       "pos": 12,
-      "pts": 42,
+      "pts": 43,
       "v": 11,
-      "saldo": -7
+      "saldo": -11
     },
     {
-      "nome": "CFC",
+      "nome": "BOT",
       "pos": 13,
       "pts": 42,
       "v": 11,
-      "saldo": -11
+      "saldo": -7
     },
     {
       "nome": "MIR",
@@ -131,16 +131,16 @@
     {
       "nome": "REM",
       "pos": 19,
-      "pts": 29,
-      "v": 6,
-      "saldo": -20
+      "pts": 32,
+      "v": 7,
+      "saldo": -19
     },
     {
       "nome": "CHA",
       "pos": 20,
       "pts": 21,
       "v": 4,
-      "saldo": -37
+      "saldo": -38
     }
   ],
   "positions": {
@@ -151,12 +151,12 @@
     "CAP": 5,
     "BAH": 6,
     "CAM": 7,
-    "RBB": 8,
-    "SAN": 9,
+    "SAN": 8,
+    "RBB": 9,
     "SAO": 10,
     "VAS": 11,
-    "BOT": 12,
-    "CFC": 13,
+    "CFC": 12,
+    "BOT": 13,
     "MIR": 14,
     "VIT": 15,
     "INT": 16,
