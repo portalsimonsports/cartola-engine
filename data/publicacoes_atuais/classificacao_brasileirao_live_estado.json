@@ -195,26 +195,26 @@
     {
       "nome": "ATLÉTICO-MG",
       "pos": 7,
-      "pts": 50,
+      "pts": 51,
       "v": 14,
       "saldo": 4,
       "gm": 44
     },
     {
-      "nome": "RB Bragantino",
+      "nome": "Santos",
       "pos": 8,
+      "pts": 48,
+      "v": 12,
+      "saldo": 1,
+      "gm": 50
+    },
+    {
+      "nome": "RB Bragantino",
+      "pos": 9,
       "pts": 47,
       "v": 13,
       "saldo": 5,
       "gm": 44
-    },
-    {
-      "nome": "Santos",
-      "pos": 9,
-      "pts": 47,
-      "v": 12,
-      "saldo": 1,
-      "gm": 50
     },
     {
       "nome": "SÃO PAULO",
@@ -233,25 +233,25 @@
       "gm": 45
     },
     {
-      "nome": "Botafogo",
+      "nome": "Coritiba",
       "pos": 12,
+      "pts": 43,
+      "v": 11,
+      "saldo": -11,
+      "gm": 40
+    },
+    {
+      "nome": "Botafogo",
+      "pos": 13,
       "pts": 42,
       "v": 11,
       "saldo": -7,
       "gm": 46
     },
     {
-      "nome": "Coritiba",
-      "pos": 13,
-      "pts": 42,
-      "v": 11,
-      "saldo": -11,
-      "gm": 40
-    },
-    {
       "nome": "Mirassol",
       "pos": 14,
-      "pts": 40,
+      "pts": 41,
       "v": 10,
       "saldo": -9,
       "gm": 39
@@ -305,7 +305,7 @@
       "gm": 33
     }
   ],
-  "last_context": "classificacao_abertura",
-  "updated_at": "2026-11-18T19:38:23.737343-03:00",
-  "last_image": "output/classificacao_brasileirao_abertura.png"
+  "last_context": "classificacao_delta",
+  "updated_at": "2026-11-18T19:43:30.132571-03:00",
+  "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
