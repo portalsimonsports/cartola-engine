@@ -38,8 +38,8 @@
     },
     {
       "nome": "BAH",
-      "j": 34,
-      "pts": 53,
+      "j": 35,
+      "pts": 54,
       "v": 14,
       "saldo": 5
     },
@@ -53,9 +53,9 @@
     {
       "nome": "SAN",
       "j": 35,
-      "pts": 48,
-      "v": 12,
-      "saldo": 1
+      "pts": 50,
+      "v": 13,
+      "saldo": 2
     },
     {
       "nome": "RBB",
@@ -79,18 +79,18 @@
       "saldo": -5
     },
     {
-      "nome": "CFC",
+      "nome": "BOT",
       "j": 35,
       "pts": 43,
       "v": 11,
-      "saldo": -11
+      "saldo": -7
     },
     {
-      "nome": "BOT",
-      "j": 34,
+      "nome": "CFC",
+      "j": 35,
       "pts": 42,
       "v": 11,
-      "saldo": -7
+      "saldo": -12
     },
     {
       "nome": "MIR",
@@ -115,15 +115,15 @@
     },
     {
       "nome": "COR",
-      "j": 34,
-      "pts": 37,
+      "j": 35,
+      "pts": 38,
       "v": 9,
       "saldo": -6
     },
     {
       "nome": "GRE",
-      "j": 34,
-      "pts": 37,
+      "j": 35,
+      "pts": 38,
       "v": 9,
       "saldo": -9
     },
@@ -155,17 +155,17 @@
     {
       "nome": "Palmeiras",
       "pos": 2,
-      "pts": 74,
-      "v": 21,
-      "saldo": 39,
-      "gm": 62
+      "pts": 76,
+      "v": 22,
+      "saldo": 40,
+      "gm": 63
     },
     {
       "nome": "Cruzeiro",
       "pos": 3,
-      "pts": 61,
+      "pts": 60,
       "v": 18,
-      "saldo": 7,
+      "saldo": 6,
       "gm": 55
     },
     {
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-11-18T21:43:59.636739-03:00",
+  "updated_at": "2026-11-18T21:53:27.543376-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
