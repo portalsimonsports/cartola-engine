@@ -3,22 +3,22 @@
   "base_signature": [
     {
       "nome": "FLA",
-      "j": 34,
-      "pts": 76,
+      "j": 35,
+      "pts": 77,
       "v": 23,
       "saldo": 42
     },
     {
       "nome": "PAL",
-      "j": 34,
-      "pts": 73,
+      "j": 35,
+      "pts": 74,
       "v": 21,
       "saldo": 39
     },
     {
       "nome": "CRU",
-      "j": 34,
-      "pts": 60,
+      "j": 35,
+      "pts": 61,
       "v": 18,
       "saldo": 7
     },
@@ -31,8 +31,8 @@
     },
     {
       "nome": "CAP",
-      "j": 34,
-      "pts": 54,
+      "j": 35,
+      "pts": 55,
       "v": 15,
       "saldo": 8
     },
@@ -132,14 +132,14 @@
       "j": 35,
       "pts": 32,
       "v": 7,
-      "saldo": -19
+      "saldo": -18
     },
     {
       "nome": "CHA",
       "j": 35,
       "pts": 21,
       "v": 4,
-      "saldo": -38
+      "saldo": -39
     }
   ],
   "partidas": {},
@@ -147,10 +147,10 @@
     {
       "nome": "Flamengo",
       "pos": 1,
-      "pts": 77,
-      "v": 23,
-      "saldo": 42,
-      "gm": 71
+      "pts": 79,
+      "v": 24,
+      "saldo": 43,
+      "gm": 73
     },
     {
       "nome": "Palmeiras",
@@ -179,10 +179,10 @@
     {
       "nome": "Athletico-PR",
       "pos": 5,
-      "pts": 55,
+      "pts": 54,
       "v": 15,
-      "saldo": 8,
-      "gm": 51
+      "saldo": 7,
+      "gm": 52
     },
     {
       "nome": "Bahia",
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-11-18T20:44:02.496162-03:00",
+  "updated_at": "2026-11-18T21:03:33.465807-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
