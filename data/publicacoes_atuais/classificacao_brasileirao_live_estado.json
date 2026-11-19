@@ -155,18 +155,18 @@
     {
       "nome": "Palmeiras",
       "pos": 2,
-      "pts": 76,
-      "v": 22,
-      "saldo": 40,
+      "pts": 74,
+      "v": 21,
+      "saldo": 39,
       "gm": 63
     },
     {
       "nome": "Cruzeiro",
       "pos": 3,
-      "pts": 60,
+      "pts": 61,
       "v": 18,
-      "saldo": 6,
-      "gm": 55
+      "saldo": 7,
+      "gm": 56
     },
     {
       "nome": "Fluminense",
@@ -235,9 +235,9 @@
     {
       "nome": "Botafogo",
       "pos": 12,
-      "pts": 43,
+      "pts": 42,
       "v": 11,
-      "saldo": -7,
+      "saldo": -9,
       "gm": 46
     },
     {
@@ -257,8 +257,16 @@
       "gm": 39
     },
     {
-      "nome": "VITÓRIA",
+      "nome": "Corinthians",
       "pos": 15,
+      "pts": 40,
+      "v": 10,
+      "saldo": -4,
+      "gm": 38
+    },
+    {
+      "nome": "VITÓRIA",
+      "pos": 16,
       "pts": 38,
       "v": 10,
       "saldo": -16,
@@ -266,19 +274,11 @@
     },
     {
       "nome": "Internacional",
-      "pos": 16,
+      "pos": 17,
       "pts": 38,
       "v": 9,
       "saldo": -4,
       "gm": 38
-    },
-    {
-      "nome": "Corinthians",
-      "pos": 17,
-      "pts": 38,
-      "v": 9,
-      "saldo": -6,
-      "gm": 36
     },
     {
       "nome": "GRÊMIO",
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-11-18T21:53:27.543376-03:00",
+  "updated_at": "2026-11-18T22:13:30.966949-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
