@@ -83,7 +83,7 @@
       "j": 35,
       "pts": 42,
       "v": 11,
-      "saldo": -9
+      "saldo": -11
     },
     {
       "nome": "CFC",
@@ -104,7 +104,7 @@
       "j": 35,
       "pts": 40,
       "v": 10,
-      "saldo": -4
+      "saldo": -2
     },
     {
       "nome": "VIT",
@@ -211,33 +211,33 @@
     {
       "nome": "RB Bragantino",
       "pos": 9,
-      "pts": 47,
+      "pts": 48,
       "v": 13,
       "saldo": 5,
       "gm": 44
     },
     {
-      "nome": "SÃO PAULO",
+      "nome": "Vasco",
       "pos": 10,
+      "pts": 45,
+      "v": 12,
+      "saldo": -5,
+      "gm": 45
+    },
+    {
+      "nome": "SÃO PAULO",
+      "pos": 11,
       "pts": 44,
       "v": 12,
       "saldo": 0,
       "gm": 39
     },
     {
-      "nome": "Vasco",
-      "pos": 11,
-      "pts": 44,
-      "v": 12,
-      "saldo": -5,
-      "gm": 45
-    },
-    {
       "nome": "Botafogo",
       "pos": 12,
       "pts": 42,
       "v": 11,
-      "saldo": -9,
+      "saldo": -11,
       "gm": 46
     },
     {
@@ -261,13 +261,13 @@
       "pos": 15,
       "pts": 40,
       "v": 10,
-      "saldo": -4,
-      "gm": 38
+      "saldo": -2,
+      "gm": 40
     },
     {
       "nome": "VITÓRIA",
       "pos": 16,
-      "pts": 38,
+      "pts": 39,
       "v": 10,
       "saldo": -16,
       "gm": 35
@@ -275,7 +275,7 @@
     {
       "nome": "Internacional",
       "pos": 17,
-      "pts": 38,
+      "pts": 39,
       "v": 9,
       "saldo": -4,
       "gm": 38
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-11-18T22:23:31.337970-03:00",
+  "updated_at": "2026-11-19T19:43:31.931691-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
