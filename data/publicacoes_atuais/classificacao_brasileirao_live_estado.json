@@ -11,16 +11,16 @@
     {
       "nome": "PAL",
       "j": 35,
-      "pts": 74,
+      "pts": 73,
       "v": 21,
-      "saldo": 39
+      "saldo": 38
     },
     {
       "nome": "CRU",
       "j": 35,
-      "pts": 61,
-      "v": 18,
-      "saldo": 7
+      "pts": 63,
+      "v": 19,
+      "saldo": 8
     },
     {
       "nome": "FLU",
@@ -81,9 +81,9 @@
     {
       "nome": "BOT",
       "j": 35,
-      "pts": 43,
+      "pts": 42,
       "v": 11,
-      "saldo": -7
+      "saldo": -9
     },
     {
       "nome": "CFC",
@@ -100,6 +100,13 @@
       "saldo": -9
     },
     {
+      "nome": "COR",
+      "j": 35,
+      "pts": 40,
+      "v": 10,
+      "saldo": -4
+    },
+    {
       "nome": "VIT",
       "j": 34,
       "pts": 38,
@@ -112,13 +119,6 @@
       "pts": 38,
       "v": 9,
       "saldo": -4
-    },
-    {
-      "nome": "COR",
-      "j": 35,
-      "pts": 38,
-      "v": 9,
-      "saldo": -6
     },
     {
       "nome": "GRE",
@@ -155,18 +155,18 @@
     {
       "nome": "Palmeiras",
       "pos": 2,
-      "pts": 74,
+      "pts": 73,
       "v": 21,
-      "saldo": 39,
+      "saldo": 38,
       "gm": 63
     },
     {
       "nome": "Cruzeiro",
       "pos": 3,
-      "pts": 61,
-      "v": 18,
-      "saldo": 7,
-      "gm": 56
+      "pts": 63,
+      "v": 19,
+      "saldo": 8,
+      "gm": 57
     },
     {
       "nome": "Fluminense",
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-11-18T22:13:30.966949-03:00",
+  "updated_at": "2026-11-18T22:23:31.337970-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
