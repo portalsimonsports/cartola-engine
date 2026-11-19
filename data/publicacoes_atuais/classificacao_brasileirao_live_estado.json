@@ -4,9 +4,9 @@
     {
       "nome": "FLA",
       "j": 35,
-      "pts": 77,
-      "v": 23,
-      "saldo": 42
+      "pts": 79,
+      "v": 24,
+      "saldo": 43
     },
     {
       "nome": "PAL",
@@ -32,9 +32,9 @@
     {
       "nome": "CAP",
       "j": 35,
-      "pts": 55,
+      "pts": 54,
       "v": 15,
-      "saldo": 8
+      "saldo": 7
     },
     {
       "nome": "BAH",
@@ -187,7 +187,7 @@
     {
       "nome": "Bahia",
       "pos": 6,
-      "pts": 53,
+      "pts": 54,
       "v": 14,
       "saldo": 5,
       "gm": 50
@@ -203,10 +203,10 @@
     {
       "nome": "Santos",
       "pos": 8,
-      "pts": 48,
-      "v": 12,
-      "saldo": 1,
-      "gm": 50
+      "pts": 50,
+      "v": 13,
+      "saldo": 2,
+      "gm": 51
     },
     {
       "nome": "RB Bragantino",
@@ -233,20 +233,20 @@
       "gm": 45
     },
     {
-      "nome": "Coritiba",
+      "nome": "Botafogo",
       "pos": 12,
       "pts": 43,
       "v": 11,
-      "saldo": -11,
-      "gm": 40
+      "saldo": -7,
+      "gm": 46
     },
     {
-      "nome": "Botafogo",
+      "nome": "Coritiba",
       "pos": 13,
       "pts": 42,
       "v": 11,
-      "saldo": -7,
-      "gm": 46
+      "saldo": -12,
+      "gm": 40
     },
     {
       "nome": "Mirassol",
@@ -275,7 +275,7 @@
     {
       "nome": "Corinthians",
       "pos": 17,
-      "pts": 37,
+      "pts": 38,
       "v": 9,
       "saldo": -6,
       "gm": 36
@@ -283,7 +283,7 @@
     {
       "nome": "GRÊMIO",
       "pos": 18,
-      "pts": 37,
+      "pts": 38,
       "v": 9,
       "saldo": -9,
       "gm": 38
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-11-18T21:03:33.465807-03:00",
+  "updated_at": "2026-11-18T21:43:59.636739-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
