@@ -59,10 +59,17 @@
     },
     {
       "nome": "RBB",
-      "j": 34,
+      "j": 35,
       "pts": 47,
       "v": 13,
-      "saldo": 5
+      "saldo": 3
+    },
+    {
+      "nome": "VAS",
+      "j": 35,
+      "pts": 47,
+      "v": 13,
+      "saldo": -4
     },
     {
       "nome": "SAO",
@@ -70,13 +77,6 @@
       "pts": 44,
       "v": 12,
       "saldo": 0
-    },
-    {
-      "nome": "VAS",
-      "j": 34,
-      "pts": 44,
-      "v": 12,
-      "saldo": -5
     },
     {
       "nome": "BOT",
@@ -93,6 +93,13 @@
       "saldo": -12
     },
     {
+      "nome": "VIT",
+      "j": 35,
+      "pts": 41,
+      "v": 11,
+      "saldo": -14
+    },
+    {
       "nome": "MIR",
       "j": 35,
       "pts": 41,
@@ -107,18 +114,11 @@
       "saldo": -2
     },
     {
-      "nome": "VIT",
-      "j": 34,
-      "pts": 38,
-      "v": 10,
-      "saldo": -16
-    },
-    {
       "nome": "INT",
-      "j": 34,
+      "j": 35,
       "pts": 38,
       "v": 9,
-      "saldo": -4
+      "saldo": -5
     },
     {
       "nome": "GRE",
@@ -219,9 +219,9 @@
     {
       "nome": "Vasco",
       "pos": 10,
-      "pts": 47,
-      "v": 13,
-      "saldo": -4,
+      "pts": 45,
+      "v": 12,
+      "saldo": -5,
       "gm": 46
     },
     {
@@ -275,10 +275,10 @@
     {
       "nome": "Internacional",
       "pos": 17,
-      "pts": 38,
+      "pts": 39,
       "v": 9,
-      "saldo": -5,
-      "gm": 38
+      "saldo": -4,
+      "gm": 39
     },
     {
       "nome": "GRÊMIO",
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-11-19T20:13:47.181211-03:00",
+  "updated_at": "2026-11-19T20:53:33.377398-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
