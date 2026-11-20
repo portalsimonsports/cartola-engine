@@ -4,7 +4,7 @@
   "tipo_publicacao": "time_intermediario",
   "rodada": 36,
   "tipo": "INTERMEDIARIO",
-  "atualizado_em": "2026-11-20T05:04:47.770Z",
+  "atualizado_em": "2026-11-20T21:39:49.387Z",
   "dados": [
     {
       "rodada": 36,
@@ -14,7 +14,7 @@
       "nome": "Ronaldo",
       "clube": "BAH",
       "preco": 9.84,
-      "exp_score": 7.2794,
+      "exp_score": 7.2095,
       "atleta_id": 91101
     },
     {
@@ -25,7 +25,7 @@
       "nome": "Luciano Juba",
       "clube": "BAH",
       "preco": 11.46,
-      "exp_score": 7.9444,
+      "exp_score": 7.8681,
       "atleta_id": 107093
     },
     {
@@ -36,7 +36,7 @@
       "nome": "Cuiabano",
       "clube": "VAS",
       "preco": 12.24,
-      "exp_score": 6.9947,
+      "exp_score": 6.8245,
       "atleta_id": 116065
     },
     {
@@ -47,7 +47,7 @@
       "nome": "Ferraresi",
       "clube": "BOT",
       "preco": 7.28,
-      "exp_score": 4.9533,
+      "exp_score": 5.0237,
       "atleta_id": 105300
     },
     {
@@ -55,11 +55,11 @@
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
       "pos": "ZAG",
-      "nome": "Gustavo Gómez",
-      "clube": "PAL",
-      "preco": 9.87,
-      "exp_score": 4.6655,
-      "atleta_id": 71684
+      "nome": "Juninho",
+      "clube": "INT",
+      "preco": 7.66,
+      "exp_score": 4.9346,
+      "atleta_id": 92182
     },
     {
       "rodada": 36,
@@ -69,19 +69,8 @@
       "nome": "Neymar",
       "clube": "SAN",
       "preco": 18.55,
-      "exp_score": 6.3933,
+      "exp_score": 6.505,
       "atleta_id": 63007
-    },
-    {
-      "rodada": 36,
-      "tipo": "INTERMEDIARIO",
-      "status": "TITULAR",
-      "pos": "MEI",
-      "nome": "Arias",
-      "clube": "PAL",
-      "preco": 13.03,
-      "exp_score": 6.1253,
-      "atleta_id": 99815
     },
     {
       "rodada": 36,
@@ -91,8 +80,19 @@
       "nome": "Matheus Pereira",
       "clube": "CRU",
       "preco": 15.18,
-      "exp_score": 5.4674,
+      "exp_score": 5.7185,
       "atleta_id": 96610
+    },
+    {
+      "rodada": 36,
+      "tipo": "INTERMEDIARIO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Carrascal",
+      "clube": "FLA",
+      "preco": 12.29,
+      "exp_score": 5.3366,
+      "atleta_id": 105436
     },
     {
       "rodada": 36,
@@ -102,7 +102,7 @@
       "nome": "Samuel Lino",
       "clube": "FLA",
       "preco": 13.4,
-      "exp_score": 9.4032,
+      "exp_score": 9.3253,
       "atleta_id": 98873
     },
     {
@@ -110,11 +110,11 @@
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
       "pos": "ATA",
-      "nome": "Flaco López",
-      "clube": "PAL",
-      "preco": 13.19,
-      "exp_score": 7.2913,
-      "atleta_id": 113103
+      "nome": "Pedro",
+      "clube": "FLA",
+      "preco": 15.47,
+      "exp_score": 7.1767,
+      "atleta_id": 94583
     },
     {
       "rodada": 36,
@@ -124,7 +124,7 @@
       "nome": "Wallace Yan",
       "clube": "RBB",
       "preco": 5.4,
-      "exp_score": 4.7844,
+      "exp_score": 4.7202,
       "atleta_id": 122573
     },
     {
@@ -135,7 +135,7 @@
       "nome": "Rafael Guanaes",
       "clube": "MIR",
       "preco": 7.58,
-      "exp_score": 3.5046,
+      "exp_score": 3.4951,
       "atleta_id": 104027
     },
     {
@@ -146,7 +146,7 @@
       "nome": "Carlos Miguel",
       "clube": "PAL",
       "preco": 8.7,
-      "exp_score": 6.1544,
+      "exp_score": 6.113,
       "atleta_id": 104084
     },
     {
@@ -157,7 +157,7 @@
       "nome": "Pedro Lima",
       "clube": "SAO",
       "preco": 10.14,
-      "exp_score": 5.8192,
+      "exp_score": 5.8038,
       "atleta_id": 130525
     },
     {
@@ -168,7 +168,7 @@
       "nome": "Luan Peres",
       "clube": "SAN",
       "preco": 6.25,
-      "exp_score": 4.5036,
+      "exp_score": 4.4835,
       "atleta_id": 84847
     },
     {
@@ -176,22 +176,22 @@
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "MEI",
-      "nome": "Carrascal",
-      "clube": "FLA",
-      "preco": 12.29,
-      "exp_score": 5.3811,
-      "atleta_id": 105436
+      "nome": "Maurício",
+      "clube": "PAL",
+      "preco": 8.13,
+      "exp_score": 5.0734,
+      "atleta_id": 105647
     },
     {
       "rodada": 36,
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "ATA",
-      "nome": "Lavega",
-      "clube": "CFC",
-      "preco": 4.83,
-      "exp_score": 2.5057,
-      "atleta_id": 117930
+      "nome": "Tarzia",
+      "clube": "VIT",
+      "preco": 4.06,
+      "exp_score": 2.4894,
+      "atleta_id": 143153
     }
   ],
   "modelo": "INTERMEDIARIO",
@@ -206,7 +206,7 @@
       "nome": "Ronaldo",
       "clube": "BAH",
       "preco": 9.84,
-      "exp_score": 7.2794,
+      "exp_score": 7.2095,
       "atleta_id": 91101
     },
     {
@@ -217,7 +217,7 @@
       "nome": "Luciano Juba",
       "clube": "BAH",
       "preco": 11.46,
-      "exp_score": 7.9444,
+      "exp_score": 7.8681,
       "atleta_id": 107093
     },
     {
@@ -228,7 +228,7 @@
       "nome": "Cuiabano",
       "clube": "VAS",
       "preco": 12.24,
-      "exp_score": 6.9947,
+      "exp_score": 6.8245,
       "atleta_id": 116065
     },
     {
@@ -239,7 +239,7 @@
       "nome": "Ferraresi",
       "clube": "BOT",
       "preco": 7.28,
-      "exp_score": 4.9533,
+      "exp_score": 5.0237,
       "atleta_id": 105300
     },
     {
@@ -247,11 +247,11 @@
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
       "pos": "ZAG",
-      "nome": "Gustavo Gómez",
-      "clube": "PAL",
-      "preco": 9.87,
-      "exp_score": 4.6655,
-      "atleta_id": 71684
+      "nome": "Juninho",
+      "clube": "INT",
+      "preco": 7.66,
+      "exp_score": 4.9346,
+      "atleta_id": 92182
     },
     {
       "rodada": 36,
@@ -261,19 +261,8 @@
       "nome": "Neymar",
       "clube": "SAN",
       "preco": 18.55,
-      "exp_score": 6.3933,
+      "exp_score": 6.505,
       "atleta_id": 63007
-    },
-    {
-      "rodada": 36,
-      "tipo": "INTERMEDIARIO",
-      "status": "TITULAR",
-      "pos": "MEI",
-      "nome": "Arias",
-      "clube": "PAL",
-      "preco": 13.03,
-      "exp_score": 6.1253,
-      "atleta_id": 99815
     },
     {
       "rodada": 36,
@@ -283,8 +272,19 @@
       "nome": "Matheus Pereira",
       "clube": "CRU",
       "preco": 15.18,
-      "exp_score": 5.4674,
+      "exp_score": 5.7185,
       "atleta_id": 96610
+    },
+    {
+      "rodada": 36,
+      "tipo": "INTERMEDIARIO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Carrascal",
+      "clube": "FLA",
+      "preco": 12.29,
+      "exp_score": 5.3366,
+      "atleta_id": 105436
     },
     {
       "rodada": 36,
@@ -294,7 +294,7 @@
       "nome": "Samuel Lino",
       "clube": "FLA",
       "preco": 13.4,
-      "exp_score": 9.4032,
+      "exp_score": 9.3253,
       "atleta_id": 98873
     },
     {
@@ -302,11 +302,11 @@
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
       "pos": "ATA",
-      "nome": "Flaco López",
-      "clube": "PAL",
-      "preco": 13.19,
-      "exp_score": 7.2913,
-      "atleta_id": 113103
+      "nome": "Pedro",
+      "clube": "FLA",
+      "preco": 15.47,
+      "exp_score": 7.1767,
+      "atleta_id": 94583
     },
     {
       "rodada": 36,
@@ -316,7 +316,7 @@
       "nome": "Wallace Yan",
       "clube": "RBB",
       "preco": 5.4,
-      "exp_score": 4.7844,
+      "exp_score": 4.7202,
       "atleta_id": 122573
     },
     {
@@ -327,7 +327,7 @@
       "nome": "Rafael Guanaes",
       "clube": "MIR",
       "preco": 7.58,
-      "exp_score": 3.5046,
+      "exp_score": 3.4951,
       "atleta_id": 104027
     },
     {
@@ -338,7 +338,7 @@
       "nome": "Carlos Miguel",
       "clube": "PAL",
       "preco": 8.7,
-      "exp_score": 6.1544,
+      "exp_score": 6.113,
       "atleta_id": 104084
     },
     {
@@ -349,7 +349,7 @@
       "nome": "Pedro Lima",
       "clube": "SAO",
       "preco": 10.14,
-      "exp_score": 5.8192,
+      "exp_score": 5.8038,
       "atleta_id": 130525
     },
     {
@@ -360,7 +360,7 @@
       "nome": "Luan Peres",
       "clube": "SAN",
       "preco": 6.25,
-      "exp_score": 4.5036,
+      "exp_score": 4.4835,
       "atleta_id": 84847
     },
     {
@@ -368,22 +368,22 @@
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "MEI",
-      "nome": "Carrascal",
-      "clube": "FLA",
-      "preco": 12.29,
-      "exp_score": 5.3811,
-      "atleta_id": 105436
+      "nome": "Maurício",
+      "clube": "PAL",
+      "preco": 8.13,
+      "exp_score": 5.0734,
+      "atleta_id": 105647
     },
     {
       "rodada": 36,
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "ATA",
-      "nome": "Lavega",
-      "clube": "CFC",
-      "preco": 4.83,
-      "exp_score": 2.5057,
-      "atleta_id": 117930
+      "nome": "Tarzia",
+      "clube": "VIT",
+      "preco": 4.06,
+      "exp_score": 2.4894,
+      "atleta_id": 143153
     }
   ],
   "jogadores": [
@@ -395,7 +395,7 @@
       "nome": "Ronaldo",
       "clube": "BAH",
       "preco": 9.84,
-      "exp_score": 7.2794,
+      "exp_score": 7.2095,
       "atleta_id": 91101
     },
     {
@@ -406,7 +406,7 @@
       "nome": "Luciano Juba",
       "clube": "BAH",
       "preco": 11.46,
-      "exp_score": 7.9444,
+      "exp_score": 7.8681,
       "atleta_id": 107093
     },
     {
@@ -417,7 +417,7 @@
       "nome": "Cuiabano",
       "clube": "VAS",
       "preco": 12.24,
-      "exp_score": 6.9947,
+      "exp_score": 6.8245,
       "atleta_id": 116065
     },
     {
@@ -428,7 +428,7 @@
       "nome": "Ferraresi",
       "clube": "BOT",
       "preco": 7.28,
-      "exp_score": 4.9533,
+      "exp_score": 5.0237,
       "atleta_id": 105300
     },
     {
@@ -436,11 +436,11 @@
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
       "pos": "ZAG",
-      "nome": "Gustavo Gómez",
-      "clube": "PAL",
-      "preco": 9.87,
-      "exp_score": 4.6655,
-      "atleta_id": 71684
+      "nome": "Juninho",
+      "clube": "INT",
+      "preco": 7.66,
+      "exp_score": 4.9346,
+      "atleta_id": 92182
     },
     {
       "rodada": 36,
@@ -450,19 +450,8 @@
       "nome": "Neymar",
       "clube": "SAN",
       "preco": 18.55,
-      "exp_score": 6.3933,
+      "exp_score": 6.505,
       "atleta_id": 63007
-    },
-    {
-      "rodada": 36,
-      "tipo": "INTERMEDIARIO",
-      "status": "TITULAR",
-      "pos": "MEI",
-      "nome": "Arias",
-      "clube": "PAL",
-      "preco": 13.03,
-      "exp_score": 6.1253,
-      "atleta_id": 99815
     },
     {
       "rodada": 36,
@@ -472,8 +461,19 @@
       "nome": "Matheus Pereira",
       "clube": "CRU",
       "preco": 15.18,
-      "exp_score": 5.4674,
+      "exp_score": 5.7185,
       "atleta_id": 96610
+    },
+    {
+      "rodada": 36,
+      "tipo": "INTERMEDIARIO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Carrascal",
+      "clube": "FLA",
+      "preco": 12.29,
+      "exp_score": 5.3366,
+      "atleta_id": 105436
     },
     {
       "rodada": 36,
@@ -483,7 +483,7 @@
       "nome": "Samuel Lino",
       "clube": "FLA",
       "preco": 13.4,
-      "exp_score": 9.4032,
+      "exp_score": 9.3253,
       "atleta_id": 98873
     },
     {
@@ -491,11 +491,11 @@
       "tipo": "INTERMEDIARIO",
       "status": "TITULAR",
       "pos": "ATA",
-      "nome": "Flaco López",
-      "clube": "PAL",
-      "preco": 13.19,
-      "exp_score": 7.2913,
-      "atleta_id": 113103
+      "nome": "Pedro",
+      "clube": "FLA",
+      "preco": 15.47,
+      "exp_score": 7.1767,
+      "atleta_id": 94583
     },
     {
       "rodada": 36,
@@ -505,7 +505,7 @@
       "nome": "Wallace Yan",
       "clube": "RBB",
       "preco": 5.4,
-      "exp_score": 4.7844,
+      "exp_score": 4.7202,
       "atleta_id": 122573
     },
     {
@@ -516,7 +516,7 @@
       "nome": "Rafael Guanaes",
       "clube": "MIR",
       "preco": 7.58,
-      "exp_score": 3.5046,
+      "exp_score": 3.4951,
       "atleta_id": 104027
     }
   ],
@@ -529,7 +529,7 @@
       "nome": "Carlos Miguel",
       "clube": "PAL",
       "preco": 8.7,
-      "exp_score": 6.1544,
+      "exp_score": 6.113,
       "atleta_id": 104084
     },
     {
@@ -540,7 +540,7 @@
       "nome": "Pedro Lima",
       "clube": "SAO",
       "preco": 10.14,
-      "exp_score": 5.8192,
+      "exp_score": 5.8038,
       "atleta_id": 130525
     },
     {
@@ -551,7 +551,7 @@
       "nome": "Luan Peres",
       "clube": "SAN",
       "preco": 6.25,
-      "exp_score": 4.5036,
+      "exp_score": 4.4835,
       "atleta_id": 84847
     },
     {
@@ -559,27 +559,27 @@
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "MEI",
-      "nome": "Carrascal",
-      "clube": "FLA",
-      "preco": 12.29,
-      "exp_score": 5.3811,
-      "atleta_id": 105436
+      "nome": "Maurício",
+      "clube": "PAL",
+      "preco": 8.13,
+      "exp_score": 5.0734,
+      "atleta_id": 105647
     },
     {
       "rodada": 36,
       "tipo": "INTERMEDIARIO",
       "status": "RESERVA",
       "pos": "ATA",
-      "nome": "Lavega",
-      "clube": "CFC",
-      "preco": 4.83,
-      "exp_score": 2.5057,
-      "atleta_id": 117930
+      "nome": "Tarzia",
+      "clube": "VIT",
+      "preco": 4.06,
+      "exp_score": 2.4894,
+      "atleta_id": 143153
     }
   ],
   "capitao": "Samuel Lino",
   "formacao": "4-3-3",
-  "evento_programado": "SELECAO_INICIAL",
+  "evento_programado": "ATUALIZACAO_20H",
   "blocos_topo": [],
   "pipeline_visual": "times_top5_aprovados_v2_2026_09_21_formacao_dinamica"
 }

@@ -4,7 +4,7 @@
   "tipo_publicacao": "time_economico",
   "rodada": 36,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-11-20T05:04:44.442Z",
+  "atualizado_em": "2026-11-20T21:39:44.990Z",
   "dados": [
     {
       "rodada": 36,
@@ -14,7 +14,7 @@
       "nome": "Ronaldo",
       "clube": "BAH",
       "preco": 9.84,
-      "exp_score": 7.2794,
+      "exp_score": 7.2095,
       "atleta_id": 91101
     },
     {
@@ -25,7 +25,7 @@
       "nome": "Arthur",
       "clube": "PAL",
       "preco": 5.58,
-      "exp_score": 5.1683,
+      "exp_score": 5.1335,
       "atleta_id": 145404
     },
     {
@@ -36,19 +36,8 @@
       "nome": "Marcelinho",
       "clube": "REM",
       "preco": 6.63,
-      "exp_score": 3.9716,
+      "exp_score": 3.9227,
       "atleta_id": 97795
-    },
-    {
-      "rodada": 36,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "ZAG",
-      "nome": "Marcos Victor",
-      "clube": "BAH",
-      "preco": 5.92,
-      "exp_score": 4.1467,
-      "atleta_id": 115537
     },
     {
       "rodada": 36,
@@ -58,8 +47,19 @@
       "nome": "Kauan",
       "clube": "CHA",
       "preco": 2.8,
-      "exp_score": 2.832,
+      "exp_score": 3.0433,
       "atleta_id": 130806
+    },
+    {
+      "rodada": 36,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "ZAG",
+      "nome": "Marcos Victor",
+      "clube": "BAH",
+      "preco": 5.92,
+      "exp_score": 4.1069,
+      "atleta_id": 115537
     },
     {
       "rodada": 36,
@@ -69,7 +69,7 @@
       "nome": "Patrick",
       "clube": "REM",
       "preco": 7.18,
-      "exp_score": 3.6999,
+      "exp_score": 3.7724,
       "atleta_id": 83433
     },
     {
@@ -80,7 +80,7 @@
       "nome": "Bruno Gomes",
       "clube": "INT",
       "preco": 7.82,
-      "exp_score": 4.3295,
+      "exp_score": 4.3197,
       "atleta_id": 106202
     },
     {
@@ -91,7 +91,7 @@
       "nome": "Rodrigo Nestor",
       "clube": "BAH",
       "preco": 6.06,
-      "exp_score": 4.6434,
+      "exp_score": 4.6137,
       "atleta_id": 106822
     },
     {
@@ -102,7 +102,7 @@
       "nome": "Jajá",
       "clube": "REM",
       "preco": 8.1,
-      "exp_score": 5.6809,
+      "exp_score": 5.7922,
       "atleta_id": 105048
     },
     {
@@ -113,7 +113,7 @@
       "nome": "Colidio",
       "clube": "VAS",
       "preco": 11.6,
-      "exp_score": 5.2006,
+      "exp_score": 5.1241,
       "atleta_id": 114323
     },
     {
@@ -124,7 +124,7 @@
       "nome": "Renê",
       "clube": "VIT",
       "preco": 10.3,
-      "exp_score": 5.3631,
+      "exp_score": 5.332,
       "atleta_id": 130209
     },
     {
@@ -135,7 +135,7 @@
       "nome": "Rogério Ceni",
       "clube": "BAH",
       "preco": 10.49,
-      "exp_score": 5.8543,
+      "exp_score": 5.8169,
       "atleta_id": 97341
     },
     {
@@ -146,7 +146,7 @@
       "nome": "Carlos Miguel",
       "clube": "PAL",
       "preco": 8.7,
-      "exp_score": 6.1544,
+      "exp_score": 6.113,
       "atleta_id": 104084
     },
     {
@@ -157,7 +157,7 @@
       "nome": "Luan Cândido",
       "clube": "VIT",
       "preco": 5.56,
-      "exp_score": 2.7681,
+      "exp_score": 2.6684,
       "atleta_id": 100848
     },
     {
@@ -168,7 +168,7 @@
       "nome": "Kanu",
       "clube": "BAH",
       "preco": 3.06,
-      "exp_score": 0.5653,
+      "exp_score": 0.5598,
       "atleta_id": 98484
     },
     {
@@ -176,11 +176,11 @@
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "MEI",
-      "nome": "João Cruz",
-      "clube": "CAP",
-      "preco": 5.36,
-      "exp_score": 2.9985,
-      "atleta_id": 128431
+      "nome": "José Welison",
+      "clube": "REM",
+      "preco": 4.58,
+      "exp_score": 3.0432,
+      "atleta_id": 86859
     },
     {
       "rodada": 36,
@@ -190,7 +190,7 @@
       "nome": "Erick Pulga",
       "clube": "BAH",
       "preco": 8.08,
-      "exp_score": 5.0542,
+      "exp_score": 5.0219,
       "atleta_id": 109401
     }
   ],
@@ -206,7 +206,7 @@
       "nome": "Ronaldo",
       "clube": "BAH",
       "preco": 9.84,
-      "exp_score": 7.2794,
+      "exp_score": 7.2095,
       "atleta_id": 91101
     },
     {
@@ -217,7 +217,7 @@
       "nome": "Arthur",
       "clube": "PAL",
       "preco": 5.58,
-      "exp_score": 5.1683,
+      "exp_score": 5.1335,
       "atleta_id": 145404
     },
     {
@@ -228,19 +228,8 @@
       "nome": "Marcelinho",
       "clube": "REM",
       "preco": 6.63,
-      "exp_score": 3.9716,
+      "exp_score": 3.9227,
       "atleta_id": 97795
-    },
-    {
-      "rodada": 36,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "ZAG",
-      "nome": "Marcos Victor",
-      "clube": "BAH",
-      "preco": 5.92,
-      "exp_score": 4.1467,
-      "atleta_id": 115537
     },
     {
       "rodada": 36,
@@ -250,8 +239,19 @@
       "nome": "Kauan",
       "clube": "CHA",
       "preco": 2.8,
-      "exp_score": 2.832,
+      "exp_score": 3.0433,
       "atleta_id": 130806
+    },
+    {
+      "rodada": 36,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "ZAG",
+      "nome": "Marcos Victor",
+      "clube": "BAH",
+      "preco": 5.92,
+      "exp_score": 4.1069,
+      "atleta_id": 115537
     },
     {
       "rodada": 36,
@@ -261,7 +261,7 @@
       "nome": "Patrick",
       "clube": "REM",
       "preco": 7.18,
-      "exp_score": 3.6999,
+      "exp_score": 3.7724,
       "atleta_id": 83433
     },
     {
@@ -272,7 +272,7 @@
       "nome": "Bruno Gomes",
       "clube": "INT",
       "preco": 7.82,
-      "exp_score": 4.3295,
+      "exp_score": 4.3197,
       "atleta_id": 106202
     },
     {
@@ -283,7 +283,7 @@
       "nome": "Rodrigo Nestor",
       "clube": "BAH",
       "preco": 6.06,
-      "exp_score": 4.6434,
+      "exp_score": 4.6137,
       "atleta_id": 106822
     },
     {
@@ -294,7 +294,7 @@
       "nome": "Jajá",
       "clube": "REM",
       "preco": 8.1,
-      "exp_score": 5.6809,
+      "exp_score": 5.7922,
       "atleta_id": 105048
     },
     {
@@ -305,7 +305,7 @@
       "nome": "Colidio",
       "clube": "VAS",
       "preco": 11.6,
-      "exp_score": 5.2006,
+      "exp_score": 5.1241,
       "atleta_id": 114323
     },
     {
@@ -316,7 +316,7 @@
       "nome": "Renê",
       "clube": "VIT",
       "preco": 10.3,
-      "exp_score": 5.3631,
+      "exp_score": 5.332,
       "atleta_id": 130209
     },
     {
@@ -327,7 +327,7 @@
       "nome": "Rogério Ceni",
       "clube": "BAH",
       "preco": 10.49,
-      "exp_score": 5.8543,
+      "exp_score": 5.8169,
       "atleta_id": 97341
     },
     {
@@ -338,7 +338,7 @@
       "nome": "Carlos Miguel",
       "clube": "PAL",
       "preco": 8.7,
-      "exp_score": 6.1544,
+      "exp_score": 6.113,
       "atleta_id": 104084
     },
     {
@@ -349,7 +349,7 @@
       "nome": "Luan Cândido",
       "clube": "VIT",
       "preco": 5.56,
-      "exp_score": 2.7681,
+      "exp_score": 2.6684,
       "atleta_id": 100848
     },
     {
@@ -360,7 +360,7 @@
       "nome": "Kanu",
       "clube": "BAH",
       "preco": 3.06,
-      "exp_score": 0.5653,
+      "exp_score": 0.5598,
       "atleta_id": 98484
     },
     {
@@ -368,11 +368,11 @@
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "MEI",
-      "nome": "João Cruz",
-      "clube": "CAP",
-      "preco": 5.36,
-      "exp_score": 2.9985,
-      "atleta_id": 128431
+      "nome": "José Welison",
+      "clube": "REM",
+      "preco": 4.58,
+      "exp_score": 3.0432,
+      "atleta_id": 86859
     },
     {
       "rodada": 36,
@@ -382,7 +382,7 @@
       "nome": "Erick Pulga",
       "clube": "BAH",
       "preco": 8.08,
-      "exp_score": 5.0542,
+      "exp_score": 5.0219,
       "atleta_id": 109401
     }
   ],
@@ -395,7 +395,7 @@
       "nome": "Ronaldo",
       "clube": "BAH",
       "preco": 9.84,
-      "exp_score": 7.2794,
+      "exp_score": 7.2095,
       "atleta_id": 91101
     },
     {
@@ -406,7 +406,7 @@
       "nome": "Arthur",
       "clube": "PAL",
       "preco": 5.58,
-      "exp_score": 5.1683,
+      "exp_score": 5.1335,
       "atleta_id": 145404
     },
     {
@@ -417,19 +417,8 @@
       "nome": "Marcelinho",
       "clube": "REM",
       "preco": 6.63,
-      "exp_score": 3.9716,
+      "exp_score": 3.9227,
       "atleta_id": 97795
-    },
-    {
-      "rodada": 36,
-      "tipo": "ECONOMICO",
-      "status": "TITULAR",
-      "pos": "ZAG",
-      "nome": "Marcos Victor",
-      "clube": "BAH",
-      "preco": 5.92,
-      "exp_score": 4.1467,
-      "atleta_id": 115537
     },
     {
       "rodada": 36,
@@ -439,8 +428,19 @@
       "nome": "Kauan",
       "clube": "CHA",
       "preco": 2.8,
-      "exp_score": 2.832,
+      "exp_score": 3.0433,
       "atleta_id": 130806
+    },
+    {
+      "rodada": 36,
+      "tipo": "ECONOMICO",
+      "status": "TITULAR",
+      "pos": "ZAG",
+      "nome": "Marcos Victor",
+      "clube": "BAH",
+      "preco": 5.92,
+      "exp_score": 4.1069,
+      "atleta_id": 115537
     },
     {
       "rodada": 36,
@@ -450,7 +450,7 @@
       "nome": "Patrick",
       "clube": "REM",
       "preco": 7.18,
-      "exp_score": 3.6999,
+      "exp_score": 3.7724,
       "atleta_id": 83433
     },
     {
@@ -461,7 +461,7 @@
       "nome": "Bruno Gomes",
       "clube": "INT",
       "preco": 7.82,
-      "exp_score": 4.3295,
+      "exp_score": 4.3197,
       "atleta_id": 106202
     },
     {
@@ -472,7 +472,7 @@
       "nome": "Rodrigo Nestor",
       "clube": "BAH",
       "preco": 6.06,
-      "exp_score": 4.6434,
+      "exp_score": 4.6137,
       "atleta_id": 106822
     },
     {
@@ -483,7 +483,7 @@
       "nome": "Jajá",
       "clube": "REM",
       "preco": 8.1,
-      "exp_score": 5.6809,
+      "exp_score": 5.7922,
       "atleta_id": 105048
     },
     {
@@ -494,7 +494,7 @@
       "nome": "Colidio",
       "clube": "VAS",
       "preco": 11.6,
-      "exp_score": 5.2006,
+      "exp_score": 5.1241,
       "atleta_id": 114323
     },
     {
@@ -505,7 +505,7 @@
       "nome": "Renê",
       "clube": "VIT",
       "preco": 10.3,
-      "exp_score": 5.3631,
+      "exp_score": 5.332,
       "atleta_id": 130209
     },
     {
@@ -516,7 +516,7 @@
       "nome": "Rogério Ceni",
       "clube": "BAH",
       "preco": 10.49,
-      "exp_score": 5.8543,
+      "exp_score": 5.8169,
       "atleta_id": 97341
     }
   ],
@@ -529,7 +529,7 @@
       "nome": "Carlos Miguel",
       "clube": "PAL",
       "preco": 8.7,
-      "exp_score": 6.1544,
+      "exp_score": 6.113,
       "atleta_id": 104084
     },
     {
@@ -540,7 +540,7 @@
       "nome": "Luan Cândido",
       "clube": "VIT",
       "preco": 5.56,
-      "exp_score": 2.7681,
+      "exp_score": 2.6684,
       "atleta_id": 100848
     },
     {
@@ -551,7 +551,7 @@
       "nome": "Kanu",
       "clube": "BAH",
       "preco": 3.06,
-      "exp_score": 0.5653,
+      "exp_score": 0.5598,
       "atleta_id": 98484
     },
     {
@@ -559,11 +559,11 @@
       "tipo": "ECONOMICO",
       "status": "RESERVA",
       "pos": "MEI",
-      "nome": "João Cruz",
-      "clube": "CAP",
-      "preco": 5.36,
-      "exp_score": 2.9985,
-      "atleta_id": 128431
+      "nome": "José Welison",
+      "clube": "REM",
+      "preco": 4.58,
+      "exp_score": 3.0432,
+      "atleta_id": 86859
     },
     {
       "rodada": 36,
@@ -573,13 +573,13 @@
       "nome": "Erick Pulga",
       "clube": "BAH",
       "preco": 8.08,
-      "exp_score": 5.0542,
+      "exp_score": 5.0219,
       "atleta_id": 109401
     }
   ],
   "capitao": "Ronaldo",
   "formacao": "4-3-3",
-  "evento_programado": "SELECAO_INICIAL",
+  "evento_programado": "ATUALIZACAO_20H",
   "blocos_topo": [],
   "pipeline_visual": "times_top5_aprovados_v2_2026_09_21_formacao_dinamica"
 }

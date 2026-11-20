@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 36,
-  "atualizado_em": "2026-11-20T05:04:57.772Z",
+  "atualizado_em": "2026-11-20T22:59:44.792Z",
   "dados": [
     {
       "rodada": 36,
@@ -11,8 +11,8 @@
       "nome": "Ronaldo",
       "clube": "BAH",
       "preco": 9.84,
-      "exp_score": 7.2794,
-      "factor": 1.1430411885308878,
+      "exp_score": 7.2095,
+      "factor": 1.1320680412192936,
       "atleta_id": 91101
     },
     {
@@ -21,8 +21,8 @@
       "nome": "Carlos Miguel",
       "clube": "PAL",
       "preco": 8.7,
-      "exp_score": 6.1544,
-      "factor": 0.9980338453838623,
+      "exp_score": 6.113,
+      "factor": 0.9913216574143161,
       "atleta_id": 104084
     },
     {
@@ -31,8 +31,8 @@
       "nome": "Fábio",
       "clube": "FLU",
       "preco": 9.23,
-      "exp_score": 5.0619,
-      "factor": 1.1815632447525433,
+      "exp_score": 5.0105,
+      "factor": 1.1695516246589786,
       "atleta_id": 37656
     },
     {
@@ -41,8 +41,8 @@
       "nome": "Weverton",
       "clube": "GRE",
       "preco": 9.1,
-      "exp_score": 4.8009,
-      "factor": 0.9186636420709728,
+      "exp_score": 4.7659,
+      "factor": 0.9119619116210868,
       "atleta_id": 71631
     },
     {
@@ -51,8 +51,8 @@
       "nome": "Tiago Volpi",
       "clube": "RBB",
       "preco": 9.29,
-      "exp_score": 4.6087,
-      "factor": 1.0616796744184005,
+      "exp_score": 4.5853,
+      "factor": 1.0562877814236618,
       "atleta_id": 72018
     },
     {
@@ -61,8 +61,8 @@
       "nome": "Luciano Juba",
       "clube": "BAH",
       "preco": 11.46,
-      "exp_score": 7.9444,
-      "factor": 1.1430411885308878,
+      "exp_score": 7.8681,
+      "factor": 1.1320680412192936,
       "atleta_id": 107093
     },
     {
@@ -71,8 +71,8 @@
       "nome": "Cuiabano",
       "clube": "VAS",
       "preco": 12.24,
-      "exp_score": 6.9947,
-      "factor": 1.0066713829754539,
+      "exp_score": 6.8245,
+      "factor": 0.9821884978926535,
       "atleta_id": 116065
     },
     {
@@ -81,8 +81,8 @@
       "nome": "Pedro Lima",
       "clube": "SAO",
       "preco": 10.14,
-      "exp_score": 5.8192,
-      "factor": 0.9839674716938056,
+      "exp_score": 5.8038,
+      "factor": 0.9813695971698466,
       "atleta_id": 130525
     },
     {
@@ -91,8 +91,8 @@
       "nome": "Juninho Capixaba",
       "clube": "RBB",
       "preco": 11.65,
-      "exp_score": 5.7976,
-      "factor": 1.0616796744184005,
+      "exp_score": 5.7681,
+      "factor": 1.0562877814236618,
       "atleta_id": 94968
     },
     {
@@ -101,8 +101,8 @@
       "nome": "Giay",
       "clube": "PAL",
       "preco": 8.44,
-      "exp_score": 5.7923,
-      "factor": 0.9980338453838623,
+      "exp_score": 5.7533,
+      "factor": 0.9913216574143161,
       "atleta_id": 124526
     },
     {
@@ -111,9 +111,19 @@
       "nome": "Ferraresi",
       "clube": "BOT",
       "preco": 7.28,
-      "exp_score": 4.9533,
-      "factor": 1.1082789359768546,
+      "exp_score": 5.0237,
+      "factor": 1.1240184213482987,
       "atleta_id": 105300
+    },
+    {
+      "rodada": 36,
+      "pos": "ZAG",
+      "nome": "Juninho",
+      "clube": "INT",
+      "preco": 7.66,
+      "exp_score": 4.9346,
+      "factor": 1.0968611179451428,
+      "atleta_id": 92182
     },
     {
       "rodada": 36,
@@ -121,8 +131,8 @@
       "nome": "Gustavo Gómez",
       "clube": "PAL",
       "preco": 9.87,
-      "exp_score": 4.6655,
-      "factor": 0.9980338453838623,
+      "exp_score": 4.6341,
+      "factor": 0.9913216574143161,
       "atleta_id": 71684
     },
     {
@@ -131,8 +141,8 @@
       "nome": "Wallace",
       "clube": "GRE",
       "preco": 8.22,
-      "exp_score": 4.5904,
-      "factor": 0.9186636420709728,
+      "exp_score": 4.5569,
+      "factor": 0.9119619116210868,
       "atleta_id": 130307
     },
     {
@@ -141,19 +151,9 @@
       "nome": "Luan Peres",
       "clube": "SAN",
       "preco": 6.25,
-      "exp_score": 4.5036,
-      "factor": 1.1213426605846948,
+      "exp_score": 4.4835,
+      "factor": 1.1163346932896212,
       "atleta_id": 84847
-    },
-    {
-      "rodada": 36,
-      "pos": "ZAG",
-      "nome": "Arboleda",
-      "clube": "SAO",
-      "preco": 8.57,
-      "exp_score": 4.2164,
-      "factor": 0.9839674716938056,
-      "atleta_id": 91573
     },
     {
       "rodada": 36,
@@ -161,19 +161,9 @@
       "nome": "Neymar",
       "clube": "SAN",
       "preco": 18.55,
-      "exp_score": 6.3933,
-      "factor": 1.0153506081214922,
+      "exp_score": 6.505,
+      "factor": 1.0330931588931522,
       "atleta_id": 63007
-    },
-    {
-      "rodada": 36,
-      "pos": "MEI",
-      "nome": "Arias",
-      "clube": "PAL",
-      "preco": 13.03,
-      "exp_score": 6.1253,
-      "factor": 1.079396711786068,
-      "atleta_id": 99815
     },
     {
       "rodada": 36,
@@ -181,8 +171,8 @@
       "nome": "Matheus Pereira",
       "clube": "CRU",
       "preco": 15.18,
-      "exp_score": 5.4674,
-      "factor": 0.9475182700561241,
+      "exp_score": 5.7185,
+      "factor": 0.9910433010478833,
       "atleta_id": 96610
     },
     {
@@ -191,8 +181,8 @@
       "nome": "Carrascal",
       "clube": "FLA",
       "preco": 12.29,
-      "exp_score": 5.3811,
-      "factor": 0.9130224496533509,
+      "exp_score": 5.3366,
+      "factor": 0.9054566076863898,
       "atleta_id": 105436
     },
     {
@@ -201,9 +191,19 @@
       "nome": "Maurício",
       "clube": "PAL",
       "preco": 8.13,
-      "exp_score": 5.0226,
-      "factor": 1.079396711786068,
+      "exp_score": 5.0734,
+      "factor": 1.09031658828645,
       "atleta_id": 105647
+    },
+    {
+      "rodada": 36,
+      "pos": "MEI",
+      "nome": "Rodrigo Nestor",
+      "clube": "BAH",
+      "preco": 6.06,
+      "exp_score": 4.6137,
+      "factor": 1.1314216837809816,
+      "atleta_id": 106822
     },
     {
       "rodada": 36,
@@ -211,19 +211,9 @@
       "nome": "Samuel Lino",
       "clube": "FLA",
       "preco": 13.4,
-      "exp_score": 9.4032,
-      "factor": 0.9130224496533509,
+      "exp_score": 9.3253,
+      "factor": 0.9054566076863898,
       "atleta_id": 98873
-    },
-    {
-      "rodada": 36,
-      "pos": "ATA",
-      "nome": "Flaco López",
-      "clube": "PAL",
-      "preco": 13.19,
-      "exp_score": 7.2913,
-      "factor": 1.079396711786068,
-      "atleta_id": 113103
     },
     {
       "rodada": 36,
@@ -231,8 +221,8 @@
       "nome": "Pedro",
       "clube": "FLA",
       "preco": 15.47,
-      "exp_score": 7.2367,
-      "factor": 0.9130224496533509,
+      "exp_score": 7.1767,
+      "factor": 0.9054566076863898,
       "atleta_id": 94583
     },
     {
@@ -241,19 +231,29 @@
       "nome": "Canobbio",
       "clube": "FLU",
       "preco": 12.25,
-      "exp_score": 6.272,
-      "factor": 1.1111887170683394,
+      "exp_score": 6.2599,
+      "factor": 1.1090432832725692,
       "atleta_id": 102928
     },
     {
       "rodada": 36,
       "pos": "ATA",
-      "nome": "Hulk",
-      "clube": "FLU",
-      "preco": 11.79,
-      "exp_score": 5.8157,
-      "factor": 1.1111887170683394,
-      "atleta_id": 39148
+      "nome": "Lucas Barbosa",
+      "clube": "RBB",
+      "preco": 10.44,
+      "exp_score": 5.8561,
+      "factor": 1.070747192025956,
+      "atleta_id": 112886
+    },
+    {
+      "rodada": 36,
+      "pos": "ATA",
+      "nome": "Gabriel",
+      "clube": "SAN",
+      "preco": 10.31,
+      "exp_score": 5.817,
+      "factor": 1.0330931588931522,
+      "atleta_id": 83257
     },
     {
       "rodada": 36,
@@ -261,8 +261,8 @@
       "nome": "Abel Ferreira",
       "clube": "PAL",
       "preco": 11.89,
-      "exp_score": 7.0413,
-      "factor": 1.0494134697920106,
+      "exp_score": 7.1126,
+      "factor": 1.0600300163896044,
       "atleta_id": 110506
     },
     {
@@ -271,8 +271,8 @@
       "nome": "Leonardo Jardim",
       "clube": "FLA",
       "preco": 13.14,
-      "exp_score": 6.4235,
-      "factor": 0.9322439749092108,
+      "exp_score": 6.3703,
+      "factor": 0.9245188520587349,
       "atleta_id": 88963
     },
     {
@@ -281,8 +281,8 @@
       "nome": "Artur Jorge",
       "clube": "CRU",
       "preco": 11.94,
-      "exp_score": 5.943,
-      "factor": 0.9674660231099372,
+      "exp_score": 6.216,
+      "factor": 1.0119073705436281,
       "atleta_id": 127273
     },
     {
@@ -291,8 +291,8 @@
       "nome": "Marcão",
       "clube": "FLU",
       "preco": 12.23,
-      "exp_score": 5.9243,
-      "factor": 1.0803223638164412,
+      "exp_score": 5.9129,
+      "factor": 1.0782365254038866,
       "atleta_id": 73476
     },
     {
@@ -301,8 +301,8 @@
       "nome": "Rogério Ceni",
       "clube": "BAH",
       "preco": 10.49,
-      "exp_score": 5.8543,
-      "factor": 1.1070681413007595,
+      "exp_score": 5.8169,
+      "factor": 1.0999933036759542,
       "atleta_id": 97341
     }
   ],
@@ -314,8 +314,8 @@
       "nome": "Ronaldo",
       "clube": "BAH",
       "preco": 9.84,
-      "exp_score": 7.2794,
-      "factor": 1.1430411885308878,
+      "exp_score": 7.2095,
+      "factor": 1.1320680412192936,
       "atleta_id": 91101
     },
     {
@@ -324,8 +324,8 @@
       "nome": "Carlos Miguel",
       "clube": "PAL",
       "preco": 8.7,
-      "exp_score": 6.1544,
-      "factor": 0.9980338453838623,
+      "exp_score": 6.113,
+      "factor": 0.9913216574143161,
       "atleta_id": 104084
     },
     {
@@ -334,8 +334,8 @@
       "nome": "Fábio",
       "clube": "FLU",
       "preco": 9.23,
-      "exp_score": 5.0619,
-      "factor": 1.1815632447525433,
+      "exp_score": 5.0105,
+      "factor": 1.1695516246589786,
       "atleta_id": 37656
     },
     {
@@ -344,8 +344,8 @@
       "nome": "Weverton",
       "clube": "GRE",
       "preco": 9.1,
-      "exp_score": 4.8009,
-      "factor": 0.9186636420709728,
+      "exp_score": 4.7659,
+      "factor": 0.9119619116210868,
       "atleta_id": 71631
     },
     {
@@ -354,8 +354,8 @@
       "nome": "Tiago Volpi",
       "clube": "RBB",
       "preco": 9.29,
-      "exp_score": 4.6087,
-      "factor": 1.0616796744184005,
+      "exp_score": 4.5853,
+      "factor": 1.0562877814236618,
       "atleta_id": 72018
     },
     {
@@ -364,8 +364,8 @@
       "nome": "Luciano Juba",
       "clube": "BAH",
       "preco": 11.46,
-      "exp_score": 7.9444,
-      "factor": 1.1430411885308878,
+      "exp_score": 7.8681,
+      "factor": 1.1320680412192936,
       "atleta_id": 107093
     },
     {
@@ -374,8 +374,8 @@
       "nome": "Cuiabano",
       "clube": "VAS",
       "preco": 12.24,
-      "exp_score": 6.9947,
-      "factor": 1.0066713829754539,
+      "exp_score": 6.8245,
+      "factor": 0.9821884978926535,
       "atleta_id": 116065
     },
     {
@@ -384,8 +384,8 @@
       "nome": "Pedro Lima",
       "clube": "SAO",
       "preco": 10.14,
-      "exp_score": 5.8192,
-      "factor": 0.9839674716938056,
+      "exp_score": 5.8038,
+      "factor": 0.9813695971698466,
       "atleta_id": 130525
     },
     {
@@ -394,8 +394,8 @@
       "nome": "Juninho Capixaba",
       "clube": "RBB",
       "preco": 11.65,
-      "exp_score": 5.7976,
-      "factor": 1.0616796744184005,
+      "exp_score": 5.7681,
+      "factor": 1.0562877814236618,
       "atleta_id": 94968
     },
     {
@@ -404,8 +404,8 @@
       "nome": "Giay",
       "clube": "PAL",
       "preco": 8.44,
-      "exp_score": 5.7923,
-      "factor": 0.9980338453838623,
+      "exp_score": 5.7533,
+      "factor": 0.9913216574143161,
       "atleta_id": 124526
     },
     {
@@ -414,9 +414,19 @@
       "nome": "Ferraresi",
       "clube": "BOT",
       "preco": 7.28,
-      "exp_score": 4.9533,
-      "factor": 1.1082789359768546,
+      "exp_score": 5.0237,
+      "factor": 1.1240184213482987,
       "atleta_id": 105300
+    },
+    {
+      "rodada": 36,
+      "pos": "ZAG",
+      "nome": "Juninho",
+      "clube": "INT",
+      "preco": 7.66,
+      "exp_score": 4.9346,
+      "factor": 1.0968611179451428,
+      "atleta_id": 92182
     },
     {
       "rodada": 36,
@@ -424,8 +434,8 @@
       "nome": "Gustavo Gómez",
       "clube": "PAL",
       "preco": 9.87,
-      "exp_score": 4.6655,
-      "factor": 0.9980338453838623,
+      "exp_score": 4.6341,
+      "factor": 0.9913216574143161,
       "atleta_id": 71684
     },
     {
@@ -434,8 +444,8 @@
       "nome": "Wallace",
       "clube": "GRE",
       "preco": 8.22,
-      "exp_score": 4.5904,
-      "factor": 0.9186636420709728,
+      "exp_score": 4.5569,
+      "factor": 0.9119619116210868,
       "atleta_id": 130307
     },
     {
@@ -444,19 +454,9 @@
       "nome": "Luan Peres",
       "clube": "SAN",
       "preco": 6.25,
-      "exp_score": 4.5036,
-      "factor": 1.1213426605846948,
+      "exp_score": 4.4835,
+      "factor": 1.1163346932896212,
       "atleta_id": 84847
-    },
-    {
-      "rodada": 36,
-      "pos": "ZAG",
-      "nome": "Arboleda",
-      "clube": "SAO",
-      "preco": 8.57,
-      "exp_score": 4.2164,
-      "factor": 0.9839674716938056,
-      "atleta_id": 91573
     },
     {
       "rodada": 36,
@@ -464,19 +464,9 @@
       "nome": "Neymar",
       "clube": "SAN",
       "preco": 18.55,
-      "exp_score": 6.3933,
-      "factor": 1.0153506081214922,
+      "exp_score": 6.505,
+      "factor": 1.0330931588931522,
       "atleta_id": 63007
-    },
-    {
-      "rodada": 36,
-      "pos": "MEI",
-      "nome": "Arias",
-      "clube": "PAL",
-      "preco": 13.03,
-      "exp_score": 6.1253,
-      "factor": 1.079396711786068,
-      "atleta_id": 99815
     },
     {
       "rodada": 36,
@@ -484,8 +474,8 @@
       "nome": "Matheus Pereira",
       "clube": "CRU",
       "preco": 15.18,
-      "exp_score": 5.4674,
-      "factor": 0.9475182700561241,
+      "exp_score": 5.7185,
+      "factor": 0.9910433010478833,
       "atleta_id": 96610
     },
     {
@@ -494,8 +484,8 @@
       "nome": "Carrascal",
       "clube": "FLA",
       "preco": 12.29,
-      "exp_score": 5.3811,
-      "factor": 0.9130224496533509,
+      "exp_score": 5.3366,
+      "factor": 0.9054566076863898,
       "atleta_id": 105436
     },
     {
@@ -504,9 +494,19 @@
       "nome": "Maurício",
       "clube": "PAL",
       "preco": 8.13,
-      "exp_score": 5.0226,
-      "factor": 1.079396711786068,
+      "exp_score": 5.0734,
+      "factor": 1.09031658828645,
       "atleta_id": 105647
+    },
+    {
+      "rodada": 36,
+      "pos": "MEI",
+      "nome": "Rodrigo Nestor",
+      "clube": "BAH",
+      "preco": 6.06,
+      "exp_score": 4.6137,
+      "factor": 1.1314216837809816,
+      "atleta_id": 106822
     },
     {
       "rodada": 36,
@@ -514,19 +514,9 @@
       "nome": "Samuel Lino",
       "clube": "FLA",
       "preco": 13.4,
-      "exp_score": 9.4032,
-      "factor": 0.9130224496533509,
+      "exp_score": 9.3253,
+      "factor": 0.9054566076863898,
       "atleta_id": 98873
-    },
-    {
-      "rodada": 36,
-      "pos": "ATA",
-      "nome": "Flaco López",
-      "clube": "PAL",
-      "preco": 13.19,
-      "exp_score": 7.2913,
-      "factor": 1.079396711786068,
-      "atleta_id": 113103
     },
     {
       "rodada": 36,
@@ -534,8 +524,8 @@
       "nome": "Pedro",
       "clube": "FLA",
       "preco": 15.47,
-      "exp_score": 7.2367,
-      "factor": 0.9130224496533509,
+      "exp_score": 7.1767,
+      "factor": 0.9054566076863898,
       "atleta_id": 94583
     },
     {
@@ -544,19 +534,29 @@
       "nome": "Canobbio",
       "clube": "FLU",
       "preco": 12.25,
-      "exp_score": 6.272,
-      "factor": 1.1111887170683394,
+      "exp_score": 6.2599,
+      "factor": 1.1090432832725692,
       "atleta_id": 102928
     },
     {
       "rodada": 36,
       "pos": "ATA",
-      "nome": "Hulk",
-      "clube": "FLU",
-      "preco": 11.79,
-      "exp_score": 5.8157,
-      "factor": 1.1111887170683394,
-      "atleta_id": 39148
+      "nome": "Lucas Barbosa",
+      "clube": "RBB",
+      "preco": 10.44,
+      "exp_score": 5.8561,
+      "factor": 1.070747192025956,
+      "atleta_id": 112886
+    },
+    {
+      "rodada": 36,
+      "pos": "ATA",
+      "nome": "Gabriel",
+      "clube": "SAN",
+      "preco": 10.31,
+      "exp_score": 5.817,
+      "factor": 1.0330931588931522,
+      "atleta_id": 83257
     },
     {
       "rodada": 36,
@@ -564,8 +564,8 @@
       "nome": "Abel Ferreira",
       "clube": "PAL",
       "preco": 11.89,
-      "exp_score": 7.0413,
-      "factor": 1.0494134697920106,
+      "exp_score": 7.1126,
+      "factor": 1.0600300163896044,
       "atleta_id": 110506
     },
     {
@@ -574,8 +574,8 @@
       "nome": "Leonardo Jardim",
       "clube": "FLA",
       "preco": 13.14,
-      "exp_score": 6.4235,
-      "factor": 0.9322439749092108,
+      "exp_score": 6.3703,
+      "factor": 0.9245188520587349,
       "atleta_id": 88963
     },
     {
@@ -584,8 +584,8 @@
       "nome": "Artur Jorge",
       "clube": "CRU",
       "preco": 11.94,
-      "exp_score": 5.943,
-      "factor": 0.9674660231099372,
+      "exp_score": 6.216,
+      "factor": 1.0119073705436281,
       "atleta_id": 127273
     },
     {
@@ -594,8 +594,8 @@
       "nome": "Marcão",
       "clube": "FLU",
       "preco": 12.23,
-      "exp_score": 5.9243,
-      "factor": 1.0803223638164412,
+      "exp_score": 5.9129,
+      "factor": 1.0782365254038866,
       "atleta_id": 73476
     },
     {
@@ -604,12 +604,12 @@
       "nome": "Rogério Ceni",
       "clube": "BAH",
       "preco": 10.49,
-      "exp_score": 5.8543,
-      "factor": 1.1070681413007595,
+      "exp_score": 5.8169,
+      "factor": 1.0999933036759542,
       "atleta_id": 97341
     }
   ],
-  "evento_programado": "SELECAO_INICIAL",
+  "evento_programado": "ATUALIZACAO_20H",
   "blocos_topo": [],
   "pipeline_visual": "times_top5_aprovados_v2_2026_09_21_formacao_dinamica"
 }

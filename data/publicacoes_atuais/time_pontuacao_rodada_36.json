@@ -4,7 +4,7 @@
   "tipo_publicacao": "time_pontuacao",
   "rodada": 36,
   "tipo": "PONTUACAO",
-  "atualizado_em": "2026-11-20T05:04:50.526Z",
+  "atualizado_em": "2026-11-20T21:39:53.244Z",
   "dados": [
     {
       "rodada": 36,
@@ -14,7 +14,7 @@
       "nome": "Ronaldo",
       "clube": "BAH",
       "preco": 9.84,
-      "exp_score": 7.2794,
+      "exp_score": 7.2095,
       "atleta_id": 91101
     },
     {
@@ -25,7 +25,7 @@
       "nome": "Luciano Juba",
       "clube": "BAH",
       "preco": 11.46,
-      "exp_score": 7.9444,
+      "exp_score": 7.8681,
       "atleta_id": 107093
     },
     {
@@ -36,7 +36,7 @@
       "nome": "Cuiabano",
       "clube": "VAS",
       "preco": 12.24,
-      "exp_score": 6.9947,
+      "exp_score": 6.8245,
       "atleta_id": 116065
     },
     {
@@ -47,7 +47,7 @@
       "nome": "Ferraresi",
       "clube": "BOT",
       "preco": 7.28,
-      "exp_score": 4.9533,
+      "exp_score": 5.0237,
       "atleta_id": 105300
     },
     {
@@ -55,11 +55,11 @@
       "tipo": "PONTUACAO",
       "status": "TITULAR",
       "pos": "ZAG",
-      "nome": "Gustavo Gómez",
-      "clube": "PAL",
-      "preco": 9.87,
-      "exp_score": 4.6655,
-      "atleta_id": 71684
+      "nome": "Juninho",
+      "clube": "INT",
+      "preco": 7.66,
+      "exp_score": 4.9346,
+      "atleta_id": 92182
     },
     {
       "rodada": 36,
@@ -69,19 +69,8 @@
       "nome": "Neymar",
       "clube": "SAN",
       "preco": 18.55,
-      "exp_score": 6.3933,
+      "exp_score": 6.505,
       "atleta_id": 63007
-    },
-    {
-      "rodada": 36,
-      "tipo": "PONTUACAO",
-      "status": "TITULAR",
-      "pos": "MEI",
-      "nome": "Arias",
-      "clube": "PAL",
-      "preco": 13.03,
-      "exp_score": 6.1253,
-      "atleta_id": 99815
     },
     {
       "rodada": 36,
@@ -91,8 +80,19 @@
       "nome": "Matheus Pereira",
       "clube": "CRU",
       "preco": 15.18,
-      "exp_score": 5.4674,
+      "exp_score": 5.7185,
       "atleta_id": 96610
+    },
+    {
+      "rodada": 36,
+      "tipo": "PONTUACAO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Carrascal",
+      "clube": "FLA",
+      "preco": 12.29,
+      "exp_score": 5.3366,
+      "atleta_id": 105436
     },
     {
       "rodada": 36,
@@ -102,19 +102,8 @@
       "nome": "Samuel Lino",
       "clube": "FLA",
       "preco": 13.4,
-      "exp_score": 9.4032,
+      "exp_score": 9.3253,
       "atleta_id": 98873
-    },
-    {
-      "rodada": 36,
-      "tipo": "PONTUACAO",
-      "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Flaco López",
-      "clube": "PAL",
-      "preco": 13.19,
-      "exp_score": 7.2913,
-      "atleta_id": 113103
     },
     {
       "rodada": 36,
@@ -124,19 +113,30 @@
       "nome": "Pedro",
       "clube": "FLA",
       "preco": 15.47,
-      "exp_score": 7.2367,
+      "exp_score": 7.1767,
       "atleta_id": 94583
     },
     {
       "rodada": 36,
       "tipo": "PONTUACAO",
       "status": "TITULAR",
+      "pos": "ATA",
+      "nome": "Canobbio",
+      "clube": "FLU",
+      "preco": 12.25,
+      "exp_score": 6.2599,
+      "atleta_id": 102928
+    },
+    {
+      "rodada": 36,
+      "tipo": "PONTUACAO",
+      "status": "TITULAR",
       "pos": "TEC",
-      "nome": "Rogério Ceni",
-      "clube": "BAH",
-      "preco": 10.49,
-      "exp_score": 5.8543,
-      "atleta_id": 97341
+      "nome": "Abel Ferreira",
+      "clube": "PAL",
+      "preco": 11.89,
+      "exp_score": 7.1126,
+      "atleta_id": 110506
     },
     {
       "rodada": 36,
@@ -146,7 +146,7 @@
       "nome": "Carlos Miguel",
       "clube": "PAL",
       "preco": 8.7,
-      "exp_score": 6.1544,
+      "exp_score": 6.113,
       "atleta_id": 104084
     },
     {
@@ -157,7 +157,7 @@
       "nome": "Pedro Lima",
       "clube": "SAO",
       "preco": 10.14,
-      "exp_score": 5.8192,
+      "exp_score": 5.8038,
       "atleta_id": 130525
     },
     {
@@ -168,7 +168,7 @@
       "nome": "Luan Peres",
       "clube": "SAN",
       "preco": 6.25,
-      "exp_score": 4.5036,
+      "exp_score": 4.4835,
       "atleta_id": 84847
     },
     {
@@ -176,22 +176,22 @@
       "tipo": "PONTUACAO",
       "status": "RESERVA",
       "pos": "MEI",
-      "nome": "Carrascal",
-      "clube": "FLA",
-      "preco": 12.29,
-      "exp_score": 5.3811,
-      "atleta_id": 105436
+      "nome": "Maurício",
+      "clube": "PAL",
+      "preco": 8.13,
+      "exp_score": 5.0734,
+      "atleta_id": 105647
     },
     {
       "rodada": 36,
       "tipo": "PONTUACAO",
       "status": "RESERVA",
       "pos": "ATA",
-      "nome": "Canobbio",
-      "clube": "FLU",
-      "preco": 12.25,
-      "exp_score": 6.272,
-      "atleta_id": 102928
+      "nome": "Lucas Barbosa",
+      "clube": "RBB",
+      "preco": 10.44,
+      "exp_score": 5.8561,
+      "atleta_id": 112886
     }
   ],
   "modelo": "PONTUACAO",
@@ -206,7 +206,7 @@
       "nome": "Ronaldo",
       "clube": "BAH",
       "preco": 9.84,
-      "exp_score": 7.2794,
+      "exp_score": 7.2095,
       "atleta_id": 91101
     },
     {
@@ -217,7 +217,7 @@
       "nome": "Luciano Juba",
       "clube": "BAH",
       "preco": 11.46,
-      "exp_score": 7.9444,
+      "exp_score": 7.8681,
       "atleta_id": 107093
     },
     {
@@ -228,7 +228,7 @@
       "nome": "Cuiabano",
       "clube": "VAS",
       "preco": 12.24,
-      "exp_score": 6.9947,
+      "exp_score": 6.8245,
       "atleta_id": 116065
     },
     {
@@ -239,7 +239,7 @@
       "nome": "Ferraresi",
       "clube": "BOT",
       "preco": 7.28,
-      "exp_score": 4.9533,
+      "exp_score": 5.0237,
       "atleta_id": 105300
     },
     {
@@ -247,11 +247,11 @@
       "tipo": "PONTUACAO",
       "status": "TITULAR",
       "pos": "ZAG",
-      "nome": "Gustavo Gómez",
-      "clube": "PAL",
-      "preco": 9.87,
-      "exp_score": 4.6655,
-      "atleta_id": 71684
+      "nome": "Juninho",
+      "clube": "INT",
+      "preco": 7.66,
+      "exp_score": 4.9346,
+      "atleta_id": 92182
     },
     {
       "rodada": 36,
@@ -261,19 +261,8 @@
       "nome": "Neymar",
       "clube": "SAN",
       "preco": 18.55,
-      "exp_score": 6.3933,
+      "exp_score": 6.505,
       "atleta_id": 63007
-    },
-    {
-      "rodada": 36,
-      "tipo": "PONTUACAO",
-      "status": "TITULAR",
-      "pos": "MEI",
-      "nome": "Arias",
-      "clube": "PAL",
-      "preco": 13.03,
-      "exp_score": 6.1253,
-      "atleta_id": 99815
     },
     {
       "rodada": 36,
@@ -283,8 +272,19 @@
       "nome": "Matheus Pereira",
       "clube": "CRU",
       "preco": 15.18,
-      "exp_score": 5.4674,
+      "exp_score": 5.7185,
       "atleta_id": 96610
+    },
+    {
+      "rodada": 36,
+      "tipo": "PONTUACAO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Carrascal",
+      "clube": "FLA",
+      "preco": 12.29,
+      "exp_score": 5.3366,
+      "atleta_id": 105436
     },
     {
       "rodada": 36,
@@ -294,19 +294,8 @@
       "nome": "Samuel Lino",
       "clube": "FLA",
       "preco": 13.4,
-      "exp_score": 9.4032,
+      "exp_score": 9.3253,
       "atleta_id": 98873
-    },
-    {
-      "rodada": 36,
-      "tipo": "PONTUACAO",
-      "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Flaco López",
-      "clube": "PAL",
-      "preco": 13.19,
-      "exp_score": 7.2913,
-      "atleta_id": 113103
     },
     {
       "rodada": 36,
@@ -316,19 +305,30 @@
       "nome": "Pedro",
       "clube": "FLA",
       "preco": 15.47,
-      "exp_score": 7.2367,
+      "exp_score": 7.1767,
       "atleta_id": 94583
     },
     {
       "rodada": 36,
       "tipo": "PONTUACAO",
       "status": "TITULAR",
+      "pos": "ATA",
+      "nome": "Canobbio",
+      "clube": "FLU",
+      "preco": 12.25,
+      "exp_score": 6.2599,
+      "atleta_id": 102928
+    },
+    {
+      "rodada": 36,
+      "tipo": "PONTUACAO",
+      "status": "TITULAR",
       "pos": "TEC",
-      "nome": "Rogério Ceni",
-      "clube": "BAH",
-      "preco": 10.49,
-      "exp_score": 5.8543,
-      "atleta_id": 97341
+      "nome": "Abel Ferreira",
+      "clube": "PAL",
+      "preco": 11.89,
+      "exp_score": 7.1126,
+      "atleta_id": 110506
     },
     {
       "rodada": 36,
@@ -338,7 +338,7 @@
       "nome": "Carlos Miguel",
       "clube": "PAL",
       "preco": 8.7,
-      "exp_score": 6.1544,
+      "exp_score": 6.113,
       "atleta_id": 104084
     },
     {
@@ -349,7 +349,7 @@
       "nome": "Pedro Lima",
       "clube": "SAO",
       "preco": 10.14,
-      "exp_score": 5.8192,
+      "exp_score": 5.8038,
       "atleta_id": 130525
     },
     {
@@ -360,7 +360,7 @@
       "nome": "Luan Peres",
       "clube": "SAN",
       "preco": 6.25,
-      "exp_score": 4.5036,
+      "exp_score": 4.4835,
       "atleta_id": 84847
     },
     {
@@ -368,22 +368,22 @@
       "tipo": "PONTUACAO",
       "status": "RESERVA",
       "pos": "MEI",
-      "nome": "Carrascal",
-      "clube": "FLA",
-      "preco": 12.29,
-      "exp_score": 5.3811,
-      "atleta_id": 105436
+      "nome": "Maurício",
+      "clube": "PAL",
+      "preco": 8.13,
+      "exp_score": 5.0734,
+      "atleta_id": 105647
     },
     {
       "rodada": 36,
       "tipo": "PONTUACAO",
       "status": "RESERVA",
       "pos": "ATA",
-      "nome": "Canobbio",
-      "clube": "FLU",
-      "preco": 12.25,
-      "exp_score": 6.272,
-      "atleta_id": 102928
+      "nome": "Lucas Barbosa",
+      "clube": "RBB",
+      "preco": 10.44,
+      "exp_score": 5.8561,
+      "atleta_id": 112886
     }
   ],
   "jogadores": [
@@ -395,7 +395,7 @@
       "nome": "Ronaldo",
       "clube": "BAH",
       "preco": 9.84,
-      "exp_score": 7.2794,
+      "exp_score": 7.2095,
       "atleta_id": 91101
     },
     {
@@ -406,7 +406,7 @@
       "nome": "Luciano Juba",
       "clube": "BAH",
       "preco": 11.46,
-      "exp_score": 7.9444,
+      "exp_score": 7.8681,
       "atleta_id": 107093
     },
     {
@@ -417,7 +417,7 @@
       "nome": "Cuiabano",
       "clube": "VAS",
       "preco": 12.24,
-      "exp_score": 6.9947,
+      "exp_score": 6.8245,
       "atleta_id": 116065
     },
     {
@@ -428,7 +428,7 @@
       "nome": "Ferraresi",
       "clube": "BOT",
       "preco": 7.28,
-      "exp_score": 4.9533,
+      "exp_score": 5.0237,
       "atleta_id": 105300
     },
     {
@@ -436,11 +436,11 @@
       "tipo": "PONTUACAO",
       "status": "TITULAR",
       "pos": "ZAG",
-      "nome": "Gustavo Gómez",
-      "clube": "PAL",
-      "preco": 9.87,
-      "exp_score": 4.6655,
-      "atleta_id": 71684
+      "nome": "Juninho",
+      "clube": "INT",
+      "preco": 7.66,
+      "exp_score": 4.9346,
+      "atleta_id": 92182
     },
     {
       "rodada": 36,
@@ -450,19 +450,8 @@
       "nome": "Neymar",
       "clube": "SAN",
       "preco": 18.55,
-      "exp_score": 6.3933,
+      "exp_score": 6.505,
       "atleta_id": 63007
-    },
-    {
-      "rodada": 36,
-      "tipo": "PONTUACAO",
-      "status": "TITULAR",
-      "pos": "MEI",
-      "nome": "Arias",
-      "clube": "PAL",
-      "preco": 13.03,
-      "exp_score": 6.1253,
-      "atleta_id": 99815
     },
     {
       "rodada": 36,
@@ -472,8 +461,19 @@
       "nome": "Matheus Pereira",
       "clube": "CRU",
       "preco": 15.18,
-      "exp_score": 5.4674,
+      "exp_score": 5.7185,
       "atleta_id": 96610
+    },
+    {
+      "rodada": 36,
+      "tipo": "PONTUACAO",
+      "status": "TITULAR",
+      "pos": "MEI",
+      "nome": "Carrascal",
+      "clube": "FLA",
+      "preco": 12.29,
+      "exp_score": 5.3366,
+      "atleta_id": 105436
     },
     {
       "rodada": 36,
@@ -483,19 +483,8 @@
       "nome": "Samuel Lino",
       "clube": "FLA",
       "preco": 13.4,
-      "exp_score": 9.4032,
+      "exp_score": 9.3253,
       "atleta_id": 98873
-    },
-    {
-      "rodada": 36,
-      "tipo": "PONTUACAO",
-      "status": "TITULAR",
-      "pos": "ATA",
-      "nome": "Flaco López",
-      "clube": "PAL",
-      "preco": 13.19,
-      "exp_score": 7.2913,
-      "atleta_id": 113103
     },
     {
       "rodada": 36,
@@ -505,19 +494,30 @@
       "nome": "Pedro",
       "clube": "FLA",
       "preco": 15.47,
-      "exp_score": 7.2367,
+      "exp_score": 7.1767,
       "atleta_id": 94583
     },
     {
       "rodada": 36,
       "tipo": "PONTUACAO",
       "status": "TITULAR",
+      "pos": "ATA",
+      "nome": "Canobbio",
+      "clube": "FLU",
+      "preco": 12.25,
+      "exp_score": 6.2599,
+      "atleta_id": 102928
+    },
+    {
+      "rodada": 36,
+      "tipo": "PONTUACAO",
+      "status": "TITULAR",
       "pos": "TEC",
-      "nome": "Rogério Ceni",
-      "clube": "BAH",
-      "preco": 10.49,
-      "exp_score": 5.8543,
-      "atleta_id": 97341
+      "nome": "Abel Ferreira",
+      "clube": "PAL",
+      "preco": 11.89,
+      "exp_score": 7.1126,
+      "atleta_id": 110506
     }
   ],
   "reservas": [
@@ -529,7 +529,7 @@
       "nome": "Carlos Miguel",
       "clube": "PAL",
       "preco": 8.7,
-      "exp_score": 6.1544,
+      "exp_score": 6.113,
       "atleta_id": 104084
     },
     {
@@ -540,7 +540,7 @@
       "nome": "Pedro Lima",
       "clube": "SAO",
       "preco": 10.14,
-      "exp_score": 5.8192,
+      "exp_score": 5.8038,
       "atleta_id": 130525
     },
     {
@@ -551,7 +551,7 @@
       "nome": "Luan Peres",
       "clube": "SAN",
       "preco": 6.25,
-      "exp_score": 4.5036,
+      "exp_score": 4.4835,
       "atleta_id": 84847
     },
     {
@@ -559,27 +559,27 @@
       "tipo": "PONTUACAO",
       "status": "RESERVA",
       "pos": "MEI",
-      "nome": "Carrascal",
-      "clube": "FLA",
-      "preco": 12.29,
-      "exp_score": 5.3811,
-      "atleta_id": 105436
+      "nome": "Maurício",
+      "clube": "PAL",
+      "preco": 8.13,
+      "exp_score": 5.0734,
+      "atleta_id": 105647
     },
     {
       "rodada": 36,
       "tipo": "PONTUACAO",
       "status": "RESERVA",
       "pos": "ATA",
-      "nome": "Canobbio",
-      "clube": "FLU",
-      "preco": 12.25,
-      "exp_score": 6.272,
-      "atleta_id": 102928
+      "nome": "Lucas Barbosa",
+      "clube": "RBB",
+      "preco": 10.44,
+      "exp_score": 5.8561,
+      "atleta_id": 112886
     }
   ],
   "capitao": "Samuel Lino",
   "formacao": "4-3-3",
-  "evento_programado": "SELECAO_INICIAL",
+  "evento_programado": "ATUALIZACAO_20H",
   "blocos_topo": [],
   "pipeline_visual": "times_top5_aprovados_v2_2026_09_21_formacao_dinamica"
 }
