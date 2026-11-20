@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T01:33:58.528761-03:00",
+  "updated_at": "2026-11-20T00:24:22.944131-03:00",
   "last_publication_mode": "apos_jogos",
   "signature": [
     {
@@ -26,9 +26,9 @@
     {
       "nome": "FLU",
       "pos": 4,
-      "pts": 57,
-      "v": 16,
-      "saldo": 13
+      "pts": 60,
+      "v": 17,
+      "saldo": 14
     },
     {
       "nome": "CAP",
@@ -63,21 +63,21 @@
       "pos": 9,
       "pts": 47,
       "v": 13,
-      "saldo": 5
-    },
-    {
-      "nome": "SAO",
-      "pos": 10,
-      "pts": 44,
-      "v": 12,
-      "saldo": 0
+      "saldo": 4
     },
     {
       "nome": "VAS",
+      "pos": 10,
+      "pts": 47,
+      "v": 13,
+      "saldo": -4
+    },
+    {
+      "nome": "SAO",
       "pos": 11,
       "pts": 44,
       "v": 12,
-      "saldo": -5
+      "saldo": -1
     },
     {
       "nome": "BOT",
@@ -94,32 +94,32 @@
       "saldo": -12
     },
     {
-      "nome": "MIR",
+      "nome": "VIT",
       "pos": 14,
+      "pts": 41,
+      "v": 11,
+      "saldo": -15
+    },
+    {
+      "nome": "MIR",
+      "pos": 15,
       "pts": 41,
       "v": 10,
       "saldo": -9
     },
     {
       "nome": "COR",
-      "pos": 15,
+      "pos": 16,
       "pts": 40,
       "v": 10,
       "saldo": -2
-    },
-    {
-      "nome": "VIT",
-      "pos": 16,
-      "pts": 38,
-      "v": 10,
-      "saldo": -16
     },
     {
       "nome": "INT",
       "pos": 17,
       "pts": 38,
       "v": 9,
-      "saldo": -4
+      "saldo": -5
     },
     {
       "nome": "GRE",
@@ -153,13 +153,13 @@
     "CAM": 7,
     "SAN": 8,
     "RBB": 9,
-    "SAO": 10,
-    "VAS": 11,
+    "VAS": 10,
+    "SAO": 11,
     "BOT": 12,
     "CFC": 13,
-    "MIR": 14,
-    "COR": 15,
-    "VIT": 16,
+    "VIT": 14,
+    "MIR": 15,
+    "COR": 16,
     "INT": 17,
     "GRE": 18,
     "REM": 19,
