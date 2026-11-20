@@ -25,9 +25,9 @@
     {
       "nome": "FLU",
       "j": 35,
-      "pts": 58,
-      "v": 16,
-      "saldo": 13
+      "pts": 60,
+      "v": 17,
+      "saldo": 14
     },
     {
       "nome": "CAP",
@@ -74,9 +74,9 @@
     {
       "nome": "SAO",
       "j": 35,
-      "pts": 45,
+      "pts": 44,
       "v": 12,
-      "saldo": 0
+      "saldo": -1
     },
     {
       "nome": "BOT",
@@ -305,7 +305,7 @@
       "gm": 33
     }
   ],
-  "last_context": "classificacao_delta",
-  "updated_at": "2026-11-19T22:13:28.615643-03:00",
-  "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
+  "last_context": "classificacao_final",
+  "updated_at": "2026-11-19T23:53:37.070994-03:00",
+  "last_image": "output/classificacao_brasileirao_fechamento.png"
 }
