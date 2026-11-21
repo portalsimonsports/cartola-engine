@@ -177,20 +177,20 @@
       "gm": 56
     },
     {
-      "nome": "Athletico-PR",
+      "nome": "Bahia",
       "pos": 5,
+      "pts": 55,
+      "v": 14,
+      "saldo": 5,
+      "gm": 50
+    },
+    {
+      "nome": "Athletico-PR",
+      "pos": 6,
       "pts": 54,
       "v": 15,
       "saldo": 7,
       "gm": 52
-    },
-    {
-      "nome": "Bahia",
-      "pos": 6,
-      "pts": 54,
-      "v": 14,
-      "saldo": 5,
-      "gm": 50
     },
     {
       "nome": "ATLÉTICO-MG",
@@ -233,20 +233,20 @@
       "gm": 39
     },
     {
-      "nome": "Botafogo",
+      "nome": "Coritiba",
       "pos": 12,
+      "pts": 43,
+      "v": 11,
+      "saldo": -12,
+      "gm": 40
+    },
+    {
+      "nome": "Botafogo",
+      "pos": 13,
       "pts": 42,
       "v": 11,
       "saldo": -11,
       "gm": 46
-    },
-    {
-      "nome": "Coritiba",
-      "pos": 13,
-      "pts": 42,
-      "v": 11,
-      "saldo": -12,
-      "gm": 40
     },
     {
       "nome": "VITÓRIA",
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-11-21T16:53:33.725274-03:00",
+  "updated_at": "2026-11-21T17:43:18.875827-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
