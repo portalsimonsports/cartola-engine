@@ -3,15 +3,15 @@
   "base_signature": [
     {
       "nome": "FLA",
-      "j": 35,
-      "pts": 79,
+      "j": 36,
+      "pts": 80,
       "v": 24,
       "saldo": 43
     },
     {
       "nome": "PAL",
-      "j": 35,
-      "pts": 73,
+      "j": 36,
+      "pts": 74,
       "v": 21,
       "saldo": 38
     },
@@ -38,10 +38,10 @@
     },
     {
       "nome": "BAH",
-      "j": 35,
+      "j": 36,
       "pts": 54,
       "v": 14,
-      "saldo": 5
+      "saldo": 4
     },
     {
       "nome": "CAM",
@@ -72,6 +72,13 @@
       "saldo": -4
     },
     {
+      "nome": "CFC",
+      "j": 36,
+      "pts": 45,
+      "v": 12,
+      "saldo": -11
+    },
+    {
       "nome": "SAO",
       "j": 35,
       "pts": 44,
@@ -84,13 +91,6 @@
       "pts": 42,
       "v": 11,
       "saldo": -11
-    },
-    {
-      "nome": "CFC",
-      "j": 35,
-      "pts": 42,
-      "v": 11,
-      "saldo": -12
     },
     {
       "nome": "VIT",
@@ -163,7 +163,7 @@
     {
       "nome": "Cruzeiro",
       "pos": 3,
-      "pts": 63,
+      "pts": 64,
       "v": 19,
       "saldo": 8,
       "gm": 57
@@ -299,13 +299,13 @@
     {
       "nome": "Chapecoense",
       "pos": 20,
-      "pts": 21,
+      "pts": 22,
       "v": 4,
       "saldo": -39,
       "gm": 33
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-11-21T19:23:23.401095-03:00",
+  "updated_at": "2026-11-21T21:13:38.110609-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
