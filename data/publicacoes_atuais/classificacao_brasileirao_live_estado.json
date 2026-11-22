@@ -171,7 +171,7 @@
     {
       "nome": "Fluminense",
       "pos": 4,
-      "pts": 60,
+      "pts": 61,
       "v": 17,
       "saldo": 14,
       "gm": 56
@@ -181,8 +181,8 @@
       "pos": 5,
       "pts": 57,
       "v": 16,
-      "saldo": 8,
-      "gm": 53
+      "saldo": 9,
+      "gm": 56
     },
     {
       "nome": "Bahia",
@@ -249,20 +249,20 @@
       "gm": 46
     },
     {
-      "nome": "VITÓRIA",
+      "nome": "Mirassol",
       "pos": 14,
+      "pts": 42,
+      "v": 10,
+      "saldo": -9,
+      "gm": 39
+    },
+    {
+      "nome": "VITÓRIA",
+      "pos": 15,
       "pts": 41,
       "v": 11,
       "saldo": -15,
       "gm": 37
-    },
-    {
-      "nome": "Mirassol",
-      "pos": 15,
-      "pts": 41,
-      "v": 10,
-      "saldo": -9,
-      "gm": 39
     },
     {
       "nome": "Corinthians",
@@ -293,8 +293,8 @@
       "pos": 19,
       "pts": 32,
       "v": 7,
-      "saldo": -19,
-      "gm": 39
+      "saldo": -20,
+      "gm": 41
     },
     {
       "nome": "Chapecoense",
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-11-22T16:23:26.933669-03:00",
+  "updated_at": "2026-11-22T18:33:25.009182-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
