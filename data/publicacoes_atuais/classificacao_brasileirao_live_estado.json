@@ -24,17 +24,17 @@
     },
     {
       "nome": "FLU",
-      "j": 35,
-      "pts": 60,
+      "j": 36,
+      "pts": 61,
       "v": 17,
       "saldo": 14
     },
     {
       "nome": "CAP",
-      "j": 35,
-      "pts": 54,
-      "v": 15,
-      "saldo": 7
+      "j": 36,
+      "pts": 57,
+      "v": 16,
+      "saldo": 9
     },
     {
       "nome": "BAH",
@@ -59,15 +59,15 @@
     },
     {
       "nome": "RBB",
-      "j": 35,
-      "pts": 47,
+      "j": 36,
+      "pts": 48,
       "v": 13,
       "saldo": 4
     },
     {
       "nome": "VAS",
-      "j": 35,
-      "pts": 47,
+      "j": 36,
+      "pts": 48,
       "v": 13,
       "saldo": -4
     },
@@ -93,18 +93,18 @@
       "saldo": -11
     },
     {
+      "nome": "MIR",
+      "j": 36,
+      "pts": 42,
+      "v": 10,
+      "saldo": -9
+    },
+    {
       "nome": "VIT",
       "j": 35,
       "pts": 41,
       "v": 11,
       "saldo": -15
-    },
-    {
-      "nome": "MIR",
-      "j": 35,
-      "pts": 41,
-      "v": 10,
-      "saldo": -9
     },
     {
       "nome": "COR",
@@ -129,10 +129,10 @@
     },
     {
       "nome": "REM",
-      "j": 35,
+      "j": 36,
       "pts": 32,
       "v": 7,
-      "saldo": -18
+      "saldo": -20
     },
     {
       "nome": "CHA",
@@ -171,10 +171,10 @@
     {
       "nome": "Fluminense",
       "pos": 4,
-      "pts": 61,
-      "v": 17,
-      "saldo": 14,
-      "gm": 56
+      "pts": 63,
+      "v": 18,
+      "saldo": 15,
+      "gm": 57
     },
     {
       "nome": "Athletico-PR",
@@ -249,20 +249,20 @@
       "gm": 46
     },
     {
-      "nome": "Mirassol",
-      "pos": 14,
-      "pts": 42,
-      "v": 10,
-      "saldo": -9,
-      "gm": 39
-    },
-    {
       "nome": "VITÓRIA",
-      "pos": 15,
+      "pos": 14,
       "pts": 41,
       "v": 11,
       "saldo": -15,
       "gm": 37
+    },
+    {
+      "nome": "Mirassol",
+      "pos": 15,
+      "pts": 41,
+      "v": 10,
+      "saldo": -10,
+      "gm": 39
     },
     {
       "nome": "Corinthians",
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-11-22T19:43:28.439152-03:00",
+  "updated_at": "2026-11-22T20:33:24.139631-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
