@@ -25,9 +25,9 @@
     {
       "nome": "FLU",
       "j": 36,
-      "pts": 61,
-      "v": 17,
-      "saldo": 14
+      "pts": 63,
+      "v": 18,
+      "saldo": 15
     },
     {
       "nome": "CAP",
@@ -93,18 +93,18 @@
       "saldo": -11
     },
     {
-      "nome": "MIR",
-      "j": 36,
-      "pts": 42,
-      "v": 10,
-      "saldo": -9
-    },
-    {
       "nome": "VIT",
       "j": 35,
       "pts": 41,
       "v": 11,
       "saldo": -15
+    },
+    {
+      "nome": "MIR",
+      "j": 36,
+      "pts": 41,
+      "v": 10,
+      "saldo": -10
     },
     {
       "nome": "COR",
@@ -201,27 +201,27 @@
       "gm": 44
     },
     {
-      "nome": "Santos",
+      "nome": "RB Bragantino",
       "pos": 8,
+      "pts": 50,
+      "v": 14,
+      "saldo": 5,
+      "gm": 46
+    },
+    {
+      "nome": "Santos",
+      "pos": 9,
       "pts": 50,
       "v": 13,
       "saldo": 2,
       "gm": 51
     },
     {
-      "nome": "RB Bragantino",
-      "pos": 9,
-      "pts": 48,
-      "v": 13,
-      "saldo": 4,
-      "gm": 45
-    },
-    {
       "nome": "Vasco",
       "pos": 10,
-      "pts": 48,
+      "pts": 47,
       "v": 13,
-      "saldo": -4,
+      "saldo": -5,
       "gm": 47
     },
     {
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-11-22T20:33:24.139631-03:00",
+  "updated_at": "2026-11-22T21:03:30.690657-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
