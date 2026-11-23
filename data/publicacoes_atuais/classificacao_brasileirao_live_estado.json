@@ -72,6 +72,13 @@
       "saldo": -5
     },
     {
+      "nome": "SAO",
+      "j": 36,
+      "pts": 45,
+      "v": 12,
+      "saldo": -1
+    },
+    {
       "nome": "CFC",
       "j": 36,
       "pts": 45,
@@ -79,25 +86,18 @@
       "saldo": -11
     },
     {
-      "nome": "SAO",
-      "j": 35,
+      "nome": "VIT",
+      "j": 36,
       "pts": 44,
       "v": 12,
-      "saldo": -1
+      "saldo": -13
     },
     {
       "nome": "BOT",
-      "j": 35,
-      "pts": 42,
+      "j": 36,
+      "pts": 43,
       "v": 11,
       "saldo": -11
-    },
-    {
-      "nome": "VIT",
-      "j": 35,
-      "pts": 41,
-      "v": 11,
-      "saldo": -15
     },
     {
       "nome": "MIR",
@@ -115,10 +115,10 @@
     },
     {
       "nome": "INT",
-      "j": 35,
+      "j": 36,
       "pts": 38,
       "v": 9,
-      "saldo": -5
+      "saldo": -7
     },
     {
       "nome": "GRE",
@@ -217,20 +217,20 @@
       "gm": 51
     },
     {
-      "nome": "Vasco",
+      "nome": "SÃO PAULO",
       "pos": 10,
+      "pts": 47,
+      "v": 13,
+      "saldo": 0,
+      "gm": 40
+    },
+    {
+      "nome": "Vasco",
+      "pos": 11,
       "pts": 47,
       "v": 13,
       "saldo": -5,
       "gm": 47
-    },
-    {
-      "nome": "SÃO PAULO",
-      "pos": 11,
-      "pts": 45,
-      "v": 12,
-      "saldo": -1,
-      "gm": 39
     },
     {
       "nome": "Coritiba",
@@ -245,15 +245,15 @@
       "pos": 13,
       "pts": 44,
       "v": 12,
-      "saldo": -13,
+      "saldo": -14,
       "gm": 39
     },
     {
       "nome": "Botafogo",
       "pos": 14,
-      "pts": 43,
+      "pts": 42,
       "v": 11,
-      "saldo": -11,
+      "saldo": -12,
       "gm": 46
     },
     {
@@ -277,8 +277,8 @@
       "pos": 17,
       "pts": 38,
       "v": 9,
-      "saldo": -7,
-      "gm": 39
+      "saldo": -6,
+      "gm": 40
     },
     {
       "nome": "GRÊMIO",
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-11-23T20:13:59.826137-03:00",
+  "updated_at": "2026-11-23T20:43:30.190152-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
