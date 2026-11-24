@@ -201,20 +201,20 @@
       "gm": 44
     },
     {
-      "nome": "Santos",
-      "pos": 8,
-      "pts": 51,
-      "v": 13,
-      "saldo": 2,
-      "gm": 51
-    },
-    {
       "nome": "RB Bragantino",
-      "pos": 9,
+      "pos": 8,
       "pts": 50,
       "v": 14,
       "saldo": 5,
       "gm": 46
+    },
+    {
+      "nome": "Santos",
+      "pos": 9,
+      "pts": 50,
+      "v": 13,
+      "saldo": 1,
+      "gm": 51
     },
     {
       "nome": "SÃO PAULO",
@@ -245,8 +245,8 @@
       "pos": 13,
       "pts": 44,
       "v": 12,
-      "saldo": -14,
-      "gm": 40
+      "saldo": -13,
+      "gm": 41
     },
     {
       "nome": "Botafogo",
@@ -257,8 +257,16 @@
       "gm": 46
     },
     {
-      "nome": "Mirassol",
+      "nome": "GRÊMIO",
       "pos": 15,
+      "pts": 41,
+      "v": 10,
+      "saldo": -8,
+      "gm": 39
+    },
+    {
+      "nome": "Mirassol",
+      "pos": 16,
       "pts": 41,
       "v": 10,
       "saldo": -10,
@@ -266,26 +274,18 @@
     },
     {
       "nome": "Corinthians",
-      "pos": 16,
+      "pos": 17,
       "pts": 40,
       "v": 10,
       "saldo": -2,
       "gm": 40
     },
     {
-      "nome": "GRÊMIO",
-      "pos": 17,
-      "pts": 39,
-      "v": 9,
-      "saldo": -9,
-      "gm": 38
-    },
-    {
       "nome": "Internacional",
       "pos": 18,
       "pts": 38,
       "v": 9,
-      "saldo": -6,
+      "saldo": -7,
       "gm": 41
     },
     {
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-11-23T21:23:23.620092-03:00",
+  "updated_at": "2026-11-23T21:33:38.681494-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
