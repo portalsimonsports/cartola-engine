@@ -51,18 +51,18 @@
       "saldo": 4
     },
     {
-      "nome": "SAN",
-      "j": 36,
-      "pts": 51,
-      "v": 13,
-      "saldo": 2
-    },
-    {
       "nome": "RBB",
       "j": 36,
       "pts": 50,
       "v": 14,
       "saldo": 5
+    },
+    {
+      "nome": "SAN",
+      "j": 36,
+      "pts": 50,
+      "v": 13,
+      "saldo": 1
     },
     {
       "nome": "SAO",
@@ -90,7 +90,7 @@
       "j": 36,
       "pts": 44,
       "v": 12,
-      "saldo": -14
+      "saldo": -12
     },
     {
       "nome": "BOT",
@@ -98,6 +98,13 @@
       "pts": 42,
       "v": 11,
       "saldo": -12
+    },
+    {
+      "nome": "GRE",
+      "j": 36,
+      "pts": 41,
+      "v": 10,
+      "saldo": -8
     },
     {
       "nome": "MIR",
@@ -114,18 +121,11 @@
       "saldo": -2
     },
     {
-      "nome": "GRE",
-      "j": 36,
-      "pts": 39,
-      "v": 9,
-      "saldo": -9
-    },
-    {
       "nome": "INT",
       "j": 36,
       "pts": 38,
       "v": 9,
-      "saldo": -6
+      "saldo": -8
     },
     {
       "nome": "REM",
@@ -217,20 +217,20 @@
       "gm": 51
     },
     {
-      "nome": "SÃO PAULO",
-      "pos": 10,
-      "pts": 47,
-      "v": 13,
-      "saldo": 0,
-      "gm": 40
-    },
-    {
       "nome": "Vasco",
-      "pos": 11,
+      "pos": 10,
       "pts": 47,
       "v": 13,
       "saldo": -5,
       "gm": 47
+    },
+    {
+      "nome": "SÃO PAULO",
+      "pos": 11,
+      "pts": 45,
+      "v": 12,
+      "saldo": -1,
+      "gm": 40
     },
     {
       "nome": "Coritiba",
@@ -245,16 +245,16 @@
       "pos": 13,
       "pts": 44,
       "v": 12,
-      "saldo": -13,
-      "gm": 41
+      "saldo": -12,
+      "gm": 42
     },
     {
       "nome": "Botafogo",
       "pos": 14,
-      "pts": 42,
+      "pts": 43,
       "v": 11,
-      "saldo": -12,
-      "gm": 46
+      "saldo": -11,
+      "gm": 47
     },
     {
       "nome": "GRÊMIO",
@@ -285,7 +285,7 @@
       "pos": 18,
       "pts": 38,
       "v": 9,
-      "saldo": -7,
+      "saldo": -8,
       "gm": 41
     },
     {
@@ -306,6 +306,6 @@
     }
   ],
   "last_context": "classificacao_delta",
-  "updated_at": "2026-11-23T21:33:38.681494-03:00",
+  "updated_at": "2026-11-23T22:03:29.932070-03:00",
   "last_image": "output/classificacao_brasileirao_parcial_ao_vivo.png"
 }
