@@ -3,7 +3,7 @@
   "pipeline": "jobtelegram",
   "tipo_publicacao": "top5",
   "rodada": 37,
-  "atualizado_em": "2026-11-25T22:19:45.860Z",
+  "atualizado_em": "2026-11-26T22:39:43.856Z",
   "dados": [
     {
       "rodada": 37,
@@ -161,8 +161,8 @@
       "nome": "Neymar",
       "clube": "SAN",
       "preco": 18.46,
-      "exp_score": 6.0529,
-      "factor": 0.9448105193381433,
+      "exp_score": 6.0561,
+      "factor": 0.9452992861360098,
       "atleta_id": 63007
     },
     {
@@ -171,8 +171,8 @@
       "nome": "Carrascal",
       "clube": "FLA",
       "preco": 10.91,
-      "exp_score": 5.1635,
-      "factor": 0.9785157433138718,
+      "exp_score": 5.1656,
+      "factor": 0.9789110085341634,
       "atleta_id": 105436
     },
     {
@@ -181,8 +181,8 @@
       "nome": "Baralhas",
       "clube": "VIT",
       "preco": 10.42,
-      "exp_score": 5.031,
-      "factor": 1.1165426204012954,
+      "exp_score": 5.0329,
+      "factor": 1.1169805321634287,
       "atleta_id": 99440
     },
     {
@@ -191,8 +191,8 @@
       "nome": "Bruno Gomes",
       "clube": "INT",
       "preco": 6.62,
-      "exp_score": 4.2574,
-      "factor": 1.0629058052673177,
+      "exp_score": 4.2597,
+      "factor": 1.0634925107842335,
       "atleta_id": 106202
     },
     {
@@ -201,8 +201,8 @@
       "nome": "Alan Patrick",
       "clube": "INT",
       "preco": 7.2,
-      "exp_score": 4.1088,
-      "factor": 1.0629058052673177,
+      "exp_score": 4.1111,
+      "factor": 1.0634925107842335,
       "atleta_id": 68685
     },
     {
@@ -211,8 +211,8 @@
       "nome": "Samuel Lino",
       "clube": "FLA",
       "preco": 14.72,
-      "exp_score": 10.7839,
-      "factor": 0.9785157433138718,
+      "exp_score": 10.7883,
+      "factor": 0.9789110085341634,
       "atleta_id": 98873
     },
     {
@@ -221,8 +221,8 @@
       "nome": "Pedro",
       "clube": "FLA",
       "preco": 15.02,
-      "exp_score": 7.8286,
-      "factor": 0.9785157433138718,
+      "exp_score": 7.8317,
+      "factor": 0.9789110085341634,
       "atleta_id": 94583
     },
     {
@@ -231,8 +231,8 @@
       "nome": "Renê",
       "clube": "VIT",
       "preco": 11.35,
-      "exp_score": 7.7538,
-      "factor": 1.1165426204012954,
+      "exp_score": 7.7569,
+      "factor": 1.1169805321634287,
       "atleta_id": 130209
     },
     {
@@ -241,8 +241,8 @@
       "nome": "Kaio César",
       "clube": "COR",
       "preco": 13.66,
-      "exp_score": 7.3972,
-      "factor": 1.0350889835045765,
+      "exp_score": 7.4019,
+      "factor": 1.0357528555972078,
       "atleta_id": 118844
     },
     {
@@ -251,8 +251,8 @@
       "nome": "Cuello",
       "clube": "CAM",
       "preco": 8.97,
-      "exp_score": 5.6523,
-      "factor": 1.0560595364964436,
+      "exp_score": 5.6556,
+      "factor": 1.0566652342304421,
       "atleta_id": 98909
     },
     {
@@ -261,19 +261,9 @@
       "nome": "Leonardo Jardim",
       "clube": "FLA",
       "preco": 13.09,
-      "exp_score": 6.5785,
-      "factor": 0.9991160747520587,
+      "exp_score": 6.5812,
+      "factor": 0.9995196613454089,
       "atleta_id": 88963
-    },
-    {
-      "rodada": 37,
-      "pos": "TEC",
-      "nome": "Renato Gaúcho",
-      "clube": "GRE",
-      "preco": 10.75,
-      "exp_score": 5.2309,
-      "factor": 0.9232373097417332,
-      "atleta_id": 41929
     },
     {
       "rodada": 37,
@@ -281,9 +271,19 @@
       "nome": "Rafael Lacerda",
       "clube": "VIT",
       "preco": 9.16,
-      "exp_score": 5.1904,
-      "factor": 1.0855275476123705,
+      "exp_score": 5.1924,
+      "factor": 1.085953295158889,
       "atleta_id": 106907
+    },
+    {
+      "rodada": 37,
+      "pos": "TEC",
+      "nome": "Renato Gaúcho",
+      "clube": "GRE",
+      "preco": 10.75,
+      "exp_score": 5.1377,
+      "factor": 0.9067814915152731,
+      "atleta_id": 41929
     },
     {
       "rodada": 37,
@@ -291,8 +291,8 @@
       "nome": "Rogério Ceni",
       "clube": "BAH",
       "preco": 10.01,
-      "exp_score": 5.0048,
-      "factor": 0.9999331667643984,
+      "exp_score": 5.0068,
+      "factor": 1.0003344866648398,
       "atleta_id": 97341
     },
     {
@@ -301,8 +301,8 @@
       "nome": "Vagner Mancini",
       "clube": "RBB",
       "preco": 8.95,
-      "exp_score": 4.7947,
-      "factor": 0.9865134691380057,
+      "exp_score": 4.8469,
+      "factor": 0.9972409125707296,
       "atleta_id": 39850
     }
   ],
@@ -464,8 +464,8 @@
       "nome": "Neymar",
       "clube": "SAN",
       "preco": 18.46,
-      "exp_score": 6.0529,
-      "factor": 0.9448105193381433,
+      "exp_score": 6.0561,
+      "factor": 0.9452992861360098,
       "atleta_id": 63007
     },
     {
@@ -474,8 +474,8 @@
       "nome": "Carrascal",
       "clube": "FLA",
       "preco": 10.91,
-      "exp_score": 5.1635,
-      "factor": 0.9785157433138718,
+      "exp_score": 5.1656,
+      "factor": 0.9789110085341634,
       "atleta_id": 105436
     },
     {
@@ -484,8 +484,8 @@
       "nome": "Baralhas",
       "clube": "VIT",
       "preco": 10.42,
-      "exp_score": 5.031,
-      "factor": 1.1165426204012954,
+      "exp_score": 5.0329,
+      "factor": 1.1169805321634287,
       "atleta_id": 99440
     },
     {
@@ -494,8 +494,8 @@
       "nome": "Bruno Gomes",
       "clube": "INT",
       "preco": 6.62,
-      "exp_score": 4.2574,
-      "factor": 1.0629058052673177,
+      "exp_score": 4.2597,
+      "factor": 1.0634925107842335,
       "atleta_id": 106202
     },
     {
@@ -504,8 +504,8 @@
       "nome": "Alan Patrick",
       "clube": "INT",
       "preco": 7.2,
-      "exp_score": 4.1088,
-      "factor": 1.0629058052673177,
+      "exp_score": 4.1111,
+      "factor": 1.0634925107842335,
       "atleta_id": 68685
     },
     {
@@ -514,8 +514,8 @@
       "nome": "Samuel Lino",
       "clube": "FLA",
       "preco": 14.72,
-      "exp_score": 10.7839,
-      "factor": 0.9785157433138718,
+      "exp_score": 10.7883,
+      "factor": 0.9789110085341634,
       "atleta_id": 98873
     },
     {
@@ -524,8 +524,8 @@
       "nome": "Pedro",
       "clube": "FLA",
       "preco": 15.02,
-      "exp_score": 7.8286,
-      "factor": 0.9785157433138718,
+      "exp_score": 7.8317,
+      "factor": 0.9789110085341634,
       "atleta_id": 94583
     },
     {
@@ -534,8 +534,8 @@
       "nome": "Renê",
       "clube": "VIT",
       "preco": 11.35,
-      "exp_score": 7.7538,
-      "factor": 1.1165426204012954,
+      "exp_score": 7.7569,
+      "factor": 1.1169805321634287,
       "atleta_id": 130209
     },
     {
@@ -544,8 +544,8 @@
       "nome": "Kaio César",
       "clube": "COR",
       "preco": 13.66,
-      "exp_score": 7.3972,
-      "factor": 1.0350889835045765,
+      "exp_score": 7.4019,
+      "factor": 1.0357528555972078,
       "atleta_id": 118844
     },
     {
@@ -554,8 +554,8 @@
       "nome": "Cuello",
       "clube": "CAM",
       "preco": 8.97,
-      "exp_score": 5.6523,
-      "factor": 1.0560595364964436,
+      "exp_score": 5.6556,
+      "factor": 1.0566652342304421,
       "atleta_id": 98909
     },
     {
@@ -564,19 +564,9 @@
       "nome": "Leonardo Jardim",
       "clube": "FLA",
       "preco": 13.09,
-      "exp_score": 6.5785,
-      "factor": 0.9991160747520587,
+      "exp_score": 6.5812,
+      "factor": 0.9995196613454089,
       "atleta_id": 88963
-    },
-    {
-      "rodada": 37,
-      "pos": "TEC",
-      "nome": "Renato Gaúcho",
-      "clube": "GRE",
-      "preco": 10.75,
-      "exp_score": 5.2309,
-      "factor": 0.9232373097417332,
-      "atleta_id": 41929
     },
     {
       "rodada": 37,
@@ -584,9 +574,19 @@
       "nome": "Rafael Lacerda",
       "clube": "VIT",
       "preco": 9.16,
-      "exp_score": 5.1904,
-      "factor": 1.0855275476123705,
+      "exp_score": 5.1924,
+      "factor": 1.085953295158889,
       "atleta_id": 106907
+    },
+    {
+      "rodada": 37,
+      "pos": "TEC",
+      "nome": "Renato Gaúcho",
+      "clube": "GRE",
+      "preco": 10.75,
+      "exp_score": 5.1377,
+      "factor": 0.9067814915152731,
+      "atleta_id": 41929
     },
     {
       "rodada": 37,
@@ -594,8 +594,8 @@
       "nome": "Rogério Ceni",
       "clube": "BAH",
       "preco": 10.01,
-      "exp_score": 5.0048,
-      "factor": 0.9999331667643984,
+      "exp_score": 5.0068,
+      "factor": 1.0003344866648398,
       "atleta_id": 97341
     },
     {
@@ -604,8 +604,8 @@
       "nome": "Vagner Mancini",
       "clube": "RBB",
       "preco": 8.95,
-      "exp_score": 4.7947,
-      "factor": 0.9865134691380057,
+      "exp_score": 4.8469,
+      "factor": 0.9972409125707296,
       "atleta_id": 39850
     }
   ],
