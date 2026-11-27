@@ -5,7 +5,7 @@
   "ano": 2026,
   "rodada": 37,
   "tipo": "ECONOMICO",
-  "atualizado_em": "2026-11-27T18:49:46.399Z",
+  "atualizado_em": "2026-11-27T19:29:45.100Z",
   "dados": [
     {
       "RODADA": 37,
@@ -15,8 +15,19 @@
       "NOME": "Gabriel Batista",
       "CLUBE": "BOT",
       "PRECO": 6.45,
-      "EXP_SCORE": 3.7373,
+      "EXP_SCORE": 3.7408,
       "ATLETA_ID": 98333
+    },
+    {
+      "RODADA": 37,
+      "TIPO": "ECONOMICO",
+      "STATUS": "TITULAR",
+      "POS": "LAT",
+      "NOME": "Angileri",
+      "CLUBE": "COR",
+      "PRECO": 7.01,
+      "EXP_SCORE": 5.8797,
+      "ATLETA_ID": 98720
     },
     {
       "RODADA": 37,
@@ -26,19 +37,8 @@
       "NOME": "Matheus Bidu",
       "CLUBE": "COR",
       "PRECO": 12.56,
-      "EXP_SCORE": 9.2028,
+      "EXP_SCORE": 9.2092,
       "ATLETA_ID": 105531
-    },
-    {
-      "RODADA": 37,
-      "TIPO": "ECONOMICO",
-      "STATUS": "TITULAR",
-      "POS": "LAT",
-      "NOME": "Aguirre",
-      "CLUBE": "INT",
-      "PRECO": 6.01,
-      "EXP_SCORE": 5.0068,
-      "ATLETA_ID": 110510
     },
     {
       "RODADA": 37,
@@ -48,7 +48,7 @@
       "NOME": "Thiago Santos",
       "CLUBE": "CFC",
       "PRECO": 5.53,
-      "EXP_SCORE": 2.9082,
+      "EXP_SCORE": 2.9132,
       "ATLETA_ID": 78855
     },
     {
@@ -59,7 +59,7 @@
       "NOME": "Wallace",
       "CLUBE": "GRE",
       "PRECO": 8.85,
-      "EXP_SCORE": 5.792,
+      "EXP_SCORE": 5.7247,
       "ATLETA_ID": 130307
     },
     {
@@ -70,7 +70,7 @@
       "NOME": "Gustavo Henrique",
       "CLUBE": "COR",
       "PRECO": 9.05,
-      "EXP_SCORE": 5.8109,
+      "EXP_SCORE": 5.8149,
       "ATLETA_ID": 78248
     },
     {
@@ -81,7 +81,7 @@
       "NOME": "Rodrigo Nestor",
       "CLUBE": "BAH",
       "PRECO": 6.07,
-      "EXP_SCORE": 4.0225,
+      "EXP_SCORE": 4.0204,
       "ATLETA_ID": 106822
     },
     {
@@ -92,7 +92,7 @@
       "NOME": "Gustavo Henrique",
       "CLUBE": "SAN",
       "PRECO": 5.41,
-      "EXP_SCORE": 3.5842,
+      "EXP_SCORE": 3.5818,
       "ATLETA_ID": 141776
     },
     {
@@ -103,7 +103,7 @@
       "NOME": "Bernard",
       "CLUBE": "CAM",
       "PRECO": 5.2,
-      "EXP_SCORE": 3.4369,
+      "EXP_SCORE": 3.4344,
       "ATLETA_ID": 72460
     },
     {
@@ -114,7 +114,7 @@
       "NOME": "Tarzia",
       "CLUBE": "VIT",
       "PRECO": 6.71,
-      "EXP_SCORE": 4.7188,
+      "EXP_SCORE": 4.7164,
       "ATLETA_ID": 143153
     },
     {
@@ -125,7 +125,7 @@
       "NOME": "Samuel Lino",
       "CLUBE": "FLA",
       "PRECO": 14.72,
-      "EXP_SCORE": 10.7943,
+      "EXP_SCORE": 10.7887,
       "ATLETA_ID": 98873
     },
     {
@@ -136,7 +136,7 @@
       "NOME": "Rafael Lacerda",
       "CLUBE": "VIT",
       "PRECO": 9.16,
-      "EXP_SCORE": 5.1952,
+      "EXP_SCORE": 5.1926,
       "ATLETA_ID": 106907
     },
     {
@@ -147,7 +147,7 @@
       "NOME": "Diógenes",
       "CLUBE": "SAN",
       "PRECO": 5.04,
-      "EXP_SCORE": 2.5524,
+      "EXP_SCORE": 2.5557,
       "ATLETA_ID": 113690
     },
     {
@@ -155,11 +155,11 @@
       "TIPO": "ECONOMICO",
       "STATUS": "RESERVA",
       "POS": "LAT",
-      "NOME": "Bruno Melo",
-      "CLUBE": "CFC",
-      "PRECO": 5.38,
-      "EXP_SCORE": 2.2444,
-      "ATLETA_ID": 84339
+      "NOME": "Aguirre",
+      "CLUBE": "INT",
+      "PRECO": 6.01,
+      "EXP_SCORE": 5.011,
+      "ATLETA_ID": 110510
     },
     {
       "RODADA": 37,
@@ -169,7 +169,7 @@
       "NOME": "Luan Peres",
       "CLUBE": "SAN",
       "PRECO": 5.28,
-      "EXP_SCORE": 3.4563,
+      "EXP_SCORE": 3.4608,
       "ATLETA_ID": 84847
     },
     {
@@ -180,7 +180,7 @@
       "NOME": "Zé Vitor",
       "CLUBE": "VIT",
       "PRECO": 5.18,
-      "EXP_SCORE": 3.0692,
+      "EXP_SCORE": 3.0676,
       "ATLETA_ID": 107256
     },
     {
@@ -191,7 +191,7 @@
       "NOME": "Fernando",
       "CLUBE": "RBB",
       "PRECO": 6.61,
-      "EXP_SCORE": 4.057,
+      "EXP_SCORE": 4.0546,
       "ATLETA_ID": 100695
     }
   ]
